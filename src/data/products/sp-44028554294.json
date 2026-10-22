@@ -2,52 +2,60 @@
   "id": "sp-44028554294",
   "slug": "ovonic-fpv-1480mah-6s-22-2v-160c",
   "name_zh": "Ovonic 歐牌藍標 FPV鋰電🔋 1480mAh 6S 22.2V 160C 5吋穿越機高爆發航模電池",
+  "sku": null,
   "brand": "OVONIC",
+  "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "power-battery",
   "subcategory_id": "6s",
+  "tags": [],
   "compatible_sizes": [
     "5 吋"
   ],
+  "video_system": null,
   "battery_cells": [
     "6S"
   ],
+  "short_description": "",
   "description": "•\t1480mAh 容量＋6S 22.2V 規格，介於常見 1300 與 1550/1600 之間，兼顧推重比與續航，適合 5 吋主力機日常飛與小比賽。\n\n•\t標稱 160C 放電倍率，採用 Ovonic 藍標系列 A 級電芯，內阻低、電壓回彈快，高油門連續操作也不易「塌電」\n\n•\t支援高電流 XT60（或 XT60H）主插頭＋標準 6S 平衡頭，適配主流 2207/2306/2407 等電機與 45–60A 電調組合。\n\n•\t藍標系列主打「高爆發＋長壽命」，外皮耐磨抗刮，適合常炸常飛的 FPV 玩家與航模使用。",
+  "specifications": [],
   "images": [
     {
       "src": "/assets/img/products/sp-44028554294/01.webp",
-      "alt": "Ovonic 歐牌藍標 FPV鋰電 1480mAh 6S 22.2V 160C 5吋穿越機高爆發航模電池（主圖）",
-      "rights": "licensed",
       "src_small": "/assets/img/products/sp-44028554294/01-480.webp",
+      "alt": "Ovonic 歐牌藍標 FPV鋰電 1480mAh 6S 22.2V 160C 5吋穿越機高爆發航模電池（主圖）",
       "width": 1000,
       "height": 1000,
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mk9cjnb93020b0"
     },
     {
       "src": "/assets/img/products/sp-44028554294/02.webp",
-      "alt": "Ovonic 歐牌藍標 FPV鋰電 1480mAh 6S 22.2V 160C 5吋穿越機高爆發航模電池（細節圖 1）",
-      "rights": "licensed",
       "src_small": "/assets/img/products/sp-44028554294/02-480.webp",
+      "alt": "Ovonic 歐牌藍標 FPV鋰電 1480mAh 6S 22.2V 160C 5吋穿越機高爆發航模電池（細節圖 1）",
       "width": 1000,
       "height": 1000,
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mk9cjnbh4d1hfb"
     },
     {
       "src": "/assets/img/products/sp-44028554294/03.webp",
-      "alt": "Ovonic 歐牌藍標 FPV鋰電 1480mAh 6S 22.2V 160C 5吋穿越機高爆發航模電池（細節圖 2）",
-      "rights": "licensed",
       "src_small": "/assets/img/products/sp-44028554294/03-480.webp",
+      "alt": "Ovonic 歐牌藍標 FPV鋰電 1480mAh 6S 22.2V 160C 5吋穿越機高爆發航模電池（細節圖 2）",
       "width": 1000,
       "height": 1000,
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mk9cjnbh2yh1d0"
     }
   ],
+  "variants": [],
   "price_twd": 1103,
   "price_display": "fixed",
   "availability": "preorder",
+  "shopee_url": null,
   "shopee_item_id": "44028554294",
   "line_inquiry_enabled": true,
   "featured": false,
@@ -72,15 +80,21 @@
       "gallery": [
         "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mk9cjnbh4d1hfb",
         "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mk9cjnbh2yh1d0"
-      ]
+      ],
+      "variation_label": null,
+      "options": []
     },
     "shopee_sales_snapshot": {
       "media_export": "mass_update_media_info_4053258_20261022141110",
       "sales_export": "mass_update_sales_info_4053258_20261022141152",
       "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
       "rows": [
         {
           "variation_id": "370521607647",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
           "price": 1149,
           "stock": 0,
           "min_qty": 1
