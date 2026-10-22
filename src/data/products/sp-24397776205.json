@@ -15,56 +15,139 @@
   "short_description": "",
   "description": "#speedybee #mariomini25 #mini25 #穿越機 #機架配件 #fpv #speedybeefpv \n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nSpeedyBee Mario Mini25 官方釋出的結構件模型，專為 Mini25 機架設計，完美貼合、輕量耐用。無論是替換破損部件、升級外觀或提升保護性，都能快速套用。\n\n產品特色\n適用 SpeedyBee Mario Mini25 全系列\n輕量化設計，不影響飛行性能\n\n顏色 : 黑/黃/白/綠/橘/紫",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-24397776205/01.webp",
+      "src_small": "/assets/img/products/sp-24397776205/01-480.webp",
+      "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（主圖）",
+      "width": 836,
+      "height": 836,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mhkkhnziuarld3"
+    },
+    {
+      "src": "/assets/img/products/sp-24397776205/02.webp",
+      "src_small": "/assets/img/products/sp-24397776205/02-480.webp",
+      "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-24397776205/03.webp",
+      "src_small": "/assets/img/products/sp-24397776205/03-480.webp",
+      "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（細節圖 2）",
+      "width": 843,
+      "height": 843,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mhkkho01534544"
+    },
+    {
+      "src": "/assets/img/products/sp-24397776205/04.webp",
+      "src_small": "/assets/img/products/sp-24397776205/04-480.webp",
+      "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（細節圖 3）",
+      "width": 530,
+      "height": 530,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mhkkwuycw2dibe"
+    }
+  ],
   "variants": [
     {
       "name": "電容固定座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "345216107102"
+      "shopee_variation_id": "345216107102",
+      "image": {
+        "src": "/assets/img/products/sp-24397776205/opt-02-480.webp",
+        "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（規格：電容固定座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mhkktidk9fr717"
+      }
     },
     {
       "name": "外殼保險扣",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "345216107103"
+      "shopee_variation_id": "345216107103",
+      "image": {
+        "src": "/assets/img/products/sp-24397776205/opt-03-480.webp",
+        "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（規格：外殼保險扣）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mhkku44jdog4df"
+      }
     },
     {
       "name": "側保護保險扣",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "345216107097"
+      "shopee_variation_id": "345216107097",
+      "image": {
+        "src": "/assets/img/products/sp-24397776205/opt-04-480.webp",
+        "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（規格：側保護保險扣）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhkkujetbdvs92"
+      }
     },
     {
       "name": "O4PRO天線固定座A",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "345216107098"
+      "shopee_variation_id": "345216107098",
+      "image": {
+        "src": "/assets/img/products/sp-24397776205/opt-05-480.webp",
+        "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（規格：O4PRO天線固定座A）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mhkkuta4qcxvb2"
+      }
     },
     {
       "name": "平衡底板(防撞及平衡)",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "345216107099"
+      "shopee_variation_id": "345216107099",
+      "image": {
+        "src": "/assets/img/products/sp-24397776205/opt-06-480.webp",
+        "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（規格：平衡底板(防撞及平衡)）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mhkkxhvz40058a"
+      }
     },
     {
       "name": "O4PRO天線固定座B",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "345216107100"
+      "shopee_variation_id": "345216107100",
+      "image": {
+        "src": "/assets/img/products/sp-24397776205/opt-07-480.webp",
+        "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（規格：O4PRO天線固定座B）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mhkkz1g68padca"
+      }
     },
     {
       "name": "小O4天線固定座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "345216107101"
+      "shopee_variation_id": "345216107101",
+      "image": {
+        "src": "/assets/img/products/sp-24397776205/opt-01-480.webp",
+        "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（規格：小O4天線固定座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mhkkt2kn4paec8"
+      }
     }
   ],
   "price_twd": null,

@@ -15,7 +15,58 @@
   "short_description": "",
   "description": "•\t#BETAFPVC03\n•\t#穿越機攝像頭\n•\t#whoop圈圈機\n•\t#1200TVL攝像頭\n•\t#室內FPV鏡頭\n•\t#2.1mm廣角\n•\t#FPV配件\n•\t#微型機攝像頭\n•\t#航模攝像頭\n•\t#台灣現貨",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-48057455148/01.webp",
+      "src_small": "/assets/img/products/sp-48057455148/01-480.webp",
+      "alt": "BETAFPV C03 穿越機攝像頭 室內 FPV 圈圈機專用 1200TVL 2.1mm 鏡頭 160°廣角 1g（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mm0k0hqn5ekk3e"
+    },
+    {
+      "src": "/assets/img/products/sp-48057455148/02.webp",
+      "src_small": "/assets/img/products/sp-48057455148/02-480.webp",
+      "alt": "BETAFPV C03 穿越機攝像頭 室內 FPV 圈圈機專用 1200TVL 2.1mm 鏡頭 160°廣角 1g（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mm0k8vxfyfwl07"
+    },
+    {
+      "src": "/assets/img/products/sp-48057455148/03.webp",
+      "src_small": "/assets/img/products/sp-48057455148/03-480.webp",
+      "alt": "BETAFPV C03 穿越機攝像頭 室內 FPV 圈圈機專用 1200TVL 2.1mm 鏡頭 160°廣角 1g（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mm0k0hqoldkw9d"
+    },
+    {
+      "src": "/assets/img/products/sp-48057455148/04.webp",
+      "src_small": "/assets/img/products/sp-48057455148/04-480.webp",
+      "alt": "BETAFPV C03 穿越機攝像頭 室內 FPV 圈圈機專用 1200TVL 2.1mm 鏡頭 160°廣角 1g（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mm0k0hqicmq0a1"
+    },
+    {
+      "src": "/assets/img/products/sp-48057455148/05.webp",
+      "src_small": "/assets/img/products/sp-48057455148/05-480.webp",
+      "alt": "BETAFPV C03 穿越機攝像頭 室內 FPV 圈圈機專用 1200TVL 2.1mm 鏡頭 160°廣角 1g（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mm0k0hqie1agd4"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

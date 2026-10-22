@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "#meteor75 #air75 #收納盒 #穿越機配件 #微型無人機 #電池收納 #fpv配件 #fpv收納 #betafpv #whoop盒\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n讓你的 Meteor75 / Air75 有專屬的安全之家！\n此收納盒專為 BetaFPV 微型穿越機設計，能同時放置機體與多顆 1S 電池\n450MAH 電池最多存放9塊，可以再放入充電器\n\n產品特色\n專屬開模，貼合 Meteor75 / Air75 尺寸\n內部電池卡槽設計，整齊收納不晃動\n外殼堅固，日常攜帶不怕擠壓\n適合外拍、戶外飛行攜帶組使用\n出門飛行必備，一盒搞定！",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-54302194122/01.webp",
+      "src_small": "/assets/img/products/sp-54302194122/01-480.webp",
+      "alt": "BetaFPV Meteor75 / Air75 專用便攜收納盒｜電池收納｜機身保護盒（主圖）",
+      "width": 966,
+      "height": 966,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mhk2gqb72pdw0d"
+    },
+    {
+      "src": "/assets/img/products/sp-54302194122/02.webp",
+      "src_small": "/assets/img/products/sp-54302194122/02-480.webp",
+      "alt": "BetaFPV Meteor75 / Air75 專用便攜收納盒｜電池收納｜機身保護盒（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-54302194122/03.webp",
+      "src_small": "/assets/img/products/sp-54302194122/03-480.webp",
+      "alt": "BetaFPV Meteor75 / Air75 專用便攜收納盒｜電池收納｜機身保護盒（細節圖 2）",
+      "width": 971,
+      "height": 971,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mhk2gqb7nrwha0"
+    }
+  ],
   "variants": [
     {
       "name": "螢光綠",

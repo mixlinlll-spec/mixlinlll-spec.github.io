@@ -15,28 +15,117 @@
   "short_description": "",
   "description": "•\t#iFlightAlbatross\n•\t#5.8G天線\n•\t#FPV穿越機\n•\t#信天翁V2\n•\t#SMA圖傳天線\n•\t#RHCP全向天線\n•\t#航模天線\n•\t#FPV配件\n•\t#雙頻天線\n•\t#台灣現貨\n\n•\t5.8GHz 全向天線，支援 LHCP 圓極化，覆蓋 5.5-6.5GHz 頻段，圖傳穿牆與遠距表現優異，適合室內外穿越。\n•\tV2 版升級陶瓷基座＋金屬外殼，增益達 2dBi，軸比 1.7dB，低 VSWR 確保圖傳穩定不花屏。\n•\tSMA 公頭接口，長度僅 60mm 輕巧不拖架，耐拉扯 360° 全向輻射，360°  全向覆蓋，適合 5 吋以上穿越機。[附件]\n•\t測試數據顯示 RSSI 穩定在 40-50dB，抗干擾強，搭配 DJI O3 等系統效果更佳，提升飛行視野與安全性。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-45007348652/01.webp",
+      "src_small": "/assets/img/products/sp-45007348652/01-480.webp",
+      "alt": "iFlight Albatross V2 SMA天線 5.8G圖傳信天翁 FPV穿越機航模全向天線 雙頻LHCP高增益（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mlxsghhyxa8470"
+    },
+    {
+      "src": "/assets/img/products/sp-45007348652/02.webp",
+      "src_small": "/assets/img/products/sp-45007348652/02-480.webp",
+      "alt": "iFlight Albatross V2 SMA天線 5.8G圖傳信天翁 FPV穿越機航模全向天線 雙頻LHCP高增益（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mlxsghhtf85ce0"
+    },
+    {
+      "src": "/assets/img/products/sp-45007348652/03.webp",
+      "src_small": "/assets/img/products/sp-45007348652/03-480.webp",
+      "alt": "iFlight Albatross V2 SMA天線 5.8G圖傳信天翁 FPV穿越機航模全向天線 雙頻LHCP高增益（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mlxsghhtdtkw8d"
+    },
+    {
+      "src": "/assets/img/products/sp-45007348652/04.webp",
+      "src_small": "/assets/img/products/sp-45007348652/04-480.webp",
+      "alt": "iFlight Albatross V2 SMA天線 5.8G圖傳信天翁 FPV穿越機航模全向天線 雙頻LHCP高增益（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlxsghi9845rc8"
+    },
+    {
+      "src": "/assets/img/products/sp-45007348652/05.webp",
+      "src_small": "/assets/img/products/sp-45007348652/05-480.webp",
+      "alt": "iFlight Albatross V2 SMA天線 5.8G圖傳信天翁 FPV穿越機航模全向天線 雙頻LHCP高增益（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mlxsghi8snwo55"
+    },
+    {
+      "src": "/assets/img/products/sp-45007348652/06.webp",
+      "src_small": "/assets/img/products/sp-45007348652/06-480.webp",
+      "alt": "iFlight Albatross V2 SMA天線 5.8G圖傳信天翁 FPV穿越機航模全向天線 雙頻LHCP高增益（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlxsghiaphq961"
+    },
+    {
+      "src": "/assets/img/products/sp-45007348652/07.webp",
+      "src_small": "/assets/img/products/sp-45007348652/07-480.webp",
+      "alt": "iFlight Albatross V2 SMA天線 5.8G圖傳信天翁 FPV穿越機航模全向天線 雙頻LHCP高增益（細節圖 6）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlxsghine0ar67"
+    }
+  ],
   "variants": [
     {
       "name": "90mm(左璇內孔）",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "395652720799"
+      "shopee_variation_id": "395652720799",
+      "image": {
+        "src": "/assets/img/products/sp-45007348652/opt-01-480.webp",
+        "alt": "iFlight Albatross V2 SMA天線 5.8G圖傳信天翁 FPV穿越機航模全向天線 雙頻LHCP高增益（規格：90mm(左璇內孔））",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mlxsghi8snwo55"
+      }
     },
     {
       "name": "130mm(左璇內孔）",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "395652720800"
+      "shopee_variation_id": "395652720800",
+      "image": {
+        "src": "/assets/img/products/sp-45007348652/opt-02-480.webp",
+        "alt": "iFlight Albatross V2 SMA天線 5.8G圖傳信天翁 FPV穿越機航模全向天線 雙頻LHCP高增益（規格：130mm(左璇內孔））",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlxsghiaphq961"
+      }
     },
     {
       "name": "180mm(左璇內孔）",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "395652720801"
+      "shopee_variation_id": "395652720801",
+      "image": {
+        "src": "/assets/img/products/sp-45007348652/opt-03-480.webp",
+        "alt": "iFlight Albatross V2 SMA天線 5.8G圖傳信天翁 FPV穿越機航模全向天線 雙頻LHCP高增益（規格：180mm(左璇內孔））",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlxsghine0ar67"
+      }
     }
   ],
   "price_twd": null,

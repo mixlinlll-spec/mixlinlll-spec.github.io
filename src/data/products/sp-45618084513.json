@@ -17,14 +17,61 @@
   "short_description": "",
   "description": "【BETAFPV HexaCharger 1S 充電器】",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-45618084513/01.webp",
+      "src_small": "/assets/img/products/sp-45618084513/01-480.webp",
+      "alt": "BETAFPV HexaCharger 1S 充電器 6路同時充電 PH2.0 BT2.0 Whoop 鋰電池充電器（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mtbocxed9jig2f"
+    },
+    {
+      "src": "/assets/img/products/sp-45618084513/02.webp",
+      "src_small": "/assets/img/products/sp-45618084513/02-480.webp",
+      "alt": "BETAFPV HexaCharger 1S 充電器 6路同時充電 PH2.0 BT2.0 Whoop 鋰電池充電器（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mtbocxdr0vt07f"
+    },
+    {
+      "src": "/assets/img/products/sp-45618084513/03.webp",
+      "src_small": "/assets/img/products/sp-45618084513/03-480.webp",
+      "alt": "BETAFPV HexaCharger 1S 充電器 6路同時充電 PH2.0 BT2.0 Whoop 鋰電池充電器（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtbocxdqsgedaf"
+    },
+    {
+      "src": "/assets/img/products/sp-45618084513/04.webp",
+      "src_small": "/assets/img/products/sp-45618084513/04-480.webp",
+      "alt": "BETAFPV HexaCharger 1S 充電器 6路同時充電 PH2.0 BT2.0 Whoop 鋰電池充電器（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mtbocxfezuo47c"
+    }
+  ],
   "variants": [
     {
       "name": "黑色",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "341529126280"
+      "shopee_variation_id": "341529126280",
+      "image": {
+        "src": "/assets/img/products/sp-45618084513/opt-01-480.webp",
+        "alt": "BETAFPV HexaCharger 1S 充電器 6路同時充電 PH2.0 BT2.0 Whoop 鋰電池充電器（規格：黑色）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mtbocxdqmu4k32"
+      }
     }
   ],
   "price_twd": null,

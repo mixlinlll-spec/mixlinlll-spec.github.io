@@ -15,7 +15,48 @@
   "short_description": "",
   "description": "⚠️ 務必備註顏色。訂製商品無法退貨\n⚠️ 列印件可能有些微層紋屬正常現象\n⚠️ 客製化需求請務必聊聊討論後再下單\n\n🔥 給懂飛的你，來點前線火力支援！\n🔥 用穿越機扛著「特種部隊專用神秘小物」，\n一飛出去直接變成野外戰術小隊長！\n\n⚔️前線體驗直接拉滿\n讓你的穿越機不再只是飛機，而是「戰術快遞員」\n想投什麼、丟什麼、演什麼都你說了算！\n💣戰區沉浸感＋120%\n模擬彈造型，視覺效果滿分，\n跑山、拍片、惡搞朋友都推薦（但不要嚇到路人🤣）。\n\n🔧牢靠設計，不怕你飛狠\n輕量結構、固定穩固，不影響飛行手感。\n高速巡航？極限俯衝？全部 OK！",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-56302849088/01.webp",
+      "src_small": "/assets/img/products/sp-56302849088/01-480.webp",
+      "alt": "僱傭兵玩具 - 前線作戰版 FPV炸彈V1 穿越機炸彈玩具（主圖）",
+      "width": 950,
+      "height": 950,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mi2mnzk7dvk329"
+    },
+    {
+      "src": "/assets/img/products/sp-56302849088/02.webp",
+      "src_small": "/assets/img/products/sp-56302849088/02-480.webp",
+      "alt": "僱傭兵玩具 - 前線作戰版 FPV炸彈V1 穿越機炸彈玩具（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-56302849088/03.webp",
+      "src_small": "/assets/img/products/sp-56302849088/03-480.webp",
+      "alt": "僱傭兵玩具 - 前線作戰版 FPV炸彈V1 穿越機炸彈玩具（細節圖 2）",
+      "width": 974,
+      "height": 974,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mi2mnzj48zy830"
+    },
+    {
+      "src": "/assets/img/products/sp-56302849088/04.webp",
+      "src_small": "/assets/img/products/sp-56302849088/04-480.webp",
+      "alt": "僱傭兵玩具 - 前線作戰版 FPV炸彈V1 穿越機炸彈玩具（細節圖 3）",
+      "width": 848,
+      "height": 848,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mi2mnzjbfgg16e"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

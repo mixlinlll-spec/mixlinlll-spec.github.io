@@ -41,7 +41,68 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-47807830807/01.webp",
+      "src_small": "/assets/img/products/sp-47807830807/01-480.webp",
+      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mmbxfk8d9gcg07"
+    },
+    {
+      "src": "/assets/img/products/sp-47807830807/02.webp",
+      "src_small": "/assets/img/products/sp-47807830807/02-480.webp",
+      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmbx0c9dk3k898"
+    },
+    {
+      "src": "/assets/img/products/sp-47807830807/03.webp",
+      "src_small": "/assets/img/products/sp-47807830807/03-480.webp",
+      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mmoq9ollnchtaa"
+    },
+    {
+      "src": "/assets/img/products/sp-47807830807/04.webp",
+      "src_small": "/assets/img/products/sp-47807830807/04-480.webp",
+      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mmbx0c9byi9ua1"
+    },
+    {
+      "src": "/assets/img/products/sp-47807830807/05.webp",
+      "src_small": "/assets/img/products/sp-47807830807/05-480.webp",
+      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmbx94303nybf5"
+    },
+    {
+      "src": "/assets/img/products/sp-47807830807/06.webp",
+      "src_small": "/assets/img/products/sp-47807830807/06-480.webp",
+      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mmbx943eumm964"
+    }
+  ],
   "variants": [
     {
       "name": "一盒+十字起子（顏色隨機）",

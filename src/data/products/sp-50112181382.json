@@ -18,7 +18,48 @@
   "short_description": "",
   "description": "#MGC #天狼W #1103 #8000KV #無刷馬達 #FPV #穿越機 #牙籤機 #Freestyle #JENOPOCKET #戈布 #2S穿越機 #3S穿越機 #2512槳葉 #Whoop #Toothpick #FPVDrone #無人機 #花飛機 #電翼動力\n\nMGC 天狼W 1103 8000KV 無刷馬達專為2~3吋FPV穿越機打造，採用9N12P高效率磁路結構，兼具爆發力、油門解析度與飛行效率。適合2.5吋Freestyle、牙籤機及輕量化數位穿越機使用。\n\nJENO POCKET 戈布原廠指定動力系統，搭配2512三葉槳可獲得優異的加速性能與靈活操控手感。\n\n【產品特色】\n✔ 1103高性能無刷馬達\n✔ 8000KV高轉速設計\n✔ 9N12P高效率磁路結構\n✔ 穩定動力輸出\n✔ 提升飛行靈敏度\n✔ 輕量化設計\n✔ 適用2S 3S動力\n✔ JENO POCKET原廠搭配動力",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-50112181382/01.webp",
+      "src_small": "/assets/img/products/sp-50112181382/01-480.webp",
+      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mpg37q00rlz62d"
+    },
+    {
+      "src": "/assets/img/products/sp-50112181382/02.webp",
+      "src_small": "/assets/img/products/sp-50112181382/02-480.webp",
+      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mpg37pzzziml91"
+    },
+    {
+      "src": "/assets/img/products/sp-50112181382/03.webp",
+      "src_small": "/assets/img/products/sp-50112181382/03-480.webp",
+      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mpg37pzv2j2jec"
+    },
+    {
+      "src": "/assets/img/products/sp-50112181382/04.webp",
+      "src_small": "/assets/img/products/sp-50112181382/04-480.webp",
+      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mpg37pzyw6ps38"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

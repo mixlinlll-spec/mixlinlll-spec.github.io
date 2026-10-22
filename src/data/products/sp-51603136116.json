@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "Bee25 模組化適配器\nBee25 O3 適配器\nBee25 O4 Pro 適配器\nGeprc Mark5 O3 安裝\nGeprc Mark5 3D 列印配件\nDJI O3 相機轉接座\nDJI O4 Pro 相機座\nFPV 無人機 3D 列印\nFPV 客製化配件\n穿越機 O3 安裝套件\nSpeedyBee Bee25 配件\nGeprc Mark5 升級套件\n\n⚠️ 務必備註顏色，未備註將隨機出貨，訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n⚠️ 客製化需求（顏色）請先聊聊討論再下單\n\n想把 SpeedyBee Bee25 的模組化 O3 / O4 Pro 鏡頭，裝到 Geprc Mark5 上，又不想切碳板、亂鑽孔？這款 3D 列印適配器就是專門為此設計的轉接座，只需要更換原本的前鼻鋁件或相機座位置，就能把 Bee25 模組穩穩裝上 Mark5，實現多機共用一套 O3/O4 Pro 系統。🎥🛠️ 碳纖維8% 材質具備一定強度與韌性，在撞機時能幫忙吸收部分衝擊，同時兼顧安裝與維修便利。​\n\n產品特色 ✨\n專為 Bee25 模組化 O3/O4 Pro 相機頭設計，孔位與外形對應 Bee25 模組。🧱​\n適用 Geprc Mark5 機架，安裝時僅需替換原鋁鼻或相機座，不需切割碳板。\n支援多色列印，可依機隊配色或識別需求選擇、客製顏色。🎨",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-51603136116/01.webp",
+      "src_small": "/assets/img/products/sp-51603136116/01-480.webp",
+      "alt": "Bee25 模組化 O3/O4 Pro 適配器 適用 Geprc Mark5 3D 無需改碳板（主圖）",
+      "width": 910,
+      "height": 910,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-miafo6fcrchwdb"
+    },
+    {
+      "src": "/assets/img/products/sp-51603136116/02.webp",
+      "src_small": "/assets/img/products/sp-51603136116/02-480.webp",
+      "alt": "Bee25 模組化 O3/O4 Pro 適配器 適用 Geprc Mark5 3D 無需改碳板（細節圖 1）",
+      "width": 875,
+      "height": 875,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-miafo6f9lki0f0"
+    },
+    {
+      "src": "/assets/img/products/sp-51603136116/03.webp",
+      "src_small": "/assets/img/products/sp-51603136116/03-480.webp",
+      "alt": "Bee25 模組化 O3/O4 Pro 適配器 適用 Geprc Mark5 3D 無需改碳板（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-migsvdwxjx8of3"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

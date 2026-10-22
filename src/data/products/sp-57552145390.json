@@ -15,35 +15,120 @@
   "short_description": "",
   "description": "#BetaFPV #Meteor75Pro #Meteor75打印件 #75mmWhoop #FPV打印件 #3D列印TPU #穿越機配件  #防撞保護 #靈雀FPV\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D 列印件可能有些微層紋屬正常現象⚠️",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-57552145390/01.webp",
+      "src_small": "/assets/img/products/sp-57552145390/01-480.webp",
+      "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（主圖）",
+      "width": 838,
+      "height": 838,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mhin8gn81qf458"
+    },
+    {
+      "src": "/assets/img/products/sp-57552145390/02.webp",
+      "src_small": "/assets/img/products/sp-57552145390/02-480.webp",
+      "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-57552145390/03.webp",
+      "src_small": "/assets/img/products/sp-57552145390/03-480.webp",
+      "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（細節圖 2）",
+      "width": 808,
+      "height": 808,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-ml7x2lls06bz84"
+    },
+    {
+      "src": "/assets/img/products/sp-57552145390/04.webp",
+      "src_small": "/assets/img/products/sp-57552145390/04-480.webp",
+      "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（細節圖 3）",
+      "width": 631,
+      "height": 631,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mhimzmdjylfp0c"
+    },
+    {
+      "src": "/assets/img/products/sp-57552145390/05.webp",
+      "src_small": "/assets/img/products/sp-57552145390/05-480.webp",
+      "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（細節圖 4）",
+      "width": 882,
+      "height": 882,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-ml7wwh3c94pbab"
+    },
+    {
+      "src": "/assets/img/products/sp-57552145390/06.webp",
+      "src_small": "/assets/img/products/sp-57552145390/06-480.webp",
+      "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（細節圖 5）",
+      "width": 796,
+      "height": 796,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-ml7x5glotts8ba"
+    }
+  ],
   "variants": [
     {
       "name": "後置天線座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "370208391462"
+      "shopee_variation_id": "370208391462",
+      "image": {
+        "src": "/assets/img/products/sp-57552145390/opt-01-480.webp",
+        "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（規格：後置天線座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mhimzmdprw1u82"
+      }
     },
     {
       "name": "25*25機罩(C03鏡頭尺寸)",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "244172850219"
+      "shopee_variation_id": "244172850219",
+      "image": {
+        "src": "/assets/img/products/sp-57552145390/opt-03-480.webp",
+        "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（規格：25*25機罩(C03鏡頭尺寸)）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-ml7x11dmkg0261"
+      }
     },
     {
       "name": "輕量化頂罩(ANTLITE尺寸)",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "244172850220"
+      "shopee_variation_id": "244172850220",
+      "image": {
+        "src": "/assets/img/products/sp-57552145390/opt-04-480.webp",
+        "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（規格：輕量化頂罩(ANTLITE尺寸)）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-ml7x5glotts8ba"
+      }
     },
     {
       "name": "改550豪安 1s电池套",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "302268897159"
+      "shopee_variation_id": "302268897159",
+      "image": {
+        "src": "/assets/img/products/sp-57552145390/opt-02-480.webp",
+        "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（規格：改550豪安 1s电池套）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-ml7wwyxkscu87f"
+      }
     }
   ],
   "price_twd": null,

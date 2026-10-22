@@ -15,7 +15,28 @@
   "short_description": "",
   "description": "GEPRC 原廠電池綁帶，適用 FPV 穿越機／無人機電池固定，魔鬼氈黏性佳、束緊穩固，不易鬆脫，搭配金屬扣環設計更耐用。黑色簡約款式，實用好搭，適合日常維修、更換與自組機使用。圖中可選尺寸：15x150、15x200、20x220、20x250、20x300，請依機型與電池尺寸選購。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-40231044938/01.webp",
+      "src_small": "/assets/img/products/sp-40231044938/01-480.webp",
+      "alt": "GEPRC 電池綁帶 魔鬼氈束帶 穿越機 FPV 無人機電池固定帶（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mogw9ohrr9jia5"
+    },
+    {
+      "src": "/assets/img/products/sp-40231044938/02.webp",
+      "src_small": "/assets/img/products/sp-40231044938/02-480.webp",
+      "alt": "GEPRC 電池綁帶 魔鬼氈束帶 穿越機 FPV 無人機電池固定帶（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mogw9ohzbrpcdf"
+    }
+  ],
   "variants": [
     {
       "name": "20x250mm",

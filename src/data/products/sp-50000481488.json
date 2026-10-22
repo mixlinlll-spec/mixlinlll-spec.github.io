@@ -15,21 +15,94 @@
   "short_description": "",
   "description": "🎮【產品介紹】\nDJI 控制器 2 / 3 皆可使用\n專為 DJI FPV、Avata 系列遙控器設計的搖桿保護罩，有效防止在收納或攜帶時誤觸、碰撞搖桿。\n採用 PLA 硬質 3D 列印製作，精準貼合，不鬆脫、不刮機。\n\n✅ 產品特點：\n完美貼合 DJI 原廠遙控器外型\n有效固定搖桿、防止偏位或斷裂\n\n📦產品資訊：\n適用機型：DJI 控制器 2 / 3 皆可使用\n重量：約5g\n\n軟質TPU打印\n顏色 : 黑/白/紫/黃/綠/透藍/橘\n\n💡 使用方式：\n將保護罩輕輕卡入遙控器搖桿上方，即可固定兩邊搖桿，防止在背包或盒內壓損。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-50000481488/01.webp",
+      "src_small": "/assets/img/products/sp-50000481488/01-480.webp",
+      "alt": "DJI FPV/Avata 遙控器搖桿保護罩 TPU 3D列印 防撞保護 收納防壓神器 遙控桿固定套（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mgg2k42x105r0d"
+    },
+    {
+      "src": "/assets/img/products/sp-50000481488/02.webp",
+      "src_small": "/assets/img/products/sp-50000481488/02-480.webp",
+      "alt": "DJI FPV/Avata 遙控器搖桿保護罩 TPU 3D列印 防撞保護 收納防壓神器 遙控桿固定套（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-50000481488/03.webp",
+      "src_small": "/assets/img/products/sp-50000481488/03-480.webp",
+      "alt": "DJI FPV/Avata 遙控器搖桿保護罩 TPU 3D列印 防撞保護 收納防壓神器 遙控桿固定套（細節圖 2）",
+      "width": 826,
+      "height": 826,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mgg2kmzkj4zw27"
+    },
+    {
+      "src": "/assets/img/products/sp-50000481488/04.webp",
+      "src_small": "/assets/img/products/sp-50000481488/04-480.webp",
+      "alt": "DJI FPV/Avata 遙控器搖桿保護罩 TPU 3D列印 防撞保護 收納防壓神器 遙控桿固定套（細節圖 3）",
+      "width": 702,
+      "height": 702,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mhm6b411rrb7fe"
+    },
+    {
+      "src": "/assets/img/products/sp-50000481488/05.webp",
+      "src_small": "/assets/img/products/sp-50000481488/05-480.webp",
+      "alt": "DJI FPV/Avata 遙控器搖桿保護罩 TPU 3D列印 防撞保護 收納防壓神器 遙控桿固定套（細節圖 4）",
+      "width": 909,
+      "height": 909,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mhm67x2lhvr69b"
+    },
+    {
+      "src": "/assets/img/products/sp-50000481488/06.webp",
+      "src_small": "/assets/img/products/sp-50000481488/06-480.webp",
+      "alt": "DJI FPV/Avata 遙控器搖桿保護罩 TPU 3D列印 防撞保護 收納防壓神器 遙控桿固定套（細節圖 5）",
+      "width": 846,
+      "height": 846,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mhm67x29k1z797"
+    }
+  ],
   "variants": [
     {
       "name": "B款",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "400043061178"
+      "shopee_variation_id": "400043061178",
+      "image": {
+        "src": "/assets/img/products/sp-50000481488/opt-02-480.webp",
+        "alt": "DJI FPV/Avata 遙控器搖桿保護罩 TPU 3D列印 防撞保護 收納防壓神器 遙控桿固定套（規格：B款）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mhm67x29k1z797"
+      }
     },
     {
       "name": "A款",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "400043061177"
+      "shopee_variation_id": "400043061177",
+      "image": {
+        "src": "/assets/img/products/sp-50000481488/opt-01-480.webp",
+        "alt": "DJI FPV/Avata 遙控器搖桿保護罩 TPU 3D列印 防撞保護 收納防壓神器 遙控桿固定套（規格：A款）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mhm6b411rrb7fe"
+      }
     }
   ],
   "price_twd": null,

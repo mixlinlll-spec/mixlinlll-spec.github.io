@@ -15,7 +15,98 @@
   "short_description": "",
   "description": "#電翼動力 #GEPRC #LINKFLOW #高頻頭 #915MHz #ELRS #FPV穿越機 #穿越機零件 #遠航FPV #FPV配件\n產品名稱：GEPRC LINKFLOW 915M/2.4G 雙頻高頻頭\n工作頻段：915MHz（FCC）／868MHz（EU）／2.4GHz（ISM）\n射頻晶片：LR1121\n主控晶片：ESP32\n背包晶片：ESP32-C3\n最大功率：1000mW\n晶振：溫度補償晶振\n封包率：50Hz～500Hz（LoRa）、1000Hz（FSK）\n天線接頭：SMA（外螺內孔）\n擴充槽型式：JR 槽\nWiFi：支援\nRGB 指示燈：支援\n外接供電：2S～6S\n重量：60g（不含天線）\n韌體：GEPRC LINKFLOW 900/2400 Dual-Band TX\n\n① 一顆雙頻：915／868MHz 遠航 + 2.4GHz 高更新率，不用買兩顆模組\n② LR1121 雙頻射頻晶片，最大 1W 輸出，穿透與距離表現更好\n③ 溫度補償晶振，外場溫差下頻率更穩定，連線不易飄\n④ JR 標準槽 + SMA 天線接頭 + WiFi 更新韌體，安裝與維護都方便",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-47268009795/01.webp",
+      "src_small": "/assets/img/products/sp-47268009795/01-480.webp",
+      "alt": "電翼動力 GEPRC LINKFLOW 雙頻高頻頭 915M/2.4G 1W LR1121 JR槽 FPV穿越機（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mt967euldz46cb"
+    },
+    {
+      "src": "/assets/img/products/sp-47268009795/02.webp",
+      "src_small": "/assets/img/products/sp-47268009795/02-480.webp",
+      "alt": "電翼動力 GEPRC LINKFLOW 雙頻高頻頭 915M/2.4G 1W LR1121 JR槽 FPV穿越機（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mt967ew09nnm06"
+    },
+    {
+      "src": "/assets/img/products/sp-47268009795/03.webp",
+      "src_small": "/assets/img/products/sp-47268009795/03-480.webp",
+      "alt": "電翼動力 GEPRC LINKFLOW 雙頻高頻頭 915M/2.4G 1W LR1121 JR槽 FPV穿越機（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mt967etxcpa9b3"
+    },
+    {
+      "src": "/assets/img/products/sp-47268009795/04.webp",
+      "src_small": "/assets/img/products/sp-47268009795/04-480.webp",
+      "alt": "電翼動力 GEPRC LINKFLOW 雙頻高頻頭 915M/2.4G 1W LR1121 JR槽 FPV穿越機（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mt967eubwn42df"
+    },
+    {
+      "src": "/assets/img/products/sp-47268009795/05.webp",
+      "src_small": "/assets/img/products/sp-47268009795/05-480.webp",
+      "alt": "電翼動力 GEPRC LINKFLOW 雙頻高頻頭 915M/2.4G 1W LR1121 JR槽 FPV穿越機（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mt967eulckjqb1"
+    },
+    {
+      "src": "/assets/img/products/sp-47268009795/06.webp",
+      "src_small": "/assets/img/products/sp-47268009795/06-480.webp",
+      "alt": "電翼動力 GEPRC LINKFLOW 雙頻高頻頭 915M/2.4G 1W LR1121 JR槽 FPV穿越機（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mt967eudjmyoa0"
+    },
+    {
+      "src": "/assets/img/products/sp-47268009795/07.webp",
+      "src_small": "/assets/img/products/sp-47268009795/07-480.webp",
+      "alt": "電翼動力 GEPRC LINKFLOW 雙頻高頻頭 915M/2.4G 1W LR1121 JR槽 FPV穿越機（細節圖 6）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mt967eu3lg5m48"
+    },
+    {
+      "src": "/assets/img/products/sp-47268009795/08.webp",
+      "src_small": "/assets/img/products/sp-47268009795/08-480.webp",
+      "alt": "電翼動力 GEPRC LINKFLOW 雙頻高頻頭 915M/2.4G 1W LR1121 JR槽 FPV穿越機（細節圖 7）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mt967eu7dp8hb1"
+    },
+    {
+      "src": "/assets/img/products/sp-47268009795/09.webp",
+      "src_small": "/assets/img/products/sp-47268009795/09-480.webp",
+      "alt": "電翼動力 GEPRC LINKFLOW 雙頻高頻頭 915M/2.4G 1W LR1121 JR槽 FPV穿越機（細節圖 8）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mt967ewkvbif87"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

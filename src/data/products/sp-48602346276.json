@@ -15,21 +15,64 @@
   "short_description": "",
   "description": "#gopro #狗座 #gopro固定座 #gopro支架 #gopro配件 #穿越機相機座 #gopro9 #gopro10 #gopro11 #gopro12 #gopro13 #fpv配件\n\n📦 注意事項\n⚠️務必備註顏色。客製化商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n⭕GoPro 骷髏頭固定支架\n支援 GoPro 9 / 10 / 11 / 12 / 13\n\n⭕GoPro 13專用固定支架",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-48602346276/01.webp",
+      "src_small": "/assets/img/products/sp-48602346276/01-480.webp",
+      "alt": "GoPro 狗座固定支架｜適用 GoPro 9/10/11/12/13 穩定相機安裝座（主圖）",
+      "width": 984,
+      "height": 984,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mhneckysk64o37"
+    },
+    {
+      "src": "/assets/img/products/sp-48602346276/02.webp",
+      "src_small": "/assets/img/products/sp-48602346276/02-480.webp",
+      "alt": "GoPro 狗座固定支架｜適用 GoPro 9/10/11/12/13 穩定相機安裝座（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-48602346276/03.webp",
+      "src_small": "/assets/img/products/sp-48602346276/03-480.webp",
+      "alt": "GoPro 狗座固定支架｜適用 GoPro 9/10/11/12/13 穩定相機安裝座（細節圖 2）",
+      "width": 746,
+      "height": 746,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mhnej68piccmb7"
+    }
+  ],
   "variants": [
     {
       "name": "B款",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "297213328236"
+      "shopee_variation_id": "297213328236",
+      "image": {
+        "src": "/assets/img/products/sp-48602346276/opt-02-480.webp",
+        "alt": "GoPro 狗座固定支架｜適用 GoPro 9/10/11/12/13 穩定相機安裝座（規格：B款）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mhnej68nk3yd45"
+      }
     },
     {
       "name": "A款",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "297213328231"
+      "shopee_variation_id": "297213328231",
+      "image": {
+        "src": "/assets/img/products/sp-48602346276/opt-01-480.webp",
+        "alt": "GoPro 狗座固定支架｜適用 GoPro 9/10/11/12/13 穩定相機安裝座（規格：A款）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mhnecmvivj0kcc"
+      }
     }
   ],
   "price_twd": null,

@@ -15,56 +15,119 @@
   "short_description": "",
   "description": "#SpeedyBeeBEE35 #Mario5 #3D打印件 #FPV #穿越機 #飛塔保護 #打印件套裝 #穿越機配件 #DIY #航模 #BEE35打印件 #樹脂打印 #SpeedyBeeMario5 #安裝套件 #機架保護 \n\n✅ 原廠設計檔案製作，尺寸精準完美相容\n✅ 支援自組、維修與改裝使用\n✅ 可單件或整套購買\n\n材質：TPU 或 PLA（柔性與硬式可依需求搭配）\n列印品質細膩、尺寸精準，與原機完美相容。\n\n適用機種：SpeedyBee BEE35",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-51050520413/01.webp",
+      "src_small": "/assets/img/products/sp-51050520413/01-480.webp",
+      "alt": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mggajln1na4p60"
+    },
+    {
+      "src": "/assets/img/products/sp-51050520413/02.webp",
+      "src_small": "/assets/img/products/sp-51050520413/02-480.webp",
+      "alt": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    }
+  ],
   "variants": [
     {
       "name": "普通版圖傳安裝",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "109586749184"
+      "shopee_variation_id": "109586749184",
+      "image": {
+        "src": "/assets/img/products/sp-51050520413/opt-05-480.webp",
+        "alt": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件（規格：普通版圖傳安裝）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mggb3atn6fppf2"
+      }
     },
     {
       "name": "尾部915天線固定",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "109586749185"
+      "shopee_variation_id": "109586749185",
+      "image": {
+        "src": "/assets/img/products/sp-51050520413/opt-06-480.webp",
+        "alt": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件（規格：尾部915天線固定）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mggb3cl9vg24cf"
+      }
     },
     {
       "name": "雙SMA多合一尾座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "99251059787"
+      "shopee_variation_id": "99251059787",
+      "image": {
+        "src": "/assets/img/products/sp-51050520413/opt-01-480.webp",
+        "alt": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件（規格：雙SMA多合一尾座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mggb31biuneyd6"
+      }
     },
     {
       "name": "尾部o3單天線護套",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "108768653230"
+      "shopee_variation_id": "108768653230",
+      "image": {
+        "src": "/assets/img/products/sp-51050520413/opt-07-480.webp",
+        "alt": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件（規格：尾部o3單天線護套）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mggb4h4uvnrg2d"
+      }
     },
     {
       "name": "19mm鏡頭減振",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "109586749181"
+      "shopee_variation_id": "109586749181",
+      "image": {
+        "src": "/assets/img/products/sp-51050520413/opt-02-480.webp",
+        "alt": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件（規格：19mm鏡頭減振）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mggb348q95vuc0"
+      }
     },
     {
       "name": "狗座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "109586749182"
+      "shopee_variation_id": "109586749182",
+      "image": {
+        "src": "/assets/img/products/sp-51050520413/opt-03-480.webp",
+        "alt": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件（規格：狗座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mggb36lolj4bab"
+      }
     },
     {
       "name": "單SMA多合一尾座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "109586749183"
+      "shopee_variation_id": "109586749183",
+      "image": {
+        "src": "/assets/img/products/sp-51050520413/opt-04-480.webp",
+        "alt": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件（規格：單SMA多合一尾座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mggb38mqmwi1cd"
+      }
     }
   ],
   "price_twd": null,

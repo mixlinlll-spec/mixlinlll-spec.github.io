@@ -15,7 +15,58 @@
   "short_description": "",
   "description": "#防靜電鑷子 #精密鑷子 #不鏽鋼鑷子 #維修工具 #手機維修 #電子維修 #美甲工具 #DIY工具 #手工模型 \n\n🔧 產品特色\n防靜電設計，有效保護電子元件\n高精密加工，夾持穩固不易滑脫\n採用優質不鏽鋼，耐磨耐壓、堅固耐用\n多款鑷子頭型，滿足不同維修需求\n適用於電子維修、美甲製作、手工DIY\n\n✨ 推薦理由\n✔ 防靜電設計，保護精密零件\n✔ 高精度加工，操作更順手\n✔ 堅固不鏽鋼，耐用不易變形",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-42321636131/01.webp",
+      "src_small": "/assets/img/products/sp-42321636131/01-480.webp",
+      "alt": "GREENER綠林 防靜電精密鑷子 不鏽鋼夾子 電子維修工具 手工DIY 穿越機維修（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf3y3ejvdogac7"
+    },
+    {
+      "src": "/assets/img/products/sp-42321636131/02.webp",
+      "src_small": "/assets/img/products/sp-42321636131/02-480.webp",
+      "alt": "GREENER綠林 防靜電精密鑷子 不鏽鋼夾子 電子維修工具 手工DIY 穿越機維修（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mf3y3ejws8wc69"
+    },
+    {
+      "src": "/assets/img/products/sp-42321636131/03.webp",
+      "src_small": "/assets/img/products/sp-42321636131/03-480.webp",
+      "alt": "GREENER綠林 防靜電精密鑷子 不鏽鋼夾子 電子維修工具 手工DIY 穿越機維修（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mf3y3ek5u4nhc2"
+    },
+    {
+      "src": "/assets/img/products/sp-42321636131/04.webp",
+      "src_small": "/assets/img/products/sp-42321636131/04-480.webp",
+      "alt": "GREENER綠林 防靜電精密鑷子 不鏽鋼夾子 電子維修工具 手工DIY 穿越機維修（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mf3y3ejyxi4uc4"
+    },
+    {
+      "src": "/assets/img/products/sp-42321636131/05.webp",
+      "src_small": "/assets/img/products/sp-42321636131/05-480.webp",
+      "alt": "GREENER綠林 防靜電精密鑷子 不鏽鋼夾子 電子維修工具 手工DIY 穿越機維修（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mf3y3ejvjaq718"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

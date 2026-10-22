@@ -15,7 +15,28 @@
   "short_description": "",
   "description": "#電烙鐵 #除錫海綿 #焊接工具 #木漿棉 #電子維修 #烙鐵清潔 #耐高溫\n\n【產品特色】\n\n✔ 耐高溫設計，長時間使用不易燒損\n\n✔ 高效清潔電烙鐵頭，快速去除氧化物與焊錫殘渣\n\n✔ 木漿海綿材質，吸水性佳，保護烙鐵頭壽命\n\n✔ 小巧方便，適合工作台與維修桌使用\n\n【產品規格】\n\n品名：木漿海綿 / 電烙鐵清潔海綿\n\n材質：木漿棉\n\n用途：清潔烙鐵頭、除錫、電子維修\n\n特性：耐高溫、吸水性佳、使用壽命長\n\n使用方式：使用前將海綿浸水並擰乾，再用於清潔烙鐵頭",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-43222081132/01.webp",
+      "src_small": "/assets/img/products/sp-43222081132/01-480.webp",
+      "alt": "耐高溫 木漿海綿 電烙鐵清潔海綿 除錫專用（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mf6kr00vuln30e"
+    },
+    {
+      "src": "/assets/img/products/sp-43222081132/02.webp",
+      "src_small": "/assets/img/products/sp-43222081132/02-480.webp",
+      "alt": "耐高溫 木漿海綿 電烙鐵清潔海綿 除錫專用（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mf6kr00vgjyged"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "適用與speedybee25的o4 pro數傳支架\n根據3d列印特性優化了受力結構的設計，並盡可能提供了保護o4天空端的能力\n整體安裝方式與官方鋁合金套件沒有太大區別",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-42826099825/01.webp",
+      "src_small": "/assets/img/products/sp-42826099825/01-480.webp",
+      "alt": "Speedybee25 O3改O4PRO 分頭行動套組（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mgmffdx5phxpeb"
+    },
+    {
+      "src": "/assets/img/products/sp-42826099825/02.webp",
+      "src_small": "/assets/img/products/sp-42826099825/02-480.webp",
+      "alt": "Speedybee25 O3改O4PRO 分頭行動套組（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-42826099825/03.webp",
+      "src_small": "/assets/img/products/sp-42826099825/03-480.webp",
+      "alt": "Speedybee25 O3改O4PRO 分頭行動套組（細節圖 2）",
+      "width": 687,
+      "height": 687,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mgmfercjbhfv07"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

@@ -19,91 +19,194 @@
   "short_description": "",
   "description": "#Tinywhoop頂罩\n#微型穿越機上蓋\n#65mmwhoop\n#75mmwhoop\n#80mmwhoop\n#FPV頂罩\n#相機保護架\n#穿越機改裝\n#室內穿越機配件\n#FPV3D列印\n#台灣現貨\n#快速出貨\n\n炸機太多次，頂罩不是裂腳就是鏡頭歪一邊嗎？😆\n這個「Tinywhoop 各類頂罩專區」，專門收錄 65mm／75mm／80mm 微型穿越機常見機型頂罩，上蓋、相機保護架、天線導引一次找齊，讓你隨時換造型也能順便換新殼。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-47654031005/01.webp",
+      "src_small": "/assets/img/products/sp-47654031005/01-480.webp",
+      "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mj12pr7uhwck31"
+    },
+    {
+      "src": "/assets/img/products/sp-47654031005/02.webp",
+      "src_small": "/assets/img/products/sp-47654031005/02-480.webp",
+      "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-47654031005/03.webp",
+      "src_small": "/assets/img/products/sp-47654031005/03-480.webp",
+      "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（細節圖 2）",
+      "width": 843,
+      "height": 843,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mixtkn1qq32ae3"
+    }
+  ],
   "variants": [
     {
       "name": "Air65高角度競速",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "335382027485"
+      "shopee_variation_id": "335382027485",
+      "image": {
+        "src": "/assets/img/products/sp-47654031005/opt-11-480.webp",
+        "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（規格：Air65高角度競速）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-miz6mgzek3cze3"
+      }
     },
     {
       "name": "65/75多角度可調",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "282303126565"
+      "shopee_variation_id": "282303126565",
+      "image": {
+        "src": "/assets/img/products/sp-47654031005/opt-10-480.webp",
+        "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（規格：65/75多角度可調）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mixuxgglvcw03d"
+      }
     },
     {
       "name": "AIR75低角度",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "282303126564"
+      "shopee_variation_id": "282303126564",
+      "image": {
+        "src": "/assets/img/products/sp-47654031005/opt-09-480.webp",
+        "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（規格：AIR75低角度）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mixuvc76603m96"
+      }
     },
     {
       "name": "BETAFPVC03/25度",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "282303126561"
+      "shopee_variation_id": "282303126561",
+      "image": {
+        "src": "/assets/img/products/sp-47654031005/opt-02-480.webp",
+        "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（規格：BETAFPVC03/25度）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mixtolh6e2v5c8"
+      }
     },
     {
       "name": "小丑競速用45度",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "282303126560"
+      "shopee_variation_id": "282303126560",
+      "image": {
+        "src": "/assets/img/products/sp-47654031005/opt-01-480.webp",
+        "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（規格：小丑競速用45度）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mixtkn1qq32ae3"
+      }
     },
     {
       "name": "RaceSpecBeeEye35度",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "282303126562"
+      "shopee_variation_id": "282303126562",
+      "image": {
+        "src": "/assets/img/products/sp-47654031005/opt-03-480.webp",
+        "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（規格：RaceSpecBeeEye35度）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mixtqhh3j8cn64"
+      }
     },
     {
       "name": "Air65/75競速45度",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "282303126566"
+      "shopee_variation_id": "282303126566",
+      "image": {
+        "src": "/assets/img/products/sp-47654031005/opt-04-480.webp",
+        "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（規格：Air65/75競速45度）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mixtytbhz37mf1"
+      }
     },
     {
       "name": "65低角度輕量化",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "325383258159"
+      "shopee_variation_id": "325383258159",
+      "image": {
+        "src": "/assets/img/products/sp-47654031005/opt-12-480.webp",
+        "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（規格：65低角度輕量化）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mizp5r4jq3no33"
+      }
     },
     {
       "name": "Caddxant/C03/35度",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "282303126568"
+      "shopee_variation_id": "282303126568",
+      "image": {
+        "src": "/assets/img/products/sp-47654031005/opt-06-480.webp",
+        "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（規格：Caddxant/C03/35度）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mixu7hce2dq854"
+      }
     },
     {
       "name": "外星頭罩65 75",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "282303126567"
+      "shopee_variation_id": "282303126567",
+      "image": {
+        "src": "/assets/img/products/sp-47654031005/opt-05-480.webp",
+        "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（規格：外星頭罩65 75）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mixu4z3gnojme7"
+      }
     },
     {
       "name": "65/75鏡頭+BB響",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "282303126569"
+      "shopee_variation_id": "282303126569",
+      "image": {
+        "src": "/assets/img/products/sp-47654031005/opt-08-480.webp",
+        "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（規格：65/75鏡頭+BB響）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mixum28a2squ47"
+      }
     },
     {
       "name": "小惡魔O4lite防果凍",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "282303126563"
+      "shopee_variation_id": "282303126563",
+      "image": {
+        "src": "/assets/img/products/sp-47654031005/opt-07-480.webp",
+        "alt": "分區A:Tinywhoop各類頂罩 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop（規格：小惡魔O4lite防果凍）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mixuhhxwvhtx64"
+      }
     }
   ],
   "price_twd": null,

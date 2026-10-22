@@ -48,7 +48,58 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-52105308338/01.webp",
+      "src_small": "/assets/img/products/sp-52105308338/01-480.webp",
+      "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mt3be67cv2th76"
+    },
+    {
+      "src": "/assets/img/products/sp-52105308338/02.webp",
+      "src_small": "/assets/img/products/sp-52105308338/02-480.webp",
+      "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mt3be67cwhdx16"
+    },
+    {
+      "src": "/assets/img/products/sp-52105308338/03.webp",
+      "src_small": "/assets/img/products/sp-52105308338/03-480.webp",
+      "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mt3be67cto9105"
+    },
+    {
+      "src": "/assets/img/products/sp-52105308338/04.webp",
+      "src_small": "/assets/img/products/sp-52105308338/04-480.webp",
+      "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-52105308338/05.webp",
+      "src_small": "/assets/img/products/sp-52105308338/05-480.webp",
+      "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlrysjmqll3470"
+    }
+  ],
   "variants": [
     {
       "name": "單顆電池（3500mah)",

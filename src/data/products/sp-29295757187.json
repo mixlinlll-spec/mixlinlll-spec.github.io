@@ -78,7 +78,68 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-29295757187/01.webp",
+      "src_small": "/assets/img/products/sp-29295757187/01-480.webp",
+      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mt3be69b4vm2a8"
+    },
+    {
+      "src": "/assets/img/products/sp-29295757187/02.webp",
+      "src_small": "/assets/img/products/sp-29295757187/02-480.webp",
+      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mtat1ouq9ds572"
+    },
+    {
+      "src": "/assets/img/products/sp-29295757187/03.webp",
+      "src_small": "/assets/img/products/sp-29295757187/03-480.webp",
+      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mtat1oulm87838"
+    },
+    {
+      "src": "/assets/img/products/sp-29295757187/04.webp",
+      "src_small": "/assets/img/products/sp-29295757187/04-480.webp",
+      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtat1oux4lqa5e"
+    },
+    {
+      "src": "/assets/img/products/sp-29295757187/05.webp",
+      "src_small": "/assets/img/products/sp-29295757187/05-480.webp",
+      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtat1ov0adqd6f"
+    },
+    {
+      "src": "/assets/img/products/sp-29295757187/06.webp",
+      "src_small": "/assets/img/products/sp-29295757187/06-480.webp",
+      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mt3be6ap493eb5"
+    }
+  ],
   "variants": [
     {
       "name": "模擬（平頭哥2，旋風1瓦）",

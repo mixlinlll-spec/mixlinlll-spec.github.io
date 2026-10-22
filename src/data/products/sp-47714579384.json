@@ -81,7 +81,48 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-47714579384/01.webp",
+      "src_small": "/assets/img/products/sp-47714579384/01-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 1103 8000KV HSKRC 2S 3S 牙籤機 TinyWhoop 2吋 微型花飛（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mqyuqn5i4yz042"
+    },
+    {
+      "src": "/assets/img/products/sp-47714579384/02.webp",
+      "src_small": "/assets/img/products/sp-47714579384/02-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 1103 8000KV HSKRC 2S 3S 牙籤機 TinyWhoop 2吋 微型花飛（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mqyuqn5oxds109"
+    },
+    {
+      "src": "/assets/img/products/sp-47714579384/03.webp",
+      "src_small": "/assets/img/products/sp-47714579384/03-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 1103 8000KV HSKRC 2S 3S 牙籤機 TinyWhoop 2吋 微型花飛（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mqyuqn5n8zd13a"
+    },
+    {
+      "src": "/assets/img/products/sp-47714579384/04.webp",
+      "src_small": "/assets/img/products/sp-47714579384/04-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 1103 8000KV HSKRC 2S 3S 牙籤機 TinyWhoop 2吋 微型花飛（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mqyuqn5xs8p32e"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

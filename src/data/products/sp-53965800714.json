@@ -46,7 +46,38 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-53965800714/01.webp",
+      "src_small": "/assets/img/products/sp-53965800714/01-480.webp",
+      "alt": "FPV GPS 模組 M10 18x18mm 內建羅盤 電翼動力 Betaflight 穿越機 定位返航 GPS（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mt0m0i9ndlaa03"
+    },
+    {
+      "src": "/assets/img/products/sp-53965800714/02.webp",
+      "src_small": "/assets/img/products/sp-53965800714/02-480.webp",
+      "alt": "FPV GPS 模組 M10 18x18mm 內建羅盤 電翼動力 Betaflight 穿越機 定位返航 GPS（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mrqmc52xx81zde"
+    },
+    {
+      "src": "/assets/img/products/sp-53965800714/03.webp",
+      "src_small": "/assets/img/products/sp-53965800714/03-480.webp",
+      "alt": "FPV GPS 模組 M10 18x18mm 內建羅盤 電翼動力 Betaflight 穿越機 定位返航 GPS（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mt0d4y1pet558b"
+    }
+  ],
   "variants": [
     {
       "name": "單顆",

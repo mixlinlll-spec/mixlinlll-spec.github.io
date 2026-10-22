@@ -17,7 +17,38 @@
   "short_description": "",
   "description": "#OVONIC #850mAh #100C #4S電池 #FPV電池 #穿越機電池 #XT30 #LiPo #Freestyle #競速 #牙籤機 #花飛 #無人機電池 #航模 #FPVDrone\n\nOVONIC 4S 850mAh 100C 高性能鋰電池🔥\n\n專為 FPV 穿越機打造，兼顧爆發力、飛行效率與穩定輸出，適合花飛、競速及日常飛行使用。\n\n📌產品特色\n・100C 高倍率放電\n・4S 高性能配置\n・XT30 接頭設計\n・輕量化機身設計\n・輸出穩定反應迅速\n・適合 Freestyle 與競速飛行\n\n📌產品規格\n品牌：OVONIC\n容量：850mAh\n配置：4S1P\n電壓：14.8V\n倍率：100C\n接頭：XT30\n尺寸：約59.5×30×29.5mm\n重量：約93g\n\n📌適用機型\n・2.5吋～4吋穿越機\n・牙籤機\n・Freestyle 花飛機\n・競速穿越機\n\n📌產品優勢\n・高爆發輸出\n・油門反應靈敏\n・續航與性能兼顧\n・穩定巡航表現優異\n\n📌包裝內容\n・OVONIC 4S 850mAh 120C 電池 ×1\n\n⚠️注意事項\n・請使用平衡充電器充電\n・請勿過充、過放或短路\n・飛行後請冷卻再充電\n・長期存放請保持存儲電壓",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-54211579578/01.webp",
+      "src_small": "/assets/img/products/sp-54211579578/01-480.webp",
+      "alt": "OVONIC 4S 850mAh 100C XT30 穿越機電池 FPV鋰電池 花飛 競速 無人機電池 LiPo（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mp0kndu2tfya76"
+    },
+    {
+      "src": "/assets/img/products/sp-54211579578/02.webp",
+      "src_small": "/assets/img/products/sp-54211579578/02-480.webp",
+      "alt": "OVONIC 4S 850mAh 100C XT30 穿越機電池 FPV鋰電池 花飛 競速 無人機電池 LiPo（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-moxealcc1c7g74"
+    },
+    {
+      "src": "/assets/img/products/sp-54211579578/03.webp",
+      "src_small": "/assets/img/products/sp-54211579578/03-480.webp",
+      "alt": "OVONIC 4S 850mAh 100C XT30 穿越機電池 FPV鋰電池 花飛 競速 無人機電池 LiPo（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-moxeal6k5c0bef"
+    }
+  ],
   "variants": [
     {
       "name": "850mah/120C",

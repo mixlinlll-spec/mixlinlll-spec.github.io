@@ -15,7 +15,48 @@
   "short_description": "",
   "description": "#FPV #穿越機 #天線 #5G天線 #5.8G天線 #UFL天線 #IPEX天線 #圖傳天線 #ELRS天線 #接收機天線 #無人機配件 #航模配件 #FPV改裝 #全向天線\n\n🔥 超小型內置天線｜穿越機必備備品\n🔥 輕量設計｜不影響飛行重心\n\n📌產品特色\n・支援5G / 5.8G頻段｜圖傳數傳皆可用\n・全向天線｜穩定接收訊號\n・超小尺寸約4cm｜適合內置安裝\n・輕量設計｜不影響飛行性能\n・銅管結構｜訊號穩定度提升\n\n📌適用設備\n・FPV穿越機\n・ELRS / Crossfire（天線改裝）\n・WiFi / 圖傳模組\n\n📌規格資訊\n頻率：5G / 5.8G\n長度：約4cm\n接口：IPEX / UFL\n類型：內置全向天線\n\n📌安裝建議\n・避免貼近碳板（金屬會影響訊號\n・建議外露或用TPU固定位置\n・避免折損內部銅芯\n\n⚠️注意事項\n・屬耗材商品，建議備用\n・天線損壞會導致失控或圖傳異常",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-46907911686/01.webp",
+      "src_small": "/assets/img/products/sp-46907911686/01-480.webp",
+      "alt": "FPV 5.8G天線 5G銅管天線 內置全向天線 無人機圖傳接收發射 天線 IPEX UFL 超小型4cm（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mme1g3ir632a93"
+    },
+    {
+      "src": "/assets/img/products/sp-46907911686/02.webp",
+      "src_small": "/assets/img/products/sp-46907911686/02-480.webp",
+      "alt": "FPV 5.8G天線 5G銅管天線 內置全向天線 無人機圖傳接收發射 天線 IPEX UFL 超小型4cm（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mme1g3j07ytff7"
+    },
+    {
+      "src": "/assets/img/products/sp-46907911686/03.webp",
+      "src_small": "/assets/img/products/sp-46907911686/03-480.webp",
+      "alt": "FPV 5.8G天線 5G銅管天線 內置全向天線 無人機圖傳接收發射 天線 IPEX UFL 超小型4cm（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mme1g3jb82yqf5"
+    },
+    {
+      "src": "/assets/img/products/sp-46907911686/04.webp",
+      "src_small": "/assets/img/products/sp-46907911686/04-480.webp",
+      "alt": "FPV 5.8G天線 5G銅管天線 內置全向天線 無人機圖傳接收發射 天線 IPEX UFL 超小型4cm（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mme1g3jiabrj79"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

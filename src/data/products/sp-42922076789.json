@@ -15,7 +15,48 @@
   "short_description": "",
   "description": "#焊接夾具 #固定器 #電子維修 #焊接工具 #電路板維修 #DIY神器 #接線輔助\n\n【產品特色】\n\n✔ 穩固固定：輕鬆夾持電線、電路板，解放雙手\n\n✔ 精密操作：方便焊接、維修，提高工作效率\n\n✔ 多功能應用：適用於電路維修、接線、電子DIY\n\n✔ 小巧實用：操作簡單，隨身攜帶，工作台必備\n\n【產品規格】\n\n品名：線路焊接夾具 / 固定器\n\n材質：工程塑料 + 金屬\n\n用途：電線固定、電路板維修、焊接輔助\n\n適合對象：電子工程師、手機維修、DIY玩家",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-42922076789/01.webp",
+      "src_small": "/assets/img/products/sp-42922076789/01-480.webp",
+      "alt": "電路焊接夾具 固線固定器 焊接台維修夾子 電子DIY工具（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mf6kxwldih3f13"
+    },
+    {
+      "src": "/assets/img/products/sp-42922076789/02.webp",
+      "src_small": "/assets/img/products/sp-42922076789/02-480.webp",
+      "alt": "電路焊接夾具 固線固定器 焊接台維修夾子 電子DIY工具（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mf6kxwl7b4ss98"
+    },
+    {
+      "src": "/assets/img/products/sp-42922076789/03.webp",
+      "src_small": "/assets/img/products/sp-42922076789/03-480.webp",
+      "alt": "電路焊接夾具 固線固定器 焊接台維修夾子 電子DIY工具（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mf6kxwl9c6bzc0"
+    },
+    {
+      "src": "/assets/img/products/sp-42922076789/04.webp",
+      "src_small": "/assets/img/products/sp-42922076789/04-480.webp",
+      "alt": "電路焊接夾具 固線固定器 焊接台維修夾子 電子DIY工具（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mf6kxwldjvnv49"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

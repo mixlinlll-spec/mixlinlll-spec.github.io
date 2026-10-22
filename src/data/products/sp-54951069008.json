@@ -15,21 +15,84 @@
   "short_description": "",
   "description": "#RadiomasterPocket #POCKET握把 #遙控器改裝 #握柄套 #防滑握把 #TPU防滑 #3D列印配件 #FPV遙控器 #RC配件 #Pocket遙控器 #穿越機遙控器 #操控升級 #舒適手感\n\n🎮 商品特色\n這款 Radiomaster POCKET 專用握把套裝，專為提升操控舒適度而設計。\n採用 TPU軟質防滑材質 製作，貼合掌型、止汗防滑，長時間操控依然穩定順手。\n3D列印精準成型，安裝簡單不破壞外觀，是兼具實用與質感的升級改裝件。\n\n⚙️ 商品規格\n材質：TPU 高彈性止滑膠料\n製作方式：3D列印\n功能：止滑、防汗、提升手感\n顏色：（可客製）\n\n適用機種：Radiomaster POCKET\n\n💡 產品亮點\n人體工學設計，握感自然舒\nTPU柔軟材質，有效減少長時間操作疲勞\n防滑止汗處理，穩定操控不打滑\n完美貼合外殼，不影響按鍵與結構\n多色可選，外觀升級同時保護機體",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-54951069008/01.webp",
+      "src_small": "/assets/img/products/sp-54951069008/01-480.webp",
+      "alt": "Radiomaster POCKET 專用 舒適握把套裝｜防滑止汗軟質握柄套 TPU升級手感版｜遙控器改裝配件（主圖）",
+      "width": 581,
+      "height": 581,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mj91h7vlk0eb39"
+    },
+    {
+      "src": "/assets/img/products/sp-54951069008/02.webp",
+      "src_small": "/assets/img/products/sp-54951069008/02-480.webp",
+      "alt": "Radiomaster POCKET 專用 舒適握把套裝｜防滑止汗軟質握柄套 TPU升級手感版｜遙控器改裝配件（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-54951069008/03.webp",
+      "src_small": "/assets/img/products/sp-54951069008/03-480.webp",
+      "alt": "Radiomaster POCKET 專用 舒適握把套裝｜防滑止汗軟質握柄套 TPU升級手感版｜遙控器改裝配件（細節圖 2）",
+      "width": 502,
+      "height": 502,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mj91hd82yholb7"
+    },
+    {
+      "src": "/assets/img/products/sp-54951069008/04.webp",
+      "src_small": "/assets/img/products/sp-54951069008/04-480.webp",
+      "alt": "Radiomaster POCKET 專用 舒適握把套裝｜防滑止汗軟質握柄套 TPU升級手感版｜遙控器改裝配件（細節圖 3）",
+      "width": 843,
+      "height": 843,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mguysy0sfv9o4c"
+    },
+    {
+      "src": "/assets/img/products/sp-54951069008/05.webp",
+      "src_small": "/assets/img/products/sp-54951069008/05-480.webp",
+      "alt": "Radiomaster POCKET 專用 舒適握把套裝｜防滑止汗軟質握柄套 TPU升級手感版｜遙控器改裝配件（細節圖 4）",
+      "width": 799,
+      "height": 799,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mj91j57xj8qrae"
+    }
+  ],
   "variants": [
     {
       "name": "A款",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "335096875983"
+      "shopee_variation_id": "335096875983",
+      "image": {
+        "src": "/assets/img/products/sp-54951069008/opt-01-480.webp",
+        "alt": "Radiomaster POCKET 專用 舒適握把套裝｜防滑止汗軟質握柄套 TPU升級手感版｜遙控器改裝配件（規格：A款）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mj91ivxdtudj93"
+      }
     },
     {
       "name": "B款",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "375409112048"
+      "shopee_variation_id": "375409112048",
+      "image": {
+        "src": "/assets/img/products/sp-54951069008/opt-02-480.webp",
+        "alt": "Radiomaster POCKET 專用 舒適握把套裝｜防滑止汗軟質握柄套 TPU升級手感版｜遙控器改裝配件（規格：B款）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mj91h7vlk0eb39"
+      }
     }
   ],
   "price_twd": null,

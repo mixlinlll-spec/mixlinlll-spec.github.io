@@ -17,7 +17,58 @@
   "short_description": "",
   "description": "•\t#BETAFPV充電器\n•\t#6口1S充電\n•\t#PH20BT20\n•\t#穿越機電池\n•\t#迷你充電站\n•\t#FPV無人機配件\n•\t#1S鋰電池充\n•\t#場外充電\n•\t#台灣現貨\n•\t#快速出貨",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-48807348484/01.webp",
+      "src_small": "/assets/img/products/sp-48807348484/01-480.webp",
+      "alt": "BETAFPV 6口充電器 1S穿越機迷你無人機充電站 PH2.0 BT2.0雙接口 300mA安全充 鋰電池一充六顆（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mlxrntultk3lfc"
+    },
+    {
+      "src": "/assets/img/products/sp-48807348484/02.webp",
+      "src_small": "/assets/img/products/sp-48807348484/02-480.webp",
+      "alt": "BETAFPV 6口充電器 1S穿越機迷你無人機充電站 PH2.0 BT2.0雙接口 300mA安全充 鋰電池一充六顆（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mlxrntungjyb47"
+    },
+    {
+      "src": "/assets/img/products/sp-48807348484/03.webp",
+      "src_small": "/assets/img/products/sp-48807348484/03-480.webp",
+      "alt": "BETAFPV 6口充電器 1S穿越機迷你無人機充電站 PH2.0 BT2.0雙接口 300mA安全充 鋰電池一充六顆（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mlxrntusym1039"
+    },
+    {
+      "src": "/assets/img/products/sp-48807348484/04.webp",
+      "src_small": "/assets/img/products/sp-48807348484/04-480.webp",
+      "alt": "BETAFPV 6口充電器 1S穿越機迷你無人機充電站 PH2.0 BT2.0雙接口 300mA安全充 鋰電池一充六顆（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlxrntuo78r37f"
+    },
+    {
+      "src": "/assets/img/products/sp-48807348484/05.webp",
+      "src_small": "/assets/img/products/sp-48807348484/05-480.webp",
+      "alt": "BETAFPV 6口充電器 1S穿越機迷你無人機充電站 PH2.0 BT2.0雙接口 300mA安全充 鋰電池一充六顆（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820le-ms9yzc56yhoka3"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

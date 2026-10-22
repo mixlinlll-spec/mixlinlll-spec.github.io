@@ -15,28 +15,117 @@
   "short_description": "",
   "description": "#gopro #goprohero9 #goprohero10 #goprohero11 #goprohero12 #flexmount #運動相機配件 #防摔保護套 #gopro配件\n\nGoPro HERO 9/10/11/12 專用保護套，為戶外拍攝設計的輕量耐用防護外殼。提供更佳的抗摔性與固定性，讓你的相機在高速運動、飛行、極限運動中依然安全穩固。\n\n產品特色\n適用 GoPro HERO 9 / 10 / 11 / 12\nTPU材質有效抗衝擊 保護相機\n適合穿越機、腳踏車、機車、登山等各類場景使用",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-48902242095/01.webp",
+      "src_small": "/assets/img/products/sp-48902242095/01-480.webp",
+      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（主圖）",
+      "width": 894,
+      "height": 894,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mhkl6uiydn28e1"
+    },
+    {
+      "src": "/assets/img/products/sp-48902242095/02.webp",
+      "src_small": "/assets/img/products/sp-48902242095/02-480.webp",
+      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-48902242095/03.webp",
+      "src_small": "/assets/img/products/sp-48902242095/03-480.webp",
+      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（細節圖 2）",
+      "width": 685,
+      "height": 685,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mhkl6uiyf1mo63"
+    },
+    {
+      "src": "/assets/img/products/sp-48902242095/04.webp",
+      "src_small": "/assets/img/products/sp-48902242095/04-480.webp",
+      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（細節圖 3）",
+      "width": 944,
+      "height": 944,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mhkl5b77xyip8b"
+    },
+    {
+      "src": "/assets/img/products/sp-48902242095/05.webp",
+      "src_small": "/assets/img/products/sp-48902242095/05-480.webp",
+      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（細節圖 4）",
+      "width": 757,
+      "height": 757,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhkl5b6q88ozc3"
+    },
+    {
+      "src": "/assets/img/products/sp-48902242095/06.webp",
+      "src_small": "/assets/img/products/sp-48902242095/06-480.webp",
+      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（細節圖 5）",
+      "width": 444,
+      "height": 444,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhkl3w7wlyx4b1"
+    },
+    {
+      "src": "/assets/img/products/sp-48902242095/07.webp",
+      "src_small": "/assets/img/products/sp-48902242095/07-480.webp",
+      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（細節圖 6）",
+      "width": 885,
+      "height": 885,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mhkl3uil7x1iaa"
+    }
+  ],
   "variants": [
     {
       "name": "C款",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "287207914343"
+      "shopee_variation_id": "287207914343",
+      "image": {
+        "src": "/assets/img/products/sp-48902242095/opt-03-480.webp",
+        "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（規格：C款）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mhkl3uil7x1iaa"
+      }
     },
     {
       "name": "A款",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "287207914341"
+      "shopee_variation_id": "287207914341",
+      "image": {
+        "src": "/assets/img/products/sp-48902242095/opt-01-480.webp",
+        "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（規格：A款）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mhkl6uiyf1mo63"
+      }
     },
     {
       "name": "B款",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "287207914342"
+      "shopee_variation_id": "287207914342",
+      "image": {
+        "src": "/assets/img/products/sp-48902242095/opt-02-480.webp",
+        "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（規格：B款）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhkl5b6q88ozc3"
+      }
     }
   ],
   "price_twd": null,

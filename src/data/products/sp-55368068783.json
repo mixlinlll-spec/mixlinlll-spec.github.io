@@ -17,7 +17,48 @@
   "short_description": "",
   "description": "【BETAFPV LAVA II 1S 鋰電池】",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-55368068783/01.webp",
+      "src_small": "/assets/img/products/sp-55368068783/01-480.webp",
+      "alt": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mtbocxdqsgec25"
+    },
+    {
+      "src": "/assets/img/products/sp-55368068783/02.webp",
+      "src_small": "/assets/img/products/sp-55368068783/02-480.webp",
+      "alt": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mtbocxdqr1tw37"
+    },
+    {
+      "src": "/assets/img/products/sp-55368068783/03.webp",
+      "src_small": "/assets/img/products/sp-55368068783/03-480.webp",
+      "alt": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtbocxdqo8p0ce"
+    },
+    {
+      "src": "/assets/img/products/sp-55368068783/04.webp",
+      "src_small": "/assets/img/products/sp-55368068783/04-480.webp",
+      "alt": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtbocxdqpn9gf4"
+    }
+  ],
   "variants": [
     {
       "name": "580mah/BT2.0",

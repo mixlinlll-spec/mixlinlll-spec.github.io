@@ -40,7 +40,58 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-54765823185/01.webp",
+      "src_small": "/assets/img/products/sp-54765823185/01-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mrrgrei2kj5sd8"
+    },
+    {
+      "src": "/assets/img/products/sp-54765823185/02.webp",
+      "src_small": "/assets/img/products/sp-54765823185/02-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrrgrei2lxq89e"
+    },
+    {
+      "src": "/assets/img/products/sp-54765823185/03.webp",
+      "src_small": "/assets/img/products/sp-54765823185/03-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mrrgrei2ncao6e"
+    },
+    {
+      "src": "/assets/img/products/sp-54765823185/04.webp",
+      "src_small": "/assets/img/products/sp-54765823185/04-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrrgrei2oqv4d1"
+    },
+    {
+      "src": "/assets/img/products/sp-54765823185/05.webp",
+      "src_small": "/assets/img/products/sp-54765823185/05-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mrrgrei2q5fkbb"
+    }
+  ],
   "variants": [
     {
       "name": "單顆",

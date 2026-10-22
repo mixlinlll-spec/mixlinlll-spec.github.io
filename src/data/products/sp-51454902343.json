@@ -56,7 +56,58 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-51454902343/01.webp",
+      "src_small": "/assets/img/products/sp-51454902343/01-480.webp",
+      "alt": "Foxeer Razer Nano 類比FPV鏡頭 1200TVL 1/3 CMOS 低延遲 4:3/16:9可選（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mjo2bym6lh5393"
+    },
+    {
+      "src": "/assets/img/products/sp-51454902343/02.webp",
+      "src_small": "/assets/img/products/sp-51454902343/02-480.webp",
+      "alt": "Foxeer Razer Nano 類比FPV鏡頭 1200TVL 1/3 CMOS 低延遲 4:3/16:9可選（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mjo2bym70xdtd3"
+    },
+    {
+      "src": "/assets/img/products/sp-51454902343/03.webp",
+      "src_small": "/assets/img/products/sp-51454902343/03-480.webp",
+      "alt": "Foxeer Razer Nano 類比FPV鏡頭 1200TVL 1/3 CMOS 低延遲 4:3/16:9可選（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mjo2bymfexhg5d"
+    },
+    {
+      "src": "/assets/img/products/sp-51454902343/04.webp",
+      "src_small": "/assets/img/products/sp-51454902343/04-480.webp",
+      "alt": "Foxeer Razer Nano 類比FPV鏡頭 1200TVL 1/3 CMOS 低延遲 4:3/16:9可選（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mjo2bymkixvm1a"
+    },
+    {
+      "src": "/assets/img/products/sp-51454902343/05.webp",
+      "src_small": "/assets/img/products/sp-51454902343/05-480.webp",
+      "alt": "Foxeer Razer Nano 類比FPV鏡頭 1200TVL 1/3 CMOS 低延遲 4:3/16:9可選（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mjo2bym5kydc13"
+    }
+  ],
   "variants": [
     {
       "name": "4:3 版本",

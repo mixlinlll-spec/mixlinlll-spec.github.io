@@ -21,7 +21,28 @@
       "source": "蝦皮商品標題"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-42379335827/01.webp",
+      "src_small": "/assets/img/products/sp-42379335827/01-480.webp",
+      "alt": "DJI O4 Air Unit Pro 同軸連接線 FPV穿越機大疆攝像頭圖傳線 柔韌長距（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlyelsxvofm763"
+    },
+    {
+      "src": "/assets/img/products/sp-42379335827/02.webp",
+      "src_small": "/assets/img/products/sp-42379335827/02-480.webp",
+      "alt": "DJI O4 Air Unit Pro 同軸連接線 FPV穿越機大疆攝像頭圖傳線 柔韌長距（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mlyelsy5pfkf61"
+    }
+  ],
   "variants": [
     {
       "name": "7公分直頭+彎頭",

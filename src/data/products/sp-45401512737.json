@@ -18,7 +18,48 @@
   "short_description": "",
   "description": "(‼️3D打印產品為客製化商品，不接受色差/不想要了/無故不取貨等造成退貨的損失)\n\n你的 65mm 微型穿越機是不是常常塞口袋、丟包裡、壓壞螺旋槳？這款 Air65 / 65mm 專用收納盒，就是替你的迷你機打造的「行動防護硬殼屋」。\n\n‼️不須任何安裝工具，買回去即可使用\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅\n\n適用機型\nHappymodel / BetaFPV / Flywoo 65mm\n其他 65mm75mm wheelbase 微型穿越機",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-45401512737/01.webp",
+      "src_small": "/assets/img/products/sp-45401512737/01-480.webp",
+      "alt": "微型穿越機收納盒 65mm 75mm 通用 Air65 Air75 無人機硬殼保護盒 FPV配件 betafpv air（主圖）",
+      "width": 999,
+      "height": 999,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mh4xgqiutgr080"
+    },
+    {
+      "src": "/assets/img/products/sp-45401512737/02.webp",
+      "src_small": "/assets/img/products/sp-45401512737/02-480.webp",
+      "alt": "微型穿越機收納盒 65mm 75mm 通用 Air65 Air75 無人機硬殼保護盒 FPV配件 betafpv air（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-45401512737/03.webp",
+      "src_small": "/assets/img/products/sp-45401512737/03-480.webp",
+      "alt": "微型穿越機收納盒 65mm 75mm 通用 Air65 Air75 無人機硬殼保護盒 FPV配件 betafpv air（細節圖 2）",
+      "width": 767,
+      "height": 767,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mh4xgqityk9b2c"
+    },
+    {
+      "src": "/assets/img/products/sp-45401512737/04.webp",
+      "src_small": "/assets/img/products/sp-45401512737/04-480.webp",
+      "alt": "微型穿越機收納盒 65mm 75mm 通用 Air65 Air75 無人機硬殼保護盒 FPV配件 betafpv air（細節圖 3）",
+      "width": 757,
+      "height": 757,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mh4xh4muomxb8d"
+    }
+  ],
   "variants": [
     {
       "name": "65用",

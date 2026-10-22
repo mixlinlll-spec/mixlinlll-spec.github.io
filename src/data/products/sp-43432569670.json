@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "#DAKE #DAKEFPV #F722 #55AESC #飛塔 #飛控 #ESC #Betaflight #INAV #FPV #穿越機 #Freestyle #LongRange #DJIO4 #Walksnail #HDZero #電翼動力\nDAKE F722 55A 飛塔採用 STM32F722 高性能處理器，搭配 55A 四合一 32bit ESC，支援 Betaflight / INAV，內建 16MB Blackbox、SPL06 氣壓計、AT7456E OSD，可直接搭配 DJI、Walksnail、HDZero 或模擬圖傳使用，適合 Freestyle、競速及 Long Range 穿越機。\n【產品特色】\n✔ STM32F722 RET6 高速處理器\n✔ 55A 四合一 BLHeli_32 ESC\n✔ 支援 3-6S LiPo\n✔ 16MB Blackbox 黑盒子\n✔ SPL06 氣壓計\n✔ AT7456E OSD\n✔ Type-C USB\n✔ 支援 Betaflight／INAV\n✔ 多組 UART 擴充\n✔ 支援 DJI／Walksnail／HDZero／模擬圖傳\n【飛控規格】\n主控：STM32F722RET6\n韌體：Betaflight / INAV\nOSD：AT7456E\n氣壓計：SPL06\n黑盒子：16MB\nUSB：Type-C\nLED：4組\n蜂鳴器：支援\nUART：5組\nBEC輸出：\n3.3V / 1A\n5V / 2.5A\n12V / 3A\n尺寸：36×36mm\n重量：約8g\n安裝孔位：30.5×30.5mm\n【電調規格】\n55A 四合一 ESC\n32bit ESC\n支援 3-6S LiPo\n高速響應、輸出穩定\n適合 Freestyle／競速／長航配置\n【包裝內容】\nF722 飛控 ×1\n55A 四合一電調 ×1\nXT60電源線\n連接排線\n電容\n減震柱\n固定螺絲\n相關配件\n※ 實際內容依原廠包裝為準。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-43432569670/01.webp",
+      "src_small": "/assets/img/products/sp-43432569670/01-480.webp",
+      "alt": "DAKE 大科 F722 55A 四合一飛塔｜STM32F722｜Betaflight｜FPV 穿越機（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mqn3pr6usmq3ed"
+    },
+    {
+      "src": "/assets/img/products/sp-43432569670/02.webp",
+      "src_small": "/assets/img/products/sp-43432569670/02-480.webp",
+      "alt": "DAKE 大科 F722 55A 四合一飛塔｜STM32F722｜Betaflight｜FPV 穿越機（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mqn3pr6t8g0d2f"
+    },
+    {
+      "src": "/assets/img/products/sp-43432569670/03.webp",
+      "src_small": "/assets/img/products/sp-43432569670/03-480.webp",
+      "alt": "DAKE 大科 F722 55A 四合一飛塔｜STM32F722｜Betaflight｜FPV 穿越機（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mqn3rewbxp1ncc"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

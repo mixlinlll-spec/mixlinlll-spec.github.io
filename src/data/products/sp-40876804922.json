@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "#meteor65pro #收納盒 #65pro #穿越機配件 #微型無人機 #電池收納 #300mah #fpv配件 #betafpv #whoop盒\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n專為 Meteor65 Pro 打造的全方位收納盒！\n可同時容納 8 顆 300mAh 電池 + 1 台充電器 + 機體本體，外拍、日常飛行一盒全搞定。\n\n產品特色\n專用尺寸，剛好容納 Meteor65 Pro 主機\n可放置 最多 8 顆 300mAh 1S 電池\n預留充電器空間，外出補電更方便\n盒體堅固不易壓損，安全攜帶無負擔\n內部格局整齊、好分類、不亂晃\n讓你的 65Pro 裝備收好收滿，怎麼飛怎麼方便！",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-40876804922/01.webp",
+      "src_small": "/assets/img/products/sp-40876804922/01-480.webp",
+      "alt": "BetaFPV Meteor65 Pro 專用收納盒｜可收納 8 顆 300mAh 電池＋充電器｜微型穿越機便攜盒（主圖）",
+      "width": 905,
+      "height": 905,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mhk2rfubo4jkf8"
+    },
+    {
+      "src": "/assets/img/products/sp-40876804922/02.webp",
+      "src_small": "/assets/img/products/sp-40876804922/02-480.webp",
+      "alt": "BetaFPV Meteor65 Pro 專用收納盒｜可收納 8 顆 300mAh 電池＋充電器｜微型穿越機便攜盒（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-40876804922/03.webp",
+      "src_small": "/assets/img/products/sp-40876804922/03-480.webp",
+      "alt": "BetaFPV Meteor65 Pro 專用收納盒｜可收納 8 顆 300mAh 電池＋充電器｜微型穿越機便攜盒（細節圖 2）",
+      "width": 906,
+      "height": 906,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mhk2rfuh8zra76"
+    }
+  ],
   "variants": [
     {
       "name": "冰淇淋",

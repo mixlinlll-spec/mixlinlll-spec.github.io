@@ -55,7 +55,38 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-42781322918/01.webp",
+      "src_small": "/assets/img/products/sp-42781322918/01-480.webp",
+      "alt": "SIRIUS 天狼星 2306.5 1860KV 無刷電機 5吋穿越機電機 FPV Freestyle 競速 花飛 6S（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-movwobh0vjeqe3"
+    },
+    {
+      "src": "/assets/img/products/sp-42781322918/02.webp",
+      "src_small": "/assets/img/products/sp-42781322918/02-480.webp",
+      "alt": "SIRIUS 天狼星 2306.5 1860KV 無刷電機 5吋穿越機電機 FPV Freestyle 競速 花飛 6S（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-movwobf0owsh2a"
+    },
+    {
+      "src": "/assets/img/products/sp-42781322918/03.webp",
+      "src_small": "/assets/img/products/sp-42781322918/03-480.webp",
+      "alt": "SIRIUS 天狼星 2306.5 1860KV 無刷電機 5吋穿越機電機 FPV Freestyle 競速 花飛 6S（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-movwobep7xu3e2"
+    }
+  ],
   "variants": [
     {
       "name": "紫色",

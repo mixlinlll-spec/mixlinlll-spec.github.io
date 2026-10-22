@@ -17,7 +17,58 @@
   "short_description": "",
   "description": "FPV穿越機, GEPRC, T-Cube18, 新手穿越機, 航拍無人機, 2吋FPV, AIO飛控, 5.8G圖傳, FPV入門, Cinewhoop, 無人機, FPV Drone\n\n【🔥新手也能輕鬆飛的FPV入門機】\n 不會調機？不會組裝？這台直接幫你搞定\n 👉 開箱即可飛｜穩定｜好上手\n【✨產品特色】\n ✔ 輕量設計 👉 操控簡單穩定，新手友善\n ✔ AIO飛控整合 👉 安裝簡單，降低故障率\n ✔ 內建接收機 👉 減少配件成本與接線複雜度\n ✔ CNC鏡頭座 👉 抗震強化，畫面更穩\n ✔ 5.8G圖傳 👉 傳輸穩定，適合日常航拍\n ✔ 客製天線 👉 提升訊號穩定度\n【⚙️商品規格】\n 品牌：GEPRC｜型號：T-Cube18｜尺寸：2吋｜飛控：AIO飛控｜圖傳：5.8G｜接收機：內建｜適用：FPV入門 / 航拍\n【📦包裝內容】\n 穿越機×1（依版本配置）\n【⚠️注意事項】\n 需搭配遙控器與眼鏡使用｜建議初學者於空曠環境練習｜避免錯誤電池使用\n【🚀適合族群】\n 新手入門｜日常航拍｜輕度玩家｜練習飛行",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-44957562248/01.webp",
+      "src_small": "/assets/img/products/sp-44957562248/01-480.webp",
+      "alt": "GEPRC T-Cube18 2吋穿越機｜新手入門FPV｜AIO飛控｜內建接收｜5.8G圖傳｜輕量FPV（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/sg-11134201-82610-mm5dt3a0h2q7ec"
+    },
+    {
+      "src": "/assets/img/products/sp-44957562248/02.webp",
+      "src_small": "/assets/img/products/sp-44957562248/02-480.webp",
+      "alt": "GEPRC T-Cube18 2吋穿越機｜新手入門FPV｜AIO飛控｜內建接收｜5.8G圖傳｜輕量FPV（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/sg-11134201-82620-mm5dt3wgnvns07"
+    },
+    {
+      "src": "/assets/img/products/sp-44957562248/03.webp",
+      "src_small": "/assets/img/products/sp-44957562248/03-480.webp",
+      "alt": "GEPRC T-Cube18 2吋穿越機｜新手入門FPV｜AIO飛控｜內建接收｜5.8G圖傳｜輕量FPV（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/sg-11134201-82613-mm5dt4enwg04ee"
+    },
+    {
+      "src": "/assets/img/products/sp-44957562248/04.webp",
+      "src_small": "/assets/img/products/sp-44957562248/04-480.webp",
+      "alt": "GEPRC T-Cube18 2吋穿越機｜新手入門FPV｜AIO飛控｜內建接收｜5.8G圖傳｜輕量FPV（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/sg-11134201-82600-mm5dt4y2sqo3d5"
+    },
+    {
+      "src": "/assets/img/products/sp-44957562248/05.webp",
+      "src_small": "/assets/img/products/sp-44957562248/05-480.webp",
+      "alt": "GEPRC T-Cube18 2吋穿越機｜新手入門FPV｜AIO飛控｜內建接收｜5.8G圖傳｜輕量FPV（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/sg-11134201-82609-mm5dt5j37ll139"
+    }
+  ],
   "variants": [
     {
       "name": "HDZERO版本 內置ELRS",

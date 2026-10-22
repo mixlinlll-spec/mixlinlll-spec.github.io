@@ -15,7 +15,88 @@
   "short_description": "",
   "description": "HelloRadio V15 採用高效能 STM32 H7 主控，預載 EdgeTX 系統，搭載 ExpressLRS Gemini 雙頻 2.4GHz + 900MHz 技術，提供更穩定的控制鏈路、更低延遲及更遠的傳輸距離。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-56065791023/01.webp",
+      "src_small": "/assets/img/products/sp-56065791023/01-480.webp",
+      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mrqmc52n44qv61"
+    },
+    {
+      "src": "/assets/img/products/sp-56065791023/02.webp",
+      "src_small": "/assets/img/products/sp-56065791023/02-480.webp",
+      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52n5jbb5c"
+    },
+    {
+      "src": "/assets/img/products/sp-56065791023/03.webp",
+      "src_small": "/assets/img/products/sp-56065791023/03-480.webp",
+      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mrqmc52mzx1j2e"
+    },
+    {
+      "src": "/assets/img/products/sp-56065791023/04.webp",
+      "src_small": "/assets/img/products/sp-56065791023/04-480.webp",
+      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mrqmc52n1blz19"
+    },
+    {
+      "src": "/assets/img/products/sp-56065791023/05.webp",
+      "src_small": "/assets/img/products/sp-56065791023/05-480.webp",
+      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52n2q6f79"
+    },
+    {
+      "src": "/assets/img/products/sp-56065791023/06.webp",
+      "src_small": "/assets/img/products/sp-56065791023/06-480.webp",
+      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mrqmc52xkkxzb2"
+    },
+    {
+      "src": "/assets/img/products/sp-56065791023/07.webp",
+      "src_small": "/assets/img/products/sp-56065791023/07-480.webp",
+      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 6）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mrqmc52xlzifac"
+    },
+    {
+      "src": "/assets/img/products/sp-56065791023/08.webp",
+      "src_small": "/assets/img/products/sp-56065791023/08-480.webp",
+      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 7）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mrqmc52xne2v0c"
+    }
+  ],
   "variants": [
     {
       "name": "MAX茶紅",

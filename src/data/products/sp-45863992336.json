@@ -17,7 +17,38 @@
   "short_description": "",
   "description": "#FPV #穿越機 #5吋槳 #51377 #R51377 #三葉槳 #螺旋槳 #RUIYI #芮翼 #Freestyle #花飛 #競速機 #FPV配件 #無人機 #電翼動力\n\nRUIYI 芮翼 R51377 三葉槳專為5吋 FPV 穿越機設計，3吋螺距搭配高韌性PC材質，提供優異抓地力、快速響應及穩定輸出，適合 Freestyle、競速及日常花飛玩家使用。\n【產品特色】\n✔ 5吋三葉設計，操控靈敏\n✔ 3吋螺距，兼顧爆發力與效率\n✔ 高韌性PC材質，耐撞耐用\n✔ 5mm中心孔，適用主流5吋馬達\n✔ 適合 Freestyle、競速、花飛\n✔ 提供多款透明配色可選\n【產品規格】\n品牌：RUIYI 芮翼\n型號：R51377\n尺寸：5吋\n螺距：3 inch\n葉片數：3葉\n材質：PC\n重量：4.55g／支\n中心孔：5mm\n中心厚度：5.1mm\n槳盤直徑：129.2mm\n中心圓直徑：12.1mm\n【適用機型】\n5吋 Freestyle 穿越機\n5吋競速機\n5吋花飛機\n適用5mm槳座無刷馬達\n※ 購買前請確認槳座規格及旋轉方向。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-45863992336/01.webp",
+      "src_small": "/assets/img/products/sp-45863992336/01-480.webp",
+      "alt": "FPV 穿越機 螺旋槳 5吋 R51377 三葉槳 51377 5mm 中心孔 RUIYI 芮翼 Freestyle花飛（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mqn4ashi6f4129"
+    },
+    {
+      "src": "/assets/img/products/sp-45863992336/02.webp",
+      "src_small": "/assets/img/products/sp-45863992336/02-480.webp",
+      "alt": "FPV 穿越機 螺旋槳 5吋 R51377 三葉槳 51377 5mm 中心孔 RUIYI 芮翼 Freestyle花飛（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mqn4ashw2haaeb"
+    },
+    {
+      "src": "/assets/img/products/sp-45863992336/03.webp",
+      "src_small": "/assets/img/products/sp-45863992336/03-480.webp",
+      "alt": "FPV 穿越機 螺旋槳 5吋 R51377 三葉槳 51377 5mm 中心孔 RUIYI 芮翼 Freestyle花飛（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mqn4ashyst1rc4"
+    }
+  ],
   "variants": [
     {
       "name": "煙燻黑",

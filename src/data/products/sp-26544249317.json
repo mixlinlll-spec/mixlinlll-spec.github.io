@@ -17,21 +17,94 @@
   "short_description": "",
   "description": "#Bee25\n#Cinewhoop電池殼\n#850mAh電池保護\n#電池保護倉\n#穿越機配件\n#3D列印外殼\n#抗摔防護\n#電影機造型\n#FPV配件\n#台灣現貨\n#快速出貨\n\n依照 Bee25 機架與 850mAh 電池實際尺寸建模，套上後可完整包覆電池四側與上方，減少炸機時的直接撞擊。\n採用輕量 TPU列印材質，內部預留束帶通道與走線空間，電池照樣用魔鬼氈固定，不影響重心與拆裝速度。​\n外側做成「小機艙」造型，顏色可客製，整台 Bee25 看起來更一體、更像電影機，同時也方便在場地裡一眼認出自己的機。\n適合常在室內／城市環境飛 Cinewhoop 的玩家，高牆、鐵架、欄杆輕碰時能幫電池多擋一下，延長電池壽命。​\n尾部可固定平衡頭\n\nSpeedyBee25 原廠只附 GPS 保護座，尾部突出的 XT30 插座完全裸露，炸機時很容易被直接撞斷，GPS 原外殼也常被敲裂。​\n這款 GPS‑XT30 一體保護罩依照 SpeedyBee25 機架實機建模，套上後同時包覆 GPS 模組與 XT30 座，替兩個脆弱區域加上一層防撞保險。​\n專為「電池縱置」玩家設計，不需要改成橫置電池，也不用重新佈線，就能直接解決尾巴易炸的老問題。​",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-26544249317/01.webp",
+      "src_small": "/assets/img/products/sp-26544249317/01-480.webp",
+      "alt": "Bee25 850mAh 電池保護殼 2.5吋Cinewhoop專用 電池防爆護倉 抗摔防滑 造型電池艙（主圖）",
+      "width": 948,
+      "height": 948,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mktrqnfnl1xi5b"
+    },
+    {
+      "src": "/assets/img/products/sp-26544249317/02.webp",
+      "src_small": "/assets/img/products/sp-26544249317/02-480.webp",
+      "alt": "Bee25 850mAh 電池保護殼 2.5吋Cinewhoop專用 電池防爆護倉 抗摔防滑 造型電池艙（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-26544249317/03.webp",
+      "src_small": "/assets/img/products/sp-26544249317/03-480.webp",
+      "alt": "Bee25 850mAh 電池保護殼 2.5吋Cinewhoop專用 電池防爆護倉 抗摔防滑 造型電池艙（細節圖 2）",
+      "width": 618,
+      "height": 618,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mktrqnfhqcqp42"
+    },
+    {
+      "src": "/assets/img/products/sp-26544249317/04.webp",
+      "src_small": "/assets/img/products/sp-26544249317/04-480.webp",
+      "alt": "Bee25 850mAh 電池保護殼 2.5吋Cinewhoop專用 電池防爆護倉 抗摔防滑 造型電池艙（細節圖 3）",
+      "width": 584,
+      "height": 584,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mktrqnfmzzeq7b"
+    },
+    {
+      "src": "/assets/img/products/sp-26544249317/05.webp",
+      "src_small": "/assets/img/products/sp-26544249317/05-480.webp",
+      "alt": "Bee25 850mAh 電池保護殼 2.5吋Cinewhoop專用 電池防爆護倉 抗摔防滑 造型電池艙（細節圖 4）",
+      "width": 562,
+      "height": 562,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mkubgmhr9j44c5"
+    },
+    {
+      "src": "/assets/img/products/sp-26544249317/06.webp",
+      "src_small": "/assets/img/products/sp-26544249317/06-480.webp",
+      "alt": "Bee25 850mAh 電池保護殼 2.5吋Cinewhoop專用 電池防爆護倉 抗摔防滑 造型電池艙（細節圖 5）",
+      "width": 555,
+      "height": 555,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mkubgmhnoav5bf"
+    }
+  ],
   "variants": [
     {
       "name": "電池倉",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "440566953643"
+      "shopee_variation_id": "440566953643",
+      "image": {
+        "src": "/assets/img/products/sp-26544249317/opt-01-480.webp",
+        "alt": "Bee25 850mAh 電池保護殼 2.5吋Cinewhoop專用 電池防爆護倉 抗摔防滑 造型電池艙（規格：電池倉）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mkubl0k9bo5jee"
+      }
     },
     {
       "name": "XT30/GPS 保護",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "440566953642"
+      "shopee_variation_id": "440566953642",
+      "image": {
+        "src": "/assets/img/products/sp-26544249317/opt-02-480.webp",
+        "alt": "Bee25 850mAh 電池保護殼 2.5吋Cinewhoop專用 電池防爆護倉 抗摔防滑 造型電池艙（規格：XT30/GPS 保護）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mkubl27d2sxzc8"
+      }
     }
   ],
   "price_twd": null,

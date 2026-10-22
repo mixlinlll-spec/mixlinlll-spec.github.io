@@ -19,7 +19,68 @@
   "short_description": "",
   "description": "#FPV #穿越機 #5吋穿越機 #花飛 #Freestyle #6S穿越機 #ELRS #無人機 #競速機 #FPVDrone #航模 #無人機改裝 #高性能穿越機 #電翼動力\n🔥 裂顎 RIFT JAW｜為花飛而生\n🔥 暴力輸出 × 精準操控 × 極致穩定\n\n📌產品定位\n專為進階玩家打造的5吋花飛穿越機\n兼具爆發力與操控細膩度\n\n📌核心配置\n・F722 飛控｜高速運算 穩定飛行\n・60A 4合1電調｜支援6S 強勁輸出\n・酷飛2207 1960KV 高性能電機\n・ELRS 2.4G 接收｜低延遲長距離\n・5.8G 1W 高功率圖傳｜穩定影像\n\n📌性能特色\n・極致動力輸出｜花飛動作更乾淨\n・操控精準｜適合進階與競速玩家\n・高剛性結構｜耐摔耐操\n・遠距穩定｜訊號不亂跳\n\n📌規格資訊\n機架：GEPRC MARK5（5吋）\n電池：建議6S LiPo（1100–1480mAh）\n重量：約423g（不含電池）\n槳葉：建議51466\n\n📌適合對象\n・花飛玩家\n・進階FPV玩家\n・想升級高性能機種者\n⚠️注意事項\n・出貨前已測試，可直接綁定起飛\n・不含電池 / 遙控器 / 充電器\n・新手建議先模擬器練習",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-50608240693/01.webp",
+      "src_small": "/assets/img/products/sp-50608240693/01-480.webp",
+      "alt": "裂顎 RIFT JAW 5吋穿越機 6S花飛機 FPV穿越機 F722 60A ELRS2.4G 花飛專用（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mmn9riiqwnb865"
+    },
+    {
+      "src": "/assets/img/products/sp-50608240693/02.webp",
+      "src_small": "/assets/img/products/sp-50608240693/02-480.webp",
+      "alt": "裂顎 RIFT JAW 5吋穿越機 6S花飛機 FPV穿越機 F722 60A ELRS2.4G 花飛專用（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mmn9br3tbsw57f"
+    },
+    {
+      "src": "/assets/img/products/sp-50608240693/03.webp",
+      "src_small": "/assets/img/products/sp-50608240693/03-480.webp",
+      "alt": "裂顎 RIFT JAW 5吋穿越機 6S花飛機 FPV穿越機 F722 60A ELRS2.4G 花飛專用（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mokatj7f0y6jf1"
+    },
+    {
+      "src": "/assets/img/products/sp-50608240693/04.webp",
+      "src_small": "/assets/img/products/sp-50608240693/04-480.webp",
+      "alt": "裂顎 RIFT JAW 5吋穿越機 6S花飛機 FPV穿越機 F722 60A ELRS2.4G 花飛專用（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mp5sjd0wzll72f"
+    },
+    {
+      "src": "/assets/img/products/sp-50608240693/05.webp",
+      "src_small": "/assets/img/products/sp-50608240693/05-480.webp",
+      "alt": "裂顎 RIFT JAW 5吋穿越機 6S花飛機 FPV穿越機 F722 60A ELRS2.4G 花飛專用（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mmn9br3yd05f85"
+    },
+    {
+      "src": "/assets/img/products/sp-50608240693/06.webp",
+      "src_small": "/assets/img/products/sp-50608240693/06-480.webp",
+      "alt": "裂顎 RIFT JAW 5吋穿越機 6S花飛機 FPV穿越機 F722 60A ELRS2.4G 花飛專用（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mmn9br3o6dxe1b"
+    }
+  ],
   "variants": [
     {
       "name": "整機（升級格普F405HDV3 60A）",

@@ -17,7 +17,58 @@
   "short_description": "",
   "description": "Axisflying VERTEX5 是一款主打輕量化與高完整度的5吋FPV穿越機，採用全包裹式機身設計，兼顧外觀質感、保護性與飛行性能。整機約460g，適合Freestyle花飛、日常練習、戶外高速飛行與DJI O4數位圖傳玩家使用。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-55815784615/01.webp",
+      "src_small": "/assets/img/products/sp-55815784615/01-480.webp",
+      "alt": "Axisflying VERTEX5 5吋 FPV穿越機 DJI O4 DC套機 460g 輕量化 全包裹（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52xosnb40"
+    },
+    {
+      "src": "/assets/img/products/sp-55815784615/02.webp",
+      "src_small": "/assets/img/products/sp-55815784615/02-480.webp",
+      "alt": "Axisflying VERTEX5 5吋 FPV穿越機 DJI O4 DC套機 460g 輕量化 全包裹（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mrqmc52xrls7eb"
+    },
+    {
+      "src": "/assets/img/products/sp-55815784615/03.webp",
+      "src_small": "/assets/img/products/sp-55815784615/03-480.webp",
+      "alt": "Axisflying VERTEX5 5吋 FPV穿越機 DJI O4 DC套機 460g 輕量化 全包裹（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mrqmc52xq77r25"
+    },
+    {
+      "src": "/assets/img/products/sp-55815784615/04.webp",
+      "src_small": "/assets/img/products/sp-55815784615/04-480.webp",
+      "alt": "Axisflying VERTEX5 5吋 FPV穿越機 DJI O4 DC套機 460g 輕量化 全包裹（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mrqmc52xt0cnaa"
+    },
+    {
+      "src": "/assets/img/products/sp-55815784615/05.webp",
+      "src_small": "/assets/img/products/sp-55815784615/05-480.webp",
+      "alt": "Axisflying VERTEX5 5吋 FPV穿越機 DJI O4 DC套機 460g 輕量化 全包裹（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mrqmc52xuex321"
+    }
+  ],
   "variants": [
     {
       "name": "類比含Elrs+GPS",

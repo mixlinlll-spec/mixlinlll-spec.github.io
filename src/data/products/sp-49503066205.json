@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "NewBeeDrone HummingBird RaceSpec V2\nHummingBird RaceSpec V2 頂罩\nHummingBird 低角度頂罩\nTinywhoop 可調角度 canopy\n室內穿越機 頂罩\nFPV whoop 頂罩\n微型穿越機 相機座\n3D 列印 whoop 頂罩\nFPV 客製化配件\nNewBeeDrone 配件\nTinywhoop 低角度相機\n室內練習穿越機\n\n⚠️ 務必備註顏色，未備註將隨機出貨，訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n⚠️ 客製化需求（顏色）請先聊聊討論再下單\n\n原廠 HummingBird RaceSpec V2 相機角度偏高，對新手或想在室內慢飛的玩家來說很不友善，這款 低角度頂罩專為 HummingBird RaceSpec V2 設計，讓你可以將相機角度調低，輕鬆練習基本動作與精準繞樁。🏠🛸 頂罩以 TPU 3D 列印製作，具備一定柔韌度，能在撞機時吸收部分衝擊，保護機身與相機。​",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-49503066205/01.webp",
+      "src_small": "/assets/img/products/sp-49503066205/01-480.webp",
+      "alt": "HummingBird RaceSpec V2 低角度頂罩 相機角度可調 室內穿越練習適用（主圖）",
+      "width": 696,
+      "height": 696,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mi7janoalo9217"
+    },
+    {
+      "src": "/assets/img/products/sp-49503066205/02.webp",
+      "src_small": "/assets/img/products/sp-49503066205/02-480.webp",
+      "alt": "HummingBird RaceSpec V2 低角度頂罩 相機角度可調 室內穿越練習適用（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-49503066205/03.webp",
+      "src_small": "/assets/img/products/sp-49503066205/03-480.webp",
+      "alt": "HummingBird RaceSpec V2 低角度頂罩 相機角度可調 室內穿越練習適用（細節圖 2）",
+      "width": 793,
+      "height": 793,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mi7jbckybpja50"
+    }
+  ],
   "variants": [
     {
       "name": "橘",

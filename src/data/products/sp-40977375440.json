@@ -18,7 +18,38 @@
   "short_description": "",
   "description": "Tinywhoop 快拆圈圈\nTinywhoop 65mm 保護圈\nTinywhoop 75mm 外框\n65mm 風罩保護圈\n75mm 槳罩 保護框\n碳纖 3D 列印 保護圈\nPETG whoop 保護圈\n微型穿越機 槳罩\n室內穿越機 保護框\nTinywhoop 升級配件\nFPV whoop 3D 列印\n穿越機 防撞外框\n\n⚠️ 務必備註顏色與機型尺寸（65mm 或 75mm），未備註將隨機出貨，訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n⚠️ 客製化需求（顏色／厚度／安裝方式）請先聊聊討論再下單\n\n快拆圈圈是為 Tinywhoop 65mm / 75mm 機架設計的專用外框保護圈，可直接替換原本的風罩或外框，提供螺旋槳與機身更多保護，同時維持輕量與剛性表現。適合常在室內、停車場、狹窄場景練飛、撞機頻率高的玩家使用。🏠🛩️ 提供碳纖 8% 與 PETG 兩種材質選擇，滿足不同使用環境與預算需求。\n\n專為 Tinywhoop 65mm / 75mm 機種設計，對應常見 31mm / 40mm 槳距機架。（下單前請確認機架型號與固定方式）\n快拆設計，可快速更換單顆或整圈保護框，維修時不用整支機重拆。\n碳纖 8% 材質：加入碳纖粉末，剛性與韌性較高，耐撞、不易變形，適合常暴力練飛或比賽使用。\nPETG 材質：韌性一般、價格較親民，適合日常練習；但在大力撞擊下較容易斷裂，建議備品一起帶。\n3D 列印製作，可依需求微調厚度、孔位或走線空間；也可搭配機隊配色選擇不同顏色。🎨",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-40977375440/01.webp",
+      "src_small": "/assets/img/products/sp-40977375440/01-480.webp",
+      "alt": "快拆圈圈 Tinywhoop 65mm/75mm 專用外框保護圈 碳纖 8% / PETG 材質可選 BETAFPV（主圖）",
+      "width": 782,
+      "height": 782,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mig79v74ta0x13"
+    },
+    {
+      "src": "/assets/img/products/sp-40977375440/02.webp",
+      "src_small": "/assets/img/products/sp-40977375440/02-480.webp",
+      "alt": "快拆圈圈 Tinywhoop 65mm/75mm 專用外框保護圈 碳纖 8% / PETG 材質可選 BETAFPV（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-40977375440/03.webp",
+      "src_small": "/assets/img/products/sp-40977375440/03-480.webp",
+      "alt": "快拆圈圈 Tinywhoop 65mm/75mm 專用外框保護圈 碳纖 8% / PETG 材質可選 BETAFPV（細節圖 2）",
+      "width": 759,
+      "height": 759,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mig79x5a7card2"
+    }
+  ],
   "variants": [
     {
       "name": "PETG較脆但是顏色很多可選(一組2個)",

@@ -15,7 +15,78 @@
   "short_description": "",
   "description": "•\t#瑞速科技\n•\t#RATEELRS\n•\t#ELRS24G接收機\n•\t#穿越機接收機\n•\t#固定翼接收機\n•\t#羊角天線\n•\t#鋼絲天線\n•\t#微型航模\n•\t#FPV長距離\n•\t#台灣現貨\n•\t#快速出貨\n\n內建 ExpressLRS 2.4G 協議，體積僅約 15.8×10×4.7mm，重量極輕，非常適合 2–5 吋穿越機、固定翼與各類小機使用。\n•\t支援 UART/S.BUS 等常見接線方式，直接接到飛控 RX/TX 即可使用，刷機、綁定流程與一般 ELRS 接收機一致。\n•\t提供 40mm 鋼絲天線與 78mm 羊角天線版本：鋼絲款適合圈圈機／小機，柔軟耐摔；羊角款適合 5 吋以上與固定翼，指向性與抗干擾更好。\n•\tPCB 走線與元件布局經過優化，穩定度高、失控保護反應快，長距離與低延遲表現兼具。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-49905852775/01.webp",
+      "src_small": "/assets/img/products/sp-49905852775/01-480.webp",
+      "alt": "瑞速科技 RATE ELRS 2.4G PRO 接收機 穿越機/固定翼/航模用 超小體積 內含一般天線/耐炸羊角天線（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mot6t6fzytc1c1"
+    },
+    {
+      "src": "/assets/img/products/sp-49905852775/02.webp",
+      "src_small": "/assets/img/products/sp-49905852775/02-480.webp",
+      "alt": "瑞速科技 RATE ELRS 2.4G PRO 接收機 穿越機/固定翼/航模用 超小體積 內含一般天線/耐炸羊角天線（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mot6t6fp5q1bcc"
+    },
+    {
+      "src": "/assets/img/products/sp-49905852775/03.webp",
+      "src_small": "/assets/img/products/sp-49905852775/03-480.webp",
+      "alt": "瑞速科技 RATE ELRS 2.4G PRO 接收機 穿越機/固定翼/航模用 超小體積 內含一般天線/耐炸羊角天線（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mot6t6fo80ekb5"
+    },
+    {
+      "src": "/assets/img/products/sp-49905852775/04.webp",
+      "src_small": "/assets/img/products/sp-49905852775/04-480.webp",
+      "alt": "瑞速科技 RATE ELRS 2.4G PRO 接收機 穿越機/固定翼/航模用 超小體積 內含一般天線/耐炸羊角天線（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mot6t6fp5q17b4"
+    },
+    {
+      "src": "/assets/img/products/sp-49905852775/05.webp",
+      "src_small": "/assets/img/products/sp-49905852775/05-480.webp",
+      "alt": "瑞速科技 RATE ELRS 2.4G PRO 接收機 穿越機/固定翼/航模用 超小體積 內含一般天線/耐炸羊角天線（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mot6x9jh3b4e3c"
+    },
+    {
+      "src": "/assets/img/products/sp-49905852775/06.webp",
+      "src_small": "/assets/img/products/sp-49905852775/06-480.webp",
+      "alt": "瑞速科技 RATE ELRS 2.4G PRO 接收機 穿越機/固定翼/航模用 超小體積 內含一般天線/耐炸羊角天線（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mot6x9jjfl6z08"
+    },
+    {
+      "src": "/assets/img/products/sp-49905852775/07.webp",
+      "src_small": "/assets/img/products/sp-49905852775/07-480.webp",
+      "alt": "瑞速科技 RATE ELRS 2.4G PRO 接收機 穿越機/固定翼/航模用 超小體積 內含一般天線/耐炸羊角天線（細節圖 6）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mot6xzlqqe4sd5"
+    }
+  ],
   "variants": [
     {
       "name": "一般天線款（直插）",

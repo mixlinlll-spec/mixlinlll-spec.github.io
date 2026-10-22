@@ -36,7 +36,38 @@
       "source": "蝦皮商品標題"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-49207375975/01.webp",
+      "src_small": "/assets/img/products/sp-49207375975/01-480.webp",
+      "alt": "TJRC天劍 5.8G沉金天線 O4 Pro圖傳穿越機棒棒糖 SMA公頭 圓極化高增益 遠距穿牆（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlydkongc9olb1"
+    },
+    {
+      "src": "/assets/img/products/sp-49207375975/02.webp",
+      "src_small": "/assets/img/products/sp-49207375975/02-480.webp",
+      "alt": "TJRC天劍 5.8G沉金天線 O4 Pro圖傳穿越機棒棒糖 SMA公頭 圓極化高增益 遠距穿牆（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlydkon23kecf2"
+    },
+    {
+      "src": "/assets/img/products/sp-49207375975/03.webp",
+      "src_small": "/assets/img/products/sp-49207375975/03-480.webp",
+      "alt": "TJRC天劍 5.8G沉金天線 O4 Pro圖傳穿越機棒棒糖 SMA公頭 圓極化高增益 遠距穿牆（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mlydkongav45dd"
+    }
+  ],
   "variants": [
     {
       "name": "白色（內針左璇）10CM",

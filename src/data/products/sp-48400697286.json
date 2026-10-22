@@ -15,21 +15,74 @@
   "short_description": "",
   "description": "#DJIAction2 #防撞底座 #TPU保護座 #FPV配件 #穿越機防護 #GoPro安裝座 #3D列印配件 #穿越機相機支架 #FPV相機防撞 #DJI配件",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-48400697286/01.webp",
+      "src_small": "/assets/img/products/sp-48400697286/01-480.webp",
+      "alt": "DJI Action 2 防撞底座 TPU保護座 FPV穿越機專用 GoPro支架安裝（主圖）",
+      "width": 750,
+      "height": 750,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mosyi1nh71fva4"
+    },
+    {
+      "src": "/assets/img/products/sp-48400697286/02.webp",
+      "src_small": "/assets/img/products/sp-48400697286/02-480.webp",
+      "alt": "DJI Action 2 防撞底座 TPU保護座 FPV穿越機專用 GoPro支架安裝（細節圖 1）",
+      "width": 796,
+      "height": 796,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mosyi1nj9hjhf5"
+    },
+    {
+      "src": "/assets/img/products/sp-48400697286/03.webp",
+      "src_small": "/assets/img/products/sp-48400697286/03-480.webp",
+      "alt": "DJI Action 2 防撞底座 TPU保護座 FPV穿越機專用 GoPro支架安裝（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mi2vavu50bnmf9"
+    },
+    {
+      "src": "/assets/img/products/sp-48400697286/04.webp",
+      "src_small": "/assets/img/products/sp-48400697286/04-480.webp",
+      "alt": "DJI Action 2 防撞底座 TPU保護座 FPV穿越機專用 GoPro支架安裝（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    }
+  ],
   "variants": [
     {
       "name": "A款",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "302117705385"
+      "shopee_variation_id": "302117705385",
+      "image": {
+        "src": "/assets/img/products/sp-48400697286/opt-01-480.webp",
+        "alt": "DJI Action 2 防撞底座 TPU保護座 FPV穿越機專用 GoPro支架安裝（規格：A款）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mosyi1nj9hjhf5"
+      }
     },
     {
       "name": "B款",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "390985264478"
+      "shopee_variation_id": "390985264478",
+      "image": {
+        "src": "/assets/img/products/sp-48400697286/opt-02-480.webp",
+        "alt": "DJI Action 2 防撞底座 TPU保護座 FPV穿越機專用 GoPro支架安裝（規格：B款）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mosyn26ercw0d5"
+      }
     }
   ],
   "price_twd": null,

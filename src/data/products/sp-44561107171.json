@@ -38,7 +38,88 @@
       "source": "蝦皮商品標題"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-44561107171/01.webp",
+      "src_small": "/assets/img/products/sp-44561107171/01-480.webp",
+      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-monfz6wo0ftbd8"
+    },
+    {
+      "src": "/assets/img/products/sp-44561107171/02.webp",
+      "src_small": "/assets/img/products/sp-44561107171/02-480.webp",
+      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-monfz6wjah3h65"
+    },
+    {
+      "src": "/assets/img/products/sp-44561107171/03.webp",
+      "src_small": "/assets/img/products/sp-44561107171/03-480.webp",
+      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-monfznmwexaj43"
+    },
+    {
+      "src": "/assets/img/products/sp-44561107171/04.webp",
+      "src_small": "/assets/img/products/sp-44561107171/04-480.webp",
+      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-monfhv0aakgb66"
+    },
+    {
+      "src": "/assets/img/products/sp-44561107171/05.webp",
+      "src_small": "/assets/img/products/sp-44561107171/05-480.webp",
+      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-monfynbt6r63b0"
+    },
+    {
+      "src": "/assets/img/products/sp-44561107171/06.webp",
+      "src_small": "/assets/img/products/sp-44561107171/06-480.webp",
+      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-monfyng38d8g42"
+    },
+    {
+      "src": "/assets/img/products/sp-44561107171/07.webp",
+      "src_small": "/assets/img/products/sp-44561107171/07-480.webp",
+      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 6）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-monfync2sav6c1"
+    },
+    {
+      "src": "/assets/img/products/sp-44561107171/08.webp",
+      "src_small": "/assets/img/products/sp-44561107171/08-480.webp",
+      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 7）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-monfync37r4bb7"
+    }
+  ],
   "variants": [
     {
       "name": "模擬圖傳 套機（915M /2.4G)",

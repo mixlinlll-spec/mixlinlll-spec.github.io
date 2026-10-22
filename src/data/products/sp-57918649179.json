@@ -116,7 +116,18 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-57918649179/01.webp",
+      "src_small": "/assets/img/products/sp-57918649179/01-480.webp",
+      "alt": "FDI F722 V5 飛控 + 60A 四合一電調 堆疊組 8路輸出 BLHeli32 電翼動力（主圖）",
+      "width": 767,
+      "height": 767,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820li-mtsbkhjvk1l1ef"
+    }
+  ],
   "variants": [
     {
       "name": "60A四合一電調",

@@ -15,7 +15,58 @@
   "short_description": "",
   "description": "BETAFPV VR04 FPV 飛行眼鏡\n\nVR04 是 BETAFPV 推出的入門級類比 FPV 飛行眼鏡，內建高靈敏 5.8GHz 接收器、DVR 錄影功能與自動搜頻，適合 TinyWhoop、65mm、75mm、85mm 及各式類比穿越機使用。\n\n人體工學泡棉面罩配戴舒適，可直接配戴近視眼鏡使用，內建 DVR 可錄製飛行畫面，方便分享影片及飛行檢討，是新手入門 FPV 的熱門選擇。\n\n產品特色\n• 5.8GHz 類比接收\n• 內建 DVR 錄影與回放\n• 一鍵 Auto Search 自動搜頻\n• 高亮度 LCD 顯示器\n• 人體工學舒適泡棉\n• 可直接配戴近視眼鏡\n• 支援多數類比穿越機與 TinyWhoop\n• 操作簡單，適合新手入門\n\n適用機型\n• BetaFPV Air65／Air75／Meteor 系列\n• Mobula 系列\n• TinyWhoop\n• 5.8GHz Analog 類比穿越機\n• 大部分 AIO 類比圖傳機型\n\n包裝內容\n• BETAFPV VR04 飛行眼鏡 ×1\n• 5.8GHz 天線 ×1\n• USB 充電線 ×1\n• 使用說明書 ×1\n※依原廠版本內容物為準。\n\n購買須知\n• 本商品僅支援 5.8GHz 類比影像，不支援 DJI O3／O4、Walksnail Avatar、HDZero 等數位圖傳。\n• 如不確定您的飛機是否相容，歡迎聊聊詢問，我們可協助確認。\n💯 電翼動力提供 FPV 飛機、零件、維修、調校及售後技術支援，讓你的 FPV 隨時 Ready to Fly。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-53264317402/01.webp",
+      "src_small": "/assets/img/products/sp-53264317402/01-480.webp",
+      "alt": "BETAFPV VR04 FPV 飛行眼鏡 5.8G 類比眼鏡 DVR錄影 自動搜頻 FPV Goggles 穿越機（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mqv86xfxpdzh83"
+    },
+    {
+      "src": "/assets/img/products/sp-53264317402/02.webp",
+      "src_small": "/assets/img/products/sp-53264317402/02-480.webp",
+      "alt": "BETAFPV VR04 FPV 飛行眼鏡 5.8G 類比眼鏡 DVR錄影 自動搜頻 FPV Goggles 穿越機（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mqv86xkt3cowe0"
+    },
+    {
+      "src": "/assets/img/products/sp-53264317402/03.webp",
+      "src_small": "/assets/img/products/sp-53264317402/03-480.webp",
+      "alt": "BETAFPV VR04 FPV 飛行眼鏡 5.8G 類比眼鏡 DVR錄影 自動搜頻 FPV Goggles 穿越機（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mqv86xdv3o5cf8"
+    },
+    {
+      "src": "/assets/img/products/sp-53264317402/04.webp",
+      "src_small": "/assets/img/products/sp-53264317402/04-480.webp",
+      "alt": "BETAFPV VR04 FPV 飛行眼鏡 5.8G 類比眼鏡 DVR錄影 自動搜頻 FPV Goggles 穿越機（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mqv86xsjonin3e"
+    },
+    {
+      "src": "/assets/img/products/sp-53264317402/05.webp",
+      "src_small": "/assets/img/products/sp-53264317402/05-480.webp",
+      "alt": "BETAFPV VR04 FPV 飛行眼鏡 5.8G 類比眼鏡 DVR錄影 自動搜頻 FPV Goggles 穿越機（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mqv86xnzq972a9"
+    }
+  ],
   "variants": [
     {
       "name": "配件齊全",

@@ -45,7 +45,58 @@
       "source": "蝦皮商品標題"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-50367700235/01.webp",
+      "src_small": "/assets/img/products/sp-50367700235/01-480.webp",
+      "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-msycw4hlne2ydb"
+    },
+    {
+      "src": "/assets/img/products/sp-50367700235/02.webp",
+      "src_small": "/assets/img/products/sp-50367700235/02-480.webp",
+      "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-msycw4hssg0845"
+    },
+    {
+      "src": "/assets/img/products/sp-50367700235/03.webp",
+      "src_small": "/assets/img/products/sp-50367700235/03-480.webp",
+      "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-msycw4hsa6ma94"
+    },
+    {
+      "src": "/assets/img/products/sp-50367700235/04.webp",
+      "src_small": "/assets/img/products/sp-50367700235/04-480.webp",
+      "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-msycw4hsr1fsd6"
+    },
+    {
+      "src": "/assets/img/products/sp-50367700235/05.webp",
+      "src_small": "/assets/img/products/sp-50367700235/05-480.webp",
+      "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-msycw4hjdx5218"
+    }
+  ],
   "variants": [
     {
       "name": "O4WIDE(加裝CNC保護及鏡頭改件)",

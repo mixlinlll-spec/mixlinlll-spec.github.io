@@ -41,7 +41,98 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-40927694604/01.webp",
+      "src_small": "/assets/img/products/sp-40927694604/01-480.webp",
+      "alt": "7075鋁合金彩色螺絲 M3半圓頭內六角 無人機/FPV穿越機/航模盤頭螺絲 超輕量高強度 多色可選 改色升級專用（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mizo04erf66871"
+    },
+    {
+      "src": "/assets/img/products/sp-40927694604/02.webp",
+      "src_small": "/assets/img/products/sp-40927694604/02-480.webp",
+      "alt": "7075鋁合金彩色螺絲 M3半圓頭內六角 無人機/FPV穿越機/航模盤頭螺絲 超輕量高強度 多色可選 改色升級專用（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mizo04essc1w59"
+    },
+    {
+      "src": "/assets/img/products/sp-40927694604/03.webp",
+      "src_small": "/assets/img/products/sp-40927694604/03-480.webp",
+      "alt": "7075鋁合金彩色螺絲 M3半圓頭內六角 無人機/FPV穿越機/航模盤頭螺絲 超輕量高強度 多色可選 改色升級專用（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mizo04esii2v62"
+    },
+    {
+      "src": "/assets/img/products/sp-40927694604/04.webp",
+      "src_small": "/assets/img/products/sp-40927694604/04-480.webp",
+      "alt": "7075鋁合金彩色螺絲 M3半圓頭內六角 無人機/FPV穿越機/航模盤頭螺絲 超輕量高強度 多色可選 改色升級專用（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mizo04fcj3evd2"
+    },
+    {
+      "src": "/assets/img/products/sp-40927694604/05.webp",
+      "src_small": "/assets/img/products/sp-40927694604/05-480.webp",
+      "alt": "7075鋁合金彩色螺絲 M3半圓頭內六角 無人機/FPV穿越機/航模盤頭螺絲 超輕量高強度 多色可選 改色升級專用（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mizo04fvey9s85"
+    },
+    {
+      "src": "/assets/img/products/sp-40927694604/06.webp",
+      "src_small": "/assets/img/products/sp-40927694604/06-480.webp",
+      "alt": "7075鋁合金彩色螺絲 M3半圓頭內六角 無人機/FPV穿越機/航模盤頭螺絲 超輕量高強度 多色可選 改色升級專用（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mizo04exz5kzbe"
+    },
+    {
+      "src": "/assets/img/products/sp-40927694604/07.webp",
+      "src_small": "/assets/img/products/sp-40927694604/07-480.webp",
+      "alt": "7075鋁合金彩色螺絲 M3半圓頭內六角 無人機/FPV穿越機/航模盤頭螺絲 超輕量高強度 多色可選 改色升級專用（細節圖 6）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mizo04g5fy80a8"
+    },
+    {
+      "src": "/assets/img/products/sp-40927694604/08.webp",
+      "src_small": "/assets/img/products/sp-40927694604/08-480.webp",
+      "alt": "7075鋁合金彩色螺絲 M3半圓頭內六角 無人機/FPV穿越機/航模盤頭螺絲 超輕量高強度 多色可選 改色升級專用（細節圖 7）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mizo04giv5l1d6"
+    },
+    {
+      "src": "/assets/img/products/sp-40927694604/09.webp",
+      "src_small": "/assets/img/products/sp-40927694604/09-480.webp",
+      "alt": "7075鋁合金彩色螺絲 M3半圓頭內六角 無人機/FPV穿越機/航模盤頭螺絲 超輕量高強度 多色可選 改色升級專用（細節圖 8）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mizo04htsyrm63"
+    }
+  ],
   "variants": [
     {
       "name": "藍",

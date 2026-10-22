@@ -17,7 +17,18 @@
   "short_description": "",
   "description": "GOBU Tracker｜追蹤者 3.5 吋\n不是每一台 FPV 都只為了速度。\n有些機體，天生就是為了探索未知。\n更輕、更靈活、更安靜。\n它不是花飛，也不是純 Long Range。\n它是 GOBU 系列 全新的定位。\nGOBU Tracker｜追蹤者 3.5 吋\n新品即將登場。\nMore Than A Frame.",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-47815059422/01.webp",
+      "src_small": "/assets/img/products/sp-47815059422/01-480.webp",
+      "alt": "GOBU Tracker 3.5吋 FPV穿越機機架 碳纖維 Freestyle 可換機臂 O4 Pro O4 Lite（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mr8e9kiq3pxg65"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

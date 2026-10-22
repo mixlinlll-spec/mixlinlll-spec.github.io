@@ -19,7 +19,88 @@
   "short_description": "",
   "description": "•\t#GEPRRCCinebot35\n•\t#3.5吋穿越機\n•\t#Cinewhoop航拍\n•\t#FPV穿越機\n•\t#6S Cinewhoop\n•\t#室內穿越機\n•\t#GEPRRC配件\n•\t#FPV無人機\n•\t#航拍套件\n•\t#台灣現貨",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-49657325933/01.webp",
+      "src_small": "/assets/img/products/sp-49657325933/01-480.webp",
+      "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mlwzoa76v4040d"
+    },
+    {
+      "src": "/assets/img/products/sp-49657325933/02.webp",
+      "src_small": "/assets/img/products/sp-49657325933/02-480.webp",
+      "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mlwzoa7lvwn4f0"
+    },
+    {
+      "src": "/assets/img/products/sp-49657325933/03.webp",
+      "src_small": "/assets/img/products/sp-49657325933/03-480.webp",
+      "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlwzoa7vwwlc93"
+    },
+    {
+      "src": "/assets/img/products/sp-49657325933/04.webp",
+      "src_small": "/assets/img/products/sp-49657325933/04-480.webp",
+      "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mlwzoa7qvpc430"
+    },
+    {
+      "src": "/assets/img/products/sp-49657325933/05.webp",
+      "src_small": "/assets/img/products/sp-49657325933/05-480.webp",
+      "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mlwzoa7x1n2g8e"
+    },
+    {
+      "src": "/assets/img/products/sp-49657325933/06.webp",
+      "src_small": "/assets/img/products/sp-49657325933/06-480.webp",
+      "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mlwzoa7zyznm59"
+    },
+    {
+      "src": "/assets/img/products/sp-49657325933/07.webp",
+      "src_small": "/assets/img/products/sp-49657325933/07-480.webp",
+      "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 6）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlwzoa7zxl36af"
+    },
+    {
+      "src": "/assets/img/products/sp-49657325933/08.webp",
+      "src_small": "/assets/img/products/sp-49657325933/08-480.webp",
+      "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 7）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mlwzoa85mo0f18"
+    }
+  ],
   "variants": [
     {
       "name": "O4pro版本/含ELRS接收機",

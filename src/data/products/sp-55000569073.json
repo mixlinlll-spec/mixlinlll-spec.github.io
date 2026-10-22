@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "專為 DJI Mini 4 / Mini 4 Pro  RC2遙控器設計的 搖桿保護罩，能在收納或攜帶時有效防止搖桿受到擠壓或碰撞。\n採用 TPU柔性3D列印材質，貼合度高、不刮手、不傷桿帽。\n\n✅ 收納時防止搖桿變形或損壞\n✅ TPU彈性材質，柔軟耐用\n✅ 精準尺寸，穩固不鬆脫\n✅ 適用於原廠遙控器、方便攜帶\n\n適用機型：RC2\n材質說明：TPU（熱塑性聚氨酯）－柔軟、防撞、耐磨",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-55000569073/01.webp",
+      "src_small": "/assets/img/products/sp-55000569073/01-480.webp",
+      "alt": "DJI Mini 3/4 Pro RC2搖桿保護罩 TPU防撞保護器 手把遙控器桿帽固定夾（主圖）",
+      "width": 601,
+      "height": 601,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mhkbdiw0775wb4"
+    },
+    {
+      "src": "/assets/img/products/sp-55000569073/02.webp",
+      "src_small": "/assets/img/products/sp-55000569073/02-480.webp",
+      "alt": "DJI Mini 3/4 Pro RC2搖桿保護罩 TPU防撞保護器 手把遙控器桿帽固定夾（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-55000569073/03.webp",
+      "src_small": "/assets/img/products/sp-55000569073/03-480.webp",
+      "alt": "DJI Mini 3/4 Pro RC2搖桿保護罩 TPU防撞保護器 手把遙控器桿帽固定夾（細節圖 2）",
+      "width": 873,
+      "height": 873,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mghe5weu5jilaf"
+    }
+  ],
   "variants": [
     {
       "name": "綠",

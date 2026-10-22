@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "#BetaFPV #Meteor75Pro #75Pro收納盒 #Whoop收納 #穿越機攜帶盒 #1S電池收納 #3D列印 #TPU配件 #微型穿越機\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D 列印件可能有些微層紋屬正常現象⚠️\n\n專為 BETA Meteor75 Pro 設計的專用收納盒，內部配置穿越機槽位與 1S 電池固定架，能一次帶走機體＋多顆電池，外出飛行更方便。盒體具良好保護性，避免機體在包包中被壓損。\n\n產品特色\nMeteor75 Pro 專屬尺寸，完美卡位不晃動\n一體成型防撞設計，外出攜帶更安心\n最多存放13塊550MAH LAVA電池\n收納盒中間可置放 充電器",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-54152148395/01.webp",
+      "src_small": "/assets/img/products/sp-54152148395/01-480.webp",
+      "alt": "BETA Meteor75 Pro 專用收納盒｜穿越機＋1S電池一體式保護盒｜（主圖）",
+      "width": 884,
+      "height": 884,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mhj6tfkp1sldfc"
+    },
+    {
+      "src": "/assets/img/products/sp-54152148395/02.webp",
+      "src_small": "/assets/img/products/sp-54152148395/02-480.webp",
+      "alt": "BETA Meteor75 Pro 專用收納盒｜穿越機＋1S電池一體式保護盒｜（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-54152148395/03.webp",
+      "src_small": "/assets/img/products/sp-54152148395/03-480.webp",
+      "alt": "BETA Meteor75 Pro 專用收納盒｜穿越機＋1S電池一體式保護盒｜（細節圖 2）",
+      "width": 990,
+      "height": 990,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mhj6u1h0onba3f"
+    }
+  ],
   "variants": [
     {
       "name": "白",

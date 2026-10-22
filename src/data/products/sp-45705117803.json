@@ -17,7 +17,28 @@
   "short_description": "",
   "description": "•\t#Ovonic電池\n•\t#1S300mAh\n•\t#150C鋰電\n•\t#BT20電池\n•\t#Tinywhoop電池\n•\t#室內穿越機\n•\t#微型穿越機電池\n•\t#HV鋰電\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t這顆 Ovonic 1S 300mAh 150C HV 採用 3.8V 高壓電芯，支援充到約 4.35V，提供比普通 3.7V 電池更高的瞬間電壓與推力。\n•\t150C 放電倍率，適合高 KV 0802～1002 電機的小穿越機，急加速、穿門、翻滾都不容易「一推就塌」。\n•\t細長外型約 65×11×6.5mm、重量約 14g，對應多數 65/75mm 機型的長條電池倉，綁帶或卡槽都好固定。\n•\tBT2.0 插頭阻抗低，相比 PH2.0 能減少電壓下墜，實際飛起來更有力、更穩定。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-45705117803/01.webp",
+      "src_small": "/assets/img/products/sp-45705117803/01-480.webp",
+      "alt": "Ovonic 1S 3.8V 300mAh 150C HV BT2.0 高壓鋰電池 室內微型穿越機/Tinywhoop（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mjsh7t2xwwzka2"
+    },
+    {
+      "src": "/assets/img/products/sp-45705117803/02.webp",
+      "src_small": "/assets/img/products/sp-45705117803/02-480.webp",
+      "alt": "Ovonic 1S 3.8V 300mAh 150C HV BT2.0 高壓鋰電池 室內微型穿越機/Tinywhoop（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mjsh7t2xvif444"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

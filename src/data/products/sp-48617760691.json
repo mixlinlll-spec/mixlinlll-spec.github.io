@@ -36,7 +36,38 @@
       "source": "蝦皮商品標題"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-48617760691/01.webp",
+      "src_small": "/assets/img/products/sp-48617760691/01-480.webp",
+      "alt": "ELRS 2.4G 接收機 HSRC 1.1g 輕量 T型天線 CRSF/SBUS FPV 穿越機 接收機 電翼動力（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mt0d4y1jr4snee"
+    },
+    {
+      "src": "/assets/img/products/sp-48617760691/02.webp",
+      "src_small": "/assets/img/products/sp-48617760691/02-480.webp",
+      "alt": "ELRS 2.4G 接收機 HSRC 1.1g 輕量 T型天線 CRSF/SBUS FPV 穿越機 接收機 電翼動力（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mt0d4y1jsjd303"
+    },
+    {
+      "src": "/assets/img/products/sp-48617760691/03.webp",
+      "src_small": "/assets/img/products/sp-48617760691/03-480.webp",
+      "alt": "ELRS 2.4G 接收機 HSRC 1.1g 輕量 T型天線 CRSF/SBUS FPV 穿越機 接收機 電翼動力（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mt0d4y1jtxxjf2"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

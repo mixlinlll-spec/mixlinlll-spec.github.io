@@ -17,7 +17,58 @@
   "short_description": "",
   "description": "一閃 ISSEN 是一款專為 Freestyle 花飛與高速穿越打造的 5 吋 FPV 穿越機，採用 GEPRC MARK5 碳纖維機架，搭配蔚川 F722 V3 飛控與 60A 四合一電調，兼具爆發力、穩定性與耐用性。\n\n出貨前完成組裝、設定與測試，綁定 ELRS 接收機後即可起飛，適合進階玩家、花飛玩家與競速愛好者使用。\n\n【產品特色】\n✔ GEPRC MARK5 高強度碳纖維機架\n✔ 蔚川 F722 V3 飛控\n✔ 60A 4IN1 大電流電調\n✔ 豐雲天狼 2306.5 1860KV 電機\n✔ 旋風 1W 大功率圖傳\n✔ 瑞速 ELRS 2.4G 接收機\n✔ 乾豐 GEMFAN 51466 三葉槳\n✔ 出貨前完成測試與調校\n\n【產品規格】\n機架：GEPRC MARK5\n飛控：蔚川 F722 V3\n電調：60A 4IN1 ESC\n電機：豐雲天狼 2306.5 / 1860KV\n鏡頭：CADDX ANT NANO\n圖傳：旋風 1W VTX\n接收機：瑞速 ELRS 2.4G\n槳葉：GEMFAN 51466 三葉槳\n建議電池：6S LiPo 1050~1480mAh\n機架尺寸：220mm\n重量：約425g（不含電池）\n\n【飛控功能】\n支援 Betaflight\n支援 Blackbox 飛行紀錄\n支援 OSD 即時顯示\n多 UART 擴充接口\n支援雙向 DShot\n\n【包裝內容】\n一閃 ISSEN 穿越機 ×1\n電池保護鯊魚鰭打印件x1\n狗座打印件x1\n槳葉x1\n\n【注意事項】\n本商品不含電池、遙控器、充電器及 FPV 眼鏡。\n出貨前已完成基本測試，建議具備 FPV 飛行經驗後再進行操作。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-49561691341/01.webp",
+      "src_small": "/assets/img/products/sp-49561691341/01-480.webp",
+      "alt": "一閃 ISSEN 5吋 FPV穿越機 奈米防水GEPRC MARK5 F722 V3 60A ESC ELRS 2.4G（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mp22hnabfh8sa9"
+    },
+    {
+      "src": "/assets/img/products/sp-49561691341/02.webp",
+      "src_small": "/assets/img/products/sp-49561691341/02-480.webp",
+      "alt": "一閃 ISSEN 5吋 FPV穿越機 奈米防水GEPRC MARK5 F722 V3 60A ESC ELRS 2.4G（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mp22yjlu721b8c"
+    },
+    {
+      "src": "/assets/img/products/sp-49561691341/03.webp",
+      "src_small": "/assets/img/products/sp-49561691341/03-480.webp",
+      "alt": "一閃 ISSEN 5吋 FPV穿越機 奈米防水GEPRC MARK5 F722 V3 60A ESC ELRS 2.4G（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mp22uwkx9s7578"
+    },
+    {
+      "src": "/assets/img/products/sp-49561691341/04.webp",
+      "src_small": "/assets/img/products/sp-49561691341/04-480.webp",
+      "alt": "一閃 ISSEN 5吋 FPV穿越機 奈米防水GEPRC MARK5 F722 V3 60A ESC ELRS 2.4G（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mp22hnaf6brfa6"
+    },
+    {
+      "src": "/assets/img/products/sp-49561691341/05.webp",
+      "src_small": "/assets/img/products/sp-49561691341/05-480.webp",
+      "alt": "一閃 ISSEN 5吋 FPV穿越機 奈米防水GEPRC MARK5 F722 V3 60A ESC ELRS 2.4G（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mp22hnba1ez38f"
+    }
+  ],
   "variants": [
     {
       "name": "升級格普動力套（不含圖傳鏡頭）",

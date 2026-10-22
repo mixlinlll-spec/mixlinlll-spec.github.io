@@ -17,7 +17,38 @@
   "short_description": "",
   "description": "•\t#Y型快拆扳手\n•\t#FPV拆槳工具\n•\t#M5螺母板手\n•\t#M6螺母板手\n•\t#8mm套筒\n•\t#9mm套筒\n•\t#10mm套筒\n•\t#穿越機維修\n•\t#電機螺帽\n•\t#台灣現貨\n•\t#快速出貨\n\n每次換槳還在用小板手慢慢轉，一顆螺帽轉到手痠嗎？😅 \n這支 Y 型三合一快拆扳手，把 8/9/10mm 套筒集中在同一支工具上，對應主流 2204～2306 電機的 M5/M6 螺母，一插一扭就能快速拆裝槳葉，是外出飛行與比賽場必備小工具。\n\n產品特色：\n•\t🧷 Y 型省力手柄：三向握把方便出力，即使鎖緊的螺帽也能輕鬆鬆開，不傷手。\n•\t🧰 8/9/10mm 三種套筒：覆蓋常見電機螺帽規格，5 吋穿越機、多軸小機都能通用。\n•\t🛩️ 專為 FPV 設計：套筒深度可完整咬住螺母又不干涉槳葉，拆裝時不易滑牙或刮傷槳。\n•\t🎒 輕巧好收納：一支抵多支傳統套筒板手，放工具袋或背包側袋都不佔空間，外出維修超方便。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-49154857250/01.webp",
+      "src_small": "/assets/img/products/sp-49154857250/01-480.webp",
+      "alt": "Y型三合一快拆扳手 8/9/10mm 套筒工具 電機M5/M6螺母專用 拆裝槳葉板手 5吋穿越機FPV維修工具（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mjlac6uv9r0j6a"
+    },
+    {
+      "src": "/assets/img/products/sp-49154857250/02.webp",
+      "src_small": "/assets/img/products/sp-49154857250/02-480.webp",
+      "alt": "Y型三合一快拆扳手 8/9/10mm 套筒工具 電機M5/M6螺母專用 拆裝槳葉板手 5吋穿越機FPV維修工具（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mjlac6uvnsoxb3"
+    },
+    {
+      "src": "/assets/img/products/sp-49154857250/03.webp",
+      "src_small": "/assets/img/products/sp-49154857250/03-480.webp",
+      "alt": "Y型三合一快拆扳手 8/9/10mm 套筒工具 電機M5/M6螺母專用 拆裝槳葉板手 5吋穿越機FPV維修工具（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mjlac6ul8r2b1c"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

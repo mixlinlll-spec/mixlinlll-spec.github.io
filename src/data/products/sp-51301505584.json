@@ -15,154 +15,331 @@
   "short_description": "",
   "description": "#Speedybee\n\n#SpeedybeeMaster5\n\n#Master5V2\n\n#穿越機配件\n\n#FPV打印件\n\n#3D列印TPU\n\n#TPU配件\n\n#穿越機改裝\n\n#穿越機保護套\n\n#FPV零件\n\n#Speedybee配件\n\n為 SpeedyBee Master 5 V2 量身打造的 全套 3D 列印配件，包含機身保護、減震、天線管理、相機固定等多項升級功能。\n採用高韌性 TPU 材質，兼具彈性與耐撞性，提升保護力與使用壽命。\n適合穿越機玩家升級、維修、改裝使用。\n\n✨ 商品特色\n高韌性 TPU 材質，耐撞耐震\n專為 SpeedyBee Master 5 V2 精準設計\n足部底墊、相機保護、天線支架等多項配件可選\n完美貼合，不干涉飛行表現\n可依需求選擇顏色或單獨配件\n\n📦 規格\n適用機型：SpeedyBee Master 5 V2\n材質：TPU（柔性、抗震）",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-51301505584/01.webp",
+      "src_small": "/assets/img/products/sp-51301505584/01-480.webp",
+      "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mh4o6r3uxsekd2"
+    },
+    {
+      "src": "/assets/img/products/sp-51301505584/02.webp",
+      "src_small": "/assets/img/products/sp-51301505584/02-480.webp",
+      "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-51301505584/03.webp",
+      "src_small": "/assets/img/products/sp-51301505584/03-480.webp",
+      "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mh4o9lx30mbx95"
+    },
+    {
+      "src": "/assets/img/products/sp-51301505584/04.webp",
+      "src_small": "/assets/img/products/sp-51301505584/04-480.webp",
+      "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（細節圖 3）",
+      "width": 980,
+      "height": 980,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mh4oyukwm1amb0"
+    },
+    {
+      "src": "/assets/img/products/sp-51301505584/05.webp",
+      "src_small": "/assets/img/products/sp-51301505584/05-480.webp",
+      "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（細節圖 4）",
+      "width": 927,
+      "height": 927,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mhdfw2fst24rd4"
+    }
+  ],
   "variants": [
     {
       "name": "狗座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049846"
+      "shopee_variation_id": "277162049846",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-06-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：狗座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh4op9wovs3ve3"
+      }
     },
     {
       "name": "251GPS",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049851"
+      "shopee_variation_id": "277162049851",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-17-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：251GPS）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mh4orrg8efwoca"
+      }
     },
     {
       "name": "BB響及電容安裝座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049850"
+      "shopee_variation_id": "277162049850",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-07-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：BB響及電容安裝座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mh4opd3a5a14f7"
+      }
     },
     {
       "name": "接收機放置",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049859"
+      "shopee_variation_id": "277162049859",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-04-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：接收機放置）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mh4op31wgm4q6e"
+      }
     },
     {
       "name": "原廠鏡頭安裝座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049862"
+      "shopee_variation_id": "277162049862",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-10-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：原廠鏡頭安裝座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mh4opwcb3217d0"
+      }
     },
     {
       "name": "機頭保護",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049860"
+      "shopee_variation_id": "277162049860",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-05-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：機頭保護）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mh4op64cy4nj31"
+      }
     },
     {
       "name": "SMA天線側出",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "287192904475"
+      "shopee_variation_id": "287192904475",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-21-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：SMA天線側出）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mhdfwmskphca72"
+      }
     },
     {
       "name": "機尾SMA安裝座(半高)",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049861"
+      "shopee_variation_id": "277162049861",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-08-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：機尾SMA安裝座(半高)）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mh4opl9x5jpmb2"
+      }
     },
     {
       "name": "GPS+O3天線+接收機尾座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049857"
+      "shopee_variation_id": "277162049857",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-01-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：GPS+O3天線+接收機尾座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mh4o9lx30mbx95"
+      }
     },
     {
       "name": "O4PRO天線尾座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "390137157143"
+      "shopee_variation_id": "390137157143",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-20-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：O4PRO天線尾座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mh4p0uy1avpm85"
+      }
     },
     {
       "name": "O3尾部天線座(半高)",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049856"
+      "shopee_variation_id": "277162049856",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-11-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：O3尾部天線座(半高)）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mh4oq2xkoufg9f"
+      }
     },
     {
       "name": "121GPS",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049849"
+      "shopee_variation_id": "277162049849",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-16-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：121GPS）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mh4orppips0806"
+      }
     },
     {
       "name": "腳墊(機臂繳腳座)",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049853"
+      "shopee_variation_id": "277162049853",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-13-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：腳墊(機臂繳腳座)）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mh4oq6nbpzpr16"
+      }
     },
     {
       "name": "機尾雙SMA安裝座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049852"
+      "shopee_variation_id": "277162049852",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-09-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：機尾雙SMA安裝座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mh4oppzcv95a9e"
+      }
     },
     {
       "name": "O圈",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049847"
+      "shopee_variation_id": "277162049847",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-12-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：O圈）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mh4oq4evcdu4a4"
+      }
     },
     {
       "name": "前置XT60座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "390137147904"
+      "shopee_variation_id": "390137147904",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-19-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：前置XT60座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mh4oyenji6fi45"
+      }
     },
     {
       "name": "181GPS",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049854"
+      "shopee_variation_id": "277162049854",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-15-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：181GPS）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mh4ornth6dqia4"
+      }
     },
     {
       "name": "機尾半高天線+GPS安裝件",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049848"
+      "shopee_variation_id": "277162049848",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-14-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：機尾半高天線+GPS安裝件）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mh4oqk32tn2h12"
+      }
     },
     {
       "name": "880GPS",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049855"
+      "shopee_variation_id": "277162049855",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-18-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：880GPS）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mh4ortdq2gwbc5"
+      }
     },
     {
       "name": "側護板",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049845"
+      "shopee_variation_id": "277162049845",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-02-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：側護板）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mh4oowepy6tkf2"
+      }
     },
     {
       "name": "鏡頭減震墊",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "277162049858"
+      "shopee_variation_id": "277162049858",
+      "image": {
+        "src": "/assets/img/products/sp-51301505584/opt-03-480.webp",
+        "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（規格：鏡頭減震墊）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mh4op0i2ffv019"
+      }
     }
   ],
   "price_twd": null,

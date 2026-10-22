@@ -17,7 +17,58 @@
   "short_description": "",
   "description": "✅ 搭載 DJI O4 Wide 高清數位圖傳",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-43033394158/01.webp",
+      "src_small": "/assets/img/products/sp-43033394158/01-480.webp",
+      "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mrn4y93trton64"
+    },
+    {
+      "src": "/assets/img/products/sp-43033394158/02.webp",
+      "src_small": "/assets/img/products/sp-43033394158/02-480.webp",
+      "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mrn4y97pnjlze4"
+    },
+    {
+      "src": "/assets/img/products/sp-43033394158/03.webp",
+      "src_small": "/assets/img/products/sp-43033394158/03-480.webp",
+      "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mrn4y93cu77oee"
+    },
+    {
+      "src": "/assets/img/products/sp-43033394158/04.webp",
+      "src_small": "/assets/img/products/sp-43033394158/04-480.webp",
+      "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mrn4y93v979h76"
+    },
+    {
+      "src": "/assets/img/products/sp-43033394158/05.webp",
+      "src_small": "/assets/img/products/sp-43033394158/05-480.webp",
+      "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mrn4y95w2ayp48"
+    }
+  ],
   "variants": [
     {
       "name": "動力套ELRS",

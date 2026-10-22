@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "#SpeedyBeeMario5 #穿越機配件 #TPU防撞底座 #穿越機腳墊 #飛行器防震 #3D列印配件 #SpeedyBee機架 #穿越機維修 #穿越機改裝 #FPV配件\n\n專為 SpeedyBee Mario 5 穿越機 設計的 3D列印防撞底座，提供額外的保護與穩定支撐。\n使用 TPU彈性材質 製作，柔軟抗震、不易斷裂，讓機架在起降或碰撞時減少損傷。\n\n✅ 完美貼合原廠機架孔位，安裝快速 (無須螺絲) 直接壓入即可\n✅ 防滑設計，降落更穩定\n\n適用機種：\nSpeedyBee Mario 5\n\n材質說明：\nTPU（熱塑性聚氨酯）－柔軟、耐磨、抗衝擊",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-56200524556/01.webp",
+      "src_small": "/assets/img/products/sp-56200524556/01-480.webp",
+      "alt": "SpeedyBee Mario 5 穿越機 防撞底座 保護墊 腳墊支架 防震防滑 配件（主圖）",
+      "width": 814,
+      "height": 814,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mgggfslq2dqm7f"
+    },
+    {
+      "src": "/assets/img/products/sp-56200524556/02.webp",
+      "src_small": "/assets/img/products/sp-56200524556/02-480.webp",
+      "alt": "SpeedyBee Mario 5 穿越機 防撞底座 保護墊 腳墊支架 防震防滑 配件（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-56200524556/03.webp",
+      "src_small": "/assets/img/products/sp-56200524556/03-480.webp",
+      "alt": "SpeedyBee Mario 5 穿越機 防撞底座 保護墊 腳墊支架 防震防滑 配件（細節圖 2）",
+      "width": 773,
+      "height": 773,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mgggfslwjk09a8"
+    }
+  ],
   "variants": [
     {
       "name": "淺藍",

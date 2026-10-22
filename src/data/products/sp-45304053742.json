@@ -41,7 +41,38 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-45304053742/01.webp",
+      "src_small": "/assets/img/products/sp-45304053742/01-480.webp",
+      "alt": "鋁合金尼龍法蘭防鬆螺母 M5 電機螺帽 穿越機CW多軸無刷電機專用鎖槳帽 彩色輕量防鬆螺帽 FPV航模配件（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mizoc6wgl79i7c"
+    },
+    {
+      "src": "/assets/img/products/sp-45304053742/02.webp",
+      "src_small": "/assets/img/products/sp-45304053742/02-480.webp",
+      "alt": "鋁合金尼龍法蘭防鬆螺母 M5 電機螺帽 穿越機CW多軸無刷電機專用鎖槳帽 彩色輕量防鬆螺帽 FPV航模配件（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mizocz53qccm57"
+    },
+    {
+      "src": "/assets/img/products/sp-45304053742/03.webp",
+      "src_small": "/assets/img/products/sp-45304053742/03-480.webp",
+      "alt": "鋁合金尼龍法蘭防鬆螺母 M5 電機螺帽 穿越機CW多軸無刷電機專用鎖槳帽 彩色輕量防鬆螺帽 FPV航模配件（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mizoleepqznk30"
+    }
+  ],
   "variants": [
     {
       "name": "鈦藍（鈦合金）",

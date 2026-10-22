@@ -34,21 +34,74 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-57303672693/01.webp",
+      "src_small": "/assets/img/products/sp-57303672693/01-480.webp",
+      "alt": "十安X電翼動力 高壓競速電池 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mlwy62rwffgka9"
+    },
+    {
+      "src": "/assets/img/products/sp-57303672693/02.webp",
+      "src_small": "/assets/img/products/sp-57303672693/02-480.webp",
+      "alt": "十安X電翼動力 高壓競速電池 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mlrthqienmkvb2"
+    },
+    {
+      "src": "/assets/img/products/sp-57303672693/03.webp",
+      "src_small": "/assets/img/products/sp-57303672693/03-480.webp",
+      "alt": "十安X電翼動力 高壓競速電池 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池（細節圖 2）",
+      "width": 800,
+      "height": 800,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mio7tpzswkjq8f"
+    },
+    {
+      "src": "/assets/img/products/sp-57303672693/04.webp",
+      "src_small": "/assets/img/products/sp-57303672693/04-480.webp",
+      "alt": "十安X電翼動力 高壓競速電池 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mlwy62rwgu1062"
+    }
+  ],
   "variants": [
     {
       "name": "XT30接口/2S/450mah",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "272285762564"
+      "shopee_variation_id": "272285762564",
+      "image": {
+        "src": "/assets/img/products/sp-57303672693/opt-02-480.webp",
+        "alt": "十安X電翼動力 高壓競速電池 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池（規格：XT30接口/2S/450mah）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mlwy45q1bugyd9"
+      }
     },
     {
       "name": "PH接口/1S/450mah",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "272285762563"
+      "shopee_variation_id": "272285762563",
+      "image": {
+        "src": "/assets/img/products/sp-57303672693/opt-01-480.webp",
+        "alt": "十安X電翼動力 高壓競速電池 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池（規格：PH接口/1S/450mah）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mio7z0rynbig48"
+      }
     }
   ],
   "price_twd": null,

@@ -17,7 +17,58 @@
   "short_description": "",
   "description": "•\t#Tinywhoop\n•\t#微型穿越機\n•\t#Tinywhoop壁掛\n•\t#穿越機收納架\n•\t#牆面展示架\n•\t#洞洞板收納\n•\t#whoop機庫\n•\t#FPV收納\n•\t#3D列印支架\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t可選單掛式／多掛排架：單個掛一台、或一排掛 3～5 台，牆上一眼看到今天要飛哪一台。\n•\t安裝方式多元：螺絲、3M 無痕膠、掛在洞洞板都可以，租屋族也能輕鬆佈置牆面機庫。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-50054950504/01.webp",
+      "src_small": "/assets/img/products/sp-50054950504/01-480.webp",
+      "alt": "Tinywhoop 微型穿越機壁掛支架 65～85mm 機架收納固定座 牆面展示架（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mjp3jh28npc7bd"
+    },
+    {
+      "src": "/assets/img/products/sp-50054950504/02.webp",
+      "src_small": "/assets/img/products/sp-50054950504/02-480.webp",
+      "alt": "Tinywhoop 微型穿越機壁掛支架 65～85mm 機架收納固定座 牆面展示架（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-50054950504/03.webp",
+      "src_small": "/assets/img/products/sp-50054950504/03-480.webp",
+      "alt": "Tinywhoop 微型穿越機壁掛支架 65～85mm 機架收納固定座 牆面展示架（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mjp3jh2pv5s61c"
+    },
+    {
+      "src": "/assets/img/products/sp-50054950504/04.webp",
+      "src_small": "/assets/img/products/sp-50054950504/04-480.webp",
+      "alt": "Tinywhoop 微型穿越機壁掛支架 65～85mm 機架收納固定座 牆面展示架（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mjp3jh2soao792"
+    },
+    {
+      "src": "/assets/img/products/sp-50054950504/05.webp",
+      "src_small": "/assets/img/products/sp-50054950504/05-480.webp",
+      "alt": "Tinywhoop 微型穿越機壁掛支架 65～85mm 機架收納固定座 牆面展示架（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mjp3jh1ympdu64"
+    }
+  ],
   "variants": [
     {
       "name": "一組2個",

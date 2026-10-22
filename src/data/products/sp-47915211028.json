@@ -15,7 +15,48 @@
   "short_description": "",
   "description": "#BETAFPV #AirCamera #Air65 #Air75 #Meteor65 #Meteor75 #TinyWhoop #FPV #穿越機 #FPV相機",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-47915211028/01.webp",
+      "src_small": "/assets/img/products/sp-47915211028/01-480.webp",
+      "alt": "BETAFPV Air Camera FPV 超輕量攝影機 1.48g 1S Tiny Whoop Air65（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mrbawz54fkzw93"
+    },
+    {
+      "src": "/assets/img/products/sp-47915211028/02.webp",
+      "src_small": "/assets/img/products/sp-47915211028/02-480.webp",
+      "alt": "BETAFPV Air Camera FPV 超輕量攝影機 1.48g 1S Tiny Whoop Air65（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mrbawz52bqbr63"
+    },
+    {
+      "src": "/assets/img/products/sp-47915211028/03.webp",
+      "src_small": "/assets/img/products/sp-47915211028/03-480.webp",
+      "alt": "BETAFPV Air Camera FPV 超輕量攝影機 1.48g 1S Tiny Whoop Air65（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mrbawz4z1qm885"
+    },
+    {
+      "src": "/assets/img/products/sp-47915211028/04.webp",
+      "src_small": "/assets/img/products/sp-47915211028/04-480.webp",
+      "alt": "BETAFPV Air Camera FPV 超輕量攝影機 1.48g 1S Tiny Whoop Air65（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mrbawz6fsufaa0"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

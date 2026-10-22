@@ -17,7 +17,38 @@
   "short_description": "",
   "description": "#1404馬達 #4500KV #無刷馬達 #穿越機 #FPV #花飛 #MAD #AceRacer #3吋穿越機 #無人機馬達 #電翼動力\n\n【MAD AceRacer FS1404.5 V1.0 無刷馬達 4500KV】\n\nMAD Components AceRacer 花飛系列 1404.5 規格馬達，單顆僅 11g，\n單軸最大拉力 391.3g，主打輕量化與高功率反應，\n適合 3 吋、Toothpick 及輕量化花飛機型。\n9N12P 定子設計，鏤空散熱結構，鈦合金軸芯。\n\n■ 商品規格\n型號：MAD AceRacer FS1404.5 V1.0\nKV 值：4500KV\n定子規格：9N12P\n馬達尺寸：D 18.1 × 16.8 mm\n軸徑：1.5 mm\n螺旋槳安裝孔位：D5 M2×4\n馬達安裝孔位：D9 M2×4\n相間內阻：135 mΩ\n空載電流：0.52A @ 6V\n最大電流：14.88 A\n最大拉力：391.3 g（單軸）\n最大功率：230.9 W\n馬達重量（含線）：11 g\n盒裝重量：20.9 g\n出線規格：130mm、24AWG 黑色矽膠線\n轉子動平衡：≦3 mg\n\n■ 商品特點\n1. 單顆 11g、最大拉力 391.3g，推重比適合輕量化花飛與 3 吋機型\n2. 9N12P 定子配置，搭配鏤空散熱設計，連續操作散熱較佳\n3. 鈦合金軸芯與航太鋁材外殼，摔機耐受度較一般 1404 高\n4. 130mm 加長出線，1404 級小機架走線不必再接長\n\n■ 發貨清單\n馬達 ×1\nM2×5 馬達螺絲 ×4\nM2×6 馬達螺絲 ×2\n貼紙 ×2\n（本頁面為單顆售價，需要一組四顆請於下單前私訊或選購四入規格）\n\n■ 購買前請確認\n1. 4500KV 屬高 KV 馬達，一般搭配 3S～4S 使用，實際電壓與槳葉組合請依你的機架與電調評估，\n   官方規格表未標示測試電壓與槳葉，上述拉力與功率為原廠實驗室數據，實際飛行數值會有差異。\n2. 電調持續電流請預留餘裕。單顆最大電流 14.88A，四軸滿油門瞬時總電流會相當可觀，\n   建議搭配有足夠餘裕的四合一電調，不要用剛好打平的規格。\n3. 軸徑 1.5mm，請確認你的槳葉孔徑相容。螺旋槳孔位為 D5 M2×4。\n4. 馬達安裝孔位 D9 M2×4，請確認機架臂孔距相同再下單。\n5. 鎖馬達螺絲請務必確認長度，螺絲過長會頂到繞線導致短路燒毀，此情況不在保固範圍。\n6. 馬達屬消耗品，進水、撞擊、卡草、堵轉或線材拉斷造成的損壞不在保固範圍。\n7. 需要協助評估機架、電調與槳葉搭配，可下單前私訊詢問。\n\n電翼動力 EWP｜Ready to Fly",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-57817740773/01.webp",
+      "src_small": "/assets/img/products/sp-57817740773/01-480.webp",
+      "alt": "MAD AceRacer FS1404.5 4500KV 馬達 無刷馬達 1404 11g 輕量 花飛 穿越機 3吋（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mt0d4y1jzk7b6a"
+    },
+    {
+      "src": "/assets/img/products/sp-57817740773/02.webp",
+      "src_small": "/assets/img/products/sp-57817740773/02-480.webp",
+      "alt": "MAD AceRacer FS1404.5 4500KV 馬達 無刷馬達 1404 11g 輕量 花飛 穿越機 3吋（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mt0d4y1jwr2ff9"
+    },
+    {
+      "src": "/assets/img/products/sp-57817740773/03.webp",
+      "src_small": "/assets/img/products/sp-57817740773/03-480.webp",
+      "alt": "MAD AceRacer FS1404.5 4500KV 馬達 無刷馬達 1404 11g 輕量 花飛 穿越機 3吋（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mt0d4y1jy5mvb6"
+    }
+  ],
   "variants": [
     {
       "name": "單顆",

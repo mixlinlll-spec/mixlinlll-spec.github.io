@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "#JHE42B #蜂鳴器 #BB響 #尋機器 #FPV蜂鳴器 #穿越機配件 #Betaflight #INAV #FPVDrone #穿越機 #競速機 #花飛機 #長航機 #無人機配件 #LED警報器 #斷電尋機器 #飛控配件 #電翼動力 #FPVDIY #DroneParts\n\nJHE42B 自帶電池蜂鳴器，專為 FPV 穿越機設計。當飛機墜落草叢、樹林或失聯時，可透過超大音量警報快速定位機體位置，大幅提升尋機效率。\n\n內建備用電池，即使主電池脫落或完全斷電，仍可持續發出警報聲，是 FPV 玩家必備的防炸機配件。\n\n【產品特色】\n✔ 110dB 超大音量警報\n✔ 內建備用鋰電池\n✔ 主電池脫落仍可持續鳴叫\n✔ LED 高亮指示燈\n✔ 支援 Betaflight 尋機功能\n✔ 體積小巧安裝方便\n✔ 降低炸機遺失風險\n\n【產品規格】\n型號：JHE42B\n音量：約110dB\n工作電壓：5V\n功能：尋機警報、斷電警報、LED指示\n適用系統：Betaflight、INAV\n重量：輕量化設計\n\n【接線方式】\n紅線：5V\n黑線：GND\n綠線：BZ-\n\n【適用機型】\n5吋穿越機\n7吋長航機\nFreestyle 花飛機\n競速機\nFPV 固定翼\n\n【包裝內容】\nJHE42B 蜂鳴器 ×1\n\n【注意事項】\n安裝前請確認飛控蜂鳴器接口定義。\n不同飛控接線方式可能略有差異，請依飛控說明書安裝。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-54511824587/01.webp",
+      "src_small": "/assets/img/products/sp-54511824587/01-480.webp",
+      "alt": "JHE42B FPV 蜂鳴器 BB響 斷電尋機器 110dB 超大音量 穿越機警報器 自帶電池 LED指示燈（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mp7lkj5898njf4"
+    },
+    {
+      "src": "/assets/img/products/sp-54511824587/02.webp",
+      "src_small": "/assets/img/products/sp-54511824587/02-480.webp",
+      "alt": "JHE42B FPV 蜂鳴器 BB響 斷電尋機器 110dB 超大音量 穿越機警報器 自帶電池 LED指示燈（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mp7lkj52641u06"
+    },
+    {
+      "src": "/assets/img/products/sp-54511824587/03.webp",
+      "src_small": "/assets/img/products/sp-54511824587/03-480.webp",
+      "alt": "JHE42B FPV 蜂鳴器 BB響 斷電尋機器 110dB 超大音量 穿越機警報器 自帶電池 LED指示燈（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mp7lkj58an7z00"
+    }
+  ],
   "variants": [
     {
       "name": "大分貝蜂鳴器",

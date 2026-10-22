@@ -15,7 +15,48 @@
   "short_description": "",
   "description": "#Speedybee #Bee25 #图传支架 #SMA天线 #TPU #3D打印 #穿越机配件 #FPV #图传固定 #天线保护 #FPV零件 #自組穿越機\n\n專為 Speedybee Bee25 圖傳模組 設計的 SMA天線支架，採用高精度 TPU 3D列印 製作，兼顧韌性與輕量化。\n能有效固定天線接頭，減少飛行震動與天線鬆動風險，同時保護圖傳模組接頭不會被拉扯。\n\n✅ 產品特色\n專用設計：完美貼合 Bee25 圖傳外型\nSLA 材質：耐摔、防震、穩固不鬆動\n提供多色可選，兼具實用與外觀\n適用於 DIY 穿越機、FPV 模組改裝\n\n📦產品資訊：\n材質：TPU\n適用：Speedybee Bee25\n功能：固定 SMA 天线、保護接頭\n\n💡貼心提醒：\n3D列印件為手工製作，邊緣可能略有層紋屬正常現象，不影響安裝使用。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-50550501828/01.webp",
+      "src_small": "/assets/img/products/sp-50550501828/01-480.webp",
+      "alt": "Speedybee Bee25 圖傳 SMA 天線支架 TPU 3D列印件 穿越機圖傳固定座 SMA天線座（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mgg7vwdy0r9kde"
+    },
+    {
+      "src": "/assets/img/products/sp-50550501828/02.webp",
+      "src_small": "/assets/img/products/sp-50550501828/02-480.webp",
+      "alt": "Speedybee Bee25 圖傳 SMA 天線支架 TPU 3D列印件 穿越機圖傳固定座 SMA天線座（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-50550501828/03.webp",
+      "src_small": "/assets/img/products/sp-50550501828/03-480.webp",
+      "alt": "Speedybee Bee25 圖傳 SMA 天線支架 TPU 3D列印件 穿越機圖傳固定座 SMA天線座（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mgg7vwdzyznzcf"
+    },
+    {
+      "src": "/assets/img/products/sp-50550501828/04.webp",
+      "src_small": "/assets/img/products/sp-50550501828/04-480.webp",
+      "alt": "Speedybee Bee25 圖傳 SMA 天線支架 TPU 3D列印件 穿越機圖傳固定座 SMA天線座（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mgg7vwe81r7sf4"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

@@ -61,7 +61,18 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-48418445356/01.webp",
+      "src_small": "/assets/img/products/sp-48418445356/01-480.webp",
+      "alt": "FDI F405 F722 AIO 40A 飛控 一體式 ICM42688P 16M黑盒 GPS 穿越機 電翼動力（主圖）",
+      "width": 722,
+      "height": 722,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820la-mtjjjqpxup6w2f"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

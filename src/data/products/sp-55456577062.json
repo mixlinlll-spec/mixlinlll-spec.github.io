@@ -15,7 +15,48 @@
   "short_description": "",
   "description": "•\t#DJIGoggles2\n•\t#戰術頭盔安裝座\n•\t#HelmetMount\n•\t#WilcoxL4\n•\t#G24介面\n•\t#FPV頭盔\n•\t#夜視頭盔轉接\n•\t#3D列印配件\n•\t#穿越機裝備\n•\t#台灣現貨\n•\t#快速出貨\n\n🔥只有黑色 碳纖維\n\n•\t依照 DJI Goggles 2 外型與頭帶結構建模，利用環抱式固定座把眼鏡牢牢鎖在戰術頭盔前端，飛行時不會晃動或下滑。\n•\t前端採用常見的 Wilcox L4 / G24 系統接口，可對接戰術頭盔夜視座，習慣 NVG 操作的玩家上手完全無痛。\n•\t兩段式結構可調整俯仰角度，方便依個人頭型與視線微調，減少長時間佩戴造成的壓鼻或壓額頭問題。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-55456577062/01.webp",
+      "src_small": "/assets/img/products/sp-55456577062/01-480.webp",
+      "alt": "DJI Goggles 2 戰術頭盔安裝座 Wilcox L4/G24介面 TAC Helmet Mount 固定座（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-ml94v5lc464j2b"
+    },
+    {
+      "src": "/assets/img/products/sp-55456577062/02.webp",
+      "src_small": "/assets/img/products/sp-55456577062/02-480.webp",
+      "alt": "DJI Goggles 2 戰術頭盔安裝座 Wilcox L4/G24介面 TAC Helmet Mount 固定座（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-55456577062/03.webp",
+      "src_small": "/assets/img/products/sp-55456577062/03-480.webp",
+      "alt": "DJI Goggles 2 戰術頭盔安裝座 Wilcox L4/G24介面 TAC Helmet Mount 固定座（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-ml94v5lc1czm37"
+    },
+    {
+      "src": "/assets/img/products/sp-55456577062/04.webp",
+      "src_small": "/assets/img/products/sp-55456577062/04-480.webp",
+      "alt": "DJI Goggles 2 戰術頭盔安裝座 Wilcox L4/G24介面 TAC Helmet Mount 固定座（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-ml94v5lpawhu9f"
+    }
+  ],
   "variants": [],
   "price_twd": null,
   "price_display": "inquiry",

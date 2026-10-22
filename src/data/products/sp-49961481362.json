@@ -17,7 +17,58 @@
   "short_description": "",
   "description": "#OVONIC #1050mAh #120C #6S電池 #FPV電池 #穿越機電池 #XT60 #LiPo #Freestyle #競速 #花飛 #5吋穿越機 #無人機電池 #航模 #FPVDrone\n\n專為 5 吋 FPV 穿越機打造，兼具爆發力、續航與穩定輸出，是 Freestyle 與競速玩家熱門選擇。\n\n📌產品特色\n・120C 高倍率放電\n・6S 高電壓輸出\n・爆發力強、油門響應迅速\n・適合高性能穿越機配置\n・XT60 接頭即插即用\n・穩定輸出不易軟腳\n\n📌產品規格\n品牌：OVONIC\n系列：Pro\n容量：1050mAh\n配置：6S1P\n電壓：22.2V\n倍率：120C\n接頭：XT60\n尺寸：約73×36×33mm\n重量：約170g\n\n📌適用機型\n・5吋穿越機\n・Freestyle 花飛機\n・競速穿越機\n・DJI O3 / O4 配置機型\n\n📌飛行特色\n・高爆發輸出\n・高速翻滾反應靈敏\n・穩定巡航表現優異\n・兼顧動力與續航需求\n\n📌包裝內容\n・OVONIC Pro 6S 1050mAh 120C 電池 ×1\n\n⚠️注意事項\n・請使用平衡充電器充電\n・請勿過充、過放或短路\n・飛行後建議冷卻再充電\n・長期存放請保持存儲電壓",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-49961481362/01.webp",
+      "src_small": "/assets/img/products/sp-49961481362/01-480.webp",
+      "alt": "OVONIC Pro 6S 1050mAh 120C XT60 穿越機電池 FPV高倍率鋰電池 花飛 競速 22.2V（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-moxeg6h7u0b024"
+    },
+    {
+      "src": "/assets/img/products/sp-49961481362/02.webp",
+      "src_small": "/assets/img/products/sp-49961481362/02-480.webp",
+      "alt": "OVONIC Pro 6S 1050mAh 120C XT60 穿越機電池 FPV高倍率鋰電池 花飛 競速 22.2V（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-moxeal96eygw2b"
+    },
+    {
+      "src": "/assets/img/products/sp-49961481362/03.webp",
+      "src_small": "/assets/img/products/sp-49961481362/03-480.webp",
+      "alt": "OVONIC Pro 6S 1050mAh 120C XT60 穿越機電池 FPV高倍率鋰電池 花飛 競速 22.2V（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-moxealcc1c7g74"
+    },
+    {
+      "src": "/assets/img/products/sp-49961481362/04.webp",
+      "src_small": "/assets/img/products/sp-49961481362/04-480.webp",
+      "alt": "OVONIC Pro 6S 1050mAh 120C XT60 穿越機電池 FPV高倍率鋰電池 花飛 競速 22.2V（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-moxeal48lwjxe8"
+    },
+    {
+      "src": "/assets/img/products/sp-49961481362/05.webp",
+      "src_small": "/assets/img/products/sp-49961481362/05-480.webp",
+      "alt": "OVONIC Pro 6S 1050mAh 120C XT60 穿越機電池 FPV高倍率鋰電池 花飛 競速 22.2V（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-moxeal6k5c0bef"
+    }
+  ],
   "variants": [
     {
       "name": "6S/1050mah/120C/XT60",

@@ -17,7 +17,58 @@
   "short_description": "",
   "description": "Axisflying Bando5 SE 5吋 FPV 穿越機",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-44383452523/01.webp",
+      "src_small": "/assets/img/products/sp-44383452523/01-480.webp",
+      "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mrqmc52muarrda"
+    },
+    {
+      "src": "/assets/img/products/sp-44383452523/02.webp",
+      "src_small": "/assets/img/products/sp-44383452523/02-480.webp",
+      "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52msw7b58"
+    },
+    {
+      "src": "/assets/img/products/sp-44383452523/03.webp",
+      "src_small": "/assets/img/products/sp-44383452523/03-480.webp",
+      "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mrqmc52mvpc7df"
+    },
+    {
+      "src": "/assets/img/products/sp-44383452523/04.webp",
+      "src_small": "/assets/img/products/sp-44383452523/04-480.webp",
+      "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52mx3wnf3"
+    },
+    {
+      "src": "/assets/img/products/sp-44383452523/05.webp",
+      "src_small": "/assets/img/products/sp-44383452523/05-480.webp",
+      "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mrqmc52myih381"
+    }
+  ],
   "variants": [
     {
       "name": "模擬版本（含接收機）",

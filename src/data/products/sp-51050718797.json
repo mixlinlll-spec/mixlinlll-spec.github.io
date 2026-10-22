@@ -15,42 +15,163 @@
   "short_description": "",
   "description": "#Cinelog30V3 #GPS #Mini #機艙蓋 #TPU防撞保護套 #穿越機配件 #FPV零件 #3D列印配件 #GEPRC適用\n\n此為 Cinelog 30 V3 專用 各類打印件，採用輕量化設計\n使用 TPU 材質 3D 列印，具備柔韌與抗震特性，適合 FPV 穿越機高強度飛行使用。\n\n✅ 適用：Cinelog 30 V3\n✅ 材質：TPU\n✅ 功能：保護 GPS 模組、防撞、固定穩固\n✅ (請備註) 黑色 橘色\n\nO3/O4 後天線+GPS座 (GPS規格 15X15X15) mm\n前置GPS底座 (GPS規格12X12X12) mm",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-51050718797/01.webp",
+      "src_small": "/assets/img/products/sp-51050718797/01-480.webp",
+      "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mgm0ml3a2tjea1"
+    },
+    {
+      "src": "/assets/img/products/sp-51050718797/02.webp",
+      "src_small": "/assets/img/products/sp-51050718797/02-480.webp",
+      "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（細節圖 1）",
+      "width": 823,
+      "height": 823,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mgm0im1awmiya6"
+    },
+    {
+      "src": "/assets/img/products/sp-51050718797/03.webp",
+      "src_small": "/assets/img/products/sp-51050718797/03-480.webp",
+      "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mgm0im1p5btbc8"
+    },
+    {
+      "src": "/assets/img/products/sp-51050718797/04.webp",
+      "src_small": "/assets/img/products/sp-51050718797/04-480.webp",
+      "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（細節圖 3）",
+      "width": 845,
+      "height": 845,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mgm2xvn286bu85"
+    },
+    {
+      "src": "/assets/img/products/sp-51050718797/05.webp",
+      "src_small": "/assets/img/products/sp-51050718797/05-480.webp",
+      "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（細節圖 4）",
+      "width": 929,
+      "height": 929,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mgly7nxvcxl56b"
+    },
+    {
+      "src": "/assets/img/products/sp-51050718797/06.webp",
+      "src_small": "/assets/img/products/sp-51050718797/06-480.webp",
+      "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（細節圖 5）",
+      "width": 821,
+      "height": 821,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mgly7ny0s6iz45"
+    },
+    {
+      "src": "/assets/img/products/sp-51050718797/07.webp",
+      "src_small": "/assets/img/products/sp-51050718797/07-480.webp",
+      "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（細節圖 6）",
+      "width": 811,
+      "height": 811,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgm13ckf35zi51"
+    },
+    {
+      "src": "/assets/img/products/sp-51050718797/08.webp",
+      "src_small": "/assets/img/products/sp-51050718797/08-480.webp",
+      "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（細節圖 7）",
+      "width": 838,
+      "height": 838,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mgm0fjtuc5cc49"
+    },
+    {
+      "src": "/assets/img/products/sp-51050718797/09.webp",
+      "src_small": "/assets/img/products/sp-51050718797/09-480.webp",
+      "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（細節圖 8）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mi2vavu50bnmf9"
+    }
+  ],
   "variants": [
     {
       "name": "尾部天線座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "320066021861"
+      "shopee_variation_id": "320066021861",
+      "image": {
+        "src": "/assets/img/products/sp-51050718797/opt-04-480.webp",
+        "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（規格：尾部天線座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgm13ckf35zi51"
+      }
     },
     {
       "name": "ELRS/915接收機固定",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "320066021862"
+      "shopee_variation_id": "320066021862",
+      "image": {
+        "src": "/assets/img/products/sp-51050718797/opt-05-480.webp",
+        "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（規格：ELRS/915接收機固定）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mgm154y23i195c"
+      }
     },
     {
       "name": "前置GPS底座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "445065304484"
+      "shopee_variation_id": "445065304484",
+      "image": {
+        "src": "/assets/img/products/sp-51050718797/opt-01-480.webp",
+        "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（規格：前置GPS底座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mgm2xvn286bu85"
+      }
     },
     {
       "name": "O3/O4 後天線+GPS座",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "445065304485"
+      "shopee_variation_id": "445065304485",
+      "image": {
+        "src": "/assets/img/products/sp-51050718797/opt-02-480.webp",
+        "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（規格：O3/O4 後天線+GPS座）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mgly7ny0s6iz45"
+      }
     },
     {
       "name": "天線夾",
       "sku": null,
       "price_twd": null,
       "availability": "unknown",
-      "shopee_variation_id": "320066021860"
+      "shopee_variation_id": "320066021860",
+      "image": {
+        "src": "/assets/img/products/sp-51050718797/opt-03-480.webp",
+        "alt": "Cinelog30V3 各類打印件 前置GPS 天線夾（規格：天線夾）",
+        "rights": "unverified",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mgm0fjtuc5cc49"
+      }
     }
   ],
   "price_twd": null,

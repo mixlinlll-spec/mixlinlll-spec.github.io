@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "#Radiomaster #GX12 #21700電池盒 #遙控器電池盒 #FPV配件 #3D列印TPU #電池外殼 #靈雀FPV #穿越機配件\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nRadiomaster GX12 專用 21700 電池盒（TPU 列印）\n專為 Radiomaster GX12 設計的 21700 電池盒，請將原廠配置的18650電池盒中的電線及彈簧片；\n用電烙鐵取下後接到此電池盒 就可以馬上升級了\n\n可加購電池，BSMI認證。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-55201981129/01.webp",
+      "src_small": "/assets/img/products/sp-55201981129/01-480.webp",
+      "alt": "Radiomaster GX12 專用 改裝 21700 電池盒（主圖）",
+      "width": 783,
+      "height": 783,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mheyodxnzz7ve3"
+    },
+    {
+      "src": "/assets/img/products/sp-55201981129/02.webp",
+      "src_small": "/assets/img/products/sp-55201981129/02-480.webp",
+      "alt": "Radiomaster GX12 專用 改裝 21700 電池盒（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mi2vavu50bnmf9"
+    },
+    {
+      "src": "/assets/img/products/sp-55201981129/03.webp",
+      "src_small": "/assets/img/products/sp-55201981129/03-480.webp",
+      "alt": "Radiomaster GX12 專用 改裝 21700 電池盒（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    }
+  ],
   "variants": [
     {
       "name": "21700電池盒",

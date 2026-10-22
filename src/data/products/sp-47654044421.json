@@ -38,7 +38,38 @@
       "source": "蝦皮商品說明"
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-47654044421/01.webp",
+      "src_small": "/assets/img/products/sp-47654044421/01-480.webp",
+      "alt": "RUIYI R5146 三葉槳 5吋FPV穿越機螺旋槳 競速花飛通用 超耐炸高效率 多色可選 5吋機專用槳葉（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mizn87epxj43ef"
+    },
+    {
+      "src": "/assets/img/products/sp-47654044421/02.webp",
+      "src_small": "/assets/img/products/sp-47654044421/02-480.webp",
+      "alt": "RUIYI R5146 三葉槳 5吋FPV穿越機螺旋槳 競速花飛通用 超耐炸高效率 多色可選 5吋機專用槳葉（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mizn87ebkm4kde"
+    },
+    {
+      "src": "/assets/img/products/sp-47654044421/03.webp",
+      "src_small": "/assets/img/products/sp-47654044421/03-480.webp",
+      "alt": "RUIYI R5146 三葉槳 5吋FPV穿越機螺旋槳 競速花飛通用 超耐炸高效率 多色可選 5吋機專用槳葉（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mizn87ebm0p0fc"
+    }
+  ],
   "variants": [
     {
       "name": "透藍",

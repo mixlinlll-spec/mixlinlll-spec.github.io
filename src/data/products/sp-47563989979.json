@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "#FPV #穿越機 #45mm槳 #TinyWhoop #Whoop #R45mm #RUIYI #芮翼 #三葉槳 #螺旋槳 #無刷馬達 #FPV配件 #空拍機 #微型穿越機 #電翼動力\n\nRUIYI 芮翼 R45mm 三葉槳，專為45mm Tiny Whoop、室內FPV及微型無刷穿越機打造。採用高韌性PC材質，重量僅0.37g，提供更靈敏的操控、更穩定的飛行表現，適合日常練飛、花飛及室內穿越。\n【產品特色】\n✔ 45mm三葉設計，推力充足、飛行穩定\n✔ 高韌性PC材質，耐撞耐用\n✔ 超輕量0.37g，降低飛行負擔\n✔ 1.5mm軸孔，適用主流無刷Whoop馬達\n✔ 適合室內飛行、花飛、練飛\n【產品規格】\n品牌：RUIYI 芮翼\n型號：R45mm\n尺寸：45mm\n葉片：3葉\n螺距：1.2\n軸孔：1.5mm\n重量：0.37g／支\n材質：PC\n【適用機型】\n45mm Tiny Whoop\n1S／2S 微型FPV穿越機\n1.5mm馬達軸無刷機型\n※ 下單前請確認槳葉尺寸、旋向及軸孔規格。",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-47563989979/01.webp",
+      "src_small": "/assets/img/products/sp-47563989979/01-480.webp",
+      "alt": "FPV 穿越機 螺旋槳 45mm 三葉槳 R45mm 1.5mm軸孔 RUIYI Tiny Whoop 無刷 空拍機槳葉（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mqn4j97h260x72"
+    },
+    {
+      "src": "/assets/img/products/sp-47563989979/02.webp",
+      "src_small": "/assets/img/products/sp-47563989979/02-480.webp",
+      "alt": "FPV 穿越機 螺旋槳 45mm 三葉槳 R45mm 1.5mm軸孔 RUIYI Tiny Whoop 無刷 空拍機槳葉（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mqn4j97h96v762"
+    },
+    {
+      "src": "/assets/img/products/sp-47563989979/03.webp",
+      "src_small": "/assets/img/products/sp-47563989979/03-480.webp",
+      "alt": "FPV 穿越機 螺旋槳 45mm 三葉槳 R45mm 1.5mm軸孔 RUIYI Tiny Whoop 無刷 空拍機槳葉（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mqn4j97jh98u18"
+    }
+  ],
   "variants": [
     {
       "name": "透紫四片",

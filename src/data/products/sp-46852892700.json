@@ -15,7 +15,38 @@
   "short_description": "",
   "description": "北征 GPS 機臂座\nBZGNSS BZ121\nBZGNSS BZ181\nBZGNSS BZ251\nBZ-121 GPS 座\nBZ-181 GPS 座\nBZ-251 GPS 座\n穿越機 GPS 座\nFPV GPS 安裝座\n無人機 GPS 機臂座\n3D 列印 GPS 座\nFPV 無人機配件\n穿越機客製化配件\n\n⚠️ 務必備註顏色，未備註將隨機出貨，訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n⚠️ 客製化需求（顏色／規格／綁法）請先聊聊討論再下單\n\n專為北征 BZ 系列 GPS 設計的機臂座，可支援 BZ-121、BZ-181、BZ-251 等常見規格，束帶穩固鎖在機臂上，讓 GPS 位置更理想、走線乾淨",
   "specifications": [],
-  "images": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-46852892700/01.webp",
+      "src_small": "/assets/img/products/sp-46852892700/01-480.webp",
+      "alt": "北征 BZ-121 / 181 / 251 GPS 機臂座 可訂製尺寸 束帶綁機臂 穿越機無人機適用（主圖）",
+      "width": 904,
+      "height": 904,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mi2v4kmudslf76"
+    },
+    {
+      "src": "/assets/img/products/sp-46852892700/02.webp",
+      "src_small": "/assets/img/products/sp-46852892700/02-480.webp",
+      "alt": "北征 BZ-121 / 181 / 251 GPS 機臂座 可訂製尺寸 束帶綁機臂 穿越機無人機適用（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-46852892700/03.webp",
+      "src_small": "/assets/img/products/sp-46852892700/03-480.webp",
+      "alt": "北征 BZ-121 / 181 / 251 GPS 機臂座 可訂製尺寸 束帶綁機臂 穿越機無人機適用（細節圖 2）",
+      "width": 849,
+      "height": 849,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mi2v4kohroy0ab"
+    }
+  ],
   "variants": [
     {
       "name": "小(例如m10)",
