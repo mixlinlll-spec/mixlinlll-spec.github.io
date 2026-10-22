@@ -185,8 +185,8 @@ export function footer(ctx) {
     <div><h2 class="footer-h">聯絡</h2><ul>${contactLinks}<li><a href="/contact/">聯絡我們</a></li></ul></div>
   </div>
   <div class="wrap footer-row">
-    <span>© ${ctx.site.copyright_since} 電翼動力 EWP</span>
-    <span class="footer-legal"><a href="/privacy/">隱私權說明</a>${pol.terms.approved ? '<a href="/terms/">網站條款</a>' : ''}${pol['shipping-returns'].approved ? '<a href="/shipping-returns/">售後與退換</a>' : ''}</span>
+    <span>© ${ctx.site.copyright_since} 電翼動力 EWP${ctx.site.business ? `｜${esc(ctx.site.business.legal_name)}｜統一編號 ${esc(ctx.site.business.tax_id)}` : ''}</span>
+    <span class="footer-legal">${pol.privacy.approved ? '<a href="/privacy/">隱私權說明</a>' : ''}${pol.terms.approved ? '<a href="/terms/">網站條款</a>' : ''}${pol['shipping-returns'].approved ? '<a href="/shipping-returns/">售後與退換</a>' : ''}</span>
     <span class="footer-note">商品頁出現的品牌名稱僅用於標示商品，不代表原廠代理或授權。</span>
   </div>
 </footer>`;

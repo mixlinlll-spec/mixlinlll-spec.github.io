@@ -1,40 +1,47 @@
 # 部署與回滾
 
-## 部署方式
+## ⚠ 本 PR 必須修改 GitHub Pages 設定
 
-GitHub Pages：Settings → Pages → Build and deployment → **Deploy from a branch**，Branch：`main`，資料夾：`/ (root)`。
-本次改版沿用這個設定，**不需要修改 Pages 設定**。PR 合併到 main 後約 1–3 分鐘上線。
+改版後網站由 GitHub Actions 建置，**只上傳 `dist/`**（產生的頁面＋白名單靜態檔），`src/`、`scripts/`、`tests/`、`docs/`、`_preview/` 都不會發布，因此草稿 JSON 無法從網站讀取。
 
-## 合併前驗收
+但 repo 根目錄已不再放產生的 `index.html`。**若 Pages 仍是「Deploy from a branch」就合併，正式站首頁會變成 404。** 請照以下順序操作。
 
-1. 在 PR 頁確認 `EWP site checks` 綠燈。
-2. 本機下載分支：
-   ```bash
-   git fetch origin feature/ewp-site-v2 && git switch feature/ewp-site-v2
-   node scripts/build.mjs --check && node --test tests/data.test.mjs
-   python3 -m http.server 8800        # 正式版預覽 http://localhost:8800
-   node scripts/build.mjs --drafts && python3 -m http.server 8801 --directory _preview   # 含草稿
-   ```
-3. 對照 PR 說明中的驗收清單。
+### 合併步驟（依序）
 
-## 合併後檢查（約 3 分鐘內）
+1. **確認 PR 的 `EWP site checks` 為綠燈。**
+2. **修改 Pages 來源**（需 repo 管理員）：
+   GitHub repo → **Settings** → 左側 **Pages** → **Build and deployment** → **Source** 下拉選單從「Deploy from a branch」改為 **「GitHub Actions」**。
+   - 這個下拉選單會立即儲存，不需按 Save。
+   - 改完後到合併完成前，GitHub 通常會繼續提供上一次部署的內容；若此時看到 404，完成第 3 步後 1–3 分鐘會恢復。
+3. **合併 PR** 到 main。合併會觸發 `Deploy EWP to GitHub Pages`（`.github/workflows/pages.yml`）。
+4. 到 **Actions** 分頁確認 `Deploy EWP to GitHub Pages` 的 `build` 與 `deploy` 兩個 job 都成功（約 1–2 分鐘）。
+5. 做「合併後檢查」。
+
+> 第一次部署若出現「Branch "main" is not allowed to deploy to github-pages」：Settings → Environments → `github-pages` → Deployment branches，確認允許 `main`。
+
+### 合併後檢查（約 3 分鐘內）
 
 - `https://mixlinlll-spec.github.io/` 首頁正常
 - `https://mixlinlll-spec.github.io/fpv-help.html` 仍為 91 則
-- `/products/`、`/contact/`（LINE 按鈕與 QR）、`/huan.png`（舊圖片網址）
+- `/products/`、`/contact/`（LINE 與 Instagram QR）、`/huan.png`（舊圖片網址）
+- `https://mixlinlll-spec.github.io/src/data/site.json` 應為 **404**（原始資料不再對外提供）
 - 不存在的網址顯示自訂 404
+
+## 日常更新
+
+修改 `src/data/` 或程式 → 開 PR → CI 綠燈 → 合併 → Actions 自動部署。不需手動上傳檔案，也不需要提交 `dist/`。
+需要重新部署（例如 Actions 暫時失敗）：Actions → `Deploy EWP to GitHub Pages` → **Run workflow**。
 
 ## 回滾
 
-**最快（GitHub 網頁）**：到已合併的 PR 頁 → 點「Revert」→ 建立並合併 revert PR。網站會回到合併前版本。
+**情況 A：新版有問題，要回到舊站**
+1. 到已合併的 PR 頁 → **Revert** → 建立並合併 revert PR（舊的根目錄 `index.html` 會回來）。
+2. Settings → Pages → Source 改回 **Deploy from a branch**，Branch：`main`，資料夾：`/ (root)` → **Save**。
+3. 約 1–3 分鐘後確認首頁與 `/fpv-help.html`。
 
-**指令列**：
-```bash
-git switch main && git pull
-git revert -m 1 <合併 commit 的 SHA>
-git push origin main
-```
+**情況 B：只想退回上一個網站版本（保留 Actions 部署）**
+`git revert <有問題的 commit>` → push 到 main，Actions 會重新部署前一版內容。
 
-**只想暫時看舊首頁**：`/legacy/home-2026-09.html`（noindex 存檔）。
+**臨時查看舊首頁**：`/legacy/home-2026-09.html`（noindex 存檔）。
 
-回滾不會影響 `fpv-help.html`，本次改版沒有修改該檔案。
+回滾不會影響 `fpv-help.html` 與 `huan.png`，本次改版沒有修改這兩個檔案（單元測試以 SHA-256 驗證）。

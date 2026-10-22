@@ -7,12 +7,19 @@ export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 export const DATA_DIR = path.join(ROOT, 'src', 'data');
 export const PRODUCTS_DIR = path.join(DATA_DIR, 'products');
 
+// 發布白名單：只有這些「手寫靜態檔」會被複製到發布產物（dist/）。
+// src/、scripts/、tests/、docs/、_preview/ 等永遠不會進入發布產物。
+export const STATIC_WHITELIST = ['assets', 'fpv-help.html', 'huan.png', 'legacy', '.nojekyll'];
+
 export const SELLER_ROLES = {
   ewp_original: 'EWP 自製',
   ewp_assembled: 'EWP 組裝',
   retail: '其他品牌商品',
+  collab: '聯名商品',
   service: '客製服務',
 };
+export const REVIEW_STATUS = ['draft', 'approved', 'rejected'];
+export const CTA_PRIMARY = ['line', 'shopee'];
 export const AVAILABILITY = {
   in_stock: '現貨',
   preorder: '預購',
@@ -125,8 +132,12 @@ export function validateProducts(products, categories) {
       if (!s.key || s.value === undefined || s.value === '') err(`specifications[${i}] 需要 key 與 value`);
     }
     for (const [i, img] of (p.images || []).entries()) {
-      if (!img.src || !img.src.startsWith('/assets/')) err(`images[${i}].src 必須是 /assets/ 下的站內正式圖片`);
-      else if (!fs.existsSync(path.join(ROOT, img.src))) err(`images[${i}] 檔案不存在：${img.src}`);
+      for (const key of ['src', 'src_small', 'fallback']) {
+        const v = img[key];
+        if (v === undefined || v === null) { if (key === 'src') err(`images[${i}] 缺少 src`); continue; }
+        const r = checkAssetPath(v);
+        if (r) err(`images[${i}].${key}：${r}`);
+      }
       if (!img.alt) err(`images[${i}] 缺少 alt 文字`);
     }
     // 公開條件：只有完整且通過審核的商品可以公開
@@ -135,12 +146,34 @@ export function validateProducts(products, categories) {
       if (!p.short_description) err('published=true 需要 short_description');
       if (!p.brand) err('published=true 需要 brand');
       if (!p.subcategory_id) err('published=true 需要 subcategory_id');
-      if (p.review && p.review.status !== 'approved') err('published=true 需要 review.status = "approved"（EWP 已核對）');
+      // review 必須存在、是物件，且 status 明確等於 approved；缺少、null、{}、draft 一律不得公開
+      if (!isApproved(p)) err('published=true 需要 review.status = "approved"（EWP 已核對）');
     }
+    if (p.review !== undefined && (p.review === null || typeof p.review !== 'object' || Array.isArray(p.review))) err('review 必須是物件');
+    else if (p.review?.status !== undefined && !REVIEW_STATUS.includes(p.review.status)) err(`review.status 不合法：${p.review.status}`);
+    if (p.cta_primary !== undefined && p.cta_primary !== null && !CTA_PRIMARY.includes(p.cta_primary)) err(`cta_primary 只能是 line 或 shopee`);
     if (p.availability === 'in_stock' && !p.published) warn('草稿標示為現貨，公開前請再次確認');
   }
   return { errors, warnings };
 }
+
+// 圖片路徑：必須是 /assets/ 底下、正規化後仍在 assets 內、副檔名為圖片、且檔案存在
+const IMG_EXT = /\.(webp|jpe?g|png|avif|gif|svg)$/i;
+export function checkAssetPath(src) {
+  if (typeof src !== 'string' || !src.startsWith('/assets/')) return `必須是 /assets/ 下的站內正式圖片：${src}`;
+  if (/[\\?#%]|\.\./.test(src)) return `路徑不得含 ..、反斜線、? # %：${src}`;
+  const abs = path.resolve(ROOT, '.' + src);
+  if (!abs.startsWith(path.join(ROOT, 'assets') + path.sep)) return `路徑超出 assets：${src}`;
+  if (!IMG_EXT.test(src)) return `副檔名必須是圖片：${src}`;
+  if (!fs.existsSync(abs)) return `檔案不存在：${src}`;
+  return null;
+}
+
+export function isApproved(p) {
+  return p != null && p.review != null && typeof p.review === 'object' && !Array.isArray(p.review) && p.review.status === 'approved';
+}
+// 排除：EWP 決定不放上官網的商品（review.status = rejected），正式版與預覽版都不產生
+export const isRejected = p => p?.review?.status === 'rejected';
 
 export function slugify(name, fallback) {
   const tokens = (name.match(/[A-Za-z0-9][A-Za-z0-9.]*/g) || [])

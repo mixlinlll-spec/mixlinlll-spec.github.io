@@ -27,13 +27,14 @@
   "published": false,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "rejected",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "玩具類商品，是否放入官網型錄請 EWP 決定",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "EWP 決定（2026-10-22）：非 FPV 相關玩具／模型，官網不公開（正式版與預覽版皆不產生）"
     ],
     "source_image_urls": []
   }

@@ -3,9 +3,9 @@
   "slug": "fpv-6s-4s-130c",
   "name_zh": "推廣期間特價中! 【十安動力❌電翼動力】FPV穿越機電池 6S電池 / 4S電池 130C 競速花飛專用 ✈️ 現貨免運",
   "sku": null,
-  "brand": null,
+  "brand": "十安 × 電翼動力",
   "manufacturer_model": null,
-  "seller_role": "retail",
+  "seller_role": "collab",
   "primary_category_id": "power-battery",
   "subcategory_id": "6s",
   "tags": [],
@@ -34,9 +34,9 @@
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "十安 × 電翼動力聯名，seller_role 需核對；標題含「特價／現貨免運」，官網不沿用促銷字樣",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "EWP 決定（2026-10-22）：標示「十安 × 電翼動力聯名」，不稱 EWP 自製"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mlru61w20ydk13",

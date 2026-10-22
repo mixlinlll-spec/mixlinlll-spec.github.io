@@ -1,17 +1,18 @@
 #!/usr/bin/env node
 // 電翼動力 EWP 靜態網站產生器（無外部套件）。
-//   node scripts/build.mjs              → 產生正式版到 repo 根目錄（只含 published=true 商品）
-//   node scripts/build.mjs --drafts     → 產生「含草稿」預覽版到 _preview/（noindex，不提交）
+//   node scripts/build.mjs              → 產生正式版到 dist/（只含 published=true 商品；GitHub Actions 部署此資料夾）
+//   node scripts/build.mjs --drafts     → 產生「含草稿」預覽版到 _preview/（noindex，不提交、不部署）
 //   node scripts/build.mjs --check      → 只驗證資料，不輸出
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, loadAll, validateProducts, AVAILABILITY } from './lib/data.mjs';
+import { ROOT, loadAll, validateProducts, AVAILABILITY, STATIC_WHITELIST, isRejected } from './lib/data.mjs';
 import { esc, attr, url, layout, productCard, breadcrumbs, breadcrumbsJsonLd, picture, priceText, availabilityText, roleText, lineButton, shopeeButton, shopeeUrlFor } from './lib/html.mjs';
 
 const args = process.argv.slice(2);
 const DRAFTS = args.includes('--drafts');
 const CHECK = args.includes('--check');
-const OUT = path.resolve(ROOT, args.includes('--out') ? args[args.indexOf('--out') + 1] : (DRAFTS ? '_preview' : '.'));
+const OUT = path.resolve(ROOT, args.includes('--out') ? args[args.indexOf('--out') + 1] : (DRAFTS ? '_preview' : 'dist'));
+if (OUT === ROOT || !OUT.startsWith(ROOT + path.sep)) { console.error('✖ 輸出資料夾必須是 repo 內的子資料夾（例如 dist）'); process.exit(1); }
 
 const data = loadAll();
 const { site, categories, builds, services, products } = data;
@@ -33,7 +34,8 @@ console.log(`✓ 資料驗證通過：商品 ${products.length} 筆（公開 ${p
 if (CHECK) process.exit(0);
 
 // ---------- Context ----------
-const visible = products.filter(p => DRAFTS || p.published);
+// rejected（EWP 決定不上官網）在正式版與預覽版都不產生
+const visible = products.filter(p => !isRejected(p) && (DRAFTS || p.published));
 const catMap = new Map(categories.map(c => [c.id, c]));
 const ctx = { site, categories, catMap, drafts: DRAFTS, version: process.env.EWP_VERSION || '2' };
 const BASE = site.base_url;
@@ -45,6 +47,18 @@ function write(rel, html) {
   generated.push(rel);
 }
 const page = (rel, opts) => write(rel, layout(ctx, opts));
+function ctaPrimary(p) {
+  if (p.cta_primary) return p.cta_primary;
+  if (p.seller_role === 'service' || p.seller_role === 'ewp_assembled') return 'line';
+  if (['complete-drones', 'power-battery'].includes(p.primary_category_id) && p.seller_role === 'ewp_original') return 'line';
+  return 'shopee';
+}
+const biz = site.business;
+const bizBlock = (title = '營業登記資訊') => biz ? `<section class="wrap biz"><h2 class="h3">${esc(title)}</h2><dl class="biz-dl">
+  <div><dt>登記名稱</dt><dd>${esc(biz.legal_name)}</dd></div>
+  <div><dt>統一編號</dt><dd>${esc(biz.tax_id)}</dd></div>
+  <div><dt>登記地址</dt><dd>${esc(biz.registered_address)}</dd></div>
+</dl></section>` : '';
 const sortProducts = list => [...list].sort((a, b) => (b.featured - a.featured) || b.updated_at.localeCompare(a.updated_at) || a.name_zh.localeCompare(b.name_zh, 'zh-Hant'));
 const cardList = (list, cls = 'pgrid') => `<ul class="${cls}">${list.map(p => productCard(p, ctx)).join('')}</ul>`;
 const sectionHead = (eyebrow, title, extra = '') => `<div class="section-head"><div><p class="eyebrow">${esc(eyebrow)}</p><h2>${esc(title)}</h2></div>${extra}</div>`;
@@ -135,7 +149,7 @@ ${newest.length ? `<section class="wrap">${sectionHead('NEW', '新上架', '<p><
 <section id="contact" class="wrap">${contactCta('下一台機器，從你的想法開始。', '整機、電池或維修需求，先告訴我們你的設備與用途，一起把配置想清楚。').replace('<section class="wrap cta-band">', '<div class="cta-band">').replace(/<\/section>$/, '</div>')}</section>`;
   page('index.html', {
     path: '/', body, active: 'home', bodyClass: 'home',
-    jsonld: [{ '@context': 'https://schema.org', '@type': 'Organization', name: '電翼動力 EWP', url: BASE + '/', logo: BASE + '/assets/img/favicon.svg',
+    jsonld: [{ '@context': 'https://schema.org', '@type': 'Organization', name: '電翼動力 EWP', ...(biz ? { legalName: biz.legal_name, taxID: biz.tax_id, address: { '@type': 'PostalAddress', streetAddress: biz.registered_address, addressCountry: 'TW' } } : {}), url: BASE + '/', logo: BASE + '/assets/img/favicon.svg',
       sameAs: [site.contact.line, site.contact.shopee, site.contact.instagram, site.contact.facebook, site.contact.youtube].filter(c => c.enabled && c.url).map(c => c.url) },
       { '@context': 'https://schema.org', '@type': 'WebSite', name: '電翼動力 EWP', url: BASE + '/', potentialAction: { '@type': 'SearchAction', target: BASE + '/products/?q={search_term_string}', 'query-input': 'required name=search_term_string' } }],
   });
@@ -213,8 +227,11 @@ function productPages() {
     const sub = c.subcategories.find(s => s.id === p.subcategory_id);
     const crumbs = [{ name: '首頁', href: '/' }, { name: '商品商城', href: '/products/' }, { name: c.name, href: url.category(c) }, ...(sub ? [{ name: sub.name, href: url.sub(c, sub) }] : []), { name: p.name_zh }];
     const shopee = shopeeUrlFor(p, site);
-    const line = p.line_inquiry_enabled ? lineButton(site, 'LINE 詢價', 'btn btn-line') : '';
-    const shopeeBtn = shopee ? shopeeButton(site, '到蝦皮購買', 'btn btn-primary', shopee) : '';
+    // CTA 優先序（EWP 2026-10-22 決定）：一般現貨商品蝦皮優先；客製整機、自製電池、組裝與服務 LINE 優先。商品可用 cta_primary 個別指定。
+    const linePrimary = ctaPrimary(p) === 'line';
+    const line = p.line_inquiry_enabled ? lineButton(site, linePrimary ? 'LINE 詢價／客製諮詢' : 'LINE 詢價', 'btn btn-line') : '';
+    const shopeeBtn = shopee ? shopeeButton(site, '到蝦皮購買', linePrimary ? 'btn' : 'btn btn-primary', shopee) : '';
+    const ctas = linePrimary ? line + shopeeBtn : shopeeBtn + line;
     const imgs = p.images || [];
     const gallery = imgs.length ? `<div class="gallery" data-gallery>
         <div class="gallery-main">${picture(imgs[0], { lazy: false, sizes: '(max-width: 900px) 100vw, 640px' })}</div>
@@ -244,7 +261,7 @@ function productPages() {
       <p class="pd-price${p.price_display === 'inquiry' ? ' price-inquiry' : ''}">${esc(priceText(p))}</p>
       <p class="pd-avail avail-${attr(p.availability)}">${esc(availabilityText(p.availability))}</p>
       ${p.short_description ? `<p class="pd-short">${esc(p.short_description)}</p>` : ''}
-      <div class="actions pd-actions">${shopeeBtn}${line}${!shopeeBtn && !line ? '<a class="btn" href="/contact/">聯絡我們</a>' : ''}</div>
+      <div class="actions pd-actions">${ctas}${!shopeeBtn && !line ? '<a class="btn" href="/contact/">聯絡我們</a>' : ''}</div>
       <p class="fine">${p.price_display === 'inquiry' ? '價格依配置與供貨狀況報價。' : '網站標示價格僅供參考，實際成交以蝦皮或報價單為準。'}商品頁出現的品牌名稱僅用於標示商品，不代表原廠代理或授權。</p>
       ${reviewBox}
     </div>
@@ -252,7 +269,7 @@ function productPages() {
   ${variants}${specs}${compat}${descHtml}${notes}
 </article>
 ${related.length ? `<section class="wrap">${sectionHead('RELATED', '相關商品')}${cardList(related)}</section>` : ''}
-${(shopeeBtn || line) ? `<div class="sticky-cta" aria-label="購買與詢價">${shopeeBtn}${line}</div>` : ''}`;
+${(shopeeBtn || line) ? `<div class="sticky-cta" aria-label="購買與詢價">${ctas}</div>` : ''}`;
     const ld = {
       '@context': 'https://schema.org', '@type': 'Product', name: p.name_zh, url: BASE + url.product(p),
       ...(p.short_description ? { description: p.short_description } : {}),
@@ -398,6 +415,7 @@ function simplePages() {
       ['技術知識', '整理玩家常見問題，用白話說明排查方向。', '/fpv-help.html'],
     ].map(([t, d, h]) => `<li><a href="${h}"><h3>${t}</h3><p>${d}</p><span class="more">前往 →</span></a></li>`).join('')}</ul></section>
 <section class="wrap"><div class="about-band"><div class="motto" aria-label="Build. Tune. Fly."><span>BUILD.</span><span>TUNE.</span><span>FLY.</span></div></div></section>
+${bizBlock()}
 ${contactCta()}` });
 
   // 聯絡
@@ -405,7 +423,7 @@ ${contactCta()}` });
     c.line.enabled && c.line.url ? `<li class="contact-card contact-line"><h2>LINE 官方帳號</h2><p>整機、零件、維修與電池詢價，建議優先使用 LINE。</p>${lineButton(site, '加入 LINE 好友', 'btn btn-line btn-block')}${c.line.qr_image ? `<figure class="qr"><img src="${attr(c.line.qr_image)}" width="240" height="240" alt="電翼動力 LINE 官方帳號 QR Code（${attr(c.line.url)}）" loading="lazy"><figcaption>電腦版請用手機掃描 QR Code</figcaption></figure>` : ''}</li>` : '',
     c.shopee.enabled && c.shopee.url ? `<li class="contact-card"><h2>蝦皮賣場</h2><p>已上架商品可直接在蝦皮下單，或透過賣場聊聊詢問。</p>${shopeeButton(site, '前往蝦皮賣場', 'btn btn-primary btn-block')}</li>` : '',
     c.email.enabled && c.email.value ? `<li class="contact-card"><h2>Email</h2><p>適合寄送較長的需求說明或檔案。</p><a class="btn btn-block" href="mailto:${attr(c.email.value)}">${esc(c.email.value)}</a></li>` : '',
-    c.instagram.enabled && c.instagram.url ? `<li class="contact-card"><h2>Instagram</h2><p>${esc(c.instagram.label)}</p><a class="btn btn-block" href="${attr(c.instagram.url)}" target="_blank" rel="noopener">開啟 Instagram <span aria-hidden="true">↗</span></a></li>` : '',
+    c.instagram.enabled && c.instagram.url ? `<li class="contact-card contact-ig"><h2>Instagram</h2><p>${esc(c.instagram.label)}</p><a class="btn btn-ig btn-block" href="${attr(c.instagram.url)}" target="_blank" rel="noopener">開啟 Instagram <span aria-hidden="true">↗</span></a>${c.instagram.qr_image ? `<figure class="qr qr-ig"><div class="qr-crop"><img src="${attr(c.instagram.qr_image)}" width="1070" height="1530" alt="Instagram @spiritsparrow.battery QR Code（${attr(c.instagram.url)}）" loading="lazy"></div><figcaption>電腦版請用手機掃描 QR Code</figcaption></figure>` : ''}</li>` : '',
     c.facebook.enabled && c.facebook.url ? `<li class="contact-card"><h2>Facebook</h2><a class="btn btn-block" href="${attr(c.facebook.url)}" target="_blank" rel="noopener">開啟 Facebook</a></li>` : '',
     c.phone.enabled && c.phone.value ? `<li class="contact-card"><h2>電話</h2><a class="btn btn-block" href="tel:${attr(c.phone.value)}">${esc(c.phone.value)}</a></li>` : '',
   ].join('');
@@ -415,12 +433,13 @@ ${contactCta()}` });
 ${(!c.hours.enabled || !c.address.enabled) ? `<p class="muted contact-note">${esc(c.online_only_note)}</p>` : ''}
 ${c.hours.enabled && c.hours.value ? `<p>服務時間：${esc(c.hours.value)}</p>` : ''}${c.address.enabled && c.address.value ? `<p>地址：${esc(c.address.value)}</p>` : ''}
 </section>
+${bizBlock()}
 <section class="wrap"><h2 class="h3">詢問前可以先準備</h2><ul class="checks"><li>整機：用途、預算、已有的遙控器與眼鏡</li><li>零件：型號、照片或購買連結，以及要裝在哪台機器上</li><li>維修：故障經過、飛控與電調型號、韌體版本、接線照片</li><li>電池：使用設備、需要的電壓與容量、接頭規格</li></ul></section>` });
 
   // 政策頁
   const pol = (slug, title, approved, inner) => page(`${slug}/index.html`, { title, path: `/${slug}/`, noindex: !approved,
     body: `${pageHead('POLICY', title, '', breadcrumbs([{ name: '首頁', href: '/' }, { name: title }]))}<section class="wrap prose-wide">${inner}</section>` });
-  pol('privacy', '隱私權說明', site.policies.privacy.approved, `<p>最後更新：2026-10-22</p>
+  pol('privacy', '隱私權說明', site.policies.privacy.approved, `${site.policies.privacy.approved ? '' : '<div class="callout" role="note"><strong>草案，待 EWP 正式核對：</strong>以下內容依本網站目前的技術實況撰寫，尚未經電翼動力確認為正式版本。</div>'}<p>最後更新：2026-10-22</p>
 <h2>本網站蒐集的資料</h2><p>本網站為靜態網站，沒有會員登入、線上表單或站內購物功能，也沒有安裝第三方分析或廣告追蹤程式。網站本身不會要求你輸入或儲存個人資料。</p>
 <h2>主機服務</h2><p>本網站由 GitHub Pages 提供主機服務。GitHub 可能為了安全與維運目的記錄造訪者的 IP 位址等技術資訊，相關處理依 GitHub 的隱私權政策。</p>
 <h2>外部連結</h2><p>當你點選 LINE、蝦皮、Instagram 或 Email 等外部連結後，資料的處理適用該服務的隱私權政策。透過這些管道聯絡時，請只提供處理需求所需的資訊。</p>
@@ -447,28 +466,15 @@ function seoFiles() {
     const p = visible.find(x => url.product(x) === u);
     return `  <url><loc>${BASE}${u}</loc>${lastmod(p) ? `<lastmod>${lastmod(p)}</lastmod>` : ''}</url>`;
   }).join('\n')}\n</urlset>\n`);
-  write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /src/\nDisallow: /scripts/\nDisallow: /legacy/\nSitemap: ${BASE}/sitemap.xml\n`);
+  write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /legacy/\nSitemap: ${BASE}/sitemap.xml\n`);
 }
 
 // ---------- 執行 ----------
-const manifestFile = path.join(OUT, '.generated.json');
-const previous = fs.existsSync(manifestFile) ? JSON.parse(fs.readFileSync(manifestFile, 'utf8')) : [];
+// 每次都從空資料夾開始，確保發布產物只包含本次產生的頁面與白名單靜態檔
+if (!CHECK) { fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive: true }); }
 homePage(); productsIndex(); categoryPages(); productPages(); buildPages(); servicePages(); batteryPage(); simplePages(); seoFiles();
-
-// 移除上次產生、這次不再產生的檔案（例如商品改回草稿）。只會刪除清單內的檔案，不碰手寫檔案。
-for (const rel of previous) {
-  if (!generated.includes(rel)) {
-    const f = path.join(OUT, rel);
-    if (fs.existsSync(f)) { fs.unlinkSync(f); let d = path.dirname(f); while (d !== OUT && fs.readdirSync(d).length === 0) { fs.rmdirSync(d); d = path.dirname(d); } }
-  }
+for (const item of STATIC_WHITELIST) {
+  const src = path.join(ROOT, item);
+  if (fs.existsSync(src)) fs.cpSync(src, path.join(OUT, item), { recursive: true });
 }
-fs.writeFileSync(manifestFile, JSON.stringify(generated.sort(), null, 1) + '\n');
-
-// 預覽版：複製靜態資源，讓 _preview/ 可獨立瀏覽
-if (OUT !== ROOT) {
-  for (const item of ['assets', 'fpv-help.html', 'huan.png', 'legacy', '.nojekyll']) {
-    const src = path.join(ROOT, item);
-    if (fs.existsSync(src)) fs.cpSync(src, path.join(OUT, item), { recursive: true });
-  }
-}
-console.log(`✓ 已產生 ${generated.length} 個檔案 → ${path.relative(ROOT, OUT) || '.'}${DRAFTS ? '（含草稿預覽，noindex）' : ''}`);
+console.log(`✓ 已產生 ${generated.length} 個頁面＋${STATIC_WHITELIST.length} 項靜態資源 → ${path.relative(ROOT, OUT)}${DRAFTS ? '（含草稿預覽，noindex）' : ''}`);

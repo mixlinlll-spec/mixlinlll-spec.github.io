@@ -21,17 +21,17 @@
 | 沒有商品資料模型，新增商品需手改 HTML | 無法擴充到數百件 | 改為 `src/data/products/*.json` ＋產生器 |
 | 首頁主圖 2.8 MB | 手機載入慢 | 產生 600／1200px WebP＋JPG（74–260 KB）；原 `huan.png` 保留舊網址 |
 | 直接覆寫 main 會改壞正式站 | 正式站中斷 | 在 `feature/ewp-site-v2` 開發，PR 驗收後才合併；舊首頁另存 `legacy/home-2026-09.html` |
-| 改用 GitHub Actions 部署需改 Pages 設定 | 合併後若未改設定，站會壞 | 產出直接放根目錄，**沿用現有 branch 部署，不需改設定** |
+| 原 branch 部署會把 `src/data/products/*.json` 等原始檔一起公開 | 草稿 JSON 可被直接讀取 | **v2.1 修正**：改為 GitHub Actions 只部署 `dist/`；**需把 Pages Source 改為 GitHub Actions**，合併順序見 DEPLOY_ROLLBACK.md |
 | repo 公開，草稿 JSON 可在 GitHub 上看到 | 草稿資訊可被看見（不會出現在網站） | 文件明確禁止放入成本、進價、個資 |
-| 本工作階段無 GitHub 推送權限（push 403） | 無法直接開 PR | 交付完整分支（git bundle＋patch）與 PR 說明，見交付說明 |
+| 一開始工作階段無 GitHub 推送權限（push 403） | 無法直接開 PR | 已由 EWP 開通，PR #1 已建立 |
 | 蝦皮商品頁有機器人驗證，無法自動核對 shop ID 與商品網址 | 草稿無法自動附上蝦皮商品連結 | `shop_id` 暫設 null，草稿保存 `shopee_item_id`；EWP 確認 shop ID 後一鍵生效 |
 
 ## 3. 架構決策
 
-- **首選（已實作）**：保留靜態 HTML，改為「JSON 資料＋零依賴 Node 產生器」。產出提交在 repo 根目錄，GitHub Pages 設定不變；CI 只做檢查。每個商品有獨立靜態詳情頁（利於 SEO），列表的篩選／搜尋在瀏覽器端對伺服器輸出的商品卡做顯示／隱藏，ProductCard 只有一份樣板。
-  - 理由：不改部署方式、不引入 npm 套件、非工程人員可用 CSV 維護、數百～千件商品時單頁 HTML 仍在可接受大小（240 件約 300 KB 未壓縮，GitHub Pages 會 gzip）。
+- **首選（已實作，v2.1 修訂）**：保留靜態 HTML，改為「JSON 資料＋零依賴 Node 產生器」。由 GitHub Actions 建置並只部署 `dist/`（發布白名單），原始資料與程式不上網站。（v2.0 曾把產出提交在根目錄沿用 branch 部署，第一輪審查指出原始 JSON 會被公開，已改。）每個商品有獨立靜態詳情頁（利於 SEO），列表的篩選／搜尋在瀏覽器端對伺服器輸出的商品卡做顯示／隱藏，ProductCard 只有一份樣板。
+  - 理由：網站執行期不引入 npm 套件（npm 只用於 CI 測試工具）、非工程人員可用 CSV 維護、數百～千件商品時單頁 HTML 仍在可接受大小（240 件約 300 KB 未壓縮，GitHub Pages 會 gzip）。
 - **備案**：Astro 靜態站＋GitHub Actions 部署（`actions/deploy-pages`）。適合商品超過數千件或需要圖片自動轉檔時；代價是需要把 Pages Source 改為 GitHub Actions、引入 npm 依賴。現有資料格式（JSON）可直接沿用，遷移成本低。
 
 ## 4. 已知缺漏資訊（詳見 docs/TODO.md）
 
-LINE（已提供並驗證）、蝦皮賣場首頁（已提供）、Email（已提供）、營業時間與地點（EWP 指示暫不公開）；商品照片、售價、供貨、規格、shop ID、政策頁內容仍待 EWP 提供。
+LINE（已提供並驗證）、蝦皮賣場首頁（已提供）、Email（已提供）、營業時間（EWP 指示暫不公開）、營業登記（v2.1 已提供並公開名稱、統編、登記地址）；商品照片、售價、供貨、規格、shop ID、政策頁內容仍待 EWP 提供。

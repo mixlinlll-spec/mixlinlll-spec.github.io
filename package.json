@@ -11,7 +11,12 @@
     "check": "node scripts/build.mjs && node scripts/check-site.mjs",
     "test": "node --test tests/data.test.mjs",
     "test:e2e": "node tests/e2e.mjs",
+    "test:lighthouse": "node tests/lighthouse.mjs",
     "import:csv": "node scripts/import-csv.mjs",
     "import:shopee": "node scripts/import-shopee.mjs"
+  },
+  "devDependencies": {
+    "lighthouse": "12.6.1",
+    "playwright": "1.56.0"
   }
 }

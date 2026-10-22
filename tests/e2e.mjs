@@ -1,8 +1,9 @@
-// 端對端冒煙測試（本機執行）。需要 Playwright：
-//   npm i -D playwright && npx playwright install chromium
+// 端對端測試（CI 會自動執行；本機執行方式）：
+//   npm install && npx playwright install chromium
 //   node scripts/build.mjs && node scripts/build.mjs --drafts
-//   python3 -m http.server 8800 &  python3 -m http.server 8801 --directory _preview &
+//   python3 -m http.server 8800 --directory dist &  python3 -m http.server 8801 --directory _preview &
 //   node tests/e2e.mjs
+// 8800 = 正式發布產物 dist/；8801 = 含草稿預覽 _preview/
 import { chromium } from 'playwright';
 const PUB = process.env.PUB || 'http://localhost:8800';
 const PRE = process.env.PRE || 'http://localhost:8801';
@@ -149,7 +150,63 @@ console.log('6. 正式版：草稿不外洩、聯絡資訊正確');
   await page.context().close();
 }
 
-console.log('7. 鍵盤操作');
+console.log('7. 發布隔離：原始碼與草稿 JSON 不在正式網站上');
+{
+  const page = await newPage(1280);
+  for (const p of ['/src/data/products/sp-44561107171.json', '/src/data/site.json', '/scripts/build.mjs', '/tests/e2e.mjs', '/package.json', '/README.md', '/_preview/index.html', '/.generated.json']) {
+    const r = await page.request.get(PUB + p);
+    ok(r.status() === 404, `正式網站 ${p} → ${r.status()}`);
+  }
+  await page.context().close();
+}
+
+console.log('8. 聯絡頁：LINE／Instagram QR、營業登記（手機版）');
+{
+  const page = await newPage(390);
+  await page.goto(PUB + '/contact/');
+  const ig = page.locator('.contact-ig a.btn-ig');
+  ok(await ig.getAttribute('href') === 'https://www.instagram.com/spiritsparrow.battery/', 'Instagram 按鈕連到 @spiritsparrow.battery');
+  const igBox = await ig.boundingBox();
+  ok(igBox && igBox.height >= 44 && igBox.width >= 200, `Instagram 按鈕在手機上容易點擊（${Math.round(igBox?.width)}×${Math.round(igBox?.height)}）`);
+  const lineBox = await page.locator('.contact-line a.btn-line').boundingBox();
+  ok(lineBox && lineBox.height >= 44, 'LINE 按鈕在手機上容易點擊');
+  for (const sel of ['.contact-line .qr img', '.contact-ig .qr img']) {
+    await page.locator(sel).scrollIntoViewIfNeeded();
+    const loaded = await page.$eval(sel, img => img.complete && img.naturalWidth > 0);
+    const w = await page.$eval(sel, img => img.getBoundingClientRect().width);
+    ok(loaded && w >= 180, `${sel} 已載入且顯示寬度 ${Math.round(w)}px（可掃描）`);
+  }
+  const alt = await page.getAttribute('.contact-ig .qr img', 'alt');
+  ok(/spiritsparrow\.battery/.test(alt), 'Instagram QR 有可辨識的 alt 文字');
+  const body = await page.textContent('main');
+  ok(body.includes('電翼動力航模企業社') && body.includes('00693689') && body.includes('台北市內湖區內湖路一段115號4樓'), '聯絡頁顯示營業登記名稱、統一編號、登記地址');
+  ok(!body.includes('720322720'), '稅籍編號不公開');
+  ok((await page.textContent('.site-footer')).includes('統一編號 00693689'), '頁尾顯示登記名稱與統一編號');
+  await page.goto(PUB + '/about/');
+  ok((await page.textContent('main')).includes('電翼動力航模企業社'), '關於頁顯示營業登記資訊');
+  await page.goto(PUB + '/privacy/');
+  ok((await page.textContent('main')).includes('草案，待 EWP 正式核對'), '隱私權頁標示為草案');
+  ok((await page.getAttribute('meta[name=robots]', 'content'))?.includes('noindex'), '未核准的隱私權頁為 noindex');
+  await page.goto(PUB + '/services/procurement/');
+  ok(/淘寶／中國平台代購/.test(await page.textContent('h1')), '代購服務頁存在');
+  await page.context().close();
+}
+
+console.log('9. 商品頁 CTA 優先序（草稿預覽）');
+{
+  const page = await newPage(390);
+  await page.goto(PRE + '/product/huan-5-fpv-freestyle-f722-2207/');
+  ok(await page.$eval('.pd-actions a', a => a.classList.contains('btn-line')), 'EWP 自製整機：LINE 為第一個按鈕');
+  await page.goto(PRE + '/product/fdi-f722-v5-60a-8-blheli32/');
+  ok(await page.locator('.pd-actions a').count() >= 1, '一般零件：有詢價／購買按鈕');
+  const r = await page.goto(PRE + '/product/fpv-v1/');
+  ok(r.status() === 404, '非 FPV 玩具（rejected）在預覽版也不產生');
+  await page.goto(PRE + '/product/x-1s-2s-450mah-100c-tinywhoop/');
+  ok((await page.textContent('.pd-info')).includes('聯名商品') && (await page.textContent('.pd-meta')).includes('十安 × 電翼動力'), '十安聯名電池標示「聯名商品／十安 × 電翼動力」');
+  await page.context().close();
+}
+
+console.log('10. 鍵盤操作');
 {
   const page = await newPage(1280);
   await page.goto(PUB + '/');

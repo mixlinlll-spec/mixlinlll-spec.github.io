@@ -3,9 +3,9 @@
   "slug": "x-1s-2s-450mah-100c-tinywhoop",
   "name_zh": "十安X電翼動力 高壓競速電池🔋 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池",
   "sku": null,
-  "brand": null,
+  "brand": "十安 × 電翼動力",
   "manufacturer_model": null,
-  "seller_role": "retail",
+  "seller_role": "collab",
   "primary_category_id": "power-battery",
   "subcategory_id": "1s-micro",
   "tags": [],
@@ -34,9 +34,9 @@
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "十安 × 電翼動力聯名，seller_role 需核對",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "EWP 決定（2026-10-22）：標示「十安 × 電翼動力聯名」，不稱 EWP 自製"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztk-mio7ujnbm1hda9",

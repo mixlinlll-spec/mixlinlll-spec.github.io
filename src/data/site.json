@@ -10,6 +10,12 @@
   "base_url": "https://mixlinlll-spec.github.io",
   "default_description": "電翼動力 EWP，專注 FPV 穿越機整機、零件、動力電池、客製組裝、維修與調校。",
   "default_og_image": "/assets/img/builds/huan-1200.jpg",
+  "business": {
+    "_comment": "營業登記資訊（EWP 2026-10-22 提供）。稅籍編號屬內部稅務資料，不放入公開網站與公開 repo。",
+    "legal_name": "電翼動力航模企業社",
+    "tax_id": "00693689",
+    "registered_address": "台北市內湖區內湖路一段115號4樓"
+  },
   "contact": {
     "line": {
       "enabled": true,
@@ -23,7 +29,7 @@
       "label": "蝦皮賣場",
       "url": "https://shopee.tw/mixlin",
       "shop_id": null,
-      "_shop_id_note": "填入已確認的蝦皮 shop ID 後，草稿中的 shopee_item_id 才會自動組成商品連結。尚未確認前保持 null。"
+      "_shop_id_note": "必須由 EWP 於蝦皮賣家中心核實後填入；匯出檔中的 4053258 未經核實，不得直接採用。"
     },
     "email": {
       "enabled": true,
@@ -32,18 +38,46 @@
     "instagram": {
       "enabled": true,
       "label": "Instagram｜靈雀電池",
-      "url": "https://www.instagram.com/spiritsparrow.battery/"
+      "url": "https://www.instagram.com/spiritsparrow.battery/",
+      "qr_image": "/assets/contact/instagram-qr.jpg",
+      "verified": "2026-10-22：由 EWP 提供之 QR 圖檔解碼為 instagram.com/spiritsparrow.battery，與 url 一致（暫用靈雀電池帳號，待 EWP 主帳號確認後替換）"
     },
-    "facebook": { "enabled": false, "label": "Facebook", "url": null },
-    "youtube": { "enabled": false, "label": "YouTube", "url": null },
-    "phone": { "enabled": false, "value": null },
-    "address": { "enabled": false, "value": null },
-    "hours": { "enabled": false, "value": null },
-    "online_only_note": "目前僅提供線上聯絡，暫不公開營業時間與地點。"
+    "facebook": {
+      "enabled": false,
+      "label": "Facebook",
+      "url": null
+    },
+    "youtube": {
+      "enabled": false,
+      "label": "YouTube",
+      "url": null
+    },
+    "phone": {
+      "enabled": false,
+      "value": null
+    },
+    "address": {
+      "enabled": false,
+      "value": null
+    },
+    "hours": {
+      "enabled": false,
+      "value": null
+    },
+    "online_only_note": "目前僅提供線上聯絡，暫不公開營業時間。"
   },
   "policies": {
-    "privacy": { "approved": true },
-    "terms": { "approved": false },
-    "shipping-returns": { "approved": false }
+    "privacy": {
+      "approved": false,
+      "_note": "草案內容已撰寫，待 EWP 正式核對後改為 true"
+    },
+    "terms": {
+      "approved": false,
+      "_note": "由 EWP 另行整理正式內容"
+    },
+    "shipping-returns": {
+      "approved": false,
+      "_note": "由 EWP 另行整理正式內容"
+    }
   }
 }

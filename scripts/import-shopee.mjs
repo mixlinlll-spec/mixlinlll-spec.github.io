@@ -58,8 +58,8 @@ const OVERRIDES = {
   '42313648024': ['power-battery', '6s', 'ewp_original'],
   '41864801899': ['power-battery', 'field-packs', 'ewp_original', '標題為電池外殼／供電模組，自製或零售需核對'],
   '53514957903': ['power-battery', '21700', 'ewp_original', '是否為 EWP 自製電池組需核對；「180A」為標示用語，需電芯數據與測試條件佐證'],
-  '57303672693': ['power-battery', '1s-micro', 'retail', '十安 × 電翼動力聯名，seller_role 需核對'],
-  '55552267337': ['power-battery', '6s', 'retail', '十安 × 電翼動力聯名，seller_role 需核對；標題含「特價／現貨免運」，官網不沿用促銷字樣'],
+  '57303672693': ['power-battery', '1s-micro', 'collab', '十安 × 電翼動力聯名'],
+  '55552267337': ['power-battery', '6s', 'collab', '十安 × 電翼動力聯名；標題含「特價／現貨免運」，官網不沿用促銷字樣'],
   '43321578541': ['power-battery', 'chargers', 'retail'],
   '47356765035': ['electronics', 'wires', 'retail'],
   '26244191157': ['power-battery', 'chargers', 'retail'],
@@ -186,7 +186,7 @@ for (const it of items) {
   // 標題含「適用／專用」時，提到的品牌多半是「適用機型」而非商品品牌，不自動帶入
   const forOther = /適用|專用/.test(it.name);
   const brandHit = forOther ? null : BRANDS.find(([, re]) => re.test(it.name));
-  const brand = role === 'ewp_original' && !/靈雀|Spirit Sparrow/i.test(it.name) ? '電翼動力 EWP' : (brandHit ? brandHit[0] : null);
+  const brand = role === 'collab' ? '十安 × 電翼動力' : role === 'ewp_original' && !/靈雀|Spirit Sparrow/i.test(it.name) ? '電翼動力 EWP' : (brandHit ? brandHit[0] : null);
   let slug = slugify(it.name, `item-${it.id}`);
   if (usedSlugs.has(slug)) slug = `${slug}-${it.id.slice(-5)}`;
   usedSlugs.add(slug);

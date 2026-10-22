@@ -27,8 +27,8 @@
 
 ```bash
 node scripts/build.mjs --drafts      # 預覽（含草稿），開 _preview/ 檢查
-node scripts/build.mjs               # 正式版
-node scripts/check-site.mjs          # 連結／草稿外洩檢查
+node scripts/build.mjs               # 正式版 → dist/
+node scripts/check-site.mjs          # 白名單／連結／草稿外洩檢查
 ```
 
 ### 4. 發布
@@ -40,7 +40,9 @@ node scripts/check-site.mjs          # 連結／草稿外洩檢查
 "review": { "status": "approved" }
 ```
 
-驗證程式會擋下不完整的公開商品：沒有正式圖片、沒有 `short_description`、沒有 `brand`、沒有子分類、未標記 approved 都無法公開。
+驗證程式會擋下不完整的公開商品：沒有正式圖片、沒有 `short_description`、沒有 `brand`、沒有子分類都無法公開；`review` 必須存在且 `status` 明確為 `"approved"`（缺少、`null`、`{}`、`draft` 都會被擋下）。
+
+**不上官網的商品**：設定 `"review": { "status": "rejected" }`，正式版與預覽版都不會產生。
 
 ## 二、欄位說明
 
@@ -52,7 +54,8 @@ node scripts/check-site.mjs          # 連結／草稿外洩檢查
 | `sku` |  | 自家貨號；不可重複 |
 | `brand` | 公開時 ✔ | 商品品牌。EWP 自製填「電翼動力 EWP」 |
 | `manufacturer_model` |  | 原廠型號 |
-| `seller_role` | ✔ | `ewp_original` EWP 自製／`ewp_assembled` EWP 組裝／`retail` 其他品牌商品／`service` 客製服務 |
+| `seller_role` | ✔ | `ewp_original` EWP 自製／`ewp_assembled` EWP 組裝／`retail` 其他品牌商品／`collab` 聯名商品（例：十安 × 電翼動力）／`service` 客製服務 |
+| `cta_primary` |  | `line` 或 `shopee`，指定商品頁第一個按鈕。不填時：EWP 自製的整機與電池、EWP 組裝、服務 → LINE 優先；其餘一般現貨 → 蝦皮優先 |
 | `primary_category_id`、`subcategory_id` | ✔ | 見 `src/data/categories.json`。一個商品只有一個主分類 |
 | `tags`、`compatible_sizes` |  | 標籤、相容尺寸（例 `5 吋`、`75mm`），會出現在篩選與搜尋 |
 | `video_system` |  | 例 `DJI O4`、`類比`、`Walksnail`，供「圖傳系統」篩選 |
@@ -71,7 +74,7 @@ node scripts/check-site.mjs          # 連結／草稿外洩檢查
 | `featured` | ✔ | 精選：在列表預設排序中排前面 |
 | `published` | ✔ | 預設 false |
 | `updated_at` | ✔ | `YYYY-MM-DD` |
-| `review` |  | `status`（draft／approved）、`notes`（待核對事項，只在預覽版顯示） |
+| `review` | 公開時 ✔ | `status`（draft／approved／rejected）、`notes`（待核對事項，只在預覽版顯示） |
 
 ## 三、蝦皮資料匯入
 
@@ -86,7 +89,8 @@ node scripts/check-site.mjs          # 連結／草稿外洩檢查
 |---|---|
 | LINE、蝦皮、Email、Instagram、Facebook、電話、地址、服務時間 | `src/data/site.json` → `contact`（`enabled:false` 就不會顯示） |
 | 蝦皮 shop ID（讓草稿自動帶商品連結） | `site.json` → `contact.shopee.shop_id` |
-| 網站條款、售後退換頁公開 | 先改 `scripts/build.mjs` 內頁面文字，再把 `site.json` → `policies` 設為 `approved: true` |
+| 隱私權、網站條款、售後退換頁公開 | 三頁目前皆未核准（noindex、不在頁尾與 sitemap）。EWP 提供正式內容後改 `scripts/build.mjs` 內文字，再把 `site.json` → `policies` 設為 `approved: true` |
+| 營業登記資訊（名稱、統一編號、登記地址） | `site.json` → `business`（顯示於頁尾、關於、聯絡頁）。稅籍編號不放入 repo |
 | 自製機型 | `src/data/builds.json`（`specs` 只放核對過的規格） |
 | 服務頁 | `src/data/services.json` |
 | 分類名稱 | `src/data/categories.json`（**不要改 id**，網址會變） |
@@ -96,5 +100,5 @@ node scripts/check-site.mjs          # 連結／草稿外洩檢查
 
 - 不要在資料中寫 0 元、假庫存、假評價、假折扣倒數。
 - 不要用其他賣家或原廠未授權的圖片。
-- 不要放成本、進價、客戶個資（repo 是公開的）。
+- 不要放成本、進價、客戶個資、稅籍編號等機密（repo 是公開的）。
 - 已發布商品不要改 `slug`；真的要改，請保留舊網址的轉址頁。

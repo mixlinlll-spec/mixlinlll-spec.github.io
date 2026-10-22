@@ -351,3 +351,16 @@ section{padding:36px 0}
   .btn{padding-inline:14px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* ---------- v2.1：Instagram QR、營業登記、聯名標籤 ---------- */
+.btn-ig{background:#fff;border-color:#fff;color:#18191b}
+.btn-ig:hover{background:var(--sand);border-color:var(--sand)}
+.qr img{width:220px;height:220px}
+/* Instagram QR 使用 EWP 提供的原檔，只以 CSS 裁切顯示中央白色卡片區（QR＋帳號），使大小與 LINE QR 一致、易於掃描 */
+.qr-ig .qr-crop{position:relative;width:220px;height:220px;margin:0 auto;overflow:hidden;background:#fff;border-radius:6px}
+.qr-ig .qr-crop img{position:absolute;max-width:none;width:124.4%;height:auto;left:-12.2%;top:-38.95%;padding:0;margin:0;background:transparent}
+.biz-dl{display:grid;grid-template-columns:auto 1fr;gap:6px 20px;margin:0;font-size:15px;max-width:640px}
+.biz-dl div{display:contents}
+.biz-dl dt{color:var(--muted)}
+.biz-dl dd{margin:0;overflow-wrap:anywhere}
+.badge-collab{border-color:var(--sand);color:var(--sand)}
