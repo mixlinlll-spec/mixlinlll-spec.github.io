@@ -1,5 +1,5 @@
 // 手機版 Lighthouse 測試（CI 執行；需要 lighthouse 套件與 Chrome）。
-//   python3 -m http.server 8800 --directory dist &
+//   node tests/serve.mjs dist 8800 &
 //   node tests/lighthouse.mjs
 // 門檻：Accessibility／Best Practices／SEO ≥ 0.90；Performance ≥ 0.90 為目標，低於 0.80 視為失敗、0.80–0.89 只警告
 // （CI 虛擬機效能浮動較大，避免偶發誤判）。任一門檻未過時重跑兩次取中位數。報告輸出到 lighthouse-reports/。

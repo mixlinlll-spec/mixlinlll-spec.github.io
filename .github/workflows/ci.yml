@@ -46,8 +46,8 @@ jobs:
           git diff --exit-code docs/SHOPEE_IMPORT_REPORT.md docs/shopee-import.csv || (echo "::error::確認表與商品資料不一致，請執行報告腳本後提交" && exit 1)
       - name: 啟動本機伺服器
         run: |
-          python3 -m http.server 8800 --directory dist > /dev/null 2>&1 &
-          python3 -m http.server 8801 --directory _preview > /dev/null 2>&1 &
+          node tests/serve.mjs dist 8800 > /dev/null 2>&1 &
+          node tests/serve.mjs _preview 8801 > /dev/null 2>&1 &
           sleep 2
       - name: Playwright 端對端測試（手機導覽、搜尋、商品頁、聯絡連結、草稿未公開）
         run: node tests/e2e.mjs

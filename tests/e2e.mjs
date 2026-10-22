@@ -1,7 +1,7 @@
 // 端對端測試（CI 會自動執行；本機執行方式）：
 //   npm install && npx playwright install chromium
 //   node scripts/build.mjs && node scripts/build.mjs --drafts
-//   python3 -m http.server 8800 --directory dist &  python3 -m http.server 8801 --directory _preview &
+//   node tests/serve.mjs dist 8800 &  node tests/serve.mjs _preview 8801 &
 //   node tests/e2e.mjs
 // 8800 = 正式發布產物 dist/；8801 = 含草稿預覽 _preview/
 import { chromium } from 'playwright';
