@@ -2,15 +2,18 @@
   "id": "sp-29295757187",
   "slug": "gobu-3-5-fpv-f722-aio-40a",
   "name_zh": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro",
+  "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": "戈布・哨兵 GOBU The Sentinel",
   "seller_role": "ewp_original",
   "primary_category_id": "complete-drones",
   "subcategory_id": "3-3-5in",
+  "tags": [],
   "compatible_sizes": [
     "3.5 吋"
   ],
   "video_system": "DJI O4",
+  "battery_cells": [],
   "short_description": "3.5 吋 Freestyle 穿越機，T700 碳纖維機架、可更換機臂，F722 AIO 40A 與 1404.5 4500KV 馬達，支援 DJI O4 Wide／O4 Pro／類比圖傳。",
   "description": "GOBU 哨兵是一款3.5吋Freestyle FPV穿越機，採用T700高強度碳纖維機架，搭配可更換機臂設計，兼顧耐用性、維修便利與飛行手感。整機定位為進階花飛、日常練習與近場穿越使用，支援DJI O4 Wide、DJI O4 Pro及模擬圖傳版本，適合想要小尺寸但保有操控爆發力的FPV玩家。\n【產品特色】\n✔ 3.5吋Freestyle穿越機\n✔ T700高強度碳纖維機架\n✔ 可更換機臂設計，維修更方便\n✔ 前端保護結構，提升機頭防護\n✔ 輕量化機身，操控靈活\n✔ F722 AIO 40A 飛控電調\n✔ 1404.5 4500KV 無刷馬達\n✔ 支援DJI O4 Wide／DJI O4 Pro／模擬圖傳\n✔ 適合近場飛行、花飛、進階練習\n【產品規格】\n產品名稱：戈布・哨兵 GOBU The Sentinel\n機型定位：3.5吋 Freestyle 穿越機\n機架材質：T700高強度碳纖維\n軸距：155mm\n機體尺寸：約138×138×28mm\n螺旋槳：3.5吋三葉槳\n飛控：F722 AIO 40A（BLS韌體）\n馬達：1404.5 4500KV\n圖傳系統：DJI O4 Wide／DJI O4 Pro／模擬圖傳\n電池接頭：XT30\n建議電池：4S 750~850mAh LiPo\n起飛重量：約210~250g（含電池，依配置不同）\n續航時間：約3~5分鐘（依飛行風格與電池而定）\n飛行風格：Freestyle／穿越／近場飛行\n產品內容：哨兵主機×1、電池綁帶×1、槳葉一套、BB響（默認安裝）\n※ 不含電池、遙控器、眼鏡、充電器。\n【注意事項】\n※ BNF版本需搭配相容遙控器、眼鏡及電池使用。\n※ 下單前請確認圖傳版本、接收機版本與電池規格。\n※ 出貨前可協助完成基本設定、綁定確認與測試。",
   "specifications": [
@@ -78,61 +81,61 @@
   "images": [
     {
       "src": "/assets/img/products/sp-29295757187/01.webp",
-      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（主圖）",
-      "rights": "licensed",
       "src_small": "/assets/img/products/sp-29295757187/01-480.webp",
+      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（主圖）",
       "width": 1000,
       "height": 1000,
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mt3be69b4vm2a8"
     },
     {
       "src": "/assets/img/products/sp-29295757187/02.webp",
-      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 1）",
-      "rights": "licensed",
       "src_small": "/assets/img/products/sp-29295757187/02-480.webp",
+      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 1）",
       "width": 1000,
       "height": 1000,
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mtat1ouq9ds572"
     },
     {
       "src": "/assets/img/products/sp-29295757187/03.webp",
-      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 2）",
-      "rights": "licensed",
       "src_small": "/assets/img/products/sp-29295757187/03-480.webp",
+      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 2）",
       "width": 1000,
       "height": 1000,
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mtat1oulm87838"
     },
     {
       "src": "/assets/img/products/sp-29295757187/04.webp",
-      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 3）",
-      "rights": "licensed",
       "src_small": "/assets/img/products/sp-29295757187/04-480.webp",
+      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 3）",
       "width": 1000,
       "height": 1000,
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtat1oux4lqa5e"
     },
     {
       "src": "/assets/img/products/sp-29295757187/05.webp",
-      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 4）",
-      "rights": "licensed",
       "src_small": "/assets/img/products/sp-29295757187/05-480.webp",
+      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 4）",
       "width": 1000,
       "height": 1000,
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtat1ov0adqd6f"
     },
     {
       "src": "/assets/img/products/sp-29295757187/06.webp",
-      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 5）",
-      "rights": "licensed",
       "src_small": "/assets/img/products/sp-29295757187/06-480.webp",
+      "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 5）",
       "width": 1000,
       "height": 1000,
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mt3be6ap493eb5"
     }
@@ -140,18 +143,21 @@
   "variants": [
     {
       "name": "模擬（平頭哥2，旋風1瓦）",
+      "sku": null,
       "price_twd": 8141,
       "availability": "in_stock",
       "shopee_variation_id": "441489272765"
     },
     {
       "name": "O4Wide含CNC圖傳保護及鏡頭改件",
+      "sku": null,
       "price_twd": 11021,
       "availability": "in_stock",
       "shopee_variation_id": "441489272763"
     },
     {
       "name": "DJI O4 PRO",
+      "sku": null,
       "price_twd": 13901,
       "availability": "in_stock",
       "shopee_variation_id": "441489272764"
@@ -160,6 +166,7 @@
   "price_twd": 8141,
   "price_display": "from",
   "availability": "preorder",
+  "shopee_url": null,
   "shopee_item_id": "29295757187",
   "line_inquiry_enabled": true,
   "featured": false,
@@ -174,6 +181,7 @@
       "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
       "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
     ],
+    "source_image_urls": [],
     "source_description": "GOBU 哨兵是一款3.5吋Freestyle FPV穿越機，採用T700高強度碳纖維機架，搭配可更換機臂設計，兼顧耐用性、維修便利與飛行手感。整機定位為進階花飛、日常練習與近場穿越使用，支援DJI O4 Wide、DJI O4 Pro及模擬圖傳版本，適合想要小尺寸但保有操控爆發力的FPV玩家。\n【產品特色】\n✔ 3.5吋Freestyle穿越機\n✔ T700高強度碳纖維機架\n✔ 可更換機臂設計，維修更方便\n✔ 前端保護結構，提升機頭防護\n✔ 輕量化機身，操控靈活\n✔ F722 AIO 40A 飛控電調\n✔ 1404.5 4500KV 無刷馬達\n✔ 支援DJI O4 Wide／DJI O4 Pro／模擬圖傳\n✔ 適合近場飛行、花飛、進階練習\n【產品規格】\n產品名稱：戈布・哨兵 GOBU The Sentinel\n機型定位：3.5吋 Freestyle 穿越機\n機架材質：T700高強度碳纖維\n軸距：155mm\n機體尺寸：約138×138×28mm\n螺旋槳：3.5吋三葉槳\n飛控：F722 AIO 40A（BLS韌體）\n馬達：1404.5 4500KV\n圖傳系統：DJI O4 Wide／DJI O4 Pro／模擬圖傳\n電池接頭：XT30\n建議電池：4S 750~850mAh LiPo\n起飛重量：約210~250g（含電池，依配置不同）\n續航時間：約3~5分鐘（依飛行風格與電池而定）\n飛行風格：Freestyle／穿越／近場飛行\n產品內容：哨兵主機×1、電池綁帶×1、槳葉一套、BB響（默認安裝）\n※ 不含電池、遙控器、眼鏡、充電器。\n【注意事項】\n※ BNF版本需搭配相容遙控器、眼鏡及電池使用。\n※ 下單前請確認圖傳版本、接收機版本與電池規格。\n※ 出貨前可協助完成基本設定、綁定確認與測試。",
     "batch": "first-B",
     "specs_confirmed": false,
@@ -198,13 +206,16 @@
       "variation_label": "戈布-哨兵",
       "options": [
         {
-          "option": "O4Wide含CNC圖傳保護及鏡頭改件"
+          "option": "O4Wide含CNC圖傳保護及鏡頭改件",
+          "url": null
         },
         {
-          "option": "DJI O4 PRO"
+          "option": "DJI O4 PRO",
+          "url": null
         },
         {
-          "option": "模擬（平頭哥2，旋風1瓦）"
+          "option": "模擬（平頭哥2，旋風1瓦）",
+          "url": null
         }
       ]
     },
@@ -217,6 +228,8 @@
         {
           "variation_id": "441489272765",
           "name": "模擬（平頭哥2，旋風1瓦）",
+          "parent_sku": null,
+          "sku": null,
           "price": 8480,
           "stock": 4,
           "min_qty": 1
@@ -224,14 +237,20 @@
         {
           "variation_id": "441489272763",
           "name": "O4Wide含CNC圖傳保護及鏡頭改件",
+          "parent_sku": null,
+          "sku": null,
           "price": 11480,
-          "stock": 5
+          "stock": 5,
+          "min_qty": null
         },
         {
           "variation_id": "441489272764",
           "name": "DJI O4 PRO",
+          "parent_sku": null,
+          "sku": null,
           "price": 14480,
-          "stock": 5
+          "stock": 5,
+          "min_qty": null
         }
       ],
       "price_min": 8480,
