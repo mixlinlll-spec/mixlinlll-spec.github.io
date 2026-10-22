@@ -31,33 +31,13 @@ jobs:
       - name: 檢查是否有待校正的後台儲存
         id: check
         run: node scripts/cms-normalize.mjs --dry-run > /dev/null
-      - name: 安裝圖片處理套件
-        if: steps.check.outputs.cms_commits != '0'
-        run: npm install --no-save --no-audit --no-fund --no-package-lock sharp@0.35.4
       - name: 校正、隔離、驗證、提交、發布
-        id: publish
         if: steps.check.outputs.cms_commits != '0'
         uses: ./.github/actions/admin-publish
         with:
-          apply: node scripts/cms-normalize.mjs --summary "$GITHUB_STEP_SUMMARY"
-          fallback: node scripts/cms-normalize.mjs --quarantine-all --summary "$GITHUB_STEP_SUMMARY"
+          apply: 'true'
           message: "chore(後台): 校正後台儲存的商品資料"
           deploy: always
-      - name: 保存被退回的原始修改（供查看）
-        if: always() && hashFiles('.cms-quarantine/**') != ''
-        uses: actions/upload-artifact@v4
-        with:
-          name: cms-quarantine
-          path: .cms-quarantine/
-          retention-days: 14
-      - name: 通知：有修改被退回
-        if: always() && hashFiles('.cms-quarantine.md') != ''
-        env:
-          GH_TOKEN: ${{ github.token }}
-          URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        run: |
-          { cat .cms-quarantine.md; echo; echo "執行紀錄：$URL"; } > issue.md
-          gh issue create --title "商品後台：有修改未通過檢查已退回（${GITHUB_REF_NAME}）" --body-file issue.md || echo "無法開 Issue"
       - name: 失敗通知（開 Issue）
         if: failure()
         env:

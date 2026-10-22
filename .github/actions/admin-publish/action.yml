@@ -5,11 +5,8 @@ description: >
   只部署「驗證過、且已成功推送」的那個 commit。
 inputs:
   apply:
-    description: 在最新版本上執行的指令（例如 node scripts/admin-bulk.mjs）
+    description: 在最新版本（已校正後台儲存）上執行的操作指令；後台儲存校正流程本身用 true
     required: true
-  fallback:
-    description: 驗證失敗時改執行的指令（例如整批退回）；空白＝直接失敗
-    default: ''
   message:
     description: commit 訊息
     required: true
@@ -29,12 +26,14 @@ outputs:
 runs:
   using: composite
   steps:
+    - name: 安裝圖片處理套件（校正新上傳照片用）
+      shell: bash
+      run: node -e "require.resolve('sharp')" 2>/dev/null || npm install --no-save --no-audit --no-fund --no-package-lock sharp@0.35.4
     - name: 套用、驗證、提交（最多重試 5 次）
       id: run
       shell: bash
       env:
         APPLY: ${{ inputs.apply }}
-        FALLBACK: ${{ inputs.fallback }}
         MSG: ${{ inputs.message }}
         PATHS: ${{ inputs.paths }}
       run: |
@@ -58,12 +57,14 @@ runs:
           fresh
           BASE=$(git rev-parse HEAD)
           echo "基準版本 $BASE"
+          # 每個寫入流程都先處理分支上尚未校正的後台儲存（逐件驗證、失敗的退回），再執行自己的操作
+          node scripts/cms-normalize.mjs --summary "$GITHUB_STEP_SUMMARY" || { echo "::endgroup::"; echo "::error::既有資料錯誤（不是後台修改造成），未提交、未部署"; exit 1; }
           if ! bash -c "$APPLY"; then echo "::endgroup::"; echo "::error::操作失敗（未修改任何資料）"; exit 1; fi
           if ! gate; then
-            if [ -z "$FALLBACK" ]; then echo "::endgroup::"; echo "::error::驗證失敗，未提交、未部署"; exit 1; fi
-            echo "::warning::驗證失敗，改執行退回程序"
+            echo "::warning::驗證失敗：整批退回尚未校正的後台儲存後重做一次"
             fresh
-            bash -c "$FALLBACK" && gate || { echo "::endgroup::"; echo "::error::退回後仍無法通過驗證（既有資料問題），未提交、未部署"; exit 1; }
+            node scripts/cms-normalize.mjs --quarantine-all --summary "$GITHUB_STEP_SUMMARY" \
+              && bash -c "$APPLY" && gate || { echo "::endgroup::"; echo "::error::退回後仍無法通過驗證，未提交、未部署"; exit 1; }
           fi
           echo "::endgroup::"
           git add -A $PATHS
@@ -80,6 +81,22 @@ runs:
           sleep $((attempt * 3))
         done
         echo "::error::5 次都遇到推送衝突，未提交、未部署"; exit 1
+    - name: 保存被退回的原始修改（供查看）
+      if: always() && hashFiles('.cms-quarantine/**') != ''
+      uses: actions/upload-artifact@v4
+      with:
+        name: cms-quarantine-${{ github.run_id }}
+        path: .cms-quarantine/
+        retention-days: 14
+    - name: 通知：有修改未通過檢查已退回
+      if: always() && hashFiles('.cms-quarantine.md') != ''
+      shell: bash
+      env:
+        GH_TOKEN: ${{ github.token }}
+        URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      run: |
+        { cat .cms-quarantine.md; echo; echo "執行紀錄：$URL"; } > issue.md
+        gh issue create --title "商品後台：有修改未通過檢查已退回（${GITHUB_REF_NAME}）" --body-file issue.md || echo "無法開 Issue"
     - name: 觸發正式部署（只在 main，指定剛驗證的 commit）
       if: github.ref_name == 'main' && (inputs.deploy == 'always' || steps.run.outputs.committed == 'true')
       shell: bash

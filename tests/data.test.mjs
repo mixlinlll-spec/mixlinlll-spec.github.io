@@ -108,9 +108,9 @@ describe('發布產物（建置到暫存資料夾）', () => {
       for (const s of STATIC_WHITELIST) assert.ok(tops.includes(s), s);
       const files = fs.readdirSync(out, { recursive: true }).map(String);
       assert.equal(files.filter(f => f.endsWith('.json')).length, 0, '不得有任何 .json');
-      assert.equal(fs.readdirSync(path.join(out, 'product')).length, 238, '238 件公開商品頁');
+      assert.equal(fs.readdirSync(path.join(out, 'product')).length, products.filter(p => p.published).length, '每件公開商品都有詳情頁');
       const sm = fs.readFileSync(path.join(out, 'sitemap.xml'), 'utf8');
-      assert.equal((sm.match(/\/product\//g) || []).length, 238);
+      assert.equal((sm.match(/\/product\//g) || []).length, products.filter(p => p.published).length);
       for (const p of products.filter(p => !p.published)) { assert.ok(!sm.includes(`/product/${p.slug}/`)); assert.ok(!fs.existsSync(path.join(out, 'product', p.slug))); }
       const r = spawnSync('node', ['scripts/check-site.mjs', OUT], { cwd: ROOT, encoding: 'utf8' });
       assert.equal(r.status, 0, r.stderr);
@@ -251,7 +251,7 @@ describe('蝦皮媒體與價格庫存匯入', () => {
     try {
       execFileSync('node', ['scripts/build.mjs', '--out', '_test'], { cwd: ROOT });
       const dirs = fs.readdirSync(path.join(out, 'assets/img/products'));
-      assert.equal(dirs.length, 238); assert.ok(!dirs.includes('sp-56302849088') && !dirs.includes('sp-58004035504'));
+      assert.equal(dirs.length, products.filter(p => p.published).length); assert.ok(!dirs.includes('sp-56302849088') && !dirs.includes('sp-58004035504'));
       fs.mkdirSync(path.join(out, 'assets/img/products/sp-56302849088'), { recursive: true });
       fs.copyFileSync(path.join(ROOT, 'assets/img/products/sp-56302849088/01.webp'), path.join(out, 'assets/img/products/sp-56302849088/01.webp'));
       const r = spawnSync('node', ['scripts/check-site.mjs', '_test'], { cwd: ROOT, encoding: 'utf8' });

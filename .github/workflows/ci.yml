@@ -19,9 +19,19 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: 檢查是否有尚未校正的後台儲存
+        id: pend
+        run: node scripts/cms-normalize.mjs --dry-run > /dev/null
+      - name: 套用尚未校正的後台儲存（只在 CI 工作區；檢查的是將會發布的內容）
+        if: steps.pend.outputs.cms_commits != '0'
+        run: |
+          npm install --no-save --no-audit --no-fund --no-package-lock sharp@0.35.4
+          node scripts/cms-normalize.mjs
       - name: 驗證商品、設定與圖片路徑
         run: node scripts/build.mjs --check
       - name: 資料／審核／路徑／發布產物單元測試

@@ -14,6 +14,7 @@ on:
 permissions:
   contents: write
   actions: write
+  issues: write
 # 不設 concurrency group（GitHub 會取消排隊中的舊執行）；同時寫入由 admin-publish 的樂觀鎖處理：衝突就從最新版本重做並重新驗證
 jobs:
   restore:
