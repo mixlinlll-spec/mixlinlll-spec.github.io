@@ -4,7 +4,7 @@
   "name_zh": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro",
   "sku": null,
   "brand": "電翼動力 EWP",
-  "manufacturer_model": null,
+  "manufacturer_model": "戈布・哨兵 GOBU The Sentinel",
   "seller_role": "ewp_original",
   "primary_category_id": "complete-drones",
   "subcategory_id": "3-3-5in",
@@ -14,11 +14,91 @@
   ],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
+  "short_description": "3.5 吋 Freestyle 穿越機，T700 碳纖維機架、可更換機臂，F722 AIO 40A 與 1404.5 4500KV 馬達，支援 DJI O4 Wide／O4 Pro／類比圖傳。",
   "description": "GOBU 哨兵是一款3.5吋Freestyle FPV穿越機，採用T700高強度碳纖維機架，搭配可更換機臂設計，兼顧耐用性、維修便利與飛行手感。整機定位為進階花飛、日常練習與近場穿越使用，支援DJI O4 Wide、DJI O4 Pro及模擬圖傳版本，適合想要小尺寸但保有操控爆發力的FPV玩家。\n【產品特色】\n✔ 3.5吋Freestyle穿越機\n✔ T700高強度碳纖維機架\n✔ 可更換機臂設計，維修更方便\n✔ 前端保護結構，提升機頭防護\n✔ 輕量化機身，操控靈活\n✔ F722 AIO 40A 飛控電調\n✔ 1404.5 4500KV 無刷馬達\n✔ 支援DJI O4 Wide／DJI O4 Pro／模擬圖傳\n✔ 適合近場飛行、花飛、進階練習\n【產品規格】\n產品名稱：戈布・哨兵 GOBU The Sentinel\n機型定位：3.5吋 Freestyle 穿越機\n機架材質：T700高強度碳纖維\n軸距：155mm\n機體尺寸：約138×138×28mm\n螺旋槳：3.5吋三葉槳\n飛控：F722 AIO 40A（BLS韌體）\n馬達：1404.5 4500KV\n圖傳系統：DJI O4 Wide／DJI O4 Pro／模擬圖傳\n電池接頭：XT30\n建議電池：4S 750~850mAh LiPo\n起飛重量：約210~250g（含電池，依配置不同）\n續航時間：約3~5分鐘（依飛行風格與電池而定）\n飛行風格：Freestyle／穿越／近場飛行\n產品內容：哨兵主機×1、電池綁帶×1、槳葉一套、BB響（默認安裝）\n※ 不含電池、遙控器、眼鏡、充電器。\n【注意事項】\n※ BNF版本需搭配相容遙控器、眼鏡及電池使用。\n※ 下單前請確認圖傳版本、接收機版本與電池規格。\n※ 出貨前可協助完成基本設定、綁定確認與測試。",
-  "specifications": [],
+  "specifications": [
+    {
+      "key": "機型定位",
+      "value": "3.5 吋 Freestyle 穿越機",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "機架材質",
+      "value": "T700 高強度碳纖維",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "軸距",
+      "value": "155mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "機體尺寸",
+      "value": "約 138 × 138 × 28 mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "螺旋槳",
+      "value": "3.5 吋三葉槳",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控",
+      "value": "F722 AIO 40A（BLS 韌體）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "馬達",
+      "value": "1404.5 4500KV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "圖傳",
+      "value": "DJI O4 Wide／DJI O4 Pro／類比",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電池接頭",
+      "value": "XT30",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "建議電池",
+      "value": "4S 750–850mAh LiPo",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "起飛重量",
+      "value": "約 210–250g（含電池，依配置不同）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "續航",
+      "value": "約 3–5 分鐘（依飛行風格與電池而定）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "DJI O4 Wide 版",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "DJI O4 Pro 版",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "類比圖傳版",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,8 +114,36 @@
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_description": "GOBU 哨兵是一款3.5吋Freestyle FPV穿越機，採用T700高強度碳纖維機架，搭配可更換機臂設計，兼顧耐用性、維修便利與飛行手感。整機定位為進階花飛、日常練習與近場穿越使用，支援DJI O4 Wide、DJI O4 Pro及模擬圖傳版本，適合想要小尺寸但保有操控爆發力的FPV玩家。\n【產品特色】\n✔ 3.5吋Freestyle穿越機\n✔ T700高強度碳纖維機架\n✔ 可更換機臂設計，維修更方便\n✔ 前端保護結構，提升機頭防護\n✔ 輕量化機身，操控靈活\n✔ F722 AIO 40A 飛控電調\n✔ 1404.5 4500KV 無刷馬達\n✔ 支援DJI O4 Wide／DJI O4 Pro／模擬圖傳\n✔ 適合近場飛行、花飛、進階練習\n【產品規格】\n產品名稱：戈布・哨兵 GOBU The Sentinel\n機型定位：3.5吋 Freestyle 穿越機\n機架材質：T700高強度碳纖維\n軸距：155mm\n機體尺寸：約138×138×28mm\n螺旋槳：3.5吋三葉槳\n飛控：F722 AIO 40A（BLS韌體）\n馬達：1404.5 4500KV\n圖傳系統：DJI O4 Wide／DJI O4 Pro／模擬圖傳\n電池接頭：XT30\n建議電池：4S 750~850mAh LiPo\n起飛重量：約210~250g（含電池，依配置不同）\n續航時間：約3~5分鐘（依飛行風格與電池而定）\n飛行風格：Freestyle／穿越／近場飛行\n產品內容：哨兵主機×1、電池綁帶×1、槳葉一套、BB響（默認安裝）\n※ 不含電池、遙控器、眼鏡、充電器。\n【注意事項】\n※ BNF版本需搭配相容遙控器、眼鏡及電池使用。\n※ 下單前請確認圖傳版本、接收機版本與電池規格。\n※ 出貨前可協助完成基本設定、綁定確認與測試。",
+    "batch": "first-B",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "接收機版本",
+      "實機照片",
+      "是否轉為販售模式：須先完成合規確認"
+    ]
+  },
+  "listing_mode": "showcase",
+  "compliance": {
+    "status": "pending",
+    "items": [
+      {
+        "type": "NCC",
+        "reason": "整機含圖傳與接收機等無線電發射設備，販售前須確認 NCC 審驗合格"
+      },
+      {
+        "type": "BSMI",
+        "reason": "蝦皮曾因未填 BSMI／NCC 字號下架整機商品，請確認整機販售所需的檢驗字號"
+      },
+      {
+        "type": "民航法規",
+        "reason": "請確認遙控無人機相關規定（例如註冊、操作限制）於商品頁的告知方式"
+      }
+    ]
   }
 }

@@ -118,8 +118,8 @@ console.log('4. 商品搜尋、篩選與網址狀態（草稿預覽資料）');
 console.log('5. 商品詳情（草稿預覽）');
 {
   const page = await newPage(390);
-  await page.goto(PRE + '/product/geprc-moz7-v2-o4-pro-7/');
-  ok(await page.locator('h1').textContent().then(t => /MOZ7/.test(t)), '詳情頁標題');
+  await page.goto(PRE + '/product/fdi-f722-v5-60a-8-blheli32/');
+  ok(await page.locator('h1').textContent().then(t => /F722 V5/.test(t)), '詳情頁標題');
   ok(await page.locator('.pd-price').textContent() === '詢價', '無價格顯示「詢價」，不顯示 0 元');
   ok(await page.locator('.pd-avail').textContent() === '供貨狀況請洽詢', '無庫存資料顯示「供貨狀況請洽詢」');
   ok(await page.isVisible('.sticky-cta'), '手機底部固定 CTA');
@@ -206,7 +206,63 @@ console.log('9. 商品頁 CTA 優先序（草稿預覽）');
   await page.context().close();
 }
 
-console.log('10. 手機版面穩定（CLS < 0.1）');
+console.log('10. 營業登記地址：非實體門市提示（手機版）與結構化資料');
+{
+  const NOTICE = '此地址僅為營業登記地址，非實體門市，不提供現場購物或臨櫃服務，請勿直接前往。商品、維修及收送件事宜，請先透過 LINE 官方帳號聯繫確認。';
+  const page = await newPage(390);
+  for (const p of ['/about/', '/contact/']) {
+    await page.goto(PUB + p);
+    const dd = page.locator('.biz-dl dd', { hasText: '台北市內湖區內湖路一段115號4樓' });
+    ok(await dd.count() === 1, `${p} 顯示登記地址`);
+    const notice = dd.locator('.biz-notice');
+    ok((await notice.textContent()).trim() === NOTICE, `${p} 提示文字緊貼地址且內容完全一致`);
+    await notice.scrollIntoViewIfNeeded();
+    const st = await notice.evaluate(el => { const c = getComputedStyle(el); const r = el.getBoundingClientRect(); return { fs: parseFloat(c.fontSize), color: c.color, bg: getComputedStyle(el).backgroundColor, w: r.width, right: r.right }; });
+    ok(st.fs >= 14 && st.w > 200 && st.right <= 390, `${p} 手機版提示可讀（字級 ${st.fs}px、寬 ${Math.round(st.w)}px、未超出畫面）`);
+    const lum = rgb => { const [r, g, b] = rgb.match(/\d+/g).slice(0, 3).map(Number).map(v => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; }); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+    const [L1, L2] = [lum(st.color), lum(st.bg)].sort((a, b) => b - a);
+    const ratio = (L1 + 0.05) / (L2 + 0.05);
+    ok(ratio >= 4.5, `${p} 提示文字對比 ${ratio.toFixed(1)}:1（≥ 4.5）`);
+    const html = await page.content();
+    ok(!/google\.[a-z.]+\/maps|maps\.app\.goo\.gl|goo\.gl\/maps/.test(html), `${p} 沒有地圖導航連結`);
+    ok(!/營業時間：|服務時間：|電話：|tel:/.test(await page.textContent('main')), `${p} 不顯示營業時間與電話`);
+  }
+  await page.goto(PUB + '/');
+  const lds = await page.$$eval('script[type="application/ld+json"]', s => s.map(x => JSON.parse(x.textContent)));
+  const org = lds.find(x => x['@type'] === 'Organization');
+  ok(org && org.legalName === '電翼動力航模企業社' && org.taxID === '00693689', '結構化資料為 Organization，含登記名稱與統編');
+  ok(/非實體門市/.test(org.address?.name || ''), '結構化資料地址標示為營業登記地址（非實體門市）');
+  ok(!lds.some(x => /LocalBusiness|Store|Shop/.test(x['@type'])) && !org.openingHours && !org.geo && !org.hasMap, '沒有宣稱 LocalBusiness／門市、營業時間、座標或地圖');
+  ok(/統一編號 00693689/.test(await page.textContent('.site-footer')) && !/內湖路/.test(await page.textContent('.site-footer')), '頁尾只顯示名稱與統編');
+  for (const sp of ['/services/repair/', '/services/upgrades/', '/services/procurement/', '/services/custom-build/']) {
+    await page.goto(PUB + sp);
+    ok(!/送件|交件|到店|來店|現場|自取|取貨|親送/.test(await page.textContent('main')), `${sp} 沒有暗示到場送修的文字`);
+  }
+  await page.context().close();
+}
+
+console.log('11. 首批商品草稿頁（預覽）：作品介紹模式與待補資訊');
+{
+  const page = await newPage(390);
+  for (const slug of ['huan-5-fpv-freestyle-f722-2207', 'gobu-3-5-fpv-f722-aio-40a', 'geprc-moz7-v2-o4-pro-7']) {
+    await page.goto(PRE + `/product/${slug}/`);
+    const info = await page.textContent('.pd-info');
+    ok(/作品介紹/.test(info) && !/到蝦皮購買/.test(info) && !(await page.locator('.pd-price').count()), `${slug} 為作品介紹：無價格、無購買按鈕`);
+    const lds = await page.$$eval('script[type="application/ld+json"]', s => s.map(x => JSON.parse(x.textContent)));
+    ok(!lds.some(x => x['@type'] === 'Product'), `${slug} 不輸出 Product 結構化資料`);
+    ok(/合規待確認：NCC/.test(await page.textContent('.review-box')), `${slug} 預覽顯示合規待確認`);
+  }
+  await page.goto(PRE + '/product/fdi-f722-v5-60a-8-blheli32/');
+  ok((await page.locator('.spec tr').count()) >= 15, 'FDI 堆疊：規格表已由商品說明整理');
+  ok((await page.locator('.pd-block h2', { hasText: '規格選項' }).count()) === 1 && /堆疊組/.test(await page.textContent('main')), 'FDI 堆疊：列出 3 種規格變體');
+  ok(/待補：/.test(await page.textContent('.review-box')), '預覽頁列出待補資料');
+  ok(!/保固|私訊|本賣場/.test(await page.textContent('main .prose')), '商品說明已移除保固與蝦皮站內用語');
+  await page.goto(PRE + '/products/complete-drones/');
+  ok(/作品介紹/.test(await page.textContent('.pcard[data-id="sp-50367700235"]')), '列表商品卡顯示「作品介紹」而非價格');
+  await page.context().close();
+}
+
+console.log('12. 手機版面穩定（CLS < 0.1）');
 for (const u of [PUB + '/', PUB + '/products/', PUB + '/products/complete-drones/', PRE + '/products/', PRE + '/product/geprc-moz7-v2-o4-pro-7/', PUB + '/contact/']) {
   const page = await newPage(390);
   await page.addInitScript(() => { window.__cls = 0; new PerformanceObserver(l => { for (const e of l.getEntries()) if (!e.hadRecentInput) window.__cls += e.value; }).observe({ type: 'layout-shift', buffered: true }); });
@@ -217,7 +273,7 @@ for (const u of [PUB + '/', PUB + '/products/', PUB + '/products/complete-drones
   await page.context().close();
 }
 
-console.log('11. 鍵盤操作');
+console.log('13. 鍵盤操作');
 {
   const page = await newPage(1280);
   await page.goto(PUB + '/');

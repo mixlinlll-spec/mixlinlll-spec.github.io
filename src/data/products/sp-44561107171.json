@@ -4,7 +4,7 @@
   "name_zh": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range",
   "sku": null,
   "brand": "GEPRC",
-  "manufacturer_model": null,
+  "manufacturer_model": "MOZ7 V2 O4 Pro",
   "seller_role": "retail",
   "primary_category_id": "complete-drones",
   "subcategory_id": "7in-long-range",
@@ -14,9 +14,30 @@
   ],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "#GEPRC #MOZ7 #DJIO4 #O4Pro #FPV #LongRange #穿越機 #遠航機 #7吋FPV #空拍機 #Freestyle #ELRS #DJI #無人機 #FPVDrone",
-  "specifications": [],
+  "short_description": "GEPRC MOZ7 V2 7 吋長航程 FPV 穿越機，搭載 DJI O4 Pro。",
+  "description": "",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "GEPRC",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "型號",
+      "value": "MOZ7 V2",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "尺寸",
+      "value": "7 吋長航",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "圖傳",
+      "value": "DJI O4 Pro",
+      "source": "蝦皮商品標題"
+    }
+  ],
   "images": [],
   "variants": [],
   "price_twd": null,
@@ -33,7 +54,8 @@
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-monfw4jmdonj48",
@@ -47,6 +69,34 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-mong0q8bmzgt70",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mong0q89j4su10",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mong0q89hq8e0b"
+    ],
+    "source_description": "#GEPRC #MOZ7 #DJIO4 #O4Pro #FPV #LongRange #穿越機 #遠航機 #7吋FPV #空拍機 #Freestyle #ELRS #DJI #無人機 #FPVDrone",
+    "batch": "first-B",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "完整原廠規格（飛控、馬達、接收機、GPS、重量）",
+      "商品說明（蝦皮說明只有 hashtag）",
+      "圖片使用權（原廠圖片需取得授權）",
+      "是否轉為販售模式：須先完成合規確認"
+    ]
+  },
+  "listing_mode": "showcase",
+  "compliance": {
+    "status": "pending",
+    "items": [
+      {
+        "type": "NCC",
+        "reason": "整機含圖傳與接收機等無線電發射設備，販售前須確認 NCC 審驗合格"
+      },
+      {
+        "type": "BSMI",
+        "reason": "蝦皮曾因未填 BSMI／NCC 字號下架整機商品，請確認整機販售所需的檢驗字號"
+      },
+      {
+        "type": "民航法規",
+        "reason": "請確認遙控無人機相關規定（例如註冊、操作限制）於商品頁的告知方式"
+      }
     ]
   }
 }

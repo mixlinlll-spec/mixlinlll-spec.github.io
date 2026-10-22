@@ -3,7 +3,7 @@
   "slug": "dji-o4-air-unit-pro-fpv",
   "name_zh": "DJI O4 Air Unit Pro 同軸連接線📡 FPV穿越機大疆攝像頭圖傳線 柔韌長距",
   "sku": null,
-  "brand": "DJI",
+  "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "video",
@@ -12,9 +12,15 @@
   "compatible_sizes": [],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "•\t#DJIO4AirUnit\n•\t#O4Pro連接線\n•\t#穿越機圖傳線\n•\t#大疆同軸線\n•\t#FPV攝像頭線\n•\t#O4穿越機配件\n•\t#4K圖傳線\n•\t#航模連接線\n•\t#DJI配件\n•\t#台灣現貨",
-  "specifications": [],
+  "short_description": "DJI O4 Air Unit Pro 用同軸連接線（鏡頭與圖傳之間）。",
+  "description": "",
+  "specifications": [
+    {
+      "key": "適用",
+      "value": "DJI O4 Air Unit Pro",
+      "source": "蝦皮商品標題"
+    }
+  ],
   "images": [],
   "variants": [],
   "price_twd": null,
@@ -31,10 +37,25 @@
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mlyen471kydhf9"
+    ],
+    "source_description": "•\t#DJIO4AirUnit\n•\t#O4Pro連接線\n•\t#穿越機圖傳線\n•\t#大疆同軸線\n•\t#FPV攝像頭線\n•\t#O4穿越機配件\n•\t#4K圖傳線\n•\t#航模連接線\n•\t#DJI配件\n•\t#台灣現貨",
+    "batch": "first-A",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "品牌（原廠或副廠）",
+      "線長",
+      "接頭規格",
+      "商品說明（蝦皮說明只有 hashtag）",
+      "正式商品照片（EWP 自有或已授權，需標示 rights）",
+      "售價模式（定價／起價／詢價）與售價",
+      "供貨狀態",
+      "蝦皮商品網址（需 EWP 核實）"
     ]
   }
 }

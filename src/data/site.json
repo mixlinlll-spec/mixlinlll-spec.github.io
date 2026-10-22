@@ -11,10 +11,11 @@
   "default_description": "電翼動力 EWP，專注 FPV 穿越機整機、零件、動力電池、客製組裝、維修與調校。",
   "default_og_image": "/assets/img/builds/huan-1200.jpg",
   "business": {
-    "_comment": "營業登記資訊（EWP 2026-10-22 提供）。稅籍編號屬內部稅務資料，不放入公開網站與公開 repo。",
+    "_comment": "營業登記資訊（EWP 2026-10-22 提供並確認可公開，須標註非實體門市）。稅籍編號屬內部稅務資料，不放入公開網站與公開 repo。不得標示為門市、展示間或取貨點；不加地圖導航。",
     "legal_name": "電翼動力航模企業社",
     "tax_id": "00693689",
-    "registered_address": "台北市內湖區內湖路一段115號4樓"
+    "registered_address": "台北市內湖區內湖路一段115號4樓",
+    "address_notice": "此地址僅為營業登記地址，非實體門市，不提供現場購物或臨櫃服務，請勿直接前往。商品、維修及收送件事宜，請先透過 LINE 官方帳號聯繫確認。"
   },
   "contact": {
     "line": {

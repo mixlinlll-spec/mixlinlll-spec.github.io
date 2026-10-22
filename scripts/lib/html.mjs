@@ -16,7 +16,9 @@ export const url = {
 };
 
 const NT = n => `NT$ ${Number(n).toLocaleString('en-US')}`;
+export const isShowcase = p => p.listing_mode === 'showcase';
 export function priceText(p) {
+  if (isShowcase(p)) return '作品介紹';
   if (p.price_display === 'fixed' && p.price_twd > 0) return NT(p.price_twd);
   if (p.price_display === 'from' && p.price_twd > 0) return `${NT(p.price_twd)} 起`;
   return '詢價';
@@ -63,7 +65,7 @@ export function productCard(p, ctx) {
   const data = {
     'data-id': p.id, 'data-cat': p.primary_category_id, 'data-sub': p.subcategory_id || '', 'data-brand': p.brand || '',
     'data-sizes': (p.compatible_sizes || []).join('|'), 'data-video': p.video_system || '', 'data-cells': (p.battery_cells || []).join('|'),
-    'data-price': p.price_twd ?? '', 'data-avail': p.availability, 'data-featured': p.featured ? '1' : '0',
+    'data-price': isShowcase(p) ? '' : (p.price_twd ?? ''), 'data-avail': p.availability, 'data-featured': p.featured ? '1' : '0',
     'data-updated': p.updated_at, 'data-name': p.name_zh, 'data-search': search,
   };
   const dataAttrs = Object.entries(data).map(([k, v]) => `${k}="${attr(v)}"`).join(' ');
@@ -73,7 +75,7 @@ export function productCard(p, ctx) {
     <div class="pcard-body">
       <span class="pcard-meta">${esc(roleText(p.seller_role))}${p.brand ? ` · ${esc(p.brand)}` : ''}</span>
       <h3 class="pcard-title">${esc(p.name_zh)}</h3>
-      <div class="pcard-foot"><span class="price${p.price_display === 'inquiry' ? ' price-inquiry' : ''}">${esc(priceText(p))}</span><span class="avail avail-${attr(p.availability)}">${esc(availabilityText(p.availability))}</span></div>
+      <div class="pcard-foot"><span class="price${p.price_display === 'inquiry' ? ' price-inquiry' : ''}">${esc(priceText(p))}</span><span class="avail avail-${attr(p.availability)}">${esc(isShowcase(p) ? '未於官網販售' : availabilityText(p.availability))}</span></div>
     </div>
   </a>
 </li>`;

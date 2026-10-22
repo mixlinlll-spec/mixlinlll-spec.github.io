@@ -12,9 +12,30 @@
   "compatible_sizes": [],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "•\t#TJRC天劍天線\n•\t#5.8G沉金天線\n•\t#O4Pro圖傳\n•\t#穿越機天線\n•\t#棒棒糖天線\n•\t#SMA圓極化\n•\t#FPV圖傳配件\n•\t#高增益天線\n•\t#航模天線\n•\t#台灣現貨",
-  "specifications": [],
+  "short_description": "TJRC 天劍 5.8GHz 圓極化棒棒糖天線，SMA 公頭，適用 DJI O4 Pro 等 5.8GHz 圖傳。",
+  "description": "",
+  "specifications": [
+    {
+      "key": "頻段",
+      "value": "5.8GHz",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "接頭",
+      "value": "SMA 公頭",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "極化",
+      "value": "圓極化（旋向待確認）",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "適用",
+      "value": "DJI O4 Pro 圖傳",
+      "source": "蝦皮商品標題"
+    }
+  ],
   "images": [],
   "variants": [],
   "price_twd": null,
@@ -31,10 +52,35 @@
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mlydl2cecves11"
+    ],
+    "source_description": "•\t#TJRC天劍天線\n•\t#5.8G沉金天線\n•\t#O4Pro圖傳\n•\t#穿越機天線\n•\t#棒棒糖天線\n•\t#SMA圓極化\n•\t#FPV圖傳配件\n•\t#高增益天線\n•\t#航模天線\n•\t#台灣現貨",
+    "batch": "first-B",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "增益（dBi）",
+      "旋向（LHCP／RHCP）",
+      "長度與重量",
+      "商品說明（蝦皮說明只有 hashtag）",
+      "「遠距穿牆」為宣傳用語，公開前建議刪除",
+      "正式商品照片（EWP 自有或已授權，需標示 rights）",
+      "售價模式（定價／起價／詢價）與售價",
+      "供貨狀態",
+      "蝦皮商品網址（需 EWP 核實）"
+    ]
+  },
+  "compliance": {
+    "status": "pending",
+    "items": [
+      {
+        "type": "NCC",
+        "reason": "被動天線本身不發射訊號，請 EWP 確認是否需要審驗；若與發射器成套販售則依發射器規定"
+      }
     ]
   }
 }

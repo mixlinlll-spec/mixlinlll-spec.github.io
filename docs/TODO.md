@@ -7,10 +7,10 @@
 | 1 | LINE 官方帳號 | ✅ 已完成 | `https://lin.ee/WIUCkWP`，由 EWP 提供的 QR 解碼驗證一致，聯絡頁使用原 QR 圖檔 |
 | 2 | 蝦皮賣場首頁 | ✅ 已完成 | `https://shopee.tw/mixlin`（已移除搜尋追蹤參數）。舊短網址 `tw.shp.ee/tbLSac5h` 未使用 |
 | 3 | 蝦皮 shop ID | ⏳ 待 EWP 核實 | EWP 決定：必須核實，**不直接採用 4053258**。核實後填入 `site.json → contact.shopee.shop_id`，草稿會自動帶出各自的蝦皮商品連結 |
-| 4 | 首批公開商品 | ⏳ 待提供 | EWP 決定先公開 20 件；建議名單見 [FIRST_BATCH.md](FIRST_BATCH.md)。每件需要正式照片、short_description、規格、售價策略、供貨狀態，核對後設 `published:true`＋`review.status:"approved"` |
+| 4 | 首批公開商品 | ⏳ 資料整理完成，待 EWP 補資料 | 20 件已整理成草稿頁；逐件缺漏見 [FIRST_BATCH_REVIEW.md](FIRST_BATCH_REVIEW.md)（Excel：[first-batch-review.csv](first-batch-review.csv)） |
 | 5 | Email 公開 | ✅ 已完成 | mixlin.lll@gmail.com |
 | 6 | 營業時間、電話 | ✅ 依指示不公開 | 聯絡頁顯示「目前僅提供線上聯絡，暫不公開營業時間」 |
-| 6a | 營業登記資訊 | ✅ 已完成 | 電翼動力航模企業社、統一編號 00693689、登記地址，顯示於頁尾（名稱＋統編）、關於頁與聯絡頁；稅籍編號不公開、不存入 repo |
+| 6a | 營業登記資訊 | ✅ 已完成 | 電翼動力航模企業社、統一編號 00693689、登記地址（關於、聯絡頁，緊貼「非實體門市」提示）；頁尾只顯示名稱＋統編；稅籍編號不公開、不存入 repo |
 | 7 | 主要 CTA 優先順序 | ✅ 已完成 | 一般現貨商品蝦皮優先；EWP 自製整機／電池、組裝、服務 LINE 優先（`cta_primary` 可個別覆寫） |
 | 8 | 隱私權、網站條款、售後／運送／退換 | ⏳ EWP 另行整理 | 三頁皆未核准：noindex、不出現在頁尾與 sitemap；隱私權頁標示「草案，待 EWP 正式核對」 |
 | 8a | GitHub Pages 來源改為 GitHub Actions | ⏳ 合併前必做 | 見 [DEPLOY_ROLLBACK.md](DEPLOY_ROLLBACK.md) |

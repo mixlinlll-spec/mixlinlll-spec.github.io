@@ -369,3 +369,4 @@ section{padding:36px 0}
 .biz-dl dt{color:var(--muted)}
 .biz-dl dd{margin:0;overflow-wrap:anywhere}
 .badge-collab{border-color:var(--sand);color:var(--sand)}
+.biz-notice{margin:8px 0 0;padding:10px 12px;border-left:3px solid var(--warn);background:var(--panel);color:var(--text);font-size:15px;line-height:1.7}

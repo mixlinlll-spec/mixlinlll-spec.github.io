@@ -11,7 +11,7 @@ const { categories, site, services, products } = loadAll();
 const base = () => ({
   id: 'test-1', slug: 'test-item', name_zh: '測試商品', sku: null, brand: 'EWP', manufacturer_model: null, seller_role: 'retail',
   primary_category_id: 'hardware-prints', subcategory_id: 'screws', tags: [], compatible_sizes: [], short_description: '短說明',
-  description: '', specifications: [], images: [{ src: '/assets/img/builds/huan-600.webp', alt: '測試圖' }], variants: [],
+  description: '', specifications: [], images: [{ src: '/assets/img/builds/huan-600.webp', alt: '測試圖', rights: 'ewp_own' }], variants: [],
   price_twd: null, price_display: 'inquiry', availability: 'unknown', shopee_url: null, line_inquiry_enabled: true,
   featured: false, published: true, updated_at: '2026-10-22', review: { status: 'approved' },
 });
@@ -133,5 +133,69 @@ describe('發布產物（建置到暫存資料夾）', () => {
   test('建置拒絕輸出到 repo 根目錄', () => {
     const r = spawnSync('node', ['scripts/build.mjs', '--out', '.'], { cwd: ROOT, encoding: 'utf8' });
     assert.notEqual(r.status, 0);
+  });
+});
+
+describe('Phase 3：營業登記地址、作品介紹模式、合規與圖片使用權', () => {
+  const NOTICE = '此地址僅為營業登記地址，非實體門市，不提供現場購物或臨櫃服務，請勿直接前往。商品、維修及收送件事宜，請先透過 LINE 官方帳號聯繫確認。';
+  test('營業登記地址提示文字與 EWP 指定內容完全一致', () => assert.equal(site.business.address_notice, NOTICE));
+  test('不公開營業時間、電話，也不設門市地址', () => {
+    assert.equal(site.contact.hours.enabled, false); assert.equal(site.contact.phone.enabled, false); assert.equal(site.contact.address.enabled, false);
+  });
+  test('服務頁文字不暗示可直接到場送修', () => {
+    const txt = JSON.stringify(services);
+    for (const w of ['送件', '交件', '到店', '來店', '現場', '自取', '取貨', '門市', '親送']) assert.ok(!txt.includes(w), w);
+  });
+  const drone = () => ({ ...base(), id: 'd1', slug: 'd1', primary_category_id: 'complete-drones', subcategory_id: '5in', images: [{ src: '/assets/img/builds/huan-600.webp', alt: 'x', rights: 'ewp_own' }] });
+  test('整機公開時必須設定 listing_mode', () => assert.ok(errs(drone()).some(e => e.includes('listing_mode'))));
+  test('整機以販售模式公開必須合規 cleared', () => {
+    assert.ok(errs({ ...drone(), listing_mode: 'sale', compliance: { status: 'pending', items: [] } }).length);
+    assert.ok(errs({ ...drone(), listing_mode: 'sale' }).some(e => e.includes('cleared')));
+    assert.deepEqual(errs({ ...drone(), listing_mode: 'sale', compliance: { status: 'cleared', items: [] } }), []);
+  });
+  test('作品介紹（showcase）可在合規待確認時公開，但不構成販售', () => assert.deepEqual(errs({ ...drone(), listing_mode: 'showcase', compliance: { status: 'pending', items: [] } }), []));
+  test('一般商品合規待確認時不得公開', () => assert.ok(errs({ ...base(), images: [{ src: '/assets/img/builds/huan-600.webp', alt: 'x', rights: 'ewp_own' }], compliance: { status: 'pending', items: [] } }).length));
+  test('公開商品圖片必須標示使用權 rights', () => {
+    assert.ok(errs({ ...base(), images: [{ src: '/assets/img/builds/huan-600.webp', alt: 'x' }] }).some(e => e.includes('rights')));
+    assert.ok(errs({ ...base(), images: [{ src: '/assets/img/builds/huan-600.webp', alt: 'x', rights: 'shopee' }] }).some(e => e.includes('rights')));
+    assert.deepEqual(errs({ ...base(), images: [{ src: '/assets/img/builds/huan-600.webp', alt: 'x', rights: 'licensed' }] }), []);
+  });
+  test('listing_mode 與 compliance.status 只接受定義值', () => {
+    assert.ok(errs({ ...base(), listing_mode: 'display' }).length);
+    assert.ok(errs({ ...base(), published: false, compliance: { status: 'ok' } }).length);
+  });
+  const batch = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/first-batch.json'), 'utf8')).items;
+  test('首批名單 20 件、A 組 12、B 組 8，且都存在', () => {
+    assert.equal(batch.length, 20);
+    assert.deepEqual(batch.filter(b => b.group === 'A').map(b => b.no), [1, 2, 3, 7, 8, 9, 10, 11, 12, 13, 14, 17]);
+    assert.deepEqual(batch.filter(b => b.group === 'B').map(b => b.no), [4, 5, 6, 15, 16, 18, 19, 20]);
+    for (const b of batch) assert.ok(products.find(p => p.id === b.id), b.id);
+  });
+  test('首批商品全部未公開、未核准、價格與供貨未被推估填入', () => {
+    for (const b of batch) {
+      const p = products.find(x => x.id === b.id);
+      assert.equal(p.published, false); assert.notEqual(p.review.status, 'approved');
+      assert.equal(p.price_twd, null); assert.equal(p.price_display, 'inquiry'); assert.equal(p.availability, 'unknown');
+      assert.equal(p.review.specs_confirmed, false); assert.equal(p.review.shopee_url_verified, false);
+      assert.ok(Array.isArray(p.review.missing) && p.review.missing.length, `${b.id} 應列出待補資料`);
+      for (const v of p.variants) { assert.equal(v.price_twd, null); assert.equal(v.availability, 'unknown'); }
+      for (const s of p.specifications) assert.ok(s.source, `${b.id} 規格 ${s.key} 應標示來源`);
+    }
+  });
+  test('三款整機為作品介紹模式且合規待確認', () => {
+    for (const id of ['sp-50367700235', 'sp-29295757187', 'sp-44561107171']) {
+      const p = products.find(x => x.id === id); assert.equal(p.listing_mode, 'showcase'); assert.equal(p.compliance.status, 'pending');
+    }
+  });
+  test('電池與無線電相關商品列出合規確認項目', () => {
+    for (const id of ['sp-46751039159', 'sp-52105308338', 'sp-57303672693', 'sp-49207375975', 'sp-48617760691']) {
+      const p = products.find(x => x.id === id); assert.equal(p.compliance.status, 'pending'); assert.ok(p.compliance.items.length);
+    }
+  });
+  test('商品描述不含未核准的保固承諾或蝦皮站內用語', () => {
+    for (const b of batch) { const d = products.find(x => x.id === b.id).description; for (const w of ['保固', '私訊', '本賣場', '聊聊']) assert.ok(!d.includes(w), `${b.id} 含「${w}」`); }
+  });
+  test('所有商品 id 與檔名一致、slug 唯一（未被改動）', () => {
+    const slugs = products.map(p => p.slug); assert.equal(new Set(slugs).size, slugs.length); assert.equal(products.length, 240);
   });
 });

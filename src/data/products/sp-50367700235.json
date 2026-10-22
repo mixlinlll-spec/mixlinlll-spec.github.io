@@ -4,7 +4,7 @@
   "name_zh": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4",
   "sku": null,
   "brand": "電翼動力 EWP",
-  "manufacturer_model": null,
+  "manufacturer_model": "幻 HUAN",
   "seller_role": "ewp_original",
   "primary_category_id": "complete-drones",
   "subcategory_id": "5in",
@@ -16,9 +16,35 @@
   "battery_cells": [
     "6S"
   ],
-  "short_description": "",
+  "short_description": "電翼動力 5 吋 Freestyle 花飛機，紫色幻影風格，定位為高速花飛、進階練習與戶外穿越。",
   "description": "幻 HUAN 是電翼動力全新 5吋 Freestyle 花飛機，以紫色幻影風格打造，定位為高速花飛、進階練習與戶外穿越使用。",
-  "specifications": [],
+  "specifications": [
+    {
+      "key": "尺寸",
+      "value": "5 吋",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "飛控",
+      "value": "F722",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "馬達",
+      "value": "2207 1950KV",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "動力",
+      "value": "6S",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "圖傳",
+      "value": "DJI O4",
+      "source": "蝦皮商品標題"
+    }
+  ],
   "images": [],
   "variants": [],
   "price_twd": null,
@@ -36,10 +62,39 @@
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-msydmqx4347e6c"
+    ],
+    "source_description": "幻 HUAN 是電翼動力全新 5吋 Freestyle 花飛機，以紫色幻影風格打造，定位為高速花飛、進階練習與戶外穿越使用。",
+    "batch": "first-B",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "正式配置確認（舊首頁寫 MAD 2207／1950KV、FDI F722／60A）",
+      "接收機、機架、槳葉、重量",
+      "實機照片（可沿用現有 HUAN 海報需確認）",
+      "是否轉為販售模式：須先完成合規確認"
+    ]
+  },
+  "listing_mode": "showcase",
+  "compliance": {
+    "status": "pending",
+    "items": [
+      {
+        "type": "NCC",
+        "reason": "整機含圖傳與接收機等無線電發射設備，販售前須確認 NCC 審驗合格"
+      },
+      {
+        "type": "BSMI",
+        "reason": "蝦皮曾因未填 BSMI／NCC 字號下架整機商品，請確認整機販售所需的檢驗字號"
+      },
+      {
+        "type": "民航法規",
+        "reason": "請確認遙控無人機相關規定（例如註冊、操作限制）於商品頁的告知方式"
+      }
     ]
   }
 }

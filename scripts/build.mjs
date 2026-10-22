@@ -6,7 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT, loadAll, validateProducts, AVAILABILITY, STATIC_WHITELIST, isRejected } from './lib/data.mjs';
-import { esc, attr, url, layout, productCard, breadcrumbs, breadcrumbsJsonLd, picture, priceText, availabilityText, roleText, lineButton, shopeeButton, shopeeUrlFor } from './lib/html.mjs';
+import { isShowcase, esc, attr, url, layout, productCard, breadcrumbs, breadcrumbsJsonLd, picture, priceText, availabilityText, roleText, lineButton, shopeeButton, shopeeUrlFor } from './lib/html.mjs';
 
 const args = process.argv.slice(2);
 const DRAFTS = args.includes('--drafts');
@@ -57,7 +57,7 @@ const biz = site.business;
 const bizBlock = (title = '營業登記資訊') => biz ? `<section class="wrap biz"><h2 class="h3">${esc(title)}</h2><dl class="biz-dl">
   <div><dt>登記名稱</dt><dd>${esc(biz.legal_name)}</dd></div>
   <div><dt>統一編號</dt><dd>${esc(biz.tax_id)}</dd></div>
-  <div><dt>登記地址</dt><dd>${esc(biz.registered_address)}</dd></div>
+  <div><dt>登記地址</dt><dd>${esc(biz.registered_address)}<p class="biz-notice" role="note">${esc(biz.address_notice)}</p></dd></div>
 </dl></section>` : '';
 const sortProducts = list => [...list].sort((a, b) => (b.featured - a.featured) || b.updated_at.localeCompare(a.updated_at) || a.name_zh.localeCompare(b.name_zh, 'zh-Hant'));
 const cardList = (list, cls = 'pgrid') => `<ul class="${cls}">${list.map(p => productCard(p, ctx)).join('')}</ul>`;
@@ -149,7 +149,9 @@ ${newest.length ? `<section class="wrap">${sectionHead('NEW', '新上架', '<p><
 <section id="contact" class="wrap">${contactCta('下一台機器，從你的想法開始。', '整機、電池或維修需求，先告訴我們你的設備與用途，一起把配置想清楚。').replace('<section class="wrap cta-band">', '<div class="cta-band">').replace(/<\/section>$/, '</div>')}</section>`;
   page('index.html', {
     path: '/', body, active: 'home', bodyClass: 'home',
-    jsonld: [{ '@context': 'https://schema.org', '@type': 'Organization', name: '電翼動力 EWP', ...(biz ? { legalName: biz.legal_name, taxID: biz.tax_id, address: { '@type': 'PostalAddress', streetAddress: biz.registered_address, addressCountry: 'TW' } } : {}), url: BASE + '/', logo: BASE + '/assets/img/favicon.svg',
+    jsonld: [{ '@context': 'https://schema.org', '@type': 'Organization', name: '電翼動力 EWP', // 使用 Organization（非 LocalBusiness／Store）：登記地址僅作為公司登記資訊，不宣稱為對外營業據點
+      ...(biz ? { legalName: biz.legal_name, taxID: biz.tax_id, address: { '@type': 'PostalAddress', name: '營業登記地址（非實體門市，不提供現場服務）', streetAddress: biz.registered_address, addressCountry: 'TW' } } : {}),
+      ...(site.contact.line.enabled ? { contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', url: site.contact.line.url, areaServed: 'TW', availableLanguage: 'zh-Hant' } } : {}), url: BASE + '/', logo: BASE + '/assets/img/favicon.svg',
       sameAs: [site.contact.line, site.contact.shopee, site.contact.instagram, site.contact.facebook, site.contact.youtube].filter(c => c.enabled && c.url).map(c => c.url) },
       { '@context': 'https://schema.org', '@type': 'WebSite', name: '電翼動力 EWP', url: BASE + '/', potentialAction: { '@type': 'SearchAction', target: BASE + '/products/?q={search_term_string}', 'query-input': 'required name=search_term_string' } }],
   });
@@ -234,10 +236,12 @@ function productPages() {
     const crumbs = [{ name: '首頁', href: '/' }, { name: '商品商城', href: '/products/' }, { name: c.name, href: url.category(c) }, ...(sub ? [{ name: sub.name, href: url.sub(c, sub) }] : []), { name: p.name_zh }];
     const shopee = shopeeUrlFor(p, site);
     // CTA 優先序（EWP 2026-10-22 決定）：一般現貨商品蝦皮優先；客製整機、自製電池、組裝與服務 LINE 優先。商品可用 cta_primary 個別指定。
-    const linePrimary = ctaPrimary(p) === 'line';
-    const line = p.line_inquiry_enabled ? lineButton(site, linePrimary ? 'LINE 詢價／客製諮詢' : 'LINE 詢價', 'btn btn-line') : '';
-    const shopeeBtn = shopee ? shopeeButton(site, '到蝦皮購買', linePrimary ? 'btn' : 'btn btn-primary', shopee) : '';
-    const ctas = linePrimary ? line + shopeeBtn : shopeeBtn + line;
+    // showcase（作品／機型介紹）：不顯示價格、供貨與購買按鈕，只提供客製組裝諮詢
+    const showcase = isShowcase(p);
+    const linePrimary = showcase || ctaPrimary(p) === 'line';
+    const line = p.line_inquiry_enabled || showcase ? lineButton(site, showcase ? 'LINE 洽詢客製組裝' : linePrimary ? 'LINE 詢價／客製諮詢' : 'LINE 詢價', 'btn btn-line') : '';
+    const shopeeBtn = shopee && !showcase ? shopeeButton(site, '到蝦皮購買', linePrimary ? 'btn' : 'btn btn-primary', shopee) : '';
+    const ctas = showcase ? line + '<a class="btn" href="/services/custom-build/">客製組裝服務</a>' : linePrimary ? line + shopeeBtn : shopeeBtn + line;
     const imgs = p.images || [];
     const gallery = imgs.length ? `<div class="gallery" data-gallery>
         <div class="gallery-main">${picture(imgs[0], { lazy: false, sizes: '(max-width: 900px) 100vw, 640px' })}</div>
@@ -245,12 +249,17 @@ function productPages() {
       </div>` : `<div class="gallery gallery-empty"><div class="img-ph"><span>EWP</span></div><p class="muted">商品照片準備中</p></div>`;
     const related = sortProducts(visible.filter(x => x.id !== p.id && x.primary_category_id === p.primary_category_id))
       .sort((a, b) => (b.subcategory_id === p.subcategory_id) - (a.subcategory_id === p.subcategory_id)).slice(0, 4);
-    const variants = p.variants?.length ? `<section class="pd-block"><h2>規格選項</h2><div class="table-wrap"><table class="table"><thead><tr><th scope="col">選項</th><th scope="col">SKU</th><th scope="col">價格</th><th scope="col">供貨</th></tr></thead><tbody>${p.variants.map(v => `<tr><td>${esc(v.name)}</td><td>${esc(v.sku || '—')}</td><td>${v.price_twd ? `NT$ ${Number(v.price_twd).toLocaleString('en-US')}` : '詢價'}</td><td>${esc(availabilityText(v.availability || p.availability))}</td></tr>`).join('')}</tbody></table></div></section>` : '';
+    const variants = p.variants?.length ? (showcase
+      ? `<section class="pd-block"><h2>可選配置</h2><ul class="tags">${p.variants.map(v => `<li>${esc(v.name)}</li>`).join('')}</ul></section>`
+      : `<section class="pd-block"><h2>規格選項</h2><div class="table-wrap"><table class="table"><thead><tr><th scope="col">選項</th><th scope="col">SKU</th><th scope="col">價格</th><th scope="col">供貨</th></tr></thead><tbody>${p.variants.map(v => `<tr><td>${esc(v.name)}</td><td>${esc(v.sku || '—')}</td><td>${v.price_twd ? `NT$ ${Number(v.price_twd).toLocaleString('en-US')}` : '詢價'}</td><td>${esc(availabilityText(v.availability || p.availability))}</td></tr>`).join('')}</tbody></table></div></section>`) : '';
     const specs = p.specifications?.length ? `<section class="pd-block"><h2>規格</h2><div class="table-wrap"><table class="table spec"><tbody>${p.specifications.map(s => `<tr><th scope="row">${esc(s.key)}</th><td>${esc(s.value)}</td></tr>`).join('')}</tbody></table></div></section>` : '';
     const compat = (p.compatible_sizes?.length || p.tags?.length || p.video_system || p.battery_cells?.length) ? `<section class="pd-block"><h2>相容與標籤</h2><ul class="tags">${[...(p.compatible_sizes || []), p.video_system, ...(p.battery_cells || []), ...(p.tags || [])].filter(Boolean).map(t => `<li>${esc(t)}</li>`).join('')}</ul></section>` : '';
     const notes = p.notes?.length ? `<section class="pd-block"><h2>注意事項</h2><ul class="notes">${p.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></section>` : '';
     const descHtml = p.description ? `<section class="pd-block"><h2>商品說明</h2><div class="prose">${p.description.split(/\n{2,}/).map(par => `<p>${esc(par).replace(/\n/g, '<br>')}</p>`).join('')}</div></section>` : '';
-    const reviewBox = !p.published && p.review?.notes?.length ? `<aside class="review-box"><strong>草稿待核對（僅預覽版顯示）</strong><ul>${p.review.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></aside>` : '';
+    const rv = p.review || {};
+    const reviewItems = [...(rv.missing || []).map(m => `待補：${m}`), ...(p.compliance?.status === 'pending' ? (p.compliance.items || []).map(c => `合規待確認：${c.type}｜${c.reason}`) : []), ...(rv.notes || [])];
+    const reviewBox = !p.published && reviewItems.length ? `<aside class="review-box"><strong>草稿待核對（僅預覽版顯示）${rv.batch ? `｜首批 ${esc(rv.batch.replace('first-', ''))} 組` : ''}</strong><ul>${reviewItems.map(n => `<li>${esc(n)}</li>`).join('')}</ul></aside>` : '';
+    const showcaseNote = showcase ? `<p class="callout" role="note"><strong>作品介紹：</strong>本頁為機型介紹，目前未於官網販售。需要相同或類似配置，請透過 LINE 洽詢客製組裝服務。</p>` : '';
     const body = `<div class="wrap">${breadcrumbs(crumbs.map((x, i) => i === crumbs.length - 1 ? x : x))}</div>
 <article class="wrap pd" itemscope>
   <div class="pd-top">
@@ -264,11 +273,11 @@ function productPages() {
         ${p.sku ? `<div><dt>SKU</dt><dd>${esc(p.sku)}</dd></div>` : ''}
         <div><dt>分類</dt><dd><a href="${url.category(c)}">${esc(c.name)}</a>${sub ? ` / <a href="${url.sub(c, sub)}">${esc(sub.name)}</a>` : ''}</dd></div>
       </dl>
-      <p class="pd-price${p.price_display === 'inquiry' ? ' price-inquiry' : ''}">${esc(priceText(p))}</p>
-      <p class="pd-avail avail-${attr(p.availability)}">${esc(availabilityText(p.availability))}</p>
+      ${showcase ? showcaseNote : `<p class="pd-price${p.price_display === 'inquiry' ? ' price-inquiry' : ''}">${esc(priceText(p))}</p>
+      <p class="pd-avail avail-${attr(p.availability)}">${esc(availabilityText(p.availability))}</p>`}
       ${p.short_description ? `<p class="pd-short">${esc(p.short_description)}</p>` : ''}
       <div class="actions pd-actions">${ctas}${!shopeeBtn && !line ? '<a class="btn" href="/contact/">聯絡我們</a>' : ''}</div>
-      <p class="fine">${p.price_display === 'inquiry' ? '價格依配置與供貨狀況報價。' : '網站標示價格僅供參考，實際成交以蝦皮或報價單為準。'}商品頁出現的品牌名稱僅用於標示商品，不代表原廠代理或授權。</p>
+      <p class="fine">${showcase ? '' : p.price_display === 'inquiry' ? '價格依配置與供貨狀況報價。' : '網站標示價格僅供參考，實際成交以蝦皮或報價單為準。'}商品頁出現的品牌名稱僅用於標示商品，不代表原廠代理或授權。</p>
       ${reviewBox}
     </div>
   </div>
@@ -288,7 +297,8 @@ ${(shopeeBtn || line) ? `<div class="sticky-cta" aria-label="購買與詢價">${
     page(`product/${p.slug}/index.html`, {
       title: p.name_zh, description: p.short_description || `${p.name_zh}｜${c.name}｜電翼動力 EWP`, path: url.product(p), body, active: 'products',
       ogImage: imgs[0] ? (imgs[0].fallback || imgs[0].src) : undefined, scripts: ['/assets/js/product.js'], bodyClass: (shopeeBtn || line) ? 'has-sticky-cta' : '',
-      jsonld: [ld, breadcrumbsJsonLd(crumbs, BASE)], noindex: !p.published,
+      // 作品介紹不輸出 Product 結構化資料，避免被視為販售商品
+      jsonld: [showcase ? null : ld, breadcrumbsJsonLd(crumbs, BASE)], noindex: !p.published,
     });
   }
 }

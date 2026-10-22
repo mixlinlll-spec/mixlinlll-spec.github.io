@@ -4,7 +4,7 @@
   "name_zh": "Foxeer Razer Nano 類比FPV鏡頭📷 1200TVL 1/3 CMOS 低延遲 4:3/16:9可選",
   "sku": null,
   "brand": "Foxeer",
-  "manufacturer_model": null,
+  "manufacturer_model": "Razer Nano",
   "seller_role": "retail",
   "primary_category_id": "video",
   "subcategory_id": "cameras",
@@ -12,11 +12,65 @@
   "compatible_sizes": [],
   "video_system": "類比",
   "battery_cells": [],
-  "short_description": "",
-  "description": "•\t#FoxeerRazerNano\n•\t#類比FPV鏡頭\n•\t#Nano相機\n•\t#1200TVL\n•\t#4比3鏡頭\n•\t#16比9鏡頭\n•\t#穿越機模擬鏡頭\n•\t#FPV相機\n•\t#低延遲鏡頭\n•\t#台灣現貨\n•\t#快速出貨\n\nFoxeer Razer Nano 採用 1/3 吋 CMOS 感光元件與 1200TVL 解析度，提供自然色彩與不錯的低光表現，是許多 3吋、4吋機與Tinywhoop 外掛攝影的常見選擇。\n\n產品特色：\n•\t📏 Nano 尺寸：14×14mm 機身，重量約 3.9g，適合輕量化穿越機或Nano機架使用。\n•\t🖼 4:3 / 16:9 可選：出廠有不同版本，可依自己眼鏡或螢幕比例選擇，FOV 水平約 125°，畫面廣又不失真\n•\t⚡ 類比CVBS輸出＋低延遲：支援 PAL/NTSC，延遲表現優於多數入門鏡頭，適合競速與日常炸機。\n•\t🔋 供電範圍寬：支援約 4.5–17V（視版本而定），可直接由飛控 5V 或 2–4S 供電，更換方便。",
-  "specifications": [],
+  "short_description": "Foxeer Razer Nano 類比 FPV 鏡頭，1/3 吋 CMOS、1200TVL，14 × 14mm Nano 尺寸，4:3／16:9 版本可選。",
+  "description": "Foxeer Razer Nano 採用 1/3 吋 CMOS 感光元件與 1200TVL 解析度，提供自然色彩與不錯的低光表現，是許多 3吋、4吋機與Tinywhoop 外掛攝影的常見選擇。\n\n產品特色：\n•\t📏 Nano 尺寸：14×14mm 機身，重量約 3.9g，適合輕量化穿越機或Nano機架使用。\n•\t🖼 4:3 / 16:9 可選：出廠有不同版本，可依自己眼鏡或螢幕比例選擇，FOV 水平約 125°，畫面廣又不失真\n•\t⚡ 類比CVBS輸出＋低延遲：支援 PAL/NTSC，延遲表現優於多數入門鏡頭，適合競速與日常炸機。\n•\t🔋 供電範圍寬：支援約 4.5–17V（視版本而定），可直接由飛控 5V 或 2–4S 供電，更換方便。",
+  "specifications": [
+    {
+      "key": "感光元件",
+      "value": "1/3 吋 CMOS",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "解析度",
+      "value": "1200TVL",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "14 × 14 mm（Nano）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 3.9g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "畫面比例",
+      "value": "4:3／16:9（不同版本）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "水平 FOV",
+      "value": "約 125°",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "輸出",
+      "value": "類比 CVBS，PAL／NTSC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "供電",
+      "value": "約 4.5–17V（視版本而定）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "4:3 版本",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown"
+    },
+    {
+      "name": "16:9 版本",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -31,12 +85,25 @@
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztg-mjo2fvnd20hvd8",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztf-mjo2fvndd91id3",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81zto-mjo2fvnd687767"
+    ],
+    "source_description": "•\t#FoxeerRazerNano\n•\t#類比FPV鏡頭\n•\t#Nano相機\n•\t#1200TVL\n•\t#4比3鏡頭\n•\t#16比9鏡頭\n•\t#穿越機模擬鏡頭\n•\t#FPV相機\n•\t#低延遲鏡頭\n•\t#台灣現貨\n•\t#快速出貨\n\nFoxeer Razer Nano 採用 1/3 吋 CMOS 感光元件與 1200TVL 解析度，提供自然色彩與不錯的低光表現，是許多 3吋、4吋機與Tinywhoop 外掛攝影的常見選擇。\n\n產品特色：\n•\t📏 Nano 尺寸：14×14mm 機身，重量約 3.9g，適合輕量化穿越機或Nano機架使用。\n•\t🖼 4:3 / 16:9 可選：出廠有不同版本，可依自己眼鏡或螢幕比例選擇，FOV 水平約 125°，畫面廣又不失真\n•\t⚡ 類比CVBS輸出＋低延遲：支援 PAL/NTSC，延遲表現優於多數入門鏡頭，適合競速與日常炸機。\n•\t🔋 供電範圍寬：支援約 4.5–17V（視版本而定），可直接由飛控 5V 或 2–4S 供電，更換方便。",
+    "batch": "first-A",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "鏡頭焦距",
+      "各版本供電範圍以原廠規格確認",
+      "正式商品照片（EWP 自有或已授權，需標示 rights）",
+      "售價模式（定價／起價／詢價）與售價",
+      "供貨狀態",
+      "蝦皮商品網址（需 EWP 核實）"
     ]
   }
 }

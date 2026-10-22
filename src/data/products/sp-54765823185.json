@@ -4,7 +4,7 @@
   "name_zh": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機",
   "sku": null,
   "brand": "RUIYI 芮翼",
-  "manufacturer_model": null,
+  "manufacturer_model": "R2207 1950KV",
   "seller_role": "retail",
   "primary_category_id": "motors-props",
   "subcategory_id": "motors",
@@ -16,9 +16,30 @@
   "battery_cells": [
     "6S"
   ],
-  "short_description": "",
-  "description": "#FPV #穿越機 #無刷馬達 #2207 #1950KV #RUIYI #芮翼 #5吋穿越機 #6S馬達 #Freestyle #花飛 #競速機 #無人機馬達 #航模電機 #電翼動力\n\nRUIYI 芮翼 R2207 1950KV 無刷馬達，專為5吋FPV穿越機、Freestyle花飛與競速飛行打造，支援3S~6S電池，具備強勁推力、穩定輸出與高效率表現，適合搭配5吋槳葉使用。",
-  "specifications": [],
+  "short_description": "RUIYI 芮翼 R2207 1950KV 無刷馬達，適用 5 吋 FPV 穿越機 Freestyle 與競速。",
+  "description": "RUIYI 芮翼 R2207 1950KV 無刷馬達，專為5吋FPV穿越機、Freestyle花飛與競速飛行打造，支援3S~6S電池，具備強勁推力、穩定輸出與高效率表現，適合搭配5吋槳葉使用。",
+  "specifications": [
+    {
+      "key": "型號",
+      "value": "R2207",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "KV 值",
+      "value": "1950KV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用電池",
+      "value": "3S–6S（依商品說明；標題標示 6S）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用機型",
+      "value": "5 吋穿越機",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [],
   "variants": [],
   "price_twd": null,
@@ -35,11 +56,25 @@
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mrrgr0fyd1q801",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mrrgr0fyegao91"
+    ],
+    "source_description": "#FPV #穿越機 #無刷馬達 #2207 #1950KV #RUIYI #芮翼 #5吋穿越機 #6S馬達 #Freestyle #花飛 #競速機 #無人機馬達 #航模電機 #電翼動力\n\nRUIYI 芮翼 R2207 1950KV 無刷馬達，專為5吋FPV穿越機、Freestyle花飛與競速飛行打造，支援3S~6S電池，具備強勁推力、穩定輸出與高效率表現，適合搭配5吋槳葉使用。",
+    "batch": "first-A",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "軸徑、重量、安裝孔距",
+      "售價單位（單顆／四顆組）",
+      "電池適用範圍以原廠規格確認（說明寫 3S–6S，標題寫 6S）",
+      "正式商品照片（EWP 自有或已授權，需標示 rights）",
+      "售價模式（定價／起價／詢價）與售價",
+      "供貨狀態",
+      "蝦皮商品網址（需 EWP 核實）"
     ]
   }
 }

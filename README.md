@@ -19,6 +19,8 @@ scripts/
   check-site.mjs     檢查站內連結、資源、假連結、草稿外洩
   import-csv.mjs     由 CSV 新增／更新商品
   import-shopee.mjs  由蝦皮匯出檔建立商品草稿
+  add-images.mjs     商品照片壓縮成 WebP 並寫入資料（需 npm install）
+  report-first-batch.mjs  產生首批商品確認表（docs/FIRST_BATCH_REVIEW.md、CSV）
   lib/               共用資料驗證與版型（Header／Footer／ProductCard…）
 assets/              CSS、JS、圖片、LINE QR（手寫，非產生）
 fpv-help.html        舊知識庫（91 則），原網址保留、內容未改動

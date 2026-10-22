@@ -18,7 +18,18 @@
 
 ### 2. 整理圖片
 
+**建議用工具處理**：照片放到 `media-inbox/<商品 id>/`（不提交、不發布），執行
+
+```bash
+npm install            # 第一次
+node scripts/add-images.mjs sp-42781322918 --rights ewp_own --alt "SIRIUS 2306.5 馬達正面"
+```
+
+會自動轉正、壓縮成 `assets/img/products/<id>/01.webp`（1200px）與 `01-600.webp`，並寫入商品 `images`。`--rights` 只能是 `ewp_own`（EWP 自有）或 `licensed`（已取得授權）；沒有使用權的圖片（例如未授權的原廠圖）不要放進來。網站不外連蝦皮圖片。
+
+手動整理時：
 - 放在 `assets/img/products/<商品 id>/`，檔名用英數，例如 `assets/img/products/sp-44561107171/main.webp`。
+- 每張圖片都要有 `rights`，未標示使用權的圖片無法公開。
 - 建議 1:1 正方形、1200×1200、WebP 或 JPG、單張 300KB 以下；不要放 20MB 原圖。
 - 只用 EWP 自己拍攝或有授權的照片；每張都要寫 `alt`（描述畫面內容，例如「MOZ7 七吋長航機正面，搭載 O4 Pro」）。
 - 圖片欄位格式：`{"src": "/assets/img/products/xxx/main.webp", "alt": "…"}`；可選 `src_small`（600px 版）。
@@ -74,6 +85,8 @@ node scripts/check-site.mjs          # 白名單／連結／草稿外洩檢查
 | `featured` | ✔ | 精選：在列表預設排序中排前面 |
 | `published` | ✔ | 預設 false |
 | `updated_at` | ✔ | `YYYY-MM-DD` |
+| `listing_mode` | 整機公開時 ✔ | `sale` 一般商品（預設）／`showcase` 作品介紹：不顯示價格、供貨、蝦皮按鈕，只提供 LINE 客製組裝諮詢 |
+| `compliance` |  | `{ "status": "pending／cleared／not_required", "items": [{ "type": "NCC", "reason": "…" }] }`。pending 時不得以販售模式公開；整機以 sale 公開必須 cleared |
 | `review` | 公開時 ✔ | `status`（draft／approved／rejected）、`notes`（待核對事項，只在預覽版顯示） |
 
 ## 三、蝦皮資料匯入

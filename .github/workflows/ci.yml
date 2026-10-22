@@ -38,6 +38,12 @@ jobs:
         run: |
           npm install --no-audit --no-fund
           npx playwright install --with-deps chromium
+      - name: 商品圖片處理工具自我測試（sharp）
+        run: node scripts/add-images.mjs --self-test
+      - name: 首批商品確認表與資料一致
+        run: |
+          node scripts/report-first-batch.mjs
+          git diff --exit-code docs/FIRST_BATCH_REVIEW.md docs/first-batch-review.csv || (echo "::error::首批確認表與商品資料不一致，請執行 node scripts/report-first-batch.mjs 後提交" && exit 1)
       - name: 啟動本機伺服器
         run: |
           python3 -m http.server 8800 --directory dist > /dev/null 2>&1 &

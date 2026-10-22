@@ -12,9 +12,35 @@
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "Tinywhoop, FPV螺絲, 穿越機配件, FPV工具, 螺絲套裝, 無人機維修, Whoop配件, FPV維修, DroneParts, FPV DIY\n\n【🔥一次搞定所有螺絲問題】\n螺絲不夠？尺寸不對？直接整盒解決🔥\n\n【✨產品特色】\n✔ 全尺寸齊全 👉 Tinywhoop常用螺絲一次備齊\n✔ 分格收納 👉 找螺絲不用翻半天效率提升\n✔ 高強度材質 👉 耐用不易滑牙，適合反覆拆裝\n✔ 維修必備 👉 新手 / 老手都需要的工具盒\n\n【⚙️商品規格】\n適用：Tinywhoop / 1-3吋穿越機｜規格：多尺寸螺絲組｜材質：金屬＋尼龍｜收納：分格盒\n\n【📦包裝內容】\n螺絲套裝×1（含多尺寸螺絲 / 墊片 / 尼龍柱）\n\n【⚠️注意事項】\n請確認尺寸再使用｜小零件請避免兒童誤食\n\n【🚀適合族群】\nTinywhoop玩家｜維修玩家｜DIY改裝玩家",
-  "specifications": [],
+  "short_description": "Tinywhoop 與 1–3 吋穿越機常用的多尺寸螺絲套組，含螺絲、墊片與尼龍柱，附分格收納盒。",
+  "description": "【🔥一次搞定所有螺絲問題】\n螺絲不夠？尺寸不對？直接整盒解決🔥\n\n【✨產品特色】\n✔ 全尺寸齊全 👉 Tinywhoop常用螺絲一次備齊\n✔ 分格收納 👉 找螺絲不用翻半天效率提升\n✔ 高強度材質 👉 耐用不易滑牙，適合反覆拆裝\n✔ 維修必備 👉 新手 / 老手都需要的工具盒\n\n【⚙️商品規格】\n適用：Tinywhoop / 1-3吋穿越機｜規格：多尺寸螺絲組｜材質：金屬＋尼龍｜收納：分格盒\n\n【📦包裝內容】\n螺絲套裝×1（含多尺寸螺絲 / 墊片 / 尼龍柱）\n\n【⚠️注意事項】\n請確認尺寸再使用｜小零件請避免兒童誤食\n\n【🚀適合族群】\nTinywhoop玩家｜維修玩家｜DIY改裝玩家",
+  "specifications": [
+    {
+      "key": "適用",
+      "value": "Tinywhoop／1–3 吋穿越機",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "螺絲尺寸",
+      "value": "M1.4／M2（依商品標題）",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "材質",
+      "value": "金屬＋尼龍",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "收納",
+      "value": "分格盒",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "包裝內容",
+      "value": "螺絲套裝 ×1（含多尺寸螺絲、墊片、尼龍柱）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [],
   "variants": [],
   "price_twd": null,
@@ -31,11 +57,28 @@
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mmbx2t1fym8134",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mmoqa8r2rcw56c"
+    ],
+    "source_description": "Tinywhoop, FPV螺絲, 穿越機配件, FPV工具, 螺絲套裝, 無人機維修, Whoop配件, FPV維修, DroneParts, FPV DIY\n\n【🔥一次搞定所有螺絲問題】\n螺絲不夠？尺寸不對？直接整盒解決🔥\n\n【✨產品特色】\n✔ 全尺寸齊全 👉 Tinywhoop常用螺絲一次備齊\n✔ 分格收納 👉 找螺絲不用翻半天效率提升\n✔ 高強度材質 👉 耐用不易滑牙，適合反覆拆裝\n✔ 維修必備 👉 新手 / 老手都需要的工具盒\n\n【⚙️商品規格】\n適用：Tinywhoop / 1-3吋穿越機｜規格：多尺寸螺絲組｜材質：金屬＋尼龍｜收納：分格盒\n\n【📦包裝內容】\n螺絲套裝×1（含多尺寸螺絲 / 墊片 / 尼龍柱）\n\n【⚠️注意事項】\n請確認尺寸再使用｜小零件請避免兒童誤食\n\n【🚀適合族群】\nTinywhoop玩家｜維修玩家｜DIY改裝玩家",
+    "batch": "first-A",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "品牌／製造商",
+      "各尺寸螺絲長度與數量明細",
+      "正式商品照片（EWP 自有或已授權，需標示 rights）",
+      "售價模式（定價／起價／詢價）與售價",
+      "供貨狀態",
+      "蝦皮商品網址（需 EWP 核實）"
     ]
-  }
+  },
+  "notes": [
+    "請確認尺寸再使用。",
+    "小零件請避免兒童誤食。"
+  ]
 }

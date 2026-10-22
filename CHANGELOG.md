@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## v2.2.0（2026-10-22，Phase 3 首批商品資料整理）
+
+### 營業登記地址
+- 關於、聯絡頁登記地址下方緊貼 EWP 指定的「非實體門市」提示（`site.json → business.address_notice`）；頁尾維持名稱＋統編；不公開營業時間、電話；無地圖導航。
+- 結構化資料維持 Organization（非 LocalBusiness／Store），地址標示「營業登記地址（非實體門市，不提供現場服務）」，客服聯絡改以 LINE ContactPoint 表示。
+- 服務頁流程移除「送件／交件」等可能被理解為到場送修的字眼，改為寄送或先以 LINE 確認。
+
+### 首批 20 件
+- `src/data/first-batch.json`：A 組 12 件、B 組 8 件。
+- 依 EWP 蝦皮商品說明／標題整理品牌、型號、short_description（草稿）、規格（每項標示 source）、規格變體名稱、注意事項；移除保固與蝦皮站內用語，原文保存於 `review.source_description`。
+- 每件新增 `review.missing`（待補清單）、`review.specs_confirmed:false`、`review.shopee_url_verified:false`、`review.batch`。
+- 價格、供貨、published、id、slug 皆未變更；其餘 220 件未更動。
+- 電池與無線電相關 5 件、整機 3 件新增 `compliance`（status: pending）。
+- 三款整機設為 `listing_mode: showcase`（作品介紹）：不顯示價格、供貨與蝦皮按鈕、不輸出 Product 結構化資料。
+
+### 資料規則
+- 新欄位 `listing_mode`（sale／showcase）、`compliance`（pending／cleared／not_required）、圖片 `rights`（ewp_own／licensed）。
+- 公開條件：圖片必須標示使用權；合規 pending 不得以販售模式公開；整機必須設定 listing_mode，以 sale 公開須合規 cleared。
+
+### 工具與文件
+- `scripts/add-images.mjs`：把 EWP 自有／授權照片壓縮為 1200／600px WebP 並寫入商品資料（sharp；CI 自我測試）。
+- `scripts/report-first-batch.mjs` → `docs/FIRST_BATCH_REVIEW.md` 與 `docs/first-batch-review.csv`（Excel 可開；CI 檢查與資料一致）。
+
+### 測試
+- 單元測試 42 → 57 項；端對端測試 80 → 114 項（地址提示文字、手機可讀性與對比、結構化資料、服務頁用語、作品介紹模式、規格與變體）。
+
 ## v2.1.0（2026-10-22，ChatGPT 第一輪審查修正）
 
 ### 安全／部署
