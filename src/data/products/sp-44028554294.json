@@ -54,7 +54,7 @@
   "variants": [],
   "price_twd": 1103,
   "price_display": "fixed",
-  "availability": "preorder",
+  "availability": "out_of_stock",
   "shopee_url": null,
   "shopee_item_id": "44028554294",
   "line_inquiry_enabled": true,

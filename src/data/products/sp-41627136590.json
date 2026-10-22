@@ -98,7 +98,7 @@
   "shopee_item_id": "41627136590",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
     "status": "approved",

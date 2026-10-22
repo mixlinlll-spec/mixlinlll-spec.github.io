@@ -167,7 +167,7 @@ console.log(md);
 if (summaryFile) fs.appendFileSync(summaryFile, md + '\n');
 const quarantined = report.filter(r => r.quarantined);
 if (quarantined.length) {
-  const q = ['## ⚠️ 以下後台修改未通過檢查，已退回（網站維持上一個正確版本）', '', '請在後台打開商品，依原因修正後再儲存一次。其他商品的修改不受影響。', ''];
+  const q = ['## ⚠️ 以下後台修改未通過檢查，已退回', '', '這些商品在網站上維持上一個正確版本；其他商品的修改照常發布。請在後台打開商品（先重新整理頁面），依原因修正後再儲存一次。', ''];
   for (const r of quarantined) q.push(`- **${r.name || r.file}**（\`${path.basename(r.file, '.json')}\`，操作者：${r.operators.join('、') || '—'}，${r.time}）：${r.errors.join('；')}`);
   fs.writeFileSync(path.join(ROOT, '.cms-quarantine.md'), q.join('\n') + '\n');
   if (summaryFile) fs.appendFileSync(summaryFile, q.join('\n') + '\n');
