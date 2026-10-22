@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "•\t#中航雷波天線\n•\t#5.8G棒棒糖\n•\t#FPV圖傳天線\n•\t#SMA線性天線\n•\t#穿越機天線\n•\t#左旋右旋天線\n•\t#航模接收天線\n•\t#遠航天線\n•\t#FPV配件\n•\t#台灣現貨",
+  "description": "",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "中航雷波 5.8G棒棒糖天線 FPV穿越機圖傳發射 眼鏡接收 SMA公頭 線性全向 左旋右旋遠航天線（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlydcjmo9clc4a"
     },
@@ -32,7 +32,7 @@
       "alt": "中航雷波 5.8G棒棒糖天線 FPV穿越機圖傳發射 眼鏡接收 SMA公頭 線性全向 左旋右旋遠航天線（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlydcjmvczyceb"
     },
@@ -42,7 +42,7 @@
       "alt": "中航雷波 5.8G棒棒糖天線 FPV穿越機圖傳發射 眼鏡接收 SMA公頭 線性全向 左旋右旋遠航天線（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlyehprw3xfm68"
     },
@@ -52,7 +52,7 @@
       "alt": "中航雷波 5.8G棒棒糖天線 FPV穿越機圖傳發射 眼鏡接收 SMA公頭 線性全向 左旋右旋遠航天線（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mlydcjmvbldw56"
     }
@@ -61,41 +61,41 @@
     {
       "name": "IPEX(左璇）150mm",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 258,
+      "availability": "out_of_stock",
       "shopee_variation_id": "385653853114",
       "image": {
         "src": "/assets/img/products/sp-49907375804/opt-02-480.webp",
         "alt": "中航雷波 5.8G棒棒糖天線 FPV穿越機圖傳發射 眼鏡接收 SMA公頭 線性全向 左旋右旋遠航天線（規格：IPEX(左璇）150mm）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlyehprw3xfm68"
       }
     },
     {
       "name": "SMA(內針左璇）64mm",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 229,
+      "availability": "out_of_stock",
       "shopee_variation_id": "440653709766",
       "image": {
         "src": "/assets/img/products/sp-49907375804/opt-01-480.webp",
         "alt": "中航雷波 5.8G棒棒糖天線 FPV穿越機圖傳發射 眼鏡接收 SMA公頭 線性全向 左旋右旋遠航天線（規格：SMA(內針左璇）64mm）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlydcjmvczyceb"
       }
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 229,
+  "price_display": "from",
+  "availability": "out_of_stock",
   "shopee_url": null,
   "shopee_item_id": "49907375804",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -155,7 +155,15 @@
       "price_min": 239,
       "price_max": 269,
       "stock_total": 0,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "•\t#中航雷波天線\n•\t#5.8G棒棒糖\n•\t#FPV圖傳天線\n•\t#SMA線性天線\n•\t#穿越機天線\n•\t#左旋右旋天線\n•\t#航模接收天線\n•\t#遠航天線\n•\t#FPV配件\n•\t#台灣現貨",
+    "approved_at": "2026-10-22"
   }
 }

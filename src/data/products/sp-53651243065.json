@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#DJINEO #NEO配件 #降落腳墊 #TPU打印件 #穿越機防護 #靈雀FPV #SpiritSparrow #3D列印 #FPV配件 #穿越機改裝 #緩衝腳架 #降落保護 #飛行保護件\n\n【產品特色】\n專為 DJI NEO 設計的 TPU 降落腳墊，提供穩定降落與底部保護。\n柔軟而具韌性的材質可吸收衝擊力，避免機身在硬地面著陸時造成損傷。\n安裝簡單、貼合度高，完美延伸機體線條，兼顧美觀與實用性。\n\n【產品說明】\n材質：柔性 TPU\n適用機型：DJI NEO\n功能用途：降落緩衝、防刮、防震\n製造方式：高精度 3D 列印\n安裝方式：直接套入固定孔位，免工具安裝",
+  "description": "【產品特色】\n專為 DJI NEO 設計的 TPU 降落腳墊，提供穩定降落與底部保護。\n柔軟而具韌性的材質可吸收衝擊力，避免機身在硬地面著陸時造成損傷。\n安裝簡單、貼合度高，完美延伸機體線條，兼顧美觀與實用性。\n\n【產品說明】\n材質：柔性 TPU\n適用機型：DJI NEO\n功能用途：降落緩衝、防刮、防震\n製造方式：高精度 3D 列印\n安裝方式：直接套入固定孔位，免工具安裝",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "DJI NEO 降落腳墊 TPU緩衝腳架 降落保護墊 穿越機防震支撐腳 改裝升級配件（主圖）",
       "width": 932,
       "height": 932,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mgz8l28gohs90f"
     },
@@ -32,7 +32,7 @@
       "alt": "DJI NEO 降落腳墊 TPU緩衝腳架 降落保護墊 穿越機防震支撐腳 改裝升級配件（細節圖 1）",
       "width": 899,
       "height": 899,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mgz8l28b0tfvd1"
     },
@@ -42,23 +42,23 @@
       "alt": "DJI NEO 降落腳墊 TPU緩衝腳架 降落保護墊 穿越機防震支撐腳 改裝升級配件（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mi2vavu50bnmf9"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 105,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "53651243065",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -98,7 +98,15 @@
       "price_min": 109,
       "price_max": 109,
       "stock_total": 49,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#DJINEO #NEO配件 #降落腳墊 #TPU打印件 #穿越機防護 #靈雀FPV #SpiritSparrow #3D列印 #FPV配件 #穿越機改裝 #緩衝腳架 #降落保護 #飛行保護件\n\n【產品特色】\n專為 DJI NEO 設計的 TPU 降落腳墊，提供穩定降落與底部保護。\n柔軟而具韌性的材質可吸收衝擊力，避免機身在硬地面著陸時造成損傷。\n安裝簡單、貼合度高，完美延伸機體線條，兼顧美觀與實用性。\n\n【產品說明】\n材質：柔性 TPU\n適用機型：DJI NEO\n功能用途：降落緩衝、防刮、防震\n製造方式：高精度 3D 列印\n安裝方式：直接套入固定孔位，免工具安裝",
+    "approved_at": "2026-10-22"
   }
 }

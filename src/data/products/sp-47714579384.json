@@ -88,7 +88,7 @@
       "alt": "FPV 穿越機 無刷馬達 1103 8000KV HSKRC 2S 3S 牙籤機 TinyWhoop 2吋 微型花飛（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mqyuqn5i4yz042"
     },
@@ -98,7 +98,7 @@
       "alt": "FPV 穿越機 無刷馬達 1103 8000KV HSKRC 2S 3S 牙籤機 TinyWhoop 2吋 微型花飛（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mqyuqn5oxds109"
     },
@@ -108,7 +108,7 @@
       "alt": "FPV 穿越機 無刷馬達 1103 8000KV HSKRC 2S 3S 牙籤機 TinyWhoop 2吋 微型花飛（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mqyuqn5n8zd13a"
     },
@@ -118,23 +118,23 @@
       "alt": "FPV 穿越機 無刷馬達 1103 8000KV HSKRC 2S 3S 牙籤機 TinyWhoop 2吋 微型花飛（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mqyuqn5xs8p32e"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 334,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "47714579384",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -187,8 +187,15 @@
       "price_min": 348,
       "price_max": 348,
       "stock_total": 24,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   },
   "notes": [
     "售價為單顆馬達。",

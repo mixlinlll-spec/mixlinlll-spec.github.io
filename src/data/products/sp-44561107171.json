@@ -45,7 +45,7 @@
       "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-monfz6wo0ftbd8"
     },
@@ -55,7 +55,7 @@
       "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-monfz6wjah3h65"
     },
@@ -65,7 +65,7 @@
       "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-monfznmwexaj43"
     },
@@ -75,7 +75,7 @@
       "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-monfhv0aakgb66"
     },
@@ -85,7 +85,7 @@
       "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-monfynbt6r63b0"
     },
@@ -95,7 +95,7 @@
       "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 5）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-monfyng38d8g42"
     },
@@ -105,7 +105,7 @@
       "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 6）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-monfync2sav6c1"
     },
@@ -115,7 +115,7 @@
       "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 7）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-monfync37r4bb7"
     }
@@ -124,36 +124,36 @@
     {
       "name": "模擬圖傳 套機（915M /2.4G)",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 18125,
+      "availability": "in_stock",
       "shopee_variation_id": "350965486126"
     },
     {
       "name": "動力套 （915M /2.4G)",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 15821,
+      "availability": "in_stock",
       "shopee_variation_id": "350965486127"
     },
     {
       "name": "O4Pro套機（915M /2.4G)",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 22848,
+      "availability": "in_stock",
       "shopee_variation_id": "350965486128"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 15821,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "44561107171",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -180,8 +180,7 @@
     "missing": [
       "完整原廠規格（飛控、馬達、接收機、GPS、重量）",
       "商品說明（蝦皮說明只有 hashtag）",
-      "圖片使用權（原廠圖片需取得授權）",
-      "是否轉為販售模式：須先完成合規確認"
+      "圖片使用權（原廠圖片需取得授權）"
     ],
     "source_media": {
       "media_export": "mass_update_media_info_4053258_20261022141110",
@@ -251,25 +250,14 @@
       "price_min": 16480,
       "price_max": 23800,
       "stock_total": 30,
-      "status": "snapshot_only"
-    }
-  },
-  "listing_mode": "showcase",
-  "compliance": {
-    "status": "pending",
-    "items": [
-      {
-        "type": "NCC",
-        "reason": "整機含圖傳與接收機等無線電發射設備，販售前須確認 NCC 審驗合格"
-      },
-      {
-        "type": "BSMI",
-        "reason": "蝦皮曾因未填 BSMI／NCC 字號下架整機商品，請確認整機販售所需的檢驗字號"
-      },
-      {
-        "type": "民航法規",
-        "reason": "請確認遙控無人機相關規定（例如註冊、操作限制）於商品頁的告知方式"
-      }
-    ]
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   }
 }

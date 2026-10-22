@@ -43,7 +43,7 @@
       "alt": "ELRS 2.4G 接收機 HSRC 1.1g 輕量 T型天線 CRSF/SBUS FPV 穿越機 接收機 電翼動力（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mt0d4y1jr4snee"
     },
@@ -53,7 +53,7 @@
       "alt": "ELRS 2.4G 接收機 HSRC 1.1g 輕量 T型天線 CRSF/SBUS FPV 穿越機 接收機 電翼動力（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mt0d4y1jsjd303"
     },
@@ -63,23 +63,23 @@
       "alt": "ELRS 2.4G 接收機 HSRC 1.1g 輕量 T型天線 CRSF/SBUS FPV 穿越機 接收機 電翼動力（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mt0d4y1jtxxjf2"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 403,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "48617760691",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -135,16 +135,14 @@
       "price_min": 420,
       "price_max": 420,
       "stock_total": 8,
-      "status": "snapshot_only"
-    }
-  },
-  "compliance": {
-    "status": "pending",
-    "items": [
-      {
-        "type": "NCC",
-        "reason": "ELRS 接收機具遙測回傳（會發射無線電），販售前一般須取得 NCC 審驗合格；請 EWP 確認"
-      }
-    ]
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   }
 }

@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#TX16S #Radiomaster #搖桿保護罩 #遙控器保護 #FPV穿越機 #RC遙控 #3D列印配件 #遙控器配件 #飛手裝備 #FPV配件 #空拍機週邊\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n給你的 Radiomaster TX16S 做最實用的防護升級！\n這款專為 TX16S / TX16S Mark II 系列 遙控器設計的 搖桿保護罩，透過一體式結構固定左右搖桿，避免放入背包時受到擠壓、彎曲、撞擊造成損傷。\n\n特色亮點：\n✔ 精準尺寸：完全貼合 Radiomaster TX16S 搖桿高度與間距\n✔ 整體式設計：一次扣上兩顆搖桿，不會掉、不卡手\n✔ 防壓防撞：背包、工具箱、外出攜帶不必再擔心搖桿歪掉\n✔ 穩定保護：避免誤觸油門、方向搖桿造成 gimbal 壽命縮短\n✔ 重量超輕：不增加額外攜帶負擔\n\n包裝內容：\n搖桿保護罩 x1（不含遙控器）",
+  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n給你的 Radiomaster TX16S 做最實用的防護升級！\n這款專為 TX16S / TX16S Mark II 系列 遙控器設計的 搖桿保護罩，透過一體式結構固定左右搖桿，避免放入背包時受到擠壓、彎曲、撞擊造成損傷。\n\n特色亮點：\n✔ 精準尺寸：完全貼合 Radiomaster TX16S 搖桿高度與間距\n✔ 整體式設計：一次扣上兩顆搖桿，不會掉、不卡手\n✔ 防壓防撞：背包、工具箱、外出攜帶不必再擔心搖桿歪掉\n✔ 穩定保護：避免誤觸油門、方向搖桿造成 gimbal 壽命縮短\n✔ 重量超輕：不增加額外攜帶負擔\n\n包裝內容：\n搖桿保護罩 x1（不含遙控器）",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "Radiomaster TX16S 遙控器搖桿保護罩｜TX16S 手把防壓保護・防撞・防誤觸 3D列印套・FPV 穿越機（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mh91vyr36xvw4c"
     },
@@ -32,7 +32,7 @@
       "alt": "Radiomaster TX16S 遙控器搖桿保護罩｜TX16S 手把防壓保護・防撞・防誤觸 3D列印套・FPV 穿越機（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "Radiomaster TX16S 遙控器搖桿保護罩｜TX16S 手把防壓保護・防撞・防誤觸 3D列印套・FPV 穿越機（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mh91vyr9lb0q7e"
     }
@@ -51,57 +51,57 @@
     {
       "name": "黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 144,
+      "availability": "in_stock",
       "shopee_variation_id": "415139696065"
     },
     {
       "name": "白",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 144,
+      "availability": "in_stock",
       "shopee_variation_id": "415139696066"
     },
     {
       "name": "綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 144,
+      "availability": "in_stock",
       "shopee_variation_id": "415139696067"
     },
     {
       "name": "黃",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 144,
+      "availability": "in_stock",
       "shopee_variation_id": "415139696068"
     },
     {
       "name": "紫",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 144,
+      "availability": "in_stock",
       "shopee_variation_id": "415139696069"
     },
     {
       "name": "橘",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 144,
+      "availability": "in_stock",
       "shopee_variation_id": "415139696070"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 144,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "49051547488",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -211,7 +211,15 @@
       "price_min": 150,
       "price_max": 150,
       "stock_total": 294,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#TX16S #Radiomaster #搖桿保護罩 #遙控器保護 #FPV穿越機 #RC遙控 #3D列印配件 #遙控器配件 #飛手裝備 #FPV配件 #空拍機週邊\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n給你的 Radiomaster TX16S 做最實用的防護升級！\n這款專為 TX16S / TX16S Mark II 系列 遙控器設計的 搖桿保護罩，透過一體式結構固定左右搖桿，避免放入背包時受到擠壓、彎曲、撞擊造成損傷。\n\n特色亮點：\n✔ 精準尺寸：完全貼合 Radiomaster TX16S 搖桿高度與間距\n✔ 整體式設計：一次扣上兩顆搖桿，不會掉、不卡手\n✔ 防壓防撞：背包、工具箱、外出攜帶不必再擔心搖桿歪掉\n✔ 穩定保護：避免誤觸油門、方向搖桿造成 gimbal 壽命縮短\n✔ 重量超輕：不增加額外攜帶負擔\n\n包裝內容：\n搖桿保護罩 x1（不含遙控器）",
+    "approved_at": "2026-10-22"
   }
 }

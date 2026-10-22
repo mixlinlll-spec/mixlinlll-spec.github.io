@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#電烙鐵 #潔嘴器 #烙鐵清潔器 #焊接工具 #除錫神器 #電子維修 #焊接必備\n\n【產品特色】\n\n✔ 高效清潔：快速去除烙鐵頭焊錫與氧化物，保持導熱良好\n\n✔ 耐用設計：金屬外殼搭配清潔絲球，使用壽命長\n\n✔ 使用方便：比傳統海綿更乾淨，不需加水，不會降溫\n\n✔ 適用範圍：電子維修、焊接工作台、專業DIY\n\n【產品規格】\n\n品名：電烙鐵潔嘴器 / 烙鐵頭清潔器\n\n型號：JZQ-588B\n\n材質：金屬外殼 + 清潔絲球\n\n用途：清潔烙鐵頭、去除焊錫殘渣\n\n適合對象：電子工程師、手機維修、焊接愛好者",
+  "description": "【產品特色】\n\n✔ 高效清潔：快速去除烙鐵頭焊錫與氧化物，保持導熱良好\n\n✔ 耐用設計：金屬外殼搭配清潔絲球，使用壽命長\n\n✔ 使用方便：比傳統海綿更乾淨，不需加水，不會降溫\n\n✔ 適用範圍：電子維修、焊接工作台、專業DIY\n\n【產品規格】\n\n品名：電烙鐵潔嘴器 / 烙鐵頭清潔器\n\n型號：JZQ-588B\n\n材質：金屬外殼 + 清潔絲球\n\n用途：清潔烙鐵頭、去除焊錫殘渣\n\n適合對象：電子工程師、手機維修、焊接愛好者",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "烙鐵頭清潔 JZQ-588B 電烙鐵清潔 除銅線球（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mf6ktn1dn7rh83"
     },
@@ -32,7 +32,7 @@
       "alt": "烙鐵頭清潔 JZQ-588B 電烙鐵清潔 除銅線球（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mf6ktn19nxu248"
     },
@@ -42,23 +42,23 @@
       "alt": "烙鐵頭清潔 JZQ-588B 電烙鐵清潔 除銅線球（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mf6ktn1jf3t561"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 48,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "44272073321",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -97,7 +97,15 @@
       "price_min": 50,
       "price_max": 50,
       "stock_total": 3,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#電烙鐵 #潔嘴器 #烙鐵清潔器 #焊接工具 #除錫神器 #電子維修 #焊接必備\n\n【產品特色】\n\n✔ 高效清潔：快速去除烙鐵頭焊錫與氧化物，保持導熱良好\n\n✔ 耐用設計：金屬外殼搭配清潔絲球，使用壽命長\n\n✔ 使用方便：比傳統海綿更乾淨，不需加水，不會降溫\n\n✔ 適用範圍：電子維修、焊接工作台、專業DIY\n\n【產品規格】\n\n品名：電烙鐵潔嘴器 / 烙鐵頭清潔器\n\n型號：JZQ-588B\n\n材質：金屬外殼 + 清潔絲球\n\n用途：清潔烙鐵頭、去除焊錫殘渣\n\n適合對象：電子工程師、手機維修、焊接愛好者",
+    "approved_at": "2026-10-22"
   }
 }

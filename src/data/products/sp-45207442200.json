@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "FPV WiFi調參, Betaflight無線調參, BF WiFi module, 穿越機調參, FPV配件, 無人機調整, PID調整, FPV UART模組, drone tuning, Betaflight WiFi, 無線設定模組, 穿越機升級, FPV tuning module\n【🔥不用電腦！手機直接調參】\n飛場不用帶筆電｜WiFi連線直接改PID\n\n【✨產品特色】\n✔ WiFi無線調參 👉 手機直接設定不用電腦\n✔ 支援BetaFlight 👉 PID / Rates / OSD可調\n✔ UART連接 👉 任一空閒串口即可使用\n✔ 連線穩定 👉 比藍牙更順暢\n\n【⚙️商品規格】\nWiFi連接｜UART接口｜5V供電｜支援BetaFlight\n\n【📦包裝內容】\nWiFi調參模組×1（不含飛控 / 線材）\n\n【⚠️注意事項】\n需焊接能力｜TX RX需交叉接｜需設定UART｜僅支援BetaFlight\n\n【🚀適合族群】\n新手｜懶人玩家｜調參玩家",
+  "description": "【🔥不用電腦！手機直接調參】\n飛場不用帶筆電｜WiFi連線直接改PID\n\n【✨產品特色】\n✔ WiFi無線調參 👉 手機直接設定不用電腦\n✔ 支援BetaFlight 👉 PID / Rates / OSD可調\n✔ UART連接 👉 任一空閒串口即可使用\n✔ 連線穩定 👉 比藍牙更順暢\n\n【⚙️商品規格】\nWiFi連接｜UART接口｜5V供電｜支援BetaFlight\n\n【📦包裝內容】\nWiFi調參模組×1（不含飛控 / 線材）\n\n【⚠️注意事項】\n需焊接能力｜TX RX需交叉接｜需設定UART｜僅支援BetaFlight\n\n【🚀適合族群】\n新手｜懶人玩家｜調參玩家",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "FPV WiFi無線調參模組｜BetaFlight調參神器｜UART連接｜免電腦調PID｜穿越機設定模組｜BF無線調參板（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mm0n82mv37k3e9"
     },
@@ -32,7 +32,7 @@
       "alt": "FPV WiFi無線調參模組｜BetaFlight調參神器｜UART連接｜免電腦調PID｜穿越機設定模組｜BF無線調參板（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mm0k8vxfyfwl07"
     },
@@ -42,7 +42,7 @@
       "alt": "FPV WiFi無線調參模組｜BetaFlight調參神器｜UART連接｜免電腦調PID｜穿越機設定模組｜BF無線調參板（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mm0n82mrf668c6"
     },
@@ -52,7 +52,7 @@
       "alt": "FPV WiFi無線調參模組｜BetaFlight調參神器｜UART連接｜免電腦調PID｜穿越機設定模組｜BF無線調參板（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mm0n82mvlgxuf2"
     },
@@ -62,7 +62,7 @@
       "alt": "FPV WiFi無線調參模組｜BetaFlight調參神器｜UART連接｜免電腦調PID｜穿越機設定模組｜BF無線調參板（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mm0n82mvk2ded3"
     }
@@ -71,22 +71,22 @@
     {
       "name": "一組",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 287,
+      "availability": "in_stock",
       "shopee_variation_id": "316134199754"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 287,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "45207442200",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -137,7 +137,15 @@
       "price_min": 299,
       "price_max": 299,
       "stock_total": 9,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "FPV WiFi調參, Betaflight無線調參, BF WiFi module, 穿越機調參, FPV配件, 無人機調整, PID調整, FPV UART模組, drone tuning, Betaflight WiFi, 無線設定模組, 穿越機升級, FPV tuning module\n【🔥不用電腦！手機直接調參】\n飛場不用帶筆電｜WiFi連線直接改PID\n\n【✨產品特色】\n✔ WiFi無線調參 👉 手機直接設定不用電腦\n✔ 支援BetaFlight 👉 PID / Rates / OSD可調\n✔ UART連接 👉 任一空閒串口即可使用\n✔ 連線穩定 👉 比藍牙更順暢\n\n【⚙️商品規格】\nWiFi連接｜UART接口｜5V供電｜支援BetaFlight\n\n【📦包裝內容】\nWiFi調參模組×1（不含飛控 / 線材）\n\n【⚠️注意事項】\n需焊接能力｜TX RX需交叉接｜需設定UART｜僅支援BetaFlight\n\n【🚀適合族群】\n新手｜懶人玩家｜調參玩家",
+    "approved_at": "2026-10-22"
   }
 }

@@ -25,7 +25,7 @@
       "alt": "小O4 AIR UNIT BEC 降壓模組 3S–6S 轉 5V / 12V 二選一 3A / DJI O4（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mimu2iqd96v44d"
     },
@@ -35,7 +35,7 @@
       "alt": "小O4 AIR UNIT BEC 降壓模組 3S–6S 轉 5V / 12V 二選一 3A / DJI O4（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mimu2iqg9clke7"
     },
@@ -45,7 +45,7 @@
       "alt": "小O4 AIR UNIT BEC 降壓模組 3S–6S 轉 5V / 12V 二選一 3A / DJI O4（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mimu2iq8f0g6d0"
     },
@@ -55,23 +55,23 @@
       "alt": "小O4 AIR UNIT BEC 降壓模組 3S–6S 轉 5V / 12V 二選一 3A / DJI O4（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mimu2iq8gf0m24"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 162,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "55353572105",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -111,7 +111,15 @@
       "price_min": 169,
       "price_max": 169,
       "stock_total": 10,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "BEC 降壓模組 5V 12V\n3S 4S 6S 轉 5V\n3S 4S 6S 轉 12V\n3A BEC LED 燈帶\nFPV LED 燈帶電源\n穿越機 燈帶供電\nUBEC 5V 12V 二選一\n無人機 降壓模組\nLiPo 降壓穩壓板\nAstroRC LED BEC 配件\n\n⚠️ 施工前請確認接線極性與輸入電壓，錯接可能導致燈帶與設備損壞\n⚠️ 串接多條燈帶時，務必評估總電流，避免超過 3A 持續輸出\n\n這款 BEC 降壓模組可從 3S–6S 電池直接轉出 5V 或 12V（焊盤二選一），最大 3A 輸出，特別適合用來驅動機身 LED 燈帶、尾燈或其他裝飾燈。只要把主電源接到 Vin，再依圖示接上燈帶正負極，就能讓高壓動力電變成穩定的 5V / 12V 供電\n​\n產品特色 ✨\n支援 3S–6S 輸入，適用大多數 FPV 穿越機與多軸機種。🔋\n​\n輸出電壓 5V / 12V 二選一，透過焊盤或跳線切換，最高 3A 穩定輸出，可帶多段 LED 燈帶或小型周邊。\n體積小、重量輕，可直接貼在機臂或機身內部，適合改裝 COB 燈帶、5V LED 板等應用。\n​\n適合作為 LED 燈帶專用電源，也可用於相機、圖傳等需要穩壓供電的設備（在額定電流範圍內）",
+    "approved_at": "2026-10-22"
   }
 }

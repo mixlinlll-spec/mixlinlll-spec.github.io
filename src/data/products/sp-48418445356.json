@@ -68,23 +68,23 @@
       "alt": "FDI F405 F722 AIO 40A 飛控 一體式 ICM42688P 16M黑盒 GPS 穿越機 電翼動力（主圖）",
       "width": 722,
       "height": 722,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820la-mtjjjqpxup6w2f"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 2093,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "48418445356",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -134,8 +134,15 @@
       "price_min": 2180,
       "price_max": 2180,
       "stock_total": 8,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   },
   "notes": [
     "40A 為原廠標示持續電流，實際可用電流受散熱與配置影響，請預留餘裕。",

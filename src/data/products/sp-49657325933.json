@@ -17,7 +17,7 @@
     "6S"
   ],
   "short_description": "",
-  "description": "•\t#GEPRRCCinebot35\n•\t#3.5吋穿越機\n•\t#Cinewhoop航拍\n•\t#FPV穿越機\n•\t#6S Cinewhoop\n•\t#室內穿越機\n•\t#GEPRRC配件\n•\t#FPV無人機\n•\t#航拍套件\n•\t#台灣現貨",
+  "description": "•\t#6S Cinewhoop",
   "specifications": [],
   "images": [
     {
@@ -26,7 +26,7 @@
       "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mlwzoa76v4040d"
     },
@@ -36,7 +36,7 @@
       "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mlwzoa7lvwn4f0"
     },
@@ -46,7 +46,7 @@
       "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlwzoa7vwwlc93"
     },
@@ -56,7 +56,7 @@
       "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mlwzoa7qvpc430"
     },
@@ -66,7 +66,7 @@
       "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mlwzoa7x1n2g8e"
     },
@@ -76,7 +76,7 @@
       "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 5）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mlwzoa7zyznm59"
     },
@@ -86,7 +86,7 @@
       "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 6）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlwzoa7zxl36af"
     },
@@ -96,7 +96,7 @@
       "alt": "GEPRRC Cinebot35 3.5吋穿越機 Cinewhoop FPV航拍6S 1100mAh電池（細節圖 7）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mlwzoa85mo0f18"
     }
@@ -105,29 +105,29 @@
     {
       "name": "O4pro版本/含ELRS接收機",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 16877,
+      "availability": "in_stock",
       "shopee_variation_id": "380650068062"
     },
     {
       "name": "PNP動力套裝/含ELRS接收機",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 8976,
+      "availability": "in_stock",
       "shopee_variation_id": "380650068063"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 8976,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "49657325933",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -202,7 +202,15 @@
       "price_min": 9350,
       "price_max": 17580,
       "stock_total": 20,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "•\t#GEPRRCCinebot35\n•\t#3.5吋穿越機\n•\t#Cinewhoop航拍\n•\t#FPV穿越機\n•\t#6S Cinewhoop\n•\t#室內穿越機\n•\t#GEPRRC配件\n•\t#FPV無人機\n•\t#航拍套件\n•\t#台灣現貨",
+    "approved_at": "2026-10-22"
   }
 }

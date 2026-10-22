@@ -13,7 +13,7 @@
   "video_system": "DJI O4",
   "battery_cells": [],
   "short_description": "",
-  "description": "DJI O4 Air Unit 適配座\nO4 轉 O3 Air Unit\nDJI O3 孔位 轉接座\n小O4 安裝適配器\nDJI O4 Air Unit 升級\nO3 Air Unit 機架支援\nFPV 視訊模組轉接座\n3D 列印 O4 適配座\n無人機 O4 改裝套件\nFPV 客製化配件\n\n⚠️ 務必備註顏色，未備註將隨機出貨，訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n⚠️ 客製化需求（顏色／固定方式／線材走向）請先聊聊討論再下單\n\n想用小 O4 的畫質與低延遲，卻苦惱機架只有 DJI O3 Air Unit 孔位？這款 O4 Air Unit 專用適配座，將 O4 的本體尺寸轉換成 O3 Air Unit 的安裝規格，只要你的機架支援 O3 安裝孔位，就能直接鎖上 O4 Air Unit，免改碳板、免暴力鑽孔。🎥 透過 3D 列印一體成型結構，兼顧支撐強度與重量控制\n\n專為 DJI O4 Air Unit 尺寸設計，外側孔位對應 DJI O3 Air Unit 標準安裝孔（25.5×25.5 等常見規格）機架可用。📐\n可吻合市面上多數支援 O3 Air Unit 的機架，讓舊機架也能輕鬆升級至 O4 系統。\n3D 列印製作，可依需求微調高度、線材出口、綁扎空間，維持機身內部整潔與散熱。🛠️",
+  "description": "DJI O4 Air Unit 適配座\nO4 轉 O3 Air Unit\nDJI O3 孔位 轉接座\n小O4 安裝適配器\nDJI O4 Air Unit 升級\nO3 Air Unit 機架支援\nFPV 視訊模組轉接座\n3D 列印 O4 適配座\n無人機 O4 改裝套件\nFPV 客製化配件\n\n⚠️ 務必備註顏色，未備註將隨機出貨，訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n\n想用小 O4 的畫質與低延遲，卻苦惱機架只有 DJI O3 Air Unit 孔位？這款 O4 Air Unit 專用適配座，將 O4 的本體尺寸轉換成 O3 Air Unit 的安裝規格，只要你的機架支援 O3 安裝孔位，就能直接鎖上 O4 Air Unit，免改碳板、免暴力鑽孔。🎥 透過 3D 列印一體成型結構，兼顧支撐強度與重量控制\n\n專為 DJI O4 Air Unit 尺寸設計，外側孔位對應 DJI O3 Air Unit 標準安裝孔（25.5×25.5 等常見規格）機架可用。📐\n可吻合市面上多數支援 O3 Air Unit 的機架，讓舊機架也能輕鬆升級至 O4 系統。\n3D 列印製作，可依需求微調高度、線材出口、綁扎空間，維持機身內部整潔與散熱。🛠️",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "DJI O4 Air Unit 轉 O3 孔位適配座 小O4 改 O3 Air Unit 尺寸 通用所有支援 O3（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mikwlk67sg7b4f"
     },
@@ -32,7 +32,7 @@
       "alt": "DJI O4 Air Unit 轉 O3 孔位適配座 小O4 改 O3 Air Unit 尺寸 通用所有支援 O3（細節圖 1）",
       "width": 823,
       "height": 823,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mih4oimoypz4da"
     },
@@ -42,23 +42,23 @@
       "alt": "DJI O4 Air Unit 轉 O3 孔位適配座 小O4 改 O3 Air Unit 尺寸 通用所有支援 O3（細節圖 2）",
       "width": 804,
       "height": 804,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mih505waw7iec0"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 288,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "45953383638",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -97,7 +97,15 @@
       "price_min": 300,
       "price_max": 300,
       "stock_total": 50,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "DJI O4 Air Unit 適配座\nO4 轉 O3 Air Unit\nDJI O3 孔位 轉接座\n小O4 安裝適配器\nDJI O4 Air Unit 升級\nO3 Air Unit 機架支援\nFPV 視訊模組轉接座\n3D 列印 O4 適配座\n無人機 O4 改裝套件\nFPV 客製化配件\n\n⚠️ 務必備註顏色，未備註將隨機出貨，訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n⚠️ 客製化需求（顏色／固定方式／線材走向）請先聊聊討論再下單\n\n想用小 O4 的畫質與低延遲，卻苦惱機架只有 DJI O3 Air Unit 孔位？這款 O4 Air Unit 專用適配座，將 O4 的本體尺寸轉換成 O3 Air Unit 的安裝規格，只要你的機架支援 O3 安裝孔位，就能直接鎖上 O4 Air Unit，免改碳板、免暴力鑽孔。🎥 透過 3D 列印一體成型結構，兼顧支撐強度與重量控制\n\n專為 DJI O4 Air Unit 尺寸設計，外側孔位對應 DJI O3 Air Unit 標準安裝孔（25.5×25.5 等常見規格）機架可用。📐\n可吻合市面上多數支援 O3 Air Unit 的機架，讓舊機架也能輕鬆升級至 O4 系統。\n3D 列印製作，可依需求微調高度、線材出口、綁扎空間，維持機身內部整潔與散熱。🛠️",
+    "approved_at": "2026-10-22"
   }
 }

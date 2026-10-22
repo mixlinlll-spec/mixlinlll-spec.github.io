@@ -15,7 +15,7 @@
   "video_system": "DJI O4",
   "battery_cells": [],
   "short_description": "",
-  "description": "【GEPRC TriPro-LR60 旅者｜6 吋遠航穿越機】\n\nGEP-TP6 機架、265mm 軸距、6 吋配置的長航取向穿越機。\n2205E/1400KV 搭配 HQ 6×4.3 三葉槳，主打慢速巡航與長時間滯空，\n適合遠距探索、風景拍攝與長航練習。\n\n■ 版本選擇\n下單前請先確認你要哪一個版本：\n\n【O4 Pro 版】392g±5g\n含 DJI O4 Pro 相機模組、圖傳模組與天線，開箱即可搭配 DJI 眼鏡使用。\n\n【WTFPV 版】357g±5g\n不含圖傳系統，需自行加裝圖傳與鏡頭。\n\n【WTFPV WCC 版】317g±5g\n不含圖傳系統，重量最輕。\n\n※ WTFPV 與 WTFPV WCC 版本皆不含 O4 Pro 相機、圖傳模組與天線\n※ 兩個 WTFPV 版本的差異請於下單前私訊確認，我們會依你的用途建議\n\n■ 共通規格\n機架：GEP-TP6\n主碳板厚度：5mm\n軸距：265mm\n飛行系統：TAKER F722 45A 32Bit AIO\nMCU：STM32F722RET6\n陀螺儀：ICM 42688-P\nFlash：16MB\n飛控韌體：GEPRC_F722_AIO_4.5.3\n電調：32Bit 45A\n馬達：2205E / 1400KV\n螺旋槳：HQ 6×4.3GR-PC\n電池接頭：XT60\nGPS：GEP M10\n\n■ 接收機選項\nELRS 915M\nELRS 2.4G\nGemX\nTBS Diversity Nano RX\nPNP（不含接收機，自行安裝）\n\n※ 接收機版本需於下單時指定\n※ 台灣地區建議選用 2.4G 版本，915MHz 涉及頻段使用規定，請自行確認合法性\n\n■ 建議電池\nStorm 2.0 LiPo 6S 2200mAh\nGEP 18650 6S1P 3000mAh\n\n飛行時間：25～35 分鐘\n※ 官方數據以慢速巡航方式測試，實際飛行時間會因飛行手法、風速、\n   載重、電池狀態與環境溫度而有明顯差異，數據僅供參考\n※ 激烈飛行或逆風情況下續航會大幅縮短\n\n■ 這台適合誰\n・想飛得久、飛得遠，而不是花式翻滾的人\n・需要長時間空中滯留拍攝風景的人\n・想開始接觸遠航但不想從零組裝的人\n・已有 DJI 眼鏡，想直接加一台長航機的人\n\n不適合：純花飛、競速、室內練習\n\n■ 購買前請務必了解\n1. 遠航機不是新手第一台。本機軸距 265mm、6 吋槳，\n   飛行速度與慣性都比 5 吋花飛機大，撞擊力道也更強。\n   建議具備基本飛行能力與 Betaflight 操作經驗再入手。\n2. 遠航飛行涉及超視距操作，請務必確認你的飛行地點與方式符合台灣民航法規定，\n   遙控無人機相關規範請至民航局官網查詢並自行遵守。\n3. GPS 與 Rescue 功能需正確設定並實際驗證後才可依賴。\n   出廠設定不等於已為你的飛行環境調校完成，切勿在未驗證的情況下依賴自動返航。\n4. 建議電池為原廠數據，實際搭配請確認重量、接頭與放電能力。\n   18650 鋰離子電池放電能力低於 LiPo，全油門操作時電壓下降明顯，請勿激烈操控。\n5. 本機為 BNF/PNP 產品，需自行對頻、確認 Failsafe 與各項設定。\n   如需完整交機設定服務，可私訊詢問。\n6. 圖傳與接收機涉及無線發射設備，使用前請確認相關規定。\n7. 穿越機屬高風險航空模型，飛行造成之人身傷害或財物損失由使用者自行負責。\n\n■ 電翼動力提供\n我們不只是把箱子轉寄給你。購買本機可包含：\n・開箱檢查與上電測試\n・接收機對頻\n・Failsafe 設定確認\n・馬達方向與槳葉方向確認\n・GPS 定位確認\n・OSD 設定\n・交機說明\n\n如需 GPS Rescue 設定、PID 調整或長航配置優化，可另行討論。\n後續飛行遇到問題，也可以直接問我們。\n\n電翼動力 EWP｜Ready to Fly",
+  "description": "【GEPRC TriPro-LR60 旅者｜6 吋遠航穿越機】\n\nGEP-TP6 機架、265mm 軸距、6 吋配置的長航取向穿越機。\n2205E/1400KV 搭配 HQ 6×4.3 三葉槳，主打慢速巡航與長時間滯空，\n適合遠距探索、風景拍攝與長航練習。\n\n■ 版本選擇\n下單前請先確認你要哪一個版本：\n\n【O4 Pro 版】392g±5g\n含 DJI O4 Pro 相機模組、圖傳模組與天線，開箱即可搭配 DJI 眼鏡使用。\n\n【WTFPV 版】357g±5g\n不含圖傳系統，需自行加裝圖傳與鏡頭。\n\n【WTFPV WCC 版】317g±5g\n不含圖傳系統，重量最輕。\n\n※ WTFPV 與 WTFPV WCC 版本皆不含 O4 Pro 相機、圖傳模組與天線\n\n■ 共通規格\n機架：GEP-TP6\n主碳板厚度：5mm\n軸距：265mm\n飛行系統：TAKER F722 45A 32Bit AIO\nMCU：STM32F722RET6\n陀螺儀：ICM 42688-P\nFlash：16MB\n飛控韌體：GEPRC_F722_AIO_4.5.3\n電調：32Bit 45A\n馬達：2205E / 1400KV\n螺旋槳：HQ 6×4.3GR-PC\n電池接頭：XT60\nGPS：GEP M10\n\n■ 接收機選項\nELRS 915M\nELRS 2.4G\nGemX\nTBS Diversity Nano RX\nPNP（不含接收機，自行安裝）\n\n※ 接收機版本需於下單時指定\n※ 台灣地區建議選用 2.4G 版本，915MHz 涉及頻段使用規定，請自行確認合法性\n\n■ 建議電池\nStorm 2.0 LiPo 6S 2200mAh\nGEP 18650 6S1P 3000mAh\n\n飛行時間：25～35 分鐘\n※ 官方數據以慢速巡航方式測試，實際飛行時間會因飛行手法、風速、\n   載重、電池狀態與環境溫度而有明顯差異，數據僅供參考\n※ 激烈飛行或逆風情況下續航會大幅縮短\n\n■ 這台適合誰\n・想飛得久、飛得遠，而不是花式翻滾的人\n・需要長時間空中滯留拍攝風景的人\n・想開始接觸遠航但不想從零組裝的人\n・已有 DJI 眼鏡，想直接加一台長航機的人\n\n不適合：純花飛、競速、室內練習\n\n■ 購買前請務必了解\n1. 遠航機不是新手第一台。本機軸距 265mm、6 吋槳，\n   飛行速度與慣性都比 5 吋花飛機大，撞擊力道也更強。\n   建議具備基本飛行能力與 Betaflight 操作經驗再入手。\n2. 遠航飛行涉及超視距操作，請務必確認你的飛行地點與方式符合台灣民航法規定，\n   遙控無人機相關規範請至民航局官網查詢並自行遵守。\n3. GPS 與 Rescue 功能需正確設定並實際驗證後才可依賴。\n   出廠設定不等於已為你的飛行環境調校完成，切勿在未驗證的情況下依賴自動返航。\n4. 建議電池為原廠數據，實際搭配請確認重量、接頭與放電能力。\n   18650 鋰離子電池放電能力低於 LiPo，全油門操作時電壓下降明顯，請勿激烈操控。\n5. 本機為 BNF/PNP 產品，需自行對頻、確認 Failsafe 與各項設定。\n6. 圖傳與接收機涉及無線發射設備，使用前請確認相關規定。\n7. 穿越機屬高風險航空模型，飛行造成之人身傷害或財物損失由使用者自行負責。\n\n■ 電翼動力提供\n我們不只是把箱子轉寄給你。購買本機可包含：\n・開箱檢查與上電測試\n・接收機對頻\n・Failsafe 設定確認\n・馬達方向與槳葉方向確認\n・GPS 定位確認\n・OSD 設定\n・交機說明\n\n如需 GPS Rescue 設定、PID 調整或長航配置優化，可另行討論。\n後續飛行遇到問題，也可以直接問我們。\n\n電翼動力 EWP｜Ready to Fly",
   "specifications": [],
   "images": [
     {
@@ -24,7 +24,7 @@
       "alt": "GEPRC TriPro-LR60 旅者 6吋遠航機 DJI O4 Pro ELRS 915 長航穿越機 GPS（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mt8bzhcs8bgqbd"
     },
@@ -34,7 +34,7 @@
       "alt": "GEPRC TriPro-LR60 旅者 6吋遠航機 DJI O4 Pro ELRS 915 長航穿越機 GPS（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mt8bzhctpp1ka3"
     },
@@ -44,7 +44,7 @@
       "alt": "GEPRC TriPro-LR60 旅者 6吋遠航機 DJI O4 Pro ELRS 915 長航穿越機 GPS（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mt8bzhcsb4lmf2"
     },
@@ -54,7 +54,7 @@
       "alt": "GEPRC TriPro-LR60 旅者 6吋遠航機 DJI O4 Pro ELRS 915 長航穿越機 GPS（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mt8bzhcs9q163f"
     },
@@ -64,7 +64,7 @@
       "alt": "GEPRC TriPro-LR60 旅者 6吋遠航機 DJI O4 Pro ELRS 915 長航穿越機 GPS（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mt8bzhctoah479"
     },
@@ -74,7 +74,7 @@
       "alt": "GEPRC TriPro-LR60 旅者 6吋遠航機 DJI O4 Pro ELRS 915 長航穿越機 GPS（細節圖 5）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mt8bzhcs6wwa0e"
     }
@@ -83,36 +83,36 @@
     {
       "name": "O4PRO",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 18048,
+      "availability": "in_stock",
       "shopee_variation_id": "158037616074"
     },
     {
       "name": "動力套含圖傳倉",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 11328,
+      "availability": "in_stock",
       "shopee_variation_id": "158037616075"
     },
     {
       "name": "動力套無圖傳倉",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 11472,
+      "availability": "in_stock",
       "shopee_variation_id": "158037616076"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 11328,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "45967997179",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -193,7 +193,15 @@
       "price_min": 11800,
       "price_max": 18800,
       "stock_total": 30,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "【GEPRC TriPro-LR60 旅者｜6 吋遠航穿越機】\n\nGEP-TP6 機架、265mm 軸距、6 吋配置的長航取向穿越機。\n2205E/1400KV 搭配 HQ 6×4.3 三葉槳，主打慢速巡航與長時間滯空，\n適合遠距探索、風景拍攝與長航練習。\n\n■ 版本選擇\n下單前請先確認你要哪一個版本：\n\n【O4 Pro 版】392g±5g\n含 DJI O4 Pro 相機模組、圖傳模組與天線，開箱即可搭配 DJI 眼鏡使用。\n\n【WTFPV 版】357g±5g\n不含圖傳系統，需自行加裝圖傳與鏡頭。\n\n【WTFPV WCC 版】317g±5g\n不含圖傳系統，重量最輕。\n\n※ WTFPV 與 WTFPV WCC 版本皆不含 O4 Pro 相機、圖傳模組與天線\n※ 兩個 WTFPV 版本的差異請於下單前私訊確認，我們會依你的用途建議\n\n■ 共通規格\n機架：GEP-TP6\n主碳板厚度：5mm\n軸距：265mm\n飛行系統：TAKER F722 45A 32Bit AIO\nMCU：STM32F722RET6\n陀螺儀：ICM 42688-P\nFlash：16MB\n飛控韌體：GEPRC_F722_AIO_4.5.3\n電調：32Bit 45A\n馬達：2205E / 1400KV\n螺旋槳：HQ 6×4.3GR-PC\n電池接頭：XT60\nGPS：GEP M10\n\n■ 接收機選項\nELRS 915M\nELRS 2.4G\nGemX\nTBS Diversity Nano RX\nPNP（不含接收機，自行安裝）\n\n※ 接收機版本需於下單時指定\n※ 台灣地區建議選用 2.4G 版本，915MHz 涉及頻段使用規定，請自行確認合法性\n\n■ 建議電池\nStorm 2.0 LiPo 6S 2200mAh\nGEP 18650 6S1P 3000mAh\n\n飛行時間：25～35 分鐘\n※ 官方數據以慢速巡航方式測試，實際飛行時間會因飛行手法、風速、\n   載重、電池狀態與環境溫度而有明顯差異，數據僅供參考\n※ 激烈飛行或逆風情況下續航會大幅縮短\n\n■ 這台適合誰\n・想飛得久、飛得遠，而不是花式翻滾的人\n・需要長時間空中滯留拍攝風景的人\n・想開始接觸遠航但不想從零組裝的人\n・已有 DJI 眼鏡，想直接加一台長航機的人\n\n不適合：純花飛、競速、室內練習\n\n■ 購買前請務必了解\n1. 遠航機不是新手第一台。本機軸距 265mm、6 吋槳，\n   飛行速度與慣性都比 5 吋花飛機大，撞擊力道也更強。\n   建議具備基本飛行能力與 Betaflight 操作經驗再入手。\n2. 遠航飛行涉及超視距操作，請務必確認你的飛行地點與方式符合台灣民航法規定，\n   遙控無人機相關規範請至民航局官網查詢並自行遵守。\n3. GPS 與 Rescue 功能需正確設定並實際驗證後才可依賴。\n   出廠設定不等於已為你的飛行環境調校完成，切勿在未驗證的情況下依賴自動返航。\n4. 建議電池為原廠數據，實際搭配請確認重量、接頭與放電能力。\n   18650 鋰離子電池放電能力低於 LiPo，全油門操作時電壓下降明顯，請勿激烈操控。\n5. 本機為 BNF/PNP 產品，需自行對頻、確認 Failsafe 與各項設定。\n   如需完整交機設定服務，可私訊詢問。\n6. 圖傳與接收機涉及無線發射設備，使用前請確認相關規定。\n7. 穿越機屬高風險航空模型，飛行造成之人身傷害或財物損失由使用者自行負責。\n\n■ 電翼動力提供\n我們不只是把箱子轉寄給你。購買本機可包含：\n・開箱檢查與上電測試\n・接收機對頻\n・Failsafe 設定確認\n・馬達方向與槳葉方向確認\n・GPS 定位確認\n・OSD 設定\n・交機說明\n\n如需 GPS Rescue 設定、PID 調整或長航配置優化，可另行討論。\n後續飛行遇到問題，也可以直接問我們。\n\n電翼動力 EWP｜Ready to Fly",
+    "approved_at": "2026-10-22"
   }
 }

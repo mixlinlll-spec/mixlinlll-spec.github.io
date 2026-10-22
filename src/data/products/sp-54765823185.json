@@ -47,7 +47,7 @@
       "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mrrgrei2kj5sd8"
     },
@@ -57,7 +57,7 @@
       "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrrgrei2lxq89e"
     },
@@ -67,7 +67,7 @@
       "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mrrgrei2ncao6e"
     },
@@ -77,7 +77,7 @@
       "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrrgrei2oqv4d1"
     },
@@ -87,7 +87,7 @@
       "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mrrgrei2q5fkbb"
     }
@@ -96,29 +96,29 @@
     {
       "name": "單顆",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 421,
+      "availability": "out_of_stock",
       "shopee_variation_id": "356352392837"
     },
     {
       "name": "四顆",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 1632,
+      "availability": "out_of_stock",
       "shopee_variation_id": "356352392838"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 421,
+  "price_display": "from",
+  "availability": "out_of_stock",
   "shopee_url": null,
   "shopee_item_id": "54765823185",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -194,7 +194,14 @@
       "price_min": 439,
       "price_max": 1700,
       "stock_total": 0,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   }
 }

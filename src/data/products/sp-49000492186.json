@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#DJIAction4 #DJIAction3 #DJIAction5 #3D打印 #保護殼 #運動相機 #相機配件 #防摔 #防刮 #蝦皮購物 #Action4配件 #FOV35 #F28 #輕量設計 #客製化\n\n產品介紹：\n專為 DJI Osmo Action 3、Action 4 和 Action 5 設計的 3D 打印保護罩，採用高強度材料製作，提供全面防護！無論是日常使用還是極限運動，都能有效防摔、防刮，並保持相機的輕便性。精準開孔設計，不影響相機按鍵\n\n材質： 高强度 TPU塑料（3D 打印製成，環保耐用）\n兼容型號： DJI Action 3、Action 4、Action 5\n重量： 約 15 克（輕量設計，不增加負擔）\n特點： 防摔、防刮、易安裝、不影響相機功能\n\n🛡️ 全面防護： 有效吸收衝擊，保護相機免受跌落和刮傷。\n🔧 精準兼容： 專為 Action 系列設計，開孔對應鏡頭\n🚀 輕量便攜： 3D 打印技術確保輕量化，適合運動、旅行或日常使用。\n🌟 客製化選項： 可根據需求選擇顏色，提升個人化風格。",
+  "description": "產品介紹：\n專為 DJI Osmo Action 3、Action 4 和 Action 5 設計的 3D 打印保護罩，採用高強度材料製作，提供全面防護！無論是日常使用還是極限運動，都能有效防摔、防刮，並保持相機的輕便性。精準開孔設計，不影響相機按鍵\n\n材質： 高强度 TPU塑料（3D 打印製成，環保耐用）\n兼容型號： DJI Action 3、Action 4、Action 5\n重量： 約 15 克（輕量設計，不增加負擔）\n特點： 防摔、防刮、易安裝、不影響相機功能\n\n🛡️ 全面防護： 有效吸收衝擊，保護相機免受跌落和刮傷。\n🔧 精準兼容： 專為 Action 系列設計，開孔對應鏡頭\n🚀 輕量便攜： 3D 打印技術確保輕量化，適合運動、旅行或日常使用。\n🌟 客製化選項： 可根據需求選擇顏色，提升個人化風格。",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "DJI Action 3 / 4 / 5 專用 3D列印 TPU 保護框 (防摔/防撞/保護殼/運動相機配件)（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgg332fqa2a2a2"
     },
@@ -32,7 +32,7 @@
       "alt": "DJI Action 3 / 4 / 5 專用 3D列印 TPU 保護框 (防摔/防撞/保護殼/運動相機配件)（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mgg332fru8zvd4"
     },
@@ -42,7 +42,7 @@
       "alt": "DJI Action 3 / 4 / 5 專用 3D列印 TPU 保護框 (防摔/防撞/保護殼/運動相機配件)（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     }
@@ -51,57 +51,57 @@
     {
       "name": "綠色",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "267107770104"
     },
     {
       "name": "黃色",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "267107770105"
     },
     {
       "name": "橘色",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "267107770106"
     },
     {
       "name": "白色",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "267107770107"
     },
     {
       "name": "透藍",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "267107770108"
     },
     {
       "name": "黑色",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "267107770103"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 211,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "49000492186",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -212,7 +212,15 @@
       "price_min": 220,
       "price_max": 220,
       "stock_total": 298,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#DJIAction4 #DJIAction3 #DJIAction5 #3D打印 #保護殼 #運動相機 #相機配件 #防摔 #防刮 #蝦皮購物 #Action4配件 #FOV35 #F28 #輕量設計 #客製化\n\n產品介紹：\n專為 DJI Osmo Action 3、Action 4 和 Action 5 設計的 3D 打印保護罩，採用高強度材料製作，提供全面防護！無論是日常使用還是極限運動，都能有效防摔、防刮，並保持相機的輕便性。精準開孔設計，不影響相機按鍵\n\n材質： 高强度 TPU塑料（3D 打印製成，環保耐用）\n兼容型號： DJI Action 3、Action 4、Action 5\n重量： 約 15 克（輕量設計，不增加負擔）\n特點： 防摔、防刮、易安裝、不影響相機功能\n\n🛡️ 全面防護： 有效吸收衝擊，保護相機免受跌落和刮傷。\n🔧 精準兼容： 專為 Action 系列設計，開孔對應鏡頭\n🚀 輕量便攜： 3D 打印技術確保輕量化，適合運動、旅行或日常使用。\n🌟 客製化選項： 可根據需求選擇顏色，提升個人化風格。",
+    "approved_at": "2026-10-22"
   }
 }

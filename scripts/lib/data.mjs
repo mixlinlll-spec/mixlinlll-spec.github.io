@@ -25,8 +25,6 @@ export const IMAGE_RIGHTS = { ewp_own: 'EWP 自有', licensed: '已取得授權'
 export const IMAGE_RIGHTS_ALL = { ...IMAGE_RIGHTS, unverified: '使用權待確認' };
 // 上架模式：sale = 一般商品；showcase = 作品／機型介紹（不顯示價格與購買按鈕）
 export const LISTING_MODES = ['sale', 'showcase'];
-// 合規確認狀態：pending 待確認（不得公開）；cleared 已確認可販售；not_required 經 EWP 確認不需特別審驗
-export const COMPLIANCE_STATUS = ['pending', 'cleared', 'not_required'];
 export const CTA_PRIMARY = ['line', 'shopee'];
 export const AVAILABILITY = {
   in_stock: '現貨',
@@ -151,29 +149,13 @@ export function validateProducts(products, categories) {
     // 公開條件：只有完整且通過審核的商品可以公開
     if (p.published) {
       if (!p.images?.length) err('published=true 需要至少一張正式圖片');
-      if (!p.short_description) err('published=true 需要 short_description');
-      if (!p.brand) err('published=true 需要 brand');
-      if (!p.subcategory_id) err('published=true 需要 subcategory_id');
       // review 必須存在、是物件，且 status 明確等於 approved；缺少、null、{}、draft 一律不得公開
       if (!isApproved(p)) err('published=true 需要 review.status = "approved"（EWP 已核對）');
     }
     if (p.review !== undefined && (p.review === null || typeof p.review !== 'object' || Array.isArray(p.review))) err('review 必須是物件');
     else if (p.review?.status !== undefined && !REVIEW_STATUS.includes(p.review.status)) err(`review.status 不合法：${p.review.status}`);
     if (p.listing_mode !== undefined && !LISTING_MODES.includes(p.listing_mode)) err(`listing_mode 只能是 sale 或 showcase`);
-    if (p.compliance !== undefined && p.compliance !== null) {
-      const c = p.compliance;
-      if (typeof c !== 'object' || !COMPLIANCE_STATUS.includes(c.status)) err(`compliance.status 必須是 ${COMPLIANCE_STATUS.join('／')}`);
-      if (c.items !== undefined && !Array.isArray(c.items)) err('compliance.items 必須是陣列');
-    }
     if (p.published) {
-      // 合規未確認的商品不得公開
-      // 合規未確認的商品不得以販售模式公開；作品介紹（showcase）不販售，可在合規確認前公開供審核
-      if (p.compliance && p.compliance.status === 'pending' && p.listing_mode !== 'showcase') err('compliance.status = pending（合規待確認）時不得以販售模式公開');
-      // 整機公開時必須明確選擇模式；以「販售」公開必須完成合規確認
-      if (p.primary_category_id === 'complete-drones') {
-        if (!p.listing_mode) err('整機公開前必須設定 listing_mode（sale 或 showcase）');
-        if (p.listing_mode === 'sale' && p.compliance?.status !== 'cleared') err('整機以販售模式公開前，compliance.status 必須為 cleared');
-      }
       for (const [i, img] of (p.images || []).entries()) if (!IMAGE_RIGHTS[img.rights]) err(`images[${i}] 公開前必須標示使用權 rights（${Object.keys(IMAGE_RIGHTS).join('／')}）`);
     }
     for (const [i, img] of (p.images || []).entries()) if (img.rights !== undefined && !IMAGE_RIGHTS_ALL[img.rights]) err(`images[${i}].rights 不合法：${img.rights}`);

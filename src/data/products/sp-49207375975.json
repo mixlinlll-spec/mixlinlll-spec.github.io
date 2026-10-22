@@ -43,7 +43,7 @@
       "alt": "TJRC天劍 5.8G沉金天線 O4 Pro圖傳穿越機棒棒糖 SMA公頭 圓極化高增益 遠距穿牆（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlydkongc9olb1"
     },
@@ -53,7 +53,7 @@
       "alt": "TJRC天劍 5.8G沉金天線 O4 Pro圖傳穿越機棒棒糖 SMA公頭 圓極化高增益 遠距穿牆（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlydkon23kecf2"
     },
@@ -63,7 +63,7 @@
       "alt": "TJRC天劍 5.8G沉金天線 O4 Pro圖傳穿越機棒棒糖 SMA公頭 圓極化高增益 遠距穿牆（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mlydkongav45dd"
     }
@@ -72,29 +72,29 @@
     {
       "name": "白色（內針左璇）10CM",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 346,
+      "availability": "out_of_stock",
       "shopee_variation_id": "375653807945"
     },
     {
       "name": "藍色(內針左璇)10CM",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 346,
+      "availability": "out_of_stock",
       "shopee_variation_id": "375653807944"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 346,
+  "price_display": "fixed",
+  "availability": "out_of_stock",
   "shopee_url": null,
   "shopee_item_id": "49207375975",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -169,16 +169,14 @@
       "price_min": 360,
       "price_max": 360,
       "stock_total": 0,
-      "status": "snapshot_only"
-    }
-  },
-  "compliance": {
-    "status": "pending",
-    "items": [
-      {
-        "type": "NCC",
-        "reason": "被動天線本身不發射訊號，請 EWP 確認是否需要審驗；若與發射器成套販售則依發射器規定"
-      }
-    ]
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   }
 }

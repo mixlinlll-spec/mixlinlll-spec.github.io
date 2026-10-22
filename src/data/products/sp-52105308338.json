@@ -55,7 +55,7 @@
       "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mt3be67cv2th76"
     },
@@ -65,7 +65,7 @@
       "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mt3be67cwhdx16"
     },
@@ -75,7 +75,7 @@
       "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mt3be67cto9105"
     },
@@ -85,7 +85,7 @@
       "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -95,7 +95,7 @@
       "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlrysjmqll3470"
     }
@@ -104,29 +104,29 @@
     {
       "name": "單顆電池（3500mah)",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 144,
+      "availability": "in_stock",
       "shopee_variation_id": "282364284620"
     },
     {
       "name": "一組套裝（含電池兩顆,充電線一條）",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 575,
+      "availability": "in_stock",
       "shopee_variation_id": "282364284619"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 144,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "52105308338",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -205,20 +205,14 @@
       "price_min": 150,
       "price_max": 599,
       "stock_total": 84,
-      "status": "snapshot_only"
-    }
-  },
-  "compliance": {
-    "status": "pending",
-    "items": [
-      {
-        "type": "BSMI",
-        "reason": "含電芯的供電盒：請確認是否屬行動電源或二次鋰電池組應施檢驗範圍"
-      },
-      {
-        "type": "運輸",
-        "reason": "鋰電池寄送與航空運輸有容量與包裝限制，請確認物流方式與標示"
-      }
-    ]
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   }
 }

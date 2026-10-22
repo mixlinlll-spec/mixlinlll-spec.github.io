@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#NazgulEvoqueF5V3\n#iFlightNazgul\n#Evoque打印件\n#3D列印保護件\n#FPV機架改裝\n#O4相機座\n#GoPro座\n#電池防滑墊\n#天線座\n#台灣現貨\n#快速出貨\n依照 iFlight Nazgul Evoque F5 V3 機架實機量測建模，孔位、螺絲距與保護範圍完全對應原廠機身，裝上就能飛，不用自行改檔。​\n提供多種常用配件：機鼻防撞套、O4/GoPro 相機座、VTX / RX 天線座、GPS 座、電池擋板與防滑墊、腳墊、LED 護罩等，可依需求單買或整套打包。",
+  "description": "依照 iFlight Nazgul Evoque F5 V3 機架實機量測建模，孔位、螺絲距與保護範圍完全對應原廠機身，裝上就能飛，不用自行改檔。​\n提供多種常用配件：機鼻防撞套、O4/GoPro 相機座、VTX / RX 天線座、GPS 座、電池擋板與防滑墊、腳墊、LED 護罩等，可依需求單買或整套打包。",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（主圖）",
       "width": 908,
       "height": 908,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mk1rkvse4nwk05"
     },
@@ -32,7 +32,7 @@
       "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（細節圖 2）",
       "width": 949,
       "height": 949,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mk1rkvshafwl0a"
     },
@@ -52,7 +52,7 @@
       "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（細節圖 3）",
       "width": 881,
       "height": 881,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mk1rkvsra1afe0"
     },
@@ -62,7 +62,7 @@
       "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（細節圖 4）",
       "width": 494,
       "height": 494,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mk1rldk9oj5seb"
     },
@@ -72,7 +72,7 @@
       "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（細節圖 5）",
       "width": 853,
       "height": 853,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mk1rkvsek45ffd"
     }
@@ -81,132 +81,132 @@
     {
       "name": "雙SMA+天線 底座",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 72,
+      "availability": "in_stock",
       "shopee_variation_id": "410500065612",
       "image": {
         "src": "/assets/img/products/sp-48955528390/opt-01-480.webp",
         "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（規格：雙SMA+天線 底座）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mk1rmn0nhp1g94"
       }
     },
     {
       "name": "機臂保護",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 154,
+      "availability": "in_stock",
       "shopee_variation_id": "410500065614",
       "image": {
         "src": "/assets/img/products/sp-48955528390/opt-03-480.webp",
         "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（規格：機臂保護）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mk1rpzojbklj82"
       }
     },
     {
       "name": "O3減震墊",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 34,
+      "availability": "in_stock",
       "shopee_variation_id": "440500067189",
       "image": {
         "src": "/assets/img/products/sp-48955528390/opt-09-480.webp",
         "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（規格：O3減震墊）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mk1rxntag2rm5b"
       }
     },
     {
       "name": "鯊魚鰭",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 77,
+      "availability": "in_stock",
       "shopee_variation_id": "410500065611",
       "image": {
         "src": "/assets/img/products/sp-48955528390/opt-08-480.webp",
         "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（規格：鯊魚鰭）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mk1rt3uz39xd31"
       }
     },
     {
       "name": "181GPS座",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 48,
+      "availability": "in_stock",
       "shopee_variation_id": "410500065607",
       "image": {
         "src": "/assets/img/products/sp-48955528390/opt-04-480.webp",
         "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（規格：181GPS座）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mk1rq2myxkhu8f"
       }
     },
     {
       "name": "機臂保護2",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 144,
+      "availability": "in_stock",
       "shopee_variation_id": "410500065610",
       "image": {
         "src": "/assets/img/products/sp-48955528390/opt-07-480.webp",
         "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（規格：機臂保護2）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mk1rsnnnu0aw12"
       }
     },
     {
       "name": "XT60座",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 48,
+      "availability": "in_stock",
       "shopee_variation_id": "410500065608",
       "image": {
         "src": "/assets/img/products/sp-48955528390/opt-05-480.webp",
         "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（規格：XT60座）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mk1rq5fa1t6rcc"
       }
     },
     {
       "name": "915天線收納",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 43,
+      "availability": "in_stock",
       "shopee_variation_id": "410500065613",
       "image": {
         "src": "/assets/img/products/sp-48955528390/opt-02-480.webp",
         "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（規格：915天線收納）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mk1roaztvwn419"
       }
     },
     {
       "name": "機頭防撞桿",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 67,
+      "availability": "in_stock",
       "shopee_variation_id": "410500065609",
       "image": {
         "src": "/assets/img/products/sp-48955528390/opt-06-480.webp",
         "alt": "Nazgul Evoque F5 V3 3D列印套件 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI（規格：機頭防撞桿）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mk1rq7earthj9f"
       }
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 34,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "48955528390",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -360,7 +360,15 @@
       "price_min": 35,
       "price_max": 160,
       "stock_total": 440,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#NazgulEvoqueF5V3\n#iFlightNazgul\n#Evoque打印件\n#3D列印保護件\n#FPV機架改裝\n#O4相機座\n#GoPro座\n#電池防滑墊\n#天線座\n#台灣現貨\n#快速出貨\n依照 iFlight Nazgul Evoque F5 V3 機架實機量測建模，孔位、螺絲距與保護範圍完全對應原廠機身，裝上就能飛，不用自行改檔。​\n提供多種常用配件：機鼻防撞套、O4/GoPro 相機座、VTX / RX 天線座、GPS 座、電池擋板與防滑墊、腳墊、LED 護罩等，可依需求單買或整套打包。",
+    "approved_at": "2026-10-22"
   }
 }

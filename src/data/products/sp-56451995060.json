@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#HDZero #HDZeroGoggles #天線支架 #天線固定座 #FPV眼鏡配件 #圖傳天線 #3D列印TPU #天線防滑 #天線穩定器 #穿越機配件 #靈雀FPV #HDZero配件\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nHDZERO Goggles 天線支架\n專為 HDZERO Goggles 設計的天線固定支架，有效提升天線穩定度，避免天線在激烈飛行或收納移動時鬆脫、轉動或滑落。\n\n📐 規格資訊\n適用型號：HDZERO Goggles\n重量：約 3–6 g\n功能：天線固定、防滑、防轉、防脫落",
+  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nHDZERO Goggles 天線支架\n專為 HDZERO Goggles 設計的天線固定支架，有效提升天線穩定度，避免天線在激烈飛行或收納移動時鬆脫、轉動或滑落。\n\n📐 規格資訊\n適用型號：HDZERO Goggles\n重量：約 3–6 g\n功能：天線固定、防滑、防轉、防脫落",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "HDZERO Goggles 專用 天線支架｜防滑防脫｜3D 列印 FPV 眼鏡天線穩定器（主圖）",
       "width": 994,
       "height": 994,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mheyd4rwnzm3b0"
     },
@@ -32,7 +32,7 @@
       "alt": "HDZERO Goggles 專用 天線支架｜防滑防脫｜3D 列印 FPV 眼鏡天線穩定器（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "HDZERO Goggles 專用 天線支架｜防滑防脫｜3D 列印 FPV 眼鏡天線穩定器（細節圖 2）",
       "width": 918,
       "height": 918,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mheyizn15lag73"
     },
@@ -52,7 +52,7 @@
       "alt": "HDZERO Goggles 專用 天線支架｜防滑防脫｜3D 列印 FPV 眼鏡天線穩定器（細節圖 3）",
       "width": 920,
       "height": 920,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mheyd4rz8p3jf1"
     }
@@ -61,50 +61,50 @@
     {
       "name": "透黃",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 192,
+      "availability": "in_stock",
       "shopee_variation_id": "310194458803"
     },
     {
       "name": "透黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 192,
+      "availability": "in_stock",
       "shopee_variation_id": "310194458804"
     },
     {
       "name": "透明",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 192,
+      "availability": "in_stock",
       "shopee_variation_id": "310194458800"
     },
     {
       "name": "螢光綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 192,
+      "availability": "in_stock",
       "shopee_variation_id": "310194458801"
     },
     {
       "name": "螢光橘",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 192,
+      "availability": "in_stock",
       "shopee_variation_id": "310194458802"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 192,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "56451995060",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -203,7 +203,15 @@
       "price_min": 200,
       "price_max": 200,
       "stock_total": 248,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#HDZero #HDZeroGoggles #天線支架 #天線固定座 #FPV眼鏡配件 #圖傳天線 #3D列印TPU #天線防滑 #天線穩定器 #穿越機配件 #靈雀FPV #HDZero配件\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nHDZERO Goggles 天線支架\n專為 HDZERO Goggles 設計的天線固定支架，有效提升天線穩定度，避免天線在激烈飛行或收納移動時鬆脫、轉動或滑落。\n\n📐 規格資訊\n適用型號：HDZERO Goggles\n重量：約 3–6 g\n功能：天線固定、防滑、防轉、防脫落",
+    "approved_at": "2026-10-22"
   }
 }

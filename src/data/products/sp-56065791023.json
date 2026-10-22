@@ -22,7 +22,7 @@
       "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mrqmc52n44qv61"
     },
@@ -32,7 +32,7 @@
       "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52n5jbb5c"
     },
@@ -42,7 +42,7 @@
       "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mrqmc52mzx1j2e"
     },
@@ -52,7 +52,7 @@
       "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mrqmc52n1blz19"
     },
@@ -62,7 +62,7 @@
       "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52n2q6f79"
     },
@@ -72,7 +72,7 @@
       "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 5）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mrqmc52xkkxzb2"
     },
@@ -82,7 +82,7 @@
       "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 6）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mrqmc52xlzifac"
     },
@@ -92,7 +92,7 @@
       "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 7）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mrqmc52xne2v0c"
     }
@@ -101,64 +101,64 @@
     {
       "name": "MAX茶紅",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 7190,
+      "availability": "in_stock",
       "shopee_variation_id": "426349061363"
     },
     {
       "name": "MAX茶黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 7190,
+      "availability": "in_stock",
       "shopee_variation_id": "426349061357"
     },
     {
       "name": "MAX茶紫",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 7190,
+      "availability": "in_stock",
       "shopee_variation_id": "426349061358"
     },
     {
       "name": "MAX橙黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 7190,
+      "availability": "in_stock",
       "shopee_variation_id": "426349061359"
     },
     {
       "name": "RDC茶黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 8630,
+      "availability": "in_stock",
       "shopee_variation_id": "426349061360"
     },
     {
       "name": "RDC橙黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 8630,
+      "availability": "in_stock",
       "shopee_variation_id": "426349061361"
     },
     {
       "name": "ULTRA茶色",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 9110,
+      "availability": "in_stock",
       "shopee_variation_id": "426349061362"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 7190,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "56065791023",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -293,7 +293,15 @@
       "price_min": 7490,
       "price_max": 9490,
       "stock_total": 70,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "HelloRadio V15 採用高效能 STM32 H7 主控，預載 EdgeTX 系統，搭載 ExpressLRS Gemini 雙頻 2.4GHz + 900MHz 技術，提供更穩定的控制鏈路、更低延遲及更遠的傳輸距離。",
+    "approved_at": "2026-10-22"
   }
 }

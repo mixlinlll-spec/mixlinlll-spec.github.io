@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#DJIRC2\n#RC2保護盒\n#遙控旅行箱\n#遙控器收納盒\n#硬殼保護殼\n#航拍配件\n#DJI遙控器\n#防壓防刮\n#出遊必備\n#台灣現貨\n#快速出貨\n\n商品賣點（簡版）\n專為 DJI RC2 外形建模，內部預留搖桿區與按鍵高度，合上蓋子不會壓到搖桿與滾輪。​\n硬殼 3D 列印／塑膠一體成型結構，外層抗壓、防刮，背包裡跟工具、鋰電一起放也不怕被擠壓。\n採用上掀式卡扣設計，單手即可開關，方便臨時起飛時快速拿遙控。\n殼身保留 DJI LOGO 區域，整體外觀簡潔低調，和原廠風格一致，看起來就像官方周邊。",
+  "description": "商品賣點（簡版）\n專為 DJI RC2 外形建模，內部預留搖桿區與按鍵高度，合上蓋子不會壓到搖桿與滾輪。​\n硬殼 3D 列印／塑膠一體成型結構，外層抗壓、防刮，背包裡跟工具、鋰電一起放也不怕被擠壓。\n採用上掀式卡扣設計，單手即可開關，方便臨時起飛時快速拿遙控。\n殼身保留 DJI LOGO 區域，整體外觀簡潔低調，和原廠風格一致，看起來就像官方周邊。",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "DJI RC2 遙控旅行箱 硬殼保護盒 一體成型收納箱 抗壓防刮 出門直接丟包包的RC2專用保護殼（主圖）",
       "width": 987,
       "height": 987,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mjzlmnim10qq3d"
     },
@@ -32,7 +32,7 @@
       "alt": "DJI RC2 遙控旅行箱 硬殼保護盒 一體成型收納箱 抗壓防刮 出門直接丟包包的RC2專用保護殼（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "DJI RC2 遙控旅行箱 硬殼保護盒 一體成型收納箱 抗壓防刮 出門直接丟包包的RC2專用保護殼（細節圖 2）",
       "width": 534,
       "height": 534,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mjzlmnim2fb632"
     },
@@ -52,7 +52,7 @@
       "alt": "DJI RC2 遙控旅行箱 硬殼保護盒 一體成型收納箱 抗壓防刮 出門直接丟包包的RC2專用保護殼（細節圖 3）",
       "width": 773,
       "height": 773,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mjzlmw5z7gubd5"
     }
@@ -61,78 +61,78 @@
     {
       "name": "綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 307,
+      "availability": "in_stock",
       "shopee_variation_id": "297368637850"
     },
     {
       "name": "黃",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 307,
+      "availability": "in_stock",
       "shopee_variation_id": "297368637851"
     },
     {
       "name": "大理石",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 307,
+      "availability": "in_stock",
       "shopee_variation_id": "297368637847"
     },
     {
       "name": "金",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 307,
+      "availability": "in_stock",
       "shopee_variation_id": "297368637848"
     },
     {
       "name": "黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 307,
+      "availability": "in_stock",
       "shopee_variation_id": "297368637849"
     },
     {
       "name": "灰",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 307,
+      "availability": "in_stock",
       "shopee_variation_id": "297368637854"
     },
     {
       "name": "紅",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 307,
+      "availability": "in_stock",
       "shopee_variation_id": "297368637846"
     },
     {
       "name": "白",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 307,
+      "availability": "in_stock",
       "shopee_variation_id": "297368637853"
     },
     {
       "name": "懶得打，其它顏色聊聊",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 307,
+      "availability": "in_stock",
       "shopee_variation_id": "297368637852"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 307,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "48355423747",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -285,7 +285,15 @@
       "price_min": 320,
       "price_max": 320,
       "stock_total": 450,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#DJIRC2\n#RC2保護盒\n#遙控旅行箱\n#遙控器收納盒\n#硬殼保護殼\n#航拍配件\n#DJI遙控器\n#防壓防刮\n#出遊必備\n#台灣現貨\n#快速出貨\n\n商品賣點（簡版）\n專為 DJI RC2 外形建模，內部預留搖桿區與按鍵高度，合上蓋子不會壓到搖桿與滾輪。​\n硬殼 3D 列印／塑膠一體成型結構，外層抗壓、防刮，背包裡跟工具、鋰電一起放也不怕被擠壓。\n採用上掀式卡扣設計，單手即可開關，方便臨時起飛時快速拿遙控。\n殼身保留 DJI LOGO 區域，整體外觀簡潔低調，和原廠風格一致，看起來就像官方周邊。",
+    "approved_at": "2026-10-22"
   }
 }

@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "•\t#DJIGoggles2\n•\t#戰術頭盔安裝座\n•\t#HelmetMount\n•\t#WilcoxL4\n•\t#G24介面\n•\t#FPV頭盔\n•\t#夜視頭盔轉接\n•\t#3D列印配件\n•\t#穿越機裝備\n•\t#台灣現貨\n•\t#快速出貨\n\n🔥只有黑色 碳纖維\n\n•\t依照 DJI Goggles 2 外型與頭帶結構建模，利用環抱式固定座把眼鏡牢牢鎖在戰術頭盔前端，飛行時不會晃動或下滑。\n•\t前端採用常見的 Wilcox L4 / G24 系統接口，可對接戰術頭盔夜視座，習慣 NVG 操作的玩家上手完全無痛。\n•\t兩段式結構可調整俯仰角度，方便依個人頭型與視線微調，減少長時間佩戴造成的壓鼻或壓額頭問題。",
+  "description": "🔥只有黑色 碳纖維\n\n•\t依照 DJI Goggles 2 外型與頭帶結構建模，利用環抱式固定座把眼鏡牢牢鎖在戰術頭盔前端，飛行時不會晃動或下滑。\n•\t前端採用常見的 Wilcox L4 / G24 系統接口，可對接戰術頭盔夜視座，習慣 NVG 操作的玩家上手完全無痛。\n•\t兩段式結構可調整俯仰角度，方便依個人頭型與視線微調，減少長時間佩戴造成的壓鼻或壓額頭問題。",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "DJI Goggles 2 戰術頭盔安裝座 Wilcox L4/G24介面 TAC Helmet Mount 固定座（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-ml94v5lc464j2b"
     },
@@ -32,7 +32,7 @@
       "alt": "DJI Goggles 2 戰術頭盔安裝座 Wilcox L4/G24介面 TAC Helmet Mount 固定座（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "DJI Goggles 2 戰術頭盔安裝座 Wilcox L4/G24介面 TAC Helmet Mount 固定座（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-ml94v5lc1czm37"
     },
@@ -52,23 +52,23 @@
       "alt": "DJI Goggles 2 戰術頭盔安裝座 Wilcox L4/G24介面 TAC Helmet Mount 固定座（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-ml94v5lpawhu9f"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 528,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "55456577062",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -109,7 +109,15 @@
       "price_min": 550,
       "price_max": 550,
       "stock_total": 49,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "•\t#DJIGoggles2\n•\t#戰術頭盔安裝座\n•\t#HelmetMount\n•\t#WilcoxL4\n•\t#G24介面\n•\t#FPV頭盔\n•\t#夜視頭盔轉接\n•\t#3D列印配件\n•\t#穿越機裝備\n•\t#台灣現貨\n•\t#快速出貨\n\n🔥只有黑色 碳纖維\n\n•\t依照 DJI Goggles 2 外型與頭帶結構建模，利用環抱式固定座把眼鏡牢牢鎖在戰術頭盔前端，飛行時不會晃動或下滑。\n•\t前端採用常見的 Wilcox L4 / G24 系統接口，可對接戰術頭盔夜視座，習慣 NVG 操作的玩家上手完全無痛。\n•\t兩段式結構可調整俯仰角度，方便依個人頭型與視線微調，減少長時間佩戴造成的壓鼻或壓額頭問題。",
+    "approved_at": "2026-10-22"
   }
 }

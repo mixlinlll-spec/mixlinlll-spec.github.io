@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#狗座 #狗座支架 #雙支架 #穿越機配件 #固定支架 #fpv配件 #相機支架 #穩定安裝\n\n📦 注意事項\n\n⚠️務必備註顏色。客製化商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n狗座雙支架設計給需要更牢固相機固定的飛手，雙支撐結構提供更高穩定度，有效減少震動、畫面抖動及高速飛行的位移問題。適合各類穿越機、長航程機型與固定式攝影用途。\n\n產品特色\n雙支架結構\n坐姿式「狗座」設計，安裝穩固不晃動\n重量輕、耐用度佳，不影響飛行性能\n適合速度機、抗震機、山飛、攀升拍攝等用途",
+  "description": "📦 注意事項\n\n⚠️務必備註顏色。客製化商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n狗座雙支架設計給需要更牢固相機固定的飛手，雙支撐結構提供更高穩定度，有效減少震動、畫面抖動及高速飛行的位移問題。適合各類穿越機、長航程機型與固定式攝影用途。\n\n產品特色\n雙支架結構\n坐姿式「狗座」設計，安裝穩固不晃動\n重量輕、耐用度佳，不影響飛行性能\n適合速度機、抗震機、山飛、攀升拍攝等用途",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "狗座雙支架｜穿越機相機固定座・高穩定安裝模組（主圖）",
       "width": 973,
       "height": 973,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mhndsbtj5beo9f"
     },
@@ -32,7 +32,7 @@
       "alt": "狗座雙支架｜穿越機相機固定座・高穩定安裝模組（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "狗座雙支架｜穿越機相機固定座・高穩定安裝模組（細節圖 2）",
       "width": 891,
       "height": 891,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mhndsbtt6bcw2f"
     }
@@ -51,57 +51,57 @@
     {
       "name": "透明",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 173,
+      "availability": "in_stock",
       "shopee_variation_id": "380225407795"
     },
     {
       "name": "黃",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 173,
+      "availability": "in_stock",
       "shopee_variation_id": "380225407796"
     },
     {
       "name": "螢光綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 173,
+      "availability": "in_stock",
       "shopee_variation_id": "380225407797"
     },
     {
       "name": "螢光菊",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 173,
+      "availability": "in_stock",
       "shopee_variation_id": "380225407792"
     },
     {
       "name": "黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 173,
+      "availability": "in_stock",
       "shopee_variation_id": "380225407793"
     },
     {
       "name": "白",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 173,
+      "availability": "in_stock",
       "shopee_variation_id": "380225407794"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 173,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "50452321274",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -212,7 +212,15 @@
       "price_min": 180,
       "price_max": 180,
       "stock_total": 300,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#狗座 #狗座支架 #雙支架 #穿越機配件 #固定支架 #fpv配件 #相機支架 #穩定安裝\n\n📦 注意事項\n\n⚠️務必備註顏色。客製化商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n狗座雙支架設計給需要更牢固相機固定的飛手，雙支撐結構提供更高穩定度，有效減少震動、畫面抖動及高速飛行的位移問題。適合各類穿越機、長航程機型與固定式攝影用途。\n\n產品特色\n雙支架結構\n坐姿式「狗座」設計，安裝穩固不晃動\n重量輕、耐用度佳，不影響飛行性能\n適合速度機、抗震機、山飛、攀升拍攝等用途",
+    "approved_at": "2026-10-22"
   }
 }

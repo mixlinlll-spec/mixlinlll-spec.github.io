@@ -53,7 +53,7 @@
       "alt": "FPV GPS 模組 M10 18x18mm 內建羅盤 電翼動力 Betaflight 穿越機 定位返航 GPS（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mt0m0i9ndlaa03"
     },
@@ -63,7 +63,7 @@
       "alt": "FPV GPS 模組 M10 18x18mm 內建羅盤 電翼動力 Betaflight 穿越機 定位返航 GPS（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mrqmc52xx81zde"
     },
@@ -73,7 +73,7 @@
       "alt": "FPV GPS 模組 M10 18x18mm 內建羅盤 電翼動力 Betaflight 穿越機 定位返航 GPS（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mt0d4y1pet558b"
     }
@@ -82,22 +82,22 @@
     {
       "name": "單顆",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 403,
+      "availability": "out_of_stock",
       "shopee_variation_id": "311350616144"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 403,
+  "price_display": "fixed",
+  "availability": "out_of_stock",
   "shopee_url": null,
   "shopee_item_id": "53965800714",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -159,8 +159,15 @@
       "price_min": 420,
       "price_max": 420,
       "stock_total": 0,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   },
   "notes": [
     "安裝前請確認飛控 UART 與羅盤 I2C 接線定義。",

@@ -24,7 +24,7 @@
       "alt": "BETAFPV Meteor75 Pro HD P1 到手飛套裝 FPV高清數傳穿越機 1S無刷 Whoop VR04（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-msr0sqr6txc536"
     },
@@ -34,7 +34,7 @@
       "alt": "BETAFPV Meteor75 Pro HD P1 到手飛套裝 FPV高清數傳穿越機 1S無刷 Whoop VR04（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-msr0sqraf5l0f6"
     },
@@ -44,7 +44,7 @@
       "alt": "BETAFPV Meteor75 Pro HD P1 到手飛套裝 FPV高清數傳穿越機 1S無刷 Whoop VR04（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-msr0sqtdc3yedc"
     },
@@ -54,23 +54,23 @@
       "alt": "BETAFPV Meteor75 Pro HD P1 到手飛套裝 FPV高清數傳穿越機 1S無刷 Whoop VR04（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-msr0sqr6vbwl61"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 13439,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "55767409373",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -117,7 +117,15 @@
       "price_min": 13999,
       "price_max": 13999,
       "stock_total": 10,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "BETAFPV Meteor75 Pro HD P1 到手飛套裝，搭載 P1 輕量化高清數位圖傳，適合想入門 FPV 高清數傳系統的新手玩家。套裝內含整機、遙控器、VR04HD眼鏡、電池、充電器與收納包，到手後完成基本設定即可開始練飛。\n【產品特色】\n✔ P1 輕量化高清數位圖傳\n✔ 75mm Whoop 尺寸，適合室內外練飛\n✔ 1S 無刷動力，操控靈活\n✔ 搭配 VR04HD 高清眼鏡\n✔ 搭配 LiteRadio 4 SE 遙控器\n✔ 附 LAVA II 580mAh 1S HV 電池\n✔ 附 1S 充電器與配件\n✔ 適合新手入門、室內飛行、日常練習\n【套裝內容】\nMeteor75 Pro P1 整機 ×1\nLiteRadio 4 SE 遙控器 ×1\nVR04HD 眼鏡 ×1\n18650 2600mAh 電池 ×2\nLAVA II 580mAh 1S HV 鋰電池 ×2\n1S 電顯充電器 ×1\nType-C 數據線 ×1\nGF 45mm 三葉槳 ×4\nMeteor75 Pro 機架 ×1\n頂蓋裝飾件 ×3\n十字螺絲刀 ×1\n整機使用說明書 ×1\n眼鏡使用說明書 ×1\n遙控器使用說明書 ×1\n4Pin 轉接線 ×1\nUSB Type-C 轉接板 ×1\n手提收納包 ×1\n【適用玩家】\nFPV 新手入門\nTinyWhoop 玩家\n室內練飛玩家\n高清數傳入門玩家\n想要完整套裝到手飛的玩家\n【注意事項】\n※ 本商品為 FPV 飛行套裝，仍需具備基本安全操作觀念。\n※ 飛行前請確認電池電量、槳葉方向、遙控器綁定與圖傳連線。\n※ 室內練習建議從低速模式開始，避免撞擊人員或物品。",
+    "approved_at": "2026-10-22"
   }
 }

@@ -16,7 +16,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#天劍科技\n#御劍8吋\n#御劍10吋\n#側護板\n#穿越機配件\n#FPV3D列印\n#TPU側板\n#穿越機防護\n#機架強化\n#FPV改裝\n\n【產品簡介】\n此側護板為天劍科技御劍系列（8吋 / 10吋）專用之3D列印改裝件，採用高韌性材質設計，強化機身側面保護與抗撞能力，避免砂石及草樹等進入飛塔\n\n【規格】\n適用機型：天劍科技 御劍 8吋 / 10吋\n重量：約 21g（依款式與填充率而異）\n包裝內容：側護板 ×2\n\n【安裝與注意】\n安裝前請確認機架型號與孔位；若需左右一對請在備註註明。\n安裝時建議使用適度熱床或輕微拉伸以確保卡合。\n3D列印件表面可能有層紋屬正常現象，不影響使用功能。",
+  "description": "【產品簡介】\n此側護板為天劍科技御劍系列（8吋 / 10吋）專用之3D列印改裝件，採用高韌性材質設計，強化機身側面保護與抗撞能力，避免砂石及草樹等進入飛塔\n\n【規格】\n適用機型：天劍科技 御劍 8吋 / 10吋\n重量：約 21g（依款式與填充率而異）\n包裝內容：側護板 ×2\n\n【安裝與注意】\n安裝前請確認機架型號與孔位；若需左右一對請在備註註明。\n安裝時建議使用適度熱床或輕微拉伸以確保卡合。\n3D列印件表面可能有層紋屬正常現象，不影響使用功能。",
   "specifications": [],
   "images": [
     {
@@ -25,7 +25,7 @@
       "alt": "天劍科技 御劍 8寸 / 10寸 通用側護板｜耐撞保護件｜高强度3D打印件（主圖）",
       "width": 964,
       "height": 964,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh5qaqcans3ye2"
     },
@@ -35,7 +35,7 @@
       "alt": "天劍科技 御劍 8寸 / 10寸 通用側護板｜耐撞保護件｜高强度3D打印件（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -45,7 +45,7 @@
       "alt": "天劍科技 御劍 8寸 / 10寸 通用側護板｜耐撞保護件｜高强度3D打印件（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mh5qaqchaknc87"
     }
@@ -54,57 +54,57 @@
     {
       "name": "白",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "259089193816"
     },
     {
       "name": "冰淇淋",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "244089198853"
     },
     {
       "name": "螢光綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "244089198854"
     },
     {
       "name": "透橘",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "244089198856"
     },
     {
       "name": "透明",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "244089198857"
     },
     {
       "name": "透黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "244089198858"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 211,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "56051522569",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -214,7 +214,15 @@
       "price_min": 220,
       "price_max": 220,
       "stock_total": 300,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#天劍科技\n#御劍8吋\n#御劍10吋\n#側護板\n#穿越機配件\n#FPV3D列印\n#TPU側板\n#穿越機防護\n#機架強化\n#FPV改裝\n\n【產品簡介】\n此側護板為天劍科技御劍系列（8吋 / 10吋）專用之3D列印改裝件，採用高韌性材質設計，強化機身側面保護與抗撞能力，避免砂石及草樹等進入飛塔\n\n【規格】\n適用機型：天劍科技 御劍 8吋 / 10吋\n重量：約 21g（依款式與填充率而異）\n包裝內容：側護板 ×2\n\n【安裝與注意】\n安裝前請確認機架型號與孔位；若需左右一對請在備註註明。\n安裝時建議使用適度熱床或輕微拉伸以確保卡合。\n3D列印件表面可能有層紋屬正常現象，不影響使用功能。",
+    "approved_at": "2026-10-22"
   }
 }

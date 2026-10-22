@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#BetaFPV #Meteor75Pro #75Pro收納盒 #Whoop收納 #穿越機攜帶盒 #1S電池收納 #3D列印 #TPU配件 #微型穿越機\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D 列印件可能有些微層紋屬正常現象⚠️\n\n專為 BETA Meteor75 Pro 設計的專用收納盒，內部配置穿越機槽位與 1S 電池固定架，能一次帶走機體＋多顆電池，外出飛行更方便。盒體具良好保護性，避免機體在包包中被壓損。\n\n產品特色\nMeteor75 Pro 專屬尺寸，完美卡位不晃動\n一體成型防撞設計，外出攜帶更安心\n最多存放13塊550MAH LAVA電池\n收納盒中間可置放 充電器",
+  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D 列印件可能有些微層紋屬正常現象⚠️\n\n專為 BETA Meteor75 Pro 設計的專用收納盒，內部配置穿越機槽位與 1S 電池固定架，能一次帶走機體＋多顆電池，外出飛行更方便。盒體具良好保護性，避免機體在包包中被壓損。\n\n產品特色\nMeteor75 Pro 專屬尺寸，完美卡位不晃動\n一體成型防撞設計，外出攜帶更安心\n最多存放13塊550MAH LAVA電池\n收納盒中間可置放 充電器",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "BETA Meteor75 Pro 專用收納盒｜穿越機＋1S電池一體式保護盒｜（主圖）",
       "width": 884,
       "height": 884,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mhj6tfkp1sldfc"
     },
@@ -32,7 +32,7 @@
       "alt": "BETA Meteor75 Pro 專用收納盒｜穿越機＋1S電池一體式保護盒｜（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "BETA Meteor75 Pro 專用收納盒｜穿越機＋1S電池一體式保護盒｜（細節圖 2）",
       "width": 990,
       "height": 990,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mhj6u1h0onba3f"
     }
@@ -51,64 +51,64 @@
     {
       "name": "白",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 336,
+      "availability": "in_stock",
       "shopee_variation_id": "415209366198"
     },
     {
       "name": "透黃",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 336,
+      "availability": "in_stock",
       "shopee_variation_id": "415209366199"
     },
     {
       "name": "透橘",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 336,
+      "availability": "in_stock",
       "shopee_variation_id": "415209366200"
     },
     {
       "name": "螢光綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 336,
+      "availability": "in_stock",
       "shopee_variation_id": "415209366201"
     },
     {
       "name": "冰淇淋",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 365,
+      "availability": "in_stock",
       "shopee_variation_id": "415209366202"
     },
     {
       "name": "透明",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 336,
+      "availability": "in_stock",
       "shopee_variation_id": "415209366203"
     },
     {
       "name": "黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 336,
+      "availability": "in_stock",
       "shopee_variation_id": "415209366204"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 336,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "54152148395",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -232,7 +232,15 @@
       "price_min": 350,
       "price_max": 380,
       "stock_total": 339,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#BetaFPV #Meteor75Pro #75Pro收納盒 #Whoop收納 #穿越機攜帶盒 #1S電池收納 #3D列印 #TPU配件 #微型穿越機\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D 列印件可能有些微層紋屬正常現象⚠️\n\n專為 BETA Meteor75 Pro 設計的專用收納盒，內部配置穿越機槽位與 1S 電池固定架，能一次帶走機體＋多顆電池，外出飛行更方便。盒體具良好保護性，避免機體在包包中被壓損。\n\n產品特色\nMeteor75 Pro 專屬尺寸，完美卡位不晃動\n一體成型防撞設計，外出攜帶更安心\n最多存放13塊550MAH LAVA電池\n收納盒中間可置放 充電器",
+    "approved_at": "2026-10-22"
   }
 }

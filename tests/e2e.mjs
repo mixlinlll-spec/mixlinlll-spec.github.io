@@ -115,33 +115,39 @@ console.log('4. 商品搜尋、篩選與網址狀態（草稿預覽資料）');
   await page.context().close();
 }
 
-console.log('5. 商品詳情（草稿預覽）');
+console.log('5. 商品詳情（正式版）：價格、供貨、變體');
 {
   const page = await newPage(390);
-  await page.goto(PRE + '/product/fdi-f722-v5-60a-8-blheli32/');
+  await page.goto(PUB + '/product/fdi-f722-v5-60a-8-blheli32/');
   ok(await page.locator('h1').textContent().then(t => /F722 V5/.test(t)), '詳情頁標題');
-  ok(await page.locator('.pd-price').textContent() === '詢價', '無價格顯示「詢價」，不顯示 0 元');
-  ok(await page.locator('.pd-avail').textContent() === '供貨狀況請洽詢', '無庫存資料顯示「供貨狀況請洽詢」');
+  ok(await page.locator('.pd-price').textContent() === 'NT$ 1,325 起', `多規格顯示最低價（蝦皮 1,380 −4%）：${await page.locator('.pd-price').textContent()}`);
+  ok(await page.locator('.pd-avail').textContent() === '現貨', '依快照庫存顯示「現貨」');
+  const rows = await page.$$eval('.pd-block table.table:not(.spec) tbody tr', trs => trs.map(t => [...t.children].map(c => c.textContent.trim())));
+  ok(rows.length === 3 && rows.some(r => r[0].includes('全套飛塔') && r[2] === 'NT$ 2,669'), `變體價格逐一套用（全套飛塔 2,780 −4% = 2,669）`);
+  ok(!/NT\$\s*0(?![\d,])/.test(await page.textContent('main')), '沒有 0 元');
   ok(await page.isVisible('.sticky-cta'), '手機底部固定 CTA');
-  ok(await page.$eval('meta[name=robots]', m => m.content).then(c => c.includes('noindex')), '預覽頁 noindex');
+  ok(!(await page.$eval('meta[name=robots]', m => m.content).catch(() => '')).includes('noindex'), '公開商品頁可被索引');
+  const lds = await page.$$eval('script[type="application/ld+json"]', s => s.map(x => JSON.parse(x.textContent)));
+  ok(lds.some(x => x['@type'] === 'Product' && x.brand), '輸出 Product 結構化資料');
   await page.context().close();
 }
 
-console.log('6. 正式版：草稿不外洩、聯絡資訊正確');
+console.log('6. 正式版：238 件上架、rejected 不外洩、聯絡資訊正確');
 {
   const page = await newPage(1280);
   await page.goto(PUB + '/products/');
-  ok(await page.locator('.pcard').count() === 0, '正式版商品列表沒有任何草稿');
-  ok(await page.isVisible('#catalog-empty'), '正式版顯示「商品資料整理中」空狀態');
-  const r = await page.goto(PUB + '/product/geprc-moz7-v2-o4-pro-7/');
-  ok(r.status() === 404, '草稿詳情頁在正式版為 404');
+  ok(await page.locator('.pcard').count() === 238, '正式版商品列表 238 件');
+  ok(await page.locator('.pcard[data-id="sp-56302849088"], .pcard[data-id="sp-58004035504"]').count() === 0, '非 FPV 玩具（rejected）不出現');
+  ok(await page.locator('.pcard .badge-draft').count() === 0, '沒有「草稿」標籤');
+  const r = await page.goto(PUB + '/product/fpv-v1/');
+  ok(r.status() === 404, 'rejected 商品頁在正式版為 404');
   await page.goto(PUB + '/contact/');
   ok(await page.getAttribute('.contact-line a.btn-line', 'href') === 'https://lin.ee/WIUCkWP', 'LINE 按鈕連到 https://lin.ee/WIUCkWP');
   ok(await page.isVisible('.qr img'), 'LINE QR Code 顯示');
   ok(await page.locator('a[href="https://shopee.tw/mixlin"]').count() > 0, '蝦皮賣場連結');
   ok(await page.locator('a[href="#"]').count() === 0, '沒有 href="#" 假連結');
   const sm = await (await page.request.get(PUB + '/sitemap.xml')).text();
-  ok(!sm.includes('/product/'), 'sitemap 不含草稿商品');
+  ok((sm.match(/\/product\//g) || []).length === 238 && !sm.includes('/product/fpv-v1/'), 'sitemap 含 238 件公開商品、不含 rejected');
   await page.goto(PUB + '/fpv-help.html');
   ok(/共\s*91\s*則/.test(await page.textContent('body')), '舊網址 /fpv-help.html 正常，仍為 91 則');
   await page.goto(PUB + '/');
@@ -241,53 +247,49 @@ console.log('10. 營業登記地址：非實體門市提示（手機版）與結
   await page.context().close();
 }
 
-console.log('11. 首批商品草稿頁（預覽）：作品介紹模式與待補資訊');
+console.log('11. 合規限制移除：整機直接販售');
 {
   const page = await newPage(390);
   for (const slug of ['huan-5-fpv-freestyle-f722-2207', 'gobu-3-5-fpv-f722-aio-40a', 'geprc-moz7-v2-o4-pro-7']) {
-    await page.goto(PRE + `/product/${slug}/`);
+    await page.goto(PUB + `/product/${slug}/`);
     const info = await page.textContent('.pd-info');
-    ok(/作品介紹/.test(info) && !/到蝦皮購買/.test(info) && !(await page.locator('.pd-price').count()), `${slug} 為作品介紹：無價格、無購買按鈕`);
-    const lds = await page.$$eval('script[type="application/ld+json"]', s => s.map(x => JSON.parse(x.textContent)));
-    ok(!lds.some(x => x['@type'] === 'Product'), `${slug} 不輸出 Product 結構化資料`);
-    ok(/合規待確認：NCC/.test(await page.textContent('.review-box')), `${slug} 預覽顯示合規待確認`);
+    ok(/NT\$/.test(await page.locator('.pd-price').textContent()) && !/作品介紹/.test(info), `${slug} 顯示價格，非作品介紹`);
+    ok(!/合規|NCC|BSMI/.test(await page.textContent('main')), `${slug} 沒有合規限制文字`);
   }
-  await page.goto(PRE + '/product/fdi-f722-v5-60a-8-blheli32/');
-  ok((await page.locator('.spec tr').count()) >= 15, 'FDI 堆疊：規格表已由商品說明整理');
-  ok((await page.locator('.pd-block h2', { hasText: '規格選項' }).count()) === 1 && /堆疊組/.test(await page.textContent('main')), 'FDI 堆疊：列出 3 種規格變體');
-  ok(/待補：/.test(await page.textContent('.review-box')), '預覽頁列出待補資料');
-  ok(!/保固|私訊|本賣場/.test(await page.textContent('main .prose')), '商品說明已移除保固與蝦皮站內用語');
-  await page.goto(PRE + '/products/complete-drones/');
-  ok(/作品介紹/.test(await page.textContent('.pcard[data-id="sp-50367700235"]')), '列表商品卡顯示「作品介紹」而非價格');
+  await page.goto(PUB + '/products/complete-drones/');
+  ok(/NT\$/.test(await page.textContent('.pcard[data-id="sp-50367700235"]')), '列表商品卡顯示價格');
+  await page.goto(PUB + '/product/fdi-f722-v5-60a-8-blheli32/');
+  ok((await page.locator('.spec tr').count()) >= 15, 'FDI 堆疊：規格表');
+  ok(!/■ 保固|私訊|本賣場/.test(await page.textContent('main .prose')), '商品說明已移除店家保固條款與蝦皮站內用語');
+  ok(!(await page.locator('.review-box').count()), '公開頁不顯示內部審核資訊');
   await page.context().close();
 }
 
-console.log('12. 蝦皮匯入圖片與快照（預覽）／正式版不外洩');
+console.log('12. 蝦皮匯入圖片（正式版）／rejected 圖片不外洩');
 {
   const page = await newPage(390);
-  await page.goto(PRE + '/product/sirius-2306-5-1860kv-5-fpv-freestyle/');
+  await page.goto(PUB + '/product/sirius-2306-5-1860kv-5-fpv-freestyle/');
   const main = page.locator('.gallery-main img');
   ok(await main.evaluate(i => i.complete && i.naturalWidth > 0), '商品主圖已載入');
   ok(await page.locator('.gallery-thumbs button').count() >= 2, '細節圖縮圖可切換');
   await page.locator('.gallery-thumbs button').nth(1).click();
   ok(await page.getAttribute('.gallery-thumbs button >> nth=1', 'aria-pressed') === 'true', '點擊縮圖切換主圖');
-  ok(/使用權待 EWP 確認/.test(await page.textContent('.review-box')), '預覽標示圖片使用權待確認');
-  ok(/蝦皮價格／庫存快照/.test(await page.textContent('.review-box')), '預覽顯示價格庫存快照（收合）');
-  ok(await page.locator('.pd-price').textContent() === '詢價', '快照未套用：公開價格仍為「詢價」');
-  await page.goto(PRE + '/product/' + 'talon-stick-fpv-8k-abs' + '/');
+  ok(/NT\$/.test(await page.locator('.pd-price').textContent()), '顯示官網價格');
+  await page.goto(PUB + '/product/talon-stick-fpv-8k-abs/');
   ok(await page.locator('.var-thumb').count() > 0, '規格選項圖顯示於變體表');
-  await page.goto(PRE + '/products/motors-props/');
+  await page.goto(PUB + '/products/motors-props/');
   const firstImg = page.locator('.catalog-grid .pcard:visible img').first();
   ok(await firstImg.evaluate(i => i.complete && i.naturalWidth > 0), '列表商品卡顯示主圖');
-  for (const u of ['/assets/img/products/sp-42781322918/01.webp', '/assets/img/products/sp-42781322918/01-480.webp']) {
+  ok((await page.request.get(PUB + '/assets/img/products/sp-42781322918/01.webp')).status() === 200, '公開商品圖片可存取');
+  for (const u of ['/assets/img/products/sp-56302849088/01.webp', '/assets/img/products/sp-58004035504/01-480.webp']) {
     const r = await page.request.get(PUB + u);
-    ok(r.status() === 404, `正式網站不提供未公開商品圖片 ${u} → ${r.status()}`);
+    ok(r.status() === 404, `正式網站不提供 rejected 商品圖片 ${u} → ${r.status()}`);
   }
   await page.context().close();
 }
 
 console.log('13. 手機版面穩定（CLS < 0.1）');
-for (const u of [PUB + '/', PUB + '/products/', PUB + '/products/complete-drones/', PRE + '/products/', PRE + '/product/geprc-moz7-v2-o4-pro-7/', PUB + '/contact/']) {
+for (const u of [PUB + '/', PUB + '/products/', PUB + '/products/complete-drones/', PRE + '/products/', PUB + '/product/geprc-moz7-v2-o4-pro-7/', PUB + '/contact/']) {
   const page = await newPage(390);
   await page.addInitScript(() => { window.__cls = 0; new PerformanceObserver(l => { for (const e of l.getEntries()) if (!e.hadRecentInput) window.__cls += e.value; }).observe({ type: 'layout-shift', buffered: true }); });
   await page.goto(u, { waitUntil: 'networkidle' });

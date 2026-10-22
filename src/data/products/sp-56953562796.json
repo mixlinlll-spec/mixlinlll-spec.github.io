@@ -22,7 +22,7 @@
       "alt": "DJI O4 Lite 圖傳散熱套件 附 22mm 鏡頭轉接座 支援 O3 鏡頭孔位機架（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mimtul8i3w8z01"
     },
@@ -32,7 +32,7 @@
       "alt": "DJI O4 Lite 圖傳散熱套件 附 22mm 鏡頭轉接座 支援 O3 鏡頭孔位機架（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mimtul8qghs66b"
     },
@@ -42,7 +42,7 @@
       "alt": "DJI O4 Lite 圖傳散熱套件 附 22mm 鏡頭轉接座 支援 O3 鏡頭孔位機架（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mimtul8k95he72"
     },
@@ -52,7 +52,7 @@
       "alt": "DJI O4 Lite 圖傳散熱套件 附 22mm 鏡頭轉接座 支援 O3 鏡頭孔位機架（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mimtul8uy1381a"
     },
@@ -62,23 +62,23 @@
       "alt": "DJI O4 Lite 圖傳散熱套件 附 22mm 鏡頭轉接座 支援 O3 鏡頭孔位機架（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mimtul8gfhty32"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 191,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "56953562796",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -119,7 +119,15 @@
       "price_min": 199,
       "price_max": 199,
       "stock_total": 5,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "DJI O4 Lite 散熱套件\nO4 Lite 圖傳散熱模組\nO4 Lite 22mm 鏡頭轉接\nO4 轉 O3 鏡頭座\nDJI O4 Lite 升級配件\nFPV 圖傳散熱改裝\nO4 Lite 過熱 解決\nDJI O4 相機轉接座\n22mm FPV 鏡頭座\nFPV 無人機 3D 列印配件\n\n⚠️ 3D 列印／CNC 件可能有些微紋路或加工痕跡，屬正常現象不影響使用\n保持包裝及產品的完整性，提供7天鑑賞期服務 非試用期\n\nDJI O4 Lite 圖傳雖然體積小、畫質好，但原廠散熱較弱、鏡頭又是 14mm 尺寸，很多 O3 機架想升級時不是容易過熱，就是孔位不合。這組「O4 Lite 圖傳散熱套件 + 22mm 鏡頭轉接」一次幫你解決兩個問題：底部鋁件／碳板搭配導熱貼，協助把熱量導出，降低 O4 Lite 過熱降功率的風險，同時把原本 14mm 鏡頭轉成 22mm 規格，方便安裝在支援 O3 孔位的機架上。🛩️\n​\n產品特色 ✨\n散熱保護模組：搭配 1mm 導熱貼與專用散熱板，有效將 O4 Lite 主要發熱區塊導熱到外殼，延緩高溫保護或自動斷訊情況發生。🧊\n​\n鏡頭 14 → 22mm 轉接：內部卡位對應 O4 Lite 原始鏡頭，外部尺寸轉為約 22mm，方便安裝在原本為 O3 / 22mm 鏡頭設計的機架相機座上，減少改碳、墊片土砌的麻煩。📐\n多機通用：只要是支援 O3 鏡頭寬度與 O4 Lite 本體安裝空間的機架，多數都能直接使用，適合 4–7 吋 Freestyle / LR 機。🛠️\n​\n保護＋外觀兼具：除散熱外亦提供一定防護效果，減少硬著陸時直接撞擊圖傳與鏡頭的風險，外觀也更一體化。",
+    "approved_at": "2026-10-22"
   }
 }

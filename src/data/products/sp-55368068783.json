@@ -24,7 +24,7 @@
       "alt": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mtbocxdqsgec25"
     },
@@ -34,7 +34,7 @@
       "alt": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mtbocxdqr1tw37"
     },
@@ -44,7 +44,7 @@
       "alt": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtbocxdqo8p0ce"
     },
@@ -54,7 +54,7 @@
       "alt": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtbocxdqpn9gf4"
     }
@@ -63,22 +63,22 @@
     {
       "name": "580mah/BT2.0",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 767,
+      "availability": "in_stock",
       "shopee_variation_id": "446529136141"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 767,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "55368068783",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -125,7 +125,15 @@
       "price_min": 799,
       "price_max": 799,
       "stock_total": 2,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "【BETAFPV LAVA II 1S 鋰電池】",
+    "approved_at": "2026-10-22"
   }
 }

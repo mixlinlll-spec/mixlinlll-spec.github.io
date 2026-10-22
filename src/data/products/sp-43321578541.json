@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#快充模組 #降壓模組 #PD快充 #航模電源 #穿越機電源 #65W快充 #外場電包 #智慧快充 #USBTypeC #行動電源模組\n\n65W 降壓快充模組｜多口快充智慧解決方案\n\n🌟 產品亮點\n智能降壓技術，輸入電壓範圍 8–30V\n多電壓檔位輸出，兼容多類設備\n採用優質 3518 晶片板，效能穩定\n\n65W C口模組\n支援輸出：5V / 9V / 12V / 20V\n最大輸出功率：65W\n\n⚡ 使用指南\n確認電池 S 數（輸入電壓需 8–30V）\n正確接入電池（請勿接反！）\n自動識別設備，智慧輸出匹配電壓",
+  "description": "65W 降壓快充模組｜多口快充智慧解決方案\n\n🌟 產品亮點\n智能降壓技術，輸入電壓範圍 8–30V\n多電壓檔位輸出，兼容多類設備\n採用優質 3518 晶片板，效能穩定\n\n65W C口模組\n支援輸出：5V / 9V / 12V / 20V\n最大輸出功率：65W\n\n⚡ 使用指南\n確認電池 S 數（輸入電壓需 8–30V）\n正確接入電池（請勿接反！）\n自動識別設備，智慧輸出匹配電壓",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mf3rsl73abk9bf"
     },
@@ -32,7 +32,7 @@
       "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mf3rsl737ifdb9"
     },
@@ -42,7 +42,7 @@
       "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf3rsl738wztab"
     },
@@ -52,7 +52,7 @@
       "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf3rsl79swem65"
     },
@@ -62,7 +62,7 @@
       "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mfcq1hcfuakvb9"
     },
@@ -72,7 +72,7 @@
       "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（細節圖 5）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mfcq1kkqy6mna9"
     }
@@ -81,80 +81,80 @@
     {
       "name": "紫",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "296758962752",
       "image": {
         "src": "/assets/img/products/sp-43321578541/opt-05-480.webp",
         "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（規格：紫）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mf3rwl0c8o3x8a"
       }
     },
     {
       "name": "紅",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "296758962753",
       "image": {
         "src": "/assets/img/products/sp-43321578541/opt-01-480.webp",
         "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（規格：紅）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mf3rvg4ig0ekec"
       }
     },
     {
       "name": "黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "296758962754",
       "image": {
         "src": "/assets/img/products/sp-43321578541/opt-02-480.webp",
         "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（規格：黑）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf3rsl79swem65"
       }
     },
     {
       "name": "黃",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "296758962750",
       "image": {
         "src": "/assets/img/products/sp-43321578541/opt-03-480.webp",
         "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（規格：黃）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf3rvmkm7dvu95"
       }
     },
     {
       "name": "綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "296758962751",
       "image": {
         "src": "/assets/img/products/sp-43321578541/opt-04-480.webp",
         "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（規格：綠）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf3rw1qagw0f2f"
       }
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 211,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "43321578541",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -254,7 +254,15 @@
       "price_min": 220,
       "price_max": 220,
       "stock_total": 38,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#快充模組 #降壓模組 #PD快充 #航模電源 #穿越機電源 #65W快充 #外場電包 #智慧快充 #USBTypeC #行動電源模組\n\n65W 降壓快充模組｜多口快充智慧解決方案\n\n🌟 產品亮點\n智能降壓技術，輸入電壓範圍 8–30V\n多電壓檔位輸出，兼容多類設備\n採用優質 3518 晶片板，效能穩定\n\n65W C口模組\n支援輸出：5V / 9V / 12V / 20V\n最大輸出功率：65W\n\n⚡ 使用指南\n確認電池 S 數（輸入電壓需 8–30V）\n正確接入電池（請勿接反！）\n自動識別設備，智慧輸出匹配電壓",
+    "approved_at": "2026-10-22"
   }
 }

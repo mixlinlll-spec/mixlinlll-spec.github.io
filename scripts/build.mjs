@@ -257,7 +257,7 @@ function productPages() {
     const notes = p.notes?.length ? `<section class="pd-block"><h2>注意事項</h2><ul class="notes">${p.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></section>` : '';
     const descHtml = p.description ? `<section class="pd-block"><h2>商品說明</h2><div class="prose">${p.description.split(/\n{2,}/).map(par => `<p>${esc(par).replace(/\n/g, '<br>')}</p>`).join('')}</div></section>` : '';
     const rv = p.review || {};
-    const reviewItems = [...(rv.missing || []).map(m => `待補：${m}`), ...(p.compliance?.status === 'pending' ? (p.compliance.items || []).map(c => `合規待確認：${c.type}｜${c.reason}`) : []), ...(rv.notes || [])];
+    const reviewItems = [...(rv.missing || []).map(m => `待補：${m}`), ...(rv.notes || [])];
     const snap = rv.shopee_sales_snapshot;
     const snapHtml = !p.published && snap?.rows?.length ? `<details class="snap"><summary>蝦皮價格／庫存快照（${esc(snap.captured_at.slice(0, 10))}，未公開、待核對）</summary><div class="table-wrap"><table class="table"><thead><tr><th scope="col">規格</th><th scope="col">價格</th><th scope="col">庫存</th></tr></thead><tbody>${snap.rows.map(r => `<tr><td>${esc(r.name || '（單一規格）')}</td><td>${r.price ?? '—'}</td><td>${r.stock ?? '—'}</td></tr>`).join('')}</tbody></table></div></details>` : '';
     const reviewBox = !p.published && (reviewItems.length || snapHtml) ? `<aside class="review-box"><strong>草稿待核對（僅預覽版顯示）${rv.batch ? `｜首批 ${esc(rv.batch.replace('first-', ''))} 組` : ''}</strong><ul>${reviewItems.map(n => `<li>${esc(n)}</li>`).join('')}</ul>${(p.images || []).some(i => i.rights === 'unverified') ? '<p>圖片由蝦皮匯入，使用權待 EWP 確認（rights: unverified）。</p>' : ''}${snapHtml}</aside>` : '';
@@ -279,7 +279,7 @@ function productPages() {
       <p class="pd-avail avail-${attr(p.availability)}">${esc(availabilityText(p.availability))}</p>`}
       ${p.short_description ? `<p class="pd-short">${esc(p.short_description)}</p>` : ''}
       <div class="actions pd-actions">${ctas}${!shopeeBtn && !line ? '<a class="btn" href="/contact/">聯絡我們</a>' : ''}</div>
-      <p class="fine">${showcase ? '' : p.price_display === 'inquiry' ? '價格依配置與供貨狀況報價。' : '網站標示價格僅供參考，實際成交以蝦皮或報價單為準。'}商品頁出現的品牌名稱僅用於標示商品，不代表原廠代理或授權。</p>
+      <p class="fine">${showcase ? '' : p.price_display === 'inquiry' ? '價格依配置與供貨狀況報價。' : '網站標示為官網售價（已反映不經平台的價差），訂購前請透過 LINE 確認規格、庫存與金額。'}商品頁出現的品牌名稱僅用於標示商品，不代表原廠代理或授權。</p>
       ${reviewBox}
     </div>
   </div>

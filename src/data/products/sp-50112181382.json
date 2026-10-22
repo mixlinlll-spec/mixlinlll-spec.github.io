@@ -16,7 +16,7 @@
     "3S"
   ],
   "short_description": "",
-  "description": "#MGC #天狼W #1103 #8000KV #無刷馬達 #FPV #穿越機 #牙籤機 #Freestyle #JENOPOCKET #戈布 #2S穿越機 #3S穿越機 #2512槳葉 #Whoop #Toothpick #FPVDrone #無人機 #花飛機 #電翼動力\n\nMGC 天狼W 1103 8000KV 無刷馬達專為2~3吋FPV穿越機打造，採用9N12P高效率磁路結構，兼具爆發力、油門解析度與飛行效率。適合2.5吋Freestyle、牙籤機及輕量化數位穿越機使用。\n\nJENO POCKET 戈布原廠指定動力系統，搭配2512三葉槳可獲得優異的加速性能與靈活操控手感。\n\n【產品特色】\n✔ 1103高性能無刷馬達\n✔ 8000KV高轉速設計\n✔ 9N12P高效率磁路結構\n✔ 穩定動力輸出\n✔ 提升飛行靈敏度\n✔ 輕量化設計\n✔ 適用2S 3S動力\n✔ JENO POCKET原廠搭配動力",
+  "description": "MGC 天狼W 1103 8000KV 無刷馬達專為2~3吋FPV穿越機打造，採用9N12P高效率磁路結構，兼具爆發力、油門解析度與飛行效率。適合2.5吋Freestyle、牙籤機及輕量化數位穿越機使用。\n\nJENO POCKET 戈布原廠指定動力系統，搭配2512三葉槳可獲得優異的加速性能與靈活操控手感。\n\n【產品特色】\n✔ 1103高性能無刷馬達\n✔ 8000KV高轉速設計\n✔ 9N12P高效率磁路結構\n✔ 穩定動力輸出\n✔ 提升飛行靈敏度\n✔ 輕量化設計\n✔ 適用2S 3S動力\n✔ JENO POCKET原廠搭配動力",
   "specifications": [],
   "images": [
     {
@@ -25,7 +25,7 @@
       "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mpg37q00rlz62d"
     },
@@ -35,7 +35,7 @@
       "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mpg37pzzziml91"
     },
@@ -45,7 +45,7 @@
       "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mpg37pzv2j2jec"
     },
@@ -55,23 +55,23 @@
       "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mpg37pzyw6ps38"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 365,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "50112181382",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -116,7 +116,15 @@
       "price_min": 380,
       "price_max": 380,
       "stock_total": 23,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#MGC #天狼W #1103 #8000KV #無刷馬達 #FPV #穿越機 #牙籤機 #Freestyle #JENOPOCKET #戈布 #2S穿越機 #3S穿越機 #2512槳葉 #Whoop #Toothpick #FPVDrone #無人機 #花飛機 #電翼動力\n\nMGC 天狼W 1103 8000KV 無刷馬達專為2~3吋FPV穿越機打造，採用9N12P高效率磁路結構，兼具爆發力、油門解析度與飛行效率。適合2.5吋Freestyle、牙籤機及輕量化數位穿越機使用。\n\nJENO POCKET 戈布原廠指定動力系統，搭配2512三葉槳可獲得優異的加速性能與靈活操控手感。\n\n【產品特色】\n✔ 1103高性能無刷馬達\n✔ 8000KV高轉速設計\n✔ 9N12P高效率磁路結構\n✔ 穩定動力輸出\n✔ 提升飛行靈敏度\n✔ 輕量化設計\n✔ 適用2S 3S動力\n✔ JENO POCKET原廠搭配動力",
+    "approved_at": "2026-10-22"
   }
 }

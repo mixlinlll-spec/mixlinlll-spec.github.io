@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "•\t#Boslipo綁帶\n•\t#穿越機電池帶\n•\t#FPV防滑扎帶\n•\t#魔術貼綁帶\n•\t#1S2S電池固定\n•\t#四軸無人機配件\n•\t#反扣電池帶\n•\t#航模綁帶\n•\t#電池防滑\n•\t#台灣現貨",
+  "description": "",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "Boslipo博氏 穿越機電池綁帶 FPV四軸無人機防滑魔術貼 反扣扎帶（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlye99hukb9kab"
     },
@@ -32,7 +32,7 @@
       "alt": "Boslipo博氏 穿越機電池綁帶 FPV四軸無人機防滑魔術貼 反扣扎帶（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mlye8kx4xudfd9"
     },
@@ -42,7 +42,7 @@
       "alt": "Boslipo博氏 穿越機電池綁帶 FPV四軸無人機防滑魔術貼 反扣扎帶（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlye8ky8xmgz02"
     },
@@ -52,7 +52,7 @@
       "alt": "Boslipo博氏 穿越機電池綁帶 FPV四軸無人機防滑魔術貼 反扣扎帶（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mlye8l1pips134"
     }
@@ -61,36 +61,36 @@
     {
       "name": "橘15x185mm",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 43,
+      "availability": "out_of_stock",
       "shopee_variation_id": "355653828746"
     },
     {
       "name": "藍15x185mm",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 43,
+      "availability": "out_of_stock",
       "shopee_variation_id": "355653828747"
     },
     {
       "name": "黑15x185mm",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 43,
+      "availability": "out_of_stock",
       "shopee_variation_id": "355653828745"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 43,
+  "price_display": "fixed",
+  "availability": "out_of_stock",
   "shopee_url": null,
   "shopee_item_id": "48307372063",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -166,7 +166,15 @@
       "price_min": 45,
       "price_max": 45,
       "stock_total": 0,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "•\t#Boslipo綁帶\n•\t#穿越機電池帶\n•\t#FPV防滑扎帶\n•\t#魔術貼綁帶\n•\t#1S2S電池固定\n•\t#四軸無人機配件\n•\t#反扣電池帶\n•\t#航模綁帶\n•\t#電池防滑\n•\t#台灣現貨",
+    "approved_at": "2026-10-22"
   }
 }

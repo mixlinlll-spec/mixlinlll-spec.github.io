@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#DJIGoggles3 #Goggles3配件 #電池綁帶 #FPV頭顯 #穿越機配件 #DJIFPV #FPV飛手 #電池固定帶 #頭顯電池側掛 #靈雀FPV\n\n專為 DJI Goggles 3 設計的電池固定綁帶！\n有效將電池牢牢固定在頭顯側邊，避免滑落、晃動\n產品特色\n\n✔ 專用尺寸：完全貼合 DJI Goggles 3 \n✔ 穩定固定：避免電池移位、鬆脫\n✔ 高韌性材質：不易斷、不易鬆\n\n適用範圍\nDJI Goggles 3",
+  "description": "專為 DJI Goggles 3 設計的電池固定綁帶！\n有效將電池牢牢固定在頭顯側邊，避免滑落、晃動\n產品特色\n\n✔ 專用尺寸：完全貼合 DJI Goggles 3\n✔ 穩定固定：避免電池移位、鬆脫\n✔ 高韌性材質：不易斷、不易鬆\n\n適用範圍\nDJI Goggles 3",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "DJI Goggles 3 電池綁帶｜goggles電池固定帶｜穿越機 FPV 頭顯配件｜穩固不滑落 電池收納支撐帶（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mh5snvzn3g9acd"
     },
@@ -32,7 +32,7 @@
       "alt": "DJI Goggles 3 電池綁帶｜goggles電池固定帶｜穿越機 FPV 頭顯配件｜穩固不滑落 電池收納支撐帶（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "DJI Goggles 3 電池綁帶｜goggles電池固定帶｜穿越機 FPV 頭顯配件｜穩固不滑落 電池收納支撐帶（細節圖 2）",
       "width": 930,
       "height": 930,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh5snvyycw7c6d"
     }
@@ -51,57 +51,57 @@
     {
       "name": "紫",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 115,
+      "availability": "in_stock",
       "shopee_variation_id": "435139834120"
     },
     {
       "name": "黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 115,
+      "availability": "in_stock",
       "shopee_variation_id": "435139834121"
     },
     {
       "name": "白",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 115,
+      "availability": "in_stock",
       "shopee_variation_id": "435139834116"
     },
     {
       "name": "黃",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 115,
+      "availability": "in_stock",
       "shopee_variation_id": "435139834117"
     },
     {
       "name": "綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 115,
+      "availability": "in_stock",
       "shopee_variation_id": "435139834118"
     },
     {
       "name": "橘",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 115,
+      "availability": "in_stock",
       "shopee_variation_id": "435139834119"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 115,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "52101522984",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -210,7 +210,15 @@
       "price_min": 120,
       "price_max": 120,
       "stock_total": 113,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#DJIGoggles3 #Goggles3配件 #電池綁帶 #FPV頭顯 #穿越機配件 #DJIFPV #FPV飛手 #電池固定帶 #頭顯電池側掛 #靈雀FPV\n\n專為 DJI Goggles 3 設計的電池固定綁帶！\n有效將電池牢牢固定在頭顯側邊，避免滑落、晃動\n產品特色\n\n✔ 專用尺寸：完全貼合 DJI Goggles 3 \n✔ 穩定固定：避免電池移位、鬆脫\n✔ 高韌性材質：不易斷、不易鬆\n\n適用範圍\nDJI Goggles 3",
+    "approved_at": "2026-10-22"
   }
 }

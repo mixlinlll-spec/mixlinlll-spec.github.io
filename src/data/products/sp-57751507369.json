@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#1S電池 #1S電池收納 #1S電池盒 #BT20電池 #PH20電池 #Tinywhoop #穿越機電池 #無人機電池盒 #電池保護盒 #3D列印\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n你的 1S 微型穿越機電池常常散在背包裡？\n出門飛行時電池放口袋又容易壓壞？\n這款 6格及20格翻蓋式 1S 電池收納盒，讓你的 1S 電池整齊、有序、安全好攜帶。\n\n‼️\nM3x20螺絲 (3個)\nM3x25螺絲帶螺帽 (3個)\n20格版本\n商品特色\n✔ 20格收納，一次帶齊一天飛行量\n✔ 翻蓋式設計，防掉落、防灰塵、防壓破\n✔ 格槽剛性適中，BT2.0／PH2.0 都能穩固放置\n✔ 輕量化 3D 列印，不增加包包負擔\n✔ 適合外出飛行、日常整理電池、背包分類\n\n‼️請自備一個M2x10螺絲 + M2螺母\n6格板本\n✔ 6格收納，適合整理分類你的武器庫\n✔ 翻蓋式設計，防掉落、防灰塵、防壓破\n\n適用電池\n支持電池尺寸 12x7x66mm 例如 格式金磚300mah\n1S 微型穿越機電池\n\n‼️請備註顏色，否則默認全黑 \n顏色可選 或者 混搭，請聊聊 需要雙色酌收+20耗材費",
+  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n你的 1S 微型穿越機電池常常散在背包裡？\n出門飛行時電池放口袋又容易壓壞？\n這款 6格及20格翻蓋式 1S 電池收納盒，讓你的 1S 電池整齊、有序、安全好攜帶。\n\n‼️\nM3x20螺絲 (3個)\nM3x25螺絲帶螺帽 (3個)\n20格版本\n商品特色\n✔ 20格收納，一次帶齊一天飛行量\n✔ 翻蓋式設計，防掉落、防灰塵、防壓破\n✔ 格槽剛性適中，BT2.0／PH2.0 都能穩固放置\n✔ 輕量化 3D 列印，不增加包包負擔\n✔ 適合外出飛行、日常整理電池、背包分類\n\n‼️請自備一個M2x10螺絲 + M2螺母\n6格板本\n✔ 6格收納，適合整理分類你的武器庫\n✔ 翻蓋式設計，防掉落、防灰塵、防壓破\n\n適用電池\n支持電池尺寸 12x7x66mm 例如 格式金磚300mah\n1S 微型穿越機電池\n\n‼️請備註顏色，否則默認全黑",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "1S 電池收納盒 6格 20格 電池盒 翻蓋式 1S電池保護盒 PH2.0 無人機電池盒 Tinywhoop 電池收納（主圖）",
       "width": 796,
       "height": 796,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mh4ygvu5gh6z95"
     },
@@ -32,7 +32,7 @@
       "alt": "1S 電池收納盒 6格 20格 電池盒 翻蓋式 1S電池保護盒 PH2.0 無人機電池盒 Tinywhoop 電池收納（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "1S 電池收納盒 6格 20格 電池盒 翻蓋式 1S電池保護盒 PH2.0 無人機電池盒 Tinywhoop 電池收納（細節圖 2）",
       "width": 882,
       "height": 882,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh4ygvu5hvrf5c"
     }
@@ -51,28 +51,28 @@
     {
       "name": "20格版本",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "325137852997",
       "image": {
         "src": "/assets/img/products/sp-57751507369/opt-01-480.webp",
         "alt": "1S 電池收納盒 6格 20格 電池盒 翻蓋式 1S電池保護盒 PH2.0 無人機電池盒 Tinywhoop 電池收納（規格：20格版本）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh4ygvu5hvrf5c"
       }
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 211,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "57751507369",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -117,7 +117,15 @@
       "price_min": 220,
       "price_max": 220,
       "stock_total": 13,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#1S電池 #1S電池收納 #1S電池盒 #BT20電池 #PH20電池 #Tinywhoop #穿越機電池 #無人機電池盒 #電池保護盒 #3D列印\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n你的 1S 微型穿越機電池常常散在背包裡？\n出門飛行時電池放口袋又容易壓壞？\n這款 6格及20格翻蓋式 1S 電池收納盒，讓你的 1S 電池整齊、有序、安全好攜帶。\n\n‼️\nM3x20螺絲 (3個)\nM3x25螺絲帶螺帽 (3個)\n20格版本\n商品特色\n✔ 20格收納，一次帶齊一天飛行量\n✔ 翻蓋式設計，防掉落、防灰塵、防壓破\n✔ 格槽剛性適中，BT2.0／PH2.0 都能穩固放置\n✔ 輕量化 3D 列印，不增加包包負擔\n✔ 適合外出飛行、日常整理電池、背包分類\n\n‼️請自備一個M2x10螺絲 + M2螺母\n6格板本\n✔ 6格收納，適合整理分類你的武器庫\n✔ 翻蓋式設計，防掉落、防灰塵、防壓破\n\n適用電池\n支持電池尺寸 12x7x66mm 例如 格式金磚300mah\n1S 微型穿越機電池\n\n‼️請備註顏色，否則默認全黑 \n顏色可選 或者 混搭，請聊聊 需要雙色酌收+20耗材費",
+    "approved_at": "2026-10-22"
   }
 }

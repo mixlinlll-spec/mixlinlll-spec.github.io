@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#磁吸收納板 #磁性定位板 #螺絲記憶板 #螺絲防丟 #維修工具 #手機維修 #電子維修 #DIY工具 #磁性收納 #強力磁吸\n\n🔧產品特色\n磁性定位：強力磁吸，螺絲不易滾動與丟失\n\n螺絲記憶：可對應不同位置，記錄螺絲拆裝順序\n\n小巧實用：輕便設計，隨身攜帶，維修更方便\n\n多用途：適合手機、筆電、相機、家電等電子產品拆裝維修\n\n安全耐用：表面防滑耐磨，長期使用不易損壞",
+  "description": "🔧產品特色\n磁性定位：強力磁吸，螺絲不易滾動與丟失\n\n螺絲記憶：可對應不同位置，記錄螺絲拆裝順序\n\n小巧實用：輕便設計，隨身攜帶，維修更方便\n\n多用途：適合手機、筆電、相機、家電等電子產品拆裝維修\n\n安全耐用：表面防滑耐磨，長期使用不易損壞",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "穿越機螺絲/磁吸墊磁性記憶收納板定位工作台墊（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mf3wulrgnojx38"
     },
@@ -32,7 +32,7 @@
       "alt": "穿越機螺絲/磁吸墊磁性記憶收納板定位工作台墊（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mf3wulrbnvuwb8"
     },
@@ -42,7 +42,7 @@
       "alt": "穿越機螺絲/磁吸墊磁性記憶收納板定位工作台墊（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mf3wulrb007gdd"
     },
@@ -52,7 +52,7 @@
       "alt": "穿越機螺絲/磁吸墊磁性記憶收納板定位工作台墊（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mf3wulrinbim93"
     },
@@ -62,23 +62,23 @@
       "alt": "穿越機螺絲/磁吸墊磁性記憶收納板定位工作台墊（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mf3wulrayln0ce"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 48,
+  "price_display": "fixed",
+  "availability": "out_of_stock",
   "shopee_url": null,
   "shopee_item_id": "44021640333",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -125,7 +125,15 @@
       "price_min": 50,
       "price_max": 50,
       "stock_total": 0,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#磁吸收納板 #磁性定位板 #螺絲記憶板 #螺絲防丟 #維修工具 #手機維修 #電子維修 #DIY工具 #磁性收納 #強力磁吸\n\n🔧產品特色\n磁性定位：強力磁吸，螺絲不易滾動與丟失\n\n螺絲記憶：可對應不同位置，記錄螺絲拆裝順序\n\n小巧實用：輕便設計，隨身攜帶，維修更方便\n\n多用途：適合手機、筆電、相機、家電等電子產品拆裝維修\n\n安全耐用：表面防滑耐磨，長期使用不易損壞",
+    "approved_at": "2026-10-22"
   }
 }

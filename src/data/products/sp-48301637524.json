@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#NazgulECO #DC5 #iFlight #TPU列印件 #穿越機保護件 #FPV配件 #Deadcat機架 #FPV必備 #3D列印TPU #機架保護套\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n🛠 iFlight Nazgul ECO DC5 專屬全套 TPU 3D 列印保護件｜讓 DC5 更耐摔、更好飛！\n專為 Nazgul ECO DC5（Deadcat） 原廠機架量身打造，完全貼合、不亂晃。\n飛行時更穩定、摔機時更安全，是 DC5 飛手最必備的保護升級！\n\n📌 商品特色\nDC5 專用尺寸｜完全貼合 Nazgul ECO DC5\n全 TPU 材質｜超耐摔、吸震佳\n完整保護｜大力飛不怕摔，外觀也更俐落\n多色可選｜可自選搭配風格色系\n重量輕量化｜不影響動力與續航\n\n🧑‍✈️ 適用機型\n✔ iFlight Nazgul ECO DC5（Deadcat）\n❌ 其他版本請先詢問尺寸\n\n📦 注意事項\n列印件為訂製品，製作時間依顏色與數量而定\nTPU 材質具吸震性，但列印層紋為正常現象\n若需 相機支架、特規天線座或改版件，可私訊訂製",
+  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n🛠 iFlight Nazgul ECO DC5 專屬全套 TPU 3D 列印保護件｜讓 DC5 更耐摔、更好飛！\n專為 Nazgul ECO DC5（Deadcat） 原廠機架量身打造，完全貼合、不亂晃。\n飛行時更穩定、摔機時更安全，是 DC5 飛手最必備的保護升級！\n\n📌 商品特色\nDC5 專用尺寸｜完全貼合 Nazgul ECO DC5\n全 TPU 材質｜超耐摔、吸震佳\n完整保護｜大力飛不怕摔，外觀也更俐落\n多色可選｜可自選搭配風格色系\n重量輕量化｜不影響動力與續航\n\n🧑‍✈️ 適用機型\n✔ iFlight Nazgul ECO DC5（Deadcat）\n❌ 其他版本請先詢問尺寸\n\n📦 注意事項\n列印件為訂製品，製作時間依顏色與數量而定\nTPU 材質具吸震性，但列印層紋為正常現象",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（主圖）",
       "width": 928,
       "height": 928,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mh7c3uz3mkge09"
     },
@@ -32,7 +32,7 @@
       "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mh7c3wd8w5jd2f"
     },
@@ -52,7 +52,7 @@
       "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mh7d7op86nf22a"
     },
@@ -62,7 +62,7 @@
       "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（細節圖 4）",
       "width": 810,
       "height": 810,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mh7d73qulvd60e"
     }
@@ -71,145 +71,145 @@
     {
       "name": "前置天線座",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 43,
+      "availability": "in_stock",
       "shopee_variation_id": "390148217615",
       "image": {
         "src": "/assets/img/products/sp-48301637524/opt-10-480.webp",
         "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（規格：前置天線座）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mh7d8b2b07be46"
       }
     },
     {
       "name": "鯊魚鰭",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 72,
+      "availability": "in_stock",
       "shopee_variation_id": "390148217613",
       "image": {
         "src": "/assets/img/products/sp-48301637524/opt-08-480.webp",
         "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（規格：鯊魚鰭）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mh7d37z866181c"
       }
     },
     {
       "name": "側護板一對",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 115,
+      "availability": "in_stock",
       "shopee_variation_id": "390148217614",
       "image": {
         "src": "/assets/img/products/sp-48301637524/opt-09-480.webp",
         "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（規格：側護板一對）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh7d4nolwa2ye7"
       }
     },
     {
       "name": "181GPS座",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 43,
+      "availability": "in_stock",
       "shopee_variation_id": "330148170760",
       "image": {
         "src": "/assets/img/products/sp-48301637524/opt-05-480.webp",
         "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（規格：181GPS座）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh7cimc3280f47"
       }
     },
     {
       "name": "平衡頭固定座",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 38,
+      "availability": "in_stock",
       "shopee_variation_id": "330148170762",
       "image": {
         "src": "/assets/img/products/sp-48301637524/opt-07-480.webp",
         "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（規格：平衡頭固定座）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mh7d0kyzgsng17"
       }
     },
     {
       "name": "雙sma尾座+XT60座+天線放置",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 86,
+      "availability": "in_stock",
       "shopee_variation_id": "330148170765",
       "image": {
         "src": "/assets/img/products/sp-48301637524/opt-03-480.webp",
         "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（規格：雙sma尾座+XT60座+天線放置）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mh7chma5i22z5e"
       }
     },
     {
       "name": "O3鏡頭蓋2個",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 29,
+      "availability": "in_stock",
       "shopee_variation_id": "330148170761",
       "image": {
         "src": "/assets/img/products/sp-48301637524/opt-06-480.webp",
         "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（規格：O3鏡頭蓋2個）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mh7cwq38en0t0e"
       }
     },
     {
       "name": "915天線座",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 34,
+      "availability": "in_stock",
       "shopee_variation_id": "330148170766",
       "image": {
         "src": "/assets/img/products/sp-48301637524/opt-04-480.webp",
         "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（規格：915天線座）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mh7chsgiwydl33"
       }
     },
     {
       "name": "電機保護套4個一組",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 134,
+      "availability": "in_stock",
       "shopee_variation_id": "330148170764",
       "image": {
         "src": "/assets/img/products/sp-48301637524/opt-02-480.webp",
         "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（規格：電機保護套4個一組）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mh7cfvf5zy166d"
       }
     },
     {
       "name": "前保桿",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 85,
+      "availability": "in_stock",
       "shopee_variation_id": "330148170763",
       "image": {
         "src": "/assets/img/products/sp-48301637524/opt-01-480.webp",
         "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（規格：前保桿）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mh7cfah6l24tfd"
       }
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 29,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "48301637524",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -374,7 +374,15 @@
       "price_min": 30,
       "price_max": 140,
       "stock_total": 271,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#NazgulECO #DC5 #iFlight #TPU列印件 #穿越機保護件 #FPV配件 #Deadcat機架 #FPV必備 #3D列印TPU #機架保護套\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n🛠 iFlight Nazgul ECO DC5 專屬全套 TPU 3D 列印保護件｜讓 DC5 更耐摔、更好飛！\n專為 Nazgul ECO DC5（Deadcat） 原廠機架量身打造，完全貼合、不亂晃。\n飛行時更穩定、摔機時更安全，是 DC5 飛手最必備的保護升級！\n\n📌 商品特色\nDC5 專用尺寸｜完全貼合 Nazgul ECO DC5\n全 TPU 材質｜超耐摔、吸震佳\n完整保護｜大力飛不怕摔，外觀也更俐落\n多色可選｜可自選搭配風格色系\n重量輕量化｜不影響動力與續航\n\n🧑‍✈️ 適用機型\n✔ iFlight Nazgul ECO DC5（Deadcat）\n❌ 其他版本請先詢問尺寸\n\n📦 注意事項\n列印件為訂製品，製作時間依顏色與數量而定\nTPU 材質具吸震性，但列印層紋為正常現象\n若需 相機支架、特規天線座或改版件，可私訊訂製",
+    "approved_at": "2026-10-22"
   }
 }

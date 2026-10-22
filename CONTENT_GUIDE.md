@@ -97,11 +97,11 @@ node scripts/check-site.mjs          # 白名單／連結／草稿外洩檢查
 - **價格與庫存**：`review.shopee_sales_snapshot` 保存匯出時的每個規格價格、庫存；`variants[].shopee_variation_id` 對應蝦皮規格。網站公開欄位維持「詢價／供貨請洽詢」，直到核對後套用：
 
 ```bash
-node scripts/approve-snapshot.mjs --batch first --prices --stock --image-rights ewp_own --dry-run   # 先看結果
-node scripts/approve-snapshot.mjs sp-42781322918 sp-47714579384 --prices --stock --image-rights ewp_own
+node scripts/approve-snapshot.mjs --all --prices --stock --discount 4 --dry-run          # 先看結果
+node scripts/approve-snapshot.mjs --all --prices --stock --discount 4 --image-rights licensed --publish
 ```
 
-  這個工具不會設定 `published`；公開仍需 `review.status: "approved"` 與 `published: true`。
+  官網價＝蝦皮價 ×（1 − 折扣%），四捨五入到整數元。加上 `--publish` 才會核准上架；`rejected` 商品一律略過。
 - 總表：[docs/SHOPEE_IMPORT_REPORT.md](docs/SHOPEE_IMPORT_REPORT.md)（Excel：`docs/shopee-import.csv`）、下載結果：[docs/MEDIA_IMPORT_REPORT.md](docs/MEDIA_IMPORT_REPORT.md)。
 
 ## 三、蝦皮資料匯入

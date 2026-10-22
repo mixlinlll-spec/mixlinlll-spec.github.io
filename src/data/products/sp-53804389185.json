@@ -15,7 +15,7 @@
     "1S"
   ],
   "short_description": "",
-  "description": "•\t#Ovonic電池\n•\t#1S550mAh\n•\t#BT20電池\n•\t#Tinywhoop電池\n•\t#微型穿越機\n•\t#長續航電池\n•\t#高倍率鋰電\n•\t#1SHV\n•\t#室內炸機\n•\t#台灣現貨\n•\t#快速出貨\n\n想在室內場連飛好幾圈，又不想每兩分鐘就落地換電嗎？😆 \nOvonic 1S 550mAh BT2.0 高倍率電池，專為 Tinywhoop、1S 微型穿越機設計，容量比常見 300–450mAh 再向上，搭配 BT2.0 低阻抗插頭，實測能帶來更長續航與穩定推力。\n\n產品特色：\n•\t🔌 BT2.0 接頭：相較 PH2.0 電壓下墜更少，油門手感更飽滿，特別適合高KV 小電機。\n•\t🔋 550mAh 大容量：在重量仍可接受的前提下，換來更長飛行時間，適合練習、慢飛、室內繞場。\n•\t⚡ 高倍率設計：80–100C 放電（依官方標示），應付急加速、翻滾、穿門不易「軟腳」。\n•\t🪶 細長外型：約 67×16×8mm，易於固定在 75mm／85mm 機型或改裝 65mm 長艙位電池托。",
+  "description": "想在室內場連飛好幾圈，又不想每兩分鐘就落地換電嗎？😆\nOvonic 1S 550mAh BT2.0 高倍率電池，專為 Tinywhoop、1S 微型穿越機設計，容量比常見 300–450mAh 再向上，搭配 BT2.0 低阻抗插頭，實測能帶來更長續航與穩定推力。\n\n產品特色：\n•\t🔌 BT2.0 接頭：相較 PH2.0 電壓下墜更少，油門手感更飽滿，特別適合高KV 小電機。\n•\t🔋 550mAh 大容量：在重量仍可接受的前提下，換來更長飛行時間，適合練習、慢飛、室內繞場。\n•\t⚡ 高倍率設計：80–100C 放電（依官方標示），應付急加速、翻滾、穿門不易「軟腳」。\n•\t🪶 細長外型：約 67×16×8mm，易於固定在 75mm／85mm 機型或改裝 65mm 長艙位電池托。",
   "specifications": [],
   "images": [
     {
@@ -24,7 +24,7 @@
       "alt": "Ovonic 1S 550mAh 100C BT2.0 高壓鋰電池 Tinywhoop/微型穿越機專用 長續航高爆發（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mj9xzag3pywxe9"
     },
@@ -34,7 +34,7 @@
       "alt": "Ovonic 1S 550mAh 100C BT2.0 高壓鋰電池 Tinywhoop/微型穿越機專用 長續航高爆發（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mj9xzaf82sci69"
     },
@@ -44,7 +44,7 @@
       "alt": "Ovonic 1S 550mAh 100C BT2.0 高壓鋰電池 Tinywhoop/微型穿越機專用 長續航高爆發（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mj9xzag7xo906d"
     }
@@ -53,29 +53,29 @@
     {
       "name": "BT2.0接口 450MAH",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 162,
+      "availability": "in_stock",
       "shopee_variation_id": "350722351256"
     },
     {
       "name": "PH接口 550MAH",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 172,
+      "availability": "out_of_stock",
       "shopee_variation_id": "350722351255"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 162,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "53804389185",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -133,7 +133,15 @@
       "price_min": 169,
       "price_max": 179,
       "stock_total": 24,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "•\t#Ovonic電池\n•\t#1S550mAh\n•\t#BT20電池\n•\t#Tinywhoop電池\n•\t#微型穿越機\n•\t#長續航電池\n•\t#高倍率鋰電\n•\t#1SHV\n•\t#室內炸機\n•\t#台灣現貨\n•\t#快速出貨\n\n想在室內場連飛好幾圈，又不想每兩分鐘就落地換電嗎？😆 \nOvonic 1S 550mAh BT2.0 高倍率電池，專為 Tinywhoop、1S 微型穿越機設計，容量比常見 300–450mAh 再向上，搭配 BT2.0 低阻抗插頭，實測能帶來更長續航與穩定推力。\n\n產品特色：\n•\t🔌 BT2.0 接頭：相較 PH2.0 電壓下墜更少，油門手感更飽滿，特別適合高KV 小電機。\n•\t🔋 550mAh 大容量：在重量仍可接受的前提下，換來更長飛行時間，適合練習、慢飛、室內繞場。\n•\t⚡ 高倍率設計：80–100C 放電（依官方標示），應付急加速、翻滾、穿門不易「軟腳」。\n•\t🪶 細長外型：約 67×16×8mm，易於固定在 75mm／85mm 機型或改裝 65mm 長艙位電池托。",
+    "approved_at": "2026-10-22"
   }
 }

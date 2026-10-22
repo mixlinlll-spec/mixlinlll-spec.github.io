@@ -24,7 +24,7 @@
       "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mrqmc52muarrda"
     },
@@ -34,7 +34,7 @@
       "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52msw7b58"
     },
@@ -44,7 +44,7 @@
       "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mrqmc52mvpc7df"
     },
@@ -54,7 +54,7 @@
       "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52mx3wnf3"
     },
@@ -64,7 +64,7 @@
       "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mrqmc52myih381"
     }
@@ -73,36 +73,36 @@
     {
       "name": "模擬版本（含接收機）",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 8630,
+      "availability": "in_stock",
       "shopee_variation_id": "421349024347"
     },
     {
       "name": "O4Wide（含接收機）",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 13430,
+      "availability": "in_stock",
       "shopee_variation_id": "421349024348"
     },
     {
       "name": "O4pro（含接收機）",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 17270,
+      "availability": "in_stock",
       "shopee_variation_id": "421349024349"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 8630,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "44383452523",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -181,7 +181,15 @@
       "price_min": 8990,
       "price_max": 17990,
       "stock_total": 30,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "Axisflying Bando5 SE 5吋 FPV 穿越機",
+    "approved_at": "2026-10-22"
   }
 }

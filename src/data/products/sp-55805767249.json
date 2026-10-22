@@ -13,7 +13,7 @@
   "video_system": "Walksnail",
   "battery_cells": [],
   "short_description": "",
-  "description": "•\t#WalksnailAvatar\n•\t#AvatarV2\n•\t#AvatarProKit\n•\t#USB升級線\n•\t#C口延長模組\n•\t#數傳韌體更新\n•\t#FPV數位圖傳\n•\t#維修改裝配件\n•\t#3D列印支架適用\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t專為 Walksnail Avatar V2 / Pro Kit 設計，將原本在機內的 USB 介面延長到機身外，方便連接電腦做韌體升級與設定。",
+  "description": "•\t專為 Walksnail Avatar V2 / Pro Kit 設計，將原本在機內的 USB 介面延長到機身外，方便連接電腦做韌體升級與設定。",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "Walksnail Avatar V2/Pro Kit C型USB升級線套件 數傳外接USB模組 固件更新/讀取延長線（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mk9cfr8njo5c5d"
     },
@@ -32,7 +32,7 @@
       "alt": "Walksnail Avatar V2/Pro Kit C型USB升級線套件 數傳外接USB模組 固件更新/讀取延長線（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mk9cfr8xko3kfc"
     },
@@ -42,23 +42,23 @@
       "alt": "Walksnail Avatar V2/Pro Kit C型USB升級線套件 數傳外接USB模組 固件更新/讀取延長線（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mk9cfr8mq6846a"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 58,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "55805767249",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -97,7 +97,15 @@
       "price_min": 60,
       "price_max": 60,
       "stock_total": 4,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "•\t#WalksnailAvatar\n•\t#AvatarV2\n•\t#AvatarProKit\n•\t#USB升級線\n•\t#C口延長模組\n•\t#數傳韌體更新\n•\t#FPV數位圖傳\n•\t#維修改裝配件\n•\t#3D列印支架適用\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t專為 Walksnail Avatar V2 / Pro Kit 設計，將原本在機內的 USB 介面延長到機身外，方便連接電腦做韌體升級與設定。",
+    "approved_at": "2026-10-22"
   }
 }

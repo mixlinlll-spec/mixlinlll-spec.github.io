@@ -15,7 +15,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "GEPRC MARK4 7吋 3D打印\nMARK4 7inch TPU 配件\nMARK4 7 機臂保護\nMARK4 7 GPS 座\nMARK4 7 天線座\n長程穿越機 3D 列印件\nFPV Freestyle 保護套件\nGEPRC 配件 升級\n7吋穿越機 機臂保護\n7inch FPV frame parts\n\n⚠️ 務必備註顏色與需求款式（可先聊聊確認），訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n⚠️ 客製化需求（機型版本、安裝孔位、LOGO 字樣）請先聊聊討論再下單\n\n這系列是專為 GEPRC MARK4 7 吋長程 機架設計的 3D 打印件，可依需求選購或搭配成套，包括機臂保護、電池防滑墊固定件、天線座、GPS 座、相機保護罩等，讓你的 MARK4 在實戰中更耐撞、走線更乾淨。",
+  "description": "GEPRC MARK4 7吋 3D打印\nMARK4 7inch TPU 配件\nMARK4 7 機臂保護\nMARK4 7 GPS 座\nMARK4 7 天線座\n長程穿越機 3D 列印件\nFPV Freestyle 保護套件\nGEPRC 配件 升級\n7吋穿越機 機臂保護\n7inch FPV frame parts\n\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n\n這系列是專為 GEPRC MARK4 7 吋長程 機架設計的 3D 打印件，可依需求選購或搭配成套，包括機臂保護、電池防滑墊固定件、天線座、GPS 座、相機保護罩等，讓你的 MARK4 在實戰中更耐撞、走線更乾淨。",
   "specifications": [],
   "images": [
     {
@@ -24,7 +24,7 @@
       "alt": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 機臂保護／天線座／GPS座／相機保護一站搞定（主圖）",
       "width": 845,
       "height": 845,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mijl59wiae4h94"
     }
@@ -33,158 +33,158 @@
     {
       "name": "GOPRO前座",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 43,
+      "availability": "in_stock",
       "shopee_variation_id": "370329740613",
       "image": {
         "src": "/assets/img/products/sp-53753435292/opt-05-480.webp",
         "alt": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 機臂保護／天線座／GPS座／相機保護一站搞定（規格：GOPRO前座）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mijm2t190l4w93"
       }
     },
     {
       "name": "雙接收天線後置",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 67,
+      "availability": "in_stock",
       "shopee_variation_id": "370329740604",
       "image": {
         "src": "/assets/img/products/sp-53753435292/opt-10-480.webp",
         "alt": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 機臂保護／天線座／GPS座／相機保護一站搞定（規格：雙接收天線後置）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mijm81i3u9s361"
       }
     },
     {
       "name": "O3固定座+雙原廠天線尾座",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 72,
+      "availability": "in_stock",
       "shopee_variation_id": "370329740603",
       "image": {
         "src": "/assets/img/products/sp-53753435292/opt-04-480.webp",
         "alt": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 機臂保護／天線座／GPS座／相機保護一站搞定（規格：O3固定座+雙原廠天線尾座）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mijm1n4mtf5t13"
       }
     },
     {
       "name": "BB響",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 29,
+      "availability": "in_stock",
       "shopee_variation_id": "370329740608",
       "image": {
         "src": "/assets/img/products/sp-53753435292/opt-08-480.webp",
         "alt": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 機臂保護／天線座／GPS座／相機保護一站搞定（規格：BB響）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mijm7y1wd6va32"
       }
     },
     {
       "name": "前置GPS/18X18",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 48,
+      "availability": "in_stock",
       "shopee_variation_id": "370329740609",
       "image": {
         "src": "/assets/img/products/sp-53753435292/opt-09-480.webp",
         "alt": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 機臂保護／天線座／GPS座／相機保護一站搞定（規格：前置GPS/18X18）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mijmb64olf5s3e"
       }
     },
     {
       "name": "GPS+接收機天線+SMA單天線尾座",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 58,
+      "availability": "in_stock",
       "shopee_variation_id": "370329740611",
       "image": {
         "src": "/assets/img/products/sp-53753435292/opt-02-480.webp",
         "alt": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 機臂保護／天線座／GPS座／相機保護一站搞定（規格：GPS+接收機天線+SMA單天線尾座）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mijlzhbpsohz5f"
       }
     },
     {
       "name": "20X20圖傳墊",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 34,
+      "availability": "in_stock",
       "shopee_variation_id": "370329740607",
       "image": {
         "src": "/assets/img/products/sp-53753435292/opt-07-480.webp",
         "alt": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 機臂保護／天線座／GPS座／相機保護一站搞定（規格：20X20圖傳墊）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mijm6y54htl370"
       }
     },
     {
       "name": "側護板",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 125,
+      "availability": "in_stock",
       "shopee_variation_id": "370329740610",
       "image": {
         "src": "/assets/img/products/sp-53753435292/opt-01-480.webp",
         "alt": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 機臂保護／天線座／GPS座／相機保護一站搞定（規格：側護板）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mila71e7ywhz54"
       }
     },
     {
       "name": "GPS+接收天線(GPS28X28)",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 58,
+      "availability": "in_stock",
       "shopee_variation_id": "370329740605",
       "image": {
         "src": "/assets/img/products/sp-53753435292/opt-11-480.webp",
         "alt": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 機臂保護／天線座／GPS座／相機保護一站搞定（規格：GPS+接收天線(GPS28X28)）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mijmci7vte6a03"
       }
     },
     {
       "name": "XT60固定座",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 34,
+      "availability": "in_stock",
       "shopee_variation_id": "370329740606",
       "image": {
         "src": "/assets/img/products/sp-53753435292/opt-06-480.webp",
         "alt": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 機臂保護／天線座／GPS座／相機保護一站搞定（規格：XT60固定座）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mijm4r6zhhxeaa"
       }
     },
     {
       "name": "機臂腳墊",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 115,
+      "availability": "in_stock",
       "shopee_variation_id": "370329740612",
       "image": {
         "src": "/assets/img/products/sp-53753435292/opt-03-480.webp",
         "alt": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 機臂保護／天線座／GPS座／相機保護一站搞定（規格：機臂腳墊）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mpav0qsjrf28e6"
       }
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 29,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "53753435292",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -357,7 +357,15 @@
       "price_min": 30,
       "price_max": 130,
       "stock_total": 535,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "GEPRC MARK4 7吋 3D打印\nMARK4 7inch TPU 配件\nMARK4 7 機臂保護\nMARK4 7 GPS 座\nMARK4 7 天線座\n長程穿越機 3D 列印件\nFPV Freestyle 保護套件\nGEPRC 配件 升級\n7吋穿越機 機臂保護\n7inch FPV frame parts\n\n⚠️ 務必備註顏色與需求款式（可先聊聊確認），訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n⚠️ 客製化需求（機型版本、安裝孔位、LOGO 字樣）請先聊聊討論再下單\n\n這系列是專為 GEPRC MARK4 7 吋長程 機架設計的 3D 打印件，可依需求選購或搭配成套，包括機臂保護、電池防滑墊固定件、天線座、GPS 座、相機保護罩等，讓你的 MARK4 在實戰中更耐撞、走線更乾淨。",
+    "approved_at": "2026-10-22"
   }
 }

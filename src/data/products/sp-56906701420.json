@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#TPU保護件\n#穿越機配件\n#FPV安全配件\n#3D列印\n#台灣現貨\n#快速出貨\n鯊魚鰭造型雙翼夾具，包覆電池頂部與邊緣，防止炸機損壞電池。\n採用柔韌 TPU 材質列印，放上去後魔鬼氈電池綁帶固定在機架，安裝超簡單。",
+  "description": "鯊魚鰭造型雙翼夾具，包覆電池頂部與邊緣，防止炸機損壞電池。\n採用柔韌 TPU 材質列印，放上去後魔鬼氈電池綁帶固定在機架，安裝超簡單。",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "LiPo 電池保護夾鯊魚鰭夾具 防刺穿套 穿越機 電池安全配件（主圖）",
       "width": 661,
       "height": 661,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mldordpcxkw177"
     },
@@ -32,7 +32,7 @@
       "alt": "LiPo 電池保護夾鯊魚鰭夾具 防刺穿套 穿越機 電池安全配件（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "LiPo 電池保護夾鯊魚鰭夾具 防刺穿套 穿越機 電池安全配件（細節圖 2）",
       "width": 678,
       "height": 678,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mldosffxf2m857"
     },
@@ -52,7 +52,7 @@
       "alt": "LiPo 電池保護夾鯊魚鰭夾具 防刺穿套 穿越機 電池安全配件（細節圖 3）",
       "width": 711,
       "height": 711,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mldosffyo0si17"
     }
@@ -61,42 +61,42 @@
     {
       "name": "雙鰭款式(單綁帶)",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 105,
+      "availability": "in_stock",
       "shopee_variation_id": "400601914106"
     },
     {
       "name": "下單後私訊選色",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 288,
+      "availability": "in_stock",
       "shopee_variation_id": "254175417368",
       "image": {
         "src": "/assets/img/products/sp-56906701420/opt-01-480.webp",
         "alt": "LiPo 電池保護夾鯊魚鰭夾具 防刺穿套 穿越機 電池安全配件（規格：下單後私訊選色）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mldp3enrc7ib11"
       }
     },
     {
       "name": "單鰭款式(雙綁帶)",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 95,
+      "availability": "in_stock",
       "shopee_variation_id": "400601914105"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 95,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "56906701420",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -170,7 +170,15 @@
       "price_min": 99,
       "price_max": 300,
       "stock_total": 132,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#TPU保護件\n#穿越機配件\n#FPV安全配件\n#3D列印\n#台灣現貨\n#快速出貨\n鯊魚鰭造型雙翼夾具，包覆電池頂部與邊緣，防止炸機損壞電池。\n採用柔韌 TPU 材質列印，放上去後魔鬼氈電池綁帶固定在機架，安裝超簡單。",
+    "approved_at": "2026-10-22"
   }
 }

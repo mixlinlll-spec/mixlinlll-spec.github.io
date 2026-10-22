@@ -52,7 +52,7 @@
       "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-msycw4hlne2ydb"
     },
@@ -62,7 +62,7 @@
       "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-msycw4hssg0845"
     },
@@ -72,7 +72,7 @@
       "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-msycw4hsa6ma94"
     },
@@ -82,7 +82,7 @@
       "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-msycw4hsr1fsd6"
     },
@@ -92,7 +92,7 @@
       "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-msycw4hjdx5218"
     }
@@ -101,36 +101,36 @@
     {
       "name": "O4WIDE(加裝CNC保護及鏡頭改件)",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 13133,
+      "availability": "in_stock",
       "shopee_variation_id": "346497481245"
     },
     {
       "name": "O4PRO",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 14592,
+      "availability": "in_stock",
       "shopee_variation_id": "346497481246"
     },
     {
       "name": "模擬圖傳(平頭哥2)",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 8525,
+      "availability": "in_stock",
       "shopee_variation_id": "346497481244"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 8525,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "50367700235",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -148,8 +148,7 @@
     "missing": [
       "正式配置確認（舊首頁寫 MAD 2207／1950KV、FDI F722／60A）",
       "接收機、機架、槳葉、重量",
-      "實機照片（可沿用現有 HUAN 海報需確認）",
-      "是否轉為販售模式：須先完成合規確認"
+      "實機照片（可沿用現有 HUAN 海報需確認）"
     ],
     "source_media": {
       "media_export": "mass_update_media_info_4053258_20261022141110",
@@ -216,25 +215,14 @@
       "price_min": 8880,
       "price_max": 15200,
       "stock_total": 3,
-      "status": "snapshot_only"
-    }
-  },
-  "listing_mode": "showcase",
-  "compliance": {
-    "status": "pending",
-    "items": [
-      {
-        "type": "NCC",
-        "reason": "整機含圖傳與接收機等無線電發射設備，販售前須確認 NCC 審驗合格"
-      },
-      {
-        "type": "BSMI",
-        "reason": "蝦皮曾因未填 BSMI／NCC 字號下架整機商品，請確認整機販售所需的檢驗字號"
-      },
-      {
-        "type": "民航法規",
-        "reason": "請確認遙控無人機相關規定（例如註冊、操作限制）於商品頁的告知方式"
-      }
-    ]
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   }
 }

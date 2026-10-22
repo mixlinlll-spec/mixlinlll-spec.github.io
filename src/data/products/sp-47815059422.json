@@ -24,23 +24,23 @@
       "alt": "GOBU Tracker 3.5吋 FPV穿越機機架 碳纖維 Freestyle 可換機臂 O4 Pro O4 Lite（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mr8e9kiq3pxg65"
     }
   ],
   "variants": [],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 9599,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "47815059422",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -77,7 +77,15 @@
       "price_min": 9999,
       "price_max": 9999,
       "stock_total": 5,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "GOBU Tracker｜追蹤者 3.5 吋\n不是每一台 FPV 都只為了速度。\n有些機體，天生就是為了探索未知。\n更輕、更靈活、更安靜。\n它不是花飛，也不是純 Long Range。\n它是 GOBU 系列 全新的定位。\nGOBU Tracker｜追蹤者 3.5 吋\n新品即將登場。\nMore Than A Frame.",
+    "approved_at": "2026-10-22"
   }
 }

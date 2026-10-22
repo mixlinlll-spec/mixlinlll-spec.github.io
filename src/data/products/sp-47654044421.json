@@ -45,7 +45,7 @@
       "alt": "RUIYI R5146 三葉槳 5吋FPV穿越機螺旋槳 競速花飛通用 超耐炸高效率 多色可選 5吋機專用槳葉（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mizn87epxj43ef"
     },
@@ -55,7 +55,7 @@
       "alt": "RUIYI R5146 三葉槳 5吋FPV穿越機螺旋槳 競速花飛通用 超耐炸高效率 多色可選 5吋機專用槳葉（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mizn87ebkm4kde"
     },
@@ -65,7 +65,7 @@
       "alt": "RUIYI R5146 三葉槳 5吋FPV穿越機螺旋槳 競速花飛通用 超耐炸高效率 多色可選 5吋機專用槳葉（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mizn87ebm0p0fc"
     }
@@ -74,64 +74,64 @@
     {
       "name": "透藍",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 47,
+      "availability": "out_of_stock",
       "shopee_variation_id": "430383101379"
     },
     {
       "name": "透紅",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 47,
+      "availability": "out_of_stock",
       "shopee_variation_id": "430383101380"
     },
     {
       "name": "透綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 47,
+      "availability": "in_stock",
       "shopee_variation_id": "430383101381"
     },
     {
       "name": "透黃",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 47,
+      "availability": "in_stock",
       "shopee_variation_id": "430383101382"
     },
     {
       "name": "透紫",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 47,
+      "availability": "in_stock",
       "shopee_variation_id": "430383101383"
     },
     {
       "name": "正紅",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 47,
+      "availability": "out_of_stock",
       "shopee_variation_id": "430383101384"
     },
     {
       "name": "透黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 47,
+      "availability": "out_of_stock",
       "shopee_variation_id": "430383101378"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 47,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "47654044421",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -268,7 +268,14 @@
       "price_min": 49,
       "price_max": 49,
       "stock_total": 8,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   }
 }

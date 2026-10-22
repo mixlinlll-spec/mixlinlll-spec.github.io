@@ -15,7 +15,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "•\t#Sbang花飛槳\n•\t#TMOTORP49436\n•\t#5寸三葉槳\n•\t#FPV花飛\n•\t#Freestyle槳\n•\t#低噪螺旋槳\n•\t#耐炸槳葉\n•\t#5吋穿越機\n•\t#FPV配件\n•\t#台灣現貨\n•\t#快速出貨\n\n想讓 5 吋機飛起來更順、更滑，又不想要太暴力難控嗎？\nSbang 花飛槳葉選用 T‑MOTOR P49436 模具，5.0 吋直徑、4.3 螺距三葉設計，油門曲線細膩、轉向抓地感佳，非常適合日常 Freestyle、流暢花飛\n\n產品特色：\n•\t🌀 5.0×4.3×3 規格：相較高螺距競速槳，推力更線性、耗電較低，新手與老手都容易上手。\n•\t💥 高韌性 PC 材質：採用加強型聚碳酸酯，具良好彈性與抗炸性，日常炸機不易一觸就斷。\n•\t🎯 正反槳齊全：同包含 CW/CCW，可直接搭配 22xx 系列電機與 5 吋機架使用，適合長期作為主力花飛槳。",
+  "description": "想讓 5 吋機飛起來更順、更滑，又不想要太暴力難控嗎？\nSbang 花飛槳葉選用 T‑MOTOR P49436 模具，5.0 吋直徑、4.3 螺距三葉設計，油門曲線細膩、轉向抓地感佳，非常適合日常 Freestyle、流暢花飛\n\n產品特色：\n•\t🌀 5.0×4.3×3 規格：相較高螺距競速槳，推力更線性、耗電較低，新手與老手都容易上手。\n•\t💥 高韌性 PC 材質：採用加強型聚碳酸酯，具良好彈性與抗炸性，日常炸機不易一觸就斷。\n•\t🎯 正反槳齊全：同包含 CW/CCW，可直接搭配 22xx 系列電機與 5 吋機架使用，適合長期作為主力花飛槳。",
   "specifications": [],
   "images": [
     {
@@ -24,7 +24,7 @@
       "alt": "Sbang 花飛槳葉 5寸 T‑MOTOR P49436 高品質三葉槳 5.0×4.3×3 正反槳 穿越機花飛（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mj6hmt6taq6910"
     },
@@ -34,7 +34,7 @@
       "alt": "Sbang 花飛槳葉 5寸 T‑MOTOR P49436 高品質三葉槳 5.0×4.3×3 正反槳 穿越機花飛（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -44,7 +44,7 @@
       "alt": "Sbang 花飛槳葉 5寸 T‑MOTOR P49436 高品質三葉槳 5.0×4.3×3 正反槳 穿越機花飛（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mj6hmt69a4u9e6"
     },
@@ -54,7 +54,7 @@
       "alt": "Sbang 花飛槳葉 5寸 T‑MOTOR P49436 高品質三葉槳 5.0×4.3×3 正反槳 穿越機花飛（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mj6hmt51w5c749"
     },
@@ -64,7 +64,7 @@
       "alt": "Sbang 花飛槳葉 5寸 T‑MOTOR P49436 高品質三葉槳 5.0×4.3×3 正反槳 穿越機花飛（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mj6hmt79uayvcb"
     },
@@ -74,7 +74,7 @@
       "alt": "Sbang 花飛槳葉 5寸 T‑MOTOR P49436 高品質三葉槳 5.0×4.3×3 正反槳 穿越機花飛（細節圖 5）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mj6hmt71c35w4b"
     }
@@ -83,43 +83,43 @@
     {
       "name": "螢光黃",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 47,
+      "availability": "out_of_stock",
       "shopee_variation_id": "375703183164"
     },
     {
       "name": "煙燻黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 47,
+      "availability": "out_of_stock",
       "shopee_variation_id": "395400734066"
     },
     {
       "name": "透明紅",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 47,
+      "availability": "out_of_stock",
       "shopee_variation_id": "395400734067"
     },
     {
       "name": "透明藍",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 47,
+      "availability": "out_of_stock",
       "shopee_variation_id": "395400734068"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 47,
+  "price_display": "fixed",
+  "availability": "out_of_stock",
   "shopee_url": null,
   "shopee_item_id": "46304251509",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -205,7 +205,15 @@
       "price_min": 49,
       "price_max": 49,
       "stock_total": 0,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "•\t#Sbang花飛槳\n•\t#TMOTORP49436\n•\t#5寸三葉槳\n•\t#FPV花飛\n•\t#Freestyle槳\n•\t#低噪螺旋槳\n•\t#耐炸槳葉\n•\t#5吋穿越機\n•\t#FPV配件\n•\t#台灣現貨\n•\t#快速出貨\n\n想讓 5 吋機飛起來更順、更滑，又不想要太暴力難控嗎？\nSbang 花飛槳葉選用 T‑MOTOR P49436 模具，5.0 吋直徑、4.3 螺距三葉設計，油門曲線細膩、轉向抓地感佳，非常適合日常 Freestyle、流暢花飛\n\n產品特色：\n•\t🌀 5.0×4.3×3 規格：相較高螺距競速槳，推力更線性、耗電較低，新手與老手都容易上手。\n•\t💥 高韌性 PC 材質：採用加強型聚碳酸酯，具良好彈性與抗炸性，日常炸機不易一觸就斷。\n•\t🎯 正反槳齊全：同包含 CW/CCW，可直接搭配 22xx 系列電機與 5 吋機架使用，適合長期作為主力花飛槳。",
+    "approved_at": "2026-10-22"
   }
 }

@@ -15,7 +15,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#FPV #穿越機 #3吋槳 #R3030 #3030槳 #三葉槳 #螺旋槳 #RUIYI #芮翼 #Toothpick #Freestyle #競速機 #花飛 #無人機 #FPV配件 #電翼動力\n\n芮翼 RUIYI R3030 三葉槳專為3吋 FPV 穿越機打造，採用高韌性 PC 材質，兼具耐用性與操控靈敏度，適合 Toothpick、Freestyle、花飛及競速機使用。每組包含2正2反，可直接更換使用。\n\n【產品特色】\n✔ 3吋三葉設計，動力輸出平順\n✔ 高韌性PC材質，耐摔耐用\n✔ 重量僅1.6g，兼顧效率與靈敏度\n✔ M2固定螺絲規格\n✔ 適用1.5mm馬達軸\n✔ 適合 Toothpick、Freestyle、競速飛行\n\n【產品規格】\n品牌：RUIYI 芮翼\n型號：R3030\n尺寸：3吋\n葉片數：3葉\n材質：PC\n重量：1.6g／支\n中心孔徑：1.5mm\n中心厚度：5.1mm\n固定螺絲：M2\n包裝：2正槳＋2反槳（共4支）\n\n【適用機型】\n3吋 Toothpick\n3吋 Freestyle\n3吋 花式穿越機\n3吋 競速機\n※ 請確認馬達軸徑及固定方式後再購買。",
+  "description": "芮翼 RUIYI R3030 三葉槳專為3吋 FPV 穿越機打造，採用高韌性 PC 材質，兼具耐用性與操控靈敏度，適合 Toothpick、Freestyle、花飛及競速機使用。每組包含2正2反，可直接更換使用。\n\n【產品特色】\n✔ 3吋三葉設計，動力輸出平順\n✔ 高韌性PC材質，耐摔耐用\n✔ 重量僅1.6g，兼顧效率與靈敏度\n✔ M2固定螺絲規格\n✔ 適用1.5mm馬達軸\n✔ 適合 Toothpick、Freestyle、競速飛行\n\n【產品規格】\n品牌：RUIYI 芮翼\n型號：R3030\n尺寸：3吋\n葉片數：3葉\n材質：PC\n重量：1.6g／支\n中心孔徑：1.5mm\n中心厚度：5.1mm\n固定螺絲：M2\n包裝：2正槳＋2反槳（共4支）\n\n【適用機型】\n3吋 Toothpick\n3吋 Freestyle\n3吋 花式穿越機\n3吋 競速機\n※ 請確認馬達軸徑及固定方式後再購買。",
   "specifications": [],
   "images": [
     {
@@ -24,7 +24,7 @@
       "alt": "3吋FPV穿越機螺旋槳 R3030 三葉槳 M2 1.5mm 芮翼RUIYI Freestyle Toothpick（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mqn3x2f4hlor0c"
     },
@@ -34,7 +34,7 @@
       "alt": "3吋FPV穿越機螺旋槳 R3030 三葉槳 M2 1.5mm 芮翼RUIYI Freestyle Toothpick（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mqn3x2eyk3d965"
     },
@@ -44,7 +44,7 @@
       "alt": "3吋FPV穿越機螺旋槳 R3030 三葉槳 M2 1.5mm 芮翼RUIYI Freestyle Toothpick（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mqn3x2fdxj41ba"
     }
@@ -53,22 +53,22 @@
     {
       "name": "黑色",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 53,
+      "availability": "in_stock",
       "shopee_variation_id": "287783060910"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 53,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "42182569700",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -114,7 +114,15 @@
       "price_min": 55,
       "price_max": 55,
       "stock_total": 14,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#FPV #穿越機 #3吋槳 #R3030 #3030槳 #三葉槳 #螺旋槳 #RUIYI #芮翼 #Toothpick #Freestyle #競速機 #花飛 #無人機 #FPV配件 #電翼動力\n\n芮翼 RUIYI R3030 三葉槳專為3吋 FPV 穿越機打造，採用高韌性 PC 材質，兼具耐用性與操控靈敏度，適合 Toothpick、Freestyle、花飛及競速機使用。每組包含2正2反，可直接更換使用。\n\n【產品特色】\n✔ 3吋三葉設計，動力輸出平順\n✔ 高韌性PC材質，耐摔耐用\n✔ 重量僅1.6g，兼顧效率與靈敏度\n✔ M2固定螺絲規格\n✔ 適用1.5mm馬達軸\n✔ 適合 Toothpick、Freestyle、競速飛行\n\n【產品規格】\n品牌：RUIYI 芮翼\n型號：R3030\n尺寸：3吋\n葉片數：3葉\n材質：PC\n重量：1.6g／支\n中心孔徑：1.5mm\n中心厚度：5.1mm\n固定螺絲：M2\n包裝：2正槳＋2反槳（共4支）\n\n【適用機型】\n3吋 Toothpick\n3吋 Freestyle\n3吋 花式穿越機\n3吋 競速機\n※ 請確認馬達軸徑及固定方式後再購買。",
+    "approved_at": "2026-10-22"
   }
 }

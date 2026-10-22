@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#meteor75 #air75 #收納盒 #穿越機配件 #微型無人機 #電池收納 #fpv配件 #fpv收納 #betafpv #whoop盒\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n讓你的 Meteor75 / Air75 有專屬的安全之家！\n此收納盒專為 BetaFPV 微型穿越機設計，能同時放置機體與多顆 1S 電池\n450MAH 電池最多存放9塊，可以再放入充電器\n\n產品特色\n專屬開模，貼合 Meteor75 / Air75 尺寸\n內部電池卡槽設計，整齊收納不晃動\n外殼堅固，日常攜帶不怕擠壓\n適合外拍、戶外飛行攜帶組使用\n出門飛行必備，一盒搞定！",
+  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n讓你的 Meteor75 / Air75 有專屬的安全之家！\n此收納盒專為 BetaFPV 微型穿越機設計，能同時放置機體與多顆 1S 電池\n450MAH 電池最多存放9塊，可以再放入充電器\n\n產品特色\n專屬開模，貼合 Meteor75 / Air75 尺寸\n內部電池卡槽設計，整齊收納不晃動\n外殼堅固，日常攜帶不怕擠壓\n適合外拍、戶外飛行攜帶組使用\n出門飛行必備，一盒搞定！",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "BetaFPV Meteor75 / Air75 專用便攜收納盒｜電池收納｜機身保護盒（主圖）",
       "width": 966,
       "height": 966,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mhk2gqb72pdw0d"
     },
@@ -32,7 +32,7 @@
       "alt": "BetaFPV Meteor75 / Air75 專用便攜收納盒｜電池收納｜機身保護盒（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "BetaFPV Meteor75 / Air75 專用便攜收納盒｜電池收納｜機身保護盒（細節圖 2）",
       "width": 971,
       "height": 971,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mhk2gqb7nrwha0"
     }
@@ -51,64 +51,64 @@
     {
       "name": "螢光綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 346,
+      "availability": "in_stock",
       "shopee_variation_id": "315213912842"
     },
     {
       "name": "透橘",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 346,
+      "availability": "in_stock",
       "shopee_variation_id": "315213912843"
     },
     {
       "name": "透黃",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 346,
+      "availability": "in_stock",
       "shopee_variation_id": "315213912844"
     },
     {
       "name": "黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 346,
+      "availability": "in_stock",
       "shopee_variation_id": "315213912838"
     },
     {
       "name": "透明",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 346,
+      "availability": "in_stock",
       "shopee_variation_id": "315213912839"
     },
     {
       "name": "白",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 346,
+      "availability": "in_stock",
       "shopee_variation_id": "315213912840"
     },
     {
       "name": "冰淇淋",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 365,
+      "availability": "in_stock",
       "shopee_variation_id": "315213912841"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 346,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "54302194122",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -232,7 +232,15 @@
       "price_min": 360,
       "price_max": 380,
       "stock_total": 343,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#meteor75 #air75 #收納盒 #穿越機配件 #微型無人機 #電池收納 #fpv配件 #fpv收納 #betafpv #whoop盒\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n讓你的 Meteor75 / Air75 有專屬的安全之家！\n此收納盒專為 BetaFPV 微型穿越機設計，能同時放置機體與多顆 1S 電池\n450MAH 電池最多存放9塊，可以再放入充電器\n\n產品特色\n專屬開模，貼合 Meteor75 / Air75 尺寸\n內部電池卡槽設計，整齊收納不晃動\n外殼堅固，日常攜帶不怕擠壓\n適合外拍、戶外飛行攜帶組使用\n出門飛行必備，一盒搞定！",
+    "approved_at": "2026-10-22"
   }
 }

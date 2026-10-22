@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#GeprcVapor #VaporD配件 #VaporX配件 #Vapor打印件 #飛行器配件 \n#FPV配件 #穿越機配件 #GEPRC配件 #無人機配件 #客製配件\n\n⚠️ 注意事項\n・務必備註顏色，客製商品無法退貨\n・列印件皆會有些微層紋屬正常現象\n本系列專為 Geprc Vapor D / X 系列 設計，提供多種保護、補強與固定用途的實用配件。\n無論你是日常飛行、改裝升級、或增強機體耐久度，都能找到適合的部件",
+  "description": "⚠️ 注意事項\n・務必備註顏色，客製商品無法退貨\n・列印件皆會有些微層紋屬正常現象\n本系列專為 Geprc Vapor D / X 系列 設計，提供多種保護、補強與固定用途的實用配件。\n無論你是日常飛行、改裝升級、或增強機體耐久度，都能找到適合的部件",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "Geprc Vapor D / X 系列專用配件｜保護件・固定座・改裝部件合集（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mhvkesanryte16"
     },
@@ -32,7 +32,7 @@
       "alt": "Geprc Vapor D / X 系列專用配件｜保護件・固定座・改裝部件合集（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "Geprc Vapor D / X 系列專用配件｜保護件・固定座・改裝部件合集（細節圖 2）",
       "width": 898,
       "height": 898,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mhvkeuh0vz7od7"
     }
@@ -51,54 +51,54 @@
     {
       "name": "MARK4 O4PRO天線尾座",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 77,
+      "availability": "in_stock",
       "shopee_variation_id": "320253572574",
       "image": {
         "src": "/assets/img/products/sp-48902646893/opt-01-480.webp",
         "alt": "Geprc Vapor D / X 系列專用配件｜保護件・固定座・改裝部件合集（規格：MARK4 O4PRO天線尾座）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mhvkhud4e39iec"
       }
     },
     {
       "name": "GeprcVapor前置GPS傾斜版",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 58,
+      "availability": "in_stock",
       "shopee_variation_id": "320253572575",
       "image": {
         "src": "/assets/img/products/sp-48902646893/opt-02-480.webp",
         "alt": "Geprc Vapor D / X 系列專用配件｜保護件・固定座・改裝部件合集（規格：GeprcVapor前置GPS傾斜版）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhvkloyon1msd1"
       }
     },
     {
       "name": "GeprcVapor前置GPS平置版",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 48,
+      "availability": "in_stock",
       "shopee_variation_id": "320253572576",
       "image": {
         "src": "/assets/img/products/sp-48902646893/opt-03-480.webp",
         "alt": "Geprc Vapor D / X 系列專用配件｜保護件・固定座・改裝部件合集（規格：GeprcVapor前置GPS平置版）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mhvkmk52f75v8d"
       }
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 48,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "48902646893",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -170,7 +170,15 @@
       "price_min": 50,
       "price_max": 80,
       "stock_total": 149,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#GeprcVapor #VaporD配件 #VaporX配件 #Vapor打印件 #飛行器配件 \n#FPV配件 #穿越機配件 #GEPRC配件 #無人機配件 #客製配件\n\n⚠️ 注意事項\n・務必備註顏色，客製商品無法退貨\n・列印件皆會有些微層紋屬正常現象\n本系列專為 Geprc Vapor D / X 系列 設計，提供多種保護、補強與固定用途的實用配件。\n無論你是日常飛行、改裝升級、或增強機體耐久度，都能找到適合的部件",
+    "approved_at": "2026-10-22"
   }
 }

@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#SpeedyBeeMario5 #穿越機配件 #TPU護板 #一體式側護板 #3D列印配件 #穿越機保護罩 #SpeedyBee機架 #穿越機改裝 #FPV配件 #穿越機維修\n\n專為 SpeedyBee Mario 5 穿越機 設計的 一體式側護板，提供機架側邊的防撞與o3/4圖傳保護功能。\n\n✅ 一體式設計，外型俐落、安裝簡單\n✅ 精準貼合機架，線材保護效果佳\n✅ 適合維修替換與自組改裝\n\n適用機種: SpeedyBee Mario 5\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅",
+  "description": "專為 SpeedyBee Mario 5 穿越機 設計的 一體式側護板，提供機架側邊的防撞與o3/4圖傳保護功能。\n\n✅ 一體式設計，外型俐落、安裝簡單\n✅ 精準貼合機架，線材保護效果佳\n✅ 適合維修替換與自組改裝\n\n適用機種: SpeedyBee Mario 5\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "SpeedyBee Mario 5 一體式側護板 TPU防撞保護罩 穿越機側邊支架 外殼配件（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mgkehj74c2koe0"
     },
@@ -32,7 +32,7 @@
       "alt": "SpeedyBee Mario 5 一體式側護板 TPU防撞保護罩 穿越機側邊支架 外殼配件（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "SpeedyBee Mario 5 一體式側護板 TPU防撞保護罩 穿越機側邊支架 外殼配件（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mgkehj74q49b42"
     },
@@ -52,7 +52,7 @@
       "alt": "SpeedyBee Mario 5 一體式側護板 TPU防撞保護罩 穿越機側邊支架 外殼配件（細節圖 3）",
       "width": 918,
       "height": 918,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mgkei613hqmm57"
     }
@@ -61,22 +61,22 @@
     {
       "name": "碳纖維8%（只有黑色）",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 144,
+      "availability": "in_stock",
       "shopee_variation_id": "345539365418"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 144,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "57500676782",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -122,7 +122,15 @@
       "price_min": 150,
       "price_max": 150,
       "stock_total": 48,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#SpeedyBeeMario5 #穿越機配件 #TPU護板 #一體式側護板 #3D列印配件 #穿越機保護罩 #SpeedyBee機架 #穿越機改裝 #FPV配件 #穿越機維修\n\n專為 SpeedyBee Mario 5 穿越機 設計的 一體式側護板，提供機架側邊的防撞與o3/4圖傳保護功能。\n\n✅ 一體式設計，外型俐落、安裝簡單\n✅ 精準貼合機架，線材保護效果佳\n✅ 適合維修替換與自組改裝\n\n適用機種: SpeedyBee Mario 5\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅",
+    "approved_at": "2026-10-22"
   }
 }

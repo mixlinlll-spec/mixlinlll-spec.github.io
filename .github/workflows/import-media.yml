@@ -30,7 +30,6 @@ jobs:
       - name: 更新報告並驗證資料
         run: |
           node scripts/report-shopee-import.mjs
-          node scripts/report-first-batch.mjs
           node scripts/build.mjs --check
           node scripts/build.mjs && node scripts/check-site.mjs dist
       - name: 提交圖片與資料

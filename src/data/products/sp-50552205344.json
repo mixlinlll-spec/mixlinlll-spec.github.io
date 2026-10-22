@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#hdzero #hdzerogoggles #穿越機 #無人機眼鏡 #fpv眼鏡 #外殼配件 #goggles殼 #換色外殼 #fpv\n\nHDZERO Goggles 專用換色外殼｜高質感外觀升級款\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n想讓 HDZERO Goggles 換個風格？這款換色外殼能讓你的眼鏡瞬間變得更有個性。貼合度佳、同時讓外觀更亮眼，是許多飛手常用的升級選擇。\n\n⚠️請備註是否有安裝類比模塊 會發不一樣的版本\n⚠️請備註是否有安裝類比模塊 會發不一樣的版本\n⚠️請備註是否有安裝類比模塊 會發不一樣的版本\n\n特色簡介\n多色可選，讓你的 Goggles 更具辨識度\n貼合度優秀，安裝簡單\n強化保護外殼邊角，不怕日常刮傷\n輕量設計，不增加配重負擔\n適合喜歡打造專屬風格、讓裝備更獨一無二的你。",
+  "description": "HDZERO Goggles 專用換色外殼｜高質感外觀升級款\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n想讓 HDZERO Goggles 換個風格？這款換色外殼能讓你的眼鏡瞬間變得更有個性。貼合度佳、同時讓外觀更亮眼，是許多飛手常用的升級選擇。\n\n⚠️請備註是否有安裝類比模塊 會發不一樣的版本\n⚠️請備註是否有安裝類比模塊 會發不一樣的版本\n⚠️請備註是否有安裝類比模塊 會發不一樣的版本\n\n特色簡介\n多色可選，讓你的 Goggles 更具辨識度\n貼合度優秀，安裝簡單\n強化保護外殼邊角，不怕日常刮傷\n輕量設計，不增加配重負擔\n適合喜歡打造專屬風格、讓裝備更獨一無二的你。",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "HDZERO Goggles 專用換色外殼｜個性化改裝（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mhk4pufoqxhh55"
     },
@@ -32,7 +32,7 @@
       "alt": "HDZERO Goggles 專用換色外殼｜個性化改裝（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "HDZERO Goggles 專用換色外殼｜個性化改裝（細節圖 2）",
       "width": 976,
       "height": 976,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mhk4vaoa9s0826"
     }
@@ -51,71 +51,71 @@
     {
       "name": "透橘",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "365213631754"
     },
     {
       "name": "透黃",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "365213631755"
     },
     {
       "name": "冰淇淋",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 230,
+      "availability": "in_stock",
       "shopee_variation_id": "365213631756"
     },
     {
       "name": "軍綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "365213631757"
     },
     {
       "name": "黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "365213631758"
     },
     {
       "name": "白",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "365213631759"
     },
     {
       "name": "透明",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "365213631752"
     },
     {
       "name": "螢光綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 211,
+      "availability": "in_stock",
       "shopee_variation_id": "365213631753"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 211,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "50552205344",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -252,7 +252,15 @@
       "price_min": 220,
       "price_max": 240,
       "stock_total": 394,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#hdzero #hdzerogoggles #穿越機 #無人機眼鏡 #fpv眼鏡 #外殼配件 #goggles殼 #換色外殼 #fpv\n\nHDZERO Goggles 專用換色外殼｜高質感外觀升級款\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n想讓 HDZERO Goggles 換個風格？這款換色外殼能讓你的眼鏡瞬間變得更有個性。貼合度佳、同時讓外觀更亮眼，是許多飛手常用的升級選擇。\n\n⚠️請備註是否有安裝類比模塊 會發不一樣的版本\n⚠️請備註是否有安裝類比模塊 會發不一樣的版本\n⚠️請備註是否有安裝類比模塊 會發不一樣的版本\n\n特色簡介\n多色可選，讓你的 Goggles 更具辨識度\n貼合度優秀，安裝簡單\n強化保護外殼邊角，不怕日常刮傷\n輕量設計，不增加配重負擔\n適合喜歡打造專屬風格、讓裝備更獨一無二的你。",
+    "approved_at": "2026-10-22"
   }
 }

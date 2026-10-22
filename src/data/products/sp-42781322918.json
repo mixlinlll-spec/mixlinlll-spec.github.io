@@ -62,7 +62,7 @@
       "alt": "SIRIUS 天狼星 2306.5 1860KV 無刷電機 5吋穿越機電機 FPV Freestyle 競速 花飛 6S（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-movwobh0vjeqe3"
     },
@@ -72,7 +72,7 @@
       "alt": "SIRIUS 天狼星 2306.5 1860KV 無刷電機 5吋穿越機電機 FPV Freestyle 競速 花飛 6S（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-movwobf0owsh2a"
     },
@@ -82,7 +82,7 @@
       "alt": "SIRIUS 天狼星 2306.5 1860KV 無刷電機 5吋穿越機電機 FPV Freestyle 競速 花飛 6S（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-movwobep7xu3e2"
     }
@@ -91,36 +91,36 @@
     {
       "name": "紫色",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 412,
+      "availability": "in_stock",
       "shopee_variation_id": "400993012784"
     },
     {
       "name": "粉色",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 412,
+      "availability": "in_stock",
       "shopee_variation_id": "400993012785"
     },
     {
       "name": "鈦灰",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 412,
+      "availability": "in_stock",
       "shopee_variation_id": "400993012783"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 412,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "42781322918",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -211,8 +211,15 @@
       "price_min": 429,
       "price_max": 429,
       "stock_total": 10,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   },
   "notes": [
     "請確認電調與電池配置是否相容。",

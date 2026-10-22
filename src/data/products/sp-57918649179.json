@@ -123,7 +123,7 @@
       "alt": "FDI F722 V5 飛控 + 60A 四合一電調 堆疊組 8路輸出 BLHeli32 電翼動力（主圖）",
       "width": 767,
       "height": 767,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820li-mtsbkhjvk1l1ef"
     }
@@ -132,36 +132,36 @@
     {
       "name": "60A四合一電調",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 1325,
+      "availability": "in_stock",
       "shopee_variation_id": "386566590955"
     },
     {
       "name": "全套飛塔",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 2669,
+      "availability": "in_stock",
       "shopee_variation_id": "386566590953"
     },
     {
       "name": "F722 V5飛控",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 1392,
+      "availability": "in_stock",
       "shopee_variation_id": "386566590954"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 1325,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "57918649179",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -241,8 +241,15 @@
       "price_min": 1380,
       "price_max": 2780,
       "stock_total": 9,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   },
   "notes": [
     "本電調無 BEC，5V／9V／12V 供電須由飛控或另外的 BEC 模組提供。",

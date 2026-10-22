@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## v2.4.0（2026-10-22，EWP 核准全部上架）
+
+- 依 EWP 指示：圖片使用權確認全部可使用（`rights: "licensed"`）；套用全部蝦皮價格與庫存；**官網價 = 蝦皮價 −4%**（不經蝦皮平台抽成，四捨五入到整數元）；238 件商品 `published: true`、`review.status: "approved"`。
+- 2 件非 FPV 玩具（EWP 先前決定不公開）維持 rejected，不上官網。
+- 依 EWP 指示移除合規限制：刪除 `compliance` 欄位與相關驗證、整機不再強制作品介紹模式，HUAN、GOBU 哨兵、MOZ7 直接以販售模式上架。
+- 驗證規則：brand、short_description、subcategory 改為選填（缺少時頁面省略該欄位，不自動編造）。
+- 全部 240 件描述清理 hashtag 行、店家保固條款與蝦皮站內用語，原文保存於 `review.source_description`。
+- `approve-snapshot.mjs` 新增 `--discount`、`--publish`，略過 rejected。
+- 移除首批 20 件的確認表與相關工具（已由全量上架取代）。
+- 結果：238 件上架（現貨 213、暫無供貨 25；單一價 137、起價 101），正式產物含 238 件商品圖片。
+
 ## v2.3.0（2026-10-22，蝦皮全量圖片與價格庫存匯入）
 
 - 240 件商品寫入 `review.source_media`（蝦皮主圖、細節圖、規格選項圖網址）與 `review.shopee_sales_snapshot`（價格、庫存、最低購買量、規格 ID；912 列含 4 件服務型）。

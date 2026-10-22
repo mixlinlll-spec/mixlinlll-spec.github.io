@@ -7,15 +7,15 @@
 | 1 | LINE 官方帳號 | ✅ 已完成 | `https://lin.ee/WIUCkWP`，由 EWP 提供的 QR 解碼驗證一致，聯絡頁使用原 QR 圖檔 |
 | 2 | 蝦皮賣場首頁 | ✅ 已完成 | `https://shopee.tw/mixlin`（已移除搜尋追蹤參數）。舊短網址 `tw.shp.ee/tbLSac5h` 未使用 |
 | 3 | 蝦皮 shop ID | ⏳ 待 EWP 核實 | EWP 決定：必須核實，**不直接採用 4053258**。核實後填入 `site.json → contact.shopee.shop_id`，草稿會自動帶出各自的蝦皮商品連結 |
-| 4 | 首批公開商品 | ⏳ 資料整理完成，待 EWP 補資料 | 20 件已整理成草稿頁；逐件缺漏見 [FIRST_BATCH_REVIEW.md](FIRST_BATCH_REVIEW.md)（Excel：[first-batch-review.csv](first-batch-review.csv)） |
+| 4 | 商品上架 | ✅ 已完成 | 238 件依蝦皮資料上架，官網價＝蝦皮價 −4%；2 件非 FPV 玩具不上架 |
 | 5 | Email 公開 | ✅ 已完成 | mixlin.lll@gmail.com |
 | 6 | 營業時間、電話 | ✅ 依指示不公開 | 聯絡頁顯示「目前僅提供線上聯絡，暫不公開營業時間」 |
 | 6a | 營業登記資訊 | ✅ 已完成 | 電翼動力航模企業社、統一編號 00693689、登記地址（關於、聯絡頁，緊貼「非實體門市」提示）；頁尾只顯示名稱＋統編；稅籍編號不公開、不存入 repo |
 | 7 | 主要 CTA 優先順序 | ✅ 已完成 | 一般現貨商品蝦皮優先；EWP 自製整機／電池、組裝、服務 LINE 優先（`cta_primary` 可個別覆寫） |
 | 8 | 隱私權、網站條款、售後／運送／退換 | ⏳ EWP 另行整理 | 三頁皆未核准：noindex、不出現在頁尾與 sitemap；隱私權頁標示「草案，待 EWP 正式核對」 |
 | 8a | GitHub Pages 來源改為 GitHub Actions | ⏳ 合併前必做 | 見 [DEPLOY_ROLLBACK.md](DEPLOY_ROLLBACK.md) |
-| 4a | 蝦皮圖片使用權 | ⏳ 待 EWP 確認 | 1,092 張主圖／細節圖與 303 張規格選項圖已匯入（rights: unverified）。確認哪些是 EWP 自有、哪些需原廠授權後，用 `approve-snapshot.mjs --image-rights` 標示 |
-| 4b | 蝦皮價格／庫存快照 | ⏳ 待 EWP 核對 | 912 列已保存為快照，公開欄位仍為詢價。核對後用 `approve-snapshot.mjs --prices --stock` 套用（見 [SHOPEE_IMPORT_REPORT.md](SHOPEE_IMPORT_REPORT.md)） |
+| 4a | 商品圖片 | ✅ 已完成 | 1,092 張主圖／細節圖、303 張規格選項圖，EWP 確認全部可使用 |
+| 4b | 價格／庫存 | ✅ 已套用 | 2026-10-22 蝦皮快照；之後更新請交新的蝦皮匯出檔，用 `approve-snapshot.mjs --discount 4` 重新套用 |
 | 9 | Logo 原檔 | ⏳ 待提供 | 目前沿用原站文字 wordmark（紅色 EWP） |
 
 ## P1：版型完成後可補
@@ -38,5 +38,5 @@
 | 商品 CTA | 一般現貨蝦皮優先；客製整機／電池／維修 LINE 優先 | 見上方 #7 |
 | Instagram | 暫用靈雀電池帳號 | 聯絡頁加入 QR（原檔，解碼驗證一致） |
 | 蝦皮 Shop ID | 必須核實 | 維持 null |
-| 首批商品 | 先公開 20 件 | 建議名單 [FIRST_BATCH.md](FIRST_BATCH.md) |
+| 商品上架 | 全部上架、官網價 −4%、圖片可用、移除合規限制 | v2.4.0 |
 | 網站條款與售後 | EWP 另行整理 | 維持未核准 |

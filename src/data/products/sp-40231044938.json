@@ -22,7 +22,7 @@
       "alt": "GEPRC 電池綁帶 魔鬼氈束帶 穿越機 FPV 無人機電池固定帶（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mogw9ohrr9jia5"
     },
@@ -32,7 +32,7 @@
       "alt": "GEPRC 電池綁帶 魔鬼氈束帶 穿越機 FPV 無人機電池固定帶（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mogw9ohzbrpcdf"
     }
@@ -41,36 +41,36 @@
     {
       "name": "20x250mm",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 62,
+      "availability": "in_stock",
       "shopee_variation_id": "282633033777"
     },
     {
       "name": "20x300mm",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 67,
+      "availability": "in_stock",
       "shopee_variation_id": "282633033775"
     },
     {
       "name": "15x150mm",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 53,
+      "availability": "in_stock",
       "shopee_variation_id": "282633033776"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 53,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "40231044938",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -142,7 +142,15 @@
       "price_min": 55,
       "price_max": 70,
       "stock_total": 42,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "GEPRC 原廠電池綁帶，適用 FPV 穿越機／無人機電池固定，魔鬼氈黏性佳、束緊穩固，不易鬆脫，搭配金屬扣環設計更耐用。黑色簡約款式，實用好搭，適合日常維修、更換與自組機使用。圖中可選尺寸：15x150、15x200、20x220、20x250、20x300，請依機型與電池尺寸選購。",
+    "approved_at": "2026-10-22"
   }
 }

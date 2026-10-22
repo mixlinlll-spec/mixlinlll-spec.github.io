@@ -15,7 +15,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "•\t#Tinywhoop\n•\t#微型穿越機\n•\t#Tinywhoop壁掛\n•\t#穿越機收納架\n•\t#牆面展示架\n•\t#洞洞板收納\n•\t#whoop機庫\n•\t#FPV收納\n•\t#3D列印支架\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t可選單掛式／多掛排架：單個掛一台、或一排掛 3～5 台，牆上一眼看到今天要飛哪一台。\n•\t安裝方式多元：螺絲、3M 無痕膠、掛在洞洞板都可以，租屋族也能輕鬆佈置牆面機庫。",
+  "description": "•\t可選單掛式／多掛排架：單個掛一台、或一排掛 3～5 台，牆上一眼看到今天要飛哪一台。\n•\t安裝方式多元：螺絲、3M 無痕膠、掛在洞洞板都可以，租屋族也能輕鬆佈置牆面機庫。",
   "specifications": [],
   "images": [
     {
@@ -24,7 +24,7 @@
       "alt": "Tinywhoop 微型穿越機壁掛支架 65～85mm 機架收納固定座 牆面展示架（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mjp3jh28npc7bd"
     },
@@ -34,7 +34,7 @@
       "alt": "Tinywhoop 微型穿越機壁掛支架 65～85mm 機架收納固定座 牆面展示架（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -44,7 +44,7 @@
       "alt": "Tinywhoop 微型穿越機壁掛支架 65～85mm 機架收納固定座 牆面展示架（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mjp3jh2pv5s61c"
     },
@@ -54,7 +54,7 @@
       "alt": "Tinywhoop 微型穿越機壁掛支架 65～85mm 機架收納固定座 牆面展示架（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mjp3jh2soao792"
     },
@@ -64,7 +64,7 @@
       "alt": "Tinywhoop 微型穿越機壁掛支架 65～85mm 機架收納固定座 牆面展示架（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mjp3jh1ympdu64"
     }
@@ -73,22 +73,22 @@
     {
       "name": "一組2個",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 77,
+      "availability": "in_stock",
       "shopee_variation_id": "282347344405"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 77,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "50054950504",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -135,7 +135,15 @@
       "price_min": 80,
       "price_max": 80,
       "stock_total": 94,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "•\t#Tinywhoop\n•\t#微型穿越機\n•\t#Tinywhoop壁掛\n•\t#穿越機收納架\n•\t#牆面展示架\n•\t#洞洞板收納\n•\t#whoop機庫\n•\t#FPV收納\n•\t#3D列印支架\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t可選單掛式／多掛排架：單個掛一台、或一排掛 3～5 台，牆上一眼看到今天要飛哪一台。\n•\t安裝方式多元：螺絲、3M 無痕膠、掛在洞洞板都可以，租屋族也能輕鬆佈置牆面機庫。",
+    "approved_at": "2026-10-22"
   }
 }

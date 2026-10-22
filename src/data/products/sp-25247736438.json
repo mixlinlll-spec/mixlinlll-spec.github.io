@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#FPV\n#FPV穿越機\n#電機線護套\n#線束固定\n#TPU打印件\n#3D列印配件\n#穿越機改裝\n#電機線管理\n#FPV線材保護\n#穿越機零件\n\n專為 FPV 穿越機打造的 電機線保護套 / 線束固定槽，有效防止電機線在飛行時晃動、磨損、被螺旋槳刮傷。\n柔韌 TPU 材質可提供良好固定性，又不會壓迫線材。\n適合 4~8 吋穿越機、自由改裝使用。\n\n✨ 商品特色\n有效管理電機線，避免噴槳、磨損、邊緣刮傷\nTPU 材質彈性佳，安裝不傷線\n輕量化設計，不增加機身負擔\n適用於大部分 FPV 穿越機框架\n\n📦 規格\n1組四條\n材質：TPU\n安裝方式：貼附 / 綁帶固定\n適用： 4 / 5 / 8吋穿越機電機線",
+  "description": "專為 FPV 穿越機打造的 電機線保護套 / 線束固定槽，有效防止電機線在飛行時晃動、磨損、被螺旋槳刮傷。\n柔韌 TPU 材質可提供良好固定性，又不會壓迫線材。\n適合 4~8 吋穿越機、自由改裝使用。\n\n✨ 商品特色\n有效管理電機線，避免噴槳、磨損、邊緣刮傷\nTPU 材質彈性佳，安裝不傷線\n輕量化設計，不增加機身負擔\n適用於大部分 FPV 穿越機框架\n\n📦 規格\n1組四條\n材質：TPU\n安裝方式：貼附 / 綁帶固定\n適用： 4 / 5 / 8吋穿越機電機線",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "FPV 電機線保護套｜電機線束固定槽｜穿越機專用 TPU 線路護套（主圖）",
       "width": 803,
       "height": 803,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mh4p5c3yvx8of4"
     },
@@ -32,7 +32,7 @@
       "alt": "FPV 電機線保護套｜電機線束固定槽｜穿越機專用 TPU 線路護套（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "FPV 電機線保護套｜電機線束固定槽｜穿越機專用 TPU 線路護套（細節圖 2）",
       "width": 974,
       "height": 974,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mh4p4u6qi7f103"
     }
@@ -51,64 +51,64 @@
     {
       "name": "黑",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 95,
+      "availability": "in_stock",
       "shopee_variation_id": "287162069598"
     },
     {
       "name": "橘",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 95,
+      "availability": "in_stock",
       "shopee_variation_id": "395137186070"
     },
     {
       "name": "綠",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 95,
+      "availability": "in_stock",
       "shopee_variation_id": "395137186071"
     },
     {
       "name": "黃",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 95,
+      "availability": "in_stock",
       "shopee_variation_id": "395137186072"
     },
     {
       "name": "透藍",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 95,
+      "availability": "in_stock",
       "shopee_variation_id": "395137186073"
     },
     {
       "name": "紫",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 95,
+      "availability": "in_stock",
       "shopee_variation_id": "395137186074"
     },
     {
       "name": "白",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 95,
+      "availability": "in_stock",
       "shopee_variation_id": "395137186075"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 95,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "25247736438",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -232,7 +232,15 @@
       "price_min": 99,
       "price_max": 99,
       "stock_total": 128,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#FPV\n#FPV穿越機\n#電機線護套\n#線束固定\n#TPU打印件\n#3D列印配件\n#穿越機改裝\n#電機線管理\n#FPV線材保護\n#穿越機零件\n\n專為 FPV 穿越機打造的 電機線保護套 / 線束固定槽，有效防止電機線在飛行時晃動、磨損、被螺旋槳刮傷。\n柔韌 TPU 材質可提供良好固定性，又不會壓迫線材。\n適合 4~8 吋穿越機、自由改裝使用。\n\n✨ 商品特色\n有效管理電機線，避免噴槳、磨損、邊緣刮傷\nTPU 材質彈性佳，安裝不傷線\n輕量化設計，不增加機身負擔\n適用於大部分 FPV 穿越機框架\n\n📦 規格\n1組四條\n材質：TPU\n安裝方式：貼附 / 綁帶固定\n適用： 4 / 5 / 8吋穿越機電機線",
+    "approved_at": "2026-10-22"
   }
 }

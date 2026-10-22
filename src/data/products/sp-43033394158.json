@@ -24,7 +24,7 @@
       "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mrn4y93trton64"
     },
@@ -34,7 +34,7 @@
       "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mrn4y97pnjlze4"
     },
@@ -44,7 +44,7 @@
       "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mrn4y93cu77oee"
     },
@@ -54,7 +54,7 @@
       "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mrn4y93v979h76"
     },
@@ -64,7 +64,7 @@
       "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mrn4y95w2ayp48"
     }
@@ -73,43 +73,43 @@
     {
       "name": "動力套ELRS",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 3792,
+      "availability": "in_stock",
       "shopee_variation_id": "396340155980"
     },
     {
       "name": "動力套Sbus",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 3792,
+      "availability": "in_stock",
       "shopee_variation_id": "396340155981"
     },
     {
       "name": "O4WideELRS",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 8880,
+      "availability": "in_stock",
       "shopee_variation_id": "396340155986"
     },
     {
       "name": "O4WideSbus",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 8880,
+      "availability": "in_stock",
       "shopee_variation_id": "396340155987"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 3792,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "43033394158",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -204,7 +204,15 @@
       "price_min": 3950,
       "price_max": 9250,
       "stock_total": 18,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "✅ 搭載 DJI O4 Wide 高清數位圖傳",
+    "approved_at": "2026-10-22"
   }
 }

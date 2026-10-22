@@ -48,7 +48,7 @@
       "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mmbxfk8d9gcg07"
     },
@@ -58,7 +58,7 @@
       "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmbx0c9dk3k898"
     },
@@ -68,7 +68,7 @@
       "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mmoq9ollnchtaa"
     },
@@ -78,7 +78,7 @@
       "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mmbx0c9byi9ua1"
     },
@@ -88,7 +88,7 @@
       "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmbx94303nybf5"
     },
@@ -98,7 +98,7 @@
       "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 5）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mmbx943eumm964"
     }
@@ -107,29 +107,29 @@
     {
       "name": "一盒+十字起子（顏色隨機）",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 305,
+      "availability": "in_stock",
       "shopee_variation_id": "375694231060"
     },
     {
       "name": "一盒",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 268,
+      "availability": "in_stock",
       "shopee_variation_id": "375694231059"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 268,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "47807830807",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -205,8 +205,15 @@
       "price_min": 279,
       "price_max": 318,
       "stock_total": 71,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   },
   "notes": [
     "請確認尺寸再使用。",

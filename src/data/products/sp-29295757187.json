@@ -85,7 +85,7 @@
       "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mt3be69b4vm2a8"
     },
@@ -95,7 +95,7 @@
       "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mtat1ouq9ds572"
     },
@@ -105,7 +105,7 @@
       "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mtat1oulm87838"
     },
@@ -115,7 +115,7 @@
       "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtat1oux4lqa5e"
     },
@@ -125,7 +125,7 @@
       "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtat1ov0adqd6f"
     },
@@ -135,7 +135,7 @@
       "alt": "GOBU 哨兵 3.5吋 FPV穿越機 F722 AIO 40A 4500KV DJI O4 Wide O4 Pro（細節圖 5）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mt3be6ap493eb5"
     }
@@ -144,36 +144,36 @@
     {
       "name": "模擬（平頭哥2，旋風1瓦）",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 8141,
+      "availability": "in_stock",
       "shopee_variation_id": "441489272765"
     },
     {
       "name": "O4Wide含CNC圖傳保護及鏡頭改件",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 11021,
+      "availability": "in_stock",
       "shopee_variation_id": "441489272763"
     },
     {
       "name": "DJI O4 PRO",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 13901,
+      "availability": "in_stock",
       "shopee_variation_id": "441489272764"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 8141,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "29295757187",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -188,8 +188,7 @@
     "shopee_url_verified": false,
     "missing": [
       "接收機版本",
-      "實機照片",
-      "是否轉為販售模式：須先完成合規確認"
+      "實機照片"
     ],
     "source_media": {
       "media_export": "mass_update_media_info_4053258_20261022141110",
@@ -257,25 +256,14 @@
       "price_min": 8480,
       "price_max": 14480,
       "stock_total": 14,
-      "status": "snapshot_only"
-    }
-  },
-  "listing_mode": "showcase",
-  "compliance": {
-    "status": "pending",
-    "items": [
-      {
-        "type": "NCC",
-        "reason": "整機含圖傳與接收機等無線電發射設備，販售前須確認 NCC 審驗合格"
-      },
-      {
-        "type": "BSMI",
-        "reason": "蝦皮曾因未填 BSMI／NCC 字號下架整機商品，請確認整機販售所需的檢驗字號"
-      },
-      {
-        "type": "民航法規",
-        "reason": "請確認遙控無人機相關規定（例如註冊、操作限制）於商品頁的告知方式"
-      }
-    ]
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   }
 }

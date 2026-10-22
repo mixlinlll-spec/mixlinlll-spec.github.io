@@ -13,7 +13,7 @@
   "video_system": null,
   "battery_cells": [],
   "short_description": "",
-  "description": "#RadioMasterPocket\n#遙控器保護盒\n#3D打印收納盒\n#FPV遙控器盒\n#硬殼收納盒\n#防壓防撞\n#Pocket專用\n#RC遙控器配件\n#穿越機配件\n#台灣現貨\n\nRadioMaster Pocket 3D打印遙控器保護盒🧳 專用硬殼收納盒 防壓防撞 手控美箱 FPV外出攜行盒\n\n專為 RadioMaster Pocket 遙控器設計，盒內收納槽貼合機身外形，放入後更穩定，外出攜帶不易晃動碰撞。​\n硬殼箱體搭配雙邊卡扣與金屬軸結構，開闔俐落、外型硬派，比一般軟包更有保護感。​\n上蓋與箱身採一體式軍箱風設計，桌上展示有質感，帶去飛場也更有專業感與收藏感。​\n盒內除主機空間外，還可見額外圓孔位可收納搖桿頭​",
+  "description": "RadioMaster Pocket 3D打印遙控器保護盒🧳 專用硬殼收納盒 防壓防撞 手控美箱 FPV外出攜行盒\n\n專為 RadioMaster Pocket 遙控器設計，盒內收納槽貼合機身外形，放入後更穩定，外出攜帶不易晃動碰撞。​\n硬殼箱體搭配雙邊卡扣與金屬軸結構，開闔俐落、外型硬派，比一般軟包更有保護感。​\n上蓋與箱身採一體式軍箱風設計，桌上展示有質感，帶去飛場也更有專業感與收藏感。​\n盒內除主機空間外，還可見額外圓孔位可收納搖桿頭​",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "RadioMaster Pocket 3D打印遙控器保護盒 專用硬殼收納盒 防壓防撞 FPV（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mlhmnfy5vhmw37"
     },
@@ -32,7 +32,7 @@
       "alt": "RadioMaster Pocket 3D打印遙控器保護盒 專用硬殼收納盒 防壓防撞 FPV（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
@@ -42,7 +42,7 @@
       "alt": "RadioMaster Pocket 3D打印遙控器保護盒 專用硬殼收納盒 防壓防撞 FPV（細節圖 2）",
       "width": 966,
       "height": 966,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mlhmnfyash6ta9"
     },
@@ -52,7 +52,7 @@
       "alt": "RadioMaster Pocket 3D打印遙控器保護盒 專用硬殼收納盒 防壓防撞 FPV（細節圖 3）",
       "width": 926,
       "height": 926,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mlhmr1lysl4zca"
     }
@@ -61,22 +61,22 @@
     {
       "name": "下標後請聊聊討論顏色",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 527,
+      "availability": "in_stock",
       "shopee_variation_id": "385613759870"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 527,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "48206877528",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -123,7 +123,15 @@
       "price_min": 549,
       "price_max": 549,
       "stock_total": 46,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#RadioMasterPocket\n#遙控器保護盒\n#3D打印收納盒\n#FPV遙控器盒\n#硬殼收納盒\n#防壓防撞\n#Pocket專用\n#RC遙控器配件\n#穿越機配件\n#台灣現貨\n\nRadioMaster Pocket 3D打印遙控器保護盒🧳 專用硬殼收納盒 防壓防撞 手控美箱 FPV外出攜行盒\n\n專為 RadioMaster Pocket 遙控器設計，盒內收納槽貼合機身外形，放入後更穩定，外出攜帶不易晃動碰撞。​\n硬殼箱體搭配雙邊卡扣與金屬軸結構，開闔俐落、外型硬派，比一般軟包更有保護感。​\n上蓋與箱身採一體式軍箱風設計，桌上展示有質感，帶去飛場也更有專業感與收藏感。​\n盒內除主機空間外，還可見額外圓孔位可收納搖桿頭​",
+    "approved_at": "2026-10-22"
   }
 }

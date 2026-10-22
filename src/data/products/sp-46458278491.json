@@ -13,7 +13,7 @@
   "video_system": "DJI O4",
   "battery_cells": [],
   "short_description": "",
-  "description": "#DJI #O3 #O4 #天空端 #排線 #6P排線 #飛控排線 #F4飛控 #F7飛控 #FPV #穿越機 #航模 #SpeedyBee #無人機配件 #DJI配件\n\nDJI O3／O4 天空端專用 6P 雙頭排線，適合具備排插接口的 F4／F7 飛控使用，免繁瑣焊接，安裝更快速，配線更整潔。\n\n・適用 DJI O3 / O4 天空端\n・6P 雙頭直插設計，安裝方便\n・適用具排插端口之 F4 / F7 飛控\n・可用於  F4 / F7 等相容飛控\n・適合穿越機、FPV、航模改裝與維修使用",
+  "description": "DJI O3／O4 天空端專用 6P 雙頭排線，適合具備排插接口的 F4／F7 飛控使用，免繁瑣焊接，安裝更快速，配線更整潔。\n\n・適用 DJI O3 / O4 天空端\n・6P 雙頭直插設計，安裝方便\n・適用具排插端口之 F4 / F7 飛控\n・可用於  F4 / F7 等相容飛控\n・適合穿越機、FPV、航模改裝與維修使用",
   "specifications": [],
   "images": [
     {
@@ -22,7 +22,7 @@
       "alt": "DJI O3 O4 天空端6P雙頭排線 F4 F7飛控直插線 連接線 穿越機 FPV 航模 適用SpeedyBee（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mmoqe5r6savj46"
     },
@@ -32,7 +32,7 @@
       "alt": "DJI O3 O4 天空端6P雙頭排線 F4 F7飛控直插線 連接線 穿越機 FPV 航模 適用SpeedyBee（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmbx0c9dk3k898"
     },
@@ -42,7 +42,7 @@
       "alt": "DJI O3 O4 天空端6P雙頭排線 F4 F7飛控直插線 連接線 穿越機 FPV 航模 適用SpeedyBee（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmoqe5r3l4atc9"
     },
@@ -52,7 +52,7 @@
       "alt": "DJI O3 O4 天空端6P雙頭排線 F4 F7飛控直插線 連接線 穿越機 FPV 航模 適用SpeedyBee（細節圖 3）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mmoqe5r3miv959"
     },
@@ -62,7 +62,7 @@
       "alt": "DJI O3 O4 天空端6P雙頭排線 F4 F7飛控直插線 連接線 穿越機 FPV 航模 適用SpeedyBee（細節圖 4）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mmoqe5r1eghv57"
     }
@@ -71,36 +71,36 @@
     {
       "name": "4CM",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 53,
+      "availability": "in_stock",
       "shopee_variation_id": "272508534320"
     },
     {
       "name": "7CM",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 58,
+      "availability": "in_stock",
       "shopee_variation_id": "272508534321"
     },
     {
       "name": "15CM",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 62,
+      "availability": "in_stock",
       "shopee_variation_id": "272508534322"
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 53,
+  "price_display": "from",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "46458278491",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -173,7 +173,15 @@
       "price_min": 55,
       "price_max": 65,
       "stock_total": 53,
-      "status": "snapshot_only"
-    }
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#DJI #O3 #O4 #天空端 #排線 #6P排線 #飛控排線 #F4飛控 #F7飛控 #FPV #穿越機 #航模 #SpeedyBee #無人機配件 #DJI配件\n\nDJI O3／O4 天空端專用 6P 雙頭排線，適合具備排插接口的 F4／F7 飛控使用，免繁瑣焊接，安裝更快速，配線更整潔。\n\n・適用 DJI O3 / O4 天空端\n・6P 雙頭直插設計，安裝方便\n・適用具排插端口之 F4 / F7 飛控\n・可用於  F4 / F7 等相容飛控\n・適合穿越機、FPV、航模改裝與維修使用",
+    "approved_at": "2026-10-22"
   }
 }

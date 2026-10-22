@@ -45,7 +45,7 @@
       "alt": "靈雀 Spirit Sparrow FPV遠航電池｜6S2P / 6S3P / 6S4P 長航專用鋰電組｜（主圖）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgt7dpr64dn32e"
     },
@@ -55,7 +55,7 @@
       "alt": "靈雀 Spirit Sparrow FPV遠航電池｜6S2P / 6S3P / 6S4P 長航專用鋰電組｜（細節圖 1）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mgt7dpre2xhl0b"
     },
@@ -65,7 +65,7 @@
       "alt": "靈雀 Spirit Sparrow FPV遠航電池｜6S2P / 6S3P / 6S4P 長航專用鋰電組｜（細節圖 2）",
       "width": 1000,
       "height": 1000,
-      "rights": "unverified",
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mgt7dprfhhxn2b"
     }
@@ -74,28 +74,28 @@
     {
       "name": "6S2P",
       "sku": null,
-      "price_twd": null,
-      "availability": "unknown",
+      "price_twd": 2861,
+      "availability": "in_stock",
       "shopee_variation_id": "302136316939",
       "image": {
         "src": "/assets/img/products/sp-46751039159/opt-01-480.webp",
         "alt": "靈雀 Spirit Sparrow FPV遠航電池｜6S2P / 6S3P / 6S4P 長航專用鋰電組｜（規格：6S2P）",
-        "rights": "unverified",
+        "rights": "licensed",
         "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgt7dpr64dn32e"
       }
     }
   ],
-  "price_twd": null,
-  "price_display": "inquiry",
-  "availability": "unknown",
+  "price_twd": 2861,
+  "price_display": "fixed",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "46751039159",
   "line_inquiry_enabled": true,
   "featured": false,
-  "published": false,
+  "published": true,
   "updated_at": "2026-10-22",
   "review": {
-    "status": "draft",
+    "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
@@ -157,20 +157,14 @@
       "price_min": 2980,
       "price_max": 2980,
       "stock_total": 6,
-      "status": "snapshot_only"
-    }
-  },
-  "compliance": {
-    "status": "pending",
-    "items": [
-      {
-        "type": "BSMI",
-        "reason": "鋰電池：請確認是否屬「3C 二次鋰單電池／組」應施檢驗範圍（CNS 15364），如適用須取得檢驗標識"
-      },
-      {
-        "type": "運輸",
-        "reason": "鋰電池寄送與航空運輸有容量與包裝限制，請確認物流方式與標示"
-      }
-    ]
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
   }
 }
