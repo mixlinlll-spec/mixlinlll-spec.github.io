@@ -14,6 +14,8 @@
 | 7 | 主要 CTA 優先順序 | ✅ 已完成 | 一般現貨商品蝦皮優先；EWP 自製整機／電池、組裝、服務 LINE 優先（`cta_primary` 可個別覆寫） |
 | 8 | 隱私權、網站條款、售後／運送／退換 | ⏳ EWP 另行整理 | 三頁皆未核准：noindex、不出現在頁尾與 sitemap；隱私權頁標示「草案，待 EWP 正式核對」 |
 | 8a | GitHub Pages 來源改為 GitHub Actions | ⏳ 合併前必做 | 見 [DEPLOY_ROLLBACK.md](DEPLOY_ROLLBACK.md) |
+| 4a | 蝦皮圖片使用權 | ⏳ 待 EWP 確認 | 1,092 張主圖／細節圖與 303 張規格選項圖已匯入（rights: unverified）。確認哪些是 EWP 自有、哪些需原廠授權後，用 `approve-snapshot.mjs --image-rights` 標示 |
+| 4b | 蝦皮價格／庫存快照 | ⏳ 待 EWP 核對 | 912 列已保存為快照，公開欄位仍為詢價。核對後用 `approve-snapshot.mjs --prices --stock` 套用（見 [SHOPEE_IMPORT_REPORT.md](SHOPEE_IMPORT_REPORT.md)） |
 | 9 | Logo 原檔 | ⏳ 待提供 | 目前沿用原站文字 wordmark（紅色 EWP） |
 
 ## P1：版型完成後可補
