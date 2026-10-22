@@ -45,6 +45,9 @@ for (const p of PAGES) {
   else if (sc.performance < PERF_TARGET) issues.push(`⚠ performance ${sc.performance} 低於目標 ${PERF_TARGET}`);
   if (runs.length > 1) issues.push(`重跑 3 次取中位數（各次 Performance：${runs.map(r => r.sc.performance).join('、')}）`);
   const lhr = runs[0].lhr;
+  const M = k => lhr.audits[k]?.displayValue || '';
+  const metrics = `FCP ${M('first-contentful-paint')}、LCP ${M('largest-contentful-paint')}、TBT ${M('total-blocking-time')}、CLS ${M('cumulative-layout-shift')}、SI ${M('speed-index')}`;
+  if (sc.performance < PERF_TARGET) issues.push(metrics);
   const failedAudits = Object.values(lhr.audits).filter(a => a.score !== null && a.score < 0.9 && a.scoreDisplayMode === 'binary').map(a => a.id);
   rows.push({ p, ...sc, issues: issues.join('；'), failedAudits });
   console.log(`${issues.some(i => / < /.test(i)) ? '✖' : '✓'} ${p}  P ${sc.performance}  A ${sc.accessibility}  BP ${sc['best-practices']}  SEO ${sc.seo}${issues.length ? '  ' + issues.join('；') : ''}${failedAudits.length ? '\n    未通過項目：' + failedAudits.join(', ') : ''}`);

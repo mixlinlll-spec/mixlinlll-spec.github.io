@@ -7,7 +7,6 @@
   var PAGE = 24;
   var grid = root.querySelector('.catalog-grid');
   var cards = Array.prototype.slice.call(grid.querySelectorAll('.pcard'));
-  var original = cards.slice();
   var form = document.getElementById('catalog-form');
   var q = document.getElementById('catalog-q');
   var sortSel = document.getElementById('f-sort');
@@ -25,8 +24,17 @@
 
   var FACET_ATTR = { brand: 'brand', size: 'sizes', video: 'video', cells: 'cells' };
   var norm = function (s) { return String(s || '').normalize('NFKC').toLowerCase().replace(/寸/g, '吋'); };
-  var list = function (card, key) { var v = card.getAttribute('data-' + FACET_ATTR[key]) || ''; return v ? v.split('|') : []; };
-  cards.forEach(function (c) { c._search = norm(c.getAttribute('data-search') + ' ' + c.getAttribute('data-name')); });
+  // 只讀取一次 data-* 屬性，之後的篩選與計數都在 JS 物件上進行（減少主執行緒負擔）
+  cards.forEach(function (c, i) {
+    var d = c.dataset;
+    c._d = {
+      i: i, cat: d.cat, sub: d.sub, avail: d.avail, price: parseFloat(d.price), updated: d.updated, name: d.name,
+      f: { brand: d.brand ? [d.brand] : [], size: d.sizes ? d.sizes.split('|') : [], video: d.video ? [d.video] : [], cells: d.cells ? d.cells.split('|') : [] },
+      search: null, raw: (d.search || '') + ' ' + (d.name || '')
+    };
+  });
+  var list = function (card, key) { return card._d.f[key]; };
+  var searchOf = function (c) { if (c._d.search === null) c._d.search = norm(c._d.raw); return c._d.search; };
 
   var state = { q: '', cat: '', sub: '', brand: '', size: '', video: '', cells: '', avail: '', pmin: '', pmax: '', sort: '' };
   var params = new URLSearchParams(location.search);
@@ -34,19 +42,21 @@
   shown = Math.max(1, parseInt(params.get('page') || '1', 10)) * PAGE;
 
   function matches(card, ignore) {
-    if (state.cat && ignore !== 'cat' && card.getAttribute('data-cat') !== state.cat) return false;
-    if (state.sub && card.getAttribute('data-sub') !== state.sub) return false;
-    for (var k in FACET_ATTR) { if (k !== ignore && state[k] && list(card, k).indexOf(state[k]) < 0) return false; }
-    if (state.avail && ignore !== 'avail' && card.getAttribute('data-avail') !== state.avail) return false;
+    var d = card._d;
+    if (state.cat && ignore !== 'cat' && d.cat !== state.cat) return false;
+    if (state.sub && d.sub !== state.sub) return false;
+    for (var k in FACET_ATTR) { if (k !== ignore && state[k] && d.f[k].indexOf(state[k]) < 0) return false; }
+    if (state.avail && ignore !== 'avail' && d.avail !== state.avail) return false;
     if (state.pmin || state.pmax) {
-      var p = parseFloat(card.getAttribute('data-price'));
+      var p = d.price;
       if (isNaN(p)) return false;
       if (state.pmin && p < parseFloat(state.pmin)) return false;
       if (state.pmax && p > parseFloat(state.pmax)) return false;
     }
     if (state.q) {
       var terms = norm(state.q).split(/\s+/).filter(Boolean);
-      for (var i = 0; i < terms.length; i++) if (card._search.indexOf(terms[i]) < 0) return false;
+      var hay = searchOf(card);
+      for (var i = 0; i < terms.length; i++) if (hay.indexOf(terms[i]) < 0) return false;
     }
     return true;
   }
@@ -72,9 +82,11 @@
     });
     staticSelects.forEach(function (sel) {
       var key = sel.name;
+      var counts = {};
+      cards.forEach(function (c) { if (matches(c, key)) { var v = c._d[key]; counts[v] = (counts[v] || 0) + 1; } });
       Array.prototype.forEach.call(sel.options, function (o) {
         if (!o.value) return;
-        var n = cards.filter(function (c) { return matches(c, key) && c.getAttribute(key === 'cat' ? 'data-cat' : 'data-avail') === o.value; }).length;
+        var n = counts[o.value] || 0;
         o.textContent = o.textContent.replace(/（\d+）$/, '') + '（' + n + '）';
         o.disabled = n === 0 && state[key] !== o.value;
       });
@@ -83,13 +95,13 @@
   }
 
   function sorter(a, b) {
-    var pa = parseFloat(a.getAttribute('data-price')), pb = parseFloat(b.getAttribute('data-price'));
+    var pa = a._d.price, pb = b._d.price;
     switch (state.sort) {
-      case 'new': return b.getAttribute('data-updated').localeCompare(a.getAttribute('data-updated'));
-      case 'price-asc': return (isNaN(pa) ? Infinity : pa) - (isNaN(pb) ? Infinity : pb);
-      case 'price-desc': return (isNaN(pb) ? -Infinity : pb) - (isNaN(pa) ? -Infinity : pa);
-      case 'name': return a.getAttribute('data-name').localeCompare(b.getAttribute('data-name'), 'zh-Hant');
-      default: return original.indexOf(a) - original.indexOf(b);
+      case 'new': return b._d.updated.localeCompare(a._d.updated) || a._d.i - b._d.i;
+      case 'price-asc': return (isNaN(pa) ? Infinity : pa) - (isNaN(pb) ? Infinity : pb) || a._d.i - b._d.i;
+      case 'price-desc': return (isNaN(pb) ? -Infinity : pb) - (isNaN(pa) ? -Infinity : pa) || a._d.i - b._d.i;
+      case 'name': return a._d.name.localeCompare(b._d.name, 'zh-Hant');
+      default: return a._d.i - b._d.i;
     }
   }
 
@@ -115,18 +127,22 @@
     crumbs.appendChild(li);
   }
 
-  function render() {
+  var domOrder = cards.slice();
+  function render(deferFacets) {
     var matched = cards.filter(function (c) { return matches(c); }).sort(sorter);
-    matched.forEach(function (c) { grid.appendChild(c); });
-    cards.forEach(function (c) { c.hidden = true; });
-    matched.slice(0, shown).forEach(function (c) { c.hidden = false; });
+    // 只有順序真的改變時才搬移 DOM 節點
+    var order = matched.concat(domOrder.filter(function (c) { return matched.indexOf(c) < 0; }));
+    if (order.some(function (c, i) { return c !== domOrder[i]; })) { order.forEach(function (c) { grid.appendChild(c); }); domOrder = order; }
+    var show = new Set(matched.slice(0, shown));
+    cards.forEach(function (c) { var h = !show.has(c); if (c.hidden !== h) c.hidden = h; });
     countEl.textContent = cards.length ? '共 ' + matched.length + ' 件商品' : '目前沒有公開商品';
     emptyEl.hidden = matched.length > 0;
     moreBtn.hidden = matched.length <= shown;
     if (!moreBtn.hidden) moreBtn.textContent = '載入更多（還有 ' + (matched.length - shown) + ' 件）';
     chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c.getAttribute('data-sub-chip') === state.sub)); });
     var subInput = document.getElementById('f-sub'); if (subInput) subInput.value = state.sub;
-    buildFacets();
+    // 首次載入時把篩選器選項計算延後到瀏覽器空閒時，避免阻塞首屏
+    if (deferFacets) (window.requestIdleCallback || function (f) { return setTimeout(f, 200); })(buildFacets); else buildFacets();
     updateCrumbs();
     syncUrl();
   }
@@ -171,7 +187,7 @@
   if (toggle) toggle.addEventListener('click', function () { setBox(!box.classList.contains('open')); });
   var hasFilter = ['q', 'brand', 'size', 'video', 'cells', 'avail', 'pmin', 'pmax', 'cat'].some(function (k) { return state[k]; });
 
-  render();
+  render(!hasFilter);
   if (hasFilter) setBox(true);
   if (location.hash === '#catalog-q') { setBox(true); q.focus(); }
 })();
