@@ -7,6 +7,10 @@ on:
         description: Pages CMS payload（JSON）
         required: true
         type: string
+  # 只為了讓 GitHub 在測試分支上登記這個流程（workflow_dispatch 才能在非預設分支觸發）；push 時不執行任何工作
+  push:
+    branches: [feature/product-admin]
+    paths: ['.github/workflows/admin-import.yml']
 permissions:
   contents: write
   actions: write
@@ -15,6 +19,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   import:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
