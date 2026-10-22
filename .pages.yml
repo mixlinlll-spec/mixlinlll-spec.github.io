@@ -1,0 +1,353 @@
+# EWP 商品管理後台（Pages CMS：https://app.pagescms.org）
+#
+# ⚠️ 修改本檔前請先看 docs/admin/PRODUCT_ADMIN.md「欄位設定規則」：
+#   1. settings.content.merge 必須是 true，否則未列出的欄位（review、蝦皮快照…）會在儲存時被刪除。
+#   2. 有列出的陣列（variants、images、specifications）儲存時會「整個覆蓋」，
+#      所以每個子欄位都必須列出；不給改的設 hidden 或 readonly。
+#   3. 儲存後由 .github/workflows/cms-sync.yml 執行 scripts/cms-normalize.mjs：
+#      還原被 Pages CMS 清掉的空值、保護 id／slug／review、上架守門、處理新圖片，再驗證與發布。
+#   tests/pages-cms-roundtrip.mjs 會用 Pages CMS 原始碼模擬「讀取→儲存」驗證全部商品。
+
+settings:
+  content:
+    merge: true
+  commit:
+    identity: app
+    templates:
+      update: "[後台] 更新 {filename}（{userName}）"
+      create: "[後台] 新增 {filename}（{userName}）"
+      delete: "[後台] 刪除 {filename}（{userName}）"
+      rename: "[後台] 更名 {oldFilename} → {newFilename}（{userName}）"
+
+media:
+  - name: products
+    label: 商品照片
+    input: assets/img/products
+    output: /assets/img/products
+    categories: [image]
+  - name: imports
+    label: 匯入檔（蝦皮 CSV）
+    input: admin/imports
+    output: /admin/imports
+    extensions: [csv]
+
+content:
+  - name: products
+    label: 商品
+    description: 修改後按 Save。儲存後約 1–3 分鐘自動檢查並更新網站；未核准（review）商品無法從這裡上架。
+    type: collection
+    path: src/data/products
+    format: json
+    subfolders: false
+    operations:
+      create: false
+      rename: false
+      delete: false
+    view:
+      layout: list
+      primary: name_zh
+      fields: [name_zh, price_twd, availability, published]
+      search: [name_zh, brand, manufacturer_model, sku, id, shopee_item_id]
+      sort: [name_zh, price_twd]
+      default:
+        sort: name_zh
+        order: asc
+    actions:
+      - name: bulk-edit
+        label: 批次修改（價格／上下架／供貨）
+        workflow: admin-bulk.yml
+        scope: collection
+        cancelable: true
+        confirm:
+          title: 批次修改商品
+          message: 先選「只預覽」確認結果，再改「套用」執行。套用後會自動更新網站。
+          button: 執行
+        fields:
+          - name: target
+            label: 對象（商品 ID 或蝦皮商品 ID，逗號分隔；或 brand:品牌、category:分類 ID、search:關鍵字、all）
+            type: textarea
+            required: true
+          - name: operation
+            label: 操作
+            type: select
+            required: true
+            options:
+              - { label: 上架, value: publish }
+              - { label: 下架, value: unpublish }
+              - { label: 設定供貨狀態, value: availability }
+              - { label: 價格調整百分比（例 -5 或 10）, value: price_percent }
+              - { label: 價格設定為固定金額（單一規格商品）, value: price_set }
+              - { label: 改為詢價, value: price_inquiry }
+          - name: value
+            label: 數值（供貨狀態填 in_stock／preorder／made_to_order／out_of_stock／unknown；價格填數字）
+            type: text
+          - name: mode
+            label: 模式
+            type: select
+            required: true
+            default: preview
+            options:
+              - { label: 只預覽（不修改）, value: preview }
+              - { label: 套用, value: apply }
+      - name: shopee-import
+        label: 匯入蝦皮 CSV（價格／庫存）
+        workflow: admin-import.yml
+        scope: collection
+        cancelable: true
+        confirm:
+          title: 匯入蝦皮匯出檔
+          message: 先在「匯入檔」上傳 CSV。建議先「只預覽」看錯誤報告。
+          button: 執行
+        fields:
+          - name: file
+            label: 檔名（admin/imports/ 底下，例如 sales.csv）
+            type: text
+            required: true
+          - name: fields
+            label: 要更新的欄位
+            type: select
+            required: true
+            default: price_stock
+            options:
+              - { label: 價格與庫存數量, value: price_stock }
+              - { label: 只更新庫存數量, value: stock }
+              - { label: 只更新價格, value: price }
+          - name: discount
+            label: 官網價相對蝦皮價折扣 %（目前 4）
+            type: number
+            default: 4
+          - name: mode
+            label: 模式
+            type: select
+            required: true
+            default: preview
+            options:
+              - { label: 只預覽（產生錯誤報告）, value: preview }
+              - { label: 套用, value: apply }
+      - name: restore
+        label: 還原這件商品到指定版本
+        workflow: admin-restore.yml
+        scope: entry
+        cancelable: true
+        confirm:
+          title: 還原商品
+          message: 輸入 GitHub 上的版本代碼（commit SHA，可在 History 看到）。還原後會自動更新網站。
+          button: 還原
+        fields:
+          - name: sha
+            label: 版本代碼（commit SHA，至少 7 碼）
+            type: text
+            required: true
+    fields:
+      # ---- 識別（唯讀，不可修改）----
+      - { name: id, label: 商品 ID（不可修改）, type: string, readonly: true }
+      - { name: slug, label: 網址代稱（不可修改）, type: string, readonly: true }
+      - { name: shopee_item_id, label: 蝦皮商品 ID, type: string, readonly: true }
+
+      # ---- 最常用 ----
+      - name: name_zh
+        label: 商品名稱
+        type: string
+        required: true
+      - name: published
+        label: 上架（公開在官網）
+        description: 只有已核准的商品可以上架；未核准商品勾選後會自動退回草稿。
+        type: boolean
+      - name: availability
+        label: 供貨狀態
+        type: select
+        required: true
+        options:
+          values:
+            - { value: in_stock, label: 現貨 }
+            - { value: preorder, label: 預購 }
+            - { value: made_to_order, label: 接單製作 }
+            - { value: out_of_stock, label: 缺貨／暫無供貨 }
+            - { value: unknown, label: 供貨狀況請洽詢 }
+      - name: price_display
+        label: 價格顯示方式
+        description: 有多個規格時，官網會自動顯示最低規格價「起」。
+        type: select
+        required: true
+        options:
+          values:
+            - { value: fixed, label: 定價 }
+            - { value: from, label: 起價（多規格）}
+            - { value: inquiry, label: 詢價（不顯示價格）}
+      - name: price_twd
+        label: 官網售價（新台幣）
+        description: 有規格時以各規格價格為準（自動取最低價）；詢價時可留空。
+        type: number
+        options: { min: 1 }
+
+      - name: stock_qty
+        label: 庫存數量（沒有規格的商品）
+        description: 網站可售庫存，僅後台記錄、不公開顯示；有規格的商品請在下方各規格填寫。
+        type: number
+        options: { min: 0 }
+
+      # ---- 規格（各規格價格／庫存）----
+      - name: variants
+        label: 規格
+        description: 規格 ID（蝦皮規格 ID）不可修改。庫存數量為網站可售庫存，僅後台記錄、不公開顯示。
+        type: object
+        list: true
+        fields:
+          - { name: name, label: 規格名稱, type: string, required: true }
+          - { name: price_twd, label: 售價（新台幣）, type: number, options: { min: 1 } }
+          - name: availability
+            label: 供貨狀態
+            type: select
+            options:
+              values:
+                - { value: in_stock, label: 現貨 }
+                - { value: preorder, label: 預購 }
+                - { value: made_to_order, label: 接單製作 }
+                - { value: out_of_stock, label: 缺貨／暫無供貨 }
+                - { value: unknown, label: 供貨狀況請洽詢 }
+          - { name: stock_qty, label: 庫存數量, type: number, options: { min: 0 } }
+          - { name: sku, label: 貨號 SKU, type: string }
+          - { name: shopee_variation_id, label: 蝦皮規格 ID（不可修改）, type: string, readonly: true }
+          - name: image
+            label: 規格圖
+            type: object
+            hidden: true
+            fields:
+              - { name: src, type: string }
+              - { name: src_small, type: string }
+              - { name: alt, type: string }
+              - { name: width, type: number }
+              - { name: height, type: number }
+              - { name: rights, type: string }
+              - { name: role, type: string }
+              - { name: source_url, type: string }
+
+      # ---- 照片 ----
+      - name: images
+        label: 商品照片
+        description: 第一張為主圖，可拖曳排序。新上傳的照片儲存後會自動轉 WebP 並產生縮圖。
+        type: object
+        list: true
+        fields:
+          - { name: src, label: 照片, type: image, required: true, options: { media: products } }
+          - { name: alt, label: 照片說明（給搜尋引擎與視障者，留空自動帶商品名）, type: string }
+          - name: rights
+            label: 使用權
+            type: select
+            default: ewp_own
+            options:
+              values:
+                - { value: ewp_own, label: EWP 自有 }
+                - { value: licensed, label: 已取得授權 }
+                - { value: unverified, label: 使用權待確認（不可公開） }
+          - { name: src_small, type: string, hidden: true }
+          - { name: width, type: number, hidden: true }
+          - { name: height, type: number, hidden: true }
+          - { name: role, type: string, hidden: true }
+          - { name: source_url, type: string, hidden: true }
+
+      # ---- 分類與品牌 ----
+      - { name: brand, label: 品牌, type: string }
+      - { name: manufacturer_model, label: 原廠型號, type: string }
+      - { name: sku, label: 貨號 SKU, type: string }
+      - name: primary_category_id
+        label: 主分類
+        type: select
+        required: true
+        options:
+          values:
+            - { value: complete-drones, label: FPV 穿越機整機 }
+            - { value: frames-parts, label: 機架與機體零件 }
+            - { value: motors-props, label: 馬達與螺旋槳 }
+            - { value: fc-esc, label: 飛控與電調 }
+            - { value: video, label: 圖傳與攝影系統 }
+            - { value: radio-gps, label: 遙控／接收／定位 }
+            - { value: power-battery, label: 電池與電源 }
+            - { value: electronics, label: 電子元件／接頭線材 }
+            - { value: hardware-prints, label: 螺絲五金與列印件 }
+            - { value: tools, label: 工具與維修耗材 }
+      - name: subcategory_id
+        label: 子分類
+        description: 必須屬於上面的主分類，不符時儲存後檢查會失敗並通知。
+        type: select
+        options:
+          values:
+            - { value: micro, label: 整機｜Whoop／2 吋以下 }
+            - { value: 2-5in, label: 整機｜2.5 吋 }
+            - { value: 3-3-5in, label: 整機｜3–3.5 吋 }
+            - { value: 5in, label: 整機｜5 吋 }
+            - { value: 7in-long-range, label: 整機｜7 吋長航 }
+            - { value: x8-cinelifter, label: 整機｜X8／CineLifter }
+            - { value: other-sizes, label: 整機｜其他尺寸 }
+            - { value: frames, label: 機架零件｜機架 }
+            - { value: arms, label: 機架零件｜機臂 }
+            - { value: plates, label: 機架零件｜頂／底板 }
+            - { value: camera-mounts, label: 機架零件｜鏡頭固定件 }
+            - { value: protection, label: 機架零件｜機體保護件 }
+            - { value: motors, label: 馬達螺旋槳｜無刷馬達 }
+            - { value: props, label: 馬達螺旋槳｜螺旋槳 }
+            - { value: motor-accessories, label: 馬達螺旋槳｜馬達配件 }
+            - { value: fc, label: 飛控電調｜飛控 FC }
+            - { value: esc, label: 飛控電調｜電調 ESC }
+            - { value: aio, label: 飛控電調｜AIO }
+            - { value: stacks, label: 飛控電調｜飛控電調堆疊 }
+            - { value: mounting, label: 飛控電調｜減震固定 }
+            - { value: dji-o4, label: 圖傳攝影｜DJI O4 系列 }
+            - { value: analog-vtx, label: 圖傳攝影｜類比圖傳 }
+            - { value: cameras, label: 圖傳攝影｜攝影機 }
+            - { value: antennas, label: 圖傳攝影｜天線 }
+            - { value: video-cables, label: 圖傳攝影｜線材 }
+            - { value: goggles, label: 圖傳攝影｜眼鏡與配件 }
+            - { value: elrs, label: 遙控接收｜ELRS }
+            - { value: crossfire, label: 遙控接收｜Crossfire }
+            - { value: radios, label: 遙控接收｜遙控器 }
+            - { value: receivers, label: 遙控接收｜接收機 }
+            - { value: gps, label: 遙控接收｜GPS }
+            - { value: rc-antennas, label: 遙控接收｜天線 }
+            - { value: "18650", label: 電池電源｜18650 }
+            - { value: "21700", label: 電池電源｜21700 }
+            - { value: 4s, label: 電池電源｜4S }
+            - { value: 6s, label: 電池電源｜6S }
+            - { value: 1s-micro, label: 電池電源｜1S–3S 微型電池 }
+            - { value: chargers, label: 電池電源｜充電器 }
+            - { value: power-modules, label: 電池電源｜電源模組 }
+            - { value: field-packs, label: 電池電源｜外場電包 }
+            - { value: capacitors, label: 電子元件｜電容 }
+            - { value: led-cob, label: 電子元件｜LED／COB }
+            - { value: connectors, label: 電子元件｜接頭 }
+            - { value: wires, label: 電子元件｜矽膠線／線束 }
+            - { value: heat-shrink, label: 電子元件｜熱縮套 }
+            - { value: modules, label: 電子元件｜其他電子模組 }
+            - { value: screws, label: 五金列印｜螺絲套裝 }
+            - { value: nuts-washers, label: 五金列印｜螺母／墊片 }
+            - { value: straps, label: 五金列印｜電池綁帶 }
+            - { value: tpu-prints, label: 五金列印｜TPU／3D 列印件 }
+            - { value: cases, label: 五金列印｜收納盒 }
+            - { value: soldering, label: 工具耗材｜焊接工具 }
+            - { value: drivers-wrenches, label: 工具耗材｜螺絲起子／扳手 }
+            - { value: cleaning, label: 工具耗材｜清潔耗材 }
+            - { value: organizers, label: 工具耗材｜整理工具 }
+
+      # ---- 文字內容 ----
+      - { name: short_description, label: 簡短介紹（1–2 句）, type: text }
+      - { name: description, label: 詳細說明, type: text }
+      - name: specifications
+        label: 規格表
+        type: object
+        list: true
+        fields:
+          - { name: key, label: 項目, type: string, required: true }
+          - { name: value, label: 內容, type: string, required: true }
+          - { name: source, type: string, hidden: true }
+      - { name: tags, label: 標籤, type: string, list: true }
+
+      # ---- 顯示設定 ----
+      - { name: featured, label: 精選（列表排前面）, type: boolean }
+      - { name: line_inquiry_enabled, label: 顯示 LINE 詢問按鈕, type: boolean }
+      - name: cta_primary
+        label: 第一個按鈕（留空＝自動）
+        type: select
+        options:
+          values:
+            - { value: line, label: LINE 詢問 }
+            - { value: shopee, label: 蝦皮購買 }

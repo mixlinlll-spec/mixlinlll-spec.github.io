@@ -1,0 +1,52 @@
+name: EWP 後台：驗證、提交、發布
+description: 驗證商品資料與發布產物；有變更就提交回同一分支；在 main 上觸發正式部署（pages.yml）。
+inputs:
+  message:
+    description: commit 訊息
+    required: true
+  paths:
+    description: 要提交的路徑（空白分隔）
+    default: src/data/products assets/img/products admin/imports
+  deploy:
+    description: always＝一定觸發部署（後台儲存）；changed＝有提交才部署
+    default: changed
+outputs:
+  committed:
+    description: 是否有提交
+    value: ${{ steps.commit.outputs.committed }}
+runs:
+  using: composite
+  steps:
+    - name: 驗證資料、單元測試、建置與發布檢查
+      shell: bash
+      run: |
+        node scripts/build.mjs --check
+        node --test tests/data.test.mjs tests/admin.test.mjs > unit.log 2>&1 || (cat unit.log; exit 1)
+        node scripts/build.mjs
+        node scripts/check-site.mjs dist
+    - name: 提交變更
+      id: commit
+      shell: bash
+      env:
+        MSG: ${{ inputs.message }}
+        PATHS: ${{ inputs.paths }}
+      run: |
+        git config user.name "ewp-admin[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add -A $PATHS
+        if git diff --cached --quiet; then echo "committed=false" >> "$GITHUB_OUTPUT"; echo "沒有需要提交的變更"; exit 0; fi
+        git commit -q -m "$MSG"
+        for i in 1 2 3 4 5; do
+          if git push -q origin "HEAD:${GITHUB_REF_NAME}"; then echo "committed=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          echo "推送衝突（可能同時有人儲存），重試 $i"; sleep $((i * 3))
+          git pull -q --rebase origin "${GITHUB_REF_NAME}"
+        done
+        echo "::error::推送失敗"; exit 1
+    - name: 觸發正式部署（只在 main）
+      if: github.ref_name == 'main' && (inputs.deploy == 'always' || steps.commit.outputs.committed == 'true')
+      shell: bash
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        gh workflow run pages.yml --ref main
+        echo "已觸發正式部署，約 1–2 分鐘後網站更新。" >> "$GITHUB_STEP_SUMMARY"

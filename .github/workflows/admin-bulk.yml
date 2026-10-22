@@ -1,0 +1,34 @@
+name: 後台｜批次修改
+# 由 Pages CMS「批次修改」按鈕觸發（.pages.yml → actions）。預覽模式只產生報表；套用模式修改、驗證、提交並發布。
+on:
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: Pages CMS payload（JSON）
+        required: true
+        type: string
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: admin-write-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  bulk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 批次修改（預覽或套用）
+        env:
+          PAYLOAD: ${{ inputs.payload }}
+        run: node scripts/admin-bulk.mjs
+      - name: 驗證、提交、發布
+        uses: ./.github/actions/admin-publish
+        with:
+          message: "[批次] ${{ fromJSON(inputs.payload).inputs.operation }}（${{ fromJSON(inputs.payload).triggeredBy.name }}）"

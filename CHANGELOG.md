@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## v2.5.0（2026-10-22，商品管理後台 MVP）
+
+- 新增 Pages CMS 後台設定 `.pages.yml`：商品搜尋（名稱／品牌／型號／SKU／ID／蝦皮 ID）、名稱、價格、詢價、上下架、供貨狀態、各規格價格與庫存數量、照片上傳／排序、分類、品牌、說明、規格表。id、slug、蝦皮 ID、蝦皮規格 ID 唯讀；不能新增／刪除商品；review 不在後台。
+- 以 Pages CMS 原始碼驗證：未開 merge 會刪除 `review`；陣列整個覆蓋；全檔 null／空值被刪。新增 `scripts/cms-normalize.mjs` 儲存後校正，全部 240 件「開啟→儲存→校正」與原檔逐字相同（`tests/pages-cms-roundtrip.mjs`，CI 用 Pages CMS 2.1.8 實際程式碼執行）。
+- 上架守門：未核准商品從後台勾上架會自動退回草稿並提醒。價格規則：商品價＝最低規格價（單一價定價、多價起價），詢價清空價格（商品頁規格價也改顯示「詢價」）。
+- 新照片自動轉 WebP 1000px＋480px、搬到商品資料夾、刪除原始大檔。
+- 新增 `stock_qty`（商品／規格）：網站可售庫存的後台記錄，不公開顯示、不是即時庫存。
+- GitHub Actions：`cms-sync.yml`（後台儲存後校正、驗證、提交、在 main 觸發部署；失敗開 Issue、不部署）；後台按鈕 `admin-bulk.yml`（批次上下架／供貨／調價／詢價，先預覽再套用）、`admin-import.yml`（蝦皮 CSV 價格／庫存＋錯誤報告）、`admin-restore.yml`（單一商品還原到指定版本）。
+- `pages.yml`、`ci.yml` 略過後台原始 commit，只部署校正並驗證過的內容。
+- 文件：`docs/admin/PRODUCT_ADMIN.md`（使用、權限、測試、上線、Pages CMS 限制與補強）。
+
 ## v2.4.0（2026-10-22，EWP 核准全部上架）
 
 - 依 EWP 指示：圖片使用權確認全部可使用（`rights: "licensed"`）；套用全部蝦皮價格與庫存；**官網價 = 蝦皮價 −4%**（不經蝦皮平台抽成，四捨五入到整數元）；238 件商品 `published: true`、`review.status: "approved"`。

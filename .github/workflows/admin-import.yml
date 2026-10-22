@@ -1,0 +1,34 @@
+name: 後台｜匯入蝦皮 CSV
+# 由 Pages CMS「匯入蝦皮 CSV」按鈕觸發。預覽模式產生變更與錯誤報告；套用模式更新價格／庫存、刪除匯入檔、驗證並發布。
+on:
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: Pages CMS payload（JSON）
+        required: true
+        type: string
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: admin-write-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 匯入（預覽或套用）
+        env:
+          PAYLOAD: ${{ inputs.payload }}
+        run: node scripts/admin-import.mjs
+      - name: 驗證、提交、發布
+        uses: ./.github/actions/admin-publish
+        with:
+          message: "[匯入] 蝦皮 CSV（${{ fromJSON(inputs.payload).triggeredBy.name }}）"

@@ -1,5 +1,5 @@
 name: Deploy EWP to GitHub Pages
-# 只在 main 更新時部署。發布內容只有 dist/（產生的頁面＋白名單靜態檔），
+# 只在 main 更新時部署（後台儲存由 cms-sync.yml 校正後觸發）。發布內容只有 dist/（產生的頁面＋白名單靜態檔），
 # src/、scripts/、tests/、docs/、_preview/ 不會上傳。
 # 啟用前必須把 Settings → Pages → Source 改為「GitHub Actions」（見 docs/DEPLOY_ROLLBACK.md）。
 on:
@@ -15,6 +15,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
+    # 後台（Pages CMS）原始儲存不直接部署：由 cms-sync.yml 校正、驗證後再以 workflow_dispatch 觸發
+    if: github.event_name == 'workflow_dispatch' || !startsWith(github.event.head_commit.message, '[後台]')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

@@ -1,6 +1,7 @@
 # 電翼動力 EWP 官方網站
 
 官方品牌網站＋可搜尋的商品型錄＋LINE／蝦皮詢價導購＋FPV 技術知識庫。
+**商品管理後台**：Pages CMS（https://app.pagescms.org），使用說明與限制見 [docs/admin/PRODUCT_ADMIN.md](docs/admin/PRODUCT_ADMIN.md)。
 部署在 GitHub Pages（`https://mixlinlll-spec.github.io/`），純靜態網站：沒有後端、資料庫、會員、購物車、金流或追蹤程式。
 **由 GitHub Actions 建置並只發布 `dist/`**（產生的頁面＋白名單靜態檔）；原始資料、程式與測試不會出現在網站上。
 
@@ -23,13 +24,20 @@ scripts/
   import-shopee-media.mjs  批次下載蝦皮商品圖片（GitHub Actions：import-media.yml）
   approve-snapshot.mjs     核對後套用蝦皮價格／庫存快照與圖片使用權（不會公開）
   report-shopee-import.mjs 產生蝦皮匯入總表（docs/SHOPEE_IMPORT_REPORT.md、CSV）
+  cms-normalize.mjs  後台（Pages CMS）儲存後校正：還原空值、保護 id／review、上架守門、新照片轉 WebP
+  admin-bulk.mjs     後台批次修改（價格／上下架／供貨）
+  admin-import.mjs   後台蝦皮 CSV 匯入（價格／庫存＋錯誤報告）
+  admin-restore.mjs  後台還原單一商品到指定版本
   lib/               共用資料驗證與版型（Header／Footer／ProductCard…）
 assets/              CSS、JS、圖片、QR；assets/img/products/ 為蝦皮匯入的商品圖片（只有已公開商品會進入 dist/）
 fpv-help.html        舊知識庫（91 則），原網址保留、內容未改動
 huan.png             舊主圖，原網址保留
 legacy/              2026-09 舊版首頁存檔（noindex，僅供比對）
 tests/               資料／路徑／審核單元測試、Playwright 端對端測試、Lighthouse
-.github/workflows/   ci.yml（每次 push／PR 檢查）、pages.yml（main 更新時部署）
+.pages.yml           商品管理後台（Pages CMS）設定
+admin/imports/       後台上傳的蝦皮 CSV（套用後自動刪除，不會發布）
+.github/workflows/   ci.yml（每次 push／PR 檢查）、pages.yml（main 更新時部署）、
+                     cms-sync.yml（後台儲存後校正與發布）、admin-*.yml（後台按鈕：批次、匯入、還原）
 dist/                正式發布產物（建置產生，不提交，由 Actions 部署）
 _preview/            含草稿預覽（建置產生，不提交、不部署）
 ```

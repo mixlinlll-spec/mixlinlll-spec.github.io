@@ -1,0 +1,37 @@
+name: 後台｜還原商品
+# 由 Pages CMS 商品頁的「還原這件商品到指定版本」按鈕觸發：把該商品檔還原成指定 commit 的內容，驗證後提交並發布。
+on:
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: Pages CMS payload（JSON）
+        required: true
+        type: string
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: admin-write-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 還原商品檔
+        id: restore
+        env:
+          PAYLOAD: ${{ inputs.payload }}
+        run: node scripts/admin-restore.mjs
+      - name: 驗證、提交、發布
+        uses: ./.github/actions/admin-publish
+        with:
+          message: "[還原] ${{ steps.restore.outputs.file }} → ${{ steps.restore.outputs.sha }}（${{ fromJSON(inputs.payload).triggeredBy.name }}）"
+          paths: src/data/products

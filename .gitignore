@@ -7,3 +7,5 @@ Thumbs.db
 dist/
 lighthouse-reports/
 media-inbox/
+.cms-report.json
+.admin-result.json
