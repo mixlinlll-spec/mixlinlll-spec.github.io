@@ -1,0 +1,151 @@
+{
+  "id": "sp-45207442200",
+  "slug": "fpv-wifi-betaflight-uart-pid-bf",
+  "name_zh": "FPV WiFi無線調參模組｜BetaFlight調參神器｜UART連接｜免電腦調PID｜穿越機設定模組｜BF無線調參板",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "electronics",
+  "subcategory_id": "modules",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "【🔥不用電腦！手機直接調參】\n飛場不用帶筆電｜WiFi連線直接改PID\n\n【✨產品特色】\n✔ WiFi無線調參 👉 手機直接設定不用電腦\n✔ 支援BetaFlight 👉 PID / Rates / OSD可調\n✔ UART連接 👉 任一空閒串口即可使用\n✔ 連線穩定 👉 比藍牙更順暢\n\n【⚙️商品規格】\nWiFi連接｜UART接口｜5V供電｜支援BetaFlight\n\n【📦包裝內容】\nWiFi調參模組×1（不含飛控 / 線材）\n\n【⚠️注意事項】\n需焊接能力｜TX RX需交叉接｜需設定UART｜僅支援BetaFlight\n\n【🚀適合族群】\n新手｜懶人玩家｜調參玩家",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-45207442200/01.webp",
+      "src_small": "/assets/img/products/sp-45207442200/01-480.webp",
+      "alt": "FPV WiFi無線調參模組｜BetaFlight調參神器｜UART連接｜免電腦調PID｜穿越機設定模組｜BF無線調參板（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mm0n82mv37k3e9"
+    },
+    {
+      "src": "/assets/img/products/sp-45207442200/02.webp",
+      "src_small": "/assets/img/products/sp-45207442200/02-480.webp",
+      "alt": "FPV WiFi無線調參模組｜BetaFlight調參神器｜UART連接｜免電腦調PID｜穿越機設定模組｜BF無線調參板（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mm0k8vxfyfwl07"
+    },
+    {
+      "src": "/assets/img/products/sp-45207442200/03.webp",
+      "src_small": "/assets/img/products/sp-45207442200/03-480.webp",
+      "alt": "FPV WiFi無線調參模組｜BetaFlight調參神器｜UART連接｜免電腦調PID｜穿越機設定模組｜BF無線調參板（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mm0n82mrf668c6"
+    },
+    {
+      "src": "/assets/img/products/sp-45207442200/04.webp",
+      "src_small": "/assets/img/products/sp-45207442200/04-480.webp",
+      "alt": "FPV WiFi無線調參模組｜BetaFlight調參神器｜UART連接｜免電腦調PID｜穿越機設定模組｜BF無線調參板（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mm0n82mvlgxuf2"
+    },
+    {
+      "src": "/assets/img/products/sp-45207442200/05.webp",
+      "src_small": "/assets/img/products/sp-45207442200/05-480.webp",
+      "alt": "FPV WiFi無線調參模組｜BetaFlight調參神器｜UART連接｜免電腦調PID｜穿越機設定模組｜BF無線調參板（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mm0n82mvk2ded3"
+    }
+  ],
+  "variants": [
+    {
+      "name": "一組",
+      "sku": null,
+      "price_twd": 287,
+      "availability": "in_stock",
+      "shopee_variation_id": "316134199754"
+    }
+  ],
+  "price_twd": 287,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "45207442200",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l4-mm0nat4v0xdua3",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mm0nat4slu69b7",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mm0nat4yjci736",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mm0naxjyky6na7"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mm0n82mv37k3e9",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mm0k8vxfyfwl07",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mm0n82mrf668c6",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mm0n82mvlgxuf2",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mm0n82mvk2ded3"
+      ],
+      "variation_label": "僅限安卓系統",
+      "options": [
+        {
+          "option": "一組",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "僅限安卓系統",
+      "rows": [
+        {
+          "variation_id": "316134199754",
+          "name": "一組",
+          "parent_sku": null,
+          "sku": null,
+          "price": 299,
+          "stock": 9,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 299,
+      "price_max": 299,
+      "stock_total": 9,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "FPV WiFi調參, Betaflight無線調參, BF WiFi module, 穿越機調參, FPV配件, 無人機調整, PID調整, FPV UART模組, drone tuning, Betaflight WiFi, 無線設定模組, 穿越機升級, FPV tuning module\n【🔥不用電腦！手機直接調參】\n飛場不用帶筆電｜WiFi連線直接改PID\n\n【✨產品特色】\n✔ WiFi無線調參 👉 手機直接設定不用電腦\n✔ 支援BetaFlight 👉 PID / Rates / OSD可調\n✔ UART連接 👉 任一空閒串口即可使用\n✔ 連線穩定 👉 比藍牙更順暢\n\n【⚙️商品規格】\nWiFi連接｜UART接口｜5V供電｜支援BetaFlight\n\n【📦包裝內容】\nWiFi調參模組×1（不含飛控 / 線材）\n\n【⚠️注意事項】\n需焊接能力｜TX RX需交叉接｜需設定UART｜僅支援BetaFlight\n\n【🚀適合族群】\n新手｜懶人玩家｜調參玩家",
+    "approved_at": "2026-10-22"
+  }
+}

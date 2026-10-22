@@ -1,0 +1,180 @@
+{
+  "id": "sp-54262021308",
+  "slug": "jeno-pocket-t700-2-5-freestyle",
+  "name_zh": "JENO POCKET T700 高強度機架｜2.5吋 Freestyle 穿越機機架",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "frames-parts",
+  "subcategory_id": "frames",
+  "tags": [],
+  "compatible_sizes": [
+    "2.5 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "🔥 專為 2.5 吋 Freestyle 飛行打造\n🔥 高強度碳纖維結構，兼顧輕量與耐用\n🔥 支援 DJI O4 Lite / 類比 / WalkSnail / HDZero\n\n產品規格\n📌 型號：JENO POCKET T700\n📌 機架類型：2.5 吋 Freestyle Frame\n📌 幾何結構：Wide-X\n📌 機架重量：約 24g（含螺絲）\n📌 機身高度：20mm\n📌 底板厚度：3mm\n📌 上板厚度：2mm\n📌 側板厚度：2mm\n📌 飛控孔距：30.5 × 30.5mm\n📌 電機孔距：9 × 9mm\n📌 相機規格：14mm Nano Camera\n📌 支援圖傳：\n• DJI O4 Lite\n• WalkSnail Avatar\n• HDZero\n• Analog 類比系統\n\n建議配置\n🔹 電機規格\n1103 / 1104 / 1105 / 1202 / 1203 / 1204 / 1303\n🔹 建議 KV\n2S：8000KV 左右\n3S：6000KV 左右\n🔹 建議槳葉\n2.5 吋槳葉\n🔹 建議電池\n2S 450550mAh\n3S 450560mAh\n🔹 建議飛控\nAIO 15A~20A\n\n產品特色\n✅ Wide-X 結構設計\n✅ 高強度碳纖維切割加工\n✅ 超輕量約 24g\n✅ 兼容主流數位與類比圖傳系統\n✅ Freestyle、刷樹、穿縫皆適用\n✅ 適合打造高性能 2.5 吋牙籤機\n\n套件內容\n✔ 碳纖維機架組\n✔ 鋁柱配件\n✔ 固定螺絲組\n✔ TPU打印件全套\n✔ 翼飛電池綁帶X1\n\n⚠ 商品僅販售機架，不含飛控、電機、圖傳、接收機、槳葉及電池。",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-54262021308/01.webp",
+      "src_small": "/assets/img/products/sp-54262021308/01-480.webp",
+      "alt": "JENO POCKET T700 高強度機架｜2.5吋 Freestyle 穿越機機架（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mpbn99150kci49"
+    },
+    {
+      "src": "/assets/img/products/sp-54262021308/02.webp",
+      "src_small": "/assets/img/products/sp-54262021308/02-480.webp",
+      "alt": "JENO POCKET T700 高強度機架｜2.5吋 Freestyle 穿越機機架（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mpbnqth0cef6fa"
+    },
+    {
+      "src": "/assets/img/products/sp-54262021308/03.webp",
+      "src_small": "/assets/img/products/sp-54262021308/03-480.webp",
+      "alt": "JENO POCKET T700 高強度機架｜2.5吋 Freestyle 穿越機機架（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mpbn990zlbf23d"
+    },
+    {
+      "src": "/assets/img/products/sp-54262021308/04.webp",
+      "src_small": "/assets/img/products/sp-54262021308/04-480.webp",
+      "alt": "JENO POCKET T700 高強度機架｜2.5吋 Freestyle 穿越機機架（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mpbn990ws6j1fc"
+    }
+  ],
+  "variants": [
+    {
+      "name": "O4Lite",
+      "sku": null,
+      "price_twd": 671,
+      "availability": "in_stock",
+      "shopee_variation_id": "316045678685"
+    },
+    {
+      "name": "O4Wide",
+      "sku": null,
+      "price_twd": 671,
+      "availability": "in_stock",
+      "shopee_variation_id": "244341765805"
+    },
+    {
+      "name": "CADDX",
+      "sku": null,
+      "price_twd": 671,
+      "availability": "in_stock",
+      "shopee_variation_id": "244341765806"
+    }
+  ],
+  "price_twd": 671,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "54262021308",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "JeNo 開源機架，自製或零售需核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mpbnr75geuxaf7"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mpbn99150kci49",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mpbnqth0cef6fa",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mpbn990zlbf23d",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mpbn990ws6j1fc"
+      ],
+      "variation_label": "送打印件一套含五金件",
+      "options": [
+        {
+          "option": "O4Lite",
+          "url": null
+        },
+        {
+          "option": "O4Wide",
+          "url": null
+        },
+        {
+          "option": "CADDX",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "送打印件一套含五金件",
+      "rows": [
+        {
+          "variation_id": "316045678685",
+          "name": "O4Lite",
+          "parent_sku": null,
+          "sku": null,
+          "price": 699,
+          "stock": 20,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "244341765805",
+          "name": "O4Wide",
+          "parent_sku": null,
+          "sku": null,
+          "price": 699,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "244341765806",
+          "name": "CADDX",
+          "parent_sku": null,
+          "sku": null,
+          "price": 699,
+          "stock": 20,
+          "min_qty": null
+        }
+      ],
+      "price_min": 699,
+      "price_max": 699,
+      "stock_total": 60,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#FPV #穿越機 #JenoPocket #2點5吋 #Freestyle #DJIO4Lite #牙籤機 #FPVFrame #碳纖維機架 #電翼動力\n\n🔥 專為 2.5 吋 Freestyle 飛行打造\n🔥 高強度碳纖維結構，兼顧輕量與耐用\n🔥 支援 DJI O4 Lite / 類比 / WalkSnail / HDZero\n\n產品規格\n📌 型號：JENO POCKET T700\n📌 機架類型：2.5 吋 Freestyle Frame\n📌 幾何結構：Wide-X\n📌 機架重量：約 24g（含螺絲）\n📌 機身高度：20mm\n📌 底板厚度：3mm\n📌 上板厚度：2mm\n📌 側板厚度：2mm\n📌 飛控孔距：30.5 × 30.5mm\n📌 電機孔距：9 × 9mm\n📌 相機規格：14mm Nano Camera\n📌 支援圖傳：\n• DJI O4 Lite\n• WalkSnail Avatar\n• HDZero\n• Analog 類比系統\n\n建議配置\n🔹 電機規格\n1103 / 1104 / 1105 / 1202 / 1203 / 1204 / 1303\n🔹 建議 KV\n2S：8000KV 左右\n3S：6000KV 左右\n🔹 建議槳葉\n2.5 吋槳葉\n🔹 建議電池\n2S 450550mAh\n3S 450560mAh\n🔹 建議飛控\nAIO 15A~20A\n\n產品特色\n✅ Wide-X 結構設計\n✅ 高強度碳纖維切割加工\n✅ 超輕量約 24g\n✅ 兼容主流數位與類比圖傳系統\n✅ Freestyle、刷樹、穿縫皆適用\n✅ 適合打造高性能 2.5 吋牙籤機\n\n套件內容\n✔ 碳纖維機架組\n✔ 鋁柱配件\n✔ 固定螺絲組\n✔ TPU打印件全套\n✔ 翼飛電池綁帶X1\n\n⚠ 商品僅販售機架，不含飛控、電機、圖傳、接收機、槳葉及電池。",
+    "approved_at": "2026-10-22"
+  }
+}

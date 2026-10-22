@@ -1,0 +1,175 @@
+{
+  "id": "sp-42379335827",
+  "slug": "dji-o4-air-unit-pro-fpv",
+  "name_zh": "DJI O4 Air Unit Pro 同軸連接線📡 FPV穿越機大疆攝像頭圖傳線 柔韌長距",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "video",
+  "subcategory_id": "video-cables",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": "DJI O4",
+  "battery_cells": [],
+  "short_description": "DJI O4 Air Unit Pro 用同軸連接線（鏡頭與圖傳之間）。",
+  "description": "",
+  "specifications": [
+    {
+      "key": "適用",
+      "value": "DJI O4 Air Unit Pro",
+      "source": "蝦皮商品標題"
+    }
+  ],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-42379335827/01.webp",
+      "src_small": "/assets/img/products/sp-42379335827/01-480.webp",
+      "alt": "DJI O4 Air Unit Pro 同軸連接線 FPV穿越機大疆攝像頭圖傳線 柔韌長距（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlyelsxvofm763"
+    },
+    {
+      "src": "/assets/img/products/sp-42379335827/02.webp",
+      "src_small": "/assets/img/products/sp-42379335827/02-480.webp",
+      "alt": "DJI O4 Air Unit Pro 同軸連接線 FPV穿越機大疆攝像頭圖傳線 柔韌長距（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mlyelsy5pfkf61"
+    }
+  ],
+  "variants": [
+    {
+      "name": "7公分直頭+彎頭",
+      "sku": null,
+      "price_twd": 240,
+      "availability": "in_stock",
+      "shopee_variation_id": "277669368353"
+    },
+    {
+      "name": "20公分直頭+彎頭",
+      "sku": null,
+      "price_twd": 288,
+      "availability": "in_stock",
+      "shopee_variation_id": "167387348088"
+    },
+    {
+      "name": "15公分直頭+彎頭",
+      "sku": null,
+      "price_twd": 269,
+      "availability": "in_stock",
+      "shopee_variation_id": "169143800000"
+    }
+  ],
+  "price_twd": 240,
+  "price_display": "from",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "42379335827",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mlyen471kydhf9"
+    ],
+    "source_description": "•\t#DJIO4AirUnit\n•\t#O4Pro連接線\n•\t#穿越機圖傳線\n•\t#大疆同軸線\n•\t#FPV攝像頭線\n•\t#O4穿越機配件\n•\t#4K圖傳線\n•\t#航模連接線\n•\t#DJI配件\n•\t#台灣現貨",
+    "batch": "first-A",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "品牌（原廠或副廠）",
+      "線長",
+      "接頭規格",
+      "商品說明（蝦皮說明只有 hashtag）",
+      "正式商品照片（EWP 自有或已授權，需標示 rights）",
+      "售價模式（定價／起價／詢價）與售價",
+      "供貨狀態",
+      "蝦皮商品網址（需 EWP 核實）"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlyelsxvofm763",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mlyelsy5pfkf61"
+      ],
+      "variation_label": "DJI直頭+彎頭",
+      "options": [
+        {
+          "option": "15公分直頭+彎頭",
+          "url": null
+        },
+        {
+          "option": "20公分直頭+彎頭",
+          "url": null
+        },
+        {
+          "option": "7公分直頭+彎頭",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "DJI直頭+彎頭",
+      "rows": [
+        {
+          "variation_id": "277669368353",
+          "name": "7公分直頭+彎頭",
+          "parent_sku": null,
+          "sku": null,
+          "price": 250,
+          "stock": 4,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "167387348088",
+          "name": "20公分直頭+彎頭",
+          "parent_sku": null,
+          "sku": null,
+          "price": 300,
+          "stock": 10,
+          "min_qty": null
+        },
+        {
+          "variation_id": "169143800000",
+          "name": "15公分直頭+彎頭",
+          "parent_sku": null,
+          "sku": null,
+          "price": 280,
+          "stock": 5,
+          "min_qty": null
+        }
+      ],
+      "price_min": 250,
+      "price_max": 300,
+      "stock_total": 19,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
+  }
+}

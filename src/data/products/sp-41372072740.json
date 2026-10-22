@@ -1,0 +1,122 @@
+{
+  "id": "sp-41372072740",
+  "slug": "item-41372072740",
+  "name_zh": "綠林松香助焊劑焊錫電烙鐵手機維修焊接高純度無鉛助焊油膏焊油",
+  "sku": null,
+  "brand": "GREENER 綠林",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "tools",
+  "subcategory_id": "soldering",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "【產品特色】\n\n✔ 高純度無鉛配方，環保安全\n\n✔ 高效導電，助焊快速成型\n\n✔ 適用於手機維修、電路焊接、精密焊接\n\n✔ 攜帶方便，操作簡單，焊點牢固\n\n【產品規格】\n\n品名：绿林松香助焊劑 / 焊油膏\n\n成分：高純度無鉛焊油\n\n適用範圍：電烙鐵、手機維修、電子焊接、電路板作業\n\n保存方式：避免高溫、陽光直射，置於陰涼乾燥處",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-41372072740/01.webp",
+      "src_small": "/assets/img/products/sp-41372072740/01-480.webp",
+      "alt": "綠林松香助焊劑焊錫電烙鐵手機維修焊接高純度無鉛助焊油膏焊油（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mf6klsckqbd84b"
+    },
+    {
+      "src": "/assets/img/products/sp-41372072740/02.webp",
+      "src_small": "/assets/img/products/sp-41372072740/02-480.webp",
+      "alt": "綠林松香助焊劑焊錫電烙鐵手機維修焊接高純度無鉛助焊油膏焊油（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mf6klscwh4b374"
+    },
+    {
+      "src": "/assets/img/products/sp-41372072740/03.webp",
+      "src_small": "/assets/img/products/sp-41372072740/03-480.webp",
+      "alt": "綠林松香助焊劑焊錫電烙鐵手機維修焊接高純度無鉛助焊油膏焊油（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mf6klscurbbg9c"
+    },
+    {
+      "src": "/assets/img/products/sp-41372072740/04.webp",
+      "src_small": "/assets/img/products/sp-41372072740/04-480.webp",
+      "alt": "綠林松香助焊劑焊錫電烙鐵手機維修焊接高純度無鉛助焊油膏焊油（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mf6klscfkweh0d"
+    }
+  ],
+  "variants": [],
+  "price_twd": 66,
+  "price_display": "fixed",
+  "availability": "out_of_stock",
+  "shopee_url": null,
+  "shopee_item_id": "41372072740",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101809 - Home & Living/Tools & Home Improvement/Tools/Power Welding Tools",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mf6klsckqbd84b",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mf6klscwh4b374",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mf6klscurbbg9c",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mf6klscfkweh0d"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "271793993005",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 69,
+          "stock": 0,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 69,
+      "price_max": 69,
+      "stock_total": 0,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#助焊劑 #焊油膏 #焊接工具 #電子維修 #手機維修 #焊接神器 #焊接耗材 #無鉛助焊\n\n【產品特色】\n\n✔ 高純度無鉛配方，環保安全\n\n✔ 高效導電，助焊快速成型\n\n✔ 適用於手機維修、電路焊接、精密焊接\n\n✔ 攜帶方便，操作簡單，焊點牢固\n\n【產品規格】\n\n品名：绿林松香助焊劑 / 焊油膏\n\n成分：高純度無鉛焊油\n\n適用範圍：電烙鐵、手機維修、電子焊接、電路板作業\n\n保存方式：避免高溫、陽光直射，置於陰涼乾燥處",
+    "approved_at": "2026-10-22"
+  }
+}

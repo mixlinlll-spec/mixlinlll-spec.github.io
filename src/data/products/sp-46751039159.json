@@ -1,0 +1,170 @@
+{
+  "id": "sp-46751039159",
+  "slug": "spirit-sparrow-fpv-6s2p-6s3p-6s4p",
+  "name_zh": "【靈雀 Spirit Sparrow】FPV遠航電池｜6S2P / 6S3P / 6S4P 長航專用鋰電組｜",
+  "sku": null,
+  "brand": "靈雀 Spirit Sparrow",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "6s",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "靈雀 Spirit Sparrow 長航用 21700 鋰離子電池組，6S2P／6S3P／6S4P 配置，手工組裝。",
+  "description": "🔋 產品特色\n頂級電芯配置，採用 全極耳高倍率電芯，（5 秒內）瞬間放電可達140A（47C），持續放電 36A（12C），性能無虛標。\n\n🕊️ 靈雀 Spirit Sparrow 外場電池系列 — 專為長航程FPV打造\n採用高品質 21700鋰電池電芯組成\n穩定輸出、低內阻，提供持久電力與可靠性能。\n無論是遠距離長航、山飛、或重機架飛行，都能確保穩定推力與電壓曲線。\n\n🛠 商品特性\n採用高效率21700電芯，放電穩定不掉壓\n高強度鍍鎳+紫銅帶點焊，確保低阻抗導\n加厚PVC外層＋碳纖維防護貼皮\n手工組裝，平衡精準，出廠逐顆測試",
+  "specifications": [
+    {
+      "key": "電芯",
+      "value": "21700 鋰離子（全極耳高倍率；型號待提供）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "串並聯",
+      "value": "6S2P／6S3P／6S4P",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "導電結構",
+      "value": "鍍鎳＋紫銅帶點焊",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "外層",
+      "value": "加厚 PVC＋碳纖維防護貼皮",
+      "source": "蝦皮商品說明"
+    }
+  ],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-46751039159/01.webp",
+      "src_small": "/assets/img/products/sp-46751039159/01-480.webp",
+      "alt": "靈雀 Spirit Sparrow FPV遠航電池｜6S2P / 6S3P / 6S4P 長航專用鋰電組｜（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgt7dpr64dn32e"
+    },
+    {
+      "src": "/assets/img/products/sp-46751039159/02.webp",
+      "src_small": "/assets/img/products/sp-46751039159/02-480.webp",
+      "alt": "靈雀 Spirit Sparrow FPV遠航電池｜6S2P / 6S3P / 6S4P 長航專用鋰電組｜（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mgt7dpre2xhl0b"
+    },
+    {
+      "src": "/assets/img/products/sp-46751039159/03.webp",
+      "src_small": "/assets/img/products/sp-46751039159/03-480.webp",
+      "alt": "靈雀 Spirit Sparrow FPV遠航電池｜6S2P / 6S3P / 6S4P 長航專用鋰電組｜（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mgt7dprfhhxn2b"
+    }
+  ],
+  "variants": [
+    {
+      "name": "6S2P",
+      "sku": null,
+      "price_twd": 2861,
+      "availability": "in_stock",
+      "shopee_variation_id": "302136316939",
+      "image": {
+        "src": "/assets/img/products/sp-46751039159/opt-01-480.webp",
+        "alt": "靈雀 Spirit Sparrow FPV遠航電池｜6S2P / 6S3P / 6S4P 長航專用鋰電組｜（規格：6S2P）",
+        "rights": "licensed",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgt7dpr64dn32e"
+      }
+    }
+  ],
+  "price_twd": 2861,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "46751039159",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+    ],
+    "source_image_urls": [],
+    "source_description": "#靈雀電池 #SpiritSparrow #FPV電池 #長航電池 #外場電源 #6S鋰電池 #21700電芯 #6S2P #6S3P #6S4P #穿越機電池 #長航穿越機 #無人機電池 #外掛電源 #定制電池 #長續航電源\n\n🔋 產品特色\n頂級電芯配置，採用 全極耳高倍率電芯，（5 秒內）瞬間放電可達140A（47C），持續放電 36A（12C），性能無虛標。\n\n🕊️ 靈雀 Spirit Sparrow 外場電池系列 — 專為長航程FPV打造\n採用高品質 21700鋰電池電芯組成\n穩定輸出、低內阻，提供持久電力與可靠性能。\n無論是遠距離長航、山飛、或重機架飛行，都能確保穩定推力與電壓曲線。\n\n🛠 商品特性\n採用高效率21700電芯，放電穩定不掉壓\n高強度鍍鎳+紫銅帶點焊，確保低阻抗導 \n加厚PVC外層＋碳纖維防護貼皮\n手工組裝，平衡精準，出廠逐顆測試",
+    "batch": "first-B",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "電芯品牌型號與規格書",
+      "各變體容量、標稱／滿電電壓、重量、尺寸、接頭",
+      "持續／峰值放電電流與測試條件（說明寫「140A（47C）／36A（12C）」，140÷47≈3Ah，看起來是單顆電芯數據，需確認是單顆或整組）",
+      "是否有 BMS",
+      "建議充電倍率與存放電壓",
+      "正式商品照片（EWP 自有或已授權，需標示 rights）",
+      "售價模式（定價／起價／詢價）與售價",
+      "供貨狀態",
+      "蝦皮商品網址（需 EWP 核實）"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgt7dpr64dn32e",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mgt7dpre2xhl0b",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mgt7dprfhhxn2b"
+      ],
+      "variation_label": "FPV遠航電池",
+      "options": [
+        {
+          "option": "6S2P",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgt7dpr64dn32e"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "FPV遠航電池",
+      "rows": [
+        {
+          "variation_id": "302136316939",
+          "name": "6S2P",
+          "parent_sku": null,
+          "sku": null,
+          "price": 2980,
+          "stock": 6,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 2980,
+      "price_max": 2980,
+      "stock_total": 6,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
+  }
+}

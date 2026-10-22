@@ -1,0 +1,207 @@
+{
+  "id": "sp-54765823185",
+  "slug": "fpv-2207-1950kv-ruiyi-5-6s",
+  "name_zh": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機",
+  "sku": null,
+  "brand": "RUIYI 芮翼",
+  "manufacturer_model": "R2207 1950KV",
+  "seller_role": "retail",
+  "primary_category_id": "motors-props",
+  "subcategory_id": "motors",
+  "tags": [],
+  "compatible_sizes": [
+    "5 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "RUIYI 芮翼 R2207 1950KV 無刷馬達，適用 5 吋 FPV 穿越機 Freestyle 與競速。",
+  "description": "RUIYI 芮翼 R2207 1950KV 無刷馬達，專為5吋FPV穿越機、Freestyle花飛與競速飛行打造，支援3S~6S電池，具備強勁推力、穩定輸出與高效率表現，適合搭配5吋槳葉使用。",
+  "specifications": [
+    {
+      "key": "型號",
+      "value": "R2207",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "KV 值",
+      "value": "1950KV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用電池",
+      "value": "3S–6S（依商品說明；標題標示 6S）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用機型",
+      "value": "5 吋穿越機",
+      "source": "蝦皮商品說明"
+    }
+  ],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-54765823185/01.webp",
+      "src_small": "/assets/img/products/sp-54765823185/01-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mrrgrei2kj5sd8"
+    },
+    {
+      "src": "/assets/img/products/sp-54765823185/02.webp",
+      "src_small": "/assets/img/products/sp-54765823185/02-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrrgrei2lxq89e"
+    },
+    {
+      "src": "/assets/img/products/sp-54765823185/03.webp",
+      "src_small": "/assets/img/products/sp-54765823185/03-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mrrgrei2ncao6e"
+    },
+    {
+      "src": "/assets/img/products/sp-54765823185/04.webp",
+      "src_small": "/assets/img/products/sp-54765823185/04-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrrgrei2oqv4d1"
+    },
+    {
+      "src": "/assets/img/products/sp-54765823185/05.webp",
+      "src_small": "/assets/img/products/sp-54765823185/05-480.webp",
+      "alt": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mrrgrei2q5fkbb"
+    }
+  ],
+  "variants": [
+    {
+      "name": "單顆",
+      "sku": null,
+      "price_twd": 421,
+      "availability": "out_of_stock",
+      "shopee_variation_id": "356352392837"
+    },
+    {
+      "name": "四顆",
+      "sku": null,
+      "price_twd": 1632,
+      "availability": "out_of_stock",
+      "shopee_variation_id": "356352392838"
+    }
+  ],
+  "price_twd": 421,
+  "price_display": "from",
+  "availability": "out_of_stock",
+  "shopee_url": null,
+  "shopee_item_id": "54765823185",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mrrgr0fyd1q801",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mrrgr0fyegao91"
+    ],
+    "source_description": "#FPV #穿越機 #無刷馬達 #2207 #1950KV #RUIYI #芮翼 #5吋穿越機 #6S馬達 #Freestyle #花飛 #競速機 #無人機馬達 #航模電機 #電翼動力\n\nRUIYI 芮翼 R2207 1950KV 無刷馬達，專為5吋FPV穿越機、Freestyle花飛與競速飛行打造，支援3S~6S電池，具備強勁推力、穩定輸出與高效率表現，適合搭配5吋槳葉使用。",
+    "batch": "first-A",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "軸徑、重量、安裝孔距",
+      "售價單位（單顆／四顆組）",
+      "電池適用範圍以原廠規格確認（說明寫 3S–6S，標題寫 6S）",
+      "正式商品照片（EWP 自有或已授權，需標示 rights）",
+      "售價模式（定價／起價／詢價）與售價",
+      "供貨狀態",
+      "蝦皮商品網址（需 EWP 核實）"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mrrgrei2kj5sd8",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrrgrei2lxq89e",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mrrgrei2ncao6e",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrrgrei2oqv4d1",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mrrgrei2q5fkbb"
+      ],
+      "variation_label": "2207／1960KV",
+      "options": [
+        {
+          "option": "單顆",
+          "url": null
+        },
+        {
+          "option": "四顆",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "2207／1960KV",
+      "rows": [
+        {
+          "variation_id": "356352392837",
+          "name": "單顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 439,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "356352392838",
+          "name": "四顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 1700,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 439,
+      "price_max": 1700,
+      "stock_total": 0,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
+  }
+}

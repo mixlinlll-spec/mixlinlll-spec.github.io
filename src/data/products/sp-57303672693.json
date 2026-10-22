@@ -1,0 +1,211 @@
+{
+  "id": "sp-57303672693",
+  "slug": "x-1s-2s-450mah-100c-tinywhoop",
+  "name_zh": "十安X電翼動力 高壓競速電池🔋 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池",
+  "sku": null,
+  "brand": "十安 × 電翼動力",
+  "manufacturer_model": null,
+  "seller_role": "collab",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "1s-micro",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "1S",
+    "2S"
+  ],
+  "short_description": "十安 × 電翼動力聯名高壓競速電池，1S 3.8V／2S 7.6V HV，450mAh，適用 Tinywhoop 與微型 FPV。",
+  "description": "想要在室內Whoop場飛到頂速，卻總覺得電池拖後腿嗎？⚡\n十安 X 電翼動力 聯名高壓競速電池，專為 Tinywhoop / 微型FPV 穿越機打造，提供穩定輸出與強勁衝刺，讓每一次油門都更有底氣。\n​\n產品特色：\n🔋 高倍率輸出：100C 放電，瞬間爆發力充足，適合競速與激烈穿越飛行。\n⚙️ 高壓版本：1S 3.8V / 2S 7.6V HV 電池，續航更久、電壓跌落更平順。\n🧪 競賽級電芯：純鈷電芯設計，循環壽命高達約500次，性能穩定不亂飄。\n🛡️ 安全防護佳：多重檢測把關，適合長期訓練與比賽實戰使用。\n​\n不論是Tinywhoop 室內繞樁，還是公園日常練飛，一組穩定的電池就是飛行手感的基礎。\n這顆高壓競速電池，讓你在最後一圈依然保有推力，不再因電壓塌陷而失誤墜機🔥",
+  "specifications": [
+    {
+      "key": "電壓",
+      "value": "1S 3.8V／2S 7.6V（HV 高壓）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "容量",
+      "value": "450mAh",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "放電倍率",
+      "value": "100C（標示）",
+      "source": "蝦皮商品說明"
+    }
+  ],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-57303672693/01.webp",
+      "src_small": "/assets/img/products/sp-57303672693/01-480.webp",
+      "alt": "十安X電翼動力 高壓競速電池 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mlwy62rwffgka9"
+    },
+    {
+      "src": "/assets/img/products/sp-57303672693/02.webp",
+      "src_small": "/assets/img/products/sp-57303672693/02-480.webp",
+      "alt": "十安X電翼動力 高壓競速電池 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mlrthqienmkvb2"
+    },
+    {
+      "src": "/assets/img/products/sp-57303672693/03.webp",
+      "src_small": "/assets/img/products/sp-57303672693/03-480.webp",
+      "alt": "十安X電翼動力 高壓競速電池 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池（細節圖 2）",
+      "width": 800,
+      "height": 800,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mio7tpzswkjq8f"
+    },
+    {
+      "src": "/assets/img/products/sp-57303672693/04.webp",
+      "src_small": "/assets/img/products/sp-57303672693/04-480.webp",
+      "alt": "十安X電翼動力 高壓競速電池 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mlwy62rwgu1062"
+    }
+  ],
+  "variants": [
+    {
+      "name": "XT30接口/2S/450mah",
+      "sku": null,
+      "price_twd": 277,
+      "availability": "in_stock",
+      "shopee_variation_id": "272285762564",
+      "image": {
+        "src": "/assets/img/products/sp-57303672693/opt-02-480.webp",
+        "alt": "十安X電翼動力 高壓競速電池 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池（規格：XT30接口/2S/450mah）",
+        "rights": "licensed",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mlwy45q1bugyd9"
+      }
+    },
+    {
+      "name": "PH接口/1S/450mah",
+      "sku": null,
+      "price_twd": 105,
+      "availability": "out_of_stock",
+      "shopee_variation_id": "272285762563",
+      "image": {
+        "src": "/assets/img/products/sp-57303672693/opt-01-480.webp",
+        "alt": "十安X電翼動力 高壓競速電池 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池（規格：PH接口/1S/450mah）",
+        "rights": "licensed",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mio7z0rynbig48"
+      }
+    }
+  ],
+  "price_twd": 105,
+  "price_display": "from",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "57303672693",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "EWP 決定（2026-10-22）：標示「十安 × 電翼動力聯名」，不稱 EWP 自製",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztk-mio7ujnbm1hda9",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztk-mio7ujnmysqu9b",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztq-mio7ujnsjnyb0d",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztf-mio7ujor2sjo0c",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztp-mio7ujnhb4ea4a"
+    ],
+    "source_description": "#十安電池\n#電翼動力\n#高壓競速電池\n#1S電池\n#2S電池\n#Tinywhoop\n#微型穿越機\n#FPV穿越機\n#FPV電池\n#高倍率電池\n#無人機電池\n#航模電池\n#台灣現貨\n#快速出貨\n\n想要在室內Whoop場飛到頂速，卻總覺得電池拖後腿嗎？⚡\n十安 X 電翼動力 聯名高壓競速電池，專為 Tinywhoop / 微型FPV 穿越機打造，提供穩定輸出與強勁衝刺，讓每一次油門都更有底氣。\n​\n產品特色：\n🔋 高倍率輸出：100C 放電，瞬間爆發力充足，適合競速與激烈穿越飛行。\n⚙️ 高壓版本：1S 3.8V / 2S 7.6V HV 電池，續航更久、電壓跌落更平順。\n🧪 競賽級電芯：純鈷電芯設計，循環壽命高達約500次，性能穩定不亂飄。\n🛡️ 安全防護佳：多重檢測把關，適合長期訓練與比賽實戰使用。\n​\n不論是Tinywhoop 室內繞樁，還是公園日常練飛，一組穩定的電池就是飛行手感的基礎。\n這顆高壓競速電池，讓你在最後一圈依然保有推力，不再因電壓塌陷而失誤墜機🔥",
+    "batch": "first-B",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "接頭規格（BT2.0／PH2.0／XT30 等）",
+      "重量、尺寸",
+      "滿電電壓",
+      "「純鈷電芯、循環壽命約 500 次」為宣傳用語，公開前需佐證或刪除",
+      "正式商品照片（EWP 自有或已授權，需標示 rights）",
+      "售價模式（定價／起價／詢價）與售價",
+      "供貨狀態",
+      "蝦皮商品網址（需 EWP 核實）"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mlwy62rwffgka9",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mlrthqienmkvb2",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mio7tpzswkjq8f",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mlwy62rwgu1062"
+      ],
+      "variation_label": "十安競速電池",
+      "options": [
+        {
+          "option": "PH接口/1S/450mah",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mio7z0rynbig48"
+        },
+        {
+          "option": "XT30接口/2S/450mah",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mlwy45q1bugyd9"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "十安競速電池",
+      "rows": [
+        {
+          "variation_id": "272285762564",
+          "name": "XT30接口/2S/450mah",
+          "parent_sku": null,
+          "sku": null,
+          "price": 289,
+          "stock": 21,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "272285762563",
+          "name": "PH接口/1S/450mah",
+          "parent_sku": null,
+          "sku": null,
+          "price": 109,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 109,
+      "price_max": 289,
+      "stock_total": 21,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
+  },
+  "notes": [
+    "HV 高壓電池請使用支援 LiHV 模式的充電器。"
+  ]
+}

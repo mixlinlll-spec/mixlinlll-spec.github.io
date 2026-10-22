@@ -1,0 +1,441 @@
+{
+  "id": "sp-56502836832",
+  "slug": "dji-neo2",
+  "name_zh": "免費客製化 [ 台灣快速出貨 ]DJI NEO2 輕便收納盒｜一體式硬殼防護・可收納機體＋電池＋配件",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "cases",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "專為 DJI NEO2 設計的輕便收納盒，外殼堅固、收納分區精準，外出拍攝、日常攜帶都更安心。\n內部格局可放置機體本體與多顆電池，並預留小物收納空間（螺絲、螺刀、備用槳等），讓裝備整齊不亂跑。\n\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n產品重點\n專用卡位：貼合 NEO2 機身，放入即穩固不晃動。\n雙電池槽位：可同時放置 2 顆電池（+機身一顆）。\n小物收納格：備用槳、螺絲、起子等配件都有固定位置。\n可掛繩 / 攜帶孔：外出攜帶便利，可掛背包或掛鉤。\n有附上提把\n輕量設計不足300克：兼顧保護與便攜，不增加多餘負重。\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-56502836832/01.webp",
+      "src_small": "/assets/img/products/sp-56502836832/01-480.webp",
+      "alt": "免費客製化 [ 台灣快速出貨 ]DJI NEO2 輕便收納盒｜一體式硬殼防護・可收納機體＋電池＋配件（主圖）",
+      "width": 444,
+      "height": 444,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mi1v6pio7i87b0"
+    },
+    {
+      "src": "/assets/img/products/sp-56502836832/02.webp",
+      "src_small": "/assets/img/products/sp-56502836832/02-480.webp",
+      "alt": "免費客製化 [ 台灣快速出貨 ]DJI NEO2 輕便收納盒｜一體式硬殼防護・可收納機體＋電池＋配件（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-56502836832/03.webp",
+      "src_small": "/assets/img/products/sp-56502836832/03-480.webp",
+      "alt": "免費客製化 [ 台灣快速出貨 ]DJI NEO2 輕便收納盒｜一體式硬殼防護・可收納機體＋電池＋配件（細節圖 2）",
+      "width": 990,
+      "height": 990,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mi1v6pik88asfc"
+    },
+    {
+      "src": "/assets/img/products/sp-56502836832/04.webp",
+      "src_small": "/assets/img/products/sp-56502836832/04-480.webp",
+      "alt": "免費客製化 [ 台灣快速出貨 ]DJI NEO2 輕便收納盒｜一體式硬殼防護・可收納機體＋電池＋配件（細節圖 3）",
+      "width": 463,
+      "height": 463,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mi1v6pio63nrd6"
+    }
+  ],
+  "variants": [
+    {
+      "name": "金箔",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "370334772560"
+    },
+    {
+      "name": "金",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "370334772562"
+    },
+    {
+      "name": "白金",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "355273469728"
+    },
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "355273469727"
+    },
+    {
+      "name": "螢光橘",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "355273469723"
+    },
+    {
+      "name": "橘",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "370334772561"
+    },
+    {
+      "name": "綠",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "370334772563"
+    },
+    {
+      "name": "淺藍",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "277254011654"
+    },
+    {
+      "name": "紫",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "355273469721"
+    },
+    {
+      "name": "粉紅",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "282444515633"
+    },
+    {
+      "name": "馬卡龍",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "277254011651"
+    },
+    {
+      "name": "紅",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "277254011655"
+    },
+    {
+      "name": "藍",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "277254011652"
+    },
+    {
+      "name": "螢光綠",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "355273469724"
+    },
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "355273469726"
+    },
+    {
+      "name": "黃",
+      "sku": null,
+      "price_twd": 470,
+      "availability": "in_stock",
+      "shopee_variation_id": "355273469722"
+    }
+  ],
+  "price_twd": 470,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "56502836832",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-mia9z7ppqu4g86",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztq-mia9z7pmb85g66",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztk-miaa0cacbp5246",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mlm5cvc3aio439"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mi1v6pio7i87b0",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mi1v6pik88asfc",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mi1v6pio63nrd6"
+      ],
+      "variation_label": "DJI NEO2 收納盒",
+      "options": [
+        {
+          "option": "黑",
+          "url": null
+        },
+        {
+          "option": "白",
+          "url": null
+        },
+        {
+          "option": "白金",
+          "url": null
+        },
+        {
+          "option": "紫",
+          "url": null
+        },
+        {
+          "option": "黃",
+          "url": null
+        },
+        {
+          "option": "螢光橘",
+          "url": null
+        },
+        {
+          "option": "螢光綠",
+          "url": null
+        },
+        {
+          "option": "馬卡龍",
+          "url": null
+        },
+        {
+          "option": "淺藍",
+          "url": null
+        },
+        {
+          "option": "紅",
+          "url": null
+        },
+        {
+          "option": "藍",
+          "url": null
+        },
+        {
+          "option": "橘",
+          "url": null
+        },
+        {
+          "option": "金",
+          "url": null
+        },
+        {
+          "option": "金箔",
+          "url": null
+        },
+        {
+          "option": "綠",
+          "url": null
+        },
+        {
+          "option": "粉紅",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "DJI NEO2 收納盒",
+      "rows": [
+        {
+          "variation_id": "370334772560",
+          "name": "金箔",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "370334772562",
+          "name": "金",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "355273469728",
+          "name": "白金",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "355273469727",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "355273469723",
+          "name": "螢光橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370334772561",
+          "name": "橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370334772563",
+          "name": "綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "277254011654",
+          "name": "淺藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "355273469721",
+          "name": "紫",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "282444515633",
+          "name": "粉紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "277254011651",
+          "name": "馬卡龍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "277254011655",
+          "name": "紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 48,
+          "min_qty": null
+        },
+        {
+          "variation_id": "277254011652",
+          "name": "藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "355273469724",
+          "name": "螢光綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "355273469726",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 46,
+          "min_qty": null
+        },
+        {
+          "variation_id": "355273469722",
+          "name": "黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 490,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 490,
+      "price_max": 490,
+      "stock_total": 794,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#DJINEO2 #NEO2收納盒 #NEO2配件 #無人機收納 #電池收納 #便攜收納盒 #飛行器配件 #硬殼保護盒 #外拍必備 #空拍機配件\n\n專為 DJI NEO2 設計的輕便收納盒，外殼堅固、收納分區精準，外出拍攝、日常攜帶都更安心。\n內部格局可放置機體本體與多顆電池，並預留小物收納空間（螺絲、螺刀、備用槳等），讓裝備整齊不亂跑。\n\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n⚠️客製化務必聊聊討論⚠️\n\n產品重點\n專用卡位：貼合 NEO2 機身，放入即穩固不晃動。\n雙電池槽位：可同時放置 2 顆電池（+機身一顆）。\n小物收納格：備用槳、螺絲、起子等配件都有固定位置。\n可掛繩 / 攜帶孔：外出攜帶便利，可掛背包或掛鉤。\n有附上提把\n輕量設計不足300克：兼顧保護與便攜，不增加多餘負重。\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅",
+    "approved_at": "2026-10-22"
+  }
+}

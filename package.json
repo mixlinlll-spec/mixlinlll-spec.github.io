@@ -1,0 +1,29 @@
+{
+  "name": "ewp-site",
+  "private": true,
+  "description": "電翼動力 EWP 官方網站（GitHub Pages 靜態網站，資料驅動商品型錄）",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/build.mjs --drafts && python3 -m http.server 8801 --directory _preview",
+    "validate": "node scripts/build.mjs --check",
+    "check": "node scripts/build.mjs && node scripts/check-site.mjs",
+    "test": "node --test tests/data.test.mjs",
+    "test:e2e": "node tests/e2e.mjs",
+    "test:lighthouse": "node tests/lighthouse.mjs",
+    "import:csv": "node scripts/import-csv.mjs",
+    "import:shopee": "node scripts/import-shopee.mjs",
+    "images": "node scripts/add-images.mjs",
+    "import:media": "node scripts/import-shopee-media.mjs",
+    "approve": "node scripts/approve-snapshot.mjs",
+    "report:shopee": "node scripts/report-shopee-import.mjs"
+  },
+  "devDependencies": {
+    "lighthouse": "12.6.1",
+    "playwright": "1.56.0",
+    "sharp": "0.35.4"
+  }
+}

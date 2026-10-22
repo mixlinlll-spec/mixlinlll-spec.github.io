@@ -1,0 +1,228 @@
+{
+  "id": "sp-50367700235",
+  "slug": "huan-5-fpv-freestyle-f722-2207",
+  "name_zh": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": "幻 HUAN",
+  "seller_role": "ewp_original",
+  "primary_category_id": "complete-drones",
+  "subcategory_id": "5in",
+  "tags": [],
+  "compatible_sizes": [
+    "5 吋"
+  ],
+  "video_system": "DJI O4",
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "電翼動力 5 吋 Freestyle 花飛機，紫色幻影風格，定位為高速花飛、進階練習與戶外穿越。",
+  "description": "幻 HUAN 是電翼動力全新 5吋 Freestyle 花飛機，以紫色幻影風格打造，定位為高速花飛、進階練習與戶外穿越使用。",
+  "specifications": [
+    {
+      "key": "尺寸",
+      "value": "5 吋",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "飛控",
+      "value": "F722",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "馬達",
+      "value": "2207 1950KV",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "動力",
+      "value": "6S",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "圖傳",
+      "value": "DJI O4",
+      "source": "蝦皮商品標題"
+    }
+  ],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-50367700235/01.webp",
+      "src_small": "/assets/img/products/sp-50367700235/01-480.webp",
+      "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-msycw4hlne2ydb"
+    },
+    {
+      "src": "/assets/img/products/sp-50367700235/02.webp",
+      "src_small": "/assets/img/products/sp-50367700235/02-480.webp",
+      "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-msycw4hssg0845"
+    },
+    {
+      "src": "/assets/img/products/sp-50367700235/03.webp",
+      "src_small": "/assets/img/products/sp-50367700235/03-480.webp",
+      "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-msycw4hsa6ma94"
+    },
+    {
+      "src": "/assets/img/products/sp-50367700235/04.webp",
+      "src_small": "/assets/img/products/sp-50367700235/04-480.webp",
+      "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-msycw4hsr1fsd6"
+    },
+    {
+      "src": "/assets/img/products/sp-50367700235/05.webp",
+      "src_small": "/assets/img/products/sp-50367700235/05-480.webp",
+      "alt": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-msycw4hjdx5218"
+    }
+  ],
+  "variants": [
+    {
+      "name": "O4WIDE(加裝CNC保護及鏡頭改件)",
+      "sku": null,
+      "price_twd": 13133,
+      "availability": "in_stock",
+      "shopee_variation_id": "346497481245"
+    },
+    {
+      "name": "O4PRO",
+      "sku": null,
+      "price_twd": 14592,
+      "availability": "in_stock",
+      "shopee_variation_id": "346497481246"
+    },
+    {
+      "name": "模擬圖傳(平頭哥2)",
+      "sku": null,
+      "price_twd": 8525,
+      "availability": "in_stock",
+      "shopee_variation_id": "346497481244"
+    }
+  ],
+  "price_twd": 8525,
+  "price_display": "from",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "50367700235",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-msydmqx4347e6c"
+    ],
+    "source_description": "幻 HUAN 是電翼動力全新 5吋 Freestyle 花飛機，以紫色幻影風格打造，定位為高速花飛、進階練習與戶外穿越使用。",
+    "batch": "first-B",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "正式配置確認（舊首頁寫 MAD 2207／1950KV、FDI F722／60A）",
+      "接收機、機架、槳葉、重量",
+      "實機照片（可沿用現有 HUAN 海報需確認）"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-msycw4hlne2ydb",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-msycw4hssg0845",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-msycw4hsa6ma94",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-msycw4hsr1fsd6",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-msycw4hjdx5218"
+      ],
+      "variation_label": "幻 HUAN",
+      "options": [
+        {
+          "option": "模擬圖傳(平頭哥2)",
+          "url": null
+        },
+        {
+          "option": "O4WIDE(加裝CNC保護及鏡頭改件)",
+          "url": null
+        },
+        {
+          "option": "O4PRO",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "幻 HUAN",
+      "rows": [
+        {
+          "variation_id": "346497481245",
+          "name": "O4WIDE(加裝CNC保護及鏡頭改件)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 13680,
+          "stock": 1,
+          "min_qty": 2
+        },
+        {
+          "variation_id": "346497481246",
+          "name": "O4PRO",
+          "parent_sku": null,
+          "sku": null,
+          "price": 15200,
+          "stock": 1,
+          "min_qty": null
+        },
+        {
+          "variation_id": "346497481244",
+          "name": "模擬圖傳(平頭哥2)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 8880,
+          "stock": 1,
+          "min_qty": null
+        }
+      ],
+      "price_min": 8880,
+      "price_max": 15200,
+      "stock_total": 3,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
+  }
+}

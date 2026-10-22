@@ -1,0 +1,124 @@
+{
+  "id": "sp-54511824587",
+  "slug": "jhe42b-fpv-bb-110db-led",
+  "name_zh": "JHE42B FPV 蜂鳴器 BB響 斷電尋機器 110dB 超大音量 穿越機警報器 自帶電池 LED指示燈",
+  "sku": null,
+  "brand": "JHE",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "electronics",
+  "subcategory_id": "modules",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "JHE42B 自帶電池蜂鳴器，專為 FPV 穿越機設計。當飛機墜落草叢、樹林或失聯時，可透過超大音量警報快速定位機體位置，大幅提升尋機效率。\n\n內建備用電池，即使主電池脫落或完全斷電，仍可持續發出警報聲，是 FPV 玩家必備的防炸機配件。\n\n【產品特色】\n✔ 110dB 超大音量警報\n✔ 內建備用鋰電池\n✔ 主電池脫落仍可持續鳴叫\n✔ LED 高亮指示燈\n✔ 支援 Betaflight 尋機功能\n✔ 體積小巧安裝方便\n✔ 降低炸機遺失風險\n\n【產品規格】\n型號：JHE42B\n音量：約110dB\n工作電壓：5V\n功能：尋機警報、斷電警報、LED指示\n適用系統：Betaflight、INAV\n重量：輕量化設計\n\n【接線方式】\n紅線：5V\n黑線：GND\n綠線：BZ-\n\n【適用機型】\n5吋穿越機\n7吋長航機\nFreestyle 花飛機\n競速機\nFPV 固定翼\n\n【包裝內容】\nJHE42B 蜂鳴器 ×1\n\n【注意事項】\n安裝前請確認飛控蜂鳴器接口定義。\n不同飛控接線方式可能略有差異，請依飛控說明書安裝。",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-54511824587/01.webp",
+      "src_small": "/assets/img/products/sp-54511824587/01-480.webp",
+      "alt": "JHE42B FPV 蜂鳴器 BB響 斷電尋機器 110dB 超大音量 穿越機警報器 自帶電池 LED指示燈（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mp7lkj5898njf4"
+    },
+    {
+      "src": "/assets/img/products/sp-54511824587/02.webp",
+      "src_small": "/assets/img/products/sp-54511824587/02-480.webp",
+      "alt": "JHE42B FPV 蜂鳴器 BB響 斷電尋機器 110dB 超大音量 穿越機警報器 自帶電池 LED指示燈（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mp7lkj52641u06"
+    },
+    {
+      "src": "/assets/img/products/sp-54511824587/03.webp",
+      "src_small": "/assets/img/products/sp-54511824587/03-480.webp",
+      "alt": "JHE42B FPV 蜂鳴器 BB響 斷電尋機器 110dB 超大音量 穿越機警報器 自帶電池 LED指示燈（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mp7lkj58an7z00"
+    }
+  ],
+  "variants": [
+    {
+      "name": "大分貝蜂鳴器",
+      "sku": null,
+      "price_twd": 229,
+      "availability": "in_stock",
+      "shopee_variation_id": "341027552781"
+    }
+  ],
+  "price_twd": 229,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "54511824587",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mp7lkj5898njf4",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mp7lkj52641u06",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mp7lkj58an7z00"
+      ],
+      "variation_label": "JHB42B",
+      "options": [
+        {
+          "option": "大分貝蜂鳴器",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "JHB42B",
+      "rows": [
+        {
+          "variation_id": "341027552781",
+          "name": "大分貝蜂鳴器",
+          "parent_sku": null,
+          "sku": null,
+          "price": 239,
+          "stock": 7,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 239,
+      "price_max": 239,
+      "stock_total": 7,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#JHE42B #蜂鳴器 #BB響 #尋機器 #FPV蜂鳴器 #穿越機配件 #Betaflight #INAV #FPVDrone #穿越機 #競速機 #花飛機 #長航機 #無人機配件 #LED警報器 #斷電尋機器 #飛控配件 #電翼動力 #FPVDIY #DroneParts\n\nJHE42B 自帶電池蜂鳴器，專為 FPV 穿越機設計。當飛機墜落草叢、樹林或失聯時，可透過超大音量警報快速定位機體位置，大幅提升尋機效率。\n\n內建備用電池，即使主電池脫落或完全斷電，仍可持續發出警報聲，是 FPV 玩家必備的防炸機配件。\n\n【產品特色】\n✔ 110dB 超大音量警報\n✔ 內建備用鋰電池\n✔ 主電池脫落仍可持續鳴叫\n✔ LED 高亮指示燈\n✔ 支援 Betaflight 尋機功能\n✔ 體積小巧安裝方便\n✔ 降低炸機遺失風險\n\n【產品規格】\n型號：JHE42B\n音量：約110dB\n工作電壓：5V\n功能：尋機警報、斷電警報、LED指示\n適用系統：Betaflight、INAV\n重量：輕量化設計\n\n【接線方式】\n紅線：5V\n黑線：GND\n綠線：BZ-\n\n【適用機型】\n5吋穿越機\n7吋長航機\nFreestyle 花飛機\n競速機\nFPV 固定翼\n\n【包裝內容】\nJHE42B 蜂鳴器 ×1\n\n【注意事項】\n安裝前請確認飛控蜂鳴器接口定義。\n不同飛控接線方式可能略有差異，請依飛控說明書安裝。",
+    "approved_at": "2026-10-22"
+  }
+}

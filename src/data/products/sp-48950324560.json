@@ -1,0 +1,157 @@
+{
+  "id": "sp-48950324560",
+  "slug": "dji-osmo-nano-tpu",
+  "name_zh": "DJI OSMO NANO 快拆外框 保護殼 TPU 防摔相機套 穩定器外框 配件",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "【產品特色】\n✔ 專為 DJI OSMO NANO 設計：完美貼合機身，保護鏡頭與邊角\n✔ 快拆結構設計：免工具裝卸，方便戶外拍攝快速更換\n✔ TPU 軟質材質：具備抗震、防刮、防摔效果\n✔ 輕量不影響操作：不遮擋鏡頭與按鍵，穩定拍攝零負擔\n✔ FPV飛手專用： 出片必備配件\n\n【產品規格】\n品名：DJI OSMO NANO 快拆外框保護件\n適用機型：DJI OSMO NANO\n重量：約 10G\n功能：防摔、防刮、快拆保護、造型升級",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-48950324560/01.webp",
+      "src_small": "/assets/img/products/sp-48950324560/01-480.webp",
+      "alt": "DJI OSMO NANO 快拆外框 保護殼 TPU 防摔相機套 穩定器外框 配件（主圖）",
+      "width": 719,
+      "height": 719,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mgdthuo8wyrzaf"
+    },
+    {
+      "src": "/assets/img/products/sp-48950324560/02.webp",
+      "src_small": "/assets/img/products/sp-48950324560/02-480.webp",
+      "alt": "DJI OSMO NANO 快拆外框 保護殼 TPU 防摔相機套 穩定器外框 配件（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-48950324560/03.webp",
+      "src_small": "/assets/img/products/sp-48950324560/03-480.webp",
+      "alt": "DJI OSMO NANO 快拆外框 保護殼 TPU 防摔相機套 穩定器外框 配件（細節圖 2）",
+      "width": 818,
+      "height": 818,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mhndi19nwlja7d"
+    }
+  ],
+  "variants": [
+    {
+      "name": "B款",
+      "sku": null,
+      "price_twd": 115,
+      "availability": "in_stock",
+      "shopee_variation_id": "370214864504",
+      "image": {
+        "src": "/assets/img/products/sp-48950324560/opt-02-480.webp",
+        "alt": "DJI OSMO NANO 快拆外框 保護殼 TPU 防摔相機套 穩定器外框 配件（規格：B款）",
+        "rights": "licensed",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mhndj2sa5h52fe"
+      }
+    },
+    {
+      "name": "A款",
+      "sku": null,
+      "price_twd": 134,
+      "availability": "in_stock",
+      "shopee_variation_id": "425028888575",
+      "image": {
+        "src": "/assets/img/products/sp-48950324560/opt-01-480.webp",
+        "alt": "DJI OSMO NANO 快拆外框 保護殼 TPU 防摔相機套 穩定器外框 配件（規格：A款）",
+        "rights": "licensed",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mhndnd4zqhvn07"
+      }
+    }
+  ],
+  "price_twd": 115,
+  "price_display": "from",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "48950324560",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101116 - Cameras & Drones/Camera Accessories/Camera Cases & Bags",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mgdthuo8wyrzaf",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mhndi19nwlja7d"
+      ],
+      "variation_label": "NANO 快拆外框保護件",
+      "options": [
+        {
+          "option": "A款",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mhndnd4zqhvn07"
+        },
+        {
+          "option": "B款",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mhndj2sa5h52fe"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "NANO 快拆外框保護件",
+      "rows": [
+        {
+          "variation_id": "370214864504",
+          "name": "B款",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 48,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "425028888575",
+          "name": "A款",
+          "parent_sku": null,
+          "sku": null,
+          "price": 140,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 120,
+      "price_max": 140,
+      "stock_total": 98,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#DJINANO #OSMONANO #外框保護殼 #TPU保護套 #快拆外框 #運動相機配件 #防摔外殼 #航拍配件\n\n【產品特色】\n✔ 專為 DJI OSMO NANO 設計：完美貼合機身，保護鏡頭與邊角\n✔ 快拆結構設計：免工具裝卸，方便戶外拍攝快速更換\n✔ TPU 軟質材質：具備抗震、防刮、防摔效果\n✔ 輕量不影響操作：不遮擋鏡頭與按鍵，穩定拍攝零負擔\n✔ FPV飛手專用： 出片必備配件\n\n【產品規格】\n品名：DJI OSMO NANO 快拆外框保護件\n適用機型：DJI OSMO NANO\n重量：約 10G\n功能：防摔、防刮、快拆保護、造型升級",
+    "approved_at": "2026-10-22"
+  }
+}

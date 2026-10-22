@@ -1,0 +1,111 @@
+{
+  "id": "sp-26192359811",
+  "slug": "1-6s",
+  "name_zh": "1-6S 二合一 電量顯示器 帶蜂鳴器 低壓警報 電池檢測器",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "electronics",
+  "subcategory_id": "modules",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "【產品特色】\n\n✔ 二合一功能：同時具備電量顯示與蜂鳴低壓警報\n\n✔ 廣泛兼容：適用 1-6S 鋰電池（LiPo / Li-ion / LiFe）\n\n✔ 即時檢測：清晰 LED 電壓顯示，掌握每組電芯狀態\n\n✔ 安全提醒：低壓自動蜂鳴提示，避免電池過放\n\n✔ 輕巧便攜：外場飛行、模型玩家必備工具\n\n【產品規格】\n\n品名：電量顯示器 / 低壓蜂鳴警報器\n\n型號：1-6S 二合一款\n\n適用電池：1-6S 鋰電池 (LiPo / Li-ion / LiFe)\n\n功能：電壓顯示 + 低壓蜂鳴警報\n\n用途：穿越機 / 固定翼 / 車模 / 船模 / 電池檢測",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-26192359811/01.webp",
+      "src_small": "/assets/img/products/sp-26192359811/01-480.webp",
+      "alt": "1-6S 二合一 電量顯示器 帶蜂鳴器 低壓警報 電池檢測器（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf6l1okod62y59"
+    },
+    {
+      "src": "/assets/img/products/sp-26192359811/02.webp",
+      "src_small": "/assets/img/products/sp-26192359811/02-480.webp",
+      "alt": "1-6S 二合一 電量顯示器 帶蜂鳴器 低壓警報 電池檢測器（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mf6l1okuucct62"
+    },
+    {
+      "src": "/assets/img/products/sp-26192359811/03.webp",
+      "src_small": "/assets/img/products/sp-26192359811/03-480.webp",
+      "alt": "1-6S 二合一 電量顯示器 帶蜂鳴器 低壓警報 電池檢測器（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mf6l1okye616d0"
+    }
+  ],
+  "variants": [],
+  "price_twd": 56,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "26192359811",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100220 - Home Appliances/Electrical Circuitry & Parts/Others",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf6l1okod62y59",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mf6l1okuucct62",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mf6l1okye616d0"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "224544425372",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 58,
+          "stock": 8,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 58,
+      "price_max": 58,
+      "stock_total": 8,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#電量顯示器 #電池檢測 #低壓警報 #蜂鳴器 #模型電池 #航模工具 #穿越機必備\n\n【產品特色】\n\n✔ 二合一功能：同時具備電量顯示與蜂鳴低壓警報\n\n✔ 廣泛兼容：適用 1-6S 鋰電池（LiPo / Li-ion / LiFe）\n\n✔ 即時檢測：清晰 LED 電壓顯示，掌握每組電芯狀態\n\n✔ 安全提醒：低壓自動蜂鳴提示，避免電池過放\n\n✔ 輕巧便攜：外場飛行、模型玩家必備工具\n\n【產品規格】\n\n品名：電量顯示器 / 低壓蜂鳴警報器\n\n型號：1-6S 二合一款\n\n適用電池：1-6S 鋰電池 (LiPo / Li-ion / LiFe)\n\n功能：電壓顯示 + 低壓蜂鳴警報\n\n用途：穿越機 / 固定翼 / 車模 / 船模 / 電池檢測",
+    "approved_at": "2026-10-22"
+  }
+}

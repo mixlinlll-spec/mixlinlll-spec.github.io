@@ -1,0 +1,175 @@
+{
+  "id": "sp-54905841328",
+  "slug": "rate-1404-4600kv-2-5-3-3s",
+  "name_zh": "瑞速 RATE 1404 4600KV⚡ 2.5–3寸圈圈機/微型穿越機無刷電機 3S/4S/6S通用 高KV小鋼炮",
+  "sku": null,
+  "brand": "RATE 瑞速",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "motors-props",
+  "subcategory_id": "motors",
+  "tags": [],
+  "compatible_sizes": [
+    "3 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [
+    "3S",
+    "4S",
+    "6S"
+  ],
+  "short_description": "",
+  "description": "•\t1404 規格＋4600KV，高轉速設計，適合 2.5–3 吋圈圈機、微型 Freestyle 機與輕量化長距離小機使用。\n•\t支援 3S/4S（保守）甚至部分輕槳 6S 搭配，建議用 2.5–3 吋三葉或雙葉槳，兼顧爆發與效率。\n•\t外觀採拉絲黑＋銀邊設計，動平衡良好，震動小，有助於畫面穩定與 PID 調教。\n•\t標準 9×9mm 安裝孔距與細長出線，易於安裝在主流 2–3 吋機架和 AIO 飛控上。",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-54905841328/01.webp",
+      "src_small": "/assets/img/products/sp-54905841328/01-480.webp",
+      "alt": "瑞速 RATE 1404 4600KV 2.5–3寸圈圈機/微型穿越機無刷電機 3S/4S/6S通用 高KV小鋼炮（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mkbtqprn8oav0c"
+    },
+    {
+      "src": "/assets/img/products/sp-54905841328/02.webp",
+      "src_small": "/assets/img/products/sp-54905841328/02-480.webp",
+      "alt": "瑞速 RATE 1404 4600KV 2.5–3寸圈圈機/微型穿越機無刷電機 3S/4S/6S通用 高KV小鋼炮（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mkbtqprqshza06"
+    },
+    {
+      "src": "/assets/img/products/sp-54905841328/03.webp",
+      "src_small": "/assets/img/products/sp-54905841328/03-480.webp",
+      "alt": "瑞速 RATE 1404 4600KV 2.5–3寸圈圈機/微型穿越機無刷電機 3S/4S/6S通用 高KV小鋼炮（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mkbtqpru6pe0c7"
+    },
+    {
+      "src": "/assets/img/products/sp-54905841328/04.webp",
+      "src_small": "/assets/img/products/sp-54905841328/04-480.webp",
+      "alt": "瑞速 RATE 1404 4600KV 2.5–3寸圈圈機/微型穿越機無刷電機 3S/4S/6S通用 高KV小鋼炮（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mkbtqprzc4cg4e"
+    },
+    {
+      "src": "/assets/img/products/sp-54905841328/05.webp",
+      "src_small": "/assets/img/products/sp-54905841328/05-480.webp",
+      "alt": "瑞速 RATE 1404 4600KV 2.5–3寸圈圈機/微型穿越機無刷電機 3S/4S/6S通用 高KV小鋼炮（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mkbtqprugjd0ca"
+    }
+  ],
+  "variants": [
+    {
+      "name": "四顆",
+      "sku": null,
+      "price_twd": 1295,
+      "availability": "out_of_stock",
+      "shopee_variation_id": "445527807004"
+    },
+    {
+      "name": "單顆",
+      "sku": null,
+      "price_twd": 335,
+      "availability": "out_of_stock",
+      "shopee_variation_id": "445527807003"
+    }
+  ],
+  "price_twd": 335,
+  "price_display": "from",
+  "availability": "out_of_stock",
+  "shopee_url": null,
+  "shopee_item_id": "54905841328",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mkbttfbukyyv09",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mkbttfdmugaw9d"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mkbtqprn8oav0c",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mkbtqprqshza06",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mkbtqpru6pe0c7",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mkbtqprzc4cg4e",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mkbtqprugjd0ca"
+      ],
+      "variation_label": "1404/4600KV",
+      "options": [
+        {
+          "option": "單顆",
+          "url": null
+        },
+        {
+          "option": "四顆",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "1404/4600KV",
+      "rows": [
+        {
+          "variation_id": "445527807004",
+          "name": "四顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 1349,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "445527807003",
+          "name": "單顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 349,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 349,
+      "price_max": 1349,
+      "stock_total": 0,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "•\t#瑞速電機\n•\t#RATE1404\n•\t#4600KV\n•\t#2點5寸電機\n•\t#3寸圈圈機\n•\t#微型穿越機\n•\t#FPV無刷電機\n•\t#高KV動力\n•\t#3S4S6S電機\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t1404 規格＋4600KV，高轉速設計，適合 2.5–3 吋圈圈機、微型 Freestyle 機與輕量化長距離小機使用。\n•\t支援 3S/4S（保守）甚至部分輕槳 6S 搭配，建議用 2.5–3 吋三葉或雙葉槳，兼顧爆發與效率。\n•\t外觀採拉絲黑＋銀邊設計，動平衡良好，震動小，有助於畫面穩定與 PID 調教。\n•\t標準 9×9mm 安裝孔距與細長出線，易於安裝在主流 2–3 吋機架和 AIO 飛控上。",
+    "approved_at": "2026-10-22"
+  }
+}

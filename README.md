@@ -1,27 +1,68 @@
-# 電翼動力 EWP 品牌官網
+# 電翼動力 EWP 官方網站
 
-繁體中文、黑紅視覺的靜態品牌網站，支援桌機與手機。無套件安裝、無後端或第三方追蹤程式。包含品牌介紹、代表機型、工作室服務與常見問題。
+官方品牌網站＋可搜尋的商品型錄＋LINE／蝦皮詢價導購＋FPV 技術知識庫。
+部署在 GitHub Pages（`https://mixlinlll-spec.github.io/`），純靜態網站：沒有後端、資料庫、會員、購物車、金流或追蹤程式。
+**由 GitHub Actions 建置並只發布 `dist/`**（產生的頁面＋白名單靜態檔）；原始資料、程式與測試不會出現在網站上。
 
-## 發布到 GitHub Pages
+## 架構
 
-1. 使用 GitHub 帳號 `mixlinlll-spec` 建立 Public 儲存庫 `mixlinlll-spec.github.io`。若已存在，請先檢查內容，避免覆蓋其他網站。
-2. 解壓縮交付檔，把 `index.html`、`assets` 資料夾與 `.nojekyll` 上傳到儲存庫最外層，不要多包一層資料夾。若選擇下方 GitHub Actions 模式，一併提交 `.github/workflows/pages.yml`。
-3. 簡單模式：Settings → Pages → Build and deployment，Source 選 Deploy from a branch，Branch 選 main，目錄選 / (root)，Save。
-4. 或選 GitHub Actions 模式：Source 選 GitHub Actions，於 Actions 執行 Deploy EWP to GitHub Pages 工作流程。
-5. 等部署成功，使用 Settings → Pages 顯示的網址開啟。
+```
+src/data/            ← 唯一資料來源（人改這裡）
+  site.json          全站設定：品牌、聯絡方式（LINE／蝦皮／Email…）、政策頁是否公開
+  categories.json    10 個主分類與子分類（id 永久不變）
+  products/*.json    商品，一個商品一個檔案（預設 published=false 草稿）
+  builds.json        EWP 自製機型
+  services.json      服務頁內容
+src/templates/       CSV 匯入範本
+scripts/
+  build.mjs          產生網站（驗證資料 → 輸出 HTML、sitemap、robots）
+  check-site.mjs     檢查站內連結、資源、假連結、草稿外洩
+  import-csv.mjs     由 CSV 新增／更新商品
+  import-shopee.mjs  由蝦皮匯出檔建立商品草稿
+  add-images.mjs     商品照片壓縮成 WebP 並寫入資料（需 npm install）
+  import-shopee-media.mjs  批次下載蝦皮商品圖片（GitHub Actions：import-media.yml）
+  approve-snapshot.mjs     核對後套用蝦皮價格／庫存快照與圖片使用權（不會公開）
+  report-shopee-import.mjs 產生蝦皮匯入總表（docs/SHOPEE_IMPORT_REPORT.md、CSV）
+  lib/               共用資料驗證與版型（Header／Footer／ProductCard…）
+assets/              CSS、JS、圖片、QR；assets/img/products/ 為蝦皮匯入的商品圖片（只有已公開商品會進入 dist/）
+fpv-help.html        舊知識庫（91 則），原網址保留、內容未改動
+huan.png             舊主圖，原網址保留
+legacy/              2026-09 舊版首頁存檔（noindex，僅供比對）
+tests/               資料／路徑／審核單元測試、Playwright 端對端測試、Lighthouse
+.github/workflows/   ci.yml（每次 push／PR 檢查）、pages.yml（main 更新時部署）
+dist/                正式發布產物（建置產生，不提交，由 Actions 部署）
+_preview/            含草稿預覽（建置產生，不提交、不部署）
+```
 
-## 日後更新
+- **發布白名單**：`dist/` 只會有產生的頁面與 `assets/`、`fpv-help.html`、`huan.png`、`legacy/`、`.nojekyll`（定義在 `scripts/lib/data.mjs` 的 `STATIC_WHITELIST`）。`scripts/check-site.mjs` 會在任何 `.json`、`.mjs`、`.md`、`src/`、`scripts/` 等出現在產物時失敗。
+- **repo 是公開的**：草稿不會出現在網站上，但 `src/data/` 在 GitHub 上看得到。不要把進貨價、成本、客戶個資、稅籍編號等機密放進 repo。
 
-- 文字與配色：修改 `index.html`。
-- 商品海報：替換 `assets/huan.png` 並同步更新圖片 alt 文字。
-- 聯絡資訊：目前使用「蝦皮搜尋：電翼動力」。取得確定的賣場或 LINE 網址後，再改成可點擊連結。
-- 頁首 EWP 是文字品牌識別；尚未替換為正式透明 Logo 圖檔。
-- 公開版本沒有放入個人電話、私人地址、售價、庫存或未確認的聯絡網址。
-- 海報為使用者現有品牌素材；請保留對該素材的使用權限。機型規格以委託前確認為準。
+## 常用指令（需要 Node.js 18 以上，不需安裝套件）
 
-此交付檔已準備好發布，但製作時尚未建立 GitHub 儲存庫，也尚未取得 Pages 上線結果。
+| 指令 | 用途 |
+|---|---|
+| `node scripts/build.mjs` | 產生正式版（只含 `published=true` 商品）到 `dist/` |
+| `node scripts/build.mjs --drafts` | 產生含草稿的預覽版到 `_preview/`（noindex，不提交） |
+| `node scripts/build.mjs --check` | 只驗證資料 |
+| `node scripts/check-site.mjs` | 檢查 `dist/` 發布白名單、連結、資源與草稿外洩 |
+| `node --test tests/data.test.mjs` | 資料／審核／路徑／發布產物測試 |
+| `node tests/e2e.mjs` | 端對端測試（需 `npm install`，見檔案開頭說明） |
+| `node tests/lighthouse.mjs` | 手機版 Lighthouse（需 `npm install` 與 Chrome） |
 
-## GitHub 官方設定參考
+本機預覽：
 
-- https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
-- https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+```bash
+node scripts/build.mjs && python3 -m http.server 8800 --directory dist   # 正式版
+node scripts/build.mjs --drafts
+python3 -m http.server 8801 --directory _preview   # 開 http://localhost:8801
+```
+
+## 修改資料後的固定流程
+
+1. 改 `src/data/` 內的 JSON，或用 CSV 匯入（見 [CONTENT_GUIDE.md](CONTENT_GUIDE.md)）。
+2. `node scripts/build.mjs`，再 `node scripts/check-site.mjs`。
+3. 只 commit 資料與程式（`dist/`、`_preview/` 已在 .gitignore）。合併到 main 後由 Actions 自動建置部署。
+
+## 部署與回滾
+
+見 [docs/DEPLOY_ROLLBACK.md](docs/DEPLOY_ROLLBACK.md)。

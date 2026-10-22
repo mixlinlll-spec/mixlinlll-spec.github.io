@@ -1,0 +1,222 @@
+{
+  "id": "sp-47807830807",
+  "slug": "tinywhoop-fpv-m1-4-m2-whoop",
+  "name_zh": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "screws",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "Tinywhoop 與 1–3 吋穿越機常用的多尺寸螺絲套組，含螺絲、墊片與尼龍柱，附分格收納盒。",
+  "description": "【🔥一次搞定所有螺絲問題】\n螺絲不夠？尺寸不對？直接整盒解決🔥\n\n【✨產品特色】\n✔ 全尺寸齊全 👉 Tinywhoop常用螺絲一次備齊\n✔ 分格收納 👉 找螺絲不用翻半天效率提升\n✔ 高強度材質 👉 耐用不易滑牙，適合反覆拆裝\n✔ 維修必備 👉 新手 / 老手都需要的工具盒\n\n【⚙️商品規格】\n適用：Tinywhoop / 1-3吋穿越機｜規格：多尺寸螺絲組｜材質：金屬＋尼龍｜收納：分格盒\n\n【📦包裝內容】\n螺絲套裝×1（含多尺寸螺絲 / 墊片 / 尼龍柱）\n\n【⚠️注意事項】\n請確認尺寸再使用｜小零件請避免兒童誤食\n\n【🚀適合族群】\nTinywhoop玩家｜維修玩家｜DIY改裝玩家",
+  "specifications": [
+    {
+      "key": "適用",
+      "value": "Tinywhoop／1–3 吋穿越機",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "螺絲尺寸",
+      "value": "M1.4／M2（依商品標題）",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "材質",
+      "value": "金屬＋尼龍",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "收納",
+      "value": "分格盒",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "包裝內容",
+      "value": "螺絲套裝 ×1（含多尺寸螺絲、墊片、尼龍柱）",
+      "source": "蝦皮商品說明"
+    }
+  ],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-47807830807/01.webp",
+      "src_small": "/assets/img/products/sp-47807830807/01-480.webp",
+      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mmbxfk8d9gcg07"
+    },
+    {
+      "src": "/assets/img/products/sp-47807830807/02.webp",
+      "src_small": "/assets/img/products/sp-47807830807/02-480.webp",
+      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmbx0c9dk3k898"
+    },
+    {
+      "src": "/assets/img/products/sp-47807830807/03.webp",
+      "src_small": "/assets/img/products/sp-47807830807/03-480.webp",
+      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mmoq9ollnchtaa"
+    },
+    {
+      "src": "/assets/img/products/sp-47807830807/04.webp",
+      "src_small": "/assets/img/products/sp-47807830807/04-480.webp",
+      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mmbx0c9byi9ua1"
+    },
+    {
+      "src": "/assets/img/products/sp-47807830807/05.webp",
+      "src_small": "/assets/img/products/sp-47807830807/05-480.webp",
+      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmbx94303nybf5"
+    },
+    {
+      "src": "/assets/img/products/sp-47807830807/06.webp",
+      "src_small": "/assets/img/products/sp-47807830807/06-480.webp",
+      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mmbx943eumm964"
+    }
+  ],
+  "variants": [
+    {
+      "name": "一盒+十字起子（顏色隨機）",
+      "sku": null,
+      "price_twd": 305,
+      "availability": "in_stock",
+      "shopee_variation_id": "375694231060"
+    },
+    {
+      "name": "一盒",
+      "sku": null,
+      "price_twd": 268,
+      "availability": "in_stock",
+      "shopee_variation_id": "375694231059"
+    }
+  ],
+  "price_twd": 268,
+  "price_display": "from",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "47807830807",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mmbx2t1fym8134",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mmoqa8r2rcw56c"
+    ],
+    "source_description": "Tinywhoop, FPV螺絲, 穿越機配件, FPV工具, 螺絲套裝, 無人機維修, Whoop配件, FPV維修, DroneParts, FPV DIY\n\n【🔥一次搞定所有螺絲問題】\n螺絲不夠？尺寸不對？直接整盒解決🔥\n\n【✨產品特色】\n✔ 全尺寸齊全 👉 Tinywhoop常用螺絲一次備齊\n✔ 分格收納 👉 找螺絲不用翻半天效率提升\n✔ 高強度材質 👉 耐用不易滑牙，適合反覆拆裝\n✔ 維修必備 👉 新手 / 老手都需要的工具盒\n\n【⚙️商品規格】\n適用：Tinywhoop / 1-3吋穿越機｜規格：多尺寸螺絲組｜材質：金屬＋尼龍｜收納：分格盒\n\n【📦包裝內容】\n螺絲套裝×1（含多尺寸螺絲 / 墊片 / 尼龍柱）\n\n【⚠️注意事項】\n請確認尺寸再使用｜小零件請避免兒童誤食\n\n【🚀適合族群】\nTinywhoop玩家｜維修玩家｜DIY改裝玩家",
+    "batch": "first-A",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "品牌／製造商",
+      "各尺寸螺絲長度與數量明細",
+      "正式商品照片（EWP 自有或已授權，需標示 rights）",
+      "售價模式（定價／起價／詢價）與售價",
+      "供貨狀態",
+      "蝦皮商品網址（需 EWP 核實）"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101799 - Home & Living/Tools & Home Improvement/Tools/Nails, Screws & Fasteners",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mmbxfk8d9gcg07",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmbx0c9dk3k898",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mmoq9ollnchtaa",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mmbx0c9byi9ua1",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmbx94303nybf5",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mmbx943eumm964"
+      ],
+      "variation_label": "Tinywhoop 螺絲組",
+      "options": [
+        {
+          "option": "一盒",
+          "url": null
+        },
+        {
+          "option": "一盒+十字起子（顏色隨機）",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Tinywhoop 螺絲組",
+      "rows": [
+        {
+          "variation_id": "375694231060",
+          "name": "一盒+十字起子（顏色隨機）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 318,
+          "stock": 37,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "375694231059",
+          "name": "一盒",
+          "parent_sku": null,
+          "sku": null,
+          "price": 279,
+          "stock": 34,
+          "min_qty": null
+        }
+      ],
+      "price_min": 279,
+      "price_max": 318,
+      "stock_total": 71,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
+  },
+  "notes": [
+    "請確認尺寸再使用。",
+    "小零件請避免兒童誤食。"
+  ]
+}

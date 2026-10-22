@@ -1,0 +1,128 @@
+{
+  "id": "sp-45863992336",
+  "slug": "fpv-5-r51377-51377-5mm-ruiyi",
+  "name_zh": "FPV 穿越機 螺旋槳 5吋 R51377 三葉槳 51377 5mm 中心孔 RUIYI 芮翼 Freestyle花飛",
+  "sku": null,
+  "brand": "RUIYI 芮翼",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "motors-props",
+  "subcategory_id": "props",
+  "tags": [],
+  "compatible_sizes": [
+    "5 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "RUIYI 芮翼 R51377 三葉槳專為5吋 FPV 穿越機設計，3吋螺距搭配高韌性PC材質，提供優異抓地力、快速響應及穩定輸出，適合 Freestyle、競速及日常花飛玩家使用。\n【產品特色】\n✔ 5吋三葉設計，操控靈敏\n✔ 3吋螺距，兼顧爆發力與效率\n✔ 高韌性PC材質，耐撞耐用\n✔ 5mm中心孔，適用主流5吋馬達\n✔ 適合 Freestyle、競速、花飛\n✔ 提供多款透明配色可選\n【產品規格】\n品牌：RUIYI 芮翼\n型號：R51377\n尺寸：5吋\n螺距：3 inch\n葉片數：3葉\n材質：PC\n重量：4.55g／支\n中心孔：5mm\n中心厚度：5.1mm\n槳盤直徑：129.2mm\n中心圓直徑：12.1mm\n【適用機型】\n5吋 Freestyle 穿越機\n5吋競速機\n5吋花飛機\n適用5mm槳座無刷馬達\n※ 購買前請確認槳座規格及旋轉方向。",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-45863992336/01.webp",
+      "src_small": "/assets/img/products/sp-45863992336/01-480.webp",
+      "alt": "FPV 穿越機 螺旋槳 5吋 R51377 三葉槳 51377 5mm 中心孔 RUIYI 芮翼 Freestyle花飛（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mqn4ashi6f4129"
+    },
+    {
+      "src": "/assets/img/products/sp-45863992336/02.webp",
+      "src_small": "/assets/img/products/sp-45863992336/02-480.webp",
+      "alt": "FPV 穿越機 螺旋槳 5吋 R51377 三葉槳 51377 5mm 中心孔 RUIYI 芮翼 Freestyle花飛（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mqn4ashw2haaeb"
+    },
+    {
+      "src": "/assets/img/products/sp-45863992336/03.webp",
+      "src_small": "/assets/img/products/sp-45863992336/03-480.webp",
+      "alt": "FPV 穿越機 螺旋槳 5吋 R51377 三葉槳 51377 5mm 中心孔 RUIYI 芮翼 Freestyle花飛（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mqn4ashyst1rc4"
+    }
+  ],
+  "variants": [
+    {
+      "name": "煙燻黑",
+      "sku": null,
+      "price_twd": 43,
+      "availability": "in_stock",
+      "shopee_variation_id": "311207473567"
+    }
+  ],
+  "price_twd": 43,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "45863992336",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l4-mqn4etjmm2h7ba"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mqn4ashi6f4129",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mqn4ashw2haaeb",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mqn4ashyst1rc4"
+      ],
+      "variation_label": "R51377",
+      "options": [
+        {
+          "option": "煙燻黑",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "R51377",
+      "rows": [
+        {
+          "variation_id": "311207473567",
+          "name": "煙燻黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 20,
+          "min_qty": 2
+        }
+      ],
+      "price_min": 45,
+      "price_max": 45,
+      "stock_total": 20,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#FPV #穿越機 #5吋槳 #51377 #R51377 #三葉槳 #螺旋槳 #RUIYI #芮翼 #Freestyle #花飛 #競速機 #FPV配件 #無人機 #電翼動力\n\nRUIYI 芮翼 R51377 三葉槳專為5吋 FPV 穿越機設計，3吋螺距搭配高韌性PC材質，提供優異抓地力、快速響應及穩定輸出，適合 Freestyle、競速及日常花飛玩家使用。\n【產品特色】\n✔ 5吋三葉設計，操控靈敏\n✔ 3吋螺距，兼顧爆發力與效率\n✔ 高韌性PC材質，耐撞耐用\n✔ 5mm中心孔，適用主流5吋馬達\n✔ 適合 Freestyle、競速、花飛\n✔ 提供多款透明配色可選\n【產品規格】\n品牌：RUIYI 芮翼\n型號：R51377\n尺寸：5吋\n螺距：3 inch\n葉片數：3葉\n材質：PC\n重量：4.55g／支\n中心孔：5mm\n中心厚度：5.1mm\n槳盤直徑：129.2mm\n中心圓直徑：12.1mm\n【適用機型】\n5吋 Freestyle 穿越機\n5吋競速機\n5吋花飛機\n適用5mm槳座無刷馬達\n※ 購買前請確認槳座規格及旋轉方向。",
+    "approved_at": "2026-10-22"
+  }
+}

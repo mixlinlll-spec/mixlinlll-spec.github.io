@@ -1,0 +1,62 @@
+name: EWP site checks
+# 每次 push／PR：資料與路徑驗證、單元測試、建置、白名單／連結／草稿外洩檢查、Playwright 端對端測試、手機 Lighthouse。
+# 本流程只做檢查，不部署。正式部署見 pages.yml。
+on:
+  push:
+    branches: [main, 'feature/**']
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 驗證商品、設定與圖片路徑
+        run: node scripts/build.mjs --check
+      - name: 資料／審核／路徑／發布產物單元測試
+        run: |
+          set -o pipefail
+          node --test tests/data.test.mjs | tee unit.log
+          echo "::notice title=單元測試::$(grep -E '^# (tests|pass|fail) ' unit.log | tr '\n' ' ')"
+      - name: 建置正式產物 dist/ 與含草稿預覽 _preview/
+        run: |
+          node scripts/build.mjs
+          node scripts/build.mjs --drafts
+      - name: 發布白名單、站內連結、草稿外洩檢查
+        run: |
+          node scripts/check-site.mjs dist
+          node scripts/check-site.mjs _preview
+      - name: 安裝測試工具（Playwright、Lighthouse）
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: 商品圖片處理工具自我測試（sharp）
+        run: node scripts/add-images.mjs --self-test
+      - name: 蝦皮匯入總表與資料一致
+        run: |
+          node scripts/report-shopee-import.mjs
+          git diff --exit-code docs/SHOPEE_IMPORT_REPORT.md docs/shopee-import.csv || (echo "::error::確認表與商品資料不一致，請執行報告腳本後提交" && exit 1)
+      - name: 啟動本機伺服器
+        run: |
+          node tests/serve.mjs dist 8800 > /dev/null 2>&1 &
+          node tests/serve.mjs _preview 8801 > /dev/null 2>&1 &
+          sleep 2
+      - name: Playwright 端對端測試（手機導覽、搜尋、商品頁、聯絡連結、草稿未公開）
+        run: node tests/e2e.mjs
+      - name: 手機版 Lighthouse
+        run: node tests/lighthouse.mjs
+      - name: 上傳 Lighthouse 報告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-reports
+          path: lighthouse-reports/
+          if-no-files-found: ignore

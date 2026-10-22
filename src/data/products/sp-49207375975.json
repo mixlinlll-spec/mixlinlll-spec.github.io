@@ -1,0 +1,182 @@
+{
+  "id": "sp-49207375975",
+  "slug": "tjrc-5-8g-o4-pro-sma",
+  "name_zh": "TJRC天劍 5.8G沉金天線📡 O4 Pro圖傳穿越機棒棒糖 SMA公頭 圓極化高增益 遠距穿牆",
+  "sku": null,
+  "brand": "TJRC 天劍",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "video",
+  "subcategory_id": "antennas",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": "DJI O4",
+  "battery_cells": [],
+  "short_description": "TJRC 天劍 5.8GHz 圓極化棒棒糖天線，SMA 公頭，適用 DJI O4 Pro 等 5.8GHz 圖傳。",
+  "description": "",
+  "specifications": [
+    {
+      "key": "頻段",
+      "value": "5.8GHz",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "接頭",
+      "value": "SMA 公頭",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "極化",
+      "value": "圓極化（旋向待確認）",
+      "source": "蝦皮商品標題"
+    },
+    {
+      "key": "適用",
+      "value": "DJI O4 Pro 圖傳",
+      "source": "蝦皮商品標題"
+    }
+  ],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-49207375975/01.webp",
+      "src_small": "/assets/img/products/sp-49207375975/01-480.webp",
+      "alt": "TJRC天劍 5.8G沉金天線 O4 Pro圖傳穿越機棒棒糖 SMA公頭 圓極化高增益 遠距穿牆（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlydkongc9olb1"
+    },
+    {
+      "src": "/assets/img/products/sp-49207375975/02.webp",
+      "src_small": "/assets/img/products/sp-49207375975/02-480.webp",
+      "alt": "TJRC天劍 5.8G沉金天線 O4 Pro圖傳穿越機棒棒糖 SMA公頭 圓極化高增益 遠距穿牆（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlydkon23kecf2"
+    },
+    {
+      "src": "/assets/img/products/sp-49207375975/03.webp",
+      "src_small": "/assets/img/products/sp-49207375975/03-480.webp",
+      "alt": "TJRC天劍 5.8G沉金天線 O4 Pro圖傳穿越機棒棒糖 SMA公頭 圓極化高增益 遠距穿牆（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mlydkongav45dd"
+    }
+  ],
+  "variants": [
+    {
+      "name": "白色（內針左璇）10CM",
+      "sku": null,
+      "price_twd": 346,
+      "availability": "out_of_stock",
+      "shopee_variation_id": "375653807945"
+    },
+    {
+      "name": "藍色(內針左璇)10CM",
+      "sku": null,
+      "price_twd": 346,
+      "availability": "out_of_stock",
+      "shopee_variation_id": "375653807944"
+    }
+  ],
+  "price_twd": 346,
+  "price_display": "fixed",
+  "availability": "out_of_stock",
+  "shopee_url": null,
+  "shopee_item_id": "49207375975",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mlydl2cecves11"
+    ],
+    "source_description": "•\t#TJRC天劍天線\n•\t#5.8G沉金天線\n•\t#O4Pro圖傳\n•\t#穿越機天線\n•\t#棒棒糖天線\n•\t#SMA圓極化\n•\t#FPV圖傳配件\n•\t#高增益天線\n•\t#航模天線\n•\t#台灣現貨",
+    "batch": "first-B",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "增益（dBi）",
+      "旋向（LHCP／RHCP）",
+      "長度與重量",
+      "商品說明（蝦皮說明只有 hashtag）",
+      "「遠距穿牆」為宣傳用語，公開前建議刪除",
+      "正式商品照片（EWP 自有或已授權，需標示 rights）",
+      "售價模式（定價／起價／詢價）與售價",
+      "供貨狀態",
+      "蝦皮商品網址（需 EWP 核實）"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlydkongc9olb1",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlydkon23kecf2",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mlydkongav45dd"
+      ],
+      "variation_label": "TJRC5.8G天線SMA",
+      "options": [
+        {
+          "option": "藍色(內針左璇)10CM",
+          "url": null
+        },
+        {
+          "option": "白色（內針左璇）10CM",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "TJRC5.8G天線SMA",
+      "rows": [
+        {
+          "variation_id": "375653807945",
+          "name": "白色（內針左璇）10CM",
+          "parent_sku": null,
+          "sku": null,
+          "price": 360,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "375653807944",
+          "name": "藍色(內針左璇)10CM",
+          "parent_sku": null,
+          "sku": null,
+          "price": 360,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 360,
+      "price_max": 360,
+      "stock_total": 0,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
+  }
+}

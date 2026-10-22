@@ -1,0 +1,42 @@
+name: Import Shopee media
+# 批次下載蝦皮商品圖片並壓縮成 WebP，結果直接提交回同一分支。
+# 觸發：修改 src/data/shopee/media-import-request.json（推到 feature/** 分支），或手動 Run workflow。
+# 已下載的圖片會自動略過；失敗的圖片可再觸發一次重試。不會更動價格、供貨、published。
+on:
+  push:
+    branches: ['feature/**']
+    paths: ['src/data/shopee/media-import-request.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: import-media-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 安裝圖片處理套件
+        run: npm install --no-save --no-audit --no-fund sharp@0.35.4
+      - name: 下載、壓縮並寫入商品資料
+        run: node scripts/import-shopee-media.mjs --concurrency 8
+      - name: 更新報告並驗證資料
+        run: |
+          node scripts/report-shopee-import.mjs
+          node scripts/build.mjs --check
+          node scripts/build.mjs && node scripts/check-site.mjs dist
+      - name: 提交圖片與資料
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/img/products src/data/products docs
+          if git diff --cached --quiet; then echo "沒有變更"; exit 0; fi
+          git commit -m "chore(media): 匯入蝦皮商品圖片（自動）"
+          git push

@@ -1,0 +1,6 @@
+{
+  "_comment": "修改此檔並推送到 feature/** 分支，會觸發 .github/workflows/import-media.yml 批次下載蝦皮商品圖片。",
+  "requested_at": "2026-10-22T15:00:00+08:00",
+  "scope": "all",
+  "note": "重跑驗證：已存在圖片應全部略過；更新雙層規格選項圖對應與報告"
+}

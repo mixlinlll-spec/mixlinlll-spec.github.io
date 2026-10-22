@@ -1,0 +1,156 @@
+{
+  "id": "sp-41782564742",
+  "slug": "geprc-rad-mini-1w-1000mw-vtx",
+  "name_zh": "GEPRC RAD MINI 1W 模擬圖傳｜1000mW VTX｜5.8G｜20×20｜內建麥克風｜FPV 穿越機",
+  "sku": null,
+  "brand": "GEPRC",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "video",
+  "subcategory_id": "analog-vtx",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": "類比",
+  "battery_cells": [],
+  "short_description": "",
+  "description": "GEPRC RAD MINI 是一款高功率5.8GHz模擬圖傳，最大輸出1000mW，採用20×20mm安裝孔位，適合5吋、7吋及長航FPV穿越機使用。CNC鋁合金外殼提供優異散熱效果，內建麥克風可同步收錄現場飛行音效，兼顧遠距離傳輸與穩定性。\n\n【產品特色】\n✔ 最大1000mW輸出功率\n✔ 5.8GHz模擬FPV圖傳\n✔ 20×20mm安裝孔位\n✔ CNC鋁合金散熱外殼\n✔ 內建麥克風\n✔ 支援按鍵快速設定頻道與功率\n✔ 適合長距離飛行\n✔ 穩定低延遲影像傳輸\n\n【產品規格】\n品牌：GEPRC\n型號：RAD MINI\n頻率：5.8GHz\n最大輸出功率：1000mW\n安裝孔距：20×20mm\n音訊：內建MIC麥克風\n散熱：CNC鋁合金外殼\n適用：Betaflight／INAV 模擬FPV系統\n\n【適用機型】\n5吋 Freestyle\n5吋競速機\n7吋 Long Range\n長航穿越機\n各式5.8G模擬FPV機種\n\n【注意事項】\n※ 本商品為模擬圖傳(VTX)，不適用 DJI／Walksnail／HDZero 數位系統。\n※ 使用1000mW高功率時請保持良好散熱，避免長時間未裝天線通電。",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-41782564742/01.webp",
+      "src_small": "/assets/img/products/sp-41782564742/01-480.webp",
+      "alt": "GEPRC RAD MINI 1W 模擬圖傳｜1000mW VTX｜5.8G｜20×20｜內建麥克風｜FPV 穿越機（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mqn3guao6hvm9a"
+    },
+    {
+      "src": "/assets/img/products/sp-41782564742/02.webp",
+      "src_small": "/assets/img/products/sp-41782564742/02-480.webp",
+      "alt": "GEPRC RAD MINI 1W 模擬圖傳｜1000mW VTX｜5.8G｜20×20｜內建麥克風｜FPV 穿越機（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mqn3guahjpcf6e"
+    },
+    {
+      "src": "/assets/img/products/sp-41782564742/03.webp",
+      "src_small": "/assets/img/products/sp-41782564742/03-480.webp",
+      "alt": "GEPRC RAD MINI 1W 模擬圖傳｜1000mW VTX｜5.8G｜20×20｜內建麥克風｜FPV 穿越機（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mqn3guauxi4hff"
+    },
+    {
+      "src": "/assets/img/products/sp-41782564742/04.webp",
+      "src_small": "/assets/img/products/sp-41782564742/04-480.webp",
+      "alt": "GEPRC RAD MINI 1W 模擬圖傳｜1000mW VTX｜5.8G｜20×20｜內建麥克風｜FPV 穿越機（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mqn3gub1kaofca"
+    },
+    {
+      "src": "/assets/img/products/sp-41782564742/05.webp",
+      "src_small": "/assets/img/products/sp-41782564742/05-480.webp",
+      "alt": "GEPRC RAD MINI 1W 模擬圖傳｜1000mW VTX｜5.8G｜20×20｜內建麥克風｜FPV 穿越機（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mqn3guay7htue5"
+    },
+    {
+      "src": "/assets/img/products/sp-41782564742/06.webp",
+      "src_small": "/assets/img/products/sp-41782564742/06-480.webp",
+      "alt": "GEPRC RAD MINI 1W 模擬圖傳｜1000mW VTX｜5.8G｜20×20｜內建麥克風｜FPV 穿越機（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mqn3gub0ml1p75"
+    }
+  ],
+  "variants": [],
+  "price_twd": 2093,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "41782564742",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mqn3l5mhhtdve9",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mqn3l5mhm13jc2",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mqn3l5mhnfnz35",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mqn3l5mhou8fea",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mqn3l5mh7zf1fb",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mqn3l5mhgetfe8",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mqn3l5mgfw2629",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mqn3l5mitkowdc",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mqn3l5mj7mde11",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mqn3l5mhj7ybbf",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mqn3l5mgwqvf16"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mqn3guao6hvm9a",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mqn3guahjpcf6e",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mqn3guauxi4hff",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mqn3gub1kaofca",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mqn3guay7htue5",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mqn3gub0ml1p75"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "446206737455",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 2180,
+          "stock": 2,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 2180,
+      "price_max": 2180,
+      "stock_total": 2,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#GEPRC #RADMINI #圖傳 #VTX #1000mW #模擬圖傳 #FPV #穿越機 #Freestyle #LongRange #競速機 #5吋穿越機 #7吋穿越機 #Betaflight #INAV #電翼動力\n\nGEPRC RAD MINI 是一款高功率5.8GHz模擬圖傳，最大輸出1000mW，採用20×20mm安裝孔位，適合5吋、7吋及長航FPV穿越機使用。CNC鋁合金外殼提供優異散熱效果，內建麥克風可同步收錄現場飛行音效，兼顧遠距離傳輸與穩定性。\n\n【產品特色】\n✔ 最大1000mW輸出功率\n✔ 5.8GHz模擬FPV圖傳\n✔ 20×20mm安裝孔位\n✔ CNC鋁合金散熱外殼\n✔ 內建麥克風\n✔ 支援按鍵快速設定頻道與功率\n✔ 適合長距離飛行\n✔ 穩定低延遲影像傳輸\n\n【產品規格】\n品牌：GEPRC\n型號：RAD MINI\n頻率：5.8GHz\n最大輸出功率：1000mW\n安裝孔距：20×20mm\n音訊：內建MIC麥克風\n散熱：CNC鋁合金外殼\n適用：Betaflight／INAV 模擬FPV系統\n\n【適用機型】\n5吋 Freestyle\n5吋競速機\n7吋 Long Range\n長航穿越機\n各式5.8G模擬FPV機種\n\n【注意事項】\n※ 本商品為模擬圖傳(VTX)，不適用 DJI／Walksnail／HDZero 數位系統。\n※ 使用1000mW高功率時請保持良好散熱，避免長時間未裝天線通電。",
+    "approved_at": "2026-10-22"
+  }
+}

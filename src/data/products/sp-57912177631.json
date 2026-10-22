@@ -1,0 +1,146 @@
+{
+  "id": "sp-57912177631",
+  "slug": "rate-h415-mini-aio-15a-32",
+  "name_zh": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控",
+  "sku": null,
+  "brand": "RATE 瑞速",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "fc-esc",
+  "subcategory_id": "aio",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "RATE H415 MINI AIO為專為2~3S牙籤機、穿越機及Freestyle花飛打造的一體式飛塔，搭載H415高性能主控、ICM42688陀螺儀、SPL06氣壓計與16MB黑盒子，支援雙向DShot、藍牙調參、Type-C調參及內建接收機設計，安裝簡單、性能強悍。\n\n【產品特色】\n✔ H415 400MHz高性能主控\n✔ ICM42688陀螺儀\n✔ SPL06氣壓計\n✔ 16MB Blackbox\n✔ 15A 32Bit ESC\n✔ 支援雙向DShot\n✔ 內建接收機\n✔ 藍牙無線調參\n✔ Type-C快速調參\n✔ 支援LED燈條\n✔ 支援BB響\n✔ 支援I2C擴充\n✔ 5V 3A BEC輸出\n\n【產品規格】\n型號：RATE H415 MINI AIO\n主控：H415\n陀螺儀：ICM42688\n氣壓計：SPL06\n黑盒子：16MB\n電調：15A 32Bit ESC\n輸入電壓：2S~3S LiPo\nBEC：5V 3A\n重量：7.5g\n尺寸：33.2×33.3×4.6mm\n\n【注意事項】\n※ 出貨前完成基本測試\n※ 建議搭配1103~1303.5級別電機使用\n※ 安裝前請確認供電規格",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-57912177631/01.webp",
+      "src_small": "/assets/img/products/sp-57912177631/01-480.webp",
+      "alt": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mpg32uy0rx1ode"
+    },
+    {
+      "src": "/assets/img/products/sp-57912177631/02.webp",
+      "src_small": "/assets/img/products/sp-57912177631/02-480.webp",
+      "alt": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mpg32uxyv37xc8"
+    },
+    {
+      "src": "/assets/img/products/sp-57912177631/03.webp",
+      "src_small": "/assets/img/products/sp-57912177631/03-480.webp",
+      "alt": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mpg32uy0tbm4dc"
+    },
+    {
+      "src": "/assets/img/products/sp-57912177631/04.webp",
+      "src_small": "/assets/img/products/sp-57912177631/04-480.webp",
+      "alt": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mpg32uxytonh2e"
+    },
+    {
+      "src": "/assets/img/products/sp-57912177631/05.webp",
+      "src_small": "/assets/img/products/sp-57912177631/05-480.webp",
+      "alt": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mpg32uxywhsdbc"
+    },
+    {
+      "src": "/assets/img/products/sp-57912177631/06.webp",
+      "src_small": "/assets/img/products/sp-57912177631/06-480.webp",
+      "alt": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控（細節圖 5）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mpg32uxymnt7f8"
+    }
+  ],
+  "variants": [],
+  "price_twd": 1901,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "57912177631",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mpg342kb4gln3e"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mpg32uy0rx1ode",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mpg32uxyv37xc8",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mpg32uy0tbm4dc",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mpg32uxytonh2e",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mpg32uxywhsdbc",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mpg32uxymnt7f8"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "441057938287",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 1980,
+          "stock": 4,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 1980,
+      "price_max": 1980,
+      "stock_total": 4,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#RATE #H415 #H415MINI #AIO飛塔 #飛控 #FPV #穿越機 #牙籤機 #Freestyle #ICM42688 #Blackbox #藍牙調參 #內建接收機 #DJIO4Lite #Walksnail #HDZero #2S穿越機 #3S穿越機 #FPVDrone #電翼動力\n\nRATE H415 MINI AIO為專為2~3S牙籤機、穿越機及Freestyle花飛打造的一體式飛塔，搭載H415高性能主控、ICM42688陀螺儀、SPL06氣壓計與16MB黑盒子，支援雙向DShot、藍牙調參、Type-C調參及內建接收機設計，安裝簡單、性能強悍。\n\n【產品特色】\n✔ H415 400MHz高性能主控\n✔ ICM42688陀螺儀\n✔ SPL06氣壓計\n✔ 16MB Blackbox\n✔ 15A 32Bit ESC\n✔ 支援雙向DShot\n✔ 內建接收機\n✔ 藍牙無線調參\n✔ Type-C快速調參\n✔ 支援LED燈條\n✔ 支援BB響\n✔ 支援I2C擴充\n✔ 5V 3A BEC輸出\n\n【產品規格】\n型號：RATE H415 MINI AIO\n主控：H415\n陀螺儀：ICM42688\n氣壓計：SPL06\n黑盒子：16MB\n電調：15A 32Bit ESC\n輸入電壓：2S~3S LiPo\nBEC：5V 3A\n重量：7.5g\n尺寸：33.2×33.3×4.6mm\n\n【注意事項】\n※ 出貨前完成基本測試\n※ 建議搭配1103~1303.5級別電機使用\n※ 安裝前請確認供電規格",
+    "approved_at": "2026-10-22"
+  }
+}

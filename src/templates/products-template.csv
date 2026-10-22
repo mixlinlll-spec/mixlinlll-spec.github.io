@@ -1,0 +1,2 @@
+id,slug,name_zh,sku,brand,manufacturer_model,seller_role,primary_category_id,subcategory_id,tags,compatible_sizes,video_system,battery_cells,short_description,description,specifications,images,variants,price_twd,price_display,availability,shopee_url,line_inquiry_enabled,featured,published,review_status
+ewp-sample-m3-kit,m3-screw-kit-sample,M2／M3 螺絲套組（範例，請改成真實資料）,,電翼動力 EWP,,retail,hardware-prints,screws,維修|五金,5 吋|3.5 吋,,,範例短說明：請填真實內容,範例說明：請填真實內容,內容物=待填|材質=待填,,,,inquiry,unknown,,true,false,false,draft

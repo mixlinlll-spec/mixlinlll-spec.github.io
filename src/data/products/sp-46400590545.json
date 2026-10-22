@@ -1,0 +1,156 @@
+{
+  "id": "sp-46400590545",
+  "slug": "dji-rc-2-3d-mini5pro",
+  "name_zh": "DJI RC 2 遙控器 平衡吊繩支架 3D列印掛繩座 吊繩固定支撐架 MINI5PRO",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "專為 DJI RC 2 遙控器 設計的 平衡吊繩支架，可讓吊繩重心更穩定，減少長時間握持的手部疲勞。\n使用 PETG3D列印材質 製作，具備彈性與韌性，不刮手、不傷機身。\n\n✅ 平衡設計，吊掛更穩定\n✅ PETG材質，堅固耐用\n✅ 精準貼合，安裝簡單\n✅ 適合長時間飛行與外拍使用\n\n適用機型：DJI RC 2 遙控器\n\n材質說明：PETG",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-46400590545/01.webp",
+      "src_small": "/assets/img/products/sp-46400590545/01-480.webp",
+      "alt": "DJI RC 2 遙控器 平衡吊繩支架 3D列印掛繩座 吊繩固定支撐架 MINI5PRO（主圖）",
+      "width": 984,
+      "height": 984,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mghgw4bftx5b98"
+    },
+    {
+      "src": "/assets/img/products/sp-46400590545/02.webp",
+      "src_small": "/assets/img/products/sp-46400590545/02-480.webp",
+      "alt": "DJI RC 2 遙控器 平衡吊繩支架 3D列印掛繩座 吊繩固定支撐架 MINI5PRO（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-46400590545/03.webp",
+      "src_small": "/assets/img/products/sp-46400590545/03-480.webp",
+      "alt": "DJI RC 2 遙控器 平衡吊繩支架 3D列印掛繩座 吊繩固定支撐架 MINI5PRO（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mghgw4aweebs32"
+    },
+    {
+      "src": "/assets/img/products/sp-46400590545/04.webp",
+      "src_small": "/assets/img/products/sp-46400590545/04-480.webp",
+      "alt": "DJI RC 2 遙控器 平衡吊繩支架 3D列印掛繩座 吊繩固定支撐架 MINI5PRO（細節圖 3）",
+      "width": 756,
+      "height": 756,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mghgw4b26ado9a"
+    }
+  ],
+  "variants": [
+    {
+      "name": "白色",
+      "sku": null,
+      "price_twd": 96,
+      "availability": "in_stock",
+      "shopee_variation_id": "435050347962"
+    },
+    {
+      "name": "黑色",
+      "sku": null,
+      "price_twd": 96,
+      "availability": "in_stock",
+      "shopee_variation_id": "435050347961"
+    }
+  ],
+  "price_twd": 96,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "46400590545",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mghgw4bftx5b98",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mghgw4aweebs32",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mghgw4b26ado9a"
+      ],
+      "variation_label": "平衡吊繩支架",
+      "options": [
+        {
+          "option": "黑色",
+          "url": null
+        },
+        {
+          "option": "白色",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "平衡吊繩支架",
+      "rows": [
+        {
+          "variation_id": "435050347962",
+          "name": "白色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 100,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "435050347961",
+          "name": "黑色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 100,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 100,
+      "price_max": 100,
+      "stock_total": 100,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "專為 DJI RC 2 遙控器 設計的 平衡吊繩支架，可讓吊繩重心更穩定，減少長時間握持的手部疲勞。\n使用 PETG3D列印材質 製作，具備彈性與韌性，不刮手、不傷機身。\n\n✅ 平衡設計，吊掛更穩定\n✅ PETG材質，堅固耐用\n✅ 精準貼合，安裝簡單\n✅ 適合長時間飛行與外拍使用\n\n適用機型：DJI RC 2 遙控器\n\n材質說明：PETG",
+    "approved_at": "2026-10-22"
+  }
+}

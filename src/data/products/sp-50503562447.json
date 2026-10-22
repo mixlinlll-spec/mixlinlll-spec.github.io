@@ -1,0 +1,160 @@
+{
+  "id": "sp-50503562447",
+  "slug": "2s-3s-6s",
+  "name_zh": "2S/3S 轉 6S 串充板 🔌 多顆 2S/3S 電池同時充電 一鍵當 6S 充電使用",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "chargers",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "2S",
+    "3S",
+    "6S"
+  ],
+  "short_description": "",
+  "description": "2S 轉 6S 串充板\n3S 轉 6S 串充板\n2S 3S 串充轉接板\n6S 串充 轉接器\nLiPo 串充板 FPV\nFPV 電池 串充工具\nXT30 2S 3S 串充\nTinywhoop 電池充電板\n無人機 電池充電配件\n場邊充電 串充板\n\n⚠️ 務必備註要充的電池規格（2S 或 3S、容量、接頭類型）\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用（若外殼為 3D 列印）\n⚠️ 串充僅適合同規格、同電量電池，使用前請先確認電壓接近，並了解串充風險\n\n2S/3S 轉 6S 串充板，讓你可以把多顆 2S 或 3S 電池串接成一組等效 6S，用一般支援 6S 的充電器進行充電，特別適合手上有一堆 2S/3S 小電池、不想一直插拔切換的 FPV 玩家。⚡ 只要依照標示把電池依序插上，即可一次替多顆電池充電，大幅減少等待與操作時間；適合作為外出飛行或場邊快速補電的工具。\n​\n產品特色 ✨\n支援 2S 與 3S LiPo 電池，可將多顆 2S/3S 串連成等效 6S 供充電器使用（例如兩顆 3S 串成 6S，或三顆 2S 串成 6S）。\n​\n可同時替多顆 2S/3S 電池充電，減少頻繁插拔與多次設定，提升充電效率。\n板上標示清楚，避免接錯正負與順序；可搭配保險絲或保護電路設計，提升安全性。🛡️\n​",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-50503562447/01.webp",
+      "src_small": "/assets/img/products/sp-50503562447/01-480.webp",
+      "alt": "2S/3S 轉 6S 串充板 多顆 2S/3S 電池同時充電 一鍵當 6S 充電使用（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mimt46k6s5c785"
+    },
+    {
+      "src": "/assets/img/products/sp-50503562447/02.webp",
+      "src_small": "/assets/img/products/sp-50503562447/02-480.webp",
+      "alt": "2S/3S 轉 6S 串充板 多顆 2S/3S 電池同時充電 一鍵當 6S 充電使用（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mimt47vmyxhk18"
+    },
+    {
+      "src": "/assets/img/products/sp-50503562447/03.webp",
+      "src_small": "/assets/img/products/sp-50503562447/03-480.webp",
+      "alt": "2S/3S 轉 6S 串充板 多顆 2S/3S 電池同時充電 一鍵當 6S 充電使用（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mimt49cyoe84ad"
+    }
+  ],
+  "variants": [
+    {
+      "name": "3S轉6S 黑（同時充2塊3S)",
+      "sku": null,
+      "price_twd": 258,
+      "availability": "in_stock",
+      "shopee_variation_id": "340341989474",
+      "image": {
+        "src": "/assets/img/products/sp-50503562447/opt-01-480.webp",
+        "alt": "2S/3S 轉 6S 串充板 多顆 2S/3S 電池同時充電 一鍵當 6S 充電使用（規格：3S轉6S 黑（同時充2塊3S)）",
+        "rights": "licensed",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mj0uvvoogmwy38"
+      }
+    },
+    {
+      "name": "2S轉6S 黑(同時充3塊2S)",
+      "sku": null,
+      "price_twd": 277,
+      "availability": "out_of_stock",
+      "shopee_variation_id": "340341989473",
+      "image": {
+        "src": "/assets/img/products/sp-50503562447/opt-02-480.webp",
+        "alt": "2S/3S 轉 6S 串充板 多顆 2S/3S 電池同時充電 一鍵當 6S 充電使用（規格：2S轉6S 黑(同時充3塊2S)）",
+        "rights": "licensed",
+        "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mj0uvz4cb66cb0"
+      }
+    }
+  ],
+  "price_twd": 258,
+  "price_display": "from",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "50503562447",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mimt46k6s5c785",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mimt47vmyxhk18",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mimt49cyoe84ad"
+      ],
+      "variation_label": "6S 串充板",
+      "options": [
+        {
+          "option": "3S轉6S 黑（同時充2塊3S)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mj0uvvoogmwy38"
+        },
+        {
+          "option": "2S轉6S 黑(同時充3塊2S)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mj0uvz4cb66cb0"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "6S 串充板",
+      "rows": [
+        {
+          "variation_id": "340341989474",
+          "name": "3S轉6S 黑（同時充2塊3S)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 269,
+          "stock": 4,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "340341989473",
+          "name": "2S轉6S 黑(同時充3塊2S)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 289,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 269,
+      "price_max": 289,
+      "stock_total": 4,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "2S 轉 6S 串充板\n3S 轉 6S 串充板\n2S 3S 串充轉接板\n6S 串充 轉接器\nLiPo 串充板 FPV\nFPV 電池 串充工具\nXT30 2S 3S 串充\nTinywhoop 電池充電板\n無人機 電池充電配件\n場邊充電 串充板\n\n⚠️ 務必備註要充的電池規格（2S 或 3S、容量、接頭類型）\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用（若外殼為 3D 列印）\n⚠️ 串充僅適合同規格、同電量電池，使用前請先確認電壓接近，並了解串充風險\n\n2S/3S 轉 6S 串充板，讓你可以把多顆 2S 或 3S 電池串接成一組等效 6S，用一般支援 6S 的充電器進行充電，特別適合手上有一堆 2S/3S 小電池、不想一直插拔切換的 FPV 玩家。⚡ 只要依照標示把電池依序插上，即可一次替多顆電池充電，大幅減少等待與操作時間；適合作為外出飛行或場邊快速補電的工具。\n​\n產品特色 ✨\n支援 2S 與 3S LiPo 電池，可將多顆 2S/3S 串連成等效 6S 供充電器使用（例如兩顆 3S 串成 6S，或三顆 2S 串成 6S）。\n​\n可同時替多顆 2S/3S 電池充電，減少頻繁插拔與多次設定，提升充電效率。\n板上標示清楚，避免接錯正負與順序；可搭配保險絲或保護電路設計，提升安全性。🛡️\n​",
+    "approved_at": "2026-10-22"
+  }
+}

@@ -1,0 +1,452 @@
+{
+  "id": "sp-46802741800",
+  "slug": "betafpv-air75-meteor75-pro",
+  "name_zh": "Betafpv air75｜ Meteor75 Pro 收納盒｜小型機庫｜Betafpv系列也可參考",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "cases",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "📦 注意事項\n⚠️務必備註顏色。客製化商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅\n\n🔥此打印品需要大量的螺絲及螺母完成。\n🔥我會安裝好後再出貨，買回去無需DIY\n\n專為 BetaFPV Meteor 75 Pro 設計的 小型機庫收納盒，可完整保護機身與螺旋槳，避免放包包時被壓、被擠而受損。外型輕巧不佔空間，非常適合外出飛行攜帶。 可放置BEFPV充電器\n\n產品特色：\n適用：Meteor65 / Meteor 75 / Meteor 75 Pro/Air65/Air75\n小型機庫式設計，機體穩固不晃動\n上蓋完整包覆，防止壓傷螺旋槳",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-46802741800/01.webp",
+      "src_small": "/assets/img/products/sp-46802741800/01-480.webp",
+      "alt": "Betafpv air75｜ Meteor75 Pro 收納盒｜小型機庫｜Betafpv系列也可參考（主圖）",
+      "width": 933,
+      "height": 933,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhyue9hkwyroee"
+    },
+    {
+      "src": "/assets/img/products/sp-46802741800/02.webp",
+      "src_small": "/assets/img/products/sp-46802741800/02-480.webp",
+      "alt": "Betafpv air75｜ Meteor75 Pro 收納盒｜小型機庫｜Betafpv系列也可參考（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-46802741800/03.webp",
+      "src_small": "/assets/img/products/sp-46802741800/03-480.webp",
+      "alt": "Betafpv air75｜ Meteor75 Pro 收納盒｜小型機庫｜Betafpv系列也可參考（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhyue9homepy9b"
+    },
+    {
+      "src": "/assets/img/products/sp-46802741800/04.webp",
+      "src_small": "/assets/img/products/sp-46802741800/04-480.webp",
+      "alt": "Betafpv air75｜ Meteor75 Pro 收納盒｜小型機庫｜Betafpv系列也可參考（細節圖 3）",
+      "width": 906,
+      "height": 906,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mhyue9hmh5hk0f"
+    },
+    {
+      "src": "/assets/img/products/sp-46802741800/05.webp",
+      "src_small": "/assets/img/products/sp-46802741800/05-480.webp",
+      "alt": "Betafpv air75｜ Meteor75 Pro 收納盒｜小型機庫｜Betafpv系列也可參考（細節圖 4）",
+      "width": 748,
+      "height": 748,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mhyue9hkydc428"
+    }
+  ],
+  "variants": [
+    {
+      "name": "透明",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "267235470455"
+    },
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "262235475324"
+    },
+    {
+      "name": "橘",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "390321261326"
+    },
+    {
+      "name": "淺藍",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "186346933446"
+    },
+    {
+      "name": "冰淇淋",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "267235470460"
+    },
+    {
+      "name": "金",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "390321261329"
+    },
+    {
+      "name": "藍",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "186346933445"
+    },
+    {
+      "name": "大理石",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "390321261328"
+    },
+    {
+      "name": "紫",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "267235470458"
+    },
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "262235475325"
+    },
+    {
+      "name": "螢光橘",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "267235470456"
+    },
+    {
+      "name": "綠",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "390321261327"
+    },
+    {
+      "name": "紅",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "186346933444"
+    },
+    {
+      "name": "馬卡龍",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "186346933443"
+    },
+    {
+      "name": "透黃",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "267235470459"
+    },
+    {
+      "name": "螢光綠",
+      "sku": null,
+      "price_twd": 442,
+      "availability": "in_stock",
+      "shopee_variation_id": "267235470457"
+    }
+  ],
+  "price_twd": 442,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "46802741800",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztd-mig16lu9mwowe7",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81zth-mig16lu6fq4hb1",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81zte-mihfq55if0u856",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztk-mihfq55c229w14"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhyue9hkwyroee",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhyue9homepy9b",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mhyue9hmh5hk0f",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mhyue9hkydc428"
+      ],
+      "variation_label": "Meteor75Pro機庫",
+      "options": [
+        {
+          "option": "黑",
+          "url": null
+        },
+        {
+          "option": "白",
+          "url": null
+        },
+        {
+          "option": "透明",
+          "url": null
+        },
+        {
+          "option": "螢光橘",
+          "url": null
+        },
+        {
+          "option": "螢光綠",
+          "url": null
+        },
+        {
+          "option": "紫",
+          "url": null
+        },
+        {
+          "option": "透黃",
+          "url": null
+        },
+        {
+          "option": "冰淇淋",
+          "url": null
+        },
+        {
+          "option": "馬卡龍",
+          "url": null
+        },
+        {
+          "option": "紅",
+          "url": null
+        },
+        {
+          "option": "藍",
+          "url": null
+        },
+        {
+          "option": "淺藍",
+          "url": null
+        },
+        {
+          "option": "綠",
+          "url": null
+        },
+        {
+          "option": "大理石",
+          "url": null
+        },
+        {
+          "option": "橘",
+          "url": null
+        },
+        {
+          "option": "金",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Meteor75Pro機庫",
+      "rows": [
+        {
+          "variation_id": "267235470455",
+          "name": "透明",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 48,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "262235475324",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 36,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390321261326",
+          "name": "橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 44,
+          "min_qty": null
+        },
+        {
+          "variation_id": "186346933446",
+          "name": "淺藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 47,
+          "min_qty": null
+        },
+        {
+          "variation_id": "267235470460",
+          "name": "冰淇淋",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390321261329",
+          "name": "金",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "186346933445",
+          "name": "藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390321261328",
+          "name": "大理石",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 47,
+          "min_qty": null
+        },
+        {
+          "variation_id": "267235470458",
+          "name": "紫",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 48,
+          "min_qty": null
+        },
+        {
+          "variation_id": "262235475325",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 43,
+          "min_qty": null
+        },
+        {
+          "variation_id": "267235470456",
+          "name": "螢光橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390321261327",
+          "name": "綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 48,
+          "min_qty": null
+        },
+        {
+          "variation_id": "186346933444",
+          "name": "紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "186346933443",
+          "name": "馬卡龍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "267235470459",
+          "name": "透黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "267235470457",
+          "name": "螢光綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 49,
+          "min_qty": null
+        }
+      ],
+      "price_min": 460,
+      "price_max": 460,
+      "stock_total": 757,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#Meteor75Pro #Meteor75收納盒 #微型機庫 #穿越機收納盒\n#FPV收納 #無人機盒 #穿越機配件 #微型穿越機 #75mm\n\n📦 注意事項\n⚠️務必備註顏色。客製化商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n✔支持雙色訂製，來訊聊聊\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅\n\n🔥此打印品需要大量的螺絲及螺母完成。\n🔥我會安裝好後再出貨，買回去無需DIY\n\n專為 BetaFPV Meteor 75 Pro 設計的 小型機庫收納盒，可完整保護機身與螺旋槳，避免放包包時被壓、被擠而受損。外型輕巧不佔空間，非常適合外出飛行攜帶。 可放置BEFPV充電器 \n\n產品特色：\n適用：Meteor65 / Meteor 75 / Meteor 75 Pro/Air65/Air75\n小型機庫式設計，機體穩固不晃動\n上蓋完整包覆，防止壓傷螺旋槳",
+    "approved_at": "2026-10-22"
+  }
+}

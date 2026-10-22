@@ -1,0 +1,115 @@
+{
+  "id": "sp-26244191157",
+  "slug": "betafpv-bt2-0-aquila16-6",
+  "name_zh": "BETAFPV BT2.0 公母轉接充電線🔌 Aquila16專用電池充電延長線 6口充電器配件 室內穿越機電池轉接線",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "chargers",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "•\t專為 BETAFPV Aquila16 系列電池設計，一端 BT2.0 公頭、一端 BT2.0 母頭，可直接接在原廠 6 口充電器與電池之間使用。\n•\t約手掌長度的柔軟線材，充電時電池可以平放、排排站，不會全部擠在充電器上方，更安全也更好散熱。\n•\t支援多條同時使用，最多可搭配 6 口充電器一次充 6 顆 Aquila16 電池，大幅節省等待時間。\n•\t線材粗細與焊點經過強化，長期插拔不易鬆脫，適合日常練機玩家高頻率使用。",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-26244191157/01.webp",
+      "src_small": "/assets/img/products/sp-26244191157/01-480.webp",
+      "alt": "BETAFPV BT2.0 公母轉接充電線 Aquila16專用電池充電延長線 6口充電器配件 室內穿越機電池轉接線（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mkbv1449wp3b47"
+    },
+    {
+      "src": "/assets/img/products/sp-26244191157/02.webp",
+      "src_small": "/assets/img/products/sp-26244191157/02-480.webp",
+      "alt": "BETAFPV BT2.0 公母轉接充電線 Aquila16專用電池充電延長線 6口充電器配件 室內穿越機電池轉接線（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mkbv144bmi2sac"
+    },
+    {
+      "src": "/assets/img/products/sp-26244191157/03.webp",
+      "src_small": "/assets/img/products/sp-26244191157/03-480.webp",
+      "alt": "BETAFPV BT2.0 公母轉接充電線 Aquila16專用電池充電延長線 6口充電器配件 室內穿越機電池轉接線（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mkbv144e06q07b"
+    }
+  ],
+  "variants": [],
+  "price_twd": 57,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "26244191157",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mkbv3ssmgiklf7",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mkbv3ssmhx51f0"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mkbv1449wp3b47",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mkbv144bmi2sac",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mkbv144e06q07b"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "277388942178",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 59,
+          "stock": 13,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 59,
+      "price_max": 59,
+      "stock_total": 13,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "•\t#BETAFPV\n•\t#Aquila16\n•\t#BT20轉接線\n•\t#BT20充電線\n•\t#6口充電器\n•\t#室內穿越機\n•\t#Tinywhoop電池\n•\t#電池延長線\n•\t#穿越機配件\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t專為 BETAFPV Aquila16 系列電池設計，一端 BT2.0 公頭、一端 BT2.0 母頭，可直接接在原廠 6 口充電器與電池之間使用。\n•\t約手掌長度的柔軟線材，充電時電池可以平放、排排站，不會全部擠在充電器上方，更安全也更好散熱。\n•\t支援多條同時使用，最多可搭配 6 口充電器一次充 6 顆 Aquila16 電池，大幅節省等待時間。\n•\t線材粗細與焊點經過強化，長期插拔不易鬆脫，適合日常練機玩家高頻率使用。",
+    "approved_at": "2026-10-22"
+  }
+}

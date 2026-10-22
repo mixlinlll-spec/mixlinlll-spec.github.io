@@ -1,0 +1,111 @@
+{
+  "id": "sp-55017963372",
+  "slug": "fpv-led-ws2812-betaflight",
+  "name_zh": "FPV 蜂鳴器 LED 模組 二合一 尋機 蜂鳴器 WS2812 燈條 Betaflight 可編輯 穿越機 飛控配件",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "electronics",
+  "subcategory_id": "modules",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "【FPV 蜂鳴器 ＋ LED 二合一模組】\n\n把蜂鳴器和 LED 整合在同一片小板上，一次解決兩件事：\n找得到飛機，看得出狀態。\n\n摔進草叢的機子，靠的就是蜂鳴器。\n飛在天上分不清機頭方向，靠的就是 LED。\n這片模組兩個都給你，而且只佔一個安裝位。\n\n■ 商品規格\n內建蜂鳴器 ×1\nLED ×4（可編程彩色 LED）\n焊盤：LED / BZ- / 5V / GND，共 4 點\n安裝方式：雙邊長孔安裝槽\n支援 Betaflight LED 功能編輯\n\n■ 焊盤說明\nLED  — LED 訊號（接飛控 LED 焊盤）\nBZ-  — 蜂鳴控制（接飛控 BZ- 或 Buzzer 負極焊盤）\n5V   — 電源輸入（接飛控 5V）\nGND  — 接地\n\n背面焊盤有清楚絲印標示，不必猜腳位。\n\n■ 商品特點\n1. 蜂鳴器與 LED 二合一，省下一個安裝位與一組線材\n2. 4 顆可編程 LED，可在 Betaflight 中設定顏色與燈效模式\n3. 焊盤標示清楚，四點接線，新手也焊得起來\n4. 雙邊長孔安裝槽，安裝位置可微調\n\n■ 這片能幫你做到\n・摔機後靠蜂鳴器找到飛機（需飛控支援斷電尋機功能）\n・以 LED 顏色分辨機頭機尾\n・低電壓、Failsafe、解鎖狀態的視覺與聲音提示\n・夜飛或黃昏辨識機身位置\n\n■ 安裝與設定注意\n1. 5V 請接飛控的 5V 輸出，不可接電池電壓（VBAT），接錯會燒毀。\n2. BZ- 接飛控的蜂鳴器負極焊盤（多標示為 BZ-、BUZ- 或 Buzzer-），\n   請勿接到 5V 或其他焊盤。\n3. LED 訊號請接飛控的 LED 焊盤（通常標示 LED 或 LED_STRIP）。\n4. 焊接前請確認飛控絲印，不同飛控焊盤位置與標示不完全相同。\n5. Betaflight 中需至 Configuration 開啟 LED_STRIP 功能，\n   並於 Modes 設定 BEEPER 開關，實際選項名稱依你的韌體版本為準。\n6. LED 通電時會消耗飛控 5V 電流，若你的飛控 5V BEC 輸出餘裕不足，\n   加裝 LED 後可能造成供電不穩或圖傳異常，安裝前請自行評估。\n\n■ 購買前請了解\n1. 本商品需自行焊接安裝，不是隨插即用。\n2. 售出後因接反、焊接不當、接錯焊盤造成的損壞恕不負責。\n3. 斷電後仍能發聲的尋機功能，需飛控本身支援並正確設定，\n   部分蜂鳴器模組不含獨立電池，斷電即停止發聲，請依你的需求確認。\n4. LED 亮度與顏色顯示會因設定與環境光線而異。\n5. 不具備防水功能。\n\n■ 需要代焊嗎\n這片雖然只有四個焊點，但焊在飛控上如果接錯或短路，\n壞的是飛控不是模組。\n如果你不確定自己能處理，我們提供代焊服務，含焊接、絕緣固定與上電測試，\n\n電翼動力 EWP｜Ready to Fly",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-55017963372/01.webp",
+      "src_small": "/assets/img/products/sp-55017963372/01-480.webp",
+      "alt": "FPV 蜂鳴器 LED 模組 二合一 尋機 蜂鳴器 WS2812 燈條 Betaflight 可編輯 穿越機 飛控配件（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mt8bzhcttwqw60"
+    },
+    {
+      "src": "/assets/img/products/sp-55017963372/02.webp",
+      "src_small": "/assets/img/products/sp-55017963372/02-480.webp",
+      "alt": "FPV 蜂鳴器 LED 模組 二合一 尋機 蜂鳴器 WS2812 燈條 Betaflight 可編輯 穿越機 飛控配件（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mt8bzhctsi6gd6"
+    },
+    {
+      "src": "/assets/img/products/sp-55017963372/03.webp",
+      "src_small": "/assets/img/products/sp-55017963372/03-480.webp",
+      "alt": "FPV 蜂鳴器 LED 模組 二合一 尋機 蜂鳴器 WS2812 燈條 Betaflight 可編輯 穿越機 飛控配件（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mt8bzhctr3m053"
+    }
+  ],
+  "variants": [],
+  "price_twd": 114,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "55017963372",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mt8bzhcttwqw60",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mt8bzhctsi6gd6",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mt8bzhctr3m053"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "411521072732",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 119,
+          "stock": 19,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 119,
+      "price_max": 119,
+      "stock_total": 19,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "【FPV 蜂鳴器 ＋ LED 二合一模組】\n\n把蜂鳴器和 LED 整合在同一片小板上，一次解決兩件事：\n找得到飛機，看得出狀態。\n\n摔進草叢的機子，靠的就是蜂鳴器。\n飛在天上分不清機頭方向，靠的就是 LED。\n這片模組兩個都給你，而且只佔一個安裝位。\n\n■ 商品規格\n內建蜂鳴器 ×1\nLED ×4（可編程彩色 LED）\n焊盤：LED / BZ- / 5V / GND，共 4 點\n安裝方式：雙邊長孔安裝槽\n支援 Betaflight LED 功能編輯\n\n■ 焊盤說明\nLED  — LED 訊號（接飛控 LED 焊盤）\nBZ-  — 蜂鳴控制（接飛控 BZ- 或 Buzzer 負極焊盤）\n5V   — 電源輸入（接飛控 5V）\nGND  — 接地\n\n背面焊盤有清楚絲印標示，不必猜腳位。\n\n■ 商品特點\n1. 蜂鳴器與 LED 二合一，省下一個安裝位與一組線材\n2. 4 顆可編程 LED，可在 Betaflight 中設定顏色與燈效模式\n3. 焊盤標示清楚，四點接線，新手也焊得起來\n4. 雙邊長孔安裝槽，安裝位置可微調\n\n■ 這片能幫你做到\n・摔機後靠蜂鳴器找到飛機（需飛控支援斷電尋機功能）\n・以 LED 顏色分辨機頭機尾\n・低電壓、Failsafe、解鎖狀態的視覺與聲音提示\n・夜飛或黃昏辨識機身位置\n\n■ 安裝與設定注意\n1. 5V 請接飛控的 5V 輸出，不可接電池電壓（VBAT），接錯會燒毀。\n2. BZ- 接飛控的蜂鳴器負極焊盤（多標示為 BZ-、BUZ- 或 Buzzer-），\n   請勿接到 5V 或其他焊盤。\n3. LED 訊號請接飛控的 LED 焊盤（通常標示 LED 或 LED_STRIP）。\n4. 焊接前請確認飛控絲印，不同飛控焊盤位置與標示不完全相同。\n5. Betaflight 中需至 Configuration 開啟 LED_STRIP 功能，\n   並於 Modes 設定 BEEPER 開關，實際選項名稱依你的韌體版本為準。\n6. LED 通電時會消耗飛控 5V 電流，若你的飛控 5V BEC 輸出餘裕不足，\n   加裝 LED 後可能造成供電不穩或圖傳異常，安裝前請自行評估。\n\n■ 購買前請了解\n1. 本商品需自行焊接安裝，不是隨插即用。\n2. 售出後因接反、焊接不當、接錯焊盤造成的損壞恕不負責。\n3. 斷電後仍能發聲的尋機功能，需飛控本身支援並正確設定，\n   部分蜂鳴器模組不含獨立電池，斷電即停止發聲，請依你的需求確認。\n4. LED 亮度與顏色顯示會因設定與環境光線而異。\n5. 不具備防水功能。\n\n■ 需要代焊嗎\n這片雖然只有四個焊點，但焊在飛控上如果接錯或短路，\n壞的是飛控不是模組。\n如果你不確定自己能處理，我們提供代焊服務，含焊接、絕緣固定與上電測試，\n詳情請私訊。\n\n電翼動力 EWP｜Ready to Fly",
+    "approved_at": "2026-10-22"
+  }
+}

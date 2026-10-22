@@ -1,0 +1,118 @@
+{
+  "id": "sp-56302849088",
+  "slug": "fpv-v1",
+  "name_zh": "僱傭兵玩具 - 前線作戰版 FPV炸彈V1 穿越機炸彈玩具",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "⚠️ 務必備註顏色。訂製商品無法退貨\n⚠️ 列印件可能有些微層紋屬正常現象\n\n🔥 給懂飛的你，來點前線火力支援！\n🔥 用穿越機扛著「特種部隊專用神秘小物」，\n一飛出去直接變成野外戰術小隊長！\n\n⚔️前線體驗直接拉滿\n讓你的穿越機不再只是飛機，而是「戰術快遞員」\n想投什麼、丟什麼、演什麼都你說了算！\n💣戰區沉浸感＋120%\n模擬彈造型，視覺效果滿分，\n跑山、拍片、惡搞朋友都推薦（但不要嚇到路人🤣）。\n\n🔧牢靠設計，不怕你飛狠\n輕量結構、固定穩固，不影響飛行手感。\n高速巡航？極限俯衝？全部 OK！",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-56302849088/01.webp",
+      "src_small": "/assets/img/products/sp-56302849088/01-480.webp",
+      "alt": "僱傭兵玩具 - 前線作戰版 FPV炸彈V1 穿越機炸彈玩具（主圖）",
+      "width": 950,
+      "height": 950,
+      "rights": "unverified",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mi2mnzk7dvk329"
+    },
+    {
+      "src": "/assets/img/products/sp-56302849088/02.webp",
+      "src_small": "/assets/img/products/sp-56302849088/02-480.webp",
+      "alt": "僱傭兵玩具 - 前線作戰版 FPV炸彈V1 穿越機炸彈玩具（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-56302849088/03.webp",
+      "src_small": "/assets/img/products/sp-56302849088/03-480.webp",
+      "alt": "僱傭兵玩具 - 前線作戰版 FPV炸彈V1 穿越機炸彈玩具（細節圖 2）",
+      "width": 974,
+      "height": 974,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mi2mnzj48zy830"
+    },
+    {
+      "src": "/assets/img/products/sp-56302849088/04.webp",
+      "src_small": "/assets/img/products/sp-56302849088/04-480.webp",
+      "alt": "僱傭兵玩具 - 前線作戰版 FPV炸彈V1 穿越機炸彈玩具（細節圖 3）",
+      "width": 848,
+      "height": 848,
+      "rights": "unverified",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mi2mnzjbfgg16e"
+    }
+  ],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "56302849088",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "rejected",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "玩具類商品，是否放入官網型錄請 EWP 決定",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "EWP 決定（2026-10-22）：非 FPV 相關玩具／模型，官網不公開（正式版與預覽版皆不產生）"
+    ],
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mi2mnzk7dvk329",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mi2mnzj48zy830",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mi2mnzjbfgg16e"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "395275480744",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 429,
+          "stock": 45,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 429,
+      "price_max": 429,
+      "stock_total": 45,
+      "status": "snapshot_only"
+    },
+    "source_description": "⚠️ 務必備註顏色。訂製商品無法退貨\n⚠️ 列印件可能有些微層紋屬正常現象\n⚠️ 客製化需求請務必聊聊討論後再下單\n\n🔥 給懂飛的你，來點前線火力支援！\n🔥 用穿越機扛著「特種部隊專用神秘小物」，\n一飛出去直接變成野外戰術小隊長！\n\n⚔️前線體驗直接拉滿\n讓你的穿越機不再只是飛機，而是「戰術快遞員」\n想投什麼、丟什麼、演什麼都你說了算！\n💣戰區沉浸感＋120%\n模擬彈造型，視覺效果滿分，\n跑山、拍片、惡搞朋友都推薦（但不要嚇到路人🤣）。\n\n🔧牢靠設計，不怕你飛狠\n輕量結構、固定穩固，不影響飛行手感。\n高速巡航？極限俯衝？全部 OK！"
+  }
+}

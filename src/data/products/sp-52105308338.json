@@ -1,0 +1,218 @@
+{
+  "id": "sp-52105308338",
+  "slug": "18650-2s-3500mah-fpv-goggles-dji",
+  "name_zh": "電翼動力 18650 2S 3500mAh⚡ FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航",
+  "sku": null,
+  "brand": "電翼動力",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "18650",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "2S"
+  ],
+  "short_description": "兩顆 18650 組成 2S 約 3500mAh 的 FPV 眼鏡供電盒，3D 列印外殼，附平衡插頭，可更換電芯。",
+  "description": "🔥設置平衡插頭 可以直接透過\n例如HOTAD6 pro對電池盒進行充電及平衡\n沒電的時候；直接更換備用電池 飛行不間斷\n\n標配兩顆 18650 電芯組成 2S 約 3500mAh 組合，小鋰電多出數倍續航，一天外出飛行不用一直找插座。\n\n採用專用電源線與電壓匹配設計，可為主流 FPV Goggles 提供穩定 DC 輸出，減少畫面閃爍與意外斷電風險\n\n外殼為客製 3D 列印盒，尺寸剛好包住兩顆 18650，兼顧強度與重量，放口袋或掛在腰間都方便。\n\n支援更換電芯設計，沒電時候直接更換備用電池；不間斷飛行",
+  "specifications": [
+    {
+      "key": "電芯",
+      "value": "18650 × 2（型號待提供）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "組合",
+      "value": "2S",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "容量",
+      "value": "約 3500mAh（標示）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "外殼",
+      "value": "客製 3D 列印",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "充電",
+      "value": "平衡插頭，可用平衡充電器充電（說明以 HOTA D6 Pro 為例）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電芯更換",
+      "value": "支援",
+      "source": "蝦皮商品說明"
+    }
+  ],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-52105308338/01.webp",
+      "src_small": "/assets/img/products/sp-52105308338/01-480.webp",
+      "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mt3be67cv2th76"
+    },
+    {
+      "src": "/assets/img/products/sp-52105308338/02.webp",
+      "src_small": "/assets/img/products/sp-52105308338/02-480.webp",
+      "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mt3be67cwhdx16"
+    },
+    {
+      "src": "/assets/img/products/sp-52105308338/03.webp",
+      "src_small": "/assets/img/products/sp-52105308338/03-480.webp",
+      "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mt3be67cto9105"
+    },
+    {
+      "src": "/assets/img/products/sp-52105308338/04.webp",
+      "src_small": "/assets/img/products/sp-52105308338/04-480.webp",
+      "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+    },
+    {
+      "src": "/assets/img/products/sp-52105308338/05.webp",
+      "src_small": "/assets/img/products/sp-52105308338/05-480.webp",
+      "alt": "電翼動力 18650 2S 3500mAh FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航（細節圖 4）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlrysjmqll3470"
+    }
+  ],
+  "variants": [
+    {
+      "name": "單顆電池（3500mah)",
+      "sku": null,
+      "price_twd": 144,
+      "availability": "in_stock",
+      "shopee_variation_id": "282364284620"
+    },
+    {
+      "name": "一組套裝（含電池兩顆,充電線一條）",
+      "sku": null,
+      "price_twd": 575,
+      "availability": "in_stock",
+      "shopee_variation_id": "282364284619"
+    }
+  ],
+  "price_twd": 144,
+  "price_display": "from",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "52105308338",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztq-mjxqhksbynt1e8",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztd-mjxqhksdu32b34",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-mjxqhku1ughv89"
+    ],
+    "source_description": "•\t#電翼動力\n•\t#Goggles供電器\n•\t#18650電池盒\n•\t#FPV眼鏡電源\n•\t#2S3500mAh\n•\t#長續航供電\n•\t#穿越機配件\n•\t#行動電源盒\n•\t#3D列印外殼\n•\t#台灣現貨\n•\t#快速出貨\n\n🔥設置平衡插頭 可以直接透過 \n例如HOTAD6 pro對電池盒進行充電及平衡 \n沒電的時候；直接更換備用電池 飛行不間斷\n\n標配兩顆 18650 電芯組成 2S 約 3500mAh 組合，小鋰電多出數倍續航，一天外出飛行不用一直找插座。\n\n採用專用電源線與電壓匹配設計，可為主流 FPV Goggles 提供穩定 DC 輸出，減少畫面閃爍與意外斷電風險\n\n外殼為客製 3D 列印盒，尺寸剛好包住兩顆 18650，兼顧強度與重量，放口袋或掛在腰間都方便。\n\n支援更換電芯設計，沒電時候直接更換備用電池；不間斷飛行",
+    "batch": "first-B",
+    "specs_confirmed": false,
+    "shopee_url_verified": false,
+    "missing": [
+      "電芯品牌型號",
+      "輸出接頭與輸出電壓（適用哪些眼鏡）",
+      "是否有保護板",
+      "重量、尺寸",
+      "正式商品照片（EWP 自有或已授權，需標示 rights）",
+      "售價模式（定價／起價／詢價）與售價",
+      "供貨狀態",
+      "蝦皮商品網址（需 EWP 核實）"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mt3be67cv2th76",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mt3be67cwhdx16",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mt3be67cto9105",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlrysjmqll3470"
+      ],
+      "variation_label": "電翼動力 電池盒",
+      "options": [
+        {
+          "option": "一組套裝（含電池兩顆,充電線一條）",
+          "url": null
+        },
+        {
+          "option": "單顆電池（3500mah)",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "電翼動力 電池盒",
+      "rows": [
+        {
+          "variation_id": "282364284620",
+          "name": "單顆電池（3500mah)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 150,
+          "stock": 18,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "282364284619",
+          "name": "一組套裝（含電池兩顆,充電線一條）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 599,
+          "stock": 66,
+          "min_qty": null
+        }
+      ],
+      "price_min": 150,
+      "price_max": 599,
+      "stock_total": 84,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "approved_at": "2026-10-22"
+  }
+}

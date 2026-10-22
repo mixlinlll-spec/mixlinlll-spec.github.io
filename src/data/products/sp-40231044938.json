@@ -1,0 +1,156 @@
+{
+  "id": "sp-40231044938",
+  "slug": "geprc-fpv",
+  "name_zh": "GEPRC 電池綁帶 魔鬼氈束帶 穿越機 FPV 無人機電池固定帶",
+  "sku": null,
+  "brand": "GEPRC",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "straps",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "GEPRC 原廠電池綁帶，適用 FPV 穿越機／無人機電池固定，魔鬼氈黏性佳、束緊穩固，不易鬆脫，搭配金屬扣環設計更耐用。黑色簡約款式，實用好搭，適合日常維修、更換與自組機使用。圖中可選尺寸：15x150、15x200、20x220、20x250、20x300，請依機型與電池尺寸選購。",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-40231044938/01.webp",
+      "src_small": "/assets/img/products/sp-40231044938/01-480.webp",
+      "alt": "GEPRC 電池綁帶 魔鬼氈束帶 穿越機 FPV 無人機電池固定帶（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mogw9ohrr9jia5"
+    },
+    {
+      "src": "/assets/img/products/sp-40231044938/02.webp",
+      "src_small": "/assets/img/products/sp-40231044938/02-480.webp",
+      "alt": "GEPRC 電池綁帶 魔鬼氈束帶 穿越機 FPV 無人機電池固定帶（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mogw9ohzbrpcdf"
+    }
+  ],
+  "variants": [
+    {
+      "name": "20x250mm",
+      "sku": null,
+      "price_twd": 62,
+      "availability": "in_stock",
+      "shopee_variation_id": "282633033777"
+    },
+    {
+      "name": "20x300mm",
+      "sku": null,
+      "price_twd": 67,
+      "availability": "in_stock",
+      "shopee_variation_id": "282633033775"
+    },
+    {
+      "name": "15x150mm",
+      "sku": null,
+      "price_twd": 53,
+      "availability": "in_stock",
+      "shopee_variation_id": "282633033776"
+    }
+  ],
+  "price_twd": 53,
+  "price_display": "from",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "40231044938",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mogwaq1qjjls23",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l6-mogwaq1qi51cdb"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mogw9ohrr9jia5",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mogw9ohzbrpcdf"
+      ],
+      "variation_label": "格普電池綁帶",
+      "options": [
+        {
+          "option": "15x150mm",
+          "url": null
+        },
+        {
+          "option": "20x250mm",
+          "url": null
+        },
+        {
+          "option": "20x300mm",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "格普電池綁帶",
+      "rows": [
+        {
+          "variation_id": "282633033777",
+          "name": "20x250mm",
+          "parent_sku": null,
+          "sku": null,
+          "price": 65,
+          "stock": 14,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "282633033775",
+          "name": "20x300mm",
+          "parent_sku": null,
+          "sku": null,
+          "price": 70,
+          "stock": 11,
+          "min_qty": null
+        },
+        {
+          "variation_id": "282633033776",
+          "name": "15x150mm",
+          "parent_sku": null,
+          "sku": null,
+          "price": 55,
+          "stock": 17,
+          "min_qty": null
+        }
+      ],
+      "price_min": 55,
+      "price_max": 70,
+      "stock_total": 42,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "GEPRC 原廠電池綁帶，適用 FPV 穿越機／無人機電池固定，魔鬼氈黏性佳、束緊穩固，不易鬆脫，搭配金屬扣環設計更耐用。黑色簡約款式，實用好搭，適合日常維修、更換與自組機使用。圖中可選尺寸：15x150、15x200、20x220、20x250、20x300，請依機型與電池尺寸選購。",
+    "approved_at": "2026-10-22"
+  }
+}

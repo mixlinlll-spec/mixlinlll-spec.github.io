@@ -1,0 +1,130 @@
+{
+  "id": "sp-50112181382",
+  "slug": "mgc-w-1103-8000kv-2s-3s",
+  "name_zh": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "motors-props",
+  "subcategory_id": "motors",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "2S",
+    "3S"
+  ],
+  "short_description": "",
+  "description": "MGC 天狼W 1103 8000KV 無刷馬達專為2~3吋FPV穿越機打造，採用9N12P高效率磁路結構，兼具爆發力、油門解析度與飛行效率。適合2.5吋Freestyle、牙籤機及輕量化數位穿越機使用。\n\nJENO POCKET 戈布原廠指定動力系統，搭配2512三葉槳可獲得優異的加速性能與靈活操控手感。\n\n【產品特色】\n✔ 1103高性能無刷馬達\n✔ 8000KV高轉速設計\n✔ 9N12P高效率磁路結構\n✔ 穩定動力輸出\n✔ 提升飛行靈敏度\n✔ 輕量化設計\n✔ 適用2S 3S動力\n✔ JENO POCKET原廠搭配動力",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-50112181382/01.webp",
+      "src_small": "/assets/img/products/sp-50112181382/01-480.webp",
+      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mpg37q00rlz62d"
+    },
+    {
+      "src": "/assets/img/products/sp-50112181382/02.webp",
+      "src_small": "/assets/img/products/sp-50112181382/02-480.webp",
+      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mpg37pzzziml91"
+    },
+    {
+      "src": "/assets/img/products/sp-50112181382/03.webp",
+      "src_small": "/assets/img/products/sp-50112181382/03-480.webp",
+      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（細節圖 2）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mpg37pzv2j2jec"
+    },
+    {
+      "src": "/assets/img/products/sp-50112181382/04.webp",
+      "src_small": "/assets/img/products/sp-50112181382/04-480.webp",
+      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（細節圖 3）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mpg37pzyw6ps38"
+    }
+  ],
+  "variants": [],
+  "price_twd": 365,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "50112181382",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mpg39owrjdvxd5",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mpg39owkjy8fc0",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mpg39owrjdvk57"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mpg37q00rlz62d",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mpg37pzzziml91",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mpg37pzv2j2jec",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mpg37pzyw6ps38"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "326057944275",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 380,
+          "stock": 23,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 380,
+      "price_max": 380,
+      "stock_total": 23,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#MGC #天狼W #1103 #8000KV #無刷馬達 #FPV #穿越機 #牙籤機 #Freestyle #JENOPOCKET #戈布 #2S穿越機 #3S穿越機 #2512槳葉 #Whoop #Toothpick #FPVDrone #無人機 #花飛機 #電翼動力\n\nMGC 天狼W 1103 8000KV 無刷馬達專為2~3吋FPV穿越機打造，採用9N12P高效率磁路結構，兼具爆發力、油門解析度與飛行效率。適合2.5吋Freestyle、牙籤機及輕量化數位穿越機使用。\n\nJENO POCKET 戈布原廠指定動力系統，搭配2512三葉槳可獲得優異的加速性能與靈活操控手感。\n\n【產品特色】\n✔ 1103高性能無刷馬達\n✔ 8000KV高轉速設計\n✔ 9N12P高效率磁路結構\n✔ 穩定動力輸出\n✔ 提升飛行靈敏度\n✔ 輕量化設計\n✔ 適用2S 3S動力\n✔ JENO POCKET原廠搭配動力",
+    "approved_at": "2026-10-22"
+  }
+}

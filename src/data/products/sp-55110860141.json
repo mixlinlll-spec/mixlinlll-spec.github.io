@@ -1,0 +1,102 @@
+{
+  "id": "sp-55110860141",
+  "slug": "geprc-taker-e55-55a-esc-2",
+  "name_zh": "GEPRC TAKER E55 55A 四合一電調 ESC｜2-6S｜金屬MOS散熱｜BL32｜FPV 穿越機配件",
+  "sku": null,
+  "brand": "GEPRC",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "fc-esc",
+  "subcategory_id": "esc",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "安裝孔距 25x25\n\n高性能 55A 四合一電調，採用 金屬封裝 MOS 管，散熱更強、輸出更穩，適合 FPV 穿越機升級、自組機配置、競速與高負載飛行需求。支援 2–6S LiPo、24K–96K PWM、DShot 150/300/600、Telemetry 遙測，讓飛行反應更俐落、調校更方便。對於重視穩定性與耐用度的玩家，這顆是很有競爭力的 ESC 選擇。",
+  "specifications": [],
+  "images": [
+    {
+      "src": "/assets/img/products/sp-55110860141/01.webp",
+      "src_small": "/assets/img/products/sp-55110860141/01-480.webp",
+      "alt": "GEPRC TAKER E55 55A 四合一電調 ESC｜2-6S｜金屬MOS散熱｜BL32｜FPV 穿越機配件（主圖）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "cover",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mogw194llnntcc"
+    },
+    {
+      "src": "/assets/img/products/sp-55110860141/02.webp",
+      "src_small": "/assets/img/products/sp-55110860141/02-480.webp",
+      "alt": "GEPRC TAKER E55 55A 四合一電調 ESC｜2-6S｜金屬MOS散熱｜BL32｜FPV 穿越機配件（細節圖 1）",
+      "width": 1000,
+      "height": 1000,
+      "rights": "licensed",
+      "role": "gallery",
+      "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mogw194lk93dd8"
+    }
+  ],
+  "variants": [],
+  "price_twd": 1901,
+  "price_display": "fixed",
+  "availability": "in_stock",
+  "shopee_url": null,
+  "shopee_item_id": "55110860141",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": true,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "approved",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mogw1nk5abyk33"
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mogw194llnntcc",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mogw194lk93dd8"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "375948376613",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 1980,
+          "stock": 5,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 1980,
+      "price_max": 1980,
+      "stock_total": 5,
+      "status": "applied",
+      "applied_at": "2026-10-22",
+      "applied": [
+        "prices",
+        "stock"
+      ],
+      "discount_percent": 4
+    },
+    "source_description": "#GEPRC #TAKERE55 #55A電調 #4IN1ESC #BL32 #ESC #穿越機 #穿越機配件 #FPV #FPV配件 #無人機配件 #電調 #四合一電調 \n\n安裝孔距 25x25\n\n高性能 55A 四合一電調，採用 金屬封裝 MOS 管，散熱更強、輸出更穩，適合 FPV 穿越機升級、自組機配置、競速與高負載飛行需求。支援 2–6S LiPo、24K–96K PWM、DShot 150/300/600、Telemetry 遙測，讓飛行反應更俐落、調校更方便。對於重視穩定性與耐用度的玩家，這顆是很有競爭力的 ESC 選擇。",
+    "approved_at": "2026-10-22"
+  }
+}
