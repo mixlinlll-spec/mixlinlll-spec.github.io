@@ -39,4 +39,6 @@ const md = ['## Lighthouse（手機）', '', '| 頁面 | Performance | Accessibi
   ...rows.map(r => `| ${r.p} | ${r.performance} | ${r.accessibility} | ${r['best-practices']} | ${r.seo} | ${r.issues || ''} |`)].join('\n');
 fs.writeFileSync(path.join(OUT, 'summary.md'), md + '\n');
 if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, md + '\n');
+// 在 PR 的 Checks 畫面以註記顯示各頁分數
+if (process.env.GITHUB_ACTIONS) for (const r of rows) console.log(`::notice title=Lighthouse 手機 ${r.p}::Performance ${r.performance}｜Accessibility ${r.accessibility}｜Best Practices ${r['best-practices']}｜SEO ${r.seo}${r.issues ? '｜' + r.issues : ''}`);
 process.exit(failed ? 1 : 0);

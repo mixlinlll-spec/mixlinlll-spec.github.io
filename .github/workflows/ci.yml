@@ -22,7 +22,10 @@ jobs:
       - name: 驗證商品、設定與圖片路徑
         run: node scripts/build.mjs --check
       - name: 資料／審核／路徑／發布產物單元測試
-        run: node --test tests/data.test.mjs
+        run: |
+          set -o pipefail
+          node --test tests/data.test.mjs | tee unit.log
+          echo "::notice title=單元測試::$(grep -E '^# (tests|pass|fail) ' unit.log | tr '\n' ' ')"
       - name: 建置正式產物 dist/ 與含草稿預覽 _preview/
         run: |
           node scripts/build.mjs

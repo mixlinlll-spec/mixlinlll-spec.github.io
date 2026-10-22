@@ -218,4 +218,5 @@ console.log('10. 鍵盤操作');
 ok(errors.length === 0, `瀏覽器 console 無錯誤${errors.length ? '：' + errors.slice(0, 5).join(' | ') : ''}`);
 await browser.close();
 console.log(`\n結果：通過 ${passes}，失敗 ${fails}`);
+if (process.env.GITHUB_ACTIONS) console.log(`::notice title=Playwright 端對端測試::通過 ${passes}，失敗 ${fails}`);
 process.exit(fails ? 1 : 0);
