@@ -1,0 +1,33 @@
+name: EWP site checks
+# 每次 push／PR 檢查：資料格式、單元測試、產出是否已更新、站內連結、草稿是否外洩。
+# 本流程只做檢查，不部署；GitHub Pages 仍由 main 分支根目錄發布。
+on:
+  push:
+    branches: [main, 'feature/**']
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 驗證商品與設定資料
+        run: node scripts/build.mjs --check
+      - name: 資料規則測試
+        run: node --test tests/data.test.mjs
+      - name: 重新產生網站並確認已提交最新產出
+        run: |
+          node scripts/build.mjs
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::產出檔案與資料不一致。請在本機執行 node scripts/build.mjs 後一併提交。"
+            git status --porcelain
+            exit 1
+          fi
+      - name: 站內連結、資源與草稿外洩檢查
+        run: node scripts/check-site.mjs
+      - name: 含草稿預覽版可正常產生
+        run: node scripts/build.mjs --drafts && node scripts/check-site.mjs _preview

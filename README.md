@@ -1,27 +1,59 @@
-# 電翼動力 EWP 品牌官網
+# 電翼動力 EWP 官方網站
 
-繁體中文、黑紅視覺的靜態品牌網站，支援桌機與手機。無套件安裝、無後端或第三方追蹤程式。包含品牌介紹、代表機型、工作室服務與常見問題。
+官方品牌網站＋可搜尋的商品型錄＋LINE／蝦皮詢價導購＋FPV 技術知識庫。
+部署在 GitHub Pages（`https://mixlinlll-spec.github.io/`），純靜態網站：沒有後端、資料庫、會員、購物車、金流或追蹤程式。
 
-## 發布到 GitHub Pages
+## 架構
 
-1. 使用 GitHub 帳號 `mixlinlll-spec` 建立 Public 儲存庫 `mixlinlll-spec.github.io`。若已存在，請先檢查內容，避免覆蓋其他網站。
-2. 解壓縮交付檔，把 `index.html`、`assets` 資料夾與 `.nojekyll` 上傳到儲存庫最外層，不要多包一層資料夾。若選擇下方 GitHub Actions 模式，一併提交 `.github/workflows/pages.yml`。
-3. 簡單模式：Settings → Pages → Build and deployment，Source 選 Deploy from a branch，Branch 選 main，目錄選 / (root)，Save。
-4. 或選 GitHub Actions 模式：Source 選 GitHub Actions，於 Actions 執行 Deploy EWP to GitHub Pages 工作流程。
-5. 等部署成功，使用 Settings → Pages 顯示的網址開啟。
+```
+src/data/            ← 唯一資料來源（人改這裡）
+  site.json          全站設定：品牌、聯絡方式（LINE／蝦皮／Email…）、政策頁是否公開
+  categories.json    10 個主分類與子分類（id 永久不變）
+  products/*.json    商品，一個商品一個檔案（預設 published=false 草稿）
+  builds.json        EWP 自製機型
+  services.json      服務頁內容
+src/templates/       CSV 匯入範本
+scripts/
+  build.mjs          產生網站（驗證資料 → 輸出 HTML、sitemap、robots）
+  check-site.mjs     檢查站內連結、資源、假連結、草稿外洩
+  import-csv.mjs     由 CSV 新增／更新商品
+  import-shopee.mjs  由蝦皮匯出檔建立商品草稿
+  lib/               共用資料驗證與版型（Header／Footer／ProductCard…）
+assets/              CSS、JS、圖片、LINE QR（手寫，非產生）
+fpv-help.html        舊知識庫（91 則），原網址保留、內容未改動
+legacy/              2026-09 舊版首頁存檔（noindex，僅供比對）
+tests/               資料規則測試、端對端測試
+（其餘 index.html、products/、product/、builds/、services/… 都是 build 產出）
+```
 
-## 日後更新
+- 產出檔案直接放在 repo 根目錄，所以 Pages 維持「Deploy from a branch → main → / (root)」，不用改任何設定。
+- `.generated.json` 記錄由程式產生的檔案；重新產生時只會刪除清單內、這次不再需要的檔案，不會動到手寫檔案。
+- **repo 是公開的**：草稿雖然不會出現在網站上，但 `src/data/products/` 在 GitHub 上看得到。不要把進貨價、成本、客戶資料放進資料檔。
 
-- 文字與配色：修改 `index.html`。
-- 商品海報：替換 `assets/huan.png` 並同步更新圖片 alt 文字。
-- 聯絡資訊：目前使用「蝦皮搜尋：電翼動力」。取得確定的賣場或 LINE 網址後，再改成可點擊連結。
-- 頁首 EWP 是文字品牌識別；尚未替換為正式透明 Logo 圖檔。
-- 公開版本沒有放入個人電話、私人地址、售價、庫存或未確認的聯絡網址。
-- 海報為使用者現有品牌素材；請保留對該素材的使用權限。機型規格以委託前確認為準。
+## 常用指令（需要 Node.js 18 以上，不需安裝套件）
 
-此交付檔已準備好發布，但製作時尚未建立 GitHub 儲存庫，也尚未取得 Pages 上線結果。
+| 指令 | 用途 |
+|---|---|
+| `node scripts/build.mjs` | 產生正式版（只含 `published=true` 商品）到根目錄 |
+| `node scripts/build.mjs --drafts` | 產生含草稿的預覽版到 `_preview/`（noindex，不提交） |
+| `node scripts/build.mjs --check` | 只驗證資料 |
+| `node scripts/check-site.mjs` | 檢查連結、資源與草稿外洩 |
+| `node --test tests/data.test.mjs` | 資料規則測試 |
+| `node tests/e2e.mjs` | 端對端測試（需 Playwright，見檔案開頭說明） |
 
-## GitHub 官方設定參考
+本機預覽：
 
-- https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
-- https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+```bash
+node scripts/build.mjs --drafts
+python3 -m http.server 8801 --directory _preview   # 開 http://localhost:8801
+```
+
+## 修改資料後的固定流程
+
+1. 改 `src/data/` 內的 JSON，或用 CSV 匯入（見 [CONTENT_GUIDE.md](CONTENT_GUIDE.md)）。
+2. `node scripts/build.mjs`，再 `node scripts/check-site.mjs`。
+3. 把資料檔與產出檔一起 commit。CI 會檢查兩者是否一致。
+
+## 部署與回滾
+
+見 [docs/DEPLOY_ROLLBACK.md](docs/DEPLOY_ROLLBACK.md)。
