@@ -1,0 +1,80 @@
+{
+  "_comment": "商品分類唯一來源。id 與 slug 為永久值，修改顯示名稱不影響網址。",
+  "categories": [
+    { "id": "complete-drones", "name": "FPV 穿越機整機", "name_en": "Complete Drones", "summary": "EWP 自製機型、組裝整機與其他品牌整機。",
+      "subcategories": [
+        { "id": "micro", "name": "Whoop／2 吋以下" },
+        { "id": "2-5in", "name": "2.5 吋" },
+        { "id": "3-3-5in", "name": "3–3.5 吋" },
+        { "id": "5in", "name": "5 吋" },
+        { "id": "7in-long-range", "name": "7 吋長航" },
+        { "id": "x8-cinelifter", "name": "X8／CineLifter" },
+        { "id": "other-sizes", "name": "其他尺寸" } ] },
+    { "id": "frames-parts", "name": "機架與機體零件", "name_en": "Frames & Parts", "summary": "機架、機臂、頂底板與鏡頭固定件。",
+      "subcategories": [
+        { "id": "frames", "name": "機架" },
+        { "id": "arms", "name": "機臂" },
+        { "id": "plates", "name": "頂／底板" },
+        { "id": "camera-mounts", "name": "鏡頭固定件" },
+        { "id": "protection", "name": "機體保護件" } ] },
+    { "id": "motors-props", "name": "馬達與螺旋槳", "name_en": "Motors & Props", "summary": "無刷馬達、螺旋槳與相關配件。",
+      "subcategories": [
+        { "id": "motors", "name": "無刷馬達" },
+        { "id": "props", "name": "螺旋槳" },
+        { "id": "motor-accessories", "name": "馬達配件" } ] },
+    { "id": "fc-esc", "name": "飛控與電調", "name_en": "FC & ESC", "summary": "飛控、電調、AIO 與飛塔堆疊。",
+      "subcategories": [
+        { "id": "fc", "name": "飛控 FC" },
+        { "id": "esc", "name": "電調 ESC" },
+        { "id": "aio", "name": "AIO" },
+        { "id": "stacks", "name": "飛控電調堆疊" },
+        { "id": "mounting", "name": "減震固定" } ] },
+    { "id": "video", "name": "圖傳與攝影系統", "name_en": "Video Systems", "summary": "DJI O4 系列、類比圖傳、攝影機、天線與眼鏡。",
+      "subcategories": [
+        { "id": "dji-o4", "name": "DJI O4 系列" },
+        { "id": "analog-vtx", "name": "類比圖傳" },
+        { "id": "cameras", "name": "攝影機" },
+        { "id": "antennas", "name": "天線" },
+        { "id": "video-cables", "name": "線材" },
+        { "id": "goggles", "name": "眼鏡與配件" } ] },
+    { "id": "radio-gps", "name": "遙控／接收／定位", "name_en": "Radio & GPS", "summary": "ELRS、Crossfire、遙控器、接收機與 GPS。",
+      "subcategories": [
+        { "id": "elrs", "name": "ELRS" },
+        { "id": "crossfire", "name": "Crossfire" },
+        { "id": "radios", "name": "遙控器" },
+        { "id": "receivers", "name": "接收機" },
+        { "id": "gps", "name": "GPS" },
+        { "id": "rc-antennas", "name": "天線" } ] },
+    { "id": "power-battery", "name": "電池與電源", "name_en": "Batteries & Power", "summary": "18650／21700 電池組、LiPo、充電器與電源模組。",
+      "subcategories": [
+        { "id": "18650", "name": "18650" },
+        { "id": "21700", "name": "21700" },
+        { "id": "4s", "name": "4S" },
+        { "id": "6s", "name": "6S" },
+        { "id": "1s-micro", "name": "1S–3S 微型電池" },
+        { "id": "chargers", "name": "充電器" },
+        { "id": "power-modules", "name": "電源模組" },
+        { "id": "field-packs", "name": "外場電包" } ] },
+    { "id": "electronics", "name": "電子元件／接頭線材", "name_en": "Electronics & Wiring", "summary": "電容、LED、蜂鳴器、接頭、線材與熱縮套。",
+      "subcategories": [
+        { "id": "capacitors", "name": "電容" },
+        { "id": "led-cob", "name": "LED／COB" },
+        { "id": "connectors", "name": "接頭" },
+        { "id": "wires", "name": "矽膠線／線束" },
+        { "id": "heat-shrink", "name": "熱縮套" },
+        { "id": "modules", "name": "其他電子模組" } ] },
+    { "id": "hardware-prints", "name": "螺絲五金與列印件", "name_en": "Hardware & 3D Prints", "summary": "M2／M3 螺絲、螺母、墊片、綁帶與 TPU 列印件。",
+      "subcategories": [
+        { "id": "screws", "name": "螺絲套裝" },
+        { "id": "nuts-washers", "name": "螺母／墊片" },
+        { "id": "straps", "name": "電池綁帶" },
+        { "id": "tpu-prints", "name": "TPU／3D 列印件" },
+        { "id": "cases", "name": "收納盒" } ] },
+    { "id": "tools", "name": "工具與維修耗材", "name_en": "Tools & Supplies", "summary": "焊接工具、扳手起子與清潔耗材。",
+      "subcategories": [
+        { "id": "soldering", "name": "焊接工具" },
+        { "id": "drivers-wrenches", "name": "螺絲起子／扳手" },
+        { "id": "cleaning", "name": "清潔耗材" },
+        { "id": "organizers", "name": "整理工具" } ] }
+  ]
+}

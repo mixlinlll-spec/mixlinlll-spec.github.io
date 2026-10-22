@@ -1,0 +1,41 @@
+{
+  "id": "sp-46059782425",
+  "slug": "2-5-freestyle-h415-aio-1103-8000kv",
+  "name_zh": "電翼動力 戈布 2.5吋 Freestyle 穿越機｜H415 AIO｜1103 8000KV｜DJI O4 Lite",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "complete-drones",
+  "subcategory_id": "2-5in",
+  "tags": [],
+  "compatible_sizes": [
+    "2.5 吋"
+  ],
+  "video_system": "DJI O4",
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#FPV #穿越機 #25吋機架 #小鋼炮 #碳纖維機架 #花飛機架 #FPV機架 #DIY穿越機 #無人機\n\n戈布（Goblin Scout）為電翼動力自主打造之2.5吋Freestyle穿越機，採用T700碳纖維機架搭配H415 AIO飛塔，兼具輕量化、高性能與數位圖傳擴充能力。\n\n【產品特色】\n✔ T700碳纖維高強度機架\n✔ H415 400MHz高性能主控\n✔ ICM42688高性能陀螺儀\n✔ SPL06氣壓計\n✔ 16MB黑盒子記錄\n✔ 5V 3A BEC穩定輸出\n✔ 支援LED／BB響／I2C擴充\n✔ 支援DJI O4 Lite、HDZero、Walksnail\n✔ 1103 8000KV高效率動力\n✔ GEMFAN 2512三葉槳\n\n【機體規格】\n機架：T700碳纖維 正X佈局\n飛塔：RATE H415 AIO\n主控：H415 400MHz\n陀螺儀：ICM42688\n氣壓計：SPL06\n黑盒子：16MB\nBEC：5V 3A\n電機：1103 8000KV\n軸徑：1.5mm\n安裝孔距：9mm\n槳葉：GEMFAN 2512三葉槳\n支援圖傳：DJI O4 Lite／HDZero／Walksnail\n適用電池：2S~3S LiPo\n\n【注意事項】\n※ 出貨前均完成基本測試\n※ 穿越機商品建議具備基本操作經驗後使用",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "46059782425",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

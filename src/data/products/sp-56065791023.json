@@ -1,0 +1,46 @@
+{
+  "id": "sp-56065791023",
+  "slug": "helloradio-v15-gemini-2-4g-900mhz-1w",
+  "name_zh": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS",
+  "sku": null,
+  "brand": "HelloRadio",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "radio-gps",
+  "subcategory_id": "radios",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "HelloRadio V15 採用高效能 STM32 H7 主控，預載 EdgeTX 系統，搭載 ExpressLRS Gemini 雙頻 2.4GHz + 900MHz 技術，提供更穩定的控制鏈路、更低延遲及更遠的傳輸距離。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "56065791023",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mrqmegxb0mbp78",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mrqmegxb20w547",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mrqmegxb3fgl8b",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mrqmegxb4u11a0",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mrqmegxb68lh90",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mrqmegxb7n5xf5",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mrqmegxb91qd3c"
+    ]
+  }
+}

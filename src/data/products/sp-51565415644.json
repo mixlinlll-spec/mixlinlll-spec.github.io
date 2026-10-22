@@ -1,0 +1,55 @@
+{
+  "id": "sp-51565415644",
+  "slug": "o4-pro-2-5-fpv-dji",
+  "name_zh": "O4 Pro 2.5吋 FPV穿越機 DJI O4 Pro 套機 花飛 五吋",
+  "sku": null,
+  "brand": "DJI",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "complete-drones",
+  "subcategory_id": "2-5in",
+  "tags": [],
+  "compatible_sizes": [
+    "2.5 吋",
+    "5 吋"
+  ],
+  "video_system": "DJI O4",
+  "battery_cells": [],
+  "short_description": "",
+  "description": "GEPRC DarkStar25 是專為 DJI O4 Pro 打造的 2.5 吋輕量化 CineWhoop，兼顧穩定錄影、飛行性能與耐用性，適合室內外空拍、商業拍攝、旅拍及日常花式飛行。\n整機針對機構設計全面優化，配備五點式減震雲台、GPS 安裝座、下置 XT30 電源接口及模組化結構，不僅提升錄影品質，也讓維修與保養更加便利。\n商品特色\n✅ 原生支援 DJI O4 Pro 高清數位圖傳\n✅ 2.5 吋輕量化 CineWhoop 設計\n✅ 五點式減震系統，有效降低果凍與震動\n✅ 下置 XT30 電源接口，插拔更方便\n✅ 內建 GPS 安裝座（可自行加裝 GPS）\n✅ 模組化結構，拆裝維修快速\n✅ 機身細節全面優化，外型俐落、配線整潔\n✅ 適合空拍、旅拍、商業拍攝及 FPV 飛行\n商品規格\n品牌：GEPRC\n型號：DarkStar25\n機型：2.5 吋 CineWhoop\n圖傳：DJI O4 Pro\n類型：BNF 套機\n電源接口：XT30\nGPS：支援加裝\n適用電池：依原廠配置\n適合玩家\n✔ DJI O4 Pro 使用者\n✔ 空拍創作者\n✔ 室內外 FPV 飛行\n✔ 旅拍、Vlog 拍攝\n✔ 想要兼顧穩定與畫質的玩家",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "51565415644",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "標題同時出現「2.5吋」與「五吋」，尺寸需核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l4-mrh5980n5czl2d",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mrh5982282dc00",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mrh59835ik8x59",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l6-mrh5982yc3rb27",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mrh59821is5d45",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mrh59835jytd0c",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mrh59831gh708f",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mrh5980j4oi40e",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l4-mrh59835zf29b2",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mrh598360tmpef",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mrh5985yrnyaed",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mrh598529kw689"
+    ]
+  }
+}

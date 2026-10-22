@@ -1,0 +1,39 @@
+{
+  "id": "sp-51050718797",
+  "slug": "cinelog30v3-gps",
+  "name_zh": "Cinelog30V3 各類打印件 前置GPS 天線夾",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#Cinelog30V3 #GPS #Mini #機艙蓋 #TPU防撞保護套 #穿越機配件 #FPV零件 #3D列印配件 #GEPRC適用\n\n此為 Cinelog 30 V3 專用 各類打印件，採用輕量化設計\n使用 TPU 材質 3D 列印，具備柔韌與抗震特性，適合 FPV 穿越機高強度飛行使用。\n\n✅ 適用：Cinelog 30 V3\n✅ 材質：TPU\n✅ 功能：保護 GPS 模組、防撞、固定穩固\n✅ (請備註) 黑色 橘色\n\nO3/O4 後天線+GPS座 (GPS規格 15X15X15) mm\n前置GPS底座 (GPS規格12X12X12) mm",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "51050718797",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

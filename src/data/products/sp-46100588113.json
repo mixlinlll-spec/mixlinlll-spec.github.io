@@ -1,0 +1,39 @@
+{
+  "id": "sp-46100588113",
+  "slug": "speedybee-mario-8",
+  "name_zh": "SpeedyBee Mario 8 穿越機 打印套件 保護支架 配件外殼",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#SpeedyBeeMario8 #穿越機配件 #3D列印 #TPU外殼 #穿越機保護套 #SpeedyBee配件 #穿越機維修 #穿越機改裝 #FPV配件 #穿越機支架\n\n✅ 完美相容 SpeedyBee Mario 8 機架\n✅ 高精度3D列印，外觀整潔、安裝方便\n\n材質說明：\nTPU（熱塑性聚氨酯）－柔軟、有彈性、耐磨抗摔\n適用機種：SpeedyBee Mario 8",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "46100588113",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

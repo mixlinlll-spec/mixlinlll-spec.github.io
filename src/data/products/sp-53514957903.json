@@ -1,0 +1,42 @@
+{
+  "id": "sp-53514957903",
+  "slug": "fpv-lr-21700-6s2p-10000mah-li",
+  "name_zh": "FPV LR 遠航電池 21700 6S2P 10000mAh 全極耳 Li-ion 電池包 長續航 180A 穿越機",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "21700",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "",
+  "description": "電翼動力 21700 全極耳 6S2P 10000mAh LR 專用電池\n\n專為 Long Range（LR）遠航飛行打造，採用新一代 21700 全極耳高性能電芯，兼具高容量、低內阻與高放電能力。無論是 7 吋、8 吋遠航機、固定翼或長航時任務，都能提供穩定且持久的電力輸出。\n\n相較傳統 21700 電芯，全極耳設計擁有更低內阻、更低發熱與更高放電效率，可有效提升續航時間及飛行穩定性，是追求長距離飛行玩家的最佳選擇。\n\n產品特色\n• 採用 21700 全極耳高性能電芯\n• 6S2P 配置，10000mAh 超大容量\n• 最大電壓 25.2V\n• 最大放電能力 180A\n• 低內阻、高效率、低發熱\n• 適合 Long Range 長航時飛行\n• 手工點焊製作，品質嚴格把關\n• 可客製 XT60／XT90 接頭與線材長度（依需求）\n\n產品規格\n• 電芯：21700 全極耳 Li-ion\n• 配置：6S2P\n• 容量：10000mAh\n• 標稱電壓：22.2V\n• 滿電電壓：25.2V\n• 能量：216Wh\n• 最大放電：180A\n• 電池類型：Li-ion\n\n適用機型\n• 7吋 Long Range 穿越機\n• 8吋 Long Range 穿越機\n• 固定翼 UAV\n• 巡航航拍機\n• 長航時任務平台\n\n使用建議\n• 使用 Li-ion 平衡充電器充電\n• 建議最高充電電壓 4.20V／Cell\n• 建議截止電壓 3.0V／Cell\n• 長期存放請保持 3.75～3.85V／Cell\n• 請避免撞擊、穿刺、短路及高溫環境\n\n包裝內容\n• 21700 6S2P 10000mAh 全極耳電池 ×1\n\n購買須知\n• 本商品為手工組裝電池，下單前可與我們討論接頭、線材及客製需求。\n• 如有特殊容量、S數或尺寸需求，歡迎聯繫電翼動力客製製作。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "53514957903",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "是否為 EWP 自製電池組需核對；「180A」為標示用語，需電芯數據與測試條件佐證",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

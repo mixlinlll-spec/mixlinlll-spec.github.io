@@ -1,0 +1,45 @@
+{
+  "id": "sp-54765823185",
+  "slug": "fpv-2207-1950kv-ruiyi-5-6s",
+  "name_zh": "FPV 穿越機 無刷馬達 2207 1950KV RUIYI 芮翼 5吋 6S Freestyle 競速 花飛 無人機",
+  "sku": null,
+  "brand": "RUIYI 芮翼",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "motors-props",
+  "subcategory_id": "motors",
+  "tags": [],
+  "compatible_sizes": [
+    "5 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "",
+  "description": "#FPV #穿越機 #無刷馬達 #2207 #1950KV #RUIYI #芮翼 #5吋穿越機 #6S馬達 #Freestyle #花飛 #競速機 #無人機馬達 #航模電機 #電翼動力\n\nRUIYI 芮翼 R2207 1950KV 無刷馬達，專為5吋FPV穿越機、Freestyle花飛與競速飛行打造，支援3S~6S電池，具備強勁推力、穩定輸出與高效率表現，適合搭配5吋槳葉使用。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "54765823185",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mrrgr0fyd1q801",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mrrgr0fyegao91"
+    ]
+  }
+}

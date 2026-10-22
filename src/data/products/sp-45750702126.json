@@ -1,0 +1,40 @@
+{
+  "id": "sp-45750702126",
+  "slug": "mtf-01-tpu-speedybee-mario5-mario8",
+  "name_zh": "MTF-01 光流器 TPU外殼 保護罩 適用SpeedyBee Mario5 / Mario8 穿越機 25.5mm固",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#MTF01 #光流器外殼 #TPU保護罩 #穿越機配件 #SpeedyBeeMario5 #SpeedyBeeMario8 #3D列印配件 #穿越機改裝 #FPV配件 #光流感測模組\n\n專為 MTF-01 光流定位模組 設計的 TPU保護外殼，支援 25.5mm安裝間距，完美相容 SpeedyBee Mario5 / Mario8 等機架。\n\n柔軟TPU材質能有效吸收震動與撞擊，保護感測鏡頭免受損壞，適合外場飛行使用。\n✅ 精準孔位，完美貼合光流器模組\n✅ TPU材質具彈性與抗震保護\n✅ 適用多種25.5mm安裝間距飛控機架\n✅ 默認支援 Mario5 / Mario8 穿越機\n\n材質說明：\nTPU（熱塑性聚氨酯）－柔軟、防撞、耐磨\n\n適用機型：\nMTF-01 光流器\nSpeedyBee Mario5 / Mario8 及其他25.5mm孔距機架",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "45750702126",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

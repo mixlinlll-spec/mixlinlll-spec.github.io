@@ -1,0 +1,52 @@
+{
+  "id": "sp-44561107171",
+  "slug": "geprc-moz7-v2-o4-pro-7",
+  "name_zh": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range",
+  "sku": null,
+  "brand": "GEPRC",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "complete-drones",
+  "subcategory_id": "7in-long-range",
+  "tags": [],
+  "compatible_sizes": [
+    "7 吋"
+  ],
+  "video_system": "DJI O4",
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#GEPRC #MOZ7 #DJIO4 #O4Pro #FPV #LongRange #穿越機 #遠航機 #7吋FPV #空拍機 #Freestyle #ELRS #DJI #無人機 #FPVDrone",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "44561107171",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-monfw4jmdonj48",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-monfw4krxngg72",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-monfw4kn6a6j2a",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-monfw4k35oujfe",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-monfw4kn93b67e",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-monfw4modfkf41",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l4-monfw4mpw7pc66",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-monfy1t5rqiqaf",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-mong0q8bmzgt70",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mong0q89j4su10",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mong0q89hq8e0b"
+    ]
+  }
+}

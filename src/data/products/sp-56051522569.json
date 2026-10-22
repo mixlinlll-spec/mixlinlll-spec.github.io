@@ -1,0 +1,42 @@
+{
+  "id": "sp-56051522569",
+  "slug": "8-10-3d",
+  "name_zh": "天劍科技 御劍 8寸 / 10寸 通用側護板｜耐撞保護件｜高强度3D打印件",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [
+    "8 吋",
+    "10 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#天劍科技\n#御劍8吋\n#御劍10吋\n#側護板\n#穿越機配件\n#FPV3D列印\n#TPU側板\n#穿越機防護\n#機架強化\n#FPV改裝\n\n【產品簡介】\n此側護板為天劍科技御劍系列（8吋 / 10吋）專用之3D列印改裝件，採用高韌性材質設計，強化機身側面保護與抗撞能力，避免砂石及草樹等進入飛塔\n\n【規格】\n適用機型：天劍科技 御劍 8吋 / 10吋\n重量：約 21g（依款式與填充率而異）\n包裝內容：側護板 ×2\n\n【安裝與注意】\n安裝前請確認機架型號與孔位；若需左右一對請在備註註明。\n安裝時建議使用適度熱床或輕微拉伸以確保卡合。\n3D列印件表面可能有層紋屬正常現象，不影響使用功能。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "56051522569",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

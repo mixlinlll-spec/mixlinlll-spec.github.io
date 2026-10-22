@@ -1,0 +1,40 @@
+{
+  "id": "sp-54302194122",
+  "slug": "betafpv-meteor75-air75",
+  "name_zh": "BetaFPV Meteor75 / Air75 專用便攜收納盒｜電池收納｜機身保護盒",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "cases",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#meteor75 #air75 #收納盒 #穿越機配件 #微型無人機 #電池收納 #fpv配件 #fpv收納 #betafpv #whoop盒\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n讓你的 Meteor75 / Air75 有專屬的安全之家！\n此收納盒專為 BetaFPV 微型穿越機設計，能同時放置機體與多顆 1S 電池\n450MAH 電池最多存放9塊，可以再放入充電器\n\n產品特色\n專屬開模，貼合 Meteor75 / Air75 尺寸\n內部電池卡槽設計，整齊收納不晃動\n外殼堅固，日常攜帶不怕擠壓\n適合外拍、戶外飛行攜帶組使用\n出門飛行必備，一盒搞定！",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "54302194122",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

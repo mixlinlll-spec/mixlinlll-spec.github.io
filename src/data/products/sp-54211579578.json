@@ -1,0 +1,40 @@
+{
+  "id": "sp-54211579578",
+  "slug": "ovonic-4s-850mah-100c-xt30-fpv",
+  "name_zh": "OVONIC 4S 850mAh 100C XT30 穿越機電池 FPV鋰電池 花飛 競速 無人機電池 LiPo",
+  "sku": null,
+  "brand": "OVONIC",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "4s",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "4S"
+  ],
+  "short_description": "",
+  "description": "#OVONIC #850mAh #100C #4S電池 #FPV電池 #穿越機電池 #XT30 #LiPo #Freestyle #競速 #牙籤機 #花飛 #無人機電池 #航模 #FPVDrone\n\nOVONIC 4S 850mAh 100C 高性能鋰電池🔥\n\n專為 FPV 穿越機打造，兼顧爆發力、飛行效率與穩定輸出，適合花飛、競速及日常飛行使用。\n\n📌產品特色\n・100C 高倍率放電\n・4S 高性能配置\n・XT30 接頭設計\n・輕量化機身設計\n・輸出穩定反應迅速\n・適合 Freestyle 與競速飛行\n\n📌產品規格\n品牌：OVONIC\n容量：850mAh\n配置：4S1P\n電壓：14.8V\n倍率：100C\n接頭：XT30\n尺寸：約59.5×30×29.5mm\n重量：約93g\n\n📌適用機型\n・2.5吋～4吋穿越機\n・牙籤機\n・Freestyle 花飛機\n・競速穿越機\n\n📌產品優勢\n・高爆發輸出\n・油門反應靈敏\n・續航與性能兼顧\n・穩定巡航表現優異\n\n📌包裝內容\n・OVONIC 4S 850mAh 120C 電池 ×1\n\n⚠️注意事項\n・請使用平衡充電器充電\n・請勿過充、過放或短路\n・飛行後請冷卻再充電\n・長期存放請保持存儲電壓",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "54211579578",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

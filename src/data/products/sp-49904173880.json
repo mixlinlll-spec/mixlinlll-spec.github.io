@@ -1,0 +1,41 @@
+{
+  "id": "sp-49904173880",
+  "slug": "bt2-0-1s-3-8v-300mah-75c-tinywhoop",
+  "name_zh": "機鋰電池🔋 BT2.0插頭 格氏 1S 3.8V 300mAh 75C Tinywhoop專用 微型穿越機電池 室內競速",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "1s-micro",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "1S"
+  ],
+  "short_description": "",
+  "description": "•\t#格氏TATTU\n•\t#1S300mAh\n•\t#BT20電池\n•\t#3點8V高壓\n•\t#75C鋰電\n•\t#Tinywhoop電池\n•\t#小穿越機\n•\t#微型穿越機電池\n•\t#HV電池\n•\t#台灣現貨\n•\t#快速出貨\n\n小穿越機飛不到幾圈就電壓大掉、油門軟腳嗎？😵‍💫 \n格氏 TATTU 1S 3.8V 300mAh 75C HV，搭配 BT2.0 插頭，專為 Tinywhoop / 65～75mm 微型穿越機設計，提供穩定高電流輸出與較慢的電壓下墜，讓室內競速更好飛。\n\n產品特色：\n•\t🔌 BT2.0 插頭：相較 PH2.0 阻抗更低，減少電壓損耗，實際推力更飽滿，是現在主流 Tinywhoop 規格。\n•\t🔋 300mAh 75C 高壓：3.8V LiHV 設計，支援充到 4.35V，75C 放電可應付高爆發拉桿與急停動作。\n•\t🪶 輕量小體積：單顆約 8–9g、尺寸約 68×12×6mm，適合 Meteor65/Meteor75 等 1S 小穿越機使用。\n•\t🛡️ 品質穩定：格氏 TATTU 採嚴格配對與堆疊工藝，在 FPV 圈以穩定性與壽命著稱，適合日常練飛與小比賽。\n建議：\n•\t新電池前 3～5 次盡量不要飛到極低電壓，有助延長壽命。\n•\t若你是 BT2.0 系統主力，可一次入手多顆，方便場內輪流飛、輪流充，減少等電時間😉。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "49904173880",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

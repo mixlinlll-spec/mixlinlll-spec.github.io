@@ -1,0 +1,45 @@
+{
+  "id": "sp-55407435466",
+  "slug": "orangfpv-mini-rgb-led-2-6s",
+  "name_zh": "OrangFPV Mini RGB LED燈控板｜2-6S WS2812控制器｜WiFi無線調參｜FPV穿越機燈光模組",
+  "sku": null,
+  "brand": "OrangFPV",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "electronics",
+  "subcategory_id": "modules",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "FPV LED燈控, 穿越機燈光模組, WS2812控制器, RGB燈條控制, FPV配件, 無人機燈光, Betaflight LED, FPV RGB, drone LED controller, FPV lighting, WS2812B, 穿越機改裝, LED燈控板, WiFi調參, FPV夜飛\n\n【🔥讓你的穿越機燈效直接升級】\n夜飛不夠亮？燈效不夠帥？\nOrangFPV Mini RGB燈控板，讓你的機子直接變夜空焦點\n\n【✨產品特色】\n✔ 支援 WS2812 RGB燈條\n👉 常見LED燈條可直接使用\n✔ WiFi 無線調參\n👉 手機直接設定燈效（不用接電腦）\n✔ 支援飛控聯動\n👉 可搭配 Betaflight 燈光控制（進階玩法）\n✔ 支援 2–6S 電池供電（6–28V）\n👉 無需額外降壓模組\n✔ 超小體積 15×15mm\n👉 Whoop / 3吋 / 5吋皆可安裝\n✔ 超輕重量 1.2g\n👉 幾乎無負擔\n✔ 4路獨立燈帶控制\n👉 可自訂不同燈效區域\n\n【⚙️商品規格】\n\n品牌：OrangFPV\n輸入電壓：2–6S（6–28V）\n尺寸：15×15 mm\n重量：約1.2g\n支援燈條：WS2812 / WS2812B\n控制方式：WiFi / 飛控聯動\n輸出通道：4路\n\n【📦包裝內容】\nLED燈控板 ×1\n燈條X4\n\n【⚠️注意事項】\n需具備基本焊接能力\n請確認正確接電避免損壞\n僅支援 WS2812 類型燈條",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "55407435466",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mm0miezduzgjf5",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mm0miezde4n830",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l4-mm0miezdxslk27",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mm0miezitdkw75",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-mm0miezdfj7o8f",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mm0mif05wxsf1b"
+    ]
+  }
+}

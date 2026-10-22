@@ -1,0 +1,41 @@
+{
+  "id": "sp-50054950504",
+  "slug": "tinywhoop-65-85mm",
+  "name_zh": "Tinywhoop 微型穿越機壁掛支架🛠️ 65～85mm 機架收納固定座 牆面展示架",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [
+    "85mm"
+  ],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "•\t#Tinywhoop\n•\t#微型穿越機\n•\t#Tinywhoop壁掛\n•\t#穿越機收納架\n•\t#牆面展示架\n•\t#洞洞板收納\n•\t#whoop機庫\n•\t#FPV收納\n•\t#3D列印支架\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t可選單掛式／多掛排架：單個掛一台、或一排掛 3～5 台，牆上一眼看到今天要飛哪一台。\n•\t安裝方式多元：螺絲、3M 無痕膠、掛在洞洞板都可以，租屋族也能輕鬆佈置牆面機庫。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "50054950504",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

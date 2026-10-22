@@ -1,0 +1,38 @@
+{
+  "id": "sp-54662014571",
+  "slug": "iflight-fpv",
+  "name_zh": "iFlight 超纖皮電池綁帶 FPV穿越機 電池固定帶 魔鬼氈綁帶 防滑扎帶 電池束帶 鋰電池固定帶",
+  "sku": null,
+  "brand": "iFlight",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "straps",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "【產品特色】\n✔ iFlight 原廠設計\n✔ 超纖皮材質耐磨耐用\n✔ 高強度魔鬼氈固定\n✔ 防止電池滑動位移\n✔ 輕量化設計不增加負擔\n✔ 適合 Freestyle、競速及長航飛行\n✔ 可重複使用\n\n【產品規格】\n品牌：iFlight\n材質：超纖皮＋魔鬼氈\n用途：固定鋰電池\n顏色：黑色\n適用機型：FPV穿越機、固定翼、航模\n\n【適用電池】\n4S LiPo\n6S LiPo\n18650 長航電池\n21700 長航電池\nFPV 鋰電池組\n\n【包裝內容】\niFlight 超纖皮電池綁帶 ×1\n\n【注意事項】\n請依機架尺寸選擇適合長度規格。\n建議搭配防滑電池墊使用，固定效果更佳。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "54662014571",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

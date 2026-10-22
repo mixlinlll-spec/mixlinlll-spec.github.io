@@ -1,0 +1,41 @@
+{
+  "id": "sp-55754040549",
+  "slug": "tinywhoop-65-80mm-3d-8",
+  "name_zh": "Tinywhoop 65～80mm 機架＆強化件🛸 3D列印碳纖8% 微型穿越機機架 增強保護件/機臂補強/電池托架",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [
+    "80mm"
+  ],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#Tinywhoop機架\n#65mm機架\n#75mm機架\n#80mm機架\n#微型穿越機\n#機架強化件\n#3D列印碳纖\n#碳纖8材料\n#室內炸機\n#FPV改裝配件\n#台灣現貨\n#快速出貨\n\n⚠️ 務必備註顏色。訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋屬正常現象\n⚠️ 客製化務必聊聊討論\n\n室內場炸久了，原廠機架不是裂角就是槳罩變形嗎？😆\n這個「Tinywhoop 65～80mm 機架及強化件」賣場，集中擺放各類 65/75/80mm 微型穿越機專用 3D 列印碳纖 8% 機架與補強件，從整套機架到機臂補強、電池托、保險桿一次找齊。\n\n產品特色：\n💪 碳纖 8% 增強材質：採用含碳纖維填料的 3D 列印線材，剛性與耐撞性優於一般 PLA/PLA+，更耐高溫、不易軟腳。\n​\n🧩 多尺吋機架：覆蓋 65mm／75mm／80mm Tinywhoop 平台，可依電機尺寸、槳徑與電池配置挑選適合機架。\n🛡️ 專用強化件：提供機臂補強、槳罩護條、相機支架、電池固定座等零件，讓原廠機也能升級更耐炸。\n🛠️ 支援客製修改：可依玩家使用的飛控、電池插頭或相機型號，微調孔位與走線設計，歡迎先聊聊確認。\n​",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "55754040549",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

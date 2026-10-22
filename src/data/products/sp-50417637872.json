@@ -1,0 +1,43 @@
+{
+  "id": "sp-50417637872",
+  "slug": "betafpv-meteor75-pro-ii-65mm-75mm",
+  "name_zh": "BETAFPV Meteor75 Pro II 收納盒 Meteor75 一代適用 65mm 75mm TinyWhoo",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "cases",
+  "tags": [],
+  "compatible_sizes": [
+    "65mm",
+    "75mm"
+  ],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#BETAFPV #Meteor75ProII #Meteor75 #TinyWhoop #FPV穿越機 #穿越機收納盒 #FPV收納 #65mm穿越機 #75mm穿越機 #電翼動力\n\nBETAFPV Meteor75 Pro II 專用收納盒設計，Meteor75 一代同樣可使用，並可兼容多數 65mm／75mm TinyWhoop 小型穿越機。\n✔ 一盒整合收納：穿越機、電池、充電器集中攜帶\n✔ 機體獨立固定區，避免攜帶途中碰撞槳葉與機身\n✔ 電池分隔收納，可同時攜帶多顆 1S 電池\n✔ 充電器專屬位置，外出飛行不用再帶多個盒子\n適用機型：\nBETAFPV Meteor75 Pro II\nBETAFPV Meteor75／Meteor75 Pro 一代\n多數 65mm TinyWhoop\n多數 75mm TinyWhoop\n※ 不同品牌機架、天線高度及改裝配件可能影響實際放置空間，購買前建議確認尺寸。\n※ 商品為收納盒，圖片中的穿越機、電池及充電器為展示用途，實際出貨內容依賣場選項為準。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "50417637872",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

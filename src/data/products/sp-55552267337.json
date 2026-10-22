@@ -1,0 +1,54 @@
+{
+  "id": "sp-55552267337",
+  "slug": "fpv-6s-4s-130c",
+  "name_zh": "推廣期間特價中! 【十安動力❌電翼動力】FPV穿越機電池 6S電池 / 4S電池 130C 競速花飛專用 ✈️ 現貨免運",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "6s",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "4S",
+    "6S"
+  ],
+  "short_description": "",
+  "description": "#FPV電池 #穿越機電池 #十安電池 #130C #6S電池 #22.2V #航模電池 #無人機電池 #動力電池 #高倍率電池 #競速穿越機 #花飛 #FPV #穿越機配件 #RC電池 #智能電池 #現貨 #免運 #蝦皮商城\n\n⚡️ 【十安動力 - 為勝利充能】 ⚡️\n十安 ShiAnMx 授權台灣官方代理賣場！我們專注於為極限 FPV 飛手提供最可靠、最具爆發力的動力解決方案。十安 130C 極限系列電池，是專為競速（Racing）與花式（Freestyle）飛行設計，確保您的穿越機在每一個動作中都能獲得源源不絕的強勁推力。\n\n✨ 產品核心優勢 - 為什麼選擇十安？\n✅ 【130C 極致爆發】\n超高放電倍率，提供瞬間爆發力，滿足競速起步、花飛大動作的極致動力需求，告別「油門軟腳」！\n✅ 【精選電芯 穩定耐用】\n採用頂級A品電芯，經過嚴格配對工藝，內阻一致性極佳。電壓輸出平穩，循環壽命更長，性價比之王。\n✅ 【輕量化設計 靈動飛行】\n優化結構設計，在保證容量的同時盡可能減輕重量，讓你的穿越機反應更敏捷，飛行時間更優化。\n✅ 【多重安全防護】\n通過UN38.3等國際安全認證，外觀平整、焊接牢固，杜絕短路風險，為您的愛機提供最安心的保障。\n✅ 【廣泛應用】\n完美適用於：2.5~5寸競速穿越機、花飛機、航拍無人機、遙控車、船模等各種高功率模型。\n\n🛡️ 購買須知與售後服務：\n首次使用前，建議先滿充滿放一次以激活最佳性能。\n存放時請保持半電狀態（3.8V/片），並置於陰涼乾燥處。\n1.S 數選擇： 請根據您的穿越機馬達和電變（ESC）規格，選擇正確的 S 數（如 4S 或 6S）。\n2.接頭： 預設配置 XT60/XT30 接頭（請在規格選項中確認）。\n3.安全提醒： 請務必使用專業的平衡充電器進行充電，並在安全環境下使用。\n4.售後保障： 本賣場為十安 ShiAnMx 台灣官方授權代理，提供完整的售後諮詢與服務。\n立即升級你的動力系統，體驗前所未有的飛行快感！",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "55552267337",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "十安 × 電翼動力聯名，seller_role 需核對；標題含「特價／現貨免運」，官網不沿用促銷字樣",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mlru61w20ydk13",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mlrtjyz0ni84bc",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mlrtjyzj2i9x90",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mlrtjyzk07wh14",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mlrtjyzj3wud2d",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mlrtjyzd3ldv1d",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mlrtjyz058uad6",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztn-mhlonzaymwhxf3",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztn-mhlonzayppmte8",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mlrtlqjauh3c81"
+    ]
+  }
+}

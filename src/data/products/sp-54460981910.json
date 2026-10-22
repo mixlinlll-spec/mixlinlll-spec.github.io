@@ -1,0 +1,42 @@
+{
+  "id": "sp-54460981910",
+  "slug": "ovonic-rebel-3s-550mah-140c-xt30",
+  "name_zh": "OVONIC Rebel 3S 550mAh 140C XT30 穿越機鋰電池 FPV高倍率電池 11.4V LiHV",
+  "sku": null,
+  "brand": "OVONIC",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "1s-micro",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "3S"
+  ],
+  "short_description": "",
+  "description": "#OVONIC #FPV電池 #穿越機電池 #550mAh #3S電池 #XT30 #LiHV #140C #花飛 #FPV #無人機電池 #航模 #Freestyle #高倍率電池 #穿越機\n\nOVONIC Rebel 系列 3S 550mAh 140C 高倍率電池🔥\n專為 FPV 穿越機與高性能花飛打造\n\n📌產品特色\n・140C 高倍率輸出｜瞬間爆發力強\n・LiHV 高壓版本｜滿電可達 11.4V\n・XT30 接頭｜常見微型穿越機適用\n・輕量化設計｜約44g\n・高性能放電｜適合激烈操作與花飛\n📌產品規格\n容量：550mAh\n配置：3S1P\n電壓：11.4V（LiHV）\n倍率：140C\n重量：約44g\n接頭：XT30\n平衡頭：JST-XHR-4P\n\n📌適用機型\n・2吋～3吋 穿越機\n・微型 FPV 花飛機\n・高性能輕量機種\n📌飛行特色\n・油門反應快速\n・爆發力強\n・適合花飛與高速操作\n・輸出穩定不軟腳\n⚠️注意事項\n・建議使用 LiHV 模式充電\n・請勿過充／過放\n・飛行後請勿立即充電\n・長時間不使用請存儲電壓保存",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "54460981910",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mokb42751slc08"
+    ]
+  }
+}

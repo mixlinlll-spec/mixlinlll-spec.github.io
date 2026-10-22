@@ -1,0 +1,41 @@
+{
+  "id": "sp-47268009795",
+  "slug": "geprc-linkflow-915m-2-4g-1w-lr1121",
+  "name_zh": "【電翼動力】GEPRC LINKFLOW 雙頻高頻頭 915M/2.4G 1W LR1121 JR槽 FPV穿越機",
+  "sku": null,
+  "brand": "GEPRC",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "radio-gps",
+  "subcategory_id": "elrs",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#電翼動力 #GEPRC #LINKFLOW #高頻頭 #915MHz #ELRS #FPV穿越機 #穿越機零件 #遠航FPV #FPV配件\n產品名稱：GEPRC LINKFLOW 915M/2.4G 雙頻高頻頭\n工作頻段：915MHz（FCC）／868MHz（EU）／2.4GHz（ISM）\n射頻晶片：LR1121\n主控晶片：ESP32\n背包晶片：ESP32-C3\n最大功率：1000mW\n晶振：溫度補償晶振\n封包率：50Hz～500Hz（LoRa）、1000Hz（FSK）\n天線接頭：SMA（外螺內孔）\n擴充槽型式：JR 槽\nWiFi：支援\nRGB 指示燈：支援\n外接供電：2S～6S\n重量：60g（不含天線）\n韌體：GEPRC LINKFLOW 900/2400 Dual-Band TX\n\n① 一顆雙頻：915／868MHz 遠航 + 2.4GHz 高更新率，不用買兩顆模組\n② LR1121 雙頻射頻晶片，最大 1W 輸出，穿透與距離表現更好\n③ 溫度補償晶振，外場溫差下頻率更穩定，連線不易飄\n④ JR 標準槽 + SMA 天線接頭 + WiFi 更新韌體，安裝與維護都方便",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "47268009795",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mt96cvffibyd3f",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mt96cvffwdmy8f"
+    ]
+  }
+}

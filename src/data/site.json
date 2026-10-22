@@ -1,0 +1,49 @@
+{
+  "_comment": "全站設定的唯一來源。聯絡方式 enabled=false 或值為 null 時，網站不會顯示該按鈕。",
+  "brand": {
+    "name_zh": "電翼動力",
+    "name_en": "EWP",
+    "tagline": "READY TO FLY",
+    "motto": "BUILD. TUNE. FLY."
+  },
+  "copyright_since": 2026,
+  "base_url": "https://mixlinlll-spec.github.io",
+  "default_description": "電翼動力 EWP，專注 FPV 穿越機整機、零件、動力電池、客製組裝、維修與調校。",
+  "default_og_image": "/assets/img/builds/huan-1200.jpg",
+  "contact": {
+    "line": {
+      "enabled": true,
+      "label": "LINE 官方帳號",
+      "url": "https://lin.ee/WIUCkWP",
+      "qr_image": "/assets/contact/line-qr.jpg",
+      "verified": "2026-10-22：由 EWP 提供之 QR 圖檔解碼，內容與 url 一致"
+    },
+    "shopee": {
+      "enabled": true,
+      "label": "蝦皮賣場",
+      "url": "https://shopee.tw/mixlin",
+      "shop_id": null,
+      "_shop_id_note": "填入已確認的蝦皮 shop ID 後，草稿中的 shopee_item_id 才會自動組成商品連結。尚未確認前保持 null。"
+    },
+    "email": {
+      "enabled": true,
+      "value": "mixlin.lll@gmail.com"
+    },
+    "instagram": {
+      "enabled": true,
+      "label": "Instagram｜靈雀電池",
+      "url": "https://www.instagram.com/spiritsparrow.battery/"
+    },
+    "facebook": { "enabled": false, "label": "Facebook", "url": null },
+    "youtube": { "enabled": false, "label": "YouTube", "url": null },
+    "phone": { "enabled": false, "value": null },
+    "address": { "enabled": false, "value": null },
+    "hours": { "enabled": false, "value": null },
+    "online_only_note": "目前僅提供線上聯絡，暫不公開營業時間與地點。"
+  },
+  "policies": {
+    "privacy": { "approved": true },
+    "terms": { "approved": false },
+    "shipping-returns": { "approved": false }
+  }
+}

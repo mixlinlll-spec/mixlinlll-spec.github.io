@@ -1,0 +1,40 @@
+{
+  "id": "sp-45150835735",
+  "slug": "dji-o3-air-unit-3d",
+  "name_zh": "【DJI O3 AIR UNIT 專用】一體式安裝套件／3D列印改裝配件｜含保護罩＋天線支架＋鏡頭固定座",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#DJIO3AirUnit #DJIFPV改裝 #O3列印件 #TPU防震 #3D列印配件 #FPV改裝 #穿越機配件 #DJIFPV配件 #O3保護套 #O3天線支架 #AirUnit防護 #FPV零件 #穿越機升級 #O3一體式套件\n\n🔥 商品特色\n專為 DJI O3 Air Unit 數位圖傳系統 精準設計的 一體式改裝套件，整合鏡頭、主機固定座與天線尾座。\n採用 類ABS 製作，保護昂貴的O3模組，讓飛行更穩定安全。\n\n💡 套件內\n🎥 O3 鏡頭固定座\n📡 單天線尾座\n\n🛠 材質與製作\n材質：類ABS\n\n📍適用機種\n支援所有搭載 DJI O3 Air Unit 的穿越機機架\n適用於 所有含有狗座",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "45150835735",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

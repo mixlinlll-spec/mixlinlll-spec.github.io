@@ -1,0 +1,40 @@
+{
+  "id": "sp-56451995060",
+  "slug": "hdzero-goggles-3d-fpv",
+  "name_zh": "HDZERO Goggles 專用 天線支架｜防滑防脫｜3D 列印 FPV 眼鏡天線穩定器",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#HDZero #HDZeroGoggles #天線支架 #天線固定座 #FPV眼鏡配件 #圖傳天線 #3D列印TPU #天線防滑 #天線穩定器 #穿越機配件 #靈雀FPV #HDZero配件\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nHDZERO Goggles 天線支架\n專為 HDZERO Goggles 設計的天線固定支架，有效提升天線穩定度，避免天線在激烈飛行或收納移動時鬆脫、轉動或滑落。\n\n📐 規格資訊\n適用型號：HDZERO Goggles\n重量：約 3–6 g\n功能：天線固定、防滑、防轉、防脫落",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "56451995060",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

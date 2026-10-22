@@ -1,0 +1,39 @@
+{
+  "id": "sp-43321578541",
+  "slug": "65w-8-30v-pd-usb-a",
+  "name_zh": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "chargers",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#快充模組 #降壓模組 #PD快充 #航模電源 #穿越機電源 #65W快充 #外場電包 #智慧快充 #USBTypeC #行動電源模組\n\n65W 降壓快充模組｜多口快充智慧解決方案\n\n🌟 產品亮點\n智能降壓技術，輸入電壓範圍 8–30V\n多電壓檔位輸出，兼容多類設備\n採用優質 3518 晶片板，效能穩定\n\n65W C口模組\n支援輸出：5V / 9V / 12V / 20V\n最大輸出功率：65W\n\n⚡ 使用指南\n確認電池 S 數（輸入電壓需 8–30V）\n正確接入電池（請勿接反！）\n自動識別設備，智慧輸出匹配電壓",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "43321578541",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

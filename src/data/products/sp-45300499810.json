@@ -1,0 +1,40 @@
+{
+  "id": "sp-45300499810",
+  "slug": "speedybee-mario5-3d-fpv",
+  "name_zh": "【SpeedyBee Mario5】 全套 3D 打印件 保護套件 FPV 穿越機 安裝套件 3D打印 專用配件",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#SpeedyBee #Mario5 #3D打印件 #FPV #穿越機 #飛塔保護 #打印件套裝 #穿越機配件 #DIY #航模 #Mario5打印件 #樹脂打印 #SpeedyBeeMario5 #安裝套件 #機架保護 #蝦皮\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n兼容型號： SpeedyBee Mario5 \n顏色： 多色可選 \n特點： 官方設計、孔位精準、輕量化、堅固耐用、安裝簡便",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "45300499810",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

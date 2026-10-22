@@ -1,0 +1,47 @@
+{
+  "id": "sp-49316569177",
+  "slug": "6s-fpv-1550mah-180c-xt60-22-2v",
+  "name_zh": "6S FPV穿越機鋰電池 1550mAh 180C XT60 22.2V 高倍率競速電池 花飛 閃電兔 銀瑞",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "6s",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "",
+  "description": "#FPV #穿越機電池 #6S電池 #22點2V #200C #XT60 #鋰電池 #LiPo #競速電池 #花飛電池 #Freestyle #5吋穿越機 #無人機電池 #BLITZ #閃電兔 #電翼動力",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "49316569177",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-ms9gpewl7awwf0",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-ms9gpewl8phcab",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-ms9gpewla41sef",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-ms9gpewlbim867",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-ms9gpewlcx6o80",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l4-ms9gpewlebr4de"
+    ]
+  }
+}

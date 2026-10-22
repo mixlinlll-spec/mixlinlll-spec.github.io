@@ -1,0 +1,48 @@
+{
+  "id": "sp-44957562248",
+  "slug": "geprc-t-cube18-2-fpv-aio",
+  "name_zh": "GEPRC T-Cube18 2吋穿越機｜新手入門FPV｜AIO飛控｜內建接收｜5.8G圖傳｜輕量FPV",
+  "sku": null,
+  "brand": "GEPRC",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "complete-drones",
+  "subcategory_id": "micro",
+  "tags": [],
+  "compatible_sizes": [
+    "2 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "FPV穿越機, GEPRC, T-Cube18, 新手穿越機, 航拍無人機, 2吋FPV, AIO飛控, 5.8G圖傳, FPV入門, Cinewhoop, 無人機, FPV Drone\n\n【🔥新手也能輕鬆飛的FPV入門機】\n 不會調機？不會組裝？這台直接幫你搞定\n 👉 開箱即可飛｜穩定｜好上手\n【✨產品特色】\n ✔ 輕量設計 👉 操控簡單穩定，新手友善\n ✔ AIO飛控整合 👉 安裝簡單，降低故障率\n ✔ 內建接收機 👉 減少配件成本與接線複雜度\n ✔ CNC鏡頭座 👉 抗震強化，畫面更穩\n ✔ 5.8G圖傳 👉 傳輸穩定，適合日常航拍\n ✔ 客製天線 👉 提升訊號穩定度\n【⚙️商品規格】\n 品牌：GEPRC｜型號：T-Cube18｜尺寸：2吋｜飛控：AIO飛控｜圖傳：5.8G｜接收機：內建｜適用：FPV入門 / 航拍\n【📦包裝內容】\n 穿越機×1（依版本配置）\n【⚠️注意事項】\n 需搭配遙控器與眼鏡使用｜建議初學者於空曠環境練習｜避免錯誤電池使用\n【🚀適合族群】\n 新手入門｜日常航拍｜輕度玩家｜練習飛行",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "44957562248",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mm5dwp8cxfd18a",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-mm5dwp8cytxhf2",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mm5dwp8d08hxa5",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mm5dwp8d1n2d28",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mm5dwp8d31mt3a",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mm5dwp8d4g7954",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mm5dwp8d5urp38"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sp-47915211028",
+  "slug": "betafpv-air-camera-fpv-1-48g-1s",
+  "name_zh": "BETAFPV Air Camera FPV 超輕量攝影機 1.48g 1S Tiny Whoop Air65",
+  "sku": null,
+  "brand": "BETAFPV",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "video",
+  "subcategory_id": "cameras",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#BETAFPV #AirCamera #Air65 #Air75 #Meteor65 #Meteor75 #TinyWhoop #FPV #穿越機 #FPV相機",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "47915211028",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mrbb0h33xxqe07",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mrbb0h35ryf5e4",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mrbb0h30z6kl28",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mrbb0h33ihhi09",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mrbb0h4nb5l8fa",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mrbb0h34kete5d",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mrbb0h397ke865"
+    ]
+  }
+}

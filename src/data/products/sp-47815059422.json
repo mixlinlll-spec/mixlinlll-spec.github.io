@@ -1,0 +1,41 @@
+{
+  "id": "sp-47815059422",
+  "slug": "gobu-tracker-3-5-fpv-freestyle-o4",
+  "name_zh": "GOBU Tracker 3.5吋 FPV穿越機機架 碳纖維 Freestyle 可換機臂 O4 Pro O4 Lite",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "frames-parts",
+  "subcategory_id": "frames",
+  "tags": [],
+  "compatible_sizes": [
+    "3.5 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "GOBU Tracker｜追蹤者 3.5 吋\n不是每一台 FPV 都只為了速度。\n有些機體，天生就是為了探索未知。\n更輕、更靈活、更安靜。\n它不是花飛，也不是純 Long Range。\n它是 GOBU 系列 全新的定位。\nGOBU Tracker｜追蹤者 3.5 吋\n新品即將登場。\nMore Than A Frame.",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "47815059422",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

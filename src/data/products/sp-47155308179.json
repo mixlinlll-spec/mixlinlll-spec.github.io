@@ -1,0 +1,40 @@
+{
+  "id": "sp-47155308179",
+  "slug": "hglrc-draknight-3d",
+  "name_zh": "HGLRC 龍騎士 Draknight🐉 全套3D列印件 機鼻/相機倉/電池托/天線座/保護件 微型穿越機專用套裝",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#HGLRC龍騎士\n#Draknight\n#龍騎士機架\n#3D列印套件\n#FPV保護件\n#相機保護罩\n#電池托架\n#天線座\n#微型穿越機\n#台灣現貨\n#快速出貨\n\n針對 HGLRC龍骑士 機架設計的完整 3D 列印件套組，包含機鼻外殼、相機保護、電池托、天線固定、腳架與各類小保護件，直接一次帶齊。\n依照原廠尺寸建模，孔位與鎖點對應龍騎士機架，不用自己改檔或削料即可安裝。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "47155308179",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

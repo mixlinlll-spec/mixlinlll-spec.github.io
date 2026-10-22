@@ -1,0 +1,40 @@
+{
+  "id": "sp-40126795922",
+  "slug": "betafpv-pavo20",
+  "name_zh": "BetaFPV Pavo20 專用配件套組｜Pavo20 防摔件／天線固定座／電池托架等各式改裝配件",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#BetaFPV #Pavo20 #Pavo20配件 #穿越機改裝 #無人機配件 #Pavo20備品 #FPV配件 \n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D 列印件可能有些微層紋屬正常現象⚠️\n\n專為 BetaFPV Pavo20 打造的多款升級與保護配件，包含機架防摔件、電池托架、天線固定座、槳葉防護件等多種選項。強化機體保護性、穩定性與實用度，適合日常飛行與高強度練習使用。\n\nPavo20 專屬尺寸，安裝簡單、貼合度高\n提供多款功能配件：電池固定、天線穩固、保護套等\n有效提升耐摔性與整體飛行穩定度\n\n🔴DJI O4 AIR PRO 一體式機架 (碳纖維打印僅提供:黑色)\n\n🔴 Walksnail Moonlight 專用一體式機架 (碳纖維打印僅提供:黑色)\n\n🔴 電池保護倉 (碳纖維打印僅提供:黑色)\n適配 LAVA 550mA鋰電池。或任何尺寸在68.5(長) x 20.4(寬) x 15.7(高)mm以內的電池\n\n🔴 小O4套件抑制果凍效應 100% (軟質TPU)\n\n🔴 XT30接口固定套件",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "40126795922",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

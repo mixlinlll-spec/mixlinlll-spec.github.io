@@ -1,0 +1,40 @@
+{
+  "id": "sp-54152148395",
+  "slug": "beta-meteor75-pro-1s",
+  "name_zh": "BETA Meteor75 Pro 專用收納盒｜穿越機＋1S電池一體式保護盒｜",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "cases",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#BetaFPV #Meteor75Pro #75Pro收納盒 #Whoop收納 #穿越機攜帶盒 #1S電池收納 #3D列印 #TPU配件 #微型穿越機\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D 列印件可能有些微層紋屬正常現象⚠️\n\n專為 BETA Meteor75 Pro 設計的專用收納盒，內部配置穿越機槽位與 1S 電池固定架，能一次帶走機體＋多顆電池，外出飛行更方便。盒體具良好保護性，避免機體在包包中被壓損。\n\n產品特色\nMeteor75 Pro 專屬尺寸，完美卡位不晃動\n一體成型防撞設計，外出攜帶更安心\n最多存放13塊550MAH LAVA電池\n收納盒中間可置放 充電器",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "54152148395",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

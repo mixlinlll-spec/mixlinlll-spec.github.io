@@ -1,0 +1,38 @@
+{
+  "id": "sp-42826099825",
+  "slug": "speedybee25-o3-o4pro",
+  "name_zh": "Speedybee25 O3改O4PRO 分頭行動套組",
+  "sku": null,
+  "brand": "SpeedyBee",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "video",
+  "subcategory_id": "dji-o4",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": "DJI O4",
+  "battery_cells": [],
+  "short_description": "",
+  "description": "適用與speedybee25的o4 pro數傳支架\n根據3d列印特性優化了受力結構的設計，並盡可能提供了保護o4天空端的能力\n整體安裝方式與官方鋁合金套件沒有太大區別",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "42826099825",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "sp-47214010019",
+  "slug": "iflight-fullsend-lr-8000mah-6s-xt60",
+  "name_zh": "iFlight Fullsend LR 8000mAh 6S 鋰電池 XT60 長航程 FPV 穿越機 Liion 遠航",
+  "sku": null,
+  "brand": "iFlight",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "6s",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "",
+  "description": "#iFlight #Fullsend #LR #8000mAh #6S #Liion #LongRange #FPV #穿越機 #長航程 #遠航 #空拍機 #鋰電池 #XT60 #巡航 #電翼動力\niFlight Fullsend LR 8000mAh 6S 長航程鋰電池，專為Long Range FPV打造，採用高容量低倍率Li-ion電芯，提供更長飛行時間與穩定電壓輸出，適合7吋、8吋及長航程空拍機使用，讓你飛得更遠、更久。\n【產品特色】\n✔ 8000mAh超大容量，提升飛行續航\n✔ Li-ion低倍率設計，適合長航程飛行\n✔ 電壓輸出穩定，降低飛行壓降\n✔ XT60接頭，主流長航機適用\n✔ 適合Long Range、巡航、航拍任務\n【產品規格】\n品牌：iFlight\n系列：Fullsend LR\n容量：8000mAh\n電壓：6S／22.2V\n電池類型：Li-ion 鋰離子電池\n接頭：XT60\n適用：Long Range FPV\n【適用機型】\n7吋～10吋 Long Range 穿越機\n固定翼\n長航程空拍平台\n巡航／航拍飛行\n※ 本產品為長航程Li-ion電池，不建議使用於高負載競速或激烈花飛。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "47214010019",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mqna4b8afcoweb"
+    ]
+  }
+}

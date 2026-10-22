@@ -1,0 +1,68 @@
+{
+  "_comment": "EWP 自製機型。specs 僅放已公開或經 EWP 核對的內容；spec_status=unverified 時頁面會顯示『代表配置，正式規格以委託前確認為準』。",
+  "builds": [
+    {
+      "id": "huan", "slug": "huan", "name_zh": "幻", "name_en": "HUAN", "size": "5 吋", "use": "Freestyle 花飛",
+      "featured": true, "order": 1, "status": "showcase",
+      "summary": "黑紫配色的五吋花飛機，搭配 MAD 2207 / 1950KV 馬達與 FDI F722 / 60A 堆疊。",
+      "highlights": ["5 吋花飛", "6S 動力", "True X"],
+      "specs": [
+        { "key": "尺寸", "value": "5 吋" },
+        { "key": "動力", "value": "6S" },
+        { "key": "馬達", "value": "MAD 2207 / 1950KV" },
+        { "key": "飛控／電調", "value": "FDI F722 / 60A 堆疊" }
+      ],
+      "spec_status": "unverified",
+      "images": [ { "src": "/assets/img/builds/huan-1200.webp", "src_small": "/assets/img/builds/huan-600.webp", "fallback": "/assets/img/builds/huan-1200.jpg", "alt": "電翼動力「幻」五吋花飛機品牌海報，黑紫機身搭配 FDI F722 與 60A 電調", "width": 1200, "height": 1200 } ],
+      "related_product_ids": ["sp-50367700235"]
+    },
+    {
+      "id": "fang-v", "slug": "fang-v", "name_zh": "毒牙", "name_en": "FANG V", "size": "5 吋", "use": "6S 花飛／競速",
+      "featured": false, "order": 2, "status": "preparing",
+      "summary": "五吋 6S 花飛與競速取向機型。正式配置整理中，詳細規格請透過 LINE 洽詢。",
+      "highlights": ["5 吋", "6S"],
+      "specs": [], "spec_status": "unverified", "images": [],
+      "related_product_ids": ["sp-50857844998"]
+    },
+    {
+      "id": "gobu-sentinel", "slug": "gobu-sentinel", "name_zh": "戈布・哨兵", "name_en": "GOBU SENTINEL", "size": "3.5 吋", "use": "Freestyle 花飛",
+      "featured": true, "order": 3, "status": "showcase",
+      "summary": "可換臂的 3.5 吋花飛平台。1404.5 / 4500KV 馬達，搭配 4S 動力，兼顧體積與維修便利。",
+      "highlights": ["3.5 吋花飛", "4S 動力", "可換機臂"],
+      "specs": [
+        { "key": "尺寸", "value": "3.5 吋" },
+        { "key": "動力", "value": "4S" },
+        { "key": "馬達", "value": "1404.5 / 4500KV" },
+        { "key": "機臂", "value": "可換機臂" }
+      ],
+      "spec_status": "unverified", "images": [],
+      "related_product_ids": ["sp-29295757187"]
+    },
+    {
+      "id": "gobu-pocket", "slug": "gobu-pocket", "name_zh": "戈布", "name_en": "GOBU POCKET V2", "size": "2.5 吋", "use": "小型花飛",
+      "featured": true, "order": 4, "status": "showcase",
+      "summary": "以 Jeno Pocket V2 為基礎的小型機。1103 / 8000KV 馬達，提供數位或類比圖傳的配置方向。",
+      "highlights": ["2.5 吋", "輕巧機身", "客製配置"],
+      "specs": [
+        { "key": "尺寸", "value": "2.5 吋" },
+        { "key": "機架基礎", "value": "Jeno Pocket V2" },
+        { "key": "馬達", "value": "1103 / 8000KV" },
+        { "key": "圖傳", "value": "數位或類比（依配置）" }
+      ],
+      "spec_status": "unverified", "images": [],
+      "related_product_ids": ["sp-46059782425"]
+    },
+    {
+      "id": "long-range-7", "slug": "long-range-7", "name_zh": "長航系列", "name_en": "LONG RANGE 7\"", "size": "7 吋", "use": "長航／遠距巡航",
+      "featured": false, "order": 5, "status": "planned",
+      "summary": "七吋長航配置規劃中。依飛行距離、圖傳與電池需求個別討論，歡迎先透過 LINE 說明用途。",
+      "highlights": ["7 吋", "長航"], "specs": [], "spec_status": "unverified", "images": [], "related_product_ids": []
+    },
+    {
+      "id": "x8-cinelifter", "slug": "x8-cinelifter", "name_zh": "X8 影視機", "name_en": "X8 CINELIFTER", "size": "X8 共軸", "use": "影視掛載",
+      "featured": false, "order": 6, "status": "planned",
+      "summary": "大型 X8 共軸影視機開發中。掛載設備與安全測試流程確認前，不提供公開規格。",
+      "highlights": ["X8 共軸", "影視掛載"], "specs": [], "spec_status": "unverified", "images": [], "related_product_ids": []
+    }
+  ]
+}

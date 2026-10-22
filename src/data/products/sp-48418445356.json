@@ -1,0 +1,38 @@
+{
+  "id": "sp-48418445356",
+  "slug": "fdi-f405-f722-aio-40a-icm42688p",
+  "name_zh": "FDI F405 F722 AIO 40A 飛控 一體式 ICM42688P 16M黑盒 GPS 穿越機 電翼動力",
+  "sku": null,
+  "brand": "FDI",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "fc-esc",
+  "subcategory_id": "aio",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "【F722 AIO 40A 一體式飛控】\n\n飛控與四合一電調整合在同一片板上，減少線材、降低故障點、縮短組裝時間。\n持續電流 40A，搭配 ICM-42688-P 陀螺儀與 16MB 板載黑盒，適合 3～5 吋穿越機\n\n■ 主要規格\n持續電流：40A\n陀螺儀：ICM-42688-P\n黑盒：板載 16MB Flash\n氣壓計：內建\n韌體：支援 Betaflight\n圖傳接口：高清／類比圖傳直插接口\nGPS：支援外接 GPS 模組\n蜂鳴器：支援\nUSB：Type-C\n\n■ 商品特點\n1. 飛控與電調一體，走線少、重量輕，組裝與維修都更單純\n2. ICM-42688-P 陀螺儀，噪訊表現優於舊款 MPU 系列\n3. 板載 16MB 黑盒，可直接錄製飛行資料進行調參分析\n4. 內建氣壓計，搭配 GPS 可使用高度相關功能\n\n■ 適用對象\n・3～5 吋穿越機組裝\n・想簡化走線、減少焊接點的自組玩家\n・需要黑盒資料做調參的人\n・搭配 DJI O4 或類比圖傳皆可\n\n■ 購買前請務必確認\n1. 40A 為原廠標示之持續電流，未標示測試條件（環境溫度、散熱、電壓）。\n   實際可用電流會因散熱、氣流與馬達配置而異，\n   選用時請預留餘裕，不要用剛好打平的規格。\n2. 下單前請確認你的機架安裝孔距是否相符（一般 AIO 為 25.5×25.5mm 或 20×20mm，\n   本商品孔距請私訊確認，或見下方規格補充）。\n3. 請確認馬達電流需求在本板能力範圍內。高 KV、大槳配置電流需求高，\n   超出電調能力會導致過熱或燒毀。\n4. 圖傳直插接口的針腳定義請以實際板上絲印為準，接錯可能造成損壞。\n5. 本商品不含 GPS 模組、蜂鳴器、圖傳與接收機。\n\n■ 安裝與設定注意\n1. 焊接電池線時請注意極性，接反通電會立即燒毀，且不在保固範圍。\n2. 首次上電強烈建議使用防煙線（Smoke Stopper），確認無異常再正常上電。\n3. 安裝時請使用橡膠減震柱，AIO 飛控對震動較敏感，硬鎖會影響陀螺儀表現。\n4. 建議安裝電容於電池輸入端，降低電壓突波對飛控與電調的衝擊。\n5. 韌體目標（Target）請依原廠提供版本為準，刷錯 Target 可能導致腳位錯亂。\n   若不確定，請先私訊詢問，不要憑猜測刷入。\n\n■ 保固說明\n1. 電子零件因焊接不當、極性接反、短路、過電流、摔機或進水造成的損壞，\n   不在保固範圍。\n2. 收到後請先確認外觀無損、USB 可正常連線，再進行焊接。\n   一經焊接即視為已接受商品狀態。\n\n■ 需要代焊或設定嗎\nAIO 飛控焊點多、空間小，且一體式設計代表電調燒了飛控也跟著報銷。\n我們提供代焊與完整設定服務，包含：\n焊接、韌體確認、接收機設定、馬達方向與順序、OSD、上電測試。\n詳情請私訊。\n\n電翼動力 EWP｜Ready to Fly",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "48418445356",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

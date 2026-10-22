@@ -1,0 +1,38 @@
+{
+  "id": "sp-41372072740",
+  "slug": "item-41372072740",
+  "name_zh": "綠林松香助焊劑焊錫電烙鐵手機維修焊接高純度無鉛助焊油膏焊油",
+  "sku": null,
+  "brand": "GREENER 綠林",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "tools",
+  "subcategory_id": "soldering",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#助焊劑 #焊油膏 #焊接工具 #電子維修 #手機維修 #焊接神器 #焊接耗材 #無鉛助焊\n\n【產品特色】\n\n✔ 高純度無鉛配方，環保安全\n\n✔ 高效導電，助焊快速成型\n\n✔ 適用於手機維修、電路焊接、精密焊接\n\n✔ 攜帶方便，操作簡單，焊點牢固\n\n【產品規格】\n\n品名：绿林松香助焊劑 / 焊油膏\n\n成分：高純度無鉛焊油\n\n適用範圍：電烙鐵、手機維修、電子焊接、電路板作業\n\n保存方式：避免高溫、陽光直射，置於陰涼乾燥處",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "41372072740",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

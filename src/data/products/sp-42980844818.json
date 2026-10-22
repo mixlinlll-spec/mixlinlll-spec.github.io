@@ -1,0 +1,41 @@
+{
+  "id": "sp-42980844818",
+  "slug": "geprc-gep-f405-hd-v3-taker",
+  "name_zh": "GEPRC GEP-F405-HD V3 飛控 TAKER H60 60A 電調 F405 飛塔 DJI O3 O4直插",
+  "sku": null,
+  "brand": "GEPRC",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "fc-esc",
+  "subcategory_id": "stacks",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#GEPRC #F405 #飛控 #飛塔 #60A電調 #FPV #穿越機 #DJIO3 #DJIO4 #Freestyle #6S #無人機 #航模 #Betaflight #FPVDrone\n\nGEPRC GEP-F405-HD V3 飛控套裝\n搭配 TAKER H60_BLS 60A 4IN1 電調\n專為高性能 FPV 穿越機打造🔥\n\n📌產品特色\n・STM32 F405 主控｜穩定高速運算\n・ICM42688-P 陀螺儀｜飛行更穩定\n・16M 黑盒子｜支援飛行紀錄\n・Type-C USB 接口｜連接更方便\n・支援 DJI O3 / O4 天空端直插\n・內建 LC 濾波｜降低雜訊干擾\n・雙路 BEC｜5V@3A / 12V@2.5A\n・搭配 TAKER H60 60A 電調｜輸出強勁順滑\n\n📌飛控規格\n型號：GEP-F405-HD V3\nMCU：STM32F405\nIMU：ICM42688-P（SPI）\n黑盒子：16M\nBEC：5V@3A / 12V@2.5A\n輸入電壓：3–6S LiPo\n安裝孔距：30.5×30.5mm\nUART：6組完整串口\n\n📌電調規格\n型號：TAKER H60_BLS 60A 4IN1\n持續電流：60A\n峰值電流：65A（5秒）\n支援協議：Dshot150 / 300 / 600\n輸入電壓：3–6S LiPo\n\n📌適用對象\n・5吋 / 7吋 穿越機\n・Freestyle 花飛玩家\n・高性能 FPV 組機\n\n⚠️注意事項\n・請確認安裝尺寸與接口規格\n・建議具備焊接與組機基礎再購買\n・本商品不含接收機 / 圖傳 / 電機",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "42980844818",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mo71b6b6tkowa0",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mo71b6be8gldf5"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "sp-50452321274",
+  "slug": "item-50452321274",
+  "name_zh": "狗座雙支架｜穿越機相機固定座・高穩定安裝模組",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#狗座 #狗座支架 #雙支架 #穿越機配件 #固定支架 #fpv配件 #相機支架 #穩定安裝\n\n📦 注意事項\n\n⚠️務必備註顏色。客製化商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n狗座雙支架設計給需要更牢固相機固定的飛手，雙支撐結構提供更高穩定度，有效減少震動、畫面抖動及高速飛行的位移問題。適合各類穿越機、長航程機型與固定式攝影用途。\n\n產品特色\n雙支架結構\n坐姿式「狗座」設計，安裝穩固不晃動\n重量輕、耐用度佳，不影響飛行性能\n適合速度機、抗震機、山飛、攀升拍攝等用途",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "50452321274",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "無法自動判斷分類，暫放列印件",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

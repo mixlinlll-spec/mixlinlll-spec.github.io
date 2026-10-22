@@ -1,0 +1,39 @@
+{
+  "id": "sp-51301505584",
+  "slug": "speedybee-master-5-v2-tpu-3d",
+  "name_zh": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#Speedybee\n\n#SpeedybeeMaster5\n\n#Master5V2\n\n#穿越機配件\n\n#FPV打印件\n\n#3D列印TPU\n\n#TPU配件\n\n#穿越機改裝\n\n#穿越機保護套\n\n#FPV零件\n\n#Speedybee配件\n\n為 SpeedyBee Master 5 V2 量身打造的 全套 3D 列印配件，包含機身保護、減震、天線管理、相機固定等多項升級功能。\n採用高韌性 TPU 材質，兼具彈性與耐撞性，提升保護力與使用壽命。\n適合穿越機玩家升級、維修、改裝使用。\n\n✨ 商品特色\n高韌性 TPU 材質，耐撞耐震\n專為 SpeedyBee Master 5 V2 精準設計\n足部底墊、相機保護、天線支架等多項配件可選\n完美貼合，不干涉飛行表現\n可依需求選擇顏色或單獨配件\n\n📦 規格\n適用機型：SpeedyBee Master 5 V2\n材質：TPU（柔性、抗震）",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "51301505584",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

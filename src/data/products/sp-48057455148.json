@@ -1,0 +1,45 @@
+{
+  "id": "sp-48057455148",
+  "slug": "betafpv-c03-fpv-1200tvl-2-1mm-160",
+  "name_zh": "BETAFPV C03 穿越機攝像頭📷 室內 FPV 圈圈機專用 1200TVL 2.1mm 鏡頭 160°廣角 1g",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "video",
+  "subcategory_id": "cameras",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": "類比",
+  "battery_cells": [],
+  "short_description": "",
+  "description": "•\t#BETAFPVC03\n•\t#穿越機攝像頭\n•\t#whoop圈圈機\n•\t#1200TVL攝像頭\n•\t#室內FPV鏡頭\n•\t#2.1mm廣角\n•\t#FPV配件\n•\t#微型機攝像頭\n•\t#航模攝像頭\n•\t#台灣現貨",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "48057455148",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mm0k2dqr2xan0f",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mm0k2dqzxs74e3",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-mm0k2dr12io1ca",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l6-mm0k2dqqknwjda",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mm0k2dqr1iptef"
+    ]
+  }
+}

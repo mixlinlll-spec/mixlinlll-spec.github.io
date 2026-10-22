@@ -1,0 +1,40 @@
+{
+  "id": "sp-52802198927",
+  "slug": "betafpv-meteor65-pro",
+  "name_zh": "BetaFPV Meteor65 Pro 專用改裝配件｜防摔保護件 / 天線座 / 相機固定座 / 電池卡扣",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#meteor65pro #穿越機配件 #微型無人機 #65pro #whoop #fpv配件 #betafpv #穿越機 #機架配件 #迷你無人機\n\n📦 購買前注意\n⚠️請務必備註顏色。屬客製製作，無法退貨。\n⚠️表面可能具有些微層紋，屬正常現象。\n\n提供 Meteor65 Pro 專用的多款改裝與升級小配件，讓你的迷你穿越機更耐摔、更穩定、更好飛。常用到的固定件、保護件、強化件一站滿足，輕量不增加飛行負擔。\n\n⭕適配550豪安電池卡扣\n讓你的65可以兼容550豪安電池，卡扣僅0.6克\n\n⭕小O4天線座防脫\n天線可穿過卡扣，防止線軸抖動造成小O4畫面果凍\n\n⭕14mm機罩+原廠小o4鏡頭套件(有卡扣可上濾鏡)\n尾部天線固定不晃動，支持flywoo增廣鏡套件\n\n⭕減震保護墊圈\n有效吸收降落帶來的衝擊",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "52802198927",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

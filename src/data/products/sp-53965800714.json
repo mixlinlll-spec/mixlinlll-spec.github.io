@@ -1,0 +1,43 @@
+{
+  "id": "sp-53965800714",
+  "slug": "fpv-gps-m10-18x18mm-betaflight",
+  "name_zh": "FPV GPS 模組 M10 18x18mm 內建羅盤 電翼動力 Betaflight 穿越機 定位返航 GPS",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "radio-gps",
+  "subcategory_id": "gps",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "電翼動力 FPV 專用 GPS 模組，採用 M10 晶片與 18×18mm 迷你尺寸設計，支援多衛星定位系統，搜星速度快、定位精準，適合 FPV 穿越機、長航機、Freestyle、固定翼及 INAV 機型使用。內建羅盤功能，可支援航向辨識，搭配 Betaflight 或 INAV 可用於 GPS 定位、返航、救援模式與飛行資訊顯示。\n【產品特色】\n✔ M10 高效能 GPS 晶片\n✔ 18×18mm 迷你尺寸\n✔ 內建羅盤，支援航向辨識\n✔ 支援 Betaflight / INAV\n✔ 多衛星定位，搜星速度快\n✔ 定位精準，適合長航與返航需求\n✔ 輕量化設計，適合各類 FPV 機型\n✔ 電翼動力品牌版本\n【產品規格】\n品牌：電翼動力\n類型：FPV GPS 模組\n晶片：M10\n尺寸：約18×18mm\n功能：GPS定位／羅盤／航向辨識\n支援系統：Betaflight／INAV\n適用機型：FPV穿越機、長航機、固定翼、無人機\n【適用場景】\nGPS Rescue 救援模式\nINAV 定位返航\n長距離飛行\n飛行軌跡紀錄\nOSD 衛星數與座標顯示\n【注意事項】\n※ 安裝前請確認飛控 UART 與羅盤 I2C 接線定義。\n※ GPS 搜星速度會受天氣、場地、安裝位置與遮蔽物影響。\n※ 建議安裝於遠離圖傳、電調與高電流線材的位置，以降低干擾。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "53965800714",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "標題含「電翼動力」，品牌需核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mrqmegyzdmv941",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mrqmegyzf1fp5f",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mt0d5ocxyw3s56"
+    ]
+  }
+}

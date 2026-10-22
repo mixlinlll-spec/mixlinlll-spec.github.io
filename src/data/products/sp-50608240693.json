@@ -1,0 +1,47 @@
+{
+  "id": "sp-50608240693",
+  "slug": "rift-jaw-5-6s-fpv-f722",
+  "name_zh": "裂顎 RIFT JAW 5吋穿越機 6S花飛機 FPV穿越機 F722 60A ELRS2.4G 花飛專用",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "complete-drones",
+  "subcategory_id": "5in",
+  "tags": [],
+  "compatible_sizes": [
+    "5 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "",
+  "description": "#FPV #穿越機 #5吋穿越機 #花飛 #Freestyle #6S穿越機 #ELRS #無人機 #競速機 #FPVDrone #航模 #無人機改裝 #高性能穿越機 #電翼動力\n🔥 裂顎 RIFT JAW｜為花飛而生\n🔥 暴力輸出 × 精準操控 × 極致穩定\n\n📌產品定位\n專為進階玩家打造的5吋花飛穿越機\n兼具爆發力與操控細膩度\n\n📌核心配置\n・F722 飛控｜高速運算 穩定飛行\n・60A 4合1電調｜支援6S 強勁輸出\n・酷飛2207 1960KV 高性能電機\n・ELRS 2.4G 接收｜低延遲長距離\n・5.8G 1W 高功率圖傳｜穩定影像\n\n📌性能特色\n・極致動力輸出｜花飛動作更乾淨\n・操控精準｜適合進階與競速玩家\n・高剛性結構｜耐摔耐操\n・遠距穩定｜訊號不亂跳\n\n📌規格資訊\n機架：GEPRC MARK5（5吋）\n電池：建議6S LiPo（1100–1480mAh）\n重量：約423g（不含電池）\n槳葉：建議51466\n\n📌適合對象\n・花飛玩家\n・進階FPV玩家\n・想升級高性能機種者\n⚠️注意事項\n・出貨前已測試，可直接綁定起飛\n・不含電池 / 遙控器 / 充電器\n・新手建議先模擬器練習",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "50608240693",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l6-mokauht0qj9d9e",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mp5slxkg5edd1c"
+    ]
+  }
+}

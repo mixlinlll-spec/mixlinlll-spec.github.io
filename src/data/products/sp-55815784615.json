@@ -1,0 +1,53 @@
+{
+  "id": "sp-55815784615",
+  "slug": "axisflying-vertex5-5-fpv-dji-o4",
+  "name_zh": "Axisflying VERTEX5 5吋 FPV穿越機 DJI O4 DC套機 460g 輕量化 全包裹",
+  "sku": null,
+  "brand": "Axisflying",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "complete-drones",
+  "subcategory_id": "5in",
+  "tags": [],
+  "compatible_sizes": [
+    "5 吋"
+  ],
+  "video_system": "DJI O4",
+  "battery_cells": [],
+  "short_description": "",
+  "description": "Axisflying VERTEX5 是一款主打輕量化與高完整度的5吋FPV穿越機，採用全包裹式機身設計，兼顧外觀質感、保護性與飛行性能。整機約460g，適合Freestyle花飛、日常練習、戶外高速飛行與DJI O4數位圖傳玩家使用。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "55815784615",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mrqmegxbagatb9",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mrqmegxq5mo743",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mrqmegxq718nab",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mrqmegxq8ft374",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mrqmegxq9udjb3",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mrqmegxqb8xzd6",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mrqmegxqcnif00",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mrqmegxqe22vbd",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mrqmegxqfgnb62",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mrqmegxqgv7r39",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mrqmegxqi9s745",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mrqmegyzatqd02"
+    ]
+  }
+}

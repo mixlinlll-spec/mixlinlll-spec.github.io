@@ -1,0 +1,42 @@
+{
+  "id": "sp-46751039159",
+  "slug": "spirit-sparrow-fpv-6s2p-6s3p-6s4p",
+  "name_zh": "【靈雀 Spirit Sparrow】FPV遠航電池｜6S2P / 6S3P / 6S4P 長航專用鋰電組｜",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "6s",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "",
+  "description": "#靈雀電池 #SpiritSparrow #FPV電池 #長航電池 #外場電源 #6S鋰電池 #21700電芯 #6S2P #6S3P #6S4P #穿越機電池 #長航穿越機 #無人機電池 #外掛電源 #定制電池 #長續航電源\n\n🔋 產品特色\n頂級電芯配置，採用 全極耳高倍率電芯，（5 秒內）瞬間放電可達140A（47C），持續放電 36A（12C），性能無虛標。\n\n🕊️ 靈雀 Spirit Sparrow 外場電池系列 — 專為長航程FPV打造\n採用高品質 21700鋰電池電芯組成\n穩定輸出、低內阻，提供持久電力與可靠性能。\n無論是遠距離長航、山飛、或重機架飛行，都能確保穩定推力與電壓曲線。\n\n🛠 商品特性\n採用高效率21700電芯，放電穩定不掉壓\n高強度鍍鎳+紫銅帶點焊，確保低阻抗導 \n加厚PVC外層＋碳纖維防護貼皮\n手工組裝，平衡精準，出廠逐顆測試",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "46751039159",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

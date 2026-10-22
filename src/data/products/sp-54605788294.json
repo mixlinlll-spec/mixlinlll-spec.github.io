@@ -1,0 +1,44 @@
+{
+  "id": "sp-54605788294",
+  "slug": "iflight-xing2-2405-1950kv-4-6s",
+  "name_zh": "iFlight 翼飛 XING2 2405 1950KV⚡ 4–6S FPV穿越機無刷電機 5吋競速/花飛通用",
+  "sku": null,
+  "brand": "iFlight",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "motors-props",
+  "subcategory_id": "motors",
+  "tags": [],
+  "compatible_sizes": [
+    "5 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "",
+  "description": "•\t#iFlight電機\n•\t#XING2 2405\n•\t#1950KV\n•\t#6S動力\n•\t#5吋穿越機\n•\t#FPV無刷電機\n•\t#競速花飛\n•\t#Freestyle電機\n•\t#航模配件\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t2405 規格＋1950KV，搭配 6S 5吋槳，屬於現在很主流的「兼顧手感與效率」區間，適合 Freestyle、日常炸機與小比賽。\n•\t採用一體 Unibell 鈦合金中空軸＋7075 鋁合金外鐘，抗撞耐摔，長期飛也不易變形。\n•\t內部使用 N52H 弧形磁鋼與高品質軸承，轉動順、響應快，油門線性感明顯，比老一代 XING 更有「鎖定感」。\n•\t16×16mm 安裝孔位、20AWG 長線，直接對應市面多數 5 吋機架與 45–60A 電調，換裝無痛。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "54605788294",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mkae79xecbnsc6"
+    ]
+  }
+}

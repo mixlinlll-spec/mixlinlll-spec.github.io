@@ -1,0 +1,46 @@
+{
+  "id": "sp-45401512737",
+  "slug": "65mm-75mm-air65-air75-fpv-betafpv",
+  "name_zh": "微型穿越機收納盒 65mm 75mm 通用 Air65 Air75 無人機硬殼保護盒 FPV配件 betafpv air",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "cases",
+  "tags": [],
+  "compatible_sizes": [
+    "65mm",
+    "75mm"
+  ],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "(‼️3D打印產品為客製化商品，不接受色差/不想要了/無故不取貨等造成退貨的損失)\n\n你的 65mm 微型穿越機是不是常常塞口袋、丟包裡、壓壞螺旋槳？這款 Air65 / 65mm 專用收納盒，就是替你的迷你機打造的「行動防護硬殼屋」。\n\n‼️不須任何安裝工具，買回去即可使用\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅\n\n適用機型\nHappymodel / BetaFPV / Flywoo 65mm\n其他 65mm75mm wheelbase 微型穿越機",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "45401512737",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztl-mihfo7nx1jwg3f",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztl-mihfo7plbrbbe1",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztf-mihfpb40ltdw06"
+    ]
+  }
+}

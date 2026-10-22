@@ -1,0 +1,48 @@
+{
+  "id": "sp-48709596818",
+  "slug": "5-6s-fpv-f722-60a-esc",
+  "name_zh": "迅矢 5吋穿越機 6S花飛機 FPV無人機 F722 60A ESC ELRS2.4G Freestyle 穿越機",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "complete-drones",
+  "subcategory_id": "5in",
+  "tags": [],
+  "compatible_sizes": [
+    "5 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "",
+  "description": "#FPV #穿越機 #迅矢 #花飛 #Freestyle #6S穿越機 #無人機 #FPVDrone #航模 #ELRS #電翼動力 #飛行手感 #Flow飛行 #高穩定穿越機 #無人機改裝\n\n📌核心配置\n・F722 飛控｜高速運算，飛行更穩定\n・60A 4合1電調｜支援6S，輸出穩定不暴躁\n・2207 電機｜推力充足，控制更細膩\n・ELRS 2.4G 接收｜低延遲、遠距離\n・5.8G 圖傳系統｜影像穩定清晰\n\n📌飛行特色\n・操控順暢｜適合Flow風格花飛\n・穩定性高｜不易抖動、不亂飄\n・動力線性｜好控不卡手\n・適合長時間飛行練習\n\n📌規格資訊\n機架：5吋穿越機（MARK5級別）\n電池：6S LiPo（建議1100–1480mAh）\n重量：約420g±（不含電池）\n槳葉：5吋三葉槳\n\n📌適合對象\n・想要穩定手感的玩家\n・Flow / 花飛玩家\n・從入門進階者\n\n⚠️注意事項\n・出貨前皆已測試，可直接綁定起飛\n・不含電池 / 遙控器 / 充電器\n・建議新手先使用模擬器練習",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "48709596818",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mnk8g1s1lmva55",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mo8g47nv1vcw1e",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mo8g47o0h4awa2",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mp5sihqnod8rd5"
+    ]
+  }
+}

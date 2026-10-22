@@ -1,0 +1,42 @@
+{
+  "id": "sp-53753435292",
+  "slug": "geprc-mark4-7-3d-gps",
+  "name_zh": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 🧩 機臂保護／天線座／GPS座／相機保護一站搞定",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [
+    "7 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "GEPRC MARK4 7吋 3D打印\nMARK4 7inch TPU 配件\nMARK4 7 機臂保護\nMARK4 7 GPS 座\nMARK4 7 天線座\n長程穿越機 3D 列印件\nFPV Freestyle 保護套件\nGEPRC 配件 升級\n7吋穿越機 機臂保護\n7inch FPV frame parts\n\n⚠️ 務必備註顏色與需求款式（可先聊聊確認），訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n⚠️ 客製化需求（機型版本、安裝孔位、LOGO 字樣）請先聊聊討論再下單\n\n這系列是專為 GEPRC MARK4 7 吋長程 機架設計的 3D 打印件，可依需求選購或搭配成套，包括機臂保護、電池防滑墊固定件、天線座、GPS 座、相機保護罩等，讓你的 MARK4 在實戰中更耐撞、走線更乾淨。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "53753435292",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

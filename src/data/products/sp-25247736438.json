@@ -1,0 +1,40 @@
+{
+  "id": "sp-25247736438",
+  "slug": "fpv-tpu",
+  "name_zh": "FPV 電機線保護套｜電機線束固定槽｜穿越機專用 TPU 線路護套",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#FPV\n#FPV穿越機\n#電機線護套\n#線束固定\n#TPU打印件\n#3D列印配件\n#穿越機改裝\n#電機線管理\n#FPV線材保護\n#穿越機零件\n\n專為 FPV 穿越機打造的 電機線保護套 / 線束固定槽，有效防止電機線在飛行時晃動、磨損、被螺旋槳刮傷。\n柔韌 TPU 材質可提供良好固定性，又不會壓迫線材。\n適合 4~8 吋穿越機、自由改裝使用。\n\n✨ 商品特色\n有效管理電機線，避免噴槳、磨損、邊緣刮傷\nTPU 材質彈性佳，安裝不傷線\n輕量化設計，不增加機身負擔\n適用於大部分 FPV 穿越機框架\n\n📦 規格\n1組四條\n材質：TPU\n安裝方式：貼附 / 綁帶固定\n適用： 4 / 5 / 8吋穿越機電機線",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "25247736438",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

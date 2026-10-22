@@ -1,0 +1,39 @@
+{
+  "id": "sp-51050520413",
+  "slug": "speedybee-bee35-3d",
+  "name_zh": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#SpeedyBeeBEE35 #Mario5 #3D打印件 #FPV #穿越機 #飛塔保護 #打印件套裝 #穿越機配件 #DIY #航模 #BEE35打印件 #樹脂打印 #SpeedyBeeMario5 #安裝套件 #機架保護 \n\n✅ 原廠設計檔案製作，尺寸精準完美相容\n✅ 支援自組、維修與改裝使用\n✅ 可單件或整套購買\n\n材質：TPU 或 PLA（柔性與硬式可依需求搭配）\n列印品質細膩、尺寸精準，與原機完美相容。\n\n適用機種：SpeedyBee BEE35",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "51050520413",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sp-52105308338",
+  "slug": "18650-2s-3500mah-fpv-goggles-dji",
+  "name_zh": "電翼動力 18650 2S 3500mAh⚡ FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "18650",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "2S"
+  ],
+  "short_description": "",
+  "description": "•\t#電翼動力\n•\t#Goggles供電器\n•\t#18650電池盒\n•\t#FPV眼鏡電源\n•\t#2S3500mAh\n•\t#長續航供電\n•\t#穿越機配件\n•\t#行動電源盒\n•\t#3D列印外殼\n•\t#台灣現貨\n•\t#快速出貨\n\n🔥設置平衡插頭 可以直接透過 \n例如HOTAD6 pro對電池盒進行充電及平衡 \n沒電的時候；直接更換備用電池 飛行不間斷\n\n標配兩顆 18650 電芯組成 2S 約 3500mAh 組合，小鋰電多出數倍續航，一天外出飛行不用一直找插座。\n\n採用專用電源線與電壓匹配設計，可為主流 FPV Goggles 提供穩定 DC 輸出，減少畫面閃爍與意外斷電風險\n\n外殼為客製 3D 列印盒，尺寸剛好包住兩顆 18650，兼顧強度與重量，放口袋或掛在腰間都方便。\n\n支援更換電芯設計，沒電時候直接更換備用電池；不間斷飛行",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "52105308338",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztq-mjxqhksbynt1e8",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztd-mjxqhksdu32b34",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-mjxqhku1ughv89"
+    ]
+  }
+}

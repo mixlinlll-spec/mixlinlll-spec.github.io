@@ -1,0 +1,50 @@
+{
+  "id": "sp-45755083180",
+  "slug": "geprc-cinebot25-v2-o4-pro-2-5",
+  "name_zh": "GEPRC 格普 Cinebot25 孤影 V2 O4 Pro🎥 室內外航拍2.5寸穿越機 FPV",
+  "sku": null,
+  "brand": "GEPRC",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "complete-drones",
+  "subcategory_id": "2-5in",
+  "tags": [],
+  "compatible_sizes": [
+    "2.5 吋"
+  ],
+  "video_system": "DJI O4",
+  "battery_cells": [],
+  "short_description": "",
+  "description": "🔥請勿直接下標🔥\n\n•\t專為 DJI O4 Pro 空拍相機／雲台設計，機身一體化固定座，免自己改倉、免堆配重，就能直接起飛錄影。\n\n•\t2.5 吋高護槳 Cinewhoop 結構，室內穿梭安全又安靜，戶外繞人、跟拍、低空掠過也有足夠推力。\n\n•\tGEPRC 原廠整套電調＋電機＋機架調校，出廠就含 PID、濾波設定，新手只要綁好遙控器與 O4 Pro 就能飛。\n\n特色亮點\n•\t靜音高護槳機架：全封閉槳罩＋減震結構，適合展場、婚禮等人多環境拍攝。\n\n•\tO4 Pro 專屬艙位：保留 USB / 電源孔與按鍵開孔，方便在機上充電、讀卡或調整設定。\n\n•\t輕量 2.5 吋動力：相較 3–3.5 吋 Cinewhoop 體積更小、風壓更低，更容易拿到室內飛行許可。\n\n•\t預留外掛收音／VTX 空間：可加裝外錄收音、升級圖傳或加裝導航燈條，擴充性高。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "45755083180",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztg-mjs7jxt3ow7568",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztg-mjs7jxtdrapt36",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-mjs7jxtk1g5f8c",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81zto-mjs7jxtxdudg34",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztj-mjs7jxue31fn52",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-mjs7jxv4ds7499",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztn-mjs7jxwc4etf51",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztk-mjs7jxwp1csm57",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-mjs7jxx7x7np0e"
+    ]
+  }
+}

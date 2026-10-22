@@ -1,0 +1,40 @@
+{
+  "id": "sp-47201999934",
+  "slug": "gps-3d-25-5mm-20mm-mini-181",
+  "name_zh": "各類 GPS 模組 專用 3D 列印外殼／支架（25.5mm / 20mm / Mini）北征181｜ 北天｜FPV",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#GPS外殼\n#GPS支架\n#3D列印配件\n#TPU外殼\n#PLA外殼\n#25_5mm支架\n#20mm支架\n#MiniGPS機艙蓋\n#FPV配件\n#圖傳感測器保護\n#穿越機改裝\n#靈雀FPV\n#GPS固定座\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n這組列印件為針對常見 GPS 方便直接安裝於各類穿越機機架。\n\n顏色：黑 / / 橙 / 白 / 綠 / 紫 / 透藍（下單備註）\n重量：依款式 3–15 g（視部件大小而定）\n\n安裝說明\n確認模組尺寸與孔距（25.5mm / 20mm / Mini）。\n\n出貨與退換貨\n訂製列印件屬客製化商品，請務必於下單時備註顏色與規格；訂製商品無法退貨。\n出貨前會檢查外觀與尺寸，列印件若有明顯瑕疵將提供更換或退貨處理（依情況判定）。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "47201999934",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

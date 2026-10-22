@@ -1,0 +1,49 @@
+{
+  "id": "sp-54802509271",
+  "slug": "neo2-dji",
+  "name_zh": "NEO2免費客製化 [ 台灣快速出貨 ]DJI NEO2 專用 收納盒 ｜ 大疆Neo2收納",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "cases",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#DJINEO2 #NEO2收納盒 #NEO2配件 #DJI配件 #無人機收納 #電池收納盒 #雙電池背掛 #飛行器配件 #航拍配件 #遙控模型 #空拍機配件\n\n專為 DJI NEO2 製作的專用收納盒，讓主機、電池都能安全整理好。\n\n⭐ 產品特色\n主機穩固卡位，不晃動\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "54802509271",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mkclrt8yl0jn6d",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mkclrsu3herobb",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81zte-mi9hb36g1o1t50",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztf-mi9hb36igr9i01",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81zti-miabs90itpfs55",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-micffart04jo3e",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81zth-micffart8jyb52",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mlm5cvc8zlkw54"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "sp-41132575757",
+  "slug": "ovonic-3s-450mah-120c-xt30-fpv",
+  "name_zh": "OVONIC 3S 450mAh 120C XT30 FPV 穿越機鋰電池 花飛 競速 TinyWhoop 無人機",
+  "sku": null,
+  "brand": "OVONIC",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "1s-micro",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "3S"
+  ],
+  "short_description": "",
+  "description": "#OVONIC #450mAh #3S #120C #XT30 #FPV #穿越機 #花飛 #競速 #鋰電池 #LiPo #TinyWhoop #Freestyle #無人機 #空拍機 #電翼動力\n\nOVONIC P系列 3S 450mAh 120C 鋰電池，採用高倍率電芯，爆發力強、內阻低，專為2.5～3吋FPV穿越機、花飛及競速飛行打造。容量扎實、放電穩定，兼顧輕量化與續航表現，適合追求靈敏操控的玩家。\n【產品特色】\n✔ 120C高倍率放電，油門反應快速\n✔ 450mAh容量，兼顧飛行時間與重量\n✔ 採用高品質電芯，內阻低、電壓穩定\n✔ 輕量51g，提升機體靈活性\n✔ XT30接頭，即插即飛\n【產品規格】\n品牌：OVONIC\n系列：P Series\n容量：450mAh\n電壓：3S／11.1V\n放電倍率：120C\n接頭：XT30\n重量：約51g\n尺寸：約62×16×20mm\n【適用機型】\n2.5吋～3吋FPV穿越機\nTiny Freestyle\n花飛／競速機\n使用XT30接頭之3S機型\n※ 請確認機體尺寸、重量及接頭規格後再下單。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "41132575757",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mqn4z01o6dxq38"
+    ]
+  }
+}

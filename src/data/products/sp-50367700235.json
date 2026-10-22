@@ -1,0 +1,45 @@
+{
+  "id": "sp-50367700235",
+  "slug": "huan-5-fpv-freestyle-f722-2207",
+  "name_zh": "幻 HUAN 5吋 FPV穿越機 花飛機 Freestyle F722 2207 1950KV 6S DJI O4",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "complete-drones",
+  "subcategory_id": "5in",
+  "tags": [],
+  "compatible_sizes": [
+    "5 吋"
+  ],
+  "video_system": "DJI O4",
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "",
+  "description": "幻 HUAN 是電翼動力全新 5吋 Freestyle 花飛機，以紫色幻影風格打造，定位為高速花飛、進階練習與戶外穿越使用。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "50367700235",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-msydmqx4347e6c"
+    ]
+  }
+}

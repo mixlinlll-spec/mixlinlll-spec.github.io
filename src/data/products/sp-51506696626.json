@@ -1,0 +1,39 @@
+{
+  "id": "sp-51506696626",
+  "slug": "neo2-3d",
+  "name_zh": "Neo2 電池管家充電站硬殼收納盒🔌 電池管家 3D列印卡扣保護盒 穿越機充電配件便攜盒",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "cases",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#Neo2電池管家\n#Neo2充電站盒\n#硬殼收納盒\n#3D列印充電盒\n#BETAFPV配件\n#穿越機充電器\n#場外充電盒\n#台灣現貨\n#快速出貨\n\n專為 BETAFPV Neo2 官方 電池管家充電站設計，內部精準卡扣固定充電器本體，插上 USB 就能整組收納充電。​\n硬殼結構抗壓防刮，充電時蓋上蓋子直接帶出門，不怕充電器滑落或線材散亂，場外練機超方便。​\n側邊預留 USB-C 充電孔與散熱縫隙，充滿後蓋緊就是一個輕巧的完整充電站套裝，完美適配 Neo2 生態。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "51506696626",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

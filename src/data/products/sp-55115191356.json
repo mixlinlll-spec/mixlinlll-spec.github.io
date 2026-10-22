@@ -1,0 +1,39 @@
+{
+  "id": "sp-55115191356",
+  "slug": "betafpv-p1-vtx-fpv",
+  "name_zh": "BETAFPV P1 高清數位圖傳 VTX FPV穿越機天空端 低延遲 微型航拍 數位圖傳",
+  "sku": null,
+  "brand": "BETAFPV",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "video",
+  "subcategory_id": null,
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "BETAFPV P1 高清數位圖傳（天空端）\nBETAFPV P1 是一款專為微型 FPV 穿越機打造的高清數位圖傳（VTX），兼具超輕量、低延遲、高畫質三大特點，適合 1S～輕量級 FPV 無人機使用。\n提供穩定的數位影像傳輸，搭配相容接收設備，可享受清晰流暢的 FPV 飛行體驗，無論室內競速、戶外花飛或日常練習都能發揮優異表現。\n商品特色\n✅ 高清數位影像傳輸\n✅ 超低延遲，即時操控更流暢\n✅ 超輕量設計，降低飛機負載\n✅ 高整合度，安裝便利\n✅ 專為 Tiny Whoop、1S 花飛及輕量 FPV 機型設計\n✅ 適合競速、花飛、休閒飛行\n適用機型\nBETAFPV Air65\nBETAFPV Air75\nMeteor 系列\nCetus 系列\n其他相容 BETAFPV P1 系統之 FPV 穿越機\n商品規格\n品牌：BETAFPV\n型號：P1\n類型：高清數位圖傳（天空端）\n傳輸方式：數位 FPV\n特點：低延遲、高畫質、超輕量\n商品內容\nBETAFPV P1 天空端 ×1\n（依選購版本及原廠包裝為準）",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "55115191356",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "數位圖傳，非 DJI，子分類待 EWP 決定",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

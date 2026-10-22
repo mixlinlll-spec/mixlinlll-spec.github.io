@@ -1,0 +1,40 @@
+{
+  "id": "sp-48902646893",
+  "slug": "geprc-vapor-d-x",
+  "name_zh": "Geprc Vapor D / X 系列專用配件｜保護件・固定座・改裝部件合集",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "#GeprcVapor #VaporD配件 #VaporX配件 #Vapor打印件 #飛行器配件 \n#FPV配件 #穿越機配件 #GEPRC配件 #無人機配件 #客製配件\n\n⚠️ 注意事項\n・務必備註顏色，客製商品無法退貨\n・列印件皆會有些微層紋屬正常現象\n本系列專為 Geprc Vapor D / X 系列 設計，提供多種保護、補強與固定用途的實用配件。\n無論你是日常飛行、改裝升級、或增強機體耐久度，都能找到適合的部件",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "48902646893",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": []
+  }
+}

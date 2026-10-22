@@ -1,0 +1,44 @@
+{
+  "id": "sp-49561691341",
+  "slug": "issen-5-fpv-geprc-mark5-f722",
+  "name_zh": "一閃 ISSEN 5吋 FPV穿越機 奈米防水GEPRC MARK5 F722 V3 60A ESC ELRS 2.4G",
+  "sku": null,
+  "brand": "電翼動力 EWP",
+  "manufacturer_model": null,
+  "seller_role": "ewp_original",
+  "primary_category_id": "complete-drones",
+  "subcategory_id": "5in",
+  "tags": [],
+  "compatible_sizes": [
+    "5 吋"
+  ],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "一閃 ISSEN 是一款專為 Freestyle 花飛與高速穿越打造的 5 吋 FPV 穿越機，採用 GEPRC MARK5 碳纖維機架，搭配蔚川 F722 V3 飛控與 60A 四合一電調，兼具爆發力、穩定性與耐用性。\n\n出貨前完成組裝、設定與測試，綁定 ELRS 接收機後即可起飛，適合進階玩家、花飛玩家與競速愛好者使用。\n\n【產品特色】\n✔ GEPRC MARK5 高強度碳纖維機架\n✔ 蔚川 F722 V3 飛控\n✔ 60A 4IN1 大電流電調\n✔ 豐雲天狼 2306.5 1860KV 電機\n✔ 旋風 1W 大功率圖傳\n✔ 瑞速 ELRS 2.4G 接收機\n✔ 乾豐 GEMFAN 51466 三葉槳\n✔ 出貨前完成測試與調校\n\n【產品規格】\n機架：GEPRC MARK5\n飛控：蔚川 F722 V3\n電調：60A 4IN1 ESC\n電機：豐雲天狼 2306.5 / 1860KV\n鏡頭：CADDX ANT NANO\n圖傳：旋風 1W VTX\n接收機：瑞速 ELRS 2.4G\n槳葉：GEMFAN 51466 三葉槳\n建議電池：6S LiPo 1050~1480mAh\n機架尺寸：220mm\n重量：約425g（不含電池）\n\n【飛控功能】\n支援 Betaflight\n支援 Blackbox 飛行紀錄\n支援 OSD 即時顯示\n多 UART 擴充接口\n支援雙向 DShot\n\n【包裝內容】\n一閃 ISSEN 穿越機 ×1\n電池保護鯊魚鰭打印件x1\n狗座打印件x1\n槳葉x1\n\n【注意事項】\n本商品不含電池、遙控器、充電器及 FPV 眼鏡。\n出貨前已完成基本測試，建議具備 FPV 飛行經驗後再進行操作。",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "49561691341",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "seller_role 自動判為 EWP 自製，請確認",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mp22kdh5fnyl6b",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-mp5smq2yfsi7b1"
+    ]
+  }
+}

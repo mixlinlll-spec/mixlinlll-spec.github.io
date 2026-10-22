@@ -1,0 +1,40 @@
+{
+  "id": "sp-48617760691",
+  "slug": "elrs-2-4g-hsrc-1-1g-t-crsf",
+  "name_zh": "ELRS 2.4G 接收機 HSRC 1.1g 輕量 T型天線 CRSF/SBUS FPV 穿越機 接收機 電翼動力",
+  "sku": null,
+  "brand": "HSKRC",
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "radio-gps",
+  "subcategory_id": "receivers",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [],
+  "short_description": "",
+  "description": "【HSRC ELRS 2.4G 接收機】",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "48617760691",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mt0d5od81amg0d"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "sp-57303672693",
+  "slug": "x-1s-2s-450mah-100c-tinywhoop",
+  "name_zh": "十安X電翼動力 高壓競速電池🔋 1S/2S 450mAh 100C Tinywhoop/FPV穿越機專用 電競級動力電池",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
+  "seller_role": "retail",
+  "primary_category_id": "power-battery",
+  "subcategory_id": "1s-micro",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
+  "battery_cells": [
+    "1S",
+    "2S"
+  ],
+  "short_description": "",
+  "description": "#十安電池\n#電翼動力\n#高壓競速電池\n#1S電池\n#2S電池\n#Tinywhoop\n#微型穿越機\n#FPV穿越機\n#FPV電池\n#高倍率電池\n#無人機電池\n#航模電池\n#台灣現貨\n#快速出貨\n\n想要在室內Whoop場飛到頂速，卻總覺得電池拖後腿嗎？⚡\n十安 X 電翼動力 聯名高壓競速電池，專為 Tinywhoop / 微型FPV 穿越機打造，提供穩定輸出與強勁衝刺，讓每一次油門都更有底氣。\n​\n產品特色：\n🔋 高倍率輸出：100C 放電，瞬間爆發力充足，適合競速與激烈穿越飛行。\n⚙️ 高壓版本：1S 3.8V / 2S 7.6V HV 電池，續航更久、電壓跌落更平順。\n🧪 競賽級電芯：純鈷電芯設計，循環壽命高達約500次，性能穩定不亂飄。\n🛡️ 安全防護佳：多重檢測把關，適合長期訓練與比賽實戰使用。\n​\n不論是Tinywhoop 室內繞樁，還是公園日常練飛，一組穩定的電池就是飛行手感的基礎。\n這顆高壓競速電池，讓你在最後一圈依然保有推力，不再因電壓塌陷而失誤墜機🔥",
+  "specifications": [],
+  "images": [],
+  "variants": [],
+  "price_twd": null,
+  "price_display": "inquiry",
+  "availability": "unknown",
+  "shopee_url": null,
+  "shopee_item_id": "57303672693",
+  "line_inquiry_enabled": true,
+  "featured": false,
+  "published": false,
+  "updated_at": "2026-10-22",
+  "review": {
+    "status": "draft",
+    "source": "shopee-export:shopee_raw.csv",
+    "notes": [
+      "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
+      "十安 × 電翼動力聯名，seller_role 需核對",
+      "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+    ],
+    "source_image_urls": [
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztk-mio7ujnbm1hda9",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztk-mio7ujnmysqu9b",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztq-mio7ujnsjnyb0d",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztf-mio7ujor2sjo0c",
+      "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztp-mio7ujnhb4ea4a"
+    ]
+  }
+}
