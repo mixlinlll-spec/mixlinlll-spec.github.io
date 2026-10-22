@@ -2,57 +2,49 @@
   "id": "sp-24397776205",
   "slug": "speedybee-mario-mini25-mariomini25",
   "name_zh": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25",
-  "sku": null,
   "brand": "電翼動力 EWP",
-  "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
-  "video_system": null,
-  "battery_cells": [],
-  "short_description": "",
   "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nSpeedyBee Mario Mini25 官方釋出的結構件模型，專為 Mini25 機架設計，完美貼合、輕量耐用。無論是替換破損部件、升級外觀或提升保護性，都能快速套用。\n\n產品特色\n適用 SpeedyBee Mario Mini25 全系列\n輕量化設計，不影響飛行性能\n\n顏色 : 黑/黃/白/綠/橘/紫",
-  "specifications": [],
   "images": [
     {
       "src": "/assets/img/products/sp-24397776205/01.webp",
-      "src_small": "/assets/img/products/sp-24397776205/01-480.webp",
       "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（主圖）",
+      "rights": "licensed",
+      "src_small": "/assets/img/products/sp-24397776205/01-480.webp",
       "width": 836,
       "height": 836,
-      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mhkkhnziuarld3"
     },
     {
       "src": "/assets/img/products/sp-24397776205/02.webp",
-      "src_small": "/assets/img/products/sp-24397776205/02-480.webp",
       "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（細節圖 1）",
+      "rights": "licensed",
+      "src_small": "/assets/img/products/sp-24397776205/02-480.webp",
       "width": 1000,
       "height": 1000,
-      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
     },
     {
       "src": "/assets/img/products/sp-24397776205/03.webp",
-      "src_small": "/assets/img/products/sp-24397776205/03-480.webp",
       "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（細節圖 2）",
+      "rights": "licensed",
+      "src_small": "/assets/img/products/sp-24397776205/03-480.webp",
       "width": 843,
       "height": 843,
-      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mhkkho01534544"
     },
     {
       "src": "/assets/img/products/sp-24397776205/04.webp",
-      "src_small": "/assets/img/products/sp-24397776205/04-480.webp",
       "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（細節圖 3）",
+      "rights": "licensed",
+      "src_small": "/assets/img/products/sp-24397776205/04-480.webp",
       "width": 530,
       "height": 530,
-      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mhkkwuycw2dibe"
     }
@@ -60,7 +52,6 @@
   "variants": [
     {
       "name": "電容固定座",
-      "sku": null,
       "price_twd": 29,
       "availability": "in_stock",
       "shopee_variation_id": "345216107102",
@@ -73,7 +64,6 @@
     },
     {
       "name": "外殼保險扣",
-      "sku": null,
       "price_twd": 29,
       "availability": "in_stock",
       "shopee_variation_id": "345216107103",
@@ -86,7 +76,6 @@
     },
     {
       "name": "側保護保險扣",
-      "sku": null,
       "price_twd": 29,
       "availability": "in_stock",
       "shopee_variation_id": "345216107097",
@@ -99,7 +88,6 @@
     },
     {
       "name": "O4PRO天線固定座A",
-      "sku": null,
       "price_twd": 29,
       "availability": "in_stock",
       "shopee_variation_id": "345216107098",
@@ -112,8 +100,7 @@
     },
     {
       "name": "平衡底板(防撞及平衡)",
-      "sku": null,
-      "price_twd": 43,
+      "price_twd": 25,
       "availability": "in_stock",
       "shopee_variation_id": "345216107099",
       "image": {
@@ -125,7 +112,6 @@
     },
     {
       "name": "O4PRO天線固定座B",
-      "sku": null,
       "price_twd": 38,
       "availability": "in_stock",
       "shopee_variation_id": "345216107100",
@@ -138,7 +124,6 @@
     },
     {
       "name": "小O4天線固定座",
-      "sku": null,
       "price_twd": 29,
       "availability": "in_stock",
       "shopee_variation_id": "345216107101",
@@ -153,7 +138,6 @@
   "price_twd": 29,
   "price_display": "from",
   "availability": "in_stock",
-  "shopee_url": null,
   "shopee_item_id": "24397776205",
   "line_inquiry_enabled": true,
   "featured": false,
@@ -167,7 +151,6 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": [],
     "source_media": {
       "media_export": "mass_update_media_info_4053258_20261022141110",
       "sales_export": "mass_update_sales_info_4053258_20261022141152",
@@ -220,8 +203,6 @@
         {
           "variation_id": "345216107102",
           "name": "電容固定座",
-          "parent_sku": null,
-          "sku": null,
           "price": 30,
           "stock": 50,
           "min_qty": 1
@@ -229,56 +210,38 @@
         {
           "variation_id": "345216107103",
           "name": "外殼保險扣",
-          "parent_sku": null,
-          "sku": null,
           "price": 30,
-          "stock": 50,
-          "min_qty": null
+          "stock": 50
         },
         {
           "variation_id": "345216107097",
           "name": "側保護保險扣",
-          "parent_sku": null,
-          "sku": null,
           "price": 30,
-          "stock": 50,
-          "min_qty": null
+          "stock": 50
         },
         {
           "variation_id": "345216107098",
           "name": "O4PRO天線固定座A",
-          "parent_sku": null,
-          "sku": null,
           "price": 30,
-          "stock": 47,
-          "min_qty": null
+          "stock": 47
         },
         {
           "variation_id": "345216107099",
           "name": "平衡底板(防撞及平衡)",
-          "parent_sku": null,
-          "sku": null,
           "price": 45,
-          "stock": 48,
-          "min_qty": null
+          "stock": 48
         },
         {
           "variation_id": "345216107100",
           "name": "O4PRO天線固定座B",
-          "parent_sku": null,
-          "sku": null,
           "price": 40,
-          "stock": 49,
-          "min_qty": null
+          "stock": 49
         },
         {
           "variation_id": "345216107101",
           "name": "小O4天線固定座",
-          "parent_sku": null,
-          "sku": null,
           "price": 30,
-          "stock": 49,
-          "min_qty": null
+          "stock": 49
         }
       ],
       "price_min": 30,
