@@ -206,7 +206,18 @@ console.log('9. 商品頁 CTA 優先序（草稿預覽）');
   await page.context().close();
 }
 
-console.log('10. 鍵盤操作');
+console.log('10. 手機版面穩定（CLS < 0.1）');
+for (const u of [PUB + '/', PUB + '/products/', PUB + '/products/complete-drones/', PRE + '/products/', PRE + '/product/geprc-moz7-v2-o4-pro-7/', PUB + '/contact/']) {
+  const page = await newPage(390);
+  await page.addInitScript(() => { window.__cls = 0; new PerformanceObserver(l => { for (const e of l.getEntries()) if (!e.hadRecentInput) window.__cls += e.value; }).observe({ type: 'layout-shift', buffered: true }); });
+  await page.goto(u, { waitUntil: 'networkidle' });
+  await page.waitForTimeout(500);
+  const cls = await page.evaluate(() => window.__cls);
+  ok(cls < 0.1, `${u.replace(PUB, '正式').replace(PRE, '預覽')} CLS ${cls.toFixed(3)}`);
+  await page.context().close();
+}
+
+console.log('11. 鍵盤操作');
 {
   const page = await newPage(1280);
   await page.goto(PUB + '/');

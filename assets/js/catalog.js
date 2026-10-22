@@ -160,10 +160,18 @@
       render(); q.focus();
     });
   });
-  // 手機版預設收合篩選面板，結果優先
-  var box = root.querySelector('.filters-box');
-  if (box && window.matchMedia('(max-width: 900px)').matches && !location.search) box.open = false;
+  // 手機版篩選面板：預設由 CSS 收合（不靠 JS 隱藏，避免版面位移），按鈕切換；有篩選條件時自動展開
+  var box = document.getElementById('filters-box');
+  var toggle = root.querySelector('.filters-toggle');
+  function setBox(open) {
+    box.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.querySelector('span').textContent = open ? '－' : '＋';
+  }
+  if (toggle) toggle.addEventListener('click', function () { setBox(!box.classList.contains('open')); });
+  var hasFilter = ['q', 'brand', 'size', 'video', 'cells', 'avail', 'pmin', 'pmax', 'cat'].some(function (k) { return state[k]; });
 
   render();
-  if (location.hash === '#catalog-q') { if (box) box.open = true; q.focus(); }
+  if (hasFilter) setBox(true);
+  if (location.hash === '#catalog-q') { setBox(true); q.focus(); }
 })();

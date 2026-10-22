@@ -150,7 +150,7 @@ section{padding:36px 0}
 .about-grid+.motto{margin-top:36px;padding-top:32px;border-top:1px solid #18191b50}
 .faq details{border-top:1px solid var(--line);padding:18px 0}
 .faq details:last-child{border-bottom:1px solid var(--line)}
-.faq summary,.filters-box summary{font-weight:700;font-size:18px;cursor:pointer;min-height:44px;display:flex;align-items:center}
+.faq summary{font-weight:700;font-size:18px;cursor:pointer;min-height:44px;display:flex;align-items:center}
 .faq details p{color:var(--muted);padding:0 4px;margin:8px 0 0}
 .cta-band{border:1px solid var(--line);padding:36px;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;margin-top:24px}
 .cta-band h2{font-size:28px;margin:0 0 8px}
@@ -166,7 +166,8 @@ section{padding:36px 0}
 .catalog-layout{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start}
 .filters{position:sticky;top:calc(var(--header-h) + 16px)}
 .filters-box{border:1px solid var(--line);padding:4px 16px 16px;background:var(--panel)}
-.filters-box summary{font-size:16px}
+.filters-title{font-weight:700;font-size:16px;margin:10px 0 0}
+.filters-toggle{display:none;width:100%;min-height:48px;justify-content:space-between;align-items:center;background:transparent;border:0;font-weight:700;font-size:16px;cursor:pointer;padding:0}
 .field{display:flex;flex-direction:column;gap:4px;margin-top:12px;border:0;padding:0;min-width:0}
 .field label,.field legend{font-size:13px;color:var(--muted);padding:0}
 .field input,.field select{min-height:44px;padding:8px 10px;background:var(--bg);border:1px solid var(--line);width:100%;border-radius:0}
@@ -312,7 +313,11 @@ section{padding:36px 0}
   .hero-grid,.pd-top,.services-split,.about-grid{grid-template-columns:1fr;gap:28px}
   .catalog-layout{grid-template-columns:1fr;gap:16px}
   .filters{position:static}
-  .filters-box:not([open]){padding-bottom:4px}
+  .filters-box{padding:0 16px}
+  .filters-title{display:none}
+  .filters-toggle{display:flex}
+  .filters-box:not(.open) .filters-form{display:none}
+  .filters-box.open{padding-bottom:16px}
   .projects{grid-template-columns:1fr}
   .chem-grid,.svc-grid{grid-template-columns:1fr}
   .about-band{padding:32px}

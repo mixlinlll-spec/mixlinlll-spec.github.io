@@ -162,13 +162,19 @@ function catalogSection(list, { category } = {}) {
       <button type="button" class="chip" data-sub-chip="" aria-pressed="true">全部</button>
       ${category.subcategories.map(s => `<button type="button" class="chip" data-sub-chip="${attr(s.id)}" aria-pressed="false">${esc(s.name)}</button>`).join('')}
     </div>` : '';
-  const select = (name, label, opts = null) => `<div class="field" data-field="${name}"><label for="f-${name}">${label}</label><select id="f-${name}" name="${name}" ${opts ? 'data-static' : `data-facet="${name}"`}><option value="">全部</option>${(opts || []).map(([v, t]) => `<option value="${attr(v)}">${esc(t)}</option>`).join('')}</select></div>`;
+  // 伺服器端先決定哪些篩選器有資料，避免 JS 載入後才隱藏造成版面位移（CLS）
+  const has = {
+    brand: list.some(p => p.brand), size: list.some(p => p.compatible_sizes?.length),
+    video: list.some(p => p.video_system), cells: list.some(p => p.battery_cells?.length),
+  };
+  const select = (name, label, opts = null) => `<div class="field" data-field="${name}"${!opts && has[name] === false ? ' hidden' : ''}><label for="f-${name}">${label}</label><select id="f-${name}" name="${name}" ${opts ? 'data-static' : `data-facet="${name}"`}><option value="">全部</option>${(opts || []).map(([v, t]) => `<option value="${attr(v)}">${esc(t)}</option>`).join('')}</select></div>`;
   return `<section class="wrap catalog" id="catalog" data-scope="${category ? attr(category.id) : ''}">
   ${subChips}
   <div class="catalog-layout">
     <aside class="filters">
-      <details class="filters-box" open>
-        <summary>搜尋與篩選</summary>
+      <div class="filters-box" id="filters-box">
+        <p class="filters-title" aria-hidden="true">搜尋與篩選</p>
+        <button type="button" class="filters-toggle" aria-expanded="false" aria-controls="catalog-form">搜尋與篩選 <span aria-hidden="true">＋</span></button>
         <form id="catalog-form" class="filters-form" role="search" onsubmit="return false">
           <div class="field"><label for="catalog-q">關鍵字</label><input id="catalog-q" type="search" name="q" placeholder="品名、品牌、型號、規格" autocomplete="off"></div>
           ${category ? `<input type="hidden" name="sub" id="f-sub">` : select('cat', '分類', categories.map(c => [c.id, c.name]))}
@@ -180,12 +186,12 @@ function catalogSection(list, { category } = {}) {
           <fieldset class="field price-range"><legend>價格（NT$）</legend><div class="price-inputs"><label class="sr-only" for="f-pmin">最低價</label><input id="f-pmin" type="number" inputmode="numeric" min="0" name="pmin" placeholder="最低"><span aria-hidden="true">–</span><label class="sr-only" for="f-pmax">最高價</label><input id="f-pmax" type="number" inputmode="numeric" min="0" name="pmax" placeholder="最高"></div><small>設定價格後，詢價商品不會顯示。</small></fieldset>
           <button type="button" class="btn btn-block" data-reset>清除篩選</button>
         </form>
-      </details>
+      </div>
     </aside>
     <div class="results">
       <h2 class="sr-only">商品列表</h2>
       <div class="results-bar">
-        <p class="results-count" id="results-count" aria-live="polite">共 ${sorted.length} 件商品</p>
+        <p class="results-count" id="results-count" aria-live="polite">${sorted.length ? `共 ${sorted.length} 件商品` : '目前沒有公開商品'}</p>
         <div class="field field-inline"><label for="f-sort">排序</label><select id="f-sort" name="sort"><option value="">推薦</option><option value="new">最新上架</option><option value="price-asc">價格低→高</option><option value="price-desc">價格高→低</option><option value="name">名稱</option></select></div>
       </div>
       ${cardList(sorted, 'pgrid catalog-grid')}
