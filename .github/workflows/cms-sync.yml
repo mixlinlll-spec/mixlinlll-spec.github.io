@@ -1,9 +1,9 @@
 name: 商品後台儲存後校正與發布
 # Pages CMS（後台）每次儲存都會推送一個「[後台] …」commit，觸發本流程：
 #   1. scripts/cms-normalize.mjs：還原 Pages CMS 清掉的空值、保護 id／slug／review、上架守門、新照片轉 WebP
-#   2. 驗證＋建置＋發布白名單檢查（失敗就不發布，網站維持上一個正確版本，並開 Issue 通知）
-#   3. 提交校正結果；在 main 上觸發 pages.yml 正式部署
-# 變更摘要（操作者、時間、修改內容）在 Actions 的 Summary 頁。
+#   2. 逐件驗證：未通過的商品「退回上一個正確版本」（隔離），其他商品照常發布；開 Issue 說明原因
+#   3. 完整驗證＋建置＋白名單檢查 → fast-forward 推送（衝突就從最新版本重做）→ 在 main 上部署這個 commit
+# 寫入協定見 .github/actions/admin-publish/action.yml。變更摘要在 Actions 的 Summary 頁。
 on:
   push:
     branches: [main, feature/product-admin]
@@ -13,13 +13,13 @@ permissions:
   actions: write
   issues: write
 concurrency:
-  group: cms-sync-${{ github.ref }}
+  # 同一分支的後台校正排隊執行；排隊中的舊執行被新的取代也沒關係（每次都會處理所有尚未校正的後台儲存）
+  group: ewp-cms-sync-${{ github.ref }}
   cancel-in-progress: false
 jobs:
   sync:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -28,17 +28,36 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: 檢查是否有待校正的後台儲存
+        id: check
+        run: node scripts/cms-normalize.mjs --dry-run > /dev/null
       - name: 安裝圖片處理套件
+        if: steps.check.outputs.cms_commits != '0'
         run: npm install --no-save --no-audit --no-fund --no-package-lock sharp@0.35.4
-      - name: 校正後台儲存的商品資料
-        id: normalize
-        run: node scripts/cms-normalize.mjs --summary "$GITHUB_STEP_SUMMARY"
-      - name: 驗證、提交、發布
-        if: steps.normalize.outputs.cms_commits != '0'
+      - name: 校正、隔離、驗證、提交、發布
+        id: publish
+        if: steps.check.outputs.cms_commits != '0'
         uses: ./.github/actions/admin-publish
         with:
+          apply: node scripts/cms-normalize.mjs --summary "$GITHUB_STEP_SUMMARY"
+          fallback: node scripts/cms-normalize.mjs --quarantine-all --summary "$GITHUB_STEP_SUMMARY"
           message: "chore(後台): 校正後台儲存的商品資料"
           deploy: always
+      - name: 保存被退回的原始修改（供查看）
+        if: always() && hashFiles('.cms-quarantine/**') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: cms-quarantine
+          path: .cms-quarantine/
+          retention-days: 14
+      - name: 通知：有修改被退回
+        if: always() && hashFiles('.cms-quarantine.md') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          { cat .cms-quarantine.md; echo; echo "執行紀錄：$URL"; } > issue.md
+          gh issue create --title "商品後台：有修改未通過檢查已退回（${GITHUB_REF_NAME}）" --body-file issue.md || echo "無法開 Issue"
       - name: 失敗通知（開 Issue）
         if: failure()
         env:
@@ -46,6 +65,4 @@ jobs:
           URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           gh issue create --title "商品後台儲存未通過檢查（${GITHUB_REF_NAME}）" \
-            --body "後台儲存後的檢查失敗，**網站沒有更新**（維持上一個正確版本）。請看執行紀錄：$URL
-
-          常見原因：子分類不屬於主分類、價格為 0、照片檔不存在。修正後在後台再儲存一次即可。" || echo "無法開 Issue（repo 可能關閉 Issues）"
+            --body "後台儲存後的處理失敗，**網站沒有更新**（維持上一個正確版本）。執行紀錄：$URL" || echo "無法開 Issue"

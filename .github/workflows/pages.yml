@@ -6,6 +6,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      sha:
+        description: 要部署的 commit（由後台流程指定剛驗證過的版本；空白＝main 最新）
+        required: false
+        type: string
 permissions:
   contents: read
   pages: write
@@ -14,12 +19,37 @@ concurrency:
   group: pages
   cancel-in-progress: false
 jobs:
-  build:
-    # 後台（Pages CMS）原始儲存不直接部署：由 cms-sync.yml 校正、驗證後再以 workflow_dispatch 觸發
+  target:
+    # 後台（Pages CMS）原始儲存不直接部署：由 cms-sync.yml 校正、驗證後再以 workflow_dispatch 指定 commit 觸發
     if: github.event_name == 'workflow_dispatch' || !startsWith(github.event.head_commit.message, '[後台]')
+    runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.t.outputs.sha }}
+      skip: ${{ steps.t.outputs.skip }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: 確認要部署的是 main 最新版本（較舊的版本略過，避免覆蓋較新的網站）
+        id: t
+        env:
+          TARGET: ${{ inputs.sha || github.sha }}
+        run: |
+          git fetch -q origin main
+          HEAD=$(git rev-parse origin/main); T=$(git rev-parse --verify "$TARGET^{commit}")
+          echo "sha=$T" >> "$GITHUB_OUTPUT"
+          if [ "$T" != "$HEAD" ]; then
+            echo "::notice::main 已有較新的 commit（${HEAD:0:7}），略過部署 ${T:0:7}；較新的 commit 由它自己的流程部署"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else echo "skip=false" >> "$GITHUB_OUTPUT"; fi
+  build:
+    needs: target
+    if: needs.target.outputs.skip == 'false'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.target.outputs.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22

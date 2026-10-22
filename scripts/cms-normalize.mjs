@@ -13,7 +13,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
-import { ROOT, PRODUCTS_DIR, today } from './lib/data.mjs';
+import { ROOT, PRODUCTS_DIR, today, loadAll, readJSON, validateProducts } from './lib/data.mjs';
 import { normalizeCmsProduct, serializeProduct } from './lib/cms.mjs';
 
 const args = process.argv.slice(2);
@@ -58,13 +58,29 @@ async function getSharp() {
 const report = [];
 let failed = false;
 const operatorOf = s => (s.match(/（([^（）]*)）\s*$/) || [])[1] || '';
+const quarantineAll = args.includes('--quarantine-all');
+const QDIR = path.join(ROOT, '.cms-quarantine');
+
+// 隔離：未通過檢查的後台修改退回到上一個正確版本；原始內容存到 .cms-quarantine/（上傳為 Actions artifact，不提交）
+function quarantine(entry, reason) {
+  const abs = path.join(ROOT, entry.file);
+  if (fs.existsSync(abs)) { fs.mkdirSync(QDIR, { recursive: true }); fs.copyFileSync(abs, path.join(QDIR, path.basename(entry.file))); }
+  if (!dryRun) {
+    if (entry.prevText == null) fs.rmSync(abs, { force: true });
+    else fs.writeFileSync(abs, entry.prevText);
+    for (const f of entry.created || []) fs.rmSync(path.join(ROOT, f), { force: true });
+  }
+  entry.quarantined = true;
+  entry.errors.push(reason);
+}
 
 for (const [file, info] of touched) {
   const abs = path.join(ROOT, file);
   const prevText = info.prevRev ? gitShow(info.prevRev, file) : null;
-  const entry = { file, operators: [...new Set(info.commits.map(c => operatorOf(c.subject)).filter(Boolean))], time: info.commits.at(-1).date, changes: [], warnings: [], errors: [] };
+  const entry = { file, prevText, operators: [...new Set(info.commits.map(c => operatorOf(c.subject)).filter(Boolean))], time: info.commits.at(-1).date, changes: [], warnings: [], errors: [], created: [] };
   report.push(entry);
-  if (prevText == null) { entry.errors.push('後台不允許新增商品（請用匯入工具）；此檔未處理'); failed = true; continue; }
+  if (quarantineAll) { quarantine(entry, '整批檢查失敗，本次後台修改全部退回'); continue; }
+  if (prevText == null) { quarantine(entry, '後台不允許新增商品，已移除'); continue; }
   const prev = JSON.parse(prevText);
   entry.name = prev.name_zh;
   if (!fs.existsSync(abs)) {
@@ -73,15 +89,32 @@ for (const [file, info] of touched) {
     continue;
   }
   let next;
-  try { next = JSON.parse(fs.readFileSync(abs, 'utf8')); } catch (e) { entry.errors.push(`JSON 格式錯誤：${e.message}`); failed = true; continue; }
+  try { next = JSON.parse(fs.readFileSync(abs, 'utf8')); } catch (e) { quarantine(entry, `檔案格式錯誤，已退回：${e.message}`); continue; }
   const { product, changes, warnings } = normalizeCmsProduct(prev, next, { today: today() });
   entry.name = product.name_zh;
   entry.changes = changes; entry.warnings.push(...warnings);
   try {
     for (const im of product.images || []) if (im._needs_processing) await processImage(product, im, entry);
-  } catch (e) { entry.errors.push(e.message); failed = true; continue; }
+  } catch (e) { quarantine(entry, `${e.message}，已退回`); continue; }
   const out = serializeProduct(product);
   if (!dryRun && out !== fs.readFileSync(abs, 'utf8')) fs.writeFileSync(abs, out);
+}
+
+// 校正後逐件驗證：有錯誤的商品退回上一個正確版本，其他商品的修改照常發布
+if (!dryRun && !quarantineAll) {
+  const validate = () => {
+    const { categories } = loadAll();
+    const files = fs.readdirSync(PRODUCTS_DIR).filter(f => f.endsWith('.json')).sort();
+    const products = files.map(f => { try { return { ...readJSON(path.join(PRODUCTS_DIR, f)), _file: f }; } catch { return { _file: f, _bad: true }; } });
+    return validateProducts(products.filter(p => !p._bad), categories).errors;
+  };
+  const errors = validate();
+  for (const entry of report.filter(e => !e.quarantined)) {
+    const mine = errors.filter(e => e.startsWith(path.basename(entry.file) + ':'));
+    if (mine.length) quarantine(entry, `未通過檢查，已退回上一個正確版本：${mine.map(e => e.slice(e.indexOf(':') + 1).trim()).join('；')}`);
+  }
+  const remaining = validate();
+  if (remaining.length) { failed = true; console.error(`仍有其他資料錯誤（不是這次後台修改造成）：\n${remaining.join('\n')}`); }
 }
 
 async function processImage(product, im, entry) {
@@ -99,6 +132,7 @@ async function processImage(product, im, entry) {
     const big = await img.clone().resize({ width: 1000, height: 1000, fit: 'inside', withoutEnlargement: true }).webp({ quality: 80 }).toFile(path.join(ROOT, bigRel));
     await img.clone().resize({ width: 480, height: 480, fit: 'inside', withoutEnlargement: true }).webp({ quality: 78 }).toFile(path.join(ROOT, smallRel));
     im.width = big.width; im.height = big.height;
+    entry.created.push(bigRel, smallRel);
     // 原始上傳檔：轉檔後不再使用就刪除（避免大檔留在 repo 與網站）
     const oldRel = path.relative(ROOT, srcAbs).split(path.sep).join('/');
     if (oldRel !== bigRel && !isReferencedElsewhere('/' + oldRel, product.id)) fs.rmSync(srcAbs);
@@ -120,7 +154,7 @@ function isReferencedElsewhere(src, exceptId) {
 // 3. 摘要
 const lines = [`## 商品後台儲存結果`, '', `後台儲存 ${commits.length} 次，影響 ${touched.size} 件商品。`, ''];
 for (const r of report) {
-  lines.push(`### ${r.errors.length ? '✖' : r.warnings.length ? '⚠️' : '✓'} ${r.name || r.file}`);
+  lines.push(`### ${r.quarantined ? '✖ 已退回' : r.errors.length ? '✖' : r.warnings.length ? '⚠️' : '✓'} ${r.name || r.file}`);
   lines.push(`\`${path.basename(r.file, '.json')}\`｜操作者：${r.operators.join('、') || '—'}｜時間：${r.time}`);
   for (const c of r.changes) lines.push(`- ${c}`);
   if (!r.changes.length && !r.errors.length) lines.push('- （沒有實際內容變更）');
@@ -131,5 +165,13 @@ for (const r of report) {
 const md = lines.join('\n');
 console.log(md);
 if (summaryFile) fs.appendFileSync(summaryFile, md + '\n');
-fs.writeFileSync(path.join(ROOT, '.cms-report.json'), JSON.stringify(report, null, 2));
+const quarantined = report.filter(r => r.quarantined);
+if (quarantined.length) {
+  const q = ['## ⚠️ 以下後台修改未通過檢查，已退回（網站維持上一個正確版本）', '', '請在後台打開商品，依原因修正後再儲存一次。其他商品的修改不受影響。', ''];
+  for (const r of quarantined) q.push(`- **${r.name || r.file}**（\`${path.basename(r.file, '.json')}\`，操作者：${r.operators.join('、') || '—'}，${r.time}）：${r.errors.join('；')}`);
+  fs.writeFileSync(path.join(ROOT, '.cms-quarantine.md'), q.join('\n') + '\n');
+  if (summaryFile) fs.appendFileSync(summaryFile, q.join('\n') + '\n');
+}
+if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `quarantined=${quarantined.length}\n`);
+fs.writeFileSync(path.join(ROOT, '.cms-report.json'), JSON.stringify(report.map(({ prevText, ...r }) => r), null, 2));
 process.exit(failed ? 1 : 0);

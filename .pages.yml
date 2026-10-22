@@ -25,11 +25,6 @@ media:
     input: assets/img/products
     output: /assets/img/products
     categories: [image]
-  - name: imports
-    label: 匯入檔（蝦皮 CSV）
-    input: admin/imports
-    output: /admin/imports
-    extensions: [csv]
 
 content:
   - name: products
@@ -56,11 +51,12 @@ content:
       - name: bulk-edit
         label: 批次修改（價格／上下架／供貨）
         workflow: admin-bulk.yml
+        ref: current
         scope: collection
         cancelable: true
         confirm:
           title: 批次修改商品
-          message: 先選「只預覽」確認結果，再改「套用」執行。套用後會自動更新網站。
+          message: 先用「只預覽」執行，結果頁會顯示 6 碼確認碼；再選「套用」並填入確認碼才會修改。預覽後資料有變動時確認碼會失效，需重新預覽。
           button: 執行
         fields:
           - name: target
@@ -88,45 +84,14 @@ content:
             default: preview
             options:
               - { label: 只預覽（不修改）, value: preview }
-              - { label: 套用, value: apply }
-      - name: shopee-import
-        label: 匯入蝦皮 CSV（價格／庫存）
-        workflow: admin-import.yml
-        scope: collection
-        cancelable: true
-        confirm:
-          title: 匯入蝦皮匯出檔
-          message: 先在「匯入檔」上傳 CSV。建議先「只預覽」看錯誤報告。
-          button: 執行
-        fields:
-          - name: file
-            label: 檔名（admin/imports/ 底下，例如 sales.csv）
+              - { label: 套用（需填確認碼）, value: apply }
+          - name: confirm_code
+            label: 確認碼（套用時必填，預覽結果中的 6 碼）
             type: text
-            required: true
-          - name: fields
-            label: 要更新的欄位
-            type: select
-            required: true
-            default: price_stock
-            options:
-              - { label: 價格與庫存數量, value: price_stock }
-              - { label: 只更新庫存數量, value: stock }
-              - { label: 只更新價格, value: price }
-          - name: discount
-            label: 官網價相對蝦皮價折扣 %（目前 4）
-            type: number
-            default: 4
-          - name: mode
-            label: 模式
-            type: select
-            required: true
-            default: preview
-            options:
-              - { label: 只預覽（產生錯誤報告）, value: preview }
-              - { label: 套用, value: apply }
       - name: restore
         label: 還原這件商品到指定版本
         workflow: admin-restore.yml
+        ref: current
         scope: entry
         cancelable: true
         confirm:

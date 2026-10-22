@@ -10,6 +10,12 @@ import { diffProduct } from './lib/cms.mjs';
 const args = process.argv.slice(2);
 const opt = k => (args.includes(k) ? args[args.indexOf(k) + 1] : undefined);
 const payload = process.env.PAYLOAD ? JSON.parse(process.env.PAYLOAD) : null;
+
+// 只處理「在哪個分支按的按鈕，就改哪個分支」：Pages CMS 送來的分支必須與這次執行的分支相同
+if (payload && process.env.GITHUB_REF_NAME && payload.repository?.ref && payload.repository.ref !== process.env.GITHUB_REF_NAME) {
+  console.error(`✖ 分支不符：後台目前在 ${payload.repository.ref}，流程卻在 ${process.env.GITHUB_REF_NAME} 執行，已停止`);
+  process.exit(1);
+}
 const file = String(opt('--file') ?? payload?.context?.path ?? '').replace(/^\/+/, '');
 const sha = String(opt('--sha') ?? payload?.inputs?.sha ?? '').trim().toLowerCase();
 const operator = payload?.triggeredBy?.name || '本機';

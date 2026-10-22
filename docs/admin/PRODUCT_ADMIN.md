@@ -1,7 +1,7 @@
 # EWP 商品管理後台（Pages CMS）
 
 **使用方式**：打開 https://app.pagescms.org → 選 `mixlinlll-spec.github.io` → 商品 → 搜尋 → 修改 → **Save**。
-儲存後約 1–3 分鐘，系統自動檢查並更新網站（上線後；測試期間見「測試方式」）。
+啟用後（本 PR 合併到 `main`），儲存後約 1–3 分鐘系統自動檢查並更新官網。手機瀏覽器也可以用。
 
 ---
 
@@ -9,12 +9,11 @@
 
 1. 用 GitHub 帳號登入 https://app.pagescms.org 。
 2. 依畫面安裝 **Pages CMS GitHub App**，選 **Only select repositories → `mixlinlll-spec.github.io`**（不要給全部 repo）。
-   App 需要的權限：Contents 讀寫（儲存商品）、Actions 讀寫（批次修改、匯入、還原按鈕）、Metadata 讀取。
-3. 進入 repo 後，左上角分支切到：
-   - 測試期間：`feature/product-admin`
-   - 上線後：`main`
-4. 給員工使用：Pages CMS 的 **Collaborators** 用 Email 邀請，對方不需要 GitHub 帳號，只能編輯，不能改設定或刪除 repo。
-   員工離職時在同一頁移除即可。
+   App 需要的權限：Contents 讀寫（儲存商品、上傳照片）、Actions 讀寫（批次修改、還原按鈕）、Metadata 讀取。
+3. 進入 repo 後，左上角分支：
+   - 測試期間：`feature/product-admin`（不會影響正式網站）
+   - 啟用後：`main`
+4. 給員工使用：見「七、協作者權限」。
 
 > 不需要、也不應該把任何密碼或金鑰放進 repo。登入與權限由 GitHub／Pages CMS 處理；
 > GitHub Actions 只使用 GitHub 自動提供、每次執行後失效的 `GITHUB_TOKEN`。
@@ -29,31 +28,57 @@
 | 改為詢價 | 「價格顯示方式」選「詢價」→ 商品價與規格價都不顯示 |
 | 上架／下架 | 「上架（公開在官網）」開關。**未核准（review 不是 approved）的商品無法上架**，勾了也會自動退回草稿 |
 | 供貨狀態 | 現貨／預購／接單製作／缺貨／請洽詢（商品與各規格都可設） |
-| 庫存數量 | 各規格「庫存數量」；沒有規格的商品用上方「庫存數量」。**僅後台記錄、不公開顯示、不是即時庫存**（第二階段 Cloudflare D1 才做即時扣庫存） |
+| 庫存數量 | 各規格「庫存數量」；沒有規格的商品用上方「庫存數量」。**僅後台記錄、不在網頁顯示、不是即時庫存**（見「八、保密」） |
 | 照片 | 上傳、替換、拖曳排序、刪除；第一張是主圖。新照片儲存後自動轉 WebP（1000px＋480px 縮圖）並搬到商品資料夾 |
-| 批次修改 | 商品列表右上「批次修改」：上架、下架、供貨狀態、價格 ±%、設定價格、改詢價。**先選「只預覽」**看結果，再選「套用」 |
-| 蝦皮 CSV 匯入 | 先在「Media → 匯入檔」上傳 CSV，再按「匯入蝦皮 CSV」。預覽會列出變更與錯誤報告；套用後自動刪除匯入檔 |
+| 批次修改 | 商品列表右上「批次修改」：上架、下架、供貨狀態、價格 ±%、設定價格、改詢價。**兩段式**：先「只預覽」取得 6 碼確認碼 → 再「套用」並填入確認碼 |
 | 查看紀錄 | 商品頁右側 **History**：每次儲存的時間與操作者；GitHub Actions 摘要頁列出改了哪些欄位 |
-| 還原 | 商品頁「還原這件商品到指定版本」，填 History 裡的版本代碼（commit SHA） |
+| 還原 | 商品頁「還原這件商品到指定版本」，填 History 或 GitHub 檔案歷史裡的版本代碼（commit SHA） |
+| ~~蝦皮 CSV 匯入~~ | **暫停**（見「八、保密」）。需要時由 Claude 在本機以 `scripts/admin-import.mjs` 處理，匯入檔不進 repo |
 
 不能做（刻意限制）：新增商品、刪除商品、改商品 ID／網址代稱／蝦皮規格 ID、改審核狀態（review）。
-新商品請用蝦皮匯入工具建立草稿，核准上架由 EWP 確認後執行。
 
 ## 三、儲存後發生什麼事
 
 ```
-後台 Save ──► GitHub commit「[後台] 更新 sp-xxx.json（操作者）」
-           └► .github/workflows/cms-sync.yml
-                1. scripts/cms-normalize.mjs  校正（見下）
-                2. 驗證資料＋單元測試＋建置＋發布白名單檢查
-                3. 提交校正結果（chore(後台): …）
-                4. 在 main 上觸發 pages.yml 部署 → 網站更新
-              失敗：不部署（網站維持上一個正確版本）＋自動開 GitHub Issue 通知
+後台 Save ──► commit「[後台] 更新 sp-xxx.json（操作者）」推到目前分支
+           └► .github/workflows/cms-sync.yml（同分支排隊執行）
+                1. 取得分支最新版本
+                2. cms-normalize：校正 Pages CMS 的資料問題（見「五」）
+                3. 逐件驗證：未通過的商品退回上一個正確版本（隔離），其他商品照常
+                4. 完整驗證：資料檢查＋單元測試＋建置＋發布白名單
+                5. fast-forward 推送（期間有人儲存 → 丟棄結果、從最新版本重做 1–4）
+                6. 只在 main：指定「剛驗證並推送的那個 commit」觸發 pages.yml 部署
 ```
 
-`pages.yml` 與 `ci.yml` 會略過「[後台]」原始 commit，只部署校正並驗證過的內容。
+- `pages.yml` 與 `ci.yml` 會略過「[後台]」原始 commit，只部署校正並驗證過的內容。
+- `pages.yml` 部署前確認要部署的 commit 就是 `main` 最新版本；較舊的會略過，避免把網站蓋回舊版。
 
-## 四、為什麼需要「儲存後校正」（Pages CMS 的限制與補強）
+## 四、同時修改、失敗與復原
+
+### 多人／多流程同時儲存
+所有寫入流程（後台儲存校正、批次修改、還原）使用同一個提交協定（`.github/actions/admin-publish/action.yml`）：
+
+1. 取得分支最新版本 → 2. 套用操作 → 3. 完整驗證 → 4. **只用 fast-forward 推送**。
+推送失敗代表期間有人儲存：**不做 rebase、不合併舊結果**，而是丟棄、從最新版本重新套用並重新驗證（最多 5 次）。
+所以被推送、被部署的永遠是「在最終資料上驗證過」的版本。
+
+- 後台儲存校正：同一分支排隊執行（concurrency group）。排隊中的舊執行被新的取代沒關係——每次都會處理所有尚未校正的後台儲存。
+- 批次修改、還原：不排隊（GitHub 會取消排隊中的舊執行，可能讓按鈕「消失」），改靠上面的樂觀鎖。
+- 批次修改的確認碼包含「對象商品的目前內容」：預覽後有人改過這些商品，套用會被拒絕，需重新預覽。
+- Pages CMS 自己在儲存時也會比對檔案版本（sha）；兩人同時改同一件商品，後存的人會看到衝突提示，重新整理後再存。
+  校正流程會在儲存後 1–2 分鐘更新同一個檔案，所以**同一件商品剛存完又要改時，請先重新整理頁面**。
+
+### 儲存失敗的隔離與復原
+| 狀況 | 系統處理 | 網站 | 下一次修改 |
+|---|---|---|---|
+| 某件商品改壞（例：子分類不屬於主分類、照片檔不存在） | 這件商品退回上一個正確版本；原始修改存成 Actions artifact（14 天）；開 Issue 說明商品、操作者、原因 | 其他商品的修改照常發布 | 不受影響。改壞的商品依 Issue 修正後再存一次 |
+| 整批驗證仍失敗 | 本次所有後台修改退回最後一個正確版本，再驗證 | 維持上一個正確版本 | 不受影響 |
+| 退回後仍失敗（既有資料問題，非後台造成） | 不提交、不部署、開 Issue | 維持上一個正確版本 | 需要 Claude 修復 |
+| 流程本身中斷（GitHub 故障等） | 不部署 | 維持上一個正確版本 | 下一次儲存時自動補做（校正不依賴推送範圍，會處理所有未校正的後台儲存） |
+
+「上一個正確版本」＝該商品最後一個不是「[後台]」原始儲存的版本（校正後的版本或人工維護的版本）。
+
+## 五、為什麼需要「儲存後校正」（Pages CMS 的限制與補強）
 
 以 Pages CMS 2.1.8 原始碼確認（`app/api/[owner]/[repo]/[branch]/files/[path]/route.ts`、`lib/schema.ts`）：
 
@@ -61,39 +86,65 @@
 |---|---|---|
 | 只保留 `.pages.yml` 有定義的欄位 | `review`（審核、蝦皮快照）、`source_media` 整個消失 | `settings.content.merge: true` |
 | merge 時陣列（variants、images、specifications）整個覆蓋 | 規格 ID、規格圖、圖片使用權／尺寸消失 | 陣列每個子欄位都在 `.pages.yml` 宣告（不給改的設 hidden／readonly） |
-| 儲存時刪除全檔所有 `null`、`""`、`[]`、`{}` | `sku:null`、`tags:[]`、`price_twd:null`… 不見，原本的驗證會失敗 | `cms-normalize` 以儲存前版本為準放回空值，保持原鍵順序與格式 |
-| 前端送出的資料可被竄改 | 可改 id／slug／review | `cms-normalize` 一律以儲存前版本的 id、slug、review、規格 ID 為準 |
-| 沒有批次、匯入、還原 | — | Pages CMS Actions 按鈕觸發 `admin-bulk.yml`、`admin-import.yml`、`admin-restore.yml` |
+| 儲存時刪除全檔所有 `null`、`""`、`[]`、`{}` | `sku:null`、`tags:[]`、`price_twd:null`… 不見，原本的驗證會失敗 | `cms-normalize` 以上一個正確版本為準放回空值，保持原鍵順序與格式 |
+| 前端送出的資料可被竄改 | 可改 id／slug／review | `cms-normalize` 一律以上一個正確版本的 id、slug、review、規格 ID 為準 |
+| Actions 按鈕：伺服器直接轉送前端送出的 workflow／ref／輸入 | 有權限的人可自組請求觸發任一分支的流程 | 流程自我保護：分支必須與後台目前分支一致、批次需確認碼、所有寫入完整驗證 |
+| 沒有批次、還原 | — | Pages CMS Actions 按鈕（`ref: current`）觸發 `admin-bulk.yml`、`admin-restore.yml` |
 
-**驗證**：`tests/pages-cms-roundtrip.mjs` 直接打包 Pages CMS 原始碼（固定 commit `6f4e860`，2.1.8），對全部商品模擬「開啟 → 不修改 → 儲存 → 校正」，結果必須與原檔逐字相同；
-並測試改名、改價、改庫存、詢價、上下架、未核准上架、照片排序／刪除／上傳、竄改唯讀欄位、新增規格與端對端 git 流程。CI 每次都會跑。
+**驗證**：`tests/pages-cms-roundtrip.mjs` 直接打包 Pages CMS 原始碼（固定 2.1.8，commit `6f4e860`），對全部商品模擬「開啟 → 不修改 → 儲存 → 校正」，結果必須與原檔逐字相同；
+並測試改名、改價、改庫存、詢價、上下架、未核准上架、照片排序／刪除／上傳、竄改唯讀欄位、新增規格、改壞隔離、整批退回與端對端 git 流程。CI 每次都會跑。
 
 ### 修改 `.pages.yml` 的規則
 1. `settings.content.merge` 必須是 `true`。
 2. 在 `variants`、`images`、`specifications` 加欄位時，商品資料裡出現的每個子欄位都要宣告（測試會檢查）。
 3. 新增可修改的商品欄位時，同步更新 `scripts/lib/cms.mjs` 的 `EDITABLE_PRODUCT_KEYS`（測試會比對）。
 4. commit 範本必須以 `[後台]` 開頭，校正流程靠它辨識後台儲存。
-5. Pages CMS 升級時，先更新 `ci.yml` 裡固定的 commit，讓往返測試用新版本跑過再使用。
+5. Pages CMS 升級時，先更新 `ci.yml` 裡固定的版本，讓往返測試用新版本跑過再使用。
 
-## 五、測試方式（上線前）
+## 六、測試方式（啟用前）
 
-目前正式網站仍是舊版 `main`，`feature/product-admin` 不會更新正式網站。
+分支選 `feature/product-admin`：所有寫入只發生在這個分支，**不會修改 `main`、不會部署正式網站**（cms-sync 只推送到觸發它的分支；按鈕流程檢查分支一致；部署只在 main）。
 
-1. 依「一、第一次設定」登入並安裝 App，分支切到 `feature/product-admin`。
-2. 商品 → 搜尋「T15」→ 打開 → 改名稱或某個規格價格 → Save。
-3. GitHub → Actions → 「商品後台儲存後校正與發布」：Summary 會列出操作者、時間、修改前後內容；應該是綠色。
-4. 試著把一件草稿商品（例如搜尋「僱傭兵」）勾「上架」→ Save → Summary 顯示「尚未核准，已自動退回草稿」。
-5. 上傳一張照片到某商品 → Save → 確認商品資料夾出現 `u-xxxx.webp` 與 `-480.webp`。
-6. 「批次修改」「匯入蝦皮 CSV」「還原」按鈕在測試分支也可使用（流程已在 GitHub 登記）。按下後可在 Pages CMS 的 Actions 頁或 GitHub Actions 看到結果與報表。
-7. 測試完成後可以用「還原」或告訴 Claude 還原測試修改。
+1. 依「一」登入並安裝 App，分支切到 `feature/product-admin`。
+2. 商品 → 搜尋「T15」→ 打開 → 改名稱、某個規格價格、現貨／預購 → Save。
+3. GitHub → Actions →「商品後台儲存後校正與發布」：Summary 列出操作者、時間、修改前後內容；應為綠色。
+4. 把一件草稿商品（搜尋「僱傭兵」）勾「上架」→ Save → Summary 顯示「尚未核准，已自動退回草稿」。
+5. 上傳一張照片到某商品 → Save → 商品資料夾出現 `u-xxxx.webp` 與 `-480.webp`。
+6. 「批次修改」：先只預覽 → 取得確認碼 → 套用。
+7. 測試完成後用「還原」或告訴 Claude 還原測試修改。
 
-## 六、上線（需要 EWP 同意）
+## 七、協作者權限（依 Pages CMS 2.1.8 原始碼核對）
 
-1. GitHub → Settings → Pages → Source 改為 **GitHub Actions**（見 `docs/DEPLOY_ROLLBACK.md`）。
-2. 合併 PR #1（新網站）與本 PR 到 `main`。
-3. Pages CMS 分支切到 `main`。之後「後台 Save → 網站自動更新」，不需要處理 PR。
+Pages CMS 的協作者以 Email 邀請，不需要 GitHub 帳號。**權限是以整個 repo 為單位，不能限制分支或商品**：
 
-## 七、第二階段（規劃，與本階段相容）
+| 動作 | repo 擁有者（GitHub 登入） | Email 協作者 |
+|---|---|---|
+| 編輯商品、上傳照片（**任何分支，包含 main**） | ✔ | ✔ |
+| 按「批次修改」「還原」 | ✔ | ✔ |
+| 取消自己觸發的流程 | ✔ | ✔ |
+| 重新執行流程、取消別人的流程 | ✔ | ✘ |
+| 修改後台設定 `.pages.yml`、看設定歷史 | ✔ | ✘ |
+| 管理協作者 | ✔ | ✘ |
+| 核准商品（review）、新增／刪除商品 | ✘（後台不開放） | ✘ |
+
+建議：只邀請需要改商品的人；離職立即在 Collaborators 移除。所有修改都有操作者紀錄，可用「還原」回復。
+如果需要「員工只能改價格、不能上下架」這類細分權限，Pages CMS 做不到，要等第二階段自建後台（Cloudflare Access）。
+
+## 八、保密
+
+repo 是**公開**的，Git 歷史刪不乾淨。
+
+- **蝦皮 CSV 匯入已停用後台上傳**：原本「上傳到 `admin/imports/` 再刪除」會在 Git 歷史留下檔案。
+  目前匯入只在本機執行（`scripts/admin-import.mjs` 拒絕讀取 repo 內的檔案），`admin/imports/` 已加入 `.gitignore`。
+  安全的後台匯入規劃（第二階段一起做）：
+  1. 後台（Cloudflare Access 登入）向 Worker 要求**短效上傳網址**（R2 presigned PUT，例如 10 分鐘有效）；
+  2. 檔案直接上傳到**私有 R2 bucket**，不經過 GitHub；
+  3. Worker 解析並回傳**預覽與錯誤報告**；人工確認後才寫入 D1（即時價格／庫存）；
+  4. 匯入檔設定生命週期自動刪除（例如 7 天）；金鑰只放 Cloudflare Secrets。
+- **需要 EWP 決定**：目前 repo 已經公開了 `review.shopee_sales_snapshot`（蝦皮各規格價格與庫存快照），後台的 `stock_qty` 也會寫進公開 repo。
+  網頁不顯示，但任何人都能在 GitHub 看到。若庫存數量要保密，建議第二階段把庫存移到 D1，並從 repo 移除快照的庫存欄位。
+
+## 九、第二階段（規劃，與本階段相容）
 
 即時庫存、下單保留／扣庫存改由 Cloudflare Workers＋D1 處理（`docs/ecommerce/`）。屆時：
 - 網站可售庫存以 D1 為準；後台的 `stock_qty` 改為 D1 的初始值／對帳參考。

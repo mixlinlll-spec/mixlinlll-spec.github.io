@@ -14,9 +14,7 @@ on:
 permissions:
   contents: write
   actions: write
-concurrency:
-  group: admin-write-${{ github.ref }}
-  cancel-in-progress: false
+# 不設 concurrency group（GitHub 會取消排隊中的舊執行）；同時寫入由 admin-publish 的樂觀鎖處理：衝突就從最新版本重做並重新驗證
 jobs:
   restore:
     if: github.event_name == 'workflow_dispatch'
@@ -30,13 +28,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: 還原商品檔
-        id: restore
+      - name: 套用、驗證、提交、發布
+        uses: ./.github/actions/admin-publish
         env:
           PAYLOAD: ${{ inputs.payload }}
-        run: node scripts/admin-restore.mjs
-      - name: 驗證、提交、發布
-        uses: ./.github/actions/admin-publish
         with:
-          message: "[還原] ${{ steps.restore.outputs.file }} → ${{ steps.restore.outputs.sha }}（${{ fromJSON(inputs.payload).triggeredBy.name }}）"
+          apply: node scripts/admin-restore.mjs
+          message: "[還原] ${{ fromJSON(inputs.payload).context.path }} → ${{ fromJSON(inputs.payload).inputs.sha }}（${{ fromJSON(inputs.payload).triggeredBy.name }}）"
           paths: src/data/products

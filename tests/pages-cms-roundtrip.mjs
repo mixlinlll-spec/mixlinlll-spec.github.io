@@ -212,6 +212,16 @@ console.log('4. 端對端：後台 commit → cms-normalize（暫存 git 工作�
   const other = files.find(f => f !== mf && f !== rf);
   fs.writeFileSync(P(other), fs.readFileSync(P(other), 'utf8').replace('"featured": false', '"featured": true'));
   g('add', '-A'); g('commit', '-qm', 'chore: 手動修改');
+  // 一件改壞的商品（子分類不屬於主分類）：應被退回，不影響其他商品
+  const bad = files.find(f => ![mf, rf, other].includes(f) && JSON.parse(fs.readFileSync(P(f), 'utf8')).primary_category_id !== 'fc-esc');
+  const badOrig = fs.readFileSync(P(bad), 'utf8');
+  cmsSave(bad, f => { f.subcategory_id = 'fc'; f.name_zh = '改壞的名稱'; });
+  g('add', '-A'); g('commit', '-qm', `[後台] 更新 ${bad}（員工B）`);
+  // 其他商品的圖片資料夾用連結補上，再以正式的資料驗證（build --check）檢查整個工作區
+  for (const d of fs.readdirSync(path.join(ROOT, 'assets/img/products'))) {
+    const t = path.join(wt, 'assets/img/products', d);
+    if (!fs.existsSync(t)) fs.symlinkSync(path.join(ROOT, 'assets/img/products', d), t);
+  }
   const sum = path.join(wt, 'summary.md');
   execFileSync('node', ['scripts/cms-normalize.mjs', '--summary', sum], { cwd: wt, encoding: 'utf8' });
   const m = JSON.parse(fs.readFileSync(P(mf), 'utf8'));
@@ -226,17 +236,21 @@ console.log('4. 端對端：後台 commit → cms-normalize（暫存 git 工作�
   const r = JSON.parse(fs.readFileSync(P(rf), 'utf8'));
   ok(r.published === false, '未核准商品從後台勾上架：校正後仍為草稿');
   ok(fs.readFileSync(P(other), 'utf8').includes('"featured": true'), '非後台 commit 不被校正程式更動');
+  ok(fs.readFileSync(P(bad), 'utf8') === badOrig && fs.existsSync(path.join(wt, '.cms-quarantine', bad)) && fs.readFileSync(path.join(wt, '.cms-quarantine.md'), 'utf8').includes('員工B'),
+    '改壞的商品被隔離：退回上一個正確版本、原始修改另存、通知列出原因與操作者；其他商品照常');
   const md = fs.readFileSync(sum, 'utf8');
   ok(md.includes('林志騰') && md.includes('員工A') && md.includes('尚未核准') && md.includes('→ 5'), '變更摘要列出操作者、時間、修改內容與警告');
-  // 其他商品的圖片資料夾用連結補上，再以正式的資料驗證（build --check）檢查整個工作區
-  for (const d of fs.readdirSync(path.join(ROOT, 'assets/img/products'))) {
-    const t = path.join(wt, 'assets/img/products', d);
-    if (!fs.existsSync(t)) fs.symlinkSync(path.join(ROOT, 'assets/img/products', d), t);
-  }
   let checkOut = ''; let checkOk = true;
   try { checkOut = execFileSync('node', ['scripts/build.mjs', '--check'], { cwd: wt, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }); }
   catch (e) { checkOk = false; checkOut = (e.stdout || '') + (e.stderr || ''); }
   ok(checkOk, `校正後全部商品通過正式資料驗證${checkOk ? '' : '：' + checkOut.slice(-600)}`);
+  // 整批退回（驗證仍失敗時的後備程序）：commit 校正結果後，再做一次後台儲存並整批退回
+  g('add', '-A'); g('commit', '-qm', 'chore(後台): 校正');
+  const before2 = fs.readFileSync(P(mf), 'utf8');
+  cmsSave(mf, f => { f.name_zh = '整批退回測試'; });
+  g('add', '-A'); g('commit', '-qm', `[後台] 更新 ${mf}（員工C）`);
+  execFileSync('node', ['scripts/cms-normalize.mjs', '--quarantine-all'], { cwd: wt, encoding: 'utf8' });
+  ok(fs.readFileSync(P(mf), 'utf8') === before2, '後備程序：整批退回到最後一個正確版本');
   fs.rmSync(wt, { recursive: true, force: true });
 }
 
