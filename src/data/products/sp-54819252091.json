@@ -20,7 +20,22 @@
   "description": "【KONKER 空氪 STARSKY 2207 / 1950KV 無刷馬達】\n\n五吋花飛取向馬達。1950KV 搭配 6S 使用，\n轉速與扭力平衡，適合日常花飛與自由式飛行。\n鏤空散熱結構，彩色陽極外殼。\n\n■ 商品規格\n型號：KONKER STARSKY 2207\nKV 值：1950KV\n空載電流：1.1A @ 10V\n最大電流：40A\n相間內阻：61 mΩ\n最大拉力：1.7 kg\n最大功率：942 W\n馬達重量（含線）：34.5 g\n盒裝重量：45 g\n\n■ 尺寸規格\n整體高度：31.55 mm\n機身高度：12.5 mm\n外徑：Ø28.54 mm\n安裝孔位：Ø16 M3×4\n軸徑：M5\n引線長度：150 mm\n\n■ 顏色選擇\n粉紅色\n天藍色\n※ 實際顏色會因燈光與螢幕顯示略有差異\n\n■ 商品特點\n1. 1950KV 搭配 6S，轉速與扭力平衡，適合日常花飛與自由式\n2. 鏤空散熱結構，連續操作時散熱條件較佳\n3. 150mm 加長引線，五吋機架走線不必另外接長\n4. 彩色陽極外殼，粉紅與天藍兩色可選，四顆同色外觀一致\n\n■ 適用機型\n5 吋穿越機（花飛、自由式）\n建議電池：6S\n\n■ 購買前請務必確認\n1. 本頁面為單顆售價。一組四顆請調整數量或選購四入規格。\n2. 安裝孔位為 Ø16 M3×4，請確認你的機架臂孔距相符。\n3. 軸徑 M5，請確認槳葉軸孔相容。\n4. 最大電流 40A 為原廠標示，未註明測試電壓與槳葉型號。\n   拉力與功率為原廠實驗室數據，實際飛行數值會有差異。\n   四軸滿油門瞬時總電流相當可觀，請確認電調有足夠餘裕，\n   不要用剛好打平的規格。\n5. 本商品不含螺絲、槳葉與電調。\n\n■ 安裝注意\n1. 鎖馬達螺絲務必確認長度。螺絲過長會頂到繞線造成短路燒毀，\n   此情況不在保固範圍。\n2. 馬達線請預留適當長度並確實固定，避免震動造成斷線。\n3. 安裝後請先無槳測試，確認馬達順序與旋轉方向正確，再裝槳飛行。\n\n■ 保固說明\n馬達屬消耗品。以下情況不在保固範圍：\n・進水、泡水\n・撞擊、摔機造成的軸心彎曲或外殼變形\n・卡草、堵轉造成的燒毀\n・線材拉斷\n・螺絲過長頂傷繞線\n・超出電流規格使用\n\n■ 建議\n馬達燒毀通常是突發的，而且四顆裡壞一顆就整台停飛。\n建議備一顆同色備品，外場當天就能換好繼續飛。\n\n電翼動力 EWP｜Ready to Fly",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "天藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "391614399361"
+    },
+    {
+      "name": "粉色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "391614399360"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -42,6 +57,61 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mubcmnlya5fo24",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mubcmnlybk04bc",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mubcmnlycykkfc"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lf-mubcsh338lxjde",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820le-mubck0ze2j9ca5",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lh-mubck0xx1jwi1d",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820l8-mubck0yubrwnc2",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lh-mubck13psjr5ec",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820l6-mubck1cdtlojc9"
+      ],
+      "variation_label": "星空2207／1950KV",
+      "options": [
+        {
+          "option": "粉色",
+          "url": null
+        },
+        {
+          "option": "天藍",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "星空2207／1950KV",
+      "rows": [
+        {
+          "variation_id": "391614399361",
+          "name": "天藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 619,
+          "stock": 10,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "391614399360",
+          "name": "粉色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 619,
+          "stock": 10,
+          "min_qty": null
+        }
+      ],
+      "price_min": 619,
+      "price_max": 619,
+      "stock_total": 20,
+      "status": "snapshot_only"
+    }
   }
 }

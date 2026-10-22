@@ -17,7 +17,10 @@
     "import:csv": "node scripts/import-csv.mjs",
     "import:shopee": "node scripts/import-shopee.mjs",
     "images": "node scripts/add-images.mjs",
-    "report": "node scripts/report-first-batch.mjs"
+    "report": "node scripts/report-first-batch.mjs",
+    "import:media": "node scripts/import-shopee-media.mjs",
+    "approve": "node scripts/approve-snapshot.mjs",
+    "report:shopee": "node scripts/report-shopee-import.mjs"
   },
   "devDependencies": {
     "lighthouse": "12.6.1",

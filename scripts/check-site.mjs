@@ -80,6 +80,12 @@ if (!isPreview) {
     if (allHtml.includes(`data-id="${d.id}"`)) errors.push(`草稿外洩：頁面含商品卡 ${d.id}`);
   }
   if (!sitemap.includes('<urlset')) errors.push('缺少 sitemap.xml');
+  // 未公開商品的圖片不得出現在正式產物
+  const imgRoot = path.join(OUT, 'assets', 'img', 'products');
+  if (fs.existsSync(imgRoot)) for (const d of fs.readdirSync(imgRoot)) {
+    const p = products.find(x => x.id === d);
+    if (!p || !p.published) errors.push(`草稿外洩：未公開商品圖片 assets/img/products/${d}/`);
+  }
 }
 
 if (errors.length) { console.error(`✖ 檢查失敗 ${errors.length} 筆：\n  ` + errors.slice(0, 60).join('\n  ')); process.exit(1); }

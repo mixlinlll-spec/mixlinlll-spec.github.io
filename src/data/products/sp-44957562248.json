@@ -18,7 +18,29 @@
   "description": "FPV穿越機, GEPRC, T-Cube18, 新手穿越機, 航拍無人機, 2吋FPV, AIO飛控, 5.8G圖傳, FPV入門, Cinewhoop, 無人機, FPV Drone\n\n【🔥新手也能輕鬆飛的FPV入門機】\n 不會調機？不會組裝？這台直接幫你搞定\n 👉 開箱即可飛｜穩定｜好上手\n【✨產品特色】\n ✔ 輕量設計 👉 操控簡單穩定，新手友善\n ✔ AIO飛控整合 👉 安裝簡單，降低故障率\n ✔ 內建接收機 👉 減少配件成本與接線複雜度\n ✔ CNC鏡頭座 👉 抗震強化，畫面更穩\n ✔ 5.8G圖傳 👉 傳輸穩定，適合日常航拍\n ✔ 客製天線 👉 提升訊號穩定度\n【⚙️商品規格】\n 品牌：GEPRC｜型號：T-Cube18｜尺寸：2吋｜飛控：AIO飛控｜圖傳：5.8G｜接收機：內建｜適用：FPV入門 / 航拍\n【📦包裝內容】\n 穿越機×1（依版本配置）\n【⚠️注意事項】\n 需搭配遙控器與眼鏡使用｜建議初學者於空曠環境練習｜避免錯誤電池使用\n【🚀適合族群】\n 新手入門｜日常航拍｜輕度玩家｜練習飛行",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "HDZERO版本 內置ELRS",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "345671880654"
+    },
+    {
+      "name": "無圖傳 版本 內置ELRS",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "345671880655"
+    },
+    {
+      "name": "模擬圖傳版本內置ELRS",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "345671880653"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -43,6 +65,73 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mm5dwp8d31mt3a",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mm5dwp8d4g7954",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mm5dwp8d5urp38"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/sg-11134201-82610-mm5dt3a0h2q7ec",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/sg-11134201-82620-mm5dt3wgnvns07",
+        "https://s-cf-tw.shopeesz.com/file/sg-11134201-82613-mm5dt4enwg04ee",
+        "https://s-cf-tw.shopeesz.com/file/sg-11134201-82600-mm5dt4y2sqo3d5",
+        "https://s-cf-tw.shopeesz.com/file/sg-11134201-82609-mm5dt5j37ll139"
+      ],
+      "variation_label": "T-Cube18",
+      "options": [
+        {
+          "option": "模擬圖傳版本內置ELRS",
+          "url": null
+        },
+        {
+          "option": "HDZERO版本 內置ELRS",
+          "url": null
+        },
+        {
+          "option": "無圖傳 版本 內置ELRS",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "T-Cube18",
+      "rows": [
+        {
+          "variation_id": "345671880654",
+          "name": "HDZERO版本 內置ELRS",
+          "parent_sku": null,
+          "sku": null,
+          "price": 8880,
+          "stock": 9994,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "345671880655",
+          "name": "無圖傳 版本 內置ELRS",
+          "parent_sku": null,
+          "sku": null,
+          "price": 5800,
+          "stock": 9994,
+          "min_qty": null
+        },
+        {
+          "variation_id": "345671880653",
+          "name": "模擬圖傳版本內置ELRS",
+          "parent_sku": null,
+          "sku": null,
+          "price": 6800,
+          "stock": 9994,
+          "min_qty": null
+        }
+      ],
+      "price_min": 5800,
+      "price_max": 8880,
+      "stock_total": 29982,
+      "status": "snapshot_only"
+    }
   }
 }

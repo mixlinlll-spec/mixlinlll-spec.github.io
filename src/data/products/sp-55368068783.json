@@ -18,7 +18,15 @@
   "description": "【BETAFPV LAVA II 1S 鋰電池】",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "580mah/BT2.0",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "446529136141"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -37,6 +45,46 @@
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l6-mtboffi2akg98d"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mtbocxdqsgec25",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mtbocxdqr1tw37",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtbocxdqo8p0ce",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtbocxdqpn9gf4"
+      ],
+      "variation_label": "Lava 1s 四入裝",
+      "options": [
+        {
+          "option": "580mah/BT2.0",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Lava 1s 四入裝",
+      "rows": [
+        {
+          "variation_id": "446529136141",
+          "name": "580mah/BT2.0",
+          "parent_sku": null,
+          "sku": null,
+          "price": 799,
+          "stock": 2,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 799,
+      "price_max": 799,
+      "stock_total": 2,
+      "status": "snapshot_only"
+    }
   }
 }

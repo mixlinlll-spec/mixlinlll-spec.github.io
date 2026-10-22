@@ -16,7 +16,50 @@
   "description": "#DJIGoggles3 #Goggles3配件 #電池綁帶 #FPV頭顯 #穿越機配件 #DJIFPV #FPV飛手 #電池固定帶 #頭顯電池側掛 #靈雀FPV\n\n專為 DJI Goggles 3 設計的電池固定綁帶！\n有效將電池牢牢固定在頭顯側邊，避免滑落、晃動\n產品特色\n\n✔ 專用尺寸：完全貼合 DJI Goggles 3 \n✔ 穩定固定：避免電池移位、鬆脫\n✔ 高韌性材質：不易斷、不易鬆\n\n適用範圍\nDJI Goggles 3",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "紫",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "435139834120"
+    },
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "435139834121"
+    },
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "435139834116"
+    },
+    {
+      "name": "黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "435139834117"
+    },
+    {
+      "name": "綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "435139834118"
+    },
+    {
+      "name": "橘",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "435139834119"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -33,6 +76,110 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mh5snvzn3g9acd",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh5snvyycw7c6d"
+      ],
+      "variation_label": "Goggles 3 電池綁帶",
+      "options": [
+        {
+          "option": "黑",
+          "url": null
+        },
+        {
+          "option": "白",
+          "url": null
+        },
+        {
+          "option": "黃",
+          "url": null
+        },
+        {
+          "option": "綠",
+          "url": null
+        },
+        {
+          "option": "橘",
+          "url": null
+        },
+        {
+          "option": "紫",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Goggles 3 電池綁帶",
+      "rows": [
+        {
+          "variation_id": "435139834120",
+          "name": "紫",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 20,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "435139834121",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 17,
+          "min_qty": null
+        },
+        {
+          "variation_id": "435139834116",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 19,
+          "min_qty": null
+        },
+        {
+          "variation_id": "435139834117",
+          "name": "黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "435139834118",
+          "name": "綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 19,
+          "min_qty": null
+        },
+        {
+          "variation_id": "435139834119",
+          "name": "橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 18,
+          "min_qty": null
+        }
+      ],
+      "price_min": 120,
+      "price_max": 120,
+      "stock_total": 113,
+      "status": "snapshot_only"
+    }
   }
 }

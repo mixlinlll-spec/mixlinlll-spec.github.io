@@ -16,7 +16,29 @@
   "description": "•\t#Boslipo綁帶\n•\t#穿越機電池帶\n•\t#FPV防滑扎帶\n•\t#魔術貼綁帶\n•\t#1S2S電池固定\n•\t#四軸無人機配件\n•\t#反扣電池帶\n•\t#航模綁帶\n•\t#電池防滑\n•\t#台灣現貨",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "橘15x185mm",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "355653828746"
+    },
+    {
+      "name": "藍15x185mm",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "355653828747"
+    },
+    {
+      "name": "黑15x185mm",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "355653828745"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -38,6 +60,72 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mlyeahyva3nnd5",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l4-mlyeahyvbi83bc",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mlyeahyxtekve1"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlye99hukb9kab",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mlye8kx4xudfd9",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlye8ky8xmgz02",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mlye8l1pips134"
+      ],
+      "variation_label": "Boslipo電池綁帶",
+      "options": [
+        {
+          "option": "黑15x185mm",
+          "url": null
+        },
+        {
+          "option": "橘15x185mm",
+          "url": null
+        },
+        {
+          "option": "藍15x185mm",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Boslipo電池綁帶",
+      "rows": [
+        {
+          "variation_id": "355653828746",
+          "name": "橘15x185mm",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "355653828747",
+          "name": "藍15x185mm",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 0,
+          "min_qty": null
+        },
+        {
+          "variation_id": "355653828745",
+          "name": "黑15x185mm",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 45,
+      "price_max": 45,
+      "stock_total": 0,
+      "status": "snapshot_only"
+    }
   }
 }

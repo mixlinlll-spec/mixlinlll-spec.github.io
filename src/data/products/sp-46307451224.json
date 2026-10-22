@@ -35,6 +35,42 @@
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mm0kml0sj47418"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101809 - Home & Living/Tools & Home Improvement/Tools/Power Welding Tools",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mm0klb8zdzibe9",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mm0klb9usqo0e2",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mm0klb8zckxv90",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mm0klb904oaw93",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mm0klb8rxp1d8c"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "292466065399",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 79,
+          "stock": 0,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 79,
+      "price_max": 79,
+      "stock_total": 0,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -16,7 +16,78 @@
   "description": "#SpeedyBeeMario8 #穿越機配件 #3D列印 #TPU外殼 #穿越機保護套 #SpeedyBee配件 #穿越機維修 #穿越機改裝 #FPV配件 #穿越機支架\n\n✅ 完美相容 SpeedyBee Mario 8 機架\n✅ 高精度3D列印，外觀整潔、安裝方便\n\n材質說明：\nTPU（熱塑性聚氨酯）－柔軟、有彈性、耐磨抗摔\n適用機種：SpeedyBee Mario 8",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "側護板一對(SMA天線側出)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320049569067"
+    },
+    {
+      "name": "原廠尾座+接收機",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "277111218215"
+    },
+    {
+      "name": "機臂底座4個",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "277111218212"
+    },
+    {
+      "name": "電機線護蓋4條一組",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "307192906969"
+    },
+    {
+      "name": "狗座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "277111218213"
+    },
+    {
+      "name": "尾部雙SMA+251GPS",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "277111218214"
+    },
+    {
+      "name": "前保險桿一對",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415049590981"
+    },
+    {
+      "name": "尾座+251GPS+單SMA",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "277111218216"
+    },
+    {
+      "name": "電容放置",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "277111218218"
+    },
+    {
+      "name": "鏡頭減震4個",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "277111218217"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +105,166 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mghb6vbk6xoqbe",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mghbr7tkx9u47d",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mghbtugu2ih73a",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mh5tlof640zu05",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mhdft3wdfaj37d",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mhdft3waoyrwd6"
+      ],
+      "variation_label": "Mario 8",
+      "options": [
+        {
+          "option": "尾部雙SMA+251GPS",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mghbmf37wopb57"
+        },
+        {
+          "option": "原廠尾座+接收機",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mghbmi4jw5qgcd"
+        },
+        {
+          "option": "尾座+251GPS+單SMA",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mghbmkerd3wu94"
+        },
+        {
+          "option": "鏡頭減震4個",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mghbmmn1gkcpc6"
+        },
+        {
+          "option": "電容放置",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mghbmp2mm9l741"
+        },
+        {
+          "option": "機臂底座4個",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mghbmty3z6ryde"
+        },
+        {
+          "option": "狗座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mghbmr0cr3t48f"
+        },
+        {
+          "option": "側護板一對(SMA天線側出)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mghbr7tkx9u47d"
+        },
+        {
+          "option": "前保險桿一對",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mghbtugu2ih73a"
+        },
+        {
+          "option": "電機線護蓋4條一組",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhdfu9xyoglo98"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Mario 8",
+      "rows": [
+        {
+          "variation_id": "320049569067",
+          "name": "側護板一對(SMA天線側出)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 19,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "277111218215",
+          "name": "原廠尾座+接收機",
+          "parent_sku": null,
+          "sku": null,
+          "price": 60,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "277111218212",
+          "name": "機臂底座4個",
+          "parent_sku": null,
+          "sku": null,
+          "price": 119,
+          "stock": 18,
+          "min_qty": null
+        },
+        {
+          "variation_id": "307192906969",
+          "name": "電機線護蓋4條一組",
+          "parent_sku": null,
+          "sku": null,
+          "price": 130,
+          "stock": 52,
+          "min_qty": null
+        },
+        {
+          "variation_id": "277111218213",
+          "name": "狗座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 60,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "277111218214",
+          "name": "尾部雙SMA+251GPS",
+          "parent_sku": null,
+          "sku": null,
+          "price": 90,
+          "stock": 19,
+          "min_qty": null
+        },
+        {
+          "variation_id": "415049590981",
+          "name": "前保險桿一對",
+          "parent_sku": null,
+          "sku": null,
+          "price": 75,
+          "stock": 18,
+          "min_qty": null
+        },
+        {
+          "variation_id": "277111218216",
+          "name": "尾座+251GPS+單SMA",
+          "parent_sku": null,
+          "sku": null,
+          "price": 85,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "277111218218",
+          "name": "電容放置",
+          "parent_sku": null,
+          "sku": null,
+          "price": 35,
+          "stock": 18,
+          "min_qty": null
+        },
+        {
+          "variation_id": "277111218217",
+          "name": "鏡頭減震4個",
+          "parent_sku": null,
+          "sku": null,
+          "price": 35,
+          "stock": 20,
+          "min_qty": null
+        }
+      ],
+      "price_min": 35,
+      "price_max": 130,
+      "stock_total": 224,
+      "status": "snapshot_only"
+    }
   }
 }

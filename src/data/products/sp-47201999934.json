@@ -16,7 +16,64 @@
   "description": "#GPS外殼\n#GPS支架\n#3D列印配件\n#TPU外殼\n#PLA外殼\n#25_5mm支架\n#20mm支架\n#MiniGPS機艙蓋\n#FPV配件\n#圖傳感測器保護\n#穿越機改裝\n#靈雀FPV\n#GPS固定座\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n這組列印件為針對常見 GPS 方便直接安裝於各類穿越機機架。\n\n顏色：黑 / / 橙 / 白 / 綠 / 紫 / 透藍（下單備註）\n重量：依款式 3–15 g（視部件大小而定）\n\n安裝說明\n確認模組尺寸與孔距（25.5mm / 20mm / Mini）。\n\n出貨與退換貨\n訂製列印件屬客製化商品，請務必於下單時備註顏色與規格；訂製商品無法退貨。\n出貨前會檢查外觀與尺寸，列印件若有明顯瑕疵將提供更換或退貨處理（依情況判定）。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "其它規格可以私訊",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "325233186966"
+    },
+    {
+      "name": "29X29",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "405193807347"
+    },
+    {
+      "name": "25.5X25.5",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "405193807348"
+    },
+    {
+      "name": "22X22",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "405193807349"
+    },
+    {
+      "name": "18X18",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "405193807350"
+    },
+    {
+      "name": "25X25",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "405193807351"
+    },
+    {
+      "name": "16.3X12.4",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "405193807352"
+    },
+    {
+      "name": "32X32",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "325233186965"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +92,136 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mhex99ag11xn7e",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mhex99anr6dl00"
+      ],
+      "variation_label": "GPS座",
+      "options": [
+        {
+          "option": "25.5X25.5",
+          "url": null
+        },
+        {
+          "option": "22X22",
+          "url": null
+        },
+        {
+          "option": "18X18",
+          "url": null
+        },
+        {
+          "option": "25X25",
+          "url": null
+        },
+        {
+          "option": "16.3X12.4",
+          "url": null
+        },
+        {
+          "option": "29X29",
+          "url": null
+        },
+        {
+          "option": "32X32",
+          "url": null
+        },
+        {
+          "option": "其它規格可以私訊",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "GPS座",
+      "rows": [
+        {
+          "variation_id": "325233186966",
+          "name": "其它規格可以私訊",
+          "parent_sku": null,
+          "sku": null,
+          "price": 150,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "405193807347",
+          "name": "29X29",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "405193807348",
+          "name": "25.5X25.5",
+          "parent_sku": null,
+          "sku": null,
+          "price": 40,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "405193807349",
+          "name": "22X22",
+          "parent_sku": null,
+          "sku": null,
+          "price": 35,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "405193807350",
+          "name": "18X18",
+          "parent_sku": null,
+          "sku": null,
+          "price": 35,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "405193807351",
+          "name": "25X25",
+          "parent_sku": null,
+          "sku": null,
+          "price": 40,
+          "stock": 48,
+          "min_qty": null
+        },
+        {
+          "variation_id": "405193807352",
+          "name": "16.3X12.4",
+          "parent_sku": null,
+          "sku": null,
+          "price": 35,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "325233186965",
+          "name": "32X32",
+          "parent_sku": null,
+          "sku": null,
+          "price": 55,
+          "stock": 49,
+          "min_qty": null
+        }
+      ],
+      "price_min": 35,
+      "price_max": 150,
+      "stock_total": 396,
+      "status": "snapshot_only"
+    }
   }
 }

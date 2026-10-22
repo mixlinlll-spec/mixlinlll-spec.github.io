@@ -56,7 +56,29 @@
     }
   ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "紫色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400993012784"
+    },
+    {
+      "name": "粉色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400993012785"
+    },
+    {
+      "name": "鈦灰",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400993012783"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -94,7 +116,72 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-movwobh0vjeqe3",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-movwobf0owsh2a",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-movwobep7xu3e2"
+      ],
+      "variation_label": "天狼2306.5",
+      "options": [
+        {
+          "option": "鈦灰",
+          "url": null
+        },
+        {
+          "option": "紫色",
+          "url": null
+        },
+        {
+          "option": "粉色",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "天狼2306.5",
+      "rows": [
+        {
+          "variation_id": "400993012784",
+          "name": "紫色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 429,
+          "stock": 1,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "400993012785",
+          "name": "粉色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 429,
+          "stock": 5,
+          "min_qty": null
+        },
+        {
+          "variation_id": "400993012783",
+          "name": "鈦灰",
+          "parent_sku": null,
+          "sku": null,
+          "price": 429,
+          "stock": 4,
+          "min_qty": null
+        }
+      ],
+      "price_min": 429,
+      "price_max": 429,
+      "stock_total": 10,
+      "status": "snapshot_only"
+    }
   },
   "notes": [
     "請確認電調與電池配置是否相容。",

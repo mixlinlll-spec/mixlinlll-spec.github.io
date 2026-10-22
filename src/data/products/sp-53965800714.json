@@ -47,7 +47,15 @@
     }
   ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "單顆",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "311350616144"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -82,7 +90,46 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mt0m0i9ndlaa03",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mrqmc52xx81zde",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mt0d4y1pet558b"
+      ],
+      "variation_label": "EWP M10GPS 帶羅盤",
+      "options": [
+        {
+          "option": "單顆",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "EWP M10GPS 帶羅盤",
+      "rows": [
+        {
+          "variation_id": "311350616144",
+          "name": "單顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 420,
+          "stock": 0,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 420,
+      "price_max": 420,
+      "stock_total": 0,
+      "status": "snapshot_only"
+    }
   },
   "notes": [
     "安裝前請確認飛控 UART 與羅盤 I2C 接線定義。",

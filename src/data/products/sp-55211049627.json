@@ -16,7 +16,71 @@
   "description": "#CINELR7 #翼飛 #TPU配件 #GoPro狗座 #尾座 #機臂腳墊 #FPV #穿越機 #無人機配件 #3D列印 #GoPro支架 #航模 #長距離FPV #TPU保護件 #ARM腳墊\n\n翼飛 CINELR7 專用 TPU 配件組🔥\n提升保護性、實用性與整體外觀質感\n📌可選配件\n・GoPro 狗座\n・尾座 / 天線座\n・ARM 機臂腳墊\n・TPU 保護件\n\n📌產品特色\n・專為 CINELR7 設計｜尺寸精準貼合\n・TPU材質｜耐摔、耐震、不易斷裂\n・輕量化設計｜降低額外負重\n・保護機身｜減少起降與碰撞損傷\n・提升整體外觀與安裝完整度\n\n📌材質說明\n材質：TPU\n製作方式：3D列印\n\n📌注意事項\n・3D列印產品表面可能存在正常紋路\n・不同批次顏色可能略有差異\n・本商品不含無人機 / GoPro / 天線等設備\n・請確認機型與配件版本後再下單\n\n📌溫馨提醒\n3D列印 TPU 配件屬客製耗材類商品，除重大瑕疵外，不接受因個人因素退換貨。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "GO座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390963721090"
+    },
+    {
+      "name": "SMA朝上(GPS內收)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390963721088"
+    },
+    {
+      "name": "原廠尾座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390963721086"
+    },
+    {
+      "name": "SMA朝上+天線放置(GPS內收)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390963721093"
+    },
+    {
+      "name": "腳墊改裝+1.5公分",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390963721089"
+    },
+    {
+      "name": "SMA+GPS外置",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390963721092"
+    },
+    {
+      "name": "機頭保桿",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390963721085"
+    },
+    {
+      "name": "接收機座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390963721087"
+    },
+    {
+      "name": "原廠腳墊",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390963721091"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +99,155 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-momm3sjwts7426",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-momm41j4lf63de",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-momm41k38rgha1",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-momm41luykukcd",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-momm41kqysr048",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-momm41jjnmdq56",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-momm41k1kd1p1f",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-momm41kgxsss68",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-momm41kvylfkb2"
+      ],
+      "variation_label": "CINELR7",
+      "options": [
+        {
+          "option": "機頭保桿",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-momm41j4lf63de"
+        },
+        {
+          "option": "GO座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-momm41k38rgha1"
+        },
+        {
+          "option": "原廠尾座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-momm41luykukcd"
+        },
+        {
+          "option": "原廠腳墊",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-momm41kqysr048"
+        },
+        {
+          "option": "SMA+GPS外置",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-momm41jjnmdq56"
+        },
+        {
+          "option": "SMA朝上+天線放置(GPS內收)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-momm41k1kd1p1f"
+        },
+        {
+          "option": "接收機座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-momm41kgxsss68"
+        },
+        {
+          "option": "SMA朝上(GPS內收)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-momm41kvylfkb2"
+        },
+        {
+          "option": "腳墊改裝+1.5公分",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mommauajmwb06d"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "CINELR7",
+      "rows": [
+        {
+          "variation_id": "390963721090",
+          "name": "GO座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "390963721088",
+          "name": "SMA朝上(GPS內收)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 90,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390963721086",
+          "name": "原廠尾座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 100,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390963721093",
+          "name": "SMA朝上+天線放置(GPS內收)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 100,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390963721089",
+          "name": "腳墊改裝+1.5公分",
+          "parent_sku": null,
+          "sku": null,
+          "price": 150,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390963721092",
+          "name": "SMA+GPS外置",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390963721085",
+          "name": "機頭保桿",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390963721087",
+          "name": "接收機座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390963721091",
+          "name": "原廠腳墊",
+          "parent_sku": null,
+          "sku": null,
+          "price": 110,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 30,
+      "price_max": 150,
+      "stock_total": 450,
+      "status": "snapshot_only"
+    }
   }
 }

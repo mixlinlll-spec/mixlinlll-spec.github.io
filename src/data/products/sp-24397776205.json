@@ -16,7 +16,57 @@
   "description": "#speedybee #mariomini25 #mini25 #穿越機 #機架配件 #fpv #speedybeefpv \n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nSpeedyBee Mario Mini25 官方釋出的結構件模型，專為 Mini25 機架設計，完美貼合、輕量耐用。無論是替換破損部件、升級外觀或提升保護性，都能快速套用。\n\n產品特色\n適用 SpeedyBee Mario Mini25 全系列\n輕量化設計，不影響飛行性能\n\n顏色 : 黑/黃/白/綠/橘/紫",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "電容固定座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "345216107102"
+    },
+    {
+      "name": "外殼保險扣",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "345216107103"
+    },
+    {
+      "name": "側保護保險扣",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "345216107097"
+    },
+    {
+      "name": "O4PRO天線固定座A",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "345216107098"
+    },
+    {
+      "name": "平衡底板(防撞及平衡)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "345216107099"
+    },
+    {
+      "name": "O4PRO天線固定座B",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "345216107100"
+    },
+    {
+      "name": "小O4天線固定座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "345216107101"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +84,124 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mhkkhnziuarld3",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mhkkho01534544",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mhkkwuycw2dibe"
+      ],
+      "variation_label": "Mario Mini25",
+      "options": [
+        {
+          "option": "小O4天線固定座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mhkkt2kn4paec8"
+        },
+        {
+          "option": "電容固定座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mhkktidk9fr717"
+        },
+        {
+          "option": "外殼保險扣",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mhkku44jdog4df"
+        },
+        {
+          "option": "側保護保險扣",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhkkujetbdvs92"
+        },
+        {
+          "option": "O4PRO天線固定座A",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mhkkuta4qcxvb2"
+        },
+        {
+          "option": "平衡底板(防撞及平衡)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mhkkxhvz40058a"
+        },
+        {
+          "option": "O4PRO天線固定座B",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mhkkz1g68padca"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Mario Mini25",
+      "rows": [
+        {
+          "variation_id": "345216107102",
+          "name": "電容固定座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "345216107103",
+          "name": "外殼保險扣",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "345216107097",
+          "name": "側保護保險扣",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "345216107098",
+          "name": "O4PRO天線固定座A",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 47,
+          "min_qty": null
+        },
+        {
+          "variation_id": "345216107099",
+          "name": "平衡底板(防撞及平衡)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 48,
+          "min_qty": null
+        },
+        {
+          "variation_id": "345216107100",
+          "name": "O4PRO天線固定座B",
+          "parent_sku": null,
+          "sku": null,
+          "price": 40,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "345216107101",
+          "name": "小O4天線固定座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 49,
+          "min_qty": null
+        }
+      ],
+      "price_min": 30,
+      "price_max": 45,
+      "stock_total": 343,
+      "status": "snapshot_only"
+    }
   }
 }

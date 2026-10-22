@@ -18,7 +18,50 @@
   "description": "#FPV #穿越機 #25吋機架 #小鋼炮 #碳纖維機架 #花飛機架 #FPV機架 #DIY穿越機 #無人機\n\n戈布（Goblin Scout）為電翼動力自主打造之2.5吋Freestyle穿越機，採用T700碳纖維機架搭配H415 AIO飛塔，兼具輕量化、高性能與數位圖傳擴充能力。\n\n【產品特色】\n✔ T700碳纖維高強度機架\n✔ H415 400MHz高性能主控\n✔ ICM42688高性能陀螺儀\n✔ SPL06氣壓計\n✔ 16MB黑盒子記錄\n✔ 5V 3A BEC穩定輸出\n✔ 支援LED／BB響／I2C擴充\n✔ 支援DJI O4 Lite、HDZero、Walksnail\n✔ 1103 8000KV高效率動力\n✔ GEMFAN 2512三葉槳\n\n【機體規格】\n機架：T700碳纖維 正X佈局\n飛塔：RATE H415 AIO\n主控：H415 400MHz\n陀螺儀：ICM42688\n氣壓計：SPL06\n黑盒子：16MB\nBEC：5V 3A\n電機：1103 8000KV\n軸徑：1.5mm\n安裝孔距：9mm\n槳葉：GEMFAN 2512三葉槳\n支援圖傳：DJI O4 Lite／HDZero／Walksnail\n適用電池：2S~3S LiPo\n\n【注意事項】\n※ 出貨前均完成基本測試\n※ 穿越機商品建議具備基本操作經驗後使用",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "HDZERO版本",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282789667956"
+    },
+    {
+      "name": "CADDX版本",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282789667957"
+    },
+    {
+      "name": "O4Lite版本",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "311135188445"
+    },
+    {
+      "name": "BETAFPV P1版本",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "262863756763"
+    },
+    {
+      "name": "動力套（含BB響、槳葉）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "267693025235"
+    },
+    {
+      "name": "O4WIDE版本",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282789667955"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -36,6 +79,111 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mpdk9r00crv2ba",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mpdkyvy6gv7wef",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mpdk9r002xvx12",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mpdk9qzrrqx705"
+      ],
+      "variation_label": "GOBI 戈布",
+      "options": [
+        {
+          "option": "動力套（含BB響、槳葉）",
+          "url": null
+        },
+        {
+          "option": "O4Lite版本",
+          "url": null
+        },
+        {
+          "option": "O4WIDE版本",
+          "url": null
+        },
+        {
+          "option": "HDZERO版本",
+          "url": null
+        },
+        {
+          "option": "CADDX版本",
+          "url": null
+        },
+        {
+          "option": "BETAFPV P1版本",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "GOBI 戈布",
+      "rows": [
+        {
+          "variation_id": "282789667956",
+          "name": "HDZERO版本",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9999,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "282789667957",
+          "name": "CADDX版本",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9999,
+          "stock": 0,
+          "min_qty": null
+        },
+        {
+          "variation_id": "311135188445",
+          "name": "O4Lite版本",
+          "parent_sku": null,
+          "sku": null,
+          "price": 8280,
+          "stock": 1,
+          "min_qty": null
+        },
+        {
+          "variation_id": "262863756763",
+          "name": "BETAFPV P1版本",
+          "parent_sku": null,
+          "sku": null,
+          "price": 6780,
+          "stock": 4,
+          "min_qty": null
+        },
+        {
+          "variation_id": "267693025235",
+          "name": "動力套（含BB響、槳葉）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 4280,
+          "stock": 2,
+          "min_qty": null
+        },
+        {
+          "variation_id": "282789667955",
+          "name": "O4WIDE版本",
+          "parent_sku": null,
+          "sku": null,
+          "price": 8880,
+          "stock": 1,
+          "min_qty": null
+        }
+      ],
+      "price_min": 4280,
+      "price_max": 9999,
+      "stock_total": 8,
+      "status": "snapshot_only"
+    }
   }
 }

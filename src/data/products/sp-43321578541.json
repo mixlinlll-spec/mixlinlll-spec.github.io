@@ -16,7 +16,43 @@
   "description": "#快充模組 #降壓模組 #PD快充 #航模電源 #穿越機電源 #65W快充 #外場電包 #智慧快充 #USBTypeC #行動電源模組\n\n65W 降壓快充模組｜多口快充智慧解決方案\n\n🌟 產品亮點\n智能降壓技術，輸入電壓範圍 8–30V\n多電壓檔位輸出，兼容多類設備\n採用優質 3518 晶片板，效能穩定\n\n65W C口模組\n支援輸出：5V / 9V / 12V / 20V\n最大輸出功率：65W\n\n⚡ 使用指南\n確認電池 S 數（輸入電壓需 8–30V）\n正確接入電池（請勿接反！）\n自動識別設備，智慧輸出匹配電壓",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "紫",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "296758962752"
+    },
+    {
+      "name": "紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "296758962753"
+    },
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "296758962754"
+    },
+    {
+      "name": "黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "296758962750"
+    },
+    {
+      "name": "綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "296758962751"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +70,100 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100481 - Mobile & Gadgets/Accessories/Cables, Chargers & Converters/Mobile Cables & Converters",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mf3rsl73abk9bf",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mf3rsl737ifdb9",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf3rsl738wztab",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf3rsl79swem65",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mfcq1hcfuakvb9",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mfcq1kkqy6mna9"
+      ],
+      "variation_label": "65W 智慧快充模塊",
+      "options": [
+        {
+          "option": "紅",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mf3rvg4ig0ekec"
+        },
+        {
+          "option": "黑",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf3rsl79swem65"
+        },
+        {
+          "option": "黃",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf3rvmkm7dvu95"
+        },
+        {
+          "option": "綠",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mf3rw1qagw0f2f"
+        },
+        {
+          "option": "紫",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mf3rwl0c8o3x8a"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "65W 智慧快充模塊",
+      "rows": [
+        {
+          "variation_id": "296758962752",
+          "name": "紫",
+          "parent_sku": null,
+          "sku": null,
+          "price": 220,
+          "stock": 8,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "296758962753",
+          "name": "紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 220,
+          "stock": 6,
+          "min_qty": null
+        },
+        {
+          "variation_id": "296758962754",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 220,
+          "stock": 7,
+          "min_qty": null
+        },
+        {
+          "variation_id": "296758962750",
+          "name": "黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 220,
+          "stock": 9,
+          "min_qty": null
+        },
+        {
+          "variation_id": "296758962751",
+          "name": "綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 220,
+          "stock": 8,
+          "min_qty": null
+        }
+      ],
+      "price_min": 220,
+      "price_max": 220,
+      "stock_total": 38,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -42,7 +42,22 @@
     }
   ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "一盒+十字起子（顏色隨機）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375694231060"
+    },
+    {
+      "name": "一盒",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375694231059"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -75,7 +90,62 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101799 - Home & Living/Tools & Home Improvement/Tools/Nails, Screws & Fasteners",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mmbxfk8d9gcg07",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmbx0c9dk3k898",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mmoq9ollnchtaa",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mmbx0c9byi9ua1",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmbx94303nybf5",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mmbx943eumm964"
+      ],
+      "variation_label": "Tinywhoop 螺絲組",
+      "options": [
+        {
+          "option": "一盒",
+          "url": null
+        },
+        {
+          "option": "一盒+十字起子（顏色隨機）",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Tinywhoop 螺絲組",
+      "rows": [
+        {
+          "variation_id": "375694231060",
+          "name": "一盒+十字起子（顏色隨機）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 318,
+          "stock": 37,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "375694231059",
+          "name": "一盒",
+          "parent_sku": null,
+          "sku": null,
+          "price": 279,
+          "stock": 34,
+          "min_qty": null
+        }
+      ],
+      "price_min": 279,
+      "price_max": 318,
+      "stock_total": 71,
+      "status": "snapshot_only"
+    }
   },
   "notes": [
     "請確認尺寸再使用。",

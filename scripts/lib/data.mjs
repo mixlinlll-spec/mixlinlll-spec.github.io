@@ -21,6 +21,8 @@ export const SELLER_ROLES = {
 export const REVIEW_STATUS = ['draft', 'approved', 'rejected'];
 // 圖片使用權：只有 EWP 自有或已取得授權的圖片可以用在公開商品
 export const IMAGE_RIGHTS = { ewp_own: 'EWP 自有', licensed: '已取得授權' };
+// 草稿可用的使用權狀態：unverified = 由蝦皮匯入、使用權待 EWP 確認（不可公開、不會複製到正式產物）
+export const IMAGE_RIGHTS_ALL = { ...IMAGE_RIGHTS, unverified: '使用權待確認' };
 // 上架模式：sale = 一般商品；showcase = 作品／機型介紹（不顯示價格與購買按鈕）
 export const LISTING_MODES = ['sale', 'showcase'];
 // 合規確認狀態：pending 待確認（不得公開）；cleared 已確認可販售；not_required 經 EWP 確認不需特別審驗
@@ -174,7 +176,11 @@ export function validateProducts(products, categories) {
       }
       for (const [i, img] of (p.images || []).entries()) if (!IMAGE_RIGHTS[img.rights]) err(`images[${i}] 公開前必須標示使用權 rights（${Object.keys(IMAGE_RIGHTS).join('／')}）`);
     }
-    for (const [i, img] of (p.images || []).entries()) if (img.rights !== undefined && !IMAGE_RIGHTS[img.rights]) err(`images[${i}].rights 不合法：${img.rights}`);
+    for (const [i, img] of (p.images || []).entries()) if (img.rights !== undefined && !IMAGE_RIGHTS_ALL[img.rights]) err(`images[${i}].rights 不合法：${img.rights}`);
+    for (const [i, v] of (p.variants || []).entries()) if (v.image) {
+      const r = checkAssetPath(v.image.src); if (r) err(`variants[${i}].image：${r}`);
+      if (p.published && !IMAGE_RIGHTS[v.image.rights]) err(`variants[${i}].image 公開前必須標示使用權 rights`);
+    }
     if (p.cta_primary !== undefined && p.cta_primary !== null && !CTA_PRIMARY.includes(p.cta_primary)) err(`cta_primary 只能是 line 或 shopee`);
     if (p.availability === 'in_stock' && !p.published) warn('草稿標示為現貨，公開前請再次確認');
   }

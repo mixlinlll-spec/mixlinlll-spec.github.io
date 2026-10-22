@@ -16,7 +16,57 @@
   "description": "#FPV\n#FPV穿越機\n#電機線護套\n#線束固定\n#TPU打印件\n#3D列印配件\n#穿越機改裝\n#電機線管理\n#FPV線材保護\n#穿越機零件\n\n專為 FPV 穿越機打造的 電機線保護套 / 線束固定槽，有效防止電機線在飛行時晃動、磨損、被螺旋槳刮傷。\n柔韌 TPU 材質可提供良好固定性，又不會壓迫線材。\n適合 4~8 吋穿越機、自由改裝使用。\n\n✨ 商品特色\n有效管理電機線，避免噴槳、磨損、邊緣刮傷\nTPU 材質彈性佳，安裝不傷線\n輕量化設計，不增加機身負擔\n適用於大部分 FPV 穿越機框架\n\n📦 規格\n1組四條\n材質：TPU\n安裝方式：貼附 / 綁帶固定\n適用： 4 / 5 / 8吋穿越機電機線",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "287162069598"
+    },
+    {
+      "name": "橘",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395137186070"
+    },
+    {
+      "name": "綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395137186071"
+    },
+    {
+      "name": "黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395137186072"
+    },
+    {
+      "name": "透藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395137186073"
+    },
+    {
+      "name": "紫",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395137186074"
+    },
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395137186075"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +85,123 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mh4p5c3yvx8of4",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mh4p4u6qi7f103"
+      ],
+      "variation_label": "電機線保護套(一組四條)",
+      "options": [
+        {
+          "option": "黑",
+          "url": null
+        },
+        {
+          "option": "白",
+          "url": null
+        },
+        {
+          "option": "橘",
+          "url": null
+        },
+        {
+          "option": "綠",
+          "url": null
+        },
+        {
+          "option": "黃",
+          "url": null
+        },
+        {
+          "option": "透藍",
+          "url": null
+        },
+        {
+          "option": "紫",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "電機線保護套(一組四條)",
+      "rows": [
+        {
+          "variation_id": "287162069598",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 99,
+          "stock": 12,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "395137186070",
+          "name": "橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 99,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "395137186071",
+          "name": "綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 99,
+          "stock": 18,
+          "min_qty": null
+        },
+        {
+          "variation_id": "395137186072",
+          "name": "黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 99,
+          "stock": 18,
+          "min_qty": null
+        },
+        {
+          "variation_id": "395137186073",
+          "name": "透藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 99,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "395137186074",
+          "name": "紫",
+          "parent_sku": null,
+          "sku": null,
+          "price": 99,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "395137186075",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 99,
+          "stock": 20,
+          "min_qty": null
+        }
+      ],
+      "price_min": 99,
+      "price_max": 99,
+      "stock_total": 128,
+      "status": "snapshot_only"
+    }
   }
 }

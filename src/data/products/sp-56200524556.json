@@ -16,7 +16,64 @@
   "description": "#SpeedyBeeMario5 #穿越機配件 #TPU防撞底座 #穿越機腳墊 #飛行器防震 #3D列印配件 #SpeedyBee機架 #穿越機維修 #穿越機改裝 #FPV配件\n\n專為 SpeedyBee Mario 5 穿越機 設計的 3D列印防撞底座，提供額外的保護與穩定支撐。\n使用 TPU彈性材質 製作，柔軟抗震、不易斷裂，讓機架在起降或碰撞時減少損傷。\n\n✅ 完美貼合原廠機架孔位，安裝快速 (無須螺絲) 直接壓入即可\n✅ 防滑設計，降落更穩定\n\n適用機種：\nSpeedyBee Mario 5\n\n材質說明：\nTPU（熱塑性聚氨酯）－柔軟、耐磨、抗衝擊",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "淺藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "297287312414"
+    },
+    {
+      "name": "粉紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "297287312415"
+    },
+    {
+      "name": "綠色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "360047159962"
+    },
+    {
+      "name": "透藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "360047159963"
+    },
+    {
+      "name": "橘色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "360047159964"
+    },
+    {
+      "name": "黑色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "360047159965"
+    },
+    {
+      "name": "白色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "360047159966"
+    },
+    {
+      "name": "黃色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "360047159967"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +91,136 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mgggfslq2dqm7f",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mgggfslwjk09a8"
+      ],
+      "variation_label": "Mario 5 機臂底座",
+      "options": [
+        {
+          "option": "黑色",
+          "url": null
+        },
+        {
+          "option": "白色",
+          "url": null
+        },
+        {
+          "option": "黃色",
+          "url": null
+        },
+        {
+          "option": "綠色",
+          "url": null
+        },
+        {
+          "option": "透藍",
+          "url": null
+        },
+        {
+          "option": "橘色",
+          "url": null
+        },
+        {
+          "option": "淺藍",
+          "url": null
+        },
+        {
+          "option": "粉紅",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Mario 5 機臂底座",
+      "rows": [
+        {
+          "variation_id": "297287312414",
+          "name": "淺藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 19,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "297287312415",
+          "name": "粉紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "360047159962",
+          "name": "綠色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "360047159963",
+          "name": "透藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 130,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "360047159964",
+          "name": "橘色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 18,
+          "min_qty": null
+        },
+        {
+          "variation_id": "360047159965",
+          "name": "黑色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "360047159966",
+          "name": "白色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "360047159967",
+          "name": "黃色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 20,
+          "min_qty": null
+        }
+      ],
+      "price_min": 120,
+      "price_max": 130,
+      "stock_total": 157,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -16,7 +16,15 @@
   "description": "•\t#MECHANIC清潔劑\n•\t#HK6090海綿布\n•\t#S30清洗劑\n•\t#PCB清潔套裝\n•\t#FPV維修工具\n•\t#手機螢幕清潔\n•\t#電子清洗劑\n•\t#假一賠四\n•\t#航模保養\n•\t#台灣現貨\n•\tHK6090 超細纖維海綿布 4x10cm 50 張，去污力強不掉屑，擦拭 PCB 焊點、螢幕、鏡頭乾淨無痕。\n\n•\tS30 清洗劑 600ml 噴霧，無水配方揮發快，專清電器油污、焊劑殘渣，安全用於主板、電調、手機貼膜。\n\n•\t組合適用 FPV 穿越機維修，清洗圖傳、電調、鏡頭，搭配吸錫帶使用效果翻倍，保持電路乾淨提升穩定性。\n\n•\t日本技術配方，維修佬必備，場外修機或桌面保養都方便，一組搞定多種清潔需求。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "600ml附贈50片無塵布",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "345660807172"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +43,49 @@
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mm0kv2o4tvcx2d"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100291 - Mobile & Gadgets/Accessories/Others",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mm0kt4gdl7ut03",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mm0k8vxfyfwl07",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mm0kt4gjljb4da",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mm0kt4ghansy19",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mm0kt4gh998i58",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mm0kt4ghc2de4d",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mm0kt4gtmj9ceb"
+      ],
+      "variation_label": "維修佬530清潔劑",
+      "options": [
+        {
+          "option": "600ml附贈50片無塵布",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "維修佬530清潔劑",
+      "rows": [
+        {
+          "variation_id": "345660807172",
+          "name": "600ml附贈50片無塵布",
+          "parent_sku": null,
+          "sku": null,
+          "price": 179,
+          "stock": 0,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 179,
+      "price_max": 179,
+      "stock_total": 0,
+      "status": "snapshot_only"
+    }
   }
 }

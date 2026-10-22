@@ -16,7 +16,43 @@
   "description": "#HDZero #HDZeroGoggles #天線支架 #天線固定座 #FPV眼鏡配件 #圖傳天線 #3D列印TPU #天線防滑 #天線穩定器 #穿越機配件 #靈雀FPV #HDZero配件\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nHDZERO Goggles 天線支架\n專為 HDZERO Goggles 設計的天線固定支架，有效提升天線穩定度，避免天線在激烈飛行或收納移動時鬆脫、轉動或滑落。\n\n📐 規格資訊\n適用型號：HDZERO Goggles\n重量：約 3–6 g\n功能：天線固定、防滑、防轉、防脫落",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "透黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "310194458803"
+    },
+    {
+      "name": "透黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "310194458804"
+    },
+    {
+      "name": "透明",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "310194458800"
+    },
+    {
+      "name": "螢光綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "310194458801"
+    },
+    {
+      "name": "螢光橘",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "310194458802"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +71,98 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mheyd4rwnzm3b0",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mheyizn15lag73",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mheyd4rz8p3jf1"
+      ],
+      "variation_label": "天線支架",
+      "options": [
+        {
+          "option": "透黑",
+          "url": null
+        },
+        {
+          "option": "透明",
+          "url": null
+        },
+        {
+          "option": "螢光綠",
+          "url": null
+        },
+        {
+          "option": "螢光橘",
+          "url": null
+        },
+        {
+          "option": "透黃",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "天線支架",
+      "rows": [
+        {
+          "variation_id": "310194458803",
+          "name": "透黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 200,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "310194458804",
+          "name": "透黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 200,
+          "stock": 48,
+          "min_qty": null
+        },
+        {
+          "variation_id": "310194458800",
+          "name": "透明",
+          "parent_sku": null,
+          "sku": null,
+          "price": 200,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "310194458801",
+          "name": "螢光綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 200,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "310194458802",
+          "name": "螢光橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 200,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 200,
+      "price_max": 200,
+      "stock_total": 248,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -16,7 +16,43 @@
   "description": "#Cinelog30V3 #GPS #Mini #機艙蓋 #TPU防撞保護套 #穿越機配件 #FPV零件 #3D列印配件 #GEPRC適用\n\n此為 Cinelog 30 V3 專用 各類打印件，採用輕量化設計\n使用 TPU 材質 3D 列印，具備柔韌與抗震特性，適合 FPV 穿越機高強度飛行使用。\n\n✅ 適用：Cinelog 30 V3\n✅ 材質：TPU\n✅ 功能：保護 GPS 模組、防撞、固定穩固\n✅ (請備註) 黑色 橘色\n\nO3/O4 後天線+GPS座 (GPS規格 15X15X15) mm\n前置GPS底座 (GPS規格12X12X12) mm",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "尾部天線座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320066021861"
+    },
+    {
+      "name": "ELRS/915接收機固定",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320066021862"
+    },
+    {
+      "name": "前置GPS底座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "445065304484"
+    },
+    {
+      "name": "O3/O4 後天線+GPS座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "445065304485"
+    },
+    {
+      "name": "天線夾",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320066021860"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +70,103 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mgm0ml3a2tjea1",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mgm0im1awmiya6",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mgm0im1p5btbc8",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mgm2xvn286bu85",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mgly7nxvcxl56b",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mgly7ny0s6iz45",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgm13ckf35zi51",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mgm0fjtuc5cc49",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mi2vavu50bnmf9"
+      ],
+      "variation_label": "Cinelog30V3打印件",
+      "options": [
+        {
+          "option": "前置GPS底座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mgm2xvn286bu85"
+        },
+        {
+          "option": "O3/O4 後天線+GPS座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mgly7ny0s6iz45"
+        },
+        {
+          "option": "天線夾",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mgm0fjtuc5cc49"
+        },
+        {
+          "option": "尾部天線座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgm13ckf35zi51"
+        },
+        {
+          "option": "ELRS/915接收機固定",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mgm154y23i195c"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Cinelog30V3打印件",
+      "rows": [
+        {
+          "variation_id": "320066021861",
+          "name": "尾部天線座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 20,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "320066021862",
+          "name": "ELRS/915接收機固定",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "445065304484",
+          "name": "前置GPS底座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 80,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "445065304485",
+          "name": "O3/O4 後天線+GPS座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 90,
+          "stock": 19,
+          "min_qty": null
+        },
+        {
+          "variation_id": "320066021860",
+          "name": "天線夾",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 20,
+          "min_qty": null
+        }
+      ],
+      "price_min": 30,
+      "price_max": 90,
+      "stock_total": 99,
+      "status": "snapshot_only"
+    }
   }
 }

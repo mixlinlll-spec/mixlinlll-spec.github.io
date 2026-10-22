@@ -44,19 +44,8 @@
       "name": "6S2P",
       "sku": null,
       "price_twd": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "6S3P",
-      "sku": null,
-      "price_twd": null,
-      "availability": "unknown"
-    },
-    {
-      "name": "6S4P",
-      "sku": null,
-      "price_twd": null,
-      "availability": "unknown"
+      "availability": "unknown",
+      "shopee_variation_id": "302136316939"
     }
   ],
   "price_twd": null,
@@ -93,7 +82,46 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgt7dpr64dn32e",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mgt7dpre2xhl0b",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mgt7dprfhhxn2b"
+      ],
+      "variation_label": "FPV遠航電池",
+      "options": [
+        {
+          "option": "6S2P",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgt7dpr64dn32e"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "FPV遠航電池",
+      "rows": [
+        {
+          "variation_id": "302136316939",
+          "name": "6S2P",
+          "parent_sku": null,
+          "sku": null,
+          "price": 2980,
+          "stock": 6,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 2980,
+      "price_max": 2980,
+      "stock_total": 6,
+      "status": "snapshot_only"
+    }
   },
   "compliance": {
     "status": "pending",

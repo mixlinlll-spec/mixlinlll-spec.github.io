@@ -19,7 +19,22 @@
   "description": "(‼️3D打印產品為客製化商品，不接受色差/不想要了/無故不取貨等造成退貨的損失)\n\n你的 65mm 微型穿越機是不是常常塞口袋、丟包裡、壓壞螺旋槳？這款 Air65 / 65mm 專用收納盒，就是替你的迷你機打造的「行動防護硬殼屋」。\n\n‼️不須任何安裝工具，買回去即可使用\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅\n\n適用機型\nHappymodel / BetaFPV / Flywoo 65mm\n其他 65mm75mm wheelbase 微型穿越機",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "65用",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "307732999849"
+    },
+    {
+      "name": "75用",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "307732999848"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -41,6 +56,59 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztl-mihfo7nx1jwg3f",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztl-mihfo7plbrbbe1",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztf-mihfpb40ltdw06"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mh4xgqiutgr080",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mh4xgqityk9b2c",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mh4xh4muomxb8d"
+      ],
+      "variation_label": "聊聊選色",
+      "options": [
+        {
+          "option": "65用",
+          "url": null
+        },
+        {
+          "option": "75用",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "聊聊選色",
+      "rows": [
+        {
+          "variation_id": "307732999849",
+          "name": "65用",
+          "parent_sku": null,
+          "sku": null,
+          "price": 299,
+          "stock": 7,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "307732999848",
+          "name": "75用",
+          "parent_sku": null,
+          "sku": null,
+          "price": 329,
+          "stock": 15,
+          "min_qty": null
+        }
+      ],
+      "price_min": 299,
+      "price_max": 329,
+      "stock_total": 22,
+      "status": "snapshot_only"
+    }
   }
 }

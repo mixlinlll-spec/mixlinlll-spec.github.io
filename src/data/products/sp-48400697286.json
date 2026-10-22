@@ -16,7 +16,22 @@
   "description": "#DJIAction2 #防撞底座 #TPU保護座 #FPV配件 #穿越機防護 #GoPro安裝座 #3D列印配件 #穿越機相機支架 #FPV相機防撞 #DJI配件",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "A款",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302117705385"
+    },
+    {
+      "name": "B款",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390985264478"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +50,59 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101120 - Cameras & Drones/Camera Accessories/Others",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mosyi1nh71fva4",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mosyi1nj9hjhf5",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mi2vavu50bnmf9",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+      ],
+      "variation_label": "DJI Action 2",
+      "options": [
+        {
+          "option": "A款",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mosyi1nj9hjhf5"
+        },
+        {
+          "option": "B款",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mosyn26ercw0d5"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "DJI Action 2",
+      "rows": [
+        {
+          "variation_id": "302117705385",
+          "name": "A款",
+          "parent_sku": null,
+          "sku": null,
+          "price": 130,
+          "stock": 19,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "390985264478",
+          "name": "B款",
+          "parent_sku": null,
+          "sku": null,
+          "price": 145,
+          "stock": 18,
+          "min_qty": null
+        }
+      ],
+      "price_min": 130,
+      "price_max": 145,
+      "stock_total": 37,
+      "status": "snapshot_only"
+    }
   }
 }

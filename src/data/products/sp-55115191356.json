@@ -34,6 +34,41 @@
       "數位圖傳，非 DJI，子分類待 EWP 決定",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mrbawz4yyxhhbd",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mrbawz4z0c1x05",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mrbawz4z1qmde1",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mrbawz4yxix130"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "431302025564",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 2580,
+          "stock": 4,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 2580,
+      "price_max": 2580,
+      "stock_total": 4,
+      "status": "snapshot_only"
+    }
   }
 }

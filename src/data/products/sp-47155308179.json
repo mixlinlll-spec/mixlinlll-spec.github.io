@@ -16,7 +16,22 @@
   "description": "#HGLRC龍騎士\n#Draknight\n#龍騎士機架\n#3D列印套件\n#FPV保護件\n#相機保護罩\n#電池托架\n#天線座\n#微型穿越機\n#台灣現貨\n#快速出貨\n\n針對 HGLRC龍骑士 機架設計的完整 3D 列印件套組，包含機鼻外殼、相機保護、電池托、天線固定、腳架與各類小保護件，直接一次帶齊。\n依照原廠尺寸建模，孔位與鎖點對應龍騎士機架，不用自己改檔或削料即可安裝。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "機臂護墊一組4個",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370483561671"
+    },
+    {
+      "name": "龍騎士全套打印件",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370483561672"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +50,58 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mjwtsx3jjrbafe",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mjwtsx3nsv7r42"
+      ],
+      "variation_label": "龍騎士",
+      "options": [
+        {
+          "option": "龍騎士全套打印件",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mjwtsx3nsv7r42"
+        },
+        {
+          "option": "機臂護墊一組4個",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mjwtz30gmh36fa"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "龍騎士",
+      "rows": [
+        {
+          "variation_id": "370483561671",
+          "name": "機臂護墊一組4個",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 93,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "370483561672",
+          "name": "龍騎士全套打印件",
+          "parent_sku": null,
+          "sku": null,
+          "price": 160,
+          "stock": 99,
+          "min_qty": null
+        }
+      ],
+      "price_min": 50,
+      "price_max": 160,
+      "stock_total": 192,
+      "status": "snapshot_only"
+    }
   }
 }

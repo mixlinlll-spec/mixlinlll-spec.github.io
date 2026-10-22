@@ -16,7 +16,57 @@
   "description": "#SpeedyBeeBEE35 #Mario5 #3D打印件 #FPV #穿越機 #飛塔保護 #打印件套裝 #穿越機配件 #DIY #航模 #BEE35打印件 #樹脂打印 #SpeedyBeeMario5 #安裝套件 #機架保護 \n\n✅ 原廠設計檔案製作，尺寸精準完美相容\n✅ 支援自組、維修與改裝使用\n✅ 可單件或整套購買\n\n材質：TPU 或 PLA（柔性與硬式可依需求搭配）\n列印品質細膩、尺寸精準，與原機完美相容。\n\n適用機種：SpeedyBee BEE35",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "普通版圖傳安裝",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "109586749184"
+    },
+    {
+      "name": "尾部915天線固定",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "109586749185"
+    },
+    {
+      "name": "雙SMA多合一尾座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "99251059787"
+    },
+    {
+      "name": "尾部o3單天線護套",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "108768653230"
+    },
+    {
+      "name": "19mm鏡頭減振",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "109586749181"
+    },
+    {
+      "name": "狗座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "109586749182"
+    },
+    {
+      "name": "單SMA多合一尾座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "109586749183"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +84,122 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mggajln1na4p60",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+      ],
+      "variation_label": "SpeedyBee BEE3",
+      "options": [
+        {
+          "option": "雙SMA多合一尾座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mggb31biuneyd6"
+        },
+        {
+          "option": "19mm鏡頭減振",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mggb348q95vuc0"
+        },
+        {
+          "option": "狗座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mggb36lolj4bab"
+        },
+        {
+          "option": "單SMA多合一尾座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mggb38mqmwi1cd"
+        },
+        {
+          "option": "普通版圖傳安裝",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mggb3atn6fppf2"
+        },
+        {
+          "option": "尾部915天線固定",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mggb3cl9vg24cf"
+        },
+        {
+          "option": "尾部o3單天線護套",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mggb4h4uvnrg2d"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "SpeedyBee BEE3",
+      "rows": [
+        {
+          "variation_id": "109586749184",
+          "name": "普通版圖傳安裝",
+          "parent_sku": null,
+          "sku": null,
+          "price": 35,
+          "stock": 20,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "109586749185",
+          "name": "尾部915天線固定",
+          "parent_sku": null,
+          "sku": null,
+          "price": 35,
+          "stock": 19,
+          "min_qty": null
+        },
+        {
+          "variation_id": "99251059787",
+          "name": "雙SMA多合一尾座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 65,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "108768653230",
+          "name": "尾部o3單天線護套",
+          "parent_sku": null,
+          "sku": null,
+          "price": 25,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "109586749181",
+          "name": "19mm鏡頭減振",
+          "parent_sku": null,
+          "sku": null,
+          "price": 25,
+          "stock": 18,
+          "min_qty": null
+        },
+        {
+          "variation_id": "109586749182",
+          "name": "狗座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 19,
+          "min_qty": null
+        },
+        {
+          "variation_id": "109586749183",
+          "name": "單SMA多合一尾座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 19,
+          "min_qty": null
+        }
+      ],
+      "price_min": 25,
+      "price_max": 65,
+      "stock_total": 135,
+      "status": "snapshot_only"
+    }
   }
 }

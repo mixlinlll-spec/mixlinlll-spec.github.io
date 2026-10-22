@@ -39,7 +39,29 @@
     }
   ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "模擬圖傳 套機（915M /2.4G)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "350965486126"
+    },
+    {
+      "name": "動力套 （915M /2.4G)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "350965486127"
+    },
+    {
+      "name": "O4Pro套機（915M /2.4G)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "350965486128"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -79,7 +101,77 @@
       "商品說明（蝦皮說明只有 hashtag）",
       "圖片使用權（原廠圖片需取得授權）",
       "是否轉為販售模式：須先完成合規確認"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-monfz6wo0ftbd8",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-monfz6wjah3h65",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-monfznmwexaj43",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-monfhv0aakgb66",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-monfynbt6r63b0",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-monfyng38d8g42",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-monfync2sav6c1",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-monfync37r4bb7"
+      ],
+      "variation_label": "MOZ7(O4PRO現貨一台",
+      "options": [
+        {
+          "option": "O4Pro套機（915M /2.4G)",
+          "url": null
+        },
+        {
+          "option": "模擬圖傳 套機（915M /2.4G)",
+          "url": null
+        },
+        {
+          "option": "動力套 （915M /2.4G)",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "MOZ7(O4PRO現貨一台",
+      "rows": [
+        {
+          "variation_id": "350965486126",
+          "name": "模擬圖傳 套機（915M /2.4G)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 18880,
+          "stock": 10,
+          "min_qty": 2
+        },
+        {
+          "variation_id": "350965486127",
+          "name": "動力套 （915M /2.4G)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 16480,
+          "stock": 10,
+          "min_qty": null
+        },
+        {
+          "variation_id": "350965486128",
+          "name": "O4Pro套機（915M /2.4G)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 23800,
+          "stock": 10,
+          "min_qty": null
+        }
+      ],
+      "price_min": 16480,
+      "price_max": 23800,
+      "stock_total": 30,
+      "status": "snapshot_only"
+    }
   },
   "listing_mode": "showcase",
   "compliance": {

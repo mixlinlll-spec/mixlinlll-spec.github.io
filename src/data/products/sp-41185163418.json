@@ -16,7 +16,15 @@
   "description": "【5.8G 棒棒糖圖傳天線】\n\n穿越機 5.8GHz 圖傳天線，發射端與接收端皆可使用。\nPC+ABS 一體包覆機身，根部加固設計，\n半剛性雙護套饋線，能承受飛行與摔機時的反覆彎折。\n\n天線是整條圖傳鏈路最容易被忽略、也最容易壞的一環。\n根部斷裂、饋線折損，畫面就是一片雪花。\n\n■ 規格選擇（下單時請指定）\n【右旋天線（RHCP）】\n【左旋天線（LHCP）】\n【直頭】\n【彎頭（90°）】\n※ 旋向與接頭型式請務必確認後再下單\n\n■ 商品特點\n1. PC+ABS 材質機身，一體包覆，耐衝擊\n2. 半剛性雙護套饋線，可彎折調整角度且不易內部斷線\n3. 根部加固，360 度保護，改善天線最常斷裂的位置\n4. 饋線損耗低，安裝簡便\n5. 提供直頭與彎頭版本，可依機架走線選擇\n\n■ ⚠️ 重要：左旋右旋不能混用\n1. 發射端與接收端的天線旋向必須一致。\n   右旋對右旋、左旋對左旋，混用會造成訊號大幅衰減，\n   畫面出現雪花或直接斷圖。\n2. 大多數 FPV 系統預設使用右旋（RHCP），\n   但請以你現有設備的實際規格為準，不要憑印象。\n3. 若你是更換單支天線，請確認與原本那支的旋向相同。\n4. 不確定自己是哪一種，可私訊告知你的圖傳與眼鏡型號，我們協助確認。\n\n■ ⚠️ 重要：切勿無天線上電\n圖傳模組在未接天線的情況下通電，發射功率無法輻射出去，\n會反射回模組造成過熱，可能直接燒毀圖傳。\n\n上電前務必確認天線已鎖上並鎖緊。\n\n■ 安裝注意\n1. 鎖緊時請旋轉接頭本體，不要扭轉天線頭或饋線。\n2. 天線應盡量遠離碳纖維機架、電池與金屬件，避免遮蔽訊號。\n3. 天線尖端盡量不要朝向飛行方向，棒棒糖天線的訊號最弱點在正上方與正下方。\n4. 建議搭配 TPU 天線固定座使用，可大幅降低摔機時的根部斷裂機率。\n   （本賣場可加購，或參考我們的 3D 列印服務）\n\n■ 購買前請務必確認\n1. 本頁面為單支售價，請確認所需數量。\n2. 接頭型式請於下單前確認與你的設備相符\n   （常見為 SMA 與 RP-SMA，兩者不通用，鎖上去會接觸不良或無法鎖緊）。\n3. 本天線適用 5.8GHz 類比圖傳系統。\n   DJI O3／O4 等數位系統的天線接頭與規格不同，請勿混用。\n4. 不確定規格可私訊告知你的圖傳型號，我們協助確認後再下單。\n\n■ 保固與耗損說明\n1. 天線屬消耗品，摔機造成的斷裂、饋線折損、接頭變形不在保固範圍。\n2. 收到後請先確認外觀完好、接頭無變形，再行安裝。\n3. 使用中若發現畫面品質明顯下降，請先檢查天線是否已有損傷。\n\n■ 建議\n天線壞掉幾乎不會有前兆，通常就是某次摔機後畫面突然變差。\n建議常備 1～2 支備品，一支天線的錢遠低於一趟白跑的外場。\n\n電翼動力 EWP｜Ready to Fly",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "左旋〔數位〕10公分",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "244364298613"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -37,6 +45,46 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mubcmnlyed5088",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mubcmnlyfrpg6c",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mubcmnlyjzes10"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820l9-mubcybh5je9u1b",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820ld-mubcyc56nk7870",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820l6-mubcybjq0emfee",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lc-mubcybywxmgy5a"
+      ],
+      "variation_label": "空氪增益天線",
+      "options": [
+        {
+          "option": "左旋〔數位〕10公分",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "空氪增益天線",
+      "rows": [
+        {
+          "variation_id": "244364298613",
+          "name": "左旋〔數位〕10公分",
+          "parent_sku": null,
+          "sku": null,
+          "price": 219,
+          "stock": 10,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 219,
+      "price_max": 219,
+      "stock_total": 10,
+      "status": "snapshot_only"
+    }
   }
 }

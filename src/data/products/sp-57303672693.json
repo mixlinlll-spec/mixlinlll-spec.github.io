@@ -37,16 +37,18 @@
   "images": [],
   "variants": [
     {
-      "name": "1S 450mAh",
+      "name": "XT30接口/2S/450mah",
       "sku": null,
       "price_twd": null,
-      "availability": "unknown"
+      "availability": "unknown",
+      "shopee_variation_id": "272285762564"
     },
     {
-      "name": "2S 450mAh",
+      "name": "PH接口/1S/450mah",
       "sku": null,
       "price_twd": null,
-      "availability": "unknown"
+      "availability": "unknown",
+      "shopee_variation_id": "272285762563"
     }
   ],
   "price_twd": null,
@@ -88,7 +90,60 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mlwy62rwffgka9",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mlrthqienmkvb2",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mio7tpzswkjq8f",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mlwy62rwgu1062"
+      ],
+      "variation_label": "十安競速電池",
+      "options": [
+        {
+          "option": "PH接口/1S/450mah",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mio7z0rynbig48"
+        },
+        {
+          "option": "XT30接口/2S/450mah",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mlwy45q1bugyd9"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "十安競速電池",
+      "rows": [
+        {
+          "variation_id": "272285762564",
+          "name": "XT30接口/2S/450mah",
+          "parent_sku": null,
+          "sku": null,
+          "price": 289,
+          "stock": 21,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "272285762563",
+          "name": "PH接口/1S/450mah",
+          "parent_sku": null,
+          "sku": null,
+          "price": 109,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 109,
+      "price_max": 289,
+      "stock_total": 21,
+      "status": "snapshot_only"
+    }
   },
   "notes": [
     "HV 高壓電池請使用支援 LiHV 模式的充電器。"

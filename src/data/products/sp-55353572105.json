@@ -36,6 +36,41 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100220 - Home Appliances/Electrical Circuitry & Parts/Others",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mimu2iqd96v44d",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mimu2iqg9clke7",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mimu2iq8f0g6d0",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mimu2iq8gf0m24"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "370342185142",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 169,
+          "stock": 10,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 169,
+      "price_max": 169,
+      "stock_total": 10,
+      "status": "snapshot_only"
+    }
   }
 }

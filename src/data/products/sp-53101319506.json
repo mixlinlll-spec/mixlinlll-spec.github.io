@@ -16,7 +16,36 @@
   "description": "#BETAFPV #AIR65 #Whoop機架 #穿越機改裝 #FPV配件 #靈雀FPV #SpiritSparrow #3D列印零件 #強化支架 #機架補強 #TPU配件 #微型穿越機 #減震結構 #抗撞設計\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n🔔機架補強固定件 機架補強固定件(碳纖維8%) 適用機型： 65 75mm 都可以使用\n專為 BETAFPV AIR65 微型穿越機 設計的強化支撐結構，\n有效提升機架剛性與抗扭性，減少墜機時的變形與損壞。\n功能：強化機架剛性、防止震動共振\n重量：約 1.2g\n\n🔔適用機型：FPV Meteor 75 pro O4 的 DJI O4 天線支架\nBetaFPV Meteor 75 pro O4 的 DJI O4 天線支架。\n安裝在機罩上，無需修改。透過滑軌和摩擦力固定。\n完美地固定天線，防止意外脫落並最大限度地減少振動。\n\n🔔適用機型：Air65 75 防護罩替換 低角度\n降低攝像頭角度，TPU材質韌性強 久炸不壞\n\n🔔適用機型：Air65 75 防護罩替換+GPS座\nGPS安裝座尺寸 : 15mm\n可安裝GPS的防護罩\n\n🔔適用機型：AIR 75 一體式機架  (碳纖維8%)\n此款 75mm 機架採用 一體式防護設計，整圈保護槳葉與電機，撞牆、撞柱、落地都能有效吸收衝擊，避免電機座開裂或槳葉外露造成損傷。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "防護罩替換+GPS座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "335138161997"
+    },
+    {
+      "name": "機架補強固定件(碳纖維8%)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "335138161994"
+    },
+    {
+      "name": "O4 的 DJI O4 天線支架",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "335138161995"
+    },
+    {
+      "name": "防護罩替換 低角度",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "335138161996"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +63,88 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mh5qxu1rmtxk09",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-migyb0ototfn19",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mh0o68dl7ocs9c",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh51r223xngvb6",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mh5qy70i2g3ve0",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh529kual3pk70"
+      ],
+      "variation_label": "BETAFPV 6575mm",
+      "options": [
+        {
+          "option": "機架補強固定件(碳纖維8%)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh50q6gj45jg66"
+        },
+        {
+          "option": "O4 的 DJI O4 天線支架",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mh51sectv6kq97"
+        },
+        {
+          "option": "防護罩替換 低角度",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mh5qy70tjf2k41"
+        },
+        {
+          "option": "防護罩替換+GPS座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mh529ku9eyob07"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "BETAFPV 6575mm",
+      "rows": [
+        {
+          "variation_id": "335138161997",
+          "name": "防護罩替換+GPS座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 15,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "335138161994",
+          "name": "機架補強固定件(碳纖維8%)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 70,
+          "stock": 33,
+          "min_qty": null
+        },
+        {
+          "variation_id": "335138161995",
+          "name": "O4 的 DJI O4 天線支架",
+          "parent_sku": null,
+          "sku": null,
+          "price": 25,
+          "stock": 17,
+          "min_qty": null
+        },
+        {
+          "variation_id": "335138161996",
+          "name": "防護罩替換 低角度",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 25,
+      "price_max": 70,
+      "stock_total": 115,
+      "status": "snapshot_only"
+    }
   }
 }

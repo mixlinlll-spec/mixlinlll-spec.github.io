@@ -19,7 +19,78 @@
   "description": "GEPRC DarkStar25 是專為 DJI O4 Pro 打造的 2.5 吋輕量化 CineWhoop，兼顧穩定錄影、飛行性能與耐用性，適合室內外空拍、商業拍攝、旅拍及日常花式飛行。\n整機針對機構設計全面優化，配備五點式減震雲台、GPS 安裝座、下置 XT30 電源接口及模組化結構，不僅提升錄影品質，也讓維修與保養更加便利。\n商品特色\n✅ 原生支援 DJI O4 Pro 高清數位圖傳\n✅ 2.5 吋輕量化 CineWhoop 設計\n✅ 五點式減震系統，有效降低果凍與震動\n✅ 下置 XT30 電源接口，插拔更方便\n✅ 內建 GPS 安裝座（可自行加裝 GPS）\n✅ 模組化結構，拆裝維修快速\n✅ 機身細節全面優化，外型俐落、配線整潔\n✅ 適合空拍、旅拍、商業拍攝及 FPV 飛行\n商品規格\n品牌：GEPRC\n型號：DarkStar25\n機型：2.5 吋 CineWhoop\n圖傳：DJI O4 Pro\n類型：BNF 套機\n電源接口：XT30\nGPS：支援加裝\n適用電池：依原廠配置\n適合玩家\n✔ DJI O4 Pro 使用者\n✔ 空拍創作者\n✔ 室內外 FPV 飛行\n✔ 旅拍、Vlog 拍攝\n✔ 想要兼顧穩定與畫質的玩家",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "幻",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "436625058552"
+    },
+    {
+      "name": "Geprc Cinebot25",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "436625058559"
+    },
+    {
+      "name": "戈布",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "436625058560"
+    },
+    {
+      "name": "Meteor 75 pro2",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "436625058555"
+    },
+    {
+      "name": "裂顎",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "436625058553"
+    },
+    {
+      "name": "哨兵",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "436625058561"
+    },
+    {
+      "name": "迅矢",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "436625058558"
+    },
+    {
+      "name": "GEPRC LR60",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "436625058556"
+    },
+    {
+      "name": "一閃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "436625058554"
+    },
+    {
+      "name": "毒牙",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "436625058557"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -50,6 +121,168 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mrh598360tmpef",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mrh5985yrnyaed",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mrh598529kw689"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lb-muehljxwsjyge5",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mrh53gpx6akg5d",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lf-muehljrib5saa5",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lc-muehp783k360de",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lh-muehp74lu9dv8d",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820l4-muehp781ga2r3f",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lb-muehp763ev44e0",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820l6-muehp7c71ptu4f",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lg-muehp7aezawy94"
+      ],
+      "variation_label": "各式可選 歡迎聊聊",
+      "options": [
+        {
+          "option": "幻",
+          "url": null
+        },
+        {
+          "option": "毒牙",
+          "url": null
+        },
+        {
+          "option": "迅矢",
+          "url": null
+        },
+        {
+          "option": "裂顎",
+          "url": null
+        },
+        {
+          "option": "一閃",
+          "url": null
+        },
+        {
+          "option": "Geprc Cinebot25",
+          "url": null
+        },
+        {
+          "option": "Meteor 75 pro2",
+          "url": null
+        },
+        {
+          "option": "戈布",
+          "url": null
+        },
+        {
+          "option": "哨兵",
+          "url": null
+        },
+        {
+          "option": "GEPRC LR60",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "各式可選 歡迎聊聊",
+      "rows": [
+        {
+          "variation_id": "436625058552",
+          "name": "幻",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9999,
+          "stock": 5,
+          "min_qty": 3
+        },
+        {
+          "variation_id": "436625058559",
+          "name": "Geprc Cinebot25",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9999,
+          "stock": 5,
+          "min_qty": null
+        },
+        {
+          "variation_id": "436625058560",
+          "name": "戈布",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9999,
+          "stock": 5,
+          "min_qty": null
+        },
+        {
+          "variation_id": "436625058555",
+          "name": "Meteor 75 pro2",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9999,
+          "stock": 5,
+          "min_qty": null
+        },
+        {
+          "variation_id": "436625058553",
+          "name": "裂顎",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9999,
+          "stock": 5,
+          "min_qty": null
+        },
+        {
+          "variation_id": "436625058561",
+          "name": "哨兵",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9999,
+          "stock": 5,
+          "min_qty": null
+        },
+        {
+          "variation_id": "436625058558",
+          "name": "迅矢",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9999,
+          "stock": 5,
+          "min_qty": null
+        },
+        {
+          "variation_id": "436625058556",
+          "name": "GEPRC LR60",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9999,
+          "stock": 5,
+          "min_qty": null
+        },
+        {
+          "variation_id": "436625058554",
+          "name": "一閃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9999,
+          "stock": 5,
+          "min_qty": null
+        },
+        {
+          "variation_id": "436625058557",
+          "name": "毒牙",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9999,
+          "stock": 5,
+          "min_qty": null
+        }
+      ],
+      "price_min": 9999,
+      "price_max": 9999,
+      "stock_total": 50,
+      "status": "snapshot_only"
+    }
   }
 }

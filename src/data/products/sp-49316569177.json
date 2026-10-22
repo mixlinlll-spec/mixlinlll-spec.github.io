@@ -18,7 +18,15 @@
   "description": "#FPV #穿越機電池 #6S電池 #22點2V #200C #XT60 #鋰電池 #LiPo #競速電池 #花飛電池 #Freestyle #5吋穿越機 #無人機電池 #BLITZ #閃電兔 #電翼動力",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "1520mah/180C",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "371409169047"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -42,6 +50,45 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-ms9gpewlbim867",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-ms9gpewlcx6o80",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l4-ms9gpewlebr4de"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820ld-ms9grf6jiznsf2",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820le-ms9grf9fcsuc6a",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lf-ms9grha0f56pc5"
+      ],
+      "variation_label": "閃電兔電池",
+      "options": [
+        {
+          "option": "1520mah/180C",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "閃電兔電池",
+      "rows": [
+        {
+          "variation_id": "371409169047",
+          "name": "1520mah/180C",
+          "parent_sku": null,
+          "sku": null,
+          "price": 1380,
+          "stock": 2,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 1380,
+      "price_max": 1380,
+      "stock_total": 2,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -16,7 +16,22 @@
   "description": "#競速穿越機\n#FPV彈射底座\n#起飛架\n#穿越機展示架\n#Tinywhoop支架\n#花飛專用\n#FPV配件\n#3D列印支架\n#起飛儀式感\n#台灣現貨\n#快速出貨\n\n⚠️ 務必備註顏色。訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋屬正常現象\n⚠️ 客製化務必聊聊討論\n\n每次起飛都從地上亂丟一台機、手指一勾就衝天，畫面是不是有點太隨便？😆\n這款「競速穿越機彈射底座」，專為 FPV 競速與花飛玩家設計，讓你在桌上、起飛區都有固定角度的起飛平台，順便當展示架與調參支架，一物多用。\n​\n產品特色：\n🧱 穩固三角結構：寬底座搭配蜂巢背板設計，受力平均不易翻倒，小機到中型機都能穩穩站好。\n🛫 起飛角度優化：傾斜角度模擬實戰飛行姿態，解鎖後直接油門推上去，比平地起飛更順、更安全。\n🔧 維修／調參超好用：把機子擺上底座，槳葉離桌面有高度，方便插電、接USB、看OSD或檢查馬達。\n🎨 支援多尺寸機型：適合 Tinywhoop、2吋～3吋小鋸齒、甚至部分輕量4–5吋機，客製尺寸歡迎聊聊。\n不管是在家裡桌上調機、比賽場邊待命，還是拍照發IG，先把機子放上這個彈射底座，再武裝點電起飛，儀式感直接拉滿✨",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "桌面展示架",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "435381092098"
+    },
+    {
+      "name": "彈射底座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "435381092097"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +49,60 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-miydq4oazxtw23",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-miydq4obb6dcce",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-miydu99bmvia1d",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-miydun3qnmkgdc"
+      ],
+      "variation_label": "TINYWHOOP 配件",
+      "options": [
+        {
+          "option": "彈射底座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-miydq4obb6dcce"
+        },
+        {
+          "option": "桌面展示架",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-miydu99bmvia1d"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "TINYWHOOP 配件",
+      "rows": [
+        {
+          "variation_id": "435381092098",
+          "name": "桌面展示架",
+          "parent_sku": null,
+          "sku": null,
+          "price": 130,
+          "stock": 46,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "435381092097",
+          "name": "彈射底座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 130,
+          "stock": 43,
+          "min_qty": null
+        }
+      ],
+      "price_min": 130,
+      "price_max": 130,
+      "stock_total": 89,
+      "status": "snapshot_only"
+    }
   }
 }

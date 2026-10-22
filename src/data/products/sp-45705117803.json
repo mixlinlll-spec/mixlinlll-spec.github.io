@@ -38,6 +38,39 @@
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-mjshc31h24g709",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztn-mjshc31gcu8236"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mjsh7t2xwwzka2",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mjsh7t2xvif444"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "420469079647",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 149,
+          "stock": 11,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 149,
+      "price_max": 149,
+      "stock_total": 11,
+      "status": "snapshot_only"
+    }
   }
 }

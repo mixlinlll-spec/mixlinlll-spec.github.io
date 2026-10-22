@@ -22,7 +22,29 @@
     }
   ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "7公分直頭+彎頭",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "277669368353"
+    },
+    {
+      "name": "20公分直頭+彎頭",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "167387348088"
+    },
+    {
+      "name": "15公分直頭+彎頭",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "169143800000"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -56,6 +78,70 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlyelsxvofm763",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mlyelsy5pfkf61"
+      ],
+      "variation_label": "DJI直頭+彎頭",
+      "options": [
+        {
+          "option": "15公分直頭+彎頭",
+          "url": null
+        },
+        {
+          "option": "20公分直頭+彎頭",
+          "url": null
+        },
+        {
+          "option": "7公分直頭+彎頭",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "DJI直頭+彎頭",
+      "rows": [
+        {
+          "variation_id": "277669368353",
+          "name": "7公分直頭+彎頭",
+          "parent_sku": null,
+          "sku": null,
+          "price": 250,
+          "stock": 4,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "167387348088",
+          "name": "20公分直頭+彎頭",
+          "parent_sku": null,
+          "sku": null,
+          "price": 300,
+          "stock": 10,
+          "min_qty": null
+        },
+        {
+          "variation_id": "169143800000",
+          "name": "15公分直頭+彎頭",
+          "parent_sku": null,
+          "sku": null,
+          "price": 280,
+          "stock": 5,
+          "min_qty": null
+        }
+      ],
+      "price_min": 250,
+      "price_max": 300,
+      "stock_total": 19,
+      "status": "snapshot_only"
+    }
   }
 }

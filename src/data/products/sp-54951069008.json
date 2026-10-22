@@ -16,7 +16,22 @@
   "description": "#RadiomasterPocket #POCKET握把 #遙控器改裝 #握柄套 #防滑握把 #TPU防滑 #3D列印配件 #FPV遙控器 #RC配件 #Pocket遙控器 #穿越機遙控器 #操控升級 #舒適手感\n\n🎮 商品特色\n這款 Radiomaster POCKET 專用握把套裝，專為提升操控舒適度而設計。\n採用 TPU軟質防滑材質 製作，貼合掌型、止汗防滑，長時間操控依然穩定順手。\n3D列印精準成型，安裝簡單不破壞外觀，是兼具實用與質感的升級改裝件。\n\n⚙️ 商品規格\n材質：TPU 高彈性止滑膠料\n製作方式：3D列印\n功能：止滑、防汗、提升手感\n顏色：（可客製）\n\n適用機種：Radiomaster POCKET\n\n💡 產品亮點\n人體工學設計，握感自然舒\nTPU柔軟材質，有效減少長時間操作疲勞\n防滑止汗處理，穩定操控不打滑\n完美貼合外殼，不影響按鍵與結構\n多色可選，外觀升級同時保護機體",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "A款",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "335096875983"
+    },
+    {
+      "name": "B款",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375409112048"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +50,60 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mj91h7vlk0eb39",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mj91hd82yholb7",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mguysy0sfv9o4c",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mj91j57xj8qrae"
+      ],
+      "variation_label": "POCKET握把 (一對)",
+      "options": [
+        {
+          "option": "A款",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mj91ivxdtudj93"
+        },
+        {
+          "option": "B款",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mj91h7vlk0eb39"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "POCKET握把 (一對)",
+      "rows": [
+        {
+          "variation_id": "335096875983",
+          "name": "A款",
+          "parent_sku": null,
+          "sku": null,
+          "price": 189,
+          "stock": 14,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "375409112048",
+          "name": "B款",
+          "parent_sku": null,
+          "sku": null,
+          "price": 199,
+          "stock": 47,
+          "min_qty": null
+        }
+      ],
+      "price_min": 189,
+      "price_max": 199,
+      "stock_total": 61,
+      "status": "snapshot_only"
+    }
   }
 }

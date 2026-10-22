@@ -16,7 +16,57 @@
   "description": "#meteor75 #air75 #收納盒 #穿越機配件 #微型無人機 #電池收納 #fpv配件 #fpv收納 #betafpv #whoop盒\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n讓你的 Meteor75 / Air75 有專屬的安全之家！\n此收納盒專為 BetaFPV 微型穿越機設計，能同時放置機體與多顆 1S 電池\n450MAH 電池最多存放9塊，可以再放入充電器\n\n產品特色\n專屬開模，貼合 Meteor75 / Air75 尺寸\n內部電池卡槽設計，整齊收納不晃動\n外殼堅固，日常攜帶不怕擠壓\n適合外拍、戶外飛行攜帶組使用\n出門飛行必備，一盒搞定！",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "螢光綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "315213912842"
+    },
+    {
+      "name": "透橘",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "315213912843"
+    },
+    {
+      "name": "透黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "315213912844"
+    },
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "315213912838"
+    },
+    {
+      "name": "透明",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "315213912839"
+    },
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "315213912840"
+    },
+    {
+      "name": "冰淇淋",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "315213912841"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +85,123 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mhk2gqb72pdw0d",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mhk2gqb7nrwha0"
+      ],
+      "variation_label": "Meteor75/Air75",
+      "options": [
+        {
+          "option": "黑",
+          "url": null
+        },
+        {
+          "option": "透明",
+          "url": null
+        },
+        {
+          "option": "白",
+          "url": null
+        },
+        {
+          "option": "冰淇淋",
+          "url": null
+        },
+        {
+          "option": "螢光綠",
+          "url": null
+        },
+        {
+          "option": "透橘",
+          "url": null
+        },
+        {
+          "option": "透黃",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Meteor75/Air75",
+      "rows": [
+        {
+          "variation_id": "315213912842",
+          "name": "螢光綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 360,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "315213912843",
+          "name": "透橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 360,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "315213912844",
+          "name": "透黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 360,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "315213912838",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 360,
+          "stock": 45,
+          "min_qty": null
+        },
+        {
+          "variation_id": "315213912839",
+          "name": "透明",
+          "parent_sku": null,
+          "sku": null,
+          "price": 360,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "315213912840",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 360,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "315213912841",
+          "name": "冰淇淋",
+          "parent_sku": null,
+          "sku": null,
+          "price": 380,
+          "stock": 48,
+          "min_qty": null
+        }
+      ],
+      "price_min": 360,
+      "price_max": 380,
+      "stock_total": 343,
+      "status": "snapshot_only"
+    }
   }
 }

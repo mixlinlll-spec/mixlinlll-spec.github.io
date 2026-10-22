@@ -16,7 +16,50 @@
   "description": "#JumperT20 #T20搖桿保護套 #T20控制器配件 #FPV控制器保護 #穿越機遙控器 #R C遙控器蓋 #搖桿防壓 #Jumper配件 #無人機遙控器套 #航模配件  #跳馬T20 #RCtransmitter #FPVdroneparts #dronecontrollerprotector\n\n⚠️ 務必備註顏色。訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋屬正常現象\n⚠️ 客製化務必聊聊討論\n\n1️⃣ 高精度貼合 Jumper T20 設計\n依照 T20 原廠搖桿尺寸精準建模，確保安裝穩定、不鬆動、不刮傷搖桿，適合專業 FPV 航模玩家長期使用。\n2️⃣ 強化防壓結構｜外出收納更安心\n3D 加強式結構，可有效避免外力擠壓造成搖桿偏移或雲台損毀，適合背包、飛行箱、野場攜行等場景。\n3️⃣ 提升裝備可靠性｜避免飛行前調整搖桿\n避免因碰撞導致中心點跑偏，降低校正次數，保持遙控器操控精準度，確保穿越機飛行穩定性。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380276288110"
+    },
+    {
+      "name": "紫",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380276288111"
+    },
+    {
+      "name": "透藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380276288112"
+    },
+    {
+      "name": "綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380276288113"
+    },
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380276288114"
+    },
+    {
+      "name": "黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380276288109"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +77,110 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mi2rlcnvcbgi4c",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mi2rlyqzckxsc2"
+      ],
+      "variation_label": "T20搖桿保護罩",
+      "options": [
+        {
+          "option": "白",
+          "url": null
+        },
+        {
+          "option": "黃",
+          "url": null
+        },
+        {
+          "option": "黑",
+          "url": null
+        },
+        {
+          "option": "紫",
+          "url": null
+        },
+        {
+          "option": "透藍",
+          "url": null
+        },
+        {
+          "option": "綠",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "T20搖桿保護罩",
+      "rows": [
+        {
+          "variation_id": "380276288110",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 160,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "380276288111",
+          "name": "紫",
+          "parent_sku": null,
+          "sku": null,
+          "price": 160,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "380276288112",
+          "name": "透藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 160,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "380276288113",
+          "name": "綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 160,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "380276288114",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 160,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "380276288109",
+          "name": "黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 160,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 160,
+      "price_max": 160,
+      "stock_total": 299,
+      "status": "snapshot_only"
+    }
   }
 }

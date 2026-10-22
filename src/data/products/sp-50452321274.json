@@ -16,7 +16,50 @@
   "description": "#狗座 #狗座支架 #雙支架 #穿越機配件 #固定支架 #fpv配件 #相機支架 #穩定安裝\n\n📦 注意事項\n\n⚠️務必備註顏色。客製化商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n狗座雙支架設計給需要更牢固相機固定的飛手，雙支撐結構提供更高穩定度，有效減少震動、畫面抖動及高速飛行的位移問題。適合各類穿越機、長航程機型與固定式攝影用途。\n\n產品特色\n雙支架結構\n坐姿式「狗座」設計，安裝穩固不晃動\n重量輕、耐用度佳，不影響飛行性能\n適合速度機、抗震機、山飛、攀升拍攝等用途",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "透明",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380225407795"
+    },
+    {
+      "name": "黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380225407796"
+    },
+    {
+      "name": "螢光綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380225407797"
+    },
+    {
+      "name": "螢光菊",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380225407792"
+    },
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380225407793"
+    },
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380225407794"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +78,110 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mhndsbtj5beo9f",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mhndsbtt6bcw2f"
+      ],
+      "variation_label": "狗座雙支架",
+      "options": [
+        {
+          "option": "白",
+          "url": null
+        },
+        {
+          "option": "透明",
+          "url": null
+        },
+        {
+          "option": "黃",
+          "url": null
+        },
+        {
+          "option": "螢光綠",
+          "url": null
+        },
+        {
+          "option": "螢光菊",
+          "url": null
+        },
+        {
+          "option": "黑",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "狗座雙支架",
+      "rows": [
+        {
+          "variation_id": "380225407795",
+          "name": "透明",
+          "parent_sku": null,
+          "sku": null,
+          "price": 180,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "380225407796",
+          "name": "黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 180,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "380225407797",
+          "name": "螢光綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 180,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "380225407792",
+          "name": "螢光菊",
+          "parent_sku": null,
+          "sku": null,
+          "price": 180,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "380225407793",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 180,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "380225407794",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 180,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 180,
+      "price_max": 180,
+      "stock_total": 300,
+      "status": "snapshot_only"
+    }
   }
 }

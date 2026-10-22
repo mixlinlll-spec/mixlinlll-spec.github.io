@@ -370,3 +370,6 @@ section{padding:36px 0}
 .biz-dl dd{margin:0;overflow-wrap:anywhere}
 .badge-collab{border-color:var(--sand);color:var(--sand)}
 .biz-notice{margin:8px 0 0;padding:10px 12px;border-left:3px solid var(--warn);background:var(--panel);color:var(--text);font-size:15px;line-height:1.7}
+.var-thumb{display:inline-block;width:40px;height:40px;object-fit:cover;vertical-align:middle;margin-right:10px;border:1px solid var(--line)}
+.snap{margin-top:12px;color:var(--text)}
+.snap summary{cursor:pointer;color:var(--warn);font-weight:700;min-height:32px}

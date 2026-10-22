@@ -251,14 +251,16 @@ function productPages() {
       .sort((a, b) => (b.subcategory_id === p.subcategory_id) - (a.subcategory_id === p.subcategory_id)).slice(0, 4);
     const variants = p.variants?.length ? (showcase
       ? `<section class="pd-block"><h2>可選配置</h2><ul class="tags">${p.variants.map(v => `<li>${esc(v.name)}</li>`).join('')}</ul></section>`
-      : `<section class="pd-block"><h2>規格選項</h2><div class="table-wrap"><table class="table"><thead><tr><th scope="col">選項</th><th scope="col">SKU</th><th scope="col">價格</th><th scope="col">供貨</th></tr></thead><tbody>${p.variants.map(v => `<tr><td>${esc(v.name)}</td><td>${esc(v.sku || '—')}</td><td>${v.price_twd ? `NT$ ${Number(v.price_twd).toLocaleString('en-US')}` : '詢價'}</td><td>${esc(availabilityText(v.availability || p.availability))}</td></tr>`).join('')}</tbody></table></div></section>`) : '';
+      : `<section class="pd-block"><h2>規格選項</h2><div class="table-wrap"><table class="table"><thead><tr><th scope="col">選項</th><th scope="col">SKU</th><th scope="col">價格</th><th scope="col">供貨</th></tr></thead><tbody>${p.variants.map(v => `<tr><td>${v.image ? `<img class="var-thumb" src="${attr(v.image.src)}" alt="" width="40" height="40" loading="lazy">` : ''}${esc(v.name)}</td><td>${esc(v.sku || '—')}</td><td>${v.price_twd ? `NT$ ${Number(v.price_twd).toLocaleString('en-US')}` : '詢價'}</td><td>${esc(availabilityText(v.availability || p.availability))}</td></tr>`).join('')}</tbody></table></div></section>`) : '';
     const specs = p.specifications?.length ? `<section class="pd-block"><h2>規格</h2><div class="table-wrap"><table class="table spec"><tbody>${p.specifications.map(s => `<tr><th scope="row">${esc(s.key)}</th><td>${esc(s.value)}</td></tr>`).join('')}</tbody></table></div></section>` : '';
     const compat = (p.compatible_sizes?.length || p.tags?.length || p.video_system || p.battery_cells?.length) ? `<section class="pd-block"><h2>相容與標籤</h2><ul class="tags">${[...(p.compatible_sizes || []), p.video_system, ...(p.battery_cells || []), ...(p.tags || [])].filter(Boolean).map(t => `<li>${esc(t)}</li>`).join('')}</ul></section>` : '';
     const notes = p.notes?.length ? `<section class="pd-block"><h2>注意事項</h2><ul class="notes">${p.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></section>` : '';
     const descHtml = p.description ? `<section class="pd-block"><h2>商品說明</h2><div class="prose">${p.description.split(/\n{2,}/).map(par => `<p>${esc(par).replace(/\n/g, '<br>')}</p>`).join('')}</div></section>` : '';
     const rv = p.review || {};
     const reviewItems = [...(rv.missing || []).map(m => `待補：${m}`), ...(p.compliance?.status === 'pending' ? (p.compliance.items || []).map(c => `合規待確認：${c.type}｜${c.reason}`) : []), ...(rv.notes || [])];
-    const reviewBox = !p.published && reviewItems.length ? `<aside class="review-box"><strong>草稿待核對（僅預覽版顯示）${rv.batch ? `｜首批 ${esc(rv.batch.replace('first-', ''))} 組` : ''}</strong><ul>${reviewItems.map(n => `<li>${esc(n)}</li>`).join('')}</ul></aside>` : '';
+    const snap = rv.shopee_sales_snapshot;
+    const snapHtml = !p.published && snap?.rows?.length ? `<details class="snap"><summary>蝦皮價格／庫存快照（${esc(snap.captured_at.slice(0, 10))}，未公開、待核對）</summary><div class="table-wrap"><table class="table"><thead><tr><th scope="col">規格</th><th scope="col">價格</th><th scope="col">庫存</th></tr></thead><tbody>${snap.rows.map(r => `<tr><td>${esc(r.name || '（單一規格）')}</td><td>${r.price ?? '—'}</td><td>${r.stock ?? '—'}</td></tr>`).join('')}</tbody></table></div></details>` : '';
+    const reviewBox = !p.published && (reviewItems.length || snapHtml) ? `<aside class="review-box"><strong>草稿待核對（僅預覽版顯示）${rv.batch ? `｜首批 ${esc(rv.batch.replace('first-', ''))} 組` : ''}</strong><ul>${reviewItems.map(n => `<li>${esc(n)}</li>`).join('')}</ul>${(p.images || []).some(i => i.rights === 'unverified') ? '<p>圖片由蝦皮匯入，使用權待 EWP 確認（rights: unverified）。</p>' : ''}${snapHtml}</aside>` : '';
     const showcaseNote = showcase ? `<p class="callout" role="note"><strong>作品介紹：</strong>本頁為機型介紹，目前未於官網販售。需要相同或類似配置，請透過 LINE 洽詢客製組裝服務。</p>` : '';
     const body = `<div class="wrap">${breadcrumbs(crumbs.map((x, i) => i === crumbs.length - 1 ? x : x))}</div>
 <article class="wrap pd" itemscope>
@@ -489,8 +491,15 @@ function seoFiles() {
 // 每次都從空資料夾開始，確保發布產物只包含本次產生的頁面與白名單靜態檔
 if (!CHECK) { fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive: true }); }
 homePage(); productsIndex(); categoryPages(); productPages(); buildPages(); servicePages(); batteryPage(); simplePages(); seoFiles();
+// 商品圖片只複製「本次有產生頁面的商品」：正式版＝已公開商品；預覽版＝含草稿。未公開商品的圖片不會進入正式產物。
+const PRODUCT_IMG = path.join(ROOT, 'assets', 'img', 'products');
 for (const item of STATIC_WHITELIST) {
   const src = path.join(ROOT, item);
-  if (fs.existsSync(src)) fs.cpSync(src, path.join(OUT, item), { recursive: true });
+  if (fs.existsSync(src)) fs.cpSync(src, path.join(OUT, item), { recursive: true, filter: f => !(f === PRODUCT_IMG || f.startsWith(PRODUCT_IMG + path.sep)) });
 }
-console.log(`✓ 已產生 ${generated.length} 個頁面＋${STATIC_WHITELIST.length} 項靜態資源 → ${path.relative(ROOT, OUT)}${DRAFTS ? '（含草稿預覽，noindex）' : ''}`);
+let copiedProductImgDirs = 0;
+for (const p of visible) {
+  const dir = path.join(PRODUCT_IMG, p.id);
+  if (fs.existsSync(dir)) { fs.cpSync(dir, path.join(OUT, 'assets', 'img', 'products', p.id), { recursive: true }); copiedProductImgDirs++; }
+}
+console.log(`✓ 已產生 ${generated.length} 個頁面＋${STATIC_WHITELIST.length} 項靜態資源＋${copiedProductImgDirs} 件商品圖片 → ${path.relative(ROOT, OUT)}${DRAFTS ? '（含草稿預覽，noindex）' : ''}`);

@@ -46,7 +46,29 @@
     }
   ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "O4WIDE(加裝CNC保護及鏡頭改件)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "346497481245"
+    },
+    {
+      "name": "O4PRO",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "346497481246"
+    },
+    {
+      "name": "模擬圖傳(平頭哥2)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "346497481244"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -77,7 +99,74 @@
       "接收機、機架、槳葉、重量",
       "實機照片（可沿用現有 HUAN 海報需確認）",
       "是否轉為販售模式：須先完成合規確認"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-msycw4hlne2ydb",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-msycw4hssg0845",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-msycw4hsa6ma94",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-msycw4hsr1fsd6",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-msycw4hjdx5218"
+      ],
+      "variation_label": "幻 HUAN",
+      "options": [
+        {
+          "option": "模擬圖傳(平頭哥2)",
+          "url": null
+        },
+        {
+          "option": "O4WIDE(加裝CNC保護及鏡頭改件)",
+          "url": null
+        },
+        {
+          "option": "O4PRO",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "幻 HUAN",
+      "rows": [
+        {
+          "variation_id": "346497481245",
+          "name": "O4WIDE(加裝CNC保護及鏡頭改件)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 13680,
+          "stock": 1,
+          "min_qty": 2
+        },
+        {
+          "variation_id": "346497481246",
+          "name": "O4PRO",
+          "parent_sku": null,
+          "sku": null,
+          "price": 15200,
+          "stock": 1,
+          "min_qty": null
+        },
+        {
+          "variation_id": "346497481244",
+          "name": "模擬圖傳(平頭哥2)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 8880,
+          "stock": 1,
+          "min_qty": null
+        }
+      ],
+      "price_min": 8880,
+      "price_max": 15200,
+      "stock_total": 3,
+      "status": "snapshot_only"
+    }
   },
   "listing_mode": "showcase",
   "compliance": {

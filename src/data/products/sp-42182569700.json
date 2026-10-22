@@ -18,7 +18,15 @@
   "description": "#FPV #穿越機 #3吋槳 #R3030 #3030槳 #三葉槳 #螺旋槳 #RUIYI #芮翼 #Toothpick #Freestyle #競速機 #花飛 #無人機 #FPV配件 #電翼動力\n\n芮翼 RUIYI R3030 三葉槳專為3吋 FPV 穿越機打造，採用高韌性 PC 材質，兼具耐用性與操控靈敏度，適合 Toothpick、Freestyle、花飛及競速機使用。每組包含2正2反，可直接更換使用。\n\n【產品特色】\n✔ 3吋三葉設計，動力輸出平順\n✔ 高韌性PC材質，耐摔耐用\n✔ 重量僅1.6g，兼顧效率與靈敏度\n✔ M2固定螺絲規格\n✔ 適用1.5mm馬達軸\n✔ 適合 Toothpick、Freestyle、競速飛行\n\n【產品規格】\n品牌：RUIYI 芮翼\n型號：R3030\n尺寸：3吋\n葉片數：3葉\n材質：PC\n重量：1.6g／支\n中心孔徑：1.5mm\n中心厚度：5.1mm\n固定螺絲：M2\n包裝：2正槳＋2反槳（共4支）\n\n【適用機型】\n3吋 Toothpick\n3吋 Freestyle\n3吋 花式穿越機\n3吋 競速機\n※ 請確認馬達軸徑及固定方式後再購買。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "黑色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "287783060910"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -37,6 +45,45 @@
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mqn40mib8pvnb5"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mqn3x2f4hlor0c",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mqn3x2eyk3d965",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mqn3x2fdxj41ba"
+      ],
+      "variation_label": "Ruiyi 3030",
+      "options": [
+        {
+          "option": "黑色",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Ruiyi 3030",
+      "rows": [
+        {
+          "variation_id": "287783060910",
+          "name": "黑色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 55,
+          "stock": 14,
+          "min_qty": 2
+        }
+      ],
+      "price_min": 55,
+      "price_max": 55,
+      "stock_total": 14,
+      "status": "snapshot_only"
+    }
   }
 }

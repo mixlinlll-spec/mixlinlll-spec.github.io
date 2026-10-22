@@ -16,7 +16,29 @@
   "description": "#DJI #O3 #O4 #天空端 #排線 #6P排線 #飛控排線 #F4飛控 #F7飛控 #FPV #穿越機 #航模 #SpeedyBee #無人機配件 #DJI配件\n\nDJI O3／O4 天空端專用 6P 雙頭排線，適合具備排插接口的 F4／F7 飛控使用，免繁瑣焊接，安裝更快速，配線更整潔。\n\n・適用 DJI O3 / O4 天空端\n・6P 雙頭直插設計，安裝方便\n・適用具排插端口之 F4 / F7 飛控\n・可用於  F4 / F7 等相容飛控\n・適合穿越機、FPV、航模改裝與維修使用",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "4CM",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "272508534320"
+    },
+    {
+      "name": "7CM",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "272508534321"
+    },
+    {
+      "name": "15CM",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "272508534322"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +56,73 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mmoqe5r6savj46",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmbx0c9dk3k898",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mmoqe5r3l4atc9",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mmoqe5r3miv959",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mmoqe5r1eghv57"
+      ],
+      "variation_label": "天空端排線",
+      "options": [
+        {
+          "option": "4CM",
+          "url": null
+        },
+        {
+          "option": "7CM",
+          "url": null
+        },
+        {
+          "option": "15CM",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "天空端排線",
+      "rows": [
+        {
+          "variation_id": "272508534320",
+          "name": "4CM",
+          "parent_sku": null,
+          "sku": null,
+          "price": 55,
+          "stock": 24,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "272508534321",
+          "name": "7CM",
+          "parent_sku": null,
+          "sku": null,
+          "price": 60,
+          "stock": 25,
+          "min_qty": null
+        },
+        {
+          "variation_id": "272508534322",
+          "name": "15CM",
+          "parent_sku": null,
+          "sku": null,
+          "price": 65,
+          "stock": 4,
+          "min_qty": null
+        }
+      ],
+      "price_min": 55,
+      "price_max": 65,
+      "stock_total": 53,
+      "status": "snapshot_only"
+    }
   }
 }

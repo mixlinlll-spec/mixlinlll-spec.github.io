@@ -20,7 +20,22 @@
   "description": "•\t#iFlight電機\n•\t#XING2 2405\n•\t#1950KV\n•\t#6S動力\n•\t#5吋穿越機\n•\t#FPV無刷電機\n•\t#競速花飛\n•\t#Freestyle電機\n•\t#航模配件\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t2405 規格＋1950KV，搭配 6S 5吋槳，屬於現在很主流的「兼顧手感與效率」區間，適合 Freestyle、日常炸機與小比賽。\n•\t採用一體 Unibell 鈦合金中空軸＋7075 鋁合金外鐘，抗撞耐摔，長期飛也不易變形。\n•\t內部使用 N52H 弧形磁鋼與高品質軸承，轉動順、響應快，油門線性感明顯，比老一代 XING 更有「鎖定感」。\n•\t16×16mm 安裝孔位、20AWG 長線，直接對應市面多數 5 吋機架與 45–60A 電調，換裝無痛。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "單顆",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "440527835479"
+    },
+    {
+      "name": "四顆",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "440527835480"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -39,6 +54,59 @@
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mkae79xecbnsc6"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mkae1ii7vx1gab",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mkae1iinj6rq8b",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mkae1iidi6tie0",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mkae1igquz9c69"
+      ],
+      "variation_label": "2404/1950KV",
+      "options": [
+        {
+          "option": "單顆",
+          "url": null
+        },
+        {
+          "option": "四顆",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "2404/1950KV",
+      "rows": [
+        {
+          "variation_id": "440527835479",
+          "name": "單顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 599,
+          "stock": 1,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "440527835480",
+          "name": "四顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 2399,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 599,
+      "price_max": 2399,
+      "stock_total": 1,
+      "status": "snapshot_only"
+    }
   }
 }

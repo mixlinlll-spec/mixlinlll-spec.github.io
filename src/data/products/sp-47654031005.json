@@ -20,7 +20,92 @@
   "description": "#Tinywhoop頂罩\n#微型穿越機上蓋\n#65mmwhoop\n#75mmwhoop\n#80mmwhoop\n#FPV頂罩\n#相機保護架\n#穿越機改裝\n#室內穿越機配件\n#FPV3D列印\n#台灣現貨\n#快速出貨\n\n炸機太多次，頂罩不是裂腳就是鏡頭歪一邊嗎？😆\n這個「Tinywhoop 各類頂罩專區」，專門收錄 65mm／75mm／80mm 微型穿越機常見機型頂罩，上蓋、相機保護架、天線導引一次找齊，讓你隨時換造型也能順便換新殼。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "Air65高角度競速",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "335382027485"
+    },
+    {
+      "name": "65/75多角度可調",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282303126565"
+    },
+    {
+      "name": "AIR75低角度",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282303126564"
+    },
+    {
+      "name": "BETAFPVC03/25度",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282303126561"
+    },
+    {
+      "name": "小丑競速用45度",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282303126560"
+    },
+    {
+      "name": "RaceSpecBeeEye35度",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282303126562"
+    },
+    {
+      "name": "Air65/75競速45度",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282303126566"
+    },
+    {
+      "name": "65低角度輕量化",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "325383258159"
+    },
+    {
+      "name": "Caddxant/C03/35度",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282303126568"
+    },
+    {
+      "name": "外星頭罩65 75",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282303126567"
+    },
+    {
+      "name": "65/75鏡頭+BB響",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282303126569"
+    },
+    {
+      "name": "小惡魔O4lite防果凍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282303126563"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -38,6 +123,188 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mj12pr7uhwck31",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mixtkn1qq32ae3"
+      ],
+      "variation_label": "各類頂罩",
+      "options": [
+        {
+          "option": "小丑競速用45度",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mixtkn1qq32ae3"
+        },
+        {
+          "option": "BETAFPVC03/25度",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mixtolh6e2v5c8"
+        },
+        {
+          "option": "RaceSpecBeeEye35度",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mixtqhh3j8cn64"
+        },
+        {
+          "option": "Air65/75競速45度",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mixtytbhz37mf1"
+        },
+        {
+          "option": "外星頭罩65 75",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mixu4z3gnojme7"
+        },
+        {
+          "option": "Caddxant/C03/35度",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mixu7hce2dq854"
+        },
+        {
+          "option": "小惡魔O4lite防果凍",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mixuhhxwvhtx64"
+        },
+        {
+          "option": "65/75鏡頭+BB響",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mixum28a2squ47"
+        },
+        {
+          "option": "AIR75低角度",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mixuvc76603m96"
+        },
+        {
+          "option": "65/75多角度可調",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mixuxgglvcw03d"
+        },
+        {
+          "option": "Air65高角度競速",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-miz6mgzek3cze3"
+        },
+        {
+          "option": "65低角度輕量化",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mizp5r4jq3no33"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "各類頂罩",
+      "rows": [
+        {
+          "variation_id": "335382027485",
+          "name": "Air65高角度競速",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "282303126565",
+          "name": "65/75多角度可調",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 42,
+          "min_qty": null
+        },
+        {
+          "variation_id": "282303126564",
+          "name": "AIR75低角度",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 47,
+          "min_qty": null
+        },
+        {
+          "variation_id": "282303126561",
+          "name": "BETAFPVC03/25度",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "282303126560",
+          "name": "小丑競速用45度",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "282303126562",
+          "name": "RaceSpecBeeEye35度",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "282303126566",
+          "name": "Air65/75競速45度",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "325383258159",
+          "name": "65低角度輕量化",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "282303126568",
+          "name": "Caddxant/C03/35度",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "282303126567",
+          "name": "外星頭罩65 75",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 48,
+          "min_qty": null
+        },
+        {
+          "variation_id": "282303126569",
+          "name": "65/75鏡頭+BB響",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "282303126563",
+          "name": "小惡魔O4lite防果凍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 47,
+          "min_qty": null
+        }
+      ],
+      "price_min": 50,
+      "price_max": 50,
+      "stock_total": 582,
+      "status": "snapshot_only"
+    }
   }
 }

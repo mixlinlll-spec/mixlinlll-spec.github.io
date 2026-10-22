@@ -93,7 +93,38 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820la-mtjjjqpxup6w2f",
+      "gallery": [],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "346548319900",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 2180,
+          "stock": 8,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 2180,
+      "price_max": 2180,
+      "stock_total": 8,
+      "status": "snapshot_only"
+    }
   },
   "notes": [
     "40A 為原廠標示持續電流，實際可用電流受散熱與配置影響，請預留餘裕。",

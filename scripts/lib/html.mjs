@@ -48,7 +48,8 @@ export function shopeeButton(site, label = '前往蝦皮賣場', cls = 'btn', hr
 
 function picture(img, { sizes = '(max-width: 720px) 50vw, 300px', lazy = true, cls = '' } = {}) {
   if (!img) return `<div class="img-ph ${cls}" aria-hidden="true"><span>EWP</span></div>`;
-  const srcset = img.src_small ? `${attr(img.src_small)} 600w, ${attr(img.src)} 1200w` : '';
+  const smallW = (img.src_small && /-(\d+)\.\w+$/.exec(img.src_small)?.[1]) || 600;
+  const srcset = img.src_small ? `${attr(img.src_small)} ${smallW}w, ${attr(img.src)} ${img.width || 1200}w` : '';
   const ext = img.fallback ? `<source type="image/webp" ${srcset ? `srcset="${srcset}" sizes="${sizes}"` : `srcset="${attr(img.src)}"`}>` : '';
   const src = img.fallback || img.src;
   return `<picture class="${cls}">${ext}<img src="${attr(src)}" ${!img.fallback && srcset ? `srcset="${srcset}" sizes="${sizes}"` : ''} alt="${attr(img.alt)}" width="${img.width || 1200}" height="${img.height || 1200}" ${lazy ? 'loading="lazy" decoding="async"' : 'fetchpriority="high"'}></picture>`;

@@ -41,7 +41,22 @@
     }
   ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "單顆",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "356352392837"
+    },
+    {
+      "name": "四顆",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "356352392838"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -75,6 +90,60 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mrrgrei2kj5sd8",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrrgrei2lxq89e",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mrrgrei2ncao6e",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrrgrei2oqv4d1",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mrrgrei2q5fkbb"
+      ],
+      "variation_label": "2207／1960KV",
+      "options": [
+        {
+          "option": "單顆",
+          "url": null
+        },
+        {
+          "option": "四顆",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "2207／1960KV",
+      "rows": [
+        {
+          "variation_id": "356352392837",
+          "name": "單顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 439,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "356352392838",
+          "name": "四顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 1700,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 439,
+      "price_max": 1700,
+      "stock_total": 0,
+      "status": "snapshot_only"
+    }
   }
 }

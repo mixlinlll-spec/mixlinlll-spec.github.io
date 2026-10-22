@@ -18,7 +18,57 @@
   "description": "#FPV #穿越機 #5吋槳 #R5129 #5129槳 #三葉槳 #螺旋槳 #RUIYI #芮翼 #Freestyle #花飛 #競速機 #練習槳 #2306馬達 #2207馬達 #無人機配件 #電翼動力\n\nRUIYI 芮翼 R5129 三葉槳，專為5吋FPV穿越機、Freestyle花飛、競速與日常練習打造，採用PC材質製成，兼顧耐用度、操控手感與動力效率。5129槳型反應線性，適合新手練習、日常飛行及中高階花飛玩家使用。\n【產品特色】\n✔ 5吋三葉槳設計，操控穩定\n✔ 5129槳型，適合練習、競速、花飛\n✔ PC材質，耐摔耐用\n✔ 5mm中心孔，適用主流5吋馬達\n✔ 重量約4.53g，兼顧效率與手感\n✔ 推薦搭配2306、2207馬達\n✔ 多色可選，方便辨識機體方向\n【產品規格】\n品牌：RUIYI 芮翼\n型號：R5129\n尺寸：5吋\n葉片數：3葉\n材質：PC\n槳葉直徑：129.5mm\n中心孔內徑：5mm\n中心厚度：6.15mm\n重量：約4.53g／支\n推薦馬達：2306、2207\n【適用機型】\n5吋FPV穿越機\nFreestyle花飛機\n5吋競速機\n日常練習機\nDJI O3／O4配置穿越機\n※ 下單前請確認馬達槳座規格與槳葉旋向。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "透綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "351610633082"
+    },
+    {
+      "name": "紫",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "351610633083"
+    },
+    {
+      "name": "粉",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "356610632849"
+    },
+    {
+      "name": "紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "356610632848"
+    },
+    {
+      "name": "灰黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "426352373291"
+    },
+    {
+      "name": "藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "426352373289"
+    },
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "426352373290"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -37,6 +87,124 @@
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l6-mrrgr0fnfqpwba"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mrrgrejjk2dd5b",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mrrgrei0dvd2eb",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mrrgreivfzes87",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mrrgrekcuyvc29"
+      ],
+      "variation_label": "R5129一組四片",
+      "options": [
+        {
+          "option": "灰黑",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mua3quevcv7la1"
+        },
+        {
+          "option": "藍",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mua3quf0tipyd1"
+        },
+        {
+          "option": "白",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mua3quf0uxae62"
+        },
+        {
+          "option": "透綠",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mua3quf0wbuu80"
+        },
+        {
+          "option": "紫",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mua3quf0xqfaa9"
+        },
+        {
+          "option": "紅",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mua3quf0z4zq3f"
+        },
+        {
+          "option": "粉",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mua3quf10jk60b"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "R5129一組四片",
+      "rows": [
+        {
+          "variation_id": "351610633082",
+          "name": "透綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 50,
+          "min_qty": 2
+        },
+        {
+          "variation_id": "351610633083",
+          "name": "紫",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "356610632849",
+          "name": "粉",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 44,
+          "min_qty": null
+        },
+        {
+          "variation_id": "356610632848",
+          "name": "紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "426352373291",
+          "name": "灰黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "426352373289",
+          "name": "藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "426352373290",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 49,
+      "price_max": 49,
+      "stock_total": 344,
+      "status": "snapshot_only"
+    }
   }
 }

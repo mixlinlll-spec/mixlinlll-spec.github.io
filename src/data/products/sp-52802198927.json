@@ -16,7 +16,36 @@
   "description": "#meteor65pro #穿越機配件 #微型無人機 #65pro #whoop #fpv配件 #betafpv #穿越機 #機架配件 #迷你無人機\n\n📦 購買前注意\n⚠️請務必備註顏色。屬客製製作，無法退貨。\n⚠️表面可能具有些微層紋，屬正常現象。\n\n提供 Meteor65 Pro 專用的多款改裝與升級小配件，讓你的迷你穿越機更耐摔、更穩定、更好飛。常用到的固定件、保護件、強化件一站滿足，輕量不增加飛行負擔。\n\n⭕適配550豪安電池卡扣\n讓你的65可以兼容550豪安電池，卡扣僅0.6克\n\n⭕小O4天線座防脫\n天線可穿過卡扣，防止線軸抖動造成小O4畫面果凍\n\n⭕14mm機罩+原廠小o4鏡頭套件(有卡扣可上濾鏡)\n尾部天線固定不晃動，支持flywoo增廣鏡套件\n\n⭕減震保護墊圈\n有效吸收降落帶來的衝擊",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "減震保護墊圈(6個)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "435213528149"
+    },
+    {
+      "name": "適配550豪安電池卡扣(2個)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "435213528150"
+    },
+    {
+      "name": "小O4天線座防脫(3個)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "435213528151"
+    },
+    {
+      "name": "14mm機罩+原廠小o4鏡頭套件",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "430213527916"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +64,86 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mhk2zr1cbt3c3d",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mhk37cohhibkc1",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mhk39bgmpama73",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhk3r5784t1i44"
+      ],
+      "variation_label": "專用改裝配件",
+      "options": [
+        {
+          "option": "適配550豪安電池卡扣(2個)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mhk3da2o13ie67"
+        },
+        {
+          "option": "小O4天線座防脫(3個)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mhk3dixpjdhg06"
+        },
+        {
+          "option": "14mm機罩+原廠小o4鏡頭套件",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mhk3udtvueip32"
+        },
+        {
+          "option": "減震保護墊圈(6個)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mhk3zmdl3abk49"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "專用改裝配件",
+      "rows": [
+        {
+          "variation_id": "435213528149",
+          "name": "減震保護墊圈(6個)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 20,
+          "stock": 43,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "435213528150",
+          "name": "適配550豪安電池卡扣(2個)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 20,
+          "stock": 42,
+          "min_qty": null
+        },
+        {
+          "variation_id": "435213528151",
+          "name": "小O4天線座防脫(3個)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "430213527916",
+          "name": "14mm機罩+原廠小o4鏡頭套件",
+          "parent_sku": null,
+          "sku": null,
+          "price": 60,
+          "stock": 47,
+          "min_qty": null
+        }
+      ],
+      "price_min": 20,
+      "price_max": 60,
+      "stock_total": 181,
+      "status": "snapshot_only"
+    }
   }
 }

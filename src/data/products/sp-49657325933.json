@@ -20,7 +20,22 @@
   "description": "•\t#GEPRRCCinebot35\n•\t#3.5吋穿越機\n•\t#Cinewhoop航拍\n•\t#FPV穿越機\n•\t#6S Cinewhoop\n•\t#室內穿越機\n•\t#GEPRRC配件\n•\t#FPV無人機\n•\t#航拍套件\n•\t#台灣現貨",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "O4pro版本/含ELRS接收機",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380650068062"
+    },
+    {
+      "name": "PNP動力套裝/含ELRS接收機",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380650068063"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -50,6 +65,63 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mlwzw530jdoic8",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mlwzw52ukgsh77",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mlwzw52tqyv796"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mlwzoa76v4040d",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mlwzoa7lvwn4f0",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlwzoa7vwwlc93",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mlwzoa7qvpc430",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mlwzoa7x1n2g8e",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mlwzoa7zyznm59",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlwzoa7zxl36af",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mlwzoa85mo0f18"
+      ],
+      "variation_label": "預購",
+      "options": [
+        {
+          "option": "O4pro版本/含ELRS接收機",
+          "url": null
+        },
+        {
+          "option": "PNP動力套裝/含ELRS接收機",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "預購",
+      "rows": [
+        {
+          "variation_id": "380650068062",
+          "name": "O4pro版本/含ELRS接收機",
+          "parent_sku": null,
+          "sku": null,
+          "price": 17580,
+          "stock": 10,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "380650068063",
+          "name": "PNP動力套裝/含ELRS接收機",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9350,
+          "stock": 10,
+          "min_qty": null
+        }
+      ],
+      "price_min": 9350,
+      "price_max": 17580,
+      "stock_total": 20,
+      "status": "snapshot_only"
+    }
   }
 }

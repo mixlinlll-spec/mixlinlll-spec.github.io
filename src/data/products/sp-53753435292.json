@@ -18,7 +18,85 @@
   "description": "GEPRC MARK4 7吋 3D打印\nMARK4 7inch TPU 配件\nMARK4 7 機臂保護\nMARK4 7 GPS 座\nMARK4 7 天線座\n長程穿越機 3D 列印件\nFPV Freestyle 保護套件\nGEPRC 配件 升級\n7吋穿越機 機臂保護\n7inch FPV frame parts\n\n⚠️ 務必備註顏色與需求款式（可先聊聊確認），訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n⚠️ 客製化需求（機型版本、安裝孔位、LOGO 字樣）請先聊聊討論再下單\n\n這系列是專為 GEPRC MARK4 7 吋長程 機架設計的 3D 打印件，可依需求選購或搭配成套，包括機臂保護、電池防滑墊固定件、天線座、GPS 座、相機保護罩等，讓你的 MARK4 在實戰中更耐撞、走線更乾淨。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "GOPRO前座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370329740613"
+    },
+    {
+      "name": "雙接收天線後置",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370329740604"
+    },
+    {
+      "name": "O3固定座+雙原廠天線尾座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370329740603"
+    },
+    {
+      "name": "BB響",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370329740608"
+    },
+    {
+      "name": "前置GPS/18X18",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370329740609"
+    },
+    {
+      "name": "GPS+接收機天線+SMA單天線尾座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370329740611"
+    },
+    {
+      "name": "20X20圖傳墊",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370329740607"
+    },
+    {
+      "name": "側護板",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370329740610"
+    },
+    {
+      "name": "GPS+接收天線(GPS28X28)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370329740605"
+    },
+    {
+      "name": "XT60固定座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370329740606"
+    },
+    {
+      "name": "機臂腳墊",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370329740612"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -37,6 +115,172 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mijl59wiae4h94",
+      "gallery": [],
+      "variation_label": "GEPRC MARK4 7",
+      "options": [
+        {
+          "option": "側護板",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mila71e7ywhz54"
+        },
+        {
+          "option": "GPS+接收機天線+SMA單天線尾座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mijlzhbpsohz5f"
+        },
+        {
+          "option": "機臂腳墊",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mpav0qsjrf28e6"
+        },
+        {
+          "option": "O3固定座+雙原廠天線尾座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mijm1n4mtf5t13"
+        },
+        {
+          "option": "GOPRO前座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mijm2t190l4w93"
+        },
+        {
+          "option": "XT60固定座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mijm4r6zhhxeaa"
+        },
+        {
+          "option": "20X20圖傳墊",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mijm6y54htl370"
+        },
+        {
+          "option": "BB響",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mijm7y1wd6va32"
+        },
+        {
+          "option": "前置GPS/18X18",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mijmb64olf5s3e"
+        },
+        {
+          "option": "雙接收天線後置",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mijm81i3u9s361"
+        },
+        {
+          "option": "GPS+接收天線(GPS28X28)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mijmci7vte6a03"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "GEPRC MARK4 7",
+      "rows": [
+        {
+          "variation_id": "370329740613",
+          "name": "GOPRO前座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 49,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "370329740604",
+          "name": "雙接收天線後置",
+          "parent_sku": null,
+          "sku": null,
+          "price": 70,
+          "stock": 47,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370329740603",
+          "name": "O3固定座+雙原廠天線尾座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 75,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370329740608",
+          "name": "BB響",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370329740609",
+          "name": "前置GPS/18X18",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370329740611",
+          "name": "GPS+接收機天線+SMA單天線尾座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 60,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370329740607",
+          "name": "20X20圖傳墊",
+          "parent_sku": null,
+          "sku": null,
+          "price": 35,
+          "stock": 47,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370329740610",
+          "name": "側護板",
+          "parent_sku": null,
+          "sku": null,
+          "price": 130,
+          "stock": 47,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370329740605",
+          "name": "GPS+接收天線(GPS28X28)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 60,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370329740606",
+          "name": "XT60固定座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 35,
+          "stock": 48,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370329740612",
+          "name": "機臂腳墊",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 48,
+          "min_qty": null
+        }
+      ],
+      "price_min": 30,
+      "price_max": 130,
+      "stock_total": 535,
+      "status": "snapshot_only"
+    }
   }
 }

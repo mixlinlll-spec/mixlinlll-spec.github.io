@@ -16,7 +16,36 @@
   "description": "#BetaFPV #Meteor75Pro #Meteor75打印件 #75mmWhoop #FPV打印件 #3D列印TPU #穿越機配件  #防撞保護 #靈雀FPV\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D 列印件可能有些微層紋屬正常現象⚠️",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "後置天線座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370208391462"
+    },
+    {
+      "name": "25*25機罩(C03鏡頭尺寸)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "244172850219"
+    },
+    {
+      "name": "輕量化頂罩(ANTLITE尺寸)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "244172850220"
+    },
+    {
+      "name": "改550豪安 1s电池套",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302268897159"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +64,87 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mhin8gn81qf458",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-ml7x2lls06bz84",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mhimzmdjylfp0c",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-ml7wwh3c94pbab",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-ml7x5glotts8ba"
+      ],
+      "variation_label": "Tinywhoop改裝",
+      "options": [
+        {
+          "option": "後置天線座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mhimzmdprw1u82"
+        },
+        {
+          "option": "改550豪安 1s电池套",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-ml7wwyxkscu87f"
+        },
+        {
+          "option": "25*25機罩(C03鏡頭尺寸)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-ml7x11dmkg0261"
+        },
+        {
+          "option": "輕量化頂罩(ANTLITE尺寸)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-ml7x5glotts8ba"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Tinywhoop改裝",
+      "rows": [
+        {
+          "variation_id": "370208391462",
+          "name": "後置天線座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 22,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "244172850219",
+          "name": "25*25機罩(C03鏡頭尺寸)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 90,
+          "stock": 44,
+          "min_qty": null
+        },
+        {
+          "variation_id": "244172850220",
+          "name": "輕量化頂罩(ANTLITE尺寸)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 48,
+          "min_qty": null
+        },
+        {
+          "variation_id": "302268897159",
+          "name": "改550豪安 1s电池套",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 23,
+          "min_qty": null
+        }
+      ],
+      "price_min": 30,
+      "price_max": 90,
+      "stock_total": 137,
+      "status": "snapshot_only"
+    }
   }
 }

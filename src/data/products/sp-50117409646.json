@@ -18,7 +18,29 @@
   "description": "BETAFPV Pavo20 Pro II 是一款 2 吋輕量化 Cinewhoop 圈圈機，支援 DJI O4／O4 Pro 高清數位圖傳，兼具航拍穩定性、機體保護性與 FPV 飛行樂趣。升級結構設計提升耐撞性與機身剛性，適合室內外穿梭、低空運鏡、旅拍紀錄與輕量花飛使用。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "O4pro SBUS 兩顆電池",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "331476082134"
+    },
+    {
+      "name": "PNP 兩顆電池",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "331476082135"
+    },
+    {
+      "name": "O4Pro ELRS 兩顆電池",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "331476082136"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -47,6 +69,76 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-msr0w0zglslh9a",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-msr0w0zgn75x05",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-msr0w0zgolqdcf"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100698 - Gaming & Consoles/Others",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-msr0sqr074sk9c",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-msr0sqr02x3884",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-msr0sqr04bnob9",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-msr0sqr09xxg20",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-msr0sqr01iisc4",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-msr0sqr05q842d",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-msr0sqr08jd0e1",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-msr0sqr0bchw77"
+      ],
+      "variation_label": "Pavo20pro II",
+      "options": [
+        {
+          "option": "PNP 兩顆電池",
+          "url": null
+        },
+        {
+          "option": "O4Pro ELRS 兩顆電池",
+          "url": null
+        },
+        {
+          "option": "O4pro SBUS 兩顆電池",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Pavo20pro II",
+      "rows": [
+        {
+          "variation_id": "331476082134",
+          "name": "O4pro SBUS 兩顆電池",
+          "parent_sku": null,
+          "sku": null,
+          "price": 13380,
+          "stock": 10,
+          "min_qty": 2
+        },
+        {
+          "variation_id": "331476082135",
+          "name": "PNP 兩顆電池",
+          "parent_sku": null,
+          "sku": null,
+          "price": 5980,
+          "stock": 10,
+          "min_qty": null
+        },
+        {
+          "variation_id": "331476082136",
+          "name": "O4Pro ELRS 兩顆電池",
+          "parent_sku": null,
+          "sku": null,
+          "price": 14200,
+          "stock": 10,
+          "min_qty": null
+        }
+      ],
+      "price_min": 5980,
+      "price_max": 14200,
+      "stock_total": 30,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -36,6 +36,41 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mj4eu1os3hmp24",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mj4eu1ors936b4",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mj4eu1onorgn75",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mj4eu1p0oikkad"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "370394857269",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 129,
+          "stock": 40,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 129,
+      "price_max": 129,
+      "stock_total": 40,
+      "status": "snapshot_only"
+    }
   }
 }

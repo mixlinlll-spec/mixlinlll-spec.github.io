@@ -16,7 +16,22 @@
   "description": "•\t#中航雷波天線\n•\t#5.8G棒棒糖\n•\t#FPV圖傳天線\n•\t#SMA線性天線\n•\t#穿越機天線\n•\t#左旋右旋天線\n•\t#航模接收天線\n•\t#遠航天線\n•\t#FPV配件\n•\t#台灣現貨",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "IPEX(左璇）150mm",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "385653853114"
+    },
+    {
+      "name": "SMA(內針左璇）64mm",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "440653709766"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +50,59 @@
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l6-mlydehno3pj846"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlydcjmo9clc4a",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlydcjmvczyceb",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlyehprw3xfm68",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mlydcjmvbldw56"
+      ],
+      "variation_label": "雷波5.8G天線",
+      "options": [
+        {
+          "option": "SMA(內針左璇）64mm",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlydcjmvczyceb"
+        },
+        {
+          "option": "IPEX(左璇）150mm",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlyehprw3xfm68"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "雷波5.8G天線",
+      "rows": [
+        {
+          "variation_id": "385653853114",
+          "name": "IPEX(左璇）150mm",
+          "parent_sku": null,
+          "sku": null,
+          "price": 269,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "440653709766",
+          "name": "SMA(內針左璇）64mm",
+          "parent_sku": null,
+          "sku": null,
+          "price": 239,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 239,
+      "price_max": 269,
+      "stock_total": 0,
+      "status": "snapshot_only"
+    }
   }
 }

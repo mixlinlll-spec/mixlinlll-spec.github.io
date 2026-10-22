@@ -22,7 +22,22 @@
   "description": "•\t#瑞速電機\n•\t#RATE1404\n•\t#4600KV\n•\t#2點5寸電機\n•\t#3寸圈圈機\n•\t#微型穿越機\n•\t#FPV無刷電機\n•\t#高KV動力\n•\t#3S4S6S電機\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t1404 規格＋4600KV，高轉速設計，適合 2.5–3 吋圈圈機、微型 Freestyle 機與輕量化長距離小機使用。\n•\t支援 3S/4S（保守）甚至部分輕槳 6S 搭配，建議用 2.5–3 吋三葉或雙葉槳，兼顧爆發與效率。\n•\t外觀採拉絲黑＋銀邊設計，動平衡良好，震動小，有助於畫面穩定與 PID 調教。\n•\t標準 9×9mm 安裝孔距與細長出線，易於安裝在主流 2–3 吋機架和 AIO 飛控上。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "四顆",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "445527807004"
+    },
+    {
+      "name": "單顆",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "445527807003"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -42,6 +57,60 @@
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mkbttfbukyyv09",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mkbttfdmugaw9d"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mkbtqprn8oav0c",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mkbtqprqshza06",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mkbtqpru6pe0c7",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mkbtqprzc4cg4e",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mkbtqprugjd0ca"
+      ],
+      "variation_label": "1404/4600KV",
+      "options": [
+        {
+          "option": "單顆",
+          "url": null
+        },
+        {
+          "option": "四顆",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "1404/4600KV",
+      "rows": [
+        {
+          "variation_id": "445527807004",
+          "name": "四顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 1349,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "445527807003",
+          "name": "單顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 349,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 349,
+      "price_max": 1349,
+      "stock_total": 0,
+      "status": "snapshot_only"
+    }
   }
 }

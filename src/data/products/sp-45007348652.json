@@ -16,7 +16,29 @@
   "description": "•\t#iFlightAlbatross\n•\t#5.8G天線\n•\t#FPV穿越機\n•\t#信天翁V2\n•\t#SMA圖傳天線\n•\t#RHCP全向天線\n•\t#航模天線\n•\t#FPV配件\n•\t#雙頻天線\n•\t#台灣現貨\n\n•\t5.8GHz 全向天線，支援 LHCP 圓極化，覆蓋 5.5-6.5GHz 頻段，圖傳穿牆與遠距表現優異，適合室內外穿越。\n•\tV2 版升級陶瓷基座＋金屬外殼，增益達 2dBi，軸比 1.7dB，低 VSWR 確保圖傳穩定不花屏。\n•\tSMA 公頭接口，長度僅 60mm 輕巧不拖架，耐拉扯 360° 全向輻射，360°  全向覆蓋，適合 5 吋以上穿越機。[附件]\n•\t測試數據顯示 RSSI 穩定在 40-50dB，抗干擾強，搭配 DJI O3 等系統效果更佳，提升飛行視野與安全性。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "90mm(左璇內孔）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395652720799"
+    },
+    {
+      "name": "130mm(左璇內孔）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395652720800"
+    },
+    {
+      "name": "180mm(左璇內孔）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395652720801"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -40,6 +62,75 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mlxsid4nhts1af",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-mlxsid50ak1s6a",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mlxsid566nt459"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mlxsghhyxa8470",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mlxsghhtf85ce0",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mlxsghhtdtkw8d",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlxsghi9845rc8",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mlxsghi8snwo55",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlxsghiaphq961",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlxsghine0ar67"
+      ],
+      "variation_label": "iFlight 信天翁V2",
+      "options": [
+        {
+          "option": "90mm(左璇內孔）",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mlxsghi8snwo55"
+        },
+        {
+          "option": "130mm(左璇內孔）",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlxsghiaphq961"
+        },
+        {
+          "option": "180mm(左璇內孔）",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlxsghine0ar67"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "iFlight 信天翁V2",
+      "rows": [
+        {
+          "variation_id": "395652720799",
+          "name": "90mm(左璇內孔）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 370,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "395652720800",
+          "name": "130mm(左璇內孔）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 420,
+          "stock": 0,
+          "min_qty": null
+        },
+        {
+          "variation_id": "395652720801",
+          "name": "180mm(左璇內孔）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 460,
+          "stock": 5,
+          "min_qty": null
+        }
+      ],
+      "price_min": 370,
+      "price_max": 460,
+      "stock_total": 5,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -19,7 +19,22 @@
   "description": "Tinywhoop 快拆圈圈\nTinywhoop 65mm 保護圈\nTinywhoop 75mm 外框\n65mm 風罩保護圈\n75mm 槳罩 保護框\n碳纖 3D 列印 保護圈\nPETG whoop 保護圈\n微型穿越機 槳罩\n室內穿越機 保護框\nTinywhoop 升級配件\nFPV whoop 3D 列印\n穿越機 防撞外框\n\n⚠️ 務必備註顏色與機型尺寸（65mm 或 75mm），未備註將隨機出貨，訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n⚠️ 客製化需求（顏色／厚度／安裝方式）請先聊聊討論再下單\n\n快拆圈圈是為 Tinywhoop 65mm / 75mm 機架設計的專用外框保護圈，可直接替換原本的風罩或外框，提供螺旋槳與機身更多保護，同時維持輕量與剛性表現。適合常在室內、停車場、狹窄場景練飛、撞機頻率高的玩家使用。🏠🛩️ 提供碳纖 8% 與 PETG 兩種材質選擇，滿足不同使用環境與預算需求。\n\n專為 Tinywhoop 65mm / 75mm 機種設計，對應常見 31mm / 40mm 槳距機架。（下單前請確認機架型號與固定方式）\n快拆設計，可快速更換單顆或整圈保護框，維修時不用整支機重拆。\n碳纖 8% 材質：加入碳纖粉末，剛性與韌性較高，耐撞、不易變形，適合常暴力練飛或比賽使用。\nPETG 材質：韌性一般、價格較親民，適合日常練習；但在大力撞擊下較容易斷裂，建議備品一起帶。\n3D 列印製作，可依需求微調厚度、孔位或走線空間；也可搭配機隊配色選擇不同顏色。🎨",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "PETG較脆但是顏色很多可選(一組2個)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "244123154511"
+    },
+    {
+      "name": "碳纖維8%僅有黑色 (一組2個)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "244123154510"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -38,6 +53,58 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mig79v74ta0x13",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mig79x5a7card2"
+      ],
+      "variation_label": "快拆圈圈",
+      "options": [
+        {
+          "option": "碳纖維8%僅有黑色 (一組2個)",
+          "url": null
+        },
+        {
+          "option": "PETG較脆但是顏色很多可選(一組2個)",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "快拆圈圈",
+      "rows": [
+        {
+          "variation_id": "244123154511",
+          "name": "PETG較脆但是顏色很多可選(一組2個)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 80,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "244123154510",
+          "name": "碳纖維8%僅有黑色 (一組2個)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 120,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 80,
+      "price_max": 120,
+      "stock_total": 100,
+      "status": "snapshot_only"
+    }
   }
 }

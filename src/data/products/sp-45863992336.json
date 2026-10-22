@@ -18,7 +18,15 @@
   "description": "#FPV #穿越機 #5吋槳 #51377 #R51377 #三葉槳 #螺旋槳 #RUIYI #芮翼 #Freestyle #花飛 #競速機 #FPV配件 #無人機 #電翼動力\n\nRUIYI 芮翼 R51377 三葉槳專為5吋 FPV 穿越機設計，3吋螺距搭配高韌性PC材質，提供優異抓地力、快速響應及穩定輸出，適合 Freestyle、競速及日常花飛玩家使用。\n【產品特色】\n✔ 5吋三葉設計，操控靈敏\n✔ 3吋螺距，兼顧爆發力與效率\n✔ 高韌性PC材質，耐撞耐用\n✔ 5mm中心孔，適用主流5吋馬達\n✔ 適合 Freestyle、競速、花飛\n✔ 提供多款透明配色可選\n【產品規格】\n品牌：RUIYI 芮翼\n型號：R51377\n尺寸：5吋\n螺距：3 inch\n葉片數：3葉\n材質：PC\n重量：4.55g／支\n中心孔：5mm\n中心厚度：5.1mm\n槳盤直徑：129.2mm\n中心圓直徑：12.1mm\n【適用機型】\n5吋 Freestyle 穿越機\n5吋競速機\n5吋花飛機\n適用5mm槳座無刷馬達\n※ 購買前請確認槳座規格及旋轉方向。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "煙燻黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "311207473567"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -37,6 +45,45 @@
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l4-mqn4etjmm2h7ba"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mqn4ashi6f4129",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mqn4ashw2haaeb",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mqn4ashyst1rc4"
+      ],
+      "variation_label": "R51377",
+      "options": [
+        {
+          "option": "煙燻黑",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "R51377",
+      "rows": [
+        {
+          "variation_id": "311207473567",
+          "name": "煙燻黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 20,
+          "min_qty": 2
+        }
+      ],
+      "price_min": 45,
+      "price_max": 45,
+      "stock_total": 20,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -18,7 +18,29 @@
   "description": "Axisflying Bando5 SE 5吋 FPV 穿越機",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "模擬版本（含接收機）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "421349024347"
+    },
+    {
+      "name": "O4Wide（含接收機）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "421349024348"
+    },
+    {
+      "name": "O4pro（含接收機）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "421349024349"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -42,6 +64,73 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mrqmegwv241y69",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mrqmegxaxt6t91",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mrqmegxaz7r9e9"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mrqmc52muarrda",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52msw7b58",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mrqmc52mvpc7df",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52mx3wnf3",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mrqmc52myih381"
+      ],
+      "variation_label": "勿下單，聊聊",
+      "options": [
+        {
+          "option": "模擬版本（含接收機）",
+          "url": null
+        },
+        {
+          "option": "O4Wide（含接收機）",
+          "url": null
+        },
+        {
+          "option": "O4pro（含接收機）",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "勿下單，聊聊",
+      "rows": [
+        {
+          "variation_id": "421349024347",
+          "name": "模擬版本（含接收機）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 8990,
+          "stock": 10,
+          "min_qty": 2
+        },
+        {
+          "variation_id": "421349024348",
+          "name": "O4Wide（含接收機）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 13990,
+          "stock": 10,
+          "min_qty": null
+        },
+        {
+          "variation_id": "421349024349",
+          "name": "O4pro（含接收機）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 17990,
+          "stock": 10,
+          "min_qty": null
+        }
+      ],
+      "price_min": 8990,
+      "price_max": 17990,
+      "stock_total": 30,
+      "status": "snapshot_only"
+    }
   }
 }

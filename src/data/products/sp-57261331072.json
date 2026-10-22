@@ -35,6 +35,41 @@
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mot6ekb4rp4wab"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mot69eo00qv6e7",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mot69eo1nqq4fb",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mot69eo1p5ak94",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mot69er3588w2e"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "307654792733",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 1180,
+          "stock": 3,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 1180,
+      "price_max": 1180,
+      "stock_total": 3,
+      "status": "snapshot_only"
+    }
   }
 }

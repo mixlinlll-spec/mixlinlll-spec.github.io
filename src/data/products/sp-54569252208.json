@@ -20,7 +20,36 @@
   "description": "【MAD BSC2207.5 V1.0 無刷馬達】\n\nMAD Components BSC 系列 2207.5 馬達。\n12N14P 定子配置，6S 使用，提供 1750KV 與 1950KV 兩種版本。\n原廠提供完整 6S 推力測試數據，可直接評估電調與配置需求，\n不必靠猜的。\n\n■ 規格選擇（下單時請指定）\n【2207.5 / 1750KV】\n【2207.5 / 1950KV】\n\n■ 共通規格\n型號：MAD BSC2207.5 V1.0\n定子規格：12N14P\n馬達尺寸：D 27 × 33.8 mm\n機身高度：14.5 mm\n軸徑：4 mm\n螺旋槳安裝：M5 螺帽\n馬達安裝孔位：Ø16 M3×4\n出線規格：150mm、20AWG 黑色矽膠線\n轉子動平衡：≦5 mg\n\n■ 1750KV 技術參數\nKV 值：1750KV\n相間內阻：70 mΩ\n空載電流：1.25A @ 10V\n最大電流：36.8 A\n最大拉力：1.7 kg\n最大功率：840.3 W\n馬達重量（含線）：35.3 g\n盒裝重量：48.8 g\n\n■ 1950KV 技術參數\nKV 值：1950KV\n※ 詳細電氣參數請見下方推力測試數據\n\n═══════════════════════════\n■ 6S 推力測試數據\n═══════════════════════════\n\n【1750KV ＋ 51466 槳】\n油門    電流(A)   轉速(RPM)   拉力(g)   效率(gf/W)\n50%      7.7      17987        585       3.2\n60%     11.5      20692        794       2.9\n70%     16.1      23093       1015       2.7\n80%     21.1      25417       1209       2.5\n90%     26.4      27323       1385       2.3\n100%    34.7      29797       1614       2.0\n\n【1950KV ＋ 51466 槳】\n油門    電流(A)   轉速(RPM)   拉力(g)   效率(gf/W)\n50%      8.9      18963        649       3.1\n60%     13.4      21861        882       2.8\n70%     18.4      24362       1090       2.5\n80%     24.2      26237       1286       2.3\n90%     30.2      28038       1469       2.1\n100%    41.0      30698       1735       1.9\n\n【1950KV ＋ 51477 槳】\n油門    電流(A)   轉速(RPM)   拉力(g)   效率(gf/W)\n50%      9.5      18627        653       2.9\n60%     14.1      21513        870       2.6\n70%     19.3      23910       1091       2.4\n80%     25.3      25763       1293       2.2\n90%     31.3      27236       1476       2.0\n100%    42.0      30128       1775       1.9\n\n※ 以上為原廠 6S 實驗室測試數據，測試電壓約 22.6～23.6V\n※ 實際飛行數值會因電池狀態、散熱、氣流與機架配置而有差異\n\n■ 這張表怎麼看\n1. 單顆最大電流 1750KV 約 34.7A、1950KV 約 41～42A。\n   四軸滿油門瞬時總電流可達 140～170A，\n   選配電調請以此為基準預留餘裕，不要用剛好打平的規格。\n\n2. 單顆滿油門拉力 1.6～1.8kg，四軸總推力約 6.4～7.1kg。\n   五吋機常見全重 600～750g，推重比相當充足。\n\n3. 效率欄（gf/W）數字越高越省電。\n   兩款都在低油門區效率最佳，長時間巡航建議維持在 50～70% 油門區間。\n\n4. 1750KV 在同油門下電流明顯較低，續航較好；\n   1950KV 滿油門拉力較高，爆發力較強。\n\n■ KV 值怎麼選\n1750KV：同油門電流較低，續航較好，扭力表現佳。\n        適合較重配置、掛載 GoPro 或 Action Camera、\n        以及偏好順暢推力的飛行風格。\n\n1950KV：轉速與滿油門拉力較高，反應更直接。\n        適合追求爆發力、快速加減速與急轉的花飛與競速。\n\n兩者外型尺寸與重量接近，差異主要在飛行手感與電流表現。\n不確定該選哪個，可私訊告知機型、全重、常用槳葉與是否掛載相機。\n\n■ 發貨清單\n馬達 ×1\nM3 馬達螺絲 ×5\nM5 防鬆螺帽 ×1\n墊片 ×2\n（依包裝實際內容為準，本頁面為單顆售價）\n\n■ 商品特點\n1. 原廠提供完整 6S 推力數據，可直接評估電調餘裕與配置\n2. 12N14P 定子配置，五吋主流規格\n3. 20AWG 加粗矽膠線，150mm 長度，不必另外接長\n4. 轉子動平衡 ≦5mg，降低震動對陀螺儀的影響\n5. 附贈原廠配對長度螺絲、防鬆螺帽與墊片\n\n■ 購買前請務必確認\n1. 本頁面為單顆售價。一組四顆請調整數量或選購四入規格。\n2. 安裝孔位為 Ø16 M3×4，請確認你的機架臂孔距相符。\n3. 軸徑 4mm，螺旋槳以 M5 螺帽固定，請確認槳葉軸孔相容。\n4. 上述測試數據使用 51466 與 51477 槳葉。\n   若你使用不同槳葉（更大螺距、更多葉片），電流會明顯高於表中數值，\n   請據此評估電調與電池放電能力。\n5. 本商品不含槳葉與電調。\n\n■ 安裝注意\n1. 鎖馬達螺絲務必確認長度。螺絲過長會頂到繞線造成短路燒毀，\n   此情況不在保固範圍。附贈螺絲已為原廠配對長度，建議直接使用。\n2. 馬達線請預留適當長度並確實固定，避免震動造成斷線。\n3. 安裝後請先無槳測試，確認馬達順序與旋轉方向正確，再裝槳飛行。\n\n■ 保固說明\n馬達屬消耗品。以下情況不在保固範圍：\n・進水、泡水\n・撞擊、摔機造成的軸心彎曲或外殼變形\n・卡草、堵轉造成的燒毀\n・線材拉斷\n・螺絲過長頂傷繞線\n・超出電流規格使用\n\n電翼動力 EWP｜Ready to Fly",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "1950KV 四顆",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "303020075533"
+    },
+    {
+      "name": "1750KV 單顆",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "303020075530"
+    },
+    {
+      "name": "1950KV 單顆",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "303020075531"
+    },
+    {
+      "name": "1750KV 四顆",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "303020075532"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -41,6 +70,87 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mubcmnm40mx3ed",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mubcmnm421hj4d",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mubcmnm43g1z22"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lf-mubd9579zj0mc4",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820l5-mubd958x97nmfe",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820l5-mubd958390xu94",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lh-mubd95756squ61",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820l4-mubd94mgr66e7b",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134201-820l4-mubd95k1uxvs33"
+      ],
+      "variation_label": "MAD 2207.5電機",
+      "options": [
+        {
+          "option": "1750KV 單顆",
+          "url": null
+        },
+        {
+          "option": "1950KV 單顆",
+          "url": null
+        },
+        {
+          "option": "1750KV 四顆",
+          "url": null
+        },
+        {
+          "option": "1950KV 四顆",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "MAD 2207.5電機",
+      "rows": [
+        {
+          "variation_id": "303020075533",
+          "name": "1950KV 四顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 2180,
+          "stock": 2,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "303020075530",
+          "name": "1750KV 單顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 580,
+          "stock": 10,
+          "min_qty": null
+        },
+        {
+          "variation_id": "303020075531",
+          "name": "1950KV 單顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 580,
+          "stock": 10,
+          "min_qty": null
+        },
+        {
+          "variation_id": "303020075532",
+          "name": "1750KV 四顆",
+          "parent_sku": null,
+          "sku": null,
+          "price": 2180,
+          "stock": 2,
+          "min_qty": null
+        }
+      ],
+      "price_min": 580,
+      "price_max": 2180,
+      "stock_total": 24,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -20,7 +20,22 @@
   "description": "#Axisflying #AE2207V2 #酷飛電機 #FPV穿越機 #5吋花飛 #Freestyle電機 #6S電機 #無刷電機 #FPV航模 #穿越機馬達 #FPV玩家必備 \n\n想要 5 吋花飛又順又暴力，卻不想電機一摔就報銷嗎？\n🔥 Axisflying AE2207 V2 6S 系列，專為 Proxy / Juicy / Bando Freestyle 打造，兼顧輸出爆發與線性操控，是 FPV 玩家公認高性價比選擇之一。\n\n 產品特色： \n⚙️ 2207 大定子設計，搭配 N52H 弧形磁鐵與 12N14P 結構，推力最高可達約 1.6kg，適合 5 吋槳與 6S 電池配置。 🌀 1960KV 可選：1960KV 適合 Juicy、炸 Gap 等激烈動作。 🛡️ Bearing Shield 防護設計，IP53 防塵防水結構，有效延長培林壽命，降低沙塵、雨水對電機的損耗。 新版 V2 上蓋與結構強化，抗撞性更佳，在 Bando 與混凝土環境中也能承受多次硬著地。 無論是第一次組 5 吋 Freestyle 機，或是老手想找一顆「摔不心疼又飛得開心」的電機，AE2207 V2 都是很穩的選擇😉。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "1960KV(單顆)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302292821899"
+    },
+    {
+      "name": "1960KV(四顆一組)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "315362967964"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -37,6 +52,60 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/sg-11134201-81zv4-mir0u10ctceg07",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/sg-11134201-81zvb-mir0u1nx9reoa7",
+        "https://s-cf-tw.shopeesz.com/file/sg-11134201-81zuv-mir0u20b3g9258",
+        "https://s-cf-tw.shopeesz.com/file/sg-11134201-81ztx-mir0u2ag9p8i8b",
+        "https://s-cf-tw.shopeesz.com/file/sg-11134201-81zv0-mir0u2n2u2v776"
+      ],
+      "variation_label": "AE2207電機",
+      "options": [
+        {
+          "option": "1960KV(四顆一組)",
+          "url": null
+        },
+        {
+          "option": "1960KV(單顆)",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "AE2207電機",
+      "rows": [
+        {
+          "variation_id": "302292821899",
+          "name": "1960KV(單顆)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 520,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "315362967964",
+          "name": "1960KV(四顆一組)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 2180,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 520,
+      "price_max": 2180,
+      "stock_total": 0,
+      "status": "snapshot_only"
+    }
   }
 }

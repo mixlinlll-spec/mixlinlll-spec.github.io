@@ -16,7 +16,43 @@
   "description": "#FPV #穿越機 #LED燈條 #COB燈條 #無人機改裝 #氛圍燈 #5V燈條 #飛機燈 #夜飛 #FPV配件 #模型燈條 #航模改裝 #LED燈帶 #微型燈條 #DIY改裝\n\n5V供電｜❗️連接飛控需透過BEC降壓模塊\n5V供電｜❗️連接飛控需透過BEC降壓模塊\n5V供電｜❗️連接飛控需透過BEC降壓模塊\n\n🔥 超細3mm COB燈條｜打造專屬穿越機氛圍\n🔥 均勻發光無顆粒｜畫面質感直接升級\n\n📌產品特色\n・3mm超細設計｜完美貼合機身、TPU件\n・COB連續發光｜無LED顆粒感，質感提升\n・5V供電｜❗️連接飛控需透過BEC降壓模塊\n・柔光高亮｜夜飛辨識度大提升\n・背膠設計｜安裝快速不麻煩\n・可焊接\n\n📌適用場景\n・FPV穿越機夜飛改裝\n・機架氛圍燈\n\n📌顏色選擇\n冰藍 / 粉 / 綠 / 紅 / 藍\n\n📌規格資訊\n電壓：5V\n長度：50cm\n寬度：3mm\n類型：COB燈條（均勻發光）\n安裝：背膠\n\n⚠️注意事項\n・建議接5V BEC輸出\n・不可直接接電池（避免燒毀）",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "粉",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302696373573"
+    },
+    {
+      "name": "冰藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302696373574"
+    },
+    {
+      "name": "綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302696373570"
+    },
+    {
+      "name": "藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302696373571"
+    },
+    {
+      "name": "紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302696373572"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +70,97 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mmdyzmnlmdqb05",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mmdyzmnyt5oh39",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mmdz026wi6888c"
+      ],
+      "variation_label": "COB燈條（50公分）",
+      "options": [
+        {
+          "option": "粉",
+          "url": null
+        },
+        {
+          "option": "藍",
+          "url": null
+        },
+        {
+          "option": "冰藍",
+          "url": null
+        },
+        {
+          "option": "紅",
+          "url": null
+        },
+        {
+          "option": "綠",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "COB燈條（50公分）",
+      "rows": [
+        {
+          "variation_id": "302696373573",
+          "name": "粉",
+          "parent_sku": null,
+          "sku": null,
+          "price": 119,
+          "stock": 4,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "302696373574",
+          "name": "冰藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 119,
+          "stock": 3,
+          "min_qty": null
+        },
+        {
+          "variation_id": "302696373570",
+          "name": "綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 119,
+          "stock": 5,
+          "min_qty": null
+        },
+        {
+          "variation_id": "302696373571",
+          "name": "藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 119,
+          "stock": 5,
+          "min_qty": null
+        },
+        {
+          "variation_id": "302696373572",
+          "name": "紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 119,
+          "stock": 5,
+          "min_qty": null
+        }
+      ],
+      "price_min": 119,
+      "price_max": 119,
+      "stock_total": 22,
+      "status": "snapshot_only"
+    }
   }
 }

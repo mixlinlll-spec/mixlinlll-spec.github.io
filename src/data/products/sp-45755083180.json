@@ -18,7 +18,29 @@
   "description": "🔥請勿直接下標🔥\n\n•\t專為 DJI O4 Pro 空拍相機／雲台設計，機身一體化固定座，免自己改倉、免堆配重，就能直接起飛錄影。\n\n•\t2.5 吋高護槳 Cinewhoop 結構，室內穿梭安全又安靜，戶外繞人、跟拍、低空掠過也有足夠推力。\n\n•\tGEPRC 原廠整套電調＋電機＋機架調校，出廠就含 PID、濾波設定，新手只要綁好遙控器與 O4 Pro 就能飛。\n\n特色亮點\n•\t靜音高護槳機架：全封閉槳罩＋減震結構，適合展場、婚禮等人多環境拍攝。\n\n•\tO4 Pro 專屬艙位：保留 USB / 電源孔與按鍵開孔，方便在機上充電、讀卡或調整設定。\n\n•\t輕量 2.5 吋動力：相較 3–3.5 吋 Cinewhoop 體積更小、風壓更低，更容易拿到室內飛行許可。\n\n•\t預留外掛收音／VTX 空間：可加裝外錄收音、升級圖傳或加裝導航燈條，擴充性高。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "PNP動力套裝（不含圖傳攝像頭）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "350661597060"
+    },
+    {
+      "name": "O4WIDE （ELRS)整機",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "346515433170"
+    },
+    {
+      "name": "O4pro (ELRS)整機",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "350661597059"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -45,6 +67,77 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztn-mjs7jxwc4etf51",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztk-mjs7jxwp1csm57",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-mjs7jxx7x7np0e"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100705 - Cameras & Drones/Drones",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mm08im51pp1d00",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mjs7jie4gcna1b",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mjs7jie7124ged",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mjs7jie42ayp70",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mjs7jie2jith7d",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mjs7jnqsetc62c",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mjs7jnqyvzluc6",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mjs7jnr8lr0j4c"
+      ],
+      "variation_label": "預購",
+      "options": [
+        {
+          "option": "O4pro (ELRS)整機",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mm13l8582vi901"
+        },
+        {
+          "option": "PNP動力套裝（不含圖傳攝像頭）",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mm13lbe4ucqr41"
+        },
+        {
+          "option": "O4WIDE （ELRS)整機",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "預購",
+      "rows": [
+        {
+          "variation_id": "350661597060",
+          "name": "PNP動力套裝（不含圖傳攝像頭）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 7980,
+          "stock": 1,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "346515433170",
+          "name": "O4WIDE （ELRS)整機",
+          "parent_sku": null,
+          "sku": null,
+          "price": 13280,
+          "stock": 1,
+          "min_qty": null
+        },
+        {
+          "variation_id": "350661597059",
+          "name": "O4pro (ELRS)整機",
+          "parent_sku": null,
+          "sku": null,
+          "price": 15200,
+          "stock": 1,
+          "min_qty": null
+        }
+      ],
+      "price_min": 7980,
+      "price_max": 15200,
+      "stock_total": 3,
+      "status": "snapshot_only"
+    }
   }
 }

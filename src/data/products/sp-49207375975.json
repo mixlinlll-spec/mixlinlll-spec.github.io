@@ -37,7 +37,22 @@
     }
   ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "白色（內針左璇）10CM",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375653807945"
+    },
+    {
+      "name": "藍色(內針左璇)10CM",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375653807944"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -72,7 +87,59 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlydkongc9olb1",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mlydkon23kecf2",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mlydkongav45dd"
+      ],
+      "variation_label": "TJRC5.8G天線SMA",
+      "options": [
+        {
+          "option": "藍色(內針左璇)10CM",
+          "url": null
+        },
+        {
+          "option": "白色（內針左璇）10CM",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "TJRC5.8G天線SMA",
+      "rows": [
+        {
+          "variation_id": "375653807945",
+          "name": "白色（內針左璇）10CM",
+          "parent_sku": null,
+          "sku": null,
+          "price": 360,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "375653807944",
+          "name": "藍色(內針左璇)10CM",
+          "parent_sku": null,
+          "sku": null,
+          "price": 360,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 360,
+      "price_max": 360,
+      "stock_total": 0,
+      "status": "snapshot_only"
+    }
   },
   "compliance": {
     "status": "pending",

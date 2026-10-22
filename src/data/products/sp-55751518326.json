@@ -16,7 +16,57 @@
   "description": "#DJIMini4Pro #Mini4Pro配件 #救援掛勾 #無人機掛勾 #空投掛鉤 #牽引掛勾 #FPV配件 #航拍機配件 #飛行救援 #靈雀FPV\n\n專為 DJI Mini 4 Pro 設計的 救援用掛勾 / 引繩掛鉤，可安裝在機身下方，用於掛繩、牽引線、輕量救援用途。無需改機、無需拆殼，直接卡扣安裝即可使用，適合救援投遞、物品牽引、狹窄地形遞送等輕作業任務。\n\n⚠️自備m3螺母 / m3x8mm螺絲 / 配重塊 (蝦皮搜尋)\n\n產品特色\n✔ 專為 Mini 4 Pro 設計：完美貼合底部結構，穩固不掉落\n✔ 輕量化設計：不影響飛行性能與續航\n✔ 實用救援功能：可掛載細繩、輕小物品、救援線等\n\n⚠️自備m3螺母 / m3x8mm螺絲 / 配重塊 (蝦皮搜尋)\n\n適用用途\n✔ 牽引細繩\n✔ 投遞輕量物品（如救援繩索、信號物）\n✔ 特殊場景輕度救援任務（依當地法規使用）\n\n⚠ 注意事項：\n此掛勾僅適用「輕量用途」，請勿超載，請遵守飛行安全與法規。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "透黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415139912326"
+    },
+    {
+      "name": "螢光橘",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415139912327"
+    },
+    {
+      "name": "螢光綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415139912328"
+    },
+    {
+      "name": "冰淇淋",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415139912322"
+    },
+    {
+      "name": "透黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415139912323"
+    },
+    {
+      "name": "透明",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415139912324"
+    },
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415139912325"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +84,124 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mh5t1fi2tkpabe",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mh5t1fhuo00f32",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh5t1fhw3z0p0b"
+      ],
+      "variation_label": "救援掛勾",
+      "options": [
+        {
+          "option": "透黑",
+          "url": null
+        },
+        {
+          "option": "透明",
+          "url": null
+        },
+        {
+          "option": "白",
+          "url": null
+        },
+        {
+          "option": "透黃",
+          "url": null
+        },
+        {
+          "option": "螢光橘",
+          "url": null
+        },
+        {
+          "option": "螢光綠",
+          "url": null
+        },
+        {
+          "option": "冰淇淋",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "救援掛勾",
+      "rows": [
+        {
+          "variation_id": "415139912326",
+          "name": "透黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 250,
+          "stock": 20,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "415139912327",
+          "name": "螢光橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 250,
+          "stock": 19,
+          "min_qty": null
+        },
+        {
+          "variation_id": "415139912328",
+          "name": "螢光綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 250,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "415139912322",
+          "name": "冰淇淋",
+          "parent_sku": null,
+          "sku": null,
+          "price": 270,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "415139912323",
+          "name": "透黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 250,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "415139912324",
+          "name": "透明",
+          "parent_sku": null,
+          "sku": null,
+          "price": 250,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "415139912325",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 250,
+          "stock": 20,
+          "min_qty": null
+        }
+      ],
+      "price_min": 250,
+      "price_max": 270,
+      "stock_total": 139,
+      "status": "snapshot_only"
+    }
   }
 }

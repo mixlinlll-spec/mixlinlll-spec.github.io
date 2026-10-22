@@ -16,7 +16,64 @@
   "description": "#GEPRCMark5 #穿越機改裝 #FPV列印件 #3D列印配件 #GoPro支架 #FPVGPS托架 #穿越機保護套 #TPU打印件 #FPV改裝 #GEPRC零件 #穿越機防震 #FPV飛手必備 #穿越機升級\n\n🔥 商品特色\n專為 GEPRC Mark5 系列穿越機 設計，精密列印、完美貼合機架。\n選用高彈性 TPU 材質，具備 耐撞、防震、柔韌性佳 的特性。\n提供多款改裝件，讓你的 Mark5 更穩定、更具個人風格。\n\n適用機型：\nGEPRC Mark5\nGEPRC Mark5 HD\nGEPRC Mark5 Freestyle\n\n材質說明：\nTPU 95A 高彈性打印材質\n支援自訂顏色（請備註）\n\n鏡頭減震 : 03、Runcam 和 Walksnail  皆可使用\n尾座單天線+gps : gps 規格 22x20x6",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "狗座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "315067110258"
+    },
+    {
+      "name": "爪子腳墊",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370163388220"
+    },
+    {
+      "name": "機頭保桿",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370163388221"
+    },
+    {
+      "name": "xr60尾座+接收天線",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370163388222"
+    },
+    {
+      "name": "尾部SMA+GPS",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380236477569"
+    },
+    {
+      "name": "機臂腳墊4個",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "315067110255"
+    },
+    {
+      "name": "鏡頭減震",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "315067110256"
+    },
+    {
+      "name": "尾座單天線+gps",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "315067110257"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +92,140 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mgm364drqlu72f",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mha02ojfg1scf9",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mha0c9kv4ft8e0",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mha0c9l14r9p7a",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mha0cvgktvd98c",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mhr79oyjc0e91a"
+      ],
+      "variation_label": "GEPRC Mark5",
+      "options": [
+        {
+          "option": "尾座單天線+gps",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mgm38q99i8ek51"
+        },
+        {
+          "option": "狗座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mgm3bgglnmrt8d"
+        },
+        {
+          "option": "機臂腳墊4個",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgm3f376ksnjb2"
+        },
+        {
+          "option": "鏡頭減震",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mgm3sna9n66g48"
+        },
+        {
+          "option": "xr60尾座+接收天線",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mha02ojfg1scf9"
+        },
+        {
+          "option": "爪子腳墊",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mha07ji142rz1a"
+        },
+        {
+          "option": "機頭保桿",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mha087viwufh28"
+        },
+        {
+          "option": "尾部SMA+GPS",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mhr7coas0q2q29"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "GEPRC Mark5",
+      "rows": [
+        {
+          "variation_id": "315067110258",
+          "name": "狗座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 17,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "370163388220",
+          "name": "爪子腳墊",
+          "parent_sku": null,
+          "sku": null,
+          "price": 130,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370163388221",
+          "name": "機頭保桿",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 47,
+          "min_qty": null
+        },
+        {
+          "variation_id": "370163388222",
+          "name": "xr60尾座+接收天線",
+          "parent_sku": null,
+          "sku": null,
+          "price": 55,
+          "stock": 47,
+          "min_qty": null
+        },
+        {
+          "variation_id": "380236477569",
+          "name": "尾部SMA+GPS",
+          "parent_sku": null,
+          "sku": null,
+          "price": 65,
+          "stock": 48,
+          "min_qty": null
+        },
+        {
+          "variation_id": "315067110255",
+          "name": "機臂腳墊4個",
+          "parent_sku": null,
+          "sku": null,
+          "price": 100,
+          "stock": 19,
+          "min_qty": null
+        },
+        {
+          "variation_id": "315067110256",
+          "name": "鏡頭減震",
+          "parent_sku": null,
+          "sku": null,
+          "price": 35,
+          "stock": 19,
+          "min_qty": null
+        },
+        {
+          "variation_id": "315067110257",
+          "name": "尾座單天線+gps",
+          "parent_sku": null,
+          "sku": null,
+          "price": 60,
+          "stock": 18,
+          "min_qty": null
+        }
+      ],
+      "price_min": 35,
+      "price_max": 130,
+      "stock_total": 264,
+      "status": "snapshot_only"
+    }
   }
 }

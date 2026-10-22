@@ -39,6 +39,42 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztq-mf3y09pw61ah8c",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztk-mf3y09qisqoa0c",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztf-mf3y09qg6mmh4d"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101794 - Home & Living/Tools & Home Improvement/Tools/Tool Boxes",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mf3wulrgnojx38",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mf3wulrbnvuwb8",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mf3wulrb007gdd",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mf3wulrinbim93",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mf3wulrayln0ce"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "276762568424",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 0,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 50,
+      "price_max": 50,
+      "stock_total": 0,
+      "status": "snapshot_only"
+    }
   }
 }

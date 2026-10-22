@@ -16,7 +16,57 @@
   "description": "HelloRadio V15 採用高效能 STM32 H7 主控，預載 EdgeTX 系統，搭載 ExpressLRS Gemini 雙頻 2.4GHz + 900MHz 技術，提供更穩定的控制鏈路、更低延遲及更遠的傳輸距離。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "MAX茶紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "426349061363"
+    },
+    {
+      "name": "MAX茶黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "426349061357"
+    },
+    {
+      "name": "MAX茶紫",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "426349061358"
+    },
+    {
+      "name": "MAX橙黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "426349061359"
+    },
+    {
+      "name": "RDC茶黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "426349061360"
+    },
+    {
+      "name": "RDC橙黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "426349061361"
+    },
+    {
+      "name": "ULTRA茶色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "426349061362"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -41,6 +91,128 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mrqmegxb68lh90",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mrqmegxb7n5xf5",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mrqmegxb91qd3c"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100045 - Home Appliances/Remote Controls",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mrqmc52n44qv61",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52n5jbb5c",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mrqmc52mzx1j2e",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mrqmc52n1blz19",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mrqmc52n2q6f79",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mrqmc52xkkxzb2",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mrqmc52xlzifac",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mrqmc52xne2v0c"
+      ],
+      "variation_label": "勿下標，聊聊",
+      "options": [
+        {
+          "option": "MAX茶紅",
+          "url": null
+        },
+        {
+          "option": "MAX茶黑",
+          "url": null
+        },
+        {
+          "option": "MAX茶紫",
+          "url": null
+        },
+        {
+          "option": "MAX橙黑",
+          "url": null
+        },
+        {
+          "option": "RDC茶黑",
+          "url": null
+        },
+        {
+          "option": "RDC橙黑",
+          "url": null
+        },
+        {
+          "option": "ULTRA茶色",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "勿下標，聊聊",
+      "rows": [
+        {
+          "variation_id": "426349061363",
+          "name": "MAX茶紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 7490,
+          "stock": 10,
+          "min_qty": 2
+        },
+        {
+          "variation_id": "426349061357",
+          "name": "MAX茶黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 7490,
+          "stock": 10,
+          "min_qty": null
+        },
+        {
+          "variation_id": "426349061358",
+          "name": "MAX茶紫",
+          "parent_sku": null,
+          "sku": null,
+          "price": 7490,
+          "stock": 10,
+          "min_qty": null
+        },
+        {
+          "variation_id": "426349061359",
+          "name": "MAX橙黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 7490,
+          "stock": 10,
+          "min_qty": null
+        },
+        {
+          "variation_id": "426349061360",
+          "name": "RDC茶黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 8990,
+          "stock": 10,
+          "min_qty": null
+        },
+        {
+          "variation_id": "426349061361",
+          "name": "RDC橙黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 8990,
+          "stock": 10,
+          "min_qty": null
+        },
+        {
+          "variation_id": "426349061362",
+          "name": "ULTRA茶色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9490,
+          "stock": 10,
+          "min_qty": null
+        }
+      ],
+      "price_min": 7490,
+      "price_max": 9490,
+      "stock_total": 70,
+      "status": "snapshot_only"
+    }
   }
 }

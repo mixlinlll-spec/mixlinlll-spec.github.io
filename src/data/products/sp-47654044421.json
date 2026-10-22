@@ -39,7 +39,57 @@
     }
   ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "透藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "430383101379"
+    },
+    {
+      "name": "透紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "430383101380"
+    },
+    {
+      "name": "透綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "430383101381"
+    },
+    {
+      "name": "透黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "430383101382"
+    },
+    {
+      "name": "透紫",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "430383101383"
+    },
+    {
+      "name": "正紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "430383101384"
+    },
+    {
+      "name": "透黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "430383101378"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -71,6 +121,123 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mizn87epxj43ef",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mizn87ebkm4kde",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mizn87ebm0p0fc"
+      ],
+      "variation_label": "Ruiyi競速槳葉",
+      "options": [
+        {
+          "option": "透黑",
+          "url": null
+        },
+        {
+          "option": "透藍",
+          "url": null
+        },
+        {
+          "option": "透紅",
+          "url": null
+        },
+        {
+          "option": "透綠",
+          "url": null
+        },
+        {
+          "option": "透黃",
+          "url": null
+        },
+        {
+          "option": "透紫",
+          "url": null
+        },
+        {
+          "option": "正紅",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Ruiyi競速槳葉",
+      "rows": [
+        {
+          "variation_id": "430383101379",
+          "name": "透藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "430383101380",
+          "name": "透紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 0,
+          "min_qty": null
+        },
+        {
+          "variation_id": "430383101381",
+          "name": "透綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 5,
+          "min_qty": null
+        },
+        {
+          "variation_id": "430383101382",
+          "name": "透黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 2,
+          "min_qty": null
+        },
+        {
+          "variation_id": "430383101383",
+          "name": "透紫",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 1,
+          "min_qty": null
+        },
+        {
+          "variation_id": "430383101384",
+          "name": "正紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 0,
+          "min_qty": null
+        },
+        {
+          "variation_id": "430383101378",
+          "name": "透黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 49,
+      "price_max": 49,
+      "stock_total": 8,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -16,7 +16,22 @@
   "description": "#BetaFPV #Pavo20 #Pavo20配件 #穿越機改裝 #無人機配件 #Pavo20備品 #FPV配件 \n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D 列印件可能有些微層紋屬正常現象⚠️\n\n專為 BetaFPV Pavo20 打造的多款升級與保護配件，包含機架防摔件、電池托架、天線固定座、槳葉防護件等多種選項。強化機體保護性、穩定性與實用度，適合日常飛行與高強度練習使用。\n\nPavo20 專屬尺寸，安裝簡單、貼合度高\n提供多款功能配件：電池固定、天線穩固、保護套等\n有效提升耐摔性與整體飛行穩定度\n\n🔴DJI O4 AIR PRO 一體式機架 (碳纖維打印僅提供:黑色)\n\n🔴 Walksnail Moonlight 專用一體式機架 (碳纖維打印僅提供:黑色)\n\n🔴 電池保護倉 (碳纖維打印僅提供:黑色)\n適配 LAVA 550mA鋰電池。或任何尺寸在68.5(長) x 20.4(寬) x 15.7(高)mm以內的電池\n\n🔴 小O4套件抑制果凍效應 100% (軟質TPU)\n\n🔴 XT30接口固定套件",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "小O4套件抑制果凍效應 100%",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395306396402"
+    },
+    {
+      "name": "XT30接口固定套件",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "420321789508"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +50,63 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mhjb79ul1tdx20",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mhjb8k81fhmq64",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mhjbhs50rt3711",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mibsni5lxcsh2c",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mibsni6aqpzab0",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mig7vyi0ncowa9",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mig82ewg1hqcef"
+      ],
+      "variation_label": "Pavo20",
+      "options": [
+        {
+          "option": "小O4套件抑制果凍效應 100%",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mibsncf9y2vb1f"
+        },
+        {
+          "option": "XT30接口固定套件",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mig7vv9whhqga5"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Pavo20",
+      "rows": [
+        {
+          "variation_id": "395306396402",
+          "name": "小O4套件抑制果凍效應 100%",
+          "parent_sku": null,
+          "sku": null,
+          "price": 60,
+          "stock": 46,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "420321789508",
+          "name": "XT30接口固定套件",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 42,
+          "min_qty": null
+        }
+      ],
+      "price_min": 30,
+      "price_max": 60,
+      "stock_total": 88,
+      "status": "snapshot_only"
+    }
   }
 }

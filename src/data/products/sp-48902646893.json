@@ -16,7 +16,29 @@
   "description": "#GeprcVapor #VaporD配件 #VaporX配件 #Vapor打印件 #飛行器配件 \n#FPV配件 #穿越機配件 #GEPRC配件 #無人機配件 #客製配件\n\n⚠️ 注意事項\n・務必備註顏色，客製商品無法退貨\n・列印件皆會有些微層紋屬正常現象\n本系列專為 Geprc Vapor D / X 系列 設計，提供多種保護、補強與固定用途的實用配件。\n無論你是日常飛行、改裝升級、或增強機體耐久度，都能找到適合的部件",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "MARK4 O4PRO天線尾座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320253572574"
+    },
+    {
+      "name": "GeprcVapor前置GPS傾斜版",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320253572575"
+    },
+    {
+      "name": "GeprcVapor前置GPS平置版",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320253572576"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +57,71 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mhvkesanryte16",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mhvkeuh0vz7od7"
+      ],
+      "variation_label": "GeprcVapor",
+      "options": [
+        {
+          "option": "MARK4 O4PRO天線尾座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mhvkhud4e39iec"
+        },
+        {
+          "option": "GeprcVapor前置GPS傾斜版",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mhvkloyon1msd1"
+        },
+        {
+          "option": "GeprcVapor前置GPS平置版",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mhvkmk52f75v8d"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "GeprcVapor",
+      "rows": [
+        {
+          "variation_id": "320253572574",
+          "name": "MARK4 O4PRO天線尾座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 80,
+          "stock": 49,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "320253572575",
+          "name": "GeprcVapor前置GPS傾斜版",
+          "parent_sku": null,
+          "sku": null,
+          "price": 60,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "320253572576",
+          "name": "GeprcVapor前置GPS平置版",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 50,
+      "price_max": 80,
+      "stock_total": 149,
+      "status": "snapshot_only"
+    }
   }
 }

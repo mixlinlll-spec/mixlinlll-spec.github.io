@@ -1,0 +1,120 @@
+{
+  "_comment": "蝦皮上的 4 件服務型商品（維修、代購、3D 列印）。不建立商品頁，原始媒體與銷售快照保存於此供服務頁使用。",
+  "media_export": "mass_update_media_info_4053258_20261022141110",
+  "sales_export": "mass_update_sales_info_4053258_20261022141152",
+  "captured_at": "2026-10-22T14:11:52+08:00",
+  "listings": {
+    "55217887849": {
+      "media": {
+        "category": "101514 - Tickets, Vouchers & Services/Services/Others",
+        "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mt67f1dhv6kib3",
+        "gallery": [
+          "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mt67f1e7f8jk4e",
+          "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mt67f1eicjk9f9",
+          "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mt67f1f0dhxgc8",
+          "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mt67f1g609vuf0",
+          "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mt67f1ggb3t51c"
+        ],
+        "variation_label": null,
+        "options": []
+      },
+      "sales": [
+        {
+          "variation_id": "411514503042",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 888,
+          "stock": 100,
+          "min_qty": 1
+        }
+      ],
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00"
+    },
+    "48004026388": {
+      "media": {
+        "category": "101514 - Tickets, Vouchers & Services/Services/Others",
+        "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mixvl1nb9vr950",
+        "gallery": [
+          "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+        ],
+        "variation_label": null,
+        "options": []
+      },
+      "sales": [
+        {
+          "variation_id": "415380166807",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 1,
+          "stock": 80113,
+          "min_qty": 20
+        }
+      ],
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00"
+    },
+    "47064080689": {
+      "media": {
+        "category": "100706 - Cameras & Drones/Drone Accessories",
+        "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mqoonqtzicr1e2",
+        "gallery": [
+          "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mqop1qi0rkene8",
+          "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mqop5rgvlk3n3c"
+        ],
+        "variation_label": null,
+        "options": []
+      },
+      "sales": [
+        {
+          "variation_id": "416212753237",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 99,
+          "stock": 50000,
+          "min_qty": 999
+        }
+      ],
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00"
+    },
+    "40032653084": {
+      "media": {
+        "category": "100706 - Cameras & Drones/Drone Accessories",
+        "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mqqhyxzqm1ojac",
+        "gallery": [
+          "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mqqi1pn2frpe44",
+          "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mqqi6t512nep3b",
+          "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mqqhman72fwh14"
+        ],
+        "variation_label": "FPV翻新中心",
+        "options": [
+          {
+            "option": "聊聊資訊",
+            "url": null
+          }
+        ]
+      },
+      "sales": [
+        {
+          "variation_id": "316219034986",
+          "name": "聊聊資訊",
+          "parent_sku": null,
+          "sku": null,
+          "price": 100,
+          "stock": 50,
+          "min_qty": 20
+        }
+      ],
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00"
+    }
+  }
+}

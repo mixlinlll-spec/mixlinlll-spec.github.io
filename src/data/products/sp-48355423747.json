@@ -16,7 +16,71 @@
   "description": "#DJIRC2\n#RC2保護盒\n#遙控旅行箱\n#遙控器收納盒\n#硬殼保護殼\n#航拍配件\n#DJI遙控器\n#防壓防刮\n#出遊必備\n#台灣現貨\n#快速出貨\n\n商品賣點（簡版）\n專為 DJI RC2 外形建模，內部預留搖桿區與按鍵高度，合上蓋子不會壓到搖桿與滾輪。​\n硬殼 3D 列印／塑膠一體成型結構，外層抗壓、防刮，背包裡跟工具、鋰電一起放也不怕被擠壓。\n採用上掀式卡扣設計，單手即可開關，方便臨時起飛時快速拿遙控。\n殼身保留 DJI LOGO 區域，整體外觀簡潔低調，和原廠風格一致，看起來就像官方周邊。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "297368637850"
+    },
+    {
+      "name": "黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "297368637851"
+    },
+    {
+      "name": "大理石",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "297368637847"
+    },
+    {
+      "name": "金",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "297368637848"
+    },
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "297368637849"
+    },
+    {
+      "name": "灰",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "297368637854"
+    },
+    {
+      "name": "紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "297368637846"
+    },
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "297368637853"
+    },
+    {
+      "name": "懶得打，其它顏色聊聊",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "297368637852"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -37,6 +101,150 @@
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztq-mjzlnbd8y1he2c"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mjzlmnim10qq3d",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mjzlmnim2fb632",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mjzlmw5z7gubd5"
+      ],
+      "variation_label": "DJI RC2保護殼",
+      "options": [
+        {
+          "option": "黑",
+          "url": null
+        },
+        {
+          "option": "白",
+          "url": null
+        },
+        {
+          "option": "灰",
+          "url": null
+        },
+        {
+          "option": "綠",
+          "url": null
+        },
+        {
+          "option": "紅",
+          "url": null
+        },
+        {
+          "option": "大理石",
+          "url": null
+        },
+        {
+          "option": "黃",
+          "url": null
+        },
+        {
+          "option": "金",
+          "url": null
+        },
+        {
+          "option": "懶得打，其它顏色聊聊",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "DJI RC2保護殼",
+      "rows": [
+        {
+          "variation_id": "297368637850",
+          "name": "綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 320,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "297368637851",
+          "name": "黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 320,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "297368637847",
+          "name": "大理石",
+          "parent_sku": null,
+          "sku": null,
+          "price": 320,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "297368637848",
+          "name": "金",
+          "parent_sku": null,
+          "sku": null,
+          "price": 320,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "297368637849",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 320,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "297368637854",
+          "name": "灰",
+          "parent_sku": null,
+          "sku": null,
+          "price": 320,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "297368637846",
+          "name": "紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 320,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "297368637853",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 320,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "297368637852",
+          "name": "懶得打，其它顏色聊聊",
+          "parent_sku": null,
+          "sku": null,
+          "price": 320,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 320,
+      "price_max": 320,
+      "stock_total": 450,
+      "status": "snapshot_only"
+    }
   }
 }

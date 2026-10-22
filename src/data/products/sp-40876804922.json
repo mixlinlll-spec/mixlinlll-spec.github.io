@@ -16,7 +16,57 @@
   "description": "#meteor65pro #收納盒 #65pro #穿越機配件 #微型無人機 #電池收納 #300mah #fpv配件 #betafpv #whoop盒\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n專為 Meteor65 Pro 打造的全方位收納盒！\n可同時容納 8 顆 300mAh 電池 + 1 台充電器 + 機體本體，外拍、日常飛行一盒全搞定。\n\n產品特色\n專用尺寸，剛好容納 Meteor65 Pro 主機\n可放置 最多 8 顆 300mAh 1S 電池\n預留充電器空間，外出補電更方便\n盒體堅固不易壓損，安全攜帶無負擔\n內部格局整齊、好分類、不亂晃\n讓你的 65Pro 裝備收好收滿，怎麼飛怎麼方便！",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "冰淇淋",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415213360525"
+    },
+    {
+      "name": "螢光綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415213360519"
+    },
+    {
+      "name": "透明",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415213360520"
+    },
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415213360521"
+    },
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415213360522"
+    },
+    {
+      "name": "透黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415213360523"
+    },
+    {
+      "name": "透橘",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "415213360524"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +85,123 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mhk2rfubo4jkf8",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mhk2rfuh8zra76"
+      ],
+      "variation_label": "meteor65pro收納盒",
+      "options": [
+        {
+          "option": "黑",
+          "url": null
+        },
+        {
+          "option": "白",
+          "url": null
+        },
+        {
+          "option": "透黃",
+          "url": null
+        },
+        {
+          "option": "透橘",
+          "url": null
+        },
+        {
+          "option": "冰淇淋",
+          "url": null
+        },
+        {
+          "option": "螢光綠",
+          "url": null
+        },
+        {
+          "option": "透明",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "meteor65pro收納盒",
+      "rows": [
+        {
+          "variation_id": "415213360525",
+          "name": "冰淇淋",
+          "parent_sku": null,
+          "sku": null,
+          "price": 370,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "415213360519",
+          "name": "螢光綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 350,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "415213360520",
+          "name": "透明",
+          "parent_sku": null,
+          "sku": null,
+          "price": 350,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "415213360521",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 350,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "415213360522",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 350,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "415213360523",
+          "name": "透黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 350,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "415213360524",
+          "name": "透橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 350,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 350,
+      "price_max": 370,
+      "stock_total": 350,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -16,7 +16,15 @@
   "description": "#Neo2電池管家\n#Neo2充電站盒\n#硬殼收納盒\n#3D列印充電盒\n#BETAFPV配件\n#穿越機充電器\n#場外充電盒\n#台灣現貨\n#快速出貨\n\n專為 BETAFPV Neo2 官方 電池管家充電站設計，內部精準卡扣固定充電器本體，插上 USB 就能整組收納充電。​\n硬殼結構抗壓防刮，充電時蓋上蓋子直接帶出門，不怕充電器滑落或線材散亂，場外練機超方便。​\n側邊預留 USB-C 充電孔與散熱縫隙，充滿後蓋緊就是一個輕巧的完整充電站套裝，完美適配 Neo2 生態。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "下單後私訊選顏色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "370601882875"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +42,46 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mldo384c6k8xac",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mldo3842dzpf31",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mldo38425kapf1"
+      ],
+      "variation_label": "Neo2電池管家",
+      "options": [
+        {
+          "option": "下單後私訊選顏色",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Neo2電池管家",
+      "rows": [
+        {
+          "variation_id": "370601882875",
+          "name": "下單後私訊選顏色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 299,
+          "stock": 49,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 299,
+      "price_max": 299,
+      "stock_total": 49,
+      "status": "snapshot_only"
+    }
   }
 }

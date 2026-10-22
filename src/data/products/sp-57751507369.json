@@ -16,7 +16,15 @@
   "description": "#1S電池 #1S電池收納 #1S電池盒 #BT20電池 #PH20電池 #Tinywhoop #穿越機電池 #無人機電池盒 #電池保護盒 #3D列印\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n你的 1S 微型穿越機電池常常散在背包裡？\n出門飛行時電池放口袋又容易壓壞？\n這款 6格及20格翻蓋式 1S 電池收納盒，讓你的 1S 電池整齊、有序、安全好攜帶。\n\n‼️\nM3x20螺絲 (3個)\nM3x25螺絲帶螺帽 (3個)\n20格版本\n商品特色\n✔ 20格收納，一次帶齊一天飛行量\n✔ 翻蓋式設計，防掉落、防灰塵、防壓破\n✔ 格槽剛性適中，BT2.0／PH2.0 都能穩固放置\n✔ 輕量化 3D 列印，不增加包包負擔\n✔ 適合外出飛行、日常整理電池、背包分類\n\n‼️請自備一個M2x10螺絲 + M2螺母\n6格板本\n✔ 6格收納，適合整理分類你的武器庫\n✔ 翻蓋式設計，防掉落、防灰塵、防壓破\n\n適用電池\n支持電池尺寸 12x7x66mm 例如 格式金磚300mah\n1S 微型穿越機電池\n\n‼️請備註顏色，否則默認全黑 \n顏色可選 或者 混搭，請聊聊 需要雙色酌收+20耗材費",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "20格版本",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "325137852997"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +42,45 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mh4ygvu5gh6z95",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh4ygvu5hvrf5c"
+      ],
+      "variation_label": "電池收納盒",
+      "options": [
+        {
+          "option": "20格版本",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh4ygvu5hvrf5c"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "電池收納盒",
+      "rows": [
+        {
+          "variation_id": "325137852997",
+          "name": "20格版本",
+          "parent_sku": null,
+          "sku": null,
+          "price": 220,
+          "stock": 13,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 220,
+      "price_max": 220,
+      "stock_total": 13,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -16,7 +16,120 @@
   "description": "#SpeedyBee #Mario5 #3D打印件 #FPV #穿越機 #飛塔保護 #打印件套裝 #穿越機配件 #DIY #航模 #Mario5打印件 #樹脂打印 #SpeedyBeeMario5 #安裝套件 #機架保護 #蝦皮\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n兼容型號： SpeedyBee Mario5 \n顏色： 多色可選 \n特點： 官方設計、孔位精準、輕量化、堅固耐用、安裝簡便",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "狗座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320044116207"
+    },
+    {
+      "name": "O3天線尾座+25mmGPS座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "420269517505"
+    },
+    {
+      "name": "接收機+天線固定(數位)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320044116210"
+    },
+    {
+      "name": "鏡頭減震墊 一對",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320044116214"
+    },
+    {
+      "name": "機臂腳墊4個",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320044116213"
+    },
+    {
+      "name": "XT60接頭+GPS+BB響套件",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "249071946422"
+    },
+    {
+      "name": "機頭cnc保護",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320044116208"
+    },
+    {
+      "name": "O3+GPS+天線尾座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380239667823"
+    },
+    {
+      "name": "XT60接頭+O3雙SMA天線固定座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320044116212"
+    },
+    {
+      "name": "XT60接頭+O3天線固定座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320044116205"
+    },
+    {
+      "name": "接收機+天線固定(模擬)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320044116209"
+    },
+    {
+      "name": "黑羊接收機天線固定座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320044116211"
+    },
+    {
+      "name": "O3O4/CNC鏡頭減震墊一對",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "380239667824"
+    },
+    {
+      "name": "XT60接頭+模擬SMA天線固定座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "320044116206"
+    },
+    {
+      "name": "XT60接頭+O4PRO天線底座",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "287109712815"
+    },
+    {
+      "name": "CNC前防護桿",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302163691601"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +148,242 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mgg63v81n9cf39",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mh5tlof640zu05",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mh691yo34q33f3",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mi10ws9tv8xw27"
+      ],
+      "variation_label": "Mario5",
+      "options": [
+        {
+          "option": "機臂腳墊4個",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mgge75p8qkunc0"
+        },
+        {
+          "option": "鏡頭減震墊 一對",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mgge7e4n1xqn79"
+        },
+        {
+          "option": "機頭cnc保護",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mggffjuxfksu13"
+        },
+        {
+          "option": "接收機+天線固定(模擬)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mggfg09u7jf18f"
+        },
+        {
+          "option": "接收機+天線固定(數位)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mggffyl6gpoo26"
+        },
+        {
+          "option": "黑羊接收機天線固定座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mggfgcz7bu2y89"
+        },
+        {
+          "option": "XT60接頭+O3天線固定座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mggfguxk0m4t73"
+        },
+        {
+          "option": "XT60接頭+O3雙SMA天線固定座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mggfh0ns91jhf3"
+        },
+        {
+          "option": "XT60接頭+模擬SMA天線固定座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mggfid0tpyj374"
+        },
+        {
+          "option": "狗座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mggfinczd72ibb"
+        },
+        {
+          "option": "XT60接頭+O4PRO天線底座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mggfm4uhhc0d74"
+        },
+        {
+          "option": "XT60接頭+GPS+BB響套件",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mggfunhmy87g50"
+        },
+        {
+          "option": "CNC前防護桿",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mh5tlof640zu05"
+        },
+        {
+          "option": "O3O4/CNC鏡頭減震墊一對",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mhrunq42p0ck2e"
+        },
+        {
+          "option": "O3+GPS+天線尾座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mhrurd8p9atg15"
+        },
+        {
+          "option": "O3天線尾座+25mmGPS座",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mi10ytt0tngl14"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Mario5",
+      "rows": [
+        {
+          "variation_id": "320044116207",
+          "name": "狗座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "420269517505",
+          "name": "O3天線尾座+25mmGPS座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 75,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "320044116210",
+          "name": "接收機+天線固定(數位)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "320044116214",
+          "name": "鏡頭減震墊 一對",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "320044116213",
+          "name": "機臂腳墊4個",
+          "parent_sku": null,
+          "sku": null,
+          "price": 129,
+          "stock": 45,
+          "min_qty": null
+        },
+        {
+          "variation_id": "249071946422",
+          "name": "XT60接頭+GPS+BB響套件",
+          "parent_sku": null,
+          "sku": null,
+          "price": 85,
+          "stock": 48,
+          "min_qty": null
+        },
+        {
+          "variation_id": "320044116208",
+          "name": "機頭cnc保護",
+          "parent_sku": null,
+          "sku": null,
+          "price": 35,
+          "stock": 44,
+          "min_qty": null
+        },
+        {
+          "variation_id": "380239667823",
+          "name": "O3+GPS+天線尾座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 75,
+          "stock": 47,
+          "min_qty": null
+        },
+        {
+          "variation_id": "320044116212",
+          "name": "XT60接頭+O3雙SMA天線固定座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 80,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "320044116205",
+          "name": "XT60接頭+O3天線固定座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 80,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "320044116209",
+          "name": "接收機+天線固定(模擬)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 50,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "320044116211",
+          "name": "黑羊接收機天線固定座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 40,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "380239667824",
+          "name": "O3O4/CNC鏡頭減震墊一對",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "320044116206",
+          "name": "XT60接頭+模擬SMA天線固定座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 80,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "287109712815",
+          "name": "XT60接頭+O4PRO天線底座",
+          "parent_sku": null,
+          "sku": null,
+          "price": 100,
+          "stock": 47,
+          "min_qty": null
+        },
+        {
+          "variation_id": "302163691601",
+          "name": "CNC前防護桿",
+          "parent_sku": null,
+          "sku": null,
+          "price": 40,
+          "stock": 40,
+          "min_qty": null
+        }
+      ],
+      "price_min": 30,
+      "price_max": 129,
+      "stock_total": 767,
+      "status": "snapshot_only"
+    }
   }
 }

@@ -18,7 +18,36 @@
   "description": "✅ 搭載 DJI O4 Wide 高清數位圖傳",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "動力套ELRS",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "396340155980"
+    },
+    {
+      "name": "動力套Sbus",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "396340155981"
+    },
+    {
+      "name": "O4WideELRS",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "396340155986"
+    },
+    {
+      "name": "O4WideSbus",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "396340155987"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -45,6 +74,86 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-mrn5enf6f01y40",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mrn5enf6geme3b",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mrn5enf6ht6u10"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100698 - Gaming & Consoles/Others",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mrn4y93trton64",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mrn4y97pnjlze4",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mrn4y93cu77oee",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mrn4y93v979h76",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mrn4y95w2ayp48"
+      ],
+      "variation_label": "勿直接下單，需訂金",
+      "options": [
+        {
+          "option": "O4WideELRS",
+          "url": null
+        },
+        {
+          "option": "O4WideSbus",
+          "url": null
+        },
+        {
+          "option": "動力套ELRS",
+          "url": null
+        },
+        {
+          "option": "動力套Sbus",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "勿直接下單，需訂金",
+      "rows": [
+        {
+          "variation_id": "396340155980",
+          "name": "動力套ELRS",
+          "parent_sku": null,
+          "sku": null,
+          "price": 3950,
+          "stock": 8,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "396340155981",
+          "name": "動力套Sbus",
+          "parent_sku": null,
+          "sku": null,
+          "price": 3950,
+          "stock": 8,
+          "min_qty": null
+        },
+        {
+          "variation_id": "396340155986",
+          "name": "O4WideELRS",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9250,
+          "stock": 1,
+          "min_qty": null
+        },
+        {
+          "variation_id": "396340155987",
+          "name": "O4WideSbus",
+          "parent_sku": null,
+          "sku": null,
+          "price": 9250,
+          "stock": 1,
+          "min_qty": null
+        }
+      ],
+      "price_min": 3950,
+      "price_max": 9250,
+      "stock_total": 18,
+      "status": "snapshot_only"
+    }
   }
 }

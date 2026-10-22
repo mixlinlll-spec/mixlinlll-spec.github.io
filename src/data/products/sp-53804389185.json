@@ -18,7 +18,22 @@
   "description": "•\t#Ovonic電池\n•\t#1S550mAh\n•\t#BT20電池\n•\t#Tinywhoop電池\n•\t#微型穿越機\n•\t#長續航電池\n•\t#高倍率鋰電\n•\t#1SHV\n•\t#室內炸機\n•\t#台灣現貨\n•\t#快速出貨\n\n想在室內場連飛好幾圈，又不想每兩分鐘就落地換電嗎？😆 \nOvonic 1S 550mAh BT2.0 高倍率電池，專為 Tinywhoop、1S 微型穿越機設計，容量比常見 300–450mAh 再向上，搭配 BT2.0 低阻抗插頭，實測能帶來更長續航與穩定推力。\n\n產品特色：\n•\t🔌 BT2.0 接頭：相較 PH2.0 電壓下墜更少，油門手感更飽滿，特別適合高KV 小電機。\n•\t🔋 550mAh 大容量：在重量仍可接受的前提下，換來更長飛行時間，適合練習、慢飛、室內繞場。\n•\t⚡ 高倍率設計：80–100C 放電（依官方標示），應付急加速、翻滾、穿門不易「軟腳」。\n•\t🪶 細長外型：約 67×16×8mm，易於固定在 75mm／85mm 機型或改裝 65mm 長艙位電池托。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "BT2.0接口 450MAH",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "350722351256"
+    },
+    {
+      "name": "PH接口 550MAH",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "350722351255"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -36,6 +51,58 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mj9xzag3pywxe9",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mj9xzaf82sci69",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mj9xzag7xo906d"
+      ],
+      "variation_label": "Ovonic 1S電池",
+      "options": [
+        {
+          "option": "PH接口 550MAH",
+          "url": null
+        },
+        {
+          "option": "BT2.0接口 450MAH",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Ovonic 1S電池",
+      "rows": [
+        {
+          "variation_id": "350722351256",
+          "name": "BT2.0接口 450MAH",
+          "parent_sku": null,
+          "sku": null,
+          "price": 169,
+          "stock": 24,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "350722351255",
+          "name": "PH接口 550MAH",
+          "parent_sku": null,
+          "sku": null,
+          "price": 179,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 169,
+      "price_max": 179,
+      "stock_total": 24,
+      "status": "snapshot_only"
+    }
   }
 }

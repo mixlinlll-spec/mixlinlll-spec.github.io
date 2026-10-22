@@ -18,7 +18,36 @@
   "description": "•\t#Sbang花飛槳\n•\t#TMOTORP49436\n•\t#5寸三葉槳\n•\t#FPV花飛\n•\t#Freestyle槳\n•\t#低噪螺旋槳\n•\t#耐炸槳葉\n•\t#5吋穿越機\n•\t#FPV配件\n•\t#台灣現貨\n•\t#快速出貨\n\n想讓 5 吋機飛起來更順、更滑，又不想要太暴力難控嗎？\nSbang 花飛槳葉選用 T‑MOTOR P49436 模具，5.0 吋直徑、4.3 螺距三葉設計，油門曲線細膩、轉向抓地感佳，非常適合日常 Freestyle、流暢花飛\n\n產品特色：\n•\t🌀 5.0×4.3×3 規格：相較高螺距競速槳，推力更線性、耗電較低，新手與老手都容易上手。\n•\t💥 高韌性 PC 材質：採用加強型聚碳酸酯，具良好彈性與抗炸性，日常炸機不易一觸就斷。\n•\t🎯 正反槳齊全：同包含 CW/CCW，可直接搭配 22xx 系列電機與 5 吋機架使用，適合長期作為主力花飛槳。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "螢光黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375703183164"
+    },
+    {
+      "name": "煙燻黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395400734066"
+    },
+    {
+      "name": "透明紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395400734067"
+    },
+    {
+      "name": "透明藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395400734068"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +64,87 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mj6hmt6taq6910",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mj6hmt69a4u9e6",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mj6hmt51w5c749",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mj6hmt79uayvcb",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mj6hmt71c35w4b"
+      ],
+      "variation_label": "T‑MOTOR P49436",
+      "options": [
+        {
+          "option": "煙燻黑",
+          "url": null
+        },
+        {
+          "option": "透明紅",
+          "url": null
+        },
+        {
+          "option": "透明藍",
+          "url": null
+        },
+        {
+          "option": "螢光黃",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "T‑MOTOR P49436",
+      "rows": [
+        {
+          "variation_id": "375703183164",
+          "name": "螢光黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 0,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "395400734066",
+          "name": "煙燻黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 0,
+          "min_qty": null
+        },
+        {
+          "variation_id": "395400734067",
+          "name": "透明紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 0,
+          "min_qty": null
+        },
+        {
+          "variation_id": "395400734068",
+          "name": "透明藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 49,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 49,
+      "price_max": 49,
+      "stock_total": 0,
+      "status": "snapshot_only"
+    }
   }
 }

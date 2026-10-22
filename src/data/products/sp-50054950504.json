@@ -18,7 +18,15 @@
   "description": "•\t#Tinywhoop\n•\t#微型穿越機\n•\t#Tinywhoop壁掛\n•\t#穿越機收納架\n•\t#牆面展示架\n•\t#洞洞板收納\n•\t#whoop機庫\n•\t#FPV收納\n•\t#3D列印支架\n•\t#台灣現貨\n•\t#快速出貨\n\n•\t可選單掛式／多掛排架：單個掛一台、或一排掛 3～5 台，牆上一眼看到今天要飛哪一台。\n•\t安裝方式多元：螺絲、3M 無痕膠、掛在洞洞板都可以，租屋族也能輕鬆佈置牆面機庫。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "一組2個",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282347344405"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -36,6 +44,47 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mjp3jh28npc7bd",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mjp3jh2pv5s61c",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mjp3jh2soao792",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mjp3jh1ympdu64"
+      ],
+      "variation_label": "壁掛支架",
+      "options": [
+        {
+          "option": "一組2個",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "壁掛支架",
+      "rows": [
+        {
+          "variation_id": "282347344405",
+          "name": "一組2個",
+          "parent_sku": null,
+          "sku": null,
+          "price": 80,
+          "stock": 94,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 80,
+      "price_max": 80,
+      "stock_total": 94,
+      "status": "snapshot_only"
+    }
   }
 }

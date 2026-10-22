@@ -16,7 +16,29 @@
   "description": "#TPU保護件\n#穿越機配件\n#FPV安全配件\n#3D列印\n#台灣現貨\n#快速出貨\n鯊魚鰭造型雙翼夾具，包覆電池頂部與邊緣，防止炸機損壞電池。\n採用柔韌 TPU 材質列印，放上去後魔鬼氈電池綁帶固定在機架，安裝超簡單。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "雙鰭款式(單綁帶)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400601914106"
+    },
+    {
+      "name": "下單後私訊選色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "254175417368"
+    },
+    {
+      "name": "單鰭款式(雙綁帶)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400601914105"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -36,6 +58,72 @@
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mljh58358q9v84"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mldordpcxkw177",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mldosffxf2m857",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mldosffyo0si17"
+      ],
+      "variation_label": "鯊魚鰭夾具",
+      "options": [
+        {
+          "option": "下單後私訊選色",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mldp3enrc7ib11"
+        },
+        {
+          "option": "單鰭款式(雙綁帶)",
+          "url": null
+        },
+        {
+          "option": "雙鰭款式(單綁帶)",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "鯊魚鰭夾具",
+      "rows": [
+        {
+          "variation_id": "400601914106",
+          "name": "雙鰭款式(單綁帶)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 109,
+          "stock": 41,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "254175417368",
+          "name": "下單後私訊選色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 300,
+          "stock": 49,
+          "min_qty": null
+        },
+        {
+          "variation_id": "400601914105",
+          "name": "單鰭款式(雙綁帶)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 99,
+          "stock": 42,
+          "min_qty": null
+        }
+      ],
+      "price_min": 99,
+      "price_max": 300,
+      "stock_total": 132,
+      "status": "snapshot_only"
+    }
   }
 }

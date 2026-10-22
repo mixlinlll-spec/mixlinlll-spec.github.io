@@ -19,7 +19,43 @@
   "description": "#FPV電池 #穿越機電池 #十安電池 #130C #6S電池 #22.2V #航模電池 #無人機電池 #動力電池 #高倍率電池 #競速穿越機 #花飛 #FPV #穿越機配件 #RC電池 #智能電池 #現貨 #免運 #蝦皮商城\n\n⚡️ 【十安動力 - 為勝利充能】 ⚡️\n十安 ShiAnMx 授權台灣官方代理賣場！我們專注於為極限 FPV 飛手提供最可靠、最具爆發力的動力解決方案。十安 130C 極限系列電池，是專為競速（Racing）與花式（Freestyle）飛行設計，確保您的穿越機在每一個動作中都能獲得源源不絕的強勁推力。\n\n✨ 產品核心優勢 - 為什麼選擇十安？\n✅ 【130C 極致爆發】\n超高放電倍率，提供瞬間爆發力，滿足競速起步、花飛大動作的極致動力需求，告別「油門軟腳」！\n✅ 【精選電芯 穩定耐用】\n採用頂級A品電芯，經過嚴格配對工藝，內阻一致性極佳。電壓輸出平穩，循環壽命更長，性價比之王。\n✅ 【輕量化設計 靈動飛行】\n優化結構設計，在保證容量的同時盡可能減輕重量，讓你的穿越機反應更敏捷，飛行時間更優化。\n✅ 【多重安全防護】\n通過UN38.3等國際安全認證，外觀平整、焊接牢固，杜絕短路風險，為您的愛機提供最安心的保障。\n✅ 【廣泛應用】\n完美適用於：2.5~5寸競速穿越機、花飛機、航拍無人機、遙控車、船模等各種高功率模型。\n\n🛡️ 購買須知與售後服務：\n首次使用前，建議先滿充滿放一次以激活最佳性能。\n存放時請保持半電狀態（3.8V/片），並置於陰涼乾燥處。\n1.S 數選擇： 請根據您的穿越機馬達和電變（ESC）規格，選擇正確的 S 數（如 4S 或 6S）。\n2.接頭： 預設配置 XT60/XT30 接頭（請在規格選項中確認）。\n3.安全提醒： 請務必使用專業的平衡充電器進行充電，並在安全環境下使用。\n4.售後保障： 本賣場為十安 ShiAnMx 台灣官方授權代理，提供完整的售後諮詢與服務。\n立即升級你的動力系統，體驗前所未有的飛行快感！",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "4s/850mah/130C/XT30",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "249104181776"
+    },
+    {
+      "name": "6s/1300mah/130C/XT60",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "249104181777"
+    },
+    {
+      "name": "6s/1550mah/130C/XT60",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "249104181773"
+    },
+    {
+      "name": "6s/1480mah/160C/XT60",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "249104181774"
+    },
+    {
+      "name": "4s/650mah/130C/XT30",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "249104181775"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -49,6 +85,98 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztn-mhlonzaymwhxf3",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztn-mhlonzayppmte8",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mlrtlqjauh3c81"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mlrthqj0b7r9b5",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-micthlclg7pc8b",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mlrthqienmkvb2",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mlrthqj0e0w520"
+      ],
+      "variation_label": "SHIAN競速花飛電池",
+      "options": [
+        {
+          "option": "4s/650mah/130C/XT30",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlrtpyh7oe1be6"
+        },
+        {
+          "option": "4s/850mah/130C/XT30",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mlrtq2m6kf7me3"
+        },
+        {
+          "option": "6s/1300mah/130C/XT60",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mlrtqbdvpb7nc9"
+        },
+        {
+          "option": "6s/1550mah/130C/XT60",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlrtslpg9bt442"
+        },
+        {
+          "option": "6s/1480mah/160C/XT60",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mlrtqmilww7627"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "SHIAN競速花飛電池",
+      "rows": [
+        {
+          "variation_id": "249104181776",
+          "name": "4s/850mah/130C/XT30",
+          "parent_sku": null,
+          "sku": null,
+          "price": 679,
+          "stock": 8,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "249104181777",
+          "name": "6s/1300mah/130C/XT60",
+          "parent_sku": null,
+          "sku": null,
+          "price": 1080,
+          "stock": 8,
+          "min_qty": null
+        },
+        {
+          "variation_id": "249104181773",
+          "name": "6s/1550mah/130C/XT60",
+          "parent_sku": null,
+          "sku": null,
+          "price": 1180,
+          "stock": 0,
+          "min_qty": null
+        },
+        {
+          "variation_id": "249104181774",
+          "name": "6s/1480mah/160C/XT60",
+          "parent_sku": null,
+          "sku": null,
+          "price": 1249,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "249104181775",
+          "name": "4s/650mah/130C/XT30",
+          "parent_sku": null,
+          "sku": null,
+          "price": 499,
+          "stock": 0,
+          "min_qty": null
+        }
+      ],
+      "price_min": 499,
+      "price_max": 1249,
+      "stock_total": 36,
+      "status": "snapshot_only"
+    }
   }
 }

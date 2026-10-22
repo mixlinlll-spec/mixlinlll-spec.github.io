@@ -19,7 +19,50 @@
   "description": "#天劍科技\n#御劍8吋\n#御劍10吋\n#側護板\n#穿越機配件\n#FPV3D列印\n#TPU側板\n#穿越機防護\n#機架強化\n#FPV改裝\n\n【產品簡介】\n此側護板為天劍科技御劍系列（8吋 / 10吋）專用之3D列印改裝件，採用高韌性材質設計，強化機身側面保護與抗撞能力，避免砂石及草樹等進入飛塔\n\n【規格】\n適用機型：天劍科技 御劍 8吋 / 10吋\n重量：約 21g（依款式與填充率而異）\n包裝內容：側護板 ×2\n\n【安裝與注意】\n安裝前請確認機架型號與孔位；若需左右一對請在備註註明。\n安裝時建議使用適度熱床或輕微拉伸以確保卡合。\n3D列印件表面可能有層紋屬正常現象，不影響使用功能。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "259089193816"
+    },
+    {
+      "name": "冰淇淋",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "244089198853"
+    },
+    {
+      "name": "螢光綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "244089198854"
+    },
+    {
+      "name": "透橘",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "244089198856"
+    },
+    {
+      "name": "透明",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "244089198857"
+    },
+    {
+      "name": "透黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "244089198858"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -37,6 +80,110 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mh5qaqcans3ye2",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mh5qaqchaknc87"
+      ],
+      "variation_label": "通用側護板(一對)",
+      "options": [
+        {
+          "option": "螢光綠",
+          "url": null
+        },
+        {
+          "option": "白",
+          "url": null
+        },
+        {
+          "option": "透橘",
+          "url": null
+        },
+        {
+          "option": "透明",
+          "url": null
+        },
+        {
+          "option": "透黑",
+          "url": null
+        },
+        {
+          "option": "冰淇淋",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "通用側護板(一對)",
+      "rows": [
+        {
+          "variation_id": "259089193816",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 220,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "244089198853",
+          "name": "冰淇淋",
+          "parent_sku": null,
+          "sku": null,
+          "price": 220,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "244089198854",
+          "name": "螢光綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 220,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "244089198856",
+          "name": "透橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 220,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "244089198857",
+          "name": "透明",
+          "parent_sku": null,
+          "sku": null,
+          "price": 220,
+          "stock": 50,
+          "min_qty": null
+        },
+        {
+          "variation_id": "244089198858",
+          "name": "透黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 220,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 220,
+      "price_max": 220,
+      "stock_total": 300,
+      "status": "snapshot_only"
+    }
   }
 }

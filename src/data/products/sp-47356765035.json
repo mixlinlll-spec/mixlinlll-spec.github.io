@@ -33,6 +33,44 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101407 - Hobbies & Collections/Toys & Games/Remote Control Toys & Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mlewedcnq2vc03",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mlewedckagw0d2",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mlewedd7s2rs44",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlewedcwgq2qce",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mleweddp7ymb53",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mleweddryadg0d"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "355605285237",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 69,
+          "stock": 17,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 69,
+      "price_max": 69,
+      "stock_total": 17,
+      "status": "snapshot_only"
+    }
   }
 }

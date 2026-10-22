@@ -16,7 +16,43 @@
   "description": "#DJINEO2 #NEO2收納盒 #NEO2配件 #DJI配件 #無人機收納 #電池收納盒 #雙電池背掛 #飛行器配件 #航拍配件 #遙控模型 #空拍機配件\n\n專為 DJI NEO2 製作的專用收納盒，讓主機、電池都能安全整理好。\n\n⭐ 產品特色\n主機穩固卡位，不晃動\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "客製化，務必聊聊",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302366713266"
+    },
+    {
+      "name": "D款 (天線可入，電池可外掛，附登山扣）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "420301577848"
+    },
+    {
+      "name": "A款（天線可放入，電池不能入）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302229114163"
+    },
+    {
+      "name": "B款 (天線可入，有充電孔，電池可外掛）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302229114165"
+    },
+    {
+      "name": "C款 (天線可入，可裝暢飛套裝)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "302229114166"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -44,6 +80,103 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-micffart04jo3e",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81zth-micffart8jyb52",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mlm5cvc8zlkw54"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mhvcdb5vd728fe",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mhvcczc7oxs34e",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mhvcdb54hds2e9",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-miad5kvqio0123",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-miad5kv7edq810",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mi4itgly43cw60",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mi4itglfgnwi76",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mjydwyfwtp1cce"
+      ],
+      "variation_label": "Neo2保護盒",
+      "options": [
+        {
+          "option": "A款（天線可放入，電池不能入）",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mi4itglfgnwi76"
+        },
+        {
+          "option": "B款 (天線可入，有充電孔，電池可外掛）",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-miad5kv7edq810"
+        },
+        {
+          "option": "C款 (天線可入，可裝暢飛套裝)",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mhupz0t9s3y8aa"
+        },
+        {
+          "option": "D款 (天線可入，電池可外掛，附登山扣）",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mjydvnms0745aa"
+        },
+        {
+          "option": "客製化，務必聊聊",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mixvl1nb9vr950"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Neo2保護盒",
+      "rows": [
+        {
+          "variation_id": "302366713266",
+          "name": "客製化，務必聊聊",
+          "parent_sku": null,
+          "sku": null,
+          "price": 388,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "420301577848",
+          "name": "D款 (天線可入，電池可外掛，附登山扣）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 419,
+          "stock": 45,
+          "min_qty": null
+        },
+        {
+          "variation_id": "302229114163",
+          "name": "A款（天線可放入，電池不能入）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 319,
+          "stock": 27,
+          "min_qty": null
+        },
+        {
+          "variation_id": "302229114165",
+          "name": "B款 (天線可入，有充電孔，電池可外掛）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 359,
+          "stock": 17,
+          "min_qty": null
+        },
+        {
+          "variation_id": "302229114166",
+          "name": "C款 (天線可入，可裝暢飛套裝)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 458,
+          "stock": 34,
+          "min_qty": null
+        }
+      ],
+      "price_min": 319,
+      "price_max": 458,
+      "stock_total": 173,
+      "status": "snapshot_only"
+    }
   }
 }

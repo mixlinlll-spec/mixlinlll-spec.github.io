@@ -42,7 +42,71 @@
     }
   ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375383159001"
+    },
+    {
+      "name": "粉紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375383158995"
+    },
+    {
+      "name": "紫",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375383159000"
+    },
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375383158994"
+    },
+    {
+      "name": "金",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375383158999"
+    },
+    {
+      "name": "天藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375383159002"
+    },
+    {
+      "name": "綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375383158996"
+    },
+    {
+      "name": "橘",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375383158997"
+    },
+    {
+      "name": "紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "375383158998"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -76,7 +140,156 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101799 - Home & Living/Tools & Home Improvement/Tools/Nails, Screws & Fasteners",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mizo04erf66871",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mizo04essc1w59",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mizo04esii2v62",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mizo04fcj3evd2",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mizo04fvey9s85",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mizo04exz5kzbe",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mizo04g5fy80a8",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mizo04giv5l1d6",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mizo04htsyrm63"
+      ],
+      "variation_label": "鋁合金六角螺絲",
+      "options": [
+        {
+          "option": "黑",
+          "url": null
+        },
+        {
+          "option": "紅",
+          "url": null
+        },
+        {
+          "option": "粉紅",
+          "url": null
+        },
+        {
+          "option": "金",
+          "url": null
+        },
+        {
+          "option": "綠",
+          "url": null
+        },
+        {
+          "option": "紫",
+          "url": null
+        },
+        {
+          "option": "藍",
+          "url": null
+        },
+        {
+          "option": "天藍",
+          "url": null
+        },
+        {
+          "option": "橘",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "鋁合金六角螺絲",
+      "rows": [
+        {
+          "variation_id": "375383159001",
+          "name": "藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 8,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "375383158995",
+          "name": "粉紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 14,
+          "min_qty": null
+        },
+        {
+          "variation_id": "375383159000",
+          "name": "紫",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 14,
+          "min_qty": null
+        },
+        {
+          "variation_id": "375383158994",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 19,
+          "min_qty": null
+        },
+        {
+          "variation_id": "375383158999",
+          "name": "金",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "375383159002",
+          "name": "天藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "375383158996",
+          "name": "綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "375383158997",
+          "name": "橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "375383158998",
+          "name": "紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 30,
+          "stock": 11,
+          "min_qty": null
+        }
+      ],
+      "price_min": 30,
+      "price_max": 30,
+      "stock_total": 146,
+      "status": "snapshot_only"
+    }
   },
   "notes": [
     "鋁合金螺絲適合非高受力位置，承受主要結構力量的位置請依機架原廠建議使用鋼螺絲。"

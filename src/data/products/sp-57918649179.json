@@ -119,22 +119,25 @@
   "images": [],
   "variants": [
     {
-      "name": "堆疊組：F722 V5 飛控＋60A 四合一電調",
+      "name": "60A四合一電調",
       "sku": null,
       "price_twd": null,
-      "availability": "unknown"
+      "availability": "unknown",
+      "shopee_variation_id": "386566590955"
     },
     {
-      "name": "單購：F722 V5 飛控",
+      "name": "全套飛塔",
       "sku": null,
       "price_twd": null,
-      "availability": "unknown"
+      "availability": "unknown",
+      "shopee_variation_id": "386566590953"
     },
     {
-      "name": "單購：60A 四合一電調",
+      "name": "F722 V5飛控",
       "sku": null,
       "price_twd": null,
-      "availability": "unknown"
+      "availability": "unknown",
+      "shopee_variation_id": "386566590954"
     }
   ],
   "price_twd": null,
@@ -166,7 +169,69 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820li-mtsbkhjvk1l1ef",
+      "gallery": [],
+      "variation_label": "FDI F722",
+      "options": [
+        {
+          "option": "F722 V5飛控",
+          "url": null
+        },
+        {
+          "option": "60A四合一電調",
+          "url": null
+        },
+        {
+          "option": "全套飛塔",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "FDI F722",
+      "rows": [
+        {
+          "variation_id": "386566590955",
+          "name": "60A四合一電調",
+          "parent_sku": null,
+          "sku": null,
+          "price": 1380,
+          "stock": 3,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "386566590953",
+          "name": "全套飛塔",
+          "parent_sku": null,
+          "sku": null,
+          "price": 2780,
+          "stock": 3,
+          "min_qty": null
+        },
+        {
+          "variation_id": "386566590954",
+          "name": "F722 V5飛控",
+          "parent_sku": null,
+          "sku": null,
+          "price": 1450,
+          "stock": 3,
+          "min_qty": null
+        }
+      ],
+      "price_min": 1380,
+      "price_max": 2780,
+      "stock_total": 9,
+      "status": "snapshot_only"
+    }
   },
   "notes": [
     "本電調無 BEC，5V／9V／12V 供電須由飛控或另外的 BEC 模組提供。",

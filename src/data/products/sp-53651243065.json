@@ -34,6 +34,40 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mgz8l28gohs90f",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mgz8l28b0tfvd1",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mi2vavu50bnmf9"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "335112525684",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 109,
+          "stock": 49,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 109,
+      "price_max": 109,
+      "stock_total": 49,
+      "status": "snapshot_only"
+    }
   }
 }

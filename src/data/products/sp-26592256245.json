@@ -19,7 +19,22 @@
   "description": "#外場電包 #FPV電池 #航模電池 #6S電池 #4S電池 #高放電電池 #行動電源模組 #穿越機電池 #HOTA充電器 #靈雀SpiritSparrow\n\n重點看這🔥\n✅外出提把，方便攜帶\n✅電量顯示器 10秒自動熄滅\n\n🔋 產品特色\n高放電能力，穩定輸出，專為 FPV 航模 / 穿越機設計\n使用高品質 BSMI認證 21700鋰電池，壽命更長安全性更高\n點焊工藝：紫銅 + 鍍鎳鋼，低內阻，高導電率\n適合作為外場電包，支援充電器 (例：HOTA D6 Pro) 使用\n體積輕巧，攜帶方便，戶外飛行好幫手\n⭕️截止電壓12.8V滿電電壓16.8V\n\n規格：4S3P\n電芯型號：21700 / 5000mAh / 15A（單顆）\n標稱電壓：14.8V\n滿電電壓：16.8V\n總容量：15,000mAh (15Ah)\n能量：約 222 Wh\n持續放電：45A（15A × 3）\n接頭：XT60 母\n\n適用範圍：FPV 穿越機、固定翼、RC車船、戶外電池模組\n\n✨ 推薦理由\n✔ 高性能，滿足航模大電流需求\n✔ 點焊工藝，安全耐用\n✔ 多種規格可選，靈活搭配使用\n✔ 適合外場攜帶，供電穩定",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "6S3P / 15000mah",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "411130194147"
+    },
+    {
+      "name": "4S3P / 15000mah",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "411130194148"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -38,6 +53,61 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mfw4u3v8k9am35",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mfw4hogtxf672a",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mfw4hq2vu13d86",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mfdt2vwrxtsffe",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mf40z1yyfj0t17",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mfs1totf5zwr8f"
+      ],
+      "variation_label": "外場電包",
+      "options": [
+        {
+          "option": "4S3P / 15000mah",
+          "url": null
+        },
+        {
+          "option": "6S3P / 15000mah",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "外場電包",
+      "rows": [
+        {
+          "variation_id": "411130194147",
+          "name": "6S3P / 15000mah",
+          "parent_sku": null,
+          "sku": null,
+          "price": 2580,
+          "stock": 4,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "411130194148",
+          "name": "4S3P / 15000mah",
+          "parent_sku": null,
+          "sku": null,
+          "price": 1880,
+          "stock": 5,
+          "min_qty": null
+        }
+      ],
+      "price_min": 1880,
+      "price_max": 2580,
+      "stock_total": 9,
+      "status": "snapshot_only"
+    }
   }
 }

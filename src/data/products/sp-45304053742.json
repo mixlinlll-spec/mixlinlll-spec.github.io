@@ -42,7 +42,71 @@
     }
   ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "鈦藍（鈦合金）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400383203535"
+    },
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400383203536"
+    },
+    {
+      "name": "紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400383203528"
+    },
+    {
+      "name": "藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400383203534"
+    },
+    {
+      "name": "綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400383203531"
+    },
+    {
+      "name": "金",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400383203530"
+    },
+    {
+      "name": "天藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400383203529"
+    },
+    {
+      "name": "橘",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400383203532"
+    },
+    {
+      "name": "粉紅",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "400383203533"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -75,6 +139,149 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mizoc6wgl79i7c",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mizocz53qccm57",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mizoleepqznk30"
+      ],
+      "variation_label": "鋁合金鎖槳螺母",
+      "options": [
+        {
+          "option": "黑",
+          "url": null
+        },
+        {
+          "option": "綠",
+          "url": null
+        },
+        {
+          "option": "金",
+          "url": null
+        },
+        {
+          "option": "橘",
+          "url": null
+        },
+        {
+          "option": "紅",
+          "url": null
+        },
+        {
+          "option": "粉紅",
+          "url": null
+        },
+        {
+          "option": "藍",
+          "url": null
+        },
+        {
+          "option": "天藍",
+          "url": null
+        },
+        {
+          "option": "鈦藍（鈦合金）",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "鋁合金鎖槳螺母",
+      "rows": [
+        {
+          "variation_id": "400383203535",
+          "name": "鈦藍（鈦合金）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 99,
+          "stock": 4,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "400383203536",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 8,
+          "min_qty": null
+        },
+        {
+          "variation_id": "400383203528",
+          "name": "紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 3,
+          "min_qty": null
+        },
+        {
+          "variation_id": "400383203534",
+          "name": "藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "400383203531",
+          "name": "綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 19,
+          "min_qty": null
+        },
+        {
+          "variation_id": "400383203530",
+          "name": "金",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 7,
+          "min_qty": null
+        },
+        {
+          "variation_id": "400383203529",
+          "name": "天藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 12,
+          "min_qty": null
+        },
+        {
+          "variation_id": "400383203532",
+          "name": "橘",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 16,
+          "min_qty": null
+        },
+        {
+          "variation_id": "400383203533",
+          "name": "粉紅",
+          "parent_sku": null,
+          "sku": null,
+          "price": 45,
+          "stock": 8,
+          "min_qty": null
+        }
+      ],
+      "price_min": 45,
+      "price_max": 99,
+      "stock_total": 97,
+      "status": "snapshot_only"
+    }
   }
 }

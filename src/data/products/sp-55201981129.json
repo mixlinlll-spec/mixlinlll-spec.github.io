@@ -16,7 +16,22 @@
   "description": "#Radiomaster #GX12 #21700電池盒 #遙控器電池盒 #FPV配件 #3D列印TPU #電池外殼 #靈雀FPV #穿越機配件\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nRadiomaster GX12 專用 21700 電池盒（TPU 列印）\n專為 Radiomaster GX12 設計的 21700 電池盒，請將原廠配置的18650電池盒中的電線及彈簧片；\n用電烙鐵取下後接到此電池盒 就可以馬上升級了\n\n可加購電池，BSMI認證。",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "21700電池盒",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395193889250"
+    },
+    {
+      "name": "INR21700/50E 5000mAh",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "395193889251"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -35,6 +50,58 @@
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mheyodxnzz7ve3",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mi2vavu50bnmf9",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420"
+      ],
+      "variation_label": "Radiomaster GX",
+      "options": [
+        {
+          "option": "21700電池盒",
+          "url": null
+        },
+        {
+          "option": "INR21700/50E 5000mAh",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "Radiomaster GX",
+      "rows": [
+        {
+          "variation_id": "395193889250",
+          "name": "21700電池盒",
+          "parent_sku": null,
+          "sku": null,
+          "price": 100,
+          "stock": 50,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "395193889251",
+          "name": "INR21700/50E 5000mAh",
+          "parent_sku": null,
+          "sku": null,
+          "price": 100,
+          "stock": 50,
+          "min_qty": null
+        }
+      ],
+      "price_min": 100,
+      "price_max": 100,
+      "stock_total": 100,
+      "status": "snapshot_only"
+    }
   }
 }

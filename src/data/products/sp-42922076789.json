@@ -33,6 +33,41 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "101809 - Home & Living/Tools & Home Improvement/Tools/Power Welding Tools",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mf6kxwldih3f13",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mf6kxwl7b4ss98",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mf6kxwl9c6bzc0",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mf6kxwldjvnv49"
+      ],
+      "variation_label": null,
+      "options": []
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": null,
+      "rows": [
+        {
+          "variation_id": "276794203359",
+          "name": null,
+          "parent_sku": null,
+          "sku": null,
+          "price": 90,
+          "stock": 12,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 90,
+      "price_max": 90,
+      "stock_total": 12,
+      "status": "snapshot_only"
+    }
   }
 }

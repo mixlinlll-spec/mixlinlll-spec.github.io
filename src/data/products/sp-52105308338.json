@@ -49,7 +49,22 @@
     }
   ],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "單顆電池（3500mah)",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282364284620"
+    },
+    {
+      "name": "一組套裝（含電池兩顆,充電線一條）",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "282364284619"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -86,7 +101,61 @@
       "售價模式（定價／起價／詢價）與售價",
       "供貨狀態",
       "蝦皮商品網址（需 EWP 核實）"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mt3be67cv2th76",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mt3be67cwhdx16",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mt3be67cto9105",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mlrysjmqll3470"
+      ],
+      "variation_label": "電翼動力 電池盒",
+      "options": [
+        {
+          "option": "一組套裝（含電池兩顆,充電線一條）",
+          "url": null
+        },
+        {
+          "option": "單顆電池（3500mah)",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "電翼動力 電池盒",
+      "rows": [
+        {
+          "variation_id": "282364284620",
+          "name": "單顆電池（3500mah)",
+          "parent_sku": null,
+          "sku": null,
+          "price": 150,
+          "stock": 18,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "282364284619",
+          "name": "一組套裝（含電池兩顆,充電線一條）",
+          "parent_sku": null,
+          "sku": null,
+          "price": 599,
+          "stock": 66,
+          "min_qty": null
+        }
+      ],
+      "price_min": 150,
+      "price_max": 599,
+      "stock_total": 84,
+      "status": "snapshot_only"
+    }
   },
   "compliance": {
     "status": "pending",

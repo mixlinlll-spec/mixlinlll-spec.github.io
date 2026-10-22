@@ -18,7 +18,15 @@
   "description": "【BETAFPV HexaCharger 1S 充電器】",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "黑色",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "341529126280"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -37,6 +45,46 @@
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mtboffi39on5fc"
-    ]
+    ],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100488 - Mobile & Gadgets/Accessories/Powerbanks & Batteries/Others",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mtbocxed9jig2f",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mtbocxdr0vt07f",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mtbocxdqsgedaf",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mtbocxfezuo47c"
+      ],
+      "variation_label": "六口充電器",
+      "options": [
+        {
+          "option": "黑色",
+          "url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mtbocxdqmu4k32"
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "六口充電器",
+      "rows": [
+        {
+          "variation_id": "341529126280",
+          "name": "黑色",
+          "parent_sku": null,
+          "sku": null,
+          "price": 980,
+          "stock": 4,
+          "min_qty": 1
+        }
+      ],
+      "price_min": 980,
+      "price_max": 980,
+      "stock_total": 4,
+      "status": "snapshot_only"
+    }
   }
 }

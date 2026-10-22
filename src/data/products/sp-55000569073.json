@@ -16,7 +16,57 @@
   "description": "專為 DJI Mini 4 / Mini 4 Pro  RC2遙控器設計的 搖桿保護罩，能在收納或攜帶時有效防止搖桿受到擠壓或碰撞。\n採用 TPU柔性3D列印材質，貼合度高、不刮手、不傷桿帽。\n\n✅ 收納時防止搖桿變形或損壞\n✅ TPU彈性材質，柔軟耐用\n✅ 精準尺寸，穩固不鬆脫\n✅ 適用於原廠遙控器、方便攜帶\n\n適用機型：RC2\n材質說明：TPU（熱塑性聚氨酯）－柔軟、防撞、耐磨",
   "specifications": [],
   "images": [],
-  "variants": [],
+  "variants": [
+    {
+      "name": "綠",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390049900889"
+    },
+    {
+      "name": "透藍",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390049900890"
+    },
+    {
+      "name": "銀",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390049900891"
+    },
+    {
+      "name": "紫",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390049900892"
+    },
+    {
+      "name": "黑",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390049900886"
+    },
+    {
+      "name": "黃",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390049900887"
+    },
+    {
+      "name": "白",
+      "sku": null,
+      "price_twd": null,
+      "availability": "unknown",
+      "shopee_variation_id": "390049900888"
+    }
+  ],
   "price_twd": null,
   "price_display": "inquiry",
   "availability": "unknown",
@@ -34,6 +84,123 @@
       "seller_role 自動判為 EWP 自製，請確認",
       "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
     ],
-    "source_image_urls": []
+    "source_image_urls": [],
+    "source_media": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "category": "100706 - Cameras & Drones/Drone Accessories",
+      "cover": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mhkbdiw0775wb4",
+      "gallery": [
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mlm410prrqx420",
+        "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mghe5weu5jilaf"
+      ],
+      "variation_label": "RC2搖桿保護罩",
+      "options": [
+        {
+          "option": "銀",
+          "url": null
+        },
+        {
+          "option": "紫",
+          "url": null
+        },
+        {
+          "option": "黑",
+          "url": null
+        },
+        {
+          "option": "黃",
+          "url": null
+        },
+        {
+          "option": "白",
+          "url": null
+        },
+        {
+          "option": "綠",
+          "url": null
+        },
+        {
+          "option": "透藍",
+          "url": null
+        }
+      ]
+    },
+    "shopee_sales_snapshot": {
+      "media_export": "mass_update_media_info_4053258_20261022141110",
+      "sales_export": "mass_update_sales_info_4053258_20261022141152",
+      "captured_at": "2026-10-22T14:11:52+08:00",
+      "variation_label": "RC2搖桿保護罩",
+      "rows": [
+        {
+          "variation_id": "390049900889",
+          "name": "綠",
+          "parent_sku": null,
+          "sku": null,
+          "price": 150,
+          "stock": 20,
+          "min_qty": 1
+        },
+        {
+          "variation_id": "390049900890",
+          "name": "透藍",
+          "parent_sku": null,
+          "sku": null,
+          "price": 160,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390049900891",
+          "name": "銀",
+          "parent_sku": null,
+          "sku": null,
+          "price": 150,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390049900892",
+          "name": "紫",
+          "parent_sku": null,
+          "sku": null,
+          "price": 150,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390049900886",
+          "name": "黑",
+          "parent_sku": null,
+          "sku": null,
+          "price": 150,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390049900887",
+          "name": "黃",
+          "parent_sku": null,
+          "sku": null,
+          "price": 150,
+          "stock": 20,
+          "min_qty": null
+        },
+        {
+          "variation_id": "390049900888",
+          "name": "白",
+          "parent_sku": null,
+          "sku": null,
+          "price": 150,
+          "stock": 20,
+          "min_qty": null
+        }
+      ],
+      "price_min": 150,
+      "price_max": 160,
+      "stock_total": 140,
+      "status": "snapshot_only"
+    }
   }
 }
