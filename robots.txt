@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /src/
+Disallow: /scripts/
+Disallow: /legacy/
+Sitemap: https://mixlinlll-spec.github.io/sitemap.xml
