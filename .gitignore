@@ -1,0 +1,6 @@
+# 本機預覽與測試輸出（不提交）
+_preview/
+_test/
+node_modules/
+.DS_Store
+Thumbs.db
