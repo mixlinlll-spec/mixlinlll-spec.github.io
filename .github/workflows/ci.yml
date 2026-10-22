@@ -8,7 +8,8 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: ci-${{ github.ref }}
+  # 後台原始儲存（[後台] commit）的 CI 會被略過，用獨立 group，避免它取消正在跑的正式檢查
+  group: ci-${{ github.ref }}${{ startsWith(github.event.head_commit.message, '[後台]') && format('-cms-{0}', github.sha) || '' }}
   cancel-in-progress: true
 jobs:
   check:
