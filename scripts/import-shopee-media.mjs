@@ -122,8 +122,10 @@ for (const [id, { p, file }] of products) {
   imagesWritten += imgs.length;
   for (const j of mine.filter(j => j.kind === 'option')) {
     for (const optName of j.options) {
-      const v = (p.variants || []).find(v => v.name === optName);
-      if (v) { v.image = { src: '/' + j.small, alt: j.alt, rights: 'unverified', source_url: j.url }; optionLinked++; }
+      // 單層規格：名稱完全相同；雙層規格（蝦皮匯出為「選項1,選項2」）：以第一層選項對應
+      const matches = (p.variants || []).filter(v => v.name === optName || (optName && v.name.split(',')[0] === optName));
+      for (const v of matches) v.image = { src: '/' + j.small, alt: j.alt, rights: 'unverified', source_url: j.url };
+      if (matches.length) { optionLinked++; p.review.unmatched_option_images = (p.review.unmatched_option_images || []).filter(n => n !== optName); if (!p.review.unmatched_option_images.length) delete p.review.unmatched_option_images; }
       else {
         p.review.unmatched_option_images = [...new Set([...(p.review.unmatched_option_images || []), optName || '(未命名選項)'])];
       }
@@ -132,7 +134,8 @@ for (const [id, { p, file }] of products) {
   writeJSON(path.join(PRODUCTS_DIR, file), p);
 }
 
-// 報告
+// 報告（--only 局部執行時不覆寫全量報告）
+if (ONLY) { console.log(`局部執行 ${[...products.keys()].join(', ')}：寫入 images ${imagesWritten}、對應選項圖 ${optionLinked}、失敗 ${stats.failed}`); process.exit(stats.failed ? 1 : 0); }
 const byId = new Map();
 for (const j of jobs) { const r = byId.get(j.id) || { total: 0, ok: 0, fail: 0 }; r.total++; j.done ? r.ok++ : r.fail++; byId.set(j.id, r); }
 const totalImages = jobs.filter(j => j.kind === 'image').length, okImages = jobs.filter(j => j.kind === 'image' && j.done).length;

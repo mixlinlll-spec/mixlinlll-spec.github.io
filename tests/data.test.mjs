@@ -199,3 +199,77 @@ describe('Phase 3：營業登記地址、作品介紹模式、合規與圖片使
     const slugs = products.map(p => p.slug); assert.equal(new Set(slugs).size, slugs.length); assert.equal(products.length, 240);
   });
 });
+
+describe('蝦皮媒體與價格庫存匯入', () => {
+  const withMedia = products.filter(p => p.review?.source_media);
+  test('240 件商品都有蝦皮媒體來源與價格庫存快照', () => {
+    assert.equal(withMedia.length, 240);
+    assert.equal(products.filter(p => p.review?.shopee_sales_snapshot?.rows?.length).length, 240);
+  });
+  test('價格／庫存列總數 912（商品＋服務型）', () => {
+    const svc = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/shopee/service-listings.json'), 'utf8'));
+    const n = products.reduce((a, p) => a + p.review.shopee_sales_snapshot.rows.length, 0) + Object.values(svc.listings).reduce((a, l) => a + l.sales.length, 0);
+    assert.equal(n, 912);
+    assert.equal(Object.keys(svc.listings).length, 4);
+  });
+  test('每件商品的主圖＋細節圖都已匯入、檔案存在、使用權為 unverified', () => {
+    let total = 0;
+    for (const p of withMedia) {
+      const src = new Set([p.review.source_media.cover, ...p.review.source_media.gallery].filter(Boolean));
+      const imported = p.images.filter(i => i.source_url);
+      assert.equal(imported.length, src.size, p.id);
+      for (const i of imported) { assert.equal(i.rights, 'unverified'); assert.equal(checkAssetPath(i.src), null); assert.equal(checkAssetPath(i.src_small), null); }
+      assert.equal(imported[0]?.role, 'cover', `${p.id} 第一張應為主圖`);
+      total += imported.length;
+    }
+    assert.equal(total, 1092);
+  });
+  test('規格選項圖全部對應到變體', () => {
+    let linked = new Set();
+    for (const p of withMedia) for (const v of p.variants || []) if (v.image) { assert.equal(checkAssetPath(v.image.src), null); linked.add(v.image.src); }
+    assert.equal(linked.size, 303);
+    assert.equal(products.filter(p => p.review.unmatched_option_images?.length).length, 0);
+  });
+  test('快照尚未套用：所有商品與變體的公開價格為空、供貨未知', () => {
+    for (const p of products) {
+      assert.equal(p.price_twd, null, p.id); assert.equal(p.availability, 'unknown', p.id);
+      assert.notEqual(p.review.shopee_sales_snapshot.status, 'applied');
+      for (const v of p.variants || []) { assert.equal(v.price_twd, null); assert.equal(v.availability, 'unknown'); }
+    }
+  });
+  test('變體對應蝦皮規格 ID，且每個 ID 都在快照中', () => {
+    for (const p of products) for (const v of (p.variants || []).filter(v => v.shopee_variation_id))
+      assert.ok(p.review.shopee_sales_snapshot.rows.some(r => r.variation_id === v.shopee_variation_id), `${p.id} ${v.name}`);
+  });
+  test('approve-snapshot：dry-run 不寫入；正式執行才套用價格、庫存與圖片使用權（不公開）', () => {
+    const id = 'sp-57918649179';
+    const f = path.join(PRODUCTS_DIR, `${id}.json`);
+    const orig = fs.readFileSync(f, 'utf8');
+    try {
+      execFileSync('node', ['scripts/approve-snapshot.mjs', id, '--prices', '--stock', '--image-rights', 'ewp_own', '--dry-run'], { cwd: ROOT });
+      assert.equal(fs.readFileSync(f, 'utf8'), orig);
+      execFileSync('node', ['scripts/approve-snapshot.mjs', id, '--prices', '--stock', '--image-rights', 'ewp_own'], { cwd: ROOT });
+      const p = JSON.parse(fs.readFileSync(f, 'utf8'));
+      const snap = p.review.shopee_sales_snapshot;
+      assert.equal(p.price_twd, snap.price_min); assert.equal(p.price_display, snap.price_min === snap.price_max ? 'fixed' : 'from');
+      assert.ok(p.variants.every(v => v.price_twd > 0));
+      assert.ok(p.images.every(i => i.rights === 'ewp_own'));
+      assert.equal(p.published, false); assert.notEqual(p.review.status, 'approved');
+      assert.equal(snap.status, 'applied');
+    } finally { fs.writeFileSync(f, orig); }
+  });
+  test('正式產物不含未公開商品圖片；預覽版含草稿圖片', () => {
+    const out = path.join(ROOT, '_test');
+    try {
+      execFileSync('node', ['scripts/build.mjs', '--out', '_test'], { cwd: ROOT });
+      assert.ok(!fs.existsSync(path.join(out, 'assets/img/products')) || fs.readdirSync(path.join(out, 'assets/img/products')).length === 0);
+      fs.mkdirSync(path.join(out, 'assets/img/products/sp-42781322918'), { recursive: true });
+      fs.copyFileSync(path.join(ROOT, 'assets/img/products/sp-42781322918/01.webp'), path.join(out, 'assets/img/products/sp-42781322918/01.webp'));
+      const r = spawnSync('node', ['scripts/check-site.mjs', '_test'], { cwd: ROOT, encoding: 'utf8' });
+      assert.notEqual(r.status, 0); assert.match(r.stderr, /未公開商品圖片/);
+      fs.rmSync(out, { recursive: true, force: true });
+      execFileSync('node', ['scripts/build.mjs', '--out', '_test', '--drafts'], { cwd: ROOT });
+      assert.ok(fs.existsSync(path.join(out, 'assets/img/products/sp-42781322918/01.webp')));
+    } finally { fs.rmSync(out, { recursive: true, force: true }); }
+  });
+});

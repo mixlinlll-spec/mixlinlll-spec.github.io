@@ -20,9 +20,12 @@ scripts/
   import-csv.mjs     由 CSV 新增／更新商品
   import-shopee.mjs  由蝦皮匯出檔建立商品草稿
   add-images.mjs     商品照片壓縮成 WebP 並寫入資料（需 npm install）
+  import-shopee-media.mjs  批次下載蝦皮商品圖片（GitHub Actions：import-media.yml）
+  approve-snapshot.mjs     核對後套用蝦皮價格／庫存快照與圖片使用權（不會公開）
+  report-shopee-import.mjs 產生蝦皮匯入總表（docs/SHOPEE_IMPORT_REPORT.md、CSV）
   report-first-batch.mjs  產生首批商品確認表（docs/FIRST_BATCH_REVIEW.md、CSV）
   lib/               共用資料驗證與版型（Header／Footer／ProductCard…）
-assets/              CSS、JS、圖片、LINE QR（手寫，非產生）
+assets/              CSS、JS、圖片、QR；assets/img/products/ 為蝦皮匯入的商品圖片（只有已公開商品會進入 dist/）
 fpv-help.html        舊知識庫（91 則），原網址保留、內容未改動
 huan.png             舊主圖，原網址保留
 legacy/              2026-09 舊版首頁存檔（noindex，僅供比對）

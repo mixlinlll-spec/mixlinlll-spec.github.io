@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v2.3.0（2026-10-22，蝦皮全量圖片與價格庫存匯入）
+
+- 240 件商品寫入 `review.source_media`（蝦皮主圖、細節圖、規格選項圖網址）與 `review.shopee_sales_snapshot`（價格、庫存、最低購買量、規格 ID；912 列含 4 件服務型）。
+- 變體改以蝦皮規格為準（`shopee_variation_id`），公開價格與供貨維持空白，待核對。
+- GitHub Actions 批次匯入圖片：主圖＋細節圖 1,092／1,092、規格選項圖 303／303，失敗 0；原始 501 MB → WebP 71.5 MB。
+- 雙層規格（例：顏色,型號）的選項圖以第一層對應，303 張選項圖全部對應到變體。
+- 圖片 `rights: "unverified"` 只能用於草稿；正式產物只複製已公開商品的圖片。
+- 新工具：`import-shopee-media.mjs`、`approve-snapshot.mjs`、`report-shopee-import.mjs`；新報告：`docs/SHOPEE_IMPORT_REPORT.md`、`docs/shopee-import.csv`、`docs/MEDIA_IMPORT_REPORT.md`、`docs/media-import-failures.csv`。
+- 單元測試 57 → 65 項；端對端測試 114 → 124 項。
+
 ## v2.2.0（2026-10-22，Phase 3 首批商品資料整理）
 
 ### 營業登記地址

@@ -89,6 +89,21 @@ node scripts/check-site.mjs          # 白名單／連結／草稿外洩檢查
 | `compliance` |  | `{ "status": "pending／cleared／not_required", "items": [{ "type": "NCC", "reason": "…" }] }`。pending 時不得以販售模式公開；整機以 sale 公開必須 cleared |
 | `review` | 公開時 ✔ | `status`（draft／approved／rejected）、`notes`（待核對事項，只在預覽版顯示） |
 
+## 三之一、蝦皮圖片、價格與庫存（已全量匯入）
+
+- **圖片**：`src/data/products/*.json` 的 `review.source_media` 保存蝦皮主圖／細節圖／規格選項圖網址；由 GitHub Actions（`import-media.yml`）下載並壓縮到 `assets/img/products/<id>/`，寫入 `images`（`rights: "unverified"`）與 `variants[].image`。
+  - 重新匯入或補失敗：修改 `src/data/shopee/media-import-request.json` 的 `requested_at` 後推送，或在 Actions 頁手動 Run workflow。已存在的圖片會略過。
+  - 新的蝦皮媒體匯出檔：交給 Claude 更新 `source_media` 後再觸發。
+- **價格與庫存**：`review.shopee_sales_snapshot` 保存匯出時的每個規格價格、庫存；`variants[].shopee_variation_id` 對應蝦皮規格。網站公開欄位維持「詢價／供貨請洽詢」，直到核對後套用：
+
+```bash
+node scripts/approve-snapshot.mjs --batch first --prices --stock --image-rights ewp_own --dry-run   # 先看結果
+node scripts/approve-snapshot.mjs sp-42781322918 sp-47714579384 --prices --stock --image-rights ewp_own
+```
+
+  這個工具不會設定 `published`；公開仍需 `review.status: "approved"` 與 `published: true`。
+- 總表：[docs/SHOPEE_IMPORT_REPORT.md](docs/SHOPEE_IMPORT_REPORT.md)（Excel：`docs/shopee-import.csv`）、下載結果：[docs/MEDIA_IMPORT_REPORT.md](docs/MEDIA_IMPORT_REPORT.md)。
+
 ## 三、蝦皮資料匯入
 
 1. 蝦皮賣家中心 → 大量工具 → 下載「基本資訊」→ 用 Excel 開啟 → 另存「CSV UTF-8」。

@@ -262,7 +262,31 @@ console.log('11. 首批商品草稿頁（預覽）：作品介紹模式與待補
   await page.context().close();
 }
 
-console.log('12. 手機版面穩定（CLS < 0.1）');
+console.log('12. 蝦皮匯入圖片與快照（預覽）／正式版不外洩');
+{
+  const page = await newPage(390);
+  await page.goto(PRE + '/product/sirius-2306-5-1860kv-5-fpv-freestyle/');
+  const main = page.locator('.gallery-main img');
+  ok(await main.evaluate(i => i.complete && i.naturalWidth > 0), '商品主圖已載入');
+  ok(await page.locator('.gallery-thumbs button').count() >= 2, '細節圖縮圖可切換');
+  await page.locator('.gallery-thumbs button').nth(1).click();
+  ok(await page.getAttribute('.gallery-thumbs button >> nth=1', 'aria-pressed') === 'true', '點擊縮圖切換主圖');
+  ok(/使用權待 EWP 確認/.test(await page.textContent('.review-box')), '預覽標示圖片使用權待確認');
+  ok(/蝦皮價格／庫存快照/.test(await page.textContent('.review-box')), '預覽顯示價格庫存快照（收合）');
+  ok(await page.locator('.pd-price').textContent() === '詢價', '快照未套用：公開價格仍為「詢價」');
+  await page.goto(PRE + '/product/' + 'talon-stick-fpv-8k-abs' + '/');
+  ok(await page.locator('.var-thumb').count() > 0, '規格選項圖顯示於變體表');
+  await page.goto(PRE + '/products/motors-props/');
+  const firstImg = page.locator('.catalog-grid .pcard:visible img').first();
+  ok(await firstImg.evaluate(i => i.complete && i.naturalWidth > 0), '列表商品卡顯示主圖');
+  for (const u of ['/assets/img/products/sp-42781322918/01.webp', '/assets/img/products/sp-42781322918/01-480.webp']) {
+    const r = await page.request.get(PUB + u);
+    ok(r.status() === 404, `正式網站不提供未公開商品圖片 ${u} → ${r.status()}`);
+  }
+  await page.context().close();
+}
+
+console.log('13. 手機版面穩定（CLS < 0.1）');
 for (const u of [PUB + '/', PUB + '/products/', PUB + '/products/complete-drones/', PRE + '/products/', PRE + '/product/geprc-moz7-v2-o4-pro-7/', PUB + '/contact/']) {
   const page = await newPage(390);
   await page.addInitScript(() => { window.__cls = 0; new PerformanceObserver(l => { for (const e of l.getEntries()) if (!e.hadRecentInput) window.__cls += e.value; }).observe({ type: 'layout-shift', buffered: true }); });
@@ -273,7 +297,7 @@ for (const u of [PUB + '/', PUB + '/products/', PUB + '/products/complete-drones
   await page.context().close();
 }
 
-console.log('13. 鍵盤操作');
+console.log('14. 鍵盤操作');
 {
   const page = await newPage(1280);
   await page.goto(PUB + '/');

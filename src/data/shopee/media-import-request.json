@@ -1,6 +1,6 @@
 {
   "_comment": "修改此檔並推送到 feature/** 分支，會觸發 .github/workflows/import-media.yml 批次下載蝦皮商品圖片。",
-  "requested_at": "2026-10-22T14:40:00+08:00",
+  "requested_at": "2026-10-22T15:00:00+08:00",
   "scope": "all",
-  "note": "首次全量匯入：240 件商品的主圖、細節圖與規格選項圖"
+  "note": "重跑驗證：已存在圖片應全部略過；更新雙層規格選項圖對應與報告"
 }
