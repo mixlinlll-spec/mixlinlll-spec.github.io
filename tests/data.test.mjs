@@ -207,20 +207,18 @@ describe('蝦皮媒體與價格庫存匯入', () => {
     assert.equal(linked.size, 303);
     assert.equal(products.filter(p => p.review.unmatched_option_images?.length).length, 0);
   });
-  test('官網價 = 蝦皮快照價 −4%（四捨五入），變體逐一對應；供貨依快照庫存', () => {
-    const r96 = x => Math.round(x * 0.96);
+  // v2.4.0 時官網價＝蝦皮快照價 −4%；之後 EWP 可在後台改價格與供貨，所以這裡只檢查快照保留與價格規則一致
+  test('蝦皮快照保留；官網價符合價格規則（最低規格價，單一價定價、多價起價）', () => {
     for (const p of products.filter(p => p.published)) {
       const snap = p.review.shopee_sales_snapshot;
       assert.equal(snap.status, 'applied', p.id); assert.equal(snap.discount_percent, 4, p.id);
-      const prices = snap.rows.map(r => r.price).filter(x => x > 0).map(r96);
-      assert.equal(p.price_twd, Math.min(...prices), p.id);
-      assert.equal(p.price_display, Math.min(...prices) === Math.max(...prices) ? 'fixed' : 'from', p.id);
-      assert.equal(p.availability, snap.stock_total > 0 ? 'in_stock' : 'out_of_stock', p.id);
-      for (const v of p.variants.filter(v => v.shopee_variation_id)) {
-        const row = snap.rows.find(r => r.variation_id === v.shopee_variation_id);
-        assert.equal(v.price_twd, r96(row.price), `${p.id} ${v.name}`);
-        assert.equal(v.availability, row.stock > 0 ? 'in_stock' : 'out_of_stock', `${p.id} ${v.name}`);
-      }
+      assert.ok(snap.rows.length > 0, p.id);
+      const prices = p.variants.map(v => v.price_twd).filter(x => x > 0);
+      if (p.price_display === 'inquiry') { assert.equal(p.price_twd, null, p.id); continue; }
+      if (prices.length) {
+        assert.equal(p.price_twd, Math.min(...prices), p.id);
+        assert.equal(p.price_display, Math.min(...prices) === Math.max(...prices) ? 'fixed' : 'from', p.id);
+      } else assert.ok(p.price_twd > 0, p.id);
     }
   });
   test('未上架（rejected）商品沒有套用價格', () => {

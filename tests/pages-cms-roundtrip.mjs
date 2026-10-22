@@ -213,7 +213,7 @@ console.log('4. 端對端：後台 commit → cms-normalize（暫存 git 工作�
   fs.writeFileSync(P(other), fs.readFileSync(P(other), 'utf8').replace('"featured": false', '"featured": true'));
   g('add', '-A'); g('commit', '-qm', 'chore: 手動修改');
   const sum = path.join(wt, 'summary.md');
-  execFileSync('node', ['scripts/cms-normalize.mjs', '--base', baseSha, '--summary', sum], { cwd: wt, encoding: 'utf8' });
+  execFileSync('node', ['scripts/cms-normalize.mjs', '--summary', sum], { cwd: wt, encoding: 'utf8' });
   const m = JSON.parse(fs.readFileSync(P(mf), 'utf8'));
   const mPrev = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/products', mf), 'utf8'));
   ok(m.variants[0].price_twd === 5 && m.price_twd === 5 && JSON.stringify(m.review) === JSON.stringify(mPrev.review) && fs.readFileSync(P(mf), 'utf8').endsWith('}\n'), '後台改價格：校正後價格生效、review 完整、檔案格式還原');

@@ -32,7 +32,7 @@ jobs:
         run: npm install --no-save --no-audit --no-fund --no-package-lock sharp@0.35.4
       - name: 校正後台儲存的商品資料
         id: normalize
-        run: node scripts/cms-normalize.mjs --base "${{ github.event.before }}" --summary "$GITHUB_STEP_SUMMARY"
+        run: node scripts/cms-normalize.mjs --summary "$GITHUB_STEP_SUMMARY"
       - name: 驗證、提交、發布
         if: steps.normalize.outputs.cms_commits != '0'
         uses: ./.github/actions/admin-publish

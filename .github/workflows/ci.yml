@@ -32,8 +32,8 @@ jobs:
         run: node --test tests/admin.test.mjs
       - name: Pages CMS 往返測試（以 Pages CMS 原始碼模擬後台開啟→儲存→校正，全部商品）
         run: |
-          git clone -q https://github.com/pagescms/pages-cms.git "$RUNNER_TEMP/pages-cms"
-          git -C "$RUNNER_TEMP/pages-cms" checkout -q 6f4e860a35d934406580287e7042e5e111e207a1   # 2.1.8
+          git clone -q --depth 1 --branch 2.1.8 https://github.com/pages-cms/pages-cms.git "$RUNNER_TEMP/pages-cms"
+          test "$(git -C "$RUNNER_TEMP/pages-cms" rev-parse HEAD)" = 6f4e860a35d934406580287e7042e5e111e207a1 || (echo "::error::Pages CMS 2.1.8 commit 不符" && exit 1)
           mkdir -p "$RUNNER_TEMP/cms-deps"
           npm install --prefix "$RUNNER_TEMP/cms-deps" --no-save --no-audit --no-fund --no-package-lock \
             zod@3.25.76 lodash.mergewith@4.6.2 slugify@1.6.8 date-fns@3.6.0 yaml@2.8.3 @ltd/j-toml@1.38.0 esbuild@0.25.12 sharp@0.35.4

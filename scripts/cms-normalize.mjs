@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // 商品後台（Pages CMS）儲存後的校正：由 .github/workflows/cms-sync.yml 在每次後台儲存後執行。
 //
-//   node scripts/cms-normalize.mjs --base <推送前的 commit> [--summary 檔案] [--dry-run]
+//   node scripts/cms-normalize.mjs [--summary 檔案] [--dry-run]
 //
 // 只處理 commit 訊息以「[後台]」開頭（Pages CMS 依 .pages.yml 的 commit 範本產生）的變更：
 //   1. 以該次儲存前的版本為準，還原 Pages CMS 刪掉的空值、保護 id／slug／review／規格 ID
@@ -18,32 +18,34 @@ import { normalizeCmsProduct, serializeProduct } from './lib/cms.mjs';
 
 const args = process.argv.slice(2);
 const opt = k => (args.includes(k) ? args[args.indexOf(k) + 1] : undefined);
-const base = opt('--base');
 const head = opt('--head') || 'HEAD';
 const summaryFile = opt('--summary');
 const dryRun = args.includes('--dry-run');
 const MARK = '[後台]';
-const git = (...a) => execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 << 20 });
+const git = (...a) => execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', maxBuffer: 256 << 20 });
 const gitShow = (rev, file) => { try { return git('show', `${rev}:${file}`); } catch { return null; } };
 
-if (!base) { console.error('用法：node scripts/cms-normalize.mjs --base <commit>'); process.exit(2); }
-
-// 1. 找出範圍內的後台 commit 與它們改到的商品檔
-const range = /^0+$/.test(base) ? head : `${base}..${head}`;
-const commits = git('log', '--reverse', '--format=%H%x1f%P%x1f%cI%x1f%s', range).split('\n').filter(Boolean)
-  .map(l => { const [sha, parents, date, subject] = l.split('\x1f'); return { sha, parent: parents.split(' ')[0], date, subject }; })
-  .filter(c => c.subject.startsWith(MARK));
-const touched = new Map(); // file -> { prevRev, commits: [] }
-for (const c of commits) {
-  const files = git('diff-tree', '--no-commit-id', '--name-only', '-r', c.sha).split('\n').filter(f => /^src\/data\/products\/[^/]+\.json$/.test(f));
-  for (const f of files) {
-    if (!touched.has(f)) touched.set(f, { prevRev: c.parent, commits: [] });
-    touched.get(f).commits.push(c);
+// 1. 找出「最後一次修改是後台儲存」的商品檔（不依賴推送範圍：上一次校正失敗或被跳過的也會補做）
+//    每個檔案往回找，直到遇到不是「[後台]」的 commit（＝最後一個校正過／人工維護的版本），以它作為儲存前版本。
+const log = git('log', '--format=@@%H%x1f%cI%x1f%s', '--name-only', head, '--', 'src/data/products');
+const state = new Map(); // file -> { done, prevRev, commits: [] }
+for (const block of log.split('@@').filter(Boolean)) {
+  const [meta, ...names] = block.split('\n');
+  const [sha, date, subject] = meta.split('\x1f');
+  const isCms = subject.startsWith(MARK);
+  for (const f of names.map(n => n.trim()).filter(n => /^src\/data\/products\/[^/]+\.json$/.test(n))) {
+    let st = state.get(f);
+    if (!st) { st = { done: false, prevRev: null, commits: [] }; state.set(f, st); }
+    if (st.done) continue;
+    if (isCms) st.commits.push({ sha, date, subject });
+    else { st.done = true; st.prevRev = sha; }
   }
 }
-console.log(`後台 commit：${commits.length} 個；受影響商品：${touched.size} 件`);
+const touched = new Map([...state].filter(([, st]) => st.commits.length).map(([f, st]) => [f, { prevRev: st.prevRev, commits: st.commits.reverse() }]));
+const commits = [...new Map([...touched.values()].flatMap(t => t.commits).map(c => [c.sha, c])).values()];
+console.log(`待校正的後台 commit：${commits.length} 個；受影響商品：${touched.size} 件`);
 if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `cms_commits=${commits.length}\n`);
-if (!commits.length) { console.log('沒有後台 commit，不需要校正'); process.exit(0); }
+if (!commits.length) { console.log('沒有待校正的後台儲存'); process.exit(0); }
 
 // 2. 校正
 let sharp = null;
@@ -59,7 +61,7 @@ const operatorOf = s => (s.match(/（([^（）]*)）\s*$/) || [])[1] || '';
 
 for (const [file, info] of touched) {
   const abs = path.join(ROOT, file);
-  const prevText = gitShow(info.prevRev, file);
+  const prevText = info.prevRev ? gitShow(info.prevRev, file) : null;
   const entry = { file, operators: [...new Set(info.commits.map(c => operatorOf(c.subject)).filter(Boolean))], time: info.commits.at(-1).date, changes: [], warnings: [], errors: [] };
   report.push(entry);
   if (prevText == null) { entry.errors.push('後台不允許新增商品（請用匯入工具）；此檔未處理'); failed = true; continue; }
