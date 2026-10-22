@@ -2,17 +2,14 @@
   "id": "sp-42781322918",
   "slug": "sirius-2306-5-1860kv-5-fpv-freestyle",
   "name_zh": "SIRIUS 天狼星 2306.5 1860KV 無刷電機 5吋穿越機電機 FPV Freestyle 競速 花飛 6S",
-  "sku": null,
   "brand": "SIRIUS 天狼星",
   "manufacturer_model": "天狼星 2306.5 1860KV",
   "seller_role": "retail",
   "primary_category_id": "motors-props",
   "subcategory_id": "motors",
-  "tags": [],
   "compatible_sizes": [
     "5 吋"
   ],
-  "video_system": null,
   "battery_cells": [
     "6S"
   ],
@@ -58,53 +55,54 @@
   "images": [
     {
       "src": "/assets/img/products/sp-42781322918/01.webp",
-      "src_small": "/assets/img/products/sp-42781322918/01-480.webp",
       "alt": "SIRIUS 天狼星 2306.5 1860KV 無刷電機 5吋穿越機電機 FPV Freestyle 競速 花飛 6S（主圖）",
+      "rights": "licensed",
+      "src_small": "/assets/img/products/sp-42781322918/01-480.webp",
       "width": 1000,
       "height": 1000,
-      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-movwobh0vjeqe3"
     },
     {
       "src": "/assets/img/products/sp-42781322918/02.webp",
-      "src_small": "/assets/img/products/sp-42781322918/02-480.webp",
       "alt": "SIRIUS 天狼星 2306.5 1860KV 無刷電機 5吋穿越機電機 FPV Freestyle 競速 花飛 6S（細節圖 1）",
+      "rights": "licensed",
+      "src_small": "/assets/img/products/sp-42781322918/02-480.webp",
       "width": 1000,
       "height": 1000,
-      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-movwobf0owsh2a"
     },
     {
       "src": "/assets/img/products/sp-42781322918/03.webp",
-      "src_small": "/assets/img/products/sp-42781322918/03-480.webp",
       "alt": "SIRIUS 天狼星 2306.5 1860KV 無刷電機 5吋穿越機電機 FPV Freestyle 競速 花飛 6S（細節圖 2）",
+      "rights": "licensed",
+      "src_small": "/assets/img/products/sp-42781322918/03-480.webp",
       "width": 1000,
       "height": 1000,
-      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-movwobep7xu3e2"
+    },
+    {
+      "src": "/assets/img/products/IMG_TEST_02.jpg",
+      "rights": "ewp_own"
     }
   ],
   "variants": [
     {
       "name": "紫色",
-      "sku": null,
       "price_twd": 412,
       "availability": "in_stock",
       "shopee_variation_id": "400993012784"
     },
     {
       "name": "粉色",
-      "sku": null,
       "price_twd": 412,
       "availability": "in_stock",
       "shopee_variation_id": "400993012785"
     },
     {
       "name": "鈦灰",
-      "sku": null,
       "price_twd": 412,
       "availability": "in_stock",
       "shopee_variation_id": "400993012783"
@@ -113,7 +111,6 @@
   "price_twd": 412,
   "price_display": "fixed",
   "availability": "in_stock",
-  "shopee_url": null,
   "shopee_item_id": "42781322918",
   "line_inquiry_enabled": true,
   "featured": false,
@@ -161,16 +158,13 @@
       "variation_label": "天狼2306.5",
       "options": [
         {
-          "option": "鈦灰",
-          "url": null
+          "option": "鈦灰"
         },
         {
-          "option": "紫色",
-          "url": null
+          "option": "紫色"
         },
         {
-          "option": "粉色",
-          "url": null
+          "option": "粉色"
         }
       ]
     },
@@ -183,8 +177,6 @@
         {
           "variation_id": "400993012784",
           "name": "紫色",
-          "parent_sku": null,
-          "sku": null,
           "price": 429,
           "stock": 1,
           "min_qty": 1
@@ -192,20 +184,14 @@
         {
           "variation_id": "400993012785",
           "name": "粉色",
-          "parent_sku": null,
-          "sku": null,
           "price": 429,
-          "stock": 5,
-          "min_qty": null
+          "stock": 5
         },
         {
           "variation_id": "400993012783",
           "name": "鈦灰",
-          "parent_sku": null,
-          "sku": null,
           "price": 429,
-          "stock": 4,
-          "min_qty": null
+          "stock": 4
         }
       ],
       "price_min": 429,
