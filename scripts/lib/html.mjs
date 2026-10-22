@@ -57,7 +57,7 @@ function picture(img, { sizes = '(max-width: 720px) 50vw, 300px', lazy = true, c
 export { picture };
 
 // ---------- ProductCard（唯一來源；列表、首頁、電池專區共用） ----------
-export function productCard(p, ctx) {
+export function productCard(p, ctx, { hidden = false, eager = false } = {}) {
   const cat = ctx.catMap.get(p.primary_category_id);
   const sub = cat?.subcategories.find(s => s.id === p.subcategory_id);
   const search = [p.name_zh, p.brand, p.sku, p.manufacturer_model, ...(p.aliases || []), ...(p.tags || []),
@@ -70,9 +70,9 @@ export function productCard(p, ctx) {
     'data-updated': p.updated_at, 'data-name': p.name_zh, 'data-search': search,
   };
   const dataAttrs = Object.entries(data).map(([k, v]) => `${k}="${attr(v)}"`).join(' ');
-  return `<li class="pcard" ${dataAttrs}>
+  return `<li class="pcard" ${dataAttrs}${hidden ? ' hidden' : ''}>
   <a class="pcard-link" href="${url.product(p)}">
-    <div class="pcard-media">${picture(p.images?.[0], { sizes: '(max-width: 720px) 50vw, 280px' })}${p.published ? '' : '<span class="badge badge-draft">草稿</span>'}</div>
+    <div class="pcard-media">${picture(p.images?.[0], { sizes: '(max-width: 720px) 50vw, 280px', lazy: !eager })}${p.published ? '' : '<span class="badge badge-draft">草稿</span>'}</div>
     <div class="pcard-body">
       <span class="pcard-meta">${esc(roleText(p.seller_role))}${p.brand ? ` · ${esc(p.brand)}` : ''}</span>
       <h3 class="pcard-title">${esc(p.name_zh)}</h3>

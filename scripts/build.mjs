@@ -61,6 +61,9 @@ const bizBlock = (title = '營業登記資訊') => biz ? `<section class="wrap b
 </dl></section>` : '';
 const sortProducts = list => [...list].sort((a, b) => (b.featured - a.featured) || b.updated_at.localeCompare(a.updated_at) || a.name_zh.localeCompare(b.name_zh, 'zh-Hant'));
 const cardList = (list, cls = 'pgrid') => `<ul class="${cls}">${list.map(p => productCard(p, ctx)).join('')}</ul>`;
+// 商品列表：首屏只顯示前 24 件（其餘先 hidden，由 catalog.js 依篩選與「載入更多」顯示），前 4 張圖片不延遲載入以加快 LCP
+const CATALOG_PAGE = 24;
+const catalogList = list => `<ul class="pgrid catalog-grid">${list.map((p, i) => productCard(p, ctx, { hidden: i >= CATALOG_PAGE, eager: i < 4 })).join('')}</ul><noscript><style>.catalog-grid .pcard[hidden]{display:flex!important}</style></noscript>`;
 const sectionHead = (eyebrow, title, extra = '') => `<div class="section-head"><div><p class="eyebrow">${esc(eyebrow)}</p><h2>${esc(title)}</h2></div>${extra}</div>`;
 const pageHead = (eyebrow, title, lead, crumbs) => `<div class="page-head wrap">${crumbs || ''}<p class="eyebrow">${esc(eyebrow)}</p><h1>${esc(title)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}</div>`;
 const contactCta = (title = '還不確定怎麼選？', text = '告訴我們你的用途、預算與現有設備，一起把配置想清楚。') => `<section class="wrap cta-band"><div><h2>${esc(title)}</h2><p>${esc(text)}</p></div><div class="actions">${lineButton(site, 'LINE 詢價', 'btn btn-line')}${shopeeButton(site, '蝦皮賣場')}<a class="btn" href="/contact/">所有聯絡方式</a></div></section>`;
@@ -196,7 +199,7 @@ function catalogSection(list, { category } = {}) {
         <p class="results-count" id="results-count" aria-live="polite">${sorted.length ? `共 ${sorted.length} 件商品` : '目前沒有公開商品'}</p>
         <div class="field field-inline"><label for="f-sort">排序</label><select id="f-sort" name="sort"><option value="">推薦</option><option value="new">最新上架</option><option value="price-asc">價格低→高</option><option value="price-desc">價格高→低</option><option value="name">名稱</option></select></div>
       </div>
-      ${cardList(sorted, 'pgrid catalog-grid')}
+      ${catalogList(sorted)}
       <div class="empty" id="catalog-empty" ${sorted.length ? 'hidden' : ''}>
         <h2>${sorted.length ? '沒有符合條件的商品' : '商品資料整理中'}</h2>
         <p>${sorted.length ? '試試其他關鍵字，或清除篩選條件。也可以直接透過 LINE 詢問，我們協助找料。' : '此分類的商品正在整理上架。需要的零件或整機，歡迎直接透過 LINE 或蝦皮賣場詢問。'}</p>
