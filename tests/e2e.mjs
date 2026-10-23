@@ -152,7 +152,7 @@ console.log(`6. 正式版：${PUBLISHED} 件上架、rejected 不外洩、聯絡
   ok(r.status() === 404, 'rejected 商品頁在正式版為 404');
   await page.goto(PUB + '/contact/');
   ok(await page.getAttribute('.contact-line a.btn-line', 'href') === 'https://lin.ee/WIUCkWP', 'LINE 按鈕連到 https://lin.ee/WIUCkWP');
-  ok(await page.isVisible('.qr img'), 'LINE QR Code 顯示');
+  ok(await page.isVisible('.contact-line .contact-img img'), 'LINE QR Code 顯示');
   ok(await page.locator('a[href="https://shopee.tw/mixlin"]').count() > 0, '蝦皮賣場連結');
   ok(await page.locator('a[href="#"]').count() === 0, '沒有 href="#" 假連結');
   const sm = await (await page.request.get(PUB + '/sitemap.xml')).text();
@@ -175,24 +175,42 @@ console.log('7. 發布隔離：原始碼與草稿 JSON 不在正式網站上');
   await page.context().close();
 }
 
-console.log('8. 聯絡頁：LINE／Instagram QR、營業登記（手機版）');
+console.log('8. 聯絡頁：四張聯絡卡片（LINE／蝦皮／Email／Instagram）、營業登記（手機版）');
 {
   const page = await newPage(390);
   await page.goto(PUB + '/contact/');
-  const ig = page.locator('.contact-ig a.btn-ig');
-  ok(await ig.getAttribute('href') === 'https://www.instagram.com/spiritsparrow.battery/', 'Instagram 按鈕連到 @spiritsparrow.battery');
-  const igBox = await ig.boundingBox();
-  ok(igBox && igBox.height >= 44 && igBox.width >= 200, `Instagram 按鈕在手機上容易點擊（${Math.round(igBox?.width)}×${Math.round(igBox?.height)}）`);
-  const lineBox = await page.locator('.contact-line a.btn-line').boundingBox();
-  ok(lineBox && lineBox.height >= 44, 'LINE 按鈕在手機上容易點擊');
-  for (const sel of ['.contact-line .qr img', '.contact-ig .qr img']) {
-    await page.locator(sel).scrollIntoViewIfNeeded();
-    const loaded = await page.$eval(sel, img => img.complete && img.naturalWidth > 0);
-    const w = await page.$eval(sel, img => img.getBoundingClientRect().width);
-    ok(loaded && w >= 180, `${sel} 已載入且顯示寬度 ${Math.round(w)}px（可掃描）`);
+  ok(await page.locator('.contact-grid > .contact-card').count() === 4, '聯絡頁有 4 張卡片');
+  const links = {
+    '.contact-line a.btn': 'https://lin.ee/WIUCkWP',
+    '.contact-shopee a.btn': 'https://shopee.tw/mixlin',
+    '.contact-email a.btn': 'mailto:mixlin.lll@gmail.com?subject=EWP%20%E5%AE%98%E7%B6%B2%E8%A9%A2%E5%95%8F',
+    '.contact-ig a.btn': 'https://www.instagram.com/ewp.fpvlab/',
+  };
+  for (const [sel, href] of Object.entries(links)) ok(await page.getAttribute(sel, 'href') === href, `${sel} → ${href}`);
+  ok(!(await page.content()).includes('spiritsparrow'), '聯絡頁不再出現舊的 @spiritsparrow.battery');
+  for (const sel of ['.contact-line', '.contact-shopee', '.contact-email', '.contact-ig']) {
+    await page.locator(`${sel} img`).scrollIntoViewIfNeeded();
+    const loaded = await page.$eval(`${sel} img`, img => img.complete && img.naturalWidth > 0);
+    const r = await page.$eval(`${sel} .contact-img`, el => el.getBoundingClientRect().toJSON());
+    ok(loaded && r.width >= 240 && Math.abs(r.width - r.height) < 2, `${sel} 圖片已載入、1:1、顯示寬度 ${Math.round(r.width)}px（可掃描）`);
+    const b = await page.locator(`${sel} a.btn`).boundingBox();
+    ok(b && b.height >= 44 && b.width >= 200, `${sel} 按鈕在手機上容易點擊（${Math.round(b?.width)}×${Math.round(b?.height)}）`);
   }
-  const alt = await page.getAttribute('.contact-ig .qr img', 'alt');
-  ok(/spiritsparrow\.battery/.test(alt), 'Instagram QR 有可辨識的 alt 文字');
+  ok(/ewp\.fpvlab/.test(await page.getAttribute('.contact-ig img', 'alt')), 'Instagram QR 有可辨識的 alt 文字');
+  ok((await page.textContent('.site-footer')).includes('@ewp.fpvlab'), '頁尾 Instagram 已改為 @ewp.fpvlab');
+  // 電腦與平板：同一列的卡片圖片大小一致、按鈕上緣對齊（不再出現大片空白）
+  for (const w of [820, 1366]) {
+    const pg = await newPage(w);
+    await pg.goto(PUB + '/contact/');
+    const m = await pg.$$eval('.contact-card', cs => cs.map(c => ({ top: Math.round(c.getBoundingClientRect().top), img: c.querySelector('.contact-img').getBoundingClientRect().toJSON(), btn: c.querySelector('a.btn').getBoundingClientRect().toJSON() })));
+    const rows = Object.values(m.reduce((a, x) => ((a[x.top] ||= []).push(x), a), {}));
+    ok(rows.every(r => r.length >= 2), `${w}px：每列至少 2 張卡片（${rows.map(r => r.length).join('+')}）`);
+    for (const r of rows) {
+      ok(new Set(r.map(x => Math.round(x.btn.top))).size === 1 && new Set(r.map(x => Math.round(x.btn.height))).size === 1, `${w}px：同列按鈕位置與高度一致`);
+      ok(new Set(r.map(x => Math.round(x.img.top))).size === 1 && new Set(r.map(x => Math.round(x.img.width))).size === 1, `${w}px：同列圖片位置與尺寸一致`);
+    }
+    await pg.context().close();
+  }
   const body = await page.textContent('main');
   ok(body.includes('電翼動力航模企業社') && body.includes('00693689') && body.includes('台北市內湖區內湖路一段115號4樓'), '聯絡頁顯示營業登記名稱、統一編號、登記地址');
   ok(!body.includes('720322720'), '稅籍編號不公開');

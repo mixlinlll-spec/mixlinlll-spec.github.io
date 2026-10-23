@@ -26,7 +26,10 @@ for (const [k, c] of Object.entries(site.contact)) {
   if (!c.url && !c.value) errors.push(`site.json contact.${k}: enabled=true 但沒有 url/value`);
   if (c.url && !/^https:\/\//.test(c.url)) errors.push(`site.json contact.${k}: 網址必須是 https://`);
 }
-if (site.contact.line.enabled && site.contact.line.qr_image && !fs.existsSync(path.join(ROOT, site.contact.line.qr_image))) errors.push('LINE QR 圖檔不存在');
+for (const [k, key] of [['line', 'qr_image'], ['shopee', 'qr_image'], ['email', 'image'], ['instagram', 'qr_image']]) {
+  const f = site.contact[k]?.enabled && site.contact[k][key];
+  if (f && !fs.existsSync(path.join(ROOT, f))) errors.push(`site.json contact.${k}.${key}: 圖檔不存在 ${f}`);
+}
 if (warnings.length) console.warn(`⚠ 警告 ${warnings.length} 筆\n  ` + warnings.slice(0, 10).join('\n  ') + (warnings.length > 10 ? '\n  …' : ''));
 if (errors.length) { console.error(`✖ 資料驗證失敗 ${errors.length} 筆：\n  ` + errors.join('\n  ')); process.exit(1); }
 const pubCount = products.filter(p => p.published).length;
@@ -439,16 +442,19 @@ function simplePages() {
 ${bizBlock()}
 ${contactCta()}` });
 
-  // 聯絡
+  // 聯絡：四張卡片結構一致（標題 → 說明 → 1:1 圖片＋說明文字 → 按鈕），以 CSS subgrid 讓同一列的圖片與按鈕對齊
+  const card = ({ cls, title, desc, img, alt, caption, button }) => `<li class="contact-card ${cls}"><h2>${esc(title)}</h2><p>${esc(desc)}</p>${img ? `<figure class="contact-media"><div class="contact-img"><img src="${attr(img)}" width="720" height="720" alt="${attr(alt)}" loading="lazy" decoding="async"></div><figcaption>${caption}</figcaption></figure>` : '<div></div>'}${button}</li>`;
+  const scanHint = '電腦版請用手機掃描 QR Code';
+  const mailHref = c.email.value ? `mailto:${c.email.value}${c.email.subject ? `?subject=${encodeURIComponent(c.email.subject)}` : ''}` : '';
   const rows = [
-    c.line.enabled && c.line.url ? `<li class="contact-card contact-line"><h2>LINE 官方帳號</h2><p>整機、零件、維修與電池詢價，建議優先使用 LINE。</p>${lineButton(site, '加入 LINE 好友', 'btn btn-line btn-block')}${c.line.qr_image ? `<figure class="qr"><img src="${attr(c.line.qr_image)}" width="240" height="240" alt="電翼動力 LINE 官方帳號 QR Code（${attr(c.line.url)}）" loading="lazy"><figcaption>電腦版請用手機掃描 QR Code</figcaption></figure>` : ''}</li>` : '',
-    c.shopee.enabled && c.shopee.url ? `<li class="contact-card"><h2>蝦皮賣場</h2><p>已上架商品可直接在蝦皮下單，或透過賣場聊聊詢問。</p>${shopeeButton(site, '前往蝦皮賣場', 'btn btn-primary btn-block')}</li>` : '',
-    c.email.enabled && c.email.value ? `<li class="contact-card"><h2>Email</h2><p>適合寄送較長的需求說明或檔案。</p><a class="btn btn-block" href="mailto:${attr(c.email.value)}">${esc(c.email.value)}</a></li>` : '',
-    c.instagram.enabled && c.instagram.url ? `<li class="contact-card contact-ig"><h2>Instagram</h2><p>${esc(c.instagram.label)}</p><a class="btn btn-ig btn-block" href="${attr(c.instagram.url)}" target="_blank" rel="noopener">開啟 Instagram <span aria-hidden="true">↗</span></a>${c.instagram.qr_image ? `<figure class="qr qr-ig"><div class="qr-crop"><img src="${attr(c.instagram.qr_image)}" width="1070" height="1530" alt="Instagram @spiritsparrow.battery QR Code（${attr(c.instagram.url)}）" loading="lazy"></div><figcaption>電腦版請用手機掃描 QR Code</figcaption></figure>` : ''}</li>` : '',
-    c.facebook.enabled && c.facebook.url ? `<li class="contact-card"><h2>Facebook</h2><a class="btn btn-block" href="${attr(c.facebook.url)}" target="_blank" rel="noopener">開啟 Facebook</a></li>` : '',
-    c.phone.enabled && c.phone.value ? `<li class="contact-card"><h2>電話</h2><a class="btn btn-block" href="tel:${attr(c.phone.value)}">${esc(c.phone.value)}</a></li>` : '',
+    c.line.enabled && c.line.url ? card({ cls: 'contact-line', title: 'LINE 官方帳號', desc: '整機、零件、維修與電池詢價，建議優先使用 LINE。', img: c.line.qr_image, alt: `電翼動力 LINE 官方帳號 QR Code（${c.line.url}）`, caption: scanHint, button: lineButton(site, '加入 LINE 好友', 'btn btn-line btn-block') }) : '',
+    c.shopee.enabled && c.shopee.url ? card({ cls: 'contact-shopee', title: '蝦皮賣場', desc: '已上架商品可直接在蝦皮下單，或透過賣場聊聊詢問。', img: c.shopee.qr_image, alt: `電翼動力蝦皮賣場 QR Code（${c.shopee.url}）`, caption: scanHint, button: shopeeButton(site, '前往蝦皮賣場', 'btn btn-primary btn-block') }) : '',
+    c.email.enabled && c.email.value ? card({ cls: 'contact-email', title: 'Email', desc: '商務合作、技術詢問，或寄送較長的需求說明與檔案。', img: c.email.image, alt: `EWP 聯絡 Email：${c.email.value}`, caption: `<span class="contact-addr">${esc(c.email.value)}</span>`, button: `<a class="btn btn-mail btn-block" href="${attr(mailHref)}">寄信給 EWP</a>` }) : '',
+    c.instagram.enabled && c.instagram.url ? card({ cls: 'contact-ig', title: 'Instagram', desc: `追蹤 @${c.instagram.handle || ''}，掌握電翼動力最新動態。`, img: c.instagram.qr_image, alt: `電翼動力 Instagram @${c.instagram.handle || ''} QR Code（${c.instagram.url}）`, caption: scanHint, button: `<a class="btn btn-ig btn-block" href="${attr(c.instagram.url)}" target="_blank" rel="noopener">開啟 Instagram <span aria-hidden="true">↗</span></a>` }) : '',
+    c.facebook.enabled && c.facebook.url ? card({ cls: 'contact-fb', title: 'Facebook', desc: '', button: `<a class="btn btn-block" href="${attr(c.facebook.url)}" target="_blank" rel="noopener">開啟 Facebook</a>` }) : '',
+    c.phone.enabled && c.phone.value ? card({ cls: 'contact-phone', title: '電話', desc: '', button: `<a class="btn btn-block" href="tel:${attr(c.phone.value)}">${esc(c.phone.value)}</a>` }) : '',
   ].join('');
-  page('contact/index.html', { title: '聯絡我們', description: '透過 LINE 官方帳號、蝦皮賣場或 Email 聯絡電翼動力 EWP。', path: '/contact/', active: 'contact',
+  page('contact/index.html', { title: '聯絡我們', description: '透過 LINE 官方帳號、蝦皮賣場、Email 或 Instagram 聯絡電翼動力 EWP。', path: '/contact/', active: 'contact',
     body: `${pageHead('CONTACT', '聯絡我們', '先告訴我們你的設備與用途，一起把配置想清楚。', breadcrumbs([{ name: '首頁', href: '/' }, { name: '聯絡我們' }]))}
 <section class="wrap"><ul class="contact-grid">${rows}</ul>
 ${(!c.hours.enabled || !c.address.enabled) ? `<p class="muted contact-note">${esc(c.online_only_note)}</p>` : ''}
