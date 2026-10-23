@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.5.3（2026-10-23，修正後台商品列表 No entries）
+
+- `.pages.yml` 商品集合加上 `filename: "{id}.json"`：Pages CMS 未設定時預設副檔名為 `.md`，240 件 `.json` 全被過濾。
+- 往返測試新增列表／搜尋／儲存路徑檢查（以 Pages CMS 程式碼的過濾規則重現 No entries 與修正後 240 件），共 48 項。
+- 新增 `cms-graphql-probe.yml`：以 Pages CMS 相同 GraphQL 查詢實測讀取商品資料夾（4 次皆成功，2,098 KB、1.0–4.1 秒）；CI 加入資料容量警告。
+
 ## v2.5.2（2026-10-23，部署前獨立檢查、庫存保密）
 
 - 部署：`pages.yml` 新增獨立檢查 `cms-normalize --pending-count`（依商品檔歷史，不看最後一筆 commit 訊息），有尚未校正的後台儲存就不部署；新增「後台儲存後立刻有一般 commit」競態測試。

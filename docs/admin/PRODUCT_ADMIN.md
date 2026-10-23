@@ -97,6 +97,14 @@
 **驗證**：`tests/pages-cms-roundtrip.mjs` 直接打包 Pages CMS 原始碼（固定 2.1.8，commit `6f4e860`），對全部商品模擬「開啟 → 不修改 → 儲存 → 校正」，結果必須與原檔逐字相同；
 並測試改名、改價、改庫存、詢價、上下架、未核准上架、照片排序／刪除／上傳、竄改唯讀欄位、新增規格、改壞隔離、整批退回與端對端 git 流程。CI 每次都會跑。
 
+### 商品列表載入（2026-10-23 實測）
+- **`filename: "{id}.json"` 必須保留**：Pages CMS 2.1.8 未設定 filename 時預設 `{year}-{month}-{day}-{primary}.md`，並以它的副檔名過濾檔案 → 240 件 `.json` 全部被濾掉（畫面顯示 No entries），儲存也會被拒絕。
+- Pages CMS 以**一次 GraphQL 查詢**讀取整個商品資料夾的內容（Pages CMS Issue #423：資料量大時可能失敗）。
+  以同一查詢在本 repo 實測 4 次：240 件、2,098 KB，全部成功，耗時 1.0–4.1 秒（GitHub 上限約 10 秒）。
+  `cms-graphql-probe.yml` 會在商品資料變動時重測；CI 在資料夾超過 3.5 MB 時警告。
+- 若日後逾時：把 `review` 內的蝦皮來源資料（原始描述、媒體網址、價格快照，約佔 43%）移到 `src/data/shopee/` 底下的獨立檔案，商品檔約可減半；需同步調整建置與匯入程式。
+- 如果後台仍顯示舊的「No entries」：重新整理頁面；仍不行時由擁有者在 Pages CMS 的 Cache 頁清除快取。
+
 ### 修改 `.pages.yml` 的規則
 1. `settings.content.merge` 必須是 `true`。
 2. 在 `variants`、`images`、`specifications` 加欄位時，商品資料裡出現的每個子欄位都要宣告（測試會檢查）。

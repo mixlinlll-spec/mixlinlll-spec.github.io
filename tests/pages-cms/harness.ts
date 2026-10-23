@@ -56,3 +56,41 @@ export function saveEntry(config: any, name: string, formValues: any, existingTe
   const text = stringify(sanitizeObject(finalContentObject), { format: schema.format, delimiters: schema.delimiters });
   return { ok: true, text };
 }
+
+// 商品列表：對應 app/api/[owner]/[repo]/[branch]/collections/[name]/route.ts 的 parseContents() 與搜尋過濾
+// （副檔名過濾、exclude、解析 JSON、讀取欄位、type=search 時依 fields.* 比對）
+export function listCollection(config: any, name: string, files: { name: string; path: string; content: string }[], opts: { query?: string; fields?: string[] } = {}) {
+  const schema = getSchemaByName(config.object, name);
+  const extension = schema.extension ?? "";
+  const excluded = schema.exclude || [];
+  const contents: any[] = [];
+  const errors: string[] = [];
+  for (const item of files) {
+    if (!((extension === "" || item.path.endsWith(`.${extension}`)) && !excluded.includes(item.name))) continue;
+    try {
+      const parsed = parse(item.content, { format: schema.format, delimiters: schema.delimiters });
+      const fields = deepMap(parsed, schema.fields, (value: any, field: any) => (typeof field.type === "string" && readFns[field.type] ? readFns[field.type](value, field, config) : value));
+      contents.push({ name: item.name, path: item.path, fields });
+    } catch (e: any) { errors.push(`${item.path}: ${e.message}`); }
+  }
+  let result = contents;
+  if (opts.query) {
+    const q = opts.query.toLowerCase();
+    const searchFields = opts.fields || [];
+    result = contents.filter(item => searchFields.some(f => {
+      if (f === "name" || f === "path") return String(item[f] || "").toLowerCase().includes(q);
+      if (f.startsWith("fields.")) { const v = item.fields?.[f.slice(7)]; return v && String(v).toLowerCase().includes(q); }
+      return false;
+    }));
+  }
+  return { schema: { extension, format: schema.format, filename: schema.filename }, contents: result, errors };
+}
+
+// 儲存時的路徑檢查：對應 files/[path]/route.ts（路徑必須在 collection 內、副檔名必須等於 schema.extension）
+export function checkSavePath(config: any, name: string, path: string) {
+  const schema = getSchemaByName(config.object, name);
+  if (!path.startsWith(schema.path)) return `Invalid path "${path}"`;
+  const ext = path.split(".").pop();
+  if (ext !== (schema.extension ?? "")) return `Invalid extension "${ext}" for collection "${name}".`;
+  return null;
+}

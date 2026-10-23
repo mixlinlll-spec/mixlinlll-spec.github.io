@@ -32,6 +32,11 @@ jobs:
         run: |
           npm install --no-save --no-audit --no-fund --no-package-lock sharp@0.35.4
           node scripts/cms-normalize.mjs
+      - name: 商品資料容量（Pages CMS 以單一 GraphQL 查詢讀取整個資料夾）
+        run: |
+          KB=$(du -sk src/data/products | cut -f1); N=$(ls src/data/products/*.json | wc -l)
+          echo "::notice title=商品資料容量::$N 件、${KB} KB（後台一次讀取；實測 2.1 MB 約 1–4 秒）"
+          if [ "$KB" -gt 3500 ]; then echo "::warning title=商品資料容量::超過 3.5 MB，後台讀取可能逾時；請把 review 的來源資料移出商品檔（見 docs/admin/PRODUCT_ADMIN.md）"; fi
       - name: 驗證商品、設定與圖片路徑
         run: node scripts/build.mjs --check
       - name: 資料／審核／路徑／發布產物單元測試

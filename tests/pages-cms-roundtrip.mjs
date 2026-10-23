@@ -68,6 +68,26 @@ ok(JSON.stringify(fieldsOf(sub('specifications')).editable) === JSON.stringify([
 ok(products.operations?.create === false && products.operations?.delete === false && products.operations?.rename === false, '後台不能新增、刪除、改檔名（商品 ID 不變）');
 ok(!products.fields.some(f => f.name === 'review'), 'review（審核）不在後台，無法一鍵核准');
 
+// 商品列表：Pages CMS 以 filename 推算副檔名並過濾檔案。未設定 filename 時預設 .md，240 件 .json 會全部被濾掉（No entries）
+{
+  const files = fs.readdirSync(PRODUCTS_DIR).filter(f => f.endsWith('.json')).sort();
+  const items = files.map(f => ({ name: f, path: `src/data/products/${f}`, content: fs.readFileSync(path.join(PRODUCTS_DIR, f), 'utf8') }));
+  const list = H.listCollection(config, 'products', items);
+  ok(list.schema.extension === 'json' && list.schema.format === 'json', `商品集合副檔名為 json（filename: ${list.schema.filename}）`);
+  ok(list.contents.length === files.length && list.errors.length === 0, `商品列表顯示 ${list.contents.length} / ${files.length} 件、解析錯誤 0`);
+  ok(list.contents.every(c => typeof c.fields.name_zh === 'string' && c.fields.name_zh), '每件商品都有名稱（列表主欄位）');
+  const searchFields = (products.view.search || []).map(f => `fields.${f}`);
+  const sample = JSON.parse(items.find(i => i.name === 'sp-25447731916.json').content);
+  const hit = H.listCollection(config, 'products', items, { query: 'T15', fields: searchFields });
+  ok(hit.contents.some(c => c.fields.id === 'sp-25447731916') && hit.contents.length < files.length, `搜尋「T15」找到 ${hit.contents.length} 件（含 ${sample.name_zh.slice(0, 12)}…）`);
+  ok(H.listCollection(config, 'products', items, { query: sample.shopee_item_id, fields: searchFields }).contents.length === 1, '以蝦皮商品 ID 搜尋找到 1 件');
+  ok(H.listCollection(config, 'products', items, { query: 'sp-25447731916', fields: searchFields }).contents.length === 1, '以商品 ID 搜尋找到 1 件');
+  ok(H.checkSavePath(config, 'products', 'src/data/products/sp-25447731916.json') === null, '儲存路徑與副檔名檢查通過（.json）');
+  const noFilename = H.loadConfig(yml.replace(/\n\s*filename: "\{id\}\.json"/, '')).config;
+  const bad = H.listCollection(noFilename, 'products', items);
+  ok(bad.contents.length === 0 && H.checkSavePath(noFilename, 'products', 'src/data/products/sp-25447731916.json'), '對照組：未設定 filename 時列表為 0 件（No entries）且儲存被拒');
+}
+
 // 實際資料中的每個陣列子欄位都必須在設定中（否則儲存時會被整個陣列覆蓋掉）
 const files = fs.readdirSync(PRODUCTS_DIR).filter(f => f.endsWith('.json')).sort();
 const all = files.map(f => [f, fs.readFileSync(path.join(PRODUCTS_DIR, f), 'utf8')]);
