@@ -217,7 +217,7 @@ console.log('4. 端對端：後台 commit → cms-normalize（暫存 git 工作�
   const wt = fs.mkdtempSync(path.join(os.tmpdir(), 'ewp-cms-'));
   const g = (...a) => execFileSync('git', a, { cwd: wt, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
   // 只複製需要的檔案，建立獨立 repo（不動到目前的 repo）
-  for (const d of ['scripts', 'src', '.pages.yml', 'package.json', 'assets/contact']) fs.cpSync(path.join(ROOT, d), path.join(wt, d), { recursive: true });
+  for (const d of ['scripts', 'src', '.pages.yml', 'package.json', 'assets/contact', 'assets/img/journal']) if (fs.existsSync(path.join(ROOT, d))) fs.cpSync(path.join(ROOT, d), path.join(wt, d), { recursive: true });
   const [mf] = MULTI; const [rf] = REJECTED;
   for (const f of [mf, rf]) { const id = f.replace('.json', ''); const d = path.join(ROOT, 'assets/img/products', id); if (fs.existsSync(d)) fs.cpSync(d, path.join(wt, 'assets/img/products', id), { recursive: true }); }
   if (fs.existsSync(path.join(ROOT, 'node_modules'))) fs.symlinkSync(path.join(ROOT, 'node_modules'), path.join(wt, 'node_modules'));
