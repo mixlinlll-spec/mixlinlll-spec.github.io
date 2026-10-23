@@ -103,7 +103,19 @@ function homePage() {
     ['詢問維修時，需要提供哪些資訊？', '提供機型、飛控與電調型號、韌體版本、故障發生經過，以及清楚的接線照片。如果有設定備份、錯誤畫面或黑盒檔案，也可以一起準備。'],
     ['網頁上的機型可以調整配置嗎？', '可以依用途討論圖傳、接收機與配件選擇。頁面為代表配置介紹，實際零件、供貨狀況、價格與交期請於委託前確認。'],
   ];
-  const body = `
+  const v = site.home_video;
+  const ytWatch = v?.enabled && v.youtube_id ? `https://www.youtube.com/watch?v=${encodeURIComponent(v.youtube_id)}` : '';
+  // 首頁影片：先顯示封面＋播放鍵（一般連結，沒有 JavaScript 也能到 YouTube 觀看），點擊後由 site.js 換成 youtube-nocookie 播放器
+  const videoBlock = ytWatch ? `<section class="home-video wrap" aria-labelledby="home-video-title">
+  <div class="video-frame">
+    <a class="yt-lite" href="${attr(ytWatch)}" data-yt="${attr(v.youtube_id)}" data-title="${attr(v.title)}" target="_blank" rel="noopener" aria-label="${attr(`播放影片：${v.title}`)}">
+      <img src="https://i.ytimg.com/vi/${attr(v.youtube_id)}/hqdefault.jpg" alt="" width="480" height="360" fetchpriority="high" decoding="async">
+      <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#ff4a3d"/><path d="M45 24 27 14v20z" fill="#fff"/></svg></span>
+    </a>
+  </div>
+  <div class="video-meta"><div><p class="eyebrow">${esc(v.eyebrow || '')}</p><h2 id="home-video-title">${esc(v.title)}</h2>${v.caption ? `<p>${esc(v.caption)}</p>` : ''}</div><a class="video-yt-link" href="${attr(ytWatch)}" target="_blank" rel="noopener">在 YouTube 觀看 <span aria-hidden="true">↗</span></a></div>
+</section>` : '';
+  const body = `${videoBlock}
 <section class="hero wrap">
   <div class="hero-top eyebrow"><span><span class="red">EWP /</span> FPV WORKSHOP</span><span class="hide-sm">TAIWAN · BUILD / TUNE / FLY</span></div>
   <div class="hero-grid">
@@ -119,7 +131,7 @@ function homePage() {
       <div class="hero-note">BUILT WITH PURPOSE.<br>READY TO FLY.</div>
     </div>
     <figure class="feature">
-      ${picture(huan.poster_image, { lazy: false, sizes: '(max-width: 900px) 100vw, 600px' })}
+      ${picture(huan.poster_image, { lazy: true, sizes: '(max-width: 900px) 100vw, 600px' })}
       <figcaption><strong>幻 / HUAN</strong><span>5” FREESTYLE · 6S</span></figcaption>
     </figure>
   </div>

@@ -10,6 +10,14 @@
   "base_url": "https://www.ewpfpv.com",
   "default_description": "電翼動力 EWP，專注 FPV 穿越機整機、零件、動力電池、客製組裝、維修與調校。",
   "default_og_image": "/assets/img/builds/huan-1200.jpg",
+  "home_video": {
+    "_comment": "首頁最上方的 YouTube 影片。只換 youtube_id 就能換影片；enabled=false 則不顯示。點播放前只顯示封面（不載入 YouTube 播放器、不追蹤），點下去才以 youtube-nocookie 播放。",
+    "enabled": true,
+    "youtube_id": "FtRTQxvAALc",
+    "eyebrow": "DEVELOPMENT LOG",
+    "title": "KD7 X8 影視機｜組裝紀錄",
+    "caption": "大型 X8 共軸影視機開發中，這是它的組裝過程紀錄。"
+  },
   "business": {
     "_comment": "營業登記資訊（EWP 2026-10-22 提供並確認可公開，須標註非實體門市）。稅籍編號屬內部稅務資料，不放入公開網站與公開 repo。不得標示為門市、展示間或取貨點；不加地圖導航。",
     "legal_name": "電翼動力航模企業社",

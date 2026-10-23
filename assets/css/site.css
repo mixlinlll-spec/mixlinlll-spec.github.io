@@ -393,3 +393,20 @@ section{padding:36px 0}
 .var-thumb{display:inline-block;width:40px;height:40px;object-fit:cover;vertical-align:middle;margin-right:10px;border:1px solid var(--line)}
 .snap{margin-top:12px;color:var(--text)}
 .snap summary{cursor:pointer;color:var(--warn);font-weight:700;min-height:32px}
+
+/* ---------- v2.8：首頁最上方 YouTube 影片（點擊才載入播放器） ---------- */
+.home-video{margin-top:24px;margin-bottom:8px}
+.video-frame{position:relative;aspect-ratio:16/9;width:min(100%,calc((100svh - var(--header-h) - 190px)*16/9));min-width:min(100%,560px);margin-inline:auto;background:#000;border:1px solid var(--line);overflow:hidden}
+.video-meta{width:min(100%,calc((100svh - var(--header-h) - 190px)*16/9));min-width:min(100%,560px);margin-inline:auto}
+.yt-lite{position:absolute;inset:0;display:block;cursor:pointer}
+.yt-lite img{width:100%;height:100%;object-fit:cover;display:block;transition:filter .2s}
+.yt-lite:hover img,.yt-lite:focus-visible img{filter:brightness(.85)}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:54px;filter:drop-shadow(0 4px 14px rgba(0,0,0,.5));transition:transform .2s}
+.yt-play svg{width:100%;height:100%}
+.yt-lite:hover .yt-play,.yt-lite:focus-visible .yt-play{transform:translate(-50%,-50%) scale(1.08)}
+.yt-iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-meta{display:flex;justify-content:space-between;align-items:flex-end;gap:16px 32px;flex-wrap:wrap;margin-top:16px}
+.video-meta h2{margin:6px 0 4px;font-size:clamp(22px,3vw,30px)}
+.video-meta p:not(.eyebrow){margin:0;color:var(--muted)}
+.video-yt-link{color:var(--sand);font-weight:700;white-space:nowrap}
+@media(max-width:599px){.home-video{margin-top:12px}.yt-play{width:64px;height:46px}}
