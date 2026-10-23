@@ -10,6 +10,9 @@ preview_urls = false
 keep_vars = true
 
 [vars]
+# Cloudflare Access（非機密：AUD 與團隊網域本來就會出現在登入網址與 JWT 中）
+ACCESS_AUD = "7918cfa129cbee88ae2f300821849f10f93cfef3d394235bce81fcbc602382f0"
+ACCESS_TEAM_DOMAIN = "https://broken-snow-afaa.cloudflareaccess.com"
 PAGES_CMS_EDIT_BASE = "https://app.pagescms.org/mixlinlll-spec/mixlinlll-spec.github.io/main/collection/products/edit/"
 
 [[d1_databases]]
