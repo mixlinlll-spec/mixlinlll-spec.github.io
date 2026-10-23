@@ -1,3 +1,4 @@
+import { newVariantKey } from './data.mjs';
 // 商品後台（Pages CMS）儲存後的資料校正。純函式、無外部套件，方便單元測試。
 //
 // Pages CMS 儲存時（見 docs/admin/PRODUCT_ADMIN.md）：
@@ -56,22 +57,34 @@ function pickEditable(prevItem, nextItem, editableKeys, defaults) {
 }
 
 function normalizeVariants(prevList = [], nextList = []) {
-  // 先用蝦皮規格 ID 對應舊資料；對不到的（新增規格或 ID 被竄改）再用相同位置對應尚未使用的舊規格
+  // 規格身分（庫存後台以它對應 SKU）：蝦皮規格 ID 或 key，建立後不可改變。
+  // 1. 依蝦皮規格 ID 對應  2. 依 key 對應（排序、改名都不影響）
+  // 3. 送來的 ID 是竄改的（舊資料沒有）→ 用相同位置對應舊規格；舊資料沒有任何身分（舊格式）→ 也用相同位置
+  // 對不到的是新規格：不可自行填蝦皮規格 ID，給一個新的 key
   const used = new Set();
+  const take = i => { if (i >= 0) used.add(i); return i; };
   const match = nextList.map(v => {
-    const i = v.shopee_variation_id ? prevList.findIndex((p, j) => !used.has(j) && p.shopee_variation_id && String(p.shopee_variation_id) === String(v.shopee_variation_id)) : -1;
-    if (i >= 0) used.add(i);
-    return i;
+    if (v.shopee_variation_id) return take(prevList.findIndex((p, j) => !used.has(j) && p.shopee_variation_id && String(p.shopee_variation_id) === String(v.shopee_variation_id)));
+    if (v.key) return take(prevList.findIndex((p, j) => !used.has(j) && !p.shopee_variation_id && p.key === v.key));
+    return -1;
   });
   nextList.forEach((v, n) => {
-    if (match[n] < 0 && n < prevList.length && !used.has(n) && (v.shopee_variation_id || !prevList[n].shopee_variation_id)) { match[n] = n; used.add(n); }
+    if (match[n] >= 0 || n >= prevList.length || used.has(n)) return;
+    const p = prevList[n];
+    const tamperedId = v.shopee_variation_id && p.shopee_variation_id;
+    const tamperedKey = v.key && !p.shopee_variation_id && p.key; // 隱藏欄位被竄改：沿用同位置舊規格的身分
+    const legacy = !p.shopee_variation_id && !p.key && !v.key && !v.shopee_variation_id;
+    if (tamperedId || tamperedKey || legacy) { match[n] = n; used.add(n); }
   });
+  const taken = new Set(prevList.map(p => p.key).filter(Boolean));
   return nextList.map((v, n) => {
     const prev = match[n] >= 0 ? prevList[match[n]] : undefined;
     const out = pickEditable(prev, v, EDITABLE_VARIANT_KEYS, VARIANT_DEFAULTS);
-    if (prev?.shopee_variation_id) out.shopee_variation_id = prev.shopee_variation_id; // 規格 ID 不可改
-    else delete out.shopee_variation_id; // 新增的規格不可自行填蝦皮規格 ID
-    return out;
+    delete out.shopee_variation_id; delete out.key;
+    if (prev?.shopee_variation_id) out.shopee_variation_id = prev.shopee_variation_id;
+    else if (prev?.key) out.key = prev.key;
+    else { out.key = newVariantKey(taken); taken.add(out.key); }
+    return ordered(prev, out);
   });
 }
 
@@ -168,7 +181,7 @@ export function diffProduct(prev, next) {
     if (!same(prev[k], next[k])) out.push(['specifications', 'description'].includes(k) ? `${label[k]}已修改` : `${label[k] || k}：${show(prev[k])} → ${show(next[k])}`);
   }
   const pv = prev.variants || []; const nv = next.variants || [];
-  const key = v => v.shopee_variation_id || v.name;
+  const key = v => v.shopee_variation_id || v.key || v.name;
   for (const v of nv) {
     const o = pv.find(x => key(x) === key(v));
     if (!o) { out.push(`新增規格「${v.name}」`); continue; }

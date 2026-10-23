@@ -36,11 +36,11 @@ const q = s => `'${String(s).replace(/'/g, "''")}'`;
 const csv = ['sku,product_id,shopee_item_id,shopee_variation_id,variant_name,stock_on_hand,captured_at',
   ...rows.map(r => [r.sku, r.product_id, r.item, r.variation, `"${r.name.replace(/"/g, '""')}"`, r.stock, r.captured_at].join(','))].join('\n') + '\n';
 const now = new Date().toISOString();
-const sql = ['-- 由 export-stock-for-d1.mjs 產生；蝦皮快照庫存（非即時），匯入前請核對實際盤點', 'BEGIN TRANSACTION;',
+const sql = ['-- 由 export-stock-for-d1.mjs 產生；蝦皮快照庫存（非即時），匯入前請核對實際盤點（D1 不接受 BEGIN／COMMIT 交易語句）',
   ...rows.flatMap(r => [
     `UPDATE skus SET stock_on_hand = ${Number(r.stock)}, updated_at = ${q(now)} WHERE sku = ${q(r.sku)};`,
     `INSERT INTO inventory_ledger (sku, delta_on_hand, reason, actor, note, created_at) SELECT ${q(r.sku)}, ${Number(r.stock)}, 'sync', 'seed', ${q('蝦皮快照 ' + r.captured_at)}, ${q(now)} WHERE EXISTS (SELECT 1 FROM skus WHERE sku = ${q(r.sku)});`,
-  ]), 'COMMIT;'].join('\n') + '\n';
+  ])].join('\n') + '\n';
 fs.mkdirSync(path.dirname(out), { recursive: true });
 fs.writeFileSync(out + '.csv', csv); fs.writeFileSync(out + '.sql', sql);
 console.log(`✓ ${rows.length} 筆庫存（版本 ${rev}）→ ${out}.csv、${out}.sql（請勿提交到 GitHub）`);

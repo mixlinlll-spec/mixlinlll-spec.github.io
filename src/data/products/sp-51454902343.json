@@ -113,13 +113,15 @@
       "name": "4:3 版本",
       "sku": null,
       "price_twd": null,
-      "availability": "unknown"
+      "availability": "unknown",
+      "key": "v-179b8811"
     },
     {
       "name": "16:9 版本",
       "sku": null,
       "price_twd": null,
-      "availability": "unknown"
+      "availability": "unknown",
+      "key": "v-874b68b1"
     }
   ],
   "price_twd": 1037,

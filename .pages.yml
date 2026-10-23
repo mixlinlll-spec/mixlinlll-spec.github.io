@@ -171,6 +171,7 @@ content:
                 - { value: unknown, label: 供貨狀況請洽詢 }
           - { name: sku, label: 貨號 SKU, type: string }
           - { name: shopee_variation_id, label: 蝦皮規格 ID（不可修改）, type: string, readonly: true }
+          - { name: key, type: string, hidden: true }   # 規格識別碼（沒有蝦皮規格 ID 時使用；庫存後台以它對應 SKU，不可改）
           - name: image
             label: 規格圖
             type: object

@@ -184,6 +184,14 @@ describe('庫存數量保密（EWP 決定：repo 公開，不存放真實庫存�
     for (const l of Object.values(svc.listings)) assert.ok(!l.sales.some(r => 'stock' in r));
     assert.ok(!fs.readFileSync(path.join(ROOT, 'docs/shopee-import.csv'), 'utf8').includes('快照庫存'));
   });
+  test('規格識別碼：沒有蝦皮規格 ID 的規格必須有固定 key、不可重複', () => {
+    const v = (o = {}) => ({ name: 'A', sku: null, price_twd: null, availability: 'unknown', ...o });
+    assert.ok(errs({ ...base(), variants: [v()] }).some(e => e.includes('規格識別碼')));
+    assert.deepEqual(errs({ ...base(), variants: [v({ key: 'v-0123abcd' })] }), []);
+    assert.ok(errs({ ...base(), variants: [v({ key: 'v-0123abcd' }), v({ name: 'B', key: 'v-0123abcd' })] }).some(e => e.includes('重複')));
+    assert.ok(errs({ ...base(), variants: [v({ key: 'bad' })] }).some(e => e.includes('key 格式')));
+    for (const p of products) for (const x of p.variants || []) assert.ok(x.shopee_variation_id || /^v-[0-9a-f]{8}$/.test(x.key), p.id);
+  });
   test('驗證會擋下任何寫回的庫存數量', () => {
     assert.ok(errs({ ...base(), stock_qty: 3 }).some(e => e.includes('stock_qty')));
     assert.ok(errs({ ...base(), variants: [{ name: 'A', price_twd: null, availability: 'unknown', stock_qty: 0 }] }).some(e => e.includes('stock_qty')));

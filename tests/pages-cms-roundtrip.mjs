@@ -192,6 +192,20 @@ const sameExcept = (a, b, keys) => JSON.stringify(without(a, keys)) === JSON.str
   const v = r.product.variants.at(-1);
   ok(v.name === '新規格' && v.price_twd === 999 && v.sku === null && !('shopee_variation_id' in v) && !r.errs.length, '新增規格');
 }
+// 規格識別碼（庫存後台以它對應 SKU）：改名、排序、刪除、新增都不能讓既有規格換身分
+{
+  const KEYED = pick(p => p.variants.length >= 2 && p.variants.every(v => !v.shopee_variation_id && v.key));
+  const orig = JSON.parse(KEYED[1]).variants;
+  let r = edit(KEYED, f => { f.variants[0].name = f.variants[0].name + '（改名）'; });
+  ok(r.product.variants[0].key === orig[0].key && r.product.variants[0].name.endsWith('（改名）') && !r.errs.length, '規格改名：識別碼不變');
+  r = edit(KEYED, f => { f.variants.reverse(); });
+  ok(JSON.stringify(r.product.variants.map(v => [v.name, v.key])) === JSON.stringify([...orig].reverse().map(v => [v.name, v.key])) && !r.errs.length, '規格排序：識別碼跟著規格走');
+  r = edit(KEYED, f => { f.variants.splice(0, 1); f.variants.push({ name: '新增規格', price_twd: 100, availability: 'preorder' }); });
+  const keys = r.product.variants.map(v => v.key);
+  ok(keys[0] === orig[1].key && /^v-[0-9a-f]{8}$/.test(keys[1]) && !orig.some(o => o.key === keys[1]) && !r.errs.length, '刪除一個、新增一個：保留的規格識別碼不變，新規格得到新的識別碼');
+  r = edit(KEYED, f => { f.variants[1].key = f.variants[0].key; });
+  ok(JSON.stringify(r.product.variants.map(v => v.key)) === JSON.stringify(orig.map(v => v.key)) && !r.errs.length, '竄改成重複的識別碼：還原為原本的識別碼，不會兩個規格共用');
+}
 {
   const r = edit(MULTI, f => { f.price_twd = 0; f.variants = []; f.price_display = 'fixed'; });
   ok(r.error || r.product.price_display === 'inquiry', '價格 0：後台擋下（最小值 1）或改為詢價，不會出現 0 元');

@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import crypto from 'node:crypto';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const DATA_DIR = path.join(ROOT, 'src', 'data');
@@ -34,6 +35,14 @@ export const AVAILABILITY = {
   unknown: '供貨狀況請洽詢',
 };
 export const PRICE_DISPLAY = ['fixed', 'from', 'inquiry'];
+
+// 規格識別碼：沒有蝦皮規格 ID 的規格用 key（建立後永不改變），庫存後台以它對應 SKU，改名或排序都不影響
+export const VARIANT_KEY_RE = /^v-[0-9a-f]{8}$/;
+export function newVariantKey(taken = new Set()) {
+  let k;
+  do { k = 'v-' + crypto.randomBytes(4).toString('hex'); } while (taken.has(k));
+  return k;
+}
 
 export function readJSON(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -132,11 +141,15 @@ export function validateProducts(products, categories) {
     if (['fixed', 'from'].includes(p.price_display) && !(p.price_twd > 0)) err(`price_display=${p.price_display} 需要有效的 price_twd`);
     if (p.price_display === 'inquiry' && p.price_twd != null) err(`price_display=inquiry 時 price_twd 必須為 null`);
     if (p.shopee_url && !/^https:\/\/(shopee\.tw|tw\.shp\.ee)\//.test(p.shopee_url)) err(`shopee_url 必須是 https://shopee.tw/ 或 https://tw.shp.ee/ 網址`);
+    { const keys = (p.variants || []).map(v => v.key).filter(Boolean); if (new Set(keys).size !== keys.length) err('規格識別碼 key 重複'); }
+    { const vids = (p.variants || []).map(v => v.shopee_variation_id).filter(Boolean); if (new Set(vids.map(String)).size !== vids.length) err('蝦皮規格 ID 重複'); }
     for (const [i, v] of (p.variants || []).entries()) {
       if (!v.name) err(`variants[${i}] 缺少 name`);
       if (v.price_twd != null && !(v.price_twd > 0)) err(`variants[${i}].price_twd 不得為 0`);
       if (v.availability && !AVAILABILITY[v.availability]) err(`variants[${i}].availability 不合法`);
       if ('stock_qty' in v) err(`variants[${i}] 不可存放庫存數量 stock_qty（庫存屬機密）`);
+      if (!v.shopee_variation_id && !VARIANT_KEY_RE.test(v.key || '')) err(`variants[${i}]（${v.name}）缺少規格識別碼 key（沒有蝦皮規格 ID 的規格必須有固定的 key）`);
+      if (v.key !== undefined && !VARIANT_KEY_RE.test(v.key)) err(`variants[${i}].key 格式錯誤`);
       if (v.sku) { if (skus.has(v.sku)) err(`SKU 重複：${v.sku}`); skus.set(v.sku, at); }
     }
     for (const [i, s] of (p.specifications || []).entries()) {
