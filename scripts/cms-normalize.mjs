@@ -27,17 +27,17 @@ const gitShow = (rev, file) => { try { return git('show', `${rev}:${file}`); } c
 
 // 1. 找出「最後一次修改是後台儲存」的商品檔（不依賴推送範圍：上一次校正失敗或被跳過的也會補做）
 //    每個檔案往回找，直到遇到不是「[後台]」的 commit（＝最後一個校正過／人工維護的版本），以它作為儲存前版本。
-const log = git('log', '--format=@@%H%x1f%cI%x1f%s', '--name-only', head, '--', 'src/data/products');
+const log = git('log', '--format=@@%H%x1f%cI%x1f%an%x1f%s', '--name-only', head, '--', 'src/data/products');
 const state = new Map(); // file -> { done, prevRev, commits: [] }
 for (const block of log.split('@@').filter(Boolean)) {
   const [meta, ...names] = block.split('\n');
-  const [sha, date, subject] = meta.split('\x1f');
+  const [sha, date, author, subject] = meta.split('\x1f');
   const isCms = subject.startsWith(MARK);
   for (const f of names.map(n => n.trim()).filter(n => /^src\/data\/products\/[^/]+\.json$/.test(n))) {
     let st = state.get(f);
     if (!st) { st = { done: false, prevRev: null, commits: [] }; state.set(f, st); }
     if (st.done) continue;
-    if (isCms) st.commits.push({ sha, date, subject });
+    if (isCms) st.commits.push({ sha, date, author, subject });
     else { st.done = true; st.prevRev = sha; }
   }
 }
@@ -79,7 +79,7 @@ function quarantine(entry, reason) {
 for (const [file, info] of touched) {
   const abs = path.join(ROOT, file);
   const prevText = info.prevRev ? gitShow(info.prevRev, file) : null;
-  const entry = { file, prevText, operators: [...new Set(info.commits.map(c => operatorOf(c.subject)).filter(Boolean))], time: info.commits.at(-1).date, changes: [], warnings: [], errors: [], created: [] };
+  const entry = { file, prevText, operators: [...new Set(info.commits.map(c => operatorOf(c.subject) || c.author).filter(Boolean))], time: info.commits.at(-1).date, changes: [], warnings: [], errors: [], created: [] };
   report.push(entry);
   if (quarantineAll) { quarantine(entry, '整批檢查失敗，本次後台修改全部退回'); continue; }
   if (prevText == null) { quarantine(entry, '後台不允許新增商品，已移除'); continue; }
