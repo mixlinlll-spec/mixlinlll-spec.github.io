@@ -1,0 +1,22 @@
+# EWP 私有庫存後台（Cloudflare Worker＋D1）
+# 部署由 .github/workflows/inventory.yml 執行（需要 GitHub Secrets：CLOUDFLARE_API_TOKEN、CLOUDFLARE_ACCOUNT_ID）。
+# database_id 在部署時自動填入；這個檔案不含任何金鑰或庫存資料。
+name = "ewp-inventory"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
+preview_urls = false
+# 保留在 Cloudflare 後台設定的變數（啟用 Cloudflare Access 後填入的 ACCESS_AUD、ACCESS_TEAM_DOMAIN）
+keep_vars = true
+
+[vars]
+PAGES_CMS_EDIT_BASE = "https://app.pagescms.org/mixlinlll-spec/mixlinlll-spec.github.io/main/collection/products/edit/"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ewp-inventory"
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"
+
+[observability]
+enabled = false
