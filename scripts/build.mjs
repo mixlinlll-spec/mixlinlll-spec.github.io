@@ -20,7 +20,21 @@ const { site, categories, builds, services, products } = data;
 // ---------- 驗證 ----------
 const { errors, warnings } = validateProducts(products, categories);
 for (const s of services) for (const k of ['id', 'slug', 'name', 'summary']) if (!s[k]) errors.push(`services.json ${s.id}: 缺少 ${k}`);
-for (const b of builds) for (const k of ['id', 'slug', 'name_zh', 'summary']) if (!b[k]) errors.push(`builds.json ${b.id}: 缺少 ${k}`);
+for (const b of builds) for (const k of ['id', 'name_zh', 'summary']) if (!b[k]) errors.push(`builds.json ${b.id}: 缺少 ${k}`);
+{ // 自製機型：listed 機型必須對應到存在、未被拒絕的 EWP 原創商品，且不重複
+  const seenP = new Set(), seenSlug = new Set();
+  for (const b of builds) {
+    for (const s of b.legacy_slugs || []) { if (seenSlug.has(s)) errors.push(`builds.json: legacy_slugs 重複 ${s}`); seenSlug.add(s); }
+    if (!b.listed) continue;
+    const p = products.find(x => x.id === b.product_id);
+    if (!p) { errors.push(`builds.json ${b.id}: product_id ${b.product_id} 找不到商品`); continue; }
+    if (seenP.has(p.id)) errors.push(`builds.json ${b.id}: product_id ${p.id} 重複對應`);
+    seenP.add(p.id);
+    if (p.seller_role !== 'ewp_original') errors.push(`builds.json ${b.id}: ${p.id} 不是 EWP 原創商品（seller_role=${p.seller_role}）`);
+    if (isRejected(p)) errors.push(`builds.json ${b.id}: ${p.id} 已被拒絕上架`);
+    if (!p.published) warnings.push(`builds.json ${b.id}: ${p.id} 未上架，正式網站的自製機型清單不會顯示`);
+  }
+}
 for (const [k, c] of Object.entries(site.contact)) {
   if (typeof c !== 'object' || !c.enabled) continue;
   if (!c.url && !c.value) errors.push(`site.json contact.${k}: enabled=true 但沒有 url/value`);
@@ -73,7 +87,7 @@ const contactCta = (title = '還不確定怎麼選？', text = '告訴我們你�
 
 // ---------- 首頁 ----------
 function homePage() {
-  const featuredBuilds = builds.filter(b => b.featured).sort((a, b) => a.order - b.order);
+  const featuredBuilds = listedBuilds().filter(({ b }) => b.featured);
   const huan = builds.find(b => b.id === 'huan');
   const newest = sortProducts(visible).slice(0, 8);
   const quick = [
@@ -105,7 +119,7 @@ function homePage() {
       <div class="hero-note">BUILT WITH PURPOSE.<br>READY TO FLY.</div>
     </div>
     <figure class="feature">
-      ${picture(huan.images[0], { lazy: false, sizes: '(max-width: 900px) 100vw, 600px' })}
+      ${picture(huan.poster_image, { lazy: false, sizes: '(max-width: 900px) 100vw, 600px' })}
       <figcaption><strong>幻 / HUAN</strong><span>5” FREESTYLE · 6S</span></figcaption>
     </figure>
   </div>
@@ -115,13 +129,13 @@ function homePage() {
 </section>
 <section id="builds" class="wrap">
   ${sectionHead('01 / SELECTED BUILDS', '不同尺寸，同一份飛行熱情。', '<p>從小型花飛到五吋主力，用飛行用途決定配置，讓每一台機器有自己的個性。</p>')}
-  <div class="projects">${featuredBuilds.map((b, i) => `<article class="project">
+  <div class="projects">${featuredBuilds.map(({ b, p }, i) => `<article class="project">
     <div class="project-num">BUILD 0${i + 1} / ${esc(b.size.replace(' 吋', ' INCH'))}</div>
-    <h3><a href="${url.build(b)}">${esc(b.name_zh)}</a></h3>
-    <div class="english">${esc(b.name_en)} · ${esc(b.use)}</div>
+    <h3><a href="${url.product(p)}">${esc(b.name_zh)}</a></h3>
+    <div class="english">${b.name_en ? `${esc(b.name_en)} · ` : ''}${esc(b.use)}</div>
     <p>${esc(b.summary)}</p>
-    <div class="tags">${b.highlights.map(h => `<span>${esc(h)}</span>`).join('')}</div>
-    <a class="more" href="${url.build(b)}">查看機型 →</a>
+    <div class="tags">${(b.highlights || []).map(h => `<span>${esc(h)}</span>`).join('')}</div>
+    <a class="more" href="${url.product(p)}">查看機型詳情 →</a>
   </article>`).join('')}</div>
   <p class="section-more"><a href="/builds/">所有 EWP 自製機型 →</a></p>
 </section>
@@ -312,39 +326,40 @@ ${(shopeeBtn || line) ? `<div class="sticky-cta" aria-label="購買與詢價">${
 }
 
 // ---------- 自製機型 ----------
-const BUILD_STATUS = { showcase: '代表作品', preparing: '資料整理中', planned: '規劃中' };
+// 七款 EWP 原創機型的精選目錄：圖片、價格、供貨狀態、連結都在建置時從商城商品資料讀取（builds.json 只存機型名稱與簡介），
+// 商品未上架（正式版 visible 不含）就不顯示，不會留下失效連結。
+function listedBuilds() {
+  return builds.filter(b => b.listed).sort((a, b) => a.order - b.order)
+    .map(b => ({ b, p: visible.find(p => p.id === b.product_id) })).filter(x => x.p);
+}
 function buildPages() {
-  const sorted = [...builds].sort((a, b) => a.order - b.order);
+  const list = listedBuilds();
   const crumbs = [{ name: '首頁', href: '/' }, { name: 'EWP 自製機型' }];
-  const body = `${pageHead('EWP BUILDS', 'EWP 自製機型', '由電翼動力設計、組裝與調校的機型。與其他品牌整機分開標示；每台機器都可依用途討論配置。', breadcrumbs(crumbs))}
-<section class="wrap"><ul class="build-grid">${sorted.map(b => `<li class="build-card"><a href="${url.build(b)}">
-  <div class="build-media">${b.images[0] ? picture(b.images[0], { sizes: '(max-width: 720px) 100vw, 400px' }) : `<div class="img-ph"><span>${esc(b.name_en)}</span></div>`}</div>
-  <div class="build-body"><span class="badge">${esc(BUILD_STATUS[b.status] || '')}</span><h2>${esc(b.name_zh)} <small>${esc(b.name_en)}</small></h2><p class="muted">${esc(b.size)} · ${esc(b.use)}</p><p>${esc(b.summary)}</p></div>
-</a></li>`).join('')}</ul></section>
-${contactCta('想要一台自己的配置？', '說明用途、預算與現有設備，我們依需求建議機架、動力與圖傳。')}`;
-  page('builds/index.html', { title: 'EWP 自製機型', description: '電翼動力自製 FPV 機型：HUAN 幻、FANG V 毒牙、GOBU SENTINEL、GOBU POCKET、長航系列與 X8 影視機。', path: '/builds/', body, active: 'builds', jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
-
-  for (const b of sorted) {
-    const bc = [{ name: '首頁', href: '/' }, { name: 'EWP 自製機型', href: '/builds/' }, { name: `${b.name_zh} ${b.name_en}` }];
-    const rel = (b.related_product_ids || []).map(id => visible.find(p => p.id === id)).filter(Boolean);
-    const body = `<div class="wrap">${breadcrumbs(bc)}</div>
-<article class="wrap build-detail">
-  <div class="pd-top">
-    <div class="gallery">${b.images[0] ? `<div class="gallery-main">${picture(b.images[0], { lazy: false, sizes: '(max-width: 900px) 100vw, 640px' })}</div>` : `<div class="img-ph"><span>${esc(b.name_en)}</span></div><p class="muted">實機照片準備中</p>`}</div>
-    <div class="pd-info">
-      <p class="pd-role"><span class="badge badge-role badge-ewp_original">EWP 自製</span><span class="badge">${esc(BUILD_STATUS[b.status] || '')}</span></p>
-      <h1>${esc(b.name_zh)} <small>${esc(b.name_en)}</small></h1>
-      <p class="muted">${esc(b.size)} · ${esc(b.use)}</p>
-      <p class="pd-short">${esc(b.summary)}</p>
-      <ul class="tags">${b.highlights.map(h => `<li>${esc(h)}</li>`).join('')}</ul>
-      <div class="actions pd-actions">${lineButton(site, '諮詢客製', 'btn btn-line')}<a class="btn" href="/services/custom-build/">客製組裝流程</a></div>
-    </div>
+  const card = ({ b, p }, i) => {
+    const img = p.images?.[0];
+    const name = `${b.name_zh}${b.name_en ? ` ${b.name_en}` : ''}`;
+    return `<li class="build-card" data-build="${attr(b.id)}" data-product="${attr(p.id)}"><a href="${url.product(p)}" aria-label="${attr(`${name}｜${b.size}｜查看機型詳情`)}">
+  <div class="build-media">${img ? picture({ ...img, alt: img.alt || name }, { lazy: i >= 3, sizes: '(max-width: 599px) 100vw, (max-width: 1099px) 50vw, 340px' }) : `<div class="img-ph"><span>${esc(b.name_zh)}</span></div>`}</div>
+  <div class="build-body">
+    <p class="build-size"><span>${esc(b.size)}</span>${b.use ? `<span>${esc(b.use)}</span>` : ''}</p>
+    <h2>${esc(b.name_zh)}${b.name_en ? ` <small>${esc(b.name_en)}</small>` : ''}</h2>
+    <p class="build-sum">${esc(b.summary)}</p>
+    <div class="build-meta"><strong class="build-price">${esc(priceText(p))}</strong><span class="build-avail avail-${attr(p.availability)}">${esc(availabilityText(p.availability))}</span></div>
+    <span class="build-more">查看機型詳情 <span aria-hidden="true">→</span></span>
   </div>
-  ${b.specs.length ? `<section class="pd-block"><h2>代表配置</h2><div class="table-wrap"><table class="table spec"><tbody>${b.specs.map(s => `<tr><th scope="row">${esc(s.key)}</th><td>${esc(s.value)}</td></tr>`).join('')}</tbody></table></div>${b.spec_status !== 'verified' ? '<p class="fine">頁面為代表配置介紹，實際零件、供貨狀況、價格與交期請於委託前確認。</p>' : ''}</section>` : `<section class="pd-block"><h2>配置</h2><p class="muted">正式配置整理中。需要這台機型的資訊，請直接透過 LINE 詢問。</p></section>`}
-  ${rel.length ? `<section class="pd-block"><h2>可購買的版本</h2>${cardList(rel)}</section>` : ''}
-</article>
-${contactCta()}`;
-    page(`builds/${b.slug}/index.html`, { title: `${b.name_zh} ${b.name_en}`, description: `${b.name_zh} ${b.name_en}｜${b.size} ${b.use}。${b.summary}`, path: url.build(b), body, active: 'builds', ogImage: b.images[0]?.fallback, jsonld: [breadcrumbsJsonLd(bc, BASE)] });
+</a></li>`;
+  };
+  const body = `${pageHead('EWP BUILDS', 'EWP 自製機型', '由電翼動力設計、組裝與調校的原創機型。點選機型即可查看商品詳情、規格與購買方式。', breadcrumbs(crumbs))}
+<section class="wrap"><ul class="build-grid">${list.map(card).join('')}</ul></section>
+${contactCta('想要一台自己的配置？', '說明用途、預算與現有設備，我們依需求建議機架、動力與圖傳。')}`;
+  page('builds/index.html', { title: 'EWP 自製機型', description: `電翼動力自製 FPV 機型：${list.map(({ b }) => b.name_zh).join('、')}。`, path: '/builds/', body, active: 'builds', jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
+
+  // 舊的 /builds/<slug>/ 詳情頁：改為導向商城商品頁（機型未上架或規劃中則導回自製機型列表），避免外部連結與搜尋結果變成 404
+  for (const b of builds) for (const slug of b.legacy_slugs || []) {
+    const hit = list.find(x => x.b.id === b.id);
+    const to = hit ? url.product(hit.p) : '/builds/';
+    const label = hit ? `${b.name_zh} 商品頁` : 'EWP 自製機型';
+    write(`builds/${slug}/index.html`, `<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><title>${esc(b.name_zh)}｜已移至${esc(label)}</title><meta name="robots" content="noindex"><link rel="canonical" href="${attr(BASE + to)}"><meta http-equiv="refresh" content="0; url=${attr(to)}"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body><p>此頁已移至 <a href="${attr(to)}">${esc(label)}</a>。</p><script>location.replace(${JSON.stringify(to)})</script></body></html>\n`);
   }
 }
 
@@ -485,7 +500,7 @@ ${bizBlock()}
 // ---------- sitemap / robots ----------
 function seoFiles() {
   if (DRAFTS) { write('robots.txt', 'User-agent: *\nDisallow: /\n'); return; }
-  const urls = ['/', '/products/', ...categories.map(url.category), ...visible.map(url.product), '/builds/', ...builds.map(url.build),
+  const urls = ['/', '/products/', ...categories.map(url.category), ...visible.map(url.product), '/builds/',
     '/services/', ...services.map(url.service), '/batteries/', '/journal/', '/about/', '/contact/', '/fpv-help.html',
     ...Object.entries(site.policies).filter(([, v]) => v.approved).map(([k]) => `/${k}/`)];
   const lastmod = p => p?.updated_at;

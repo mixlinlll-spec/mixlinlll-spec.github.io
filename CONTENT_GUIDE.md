@@ -119,7 +119,7 @@ node scripts/approve-snapshot.mjs --all --prices --discount 4 --image-rights lic
 | 蝦皮 shop ID（讓草稿自動帶商品連結） | `site.json` → `contact.shopee.shop_id` |
 | 隱私權、網站條款、售後退換頁公開 | 三頁目前皆未核准（noindex、不在頁尾與 sitemap）。EWP 提供正式內容後改 `scripts/build.mjs` 內文字，再把 `site.json` → `policies` 設為 `approved: true` |
 | 營業登記資訊（名稱、統一編號、登記地址） | `site.json` → `business`（顯示於頁尾、關於、聯絡頁）。稅籍編號不放入 repo |
-| 自製機型 | `src/data/builds.json`（`specs` 只放核對過的規格） |
+| 自製機型 | `src/data/builds.json`：只放機型名稱、尺寸、簡介與 `product_id`；圖片、價格、供貨、連結在建置時從對應商品讀取（換商品主圖就會同步）。`listed: false` 的機型保留資料但不顯示；商品下架時該機型自動不顯示。 |
 | 服務頁 | `src/data/services.json` |
 | 分類名稱 | `src/data/categories.json`（**不要改 id**，網址會變） |
 | 顏色、字級 | `assets/css/site.css` 開頭的 `:root` |

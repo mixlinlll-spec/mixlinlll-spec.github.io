@@ -29,7 +29,7 @@ async function newPage(width) {
 }
 
 console.log('1. 版面寬度（320/390/768/1280）無非預期橫捲');
-const PAGES = ['/', '/products/', '/products/complete-drones/', '/builds/', '/builds/huan/', '/services/', '/services/repair/', '/batteries/', '/journal/', '/about/', '/contact/', '/privacy/', '/404.html', '/fpv-help.html'];
+const PAGES = ['/', '/products/', '/products/complete-drones/', '/builds/', '/services/', '/services/repair/', '/batteries/', '/journal/', '/about/', '/contact/', '/privacy/', '/404.html', '/fpv-help.html'];
 for (const w of [320, 390, 768, 1280]) {
   const page = await newPage(w);
   for (const [base, extra] of [[PUB, []], [PRE, ['/product/geprc-moz7-v2-o4-pro-7/', '/products/hardware-prints/?sub=screws']]]) {
@@ -334,6 +334,34 @@ console.log('14. 鍵盤操作');
   await page.keyboard.press('Tab');
   ok(await page.evaluate(() => document.activeElement.className) === 'skip', '第一個 Tab 為「跳至主要內容」');
   await page.context().close();
+}
+
+console.log('15. 自製機型目錄：七款、連到商城商品、手機／平板／電腦排版');
+{
+  const { builds: BUILDS } = loadAll();
+  const listed = BUILDS.filter(b => b.listed).sort((a, b) => a.order - b.order).map(b => byId(b.product_id)).filter(p => p.published);
+  for (const [w, cols] of [[390, 1], [820, 2], [1100, 3], [1366, 4]]) {
+    const page = await newPage(w);
+    await page.goto(PUB + '/builds/');
+    const m = await page.$$eval('.build-card', cs => cs.map(c => ({ href: c.querySelector('a').getAttribute('href'), r: c.getBoundingClientRect().toJSON(), media: c.querySelector('.build-media').getBoundingClientRect().toJSON(), fit: getComputedStyle(c.querySelector('.build-media img')).objectFit })));
+    ok(m.length === listed.length && listed.length === 7, `${w}px：${m.length} 張機型卡片`);
+    if (w === 390) ok(m.every((c, i) => c.href === `/product/${listed[i].slug}/`), '每張卡片連到對應的商城商品頁');
+    const rows = Object.values(m.reduce((a, c) => ((a[Math.round(c.r.top)] ||= []).push(c), a), {}));
+    ok(rows[0].length === cols, `${w}px：每排 ${rows[0].length} 台（預期 ${cols}）`);
+    ok(rows.every(r => new Set(r.map(c => Math.round(c.r.height))).size === 1), `${w}px：同排卡片等高`);
+    ok(m.every(c => Math.abs(c.media.width - c.media.height) < 2 && c.fit === 'contain'), `${w}px：圖片 1:1、完整顯示不裁切`);
+    const sw = await page.evaluate(() => document.documentElement.scrollWidth);
+    ok(sw <= w, `${w}px：無橫向捲動`);
+    if (w === 1366) {
+      await page.click('.build-card a');
+      await page.waitForURL(`**/product/${listed[0].slug}/`);
+      ok(true, '點選整張卡片進入商城商品頁');
+      await page.goto(PUB + '/builds/huan/');
+      await page.waitForURL(`**/product/${listed[0].slug}/`);
+      ok(true, '舊網址 /builds/huan/ 導向商城商品頁');
+    }
+    await page.context().close();
+  }
 }
 
 ok(errors.length === 0, `瀏覽器 console 無錯誤${errors.length ? '：' + errors.slice(0, 5).join(' | ') : ''}`);

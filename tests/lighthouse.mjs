@@ -8,7 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const BASE = process.env.PUB || 'http://localhost:8800';
-const PAGES = ['/', '/products/', '/products/complete-drones/', '/builds/huan/', '/services/repair/', '/batteries/', '/contact/'];
+const PAGES = ['/', '/products/', '/products/complete-drones/', '/builds/', '/services/repair/', '/batteries/', '/contact/'];
 const STRICT = { accessibility: 0.9, 'best-practices': 0.9, seo: 0.9 };
 const PERF_FAIL = 0.8, PERF_TARGET = 0.9;
 const OUT = 'lighthouse-reports';
