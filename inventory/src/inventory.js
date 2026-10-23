@@ -155,7 +155,9 @@ export async function adjust(db, sku, input, actor) {
 }
 
 // 移轉：把 A 規格的庫存移到 B 規格（同一件商品；用在規格被刪除、舊 SKU 需要轉到新規格時）
-// 兩邊的數量與兩筆紀錄在同一個交易內完成；A 不可扣到低於已保留，B 必須是使用中的規格
+// 原子性：來源扣庫、目標入庫、兩筆紀錄、完整性檢查五個語句在同一個 D1 batch（單一交易）內。
+// 最後一個語句寫入 transfer_guard，只有「兩邊都更新成功且兩筆紀錄都寫入」時 transfer_complete = 1；
+// 否則違反 CHECK (transfer_complete = 1)，整個交易回復 —— 不需要提交後再補償。
 export async function transfer(db, fromSku, input, actor) {
   const qty = parseQty(input?.qty);
   if (qty === 0) throw new InventoryError('數量必須大於 0');
@@ -165,41 +167,43 @@ export async function transfer(db, fromSku, input, actor) {
   if (!/^[A-Za-z0-9-]{8,60}$/.test(opId)) throw new InventoryError('缺少操作編號（請重新整理頁面）');
   const toSku = String(input?.to_sku || '');
   if (toSku === fromSku) throw new InventoryError('不能移轉到同一個規格');
-  const dup = await db.prepare('SELECT * FROM inventory_ledger WHERE op_id = ?').bind(opId + '-out').first();
-  if (dup) return { duplicate: true, sku: await getSku(db, fromSku), to: await getSku(db, toSku) };
+  const outOp = opId + '-out', inOp = opId + '-in';
+  const done = async () => ({ duplicate: true, sku: await getSku(db, fromSku), to: await getSku(db, toSku) });
+  if (await db.prepare('SELECT 1 AS x FROM transfer_guard WHERE op_id = ?').bind(opId).first()) return done();
   const [a, b] = [await getSku(db, fromSku), await getSku(db, toSku)];
   if (!a || !b) throw new InventoryError('找不到規格', 404);
   if (a.product_id !== b.product_id) throw new InventoryError('只能在同一件商品的規格之間移轉');
-  if (!b.active) throw new InventoryError('目標規格已停用');
+  // 目標是否停用、來源是否足夠，由交易內的條件判斷（避免檢查後到寫入前被別人改掉）
   const ts = new Date().toISOString();
-  const outOp = opId + '-out', inOp = opId + '-in';
   const stmts = [
     db.prepare(`UPDATE skus SET prev_on_hand = stock_on_hand, stock_on_hand = stock_on_hand - ?, version = version + 1, last_op = ?, updated_at = ?
       WHERE sku = ? AND stock_on_hand - ? >= stock_reserved`).bind(qty, outOp, ts, fromSku, qty),
     db.prepare(`UPDATE skus SET prev_on_hand = stock_on_hand, stock_on_hand = stock_on_hand + ?, version = version + 1, last_op = ?, updated_at = ?
-      WHERE sku = ? AND active = 1 AND EXISTS (SELECT 1 FROM skus WHERE sku = ? AND last_op = ?)`).bind(qty, inOp, ts, toSku, fromSku, outOp),
+      WHERE sku = ? AND active = 1 AND EXISTS (SELECT 1 FROM products p WHERE p.id = skus.product_id AND p.active = 1)`).bind(qty, inOp, ts, toSku),
     db.prepare(`INSERT INTO inventory_ledger (op_id, sku, kind, before_on_hand, after_on_hand, delta_on_hand, reason, actor, created_at)
       SELECT ?, sku, 'transfer_out', prev_on_hand, stock_on_hand, stock_on_hand - prev_on_hand, ?, ?, ? FROM skus WHERE sku = ? AND last_op = ?`).bind(outOp, `${reason}（移到 ${toSku}）`, actor, ts, fromSku, outOp),
     db.prepare(`INSERT INTO inventory_ledger (op_id, sku, kind, before_on_hand, after_on_hand, delta_on_hand, reason, actor, created_at)
       SELECT ?, sku, 'transfer_in', prev_on_hand, stock_on_hand, stock_on_hand - prev_on_hand, ?, ?, ? FROM skus WHERE sku = ? AND last_op = ?`).bind(inOp, `${reason}（來自 ${fromSku}）`, actor, ts, toSku, inOp),
+    db.prepare(`INSERT INTO transfer_guard (op_id, from_sku, to_sku, qty, created_at, transfer_complete)
+      SELECT ?, ?, ?, ?, ?, CASE WHEN
+          EXISTS (SELECT 1 FROM skus WHERE sku = ? AND last_op = ?)
+          AND EXISTS (SELECT 1 FROM skus WHERE sku = ? AND last_op = ?)
+          AND (SELECT count(*) FROM inventory_ledger WHERE op_id IN (?, ?)) = 2
+        THEN 1 ELSE 0 END`).bind(opId, fromSku, toSku, qty, ts, fromSku, outOp, toSku, inOp, outOp, inOp),
   ];
-  let results;
-  try { results = await db.batch(stmts); }
-  catch (e) {
-    if (/UNIQUE/i.test(String(e.message))) return { duplicate: true, sku: await getSku(db, fromSku), to: await getSku(db, toSku) };
-    if (/CHECK/i.test(String(e.message))) throw new InventoryError('庫存不可為負數，也不可少於已保留數量');
-    throw e;
-  }
-  if (!(results[0]?.meta?.changes) || !(results[1]?.meta?.changes)) {
-    // 兩邊必須同時成功；只有一邊成功時整筆回復（理論上不會發生：第二個 UPDATE 依賴第一個）
-    if (results[0]?.meta?.changes && !results[1]?.meta?.changes) {
-      await db.batch([
-        db.prepare('UPDATE skus SET stock_on_hand = stock_on_hand + ?, version = version + 1, last_op = NULL WHERE sku = ? AND last_op = ?').bind(qty, fromSku, outOp),
-        db.prepare('DELETE FROM inventory_ledger WHERE op_id = ?').bind(outOp),
-      ]);
+  try {
+    await db.batch(stmts);
+  } catch (e) {
+    const msg = String(e?.message || e);
+    if (/UNIQUE/i.test(msg)) return done(); // 同一操作重複送出（並行），另一個已成功
+    if (/transfer_complete/i.test(msg)) {
+      // 交易已整筆回復：判斷原因
+      const [la, lb] = [await getSku(db, fromSku), await getSku(db, toSku)];
+      if (!lb?.active || !lb?.product_active) throw new InventoryError('目標規格已停用，未移轉（兩邊數量都沒有變動）', 409, { sku: la });
+      throw new InventoryError(`庫存不足：可移轉 ${la.stock_on_hand - la.stock_reserved}，要移 ${qty}（兩邊數量都沒有變動）`, 409, { sku: la });
     }
-    const latest = await getSku(db, fromSku);
-    throw new InventoryError(`庫存不足：可移轉 ${latest.stock_on_hand - latest.stock_reserved}，要移 ${qty}`, 409, { sku: latest });
+    if (/CHECK/i.test(msg)) throw new InventoryError('庫存不可為負數，也不可少於已保留數量');
+    throw e;
   }
   return { sku: await getSku(db, fromSku), to: await getSku(db, toSku) };
 }

@@ -327,7 +327,7 @@ describe('規格身分穩定：改名、排序、增刪規格，庫存與紀錄�
     assert.equal((await call(`/api/skus/${skus[0]}/transfer`, { method: 'POST', body: JSON.stringify({ to_sku: skus[2], qty: 99, reason: 'x', op_id: op() }) })).status, 409);
     const other = first(db, 'SELECT sku FROM skus WHERE product_id<>? AND active=1 LIMIT 1', VID_ID).sku;
     assert.equal((await call(`/api/skus/${skus[0]}/transfer`, { method: 'POST', body: JSON.stringify({ to_sku: other, qty: 1, reason: 'x', op_id: op() }) })).status, 400);
-    assert.equal((await call(`/api/skus/${skus[0]}/transfer`, { method: 'POST', body: JSON.stringify({ to_sku: skus[1], qty: 1, reason: 'x', op_id: op() }) })).status, 400);
+    assert.equal((await call(`/api/skus/${skus[0]}/transfer`, { method: 'POST', body: JSON.stringify({ to_sku: skus[1], qty: 1, reason: 'x', op_id: op() }) })).status, 409, '目標已停用：交易內判斷並整筆回復');
     assert.equal(first(db, 'SELECT sum(stock_on_hand) s FROM skus WHERE product_id=?', VID_ID).s, 5 * p0.variants.length);
   });
   test('規格被刪後又加回（同一個蝦皮規格 ID）：重新啟用原 SKU，庫存仍在', async () => {
@@ -420,5 +420,89 @@ describe('部署流程（.github/workflows/inventory.yml）', () => {
   test('部署紀錄不輸出庫存數字：同步 SQL 不印出、用完即刪', () => {
     assert.match(deploy, /--file "\$RUNNER_TEMP\/catalog\.sql" > \/dev\/null/);
     assert.match(deploy, /rm -f "\$RUNNER_TEMP\/catalog\.sql"/);
+  });
+});
+
+describe('移轉的原子性：全部成功或全部回復（同一個交易，不靠事後補償）', () => {
+  const PID = PRODUCTS.find(p => p.variants?.length >= 3 && p.review?.status !== 'rejected').id;
+  async function prep(qtys = [5, 2, 0]) {
+    const env = setup(); const { db, adjust } = env;
+    const skus = db.raw.prepare('SELECT sku FROM skus WHERE product_id=? ORDER BY position').all(PID).map(r => r.sku);
+    for (const [i, q] of qtys.entries()) assert.equal((await adjust(skus[i], { kind: 'count', qty: q, expected_version: 0 })).status, 200);
+    return { ...env, skus };
+  }
+  const snapshot = (db, skus) => JSON.stringify({
+    rows: skus.map(s => ({ ...db.raw.prepare('SELECT sku, stock_on_hand, stock_reserved, version, last_op, prev_on_hand, active FROM skus WHERE sku=?').get(s) })),
+    ledger: db.raw.prepare('SELECT * FROM inventory_ledger ORDER BY id').all().map(r => ({ ...r })),
+    guard: db.raw.prepare('SELECT count(*) n FROM transfer_guard').get().n,
+  });
+  const tr = (env, from, to, qty, op_id = env.op()) => env.call(`/api/skus/${from}/transfer`, { method: 'POST', body: JSON.stringify({ to_sku: to, qty, reason: '測試移轉', op_id }) });
+
+  test('成功：來源 −、目標 ＋、兩筆紀錄、版本各 +1', async () => {
+    const env = await prep(); const { db, skus } = env;
+    const r = await tr(env, skus[0], skus[1], 3);
+    assert.equal(r.status, 200);
+    const [a, b] = skus.slice(0, 2).map(s => db.raw.prepare('SELECT stock_on_hand, version FROM skus WHERE sku=?').get(s));
+    assert.deepEqual([a.stock_on_hand, b.stock_on_hand], [2, 5]);
+    assert.deepEqual([a.version, b.version], [2, 2]);
+    assert.deepEqual(db.raw.prepare("SELECT kind, delta_on_hand FROM inventory_ledger WHERE kind LIKE 'transfer%' ORDER BY id").all().map(x => [x.kind, x.delta_on_hand]), [['transfer_out', -3], ['transfer_in', 3]]);
+  });
+  test('目標在移轉前被停用 → 整筆回復，兩邊數量、版本、紀錄完全不變', async () => {
+    const env = await prep(); const { db, skus } = env;
+    db.raw.exec(`UPDATE skus SET active = 0 WHERE sku = '${skus[1]}'`);
+    const before = snapshot(db, skus);
+    const r = await tr(env, skus[0], skus[1], 2);
+    assert.equal(r.status, 409); assert.match(r.body.error, /目標規格已停用/);
+    assert.equal(snapshot(db, skus), before);
+  });
+  test('目標更新 0 筆（檢查通過後、寫入前目標被停用）→ 同一交易內回復，沒有提交後補償', async () => {
+    const env = await prep(); const { db, skus } = env;
+    const before = snapshot(db, skus);
+    // 在 batch 執行的那一刻停用目標：模擬「讀取檢查之後、寫入之前」被別人改掉
+    const realBatch = db.batch;
+    let batches = 0;
+    db.batch = stmts => { batches++; db.raw.exec(`UPDATE skus SET active = 0 WHERE sku = '${skus[1]}'`); return realBatch(stmts); };
+    const r = await tr(env, skus[0], skus[1], 2);
+    db.batch = realBatch;
+    assert.equal(r.status, 409);
+    assert.equal(batches, 1, '只執行一次交易，沒有第二次補償交易');
+    db.raw.exec(`UPDATE skus SET active = 1 WHERE sku = '${skus[1]}'`);
+    assert.equal(snapshot(db, skus), before, '數量、版本、last_op、紀錄都與移轉前相同');
+  });
+  test('來源庫存不足（含已保留）→ 整筆回復', async () => {
+    const env = await prep(); const { db, skus } = env;
+    db.raw.exec(`UPDATE skus SET stock_reserved = 2 WHERE sku = '${skus[0]}'`);
+    const before = snapshot(db, skus);
+    const r = await tr(env, skus[0], skus[1], 4); // 實際 5、保留 2 → 只能移 3
+    assert.equal(r.status, 409); assert.match(r.body.error, /庫存不足：可移轉 3/);
+    assert.equal(snapshot(db, skus), before);
+    assert.equal((await tr(env, skus[2], skus[1], 1)).status, 409, '來源為 0 → 不可移轉');
+    assert.equal(snapshot(db, skus), before);
+  });
+  test('重複請求（依序與同時）只生效一次', async () => {
+    const env = await prep(); const { db, skus } = env;
+    const id = 'dup-transfer-0001';
+    const r1 = await tr(env, skus[0], skus[1], 1, id);
+    const r2 = await tr(env, skus[0], skus[1], 1, id);
+    assert.equal(r1.status, 200); assert.equal(r2.status, 200); assert.equal(r2.body.duplicate, true);
+    const id2 = 'dup-transfer-0002';
+    const rs = await Promise.all([1, 2, 3].map(() => tr(env, skus[0], skus[1], 1, id2)));
+    assert.ok(rs.every(r => r.status === 200));
+    const [a, b] = skus.slice(0, 2).map(s => db.raw.prepare('SELECT stock_on_hand FROM skus WHERE sku=?').get(s).stock_on_hand);
+    assert.deepEqual([a, b], [3, 4]);
+    assert.equal(db.raw.prepare("SELECT count(*) n FROM inventory_ledger WHERE kind LIKE 'transfer%'").get().n, 4);
+  });
+  test('並行移轉：來源 5、同時 10 筆各移 1 → 剛好 5 筆成功，總數守恆、紀錄成對', async () => {
+    const env = await prep(); const { db, skus } = env;
+    const rs = await Promise.all(Array.from({ length: 10 }, (_, i) => tr(env, skus[0], skus[1 + (i % 2)], 1)));
+    assert.equal(rs.filter(r => r.status === 200).length, 5);
+    assert.equal(rs.filter(r => r.status === 409).length, 5);
+    const total = db.raw.prepare('SELECT sum(stock_on_hand) s FROM skus WHERE sku IN (?, ?, ?)').get(...skus.slice(0, 3)).s;
+    assert.equal(total, 7, '5＋2＋0 總數不變');
+    assert.equal(db.raw.prepare('SELECT stock_on_hand s FROM skus WHERE sku=?').get(skus[0]).s, 0);
+    const out = db.raw.prepare("SELECT count(*) n FROM inventory_ledger WHERE kind='transfer_out'").get().n;
+    const inn = db.raw.prepare("SELECT count(*) n FROM inventory_ledger WHERE kind='transfer_in'").get().n;
+    assert.deepEqual([out, inn], [5, 5]);
+    assert.equal(db.raw.prepare('SELECT count(*) n FROM transfer_guard').get().n, 5, '失敗的移轉沒有留下任何資料');
   });
 });

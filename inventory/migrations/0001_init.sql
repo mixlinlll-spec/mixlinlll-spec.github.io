@@ -55,3 +55,13 @@ CREATE TABLE IF NOT EXISTS inventory_ledger (
   created_at      TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_ledger_sku ON inventory_ledger(sku, id);
+
+-- 移轉的完整性檢查：與移轉的四個語句在同一個交易中寫入；transfer_complete 必須為 1，否則整筆回復
+CREATE TABLE IF NOT EXISTS transfer_guard (
+  op_id             TEXT PRIMARY KEY,
+  from_sku          TEXT NOT NULL,
+  to_sku            TEXT NOT NULL,
+  qty               INTEGER NOT NULL,
+  created_at        TEXT NOT NULL,
+  transfer_complete INTEGER NOT NULL CHECK (transfer_complete = 1)
+);
