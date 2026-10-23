@@ -290,3 +290,73 @@ describe('蝦皮媒體與價格庫存匯入', () => {
     } finally { fs.rmSync(out, { recursive: true, force: true }); }
   });
 });
+
+describe('EWP 自製機型目錄（以商品 ID 對應商城商品）', () => {
+  const EXPECTED = [
+    ['幻', 'sp-50367700235'], ['毒牙', 'sp-50857844998'], ['裂顎', 'sp-50608240693'], ['迅矢', 'sp-48709596818'],
+    ['一閃', 'sp-49561691341'], ['戈布', 'sp-46059782425'], ['哨兵', 'sp-29295757187'],
+  ];
+  const { builds } = loadAll();
+  const OUT = '_test_builds';
+  const cards = html => [...html.matchAll(/<li class="build-card" data-build="([^"]+)" data-product="([^"]+)"><a href="([^"]+)"[\s\S]*?<img src="([^"]+)"[\s\S]*?<\/li>/g)]
+    .map(m => ({ build: m[1], product: m[2], href: m[3], img: m[4] }));
+  const buildAndRead = () => {
+    execFileSync('node', ['scripts/build.mjs', '--out', OUT], { cwd: ROOT, stdio: 'pipe' });
+    return fs.readFileSync(path.join(ROOT, OUT, 'builds/index.html'), 'utf8');
+  };
+
+  test('builds.json：正式清單剛好七款、順序與商品 ID 正確，不含其他品牌商品 sp-51565415644', () => {
+    const listed = builds.filter(b => b.listed).sort((a, b) => a.order - b.order);
+    assert.deepEqual(listed.map(b => [b.name_zh, b.product_id]), EXPECTED);
+    assert.ok(!builds.some(b => b.product_id === 'sp-51565415644'));
+    for (const b of listed) {
+      const p = products.find(x => x.id === b.product_id);
+      assert.equal(p.seller_role, 'ewp_original', b.id);
+      for (const k of ['images', 'price_twd', 'availability', 'slug', 'shopee_url']) assert.ok(!(k in b), `builds.json ${b.id} 不重複存商品資料 ${k}`);
+    }
+    assert.deepEqual(builds.filter(b => !b.listed).map(b => b.id), ['long-range-7', 'x8-cinelifter'], '長航、X8 保留資料但不上清單');
+  });
+
+  test('列表頁：七張卡片，圖片為商品主圖、連到商城商品頁，沒有佔位圖；舊網址改為導向', () => {
+    try {
+      const html = buildAndRead();
+      const cs = cards(html);
+      assert.equal(cs.length, 7);
+      assert.ok(!html.includes('img-ph'), '沒有英文名稱佔位圖');
+      cs.forEach((c, i) => {
+        const p = products.find(x => x.id === EXPECTED[i][1]);
+        assert.equal(c.product, p.id);
+        assert.equal(c.href, `/product/${p.slug}/`);
+        assert.equal(c.img, p.images[0].src);
+        assert.ok(fs.existsSync(path.join(ROOT, OUT, c.img)), `${c.img} 已發布`);
+      });
+      assert.equal(new Set(cs.map(c => c.product)).size, 7, '不重複');
+      const redirect = slug => fs.readFileSync(path.join(ROOT, OUT, `builds/${slug}/index.html`), 'utf8').match(/url=([^"]+)"/)[1];
+      assert.equal(redirect('huan'), `/product/${products.find(x => x.id === 'sp-50367700235').slug}/`);
+      assert.equal(redirect('gobu-sentinel'), `/product/${products.find(x => x.id === 'sp-29295757187').slug}/`);
+      assert.equal(redirect('long-range-7'), '/builds/');
+      const sitemap = fs.readFileSync(path.join(ROOT, OUT, 'sitemap.xml'), 'utf8');
+      assert.ok(!/\/builds\/[^<]+\/</.test(sitemap), 'sitemap 不再列出舊的機型詳情頁');
+    } finally { fs.rmSync(path.join(ROOT, OUT), { recursive: true, force: true }); }
+  });
+
+  test('商城商品換主圖 → 下次建置同步；商品下架 → 自製機型不顯示、舊網址導回列表', () => {
+    const fHuan = path.join(PRODUCTS_DIR, 'sp-50367700235.json'), fFang = path.join(PRODUCTS_DIR, 'sp-50857844998.json');
+    const oHuan = fs.readFileSync(fHuan, 'utf8'), oFang = fs.readFileSync(fFang, 'utf8');
+    try {
+      const huan = JSON.parse(oHuan); huan.images = [huan.images[1], huan.images[0], ...huan.images.slice(2)];
+      fs.writeFileSync(fHuan, JSON.stringify(huan, null, 2) + '\n');
+      const fang = JSON.parse(oFang); fang.published = false;
+      fs.writeFileSync(fFang, JSON.stringify(fang, null, 2) + '\n');
+      const html = buildAndRead();
+      const cs = cards(html);
+      assert.equal(cs.length, 6);
+      assert.equal(cs[0].img, huan.images[0].src, '主圖跟著商品資料更新');
+      assert.ok(!cs.some(c => c.product === 'sp-50857844998') && !html.includes(fang.slug), '下架商品沒有連結');
+      assert.match(fs.readFileSync(path.join(ROOT, OUT, 'builds/fang-v/index.html'), 'utf8'), /url=\/builds\//);
+    } finally {
+      fs.writeFileSync(fHuan, oHuan); fs.writeFileSync(fFang, oFang);
+      fs.rmSync(path.join(ROOT, OUT), { recursive: true, force: true });
+    }
+  });
+});
