@@ -360,3 +360,40 @@ describe('EWP 自製機型目錄（以商品 ID 對應商城商品）', () => {
     }
   });
 });
+
+describe('最新消息（src/data/journal/*.md）', async () => {
+  const { loadJournal, validateJournal, renderMarkdown, parseFrontmatter } = await import('../scripts/lib/journal.mjs');
+  const posts = loadJournal();
+  const ok = posts.find(p => p.slug === 'ewp-website-launch');
+  test('現有文章通過驗證', () => assert.deepEqual(validateJournal(posts), []));
+  test('官網上線文章已公開、有封面與日期', () => {
+    assert.ok(ok && ok.published === true);
+    assert.match(ok.date, /^\d{4}-\d{2}-\d{2}$/);
+    assert.ok(fs.existsSync(path.join(ROOT, ok.cover.slice(1))));
+  });
+  test('內文 HTML 一律轉義、不接受 javascript: 連結', () => {
+    const { html } = renderMarkdown('<script>alert(1)</script>\n\n[x](javascript:alert(1))');
+    assert.ok(!html.includes('<script>'));
+    assert.ok(!html.includes('javascript:'));
+  });
+  test('Markdown 子集：小標、清單、圖片、提醒框', () => {
+    const { html, images } = renderMarkdown('## 標題\n\n- 一\n- 二\n\n![替代](/assets/img/journal/a.webp)\n\n> **注意**文字');
+    assert.match(html, /<h2>標題<\/h2>/);
+    assert.match(html, /<ul><li>一<\/li><li>二<\/li><\/ul>/);
+    assert.equal(images.length, 1);
+    assert.match(html, /class="callout"/);
+  });
+  test('公開文章缺欄位、圖片不存在、殘留待確認標記都會擋下', () => {
+    const { meta, body } = parseFrontmatter('---\ntitle: T\npublished: true\n---\n〔待確認〕');
+    const errs = validateJournal([{ ...meta, slug: 't', _file: 't.md', _body: body, images: [] }]);
+    assert.ok(errs.some(e => e.includes('缺少 date')));
+    assert.ok(errs.some(e => e.includes('缺少 cover')));
+    assert.ok(errs.some(e => e.includes('待確認')));
+  });
+  test('草稿文章不會出現在正式產物', () => {
+    const dist = path.join(ROOT, 'dist', 'journal');
+    if (!fs.existsSync(dist)) return;
+    for (const p of posts.filter(x => !x.published)) assert.ok(!fs.existsSync(path.join(dist, p.slug)));
+    for (const p of posts.filter(x => x.published)) assert.ok(fs.existsSync(path.join(dist, p.slug, 'index.html')));
+  });
+});
