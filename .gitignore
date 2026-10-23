@@ -7,3 +7,9 @@ Thumbs.db
 dist/
 lighthouse-reports/
 media-inbox/
+.cms-report.json
+.admin-result.json
+# 匯入檔不可提交（repo 公開）
+admin/imports/
+.cms-quarantine/
+.cms-quarantine.md

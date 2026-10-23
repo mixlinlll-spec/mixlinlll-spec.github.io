@@ -94,11 +94,11 @@ node scripts/check-site.mjs          # 白名單／連結／草稿外洩檢查
 - **圖片**：`src/data/products/*.json` 的 `review.source_media` 保存蝦皮主圖／細節圖／規格選項圖網址；由 GitHub Actions（`import-media.yml`）下載並壓縮到 `assets/img/products/<id>/`，寫入 `images`（`rights: "unverified"`）與 `variants[].image`。
   - 重新匯入或補失敗：修改 `src/data/shopee/media-import-request.json` 的 `requested_at` 後推送，或在 Actions 頁手動 Run workflow。已存在的圖片會略過。
   - 新的蝦皮媒體匯出檔：交給 Claude 更新 `source_media` 後再觸發。
-- **價格與庫存**：`review.shopee_sales_snapshot` 保存匯出時的每個規格價格、庫存；`variants[].shopee_variation_id` 對應蝦皮規格。網站公開欄位維持「詢價／供貨請洽詢」，直到核對後套用：
+- **價格**：`review.shopee_sales_snapshot` 保存匯出時的每個規格價格（**庫存數量屬機密，不存放在 repo**，見 docs/admin/PRODUCT_ADMIN.md）；`variants[].shopee_variation_id` 對應蝦皮規格。網站公開欄位維持「詢價／供貨請洽詢」，直到核對後套用：
 
 ```bash
-node scripts/approve-snapshot.mjs --all --prices --stock --discount 4 --dry-run          # 先看結果
-node scripts/approve-snapshot.mjs --all --prices --stock --discount 4 --image-rights licensed --publish
+node scripts/approve-snapshot.mjs --all --prices --discount 4 --dry-run          # 先看結果
+node scripts/approve-snapshot.mjs --all --prices --discount 4 --image-rights licensed --publish
 ```
 
   官網價＝蝦皮價 ×（1 − 折扣%），四捨五入到整數元。加上 `--publish` 才會核准上架；`rejected` 商品一律略過。
@@ -128,5 +128,5 @@ node scripts/approve-snapshot.mjs --all --prices --stock --discount 4 --image-ri
 
 - 不要在資料中寫 0 元、假庫存、假評價、假折扣倒數。
 - 不要用其他賣家或原廠未授權的圖片。
-- 不要放成本、進價、客戶個資、稅籍編號等機密（repo 是公開的）。
+- 不要放成本、進價、客戶個資、稅籍編號、**庫存數量**等機密（repo 是公開的）。
 - 已發布商品不要改 `slug`；真的要改，請保留舊網址的轉址頁。

@@ -1,0 +1,38 @@
+name: 後台｜批次修改
+# 由 Pages CMS「批次修改」按鈕觸發（.pages.yml → actions）。預覽模式只產生報表；套用模式修改、驗證、提交並發布。
+on:
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: Pages CMS payload（JSON）
+        required: true
+        type: string
+  # 只為了讓 GitHub 在測試分支上登記這個流程（workflow_dispatch 才能在非預設分支觸發）；push 時不執行任何工作
+  push:
+    branches: [feature/product-admin]
+    paths: ['.github/workflows/admin-bulk.yml']
+permissions:
+  contents: write
+  actions: write
+  issues: write
+# 不設 concurrency group（GitHub 會取消排隊中的舊執行）；同時寫入由 admin-publish 的樂觀鎖處理：衝突就從最新版本重做並重新驗證
+jobs:
+  bulk:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 套用、驗證、提交、發布
+        uses: ./.github/actions/admin-publish
+        env:
+          PAYLOAD: ${{ inputs.payload }}
+        with:
+          apply: node scripts/admin-bulk.mjs
+          message: "[批次] ${{ fromJSON(inputs.payload).inputs.operation }}（${{ fromJSON(inputs.payload).triggeredBy.name }}）"

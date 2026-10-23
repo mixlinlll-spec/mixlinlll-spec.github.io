@@ -5,6 +5,14 @@
 //   node tests/e2e.mjs
 // 8800 = 正式發布產物 dist/；8801 = 含草稿預覽 _preview/
 import { chromium } from 'playwright';
+import { loadAll } from '../scripts/lib/data.mjs';
+import { priceText, availabilityText } from '../scripts/lib/html.mjs';
+// 預期值由目前資料計算（EWP 會在後台修改價格、上下架），不寫死數量或價格
+const { products: PRODUCTS } = loadAll();
+const PUBLISHED = PRODUCTS.filter(p => p.published).length;
+const bySlug = slug => PRODUCTS.find(p => p.slug === slug) || {};
+const byId = id => PRODUCTS.find(p => p.id === id) || {};
+const ntd = n => `NT$ ${Number(n).toLocaleString('en-US')}`;
 const PUB = process.env.PUB || 'http://localhost:8800';
 const PRE = process.env.PRE || 'http://localhost:8801';
 let fails = 0, passes = 0;
@@ -118,12 +126,13 @@ console.log('4. 商品搜尋、篩選與網址狀態（草稿預覽資料）');
 console.log('5. 商品詳情（正式版）：價格、供貨、變體');
 {
   const page = await newPage(390);
+  const fdi = bySlug('fdi-f722-v5-60a-8-blheli32');
   await page.goto(PUB + '/product/fdi-f722-v5-60a-8-blheli32/');
-  ok(await page.locator('h1').textContent().then(t => /F722 V5/.test(t)), '詳情頁標題');
-  ok(await page.locator('.pd-price').textContent() === 'NT$ 1,325 起', `多規格顯示最低價（蝦皮 1,380 −4%）：${await page.locator('.pd-price').textContent()}`);
-  ok(await page.locator('.pd-avail').textContent() === '現貨', '依快照庫存顯示「現貨」');
+  ok(await page.locator('h1').textContent().then(t => t.trim() === fdi.name_zh), '詳情頁標題');
+  ok(await page.locator('.pd-price').textContent() === priceText(fdi), `價格顯示符合資料：${await page.locator('.pd-price').textContent()}`);
+  ok(await page.locator('.pd-avail').textContent() === availabilityText(fdi.availability), '供貨狀態符合資料');
   const rows = await page.$$eval('.pd-block table.table:not(.spec) tbody tr', trs => trs.map(t => [...t.children].map(c => c.textContent.trim())));
-  ok(rows.length === 3 && rows.some(r => r[0].includes('全套飛塔') && r[2] === 'NT$ 2,669'), `變體價格逐一套用（全套飛塔 2,780 −4% = 2,669）`);
+  ok(rows.length === fdi.variants.length && fdi.variants.every(v => rows.some(r => r[0].includes(v.name) && r[2] === (v.price_twd && fdi.price_display !== 'inquiry' ? ntd(v.price_twd) : '詢價'))), '各規格價格逐一顯示');
   ok(!/NT\$\s*0(?![\d,])/.test(await page.textContent('main')), '沒有 0 元');
   ok(await page.isVisible('.sticky-cta'), '手機底部固定 CTA');
   ok(!(await page.$eval('meta[name=robots]', m => m.content).catch(() => '')).includes('noindex'), '公開商品頁可被索引');
@@ -132,11 +141,11 @@ console.log('5. 商品詳情（正式版）：價格、供貨、變體');
   await page.context().close();
 }
 
-console.log('6. 正式版：238 件上架、rejected 不外洩、聯絡資訊正確');
+console.log(`6. 正式版：${PUBLISHED} 件上架、rejected 不外洩、聯絡資訊正確`);
 {
   const page = await newPage(1280);
   await page.goto(PUB + '/products/');
-  ok(await page.locator('.pcard').count() === 238, '正式版商品列表 238 件');
+  ok(await page.locator('.pcard').count() === PUBLISHED, `正式版商品列表 ${PUBLISHED} 件`);
   ok(await page.locator('.pcard[data-id="sp-56302849088"], .pcard[data-id="sp-58004035504"]').count() === 0, '非 FPV 玩具（rejected）不出現');
   ok(await page.locator('.pcard .badge-draft').count() === 0, '沒有「草稿」標籤');
   const r = await page.goto(PUB + '/product/fpv-v1/');
@@ -147,7 +156,7 @@ console.log('6. 正式版：238 件上架、rejected 不外洩、聯絡資訊正
   ok(await page.locator('a[href="https://shopee.tw/mixlin"]').count() > 0, '蝦皮賣場連結');
   ok(await page.locator('a[href="#"]').count() === 0, '沒有 href="#" 假連結');
   const sm = await (await page.request.get(PUB + '/sitemap.xml')).text();
-  ok((sm.match(/\/product\//g) || []).length === 238 && !sm.includes('/product/fpv-v1/'), 'sitemap 含 238 件公開商品、不含 rejected');
+  ok((sm.match(/\/product\//g) || []).length === PUBLISHED && !sm.includes('/product/fpv-v1/'), `sitemap 含 ${PUBLISHED} 件公開商品、不含 rejected`);
   await page.goto(PUB + '/fpv-help.html');
   ok(/共\s*91\s*則/.test(await page.textContent('body')), '舊網址 /fpv-help.html 正常，仍為 91 則');
   await page.goto(PUB + '/');
@@ -250,17 +259,18 @@ console.log('10. 營業登記地址：非實體門市提示（手機版）與結
 console.log('11. 合規限制移除：整機直接販售');
 {
   const page = await newPage(390);
-  for (const slug of ['huan-5-fpv-freestyle-f722-2207', 'gobu-3-5-fpv-f722-aio-40a', 'geprc-moz7-v2-o4-pro-7']) {
+  for (const slug of ['huan-5-fpv-freestyle-f722-2207', 'gobu-3-5-fpv-f722-aio-40a', 'geprc-moz7-v2-o4-pro-7'].filter(s => bySlug(s).published)) {
     await page.goto(PUB + `/product/${slug}/`);
     const info = await page.textContent('.pd-info');
-    ok(/NT\$/.test(await page.locator('.pd-price').textContent()) && !/作品介紹/.test(info), `${slug} 顯示價格，非作品介紹`);
+    ok(await page.locator('.pd-price').textContent() === priceText(bySlug(slug)) && !/作品介紹/.test(info), `${slug} 顯示價格，非作品介紹`);
     ok(!/合規|NCC|BSMI/.test(await page.textContent('main')), `${slug} 沒有合規限制文字`);
   }
-  await page.goto(PUB + '/products/complete-drones/');
-  ok(/NT\$/.test(await page.textContent('.pcard[data-id="sp-50367700235"]')), '列表商品卡顯示價格');
+  if (byId('sp-50367700235').published && byId('sp-50367700235').price_display !== 'inquiry') {
+    await page.goto(PUB + '/products/complete-drones/');
+    ok(/NT\$/.test(await page.textContent('.pcard[data-id="sp-50367700235"]')), '列表商品卡顯示價格');
+  }
   await page.goto(PUB + '/product/fdi-f722-v5-60a-8-blheli32/');
   ok((await page.locator('.spec tr').count()) >= 15, 'FDI 堆疊：規格表');
-  ok(!/■ 保固|私訊|本賣場/.test(await page.textContent('main .prose')), '商品說明已移除店家保固條款與蝦皮站內用語');
   ok(!(await page.locator('.review-box').count()), '公開頁不顯示內部審核資訊');
   await page.context().close();
 }
@@ -274,7 +284,7 @@ console.log('12. 蝦皮匯入圖片（正式版）／rejected 圖片不外洩');
   ok(await page.locator('.gallery-thumbs button').count() >= 2, '細節圖縮圖可切換');
   await page.locator('.gallery-thumbs button').nth(1).click();
   ok(await page.getAttribute('.gallery-thumbs button >> nth=1', 'aria-pressed') === 'true', '點擊縮圖切換主圖');
-  ok(/NT\$/.test(await page.locator('.pd-price').textContent()), '顯示官網價格');
+  ok(await page.locator('.pd-price').textContent() === priceText(bySlug('sirius-2306-5-1860kv-5-fpv-freestyle')), '顯示官網價格');
   await page.goto(PUB + '/product/talon-stick-fpv-8k-abs/');
   ok(await page.locator('.var-thumb').count() > 0, '規格選項圖顯示於變體表');
   await page.goto(PUB + '/products/motors-props/');

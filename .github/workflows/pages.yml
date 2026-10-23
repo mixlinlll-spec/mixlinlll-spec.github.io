@@ -1,11 +1,16 @@
 name: Deploy EWP to GitHub Pages
-# 只在 main 更新時部署。發布內容只有 dist/（產生的頁面＋白名單靜態檔），
+# 只在 main 更新時部署（後台儲存由 cms-sync.yml 校正後觸發）。發布內容只有 dist/（產生的頁面＋白名單靜態檔），
 # src/、scripts/、tests/、docs/、_preview/ 不會上傳。
 # 啟用前必須把 Settings → Pages → Source 改為「GitHub Actions」（見 docs/DEPLOY_ROLLBACK.md）。
 on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      sha:
+        description: 要部署的 commit（由後台流程指定剛驗證過的版本；空白＝main 最新）
+        required: false
+        type: string
 permissions:
   contents: read
   pages: write
@@ -14,10 +19,49 @@ concurrency:
   group: pages
   cancel-in-progress: false
 jobs:
+  target:
+    # 後台（Pages CMS）原始儲存不直接部署：由 cms-sync.yml 校正、驗證後再以 workflow_dispatch 指定 commit 觸發
+    if: github.event_name == 'workflow_dispatch' || !startsWith(github.event.head_commit.message, '[後台]')
+    runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.t.outputs.sha }}
+      skip: ${{ steps.t.outputs.skip }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 部署前檢查：必須是 main 最新版本，且沒有尚未校正的後台儲存
+        id: t
+        env:
+          TARGET: ${{ inputs.sha || github.sha }}
+        run: |
+          git fetch -q origin main
+          HEAD=$(git rev-parse origin/main); T=$(git rev-parse --verify "$TARGET^{commit}")
+          echo "sha=$T" >> "$GITHUB_OUTPUT"
+          if [ "$T" != "$HEAD" ]; then
+            echo "::notice::main 已有較新的 commit（${HEAD:0:7}），略過部署 ${T:0:7}；較新的 commit 由它自己的流程部署"
+            echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          # 獨立檢查（不看最後一筆 commit 訊息）：從商品檔歷史判斷是否有「[後台]」儲存尚未被校正。
+          # 例：後台儲存後立刻有另一筆一般 commit，最後一筆不是 [後台]，這裡仍會擋下。
+          git checkout -q "$T"
+          PENDING=$(node scripts/cms-normalize.mjs --pending-count)
+          if [ "$PENDING" != "0" ]; then
+            echo "::warning::有 $PENDING 筆後台儲存尚未校正，本次不部署；校正流程（cms-sync）完成後會自動部署"
+            echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
   build:
+    needs: target
+    if: needs.target.outputs.skip == 'false'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.target.outputs.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22

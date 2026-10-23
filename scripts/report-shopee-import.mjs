@@ -21,12 +21,12 @@ const rows = products.map(p => {
     variants: (p.variants || []).length, snapRows: (snap.rows || []).length,
     unmatched: (rv.unmatched_option_images || []).join('／'),
     price: snap.price_min == null ? '' : snap.price_min === snap.price_max ? `${snap.price_min}` : `${snap.price_min}–${snap.price_max}`,
-    stock: snap.stock_total ?? '', snapStatus: snap.status === 'applied' ? '已套用' : snap.rows ? '僅快照' : '',
+    snapStatus: snap.status === 'applied' ? '已套用' : snap.rows ? '僅快照' : '',
     public: p.price_display === 'inquiry' ? '詢價' : `NT$${p.price_twd}${p.price_display === 'from' ? ' 起' : ''}`, avail: AVAILABILITY[p.availability],
   };
 });
 const sum = k => rows.reduce((a, r) => a + (Number(r[k]) || 0), 0);
-const COLS = [['id', '商品ID'], ['name', '品名'], ['cat', '主分類'], ['status', '狀態'], ['srcImgs', '蝦皮主圖＋細節圖'], ['imgs', '已匯入圖片'], ['srcOpt', '蝦皮規格選項圖'], ['optImgs', '已對應選項圖'], ['rights', '圖片使用權'], ['snapRows', '蝦皮規格列'], ['variants', '網站變體'], ['unmatched', '未對應的選項圖'], ['price', '快照價格'], ['stock', '快照庫存'], ['snapStatus', '快照狀態'], ['public', '網站價格'], ['avail', '網站供貨']];
+const COLS = [['id', '商品ID'], ['name', '品名'], ['cat', '主分類'], ['status', '狀態'], ['srcImgs', '蝦皮主圖＋細節圖'], ['imgs', '已匯入圖片'], ['srcOpt', '蝦皮規格選項圖'], ['optImgs', '已對應選項圖'], ['rights', '圖片使用權'], ['snapRows', '蝦皮規格列'], ['variants', '網站變體'], ['unmatched', '未對應的選項圖'], ['price', '快照價格'], ['snapStatus', '快照狀態'], ['public', '網站價格'], ['avail', '網站供貨']];
 const q = v => { const s = String(v ?? ''); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
 fs.writeFileSync(path.join(ROOT, 'docs', 'shopee-import.csv'), '﻿' + [COLS.map(c => c[1]).join(','), ...rows.map(r => COLS.map(([k]) => q(r[k])).join(','))].join('\r\n') + '\r\n');
 const missingImg = rows.filter(r => r.imgs < r.srcImgs);
@@ -40,12 +40,12 @@ const md = `# 蝦皮商品匯入總表
 | 蝦皮匯出商品 | ${rows.length + Object.keys(services.listings).length} 件（商品 ${rows.length}、服務型 ${Object.keys(services.listings).length}） |
 | 主圖＋細節圖 | 蝦皮 ${sum('srcImgs')} 張（不重複）→ 已匯入 ${sum('imgs')} 張 |
 | 規格選項圖 | 蝦皮 ${sum('srcOpt')} 張（不重複）→ 已對應變體 ${sum('optImgs')} 張 |
-| 價格／庫存列 | 商品 ${sum('snapRows')} 列＋服務型 ${svcRows} 列＝${sum('snapRows') + svcRows} 列（全部保存為快照） |
+| 蝦皮規格列 | 商品 ${sum('snapRows')} 列＋服務型 ${svcRows} 列＝${sum('snapRows') + svcRows} 列（保存價格快照；庫存數量屬機密，已自公開資料移除） |
 | 網站變體 | ${sum('variants')} 筆（對應蝦皮規格 ID） |
 | 快照已套用到公開欄位 | ${rows.filter(r => r.snapStatus === '已套用').length} 件 |
 | 已公開商品 | ${rows.filter(r => r.status === '已公開').length} 件 |
 
-- 價格與庫存：原始蝦皮快照保存在 \`review.shopee_sales_snapshot\`；已套用的商品，官網價格＝蝦皮價格 −${[...new Set(products.map(p => p.review?.shopee_sales_snapshot?.discount_percent).filter(x => x != null))].join('／') || 0}%（四捨五入到整數元），供貨依快照庫存（>0 現貨、0 暫無供貨）。
+- 價格：原始蝦皮價格快照保存在 \`review.shopee_sales_snapshot\`；已套用的商品，官網價格＝蝦皮價格 −${[...new Set(products.map(p => p.review?.shopee_sales_snapshot?.discount_percent).filter(x => x != null))].join('／') || 0}%（四捨五入到整數元），供貨狀態依匯入當時的蝦皮庫存判定（之後由 EWP 在後台維護）。庫存數量屬機密，不存放於公開 repo。
 - 圖片使用權：EWP 已確認全部可使用（\`rights: "licensed"\`）。
 - 服務型商品（維修、代購、3D 列印）的原始資料保存在 \`src/data/shopee/service-listings.json\`。
 

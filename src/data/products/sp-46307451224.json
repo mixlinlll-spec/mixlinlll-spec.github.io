@@ -3,7 +3,7 @@
   "slug": "ca381-one-2-0mm-pcb-fpv",
   "name_zh": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器",
   "sku": null,
-  "brand": null,
+  "brand": "維修佬",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "tools",
@@ -70,13 +70,13 @@
   "variants": [],
   "price_twd": 76,
   "price_display": "fixed",
-  "availability": "out_of_stock",
+  "availability": "in_stock",
   "shopee_url": null,
   "shopee_item_id": "46307451224",
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-23",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -114,13 +114,11 @@
           "parent_sku": null,
           "sku": null,
           "price": 79,
-          "stock": 0,
           "min_qty": 1
         }
       ],
       "price_min": 79,
       "price_max": 79,
-      "stock_total": 0,
       "status": "applied",
       "applied_at": "2026-10-22",
       "applied": [
