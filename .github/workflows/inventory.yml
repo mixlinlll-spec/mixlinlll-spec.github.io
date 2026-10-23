@@ -1,0 +1,125 @@
+name: 庫存後台（Cloudflare Worker＋D1）
+# test：單元／併發／登入驗證測試、手機與電腦版網頁測試、在 Cloudflare 執行環境（workerd＋本機 D1）實跑
+# deploy：main 更新或手動執行時部署 Worker、套用 D1 結構、同步商品清單（只同步名稱／規格／供貨狀態，不碰庫存數字）
+# 庫存數字只存在 Cloudflare D1：不寫入 GitHub、不出現在 Actions 輸入參數或執行紀錄。
+on:
+  push:
+    branches: [main, feature/inventory]
+    paths: ['inventory/**', 'scripts/inventory-catalog-sql.mjs', 'src/data/products/**', '.github/workflows/inventory.yml']
+  pull_request:
+    paths: ['inventory/**', 'scripts/inventory-catalog-sql.mjs', '.github/workflows/inventory.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: inventory-${{ github.ref }}
+  cancel-in-progress: false
+env:
+  WRANGLER_VERSION: 4.20.0
+  PLAYWRIGHT_VERSION: 1.56.0
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 庫存邏輯、併發、登入驗證測試
+        run: node --test inventory/test/inventory.test.mjs
+      - name: 安裝測試工具
+        run: |
+          npm install --no-save --no-audit --no-fund --no-package-lock playwright@$PLAYWRIGHT_VERSION wrangler@$WRANGLER_VERSION
+          npx playwright install --with-deps chromium
+      - name: 管理網頁測試（手機 390px、電腦 1280px）
+        run: SCREENSHOT_DIR="$RUNNER_TEMP" node inventory/test/ui.e2e.mjs
+      - name: 上傳畫面截圖
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: inventory-ui
+          path: ${{ runner.temp }}/inventory-ui-*.png
+          if-no-files-found: ignore
+      - name: Cloudflare 執行環境實跑（wrangler dev＋本機 D1）
+        working-directory: inventory
+        run: |
+          set -e
+          W="npx --prefix .. wrangler"
+          $W d1 migrations apply ewp-inventory --local > /dev/null
+          node ../scripts/inventory-catalog-sql.mjs --out "$RUNNER_TEMP/catalog.sql"
+          $W d1 execute ewp-inventory --local --file "$RUNNER_TEMP/catalog.sql" > /dev/null
+          $W dev --port 8787 --ip 127.0.0.1 --var DEV_AUTH_EMAIL:ci@ewp.test > "$RUNNER_TEMP/wrangler.log" 2>&1 &
+          for i in $(seq 1 90); do curl -sf http://localhost:8787/api/me > /dev/null && break; sleep 1; done
+          node ../inventory/test/workerd-smoke.mjs http://localhost:8787 || { tail -50 "$RUNNER_TEMP/wrangler.log"; exit 1; }
+  deploy:
+    needs: test
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: 檢查 Cloudflare 設定
+        id: cfg
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::notice title=庫存後台::尚未設定 GitHub Secrets（CLOUDFLARE_API_TOKEN、CLOUDFLARE_ACCOUNT_ID），略過部署。設定方式見 docs/admin/INVENTORY.md"
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else echo "ready=true" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        if: steps.cfg.outputs.ready == 'true'
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        if: steps.cfg.outputs.ready == 'true'
+        with:
+          node-version: 22
+      - name: 建立／取得 D1 資料庫、套用結構
+        if: steps.cfg.outputs.ready == 'true'
+        working-directory: inventory
+        run: |
+          set -e
+          npm install --prefix .. --no-save --no-audit --no-fund --no-package-lock wrangler@$WRANGLER_VERSION > /dev/null
+          W="npx --prefix .. wrangler"
+          ID=$($W d1 list --json | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{const d=JSON.parse(s).find(x=>x.name==='ewp-inventory');process.stdout.write(d?d.uuid:'')})")
+          if [ -z "$ID" ]; then
+            $W d1 create ewp-inventory > /dev/null
+            ID=$($W d1 list --json | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{process.stdout.write(JSON.parse(s).find(x=>x.name==='ewp-inventory').uuid)})")
+            echo "已建立 D1 資料庫 ewp-inventory"
+          fi
+          sed -i "s/00000000-0000-0000-0000-000000000000/$ID/" wrangler.toml
+          $W d1 migrations apply ewp-inventory --remote > /dev/null
+          echo "D1 結構已套用"
+      - name: 同步商品清單（不含庫存數字；輸出不顯示數量）
+        if: steps.cfg.outputs.ready == 'true'
+        working-directory: inventory
+        run: |
+          set -e
+          node ../scripts/inventory-catalog-sql.mjs --out "$RUNNER_TEMP/catalog.sql" --snapshot-rev 3dc1916
+          npx --prefix .. wrangler d1 execute ewp-inventory --remote --file "$RUNNER_TEMP/catalog.sql" > /dev/null
+          rm -f "$RUNNER_TEMP/catalog.sql"
+          echo "商品清單已同步"
+      - name: 部署 Worker
+        if: steps.cfg.outputs.ready == 'true'
+        working-directory: inventory
+        env:
+          ACCESS_AUD: ${{ vars.INVENTORY_ACCESS_AUD }}
+          ACCESS_TEAM_DOMAIN: ${{ vars.INVENTORY_ACCESS_TEAM_DOMAIN }}
+        run: |
+          set -e
+          ARGS=""
+          if [ -n "$ACCESS_AUD" ] && [ -n "$ACCESS_TEAM_DOMAIN" ]; then ARGS="--var ACCESS_AUD:$ACCESS_AUD --var ACCESS_TEAM_DOMAIN:$ACCESS_TEAM_DOMAIN"; fi
+          npx --prefix .. wrangler deploy $ARGS > "$RUNNER_TEMP/deploy.log" 2>&1 || { cat "$RUNNER_TEMP/deploy.log"; exit 1; }
+          cat "$RUNNER_TEMP/deploy.log"
+          URL=$(grep -oE 'https://[a-z0-9.-]+\.workers\.dev' "$RUNNER_TEMP/deploy.log" | head -1)
+          {
+            echo "## 庫存後台已部署"
+            echo ""
+            echo "入口：${URL:-（請到 Cloudflare 後台 Workers & Pages → ewp-inventory 查看網址）}"
+            echo ""
+            echo "第一次部署後：Cloudflare 後台 → Workers & Pages → ewp-inventory → Settings → Domains & Routes → workers.dev → **Enable Cloudflare Access**，加入可登入的 Email。未啟用前，網頁會顯示「尚未設定 Cloudflare Access」並拒絕所有人。"
+          } >> "$GITHUB_STEP_SUMMARY"
