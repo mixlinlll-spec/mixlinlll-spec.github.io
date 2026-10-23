@@ -60,3 +60,26 @@
     if (window.innerWidth >= 1180 && drawer && !drawer.hidden) setDrawer(false);
   });
 })();
+
+// 首頁 YouTube 影片：點擊封面才載入播放器（youtube-nocookie、播完只推薦同頻道），沒有 JavaScript 時是一般 YouTube 連結
+(function () {
+  'use strict';
+  var links = document.querySelectorAll('a.yt-lite[data-yt]');
+  Array.prototype.forEach.call(links, function (a) {
+    a.addEventListener('click', function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+      e.preventDefault();
+      var id = a.getAttribute('data-yt');
+      if (!/^[\w-]{6,20}$/.test(id)) return;
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&playsinline=1&modestbranding=1';
+      f.title = a.getAttribute('data-title') || 'YouTube 影片';
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      f.allowFullscreen = true;
+      f.referrerPolicy = 'strict-origin-when-cross-origin';
+      f.className = 'yt-iframe';
+      a.replaceWith(f);
+      f.focus();
+    });
+  });
+})();

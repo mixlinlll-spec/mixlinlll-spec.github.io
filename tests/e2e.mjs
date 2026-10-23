@@ -24,7 +24,7 @@ async function newPage(width) {
   const ctx = await browser.newContext({ viewport: { width, height: 900 } });
   const page = await ctx.newPage();
   page.on('pageerror', e => errors.push(`${page.url()} ${e}`));
-  page.on('console', m => { if (m.type() === 'error' && !/status of 404/.test(m.text())) errors.push(`${page.url()} ${m.text()}`); });
+  page.on('console', m => { if (m.type() === 'error' && !/status of 404/.test(m.text()) && !/ytimg|youtube/.test(m.location()?.url || '')) errors.push(`${page.url()} ${m.text()}`); });
   return page;
 }
 
@@ -359,6 +359,33 @@ console.log('15. 自製機型目錄：七款、連到商城商品、手機／平
       await page.goto(PUB + '/builds/huan/');
       await page.waitForURL(`**/product/${listed[0].slug}/`);
       ok(true, '舊網址 /builds/huan/ 導向商城商品頁');
+    }
+    await page.context().close();
+  }
+}
+
+console.log('16. 首頁最上方 YouTube 影片（點擊才載入播放器）');
+{
+  const { site: SITE } = loadAll();
+  const id = SITE.home_video.youtube_id;
+  for (const w of [390, 1366]) {
+    const page = await newPage(w);
+    await page.goto(PUB + '/');
+    const first = await page.$eval('main > section', s => s.className);
+    ok(first.includes('home-video'), `${w}px：影片是首頁第一個區塊`);
+    ok(await page.$eval('.home-video', v => v.compareDocumentPosition(document.querySelector('.hero')) & Node.DOCUMENT_POSITION_FOLLOWING), `${w}px：「從親手組裝，到自由飛翔」區塊移到影片下方`);
+    ok(await page.locator('h1').count() === 1 && (await page.textContent('h1')).includes('從親手組裝'), `${w}px：首頁 h1 不變`);
+    ok(await page.locator('iframe').count() === 0, `${w}px：點擊前不載入 YouTube 播放器`);
+    const r = await page.$eval('.video-frame', e => e.getBoundingClientRect().toJSON());
+    ok(Math.abs(r.width / r.height - 16 / 9) < 0.02 && r.width <= w, `${w}px：影片 16:9（${Math.round(r.width)}×${Math.round(r.height)}）、不超出畫面`);
+    if (w === 1366) ok(r.bottom < 900 - 0, '電腦版：影片完整出現在第一屏內');
+    ok(await page.getAttribute('a.yt-lite', 'href') === `https://www.youtube.com/watch?v=${id}`, '沒有 JavaScript 時封面連到 YouTube');
+    ok(await page.getAttribute('.video-yt-link', 'href') === `https://www.youtube.com/watch?v=${id}`, '「在 YouTube 觀看」連結正確');
+    if (w === 1366) {
+      await page.route('https://www.youtube-nocookie.com/**', rt => rt.fulfill({ body: '<html></html>', contentType: 'text/html' }));
+      await page.click('a.yt-lite');
+      const src = await page.getAttribute('.video-frame iframe', 'src');
+      ok(src === `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&playsinline=1&modestbranding=1`, '點擊封面後在原位載入 youtube-nocookie 播放器');
     }
     await page.context().close();
   }
