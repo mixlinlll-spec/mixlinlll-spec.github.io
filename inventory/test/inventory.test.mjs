@@ -388,7 +388,7 @@ describe('商品同步的安全檢查：失敗時庫存與紀錄不變', () => {
   });
   test('有規格缺少身分（沒有蝦皮規格 ID 也沒有 key）→ 不同步（不再用名稱雜湊）', () => {
     const dir = makeFixture(d => { const p = readP(d, PRODUCTS.find(x => x.variants?.length).id); p.variants.push({ name: '沒有身分', sku: null, price_twd: null, availability: 'unknown' }); writeP(d, p); });
-    try { catalogSql([], dir); assert.fail('應該失敗'); } catch (e) { assert.match(String(e.stderr), /沒有蝦皮規格 ID 也沒有識別碼 key/); }
+    try { catalogSql([], dir); assert.fail('應該失敗'); } catch (e) { assert.match(String(e.stderr), /識別碼/); // 由商品資料驗證或同步程式擋下 }
   });
   test('有尚未校正的商品後台儲存 → 不同步（結束碼 3）', () => {
     const stub = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'inv-')), 'pending.mjs');
