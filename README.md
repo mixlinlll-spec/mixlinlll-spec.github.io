@@ -2,7 +2,7 @@
 
 官方品牌網站＋可搜尋的商品型錄＋LINE／蝦皮詢價導購＋FPV 技術知識庫。
 **商品管理後台**：Pages CMS（https://app.pagescms.org），使用說明與限制見 [docs/admin/PRODUCT_ADMIN.md](docs/admin/PRODUCT_ADMIN.md)。
-部署在 GitHub Pages（`https://mixlinlll-spec.github.io/`），純靜態網站：沒有後端、資料庫、會員、購物車、金流或追蹤程式。
+部署在 GitHub Pages，正式網址 **https://www.ewpfpv.com**（自訂網域；舊網址 `https://mixlinlll-spec.github.io/` 由 GitHub 自動轉址），純靜態網站：沒有後端、資料庫、會員、購物車、金流或追蹤程式。
 **由 GitHub Actions 建置並只發布 `dist/`**（產生的頁面＋白名單靜態檔）；原始資料、程式與測試不會出現在網站上。
 
 ## 架構
