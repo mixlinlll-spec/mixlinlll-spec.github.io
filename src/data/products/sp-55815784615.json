@@ -162,7 +162,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 11900,
-          "stock": 10,
           "min_qty": 2
         },
         {
@@ -171,7 +170,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 16900,
-          "stock": 10,
           "min_qty": null
         },
         {
@@ -180,13 +178,11 @@
           "parent_sku": null,
           "sku": null,
           "price": 20900,
-          "stock": 10,
           "min_qty": null
         }
       ],
       "price_min": 11900,
       "price_max": 20900,
-      "stock_total": 30,
       "status": "applied",
       "applied_at": "2026-10-22",
       "applied": [

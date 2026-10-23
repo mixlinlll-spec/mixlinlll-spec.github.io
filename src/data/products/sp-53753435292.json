@@ -260,7 +260,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 45,
-          "stock": 49,
           "min_qty": 1
         },
         {
@@ -269,7 +268,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 70,
-          "stock": 47,
           "min_qty": null
         },
         {
@@ -278,7 +276,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 75,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -287,7 +284,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 30,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -296,7 +292,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 50,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -305,7 +300,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 60,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -314,7 +308,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 35,
-          "stock": 47,
           "min_qty": null
         },
         {
@@ -323,7 +316,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 130,
-          "stock": 47,
           "min_qty": null
         },
         {
@@ -332,7 +324,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 60,
-          "stock": 49,
           "min_qty": null
         },
         {
@@ -341,7 +332,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 35,
-          "stock": 48,
           "min_qty": null
         },
         {
@@ -350,13 +340,11 @@
           "parent_sku": null,
           "sku": null,
           "price": 120,
-          "stock": 48,
           "min_qty": null
         }
       ],
       "price_min": 30,
       "price_max": 130,
-      "stock_total": 535,
       "status": "applied",
       "applied_at": "2026-10-22",
       "applied": [

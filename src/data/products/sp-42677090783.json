@@ -236,7 +236,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 300,
-          "stock": 50,
           "min_qty": 1
         },
         {
@@ -245,7 +244,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 300,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -254,7 +252,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 300,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -263,7 +260,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 300,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -272,7 +268,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 330,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -281,7 +276,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 300,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -290,7 +284,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 300,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -299,7 +292,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 300,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -308,7 +300,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 300,
-          "stock": 45,
           "min_qty": null
         },
         {
@@ -317,7 +308,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 300,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -326,7 +316,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 300,
-          "stock": 50,
           "min_qty": null
         },
         {
@@ -335,13 +324,11 @@
           "parent_sku": null,
           "sku": null,
           "price": 360,
-          "stock": 50,
           "min_qty": null
         }
       ],
       "price_min": 300,
       "price_max": 360,
-      "stock_total": 595,
       "status": "applied",
       "applied_at": "2026-10-22",
       "applied": [

@@ -119,13 +119,11 @@
           "parent_sku": null,
           "sku": null,
           "price": 399,
-          "stock": 5,
           "min_qty": 1
         }
       ],
       "price_min": 399,
       "price_max": 399,
-      "stock_total": 5,
       "status": "applied",
       "applied_at": "2026-10-22",
       "applied": [

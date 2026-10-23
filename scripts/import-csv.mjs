@@ -11,7 +11,7 @@
 // 規則：id 已存在時只更新 CSV 有填的欄位；空白欄位不會清除原資料（要清除請直接改 JSON）。
 import fs from 'node:fs';
 import path from 'node:path';
-import { PRODUCTS_DIR, parseCSV, readJSON, writeJSON, loadAll, validateProducts, today } from './lib/data.mjs';
+import { PRODUCTS_DIR, parseCSV, readJSON, writeJSON, loadAll, validateProducts, today, newVariantKey } from './lib/data.mjs';
 
 const [, , input, ...flags] = process.argv;
 const DRY = flags.includes('--dry-run');
@@ -47,6 +47,17 @@ for (const [i, row] of rows.entries()) {
     next[k] = PARSERS[k] ? PARSERS[k](v) : v;
   }
   if (row.published === '') next.published = existing.published ?? false;
+  // 規格識別：同名規格沿用原本的蝦皮規格 ID／key／規格圖；新規格給新的 key（庫存後台靠它對應，不可改變）
+  if (row.variants) {
+    const taken = new Set((existing.variants || []).map(v => v.key).filter(Boolean));
+    next.variants = next.variants.map(v => {
+      const old = (existing.variants || []).find(o => o.name === v.name);
+      const keep = old ? Object.fromEntries(['shopee_variation_id', 'key', 'image'].filter(k => old[k] !== undefined).map(k => [k, old[k]])) : {};
+      const out = { ...v, ...keep };
+      if (!out.shopee_variation_id && !out.key) { out.key = newVariantKey(taken); taken.add(out.key); }
+      return out;
+    });
+  }
   next.updated_at = today();
   changed.push({ ...next, _file: `${row.id}.json` });
 }

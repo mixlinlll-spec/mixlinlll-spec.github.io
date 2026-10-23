@@ -65,16 +65,16 @@ describe('檔案路徑驗證', () => {
 });
 
 describe('現有資料狀態', () => {
-  test('EWP 核准全部上架：238 件公開，只有 2 件非 FPV 玩具（rejected）不上官網', () => {
-    assert.equal(products.filter(p => p.published).length, 238);
-    assert.deepEqual(products.filter(p => !p.published).map(p => p.id).sort(), ['sp-56302849088', 'sp-58004035504']);
-    for (const p of products.filter(p => p.published)) assert.equal(p.review.status, 'approved');
+  // 以下為「後台修改後仍必須成立」的不變條件（上下架、價格、照片可由 EWP 在後台調整，不再檢查固定數量）
+  test('公開商品都已核准；2 件非 FPV 玩具（rejected）不上官網', () => {
+    for (const p of products.filter(p => p.published)) assert.equal(p.review.status, 'approved', p.id);
+    for (const id of ['sp-56302849088', 'sp-58004035504']) assert.equal(products.find(p => p.id === id).published, false);
   });
   test('非 FPV 玩具已標記 rejected', () => {
     for (const id of ['sp-56302849088', 'sp-58004035504']) assert.equal(products.find(p => p.id === id).review.status, 'rejected');
   });
   test('十安聯名電池標示為聯名，不稱 EWP 自製', () => {
-    for (const id of ['sp-57303672693', 'sp-55552267337']) { const p = products.find(x => x.id === id); assert.equal(p.seller_role, 'collab'); assert.match(p.brand, /十安 × 電翼動力/); }
+    for (const id of ['sp-57303672693', 'sp-55552267337']) { const p = products.find(x => x.id === id); assert.equal(p.seller_role, 'collab'); if (p.brand) assert.doesNotMatch(p.brand, /^電翼動力 EWP$/); }
   });
   test('三份政策頁皆未核准', () => { for (const k of ['privacy', 'terms', 'shipping-returns']) assert.equal(site.policies[k].approved, false); });
   test('蝦皮 shop ID 未經核實前保持 null', () => assert.equal(site.contact.shopee.shop_id, null));
@@ -108,9 +108,9 @@ describe('發布產物（建置到暫存資料夾）', () => {
       for (const s of STATIC_WHITELIST) assert.ok(tops.includes(s), s);
       const files = fs.readdirSync(out, { recursive: true }).map(String);
       assert.equal(files.filter(f => f.endsWith('.json')).length, 0, '不得有任何 .json');
-      assert.equal(fs.readdirSync(path.join(out, 'product')).length, 238, '238 件公開商品頁');
+      assert.equal(fs.readdirSync(path.join(out, 'product')).length, products.filter(p => p.published).length, '每件公開商品都有詳情頁');
       const sm = fs.readFileSync(path.join(out, 'sitemap.xml'), 'utf8');
-      assert.equal((sm.match(/\/product\//g) || []).length, 238);
+      assert.equal((sm.match(/\/product\//g) || []).length, products.filter(p => p.published).length);
       for (const p of products.filter(p => !p.published)) { assert.ok(!sm.includes(`/product/${p.slug}/`)); assert.ok(!fs.existsSync(path.join(out, 'product', p.slug))); }
       const r = spawnSync('node', ['scripts/check-site.mjs', OUT], { cwd: ROOT, encoding: 'utf8' });
       assert.equal(r.status, 0, r.stderr);
@@ -162,18 +162,40 @@ describe('Phase 3：營業登記地址、圖片使用權、合規限制移除', 
     for (const p of products) { assert.equal(p.compliance, undefined, p.id); assert.notEqual(p.listing_mode, 'showcase', p.id); }
     const drone = { ...base(), id: 'd1', slug: 'd1', primary_category_id: 'complete-drones', subcategory_id: '5in' };
     assert.deepEqual(errs(drone), []);
-    for (const id of ['sp-50367700235', 'sp-29295757187', 'sp-44561107171']) { const p = products.find(x => x.id === id); assert.ok(p.published && p.price_twd > 0, id); }
   });
-  test('公開商品描述不含保固承諾、hashtag 行或蝦皮站內用語', () => {
-    for (const p of products.filter(p => p.published)) {
-      // 售後政策未核准前，不刊登店家保固條款（提及原廠保固的提醒可保留）
-      for (const w of ['■ 保固', '保固將自動失效', '不在保固範圍', '私訊', '本賣場', '聊聊', '下標']) assert.ok(!p.description.includes(w), `${p.id} 含「${w}」`);
-      assert.ok(!/^\s*#\S+(\s+#\S+)*\s*$/m.test(p.description), `${p.id} 含 hashtag 行`);
-      assert.ok(p.review.source_description !== undefined, `${p.id} 應保存原始描述`);
-    }
+  // 描述文字由 EWP 在後台維護；這裡只確認匯入時保存的蝦皮原文仍在（review 不可由後台修改）
+  test('公開商品保存蝦皮原始描述', () => {
+    for (const p of products.filter(p => p.published)) assert.ok(p.review.source_description !== undefined, `${p.id} 應保存原始描述`);
   });
   test('所有商品 id 與檔名一致、slug 唯一（未被改動）', () => {
     const slugs = products.map(p => p.slug); assert.equal(new Set(slugs).size, slugs.length); assert.equal(products.length, 240);
+  });
+});
+
+describe('庫存數量保密（EWP 決定：repo 公開，不存放真實庫存）', () => {
+  test('商品資料、規格與蝦皮快照都沒有庫存數量', () => {
+    for (const p of products) {
+      assert.ok(!('stock_qty' in p), p.id);
+      for (const v of p.variants || []) assert.ok(!('stock_qty' in v), p.id);
+      const snap = p.review?.shopee_sales_snapshot || {};
+      assert.ok(!('stock_total' in snap) && !(snap.rows || []).some(r => 'stock' in r), p.id);
+    }
+    const svc = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/shopee/service-listings.json'), 'utf8'));
+    for (const l of Object.values(svc.listings)) assert.ok(!l.sales.some(r => 'stock' in r));
+    assert.ok(!fs.readFileSync(path.join(ROOT, 'docs/shopee-import.csv'), 'utf8').includes('快照庫存'));
+  });
+  test('規格識別碼：沒有蝦皮規格 ID 的規格必須有固定 key、不可重複', () => {
+    const v = (o = {}) => ({ name: 'A', sku: null, price_twd: null, availability: 'unknown', ...o });
+    assert.ok(errs({ ...base(), variants: [v()] }).some(e => e.includes('規格識別碼')));
+    assert.deepEqual(errs({ ...base(), variants: [v({ key: 'v-0123abcd' })] }), []);
+    assert.ok(errs({ ...base(), variants: [v({ key: 'v-0123abcd' }), v({ name: 'B', key: 'v-0123abcd' })] }).some(e => e.includes('重複')));
+    assert.ok(errs({ ...base(), variants: [v({ key: 'bad' })] }).some(e => e.includes('key 格式')));
+    for (const p of products) for (const x of p.variants || []) assert.ok(x.shopee_variation_id || /^v-[0-9a-f]{8}$/.test(x.key), p.id);
+  });
+  test('驗證會擋下任何寫回的庫存數量', () => {
+    assert.ok(errs({ ...base(), stock_qty: 3 }).some(e => e.includes('stock_qty')));
+    assert.ok(errs({ ...base(), variants: [{ name: 'A', price_twd: null, availability: 'unknown', stock_qty: 0 }] }).some(e => e.includes('stock_qty')));
+    assert.ok(errs({ ...base(), review: { status: 'approved', shopee_sales_snapshot: { rows: [{ variation_id: '1', price: 10, stock: 5 }] } } }).some(e => e.includes('庫存')));
   });
 });
 
@@ -189,48 +211,44 @@ describe('蝦皮媒體與價格庫存匯入', () => {
     assert.equal(n, 912);
     assert.equal(Object.keys(svc.listings).length, 4);
   });
-  test('每件商品的主圖＋細節圖都已匯入、檔案存在；公開商品使用權為 licensed（EWP 確認）', () => {
-    let total = 0;
+  test('商品照片檔案存在；蝦皮匯入的照片來源可追溯；公開商品照片使用權為 EWP 自有或已授權', () => {
     for (const p of withMedia) {
       const src = new Set([p.review.source_media.cover, ...p.review.source_media.gallery].filter(Boolean));
-      const imported = p.images.filter(i => i.source_url);
-      assert.equal(imported.length, src.size, p.id);
-      for (const i of imported) { assert.equal(i.rights, p.published ? 'licensed' : 'unverified'); assert.equal(checkAssetPath(i.src), null); assert.equal(checkAssetPath(i.src_small), null); }
-      assert.equal(imported[0]?.role, 'cover', `${p.id} 第一張應為主圖`);
-      total += imported.length;
-    }
-    assert.equal(total, 1092);
-  });
-  test('規格選項圖全部對應到變體', () => {
-    let linked = new Set();
-    for (const p of withMedia) for (const v of p.variants || []) if (v.image) { assert.equal(checkAssetPath(v.image.src), null); linked.add(v.image.src); }
-    assert.equal(linked.size, 303);
-    assert.equal(products.filter(p => p.review.unmatched_option_images?.length).length, 0);
-  });
-  test('官網價 = 蝦皮快照價 −4%（四捨五入），變體逐一對應；供貨依快照庫存', () => {
-    const r96 = x => Math.round(x * 0.96);
-    for (const p of products.filter(p => p.published)) {
-      const snap = p.review.shopee_sales_snapshot;
-      assert.equal(snap.status, 'applied', p.id); assert.equal(snap.discount_percent, 4, p.id);
-      const prices = snap.rows.map(r => r.price).filter(x => x > 0).map(r96);
-      assert.equal(p.price_twd, Math.min(...prices), p.id);
-      assert.equal(p.price_display, Math.min(...prices) === Math.max(...prices) ? 'fixed' : 'from', p.id);
-      assert.equal(p.availability, snap.stock_total > 0 ? 'in_stock' : 'out_of_stock', p.id);
-      for (const v of p.variants.filter(v => v.shopee_variation_id)) {
-        const row = snap.rows.find(r => r.variation_id === v.shopee_variation_id);
-        assert.equal(v.price_twd, r96(row.price), `${p.id} ${v.name}`);
-        assert.equal(v.availability, row.stock > 0 ? 'in_stock' : 'out_of_stock', `${p.id} ${v.name}`);
+      for (const i of p.images) {
+        assert.equal(checkAssetPath(i.src), null, p.id); if (i.src_small) assert.equal(checkAssetPath(i.src_small), null, p.id);
+        if (i.source_url) assert.ok(src.has(i.source_url), `${p.id} 照片來源不在蝦皮媒體清單`);
+        if (p.published) assert.ok(['licensed', 'ewp_own'].includes(i.rights), `${p.id} ${i.src}`);
       }
     }
   });
-  test('未上架（rejected）商品沒有套用價格', () => {
-    for (const p of products.filter(p => !p.published)) { assert.equal(p.price_twd, null); assert.notEqual(p.review.shopee_sales_snapshot.status, 'applied'); }
+  test('規格選項圖檔案存在；匯入時沒有未對應的選項圖', () => {
+    let linked = new Set();
+    for (const p of withMedia) for (const v of p.variants || []) if (v.image) { assert.equal(checkAssetPath(v.image.src), null); linked.add(v.image.src); }
+    assert.ok(linked.size > 0);
+    assert.equal(products.filter(p => p.review.unmatched_option_images?.length).length, 0);
+  });
+  // v2.4.0 時官網價＝蝦皮快照價 −4%；之後 EWP 可在後台改價格與供貨，所以這裡只檢查快照保留與價格規則一致
+  test('蝦皮快照保留；官網價符合價格規則（最低規格價，單一價定價、多價起價）', () => {
+    for (const p of products.filter(p => p.published)) {
+      const snap = p.review.shopee_sales_snapshot;
+      assert.equal(snap.status, 'applied', p.id); assert.equal(snap.discount_percent, 4, p.id);
+      assert.ok(snap.rows.length > 0, p.id);
+      const prices = p.variants.map(v => v.price_twd).filter(x => x > 0);
+      if (p.price_display === 'inquiry') { assert.equal(p.price_twd, null, p.id); continue; }
+      if (prices.length) {
+        assert.equal(p.price_twd, Math.min(...prices), p.id);
+        assert.equal(p.price_display, Math.min(...prices) === Math.max(...prices) ? 'fixed' : 'from', p.id);
+      } else assert.ok(p.price_twd > 0, p.id);
+    }
+  });
+  test('rejected 商品不公開、沒有套用蝦皮快照', () => {
+    for (const p of products.filter(p => p.review.status === 'rejected')) { assert.equal(p.published, false); assert.notEqual(p.review.shopee_sales_snapshot.status, 'applied'); }
   });
   test('變體對應蝦皮規格 ID，且每個 ID 都在快照中', () => {
     for (const p of products) for (const v of (p.variants || []).filter(v => v.shopee_variation_id))
       assert.ok(p.review.shopee_sales_snapshot.rows.some(r => r.variation_id === v.shopee_variation_id), `${p.id} ${v.name}`);
   });
-  test('approve-snapshot：dry-run 不寫入；正式執行才套用價格、庫存與圖片使用權（不公開）', () => {
+  test('approve-snapshot：dry-run 不寫入；正式執行才套用價格與圖片使用權（不公開）；--stock 已停用', () => {
     const id = 'sp-57918649179';
     const f = path.join(PRODUCTS_DIR, `${id}.json`);
     const orig = fs.readFileSync(f, 'utf8');
@@ -241,9 +259,10 @@ describe('蝦皮媒體與價格庫存匯入', () => {
       pre.review.shopee_sales_snapshot.status = 'snapshot_only';
       const preText = JSON.stringify(pre, null, 2) + '\n';
       fs.writeFileSync(f, preText);
-      execFileSync('node', ['scripts/approve-snapshot.mjs', id, '--prices', '--stock', '--image-rights', 'ewp_own', '--discount', '4', '--dry-run'], { cwd: ROOT });
+      execFileSync('node', ['scripts/approve-snapshot.mjs', id, '--prices', '--image-rights', 'ewp_own', '--discount', '4', '--dry-run'], { cwd: ROOT });
       assert.equal(fs.readFileSync(f, 'utf8'), preText);
-      execFileSync('node', ['scripts/approve-snapshot.mjs', id, '--prices', '--stock', '--image-rights', 'ewp_own', '--discount', '4'], { cwd: ROOT });
+      assert.throws(() => execFileSync('node', ['scripts/approve-snapshot.mjs', id, '--stock'], { cwd: ROOT, stdio: 'pipe' }), '--stock 已停用（庫存保密）');
+      execFileSync('node', ['scripts/approve-snapshot.mjs', id, '--prices', '--image-rights', 'ewp_own', '--discount', '4'], { cwd: ROOT });
       let p = JSON.parse(fs.readFileSync(f, 'utf8'));
       const snap = p.review.shopee_sales_snapshot;
       assert.equal(p.price_twd, Math.round(snap.price_min * 0.96));
@@ -260,7 +279,7 @@ describe('蝦皮媒體與價格庫存匯入', () => {
     try {
       execFileSync('node', ['scripts/build.mjs', '--out', '_test'], { cwd: ROOT });
       const dirs = fs.readdirSync(path.join(out, 'assets/img/products'));
-      assert.equal(dirs.length, 238); assert.ok(!dirs.includes('sp-56302849088') && !dirs.includes('sp-58004035504'));
+      assert.equal(dirs.length, products.filter(p => p.published).length); assert.ok(!dirs.includes('sp-56302849088') && !dirs.includes('sp-58004035504'));
       fs.mkdirSync(path.join(out, 'assets/img/products/sp-56302849088'), { recursive: true });
       fs.copyFileSync(path.join(ROOT, 'assets/img/products/sp-56302849088/01.webp'), path.join(out, 'assets/img/products/sp-56302849088/01.webp'));
       const r = spawnSync('node', ['scripts/check-site.mjs', '_test'], { cwd: ROOT, encoding: 'utf8' });

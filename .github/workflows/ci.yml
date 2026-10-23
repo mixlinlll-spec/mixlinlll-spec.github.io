@@ -8,17 +8,35 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: ci-${{ github.ref }}
+  # 後台原始儲存（[後台] commit）的 CI 會被略過，用獨立 group，避免它取消正在跑的正式檢查
+  group: ci-${{ github.ref }}${{ startsWith(github.event.head_commit.message, '[後台]') && format('-cms-{0}', github.sha) || '' }}
   cancel-in-progress: true
 jobs:
   check:
+    # 後台（Pages CMS）原始儲存由 cms-sync.yml 校正與驗證，這裡略過（校正前的原始檔案缺少空值欄位）
+    if: github.event_name != 'push' || !startsWith(github.event.head_commit.message, '[後台]')
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: 檢查是否有尚未校正的後台儲存
+        id: pend
+        run: node scripts/cms-normalize.mjs --dry-run > /dev/null
+      - name: 套用尚未校正的後台儲存（只在 CI 工作區；檢查的是將會發布的內容）
+        if: steps.pend.outputs.cms_commits != '0'
+        run: |
+          npm install --no-save --no-audit --no-fund --no-package-lock sharp@0.35.4
+          node scripts/cms-normalize.mjs
+      - name: 商品資料容量（Pages CMS 以單一 GraphQL 查詢讀取整個資料夾）
+        run: |
+          KB=$(du -sk src/data/products | cut -f1); N=$(ls src/data/products/*.json | wc -l)
+          echo "::notice title=商品資料容量::$N 件、${KB} KB（後台一次讀取；實測 2.1 MB 約 1–4 秒）"
+          if [ "$KB" -gt 3500 ]; then echo "::warning title=商品資料容量::超過 3.5 MB，後台讀取可能逾時；請把 review 的來源資料移出商品檔（見 docs/admin/PRODUCT_ADMIN.md）"; fi
       - name: 驗證商品、設定與圖片路徑
         run: node scripts/build.mjs --check
       - name: 資料／審核／路徑／發布產物單元測試
@@ -26,6 +44,19 @@ jobs:
           set -o pipefail
           node --test tests/data.test.mjs | tee unit.log
           echo "::notice title=單元測試::$(grep -E '^# (tests|pass|fail) ' unit.log | tr '\n' ' ')"
+      - name: 商品後台工具單元測試（批次修改、蝦皮匯入、儲存後校正）
+        run: node --test tests/admin.test.mjs
+      - name: Pages CMS 往返測試（以 Pages CMS 原始碼模擬後台開啟→儲存→校正，全部商品）
+        run: |
+          git clone -q --depth 1 --branch 2.1.8 https://github.com/pages-cms/pages-cms.git "$RUNNER_TEMP/pages-cms"
+          test "$(git -C "$RUNNER_TEMP/pages-cms" rev-parse HEAD)" = 6f4e860a35d934406580287e7042e5e111e207a1 || (echo "::error::Pages CMS 2.1.8 commit 不符" && exit 1)
+          mkdir -p "$RUNNER_TEMP/cms-deps"
+          npm install --prefix "$RUNNER_TEMP/cms-deps" --no-save --no-audit --no-fund --no-package-lock \
+            zod@3.25.76 lodash.mergewith@4.6.2 slugify@1.6.8 date-fns@3.6.0 yaml@2.8.3 @ltd/j-toml@1.38.0 esbuild@0.25.12 sharp@0.35.4
+          # 測試需要 sharp：沒有 node_modules 時暫時連到測試依賴（前一步若已安裝 sharp 就直接使用）
+          LINKED=; if [ ! -e node_modules ]; then ln -s "$RUNNER_TEMP/cms-deps/node_modules" node_modules; LINKED=1; fi
+          PAGES_CMS_DIR="$RUNNER_TEMP/pages-cms" CMS_DEPS_DIR="$RUNNER_TEMP/cms-deps" node tests/pages-cms-roundtrip.mjs
+          if [ -n "$LINKED" ]; then rm node_modules; fi
       - name: 建置正式產物 dist/ 與含草稿預覽 _preview/
         run: |
           node scripts/build.mjs
@@ -41,6 +72,8 @@ jobs:
       - name: 商品圖片處理工具自我測試（sharp）
         run: node scripts/add-images.mjs --self-test
       - name: 蝦皮匯入總表與資料一致
+        # 有尚未校正的後台儲存時略過（總表會由校正流程連同資料一起更新）
+        if: steps.pend.outputs.cms_commits == '0'
         run: |
           node scripts/report-shopee-import.mjs
           git diff --exit-code docs/SHOPEE_IMPORT_REPORT.md docs/shopee-import.csv || (echo "::error::確認表與商品資料不一致，請執行報告腳本後提交" && exit 1)

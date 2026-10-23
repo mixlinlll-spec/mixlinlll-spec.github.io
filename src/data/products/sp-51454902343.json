@@ -113,13 +113,15 @@
       "name": "4:3 版本",
       "sku": null,
       "price_twd": null,
-      "availability": "unknown"
+      "availability": "unknown",
+      "key": "v-179b8811"
     },
     {
       "name": "16:9 版本",
       "sku": null,
       "price_twd": null,
-      "availability": "unknown"
+      "availability": "unknown",
+      "key": "v-874b68b1"
     }
   ],
   "price_twd": 1037,
@@ -183,13 +185,11 @@
           "parent_sku": null,
           "sku": null,
           "price": 1080,
-          "stock": 0,
           "min_qty": 1
         }
       ],
       "price_min": 1080,
       "price_max": 1080,
-      "stock_total": 0,
       "status": "applied",
       "applied_at": "2026-10-22",
       "applied": [

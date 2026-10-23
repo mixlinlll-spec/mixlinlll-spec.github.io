@@ -25,7 +25,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 888,
-          "stock": 100,
           "min_qty": 1
         }
       ],
@@ -50,7 +49,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 1,
-          "stock": 80113,
           "min_qty": 20
         }
       ],
@@ -76,7 +74,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 99,
-          "stock": 50000,
           "min_qty": 999
         }
       ],
@@ -108,7 +105,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 100,
-          "stock": 50,
           "min_qty": 20
         }
       ],

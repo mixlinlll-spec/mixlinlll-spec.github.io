@@ -1,5 +1,45 @@
 # CHANGELOG
 
+## v2.5.4（2026-10-23，規格識別碼）
+
+- 沒有蝦皮規格 ID 的規格新增固定識別碼 `variants[].key`（`v-` 加 8 碼），庫存後台以它對應 SKU：改名、排序、刪除其他規格都不會換身分。
+- 後台（Pages CMS）隱藏欄位保存 key；校正程式依蝦皮規格 ID → key 對應，新規格自動產生 key，竄改或重複的 key 會還原。CSV 匯入同名規格沿用原 key。
+- 驗證：沒有蝦皮規格 ID 的規格必須有 key、不可重複；既有 2 個規格（sp-51454902343）已補上。
+- `export-stock-for-d1.mjs` 移除 D1 不接受的交易語句。
+
+## v2.5.3（2026-10-23，修正後台商品列表 No entries）
+
+- `.pages.yml` 商品集合加上 `filename: "{id}.json"`：Pages CMS 未設定時預設副檔名為 `.md`，240 件 `.json` 全被過濾。
+- 往返測試新增列表／搜尋／儲存路徑檢查（以 Pages CMS 程式碼的過濾規則重現 No entries 與修正後 240 件），共 48 項。
+- 新增 `cms-graphql-probe.yml`：以 Pages CMS 相同 GraphQL 查詢實測讀取商品資料夾（4 次皆成功，2,098 KB、1.0–4.1 秒）；CI 加入資料容量警告。
+
+## v2.5.2（2026-10-23，部署前獨立檢查、庫存保密）
+
+- 部署：`pages.yml` 新增獨立檢查 `cms-normalize --pending-count`（依商品檔歷史，不看最後一筆 commit 訊息），有尚未校正的後台儲存就不部署；新增「後台儲存後立刻有一般 commit」競態測試。
+- 庫存保密（EWP 決定）：移除後台庫存欄位、`stock_qty`、蝦皮快照庫存（241 檔、1,152 欄位）與匯入總表庫存欄；驗證擋下任何庫存數字；匯入只處理價格；`approve-snapshot --stock` 停用。供貨狀態與網站顯示不變。
+- 新增 `scripts/export-stock-for-d1.mjs`：從歷史版本匯出 D1 初始庫存（只能輸出到 repo 外）；`scripts/strip-stock.mjs`。
+- 往返測試 40 項；單元測試新增庫存保密測試。
+
+## v2.5.1（2026-10-22，商品後台：ChatGPT 審查修正）
+
+- 分支：同步最新 `main`（PR #1 已合併、Pages 已改為 GitHub Actions 部署），PR #4 目標改為 `main`。
+- 保密：停用後台 CSV 上傳與 `admin-import.yml`，移除 `admin/imports/`；`admin-import.mjs` 只在本機執行且拒絕讀取 repo 內檔案。安全匯入（R2 私有暫存＋短效上傳網址＋預覽確認）列入第二階段。
+- 同時寫入：所有寫入流程共用樂觀鎖提交協定（取得最新 → 套用 → 完整驗證 → 只 fast-forward 推送；衝突就丟棄並從最新版本重做與重新驗證，不 rebase）；部署指定剛驗證的 commit，`pages.yml` 略過非 main 最新的版本。
+- 失敗隔離：未通過檢查的商品退回上一個正確版本（其他商品照常發布），原始修改存 artifact 並開 Issue；仍失敗則整批退回；校正不依賴推送範圍，中斷後下次自動補做。
+- 權限：按鈕設 `ref: current`，流程檢查分支一致；批次套用需要預覽產生的確認碼（含對象商品內容，資料變動即失效）。文件核對 Pages CMS 協作者實際權限。
+- 測試：資料測試改為後台修改後仍成立的不變條件（不再固定上架數量、照片數量）；往返測試新增隔離與整批退回情境（36 項）。
+
+## v2.5.0（2026-10-22，商品管理後台 MVP）
+
+- 新增 Pages CMS 後台設定 `.pages.yml`：商品搜尋（名稱／品牌／型號／SKU／ID／蝦皮 ID）、名稱、價格、詢價、上下架、供貨狀態、各規格價格與庫存數量、照片上傳／排序、分類、品牌、說明、規格表。id、slug、蝦皮 ID、蝦皮規格 ID 唯讀；不能新增／刪除商品；review 不在後台。
+- 以 Pages CMS 原始碼驗證：未開 merge 會刪除 `review`；陣列整個覆蓋；全檔 null／空值被刪。新增 `scripts/cms-normalize.mjs` 儲存後校正，全部 240 件「開啟→儲存→校正」與原檔逐字相同（`tests/pages-cms-roundtrip.mjs`，CI 用 Pages CMS 2.1.8 實際程式碼執行）。
+- 上架守門：未核准商品從後台勾上架會自動退回草稿並提醒。價格規則：商品價＝最低規格價（單一價定價、多價起價），詢價清空價格（商品頁規格價也改顯示「詢價」）。
+- 新照片自動轉 WebP 1000px＋480px、搬到商品資料夾、刪除原始大檔。
+- 新增 `stock_qty`（商品／規格）：網站可售庫存的後台記錄，不公開顯示、不是即時庫存。
+- GitHub Actions：`cms-sync.yml`（後台儲存後校正、驗證、提交、在 main 觸發部署；失敗開 Issue、不部署）；後台按鈕 `admin-bulk.yml`（批次上下架／供貨／調價／詢價，先預覽再套用）、`admin-import.yml`（蝦皮 CSV 價格／庫存＋錯誤報告）、`admin-restore.yml`（單一商品還原到指定版本）。
+- `pages.yml`、`ci.yml` 略過後台原始 commit，只部署校正並驗證過的內容。
+- 文件：`docs/admin/PRODUCT_ADMIN.md`（使用、權限、測試、上線、Pages CMS 限制與補強）。
+
 ## v2.4.0（2026-10-22，EWP 核准全部上架）
 
 - 依 EWP 指示：圖片使用權確認全部可使用（`rights: "licensed"`）；套用全部蝦皮價格與庫存；**官網價 = 蝦皮價 −4%**（不經蝦皮平台抽成，四捨五入到整數元）；238 件商品 `published: true`、`review.status: "approved"`。

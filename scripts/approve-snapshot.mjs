@@ -3,12 +3,12 @@
 //
 //   node scripts/approve-snapshot.mjs <商品 id…>|--all [選項] [--dry-run]
 //     --prices             以快照價格填入 variants[].price_twd 與商品 price_twd／price_display（單一價＝fixed，多價＝from 最低價）
-//     --stock              以快照庫存填入 availability（>0 現貨、=0 暫無供貨）
+//     --stock              （已停用：庫存數量屬機密，快照不再保存庫存）
 //     --image-rights R     把 rights=unverified 的圖片改為 R（ewp_own＝EWP 自有／licensed＝已取得授權）
 //     --discount N         官網價 = 蝦皮快照價 ×（1 − N%），四捨五入到整數元（例：--discount 4）
 //     --publish            同時設定 review.status = "approved"、published = true（EWP 明確核准上架時才使用）
 // review.status = rejected 的商品一律略過。
-// 範例：node scripts/approve-snapshot.mjs --all --prices --stock --discount 4 --image-rights licensed --publish --dry-run
+// 範例：node scripts/approve-snapshot.mjs --all --prices --discount 4 --image-rights licensed --publish --dry-run
 import fs from 'node:fs';
 import path from 'node:path';
 import { DATA_DIR, PRODUCTS_DIR, IMAGE_RIGHTS, readJSON, writeJSON, today } from './lib/data.mjs';
@@ -16,6 +16,7 @@ import { DATA_DIR, PRODUCTS_DIR, IMAGE_RIGHTS, readJSON, writeJSON, today } from
 const args = process.argv.slice(2);
 const has = k => args.includes(k);
 const val = k => (has(k) ? args[args.indexOf(k) + 1] : undefined);
+if (has('--stock')) { console.error('✖ --stock 已停用：庫存數量屬機密，快照不再保存庫存（第二階段改用 D1）'); process.exit(1); }
 const rights = val('--image-rights');
 if (rights && !IMAGE_RIGHTS[rights]) { console.error(`✖ --image-rights 只能是 ${Object.keys(IMAGE_RIGHTS).join('／')}`); process.exit(1); }
 if (!has('--prices') && !has('--stock') && !rights && !has('--publish')) { console.error('請至少指定 --prices、--stock、--image-rights 或 --publish 其中一項'); process.exit(1); }

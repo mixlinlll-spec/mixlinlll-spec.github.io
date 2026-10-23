@@ -1,0 +1,28 @@
+name: 後台診斷｜Pages CMS 讀取商品資料夾（GraphQL）
+# 以 Pages CMS 2.1.8 相同的 GraphQL 查詢（lib/github-cache-folders.ts fetchCollectionDirectoryEntries）
+# 讀取商品資料夾，確認 GitHub 能否一次回傳全部檔案內容。只讀取，不修改任何資料。
+on:
+  workflow_dispatch:
+    inputs:
+      paths:
+        description: 要測試的資料夾（空白分隔）
+        required: false
+        type: string
+  push:
+    branches: [feature/product-admin]
+    paths: ['.github/workflows/cms-graphql-probe.yml', 'scripts/cms-graphql-probe.mjs', 'src/data/products/**']
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: GraphQL 讀取測試
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PATHS: ${{ inputs.paths }}
+        run: node scripts/cms-graphql-probe.mjs
