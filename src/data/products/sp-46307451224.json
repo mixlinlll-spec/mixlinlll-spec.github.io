@@ -2,76 +2,66 @@
   "id": "sp-46307451224",
   "slug": "ca381-one-2-0mm-pcb-fpv",
   "name_zh": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器",
-  "sku": null,
-  "brand": null,
-  "manufacturer_model": null,
+  "brand": "維修佬",
   "seller_role": "retail",
   "primary_category_id": "tools",
   "subcategory_id": "soldering",
-  "tags": [],
-  "compatible_sizes": [],
-  "video_system": null,
-  "battery_cells": [],
-  "short_description": "",
   "description": "•\t寬 2.0mm 長 1.5m，優質低殘渣樹脂芯，吸力強不留渣，快速清除焊錫，適合 FPV 電調、飛控、模組維修\n\n•\t日本製高純錫線材，柔軟易操作，不傷 PCB 焊盤，熱風槍或烙鐵一吸即淨，效率比普通吸錫帶高 3 倍。\n\n•\t適用手機、電腦主板、RC 航模電路板返修，穿越機維修必備，拆換電調、攝像頭、圖傳超順手。\n\n•\t單卷獨立包裝，維修佬入門首選，小體積便攜，場外修機不發愁。",
-  "specifications": [],
   "images": [
     {
       "src": "/assets/img/products/sp-46307451224/01.webp",
-      "src_small": "/assets/img/products/sp-46307451224/01-480.webp",
       "alt": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器（主圖）",
+      "rights": "licensed",
+      "src_small": "/assets/img/products/sp-46307451224/01-480.webp",
       "width": 1000,
       "height": 1000,
-      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mm0klb8zdzibe9"
     },
     {
       "src": "/assets/img/products/sp-46307451224/02.webp",
-      "src_small": "/assets/img/products/sp-46307451224/02-480.webp",
       "alt": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器（細節圖 1）",
+      "rights": "licensed",
+      "src_small": "/assets/img/products/sp-46307451224/02-480.webp",
       "width": 1000,
       "height": 1000,
-      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mm0klb9usqo0e2"
     },
     {
       "src": "/assets/img/products/sp-46307451224/03.webp",
-      "src_small": "/assets/img/products/sp-46307451224/03-480.webp",
       "alt": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器（細節圖 2）",
+      "rights": "licensed",
+      "src_small": "/assets/img/products/sp-46307451224/03-480.webp",
       "width": 1000,
       "height": 1000,
-      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mm0klb8zckxv90"
     },
     {
       "src": "/assets/img/products/sp-46307451224/04.webp",
-      "src_small": "/assets/img/products/sp-46307451224/04-480.webp",
       "alt": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器（細節圖 3）",
+      "rights": "licensed",
+      "src_small": "/assets/img/products/sp-46307451224/04-480.webp",
       "width": 1000,
       "height": 1000,
-      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mm0klb904oaw93"
     },
     {
       "src": "/assets/img/products/sp-46307451224/05.webp",
-      "src_small": "/assets/img/products/sp-46307451224/05-480.webp",
       "alt": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器（細節圖 4）",
+      "rights": "licensed",
+      "src_small": "/assets/img/products/sp-46307451224/05-480.webp",
       "width": 1000,
       "height": 1000,
-      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mm0klb8rxp1d8c"
     }
   ],
-  "variants": [],
   "price_twd": 76,
   "price_display": "fixed",
-  "availability": "out_of_stock",
-  "shopee_url": null,
+  "availability": "in_stock",
   "shopee_item_id": "46307451224",
   "line_inquiry_enabled": true,
   "featured": false,
@@ -98,21 +88,15 @@
         "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mm0klb8zckxv90",
         "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mm0klb904oaw93",
         "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mm0klb8rxp1d8c"
-      ],
-      "variation_label": null,
-      "options": []
+      ]
     },
     "shopee_sales_snapshot": {
       "media_export": "mass_update_media_info_4053258_20261022141110",
       "sales_export": "mass_update_sales_info_4053258_20261022141152",
       "captured_at": "2026-10-22T14:11:52+08:00",
-      "variation_label": null,
       "rows": [
         {
           "variation_id": "292466065399",
-          "name": null,
-          "parent_sku": null,
-          "sku": null,
           "price": 79,
           "min_qty": 1
         }
