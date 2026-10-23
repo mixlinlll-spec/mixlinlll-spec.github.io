@@ -105,10 +105,10 @@ function homePage() {
   ];
   const v = site.home_video;
   const ytWatch = v?.enabled && v.youtube_id ? `https://www.youtube.com/watch?v=${encodeURIComponent(v.youtube_id)}` : '';
-  // 首頁影片：先顯示封面＋播放鍵（一般連結，沒有 JavaScript 也能到 YouTube 觀看），點擊後由 site.js 換成 youtube-nocookie 播放器
+  // 首頁影片：先顯示封面＋播放鍵（一般連結，沒有 JavaScript 也能到 YouTube 觀看）；autoplay=true 時頁面載入後由 site.js 換成靜音自動播放的 youtube-nocookie 播放器，否則點擊才播放
   const videoBlock = ytWatch ? `<section class="home-video wrap" aria-labelledby="home-video-title">
   <div class="video-frame">
-    <a class="yt-lite" href="${attr(ytWatch)}" data-yt="${attr(v.youtube_id)}" data-title="${attr(v.title)}" target="_blank" rel="noopener" aria-label="${attr(`播放影片：${v.title}`)}">
+    <a class="yt-lite" href="${attr(ytWatch)}" data-yt="${attr(v.youtube_id)}"${v.autoplay ? ' data-autoplay' : ''} data-title="${attr(v.title)}" target="_blank" rel="noopener" aria-label="${attr(`播放影片：${v.title}`)}">
       <img src="https://i.ytimg.com/vi/${attr(v.youtube_id)}/hqdefault.jpg" alt="" width="480" height="360" fetchpriority="high" decoding="async">
       <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#ff4a3d"/><path d="M45 24 27 14v20z" fill="#fff"/></svg></span>
     </a>

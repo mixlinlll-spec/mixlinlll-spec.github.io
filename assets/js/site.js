@@ -61,25 +61,34 @@
   });
 })();
 
-// 首頁 YouTube 影片：點擊封面才載入播放器（youtube-nocookie、播完只推薦同頻道），沒有 JavaScript 時是一般 YouTube 連結
+// 首頁 YouTube 影片：頁面載入完成後自動以「靜音」播放（瀏覽器只允許靜音自動播放；觀眾可在播放器上開聲音）。
+// 先顯示封面讓首頁快速出現，load 之後才換成 youtube-nocookie 播放器；開啟省流量模式時不自動播放，維持點擊播放。
+// 沒有 JavaScript 時封面是一般 YouTube 連結。
 (function () {
   'use strict';
-  var links = document.querySelectorAll('a.yt-lite[data-yt]');
-  Array.prototype.forEach.call(links, function (a) {
+  function play(a, auto) {
+    var id = a.getAttribute('data-yt');
+    if (!/^[\w-]{6,20}$/.test(id) || !a.parentNode) return;
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&playsinline=1&modestbranding=1' + (auto ? '&mute=1' : '');
+    f.title = a.getAttribute('data-title') || 'YouTube 影片';
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    f.allowFullscreen = true;
+    f.referrerPolicy = 'strict-origin-when-cross-origin';
+    f.className = 'yt-iframe';
+    a.replaceWith(f);
+    if (!auto) f.focus();
+  }
+  var links = Array.prototype.slice.call(document.querySelectorAll('a.yt-lite[data-yt]'));
+  links.forEach(function (a) {
     a.addEventListener('click', function (e) {
       if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
       e.preventDefault();
-      var id = a.getAttribute('data-yt');
-      if (!/^[\w-]{6,20}$/.test(id)) return;
-      var f = document.createElement('iframe');
-      f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&playsinline=1&modestbranding=1';
-      f.title = a.getAttribute('data-title') || 'YouTube 影片';
-      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-      f.allowFullscreen = true;
-      f.referrerPolicy = 'strict-origin-when-cross-origin';
-      f.className = 'yt-iframe';
-      a.replaceWith(f);
-      f.focus();
+      play(a, false);
     });
   });
+  var saveData = navigator.connection && navigator.connection.saveData;
+  if (!links.length || saveData) return;
+  function auto() { links.filter(function (a) { return a.hasAttribute('data-autoplay'); }).forEach(function (a) { play(a, true); }); }
+  if (document.readyState === 'complete') auto(); else window.addEventListener('load', auto);
 })();
