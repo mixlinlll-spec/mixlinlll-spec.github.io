@@ -130,3 +130,34 @@ node scripts/approve-snapshot.mjs --all --prices --discount 4 --image-rights lic
 - 不要用其他賣家或原廠未授權的圖片。
 - 不要放成本、進價、客戶個資、稅籍編號、**庫存數量**等機密（repo 是公開的）。
 - 已發布商品不要改 `slug`；真的要改，請保留舊網址的轉址頁。
+
+
+## 最新消息文章
+
+1. 圖片壓縮成 WebP（寬 1600px 以內、單張 300KB 以下），放到 `assets/img/journal/<slug>/`。影片上傳 YouTube，文章只填 `youtube_id`，**不要把影片檔放進 repo**。
+2. 新增 `src/data/journal/<slug>.md`（slug 只能小寫英數與 `-`，即網址 `/journal/<slug>/`，發布後不要改）：
+
+```markdown
+---
+title: 文章標題
+date: 2026-10-24
+category: 新品公告        # 建議：新品公告／技術實錄／飛行影片
+published: false          # true 才會公開
+summary: 列表與分享時顯示的 1–2 句摘要
+cover: /assets/img/journal/<slug>/00-cover.webp
+cover_alt: 封面圖片內容描述
+youtube_id:               # 選填，YouTube 影片 ID（11 碼）
+related:                  # 選填：/products/ /builds/ /services/ /batteries/ /contact/ /about/ /fpv-help.html
+  - /builds/
+---
+
+內文段落（空一行分段）
+
+## 小標
+
+- 清單項目
+![圖片描述](/assets/img/journal/<slug>/01.webp)
+> **提醒：**提醒框內容
+```
+
+內文支援：`## 小標`、段落、`- 清單`、`**粗體**`、`[文字](連結)`、`![描述](圖片)`、`> 提醒框`；不接受 HTML。公開前驗證會擋下缺欄位、圖片不存在，以及內文殘留「待確認」的文章。
