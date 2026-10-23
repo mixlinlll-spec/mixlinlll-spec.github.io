@@ -21,10 +21,10 @@
 
 ### 合併後檢查（約 3 分鐘內）
 
-- `https://mixlinlll-spec.github.io/` 首頁正常
+- `https://www.ewpfpv.com/` 首頁正常（`https://mixlinlll-spec.github.io/`、`https://ewpfpv.com/` 都轉到這裡）
 - `https://mixlinlll-spec.github.io/fpv-help.html` 仍為 91 則
 - `/products/`、`/contact/`（LINE 與 Instagram QR）、`/huan.png`（舊圖片網址）
-- `https://mixlinlll-spec.github.io/src/data/site.json` 應為 **404**（原始資料不再對外提供）
+- `https://www.ewpfpv.com/src/data/site.json` 應為 **404**（原始資料不再對外提供）
 - 不存在的網址顯示自訂 404
 
 ## 日常更新
@@ -45,3 +45,10 @@
 **臨時查看舊首頁**：`/legacy/home-2026-09.html`（noindex 存檔）。
 
 回滾不會影響 `fpv-help.html` 與 `huan.png`，本次改版沒有修改這兩個檔案（單元測試以 SHA-256 驗證）。
+
+## 自訂網域 www.ewpfpv.com（2026-10-23）
+
+- DNS 在 Cloudflare：`www` CNAME → `mixlinlll-spec.github.io`（Proxy status：DNS only／灰色雲朵）；根網域 `ewpfpv.com` 用 4 筆 A 記錄指向 GitHub Pages（185.199.108.153、185.199.109.153、185.199.110.153、185.199.111.153，DNS only），GitHub 會自動轉到 www。
+- GitHub → Settings → Pages → Custom domain 填 `www.ewpfpv.com` → Save → DNS 檢查通過後勾選 **Enforce HTTPS**。
+- 網站的正式網址設定在 `src/data/site.json` 的 `base_url`（canonical、sitemap、結構化資料都用它）。
+- 回滾網域：Pages 的 Custom domain 清空即可恢復 `mixlinlll-spec.github.io`，並把 `base_url` 改回。
