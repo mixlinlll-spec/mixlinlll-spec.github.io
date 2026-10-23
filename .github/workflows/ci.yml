@@ -48,9 +48,10 @@ jobs:
           mkdir -p "$RUNNER_TEMP/cms-deps"
           npm install --prefix "$RUNNER_TEMP/cms-deps" --no-save --no-audit --no-fund --no-package-lock \
             zod@3.25.76 lodash.mergewith@4.6.2 slugify@1.6.8 date-fns@3.6.0 yaml@2.8.3 @ltd/j-toml@1.38.0 esbuild@0.25.12 sharp@0.35.4
-          ln -s "$RUNNER_TEMP/cms-deps/node_modules" node_modules
+          # 測試需要 sharp：沒有 node_modules 時暫時連到測試依賴（前一步若已安裝 sharp 就直接使用）
+          LINKED=; if [ ! -e node_modules ]; then ln -s "$RUNNER_TEMP/cms-deps/node_modules" node_modules; LINKED=1; fi
           PAGES_CMS_DIR="$RUNNER_TEMP/pages-cms" CMS_DEPS_DIR="$RUNNER_TEMP/cms-deps" node tests/pages-cms-roundtrip.mjs
-          rm node_modules
+          if [ -n "$LINKED" ]; then rm node_modules; fi
       - name: 建置正式產物 dist/ 與含草稿預覽 _preview/
         run: |
           node scripts/build.mjs
