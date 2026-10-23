@@ -12,7 +12,7 @@ inputs:
     required: true
   paths:
     description: 要提交的路徑（空白分隔）
-    default: src/data/products assets/img/products
+    default: src/data/products assets/img/products docs/SHOPEE_IMPORT_REPORT.md docs/shopee-import.csv
   deploy:
     description: always＝驗證通過就部署（後台儲存）；changed＝有提交才部署
     default: changed
@@ -60,11 +60,12 @@ runs:
           # 每個寫入流程都先處理分支上尚未校正的後台儲存（逐件驗證、失敗的退回），再執行自己的操作
           node scripts/cms-normalize.mjs --summary "$GITHUB_STEP_SUMMARY" || { echo "::endgroup::"; echo "::error::既有資料錯誤（不是後台修改造成），未提交、未部署"; exit 1; }
           if ! bash -c "$APPLY"; then echo "::endgroup::"; echo "::error::操作失敗（未修改任何資料）"; exit 1; fi
+          node scripts/report-shopee-import.mjs > /dev/null   # 匯入總表含網站價格／供貨，隨資料一起更新
           if ! gate; then
             echo "::warning::驗證失敗：整批退回尚未校正的後台儲存後重做一次"
             fresh
             node scripts/cms-normalize.mjs --quarantine-all --summary "$GITHUB_STEP_SUMMARY" \
-              && bash -c "$APPLY" && gate || { echo "::endgroup::"; echo "::error::退回後仍無法通過驗證，未提交、未部署"; exit 1; }
+              && bash -c "$APPLY" && node scripts/report-shopee-import.mjs > /dev/null && gate || { echo "::endgroup::"; echo "::error::退回後仍無法通過驗證，未提交、未部署"; exit 1; }
           fi
           echo "::endgroup::"
           git add -A $PATHS

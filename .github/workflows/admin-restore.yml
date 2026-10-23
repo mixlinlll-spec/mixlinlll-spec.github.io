@@ -36,4 +36,3 @@ jobs:
         with:
           apply: node scripts/admin-restore.mjs
           message: "[還原] ${{ fromJSON(inputs.payload).context.path }} → ${{ fromJSON(inputs.payload).inputs.sha }}（${{ fromJSON(inputs.payload).triggeredBy.name }}）"
-          paths: src/data/products

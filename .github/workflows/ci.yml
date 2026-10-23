@@ -67,6 +67,8 @@ jobs:
       - name: 商品圖片處理工具自我測試（sharp）
         run: node scripts/add-images.mjs --self-test
       - name: 蝦皮匯入總表與資料一致
+        # 有尚未校正的後台儲存時略過（總表會由校正流程連同資料一起更新）
+        if: steps.pend.outputs.cms_commits == '0'
         run: |
           node scripts/report-shopee-import.mjs
           git diff --exit-code docs/SHOPEE_IMPORT_REPORT.md docs/shopee-import.csv || (echo "::error::確認表與商品資料不一致，請執行報告腳本後提交" && exit 1)
