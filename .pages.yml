@@ -120,6 +120,7 @@ content:
         type: boolean
       - name: availability
         label: 供貨狀態
+        description: 顧客會看到這個狀態。「現貨」代表確定有貨可立即出貨；賣完請改「缺貨」或「預購」。
         type: select
         required: true
         options:
@@ -145,16 +146,11 @@ content:
         type: number
         options: { min: 1 }
 
-      - name: stock_qty
-        label: 庫存數量（沒有規格的商品）
-        description: 網站可售庫存，僅後台記錄、不公開顯示；有規格的商品請在下方各規格填寫。
-        type: number
-        options: { min: 0 }
 
       # ---- 規格（各規格價格／庫存）----
       - name: variants
         label: 規格
-        description: 規格 ID（蝦皮規格 ID）不可修改。庫存數量為網站可售庫存，僅後台記錄、不公開顯示。
+        description: 規格 ID（蝦皮規格 ID）不可修改。庫存數量屬機密，不在這裡填寫（第二階段由私有資料庫管理）；請用「供貨狀態」表示現貨／預購／缺貨。
         type: object
         list: true
         fields:
@@ -170,7 +166,6 @@ content:
                 - { value: made_to_order, label: 接單製作 }
                 - { value: out_of_stock, label: 缺貨／暫無供貨 }
                 - { value: unknown, label: 供貨狀況請洽詢 }
-          - { name: stock_qty, label: 庫存數量, type: number, options: { min: 0 } }
           - { name: sku, label: 貨號 SKU, type: string }
           - { name: shopee_variation_id, label: 蝦皮規格 ID（不可修改）, type: string, readonly: true }
           - name: image

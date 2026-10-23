@@ -120,7 +120,10 @@ export function validateProducts(products, categories) {
     const cat = catMap.get(p.primary_category_id);
     if (!cat) err(`找不到主分類：${p.primary_category_id}`);
     else if (p.subcategory_id && !cat.subcategories.some(s => s.id === p.subcategory_id)) err(`分類 ${cat.id} 沒有子分類 ${p.subcategory_id}`);
-    if (p.stock_qty !== undefined && p.stock_qty !== null && !(Number.isInteger(p.stock_qty) && p.stock_qty >= 0)) err(`stock_qty 必須是 0 以上的整數`);
+    // 庫存數量屬機密（EWP 決定，repo 公開）：任何庫存數字都不可寫入商品資料
+    if ('stock_qty' in p) err('不可存放庫存數量 stock_qty（庫存屬機密，第二階段改存 D1）');
+    const snapStock = p.review?.shopee_sales_snapshot;
+    if (snapStock && ('stock_total' in snapStock || (snapStock.rows || []).some(r => 'stock' in r))) err('蝦皮快照不可含庫存數量（stock、stock_total）');
     if (p.updated_at && !DATE_RE.test(p.updated_at)) err(`updated_at 格式應為 YYYY-MM-DD`);
     // 價格規則：不得出現 0 元；fixed/from 需要價格；inquiry 不得帶價格
     if (p.price_twd !== null && p.price_twd !== undefined) {
@@ -133,7 +136,7 @@ export function validateProducts(products, categories) {
       if (!v.name) err(`variants[${i}] 缺少 name`);
       if (v.price_twd != null && !(v.price_twd > 0)) err(`variants[${i}].price_twd 不得為 0`);
       if (v.availability && !AVAILABILITY[v.availability]) err(`variants[${i}].availability 不合法`);
-      if (v.stock_qty !== undefined && v.stock_qty !== null && !(Number.isInteger(v.stock_qty) && v.stock_qty >= 0)) err(`variants[${i}].stock_qty 必須是 0 以上的整數`);
+      if ('stock_qty' in v) err(`variants[${i}] 不可存放庫存數量 stock_qty（庫存屬機密）`);
       if (v.sku) { if (skus.has(v.sku)) err(`SKU 重複：${v.sku}`); skus.set(v.sku, at); }
     }
     for (const [i, s] of (p.specifications || []).entries()) {

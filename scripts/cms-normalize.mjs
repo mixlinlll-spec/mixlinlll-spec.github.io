@@ -43,6 +43,8 @@ for (const block of log.split('@@').filter(Boolean)) {
 }
 const touched = new Map([...state].filter(([, st]) => st.commits.length).map(([f, st]) => [f, { prevRev: st.prevRev, commits: st.commits.reverse() }]));
 const commits = [...new Map([...touched.values()].flatMap(t => t.commits).map(c => [c.sha, c])).values()];
+// 部署檢查用：只輸出待校正的後台儲存數量（pages.yml 在部署前確認為 0）
+if (args.includes('--pending-count')) { console.log(commits.length); process.exit(0); }
 console.log(`待校正的後台 commit：${commits.length} 個；受影響商品：${touched.size} 件`);
 if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `cms_commits=${commits.length}\n`);
 if (!commits.length) { console.log('沒有待校正的後台儲存'); process.exit(0); }

@@ -42,7 +42,7 @@ _preview/            含草稿預覽（建置產生，不提交、不部署）
 ```
 
 - **發布白名單**：`dist/` 只會有產生的頁面與 `assets/`、`fpv-help.html`、`huan.png`、`legacy/`、`.nojekyll`（定義在 `scripts/lib/data.mjs` 的 `STATIC_WHITELIST`）。`scripts/check-site.mjs` 會在任何 `.json`、`.mjs`、`.md`、`src/`、`scripts/` 等出現在產物時失敗。
-- **repo 是公開的**：草稿不會出現在網站上，但 `src/data/` 在 GitHub 上看得到。不要把進貨價、成本、客戶個資、稅籍編號等機密放進 repo。
+- **repo 是公開的**：草稿不會出現在網站上，但 `src/data/` 在 GitHub 上看得到。不要把進貨價、成本、客戶個資、稅籍編號、庫存數量等機密放進 repo（資料驗證會擋下庫存欄位）。
 
 ## 常用指令（需要 Node.js 18 以上，不需安裝套件）
 

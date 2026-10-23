@@ -262,7 +262,7 @@ function productPages() {
     const rv = p.review || {};
     const reviewItems = [...(rv.missing || []).map(m => `待補：${m}`), ...(rv.notes || [])];
     const snap = rv.shopee_sales_snapshot;
-    const snapHtml = !p.published && snap?.rows?.length ? `<details class="snap"><summary>蝦皮價格／庫存快照（${esc(snap.captured_at.slice(0, 10))}，未公開、待核對）</summary><div class="table-wrap"><table class="table"><thead><tr><th scope="col">規格</th><th scope="col">價格</th><th scope="col">庫存</th></tr></thead><tbody>${snap.rows.map(r => `<tr><td>${esc(r.name || '（單一規格）')}</td><td>${r.price ?? '—'}</td><td>${r.stock ?? '—'}</td></tr>`).join('')}</tbody></table></div></details>` : '';
+    const snapHtml = !p.published && snap?.rows?.length ? `<details class="snap"><summary>蝦皮價格快照（${esc(snap.captured_at.slice(0, 10))}，未公開、待核對）</summary><div class="table-wrap"><table class="table"><thead><tr><th scope="col">規格</th><th scope="col">價格</th></tr></thead><tbody>${snap.rows.map(r => `<tr><td>${esc(r.name || '（單一規格）')}</td><td>${r.price ?? '—'}</td></tr>`).join('')}</tbody></table></div></details>` : '';
     const reviewBox = !p.published && (reviewItems.length || snapHtml) ? `<aside class="review-box"><strong>草稿待核對（僅預覽版顯示）${rv.batch ? `｜首批 ${esc(rv.batch.replace('first-', ''))} 組` : ''}</strong><ul>${reviewItems.map(n => `<li>${esc(n)}</li>`).join('')}</ul>${(p.images || []).some(i => i.rights === 'unverified') ? '<p>圖片由蝦皮匯入，使用權待 EWP 確認（rights: unverified）。</p>' : ''}${snapHtml}</aside>` : '';
     const showcaseNote = showcase ? `<p class="callout" role="note"><strong>作品介紹：</strong>本頁為機型介紹，目前未於官網販售。需要相同或類似配置，請透過 LINE 洽詢客製組裝服務。</p>` : '';
     const body = `<div class="wrap">${breadcrumbs(crumbs.map((x, i) => i === crumbs.length - 1 ? x : x))}</div>

@@ -134,8 +134,9 @@ const sameExcept = (a, b, keys) => JSON.stringify(without(a, keys)) === JSON.str
   ok(r.product.variants[0].shopee_variation_id === r.prev.variants[0].shopee_variation_id && JSON.stringify(r.product.variants[0].image) === JSON.stringify(r.prev.variants[0].image), '規格 ID 與規格圖保留');
 }
 {
-  const r = edit(MULTI, f => { f.variants[1].stock_qty = 7; f.variants[1].availability = 'out_of_stock'; f.availability = 'preorder'; });
-  ok(r.product.variants[1].stock_qty === 7 && r.product.variants[1].availability === 'out_of_stock' && r.product.availability === 'preorder' && !r.errs.length, '修改庫存數量與供貨狀態');
+  const r = edit(MULTI, f => { f.variants[1].stock_qty = 7; f.stock_qty = 3; f.variants[1].availability = 'out_of_stock'; f.availability = 'preorder'; });
+  ok(r.product.variants[1].availability === 'out_of_stock' && r.product.availability === 'preorder' && !r.errs.length, '修改供貨狀態（現貨／預購／缺貨）');
+  ok(!('stock_qty' in r.product) && !r.product.variants.some(v => 'stock_qty' in v), '竄改送出庫存數量：不會寫入公開資料（庫存保密）');
 }
 {
   const r = edit(MULTI, f => { f.price_display = 'inquiry'; });
@@ -244,8 +245,18 @@ console.log('4. 端對端：後台 commit → cms-normalize（暫存 git 工作�
   try { checkOut = execFileSync('node', ['scripts/build.mjs', '--check'], { cwd: wt, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }); }
   catch (e) { checkOk = false; checkOut = (e.stdout || '') + (e.stderr || ''); }
   ok(checkOk, `校正後全部商品通過正式資料驗證${checkOk ? '' : '：' + checkOut.slice(-600)}`);
-  // 整批退回（驗證仍失敗時的後備程序）：commit 校正結果後，再做一次後台儲存並整批退回
+  // 競態：後台儲存後「立刻」有另一筆非後台 commit（最後一筆不是 [後台]），部署檢查仍必須發現尚未校正的儲存
   g('add', '-A'); g('commit', '-qm', 'chore(後台): 校正');
+  const pend = () => Number(execFileSync('node', ['scripts/cms-normalize.mjs', '--pending-count'], { cwd: wt, encoding: 'utf8' }).trim());
+  ok(pend() === 0, '部署檢查：全部校正後沒有待處理的後台儲存');
+  cmsSave(rf, f => { f.name_zh = f.name_zh + '（競態測試）'; });
+  g('add', '-A'); g('commit', '-qm', `[後台] 更新 ${rf}（員工D）`);
+  fs.writeFileSync(path.join(wt, 'README.md'), 'race\n'); g('add', '-A'); g('commit', '-qm', 'docs: 同時間的一般修改');
+  ok(g('log', '-1', '--format=%s').startsWith('docs:') && pend() === 1, '競態：最後一筆是非後台 commit，部署檢查仍發現 1 筆未校正的後台儲存 → 不部署');
+  execFileSync('node', ['scripts/cms-normalize.mjs'], { cwd: wt, encoding: 'utf8' });
+  g('add', '-A'); g('commit', '-qm', 'chore(後台): 校正');
+  ok(pend() === 0 && JSON.parse(fs.readFileSync(P(rf), 'utf8')).name_zh.endsWith('（競態測試）'), '競態：校正提交後才可部署，修改內容保留');
+  // 整批退回（驗證仍失敗時的後備程序）：commit 校正結果後，再做一次後台儲存並整批退回
   const before2 = fs.readFileSync(P(mf), 'utf8');
   cmsSave(mf, f => { f.name_zh = '整批退回測試'; });
   g('add', '-A'); g('commit', '-qm', `[後台] 更新 ${mf}（員工C）`);

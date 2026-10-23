@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v2.5.2（2026-10-23，部署前獨立檢查、庫存保密）
+
+- 部署：`pages.yml` 新增獨立檢查 `cms-normalize --pending-count`（依商品檔歷史，不看最後一筆 commit 訊息），有尚未校正的後台儲存就不部署；新增「後台儲存後立刻有一般 commit」競態測試。
+- 庫存保密（EWP 決定）：移除後台庫存欄位、`stock_qty`、蝦皮快照庫存（241 檔、1,152 欄位）與匯入總表庫存欄；驗證擋下任何庫存數字；匯入只處理價格；`approve-snapshot --stock` 停用。供貨狀態與網站顯示不變。
+- 新增 `scripts/export-stock-for-d1.mjs`：從歷史版本匯出 D1 初始庫存（只能輸出到 repo 外）；`scripts/strip-stock.mjs`。
+- 往返測試 40 項；單元測試新增庫存保密測試。
+
 ## v2.5.1（2026-10-22，商品後台：ChatGPT 審查修正）
 
 - 分支：同步最新 `main`（PR #1 已合併、Pages 已改為 GitHub Actions 部署），PR #4 目標改為 `main`。

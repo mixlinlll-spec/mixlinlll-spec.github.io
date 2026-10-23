@@ -10,11 +10,13 @@
 export const EDITABLE_PRODUCT_KEYS = [
   'name_zh', 'published', 'availability', 'price_display', 'price_twd', 'variants', 'images',
   'brand', 'manufacturer_model', 'sku', 'primary_category_id', 'subcategory_id',
-  'short_description', 'description', 'specifications', 'tags', 'featured', 'line_inquiry_enabled', 'cta_primary', 'stock_qty',
+  'short_description', 'description', 'specifications', 'tags', 'featured', 'line_inquiry_enabled', 'cta_primary',
 ];
 // 唯讀顯示（後台看得到但不能改）：一律以儲存前版本為準
 export const READONLY_PRODUCT_KEYS = ['id', 'slug', 'shopee_item_id'];
-export const EDITABLE_VARIANT_KEYS = ['name', 'price_twd', 'availability', 'stock_qty', 'sku'];
+export const EDITABLE_VARIANT_KEYS = ['name', 'price_twd', 'availability', 'sku'];
+// 庫存數量屬機密（EWP 決定，repo 公開）：不可經由後台寫入，送來的一律丟棄
+export const SECRET_KEYS = ['stock_qty'];
 export const EDITABLE_IMAGE_KEYS = ['src', 'alt', 'rights'];
 export const EDITABLE_SPEC_KEYS = ['key', 'value'];
 
@@ -23,9 +25,9 @@ const DELETE = Symbol('delete');
 const PRODUCT_DEFAULTS = {
   brand: null, manufacturer_model: null, sku: null, subcategory_id: null, price_twd: null,
   short_description: '', description: '', variants: [], images: [], specifications: [], tags: [],
-  published: false, featured: false, line_inquiry_enabled: false, cta_primary: DELETE, stock_qty: DELETE,
+  published: false, featured: false, line_inquiry_enabled: false, cta_primary: DELETE,
 };
-const VARIANT_DEFAULTS = { sku: null, price_twd: null, availability: 'unknown', stock_qty: DELETE };
+const VARIANT_DEFAULTS = { sku: null, price_twd: null, availability: 'unknown' };
 
 const isObj = v => v !== null && typeof v === 'object' && !Array.isArray(v);
 const clone = v => (v === undefined ? undefined : JSON.parse(JSON.stringify(v)));
@@ -69,7 +71,6 @@ function normalizeVariants(prevList = [], nextList = []) {
     const out = pickEditable(prev, v, EDITABLE_VARIANT_KEYS, VARIANT_DEFAULTS);
     if (prev?.shopee_variation_id) out.shopee_variation_id = prev.shopee_variation_id; // 規格 ID 不可改
     else delete out.shopee_variation_id; // 新增的規格不可自行填蝦皮規格 ID
-    if (typeof out.stock_qty === 'number') out.stock_qty = Math.max(0, Math.floor(out.stock_qty));
     return out;
   });
 }
@@ -132,11 +133,8 @@ export function normalizeCmsProduct(prev, next, { today } = {}) {
     warnings.push(`此商品尚未核准（review：${p.review?.status || '無'}），已自動退回草稿，不會公開`);
   }
 
-  if (typeof p.stock_qty === 'number') p.stock_qty = Math.max(0, Math.floor(p.stock_qty));
-  // 5. 庫存提醒（不自動改供貨狀態）
-  for (const v of p.variants || []) {
-    if (v.stock_qty === 0 && v.availability === 'in_stock') warnings.push(`規格「${v.name}」庫存為 0 但標示現貨`);
-  }
+  // 5. 庫存數量不可寫入公開 repo
+  if ('stock_qty' in next || (next.variants || []).some(v => v && 'stock_qty' in v)) warnings.push('庫存數量屬機密，不會存到公開網站資料（第二階段改由私有資料庫管理），已忽略');
 
   const changes = diffProduct(prev, p);
   if (changes.length && today) p.updated_at = today;
@@ -163,7 +161,7 @@ export function applyPriceRule(p, warnings = []) {
 // 給報表用的變更摘要（只列後台可改欄位）
 export function diffProduct(prev, next) {
   const out = [];
-  const label = { name_zh: '名稱', published: '上架', availability: '供貨', price_display: '價格顯示', price_twd: '售價', brand: '品牌', manufacturer_model: '型號', sku: 'SKU', primary_category_id: '主分類', subcategory_id: '子分類', short_description: '簡介', description: '說明', specifications: '規格表', tags: '標籤', featured: '精選', line_inquiry_enabled: 'LINE 按鈕', cta_primary: '第一按鈕', stock_qty: '庫存' };
+  const label = { name_zh: '名稱', published: '上架', availability: '供貨', price_display: '價格顯示', price_twd: '售價', brand: '品牌', manufacturer_model: '型號', sku: 'SKU', primary_category_id: '主分類', subcategory_id: '子分類', short_description: '簡介', description: '說明', specifications: '規格表', tags: '標籤', featured: '精選', line_inquiry_enabled: 'LINE 按鈕', cta_primary: '第一按鈕' };
   const show = v => (v === undefined ? '（無）' : typeof v === 'string' ? (v.length > 30 ? v.slice(0, 30) + '…' : v) : JSON.stringify(v));
   for (const k of EDITABLE_PRODUCT_KEYS) {
     if (k === 'variants' || k === 'images') continue;
@@ -174,7 +172,7 @@ export function diffProduct(prev, next) {
   for (const v of nv) {
     const o = pv.find(x => key(x) === key(v));
     if (!o) { out.push(`新增規格「${v.name}」`); continue; }
-    for (const k of EDITABLE_VARIANT_KEYS) if (!same(o[k], v[k])) out.push(`規格「${v.name}」${({ name: '名稱', price_twd: '售價', availability: '供貨', stock_qty: '庫存', sku: 'SKU' })[k]}：${show(o[k])} → ${show(v[k])}`);
+    for (const k of EDITABLE_VARIANT_KEYS) if (!same(o[k], v[k])) out.push(`規格「${v.name}」${({ name: '名稱', price_twd: '售價', availability: '供貨', sku: 'SKU' })[k]}：${show(o[k])} → ${show(v[k])}`);
   }
   for (const o of pv) if (!nv.find(x => key(x) === key(o))) out.push(`刪除規格「${o.name}」`);
   const pi = (prev.images || []).map(i => i.src); const ni = (next.images || []).map(i => i.src);

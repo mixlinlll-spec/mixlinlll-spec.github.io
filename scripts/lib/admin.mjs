@@ -128,13 +128,13 @@ export function parseShopeeSales(rows) {
   return { items, bad, header: rows[hi], columns: idx };
 }
 
-// 把蝦皮資料套用到商品。fields：price_stock／price／stock。回傳每件商品的變更與找不到的資料列。
-export function applyShopeeSales(products, items, { fields = 'price_stock', discount = 4, capturedAt } = {}) {
+// 把蝦皮資料的「價格」套用到商品。庫存數量屬機密（EWP 決定）：CSV 裡的庫存欄一律忽略、不寫入 repo，
+// 第二階段改寫入私有的 Cloudflare D1。回傳每件商品的變更與找不到的資料列。
+export function applyShopeeSales(products, items, { discount = 4, capturedAt } = {}) {
   const sitePrice = x => Math.round(x * (1 - discount / 100));
   const byItem = new Map();
   for (const it of items) { if (!byItem.has(it.item)) byItem.set(it.item, []); byItem.get(it.item).push(it); }
   const results = []; const notFound = [];
-  const doPrice = fields !== 'stock'; const doStock = fields !== 'price';
   for (const [item, rows] of byItem) {
     const p = products.find(x => x.shopee_item_id === item);
     if (!p) { notFound.push(...rows.map(r => ({ line: r.line, reason: `官網沒有蝦皮商品 ${item}（${r.name || ''}）` }))); continue; }
@@ -146,38 +146,31 @@ export function applyShopeeSales(products, items, { fields = 'price_stock', disc
       if (hasVariants) {
         const v = clone.variants.find(x => String(x.shopee_variation_id) === r.variation);
         if (!v) { rowErrors.push({ line: r.line, reason: `${clone.id} 找不到規格 ${r.variation || '（無規格 ID）'} ${r.vname || ''}` }); continue; }
-        if (doPrice && r.price) { const np = sitePrice(r.price); if (v.price_twd !== np) { log.push(`規格「${v.name}」售價 ${v.price_twd ?? '—'} → ${np}`); v.price_twd = np; } }
-        if (doStock && r.stock != null && v.stock_qty !== r.stock) { log.push(`規格「${v.name}」庫存 ${v.stock_qty ?? '—'} → ${r.stock}`); v.stock_qty = r.stock; }
-      } else {
-        if (doPrice && r.price) {
-          const np = sitePrice(r.price);
-          for (const v of clone.variants || []) v.price_twd = np;
-          if (clone.price_twd !== np) { log.push(`售價 ${clone.price_twd ?? '—'} → ${np}`); clone.price_twd = np; if (clone.price_display === 'inquiry') clone.price_display = 'fixed'; }
-        }
-        if (doStock && r.stock != null) {
-          if (clone.stock_qty !== r.stock) { log.push(`庫存 ${clone.stock_qty ?? '—'} → ${r.stock}`); clone.stock_qty = r.stock; }
-        }
+        if (r.price) { const np = sitePrice(r.price); if (v.price_twd !== np) { log.push(`規格「${v.name}」售價 ${v.price_twd ?? '—'} → ${np}`); v.price_twd = np; } }
+      } else if (r.price) {
+        const np = sitePrice(r.price);
+        for (const v of clone.variants || []) v.price_twd = np;
+        if (clone.price_twd !== np) { log.push(`售價 ${clone.price_twd ?? '—'} → ${np}`); clone.price_twd = np; if (clone.price_display === 'inquiry') clone.price_display = 'fixed'; }
       }
     }
-    if (doPrice) applyPriceRule(clone);
-    // 保存蝦皮快照（僅供核對，不是即時庫存）：只在價格或庫存與上次快照不同時更新
+    applyPriceRule(clone);
+    // 蝦皮價格快照（僅供核對）：只在價格與上次快照不同時更新；不含庫存
     if (clone.review) {
       const snap = clone.review.shopee_sales_snapshot || {};
       const oldRows = snap.rows || [];
       const newRows = rows.map(r => {
-        const o = oldRows.find(x => String(x.variation_id || '') === r.variation) || {};
-        return { ...o, variation_id: r.variation || o.variation_id || null, name: r.vname || o.name || '', price: r.price ?? o.price ?? null, stock: r.stock ?? o.stock ?? null };
+        const { stock, ...o } = oldRows.find(x => String(x.variation_id || '') === r.variation) || {}; // eslint-disable-line no-unused-vars
+        return { ...o, variation_id: r.variation || o.variation_id || null, name: r.vname || o.name || '', price: r.price ?? o.price ?? null };
       });
       if (JSON.stringify(newRows) !== JSON.stringify(oldRows)) {
         const prices = newRows.map(r => r.price).filter(x => x > 0);
+        const { stock_total, ...rest } = snap; // eslint-disable-line no-unused-vars
         clone.review.shopee_sales_snapshot = {
-          ...snap, rows: newRows,
+          ...rest, rows: newRows,
           ...(prices.length ? { price_min: Math.min(...prices), price_max: Math.max(...prices) } : {}),
-          stock_total: newRows.reduce((a, r) => a + (r.stock || 0), 0),
-          captured_at: capturedAt, status: 'applied', applied_at: capturedAt.slice(0, 10),
-          applied: [doPrice && 'prices', doStock && 'stock'].filter(Boolean), ...(doPrice ? { discount_percent: discount } : {}),
+          captured_at: capturedAt, status: 'applied', applied_at: capturedAt.slice(0, 10), applied: ['prices'], discount_percent: discount,
         };
-        log.push('更新蝦皮快照');
+        log.push('更新蝦皮價格快照');
       }
     }
     results.push({ id: clone.id, name: clone.name_zh, log, rowErrors, product: clone, changed: JSON.stringify(clone) !== before });

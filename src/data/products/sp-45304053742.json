@@ -233,7 +233,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 99,
-          "stock": 4,
           "min_qty": 1
         },
         {
@@ -242,7 +241,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 45,
-          "stock": 8,
           "min_qty": null
         },
         {
@@ -251,7 +249,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 45,
-          "stock": 3,
           "min_qty": null
         },
         {
@@ -260,7 +257,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 45,
-          "stock": 20,
           "min_qty": null
         },
         {
@@ -269,7 +265,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 45,
-          "stock": 19,
           "min_qty": null
         },
         {
@@ -278,7 +273,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 45,
-          "stock": 7,
           "min_qty": null
         },
         {
@@ -287,7 +281,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 45,
-          "stock": 12,
           "min_qty": null
         },
         {
@@ -296,7 +289,6 @@
           "parent_sku": null,
           "sku": null,
           "price": 45,
-          "stock": 16,
           "min_qty": null
         },
         {
@@ -305,13 +297,11 @@
           "parent_sku": null,
           "sku": null,
           "price": 45,
-          "stock": 8,
           "min_qty": null
         }
       ],
       "price_min": 45,
       "price_max": 99,
-      "stock_total": 97,
       "status": "applied",
       "applied_at": "2026-10-22",
       "applied": [

@@ -172,6 +172,25 @@ describe('Phase 3：營業登記地址、圖片使用權、合規限制移除', 
   });
 });
 
+describe('庫存數量保密（EWP 決定：repo 公開，不存放真實庫存）', () => {
+  test('商品資料、規格與蝦皮快照都沒有庫存數量', () => {
+    for (const p of products) {
+      assert.ok(!('stock_qty' in p), p.id);
+      for (const v of p.variants || []) assert.ok(!('stock_qty' in v), p.id);
+      const snap = p.review?.shopee_sales_snapshot || {};
+      assert.ok(!('stock_total' in snap) && !(snap.rows || []).some(r => 'stock' in r), p.id);
+    }
+    const svc = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/shopee/service-listings.json'), 'utf8'));
+    for (const l of Object.values(svc.listings)) assert.ok(!l.sales.some(r => 'stock' in r));
+    assert.ok(!fs.readFileSync(path.join(ROOT, 'docs/shopee-import.csv'), 'utf8').includes('快照庫存'));
+  });
+  test('驗證會擋下任何寫回的庫存數量', () => {
+    assert.ok(errs({ ...base(), stock_qty: 3 }).some(e => e.includes('stock_qty')));
+    assert.ok(errs({ ...base(), variants: [{ name: 'A', price_twd: null, availability: 'unknown', stock_qty: 0 }] }).some(e => e.includes('stock_qty')));
+    assert.ok(errs({ ...base(), review: { status: 'approved', shopee_sales_snapshot: { rows: [{ variation_id: '1', price: 10, stock: 5 }] } } }).some(e => e.includes('庫存')));
+  });
+});
+
 describe('蝦皮媒體與價格庫存匯入', () => {
   const withMedia = products.filter(p => p.review?.source_media);
   test('240 件商品都有蝦皮媒體來源與價格庫存快照', () => {
@@ -221,7 +240,7 @@ describe('蝦皮媒體與價格庫存匯入', () => {
     for (const p of products) for (const v of (p.variants || []).filter(v => v.shopee_variation_id))
       assert.ok(p.review.shopee_sales_snapshot.rows.some(r => r.variation_id === v.shopee_variation_id), `${p.id} ${v.name}`);
   });
-  test('approve-snapshot：dry-run 不寫入；正式執行才套用價格、庫存與圖片使用權（不公開）', () => {
+  test('approve-snapshot：dry-run 不寫入；正式執行才套用價格與圖片使用權（不公開）；--stock 已停用', () => {
     const id = 'sp-57918649179';
     const f = path.join(PRODUCTS_DIR, `${id}.json`);
     const orig = fs.readFileSync(f, 'utf8');
@@ -232,9 +251,10 @@ describe('蝦皮媒體與價格庫存匯入', () => {
       pre.review.shopee_sales_snapshot.status = 'snapshot_only';
       const preText = JSON.stringify(pre, null, 2) + '\n';
       fs.writeFileSync(f, preText);
-      execFileSync('node', ['scripts/approve-snapshot.mjs', id, '--prices', '--stock', '--image-rights', 'ewp_own', '--discount', '4', '--dry-run'], { cwd: ROOT });
+      execFileSync('node', ['scripts/approve-snapshot.mjs', id, '--prices', '--image-rights', 'ewp_own', '--discount', '4', '--dry-run'], { cwd: ROOT });
       assert.equal(fs.readFileSync(f, 'utf8'), preText);
-      execFileSync('node', ['scripts/approve-snapshot.mjs', id, '--prices', '--stock', '--image-rights', 'ewp_own', '--discount', '4'], { cwd: ROOT });
+      assert.throws(() => execFileSync('node', ['scripts/approve-snapshot.mjs', id, '--stock'], { cwd: ROOT, stdio: 'pipe' }), '--stock 已停用（庫存保密）');
+      execFileSync('node', ['scripts/approve-snapshot.mjs', id, '--prices', '--image-rights', 'ewp_own', '--discount', '4'], { cwd: ROOT });
       let p = JSON.parse(fs.readFileSync(f, 'utf8'));
       const snap = p.review.shopee_sales_snapshot;
       assert.equal(p.price_twd, Math.round(snap.price_min * 0.96));
