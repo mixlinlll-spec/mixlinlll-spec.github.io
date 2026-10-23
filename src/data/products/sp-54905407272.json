@@ -1,20 +1,43 @@
 {
   "id": "sp-54905407272",
   "slug": "dji-rc-n1-3d",
-  "name_zh": "大疆遙控器頸帶掛繩安裝座🪢 DJI RC/RC-N1/各款遙控適用 項掛支架 3D列印掛點 手機平板航拍好幫手",
+  "name_zh": "DJI 遙控器頸帶掛繩座｜DJI RC-N1 等手機夾式遙控器適用｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "DJI",
+    "RC-N1",
+    "遙控器配件",
+    "頸帶",
+    "掛繩座",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "3D 列印掛繩座卡在手機夾位置，不需要拆機或鑽孔，就能替大疆遙控器多出一個穩固掛點。\n掛點位於螢幕／手機正下方，受力居中，配合頸帶使用時遙控不會前後翻、飛久了手也比較輕鬆。\n適合手機和平板兩種使用情境，掛繩口採標準扣環尺寸，大部分相機背帶、頸帶都能直接扣上。\n造型貼合原廠遙控器曲面，拆裝只要幾秒，平時不用時也能收起來不影響收納。",
-  "specifications": [],
+  "short_description": "電翼動力 3D 列印掛繩座，卡在 DJI 遙控器手機夾位置即可增加掛點，不需拆機或鑽孔，標準扣環尺寸可直接扣上多數頸帶。",
+  "description": "卡在 DJI 遙控器手機夾位置的掛繩座，不需拆機或鑽孔，就能多出一個掛點。掛點位於手機或平板正下方，受力居中，配合頸帶使用時遙控器較不會前後翻。\n\n【產品特色】\n・卡在手機夾位置，拆裝只要幾秒\n・掛點居中，長時間飛行手部較輕鬆\n・掛繩口採標準扣環尺寸，多數相機背帶、頸帶可直接扣上\n・手機與平板使用情境皆可\n\n【適用範圍】\n・DJI RC-N1 等使用手機夾的 DJI 遙控器；不同型號請先確認\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用",
+      "value": "DJI RC-N1 等手機夾式遙控器",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "安裝方式",
+      "value": "卡在手機夾，免拆機",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-54905407272/01.webp",
@@ -76,7 +99,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -84,7 +107,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztj-mjzlnbd8zg1t04"

@@ -1,27 +1,85 @@
 {
   "id": "sp-42182569700",
   "slug": "3-fpv-r3030-m2-1-5mm-ruiyi",
-  "name_zh": "3吋FPV穿越機螺旋槳 R3030 三葉槳 M2 1.5mm 芮翼RUIYI Freestyle Toothpick",
+  "name_zh": "RUIYI 芮翼 R3030 3 吋三葉槳｜1.5mm 軸孔、M2 固定｜Toothpick／Freestyle（2 正 2 反）",
   "sku": null,
   "brand": "RUIYI 芮翼",
-  "manufacturer_model": null,
+  "manufacturer_model": "R3030",
   "seller_role": "retail",
   "primary_category_id": "motors-props",
   "subcategory_id": "props",
-  "tags": [],
+  "tags": [
+    "螺旋槳",
+    "3吋",
+    "三葉槳",
+    "R3030",
+    "Toothpick",
+    "RUIYI"
+  ],
   "compatible_sizes": [
     "3 吋"
   ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "芮翼 RUIYI R3030 三葉槳專為3吋 FPV 穿越機打造，採用高韌性 PC 材質，兼具耐用性與操控靈敏度，適合 Toothpick、Freestyle、花飛及競速機使用。每組包含2正2反，可直接更換使用。\n\n【產品特色】\n✔ 3吋三葉設計，動力輸出平順\n✔ 高韌性PC材質，耐摔耐用\n✔ 重量僅1.6g，兼顧效率與靈敏度\n✔ M2固定螺絲規格\n✔ 適用1.5mm馬達軸\n✔ 適合 Toothpick、Freestyle、競速飛行\n\n【產品規格】\n品牌：RUIYI 芮翼\n型號：R3030\n尺寸：3吋\n葉片數：3葉\n材質：PC\n重量：1.6g／支\n中心孔徑：1.5mm\n中心厚度：5.1mm\n固定螺絲：M2\n包裝：2正槳＋2反槳（共4支）\n\n【適用機型】\n3吋 Toothpick\n3吋 Freestyle\n3吋 花式穿越機\n3吋 競速機\n※ 請確認馬達軸徑及固定方式後再購買。",
-  "specifications": [],
+  "short_description": "RUIYI R3030 三吋三葉槳，PC 材質、每支 1.6g，1.5mm 軸孔、M2 螺絲固定，一組 2 正 2 反。",
+  "description": "芮翼 RUIYI R3030 三葉槳專為3吋 FPV 穿越機打造，採用高韌性 PC 材質，兼具耐用性與操控靈敏度，適合 Toothpick、Freestyle、花飛及競速機使用。每組包含2正2反，可直接更換使用。\n\n【產品特色】\n・3吋三葉設計，動力輸出平順\n・高韌性PC材質，耐摔耐用\n・重量僅1.6g，兼顧效率與靈敏度\n・M2固定螺絲規格\n・適用1.5mm馬達軸\n・適合 Toothpick、Freestyle、競速飛行\n\n【適用機型】\n3吋 Toothpick\n3吋 Freestyle\n3吋 花式穿越機\n3吋 競速機\n※ 請確認馬達軸徑及固定方式後再購買。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "RUIYI 芮翼",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "R3030",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "3吋",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "葉片數",
+      "value": "3葉",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "PC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "1.6g／支",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "中心孔徑",
+      "value": "1.5mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "中心厚度",
+      "value": "5.1mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "固定螺絲",
+      "value": "M2",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "包裝",
+      "value": "2正槳＋2反槳（共4支）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-42182569700/01.webp",
       "src_small": "/assets/img/products/sp-42182569700/01-480.webp",
-      "alt": "3吋FPV穿越機螺旋槳 R3030 三葉槳 M2 1.5mm 芮翼RUIYI Freestyle Toothpick（主圖）",
+      "alt": "RUIYI 芮翼 R3030 3 吋三葉槳｜1.5mm 軸孔、M2 固定｜Toothpick／Freestyle（2 正 2 反）（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +89,7 @@
     {
       "src": "/assets/img/products/sp-42182569700/02.webp",
       "src_small": "/assets/img/products/sp-42182569700/02-480.webp",
-      "alt": "3吋FPV穿越機螺旋槳 R3030 三葉槳 M2 1.5mm 芮翼RUIYI Freestyle Toothpick（細節圖 1）",
+      "alt": "RUIYI 芮翼 R3030 3 吋三葉槳｜1.5mm 軸孔、M2 固定｜Toothpick／Freestyle（2 正 2 反）（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +99,7 @@
     {
       "src": "/assets/img/products/sp-42182569700/03.webp",
       "src_small": "/assets/img/products/sp-42182569700/03-480.webp",
-      "alt": "3吋FPV穿越機螺旋槳 R3030 三葉槳 M2 1.5mm 芮翼RUIYI Freestyle Toothpick（細節圖 2）",
+      "alt": "RUIYI 芮翼 R3030 3 吋三葉槳｜1.5mm 軸孔、M2 固定｜Toothpick／Freestyle（2 正 2 反）（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -66,13 +124,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mqn40mib8pvnb5"

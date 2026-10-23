@@ -1,28 +1,48 @@
 {
   "id": "sp-56852777875",
   "slug": "dji-rc-n1-n2-n3-12-9",
-  "name_zh": "DJI RC-N1 / N2 /N3 遙控器專用 12.9吋 / 13吋 iPad 平板支架｜大尺寸平板穩固支撐款",
+  "name_zh": "DJI RC-N1／N2／N3 遙控器 12.9／13 吋 iPad 平板支架｜大尺寸平板支撐",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [
-    "12.9 吋",
-    "13 吋"
+  "tags": [
+    "DJI RC-N3",
+    "RC-N1",
+    "iPad支架",
+    "平板支架",
+    "空拍",
+    "3D列印"
   ],
+  "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "讓你的 RC-N1/2/3皆可使用 瞬間變身「大螢幕空拍工作站」！此平板支架專為\n12.9\" / 13\" iPad Pro、iPad Air 量身打造，穩固、不卡卡、不滑動。\n大型螢幕更清晰，更適合專業航拍、精準構圖與作業拍攝。\n✔ 穩固卡扣結構，大螢幕也能放心操作\n✔ 完美貼合 RC-N3，不擋按鍵、不頂手\n✔ 可支援多款 iPad 與部分 Samsung Tab Ultra\n✔ 拍攝、檢視、調參更直覺\n\n兼容設備\niPad 系列\n12.9\" iPad Pro 第3代 (A12X)\n12.9\" iPad Pro 第4代 (A12Z)\n12.9\" iPad Pro 第5代 (M1)\n12.9\" iPad Pro 第6代 (M2)\n13\" iPad Pro 第7代 (M4)\n13\" iPad Air 第6代 (M2)",
-  "specifications": [],
+  "short_description": "電翼動力為 DJI RC-N1、RC-N2、RC-N3 製作的 3D 列印平板支架，可固定 12.9 吋與 13 吋 iPad Pro、iPad Air 及部分 Samsung Tab Ultra。",
+  "description": "讓 DJI RC-N1／N2／N3 搭配大尺寸平板使用。支架為 12.9 吋與 13 吋 iPad Pro、iPad Air 設計，卡扣結構穩固，適合航拍構圖與檢視。\n\n【產品特色】\n・卡扣結構，大螢幕也能穩定操作\n・貼合 RC-N3，不擋按鍵\n・可支援多款 iPad 與部分 Samsung Tab Ultra（請先確認尺寸）\n\n【相容平板】\n・12.9 吋 iPad Pro 第 3／4／5／6 代\n・13 吋 iPad Pro 第 7 代（M4）\n・13 吋 iPad Air 第 6 代（M2）\n\n【顏色與列印】\n・可選顏色：黃、冰淇淋、黑、白、紫、透明、螢光橘、螢光綠\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用遙控器",
+      "value": "DJI RC-N1／RC-N2／RC-N3",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用平板",
+      "value": "12.9 吋／13 吋 iPad Pro、13 吋 iPad Air 等",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-56852777875/01.webp",
       "src_small": "/assets/img/products/sp-56852777875/01-480.webp",
-      "alt": "DJI RC-N1 / N2 /N3 遙控器專用 12.9吋 / 13吋 iPad 平板支架｜大尺寸平板穩固支撐款（主圖）",
+      "alt": "DJI RC-N1／N2／N3 遙控器 12.9／13 吋 iPad 平板支架｜大尺寸平板支撐（主圖）",
       "width": 941,
       "height": 941,
       "rights": "licensed",
@@ -32,7 +52,7 @@
     {
       "src": "/assets/img/products/sp-56852777875/02.webp",
       "src_small": "/assets/img/products/sp-56852777875/02-480.webp",
-      "alt": "DJI RC-N1 / N2 /N3 遙控器專用 12.9吋 / 13吋 iPad 平板支架｜大尺寸平板穩固支撐款（細節圖 1）",
+      "alt": "DJI RC-N1／N2／N3 遙控器 12.9／13 吋 iPad 平板支架｜大尺寸平板支撐（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -42,7 +62,7 @@
     {
       "src": "/assets/img/products/sp-56852777875/03.webp",
       "src_small": "/assets/img/products/sp-56852777875/03-480.webp",
-      "alt": "DJI RC-N1 / N2 /N3 遙控器專用 12.9吋 / 13吋 iPad 平板支架｜大尺寸平板穩固支撐款（細節圖 2）",
+      "alt": "DJI RC-N1／N2／N3 遙控器 12.9／13 吋 iPad 平板支架｜大尺寸平板支撐（細節圖 2）",
       "width": 623,
       "height": 623,
       "rights": "licensed",
@@ -52,7 +72,7 @@
     {
       "src": "/assets/img/products/sp-56852777875/04.webp",
       "src_small": "/assets/img/products/sp-56852777875/04-480.webp",
-      "alt": "DJI RC-N1 / N2 /N3 遙控器專用 12.9吋 / 13吋 iPad 平板支架｜大尺寸平板穩固支撐款（細節圖 3）",
+      "alt": "DJI RC-N1／N2／N3 遙控器 12.9／13 吋 iPad 平板支架｜大尺寸平板支撐（細節圖 3）",
       "width": 641,
       "height": 641,
       "rights": "licensed",
@@ -126,7 +146,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -134,7 +154,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

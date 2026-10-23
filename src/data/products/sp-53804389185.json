@@ -1,22 +1,50 @@
 {
   "id": "sp-53804389185",
   "slug": "ovonic-1s-550mah-100c-bt2-0-tinywhoop",
-  "name_zh": "Ovonic 1S 550mAh 100C🔋 BT2.0 高壓鋰電池 Tinywhoop/微型穿越機專用 長續航高爆發",
+  "name_zh": "OVONIC 1S HV 高壓電池｜BT2.0 450mAh／PH2.0 550mAh｜Tinywhoop 微型穿越機",
   "sku": null,
-  "brand": null,
+  "brand": "OVONIC",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "power-battery",
   "subcategory_id": "1s-micro",
-  "tags": [],
+  "tags": [
+    "1S電池",
+    "LiHV",
+    "BT2.0",
+    "PH2.0",
+    "Tinywhoop",
+    "OVONIC"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [
     "1S"
   ],
-  "short_description": "",
-  "description": "想在室內場連飛好幾圈，又不想每兩分鐘就落地換電嗎？😆\nOvonic 1S 550mAh BT2.0 高倍率電池，專為 Tinywhoop、1S 微型穿越機設計，容量比常見 300–450mAh 再向上，搭配 BT2.0 低阻抗插頭，實測能帶來更長續航與穩定推力。\n\n產品特色：\n•\t🔌 BT2.0 接頭：相較 PH2.0 電壓下墜更少，油門手感更飽滿，特別適合高KV 小電機。\n•\t🔋 550mAh 大容量：在重量仍可接受的前提下，換來更長飛行時間，適合練習、慢飛、室內繞場。\n•\t⚡ 高倍率設計：80–100C 放電（依官方標示），應付急加速、翻滾、穿門不易「軟腳」。\n•\t🪶 細長外型：約 67×16×8mm，易於固定在 75mm／85mm 機型或改裝 65mm 長艙位電池托。",
-  "specifications": [],
+  "short_description": "OVONIC 1S 高壓（HV）電池，提供 BT2.0 450mAh 與 PH2.0 550mAh 兩種規格，適用 Tinywhoop 與 1S 微型穿越機。",
+  "description": "OVONIC 1S 高倍率高壓電池，適用 Tinywhoop 與 1S 微型穿越機的練習、慢飛與室內繞場。\n\n【規格選項】\n・BT2.0 接頭／450mAh\n・PH2.0 接頭／550mAh\n\n【產品特色】\n・BT2.0 接頭電壓下墜較 PH2.0 少\n・高倍率設計（原廠標示約 80–100C）\n・550mAh 版本外型約 67×16×8mm，適合 75mm／85mm 機型或加長電池托\n\n【訂購前請確認】\n・請依機型的接頭與電池倉尺寸選擇規格\n・HV 電池請使用支援 LiHV 模式的充電器",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "OVONIC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電壓",
+      "value": "1S 3.8V（HV）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "規格",
+      "value": "BT2.0／450mAh、PH2.0／550mAh",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "放電倍率",
+      "value": "約 80–100C（原廠標示）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-53804389185/01.webp",
@@ -73,14 +101,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

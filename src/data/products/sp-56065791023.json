@@ -1,25 +1,63 @@
 {
   "id": "sp-56065791023",
   "slug": "helloradio-v15-gemini-2-4g-900mhz-1w",
-  "name_zh": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS",
+  "name_zh": "HelloRadio V15 遙控器｜ELRS Gemini 雙頻 2.4G＋900MHz｜1W｜EdgeTX｜STM32 H7",
   "sku": null,
   "brand": "HelloRadio",
-  "manufacturer_model": null,
+  "manufacturer_model": "V15",
   "seller_role": "retail",
   "primary_category_id": "radio-gps",
   "subcategory_id": "radios",
-  "tags": [],
+  "tags": [
+    "遙控器",
+    "ELRS",
+    "Gemini",
+    "EdgeTX",
+    "HelloRadio",
+    "雙頻"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "HelloRadio V15 採用高效能 STM32 H7 主控，預載 EdgeTX 系統，搭載 ExpressLRS Gemini 雙頻 2.4GHz + 900MHz 技術，提供更穩定的控制鏈路、更低延遲及更遠的傳輸距離。",
-  "specifications": [],
+  "short_description": "HelloRadio V15 遙控器，STM32 H7 主控、預載 EdgeTX，內建 ExpressLRS Gemini 雙頻 2.4GHz＋900MHz、1W 輸出，提供 MAX、RDC、ULTRA 多種版本與配色。",
+  "description": "HelloRadio V15 採用 STM32 H7 主控，預載 EdgeTX 系統，搭載 ExpressLRS Gemini 雙頻 2.4GHz＋900MHz，提供穩定的控制鏈路與低延遲。\n\n【規格選項】\n・MAX：茶紅、茶黑、茶紫、橙黑\n・RDC：茶黑、橙黑\n・ULTRA：茶色\n・各版本差異請透過 LINE 確認\n\n【法規提醒】\n・900MHz 頻段與輸出功率涉及使用規定，台灣使用前請自行確認相關法規",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "HelloRadio",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "V15",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "主控",
+      "value": "STM32 H7",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "系統",
+      "value": "EdgeTX",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "內建高頻",
+      "value": "ExpressLRS Gemini 雙頻 2.4GHz＋900MHz",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "輸出功率",
+      "value": "1W",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-56065791023/01.webp",
       "src_small": "/assets/img/products/sp-56065791023/01-480.webp",
-      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（主圖）",
+      "alt": "HelloRadio V15 遙控器｜ELRS Gemini 雙頻 2.4G＋900MHz｜1W｜EdgeTX｜STM32 H7（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +67,7 @@
     {
       "src": "/assets/img/products/sp-56065791023/02.webp",
       "src_small": "/assets/img/products/sp-56065791023/02-480.webp",
-      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 1）",
+      "alt": "HelloRadio V15 遙控器｜ELRS Gemini 雙頻 2.4G＋900MHz｜1W｜EdgeTX｜STM32 H7（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +77,7 @@
     {
       "src": "/assets/img/products/sp-56065791023/03.webp",
       "src_small": "/assets/img/products/sp-56065791023/03-480.webp",
-      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 2）",
+      "alt": "HelloRadio V15 遙控器｜ELRS Gemini 雙頻 2.4G＋900MHz｜1W｜EdgeTX｜STM32 H7（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +87,7 @@
     {
       "src": "/assets/img/products/sp-56065791023/04.webp",
       "src_small": "/assets/img/products/sp-56065791023/04-480.webp",
-      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 3）",
+      "alt": "HelloRadio V15 遙控器｜ELRS Gemini 雙頻 2.4G＋900MHz｜1W｜EdgeTX｜STM32 H7（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -59,7 +97,7 @@
     {
       "src": "/assets/img/products/sp-56065791023/05.webp",
       "src_small": "/assets/img/products/sp-56065791023/05-480.webp",
-      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 4）",
+      "alt": "HelloRadio V15 遙控器｜ELRS Gemini 雙頻 2.4G＋900MHz｜1W｜EdgeTX｜STM32 H7（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -69,7 +107,7 @@
     {
       "src": "/assets/img/products/sp-56065791023/06.webp",
       "src_small": "/assets/img/products/sp-56065791023/06-480.webp",
-      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 5）",
+      "alt": "HelloRadio V15 遙控器｜ELRS Gemini 雙頻 2.4G＋900MHz｜1W｜EdgeTX｜STM32 H7（細節圖 5）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -79,7 +117,7 @@
     {
       "src": "/assets/img/products/sp-56065791023/07.webp",
       "src_small": "/assets/img/products/sp-56065791023/07-480.webp",
-      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 6）",
+      "alt": "HelloRadio V15 遙控器｜ELRS Gemini 雙頻 2.4G＋900MHz｜1W｜EdgeTX｜STM32 H7（細節圖 6）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -89,7 +127,7 @@
     {
       "src": "/assets/img/products/sp-56065791023/08.webp",
       "src_small": "/assets/img/products/sp-56065791023/08-480.webp",
-      "alt": "HelloRadio V15 遙控器 Gemini 雙頻 2.4G+900MHz 1W EdgeTX H7 ELRS（細節圖 7）",
+      "alt": "HelloRadio V15 遙控器｜ELRS Gemini 雙頻 2.4G＋900MHz｜1W｜EdgeTX｜STM32 H7（細節圖 7）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -156,13 +194,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mrqmegxb0mbp78",

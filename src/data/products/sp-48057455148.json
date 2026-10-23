@@ -1,19 +1,26 @@
 {
   "id": "sp-48057455148",
   "slug": "betafpv-c03-fpv-1200tvl-2-1mm-160",
-  "name_zh": "BETAFPV C03 穿越機攝像頭📷 室內 FPV 圈圈機專用 1200TVL 2.1mm 鏡頭 160°廣角 1g",
+  "name_zh": "BETAFPV C03 類比 FPV 攝影機｜1200TVL｜2.1mm 160°｜約 1g｜室內 Whoop",
   "sku": null,
-  "brand": null,
-  "manufacturer_model": null,
+  "brand": "BETAFPV",
+  "manufacturer_model": "C03",
   "seller_role": "retail",
   "primary_category_id": "video",
   "subcategory_id": "cameras",
-  "tags": [],
+  "tags": [
+    "FPV攝影機",
+    "BETAFPV",
+    "C03",
+    "類比",
+    "Whoop",
+    "室內"
+  ],
   "compatible_sizes": [],
   "video_system": "類比",
   "battery_cells": [],
-  "short_description": "",
-  "description": "",
+  "short_description": "BETAFPV C03 微型類比 FPV 攝影機，1200TVL、2.1mm 鏡頭、160° 視角、約 1g，適合室內 Whoop 圈圈機。",
+  "description": "BETAFPV C03 微型類比 FPV 攝影機，1200TVL、2.1mm 鏡頭、160° 廣角，重量約 1g，適合室內 Whoop 圈圈機。\n\n【購買前請確認】\n・本商品為類比攝影機，需搭配類比圖傳\n・接線與供電電壓請與你的 AIO 或圖傳確認相容\n・其他規格請透過 LINE 洽詢",
   "specifications": [],
   "images": [
     {
@@ -76,14 +83,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mm0k2dqr2xan0f",

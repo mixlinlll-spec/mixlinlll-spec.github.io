@@ -1,28 +1,52 @@
 {
   "id": "sp-45401512737",
   "slug": "65mm-75mm-air65-air75-fpv-betafpv",
-  "name_zh": "微型穿越機收納盒 65mm 75mm 通用 Air65 Air75 無人機硬殼保護盒 FPV配件 betafpv air",
+  "name_zh": "65mm／75mm 微型穿越機收納盒｜適用 BETAFPV Air65、Air75 等 Tinywhoop｜3D 列印硬殼",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "cases",
-  "tags": [],
+  "tags": [
+    "收納盒",
+    "Tinywhoop",
+    "Air65",
+    "Air75",
+    "65mm",
+    "75mm",
+    "3D列印"
+  ],
   "compatible_sizes": [
     "65mm",
     "75mm"
   ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "(‼️3D打印產品為客製化商品，不接受色差/不想要了/無故不取貨等造成退貨的損失)\n\n你的 65mm 微型穿越機是不是常常塞口袋、丟包裡、壓壞螺旋槳？這款 Air65 / 65mm 專用收納盒，就是替你的迷你機打造的「行動防護硬殼屋」。\n\n‼️不須任何安裝工具，買回去即可使用\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅\n\n適用機型\nHappymodel / BetaFPV / Flywoo 65mm\n其他 65mm75mm wheelbase 微型穿越機",
-  "specifications": [],
+  "short_description": "電翼動力 3D 列印硬殼收納盒，提供 65mm 與 75mm 兩種尺寸，適用 Air65、Air75 及多數同尺寸 Tinywhoop，不需工具即可使用。",
+  "description": "電翼動力 3D 列印的微型穿越機硬殼收納盒，避免 65mm／75mm 小機放在口袋或背包裡被壓壞、壓斷槳葉。到手即可使用，不需安裝工具。\n\n【適用機型】\n・65 用：BETAFPV Air65、Happymodel、Flywoo 等 65mm 軸距微型穿越機\n・75 用：BETAFPV Air75 等 75mm 軸距微型穿越機\n・不同品牌機架、天線與改裝配件可能影響實際放置空間\n\n【顏色與列印】\n・可選顏色：黑、白、白金、螢光橘、螢光綠、紫、黃、冰淇淋粉、冰淇淋藍、馬卡龍、灰、橘、綠、金、大理石、軍綠、金箔、粉紅、藍、淺藍、紅\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "尺寸版本",
+      "value": "65mm 用／75mm 用",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用機型",
+      "value": "BETAFPV Air65／Air75，及多數同軸距 Tinywhoop",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印硬殼",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-45401512737/01.webp",
       "src_small": "/assets/img/products/sp-45401512737/01-480.webp",
-      "alt": "微型穿越機收納盒 65mm 75mm 通用 Air65 Air75 無人機硬殼保護盒 FPV配件 betafpv air（主圖）",
+      "alt": "65mm／75mm 微型穿越機收納盒｜適用 BETAFPV Air65、Air75 等 Tinywhoop｜3D 列印硬殼（主圖）",
       "width": 999,
       "height": 999,
       "rights": "licensed",
@@ -32,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-45401512737/02.webp",
       "src_small": "/assets/img/products/sp-45401512737/02-480.webp",
-      "alt": "微型穿越機收納盒 65mm 75mm 通用 Air65 Air75 無人機硬殼保護盒 FPV配件 betafpv air（細節圖 1）",
+      "alt": "65mm／75mm 微型穿越機收納盒｜適用 BETAFPV Air65、Air75 等 Tinywhoop｜3D 列印硬殼（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -42,7 +66,7 @@
     {
       "src": "/assets/img/products/sp-45401512737/03.webp",
       "src_small": "/assets/img/products/sp-45401512737/03-480.webp",
-      "alt": "微型穿越機收納盒 65mm 75mm 通用 Air65 Air75 無人機硬殼保護盒 FPV配件 betafpv air（細節圖 2）",
+      "alt": "65mm／75mm 微型穿越機收納盒｜適用 BETAFPV Air65、Air75 等 Tinywhoop｜3D 列印硬殼（細節圖 2）",
       "width": 767,
       "height": 767,
       "rights": "licensed",
@@ -52,7 +76,7 @@
     {
       "src": "/assets/img/products/sp-45401512737/04.webp",
       "src_small": "/assets/img/products/sp-45401512737/04-480.webp",
-      "alt": "微型穿越機收納盒 65mm 75mm 通用 Air65 Air75 無人機硬殼保護盒 FPV配件 betafpv air（細節圖 3）",
+      "alt": "65mm／75mm 微型穿越機收納盒｜適用 BETAFPV Air65、Air75 等 Tinywhoop｜3D 列印硬殼（細節圖 3）",
       "width": 757,
       "height": 757,
       "rights": "licensed",
@@ -84,14 +108,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztl-mihfo7nx1jwg3f",

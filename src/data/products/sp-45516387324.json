@@ -1,27 +1,69 @@
 {
   "id": "sp-45516387324",
   "slug": "gemfan-7535-7-5-fpv-5mm-2812",
-  "name_zh": "GEMFAN 乾豐 7535 三葉槳 7.5吋 FPV穿越機 螺旋槳 5mm中心孔 2812馬達 長航機 航拍機",
+  "name_zh": "GEMFAN 乾豐 7535 三葉槳｜7.5 吋｜5mm 中心孔｜長航、航拍、CineLifter",
   "sku": null,
   "brand": "GEMFAN 乾豐",
-  "manufacturer_model": null,
+  "manufacturer_model": "7535",
   "seller_role": "retail",
   "primary_category_id": "motors-props",
   "subcategory_id": "props",
-  "tags": [],
+  "tags": [
+    "螺旋槳",
+    "7.5吋",
+    "長航",
+    "CineLifter",
+    "GEMFAN"
+  ],
   "compatible_sizes": [
     "7.5 吋"
   ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "GEMFAN 乾豐 7535 三葉槳，專為7.5吋FPV穿越機、長航機與航拍平台設計，具備穩定推力與良好效率，適合中大型機架、CineLifter、Long Range及高負載飛行使用。\n【產品特色】\n✔ 7.5×3.5吋三葉槳設計\n✔ 推力穩定，適合長航與航拍\n✔ 5mm中心孔，適用主流大尺寸馬達\n✔ PC／玻纖尼龍材質版本可選\n✔ 適合2812等級無刷馬達\n✔ 飛行穩定性佳，適合高負載配置\n【產品規格】\n品牌：GEMFAN 乾豐\n型號：7535三葉槳\n尺寸：7.5×3.5吋\n中心孔：5mm\n材質：玻纖尼龍\n適配馬達：2812\n重量：約8.4g／11g（依材質版本不同）\n【適用機型】\n7吋～8吋FPV穿越機\nLong Range長航機\nCineLifter影視機\n航拍機\n大型多軸無人機\n※ 下單前請確認馬達軸徑、槳葉尺寸及機架可用空間。",
-  "specifications": [],
+  "short_description": "GEMFAN 7535 三葉槳（7.5×3.5 吋），5mm 中心孔，適合 2812 等級馬達，用於 7～8 吋長航機、航拍機與 CineLifter。",
+  "description": "GEMFAN 乾豐 7535 三葉槳，專為7.5吋FPV穿越機、長航機與航拍平台設計，具備穩定推力與良好效率，適合中大型機架、CineLifter、Long Range及高負載飛行使用。\n\n【產品特色】\n・7.5×3.5吋三葉槳設計\n・推力穩定，適合長航與航拍\n・5mm中心孔，適用主流大尺寸馬達\n・適合2812等級無刷馬達\n・飛行穩定性佳，適合高負載配置\n\n【適用機型】\n7吋～8吋FPV穿越機\nLong Range長航機\nCineLifter影視機\n航拍機\n大型多軸無人機\n※ 下單前請確認馬達軸徑、槳葉尺寸及機架可用空間。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "GEMFAN 乾豐",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "7535三葉槳",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "7.5×3.5吋",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "中心孔",
+      "value": "5mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "玻纖尼龍",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適配馬達",
+      "value": "2812",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約8.4g／11g（依材質版本不同）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-45516387324/01.webp",
       "src_small": "/assets/img/products/sp-45516387324/01-480.webp",
-      "alt": "GEMFAN 乾豐 7535 三葉槳 7.5吋 FPV穿越機 螺旋槳 5mm中心孔 2812馬達 長航機 航拍機（主圖）",
+      "alt": "GEMFAN 乾豐 7535 三葉槳｜7.5 吋｜5mm 中心孔｜長航、航拍、CineLifter（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +73,7 @@
     {
       "src": "/assets/img/products/sp-45516387324/02.webp",
       "src_small": "/assets/img/products/sp-45516387324/02-480.webp",
-      "alt": "GEMFAN 乾豐 7535 三葉槳 7.5吋 FPV穿越機 螺旋槳 5mm中心孔 2812馬達 長航機 航拍機（細節圖 1）",
+      "alt": "GEMFAN 乾豐 7535 三葉槳｜7.5 吋｜5mm 中心孔｜長航、航拍、CineLifter（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +83,7 @@
     {
       "src": "/assets/img/products/sp-45516387324/03.webp",
       "src_small": "/assets/img/products/sp-45516387324/03-480.webp",
-      "alt": "GEMFAN 乾豐 7535 三葉槳 7.5吋 FPV穿越機 螺旋槳 5mm中心孔 2812馬達 長航機 航拍機（細節圖 2）",
+      "alt": "GEMFAN 乾豐 7535 三葉槳｜7.5 吋｜5mm 中心孔｜長航、航拍、CineLifter（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -66,13 +108,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

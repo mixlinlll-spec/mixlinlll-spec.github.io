@@ -1,19 +1,25 @@
 {
   "id": "sp-55805767249",
   "slug": "walksnail-avatar-v2-pro-kit-c",
-  "name_zh": "Walksnail Avatar V2/Pro Kit C型USB升級線套件🔌 數傳外接USB模組 固件更新/讀取延長線",
+  "name_zh": "Walksnail Avatar V2／Pro Kit USB-C 延長模組｜韌體更新用",
   "sku": null,
   "brand": "Walksnail",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "video",
   "subcategory_id": "video-cables",
-  "tags": [],
+  "tags": [
+    "Walksnail",
+    "Avatar",
+    "USB-C",
+    "韌體更新",
+    "延長線"
+  ],
   "compatible_sizes": [],
   "video_system": "Walksnail",
   "battery_cells": [],
-  "short_description": "",
-  "description": "•\t專為 Walksnail Avatar V2 / Pro Kit 設計，將原本在機內的 USB 介面延長到機身外，方便連接電腦做韌體升級與設定。",
+  "short_description": "Walksnail Avatar V2／Pro Kit 用 USB-C 延長模組，把機內的 USB 介面延伸到機身外，方便連電腦更新韌體與設定。",
+  "description": "Walksnail Avatar V2／Pro Kit 用 USB 延長模組，把原本在機內的 USB 介面延伸到機身外，連接電腦更新韌體與設定時不用拆機。\n\n【購買前請確認】\n・適用 Walksnail Avatar V2／Pro Kit；其他版本請先透過 LINE 確認\n・安裝位置請依機架預留空間",
   "specifications": [],
   "images": [
     {
@@ -56,13 +62,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,14 +1,21 @@
 {
   "id": "sp-47654031005",
   "slug": "a-tinywhoop-65mm-75mm-80mm-whoop",
-  "name_zh": "分區A:Tinywhoop各類頂罩🛸 65mm/75mm/80mm 微型穿越機上蓋 保護罩 機架相機支架 室內Whoop",
+  "name_zh": "Tinywhoop 頂罩專區｜65／75／80mm Canopy｜競速、低角度、可調角度、O4 Lite 防果凍",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "Tinywhoop",
+    "頂罩",
+    "Canopy",
+    "65mm",
+    "75mm",
+    "3D列印"
+  ],
   "compatible_sizes": [
     "65mm",
     "75mm",
@@ -16,9 +23,20 @@
   ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "炸機太多次，頂罩不是裂腳就是鏡頭歪一邊嗎？😆\n這個「Tinywhoop 各類頂罩專區」，專門收錄 65mm／75mm／80mm 微型穿越機常見機型頂罩，上蓋、相機保護架、天線導引一次找齊，讓你隨時換造型也能順便換新殼。",
-  "specifications": [],
+  "short_description": "電翼動力 Tinywhoop 頂罩專區，收錄 65／75／80mm 微型穿越機常用頂罩，含競速 45 度、低角度、多角度可調、C03／Caddx Ant 與 O4 Lite 防果凍等款式。",
+  "description": "收錄 65mm／75mm／80mm 微型穿越機常用的頂罩，炸機後頂罩裂開或鏡頭歪掉時可直接更換，也能順便換個造型。\n\n【款式說明】\n・Air65 高角度競速\n・Air65／75 競速 45 度\n・65／75 多角度可調\n・Air75 低角度\n・65 低角度輕量化\n・BETAFPV C03／25 度\n・Caddx Ant／C03／35 度\n・RaceSpec BeeEye 35 度\n・小丑競速用 45 度\n・外星頭罩（65／75）\n・65／75 鏡頭＋BB 響\n・小惡魔 O4 Lite 防果凍\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用尺寸",
+      "value": "65mm／75mm／80mm Tinywhoop",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-47654031005/01.webp",
@@ -217,14 +235,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

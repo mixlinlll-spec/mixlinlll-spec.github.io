@@ -1,25 +1,49 @@
 {
   "id": "sp-56200524556",
   "slug": "speedybee-mario-5",
-  "name_zh": "SpeedyBee Mario 5 穿越機 防撞底座 保護墊 腳墊支架 防震防滑 配件",
+  "name_zh": "SpeedyBee Mario 5 防撞腳墊底座｜TPU 免螺絲壓入安裝",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "SpeedyBee",
+    "Mario 5",
+    "腳墊",
+    "TPU",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "5 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "專為 SpeedyBee Mario 5 穿越機 設計的 3D列印防撞底座，提供額外的保護與穩定支撐。\n使用 TPU彈性材質 製作，柔軟抗震、不易斷裂，讓機架在起降或碰撞時減少損傷。\n\n✅ 完美貼合原廠機架孔位，安裝快速 (無須螺絲) 直接壓入即可\n✅ 防滑設計，降落更穩定\n\n適用機種：\nSpeedyBee Mario 5\n\n材質說明：\nTPU（熱塑性聚氨酯）－柔軟、耐磨、抗衝擊",
-  "specifications": [],
+  "short_description": "電翼動力為 SpeedyBee Mario 5 製作的 TPU 防撞底座，對應原廠機架孔位，免螺絲直接壓入，降落更穩並減少碰撞損傷。",
+  "description": "電翼動力為 SpeedyBee Mario 5 設計的 TPU 防撞底座，提供起降時的保護與穩定支撐。\n\n【產品特色】\n・對應原廠機架孔位，免螺絲，直接壓入即可\n・TPU 柔軟抗震，不易斷裂\n・防滑設計，降落更穩定\n\n【顏色與列印】\n・可選顏色：淺藍、粉紅、綠、透藍、橘、黑、白、黃\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "SpeedyBee Mario 5",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "安裝方式",
+      "value": "免螺絲壓入",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-56200524556/01.webp",
       "src_small": "/assets/img/products/sp-56200524556/01-480.webp",
-      "alt": "SpeedyBee Mario 5 穿越機 防撞底座 保護墊 腳墊支架 防震防滑 配件（主圖）",
+      "alt": "SpeedyBee Mario 5 防撞腳墊底座｜TPU 免螺絲壓入安裝（主圖）",
       "width": 814,
       "height": 814,
       "rights": "licensed",
@@ -29,7 +53,7 @@
     {
       "src": "/assets/img/products/sp-56200524556/02.webp",
       "src_small": "/assets/img/products/sp-56200524556/02-480.webp",
-      "alt": "SpeedyBee Mario 5 穿越機 防撞底座 保護墊 腳墊支架 防震防滑 配件（細節圖 1）",
+      "alt": "SpeedyBee Mario 5 防撞腳墊底座｜TPU 免螺絲壓入安裝（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +63,7 @@
     {
       "src": "/assets/img/products/sp-56200524556/03.webp",
       "src_small": "/assets/img/products/sp-56200524556/03-480.webp",
-      "alt": "SpeedyBee Mario 5 穿越機 防撞底座 保護墊 腳墊支架 防震防滑 配件（細節圖 2）",
+      "alt": "SpeedyBee Mario 5 防撞腳墊底座｜TPU 免螺絲壓入安裝（細節圖 2）",
       "width": 773,
       "height": 773,
       "rights": "licensed",
@@ -113,14 +137,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

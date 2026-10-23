@@ -1,27 +1,98 @@
 {
   "id": "sp-54262021308",
   "slug": "jeno-pocket-t700-2-5-freestyle",
-  "name_zh": "JENO POCKET T700 高強度機架｜2.5吋 Freestyle 穿越機機架",
+  "name_zh": "JENO POCKET T700 碳纖維機架｜2.5 吋 Freestyle｜Wide-X｜約 24g",
   "sku": null,
   "brand": null,
-  "manufacturer_model": null,
+  "manufacturer_model": "JENO POCKET T700",
   "seller_role": "retail",
   "primary_category_id": "frames-parts",
   "subcategory_id": "frames",
-  "tags": [],
+  "tags": [
+    "機架",
+    "2.5吋",
+    "Jeno",
+    "Wide-X",
+    "牙籤機",
+    "DJI O4 Lite"
+  ],
   "compatible_sizes": [
     "2.5 吋"
   ],
   "video_system": null,
-  "battery_cells": [],
-  "short_description": "",
-  "description": "🔥 專為 2.5 吋 Freestyle 飛行打造\n🔥 高強度碳纖維結構，兼顧輕量與耐用\n🔥 支援 DJI O4 Lite / 類比 / WalkSnail / HDZero\n\n產品規格\n📌 型號：JENO POCKET T700\n📌 機架類型：2.5 吋 Freestyle Frame\n📌 幾何結構：Wide-X\n📌 機架重量：約 24g（含螺絲）\n📌 機身高度：20mm\n📌 底板厚度：3mm\n📌 上板厚度：2mm\n📌 側板厚度：2mm\n📌 飛控孔距：30.5 × 30.5mm\n📌 電機孔距：9 × 9mm\n📌 相機規格：14mm Nano Camera\n📌 支援圖傳：\n• DJI O4 Lite\n• WalkSnail Avatar\n• HDZero\n• Analog 類比系統\n\n建議配置\n🔹 電機規格\n1103 / 1104 / 1105 / 1202 / 1203 / 1204 / 1303\n🔹 建議 KV\n2S：8000KV 左右\n3S：6000KV 左右\n🔹 建議槳葉\n2.5 吋槳葉\n🔹 建議電池\n2S 450550mAh\n3S 450560mAh\n🔹 建議飛控\nAIO 15A~20A\n\n產品特色\n✅ Wide-X 結構設計\n✅ 高強度碳纖維切割加工\n✅ 超輕量約 24g\n✅ 兼容主流數位與類比圖傳系統\n✅ Freestyle、刷樹、穿縫皆適用\n✅ 適合打造高性能 2.5 吋牙籤機\n\n套件內容\n✔ 碳纖維機架組\n✔ 鋁柱配件\n✔ 固定螺絲組\n✔ TPU打印件全套\n✔ 翼飛電池綁帶X1\n\n⚠ 商品僅販售機架，不含飛控、電機、圖傳、接收機、槳葉及電池。",
-  "specifications": [],
+  "battery_cells": [
+    "2S",
+    "3S"
+  ],
+  "short_description": "JENO POCKET T700 2.5 吋 Freestyle 機架，Wide-X 幾何、約 24g，支援 DJI O4 Lite、Walksnail、HDZero 與類比系統，附 TPU 列印件與綁帶。",
+  "description": "JENO POCKET T700 是 2.5 吋 Freestyle 碳纖維機架，採 Wide-X 幾何與高強度碳纖維切割，重量約 24g（含螺絲），適合刷樹、穿縫與小場地花飛，可打造 2.5 吋牙籤機。\n\n【產品特色】\n・Wide-X 結構設計\n・T700 碳纖維 CNC 切割\n・約 24g 輕量機身\n・相容 DJI O4 Lite、Walksnail Avatar、HDZero 與類比系統\n\n【建議配置】\n・馬達：1103／1104／1105／1202／1203／1204／1303\n・KV：2S 約 8000KV、3S 約 6000KV\n・槳葉：2.5 吋\n・電池：2S 或 3S 450–550mAh 左右\n・飛控：AIO 15A～20A\n\n【套件內容】\n・碳纖維機架組\n・鋁柱配件\n・固定螺絲組\n・TPU 列印件全套\n・翼飛電池綁帶 ×1\n不含飛控、馬達、圖傳、接收機、槳葉與電池。\n\n【版本說明】\n規格選項 O4 Lite、O4 Wide、CADDX 為對應的圖傳安裝件版本，請依您的圖傳選擇。",
+  "specifications": [
+    {
+      "key": "型號",
+      "value": "JENO POCKET T700",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "機架類型",
+      "value": "2.5 吋 Freestyle",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "幾何結構",
+      "value": "Wide-X",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 24g（含螺絲）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "機身高度",
+      "value": "20mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "底板厚度",
+      "value": "3mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "上板厚度",
+      "value": "2mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "側板厚度",
+      "value": "2mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控孔距",
+      "value": "30.5 × 30.5 mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "馬達孔距",
+      "value": "9 × 9 mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "相機規格",
+      "value": "14mm Nano",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "支援圖傳",
+      "value": "DJI O4 Lite／Walksnail Avatar／HDZero／類比",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-54262021308/01.webp",
       "src_small": "/assets/img/products/sp-54262021308/01-480.webp",
-      "alt": "JENO POCKET T700 高強度機架｜2.5吋 Freestyle 穿越機機架（主圖）",
+      "alt": "JENO POCKET T700 碳纖維機架｜2.5 吋 Freestyle｜Wide-X｜約 24g（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +102,7 @@
     {
       "src": "/assets/img/products/sp-54262021308/02.webp",
       "src_small": "/assets/img/products/sp-54262021308/02-480.webp",
-      "alt": "JENO POCKET T700 高強度機架｜2.5吋 Freestyle 穿越機機架（細節圖 1）",
+      "alt": "JENO POCKET T700 碳纖維機架｜2.5 吋 Freestyle｜Wide-X｜約 24g（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +112,7 @@
     {
       "src": "/assets/img/products/sp-54262021308/03.webp",
       "src_small": "/assets/img/products/sp-54262021308/03-480.webp",
-      "alt": "JENO POCKET T700 高強度機架｜2.5吋 Freestyle 穿越機機架（細節圖 2）",
+      "alt": "JENO POCKET T700 碳纖維機架｜2.5 吋 Freestyle｜Wide-X｜約 24g（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -51,7 +122,7 @@
     {
       "src": "/assets/img/products/sp-54262021308/04.webp",
       "src_small": "/assets/img/products/sp-54262021308/04-480.webp",
-      "alt": "JENO POCKET T700 高強度機架｜2.5吋 Freestyle 穿越機機架（細節圖 3）",
+      "alt": "JENO POCKET T700 碳纖維機架｜2.5 吋 Freestyle｜Wide-X｜約 24g（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -90,14 +161,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "JeNo 開源機架，自製或零售需核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mpbnr75geuxaf7"

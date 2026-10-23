@@ -1,25 +1,42 @@
 {
   "id": "sp-55000569073",
   "slug": "dji-mini-3-4-pro-rc2",
-  "name_zh": "DJI Mini 3/4 Pro RC2搖桿保護罩 TPU防撞保護器 手把遙控器桿帽固定夾",
+  "name_zh": "DJI RC 2 搖桿保護罩（Mini 4 Pro 等）｜TPU 防壓保護｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "DJI RC 2",
+    "Mini 4 Pro",
+    "搖桿保護",
+    "遙控器配件",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "專為 DJI Mini 4 / Mini 4 Pro  RC2遙控器設計的 搖桿保護罩，能在收納或攜帶時有效防止搖桿受到擠壓或碰撞。\n採用 TPU柔性3D列印材質，貼合度高、不刮手、不傷桿帽。\n\n✅ 收納時防止搖桿變形或損壞\n✅ TPU彈性材質，柔軟耐用\n✅ 精準尺寸，穩固不鬆脫\n✅ 適用於原廠遙控器、方便攜帶\n\n適用機型：RC2\n材質說明：TPU（熱塑性聚氨酯）－柔軟、防撞、耐磨",
-  "specifications": [],
+  "short_description": "電翼動力為 DJI RC 2 遙控器（DJI Mini 4／Mini 4 Pro 等機型使用）製作的 TPU 搖桿保護罩，收納攜帶時避免搖桿受壓。",
+  "description": "電翼動力為 DJI RC 2 遙控器設計的搖桿保護罩（DJI Mini 4／Mini 4 Pro 等機型使用的遙控器），收納或攜帶時避免搖桿被擠壓或碰撞。\n\n【產品特色】\n・收納時防止搖桿變形或損壞\n・TPU 彈性材質，不刮手、不傷桿帽\n・固定穩定不易鬆脫\n\n【顏色與列印】\n・可選顏色：綠、透藍、銀、紫、黑、黃、白\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用遙控器",
+      "value": "DJI RC 2",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-55000569073/01.webp",
       "src_small": "/assets/img/products/sp-55000569073/01-480.webp",
-      "alt": "DJI Mini 3/4 Pro RC2搖桿保護罩 TPU防撞保護器 手把遙控器桿帽固定夾（主圖）",
+      "alt": "DJI RC 2 搖桿保護罩（Mini 4 Pro 等）｜TPU 防壓保護｜3D 列印（主圖）",
       "width": 601,
       "height": 601,
       "rights": "licensed",
@@ -29,7 +46,7 @@
     {
       "src": "/assets/img/products/sp-55000569073/02.webp",
       "src_small": "/assets/img/products/sp-55000569073/02-480.webp",
-      "alt": "DJI Mini 3/4 Pro RC2搖桿保護罩 TPU防撞保護器 手把遙控器桿帽固定夾（細節圖 1）",
+      "alt": "DJI RC 2 搖桿保護罩（Mini 4 Pro 等）｜TPU 防壓保護｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-55000569073/03.webp",
       "src_small": "/assets/img/products/sp-55000569073/03-480.webp",
-      "alt": "DJI Mini 3/4 Pro RC2搖桿保護罩 TPU防撞保護器 手把遙控器桿帽固定夾（細節圖 2）",
+      "alt": "DJI RC 2 搖桿保護罩（Mini 4 Pro 等）｜TPU 防壓保護｜3D 列印（細節圖 2）",
       "width": 873,
       "height": 873,
       "rights": "licensed",
@@ -106,14 +123,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

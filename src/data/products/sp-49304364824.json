@@ -1,20 +1,42 @@
 {
   "id": "sp-49304364824",
   "slug": "fpv",
-  "name_zh": "穿越機FPV展示架🗿 藝術腳架/桌面支架 競速機/長距機/多軸無人機通用 收藏展示＋拍照道具 讓主力機帥氣站台",
+  "name_zh": "FPV 穿越機桌面展示架｜雕塑感藝術腳架｜5 吋機、多軸機通用｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "展示架",
+    "穿越機支架",
+    "桌面展示",
+    "5吋",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "⚠️ 務必備註顏色。訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋屬正常現象\n辛苦調好的主力機，放桌上不是東倒西歪，就是被工具淹沒看不見嗎？😆\n這款「穿越機 FPV 展示架藝術腳架」，以雕塑感設計打造高穩定底座，讓 5 吋機、多軸機或特別改裝機都能直立展示，無論是擺在工作桌、櫃子上或門市櫥窗都超吸睛。\n\n產品特色：\n🎨 展示＋藝術感：幾何線條設計搭配碳纖/黑色主題，機子放上去就像科幻感雕塑，超適合拍照打卡與展示改裝成果。​",
-  "specifications": [],
+  "short_description": "電翼動力 3D 列印穿越機展示架，幾何雕塑造型與高穩定底座，可讓 5 吋機、多軸機或改裝機直立展示，提供一座或兩座。",
+  "description": "讓調好的主力機好好站上桌。這款展示架以雕塑感設計搭配穩定底座，5 吋機、多軸機或特別改裝的機子都能直立展示，適合工作桌、櫃子或櫥窗。\n\n【產品特色】\n・幾何線條造型，適合拍照與展示改裝成果\n・高穩定底座\n・一座或兩座可選\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。\n・顏色選擇較多，可透過 LINE 詢問",
+  "specifications": [
+    {
+      "key": "用途",
+      "value": "穿越機桌面展示",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "數量",
+      "value": "一座／兩座",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-49304364824/01.webp",
@@ -81,14 +103,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

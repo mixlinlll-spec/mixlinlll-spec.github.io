@@ -1,25 +1,45 @@
 {
   "id": "sp-40126795922",
   "slug": "betafpv-pavo20",
-  "name_zh": "BetaFPV Pavo20 專用配件套組｜Pavo20 防摔件／天線固定座／電池托架等各式改裝配件",
+  "name_zh": "BETAFPV Pavo20 改裝配件｜小 O4 減震套件、XT30 固定件｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "Pavo20",
+    "BETAFPV",
+    "Cinewhoop",
+    "O4 Lite",
+    "減震",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "2 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D 列印件可能有些微層紋屬正常現象⚠️\n\n專為 BetaFPV Pavo20 打造的多款升級與保護配件，包含機架防摔件、電池托架、天線固定座、槳葉防護件等多種選項。強化機體保護性、穩定性與實用度，適合日常飛行與高強度練習使用。\n\nPavo20 專屬尺寸，安裝簡單、貼合度高\n提供多款功能配件：電池固定、天線穩固、保護套等\n有效提升耐摔性與整體飛行穩定度\n\n🔴DJI O4 AIR PRO 一體式機架 (碳纖維打印僅提供:黑色)\n\n🔴 Walksnail Moonlight 專用一體式機架 (碳纖維打印僅提供:黑色)\n\n🔴 電池保護倉 (碳纖維打印僅提供:黑色)\n適配 LAVA 550mA鋰電池。或任何尺寸在68.5(長) x 20.4(寬) x 15.7(高)mm以內的電池\n\n🔴 小O4套件抑制果凍效應 100% (軟質TPU)\n\n🔴 XT30接口固定套件",
-  "specifications": [],
+  "short_description": "電翼動力為 BETAFPV Pavo20 製作的改裝配件，目前提供小 O4（O4 Lite）鏡頭減震套件與 XT30 接口固定套件。",
+  "description": "電翼動力為 BETAFPV Pavo20 製作的升級與保護配件，安裝簡單、貼合原機。\n\n【目前可選】\n・小 O4（O4 Lite）減震套件：軟質 TPU，用於降低畫面果凍\n・XT30 接口固定套件\n\n【其他 Pavo20 列印件】\n・DJI O4 Air Unit Pro 一體式機架、Walksnail Moonlight 一體式機架、電池保護倉（適配 LAVA 550mAh 或 68.5×20.4×15.7mm 以內電池）等碳纖維列印件（僅黑色），是否可訂購請透過 LINE 詢問\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "BETAFPV Pavo20",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "軟質 TPU（減震套件）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-40126795922/01.webp",
       "src_small": "/assets/img/products/sp-40126795922/01-480.webp",
-      "alt": "BetaFPV Pavo20 專用配件套組｜Pavo20 防摔件／天線固定座／電池托架等各式改裝配件（主圖）",
+      "alt": "BETAFPV Pavo20 改裝配件｜小 O4 減震套件、XT30 固定件｜3D 列印（主圖）",
       "width": 811,
       "height": 811,
       "rights": "licensed",
@@ -29,7 +49,7 @@
     {
       "src": "/assets/img/products/sp-40126795922/02.webp",
       "src_small": "/assets/img/products/sp-40126795922/02-480.webp",
-      "alt": "BetaFPV Pavo20 專用配件套組｜Pavo20 防摔件／天線固定座／電池托架等各式改裝配件（細節圖 1）",
+      "alt": "BETAFPV Pavo20 改裝配件｜小 O4 減震套件、XT30 固定件｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +59,7 @@
     {
       "src": "/assets/img/products/sp-40126795922/03.webp",
       "src_small": "/assets/img/products/sp-40126795922/03-480.webp",
-      "alt": "BetaFPV Pavo20 專用配件套組｜Pavo20 防摔件／天線固定座／電池托架等各式改裝配件（細節圖 2）",
+      "alt": "BETAFPV Pavo20 改裝配件｜小 O4 減震套件、XT30 固定件｜3D 列印（細節圖 2）",
       "width": 939,
       "height": 939,
       "rights": "licensed",
@@ -49,7 +69,7 @@
     {
       "src": "/assets/img/products/sp-40126795922/04.webp",
       "src_small": "/assets/img/products/sp-40126795922/04-480.webp",
-      "alt": "BetaFPV Pavo20 專用配件套組｜Pavo20 防摔件／天線固定座／電池托架等各式改裝配件（細節圖 3）",
+      "alt": "BETAFPV Pavo20 改裝配件｜小 O4 減震套件、XT30 固定件｜3D 列印（細節圖 3）",
       "width": 784,
       "height": 784,
       "rights": "licensed",
@@ -59,7 +79,7 @@
     {
       "src": "/assets/img/products/sp-40126795922/05.webp",
       "src_small": "/assets/img/products/sp-40126795922/05-480.webp",
-      "alt": "BetaFPV Pavo20 專用配件套組｜Pavo20 防摔件／天線固定座／電池托架等各式改裝配件（細節圖 4）",
+      "alt": "BETAFPV Pavo20 改裝配件｜小 O4 減震套件、XT30 固定件｜3D 列印（細節圖 4）",
       "width": 986,
       "height": 986,
       "rights": "licensed",
@@ -69,7 +89,7 @@
     {
       "src": "/assets/img/products/sp-40126795922/06.webp",
       "src_small": "/assets/img/products/sp-40126795922/06-480.webp",
-      "alt": "BetaFPV Pavo20 專用配件套組｜Pavo20 防摔件／天線固定座／電池托架等各式改裝配件（細節圖 5）",
+      "alt": "BETAFPV Pavo20 改裝配件｜小 O4 減震套件、XT30 固定件｜3D 列印（細節圖 5）",
       "width": 807,
       "height": 807,
       "rights": "licensed",
@@ -79,7 +99,7 @@
     {
       "src": "/assets/img/products/sp-40126795922/07.webp",
       "src_small": "/assets/img/products/sp-40126795922/07-480.webp",
-      "alt": "BetaFPV Pavo20 專用配件套組｜Pavo20 防摔件／天線固定座／電池托架等各式改裝配件（細節圖 6）",
+      "alt": "BETAFPV Pavo20 改裝配件｜小 O4 減震套件、XT30 固定件｜3D 列印（細節圖 6）",
       "width": 561,
       "height": 561,
       "rights": "licensed",
@@ -89,7 +109,7 @@
     {
       "src": "/assets/img/products/sp-40126795922/08.webp",
       "src_small": "/assets/img/products/sp-40126795922/08-480.webp",
-      "alt": "BetaFPV Pavo20 專用配件套組｜Pavo20 防摔件／天線固定座／電池托架等各式改裝配件（細節圖 7）",
+      "alt": "BETAFPV Pavo20 改裝配件｜小 O4 減震套件、XT30 固定件｜3D 列印（細節圖 7）",
       "width": 826,
       "height": 826,
       "rights": "licensed",
@@ -133,7 +153,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -141,7 +161,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,19 +1,26 @@
 {
   "id": "sp-51603136116",
   "slug": "bee25-o3-o4-pro-geprc-mark5",
-  "name_zh": "Bee25 模組化 O3/O4 Pro 適配器 🧩 適用 Geprc Mark5 3D 無需改碳板",
+  "name_zh": "SpeedyBee Bee25 模組化 O3／O4 Pro 鏡頭適配器｜GEPRC Mark5 專用｜3D 列印",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "video",
   "subcategory_id": "dji-o4",
-  "tags": [],
+  "tags": [
+    "Bee25",
+    "GEPRC Mark5",
+    "DJI O3",
+    "DJI O4 Pro",
+    "適配器",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "Bee25 模組化適配器\nBee25 O3 適配器\nBee25 O4 Pro 適配器\nGeprc Mark5 O3 安裝\nGeprc Mark5 3D 列印配件\nDJI O3 相機轉接座\nDJI O4 Pro 相機座\nFPV 無人機 3D 列印\nFPV 客製化配件\n穿越機 O3 安裝套件\nSpeedyBee Bee25 配件\nGeprc Mark5 升級套件\n\n⚠️ 務必備註顏色，未備註將隨機出貨，訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n\n想把 SpeedyBee Bee25 的模組化 O3 / O4 Pro 鏡頭，裝到 Geprc Mark5 上，又不想切碳板、亂鑽孔？這款 3D 列印適配器就是專門為此設計的轉接座，只需要更換原本的前鼻鋁件或相機座位置，就能把 Bee25 模組穩穩裝上 Mark5，實現多機共用一套 O3/O4 Pro 系統。🎥🛠️ 碳纖維8% 材質具備一定強度與韌性，在撞機時能幫忙吸收部分衝擊，同時兼顧安裝與維修便利。​\n\n產品特色 ✨\n專為 Bee25 模組化 O3/O4 Pro 相機頭設計，孔位與外形對應 Bee25 模組。🧱​\n適用 Geprc Mark5 機架，安裝時僅需替換原鋁鼻或相機座，不需切割碳板。\n支援多色列印，可依機隊配色或識別需求選擇、客製顏色。🎨",
+  "short_description": "把 SpeedyBee Bee25 的模組化 O3／O4 Pro 鏡頭頭裝到 GEPRC Mark5 的 3D 列印適配器，替換原機頭或相機座即可，不需切割碳板。",
+  "description": "想把 SpeedyBee Bee25 的模組化 O3／O4 Pro 鏡頭頭裝到 GEPRC Mark5，又不想切碳板或鑽孔？這款 3D 列印適配器只要替換原本的前鼻鋁件或相機座，就能把 Bee25 模組裝上 Mark5，多台機共用一套 O3／O4 Pro 系統。\n\n【產品特色】\n・孔位與外形對應 Bee25 模組化 O3／O4 Pro 鏡頭頭\n・適用 GEPRC Mark5，不需切割碳板\n・含碳纖維材料（約 8%），具一定強度與韌性\n\n【購買前請確認】\n・本商品僅為適配器，不含圖傳、鏡頭與螺絲\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
   "specifications": [],
   "images": [
     {
@@ -56,7 +63,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -64,7 +71,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "可能為 EWP 列印件，seller_role 需核對",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

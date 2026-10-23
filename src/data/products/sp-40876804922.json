@@ -1,25 +1,54 @@
 {
   "id": "sp-40876804922",
   "slug": "betafpv-meteor65-pro-8-300mah",
-  "name_zh": "BetaFPV Meteor65 Pro 專用收納盒｜可收納 8 顆 300mAh 電池＋充電器｜微型穿越機便攜盒",
+  "name_zh": "Meteor65 Pro 收納盒｜可放主機＋8 顆 300mAh 電池＋充電器｜適用 BETAFPV Meteor65 Pro",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "cases",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "收納盒",
+    "Meteor65",
+    "Tinywhoop",
+    "1S電池",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "65mm"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n專為 Meteor65 Pro 打造的全方位收納盒！\n可同時容納 8 顆 300mAh 電池 + 1 台充電器 + 機體本體，外拍、日常飛行一盒全搞定。\n\n產品特色\n專用尺寸，剛好容納 Meteor65 Pro 主機\n可放置 最多 8 顆 300mAh 1S 電池\n預留充電器空間，外出補電更方便\n盒體堅固不易壓損，安全攜帶無負擔\n內部格局整齊、好分類、不亂晃\n讓你的 65Pro 裝備收好收滿，怎麼飛怎麼方便！",
-  "specifications": [],
+  "short_description": "電翼動力 3D 列印收納盒，依 BETAFPV Meteor65 Pro 尺寸設計，可同時收納主機、8 顆 300mAh 1S 電池與 1 台充電器。",
+  "description": "電翼動力依 BETAFPV Meteor65 Pro 尺寸設計的收納盒，可同時容納機體、8 顆 300mAh 1S 電池與 1 台充電器，外出與日常飛行一盒帶走。\n\n【產品特色】\n・依 Meteor65 Pro 主機尺寸設計\n・最多可放 8 顆 300mAh 1S 電池\n・預留充電器空間\n・內部分格，攜帶時不易晃動\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "BETAFPV Meteor65 Pro",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "收納容量",
+      "value": "主機 ×1、300mAh 1S 電池 ×8、充電器 ×1",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "顏色",
+      "value": "冰淇淋、螢光綠、透明、黑、白、透黃、透橘",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-40876804922/01.webp",
       "src_small": "/assets/img/products/sp-40876804922/01-480.webp",
-      "alt": "BetaFPV Meteor65 Pro 專用收納盒｜可收納 8 顆 300mAh 電池＋充電器｜微型穿越機便攜盒（主圖）",
+      "alt": "Meteor65 Pro 收納盒｜可放主機＋8 顆 300mAh 電池＋充電器｜適用 BETAFPV Meteor65 Pro（主圖）",
       "width": 905,
       "height": 905,
       "rights": "licensed",
@@ -29,7 +58,7 @@
     {
       "src": "/assets/img/products/sp-40876804922/02.webp",
       "src_small": "/assets/img/products/sp-40876804922/02-480.webp",
-      "alt": "BetaFPV Meteor65 Pro 專用收納盒｜可收納 8 顆 300mAh 電池＋充電器｜微型穿越機便攜盒（細節圖 1）",
+      "alt": "Meteor65 Pro 收納盒｜可放主機＋8 顆 300mAh 電池＋充電器｜適用 BETAFPV Meteor65 Pro（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +68,7 @@
     {
       "src": "/assets/img/products/sp-40876804922/03.webp",
       "src_small": "/assets/img/products/sp-40876804922/03-480.webp",
-      "alt": "BetaFPV Meteor65 Pro 專用收納盒｜可收納 8 顆 300mAh 電池＋充電器｜微型穿越機便攜盒（細節圖 2）",
+      "alt": "Meteor65 Pro 收納盒｜可放主機＋8 顆 300mAh 電池＋充電器｜適用 BETAFPV Meteor65 Pro（細節圖 2）",
       "width": 906,
       "height": 906,
       "rights": "licensed",
@@ -106,7 +135,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -114,7 +143,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,20 +1,42 @@
 {
   "id": "sp-56903983794",
   "slug": "tinywhoop-fpv",
-  "name_zh": "Tinywhoop 收納盒外出箱🛸 微型穿越機硬殼保護箱 各類機型專用收納盒 可放機體＋電池＋配件 FPV外出攜帶箱",
+  "name_zh": "Tinywhoop 收納盒／外出箱｜65mm～80mm 微型穿越機多款可選｜3D 列印硬殼",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "cases",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "Tinywhoop",
+    "收納盒",
+    "外出箱",
+    "65mm",
+    "75mm",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "65mm",
+    "75mm",
+    "80mm"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "⚠️ 務必備註顏色。訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋屬正常現象\n\n每次要帶 Tinywhoop 出門飛，都要另外裝機體、電池、工具，一不小心還會壓到槳嗎？😵\n這個「Tinywhoop 收納盒／外出箱」賣場，會集中擺放各種機型專用的收納盒，從 65mm 到 80mm\n讓玩家依自己機型選擇最適合的配置，一箱打包就能出門。\n\n產品特色：\n🧱 結實硬殼：箱體厚實耐壓，背包壓到也能保護機體、槳罩與相機，不怕通勤或出遊路上被擠壞。\n🧩 可調整隔板：內部隔板可依機型與數量調整，支援多台 Tinywhoop＋電池架＋小物，空間利用率最大化。\n🔋 一箱搞定配置：依不同款式，可同時收納機體、1S/2S 電池、備槳與簡單工具，真正做到「拿起箱子就可以去飛」。\n🎮 專為室內／微型機玩家設計：適合 Tinywhoop、室內穿越機、微型航拍機使用，兼具收藏與展示效果。\n​\n​",
-  "specifications": [],
+  "short_description": "電翼動力 3D 列印 Tinywhoop 收納盒系列，提供 65／75 多功能外出盒、75 硬盒、65 一體收納箱、乖乖箱、75 漢堡盒與 65 直立式等款式。",
+  "description": "這個賣場集中多款電翼動力 3D 列印的 Tinywhoop 收納盒，涵蓋 65mm 到 80mm 機型，可依機型與攜帶需求選擇。\n\n【產品特色】\n・硬殼箱體，保護機體、槳罩與相機\n・依款式不同，可同時收納機體、1S／2S 電池、備用槳與簡單工具\n・適合 Tinywhoop、室內穿越機與微型航拍機\n\n【款式說明】\n・65／75 多功能外出盒\n・75 硬盒款\n・65 一體收納箱（顏色請透過 LINE 確認）\n・乖乖箱（顏色請透過 LINE 確認）\n・75／75 Pro 漢堡盒（顏色請透過 LINE 確認）\n・65 直立式\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用尺寸",
+      "value": "65mm～80mm Tinywhoop（依款式）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-56903983794/01.webp",
@@ -195,7 +217,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -203,7 +225,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztj-miyfjfn9jldy5e",

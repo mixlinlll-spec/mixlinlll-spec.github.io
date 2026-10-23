@@ -1,20 +1,43 @@
 {
   "id": "sp-56400765046",
   "slug": "dji-o4-air-unit-fpv-65046",
-  "name_zh": "【DJI O4 AIR UNIT 專用】鏡頭減震／保護套／天線固定件｜FPV 穿越機改裝配件｜分頭行動",
+  "name_zh": "DJI O4 Air Unit 改裝件｜鏡頭減震、O4 轉 O3 外殼、兔籠、圖傳保護殼、鏡頭罩｜TPU",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "DJI O4",
+    "Air Unit",
+    "減震",
+    "果凍",
+    "TPU",
+    "3D列印"
+  ],
   "compatible_sizes": [],
-  "video_system": null,
+  "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "專為 DJI O4 Air Unit 數位圖傳系統 設計的 3D 列印改裝配件，完美貼合機體結構，安裝簡單不需破壞原機。\n採用 TPU高韌性材質 製作，有效防震、防撞與抗拉，保護昂貴的圖傳模組。\n\n顏色：可客製（下單前可留言）\n\n📍適用機種\n各類 3~5 吋穿越機（如 GEPRC、iFlight、SpeedyBee、AxisFlying 等）\n支援所有搭載 DJI O4 Air Unit 的機架\n\n💡 提供多種款式可選：\n\n鏡頭減振套件\n有效去除果凍效應，但是請檢查同軸線引發的震動\n\nO4轉O3外殼(精準安裝孔位):\n所有市面上O3套機皆可購買此套件 轉換成小O4\n\nO4兔籠(分頭行動):\n用此款兔籠解決所有畫面果凍的問題，而且模組設計，可以用在各類機型上\n\n圖傳保護殼:\n圖傳保護\n\nO4鏡頭罩:\n目前測試結果，無果凍效應",
-  "specifications": [],
+  "short_description": "電翼動力為 DJI O4 Air Unit 製作的 TPU 改裝件，提供鏡頭減振套件、O4 轉 O3 外殼、O4 兔籠（分頭行動）、圖傳保護殼與鏡頭罩。",
+  "description": "電翼動力為 DJI O4 Air Unit 數位圖傳製作的改裝件，TPU 高韌性材質，用於減震、防撞與固定，安裝不需破壞原機。適用多數 3～5 吋穿越機（如 GEPRC、iFlight、SpeedyBee、Axisflying 等）。\n\n【款式說明】\n・鏡頭減振套件：有助於減少畫面果凍；若仍有果凍，請一併檢查同軸線等其他振動來源\n・O4 轉 O3 外殼：孔位對應 O3，可讓原本裝 O3 的機架改裝小 O4（安裝前請確認機架孔位）\n・O4 兔籠（分頭行動）：模組化設計，可用於多種機型，協助改善畫面果凍\n・圖傳保護殼\n・O4 鏡頭罩\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用設備",
+      "value": "DJI O4 Air Unit",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用機架",
+      "value": "多數 3～5 吋穿越機",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-56400765046/01.webp",
@@ -162,7 +185,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -170,7 +193,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

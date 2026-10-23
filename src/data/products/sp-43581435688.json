@@ -1,25 +1,72 @@
 {
   "id": "sp-43581435688",
   "slug": "dji-o4-air-unit-fpv",
-  "name_zh": "DJI O4 Air Unit 散熱鋁件 散熱片 輕量化鋁合金散熱器 O4 Air Unit FPV圖傳散熱套件",
+  "name_zh": "DJI O4 Air Unit 散熱鋁件｜CNC 鋁合金｜附導熱矽膠與隔離墊",
   "sku": null,
-  "brand": "DJI",
+  "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "video",
   "subcategory_id": "dji-o4",
-  "tags": [],
+  "tags": [
+    "DJI O4",
+    "散熱片",
+    "鋁合金",
+    "Air Unit",
+    "FPV配件"
+  ],
   "compatible_sizes": [],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "JI O4 Air Unit 專用輕量化散熱鋁件，採用鋁合金 CNC 製成，提升 O4 圖傳散熱效率，同時兼顧重量控制，適合穿越機、花飛機、長航機等各類 FPV 機型使用。\n\n📌產品特色\n✔ 專為 DJI O4 Air Unit 設計\n✔ CNC 鋁合金加工\n✔ 增加散熱面積\n✔ 降低圖傳高溫降頻機率\n✔ 超輕量設計\n✔ 安裝簡單不影響機身配置\n✔ 適合競速、花飛、長航應用\n⸻\n\n📌產品規格\n產品名稱：DJI O4 Air Unit 散熱鋁件\n適用設備：DJI O4 Air Unit\n材質：鋁合金＋導熱矽膠\n尺寸：約 30 × 30 × 1.2mm\n安裝孔距：25.5 × 25.5mm\n安裝孔徑：2mm\n鋁件重量：約 1.47g\n導熱矽膠重量：約 0.88g\n隔離墊重量：約 0.15g\n⸻\n\n📌適用機型\n・DJI O4 Air Unit\n・5吋穿越機\n・7吋長航機\n・Freestyle 花飛機\n・競速機\n・自組 FPV 無人機\n⸻\n\n📦包裝內容\n・O4 散熱鋁件 ×1\n・導熱矽膠 ×1\n・隔離墊 ×1\n⸻\n\n⚠ 注意事項\n・僅適用 DJI O4 Air Unit\n・購買前請確認安裝空間與孔位尺寸\n・不含 DJI O4 Air Unit 主機及固定螺絲",
-  "specifications": [],
+  "short_description": "DJI O4 Air Unit 用 CNC 鋁合金散熱片，約 30 × 30 × 1.2mm、鋁件約 1.47g，附導熱矽膠與隔離墊；不含圖傳與螺絲。",
+  "description": "DJI O4 Air Unit 用輕量化散熱鋁件，CNC 鋁合金製成，增加圖傳散熱面積，同時控制重量。\n\n【產品特色】\n・適用 DJI O4 Air Unit\n・CNC 鋁合金加工，增加散熱面積\n・鋁件約 1.47g，輕量化設計\n\n【包裝內容】\n・O4 散熱鋁件 ×1\n・導熱矽膠 ×1\n・隔離墊 ×1\n\n【注意事項】\n・僅適用 DJI O4 Air Unit；購買前請確認安裝空間與孔位\n・不含 DJI O4 Air Unit 主機及固定螺絲\n・實際降溫效果受環境、氣流與使用方式影響",
+  "specifications": [
+    {
+      "key": "適用設備",
+      "value": "DJI O4 Air Unit",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "鋁合金＋導熱矽膠",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "約 30 × 30 × 1.2mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "安裝孔距",
+      "value": "25.5 × 25.5mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "安裝孔徑",
+      "value": "2mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "鋁件重量",
+      "value": "約 1.47g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "導熱矽膠重量",
+      "value": "約 0.88g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "隔離墊重量",
+      "value": "約 0.15g",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-43581435688/01.webp",
       "src_small": "/assets/img/products/sp-43581435688/01-480.webp",
-      "alt": "DJI O4 Air Unit 散熱鋁件 散熱片 輕量化鋁合金散熱器 O4 Air Unit FPV圖傳散熱套件（主圖）",
+      "alt": "DJI O4 Air Unit 散熱鋁件｜CNC 鋁合金｜附導熱矽膠與隔離墊（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +76,7 @@
     {
       "src": "/assets/img/products/sp-43581435688/02.webp",
       "src_small": "/assets/img/products/sp-43581435688/02-480.webp",
-      "alt": "DJI O4 Air Unit 散熱鋁件 散熱片 輕量化鋁合金散熱器 O4 Air Unit FPV圖傳散熱套件（細節圖 1）",
+      "alt": "DJI O4 Air Unit 散熱鋁件｜CNC 鋁合金｜附導熱矽膠與隔離墊（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +86,7 @@
     {
       "src": "/assets/img/products/sp-43581435688/03.webp",
       "src_small": "/assets/img/products/sp-43581435688/03-480.webp",
-      "alt": "DJI O4 Air Unit 散熱鋁件 散熱片 輕量化鋁合金散熱器 O4 Air Unit FPV圖傳散熱套件（細節圖 2）",
+      "alt": "DJI O4 Air Unit 散熱鋁件｜CNC 鋁合金｜附導熱矽膠與隔離墊（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +96,7 @@
     {
       "src": "/assets/img/products/sp-43581435688/04.webp",
       "src_small": "/assets/img/products/sp-43581435688/04-480.webp",
-      "alt": "DJI O4 Air Unit 散熱鋁件 散熱片 輕量化鋁合金散熱器 O4 Air Unit FPV圖傳散熱套件（細節圖 3）",
+      "alt": "DJI O4 Air Unit 散熱鋁件｜CNC 鋁合金｜附導熱矽膠與隔離墊（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -81,13 +128,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mp1taidpejnk7f"

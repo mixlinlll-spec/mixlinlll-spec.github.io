@@ -57,11 +57,12 @@ export function loadAll() {
   const { categories } = readJSON(path.join(DATA_DIR, 'categories.json'));
   const { builds } = readJSON(path.join(DATA_DIR, 'builds.json'));
   const { services } = readJSON(path.join(DATA_DIR, 'services.json'));
+  const notices = fs.existsSync(path.join(DATA_DIR, 'notices.json')) ? readJSON(path.join(DATA_DIR, 'notices.json')) : null;
   const products = fs.existsSync(PRODUCTS_DIR)
     ? fs.readdirSync(PRODUCTS_DIR).filter(f => f.endsWith('.json')).sort()
         .map(f => ({ ...readJSON(path.join(PRODUCTS_DIR, f)), _file: f }))
     : [];
-  return { site, categories, builds, services, products };
+  return { site, categories, builds, services, products, notices };
 }
 
 // ---------- CSV（RFC 4180，支援引號、換行、UTF-8 BOM） ----------

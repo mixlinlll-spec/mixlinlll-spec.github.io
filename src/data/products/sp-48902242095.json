@@ -1,25 +1,42 @@
 {
   "id": "sp-48902242095",
   "slug": "gopro-hero-9-10-11-12",
-  "name_zh": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼",
+  "name_zh": "GoPro HERO 9～12 FlexMount 防摔保護套｜TPU 相機護殼｜A／B／C 款",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "GoPro",
+    "保護套",
+    "FlexMount",
+    "TPU",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "GoPro HERO 9/10/11/12 專用保護套，為戶外拍攝設計的輕量耐用防護外殼。提供更佳的抗摔性與固定性，讓你的相機在高速運動、飛行、極限運動中依然安全穩固。\n\n產品特色\n適用 GoPro HERO 9 / 10 / 11 / 12\nTPU材質有效抗衝擊 保護相機\n適合穿越機、腳踏車、機車、登山等各類場景使用",
-  "specifications": [],
+  "short_description": "電翼動力 TPU 3D 列印的 GoPro HERO 9／10／11／12 防摔保護套，可用於穿越機、自行車、機車與戶外拍攝。",
+  "description": "電翼動力為 GoPro HERO 9／10／11／12 製作的 TPU 保護套，輕量並提升抗摔性與固定性，適合穿越機、自行車、機車、登山等拍攝場景。\n\n【產品特色】\n・適用 GoPro HERO 9／10／11／12\n・TPU 材質吸收衝擊、保護相機\n・A／B／C 三款可選\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用相機",
+      "value": "GoPro HERO 9／10／11／12",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-48902242095/01.webp",
       "src_small": "/assets/img/products/sp-48902242095/01-480.webp",
-      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（主圖）",
+      "alt": "GoPro HERO 9～12 FlexMount 防摔保護套｜TPU 相機護殼｜A／B／C 款（主圖）",
       "width": 894,
       "height": 894,
       "rights": "licensed",
@@ -29,7 +46,7 @@
     {
       "src": "/assets/img/products/sp-48902242095/02.webp",
       "src_small": "/assets/img/products/sp-48902242095/02-480.webp",
-      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（細節圖 1）",
+      "alt": "GoPro HERO 9～12 FlexMount 防摔保護套｜TPU 相機護殼｜A／B／C 款（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-48902242095/03.webp",
       "src_small": "/assets/img/products/sp-48902242095/03-480.webp",
-      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（細節圖 2）",
+      "alt": "GoPro HERO 9～12 FlexMount 防摔保護套｜TPU 相機護殼｜A／B／C 款（細節圖 2）",
       "width": 685,
       "height": 685,
       "rights": "licensed",
@@ -49,7 +66,7 @@
     {
       "src": "/assets/img/products/sp-48902242095/04.webp",
       "src_small": "/assets/img/products/sp-48902242095/04-480.webp",
-      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（細節圖 3）",
+      "alt": "GoPro HERO 9～12 FlexMount 防摔保護套｜TPU 相機護殼｜A／B／C 款（細節圖 3）",
       "width": 944,
       "height": 944,
       "rights": "licensed",
@@ -59,7 +76,7 @@
     {
       "src": "/assets/img/products/sp-48902242095/05.webp",
       "src_small": "/assets/img/products/sp-48902242095/05-480.webp",
-      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（細節圖 4）",
+      "alt": "GoPro HERO 9～12 FlexMount 防摔保護套｜TPU 相機護殼｜A／B／C 款（細節圖 4）",
       "width": 757,
       "height": 757,
       "rights": "licensed",
@@ -69,7 +86,7 @@
     {
       "src": "/assets/img/products/sp-48902242095/06.webp",
       "src_small": "/assets/img/products/sp-48902242095/06-480.webp",
-      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（細節圖 5）",
+      "alt": "GoPro HERO 9～12 FlexMount 防摔保護套｜TPU 相機護殼｜A／B／C 款（細節圖 5）",
       "width": 444,
       "height": 444,
       "rights": "licensed",
@@ -79,7 +96,7 @@
     {
       "src": "/assets/img/products/sp-48902242095/07.webp",
       "src_small": "/assets/img/products/sp-48902242095/07-480.webp",
-      "alt": "GoPro HERO 9/10/11/12 FlexMount 防摔保護套｜輕量耐用相機護殼（細節圖 6）",
+      "alt": "GoPro HERO 9～12 FlexMount 防摔保護套｜TPU 相機護殼｜A／B／C 款（細節圖 6）",
       "width": 885,
       "height": 885,
       "rights": "licensed",
@@ -136,14 +153,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

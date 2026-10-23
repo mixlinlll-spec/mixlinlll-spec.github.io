@@ -1,25 +1,50 @@
 {
   "id": "sp-46001344815",
   "slug": "mobula8",
-  "name_zh": "Mobula8 配件 ｜機罩 固定座 防護罩 防撞保護件 改裝零件 mobula8 配件",
+  "name_zh": "Mobula8 改裝配件｜DJI O4 Air Unit 機罩、固定座、可調鏡頭減震、GPS 機頭組、電池夾",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
-  "video_system": null,
+  "tags": [
+    "Mobula8",
+    "DJI O4",
+    "Whoop",
+    "TPU",
+    "3D列印",
+    "GPS"
+  ],
+  "compatible_sizes": [
+    "85mm"
+  ],
+  "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "(‼️3D打印產品為客製化商品，不接受色差/不想要了/無故不取貨等造成退貨的損失)\n\n🔔Mobula8 機架上蓋O4 AIR UNIT專用(TPU)\n【產品特色】\n此款 TPU 機蓋專為 Mobula8 機架搭配 DJI O4 Air Unit 所設計，\n輕量不影響重心，同時預留天線出口與鏡頭開孔，完美對位。\n適用：Mobula8 + DJI O4 Air Unit\n✅ 精準開孔，鏡頭與天線不受干擾\n✅ 穩固鎖定 Air Unit，不鬆動不脫落\n\n🔔O4 Air Unit 專用 Mobula8 固定座(PETG)\n專為 Mobula8 機架 + DJI O4 Air Unit (Lite) 組合設計的專用機罩，\nTPU柔韌材質可有效吸收撞擊力，保護圖傳與機架結構不受損。\n同時預留散熱開孔與天線固定槽，兼顧美觀與實用。\n✅ 改善線材走線整潔度與天線固定穩定性\n✅ 保留散熱空間，不影響圖傳性能\n\n🔔O4 Air Unit 可調式鏡頭減震墊(TPU)\nTPU 高韌性材質讓鏡頭能在微幅撞擊時吸收力量，提供額外保護。\n同時具備「可調式鏡頭角度」\n\n✅ O4 Air Unit 專用尺寸，完美匹配 Mobula8 改裝\n✅可調式俯仰角度，自由設定飛行視野\n\n🔔GPS模塊化機頭組(TPU)\n鏡頭角度可調，適合M80MINIGPS尺寸\n\n🔔 Mobula8轉O4 Air Unit (PETG)\n【產品特色】\n機蓋專為 Mobula8 機架搭配 DJI O4 Air Unit 所設計，\n輕量不影響重心，同時預留天線出口與鏡頭開孔，完美對位。\n【產品規格】\n適用：Mobula8 + DJI O4 Air Unit\n\n🔔電池夾 支持2S 550MAH電池",
-  "specifications": [],
+  "short_description": "電翼動力為 Happymodel Mobula8 製作的 3D 列印改裝件，含 DJI O4 Air Unit 機罩與固定座、可調式鏡頭減震墊、GPS 模塊化機頭組與電池夾。",
+  "description": "電翼動力為 Mobula8 機架製作的改裝配件，主要用於搭配 DJI O4 Air Unit 的改裝。\n\n【可選零件】\n・機架艙 O4 Air Unit（TPU）：預留天線出口與鏡頭開孔，固定 Air Unit\n・Mobula8 固定座（PETG）：適用 Mobula8＋DJI O4 Air Unit（Lite），預留散熱開孔與天線固定槽\n・可調式鏡頭減震墊（TPU）：可調俯仰角度，微幅撞擊時吸收衝擊\n・GPS 模塊化機頭組（TPU）：鏡頭角度可調，適合 M80 Mini GPS 尺寸\n・Mobula8 轉 O4 Air Unit（PETG）機蓋\n・電池夾 2 個：適用 LAVA 550mAh（支援 2S 550mAh 電池）\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "Mobula8",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "搭配圖傳",
+      "value": "DJI O4 Air Unit／O4 Lite",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU／PETG（依零件）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-46001344815/01.webp",
       "src_small": "/assets/img/products/sp-46001344815/01-480.webp",
-      "alt": "Mobula8 配件 ｜機罩 固定座 防護罩 防撞保護件 改裝零件 mobula8 配件（主圖）",
+      "alt": "Mobula8 改裝配件｜DJI O4 Air Unit 機罩、固定座、可調鏡頭減震、GPS 機頭組、電池夾（主圖）",
       "width": 851,
       "height": 851,
       "rights": "licensed",
@@ -29,7 +54,7 @@
     {
       "src": "/assets/img/products/sp-46001344815/02.webp",
       "src_small": "/assets/img/products/sp-46001344815/02-480.webp",
-      "alt": "Mobula8 配件 ｜機罩 固定座 防護罩 防撞保護件 改裝零件 mobula8 配件（細節圖 1）",
+      "alt": "Mobula8 改裝配件｜DJI O4 Air Unit 機罩、固定座、可調鏡頭減震、GPS 機頭組、電池夾（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +64,7 @@
     {
       "src": "/assets/img/products/sp-46001344815/03.webp",
       "src_small": "/assets/img/products/sp-46001344815/03-480.webp",
-      "alt": "Mobula8 配件 ｜機罩 固定座 防護罩 防撞保護件 改裝零件 mobula8 配件（細節圖 2）",
+      "alt": "Mobula8 改裝配件｜DJI O4 Air Unit 機罩、固定座、可調鏡頭減震、GPS 機頭組、電池夾（細節圖 2）",
       "width": 943,
       "height": 943,
       "rights": "licensed",
@@ -49,7 +74,7 @@
     {
       "src": "/assets/img/products/sp-46001344815/04.webp",
       "src_small": "/assets/img/products/sp-46001344815/04-480.webp",
-      "alt": "Mobula8 配件 ｜機罩 固定座 防護罩 防撞保護件 改裝零件 mobula8 配件（細節圖 3）",
+      "alt": "Mobula8 改裝配件｜DJI O4 Air Unit 機罩、固定座、可調鏡頭減震、GPS 機頭組、電池夾（細節圖 3）",
       "width": 940,
       "height": 940,
       "rights": "licensed",
@@ -59,7 +84,7 @@
     {
       "src": "/assets/img/products/sp-46001344815/05.webp",
       "src_small": "/assets/img/products/sp-46001344815/05-480.webp",
-      "alt": "Mobula8 配件 ｜機罩 固定座 防護罩 防撞保護件 改裝零件 mobula8 配件（細節圖 4）",
+      "alt": "Mobula8 改裝配件｜DJI O4 Air Unit 機罩、固定座、可調鏡頭減震、GPS 機頭組、電池夾（細節圖 4）",
       "width": 933,
       "height": 933,
       "rights": "licensed",
@@ -69,7 +94,7 @@
     {
       "src": "/assets/img/products/sp-46001344815/06.webp",
       "src_small": "/assets/img/products/sp-46001344815/06-480.webp",
-      "alt": "Mobula8 配件 ｜機罩 固定座 防護罩 防撞保護件 改裝零件 mobula8 配件（細節圖 5）",
+      "alt": "Mobula8 改裝配件｜DJI O4 Air Unit 機罩、固定座、可調鏡頭減震、GPS 機頭組、電池夾（細節圖 5）",
       "width": 614,
       "height": 614,
       "rights": "licensed",
@@ -79,7 +104,7 @@
     {
       "src": "/assets/img/products/sp-46001344815/07.webp",
       "src_small": "/assets/img/products/sp-46001344815/07-480.webp",
-      "alt": "Mobula8 配件 ｜機罩 固定座 防護罩 防撞保護件 改裝零件 mobula8 配件（細節圖 6）",
+      "alt": "Mobula8 改裝配件｜DJI O4 Air Unit 機罩、固定座、可調鏡頭減震、GPS 機頭組、電池夾（細節圖 6）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -175,14 +200,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -8,7 +8,15 @@
   "seller_role": "ewp_original",
   "primary_category_id": "complete-drones",
   "subcategory_id": "5in",
-  "tags": [],
+  "tags": [
+    "電翼動力",
+    "自製機型",
+    "Freestyle",
+    "花飛",
+    "5吋",
+    "6S",
+    "DJI O4"
+  ],
   "compatible_sizes": [
     "5 吋"
   ],
@@ -16,8 +24,8 @@
   "battery_cells": [
     "6S"
   ],
-  "short_description": "電翼動力 5 吋 Freestyle 花飛機，紫色幻影風格，定位為高速花飛、進階練習與戶外穿越。",
-  "description": "幻 HUAN 是電翼動力全新 5吋 Freestyle 花飛機，以紫色幻影風格打造，定位為高速花飛、進階練習與戶外穿越使用。",
+  "short_description": "電翼動力自製 5 吋 6S Freestyle 花飛機，紫色幻影風格，F722 飛控、2207 1950KV 馬達，提供 DJI O4 Pro、O4 Wide 與類比圖傳版本。",
+  "description": "幻 HUAN 是電翼動力的 5 吋 Freestyle 花飛機，以紫色幻影風格打造，定位為高速花飛、進階練習與戶外穿越使用。\n\n【核心配置】\n・F722 飛控\n・2207 1950KV 無刷馬達，6S 動力\n・DJI O4 數位圖傳（另有類比圖傳版本）\n\n【版本說明】\n・DJI O4 Pro\n・DJI O4 Wide（加裝 CNC 保護與鏡頭改件）\n・類比圖傳（平頭哥 2 鏡頭）\n\n【適用對象】\n想要一台外型辨識度高、可直接投入花飛練習的 5 吋玩家。訂購前可透過 LINE 確認接收機版本與電池建議。",
   "specifications": [
     {
       "key": "尺寸",
@@ -128,7 +136,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -136,7 +144,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
-      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-msydmqx4347e6c"

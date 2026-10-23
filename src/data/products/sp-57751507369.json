@@ -1,25 +1,60 @@
 {
   "id": "sp-57751507369",
   "slug": "1s-6-20-ph2-0-tinywhoop",
-  "name_zh": "1S 電池收納盒 6格 20格 電池盒 翻蓋式 1S電池保護盒 PH2.0 無人機電池盒 Tinywhoop 電池收納",
+  "name_zh": "1S 電池收納盒｜20 格翻蓋式｜適用 BT2.0／PH2.0 微型電池｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "cases",
-  "tags": [],
+  "tags": [
+    "1S電池",
+    "電池收納盒",
+    "BT2.0",
+    "PH2.0",
+    "Tinywhoop",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
-  "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n你的 1S 微型穿越機電池常常散在背包裡？\n出門飛行時電池放口袋又容易壓壞？\n這款 6格及20格翻蓋式 1S 電池收納盒，讓你的 1S 電池整齊、有序、安全好攜帶。\n\n‼️\nM3x20螺絲 (3個)\nM3x25螺絲帶螺帽 (3個)\n20格版本\n商品特色\n✔ 20格收納，一次帶齊一天飛行量\n✔ 翻蓋式設計，防掉落、防灰塵、防壓破\n✔ 格槽剛性適中，BT2.0／PH2.0 都能穩固放置\n✔ 輕量化 3D 列印，不增加包包負擔\n✔ 適合外出飛行、日常整理電池、背包分類\n\n‼️請自備一個M2x10螺絲 + M2螺母\n6格板本\n✔ 6格收納，適合整理分類你的武器庫\n✔ 翻蓋式設計，防掉落、防灰塵、防壓破\n\n適用電池\n支持電池尺寸 12x7x66mm 例如 格式金磚300mah\n1S 微型穿越機電池\n\n‼️請備註顏色，否則默認全黑",
-  "specifications": [],
+  "battery_cells": [
+    "1S"
+  ],
+  "short_description": "電翼動力 3D 列印 1S 電池收納盒（20 格版本），翻蓋式設計，適用約 12×7×66mm 的 1S 電池，BT2.0、PH2.0 皆可放置。",
+  "description": "把散在背包裡的 1S 電池整齊收好。翻蓋式 1S 電池收納盒，目前販售 20 格版本，一次帶齊一天的飛行量。\n\n【產品特色】\n・20 格收納\n・翻蓋式設計，防掉落、防灰塵、防壓\n・BT2.0、PH2.0 接頭電池都能穩固放置\n・3D 列印，重量輕\n\n【適用電池】\n・尺寸約 12×7×66mm 的 1S 電池（例如格氏 300mAh 金磚）\n\n【包裝內容】\n・20 格電池收納盒 ×1\n・M3×20 螺絲 ×3\n・M3×25 螺絲（附螺帽）×3\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。\n・未註明顏色時預設出全黑\n・雙色列印需另加耗材費，請先透過 LINE 詢問",
+  "specifications": [
+    {
+      "key": "版本",
+      "value": "20 格",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用電池尺寸",
+      "value": "約 12 × 7 × 66 mm（1S）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用接頭",
+      "value": "BT2.0／PH2.0",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "開闔方式",
+      "value": "翻蓋式",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-57751507369/01.webp",
       "src_small": "/assets/img/products/sp-57751507369/01-480.webp",
-      "alt": "1S 電池收納盒 6格 20格 電池盒 翻蓋式 1S電池保護盒 PH2.0 無人機電池盒 Tinywhoop 電池收納（主圖）",
+      "alt": "1S 電池收納盒｜20 格翻蓋式｜適用 BT2.0／PH2.0 微型電池｜3D 列印（主圖）",
       "width": 796,
       "height": 796,
       "rights": "licensed",
@@ -29,7 +64,7 @@
     {
       "src": "/assets/img/products/sp-57751507369/02.webp",
       "src_small": "/assets/img/products/sp-57751507369/02-480.webp",
-      "alt": "1S 電池收納盒 6格 20格 電池盒 翻蓋式 1S電池保護盒 PH2.0 無人機電池盒 Tinywhoop 電池收納（細節圖 1）",
+      "alt": "1S 電池收納盒｜20 格翻蓋式｜適用 BT2.0／PH2.0 微型電池｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +74,7 @@
     {
       "src": "/assets/img/products/sp-57751507369/03.webp",
       "src_small": "/assets/img/products/sp-57751507369/03-480.webp",
-      "alt": "1S 電池收納盒 6格 20格 電池盒 翻蓋式 1S電池保護盒 PH2.0 無人機電池盒 Tinywhoop 電池收納（細節圖 2）",
+      "alt": "1S 電池收納盒｜20 格翻蓋式｜適用 BT2.0／PH2.0 微型電池｜3D 列印（細節圖 2）",
       "width": 882,
       "height": 882,
       "rights": "licensed",
@@ -70,14 +105,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

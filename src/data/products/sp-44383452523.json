@@ -1,27 +1,59 @@
 {
   "id": "sp-44383452523",
   "slug": "axisflying-bando5-se-5-fpv-dji",
-  "name_zh": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide",
+  "name_zh": "Axisflying Bando5 SE 5 吋 FPV 穿越機｜DJI O4 Pro／O4 Wide／類比圖傳｜含接收機",
   "sku": null,
   "brand": "Axisflying",
-  "manufacturer_model": null,
+  "manufacturer_model": "Bando5 SE",
   "seller_role": "retail",
   "primary_category_id": "complete-drones",
   "subcategory_id": "5in",
-  "tags": [],
+  "tags": [
+    "Freestyle",
+    "花飛",
+    "5吋",
+    "DJI O4 Pro",
+    "Bando"
+  ],
   "compatible_sizes": [
     "5 吋"
   ],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "Axisflying Bando5 SE 5吋 FPV 穿越機",
-  "specifications": [],
+  "short_description": "Axisflying Bando5 SE 5 吋 FPV 穿越機，提供類比圖傳、DJI O4 Wide 與 DJI O4 Pro 三種版本，皆含接收機。",
+  "description": "Axisflying（酷飛）Bando5 SE 是 5 吋 FPV 穿越機，提供類比圖傳、DJI O4 Wide、DJI O4 Pro 三種版本，各版本皆含接收機。\n\n【版本說明】\n・類比圖傳版本（含接收機）\n・DJI O4 Wide 版本（含接收機）\n・DJI O4 Pro 版本（含接收機）\n\n【訂購前請確認】\n・目前為預購商品，交期請透過 LINE 確認\n・接收機型式、建議電池與詳細規格以 Axisflying 原廠公告為準，訂購前可向我們確認",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "Axisflying",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "Bando5 SE",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "5 吋",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "圖傳",
+      "value": "類比／DJI O4 Wide／DJI O4 Pro（依版本）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接收機",
+      "value": "各版本皆含",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-44383452523/01.webp",
       "src_small": "/assets/img/products/sp-44383452523/01-480.webp",
-      "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（主圖）",
+      "alt": "Axisflying Bando5 SE 5 吋 FPV 穿越機｜DJI O4 Pro／O4 Wide／類比圖傳｜含接收機（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +63,7 @@
     {
       "src": "/assets/img/products/sp-44383452523/02.webp",
       "src_small": "/assets/img/products/sp-44383452523/02-480.webp",
-      "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（細節圖 1）",
+      "alt": "Axisflying Bando5 SE 5 吋 FPV 穿越機｜DJI O4 Pro／O4 Wide／類比圖傳｜含接收機（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +73,7 @@
     {
       "src": "/assets/img/products/sp-44383452523/03.webp",
       "src_small": "/assets/img/products/sp-44383452523/03-480.webp",
-      "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（細節圖 2）",
+      "alt": "Axisflying Bando5 SE 5 吋 FPV 穿越機｜DJI O4 Pro／O4 Wide／類比圖傳｜含接收機（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -51,7 +83,7 @@
     {
       "src": "/assets/img/products/sp-44383452523/04.webp",
       "src_small": "/assets/img/products/sp-44383452523/04-480.webp",
-      "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（細節圖 3）",
+      "alt": "Axisflying Bando5 SE 5 吋 FPV 穿越機｜DJI O4 Pro／O4 Wide／類比圖傳｜含接收機（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -61,7 +93,7 @@
     {
       "src": "/assets/img/products/sp-44383452523/05.webp",
       "src_small": "/assets/img/products/sp-44383452523/05-480.webp",
-      "alt": "Axisflying Bando5 SE 5吋 FPV穿越機 DJI O4 Pro O4 Lite O4 wide（細節圖 4）",
+      "alt": "Axisflying Bando5 SE 5 吋 FPV 穿越機｜DJI O4 Pro／O4 Wide／類比圖傳｜含接收機（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -100,13 +132,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-23",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820li-mrqmegwuxwcme2",

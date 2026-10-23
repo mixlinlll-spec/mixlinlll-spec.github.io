@@ -1,25 +1,51 @@
 {
   "id": "sp-54651324191",
   "slug": "meteor-65-75-tpu-whoop",
-  "name_zh": "Meteor 65 75 減震墊 TPU 天線支架 微型穿越機機架避震墊 防震支撐座 Whoop 改裝配件",
+  "name_zh": "BETAFPV Meteor65／75 TPU 減震墊＋天線支架套組｜小 O4 減少共振",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "Meteor65",
+    "Meteor75",
+    "減震",
+    "O4 Lite",
+    "Tinywhoop",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "65mm",
+    "75mm"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "⭕價格為整套價格，減震墊8個 天線支架1個\n⭕價格為整套價格，減震墊8個 天線支架1個\n⭕價格為整套價格，減震墊8個 天線支架1個\n\n【產品特色】\n專為 BetaFPV Meteor 65 / 75 系列 微型穿越機設計，\n整合 減震墊 + 天線支架 雙重功能，一次解決小O4共振與天線固定問題。\n柔韌TPU材質具高回彈性，有效吸收果凍效應\n讓畫面更穩定、天線更牢固，是Whoop機的必備升級件！\n\n【產品說明】\n材質：柔性 TPU\n適用機型：BetaFPV Meteor 65 / Meteor 75\n功能：減震、防共振、天線穩固支撐\n安裝方式：直接套裝於機架上，免工具安裝\n\n【特色亮點】\n減少馬達震動傳導至機架，提高飛行穩定性\n天線穩固固定，避免飛行時脫落或打槳\n輕量設計，幾乎不增加飛行重量",
-  "specifications": [],
+  "short_description": "電翼動力為 BETAFPV Meteor65／Meteor75 製作的 TPU 套組，含減震墊 8 個與天線支架 1 個，減少小 O4 共振並固定天線。",
+  "description": "電翼動力為 BETAFPV Meteor65／Meteor75 系列製作的 TPU 套組，結合減震墊與天線支架，處理小 O4（O4 Lite）共振與天線固定問題。\n\n【產品特色】\n・柔性 TPU 減震墊，降低馬達振動傳到機架與鏡頭，有助於減少畫面果凍\n・天線支架固定天線，避免飛行時脫落或打到槳葉\n・直接套裝於機架上，免工具安裝\n\n【包裝內容（整套價格）】\n・減震墊 ×8\n・天線支架 ×1\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "BETAFPV Meteor65／Meteor75",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "柔性 TPU",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "內容",
+      "value": "減震墊 ×8、天線支架 ×1",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-54651324191/01.webp",
       "src_small": "/assets/img/products/sp-54651324191/01-480.webp",
-      "alt": "Meteor 65 75 減震墊 TPU 天線支架 微型穿越機機架避震墊 防震支撐座 Whoop 改裝配件（主圖）",
+      "alt": "BETAFPV Meteor65／75 TPU 減震墊＋天線支架套組｜小 O4 減少共振（主圖）",
       "width": 582,
       "height": 582,
       "rights": "licensed",
@@ -29,7 +55,7 @@
     {
       "src": "/assets/img/products/sp-54651324191/02.webp",
       "src_small": "/assets/img/products/sp-54651324191/02-480.webp",
-      "alt": "Meteor 65 75 減震墊 TPU 天線支架 微型穿越機機架避震墊 防震支撐座 Whoop 改裝配件（細節圖 1）",
+      "alt": "BETAFPV Meteor65／75 TPU 減震墊＋天線支架套組｜小 O4 減少共振（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +65,7 @@
     {
       "src": "/assets/img/products/sp-54651324191/03.webp",
       "src_small": "/assets/img/products/sp-54651324191/03-480.webp",
-      "alt": "Meteor 65 75 減震墊 TPU 天線支架 微型穿越機機架避震墊 防震支撐座 Whoop 改裝配件（細節圖 2）",
+      "alt": "BETAFPV Meteor65／75 TPU 減震墊＋天線支架套組｜小 O4 減少共振（細節圖 2）",
       "width": 574,
       "height": 574,
       "rights": "licensed",
@@ -49,7 +75,7 @@
     {
       "src": "/assets/img/products/sp-54651324191/04.webp",
       "src_small": "/assets/img/products/sp-54651324191/04-480.webp",
-      "alt": "Meteor 65 75 減震墊 TPU 天線支架 微型穿越機機架避震墊 防震支撐座 Whoop 改裝配件（細節圖 3）",
+      "alt": "BETAFPV Meteor65／75 TPU 減震墊＋天線支架套組｜小 O4 減少共振（細節圖 3）",
       "width": 578,
       "height": 578,
       "rights": "licensed",
@@ -59,7 +85,7 @@
     {
       "src": "/assets/img/products/sp-54651324191/05.webp",
       "src_small": "/assets/img/products/sp-54651324191/05-480.webp",
-      "alt": "Meteor 65 75 減震墊 TPU 天線支架 微型穿越機機架避震墊 防震支撐座 Whoop 改裝配件（細節圖 4）",
+      "alt": "BETAFPV Meteor65／75 TPU 減震墊＋天線支架套組｜小 O4 減少共振（細節圖 4）",
       "width": 547,
       "height": 547,
       "rights": "licensed",
@@ -76,14 +102,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

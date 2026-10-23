@@ -1,25 +1,67 @@
 {
   "id": "sp-55407435466",
   "slug": "orangfpv-mini-rgb-led-2-6s",
-  "name_zh": "OrangFPV Mini RGB LED燈控板｜2-6S WS2812控制器｜WiFi無線調參｜FPV穿越機燈光模組",
+  "name_zh": "OrangFPV Mini RGB LED 燈控板｜2–6S 直接供電｜WS2812｜WiFi 設定燈效｜附燈條 4 條",
   "sku": null,
   "brand": "OrangFPV",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "electronics",
   "subcategory_id": "modules",
-  "tags": [],
+  "tags": [
+    "LED",
+    "WS2812",
+    "燈控板",
+    "夜飛",
+    "WiFi"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "【🔥讓你的穿越機燈效直接升級】\n夜飛不夠亮？燈效不夠帥？\nOrangFPV Mini RGB燈控板，讓你的機子直接變夜空焦點\n\n【✨產品特色】\n✔ 支援 WS2812 RGB燈條\n👉 常見LED燈條可直接使用\n✔ WiFi 無線調參\n👉 手機直接設定燈效（不用接電腦）\n✔ 支援飛控聯動\n👉 可搭配 Betaflight 燈光控制（進階玩法）\n✔ 支援 2–6S 電池供電（6–28V）\n👉 無需額外降壓模組\n✔ 超小體積 15×15mm\n👉 Whoop / 3吋 / 5吋皆可安裝\n✔ 超輕重量 1.2g\n👉 幾乎無負擔\n✔ 4路獨立燈帶控制\n👉 可自訂不同燈效區域\n\n【⚙️商品規格】\n\n品牌：OrangFPV\n輸入電壓：2–6S（6–28V）\n尺寸：15×15 mm\n重量：約1.2g\n支援燈條：WS2812 / WS2812B\n控制方式：WiFi / 飛控聯動\n輸出通道：4路\n\n【📦包裝內容】\nLED燈控板 ×1\n燈條X4\n\n【⚠️注意事項】\n需具備基本焊接能力\n請確認正確接電避免損壞\n僅支援 WS2812 類型燈條",
-  "specifications": [],
+  "short_description": "OrangFPV Mini RGB LED 燈控板，15×15mm、約 1.2g，2–6S 直接供電，4 路 WS2812 輸出，可用手機 WiFi 設定燈效，附燈條 4 條。",
+  "description": "OrangFPV Mini RGB LED 燈控板，可直接由 2–6S 電池供電，控制 WS2812 燈條，並透過手機 WiFi 設定燈效，適合夜飛辨識與機身燈光改裝。\n\n【產品特色】\n・支援 WS2812／WS2812B RGB 燈條\n・WiFi 無線設定燈效，不必接電腦\n・可搭配 Betaflight 燈光控制（飛控聯動）\n・支援 2–6S（6–28V）直接供電，不需額外降壓模組\n・15×15mm、約 1.2g，Whoop、3 吋、5 吋皆可安裝\n・4 路獨立燈帶輸出，可分區設定燈效\n\n【包裝內容】\n・LED 燈控板 ×1\n・燈條 ×4\n・15cm 連接線\n\n【安裝前請確認】\n・需具備基本焊接能力\n・請確認電源極性與接線正確\n・僅支援 WS2812 類型燈條",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "OrangFPV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "輸入電壓",
+      "value": "2–6S（6–28V）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "15 × 15 mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 1.2g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "支援燈條",
+      "value": "WS2812／WS2812B",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "控制方式",
+      "value": "WiFi／飛控聯動",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "輸出通道",
+      "value": "4 路",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-55407435466/01.webp",
       "src_small": "/assets/img/products/sp-55407435466/01-480.webp",
-      "alt": "OrangFPV Mini RGB LED燈控板｜2-6S WS2812控制器｜WiFi無線調參｜FPV穿越機燈光模組（主圖）",
+      "alt": "OrangFPV Mini RGB LED 燈控板｜2–6S 直接供電｜WS2812｜WiFi 設定燈效｜附燈條 4 條（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +71,7 @@
     {
       "src": "/assets/img/products/sp-55407435466/02.webp",
       "src_small": "/assets/img/products/sp-55407435466/02-480.webp",
-      "alt": "OrangFPV Mini RGB LED燈控板｜2-6S WS2812控制器｜WiFi無線調參｜FPV穿越機燈光模組（細節圖 1）",
+      "alt": "OrangFPV Mini RGB LED 燈控板｜2–6S 直接供電｜WS2812｜WiFi 設定燈效｜附燈條 4 條（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +81,7 @@
     {
       "src": "/assets/img/products/sp-55407435466/03.webp",
       "src_small": "/assets/img/products/sp-55407435466/03-480.webp",
-      "alt": "OrangFPV Mini RGB LED燈控板｜2-6S WS2812控制器｜WiFi無線調參｜FPV穿越機燈光模組（細節圖 2）",
+      "alt": "OrangFPV Mini RGB LED 燈控板｜2–6S 直接供電｜WS2812｜WiFi 設定燈效｜附燈條 4 條（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +91,7 @@
     {
       "src": "/assets/img/products/sp-55407435466/04.webp",
       "src_small": "/assets/img/products/sp-55407435466/04-480.webp",
-      "alt": "OrangFPV Mini RGB LED燈控板｜2-6S WS2812控制器｜WiFi無線調參｜FPV穿越機燈光模組（細節圖 3）",
+      "alt": "OrangFPV Mini RGB LED 燈控板｜2–6S 直接供電｜WS2812｜WiFi 設定燈效｜附燈條 4 條（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -59,7 +101,7 @@
     {
       "src": "/assets/img/products/sp-55407435466/05.webp",
       "src_small": "/assets/img/products/sp-55407435466/05-480.webp",
-      "alt": "OrangFPV Mini RGB LED燈控板｜2-6S WS2812控制器｜WiFi無線調參｜FPV穿越機燈光模組（細節圖 4）",
+      "alt": "OrangFPV Mini RGB LED 燈控板｜2–6S 直接供電｜WS2812｜WiFi 設定燈效｜附燈條 4 條（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -69,7 +111,7 @@
     {
       "src": "/assets/img/products/sp-55407435466/06.webp",
       "src_small": "/assets/img/products/sp-55407435466/06-480.webp",
-      "alt": "OrangFPV Mini RGB LED燈控板｜2-6S WS2812控制器｜WiFi無線調參｜FPV穿越機燈光模組（細節圖 5）",
+      "alt": "OrangFPV Mini RGB LED 燈控板｜2–6S 直接供電｜WS2812｜WiFi 設定燈效｜附燈條 4 條（細節圖 5）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -94,13 +136,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mm0miezduzgjf5",

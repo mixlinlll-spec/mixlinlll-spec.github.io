@@ -1,20 +1,42 @@
 {
   "id": "sp-48206877528",
   "slug": "radiomaster-pocket-3d-fpv",
-  "name_zh": "RadioMaster Pocket 3D打印遙控器保護盒🧳 專用硬殼收納盒 防壓防撞 FPV",
+  "name_zh": "RadioMaster Pocket 遙控器硬殼保護盒｜3D 列印專用收納盒｜防壓防撞",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "cases",
-  "tags": [],
+  "tags": [
+    "RadioMaster Pocket",
+    "遙控器收納",
+    "保護盒",
+    "硬殼",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "RadioMaster Pocket 3D打印遙控器保護盒🧳 專用硬殼收納盒 防壓防撞 手控美箱 FPV外出攜行盒\n\n專為 RadioMaster Pocket 遙控器設計，盒內收納槽貼合機身外形，放入後更穩定，外出攜帶不易晃動碰撞。​\n硬殼箱體搭配雙邊卡扣與金屬軸結構，開闔俐落、外型硬派，比一般軟包更有保護感。​\n上蓋與箱身採一體式軍箱風設計，桌上展示有質感，帶去飛場也更有專業感與收藏感。​\n盒內除主機空間外，還可見額外圓孔位可收納搖桿頭​",
-  "specifications": [],
+  "short_description": "依 RadioMaster Pocket 外形設計的 3D 列印硬殼收納盒，盒內收納槽貼合機身，雙邊卡扣與金屬軸結構，並有圓孔可收納搖桿頭。",
+  "description": "電翼動力依 RadioMaster Pocket 遙控器設計的硬殼保護盒。盒內收納槽貼合機身外形，放入後穩定、外出攜帶不易晃動碰撞。\n\n【產品特色】\n・收納槽貼合 RadioMaster Pocket 外形\n・雙邊卡扣搭配金屬軸結構，開闔俐落\n・上蓋與箱身一體式軍箱風格\n・盒內另有圓孔可收納搖桿頭\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。\n・顏色請於下單後透過 LINE 與我們確認",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "RadioMaster Pocket",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "結構",
+      "value": "硬殼箱體＋雙邊卡扣＋金屬軸",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-48206877528/01.webp",
@@ -74,7 +96,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -82,7 +104,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,25 +1,93 @@
 {
   "id": "sp-43432569670",
   "slug": "dake-f722-55a-stm32f722-betaflight-fpv",
-  "name_zh": "DAKE 大科 F722 55A 四合一飛塔｜STM32F722｜Betaflight｜FPV 穿越機",
+  "name_zh": "DAKE 大科 F722 55A 四合一飛塔｜STM32F722｜3–6S｜Betaflight／INAV｜30.5×30.5mm",
   "sku": null,
   "brand": "DAKE 大科",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "fc-esc",
   "subcategory_id": "stacks",
-  "tags": [],
+  "tags": [
+    "飛塔",
+    "F722",
+    "55A",
+    "Betaflight",
+    "INAV",
+    "DAKE"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "DAKE F722 55A 飛塔採用 STM32F722 高性能處理器，搭配 55A 四合一 32bit ESC，支援 Betaflight / INAV，內建 16MB Blackbox、SPL06 氣壓計、AT7456E OSD，可直接搭配 DJI、Walksnail、HDZero 或模擬圖傳使用，適合 Freestyle、競速及 Long Range 穿越機。\n【產品特色】\n✔ STM32F722 RET6 高速處理器\n✔ 55A 四合一 BLHeli_32 ESC\n✔ 支援 3-6S LiPo\n✔ 16MB Blackbox 黑盒子\n✔ SPL06 氣壓計\n✔ AT7456E OSD\n✔ Type-C USB\n✔ 支援 Betaflight／INAV\n✔ 多組 UART 擴充\n✔ 支援 DJI／Walksnail／HDZero／模擬圖傳\n【飛控規格】\n主控：STM32F722RET6\n韌體：Betaflight / INAV\nOSD：AT7456E\n氣壓計：SPL06\n黑盒子：16MB\nUSB：Type-C\nLED：4組\n蜂鳴器：支援\nUART：5組\nBEC輸出：\n3.3V / 1A\n5V / 2.5A\n12V / 3A\n尺寸：36×36mm\n重量：約8g\n安裝孔位：30.5×30.5mm\n【電調規格】\n55A 四合一 ESC\n32bit ESC\n支援 3-6S LiPo\n高速響應、輸出穩定\n適合 Freestyle／競速／長航配置\n【包裝內容】\nF722 飛控 ×1\n55A 四合一電調 ×1\nXT60電源線\n連接排線\n電容\n減震柱\n固定螺絲\n相關配件\n※ 實際內容依原廠包裝為準。",
-  "specifications": [],
+  "short_description": "DAKE F722 飛控搭配 55A 四合一 32bit 電調，3–6S，16MB 黑盒、SPL06 氣壓計、AT7456E OSD，支援 DJI、Walksnail、HDZero 與類比圖傳。",
+  "description": "DAKE F722 55A 飛塔採用 STM32F722 高性能處理器，搭配 55A 四合一 32bit ESC，支援 Betaflight / INAV，內建 16MB Blackbox、SPL06 氣壓計、AT7456E OSD，可直接搭配 DJI、Walksnail、HDZero 或模擬圖傳使用，適合 Freestyle、競速及 Long Range 穿越機。\n\n【產品特色】\n・STM32F722 RET6 高速處理器\n・55A 四合一 BLHeli_32 ESC\n・支援 3-6S LiPo\n・16MB Blackbox 黑盒子\n・SPL06 氣壓計\n・AT7456E OSD\n・Type-C USB\n・支援 Betaflight／INAV\n・多組 UART 擴充\n・支援 DJI／Walksnail／HDZero／模擬圖傳\n\n【飛控規格】\nBEC輸出：\n・3V / 1A\n5V / 2.5A\n12V / 3A\n\n【電調規格】\n55A 四合一 ESC\n32bit ESC\n支援 3-6S LiPo\n高速響應、輸出穩定\n適合 Freestyle／競速／長航配置\n\n【包裝內容】\nF722 飛控 ×1\n55A 四合一電調 ×1\nXT60電源線\n連接排線\n電容\n減震柱\n固定螺絲\n相關配件\n※ 實際內容依原廠包裝為準。",
+  "specifications": [
+    {
+      "key": "飛控 主控",
+      "value": "STM32F722RET6",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控 韌體",
+      "value": "Betaflight / INAV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控 OSD",
+      "value": "AT7456E",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控 氣壓計",
+      "value": "SPL06",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控 黑盒子",
+      "value": "16MB",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控 USB",
+      "value": "Type-C",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控 LED",
+      "value": "4組",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控 蜂鳴器",
+      "value": "支援",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控 UART",
+      "value": "5組",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控 尺寸",
+      "value": "36×36mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控 重量",
+      "value": "約8g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控 安裝孔位",
+      "value": "30.5×30.5mm",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-43432569670/01.webp",
       "src_small": "/assets/img/products/sp-43432569670/01-480.webp",
-      "alt": "DAKE 大科 F722 55A 四合一飛塔｜STM32F722｜Betaflight｜FPV 穿越機（主圖）",
+      "alt": "DAKE 大科 F722 55A 四合一飛塔｜STM32F722｜3–6S｜Betaflight／INAV｜30.5×30.5mm（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +97,7 @@
     {
       "src": "/assets/img/products/sp-43432569670/02.webp",
       "src_small": "/assets/img/products/sp-43432569670/02-480.webp",
-      "alt": "DAKE 大科 F722 55A 四合一飛塔｜STM32F722｜Betaflight｜FPV 穿越機（細節圖 1）",
+      "alt": "DAKE 大科 F722 55A 四合一飛塔｜STM32F722｜3–6S｜Betaflight／INAV｜30.5×30.5mm（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +107,7 @@
     {
       "src": "/assets/img/products/sp-43432569670/03.webp",
       "src_small": "/assets/img/products/sp-43432569670/03-480.webp",
-      "alt": "DAKE 大科 F722 55A 四合一飛塔｜STM32F722｜Betaflight｜FPV 穿越機（細節圖 2）",
+      "alt": "DAKE 大科 F722 55A 四合一飛塔｜STM32F722｜3–6S｜Betaflight／INAV｜30.5×30.5mm（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -56,13 +124,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mqn3sl6q95vle0"

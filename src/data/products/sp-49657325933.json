@@ -1,24 +1,62 @@
 {
   "id": "sp-49657325933",
   "slug": "geprrc-cinebot35-3-5-cinewhoop-fpv-6s",
-  "name_zh": "GEPRRC Cinebot35 3.5吋穿越機🎥 Cinewhoop FPV航拍6S 1100mAh電池",
+  "name_zh": "GEPRC Cinebot35 3.5 吋 Cinewhoop 航拍穿越機｜6S｜DJI O4 Pro／PNP｜ELRS",
   "sku": null,
   "brand": "GEPRC",
-  "manufacturer_model": null,
+  "manufacturer_model": "Cinebot35",
   "seller_role": "retail",
   "primary_category_id": "complete-drones",
   "subcategory_id": "3-3-5in",
-  "tags": [],
+  "tags": [
+    "Cinewhoop",
+    "航拍",
+    "運鏡",
+    "6S",
+    "DJI O4 Pro",
+    "ELRS"
+  ],
   "compatible_sizes": [
     "3.5 吋"
   ],
-  "video_system": null,
+  "video_system": "DJI O4",
   "battery_cells": [
     "6S"
   ],
-  "short_description": "",
-  "description": "•\t#6S Cinewhoop",
-  "specifications": [],
+  "short_description": "GEPRC Cinebot35 3.5 吋 6S Cinewhoop 航拍穿越機，提供 DJI O4 Pro 版本與 PNP 動力套裝，兩種版本皆含 ELRS 接收機。",
+  "description": "GEPRC Cinebot35 是 3.5 吋 Cinewhoop 航拍穿越機，採 6S 動力配置與護槳機身，適合戶外運鏡、跟拍與需要護槳結構的錄影用途。\n\n【版本說明】\n・O4 Pro 版本：含 DJI O4 Pro 圖傳與 ELRS 接收機\n・PNP 動力套裝：含 ELRS 接收機，不含圖傳與攝影機，需自行安裝\n\n【訂購前請確認】\n・原商品標題標示「6S 1100mAh 電池」，是否隨附電池與建議容量，請於訂購前透過 LINE 確認\n・詳細規格以 GEPRC 原廠公告為準",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "GEPRC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "Cinebot35",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "3.5 吋 Cinewhoop",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "動力",
+      "value": "6S",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "圖傳",
+      "value": "DJI O4 Pro（O4 Pro 版本）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接收機",
+      "value": "ELRS",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-49657325933/01.webp",
@@ -125,13 +163,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l7-mlwzw533tddv20",

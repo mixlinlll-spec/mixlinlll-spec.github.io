@@ -1,25 +1,44 @@
 {
   "id": "sp-51050520413",
   "slug": "speedybee-bee35-3d",
-  "name_zh": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件",
+  "name_zh": "SpeedyBee Bee35 3D 列印配件｜圖傳安裝、天線尾座、915 天線固定、19mm 鏡頭減震、狗座",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "SpeedyBee",
+    "Bee35",
+    "Cinewhoop",
+    "3D列印",
+    "天線座"
+  ],
+  "compatible_sizes": [
+    "3.5 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "✅ 原廠設計檔案製作，尺寸精準完美相容\n✅ 支援自組、維修與改裝使用\n✅ 可單件或整套購買\n\n材質：TPU 或 PLA（柔性與硬式可依需求搭配）\n列印品質細膩、尺寸精準，與原機完美相容。\n\n適用機種：SpeedyBee BEE35",
-  "specifications": [],
+  "short_description": "依 SpeedyBee 原廠設計檔列印的 Bee35 配件，提供圖傳安裝件、單／雙 SMA 尾座、O3 天線護套、915 天線固定、19mm 鏡頭減震與狗座。",
+  "description": "電翼動力依 SpeedyBee 原廠設計檔 3D 列印的 Bee35 配件（非 SpeedyBee 原廠出品），可單件或整套購買，適合自組、維修與改裝。\n\n【可選零件】\n・普通版圖傳安裝\n・單 SMA 多合一尾座、雙 SMA 多合一尾座\n・尾部 O3 單天線護套、尾部 915 天線固定\n・19mm 鏡頭減振\n・狗座\n\n【材質】\n・TPU 或 PLA（柔性與硬式可依需求搭配）\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "SpeedyBee Bee35",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU／PLA",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-51050520413/01.webp",
       "src_small": "/assets/img/products/sp-51050520413/01-480.webp",
-      "alt": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件（主圖）",
+      "alt": "SpeedyBee Bee35 3D 列印配件｜圖傳安裝、天線尾座、915 天線固定、19mm 鏡頭減震、狗座（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +48,7 @@
     {
       "src": "/assets/img/products/sp-51050520413/02.webp",
       "src_small": "/assets/img/products/sp-51050520413/02-480.webp",
-      "alt": "SpeedyBee BEE35 原廠3D列印套件｜全套機架 3D列印配件（細節圖 1）",
+      "alt": "SpeedyBee Bee35 3D 列印配件｜圖傳安裝、天線尾座、915 天線固定、19mm 鏡頭減震、狗座（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -138,14 +157,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

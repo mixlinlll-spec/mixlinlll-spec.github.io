@@ -1,20 +1,47 @@
 {
   "id": "sp-55456577062",
   "slug": "dji-goggles-2-wilcox-l4-g24",
-  "name_zh": "DJI Goggles 2 戰術頭盔安裝座🎯 Wilcox L4/G24介面 TAC Helmet Mount 固定座",
+  "name_zh": "DJI Goggles 2 戰術頭盔安裝座｜Wilcox L4／G24 介面｜碳纖維 3D 列印（黑）",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "DJI Goggles 2",
+    "頭盔安裝座",
+    "Wilcox L4",
+    "G24",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "🔥只有黑色 碳纖維\n\n•\t依照 DJI Goggles 2 外型與頭帶結構建模，利用環抱式固定座把眼鏡牢牢鎖在戰術頭盔前端，飛行時不會晃動或下滑。\n•\t前端採用常見的 Wilcox L4 / G24 系統接口，可對接戰術頭盔夜視座，習慣 NVG 操作的玩家上手完全無痛。\n•\t兩段式結構可調整俯仰角度，方便依個人頭型與視線微調，減少長時間佩戴造成的壓鼻或壓額頭問題。",
-  "specifications": [],
+  "short_description": "依 DJI Goggles 2 外型與頭帶結構建模的頭盔安裝座，前端 Wilcox L4／G24 介面可對接戰術頭盔夜視座，碳纖維列印、僅黑色。",
+  "description": "電翼動力依 DJI Goggles 2 外型與頭帶結構建模的頭盔安裝座，把眼鏡固定在戰術頭盔前端。\n\n【產品特色】\n・環抱式固定座，飛行時不易晃動或下滑\n・前端 Wilcox L4／G24 介面，可對接戰術頭盔夜視座\n・兩段式結構可調整俯仰角度\n\n【顏色與材質】\n・碳纖維列印，僅提供黑色\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "DJI Goggles 2",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "頭盔介面",
+      "value": "Wilcox L4／G24",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "碳纖維（3D 列印）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "顏色",
+      "value": "黑",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-55456577062/01.webp",
@@ -66,14 +93,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

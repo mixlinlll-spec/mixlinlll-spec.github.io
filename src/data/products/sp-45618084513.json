@@ -1,27 +1,65 @@
 {
   "id": "sp-45618084513",
   "slug": "betafpv-hexacharger-1s-6-ph2-0-bt2-0",
-  "name_zh": "BETAFPV HexaCharger 1S 充電器 6路同時充電 PH2.0 BT2.0 Whoop 鋰電池充電器",
+  "name_zh": "BETAFPV HexaCharger 1S 六路充電器｜PH2.0／BT2.0｜Whoop 電池",
   "sku": null,
   "brand": "BETAFPV",
-  "manufacturer_model": null,
+  "manufacturer_model": "HexaCharger",
   "seller_role": "retail",
   "primary_category_id": "power-battery",
   "subcategory_id": "chargers",
-  "tags": [],
+  "tags": [
+    "充電器",
+    "1S",
+    "BT2.0",
+    "PH2.0",
+    "Tinywhoop",
+    "BETAFPV"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [
     "1S"
   ],
-  "short_description": "",
-  "description": "【BETAFPV HexaCharger 1S 充電器】",
-  "specifications": [],
+  "short_description": "BETAFPV HexaCharger 1S 充電器，可同時充 6 顆 1S 電池，支援 PH2.0 與 BT2.0 接頭，適合 Tinywhoop 玩家。",
+  "description": "BETAFPV HexaCharger 1S 充電器，一次可同時為 6 顆 1S 鋰電池充電，支援 PH2.0 與 BT2.0 接頭，適合 Tinywhoop 與微型穿越機玩家。\n\n【產品特色】\n・6 路同時充電\n・支援 PH2.0、BT2.0 接頭\n・適用 1S Whoop 鋰電池\n\n【使用提醒】\n・充電前請確認電池類型（LiPo／LiHV）與充電器設定\n・詳細規格與充電電流以 BETAFPV 原廠說明為準",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "BETAFPV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "HexaCharger",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "充電路數",
+      "value": "6 路",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用電池",
+      "value": "1S",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接頭",
+      "value": "PH2.0／BT2.0",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "顏色",
+      "value": "黑",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-45618084513/01.webp",
       "src_small": "/assets/img/products/sp-45618084513/01-480.webp",
-      "alt": "BETAFPV HexaCharger 1S 充電器 6路同時充電 PH2.0 BT2.0 Whoop 鋰電池充電器（主圖）",
+      "alt": "BETAFPV HexaCharger 1S 六路充電器｜PH2.0／BT2.0｜Whoop 電池（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +69,7 @@
     {
       "src": "/assets/img/products/sp-45618084513/02.webp",
       "src_small": "/assets/img/products/sp-45618084513/02-480.webp",
-      "alt": "BETAFPV HexaCharger 1S 充電器 6路同時充電 PH2.0 BT2.0 Whoop 鋰電池充電器（細節圖 1）",
+      "alt": "BETAFPV HexaCharger 1S 六路充電器｜PH2.0／BT2.0｜Whoop 電池（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +79,7 @@
     {
       "src": "/assets/img/products/sp-45618084513/03.webp",
       "src_small": "/assets/img/products/sp-45618084513/03-480.webp",
-      "alt": "BETAFPV HexaCharger 1S 充電器 6路同時充電 PH2.0 BT2.0 Whoop 鋰電池充電器（細節圖 2）",
+      "alt": "BETAFPV HexaCharger 1S 六路充電器｜PH2.0／BT2.0｜Whoop 電池（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -51,7 +89,7 @@
     {
       "src": "/assets/img/products/sp-45618084513/04.webp",
       "src_small": "/assets/img/products/sp-45618084513/04-480.webp",
-      "alt": "BETAFPV HexaCharger 1S 充電器 6路同時充電 PH2.0 BT2.0 Whoop 鋰電池充電器（細節圖 3）",
+      "alt": "BETAFPV HexaCharger 1S 六路充電器｜PH2.0／BT2.0｜Whoop 電池（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -82,13 +120,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mtboffi39on5fc"

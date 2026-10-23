@@ -1,20 +1,43 @@
 {
   "id": "sp-51506696626",
   "slug": "neo2-3d",
-  "name_zh": "Neo2 電池管家充電站硬殼收納盒🔌 電池管家 3D列印卡扣保護盒 穿越機充電配件便攜盒",
+  "name_zh": "BETAFPV Neo2 電池管家硬殼收納盒｜3D 列印卡扣保護盒｜可插 USB 整組充電",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "cases",
-  "tags": [],
+  "tags": [
+    "Neo2",
+    "電池管家",
+    "充電站",
+    "收納盒",
+    "BETAFPV",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "專為 BETAFPV Neo2 官方 電池管家充電站設計，內部精準卡扣固定充電器本體，插上 USB 就能整組收納充電。​\n硬殼結構抗壓防刮，充電時蓋上蓋子直接帶出門，不怕充電器滑落或線材散亂，場外練機超方便。​\n側邊預留 USB-C 充電孔與散熱縫隙，充滿後蓋緊就是一個輕巧的完整充電站套裝，完美適配 Neo2 生態。",
-  "specifications": [],
+  "short_description": "依 BETAFPV Neo2 電池管家充電站設計的 3D 列印硬殼盒，卡扣固定充電器本體，預留 USB-C 充電孔與散熱縫，可整組收納充電。",
+  "description": "電翼動力依 BETAFPV Neo2 電池管家（充電站）設計的硬殼收納盒，內部以卡扣固定充電器本體，插上 USB 即可整組收納與充電。\n\n【產品特色】\n・卡扣固定充電器本體，攜帶時不滑動\n・硬殼結構，抗壓防刮\n・側邊預留 USB-C 充電孔與散熱縫隙\n・蓋上即可帶出門，線材不散亂\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。\n・顏色請於下單後透過 LINE 與我們確認\n・充電時請放在通風處，並遵守電池充電安全規範",
+  "specifications": [
+    {
+      "key": "適用設備",
+      "value": "BETAFPV Neo2 電池管家充電站",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "開孔",
+      "value": "USB-C 充電孔、散熱縫",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-51506696626/01.webp",
@@ -74,14 +97,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

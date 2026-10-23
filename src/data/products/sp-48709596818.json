@@ -8,17 +8,71 @@
   "seller_role": "ewp_original",
   "primary_category_id": "complete-drones",
   "subcategory_id": "5in",
-  "tags": [],
+  "tags": [
+    "電翼動力",
+    "自製機型",
+    "Freestyle",
+    "花飛",
+    "5吋",
+    "6S",
+    "ELRS"
+  ],
   "compatible_sizes": [
     "5 吋"
   ],
-  "video_system": null,
+  "video_system": "類比",
   "battery_cells": [
     "6S"
   ],
-  "short_description": "",
-  "description": "📌核心配置\n・F722 飛控｜高速運算，飛行更穩定\n・60A 4合1電調｜支援6S，輸出穩定不暴躁\n・2207 電機｜推力充足，控制更細膩\n・ELRS 2.4G 接收｜低延遲、遠距離\n・5.8G 圖傳系統｜影像穩定清晰\n\n📌飛行特色\n・操控順暢｜適合Flow風格花飛\n・穩定性高｜不易抖動、不亂飄\n・動力線性｜好控不卡手\n・適合長時間飛行練習\n\n📌規格資訊\n機架：5吋穿越機（MARK5級別）\n電池：6S LiPo（建議1100–1480mAh）\n重量：約420g±（不含電池）\n槳葉：5吋三葉槳\n\n📌適合對象\n・想要穩定手感的玩家\n・Flow / 花飛玩家\n・從入門進階者\n\n⚠️注意事項\n・出貨前皆已測試，可直接綁定起飛\n・不含電池 / 遙控器 / 充電器\n・建議新手先使用模擬器練習",
-  "specifications": [],
+  "short_description": "電翼動力自製 5 吋 6S Freestyle 花飛機，F722 飛控、60A 四合一電調、2207 馬達、ELRS 2.4G 接收機，提供整機與動力套版本。",
+  "description": "迅矢是電翼動力的 5 吋 6S Freestyle 花飛機，以 MARK5 級別機架搭配 F722 飛控與 60A 四合一電調，適合 Flow 風格花飛與日常練習。\n\n【核心配置】\n・F722 飛控\n・60A 四合一電調（支援 6S）\n・2207 無刷馬達\n・ELRS 2.4G 接收機\n・5.8G 類比圖傳（整機版本）\n\n【版本說明】\n・整機：含 BB 響、電池鯊魚鰭保護件、槳葉一套\n・整機（升級格普 F405 HD V2 60A）\n・動力套：不含攝影機與圖傳\n・動力套（格普 F405 HD V2 60A）\n・自備 DJI O3／O4 動力套：請透過 LINE 洽詢配置\n\n【適用對象】\n想要穩定手感的花飛玩家、Flow 風格玩家，以及從入門進階的飛手。新手建議先以模擬器練習。\n\n【出貨說明】\n出貨前完成測試，綁定遙控器並確認設定後即可試飛。不含電池、遙控器與充電器。",
+  "specifications": [
+    {
+      "key": "機架",
+      "value": "5 吋（MARK5 級別）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控",
+      "value": "F722（可選升級格普 F405 HD V2）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電調",
+      "value": "60A 四合一",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "馬達",
+      "value": "2207",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接收機",
+      "value": "ELRS 2.4G",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "圖傳",
+      "value": "5.8G 類比（整機版本）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "槳葉",
+      "value": "5 吋三葉槳",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "建議電池",
+      "value": "6S LiPo 1100–1480mAh",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 420g（不含電池）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-48709596818/01.webp",
@@ -126,14 +180,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mnk8g1s1lmva55",

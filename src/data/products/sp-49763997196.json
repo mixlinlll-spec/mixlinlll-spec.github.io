@@ -1,25 +1,57 @@
 {
   "id": "sp-49763997196",
   "slug": "fpv-8mm-ruiyi-1-4",
-  "name_zh": "FPV 穿越機 卸槳扳手 8mm 套筒 棘輪扳手 RUIYI 芮翼 可拆式 1/4 六角 維修工具 槳葉 鎖槳",
+  "name_zh": "RUIYI 芮翼 8mm 棘輪卸槳扳手｜可拆式 1/4 六角｜FPV 槳帽拆裝",
   "sku": null,
   "brand": "RUIYI 芮翼",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "tools",
   "subcategory_id": "drivers-wrenches",
-  "tags": [],
+  "tags": [
+    "卸槳扳手",
+    "8mm",
+    "棘輪扳手",
+    "維修工具",
+    "RUIYI"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "RUIYI 芮翼 8mm 棘輪卸槳扳手，專為 FPV 穿越機設計，採用可拆式 1/4 六角結構，搭配 8mm 套筒，可快速拆裝大部分穿越機槳帽。棘輪設計讓狹小空間操作更方便，是日常維修、外場飛行不可或缺的工具。\n【產品特色】\n✔ 8mm 套筒，適用多數FPV槳帽\n✔ 棘輪結構，拆裝快速省力\n✔ 可拆式1/4六角接頭\n✔ 體積小巧，方便攜帶\n✔ 金屬材質，耐用不易損壞\n✔ 外場維修必備工具\n【產品規格】\n品牌：RUIYI 芮翼\n套筒尺寸：8mm\n接頭規格：1/4 六角\n功能：拆裝螺帽、卸槳\n適用：FPV 穿越機\n【適用機型】\n5吋 Freestyle\n5吋競速機\n7吋 Long Range\n各式採用8mm槳帽之FPV穿越機\n※ 購買前請確認您的槳帽尺寸是否為8mm。",
-  "specifications": [],
+  "short_description": "RUIYI 8mm 棘輪卸槳扳手，可拆式 1/4 六角接頭，適用 8mm 槳帽的 5 吋、7 吋穿越機。",
+  "description": "RUIYI 芮翼 8mm 棘輪卸槳扳手，專為 FPV 穿越機設計，採用可拆式 1/4 六角結構，搭配 8mm 套筒，可快速拆裝大部分穿越機槳帽。棘輪設計讓狹小空間操作更方便，適合日常維修與外場使用。\n\n【產品特色】\n・8mm 套筒，適用多數FPV槳帽\n・棘輪結構，拆裝快速省力\n・可拆式1/4六角接頭\n・體積小巧，方便攜帶\n・金屬材質，耐用不易損壞\n\n【適用機型】\n5吋 Freestyle\n5吋競速機\n7吋 Long Range\n各式採用8mm槳帽之FPV穿越機\n※ 購買前請確認您的槳帽尺寸是否為8mm。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "RUIYI 芮翼",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "套筒尺寸",
+      "value": "8mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接頭規格",
+      "value": "1/4 六角",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "功能",
+      "value": "拆裝螺帽、卸槳",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用",
+      "value": "FPV 穿越機",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-49763997196/01.webp",
       "src_small": "/assets/img/products/sp-49763997196/01-480.webp",
-      "alt": "FPV 穿越機 卸槳扳手 8mm 套筒 棘輪扳手 RUIYI 芮翼 可拆式 1/4 六角 維修工具 槳葉 鎖槳（主圖）",
+      "alt": "RUIYI 芮翼 8mm 棘輪卸槳扳手｜可拆式 1/4 六角｜FPV 槳帽拆裝（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +61,7 @@
     {
       "src": "/assets/img/products/sp-49763997196/02.webp",
       "src_small": "/assets/img/products/sp-49763997196/02-480.webp",
-      "alt": "FPV 穿越機 卸槳扳手 8mm 套筒 棘輪扳手 RUIYI 芮翼 可拆式 1/4 六角 維修工具 槳葉 鎖槳（細節圖 1）",
+      "alt": "RUIYI 芮翼 8mm 棘輪卸槳扳手｜可拆式 1/4 六角｜FPV 槳帽拆裝（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +71,7 @@
     {
       "src": "/assets/img/products/sp-49763997196/03.webp",
       "src_small": "/assets/img/products/sp-49763997196/03-480.webp",
-      "alt": "FPV 穿越機 卸槳扳手 8mm 套筒 棘輪扳手 RUIYI 芮翼 可拆式 1/4 六角 維修工具 槳葉 鎖槳（細節圖 2）",
+      "alt": "RUIYI 芮翼 8mm 棘輪卸槳扳手｜可拆式 1/4 六角｜FPV 槳帽拆裝（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -56,13 +88,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

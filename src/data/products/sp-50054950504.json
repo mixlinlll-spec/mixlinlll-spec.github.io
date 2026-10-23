@@ -1,22 +1,51 @@
 {
   "id": "sp-50054950504",
   "slug": "tinywhoop-65-85mm",
-  "name_zh": "Tinywhoop 微型穿越機壁掛支架🛠️ 65～85mm 機架收納固定座 牆面展示架",
+  "name_zh": "Tinywhoop 壁掛支架（一組 2 個）｜65～85mm 微型穿越機牆面收納｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "Tinywhoop",
+    "壁掛",
+    "收納",
+    "展示架",
+    "3D列印"
+  ],
   "compatible_sizes": [
+    "65mm",
+    "75mm",
     "85mm"
   ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "•\t可選單掛式／多掛排架：單個掛一台、或一排掛 3～5 台，牆上一眼看到今天要飛哪一台。\n•\t安裝方式多元：螺絲、3M 無痕膠、掛在洞洞板都可以，租屋族也能輕鬆佈置牆面機庫。",
-  "specifications": [],
+  "short_description": "電翼動力 3D 列印 Tinywhoop 壁掛支架，一組 2 個，適用 65～85mm 微型穿越機，可用螺絲、3M 無痕膠或掛在洞洞板上。",
+  "description": "把 Tinywhoop 掛上牆，收納也是展示。適用 65～85mm 微型穿越機，牆上一眼就能看到今天要飛哪一台。\n\n【產品特色】\n・可單獨掛一台，或多個排成一排\n・安裝方式多元：螺絲、3M 無痕膠或洞洞板皆可\n・一組 2 個\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用尺寸",
+      "value": "65～85mm Tinywhoop",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "數量",
+      "value": "一組 2 個",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "安裝方式",
+      "value": "螺絲／3M 無痕膠／洞洞板",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-50054950504/01.webp",
@@ -86,14 +115,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

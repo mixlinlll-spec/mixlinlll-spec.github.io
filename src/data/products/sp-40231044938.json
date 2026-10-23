@@ -1,25 +1,51 @@
 {
   "id": "sp-40231044938",
   "slug": "geprc-fpv",
-  "name_zh": "GEPRC 電池綁帶 魔鬼氈束帶 穿越機 FPV 無人機電池固定帶",
+  "name_zh": "GEPRC 電池綁帶｜魔鬼氈金屬扣｜15×150／20×250／20×300mm",
   "sku": null,
   "brand": "GEPRC",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "straps",
-  "tags": [],
+  "tags": [
+    "電池綁帶",
+    "魔鬼氈",
+    "GEPRC",
+    "電池固定"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "GEPRC 原廠電池綁帶，適用 FPV 穿越機／無人機電池固定，魔鬼氈黏性佳、束緊穩固，不易鬆脫，搭配金屬扣環設計更耐用。黑色簡約款式，實用好搭，適合日常維修、更換與自組機使用。圖中可選尺寸：15x150、15x200、20x220、20x250、20x300，請依機型與電池尺寸選購。",
-  "specifications": [],
+  "short_description": "GEPRC 原廠魔鬼氈電池綁帶，搭配金屬扣環，提供 15×150、20×250、20×300mm 三種尺寸。",
+  "description": "GEPRC 原廠電池綁帶，用於 FPV 穿越機與無人機固定電池。魔鬼氈搭配金屬扣環，黑色簡約款式，適合日常維修、更換與自組機使用。\n\n【尺寸選擇】\n・15×150mm\n・20×250mm\n・20×300mm\n・請依機型與電池尺寸選購",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "GEPRC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "15×150mm／20×250mm／20×300mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "魔鬼氈＋金屬扣環",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "顏色",
+      "value": "黑",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-40231044938/01.webp",
       "src_small": "/assets/img/products/sp-40231044938/01-480.webp",
-      "alt": "GEPRC 電池綁帶 魔鬼氈束帶 穿越機 FPV 無人機電池固定帶（主圖）",
+      "alt": "GEPRC 電池綁帶｜魔鬼氈金屬扣｜15×150／20×250／20×300mm（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +55,7 @@
     {
       "src": "/assets/img/products/sp-40231044938/02.webp",
       "src_small": "/assets/img/products/sp-40231044938/02-480.webp",
-      "alt": "GEPRC 電池綁帶 魔鬼氈束帶 穿越機 FPV 無人機電池固定帶（細節圖 1）",
+      "alt": "GEPRC 電池綁帶｜魔鬼氈金屬扣｜15×150／20×250／20×300mm（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -68,13 +94,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mogwaq1qjjls23",

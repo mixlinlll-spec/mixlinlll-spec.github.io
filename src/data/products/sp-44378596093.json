@@ -1,19 +1,25 @@
 {
   "id": "sp-44378596093",
   "slug": "fpv-96093",
-  "name_zh": "焊接套裝🛠️ 高品質焊錫絲＋助焊膏 FPV穿越機裝機維修便攜組 合金錫絲流動好 一套可裝多套機",
+  "name_zh": "FPV 焊接套裝｜細徑焊錫絲＋針筒助焊膏｜裝機維修便攜組",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "tools",
   "subcategory_id": "soldering",
-  "tags": [],
+  "tags": [
+    "焊錫",
+    "助焊膏",
+    "焊接",
+    "裝機",
+    "維修"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "•\t內含細徑高品質焊錫絲與針筒裝助焊膏，直接對準飛控、接收機、電機線這種小焊點就能下錫，適合 FPV/航模電子焊接。\n•\t小瓶裝設計，比整捲錫絲和大罐助焊膏更輕巧，工具包隨身帶出場地，臨時維修也不占空間。\n•\t焊錫絲成分均勻、上錫順滑，焊點亮且飽滿，有利於減少「假焊、冷焊」導致的斷訊或掉電問題。\n•\t一組容量足夠裝機與維修多台穿越機，是新手入門或老手隨身備用的 CP 值選擇。",
+  "short_description": "細徑焊錫絲搭配針筒裝助焊膏的小份量焊接套裝，適合飛控、接收機、馬達線等小焊點，方便放進工具包。",
+  "description": "細徑焊錫絲與針筒裝助焊膏的便攜焊接組，適合 FPV 與航模電子焊接。\n\n【產品特色】\n・細徑焊錫絲，適合飛控、接收機、馬達線等小焊點\n・針筒裝助焊膏，用量好控制\n・小份量包裝，方便放進工具包帶到飛場\n・容量可供多台穿越機的裝機與維修",
   "specifications": [],
   "images": [
     {
@@ -36,13 +42,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mkbumudb0kqr3b",

@@ -1,19 +1,24 @@
 {
   "id": "sp-42379335827",
   "slug": "dji-o4-air-unit-pro-fpv",
-  "name_zh": "DJI O4 Air Unit Pro 同軸連接線📡 FPV穿越機大疆攝像頭圖傳線 柔韌長距",
+  "name_zh": "DJI O4 Air Unit Pro 同軸線｜鏡頭與圖傳連接線｜7／15／20cm（直頭＋彎頭）",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "video",
   "subcategory_id": "video-cables",
-  "tags": [],
+  "tags": [
+    "DJI O4 Pro",
+    "同軸線",
+    "圖傳線",
+    "FPV配件"
+  ],
   "compatible_sizes": [],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "DJI O4 Air Unit Pro 用同軸連接線（鏡頭與圖傳之間）。",
-  "description": "",
+  "short_description": "DJI O4 Air Unit Pro 用同軸連接線（鏡頭與圖傳之間），提供 7cm、15cm、20cm，一端直頭、一端彎頭。",
+  "description": "DJI O4 Air Unit Pro 用的同軸連接線，連接鏡頭與圖傳模組，可依機架走線選擇長度。\n\n【規格選項】\n・7cm（直頭＋彎頭）\n・15cm（直頭＋彎頭）\n・20cm（直頭＋彎頭）\n\n【安裝提醒】\n・同軸線接頭細小，插拔請對準後垂直施力，避免彎折接頭根部\n・走線時避免銳角反折，並遠離螺旋槳\n\n【購買前請確認】\n・適用 DJI O4 Air Unit Pro；其他版本請先透過 LINE 確認",
   "specifications": [
     {
       "key": "適用",
@@ -74,14 +79,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
-      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mlyen471kydhf9"

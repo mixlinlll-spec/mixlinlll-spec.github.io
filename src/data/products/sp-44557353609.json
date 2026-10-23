@@ -1,20 +1,46 @@
 {
   "id": "sp-44557353609",
   "slug": "tjrc-8-1s-2s-lipo",
-  "name_zh": "TJRC天劍科技 穿越機電池扎帶🔗 焊接卡口防鬆動 8色選擇 1S/2S LiPo固定帶 炸機不飛神器",
+  "name_zh": "TJRC 天劍 電池綁帶｜焊接卡口防鬆設計｜15／20×250mm｜多色",
   "sku": null,
   "brand": "TJRC 天劍",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "straps",
-  "tags": [],
+  "tags": [
+    "電池綁帶",
+    "TJRC",
+    "天劍",
+    "電池固定"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "•\t內置預留焊接位卡口，電池插上後用扎帶一拉到底固定，高速飛行也不會鬆脫滑動，解決常見「炸機不飛」痛點\n•\t寬幅尼龍材質耐拉扯，彈性佳不傷電池外殼，長度充足適用 ;綁好後機身更平衡\n•\t8 色選擇（白黑紅藍綠橘紫黃），單色或混搭都行，視覺辨識高，方便飛場快速找電池。\n•\t金屬 D 形扣環耐用，單手操作超快，適合場外多機玩家，成本低卻大幅提升飛行安全性。",
-  "specifications": [],
+  "short_description": "TJRC 天劍科技電池綁帶，預留焊接卡口，搭配金屬 D 形扣，提供 15×250mm 與 20×250mm 多種顏色。",
+  "description": "TJRC 天劍科技的穿越機電池綁帶，內建預留焊接位卡口，電池放上後拉緊固定，降低飛行中電池滑動的機會。\n\n【產品特色】\n・預留焊接位卡口，固定更牢靠\n・寬幅尼龍材質，耐拉扯、彈性佳\n・金屬 D 形扣環，單手即可操作\n・多色可選，方便在飛場辨識電池\n\n【規格選項】\n・20×250mm：白、粉、黃、綠、紅、黑、藍\n・15×250mm：白、紅、黑",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "TJRC 天劍",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "15×250mm／20×250mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "扣具",
+      "value": "金屬 D 形扣環",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "尼龍",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-44557353609/01.webp",
@@ -185,13 +211,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mlxrzjygczr412"

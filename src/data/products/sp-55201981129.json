@@ -1,25 +1,52 @@
 {
   "id": "sp-55201981129",
   "slug": "radiomaster-gx12-21700",
-  "name_zh": "Radiomaster GX12 專用 改裝 21700 電池盒",
+  "name_zh": "RadioMaster GX12 21700 電池盒改裝｜TPU 3D 列印｜可加購 21700 電池",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "RadioMaster GX12",
+    "21700",
+    "電池盒",
+    "遙控器改裝",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nRadiomaster GX12 專用 21700 電池盒（TPU 列印）\n專為 Radiomaster GX12 設計的 21700 電池盒，請將原廠配置的18650電池盒中的電線及彈簧片；\n用電烙鐵取下後接到此電池盒 就可以馬上升級了\n\n可加購電池，BSMI認證。",
-  "specifications": [],
+  "short_description": "電翼動力為 RadioMaster GX12 製作的 21700 電池盒，將原廠 18650 電池盒的電線與彈簧片移植後即可改用 21700 電池。",
+  "description": "電翼動力為 RadioMaster GX12 製作的 21700 電池盒（TPU 列印），讓遙控器改用 21700 電池。\n\n【安裝方式】\n・用電烙鐵把原廠 18650 電池盒中的電線及彈簧片取下\n・焊接到本電池盒後即可使用\n・需具備基本焊接能力，焊接時請注意正負極性\n\n【規格選項】\n・21700 電池盒\n・INR21700／50E 5000mAh 電池（加購）\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "RadioMaster GX12",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用電池",
+      "value": "21700",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "加購電池",
+      "value": "INR21700／50E 5000mAh",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-55201981129/01.webp",
       "src_small": "/assets/img/products/sp-55201981129/01-480.webp",
-      "alt": "Radiomaster GX12 專用 改裝 21700 電池盒（主圖）",
+      "alt": "RadioMaster GX12 21700 電池盒改裝｜TPU 3D 列印｜可加購 21700 電池（主圖）",
       "width": 783,
       "height": 783,
       "rights": "licensed",
@@ -29,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-55201981129/02.webp",
       "src_small": "/assets/img/products/sp-55201981129/02-480.webp",
-      "alt": "Radiomaster GX12 專用 改裝 21700 電池盒（細節圖 1）",
+      "alt": "RadioMaster GX12 21700 電池盒改裝｜TPU 3D 列印｜可加購 21700 電池（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +66,7 @@
     {
       "src": "/assets/img/products/sp-55201981129/03.webp",
       "src_small": "/assets/img/products/sp-55201981129/03-480.webp",
-      "alt": "Radiomaster GX12 專用 改裝 21700 電池盒（細節圖 2）",
+      "alt": "RadioMaster GX12 21700 電池盒改裝｜TPU 3D 列印｜可加購 21700 電池（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -71,7 +98,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -79,7 +106,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

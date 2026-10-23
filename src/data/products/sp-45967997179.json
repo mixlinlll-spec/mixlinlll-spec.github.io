@@ -4,19 +4,99 @@
   "name_zh": "GEPRC TriPro-LR60 旅者 6吋遠航機 DJI O4 Pro ELRS 915 長航穿越機 GPS",
   "sku": null,
   "brand": "GEPRC",
-  "manufacturer_model": null,
+  "manufacturer_model": "TriPro-LR60",
   "seller_role": "retail",
   "primary_category_id": "complete-drones",
   "subcategory_id": "other-sizes",
-  "tags": [],
+  "tags": [
+    "長航",
+    "Long Range",
+    "6吋",
+    "GPS",
+    "DJI O4 Pro",
+    "ELRS"
+  ],
   "compatible_sizes": [
     "6 吋"
   ],
   "video_system": "DJI O4",
-  "battery_cells": [],
-  "short_description": "",
-  "description": "【GEPRC TriPro-LR60 旅者｜6 吋遠航穿越機】\n\nGEP-TP6 機架、265mm 軸距、6 吋配置的長航取向穿越機。\n2205E/1400KV 搭配 HQ 6×4.3 三葉槳，主打慢速巡航與長時間滯空，\n適合遠距探索、風景拍攝與長航練習。\n\n■ 版本選擇\n下單前請先確認你要哪一個版本：\n\n【O4 Pro 版】392g±5g\n含 DJI O4 Pro 相機模組、圖傳模組與天線，開箱即可搭配 DJI 眼鏡使用。\n\n【WTFPV 版】357g±5g\n不含圖傳系統，需自行加裝圖傳與鏡頭。\n\n【WTFPV WCC 版】317g±5g\n不含圖傳系統，重量最輕。\n\n※ WTFPV 與 WTFPV WCC 版本皆不含 O4 Pro 相機、圖傳模組與天線\n\n■ 共通規格\n機架：GEP-TP6\n主碳板厚度：5mm\n軸距：265mm\n飛行系統：TAKER F722 45A 32Bit AIO\nMCU：STM32F722RET6\n陀螺儀：ICM 42688-P\nFlash：16MB\n飛控韌體：GEPRC_F722_AIO_4.5.3\n電調：32Bit 45A\n馬達：2205E / 1400KV\n螺旋槳：HQ 6×4.3GR-PC\n電池接頭：XT60\nGPS：GEP M10\n\n■ 接收機選項\nELRS 915M\nELRS 2.4G\nGemX\nTBS Diversity Nano RX\nPNP（不含接收機，自行安裝）\n\n※ 接收機版本需於下單時指定\n※ 台灣地區建議選用 2.4G 版本，915MHz 涉及頻段使用規定，請自行確認合法性\n\n■ 建議電池\nStorm 2.0 LiPo 6S 2200mAh\nGEP 18650 6S1P 3000mAh\n\n飛行時間：25～35 分鐘\n※ 官方數據以慢速巡航方式測試，實際飛行時間會因飛行手法、風速、\n   載重、電池狀態與環境溫度而有明顯差異，數據僅供參考\n※ 激烈飛行或逆風情況下續航會大幅縮短\n\n■ 這台適合誰\n・想飛得久、飛得遠，而不是花式翻滾的人\n・需要長時間空中滯留拍攝風景的人\n・想開始接觸遠航但不想從零組裝的人\n・已有 DJI 眼鏡，想直接加一台長航機的人\n\n不適合：純花飛、競速、室內練習\n\n■ 購買前請務必了解\n1. 遠航機不是新手第一台。本機軸距 265mm、6 吋槳，\n   飛行速度與慣性都比 5 吋花飛機大，撞擊力道也更強。\n   建議具備基本飛行能力與 Betaflight 操作經驗再入手。\n2. 遠航飛行涉及超視距操作，請務必確認你的飛行地點與方式符合台灣民航法規定，\n   遙控無人機相關規範請至民航局官網查詢並自行遵守。\n3. GPS 與 Rescue 功能需正確設定並實際驗證後才可依賴。\n   出廠設定不等於已為你的飛行環境調校完成，切勿在未驗證的情況下依賴自動返航。\n4. 建議電池為原廠數據，實際搭配請確認重量、接頭與放電能力。\n   18650 鋰離子電池放電能力低於 LiPo，全油門操作時電壓下降明顯，請勿激烈操控。\n5. 本機為 BNF/PNP 產品，需自行對頻、確認 Failsafe 與各項設定。\n6. 圖傳與接收機涉及無線發射設備，使用前請確認相關規定。\n7. 穿越機屬高風險航空模型，飛行造成之人身傷害或財物損失由使用者自行負責。\n\n■ 電翼動力提供\n我們不只是把箱子轉寄給你。購買本機可包含：\n・開箱檢查與上電測試\n・接收機對頻\n・Failsafe 設定確認\n・馬達方向與槳葉方向確認\n・GPS 定位確認\n・OSD 設定\n・交機說明\n\n如需 GPS Rescue 設定、PID 調整或長航配置優化，可另行討論。\n後續飛行遇到問題，也可以直接問我們。\n\n電翼動力 EWP｜Ready to Fly",
-  "specifications": [],
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "GEPRC TriPro-LR60 旅者 6 吋遠航穿越機，265mm 軸距、TAKER F722 45A AIO、2205E 1400KV，內建 GEP M10 GPS，提供 DJI O4 Pro 版與動力套。",
+  "description": "GEPRC TriPro-LR60 旅者是 GEP-TP6 機架、265mm 軸距、6 吋配置的長航取向穿越機。2205E 1400KV 馬達搭配 HQ 6×4.3 三葉槳，主打慢速巡航與長時間滯空，適合遠距探索、風景拍攝與長航練習。\n\n【版本說明】\n・O4 Pro 版（約 392g±5g）：含 DJI O4 Pro 相機模組、圖傳模組與天線，可搭配 DJI 眼鏡使用\n・WTFPV 版（約 357g±5g）：不含圖傳系統，需自行加裝圖傳與鏡頭\n・WTFPV WCC 版（約 317g±5g）：不含圖傳系統，重量最輕\n兩個 WTFPV 版本的差異，可於下單前透過 LINE 確認，我們會依用途建議。\n\n【接收機選項】\nELRS 915M、ELRS 2.4G、GemX、TBS Diversity Nano RX，或 PNP（不含接收機，自行安裝）。接收機版本需於下單時指定。台灣地區建議選用 2.4G 版本；915MHz 涉及頻段使用規定，請自行確認合法性。\n\n【建議電池與續航】\n原廠建議 Storm 2.0 LiPo 6S 2200mAh，或 GEP 18650 6S1P 3000mAh。原廠標示飛行時間 25～35 分鐘，為慢速巡航測試數據；實際續航會因飛行手法、風速、載重、電池狀態與環境溫度而有明顯差異，激烈飛行或逆風時會大幅縮短。\n\n【這台適合誰】\n・想飛得久、飛得遠，而不是花式翻滾的人\n・需要長時間空中滯留拍攝風景的人\n・想開始接觸遠航，但不想從零組裝的人\n・已有 DJI 眼鏡，想直接加一台長航機的人\n不適合：純花飛、競速、室內練習。\n\n【購買前請務必了解】\n・遠航機不是新手第一台。本機軸距 265mm、6 吋槳，飛行速度與慣性都比 5 吋花飛機大，撞擊力道也更強，建議具備基本飛行能力與 Betaflight 操作經驗再入手\n・遠航飛行涉及超視距操作，請確認飛行地點與方式符合民航法規，遙控無人機相關規範請至民航局網站查詢\n・GPS 與 Rescue 功能需正確設定並實際驗證後才可依賴；出廠設定不等於已為您的飛行環境調校完成\n・建議電池為原廠數據，實際搭配請確認重量、接頭與放電能力；18650 鋰離子電池放電能力低於 LiPo，全油門時電壓下降明顯，請勿激烈操控\n・本機為 BNF／PNP 產品，需自行對頻並確認 Failsafe 與各項設定；需要完整交機設定可透過 LINE 詢問\n・圖傳與接收機屬無線發射設備，使用前請確認相關規定\n・穿越機飛行有碰撞、失控與人身、財物損失的風險，請在安全、合法的場地操作\n\n【電翼動力提供】\n購買本機可包含：開箱檢查與上電測試、接收機對頻、Failsafe 設定確認、馬達與槳葉方向確認、GPS 定位確認、OSD 設定與交機說明。如需 GPS Rescue 設定、PID 調整或長航配置優化，可另行討論；後續飛行遇到問題，也可以直接問我們。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "GEPRC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "TriPro-LR60 旅者",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "機架",
+      "value": "GEP-TP6（主碳板 5mm）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "軸距",
+      "value": "265mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛行系統",
+      "value": "TAKER F722 45A 32Bit AIO",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "MCU",
+      "value": "STM32F722RET6",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "陀螺儀",
+      "value": "ICM 42688-P",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "Flash",
+      "value": "16MB",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控韌體",
+      "value": "GEPRC_F722_AIO_4.5.3",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "馬達",
+      "value": "2205E 1400KV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "螺旋槳",
+      "value": "HQ 6×4.3GR-PC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電池接頭",
+      "value": "XT60",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "GPS",
+      "value": "GEP M10",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "O4 Pro 版約 392g±5g",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-45967997179/01.webp",
@@ -110,14 +190,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "6 吋遠航機，是否歸入「7 吋長航」請 EWP 決定",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mt7xonz5uxvm61",

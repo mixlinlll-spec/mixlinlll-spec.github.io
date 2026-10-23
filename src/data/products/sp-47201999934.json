@@ -1,25 +1,47 @@
 {
   "id": "sp-47201999934",
   "slug": "gps-3d-25-5mm-20mm-mini-181",
-  "name_zh": "各類 GPS 模組 專用 3D 列印外殼／支架（25.5mm / 20mm / Mini）北征181｜ 北天｜FPV",
+  "name_zh": "FPV GPS 模組 3D 列印外殼／支架｜18×18 至 32×32mm 多種尺寸｜北天 181 等",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "GPS外殼",
+    "GPS座",
+    "北天",
+    "BZ-181",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n這組列印件為針對常見 GPS 方便直接安裝於各類穿越機機架。\n\n顏色：黑 / / 橙 / 白 / 綠 / 紫 / 透藍（下單備註）\n重量：依款式 3–15 g（視部件大小而定）\n\n安裝說明\n確認模組尺寸與孔距（25.5mm / 20mm / Mini）。\n\n出貨與退換貨\n訂製列印件屬客製化商品，請務必於下單時備註顏色與規格；訂製商品無法退貨。\n出貨前會檢查外觀與尺寸，列印件若有明顯瑕疵將提供更換或退貨處理（依情況判定）。",
-  "specifications": [],
+  "short_description": "電翼動力為常見 GPS 模組列印的外殼與支架，提供 16.3×12.4、18×18、22×22、25×25、25.5×25.5、29×29、32×32mm 等尺寸。",
+  "description": "電翼動力針對常見 GPS 模組列印的外殼與支架，方便將 GPS 安裝在各類穿越機機架上。\n\n【尺寸選擇】\n・16.3×12.4mm\n・18×18mm\n・22×22mm\n・25×25mm\n・25.5×25.5mm\n・29×29mm\n・32×32mm\n・其他規格可透過 LINE 詢問\n\n【安裝前請確認】\n・GPS 模組尺寸與孔距\n・重量依款式約 3–15g\n\n【顏色與列印】\n・可選顏色：黑、橙、白、綠、紫、透藍\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "尺寸",
+      "value": "16.3×12.4／18×18／22×22／25×25／25.5×25.5／29×29／32×32mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 3–15g（依款式）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-47201999934/01.webp",
       "src_small": "/assets/img/products/sp-47201999934/01-480.webp",
-      "alt": "各類 GPS 模組 專用 3D 列印外殼／支架（25.5mm / 20mm / Mini）北征181｜ 北天｜FPV（主圖）",
+      "alt": "FPV GPS 模組 3D 列印外殼／支架｜18×18 至 32×32mm 多種尺寸｜北天 181 等（主圖）",
       "width": 983,
       "height": 983,
       "rights": "licensed",
@@ -29,7 +51,7 @@
     {
       "src": "/assets/img/products/sp-47201999934/02.webp",
       "src_small": "/assets/img/products/sp-47201999934/02-480.webp",
-      "alt": "各類 GPS 模組 專用 3D 列印外殼／支架（25.5mm / 20mm / Mini）北征181｜ 北天｜FPV（細節圖 1）",
+      "alt": "FPV GPS 模組 3D 列印外殼／支架｜18×18 至 32×32mm 多種尺寸｜北天 181 等（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +61,7 @@
     {
       "src": "/assets/img/products/sp-47201999934/03.webp",
       "src_small": "/assets/img/products/sp-47201999934/03-480.webp",
-      "alt": "各類 GPS 模組 專用 3D 列印外殼／支架（25.5mm / 20mm / Mini）北征181｜ 北天｜FPV（細節圖 2）",
+      "alt": "FPV GPS 模組 3D 列印外殼／支架｜18×18 至 32×32mm 多種尺寸｜北天 181 等（細節圖 2）",
       "width": 596,
       "height": 596,
       "rights": "licensed",
@@ -113,7 +135,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -121,7 +143,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

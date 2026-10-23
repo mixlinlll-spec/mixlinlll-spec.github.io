@@ -1,48 +1,59 @@
 {
   "id": "sp-44561107171",
   "slug": "geprc-moz7-v2-o4-pro-7",
-  "name_zh": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range",
+  "name_zh": "GEPRC MOZ7 V2 7 吋長航程 FPV 穿越機｜DJI O4 Pro／類比｜ELRS 915MHz／2.4GHz",
   "sku": null,
   "brand": "GEPRC",
   "manufacturer_model": "MOZ7 V2 O4 Pro",
   "seller_role": "retail",
   "primary_category_id": "complete-drones",
   "subcategory_id": "7in-long-range",
-  "tags": [],
+  "tags": [
+    "長航",
+    "Long Range",
+    "7吋",
+    "DJI O4 Pro",
+    "ELRS 915"
+  ],
   "compatible_sizes": [
     "7 吋"
   ],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "GEPRC MOZ7 V2 7 吋長航程 FPV 穿越機，搭載 DJI O4 Pro。",
-  "description": "",
+  "short_description": "GEPRC MOZ7 V2 7 吋長航程穿越機，提供 DJI O4 Pro 套機、類比圖傳套機與動力套，接收機可選 ELRS 915MHz 或 2.4GHz。",
+  "description": "GEPRC MOZ7 V2 是 7 吋長航程（Long Range）FPV 穿越機，適合遠距巡航、風景拍攝與長航練習。\n\n【版本說明】\n・DJI O4 Pro 套機（ELRS 915MHz／2.4GHz 可選）\n・類比圖傳套機（ELRS 915MHz／2.4GHz 可選）\n・動力套（ELRS 915MHz／2.4GHz 可選）\n\n【購買前請了解】\n・長航機飛行速度與慣性大，建議具備基本飛行能力與 Betaflight 操作經驗\n・915MHz 涉及頻段使用規定，台灣地區建議選用 2.4GHz 版本，使用前請自行確認相關法規\n・GPS 返航等功能需正確設定並在現場驗證後才能依賴\n・建議電池與詳細規格以 GEPRC 原廠公告為準",
   "specifications": [
     {
       "key": "品牌",
       "value": "GEPRC",
-      "source": "蝦皮商品標題"
+      "source": "蝦皮商品說明"
     },
     {
       "key": "型號",
       "value": "MOZ7 V2",
-      "source": "蝦皮商品標題"
+      "source": "蝦皮商品說明"
     },
     {
       "key": "尺寸",
       "value": "7 吋長航",
-      "source": "蝦皮商品標題"
+      "source": "蝦皮商品說明"
     },
     {
       "key": "圖傳",
-      "value": "DJI O4 Pro",
-      "source": "蝦皮商品標題"
+      "value": "DJI O4 Pro／類比（依版本）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接收機",
+      "value": "ELRS 915MHz／2.4GHz（依版本）",
+      "source": "蝦皮商品說明"
     }
   ],
   "images": [
     {
       "src": "/assets/img/products/sp-44561107171/01.webp",
       "src_small": "/assets/img/products/sp-44561107171/01-480.webp",
-      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（主圖）",
+      "alt": "GEPRC MOZ7 V2 7 吋長航程 FPV 穿越機｜DJI O4 Pro／類比｜ELRS 915MHz／2.4GHz（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -52,7 +63,7 @@
     {
       "src": "/assets/img/products/sp-44561107171/02.webp",
       "src_small": "/assets/img/products/sp-44561107171/02-480.webp",
-      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 1）",
+      "alt": "GEPRC MOZ7 V2 7 吋長航程 FPV 穿越機｜DJI O4 Pro／類比｜ELRS 915MHz／2.4GHz（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -62,7 +73,7 @@
     {
       "src": "/assets/img/products/sp-44561107171/03.webp",
       "src_small": "/assets/img/products/sp-44561107171/03-480.webp",
-      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 2）",
+      "alt": "GEPRC MOZ7 V2 7 吋長航程 FPV 穿越機｜DJI O4 Pro／類比｜ELRS 915MHz／2.4GHz（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -72,7 +83,7 @@
     {
       "src": "/assets/img/products/sp-44561107171/04.webp",
       "src_small": "/assets/img/products/sp-44561107171/04-480.webp",
-      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 3）",
+      "alt": "GEPRC MOZ7 V2 7 吋長航程 FPV 穿越機｜DJI O4 Pro／類比｜ELRS 915MHz／2.4GHz（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -82,7 +93,7 @@
     {
       "src": "/assets/img/products/sp-44561107171/05.webp",
       "src_small": "/assets/img/products/sp-44561107171/05-480.webp",
-      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 4）",
+      "alt": "GEPRC MOZ7 V2 7 吋長航程 FPV 穿越機｜DJI O4 Pro／類比｜ELRS 915MHz／2.4GHz（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -92,7 +103,7 @@
     {
       "src": "/assets/img/products/sp-44561107171/06.webp",
       "src_small": "/assets/img/products/sp-44561107171/06-480.webp",
-      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 5）",
+      "alt": "GEPRC MOZ7 V2 7 吋長航程 FPV 穿越機｜DJI O4 Pro／類比｜ELRS 915MHz／2.4GHz（細節圖 5）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -102,7 +113,7 @@
     {
       "src": "/assets/img/products/sp-44561107171/07.webp",
       "src_small": "/assets/img/products/sp-44561107171/07-480.webp",
-      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 6）",
+      "alt": "GEPRC MOZ7 V2 7 吋長航程 FPV 穿越機｜DJI O4 Pro／類比｜ELRS 915MHz／2.4GHz（細節圖 6）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -112,7 +123,7 @@
     {
       "src": "/assets/img/products/sp-44561107171/08.webp",
       "src_small": "/assets/img/products/sp-44561107171/08-480.webp",
-      "alt": "GEPRC MOZ7 V2 O4 Pro 7吋長航程穿越機 FPV DJI O4 Pro 遠航空拍 Long Range（細節圖 7）",
+      "alt": "GEPRC MOZ7 V2 7 吋長航程 FPV 穿越機｜DJI O4 Pro／類比｜ELRS 915MHz／2.4GHz（細節圖 7）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -151,14 +162,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
-      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-monfw4jmdonj48",

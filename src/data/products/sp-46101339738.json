@@ -1,25 +1,54 @@
 {
   "id": "sp-46101339738",
   "slug": "dji-o4-air-unit-lite-mobula8",
-  "name_zh": "DJI O4 Air Unit Lite 專用 Mobula8 TPU 機罩｜高清圖傳保護外殼｜穿越機防撞防護罩",
+  "name_zh": "Mobula8 DJI O4 Lite TPU 機罩｜圖傳保護外殼｜約 2.6g",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
-  "video_system": null,
+  "tags": [
+    "Mobula8",
+    "DJI O4 Lite",
+    "機罩",
+    "TPU",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "85mm"
+  ],
+  "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "【產品特色】\n\n專為 Mobula8 機架 + DJI O4 Air Unit (Lite) 組合設計的專用機罩，\n\nTPU柔韌材質可有效吸收撞擊力，保護圖傳與機架結構不受損。\n\n同時預留散熱開孔與天線固定槽，兼顧美觀與實用。\n\n【產品規格】\n材質：柔性 TPU\n適用機型：Mobula8 + DJI O4 Air Unit (Lite)\n功能：保護圖傳模組、穩固安裝\n顏色：默認黑色（可接受定制）\n重量：約 2.6g\n\n【產品亮點】\n✅ 精準貼合 DJI O4 Lite 圖傳，安裝穩固不鬆動\n✅ TPU 材質具備彈性緩衝，能有效吸收墜落衝擊\n✅ 改善線材走線整潔度與天線固定穩定性\n✅ 保留散熱空間，不影響圖傳性能",
-  "specifications": [],
+  "short_description": "電翼動力為 Mobula8＋DJI O4 Air Unit Lite 設計的 TPU 機罩，約 2.6g，預留散熱開孔與天線固定槽。",
+  "description": "電翼動力為 Mobula8 機架搭配 DJI O4 Air Unit Lite 設計的機罩，TPU 柔韌材質可吸收撞擊，保護圖傳與機架。\n\n【產品特色】\n・依 DJI O4 Lite 圖傳尺寸製作，安裝穩固\n・TPU 具彈性緩衝，可吸收部分墜落衝擊\n・預留散熱開孔與天線固定槽\n・改善走線與天線固定\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。\n・預設黑色，其他顏色可透過 LINE 詢問",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "Mobula8＋DJI O4 Air Unit Lite",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "柔性 TPU",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 2.6g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "顏色",
+      "value": "預設黑色",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-46101339738/01.webp",
       "src_small": "/assets/img/products/sp-46101339738/01-480.webp",
-      "alt": "DJI O4 Air Unit Lite 專用 Mobula8 TPU 機罩｜高清圖傳保護外殼｜穿越機防撞防護罩（主圖）",
+      "alt": "Mobula8 DJI O4 Lite TPU 機罩｜圖傳保護外殼｜約 2.6g（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +58,7 @@
     {
       "src": "/assets/img/products/sp-46101339738/02.webp",
       "src_small": "/assets/img/products/sp-46101339738/02-480.webp",
-      "alt": "DJI O4 Air Unit Lite 專用 Mobula8 TPU 機罩｜高清圖傳保護外殼｜穿越機防撞防護罩（細節圖 1）",
+      "alt": "Mobula8 DJI O4 Lite TPU 機罩｜圖傳保護外殼｜約 2.6g（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +68,7 @@
     {
       "src": "/assets/img/products/sp-46101339738/03.webp",
       "src_small": "/assets/img/products/sp-46101339738/03-480.webp",
-      "alt": "DJI O4 Air Unit Lite 專用 Mobula8 TPU 機罩｜高清圖傳保護外殼｜穿越機防撞防護罩（細節圖 2）",
+      "alt": "Mobula8 DJI O4 Lite TPU 機罩｜圖傳保護外殼｜約 2.6g（細節圖 2）",
       "width": 902,
       "height": 902,
       "rights": "licensed",
@@ -49,7 +78,7 @@
     {
       "src": "/assets/img/products/sp-46101339738/04.webp",
       "src_small": "/assets/img/products/sp-46101339738/04-480.webp",
-      "alt": "DJI O4 Air Unit Lite 專用 Mobula8 TPU 機罩｜高清圖傳保護外殼｜穿越機防撞防護罩（細節圖 3）",
+      "alt": "Mobula8 DJI O4 Lite TPU 機罩｜圖傳保護外殼｜約 2.6g（細節圖 3）",
       "width": 899,
       "height": 899,
       "rights": "licensed",
@@ -66,7 +95,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -74,7 +103,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

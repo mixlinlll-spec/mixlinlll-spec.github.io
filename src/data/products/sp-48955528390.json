@@ -1,20 +1,40 @@
 {
   "id": "sp-48955528390",
   "slug": "nazgul-evoque-f5-v3-3d-dji",
-  "name_zh": "Nazgul Evoque F5 V3 3D列印套件🛠️ 各類改裝/保護打印件 機鼻護罩/天線座/電池防滑/腳墊 DJI",
+  "name_zh": "iFlight Nazgul Evoque F5 V3 3D 列印件｜機頭防撞桿、天線座、181 GPS 座、XT60 座、O3 減震",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "iFlight",
+    "Nazgul Evoque",
+    "F5",
+    "3D列印",
+    "GPS座",
+    "天線座"
+  ],
+  "compatible_sizes": [
+    "5 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "依照 iFlight Nazgul Evoque F5 V3 機架實機量測建模，孔位、螺絲距與保護範圍完全對應原廠機身，裝上就能飛，不用自行改檔。​\n提供多種常用配件：機鼻防撞套、O4/GoPro 相機座、VTX / RX 天線座、GPS 座、電池擋板與防滑墊、腳墊、LED 護罩等，可依需求單買或整套打包。",
-  "specifications": [],
+  "short_description": "電翼動力依 iFlight Nazgul Evoque F5 V3 實機量測建模的 3D 列印件，提供機頭防撞桿、機臂保護、天線座、181 GPS 座、XT60 座、O3 減震墊等選項。",
+  "description": "電翼動力依 iFlight Nazgul Evoque F5 V3 機架實機量測建模，孔位與保護範圍對應原廠機身，可單買需要的部件。\n\n【可選零件】\n・機頭防撞桿、機臂保護、機臂保護 2\n・雙 SMA＋天線底座、915 天線收納、鯊魚鰭\n・181 GPS 座、XT60 座\n・O3 減震墊\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "iFlight Nazgul Evoque F5 V3",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-48955528390/01.webp",
@@ -204,14 +224,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mk1rbluh1fy905"

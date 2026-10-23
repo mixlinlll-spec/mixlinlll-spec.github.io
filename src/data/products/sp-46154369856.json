@@ -1,20 +1,37 @@
 {
   "id": "sp-46154369856",
   "slug": "radiomaster-gx12-3d",
-  "name_zh": "RADIOMASTER GX12 專用提把＆支架套件🎥 攝影相機支架＋桌面腳架＋搖桿保護罩 3D列印改裝配件 一站升級",
+  "name_zh": "RadioMaster GX12 改裝配件｜提把、桌面腳架、相機支架、搖桿保護罩｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "RadioMaster GX12",
+    "遙控器配件",
+    "提把",
+    "搖桿保護",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "⚠️ 務必備註顏色。訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋屬正常現象\nGX12 原廠雖然好握，但想要「更好拿、更好放、還能拍手Cam」就需要一套完整改裝😉。\n這個賣場專門提供 GX12 用的提把、桌面支架、運動相機支架與搖桿保護罩，讓你從外出攜帶、桌上擺放到飛行錄影，全都一次升級。\n\n產品特色：\n🧳 提把／腳架二合一：上方提把方便單手抓起遙控器，翻下來即可變成桌面腳架，調參、模擬器都更穩。​\n🎥 相機支架：側邊/上方相機支架可固定 GoPro 等運動相機，輕鬆紀錄手部操作畫面，適合教學與分享飛行影片。​\n🛡️ 搖桿保護罩：卡扣式設計，一扣即可固定兩支搖桿，收納或裝包時避免搖桿被擠壓變位。​",
-  "specifications": [],
+  "short_description": "電翼動力為 RadioMaster GX12 製作的 3D 列印配件，提供提把／腳架二合一、提把、支架、相機支架與兩款搖桿保護罩。",
+  "description": "電翼動力為 RadioMaster GX12 遙控器製作的改裝配件，從外出攜帶、桌面擺放到錄製手部操作畫面都可使用。\n\n【可選零件】\n・提把／腳架二合一：提把方便單手拿起遙控器，翻下即為桌面腳架，調參、玩模擬器時更穩\n・提把、支架（單買）\n・相機支架：可固定 GoPro 等運動相機，錄製手部操作畫面\n・搖桿保護罩 A／B：卡扣固定兩支搖桿，收納時避免擠壓\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "RadioMaster GX12",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-46154369856/01.webp",
@@ -195,7 +212,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -203,7 +220,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

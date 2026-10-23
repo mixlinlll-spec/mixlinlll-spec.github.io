@@ -1,20 +1,40 @@
 {
   "id": "sp-45300499810",
   "slug": "speedybee-mario5-3d-fpv",
-  "name_zh": "【SpeedyBee Mario5】 全套 3D 打印件 保護套件 FPV 穿越機 安裝套件 3D打印 專用配件",
+  "name_zh": "SpeedyBee Mario 5 全套 3D 列印件｜狗座、天線座、GPS 座、鏡頭減震、機臂腳墊、CNC 防護桿",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "SpeedyBee",
+    "Mario 5",
+    "TPU",
+    "3D列印",
+    "天線座",
+    "GPS座"
+  ],
+  "compatible_sizes": [
+    "5 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n兼容型號： SpeedyBee Mario5\n顏色： 多色可選\n特點： 官方設計、孔位精準、輕量化、堅固耐用、安裝簡便",
-  "specifications": [],
+  "short_description": "依 SpeedyBee 官方設計 3D 列印的 Mario 5 配件，提供狗座、O3／O4 Pro 與類比天線座、GPS 座、鏡頭減震墊、機臂腳墊等 16 種選項。",
+  "description": "電翼動力依 SpeedyBee 官方設計 3D 列印的 Mario 5 配件（非 SpeedyBee 原廠出品），孔位依官方設計，輕量、安裝簡便。\n\n【可選零件】\n・狗座、機頭 CNC 保護、CNC 前防護桿\n・天線與 GPS：O3 天線尾座＋25mm GPS 座、O3＋GPS＋天線尾座\n・XT60 接頭座：搭配 GPS＋BB 響、O3 雙 SMA、O3 天線、O4 Pro 天線底座、類比 SMA 天線\n・接收機：接收機＋天線固定（數位／類比）、黑羊接收機天線固定座\n・減震與保護：鏡頭減震墊一對、O3／O4／CNC 鏡頭減震墊一對、機臂腳墊 4 個\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "SpeedyBee Mario 5",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印（依官方設計）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-45300499810/01.webp",
@@ -285,7 +305,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -293,7 +313,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

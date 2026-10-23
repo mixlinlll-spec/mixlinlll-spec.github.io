@@ -1,27 +1,89 @@
 {
   "id": "sp-45863992336",
   "slug": "fpv-5-r51377-51377-5mm-ruiyi",
-  "name_zh": "FPV 穿越機 螺旋槳 5吋 R51377 三葉槳 51377 5mm 中心孔 RUIYI 芮翼 Freestyle花飛",
+  "name_zh": "RUIYI 芮翼 R51377 5 吋三葉槳｜5mm 中心孔｜PC 材質｜煙燻黑",
   "sku": null,
   "brand": "RUIYI 芮翼",
-  "manufacturer_model": null,
+  "manufacturer_model": "R51377",
   "seller_role": "retail",
   "primary_category_id": "motors-props",
   "subcategory_id": "props",
-  "tags": [],
+  "tags": [
+    "螺旋槳",
+    "5吋",
+    "三葉槳",
+    "R51377",
+    "RUIYI"
+  ],
   "compatible_sizes": [
     "5 吋"
   ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "RUIYI 芮翼 R51377 三葉槳專為5吋 FPV 穿越機設計，3吋螺距搭配高韌性PC材質，提供優異抓地力、快速響應及穩定輸出，適合 Freestyle、競速及日常花飛玩家使用。\n【產品特色】\n✔ 5吋三葉設計，操控靈敏\n✔ 3吋螺距，兼顧爆發力與效率\n✔ 高韌性PC材質，耐撞耐用\n✔ 5mm中心孔，適用主流5吋馬達\n✔ 適合 Freestyle、競速、花飛\n✔ 提供多款透明配色可選\n【產品規格】\n品牌：RUIYI 芮翼\n型號：R51377\n尺寸：5吋\n螺距：3 inch\n葉片數：3葉\n材質：PC\n重量：4.55g／支\n中心孔：5mm\n中心厚度：5.1mm\n槳盤直徑：129.2mm\n中心圓直徑：12.1mm\n【適用機型】\n5吋 Freestyle 穿越機\n5吋競速機\n5吋花飛機\n適用5mm槳座無刷馬達\n※ 購買前請確認槳座規格及旋轉方向。",
-  "specifications": [],
+  "short_description": "RUIYI R51377 五吋三葉槳，3 吋螺距、PC 材質、每支 4.55g、5mm 中心孔，適合 Freestyle、競速與花飛。",
+  "description": "RUIYI 芮翼 R51377 三葉槳專為5吋 FPV 穿越機設計，3吋螺距搭配高韌性PC材質，提供優異抓地力、快速響應及穩定輸出，適合 Freestyle、競速及日常花飛玩家使用。\n\n【產品特色】\n・5吋三葉設計，操控靈敏\n・3吋螺距，兼顧爆發力與效率\n・高韌性PC材質，耐撞耐用\n・5mm中心孔，適用主流5吋馬達\n・適合 Freestyle、競速、花飛\n・提供多款透明配色可選\n\n【適用機型】\n5吋 Freestyle 穿越機\n5吋競速機\n5吋花飛機\n適用5mm槳座無刷馬達\n※ 購買前請確認槳座規格及旋轉方向。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "RUIYI 芮翼",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "R51377",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "5吋",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "螺距",
+      "value": "3 inch",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "葉片數",
+      "value": "3葉",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "PC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "4.55g／支",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "中心孔",
+      "value": "5mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "中心厚度",
+      "value": "5.1mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "槳盤直徑",
+      "value": "129.2mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "中心圓直徑",
+      "value": "12.1mm",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-45863992336/01.webp",
       "src_small": "/assets/img/products/sp-45863992336/01-480.webp",
-      "alt": "FPV 穿越機 螺旋槳 5吋 R51377 三葉槳 51377 5mm 中心孔 RUIYI 芮翼 Freestyle花飛（主圖）",
+      "alt": "RUIYI 芮翼 R51377 5 吋三葉槳｜5mm 中心孔｜PC 材質｜煙燻黑（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +93,7 @@
     {
       "src": "/assets/img/products/sp-45863992336/02.webp",
       "src_small": "/assets/img/products/sp-45863992336/02-480.webp",
-      "alt": "FPV 穿越機 螺旋槳 5吋 R51377 三葉槳 51377 5mm 中心孔 RUIYI 芮翼 Freestyle花飛（細節圖 1）",
+      "alt": "RUIYI 芮翼 R51377 5 吋三葉槳｜5mm 中心孔｜PC 材質｜煙燻黑（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +103,7 @@
     {
       "src": "/assets/img/products/sp-45863992336/03.webp",
       "src_small": "/assets/img/products/sp-45863992336/03-480.webp",
-      "alt": "FPV 穿越機 螺旋槳 5吋 R51377 三葉槳 51377 5mm 中心孔 RUIYI 芮翼 Freestyle花飛（細節圖 2）",
+      "alt": "RUIYI 芮翼 R51377 5 吋三葉槳｜5mm 中心孔｜PC 材質｜煙燻黑（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -66,13 +128,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l4-mqn4etjmm2h7ba"

@@ -1,20 +1,42 @@
 {
   "id": "sp-48355423747",
   "slug": "dji-rc2",
-  "name_zh": "DJI RC2 遙控旅行箱🧳 硬殼保護盒 一體成型收納箱 抗壓防刮 出門直接丟包包的RC2專用保護殼",
+  "name_zh": "DJI RC 2 遙控器硬殼收納盒｜3D 列印旅行保護殼｜上掀卡扣",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "cases",
-  "tags": [],
+  "tags": [
+    "DJI RC 2",
+    "遙控器收納",
+    "保護盒",
+    "硬殼",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "商品賣點（簡版）\n專為 DJI RC2 外形建模，內部預留搖桿區與按鍵高度，合上蓋子不會壓到搖桿與滾輪。​\n硬殼 3D 列印／塑膠一體成型結構，外層抗壓、防刮，背包裡跟工具、鋰電一起放也不怕被擠壓。\n採用上掀式卡扣設計，單手即可開關，方便臨時起飛時快速拿遙控。\n殼身保留 DJI LOGO 區域，整體外觀簡潔低調，和原廠風格一致，看起來就像官方周邊。",
-  "specifications": [],
+  "short_description": "依 DJI RC 2 外形建模的 3D 列印硬殼收納盒，內部預留搖桿與按鍵高度，上掀式卡扣可單手開關。",
+  "description": "電翼動力依 DJI RC 2 外形建模的遙控器收納盒。內部預留搖桿區與按鍵高度，合上蓋子不會壓到搖桿與滾輪；硬殼結構抗壓防刮，和工具、電池放在同一個背包也較安心。\n\n【產品特色】\n・依 DJI RC 2 外形建模，預留搖桿與按鍵空間\n・硬殼結構，抗壓、防刮\n・上掀式卡扣，單手即可開關\n・外觀簡潔低調\n\n【顏色與列印】\n・可選顏色：綠、黃、大理石、金、黑、灰、紅、白\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。\n・其他顏色可透過 LINE 詢問",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "DJI RC 2",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "開闔方式",
+      "value": "上掀式卡扣",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-48355423747/01.webp",
@@ -130,7 +152,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -138,7 +160,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztq-mjzlnbd8y1he2c"

@@ -1,25 +1,42 @@
 {
   "id": "sp-56950672509",
   "slug": "radiomaster-pocket-tpu-3d-72509",
-  "name_zh": "Radiomaster Pocket 遙控器 搖桿保護罩 TPU保護蓋 防壓防撞 3D列印配件",
+  "name_zh": "RadioMaster Pocket 搖桿保護罩｜TPU 防壓防撞｜不影響掛繩｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "RadioMaster Pocket",
+    "搖桿保護",
+    "遙控器配件",
+    "TPU",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n專為 Radiomaster Pocket 遙控器 設計的 搖桿保護罩，能有效防止外出收納時搖桿被擠壓或碰撞損壞。\n\n採用柔性 TPU材質，貼合度高、耐用度強，是每位飛手外出時的必備防護件！\n✅ TPU柔性材質，具備防壓防撞特性\n✅ 精準貼合 Radiomaster Pocket 控制器 不影響掛繩\n✅ 保護搖桿不被擠壓或刮傷\n\n材質說明： TPU（熱塑性聚氨酯）\n適用型號： Radiomaster Pocket",
-  "specifications": [],
+  "short_description": "電翼動力為 RadioMaster Pocket 製作的 TPU 搖桿保護罩，外出收納時避免搖桿被擠壓或碰撞，不影響掛繩使用。",
+  "description": "電翼動力為 RadioMaster Pocket 遙控器製作的搖桿保護罩，外出收納時避免搖桿被擠壓或碰撞。\n\n【產品特色】\n・柔性 TPU，防壓防撞\n・貼合 Pocket 外形，不影響掛繩\n・保護搖桿不被擠壓或刮傷\n\n【顏色與列印】\n・可選顏色：紫、淺透藍、透藍、黃、綠、黑、粉紅、橘、白\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "RadioMaster Pocket",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-56950672509/01.webp",
       "src_small": "/assets/img/products/sp-56950672509/01-480.webp",
-      "alt": "Radiomaster Pocket 遙控器 搖桿保護罩 TPU保護蓋 防壓防撞 3D列印配件（主圖）",
+      "alt": "RadioMaster Pocket 搖桿保護罩｜TPU 防壓防撞｜不影響掛繩｜3D 列印（主圖）",
       "width": 809,
       "height": 809,
       "rights": "licensed",
@@ -29,7 +46,7 @@
     {
       "src": "/assets/img/products/sp-56950672509/02.webp",
       "src_small": "/assets/img/products/sp-56950672509/02-480.webp",
-      "alt": "Radiomaster Pocket 遙控器 搖桿保護罩 TPU保護蓋 防壓防撞 3D列印配件（細節圖 1）",
+      "alt": "RadioMaster Pocket 搖桿保護罩｜TPU 防壓防撞｜不影響掛繩｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-56950672509/03.webp",
       "src_small": "/assets/img/products/sp-56950672509/03-480.webp",
-      "alt": "Radiomaster Pocket 遙控器 搖桿保護罩 TPU保護蓋 防壓防撞 3D列印配件（細節圖 2）",
+      "alt": "RadioMaster Pocket 搖桿保護罩｜TPU 防壓防撞｜不影響掛繩｜3D 列印（細節圖 2）",
       "width": 736,
       "height": 736,
       "rights": "licensed",
@@ -120,14 +137,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

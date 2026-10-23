@@ -1,25 +1,45 @@
 {
   "id": "sp-48301637524",
   "slug": "iflight-nazgul-eco-dc5-tpu",
-  "name_zh": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件",
+  "name_zh": "iFlight Nazgul ECO DC5 TPU 3D 列印件｜天線座、側護板、181 GPS 座、電機保護套、前保桿",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "iFlight",
+    "Nazgul",
+    "DC5",
+    "Deadcat",
+    "TPU",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "5 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n🛠 iFlight Nazgul ECO DC5 專屬全套 TPU 3D 列印保護件｜讓 DC5 更耐摔、更好飛！\n專為 Nazgul ECO DC5（Deadcat） 原廠機架量身打造，完全貼合、不亂晃。\n飛行時更穩定、摔機時更安全，是 DC5 飛手最必備的保護升級！\n\n📌 商品特色\nDC5 專用尺寸｜完全貼合 Nazgul ECO DC5\n全 TPU 材質｜超耐摔、吸震佳\n完整保護｜大力飛不怕摔，外觀也更俐落\n多色可選｜可自選搭配風格色系\n重量輕量化｜不影響動力與續航\n\n🧑‍✈️ 適用機型\n✔ iFlight Nazgul ECO DC5（Deadcat）\n❌ 其他版本請先詢問尺寸\n\n📦 注意事項\n列印件為訂製品，製作時間依顏色與數量而定\nTPU 材質具吸震性，但列印層紋為正常現象",
-  "specifications": [],
+  "short_description": "電翼動力為 iFlight Nazgul ECO DC5（Deadcat）機架列印的 TPU 保護件，提供天線座、鯊魚鰭、側護板、181 GPS 座、電機保護套與前保桿等選項。",
+  "description": "電翼動力依 iFlight Nazgul ECO DC5（Deadcat）原廠機架尺寸製作的 TPU 保護件，提升耐摔性並整理配件位置。\n\n【可選零件】\n・前置天線座、915 天線座、雙 SMA 尾座＋XT60 座＋天線放置\n・鯊魚鰭、側護板一對、前保桿\n・181 GPS 座、平衡頭固定座\n・O3 鏡頭蓋 2 個、電機保護套 4 個一組\n\n【適用機型】\n・iFlight Nazgul ECO DC5（Deadcat）\n・其他版本請先透過 LINE 詢問尺寸\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。\n・製作時間依顏色與數量而定",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "iFlight Nazgul ECO DC5（Deadcat）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-48301637524/01.webp",
       "src_small": "/assets/img/products/sp-48301637524/01-480.webp",
-      "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（主圖）",
+      "alt": "iFlight Nazgul ECO DC5 TPU 3D 列印件｜天線座、側護板、181 GPS 座、電機保護套、前保桿（主圖）",
       "width": 928,
       "height": 928,
       "rights": "licensed",
@@ -29,7 +49,7 @@
     {
       "src": "/assets/img/products/sp-48301637524/02.webp",
       "src_small": "/assets/img/products/sp-48301637524/02-480.webp",
-      "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（細節圖 1）",
+      "alt": "iFlight Nazgul ECO DC5 TPU 3D 列印件｜天線座、側護板、181 GPS 座、電機保護套、前保桿（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +59,7 @@
     {
       "src": "/assets/img/products/sp-48301637524/03.webp",
       "src_small": "/assets/img/products/sp-48301637524/03-480.webp",
-      "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（細節圖 2）",
+      "alt": "iFlight Nazgul ECO DC5 TPU 3D 列印件｜天線座、側護板、181 GPS 座、電機保護套、前保桿（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +69,7 @@
     {
       "src": "/assets/img/products/sp-48301637524/04.webp",
       "src_small": "/assets/img/products/sp-48301637524/04-480.webp",
-      "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（細節圖 3）",
+      "alt": "iFlight Nazgul ECO DC5 TPU 3D 列印件｜天線座、側護板、181 GPS 座、電機保護套、前保桿（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -59,7 +79,7 @@
     {
       "src": "/assets/img/products/sp-48301637524/05.webp",
       "src_small": "/assets/img/products/sp-48301637524/05-480.webp",
-      "alt": "iFlight Nazgul ECO DC5 全套打印件｜DC5 專用 TPU 保護件 機臂保護 墊高套件 穿越機配件（細節圖 4）",
+      "alt": "iFlight Nazgul ECO DC5 TPU 3D 列印件｜天線座、側護板、181 GPS 座、電機保護套、前保桿（細節圖 4）",
       "width": 810,
       "height": 810,
       "rights": "licensed",
@@ -207,7 +227,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -215,7 +235,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

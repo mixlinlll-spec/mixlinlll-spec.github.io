@@ -1,25 +1,49 @@
 {
   "id": "sp-24397776205",
   "slug": "speedybee-mario-mini25-mariomini25",
-  "name_zh": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25",
+  "name_zh": "SpeedyBee Mario Mini25 3D 列印升級零件｜天線座、保險扣、平衡底板、電容座",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "SpeedyBee",
+    "Mario Mini25",
+    "TPU",
+    "3D列印",
+    "天線座"
+  ],
+  "compatible_sizes": [
+    "2.5 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nSpeedyBee Mario Mini25 官方釋出的結構件模型，專為 Mini25 機架設計，完美貼合、輕量耐用。無論是替換破損部件、升級外觀或提升保護性，都能快速套用。\n\n產品特色\n適用 SpeedyBee Mario Mini25 全系列\n輕量化設計，不影響飛行性能\n\n顏色 : 黑/黃/白/綠/橘/紫",
-  "specifications": [],
+  "short_description": "依 SpeedyBee 官方釋出的結構件模型 3D 列印，適用 Mario Mini25，提供天線固定座、外殼與側保護保險扣、平衡底板、電容固定座。",
+  "description": "電翼動力依 SpeedyBee 官方釋出的結構件模型 3D 列印，適用 SpeedyBee Mario Mini25 機架，可替換破損部件或強化保護。\n\n【可選零件】\n・電容固定座\n・外殼保險扣\n・側保護保險扣\n・O4 Pro 天線固定座 A／B\n・小 O4（O4 Lite）天線固定座\n・平衡底板（防撞與平衡）\n\n【顏色與列印】\n・可選顏色：黑、黃、白、綠、橘、紫\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "SpeedyBee Mario Mini25",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印（依官方釋出模型）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "顏色",
+      "value": "黑、黃、白、綠、橘、紫",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-24397776205/01.webp",
       "src_small": "/assets/img/products/sp-24397776205/01-480.webp",
-      "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（主圖）",
+      "alt": "SpeedyBee Mario Mini25 3D 列印升級零件｜天線座、保險扣、平衡底板、電容座（主圖）",
       "width": 836,
       "height": 836,
       "rights": "licensed",
@@ -29,7 +53,7 @@
     {
       "src": "/assets/img/products/sp-24397776205/02.webp",
       "src_small": "/assets/img/products/sp-24397776205/02-480.webp",
-      "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（細節圖 1）",
+      "alt": "SpeedyBee Mario Mini25 3D 列印升級零件｜天線座、保險扣、平衡底板、電容座（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +63,7 @@
     {
       "src": "/assets/img/products/sp-24397776205/03.webp",
       "src_small": "/assets/img/products/sp-24397776205/03-480.webp",
-      "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（細節圖 2）",
+      "alt": "SpeedyBee Mario Mini25 3D 列印升級零件｜天線座、保險扣、平衡底板、電容座（細節圖 2）",
       "width": 843,
       "height": 843,
       "rights": "licensed",
@@ -49,7 +73,7 @@
     {
       "src": "/assets/img/products/sp-24397776205/04.webp",
       "src_small": "/assets/img/products/sp-24397776205/04-480.webp",
-      "alt": "SpeedyBee Mario Mini25｜專屬升級零件#speedybee #mariomini25 #mini25（細節圖 3）",
+      "alt": "SpeedyBee Mario Mini25 3D 列印升級零件｜天線座、保險扣、平衡底板、電容座（細節圖 3）",
       "width": 530,
       "height": 530,
       "rights": "licensed",
@@ -158,14 +182,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

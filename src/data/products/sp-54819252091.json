@@ -1,14 +1,21 @@
 {
   "id": "sp-54819252091",
   "slug": "konker-2207-1950kv-5-6s-starsky",
-  "name_zh": "KONKER 空氪 2207 1950KV 無刷馬達 5吋 花飛 穿越機 6S 馬達 粉紅 STARSKY 電翼動力",
+  "name_zh": "KONKER 空氪 STARSKY 2207 1950KV 無刷馬達｜5 吋 6S 花飛｜粉紅／天藍",
   "sku": null,
   "brand": "KONKER 空氪",
-  "manufacturer_model": null,
+  "manufacturer_model": "STARSKY 2207 1950KV",
   "seller_role": "retail",
   "primary_category_id": "motors-props",
   "subcategory_id": "motors",
-  "tags": [],
+  "tags": [
+    "無刷馬達",
+    "2207",
+    "1950KV",
+    "6S",
+    "5吋",
+    "KONKER"
+  ],
   "compatible_sizes": [
     "5 吋"
   ],
@@ -16,14 +23,90 @@
   "battery_cells": [
     "6S"
   ],
-  "short_description": "",
-  "description": "【KONKER 空氪 STARSKY 2207 / 1950KV 無刷馬達】\n\n五吋花飛取向馬達。1950KV 搭配 6S 使用，\n轉速與扭力平衡，適合日常花飛與自由式飛行。\n鏤空散熱結構，彩色陽極外殼。\n\n■ 商品規格\n型號：KONKER STARSKY 2207\nKV 值：1950KV\n空載電流：1.1A @ 10V\n最大電流：40A\n相間內阻：61 mΩ\n最大拉力：1.7 kg\n最大功率：942 W\n馬達重量（含線）：34.5 g\n盒裝重量：45 g\n\n■ 尺寸規格\n整體高度：31.55 mm\n機身高度：12.5 mm\n外徑：Ø28.54 mm\n安裝孔位：Ø16 M3×4\n軸徑：M5\n引線長度：150 mm\n\n■ 顏色選擇\n粉紅色\n天藍色\n※ 實際顏色會因燈光與螢幕顯示略有差異\n\n■ 商品特點\n1. 1950KV 搭配 6S，轉速與扭力平衡，適合日常花飛與自由式\n2. 鏤空散熱結構，連續操作時散熱條件較佳\n3. 150mm 加長引線，五吋機架走線不必另外接長\n4. 彩色陽極外殼，粉紅與天藍兩色可選，四顆同色外觀一致\n\n■ 適用機型\n5 吋穿越機（花飛、自由式）\n建議電池：6S\n\n■ 購買前請務必確認\n1. 本頁面為單顆售價。一組四顆請調整數量或選購四入規格。\n2. 安裝孔位為 Ø16 M3×4，請確認你的機架臂孔距相符。\n3. 軸徑 M5，請確認槳葉軸孔相容。\n4. 最大電流 40A 為原廠標示，未註明測試電壓與槳葉型號。\n   拉力與功率為原廠實驗室數據，實際飛行數值會有差異。\n   四軸滿油門瞬時總電流相當可觀，請確認電調有足夠餘裕，\n   不要用剛好打平的規格。\n5. 本商品不含螺絲、槳葉與電調。\n\n■ 安裝注意\n1. 鎖馬達螺絲務必確認長度。螺絲過長會頂到繞線造成短路燒毀，\n   此情況。\n2. 馬達線請預留適當長度並確實固定，避免震動造成斷線。\n3. 安裝後請先無槳測試，確認馬達順序與旋轉方向正確，再裝槳飛行。",
-  "specifications": [],
+  "short_description": "KONKER STARSKY 2207 1950KV 五吋花飛馬達，6S 使用，鏤空散熱結構、150mm 引線，粉紅與天藍兩色，單顆販售。",
+  "description": "五吋花飛取向馬達。1950KV 搭配 6S 使用，\n轉速與扭力平衡，適合日常花飛與自由式飛行。\n鏤空散熱結構，彩色陽極外殼。\n\n【顏色選擇】\n粉紅色\n天藍色\n※ 實際顏色會因燈光與螢幕顯示略有差異\n\n【商品特點】\n・1950KV 搭配 6S，轉速與扭力平衡，適合日常花飛與自由式\n・鏤空散熱結構，連續操作時散熱條件較佳\n・150mm 加長引線，五吋機架走線不必另外接長\n・彩色陽極外殼，粉紅與天藍兩色可選，四顆同色外觀一致\n\n【適用機型】\n5 吋穿越機（花飛、自由式）\n建議電池：6S\n\n【購買前請務必確認】\n・本頁面為單顆售價，一組四顆請調整購買數量。\n・安裝孔位為 Ø16 M3×4，請確認你的機架臂孔距相符。\n・軸徑 M5，請確認槳葉軸孔相容。\n・最大電流 40A 為原廠標示，未註明測試電壓與槳葉型號。拉力與功率為原廠實驗室數據，實際飛行數值會有差異。四軸滿油門瞬時總電流相當可觀，請確認電調有足夠餘裕，不要用剛好打平的規格。\n・本商品不含螺絲、槳葉與電調。\n\n【安裝注意】\n・鎖馬達螺絲務必確認長度。螺絲過長會頂到繞線造成短路燒毀。\n・馬達線請預留適當長度並確實固定，避免震動造成斷線。\n・安裝後請先無槳測試，確認馬達順序與旋轉方向正確，再裝槳飛行。",
+  "specifications": [
+    {
+      "key": "商品 型號",
+      "value": "KONKER STARSKY 2207",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "商品 KV 值",
+      "value": "1950KV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "商品 空載電流",
+      "value": "1.1A @ 10V",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "商品 最大電流",
+      "value": "40A",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "商品 相間內阻",
+      "value": "61 mΩ",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "商品 最大拉力",
+      "value": "1.7 kg",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "商品 最大功率",
+      "value": "942 W",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "商品 馬達重量（含線）",
+      "value": "34.5 g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "商品 盒裝重量",
+      "value": "45 g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸 整體高度",
+      "value": "31.55 mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸 機身高度",
+      "value": "12.5 mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸 外徑",
+      "value": "Ø28.54 mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸 安裝孔位",
+      "value": "Ø16 M3×4",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸 軸徑",
+      "value": "M5",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸 引線長度",
+      "value": "150 mm",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-54819252091/01.webp",
       "src_small": "/assets/img/products/sp-54819252091/01-480.webp",
-      "alt": "KONKER 空氪 2207 1950KV 無刷馬達 5吋 花飛 穿越機 6S 馬達 粉紅 STARSKY 電翼動力（主圖）",
+      "alt": "KONKER 空氪 STARSKY 2207 1950KV 無刷馬達｜5 吋 6S 花飛｜粉紅／天藍（主圖）",
       "width": 511,
       "height": 511,
       "rights": "licensed",
@@ -33,7 +116,7 @@
     {
       "src": "/assets/img/products/sp-54819252091/02.webp",
       "src_small": "/assets/img/products/sp-54819252091/02-480.webp",
-      "alt": "KONKER 空氪 2207 1950KV 無刷馬達 5吋 花飛 穿越機 6S 馬達 粉紅 STARSKY 電翼動力（細節圖 1）",
+      "alt": "KONKER 空氪 STARSKY 2207 1950KV 無刷馬達｜5 吋 6S 花飛｜粉紅／天藍（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -43,7 +126,7 @@
     {
       "src": "/assets/img/products/sp-54819252091/03.webp",
       "src_small": "/assets/img/products/sp-54819252091/03-480.webp",
-      "alt": "KONKER 空氪 2207 1950KV 無刷馬達 5吋 花飛 穿越機 6S 馬達 粉紅 STARSKY 電翼動力（細節圖 2）",
+      "alt": "KONKER 空氪 STARSKY 2207 1950KV 無刷馬達｜5 吋 6S 花飛｜粉紅／天藍（細節圖 2）",
       "width": 858,
       "height": 858,
       "rights": "licensed",
@@ -53,7 +136,7 @@
     {
       "src": "/assets/img/products/sp-54819252091/04.webp",
       "src_small": "/assets/img/products/sp-54819252091/04-480.webp",
-      "alt": "KONKER 空氪 2207 1950KV 無刷馬達 5吋 花飛 穿越機 6S 馬達 粉紅 STARSKY 電翼動力（細節圖 3）",
+      "alt": "KONKER 空氪 STARSKY 2207 1950KV 無刷馬達｜5 吋 6S 花飛｜粉紅／天藍（細節圖 3）",
       "width": 883,
       "height": 883,
       "rights": "licensed",
@@ -63,7 +146,7 @@
     {
       "src": "/assets/img/products/sp-54819252091/05.webp",
       "src_small": "/assets/img/products/sp-54819252091/05-480.webp",
-      "alt": "KONKER 空氪 2207 1950KV 無刷馬達 5吋 花飛 穿越機 6S 馬達 粉紅 STARSKY 電翼動力（細節圖 4）",
+      "alt": "KONKER 空氪 STARSKY 2207 1950KV 無刷馬達｜5 吋 6S 花飛｜粉紅／天藍（細節圖 4）",
       "width": 909,
       "height": 909,
       "rights": "licensed",
@@ -73,7 +156,7 @@
     {
       "src": "/assets/img/products/sp-54819252091/06.webp",
       "src_small": "/assets/img/products/sp-54819252091/06-480.webp",
-      "alt": "KONKER 空氪 2207 1950KV 無刷馬達 5吋 花飛 穿越機 6S 馬達 粉紅 STARSKY 電翼動力（細節圖 5）",
+      "alt": "KONKER 空氪 STARSKY 2207 1950KV 無刷馬達｜5 吋 6S 花飛｜粉紅／天藍（細節圖 5）",
       "width": 657,
       "height": 657,
       "rights": "licensed",
@@ -105,13 +188,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mubcmnly8qv8f8",

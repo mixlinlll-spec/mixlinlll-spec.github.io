@@ -1,22 +1,40 @@
 {
   "id": "sp-53753435292",
   "slug": "geprc-mark4-7-3d-gps",
-  "name_zh": "GEPRC MARK4 7吋 穿越機專用 3D打印套件組 🧩 機臂保護／天線座／GPS座／相機保護一站搞定",
+  "name_zh": "GEPRC MARK4 7 吋 3D 列印套件｜機臂腳墊、側護板、GPS 座、天線尾座、GoPro 座、XT60 座",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "GEPRC",
+    "MARK4",
+    "7吋",
+    "長航",
+    "GPS座",
+    "3D列印"
+  ],
   "compatible_sizes": [
     "7 吋"
   ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "GEPRC MARK4 7吋 3D打印\nMARK4 7inch TPU 配件\nMARK4 7 機臂保護\nMARK4 7 GPS 座\nMARK4 7 天線座\n長程穿越機 3D 列印件\nFPV Freestyle 保護套件\nGEPRC 配件 升級\n7吋穿越機 機臂保護\n7inch FPV frame parts\n\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n\n這系列是專為 GEPRC MARK4 7 吋長程 機架設計的 3D 打印件，可依需求選購或搭配成套，包括機臂保護、電池防滑墊固定件、天線座、GPS 座、相機保護罩等，讓你的 MARK4 在實戰中更耐撞、走線更乾淨。",
-  "specifications": [],
+  "short_description": "電翼動力為 GEPRC MARK4 7 吋長程機架製作的 3D 列印件，提供 GoPro 前座、O3 固定座、GPS 與天線尾座、側護板、XT60 固定座與機臂腳墊等選項。",
+  "description": "電翼動力為 GEPRC MARK4 7 吋長程機架製作的 3D 列印件，可依需求單買或搭配成套，提升耐撞性並讓走線更整齊。\n\n【可選零件】\n・GoPro 前座、O3 固定座＋雙原廠天線尾座\n・前置 GPS（18×18）、GPS＋接收天線（GPS 28×28）、GPS＋接收機天線＋SMA 單天線尾座\n・雙接收天線後置\n・20×20 圖傳墊、BB 響座、XT60 固定座\n・側護板、機臂腳墊\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "GEPRC MARK4 7 吋",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-53753435292/01.webp",
@@ -182,7 +200,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -190,7 +208,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

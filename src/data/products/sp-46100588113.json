@@ -1,25 +1,45 @@
 {
   "id": "sp-46100588113",
   "slug": "speedybee-mario-8",
-  "name_zh": "SpeedyBee Mario 8 穿越機 打印套件 保護支架 配件外殼",
+  "name_zh": "SpeedyBee Mario 8 TPU 3D 列印配件｜側護板、尾座、機臂底座、狗座、GPS 座、鏡頭減震",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "SpeedyBee",
+    "Mario 8",
+    "TPU",
+    "3D列印",
+    "GPS座",
+    "天線座"
+  ],
+  "compatible_sizes": [
+    "8 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "✅ 完美相容 SpeedyBee Mario 8 機架\n✅ 高精度3D列印，外觀整潔、安裝方便\n\n材質說明：\nTPU（熱塑性聚氨酯）－柔軟、有彈性、耐磨抗摔\n適用機種：SpeedyBee Mario 8",
-  "specifications": [],
+  "short_description": "電翼動力為 SpeedyBee Mario 8 列印的 TPU 配件，提供側護板、尾座＋接收機、機臂底座、電機線護蓋、狗座、251 GPS 座、前保險桿、鏡頭減震等選項。",
+  "description": "電翼動力為 SpeedyBee Mario 8 機架列印的 TPU 配件，柔軟有彈性、耐磨抗摔。\n\n【可選零件】\n・側護板一對（SMA 天線側出）\n・原廠尾座＋接收機\n・尾部雙 SMA＋251 GPS、尾座＋251 GPS＋單 SMA\n・機臂底座 4 個、電機線護蓋 4 條一組\n・狗座、前保險桿一對\n・電容放置座、鏡頭減震 4 個\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "SpeedyBee Mario 8",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-46100588113/01.webp",
       "src_small": "/assets/img/products/sp-46100588113/01-480.webp",
-      "alt": "SpeedyBee Mario 8 穿越機 打印套件 保護支架 配件外殼（主圖）",
+      "alt": "SpeedyBee Mario 8 TPU 3D 列印配件｜側護板、尾座、機臂底座、狗座、GPS 座、鏡頭減震（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +49,7 @@
     {
       "src": "/assets/img/products/sp-46100588113/02.webp",
       "src_small": "/assets/img/products/sp-46100588113/02-480.webp",
-      "alt": "SpeedyBee Mario 8 穿越機 打印套件 保護支架 配件外殼（細節圖 1）",
+      "alt": "SpeedyBee Mario 8 TPU 3D 列印配件｜側護板、尾座、機臂底座、狗座、GPS 座、鏡頭減震（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +59,7 @@
     {
       "src": "/assets/img/products/sp-46100588113/03.webp",
       "src_small": "/assets/img/products/sp-46100588113/03-480.webp",
-      "alt": "SpeedyBee Mario 8 穿越機 打印套件 保護支架 配件外殼（細節圖 2）",
+      "alt": "SpeedyBee Mario 8 TPU 3D 列印配件｜側護板、尾座、機臂底座、狗座、GPS 座、鏡頭減震（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +69,7 @@
     {
       "src": "/assets/img/products/sp-46100588113/04.webp",
       "src_small": "/assets/img/products/sp-46100588113/04-480.webp",
-      "alt": "SpeedyBee Mario 8 穿越機 打印套件 保護支架 配件外殼（細節圖 3）",
+      "alt": "SpeedyBee Mario 8 TPU 3D 列印配件｜側護板、尾座、機臂底座、狗座、GPS 座、鏡頭減震（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -59,7 +79,7 @@
     {
       "src": "/assets/img/products/sp-46100588113/05.webp",
       "src_small": "/assets/img/products/sp-46100588113/05-480.webp",
-      "alt": "SpeedyBee Mario 8 穿越機 打印套件 保護支架 配件外殼（細節圖 4）",
+      "alt": "SpeedyBee Mario 8 TPU 3D 列印配件｜側護板、尾座、機臂底座、狗座、GPS 座、鏡頭減震（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -69,7 +89,7 @@
     {
       "src": "/assets/img/products/sp-46100588113/06.webp",
       "src_small": "/assets/img/products/sp-46100588113/06-480.webp",
-      "alt": "SpeedyBee Mario 8 穿越機 打印套件 保護支架 配件外殼（細節圖 5）",
+      "alt": "SpeedyBee Mario 8 TPU 3D 列印配件｜側護板、尾座、機臂底座、狗座、GPS 座、鏡頭減震（細節圖 5）",
       "width": 592,
       "height": 592,
       "rights": "licensed",
@@ -79,7 +99,7 @@
     {
       "src": "/assets/img/products/sp-46100588113/07.webp",
       "src_small": "/assets/img/products/sp-46100588113/07-480.webp",
-      "alt": "SpeedyBee Mario 8 穿越機 打印套件 保護支架 配件外殼（細節圖 6）",
+      "alt": "SpeedyBee Mario 8 TPU 3D 列印配件｜側護板、尾座、機臂底座、狗座、GPS 座、鏡頭減震（細節圖 6）",
       "width": 711,
       "height": 711,
       "rights": "licensed",
@@ -227,14 +247,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

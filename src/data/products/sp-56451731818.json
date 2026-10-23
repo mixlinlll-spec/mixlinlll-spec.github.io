@@ -1,25 +1,42 @@
 {
   "id": "sp-56451731818",
   "slug": "radiomaster-t15-max-tpu-fpv-3d",
-  "name_zh": "Radiomaster T15 Max 專用 TPU 搖桿保護套｜遙控器搖桿防壓防撞罩 FPV 3D列印配件",
+  "name_zh": "RadioMaster T15 Max TPU 搖桿保護套｜防壓防撞｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "RadioMaster T15",
+    "搖桿保護",
+    "遙控器配件",
+    "TPU",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nRadiomaster T15 Max 搖桿保護套｜專用TPU防護罩\n專為 Radiomaster T15 Max 打造的 TPU 搖桿保護套，完美服貼、有效防止搖桿在背包或運輸時被壓歪、磨損或受撞擊。\n外出攜帶必備，降低高額維修風險，提供穩固又輕量的日常防護。\n\n產品特色：\n✔ 完美適配 T15 Max，不鬆動、不滑落\n✔ 防止搖桿受壓、刮傷、撞擊\n✔ TPU 材質柔韌耐用\n✔ 適合日常收納、外出攜帶\n適用機型： Radiomaster T15 Max",
-  "specifications": [],
+  "short_description": "電翼動力為 RadioMaster T15 Max 製作的 TPU 搖桿保護套，放進背包或運送時避免搖桿被壓歪、磨損或撞擊。",
+  "description": "電翼動力為 RadioMaster T15 Max 製作的 TPU 搖桿保護套，外出攜帶時保護搖桿。\n\n【產品特色】\n・依 T15 Max 尺寸製作，不易鬆動、滑落\n・防止搖桿受壓、刮傷、撞擊\n・TPU 材質柔韌耐用\n\n【顏色與列印】\n・可選顏色：黑、白、黃、紫、綠、橘\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "RadioMaster T15 Max",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-56451731818/01.webp",
       "src_small": "/assets/img/products/sp-56451731818/01-480.webp",
-      "alt": "Radiomaster T15 Max 專用 TPU 搖桿保護套｜遙控器搖桿防壓防撞罩 FPV 3D列印配件（主圖）",
+      "alt": "RadioMaster T15 Max TPU 搖桿保護套｜防壓防撞｜3D 列印（主圖）",
       "width": 941,
       "height": 941,
       "rights": "licensed",
@@ -29,7 +46,7 @@
     {
       "src": "/assets/img/products/sp-56451731818/02.webp",
       "src_small": "/assets/img/products/sp-56451731818/02-480.webp",
-      "alt": "Radiomaster T15 Max 專用 TPU 搖桿保護套｜遙控器搖桿防壓防撞罩 FPV 3D列印配件（細節圖 1）",
+      "alt": "RadioMaster T15 Max TPU 搖桿保護套｜防壓防撞｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-56451731818/03.webp",
       "src_small": "/assets/img/products/sp-56451731818/03-480.webp",
-      "alt": "Radiomaster T15 Max 專用 TPU 搖桿保護套｜遙控器搖桿防壓防撞罩 FPV 3D列印配件（細節圖 2）",
+      "alt": "RadioMaster T15 Max TPU 搖桿保護套｜防壓防撞｜3D 列印（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -99,7 +116,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -107,7 +124,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

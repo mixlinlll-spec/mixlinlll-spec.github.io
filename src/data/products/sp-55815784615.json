@@ -1,27 +1,75 @@
 {
   "id": "sp-55815784615",
   "slug": "axisflying-vertex5-5-fpv-dji-o4",
-  "name_zh": "Axisflying VERTEX5 5吋 FPV穿越機 DJI O4 DC套機 460g 輕量化 全包裹",
+  "name_zh": "Axisflying VERTEX5 5 吋 FPV 穿越機｜DJI O4 Pro／O4 Wide／類比｜ELRS＋GPS｜約 460g",
   "sku": null,
   "brand": "Axisflying",
-  "manufacturer_model": null,
+  "manufacturer_model": "VERTEX5",
   "seller_role": "retail",
   "primary_category_id": "complete-drones",
   "subcategory_id": "5in",
-  "tags": [],
+  "tags": [
+    "Freestyle",
+    "花飛",
+    "5吋",
+    "DJI O4 Pro",
+    "GPS",
+    "ELRS"
+  ],
   "compatible_sizes": [
     "5 吋"
   ],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "Axisflying VERTEX5 是一款主打輕量化與高完整度的5吋FPV穿越機，採用全包裹式機身設計，兼顧外觀質感、保護性與飛行性能。整機約460g，適合Freestyle花飛、日常練習、戶外高速飛行與DJI O4數位圖傳玩家使用。",
-  "specifications": [],
+  "short_description": "Axisflying VERTEX5 5 吋全包覆機身穿越機，約 460g，提供類比、DJI O4 Wide、DJI O4 Pro 版本，皆含 ELRS 接收機與 GPS。",
+  "description": "Axisflying（酷飛）VERTEX5 是主打輕量化與完整度的 5 吋 FPV 穿越機，採用全包覆式機身設計，兼顧外觀、保護性與飛行性能，整機約 460g。適合 Freestyle 花飛、日常練習、戶外高速飛行與 DJI O4 數位圖傳玩家。\n\n【版本說明】\n・類比圖傳（含 ELRS 接收機＋GPS）\n・DJI O4 Wide（含 ELRS 接收機＋GPS）\n・DJI O4 Pro（含 ELRS 接收機＋GPS）\n\n【訂購前請確認】\nGPS 返航等功能需正確設定並在現場驗證後才能使用。建議電池與詳細規格以 Axisflying 原廠公告為準。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "Axisflying",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "VERTEX5",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "5 吋",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "機身",
+      "value": "全包覆式（DC 布局）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 460g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "圖傳",
+      "value": "類比／DJI O4 Wide／DJI O4 Pro（依版本）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接收機",
+      "value": "ELRS",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "GPS",
+      "value": "含",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-55815784615/01.webp",
       "src_small": "/assets/img/products/sp-55815784615/01-480.webp",
-      "alt": "Axisflying VERTEX5 5吋 FPV穿越機 DJI O4 DC套機 460g 輕量化 全包裹（主圖）",
+      "alt": "Axisflying VERTEX5 5 吋 FPV 穿越機｜DJI O4 Pro／O4 Wide／類比｜ELRS＋GPS｜約 460g（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +79,7 @@
     {
       "src": "/assets/img/products/sp-55815784615/02.webp",
       "src_small": "/assets/img/products/sp-55815784615/02-480.webp",
-      "alt": "Axisflying VERTEX5 5吋 FPV穿越機 DJI O4 DC套機 460g 輕量化 全包裹（細節圖 1）",
+      "alt": "Axisflying VERTEX5 5 吋 FPV 穿越機｜DJI O4 Pro／O4 Wide／類比｜ELRS＋GPS｜約 460g（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +89,7 @@
     {
       "src": "/assets/img/products/sp-55815784615/03.webp",
       "src_small": "/assets/img/products/sp-55815784615/03-480.webp",
-      "alt": "Axisflying VERTEX5 5吋 FPV穿越機 DJI O4 DC套機 460g 輕量化 全包裹（細節圖 2）",
+      "alt": "Axisflying VERTEX5 5 吋 FPV 穿越機｜DJI O4 Pro／O4 Wide／類比｜ELRS＋GPS｜約 460g（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -51,7 +99,7 @@
     {
       "src": "/assets/img/products/sp-55815784615/04.webp",
       "src_small": "/assets/img/products/sp-55815784615/04-480.webp",
-      "alt": "Axisflying VERTEX5 5吋 FPV穿越機 DJI O4 DC套機 460g 輕量化 全包裹（細節圖 3）",
+      "alt": "Axisflying VERTEX5 5 吋 FPV 穿越機｜DJI O4 Pro／O4 Wide／類比｜ELRS＋GPS｜約 460g（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -61,7 +109,7 @@
     {
       "src": "/assets/img/products/sp-55815784615/05.webp",
       "src_small": "/assets/img/products/sp-55815784615/05-480.webp",
-      "alt": "Axisflying VERTEX5 5吋 FPV穿越機 DJI O4 DC套機 460g 輕量化 全包裹（細節圖 4）",
+      "alt": "Axisflying VERTEX5 5 吋 FPV 穿越機｜DJI O4 Pro／O4 Wide／類比｜ELRS＋GPS｜約 460g（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -100,13 +148,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820le-mrqmegxbagatb9",

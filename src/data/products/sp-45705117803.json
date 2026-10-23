@@ -1,22 +1,65 @@
 {
   "id": "sp-45705117803",
   "slug": "ovonic-1s-3-8v-300mah-150c-hv",
-  "name_zh": "Ovonic 1S 3.8V 300mAh 150C HV🔋 BT2.0 高壓鋰電池 室內微型穿越機/Tinywhoop",
+  "name_zh": "OVONIC 1S 3.8V 300mAh 150C HV 電池｜BT2.0｜Tinywhoop 微型穿越機",
   "sku": null,
   "brand": "OVONIC",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "power-battery",
   "subcategory_id": "1s-micro",
-  "tags": [],
+  "tags": [
+    "1S電池",
+    "LiHV",
+    "BT2.0",
+    "Tinywhoop",
+    "OVONIC",
+    "300mAh"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [
     "1S"
   ],
-  "short_description": "",
-  "description": "•\t這顆 Ovonic 1S 300mAh 150C HV 採用 3.8V 高壓電芯，支援充到約 4.35V，提供比普通 3.7V 電池更高的瞬間電壓與推力。\n•\t150C 放電倍率，適合高 KV 0802～1002 電機的小穿越機，急加速、穿門、翻滾都不容易「一推就塌」。\n•\t細長外型約 65×11×6.5mm、重量約 14g，對應多數 65/75mm 機型的長條電池倉，綁帶或卡槽都好固定。\n•\tBT2.0 插頭阻抗低，相比 PH2.0 能減少電壓下墜，實際飛起來更有力、更穩定。",
-  "specifications": [],
+  "short_description": "OVONIC 1S 3.8V 高壓（HV）300mAh 150C 電池，BT2.0 接頭，約 65×11×6.5mm、14g，適用 65／75mm Tinywhoop。",
+  "description": "OVONIC 1S 300mAh 150C 高壓電池，3.8V LiHV 電芯，可充到約 4.35V，適用 0802～1002 等高 KV 馬達的微型穿越機。\n\n【產品特色】\n・3.8V 高壓（LiHV），滿電約 4.35V\n・150C 放電倍率（原廠標示）\n・細長外型，對應多數 65／75mm 機型的長條電池倉\n・BT2.0 接頭，阻抗低於 PH2.0\n\n【充電提醒】\n・HV 電池請使用支援 LiHV 模式的充電器，以 4.35V 設定充電",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "OVONIC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電壓",
+      "value": "1S 3.8V（HV，滿電約 4.35V）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "容量",
+      "value": "300mAh",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "放電倍率",
+      "value": "150C（原廠標示）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接頭",
+      "value": "BT2.0",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "約 65 × 11 × 6.5 mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 14g",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-45705117803/01.webp",
@@ -48,13 +91,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-mjshc31h24g709",

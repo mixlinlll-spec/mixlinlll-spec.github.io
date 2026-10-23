@@ -1,25 +1,31 @@
 {
   "id": "sp-46458278491",
   "slug": "dji-o3-o4-6p-f4-f7",
-  "name_zh": "DJI O3 O4 天空端6P雙頭排線 F4 F7飛控直插線 連接線 穿越機 FPV 航模 適用SpeedyBee",
+  "name_zh": "DJI O3／O4 天空端 6P 雙頭排線｜飛控直插｜4／7／15cm",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "video",
   "subcategory_id": "video-cables",
-  "tags": [],
+  "tags": [
+    "DJI O3",
+    "DJI O4",
+    "6P排線",
+    "飛控",
+    "SpeedyBee"
+  ],
   "compatible_sizes": [],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "DJI O3／O4 天空端專用 6P 雙頭排線，適合具備排插接口的 F4／F7 飛控使用，免繁瑣焊接，安裝更快速，配線更整潔。\n\n・適用 DJI O3 / O4 天空端\n・6P 雙頭直插設計，安裝方便\n・適用具排插端口之 F4 / F7 飛控\n・可用於  F4 / F7 等相容飛控\n・適合穿越機、FPV、航模改裝與維修使用",
+  "short_description": "DJI O3／O4 天空端用 6P 雙頭排線，直插具 6P 排插接口的 F4／F7 飛控（如 SpeedyBee），免焊接；提供 4cm、7cm、15cm。",
+  "description": "DJI O3／O4 天空端用 6P 雙頭排線，直插具 6P 排插接口的飛控，不用焊接，安裝更快、配線更整潔。\n\n【規格選項】\n・4cm\n・7cm\n・15cm\n\n【產品特色】\n・6P 雙頭直插，安裝方便\n・適用具 6P 排插接口的 F4／F7 飛控\n・適合穿越機改裝與維修\n\n【購買前請確認】\n・飛控上的 6P 接口線序須與 DJI 天空端相符；不同品牌飛控線序可能不同，接錯可能損壞設備\n・不確定時請先透過 LINE 告知飛控型號",
   "specifications": [],
   "images": [
     {
       "src": "/assets/img/products/sp-46458278491/01.webp",
       "src_small": "/assets/img/products/sp-46458278491/01-480.webp",
-      "alt": "DJI O3 O4 天空端6P雙頭排線 F4 F7飛控直插線 連接線 穿越機 FPV 航模 適用SpeedyBee（主圖）",
+      "alt": "DJI O3／O4 天空端 6P 雙頭排線｜飛控直插｜4／7／15cm（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +35,7 @@
     {
       "src": "/assets/img/products/sp-46458278491/02.webp",
       "src_small": "/assets/img/products/sp-46458278491/02-480.webp",
-      "alt": "DJI O3 O4 天空端6P雙頭排線 F4 F7飛控直插線 連接線 穿越機 FPV 航模 適用SpeedyBee（細節圖 1）",
+      "alt": "DJI O3／O4 天空端 6P 雙頭排線｜飛控直插｜4／7／15cm（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +45,7 @@
     {
       "src": "/assets/img/products/sp-46458278491/03.webp",
       "src_small": "/assets/img/products/sp-46458278491/03-480.webp",
-      "alt": "DJI O3 O4 天空端6P雙頭排線 F4 F7飛控直插線 連接線 穿越機 FPV 航模 適用SpeedyBee（細節圖 2）",
+      "alt": "DJI O3／O4 天空端 6P 雙頭排線｜飛控直插｜4／7／15cm（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +55,7 @@
     {
       "src": "/assets/img/products/sp-46458278491/04.webp",
       "src_small": "/assets/img/products/sp-46458278491/04-480.webp",
-      "alt": "DJI O3 O4 天空端6P雙頭排線 F4 F7飛控直插線 連接線 穿越機 FPV 航模 適用SpeedyBee（細節圖 3）",
+      "alt": "DJI O3／O4 天空端 6P 雙頭排線｜飛控直插｜4／7／15cm（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -59,7 +65,7 @@
     {
       "src": "/assets/img/products/sp-46458278491/05.webp",
       "src_small": "/assets/img/products/sp-46458278491/05-480.webp",
-      "alt": "DJI O3 O4 天空端6P雙頭排線 F4 F7飛控直插線 連接線 穿越機 FPV 航模 適用SpeedyBee（細節圖 4）",
+      "alt": "DJI O3／O4 天空端 6P 雙頭排線｜飛控直插｜4／7／15cm（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -98,14 +104,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

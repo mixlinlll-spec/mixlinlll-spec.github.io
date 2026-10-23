@@ -1,25 +1,56 @@
 {
   "id": "sp-44272073321",
   "slug": "jzq-588b",
-  "name_zh": "烙鐵頭清潔 JZQ-588B 電烙鐵清潔 除銅線球",
+  "name_zh": "JZQ-588B 烙鐵頭清潔器｜除錫銅絲球",
   "sku": null,
   "brand": null,
-  "manufacturer_model": null,
+  "manufacturer_model": "JZQ-588B",
   "seller_role": "retail",
   "primary_category_id": "tools",
   "subcategory_id": "cleaning",
-  "tags": [],
+  "tags": [
+    "烙鐵清潔",
+    "銅絲球",
+    "焊接工具",
+    "電子維修"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "【產品特色】\n\n✔ 高效清潔：快速去除烙鐵頭焊錫與氧化物，保持導熱良好\n\n✔ 耐用設計：金屬外殼搭配清潔絲球，使用壽命長\n\n✔ 使用方便：比傳統海綿更乾淨，不需加水，不會降溫\n\n✔ 適用範圍：電子維修、焊接工作台、專業DIY\n\n【產品規格】\n\n品名：電烙鐵潔嘴器 / 烙鐵頭清潔器\n\n型號：JZQ-588B\n\n材質：金屬外殼 + 清潔絲球\n\n用途：清潔烙鐵頭、去除焊錫殘渣\n\n適合對象：電子工程師、手機維修、焊接愛好者",
-  "specifications": [],
+  "short_description": "JZQ-588B 烙鐵頭清潔器，金屬外殼搭配清潔絲球，不需加水即可清除烙鐵頭焊錫與氧化物。",
+  "description": "【產品特色】\n・高效清潔：快速去除烙鐵頭焊錫與氧化物，保持導熱良好\n\n・耐用設計：金屬外殼搭配清潔絲球，使用壽命長\n\n・使用方便：比傳統海綿更乾淨，不需加水，不會降溫\n\n・適用範圍：電子維修、焊接工作台、專業DIY",
+  "specifications": [
+    {
+      "key": "品名",
+      "value": "電烙鐵潔嘴器 / 烙鐵頭清潔器",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "JZQ-588B",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "金屬外殼 + 清潔絲球",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "用途",
+      "value": "清潔烙鐵頭、去除焊錫殘渣",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適合對象",
+      "value": "電子工程師、手機維修、焊接愛好者",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-44272073321/01.webp",
       "src_small": "/assets/img/products/sp-44272073321/01-480.webp",
-      "alt": "烙鐵頭清潔 JZQ-588B 電烙鐵清潔 除銅線球（主圖）",
+      "alt": "JZQ-588B 烙鐵頭清潔器｜除錫銅絲球（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +60,7 @@
     {
       "src": "/assets/img/products/sp-44272073321/02.webp",
       "src_small": "/assets/img/products/sp-44272073321/02-480.webp",
-      "alt": "烙鐵頭清潔 JZQ-588B 電烙鐵清潔 除銅線球（細節圖 1）",
+      "alt": "JZQ-588B 烙鐵頭清潔器｜除錫銅絲球（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +70,7 @@
     {
       "src": "/assets/img/products/sp-44272073321/03.webp",
       "src_small": "/assets/img/products/sp-44272073321/03-480.webp",
-      "alt": "烙鐵頭清潔 JZQ-588B 電烙鐵清潔 除銅線球（細節圖 2）",
+      "alt": "JZQ-588B 烙鐵頭清潔器｜除錫銅絲球（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -56,13 +87,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,20 +1,49 @@
 {
   "id": "sp-47356765035",
   "slug": "betafpv-bt2-0-u-1s",
-  "name_zh": "BETAFPV BT2.0 U型電源線🔌 1S穿越機鋰電池配件",
+  "name_zh": "BETAFPV BT2.0 U 型電源線｜1S Whoop 電池連接線",
   "sku": null,
   "brand": "BETAFPV",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "electronics",
   "subcategory_id": "wires",
-  "tags": [],
+  "tags": [
+    "BT2.0",
+    "1S",
+    "Whoop",
+    "電源線",
+    "BETAFPV"
+  ],
   "compatible_sizes": [],
   "video_system": null,
-  "battery_cells": [],
-  "short_description": "",
-  "description": "•\tU 型直角結構設計，電源線貼著機身走線，插拔 BT2.0 電池更順手，減少硬拉電線造成的焊點疲勞與斷線風險。\n•\t細徑柔軟矽膠線搭配高品質 BT2.0 公頭端子，內阻低、導電穩定，長時間連飛電壓更穩、掉電更少。\n•\t線長適中，小體積不拖泥帶水，適合 1S Whoop、微型穿越機等機型改裝，讓機頂更乾淨好綁電池。\n•\t即插即用，適合整理舊機線路或自組機升級，小成本就能改善手感與可靠度，是 FPV 玩家必備小配件。",
-  "specifications": [],
+  "battery_cells": [
+    "1S"
+  ],
+  "short_description": "BETAFPV BT2.0 U 型直角電源線，貼著機身走線、插拔 1S 電池更順手，適合 1S Whoop 與微型穿越機更換或整理線路。",
+  "description": "BETAFPV BT2.0 U 型電源線，適合 1S Whoop 與微型穿越機更換舊線或整理線路。\n\n【產品特色】\n・U 型直角結構，電源線貼著機身走線，插拔 BT2.0 電池更順手，減少硬拉電線造成的焊點疲勞\n・細徑矽膠線搭配 BT2.0 公頭端子\n・線長適中，適合 1S Whoop、微型穿越機改裝，機頂更整齊、綁電池更方便\n\n【安裝前請確認】\n需焊接至飛控電源焊盤，請確認正負極性後再焊接。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "BETAFPV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接頭",
+      "value": "BT2.0 公頭",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "造型",
+      "value": "U 型直角",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用",
+      "value": "1S Whoop／微型穿越機",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-47356765035/01.webp",
@@ -96,13 +125,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {
