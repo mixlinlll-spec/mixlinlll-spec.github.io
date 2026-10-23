@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v2.6.0（2026-10-23，聯絡頁四卡片、Instagram 改為 @ewp.fpvlab）
+
+- 聯絡頁改為四張結構一致的卡片：LINE、蝦皮賣場、Email、Instagram。每張依序為標題、說明、1:1 圖片（同尺寸）、說明文字、按鈕；同列以 CSS subgrid 對齊，按鈕位置與高度一致。手機 1 欄、平板 2 欄、電腦 4 欄。
+- 蝦皮新增 EWP 提供的 QR 圖（解碼為 https://shopee.tw/mixlin）；Email 新增 EWP 聯絡圖與「寄信給 EWP」按鈕（mailto，預填主旨）；LINE 沿用原 QR。
+- Instagram 全站改為 EWP 主帳號 @ewp.fpvlab（聯絡頁、頁尾、結構化資料 sameAs），新 QR 解碼為 instagram.com/ewp.fpvlab；移除舊的靈雀電池 QR 圖檔。
+- 建置驗證四張聯絡圖檔都存在；e2e 測試檢查四個按鈕連結、圖片載入與尺寸、平板／電腦同列對齊。
+
 ## v2.5.4（2026-10-23，規格識別碼）
 
 - 沒有蝦皮規格 ID 的規格新增固定識別碼 `variants[].key`（`v-` 加 8 碼），庫存後台以它對應 SKU：改名、排序、刪除其他規格都不會換身分。

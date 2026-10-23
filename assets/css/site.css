@@ -274,15 +274,24 @@ section{padding:36px 0}
 .split-card h2{margin:8px 0}
 .split-card p{color:var(--muted);max-width:600px;margin:0}
 .split-card .actions{margin-top:0}
-.contact-grid{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
-.contact-card{border:1px solid var(--line);padding:24px;background:var(--panel);display:flex;flex-direction:column;gap:12px}
+.contact-note{margin-top:20px}
+/* 聯絡卡片（v2.6）：四張結構一致——標題、說明、1:1 圖片、說明文字、按鈕；同一列以 subgrid 對齊，按鈕永遠在底部同一高度 */
+.contact-grid{grid-template-columns:1fr;gap:16px}
+@media(min-width:600px){.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.contact-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.contact-card{border:1px solid var(--line);padding:20px;background:var(--panel);display:grid;grid-template-rows:auto auto 1fr auto;gap:12px;min-width:0}
+@supports(grid-template-rows:subgrid){.contact-card{grid-row:span 4;grid-template-rows:subgrid}}
 .contact-card h2{margin:0;font-size:21px}
 .contact-card p{margin:0;color:var(--muted)}
-.contact-card .btn{margin-top:auto;overflow-wrap:anywhere}
-.qr{margin:8px 0 0;text-align:center}
-.qr img{margin:0 auto;background:#fff;padding:8px;width:200px;height:200px}
-.qr figcaption{font-size:13px;color:var(--muted);margin-top:6px}
-.contact-note{margin-top:20px}
+.contact-media{margin:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:8px}
+.contact-img{width:100%;max-width:280px;aspect-ratio:1/1;border-radius:10px;overflow:hidden;background:#fff}
+.contact-img img{display:block;width:100%;height:100%;object-fit:contain}
+.contact-line .contact-img{padding:14px}
+.contact-media figcaption{font-size:13px;color:var(--muted);text-align:center;min-height:1.5em}
+.contact-addr{color:var(--text);font-size:15px;overflow-wrap:anywhere;user-select:all}
+.contact-card .btn{align-self:end;overflow-wrap:anywhere;min-height:48px}
+.btn-mail{background:#1e4f8a;border-color:#1e4f8a;color:#fff}
+.btn-mail:hover{background:#2a64a8;border-color:#2a64a8}
 .notfound{padding:72px 0;text-align:center}
 .notfound h1{font-size:clamp(32px,5vw,52px);margin:8px 0}
 .notfound .lead{margin-inline:auto}
@@ -360,10 +369,6 @@ section{padding:36px 0}
 /* ---------- v2.1：Instagram QR、營業登記、聯名標籤 ---------- */
 .btn-ig{background:#fff;border-color:#fff;color:#18191b}
 .btn-ig:hover{background:var(--sand);border-color:var(--sand)}
-.qr img{width:220px;height:220px}
-/* Instagram QR 使用 EWP 提供的原檔，只以 CSS 裁切顯示中央白色卡片區（QR＋帳號），使大小與 LINE QR 一致、易於掃描 */
-.qr-ig .qr-crop{position:relative;width:220px;height:220px;margin:0 auto;overflow:hidden;background:#fff;border-radius:6px}
-.qr-ig .qr-crop img{position:absolute;max-width:none;width:124.4%;height:auto;left:-12.2%;top:-38.95%;padding:0;margin:0;background:transparent}
 .biz-dl{display:grid;grid-template-columns:auto 1fr;gap:6px 20px;margin:0;font-size:15px;max-width:640px}
 .biz-dl div{display:contents}
 .biz-dl dt{color:var(--muted)}

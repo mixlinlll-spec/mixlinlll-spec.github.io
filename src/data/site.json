@@ -23,25 +23,30 @@
       "label": "LINE 官方帳號",
       "url": "https://lin.ee/WIUCkWP",
       "qr_image": "/assets/contact/line-qr.jpg",
-      "verified": "2026-10-22：由 EWP 提供之 QR 圖檔解碼，內容與 url 一致"
+      "verified": "2026-10-22：由 EWP 提供之 QR 圖檔解碼，內容與 url 一致（2026-10-23 再次解碼確認）"
     },
     "shopee": {
       "enabled": true,
       "label": "蝦皮賣場",
       "url": "https://shopee.tw/mixlin",
+      "qr_image": "/assets/contact/shopee-qr.webp",
+      "verified": "2026-10-23：由 EWP 提供之 QR 圖檔解碼為 https://shopee.tw/mixlin，與 url 一致",
       "shop_id": null,
       "_shop_id_note": "必須由 EWP 於蝦皮賣家中心核實後填入；匯出檔中的 4053258 未經核實，不得直接採用。"
     },
     "email": {
       "enabled": true,
-      "value": "mixlin.lll@gmail.com"
+      "value": "mixlin.lll@gmail.com",
+      "image": "/assets/contact/email-card.webp",
+      "subject": "EWP 官網詢問"
     },
     "instagram": {
       "enabled": true,
-      "label": "Instagram｜靈雀電池",
-      "url": "https://www.instagram.com/spiritsparrow.battery/",
-      "qr_image": "/assets/contact/instagram-qr.jpg",
-      "verified": "2026-10-22：由 EWP 提供之 QR 圖檔解碼為 instagram.com/spiritsparrow.battery，與 url 一致（暫用靈雀電池帳號，待 EWP 主帳號確認後替換）"
+      "label": "Instagram @ewp.fpvlab",
+      "url": "https://www.instagram.com/ewp.fpvlab/",
+      "qr_image": "/assets/contact/instagram-ewp-fpvlab-qr.webp",
+      "verified": "2026-10-23：由 EWP 提供之 QR 圖檔解碼為 instagram.com/ewp.fpvlab（附 utm 追蹤參數），與 url 一致；EWP 主帳號，取代原暫用的靈雀電池帳號",
+      "handle": "ewp.fpvlab"
     },
     "facebook": {
       "enabled": false,
