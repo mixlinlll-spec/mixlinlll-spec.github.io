@@ -4,6 +4,7 @@
 //   - 修改與紀錄在同一個 batch（D1 交易）內完成；op_id 唯一，重複送出不會重複扣庫存
 
 export const KINDS = {
+  transfer: '移轉',
   receive: '入庫',
   issue: '出庫／扣庫',
   set: '修改為',
@@ -29,7 +30,7 @@ export function stockAlert(row) {
 }
 
 const SELECT_SKU = `
-  SELECT s.sku, s.product_id, s.variant_name, s.position, s.shopee_item_id, s.shopee_variation_id, s.site_availability,
+  SELECT s.sku, s.product_id, s.variant_ref, s.active, p.active AS product_active, s.variant_name, s.position, s.shopee_item_id, s.shopee_variation_id, s.site_availability,
          s.stock_on_hand, s.stock_reserved, (s.stock_on_hand - s.stock_reserved) AS available, s.version,
          s.snapshot_qty, s.snapshot_at, s.counted_at, s.counted_by, s.updated_at,
          p.name AS product_name, p.brand, p.slug, p.availability AS product_availability, p.published
@@ -40,21 +41,31 @@ function decorate(row) {
   return { ...row, alert: stockAlert(row) };
 }
 
-export async function listSkus(db, { q = '', filter = 'all', limit = 500 } = {}) {
-  const where = ['s.active = 1', 'p.active = 1'];
+export const PAGE_SIZE = 100;
+
+// 搜尋與篩選都在資料庫完成（涵蓋全部規格），再分頁回傳：{ items, total, offset, next_offset }
+export async function listSkus(db, { q = '', filter = 'all', offset = 0, limit = PAGE_SIZE, product = '' } = {}) {
+  const where = [];
   const binds = [];
+  if (filter === 'inactive') where.push('(s.active = 0 OR p.active = 0)', '(s.stock_on_hand > 0 OR s.stock_reserved > 0)');
+  else where.push('s.active = 1', 'p.active = 1');
+  if (product) { where.push('s.product_id = ?'); binds.push(String(product)); }
   const words = String(q).trim().toLowerCase().split(/\s+/).filter(Boolean).slice(0, 5);
   for (const w of words) {
-    where.push(`(lower(p.name) LIKE ? OR lower(coalesce(s.variant_name,'')) LIKE ? OR lower(s.sku) LIKE ? OR lower(coalesce(p.brand,'')) LIKE ? OR p.id LIKE ? OR coalesce(s.shopee_item_id,'') LIKE ?)`);
-    const like = `%${w.replace(/[%_]/g, m => '\\' + m)}%`;
+    where.push(`(lower(p.name) LIKE ? ESCAPE '\\' OR lower(coalesce(s.variant_name,'')) LIKE ? ESCAPE '\\' OR lower(s.sku) LIKE ? ESCAPE '\\' OR lower(coalesce(p.brand,'')) LIKE ? ESCAPE '\\' OR p.id LIKE ? ESCAPE '\\' OR coalesce(s.shopee_item_id,'') LIKE ? ESCAPE '\\')`);
+    const like = `%${w.replace(/[\\%_]/g, m => '\\' + m)}%`;
     binds.push(like, like, like, like, like, like);
   }
   if (filter === 'uncounted') where.push('s.counted_at IS NULL');
   if (filter === 'zero') where.push('s.counted_at IS NOT NULL AND (s.stock_on_hand - s.stock_reserved) <= 0');
   if (filter === 'alert') where.push(`s.counted_at IS NOT NULL AND (s.stock_on_hand - s.stock_reserved) <= 0 AND coalesce(s.site_availability, p.availability) = 'in_stock'`);
-  const sql = `${SELECT_SKU} WHERE ${where.join(' AND ')} ORDER BY p.name, s.position LIMIT ?`;
-  const { results } = await db.prepare(sql.replace(/LIKE \?/g, "LIKE ? ESCAPE '\\'")).bind(...binds, Math.min(Number(limit) || 500, 2000)).all();
-  return results.map(decorate);
+  const lim = Math.max(1, Math.min(Number(limit) || PAGE_SIZE, 200));
+  const off = Math.max(0, Math.floor(Number(offset) || 0));
+  const cond = where.join(' AND ');
+  const total = (await db.prepare(`SELECT count(*) AS n FROM skus s JOIN products p ON p.id = s.product_id WHERE ${cond}`).bind(...binds).first()).n;
+  const { results } = await db.prepare(`${SELECT_SKU} WHERE ${cond} ORDER BY p.name, s.product_id, s.position, s.sku LIMIT ? OFFSET ?`).bind(...binds, lim, off).all();
+  const items = results.map(decorate);
+  return { items, total, offset: off, next_offset: off + items.length < total ? off + items.length : null };
 }
 
 export async function getSku(db, sku) {
@@ -70,7 +81,8 @@ export async function stats(db) {
   return db.prepare(`SELECT count(*) AS skus,
       sum(CASE WHEN s.counted_at IS NULL THEN 1 ELSE 0 END) AS uncounted,
       sum(CASE WHEN s.counted_at IS NOT NULL AND (s.stock_on_hand - s.stock_reserved) <= 0 AND coalesce(s.site_availability, p.availability) = 'in_stock' THEN 1 ELSE 0 END) AS alerts
-    FROM skus s JOIN products p ON p.id = s.product_id WHERE s.active = 1 AND p.active = 1`).first();
+    FROM skus s JOIN products p ON p.id = s.product_id WHERE s.active = 1 AND p.active = 1`).first()
+    .then(async r => ({ ...r, inactive_with_stock: (await db.prepare('SELECT count(*) AS n FROM skus s JOIN products p ON p.id = s.product_id WHERE (s.active = 0 OR p.active = 0) AND (s.stock_on_hand > 0 OR s.stock_reserved > 0)').first()).n }));
 }
 
 function parseQty(v) {
@@ -82,7 +94,7 @@ function parseQty(v) {
 // 執行一次庫存操作。input：{ kind, qty, reason, expected_version, op_id }
 export async function adjust(db, sku, input, actor) {
   const kind = input?.kind;
-  if (!KINDS[kind]) throw new InventoryError('未知的操作');
+  if (!KINDS[kind] || kind === 'transfer') throw new InventoryError('未知的操作');
   const qty = parseQty(input.qty);
   const reason = String(input.reason || '').trim().slice(0, 200);
   if (!reason) throw new InventoryError('請填寫原因');
@@ -96,6 +108,7 @@ export async function adjust(db, sku, input, actor) {
 
   const current = await getSku(db, sku);
   if (!current) throw new InventoryError('找不到這個 SKU', 404);
+  if ((!current.active || !current.product_active) && kind !== 'issue') throw new InventoryError('此規格已停用，只能移轉到其他規格或出庫');
   const ts = nowIso();
   const needsVersion = kind === 'set' || kind === 'count';
   if (needsVersion && !Number.isInteger(Number(input.expected_version))) throw new InventoryError('缺少版本號（請重新整理頁面）');
@@ -106,7 +119,7 @@ export async function adjust(db, sku, input, actor) {
       WHERE sku = ? AND active = 1`).bind(qty, opId, ts, sku);
   } else if (kind === 'issue') {
     update = db.prepare(`UPDATE skus SET prev_on_hand = stock_on_hand, stock_on_hand = stock_on_hand - ?, version = version + 1, last_op = ?, updated_at = ?
-      WHERE sku = ? AND active = 1 AND stock_on_hand - ? >= stock_reserved`).bind(qty, opId, ts, sku, qty);
+      WHERE sku = ? AND stock_on_hand - ? >= stock_reserved`).bind(qty, opId, ts, sku, qty); // 已停用的規格也可以出庫（報廢、清掉剩餘）
   } else {
     const counted = kind === 'count';
     update = db.prepare(`UPDATE skus SET prev_on_hand = stock_on_hand, stock_on_hand = ?, version = version + 1, last_op = ?, updated_at = ?
@@ -139,4 +152,54 @@ export async function adjust(db, sku, input, actor) {
   }
   const entry = await db.prepare('SELECT * FROM inventory_ledger WHERE op_id = ?').bind(opId).first();
   return { entry, sku: await getSku(db, sku) };
+}
+
+// 移轉：把 A 規格的庫存移到 B 規格（同一件商品；用在規格被刪除、舊 SKU 需要轉到新規格時）
+// 兩邊的數量與兩筆紀錄在同一個交易內完成；A 不可扣到低於已保留，B 必須是使用中的規格
+export async function transfer(db, fromSku, input, actor) {
+  const qty = parseQty(input?.qty);
+  if (qty === 0) throw new InventoryError('數量必須大於 0');
+  const reason = String(input?.reason || '').trim().slice(0, 200);
+  if (!reason) throw new InventoryError('請填寫原因');
+  const opId = String(input?.op_id || '').trim();
+  if (!/^[A-Za-z0-9-]{8,60}$/.test(opId)) throw new InventoryError('缺少操作編號（請重新整理頁面）');
+  const toSku = String(input?.to_sku || '');
+  if (toSku === fromSku) throw new InventoryError('不能移轉到同一個規格');
+  const dup = await db.prepare('SELECT * FROM inventory_ledger WHERE op_id = ?').bind(opId + '-out').first();
+  if (dup) return { duplicate: true, sku: await getSku(db, fromSku), to: await getSku(db, toSku) };
+  const [a, b] = [await getSku(db, fromSku), await getSku(db, toSku)];
+  if (!a || !b) throw new InventoryError('找不到規格', 404);
+  if (a.product_id !== b.product_id) throw new InventoryError('只能在同一件商品的規格之間移轉');
+  if (!b.active) throw new InventoryError('目標規格已停用');
+  const ts = new Date().toISOString();
+  const outOp = opId + '-out', inOp = opId + '-in';
+  const stmts = [
+    db.prepare(`UPDATE skus SET prev_on_hand = stock_on_hand, stock_on_hand = stock_on_hand - ?, version = version + 1, last_op = ?, updated_at = ?
+      WHERE sku = ? AND stock_on_hand - ? >= stock_reserved`).bind(qty, outOp, ts, fromSku, qty),
+    db.prepare(`UPDATE skus SET prev_on_hand = stock_on_hand, stock_on_hand = stock_on_hand + ?, version = version + 1, last_op = ?, updated_at = ?
+      WHERE sku = ? AND active = 1 AND EXISTS (SELECT 1 FROM skus WHERE sku = ? AND last_op = ?)`).bind(qty, inOp, ts, toSku, fromSku, outOp),
+    db.prepare(`INSERT INTO inventory_ledger (op_id, sku, kind, before_on_hand, after_on_hand, delta_on_hand, reason, actor, created_at)
+      SELECT ?, sku, 'transfer_out', prev_on_hand, stock_on_hand, stock_on_hand - prev_on_hand, ?, ?, ? FROM skus WHERE sku = ? AND last_op = ?`).bind(outOp, `${reason}（移到 ${toSku}）`, actor, ts, fromSku, outOp),
+    db.prepare(`INSERT INTO inventory_ledger (op_id, sku, kind, before_on_hand, after_on_hand, delta_on_hand, reason, actor, created_at)
+      SELECT ?, sku, 'transfer_in', prev_on_hand, stock_on_hand, stock_on_hand - prev_on_hand, ?, ?, ? FROM skus WHERE sku = ? AND last_op = ?`).bind(inOp, `${reason}（來自 ${fromSku}）`, actor, ts, toSku, inOp),
+  ];
+  let results;
+  try { results = await db.batch(stmts); }
+  catch (e) {
+    if (/UNIQUE/i.test(String(e.message))) return { duplicate: true, sku: await getSku(db, fromSku), to: await getSku(db, toSku) };
+    if (/CHECK/i.test(String(e.message))) throw new InventoryError('庫存不可為負數，也不可少於已保留數量');
+    throw e;
+  }
+  if (!(results[0]?.meta?.changes) || !(results[1]?.meta?.changes)) {
+    // 兩邊必須同時成功；只有一邊成功時整筆回復（理論上不會發生：第二個 UPDATE 依賴第一個）
+    if (results[0]?.meta?.changes && !results[1]?.meta?.changes) {
+      await db.batch([
+        db.prepare('UPDATE skus SET stock_on_hand = stock_on_hand + ?, version = version + 1, last_op = NULL WHERE sku = ? AND last_op = ?').bind(qty, fromSku, outOp),
+        db.prepare('DELETE FROM inventory_ledger WHERE op_id = ?').bind(outOp),
+      ]);
+    }
+    const latest = await getSku(db, fromSku);
+    throw new InventoryError(`庫存不足：可移轉 ${latest.stock_on_hand - latest.stock_reserved}，要移 ${qty}`, 409, { sku: latest });
+  }
+  return { sku: await getSku(db, fromSku), to: await getSku(db, toSku) };
 }

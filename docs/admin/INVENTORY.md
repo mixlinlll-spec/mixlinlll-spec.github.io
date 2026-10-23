@@ -20,6 +20,8 @@
 | 出庫／扣庫 | 蝦皮訂單出貨、官網／LINE 訂單出貨、組裝使用、損壞報廢、盤虧… |
 | 修改為 | 直接改成某個數量（手動修正） |
 | 異動紀錄 | 每次修改記錄：操作者 Email、時間、修改前→後、增減、原因 |
+| 完整清單 | 每次載入 100 個規格，「載入更多」可看完全部；搜尋與篩選在資料庫完成，涵蓋全部規格 |
+| 已停用（仍有庫存） | 規格從商品資料刪除後，SKU 停用但庫存與紀錄保留；可「移轉」到同商品的其他規格或「出庫」 |
 | 歸零提醒 | 已盤點的規格可售為 0、但官網顯示「現貨」→ 黃色警告並附「開啟商品後台」連結，提醒改成缺貨或預購；官網是「預購／接單製作」時只顯示提示（可繼續接單） |
 | 回到商品後台 | 每件商品旁有「商品後台 ↗」連結，直接開啟 Pages CMS 的該商品 |
 
@@ -45,31 +47,35 @@ GitHub 商品資料（Pages CMS 修改）──► 部署流程 inventory.yml �
 庫存後台（你操作）──────────────────────────► D1：庫存數量、異動紀錄
 ```
 
-- `main` 的商品資料有變動時自動同步（新增規格會出現、刪除的規格會停用但保留紀錄）。
-- 也可在 GitHub → Actions →「庫存後台（Cloudflare Worker＋D1）」→ Run workflow 手動同步。
+- 同步時機：`main` 的商品資料更新，或商品後台的「校正／批次修改／還原」流程**完成之後**（同步的是校正完成的資料）。
+- 同步前檢查：商品資料通過驗證、沒有尚未校正的後台儲存、每個規格都有固定身分、商品數沒有驟減一半以上；任一項不符就不同步。
+- 同步只更新名稱、規格、官網供貨狀態；**不寫入庫存數字與紀錄**，同步失敗時庫存與紀錄完全不變（已測試）。
+- 規格身分：有蝦皮規格 ID 用它，沒有的用商品後台產生的固定識別碼 `key`。改名、排序不影響；刪除的規格停用（庫存保留）、加回時重新啟用原 SKU。
 
 ## 四、第一次設定（只需做一次）
 
-1. **Cloudflare 帳號**：到 https://dash.cloudflare.com 註冊（免費方案即可）。
-2. **建立 API Token**：My Profile → API Tokens → Create Token → Create Custom Token：
-   - Account → **Workers Scripts：Edit**
-   - Account → **D1：Edit**
-   - Account → **Account Settings：Read**
-   - Account Resources：只選你的帳號
-3. **複製 Account ID**：Cloudflare 後台首頁右側（或 Workers & Pages 頁面）的 Account ID。
-4. **GitHub Secrets**：repo → Settings → Secrets and variables → Actions → New repository secret：
-   - `CLOUDFLARE_API_TOKEN`＝步驟 2 的 Token
-   - `CLOUDFLARE_ACCOUNT_ID`＝步驟 3 的 ID
-   （Secrets 加密保存，不會出現在公開 repo 或紀錄中。）
-5. **部署**：GitHub → Actions →「庫存後台（Cloudflare Worker＋D1）」→ Run workflow（選本 PR 的分支或 main）。完成後摘要頁顯示入口網址。
-6. **啟用登入保護**：Cloudflare 後台 → Workers & Pages → **ewp-inventory** → Settings → Domains & Routes → workers.dev 那一列 → **Enable Cloudflare Access**。
-   - 在「Manage Cloudflare Access」加入可以登入的 Email（你自己、需要的員工）。
-   - 視窗會顯示 `POLICY_AUD` 與 `TEAM_DOMAIN`：到 ewp-inventory → Settings → Variables and Secrets 新增兩個變數
-     `ACCESS_AUD`＝POLICY_AUD、`ACCESS_TEAM_DOMAIN`＝TEAM_DOMAIN（例如 `https://xxx.cloudflareaccess.com`）。
-   - Cloudflare Zero Trust 第一次使用時需要選一個團隊名稱並選免費方案（50 人以內免費；Cloudflare 可能要求綁定付款方式，免費方案不會扣款）。
-7. 打開入口網址 → 輸入 Email → 收驗證碼 → 登入 → 開始盤點。
+**順序：先合併商品後台 PR #4，再合併本 PR #7。**（PR #7 需要 PR #4 為規格加上的固定識別碼；順序反了，商品同步會安全地停下、不改任何資料。）
+部署只會由 `main`（審查合併後的版本）執行；其他分支拿不到 Cloudflare 金鑰。
 
-> 步驟 6 的兩個值不是密碼，也可以交給 Claude 設成 GitHub Variables（`INVENTORY_ACCESS_AUD`、`INVENTORY_ACCESS_TEAM_DOMAIN`）。
+1. **Cloudflare 帳號**：到 https://dash.cloudflare.com 註冊（免費方案即可），並打開一次 **Workers & Pages** 頁面，讓 Cloudflare 建立你的 `workers.dev` 子網域。
+2. **建立 API Token**（My Profile → API Tokens → Create Token → **Create Custom Token**），只給這個帳號、以下權限：
+   - Account → **Workers Scripts：Edit**（部署 Worker）
+   - Account → **D1：Edit**（建立資料庫、套用結構、同步商品清單）
+   - Account → **Account Settings：Read**（部署工具讀取帳號資訊）
+   - Account Resources：**Include → 你的帳號**；不需要任何 Zone 權限、不需要 Access／Zero Trust 權限
+   - 建議設定到期日（例如一年），到期前更新 GitHub 裡的值即可
+   > 如果第一次部署出現權限不足的訊息，改用 Cloudflare 官方的「Edit Cloudflare Workers」範本再加上 D1：Edit（範本權限較多）。
+3. **GitHub 受保護環境**：repo → Settings → **Environments** → New environment，名稱 **`inventory-production`**：
+   - Deployment branches and tags → **Selected branches and tags** → 新增規則 **`main`**
+   - 在這個環境裡新增兩個 **Environment secrets**：`CLOUDFLARE_API_TOKEN`（步驟 2 的 Token）、`CLOUDFLARE_ACCOUNT_ID`（Cloudflare 後台首頁右側的 Account ID）
+   - 請放在環境裡、**不要**放在 repo 層級的 Secrets，這樣只有 main 能用。**Token 不要貼到聊天或任何訊息裡。**
+4. **部署**：PR #4、PR #7 依序合併到 main 後會自動部署。若合併時還沒設定好步驟 3，設定完成後到 GitHub → Actions →「庫存後台（Cloudflare Worker＋D1）」→ **Run workflow**（分支選 main）。
+   （這個按鈕要等本 PR 合併到 main 後才會出現；GitHub 規定手動執行的流程必須先存在預設分支。）完成後摘要頁顯示入口網址。
+5. **啟用登入保護**：Cloudflare 後台 → Workers & Pages → **ewp-inventory** → Settings → Domains & Routes → workers.dev 那一列 → **Enable Cloudflare Access**。
+   - 「Manage Cloudflare Access」加入可以登入的 Email（你自己、需要的員工）。
+   - 視窗顯示的 `POLICY_AUD` 與 `TEAM_DOMAIN`：到 ewp-inventory → Settings → Variables and Secrets 新增 `ACCESS_AUD`、`ACCESS_TEAM_DOMAIN`（`https://xxx.cloudflareaccess.com`）。這兩個不是密碼。
+   - 第一次使用 Cloudflare Zero Trust 需要選團隊名稱與免費方案（50 人以內免費；可能要求綁定付款方式，免費方案不扣款）。
+6. 打開入口網址 → 輸入 Email → 收驗證碼 → 登入 → 用「尚未盤點」篩選開始盤點。
 
 ## 五、本機預覽與測試
 

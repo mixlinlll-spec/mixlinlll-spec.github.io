@@ -7,19 +7,24 @@ import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { createD1 } from './d1-shim.mjs';
+import { makeFixture as makeFixtureAt } from './fixture.mjs';
 import worker from '../src/index.js';
 import { resetJwksCache } from '../src/auth.js';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, '..', '..');
 const MIGRATIONS = fs.readdirSync(path.join(HERE, '..', 'migrations')).sort().map(f => path.join(HERE, '..', 'migrations', f));
-const PRODUCTS = fs.readdirSync(path.join(ROOT, 'src/data/products')).map(f => JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/products', f), 'utf8')));
+const makeFixture = mutate => makeFixtureAt(ROOT, mutate);
+const FIXTURE = makeFixture();
+const readP = (dir, id) => JSON.parse(fs.readFileSync(path.join(dir, `${id}.json`), 'utf8'));
+const writeP = (dir, p) => fs.writeFileSync(path.join(dir, `${p.id}.json`), JSON.stringify(p, null, 2) + '\n');
+const PRODUCTS = fs.readdirSync(FIXTURE).map(f => JSON.parse(fs.readFileSync(path.join(FIXTURE, f), 'utf8')));
 const ACTIVE = PRODUCTS.filter(p => p.review?.status !== 'rejected');
 const EXPECTED_SKUS = ACTIVE.reduce((a, p) => a + Math.max(1, p.variants?.length || 0), 0);
 
-function catalogSql(extra = []) {
+function catalogSql(extra = [], dir = FIXTURE, env = {}) {
   const out = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'inv-')), 'catalog.sql');
-  execFileSync('node', ['scripts/inventory-catalog-sql.mjs', '--out', out, ...extra], { cwd: ROOT, stdio: 'pipe' });
+  execFileSync('node', ['scripts/inventory-catalog-sql.mjs', '--out', out, '--products-dir', dir, ...extra], { cwd: ROOT, stdio: 'pipe', env: { ...process.env, ...env } });
   return fs.readFileSync(out, 'utf8');
 }
 const hasSnapshotRev = (() => { try { execFileSync('git', ['cat-file', '-e', '3dc1916^{commit}'], { cwd: ROOT, stdio: 'pipe' }); return true; } catch { return false; } })();
@@ -130,7 +135,7 @@ describe('庫存操作', () => {
     assert.equal(byItem.length, p.variants.length, '每個規格一列');
     const v = p.variants[1];
     assert.ok((await call('/api/skus?q=' + encodeURIComponent(v.name))).body.items.some(x => x.variant_name === v.name));
-    assert.equal((await call('/api/skus?filter=uncounted')).body.items.length, Math.min(EXPECTED_SKUS, 500));
+    assert.equal((await call('/api/skus?filter=uncounted')).body.total, EXPECTED_SKUS);
     const pct = (await call('/api/skus?q=%25')).body.items;
     assert.ok(pct.every(x => (x.product_name + (x.variant_name || '') + x.sku + (x.brand || '')).includes('%')), '% 只比對字面上的 %，不是萬用字元');
   });
@@ -235,5 +240,185 @@ describe('庫存操作', () => {
     assert.match(r.headers.get('Content-Security-Policy'), /frame-ancestors 'none'/);
     assert.equal(r.headers.get('X-Robots-Tag'), 'noindex, nofollow');
     assert.equal(r.headers.get('Cache-Control'), 'no-store');
+  });
+});
+
+describe('完整清單：分頁涵蓋全部規格，搜尋與篩選不限前幾筆', () => {
+  test(`逐頁載入可以看到全部 ${EXPECTED_SKUS} 個規格、沒有重複`, async () => {
+    const { call } = setup();
+    const seen = new Set(); let offset = 0; let pages = 0; let total;
+    while (offset != null) {
+      const r = (await call(`/api/skus?offset=${offset}`)).body;
+      total = r.total; pages++;
+      for (const it of r.items) seen.add(it.sku);
+      assert.ok(r.items.length <= 100);
+      offset = r.next_offset;
+    }
+    assert.equal(total, EXPECTED_SKUS); assert.equal(seen.size, EXPECTED_SKUS); assert.ok(pages >= 9, `${pages} 頁`);
+  });
+  test('搜尋找得到排序在最後面的商品；篩選的總數涵蓋全部資料', async () => {
+    const { call, db } = setup();
+    const last = first(db, 'SELECT s.sku, p.name FROM skus s JOIN products p ON p.id=s.product_id ORDER BY p.name DESC, s.product_id DESC, s.position DESC LIMIT 1');
+    const r = (await call('/api/skus?q=' + encodeURIComponent(last.sku))).body;
+    assert.equal(r.total, 1); assert.equal(r.items[0].sku, last.sku);
+    // 把排序最後面的 3 個規格盤點成 0（官網現貨）→「需注意」要找得到
+    const tail = db.raw.prepare("SELECT s.sku FROM skus s JOIN products p ON p.id=s.product_id WHERE coalesce(s.site_availability,p.availability)='in_stock' ORDER BY p.name DESC LIMIT 3").all().map(x => x.sku);
+    for (const sku of tail) db.raw.exec(`UPDATE skus SET counted_at='2026-10-23T00:00:00Z' WHERE sku='${sku}'`);
+    const alerts = (await call('/api/skus?filter=alert')).body;
+    assert.equal(alerts.total, 3); assert.deepEqual(new Set(alerts.items.map(x => x.sku)), new Set(tail));
+    assert.equal((await call('/api/skus?filter=uncounted')).body.total, EXPECTED_SKUS - 3);
+  });
+});
+
+describe('規格身分穩定：改名、排序、增刪規格，庫存與紀錄不遺失、不轉錯', () => {
+  const KEYED_ID = PRODUCTS.find(p => p.variants?.length >= 2 && p.variants.every(v => !v.shopee_variation_id))?.id;
+  const VID_ID = PRODUCTS.find(p => p.variants?.length >= 3 && p.variants.every(v => v.shopee_variation_id) && p.review?.status !== 'rejected').id;
+  const skuOf = (db, pid, name) => first(db, 'SELECT * FROM skus WHERE product_id=? AND variant_name=?', pid, name);
+  async function counted(env, pid, qtys) {
+    const { db, adjust } = env;
+    const rows = db.raw.prepare('SELECT sku FROM skus WHERE product_id=? ORDER BY position').all(pid);
+    for (const [i, r] of rows.entries()) assert.equal((await adjust(r.sku, { kind: 'count', qty: qtys[i], expected_version: 0 })).status, 200);
+    return rows.map(r => r.sku);
+  }
+  test('沒有蝦皮規格 ID 的規格（用 key）：改名、排序後 SKU 與庫存不變', { skip: !KEYED_ID && '沒有這類商品' }, async () => {
+    const env = setup(); const { db } = env;
+    const p0 = readP(FIXTURE, KEYED_ID);
+    const skus = await counted(env, KEYED_ID, [4, 6]);
+    const dir = makeFixture(d => { const p = readP(d, KEYED_ID); p.variants[0].name += '（改名）'; p.variants.reverse(); writeP(d, p); });
+    db.raw.exec(catalogSql([], dir));
+    const a = skuOf(db, KEYED_ID, p0.variants[0].name + '（改名）'); const b = skuOf(db, KEYED_ID, p0.variants[1].name);
+    assert.equal(a.sku, skus[0]); assert.equal(a.stock_on_hand, 4); assert.equal(a.position, 1);
+    assert.equal(b.sku, skus[1]); assert.equal(b.stock_on_hand, 6); assert.equal(b.position, 0);
+    assert.equal(first(db, 'SELECT count(*) n FROM skus WHERE product_id=?', KEYED_ID).n, 2, '沒有多出新的 SKU');
+  });
+  test('有蝦皮規格 ID 的規格：排序、改名後庫存跟著原規格', async () => {
+    const env = setup(); const { db } = env;
+    const p0 = readP(FIXTURE, VID_ID);
+    const skus = await counted(env, VID_ID, p0.variants.map((_, i) => i + 1));
+    const dir = makeFixture(d => { const p = readP(d, VID_ID); p.variants.reverse(); p.variants[0].name = '改名後'; writeP(d, p); });
+    db.raw.exec(catalogSql([], dir));
+    for (const [i, v] of p0.variants.entries()) {
+      const row = first(db, 'SELECT * FROM skus WHERE sku=?', skus[i]);
+      assert.equal(row.stock_on_hand, i + 1, v.name); assert.equal(row.shopee_variation_id, v.shopee_variation_id);
+    }
+  });
+  test('刪除規格：SKU 停用但庫存與紀錄保留，出現在「已停用」；可移轉到同商品其他規格', async () => {
+    const env = setup(); const { db, call, op } = env;
+    const p0 = readP(FIXTURE, VID_ID);
+    const skus = await counted(env, VID_ID, p0.variants.map(() => 5));
+    const dir = makeFixture(d => { const p = readP(d, VID_ID); p.variants.splice(1, 1); writeP(d, p); });
+    db.raw.exec(catalogSql([], dir));
+    const gone = first(db, 'SELECT * FROM skus WHERE sku=?', skus[1]);
+    assert.equal(gone.active, 0); assert.equal(gone.stock_on_hand, 5);
+    assert.equal(first(db, 'SELECT count(*) n FROM inventory_ledger WHERE sku=?', skus[1]).n, 1);
+    assert.ok((await call('/api/skus?filter=inactive')).body.items.some(x => x.sku === skus[1]));
+    assert.equal((await call('/api/stats')).body.inactive_with_stock, 1);
+    // 已停用的規格不能入庫／盤點，但可以移轉或出庫
+    const rcv = await env.adjust(skus[1], { kind: 'receive', qty: 1 });
+    assert.equal(rcv.status, 400); assert.match(rcv.body.error, /已停用/);
+    const t = await call(`/api/skus/${skus[1]}/transfer`, { method: 'POST', body: JSON.stringify({ to_sku: skus[0], qty: 5, reason: '規格調整', op_id: op() }) });
+    assert.equal(t.status, 200, JSON.stringify(t.body));
+    assert.equal(first(db, 'SELECT stock_on_hand s FROM skus WHERE sku=?', skus[1]).s, 0);
+    assert.equal(first(db, 'SELECT stock_on_hand s FROM skus WHERE sku=?', skus[0]).s, 10);
+    const kinds = db.raw.prepare('SELECT kind, sku, delta_on_hand FROM inventory_ledger WHERE kind LIKE ? ORDER BY id').all('transfer%').map(x => ({ ...x }));
+    assert.deepEqual(kinds, [{ kind: 'transfer_out', sku: skus[1], delta_on_hand: -5 }, { kind: 'transfer_in', sku: skus[0], delta_on_hand: 5 }]);
+    assert.equal((await call('/api/stats')).body.inactive_with_stock, 0);
+    // 移轉超過庫存、跨商品、到已停用規格 → 拒絕，數量不變
+    assert.equal((await call(`/api/skus/${skus[0]}/transfer`, { method: 'POST', body: JSON.stringify({ to_sku: skus[2], qty: 99, reason: 'x', op_id: op() }) })).status, 409);
+    const other = first(db, 'SELECT sku FROM skus WHERE product_id<>? AND active=1 LIMIT 1', VID_ID).sku;
+    assert.equal((await call(`/api/skus/${skus[0]}/transfer`, { method: 'POST', body: JSON.stringify({ to_sku: other, qty: 1, reason: 'x', op_id: op() }) })).status, 400);
+    assert.equal((await call(`/api/skus/${skus[0]}/transfer`, { method: 'POST', body: JSON.stringify({ to_sku: skus[1], qty: 1, reason: 'x', op_id: op() }) })).status, 400);
+    assert.equal(first(db, 'SELECT sum(stock_on_hand) s FROM skus WHERE product_id=?', VID_ID).s, 5 * p0.variants.length);
+  });
+  test('規格被刪後又加回（同一個蝦皮規格 ID）：重新啟用原 SKU，庫存仍在', async () => {
+    const env = setup(); const { db } = env;
+    const p0 = readP(FIXTURE, VID_ID);
+    const skus = await counted(env, VID_ID, p0.variants.map(() => 3));
+    db.raw.exec(catalogSql([], makeFixture(d => { const p = readP(d, VID_ID); p.variants.splice(1, 1); writeP(d, p); })));
+    assert.equal(first(db, 'SELECT active FROM skus WHERE sku=?', skus[1]).active, 0);
+    db.raw.exec(catalogSql());
+    const back = first(db, 'SELECT * FROM skus WHERE sku=?', skus[1]);
+    assert.equal(back.active, 1); assert.equal(back.stock_on_hand, 3);
+  });
+  test('新增規格：新的 SKU、庫存 0、尚未盤點；其他規格不受影響', async () => {
+    const env = setup(); const { db } = env;
+    const p0 = readP(FIXTURE, VID_ID);
+    await counted(env, VID_ID, p0.variants.map(() => 2));
+    db.raw.exec(catalogSql([], makeFixture(d => { const p = readP(d, VID_ID); p.variants.push({ name: '新規格', sku: null, price_twd: 100, availability: 'preorder', key: 'v-0badc0de' }); writeP(d, p); })));
+    const n = skuOf(db, VID_ID, '新規格');
+    assert.equal(n.stock_on_hand, 0); assert.equal(n.counted_at, null); assert.equal(n.variant_ref, 'k:v-0badc0de');
+    assert.equal(first(db, 'SELECT sum(stock_on_hand) s FROM skus WHERE product_id=? AND active=1', VID_ID).s, 2 * p0.variants.length);
+  });
+  test('舊版 SKU（以規格名稱雜湊、沒有身分）會被認領：庫存與紀錄原封不動，不產生重複 SKU', { skip: !KEYED_ID && '沒有這類商品' }, async () => {
+    const db = createD1(MIGRATIONS);
+    const p = readP(FIXTURE, KEYED_ID);
+    const crypto2 = await import('node:crypto');
+    const legacy = `EWP-SP${p.shopee_item_id}-V${crypto2.createHash('sha1').update(p.variants[0].name).digest('hex').slice(0, 8)}`;
+    db.raw.exec(`INSERT INTO products (id, name) VALUES ('${p.id}', 'x');
+      INSERT INTO skus (sku, product_id, variant_name, stock_on_hand, version, counted_at) VALUES ('${legacy}', '${p.id}', 'x', 9, 1, '2026-10-23');
+      INSERT INTO inventory_ledger (op_id, sku, kind, before_on_hand, after_on_hand, delta_on_hand, reason, actor, created_at) VALUES ('legacy-op-1', '${legacy}', 'count', 0, 9, 9, '盤點', 'a@b', '2026-10-23');`);
+    db.raw.exec(catalogSql());
+    const row = first(db, 'SELECT * FROM skus WHERE sku=?', legacy);
+    assert.equal(row.variant_ref, `k:${p.variants[0].key}`); assert.equal(row.active, 1); assert.equal(row.stock_on_hand, 9); assert.equal(row.variant_name, p.variants[0].name);
+    assert.equal(first(db, 'SELECT count(*) n FROM skus WHERE product_id=?', p.id).n, p.variants.length);
+    assert.equal(first(db, 'SELECT count(*) n FROM inventory_ledger WHERE sku=?', legacy).n, 1);
+  });
+});
+
+describe('商品同步的安全檢查：失敗時庫存與紀錄不變', () => {
+  test('同步 SQL 不含任何寫入庫存數字或異動紀錄的語句', () => {
+    const sql = catalogSql(hasSnapshotRev ? ['--snapshot-rev', '3dc1916'] : []);
+    assert.ok(!/stock_on_hand|stock_reserved|inventory_ledger|DELETE\s/i.test(sql));
+    assert.ok(!/BEGIN|COMMIT/i.test(sql), 'D1 不接受交易語句');
+  });
+  test('同步中途失敗：既有庫存與紀錄完全不變', async () => {
+    const env = setup(); const { db, adjust } = env;
+    const sku = first(db, 'SELECT sku FROM skus LIMIT 1').sku;
+    await adjust(sku, { kind: 'count', qty: 12, expected_version: 0 });
+    const before = JSON.stringify([db.raw.prepare('SELECT sku, stock_on_hand, stock_reserved, version, counted_at FROM skus ORDER BY sku').all(), db.raw.prepare('SELECT * FROM inventory_ledger ORDER BY id').all()]);
+    const stmts = catalogSql().split(/;\n/).filter(x => x.trim() && !x.trim().startsWith('--'));
+    stmts.splice(Math.floor(stmts.length / 2), 0, 'INSERT INTO no_such_table VALUES (1)');
+    assert.throws(() => { for (const st of stmts) db.raw.exec(st + ';'); });
+    const after = JSON.stringify([db.raw.prepare('SELECT sku, stock_on_hand, stock_reserved, version, counted_at FROM skus ORDER BY sku').all(), db.raw.prepare('SELECT * FROM inventory_ledger ORDER BY id').all()]);
+    assert.equal(after, before);
+  });
+  test('商品資料未通過驗證 → 不產生同步檔', () => {
+    const dir = makeFixture(d => { const p = readP(d, PRODUCTS[0].id); p.price_twd = 0; p.price_display = 'fixed'; writeP(d, p); });
+    assert.throws(() => catalogSql([], dir), /未通過驗證/);
+  });
+  test('有規格缺少身分（沒有蝦皮規格 ID 也沒有 key）→ 不同步（不再用名稱雜湊）', () => {
+    const dir = makeFixture(d => { const p = readP(d, PRODUCTS.find(x => x.variants?.length).id); p.variants.push({ name: '沒有身分', sku: null, price_twd: null, availability: 'unknown' }); writeP(d, p); });
+    try { catalogSql([], dir); assert.fail('應該失敗'); } catch (e) { assert.match(String(e.stderr), /沒有蝦皮規格 ID 也沒有識別碼 key/); }
+  });
+  test('有尚未校正的商品後台儲存 → 不同步（結束碼 3）', () => {
+    const stub = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'inv-')), 'pending.mjs');
+    fs.writeFileSync(stub, "console.log(process.argv.includes('--pending-count') ? '2' : '');");
+    try { catalogSql(['--require-normalized'], FIXTURE, { EWP_PENDING_SCRIPT: stub }); assert.fail('應該失敗'); }
+    catch (e) { assert.equal(e.status, 3); assert.match(String(e.stderr), /尚未校正/); }
+    fs.writeFileSync(stub, "console.log('0');");
+    assert.ok(catalogSql(['--require-normalized'], FIXTURE, { EWP_PENDING_SCRIPT: stub }).includes('INSERT INTO skus'));
+  });
+});
+
+describe('部署流程（.github/workflows/inventory.yml）', () => {
+  const yml = fs.readFileSync(path.join(ROOT, '.github/workflows/inventory.yml'), 'utf8');
+  const deploy = yml.slice(yml.indexOf('  deploy:'));
+  test('只有 main 可以部署；金鑰放在只限 main 的 Environment', () => {
+    assert.match(deploy, /environment: inventory-production/);
+    assert.match(deploy, /github\.event_name == 'push' && github\.ref == 'refs\/heads\/main'/);
+    assert.match(deploy, /github\.event_name == 'workflow_dispatch' && github\.ref == 'refs\/heads\/main'/);
+    assert.match(deploy, /workflow_run\.head_branch == 'main'/);
+    assert.match(deploy, /ref: main/);
+    assert.ok(!/secrets\./.test(yml.slice(0, yml.indexOf('  deploy:'))), '測試工作不使用任何金鑰');
+  });
+  test('同步前檢查：資料已校正（--require-normalized）、驗證通過、商品數未驟減；商品後台流程完成後再同步', () => {
+    assert.match(deploy, /--require-normalized/);
+    assert.match(deploy, /CODE" = "3"/);
+    assert.match(deploy, /驟減/);
+    assert.match(yml, /workflow_run:[\s\S]*商品後台儲存後校正與發布/);
+  });
+  test('部署紀錄不輸出庫存數字：同步 SQL 不印出、用完即刪', () => {
+    assert.match(deploy, /--file "\$RUNNER_TEMP\/catalog\.sql" > \/dev\/null/);
+    assert.match(deploy, /rm -f "\$RUNNER_TEMP\/catalog\.sql"/);
   });
 });

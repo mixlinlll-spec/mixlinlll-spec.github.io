@@ -7,10 +7,3 @@ Thumbs.db
 dist/
 lighthouse-reports/
 media-inbox/
-
-# 庫存後台本機狀態（wrangler dev 的本機 D1）
-inventory/.wrangler/
-.admin-result.json
-.cms-report.json
-.cms-quarantine/
-.cms-quarantine.md

@@ -1,6 +1,9 @@
 name: 庫存後台（Cloudflare Worker＋D1）
-# test：單元／併發／登入驗證測試、手機與電腦版網頁測試、在 Cloudflare 執行環境（workerd＋本機 D1）實跑
-# deploy：main 更新或手動執行時部署 Worker、套用 D1 結構、同步商品清單（只同步名稱／規格／供貨狀態，不碰庫存數字）
+# test：單元／併發／登入驗證／同步安全測試、手機與電腦版網頁測試、在 Cloudflare 執行環境（workerd＋本機 D1）實跑
+# deploy：只在 main（已審查合併的版本）執行；Cloudflare 金鑰放在 GitHub Environment「inventory-production」，
+#         該環境只允許 main 使用，其他分支即使改了這個檔案也拿不到金鑰。
+#         部署：建立／套用 D1 結構 → 同步商品清單（只同步名稱／規格／官網供貨狀態，不碰庫存數字）→ 部署 Worker
+# 商品同步的時機：main 的商品資料更新、或商品後台的校正／批次／還原流程完成之後（確保同步的是校正完成的資料）
 # 庫存數字只存在 Cloudflare D1：不寫入 GitHub、不出現在 Actions 輸入參數或執行紀錄。
 on:
   push:
@@ -8,17 +11,23 @@ on:
     paths: ['inventory/**', 'scripts/inventory-catalog-sql.mjs', 'src/data/products/**', '.github/workflows/inventory.yml']
   pull_request:
     paths: ['inventory/**', 'scripts/inventory-catalog-sql.mjs', '.github/workflows/inventory.yml']
+  workflow_run:
+    workflows: ['商品後台儲存後校正與發布', '後台｜批次修改', '後台｜還原商品']
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: inventory-${{ github.ref }}
+  # main 的部署／同步排成一列（排隊中的舊執行被新的取代沒關係：每次都同步 main 最新資料）；其他分支各自測試
+  group: ${{ (github.event_name == 'workflow_run' || github.ref == 'refs/heads/main') && 'inventory-deploy' || format('inventory-{0}', github.ref) }}
   cancel-in-progress: false
 env:
   WRANGLER_VERSION: 4.20.0
   PLAYWRIGHT_VERSION: 1.56.0
 jobs:
   test:
+    if: github.event_name != 'workflow_run'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -49,16 +58,23 @@ jobs:
           set -e
           W="npx --prefix .. wrangler"
           $W d1 migrations apply ewp-inventory --local > /dev/null
-          node ../scripts/inventory-catalog-sql.mjs --out "$RUNNER_TEMP/catalog.sql"
+          FIX=$(node --input-type=module -e "import('../inventory/test/fixture.mjs').then(m => process.stdout.write(m.makeFixture('..')))")
+          node ../scripts/inventory-catalog-sql.mjs --out "$RUNNER_TEMP/catalog.sql" --products-dir "$FIX"
           $W d1 execute ewp-inventory --local --file "$RUNNER_TEMP/catalog.sql" > /dev/null
           $W dev --port 8787 --ip 127.0.0.1 --var DEV_AUTH_EMAIL:ci@ewp.test > "$RUNNER_TEMP/wrangler.log" 2>&1 &
           for i in $(seq 1 90); do curl -sf http://localhost:8787/api/me > /dev/null && break; sleep 1; done
           node ../inventory/test/workerd-smoke.mjs http://localhost:8787 || { tail -50 "$RUNNER_TEMP/wrangler.log"; exit 1; }
   deploy:
     needs: test
-    if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'workflow_dispatch'
+    # 只部署 main：push 到 main、在 main 手動執行、或 main 上的商品後台流程成功完成後
+    if: >-
+      always() && (needs.test.result == 'success' || needs.test.result == 'skipped') && (
+        (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+        (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') ||
+        (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main'))
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    environment: inventory-production
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -67,12 +83,13 @@ jobs:
         id: cfg
         run: |
           if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
-            echo "::notice title=庫存後台::尚未設定 GitHub Secrets（CLOUDFLARE_API_TOKEN、CLOUDFLARE_ACCOUNT_ID），略過部署。設定方式見 docs/admin/INVENTORY.md"
+            echo "::notice title=庫存後台::尚未在 GitHub Environment「inventory-production」設定 CLOUDFLARE_API_TOKEN、CLOUDFLARE_ACCOUNT_ID，略過部署（設定方式見 docs/admin/INVENTORY.md）"
             echo "ready=false" >> "$GITHUB_OUTPUT"
           else echo "ready=true" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/checkout@v4
         if: steps.cfg.outputs.ready == 'true'
         with:
+          ref: main          # 一律用 main 的最新版本（workflow_run 時也同步最新、已校正的資料）
           fetch-depth: 0
       - uses: actions/setup-node@v4
         if: steps.cfg.outputs.ready == 'true'
@@ -94,15 +111,30 @@ jobs:
           sed -i "s/00000000-0000-0000-0000-000000000000/$ID/" wrangler.toml
           $W d1 migrations apply ewp-inventory --remote > /dev/null
           echo "D1 結構已套用"
-      - name: 同步商品清單（不含庫存數字；輸出不顯示數量）
+      - name: 同步商品清單（只在資料已校正、驗證通過時；不含庫存數字，輸出不顯示數量）
         if: steps.cfg.outputs.ready == 'true'
         working-directory: inventory
         run: |
+          set +e
+          node ../scripts/inventory-catalog-sql.mjs --out "$RUNNER_TEMP/catalog.sql" --snapshot-rev 3dc1916 --require-normalized
+          CODE=$?
           set -e
-          node ../scripts/inventory-catalog-sql.mjs --out "$RUNNER_TEMP/catalog.sql" --snapshot-rev 3dc1916
-          npx --prefix .. wrangler d1 execute ewp-inventory --remote --file "$RUNNER_TEMP/catalog.sql" > /dev/null
-          rm -f "$RUNNER_TEMP/catalog.sql"
-          echo "商品清單已同步"
+          if [ "$CODE" = "3" ]; then
+            echo "::notice title=商品同步::有商品後台儲存尚未校正，本次不同步；校正流程完成後會自動再執行"
+            exit 0
+          elif [ "$CODE" != "0" ]; then
+            echo "::error title=商品同步::商品資料未通過檢查，未同步（D1 的庫存與紀錄不受影響）"; exit 1
+          fi
+          W="npx --prefix .. wrangler"
+          # 防呆：商品數比資料庫目前少一半以上時不同步（避免異常資料大量停用規格；停用也不會刪除庫存）
+          CUR=$($W d1 execute ewp-inventory --remote --json --command "SELECT count(*) AS n FROM products WHERE active = 1" | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{try{process.stdout.write(String(JSON.parse(s)[0].results[0].n))}catch{process.stdout.write('0')}})")
+          NEW=$(cat "$RUNNER_TEMP/catalog.sql.count")
+          if [ "$CUR" -gt 0 ] && [ $((NEW * 2)) -lt "$CUR" ]; then
+            echo "::error title=商品同步::商品數由 $CUR 件驟減為 $NEW 件，已停止同步，請確認商品資料"; exit 1
+          fi
+          $W d1 execute ewp-inventory --remote --file "$RUNNER_TEMP/catalog.sql" > /dev/null
+          rm -f "$RUNNER_TEMP/catalog.sql" "$RUNNER_TEMP/catalog.sql.count"
+          echo "商品清單已同步（$NEW 件）"
       - name: 部署 Worker
         if: steps.cfg.outputs.ready == 'true'
         working-directory: inventory

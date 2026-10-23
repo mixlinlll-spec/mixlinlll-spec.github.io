@@ -9,7 +9,7 @@ export function pageHtml({ pagesCmsBase = '' } = {}) {
 <title>EWP 庫存管理</title>
 <style>
 :root{--red:#c8102e;--ink:#16181c;--muted:#5f6670;--line:#e3e5e8;--bg:#f6f7f8;--card:#fff;--ok:#1f7a3a;--warn:#b54708;--warnbg:#fff4e5;--info:#175cd3;--infobg:#eef4ff}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}[hidden]{display:none!important}
 body{margin:0;font:16px/1.5 system-ui,-apple-system,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;color:var(--ink);background:var(--bg)}
 header{background:var(--ink);color:#fff;padding:12px 16px;position:sticky;top:0;z-index:5}
 header .row{display:flex;align-items:center;justify-content:space-between;gap:8px;max-width:960px;margin:0 auto}
@@ -57,6 +57,10 @@ label{display:block;font-size:14px;font-weight:600;margin:10px 0 4px}
 .ledger li{font-size:13px;border-top:1px solid var(--line);padding:6px 0;list-style:none}.ledger ul{padding:0;margin:0}
 #toast{position:fixed;left:16px;right:16px;bottom:16px;max-width:560px;margin:auto;background:var(--ink);color:#fff;border-radius:12px;padding:12px 14px;display:none;z-index:20}
 .empty{text-align:center;color:var(--muted);padding:32px 0}
+.count{font-size:13px;color:var(--muted);margin:0 0 8px}
+.more{display:block;width:100%;margin:12px 0}
+.inactive-note{background:#f2f4f7;border-radius:10px;padding:10px 12px;font-size:14px;margin:8px 0}
+.tabs.t2{grid-template-columns:repeat(2,1fr)}
 </style>
 </head>
 <body>
@@ -70,20 +74,29 @@ label{display:block;font-size:14px;font-weight:600;margin:10px 0 4px}
     <button class="chip" data-filter="uncounted" aria-pressed="false">尚未盤點</button>
     <button class="chip" data-filter="zero" aria-pressed="false">可售 0</button>
     <button class="chip" data-filter="alert" aria-pressed="false">需注意</button>
+    <button class="chip" data-filter="inactive" aria-pressed="false">已停用（仍有庫存）<span id="st-inactive"></span></button>
   </div>
+  <p class="count" id="count"></p>
   <div id="list" aria-live="polite"></div>
+  <button class="btn more" id="more" type="button" hidden>載入更多</button>
 </main>
 <dialog id="dlg" aria-labelledby="d-title"><div class="sheet">
   <h3 id="d-title"></h3><p class="sub" id="d-sub"></p>
   <div class="nums3"><div><b id="d-onhand"></b><span>實際庫存</span></div><div><b id="d-reserved"></b><span>已保留</span></div><div><b id="d-available"></b><span>可售</span></div></div>
   <div id="d-alert"></div>
   <p class="sub" id="d-snapshot"></p>
-  <div class="tabs" role="group" aria-label="操作">
+  <div id="d-inactive" class="inactive-note" hidden>這個規格已從商品資料移除（或商品已停用）。剩餘庫存可以「移轉」到同商品的其他規格，或「出庫」報廢；紀錄都會保留。</div>
+  <div class="tabs" role="group" aria-label="操作" id="tabs-active">
     <button data-kind="count" aria-pressed="true">盤點確認</button>
     <button data-kind="receive" aria-pressed="false">入庫</button>
     <button data-kind="issue" aria-pressed="false">出庫</button>
     <button data-kind="set" aria-pressed="false">修改為</button>
   </div>
+  <div class="tabs t2" role="group" aria-label="操作" id="tabs-inactive" hidden>
+    <button data-kind="transfer" aria-pressed="false">移轉到其他規格</button>
+    <button data-kind="issue" aria-pressed="false">出庫</button>
+  </div>
+  <div id="d-target-wrap" hidden><label for="d-target">移轉到</label><select id="d-target"></select></div>
   <label for="d-qty" id="d-qty-label">實際數量</label>
   <input id="d-qty" type="number" inputmode="numeric" min="0" step="1" pattern="[0-9]*">
   <label for="d-reason">原因</label>
@@ -97,16 +110,17 @@ label{display:block;font-size:14px;font-weight:600;margin:10px 0 4px}
 <script>
 const PAGES_CMS_BASE = ${JSON.stringify(pagesCmsBase)};
 const AV = { in_stock: '現貨', preorder: '預購', made_to_order: '接單製作', out_of_stock: '缺貨', unknown: '請洽詢' };
-const KIND = { receive: '入庫', issue: '出庫', set: '修改為', count: '盤點確認' };
+const KIND = { receive: '入庫', issue: '出庫', set: '修改為', count: '盤點確認', transfer: '移轉', transfer_out: '移出', transfer_in: '移入' };
 const REASONS = {
   count: ['盤點確認', '其他'],
   receive: ['進貨入庫', '退貨回庫', '盤盈', '其他'],
   issue: ['蝦皮訂單出貨', '官網／LINE 訂單出貨', '組裝使用', '損壞報廢', '盤虧', '其他'],
   set: ['手動修正', '其他'],
+  transfer: ['規格調整（舊規格庫存移到新規格）', '其他'],
 };
 const $ = s => document.querySelector(s);
 const el = (tag, props = {}, ...kids) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(props)) { if (k === 'class') e.className = v; else if (k === 'text') e.textContent = v; else e.setAttribute(k, v); } for (const c of kids) if (c != null) e.append(c); return e; };
-let filter = 'all', current = null, kind = 'count', timer;
+let filter = 'all', current = null, kind = 'count', timer, nextOffset = null, loadSeq = 0;
 
 async function api(path, opts = {}) {
   const res = await fetch(path, { ...opts, headers: { 'Content-Type': 'application/json', ...(opts.headers || {}) }, credentials: 'same-origin' });
@@ -119,24 +133,37 @@ function fmtTime(s) { if (!s) return ''; const d = new Date(s); return d.toLocal
 function cmsLink(productId) { return PAGES_CMS_BASE ? PAGES_CMS_BASE + encodeURIComponent('src/data/products/' + productId + '.json') : ''; }
 
 async function loadStats() {
-  try { const s = await api('/api/stats'); $('#st-skus').textContent = s.skus ?? 0; $('#st-uncounted').textContent = s.uncounted ?? 0; $('#st-alerts').textContent = s.alerts ?? 0; } catch {}
+  try { const s = await api('/api/stats'); $('#st-skus').textContent = s.skus ?? 0; $('#st-uncounted').textContent = s.uncounted ?? 0; $('#st-alerts').textContent = s.alerts ?? 0; $('#st-inactive').textContent = s.inactive_with_stock ? ' ' + s.inactive_with_stock : ''; } catch {}
 }
-async function load() {
+// 分頁載入：搜尋與篩選在伺服器端涵蓋全部規格，每次載入 100 筆，「載入更多」接續
+let loadingMore = false;
+async function load(append = false) {
   const list = $('#list');
+  if (append && (loadingMore || nextOffset == null)) return; // 連點「載入更多」只載入一次
+  if (append) { loadingMore = true; $('#more').disabled = true; }
+  const seq = append ? loadSeq : ++loadSeq;
+  const offset = append ? nextOffset || 0 : 0;
   try {
-    const { items } = await api('/api/skus?q=' + encodeURIComponent($('#q').value) + '&filter=' + filter);
-    list.replaceChildren();
-    if (!items.length) { list.append(el('p', { class: 'empty', text: '沒有符合的商品' })); return; }
-    const groups = new Map();
-    for (const it of items) { if (!groups.has(it.product_id)) groups.set(it.product_id, []); groups.get(it.product_id).push(it); }
-    for (const [pid, rows] of groups) {
-      const head = el('h2', {}, el('span', { text: rows[0].product_name }));
-      const link = cmsLink(pid); if (link) head.append(el('a', { href: link, target: '_blank', rel: 'noopener', text: '商品後台 ↗' }));
-      const card = el('section', { class: 'product' }, head);
-      for (const r of rows) card.append(skuRow(r));
-      list.append(card);
+    const data = await api('/api/skus?q=' + encodeURIComponent($('#q').value) + '&filter=' + filter + '&offset=' + offset);
+    if (seq !== loadSeq) return; // 已有較新的搜尋
+    if (!append) list.replaceChildren();
+    if (!data.total) { list.replaceChildren(el('p', { class: 'empty', text: '沒有符合的商品' })); }
+    for (const it of data.items) {
+      let card = list.querySelector('section.product[data-product="' + CSS.escape(it.product_id) + '"]');
+      if (!card) {
+        const head = el('h2', {}, el('span', { text: it.product_name }));
+        const link = cmsLink(it.product_id); if (link) head.append(el('a', { href: link, target: '_blank', rel: 'noopener', text: '商品後台 ↗' }));
+        card = el('section', { class: 'product', 'data-product': it.product_id }, head);
+        list.append(card);
+      }
+      card.append(skuRow(it));
     }
-  } catch (e) { list.replaceChildren(el('p', { class: 'empty', text: e.message })); }
+    nextOffset = data.next_offset;
+    const shown = list.querySelectorAll('.sku').length;
+    $('#count').textContent = data.total ? '顯示 ' + shown + ' / 共 ' + data.total + ' 個規格' : '';
+    const more = $('#more'); more.hidden = nextOffset == null; more.textContent = '載入更多（還有 ' + (data.total - shown) + ' 個）';
+  } catch (e) { if (seq === loadSeq) list.replaceChildren(el('p', { class: 'empty', text: e.message })); }
+  finally { if (append) { loadingMore = false; $('#more').disabled = false; } }
 }
 function skuRow(r) {
   const av = r.site_availability || r.product_availability;
@@ -156,7 +183,8 @@ function skuRow(r) {
 function setKind(k) {
   kind = k;
   for (const b of document.querySelectorAll('.tabs button')) b.setAttribute('aria-pressed', String(b.dataset.kind === k));
-  $('#d-qty-label').textContent = { count: '盤點後的實際數量', receive: '入庫數量', issue: '出庫數量', set: '修改後的實際數量' }[k];
+  $('#d-qty-label').textContent = { count: '盤點後的實際數量', receive: '入庫數量', issue: '出庫數量', set: '修改後的實際數量', transfer: '移轉數量' }[k];
+  $('#d-target-wrap').hidden = k !== 'transfer';
   const sel = $('#d-reason'); sel.replaceChildren(...REASONS[k].map(x => el('option', { value: x, text: x })));
   $('#d-reason-other').style.display = 'none'; $('#d-reason-other').value = '';
   $('#d-qty').value = k === 'count' && current && current.counted_at == null && current.snapshot_qty != null ? '' : '';
@@ -164,12 +192,13 @@ function setKind(k) {
 }
 function preview() {
   if (!current) return;
+  const p = $('#d-preview');
   const q = Number($('#d-qty').value);
   const valid = $('#d-qty').value !== '' && Number.isInteger(q) && q >= 0;
   let after = current.stock_on_hand;
-  if (valid) after = kind === 'receive' ? after + q : kind === 'issue' ? after - q : q;
-  const p = $('#d-preview');
-  if (!valid) { p.textContent = '請輸入數量'; $('#d-save').disabled = true; return; }
+  if (valid) after = kind === 'receive' ? after + q : (kind === 'issue' || kind === 'transfer') ? after - q : q;
+  if (kind === 'transfer' && !$('#d-target').value) { p.textContent = '這件商品沒有其他使用中的規格可以移轉'; $('#d-save').disabled = true; return; }
+  if (!valid || (q === 0 && kind !== 'set' && kind !== 'count')) { p.textContent = valid ? '數量必須大於 0' : '請輸入數量'; $('#d-save').disabled = true; return; }
   if (after < current.stock_reserved) { p.textContent = '數量不足：不可少於已保留 ' + current.stock_reserved + '（也不可為負數）'; $('#d-save').disabled = true; return; }
   p.textContent = '儲存後：實際 ' + current.stock_on_hand + ' → ' + after + '，可售 ' + (after - current.stock_reserved);
   $('#d-save').disabled = false;
@@ -180,6 +209,8 @@ function fill(r) {
   $('#d-onhand').textContent = r.stock_on_hand; $('#d-reserved').textContent = r.stock_reserved; $('#d-available').textContent = r.available;
   const a = $('#d-alert'); a.replaceChildren();
   if (r.alert) { a.append(el('div', { class: 'alert ' + r.alert.level, text: r.alert.message })); const link = cmsLink(r.product_id); if (link && r.alert.level === 'warning') a.firstChild.append(' ', el('a', { href: link, target: '_blank', rel: 'noopener', text: '開啟商品後台 ↗' })); }
+  const inactive = !r.active || !r.product_active;
+  $('#d-inactive').hidden = !inactive; $('#tabs-active').hidden = inactive; $('#tabs-inactive').hidden = !inactive;
   $('#d-snapshot').textContent = (r.counted_at ? '最近盤點：' + fmtTime(r.counted_at) + '（' + (r.counted_by || '') + '）' : '尚未盤點') + (r.snapshot_qty != null ? '｜10/22 蝦皮快照：' + r.snapshot_qty + '（舊數字，僅供參考）' : '');
 }
 async function loadLedger(sku) {
@@ -192,7 +223,13 @@ async function loadLedger(sku) {
 async function openSku(sku) {
   try {
     const r = await api('/api/skus/' + encodeURIComponent(sku));
-    fill(r); setKind(r.counted_at ? 'receive' : 'count'); $('#dlg').showModal(); $('#d-qty').focus(); loadLedger(sku);
+    fill(r);
+    if (!r.active || !r.product_active) {
+      const { items } = await api('/api/skus?product=' + encodeURIComponent(r.product_id) + '&limit=200');
+      $('#d-target').replaceChildren(...items.filter(x => x.sku !== r.sku).map(x => el('option', { value: x.sku, text: (x.variant_name || '單一規格') + '（實際 ' + x.stock_on_hand + '）' })));
+      setKind('transfer');
+    } else setKind(r.counted_at ? 'receive' : 'count');
+    $('#dlg').showModal(); $('#d-qty').focus(); loadLedger(sku);
   } catch (e) { toast(e.message); }
 }
 async function save() {
@@ -202,9 +239,11 @@ async function save() {
   const btn = $('#d-save'); btn.disabled = true;
   const body = { kind, qty: Number($('#d-qty').value), reason, expected_version: current.version, op_id: (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2)) };
   try {
-    const res = await api('/api/skus/' + encodeURIComponent(current.sku) + '/adjust', { method: 'POST', body: JSON.stringify(body) });
+    if (kind === 'transfer') body.to_sku = $('#d-target').value;
+    const before = current.stock_on_hand;
+    const res = await api('/api/skus/' + encodeURIComponent(current.sku) + (kind === 'transfer' ? '/transfer' : '/adjust'), { method: 'POST', body: JSON.stringify(body) });
     fill(res.sku); $('#d-qty').value = ''; preview(); loadLedger(current.sku); load(); loadStats();
-    toast(KIND[kind] + '完成：實際 ' + res.entry.before_on_hand + ' → ' + res.entry.after_on_hand + (res.sku.alert && res.sku.alert.level === 'warning' ? '｜⚠ 請到商品後台修改供貨狀態' : ''));
+    toast(KIND[kind] + '完成：實際 ' + before + ' → ' + res.sku.stock_on_hand + (res.sku.alert && res.sku.alert.level === 'warning' ? '｜⚠ 請到商品後台修改供貨狀態' : ''));
   } catch (e) {
     if (e.data && e.data.sku) fill(e.data.sku);
     toast(e.message); preview();
@@ -214,6 +253,8 @@ for (const c of document.querySelectorAll('.chip')) c.addEventListener('click', 
 for (const b of document.querySelectorAll('.tabs button')) b.addEventListener('click', () => setKind(b.dataset.kind));
 $('#q').addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(load, 250); });
 $('#d-qty').addEventListener('input', preview);
+$('#d-target').addEventListener('change', preview);
+$('#more').addEventListener('click', () => load(true));
 $('#d-reason').addEventListener('change', () => { const o = $('#d-reason-other'); o.style.display = $('#d-reason').value === '其他' ? 'block' : 'none'; });
 $('#d-close').addEventListener('click', () => $('#dlg').close());
 $('#d-save').addEventListener('click', save);

@@ -60,6 +60,39 @@ try {
     if (process.env.SCREENSHOT_DIR) await page.screenshot({ path: path.join(process.env.SCREENSHOT_DIR, `inventory-ui-${width}.png`) });
     await page.context().close();
   }
+  console.log('— 完整清單（分頁）與已停用規格移轉（390px）');
+  {
+    const page = await (await browser.newContext({ viewport: { width: 390, height: 860 } })).newPage();
+    const errors = []; page.on('pageerror', e => errors.push(e.message));
+    await page.goto(BASE + '/');
+    await page.waitForSelector('.sku');
+    const total = Number((await page.textContent('#st-skus')).trim());
+    ok(/顯示 100 \/ 共 \d+ 個規格/.test(await page.textContent('#count')), `首頁顯示「${await page.textContent('#count')}」`);
+    let clicks = 0;
+    while (await page.isVisible('#more') && clicks < 20) {
+      const before = await page.locator('.sku').count();
+      await page.click('#more'); await page.click('#more', { force: true }).catch(() => {}); clicks++; // 連點兩下：只能載入一次
+      await page.waitForFunction(n => document.querySelectorAll('.sku').length > n && !document.querySelector('#more').disabled, before);
+    }
+    const shown = await page.locator('.sku').count();
+    ok(shown === total && !(await page.isVisible('#more')), `按「載入更多」${clicks} 次後顯示全部 ${shown} / ${total} 個規格`);
+    ok(await page.evaluate(() => new Set([...document.querySelectorAll('.sku')].map(b => b.dataset.sku)).size) === shown, '沒有重複的規格');
+    await page.click('.chip[data-filter=inactive]');
+    await page.waitForSelector('.sku');
+    ok(/已停用（仍有庫存） 1/.test(await page.textContent('.chip[data-filter=inactive]')), '「已停用（仍有庫存）」顯示數量');
+    await page.locator('.sku').first().click();
+    await page.waitForSelector('dialog[open]');
+    ok(await page.isVisible('#d-inactive') && await page.isVisible('#tabs-inactive') && !(await page.isVisible('#tabs-active')), '已停用規格只提供「移轉」「出庫」');
+    ok(await page.locator('#d-target option').count() >= 2, '可選擇移轉到同商品的其他規格');
+    await page.fill('#d-qty', '4');
+    await page.click('#d-save');
+    await page.waitForFunction(() => document.querySelector('#d-onhand').textContent === '0');
+    ok(/移轉完成：實際 4 → 0/.test(await page.textContent('#toast')), '移轉 4 件完成');
+    await page.waitForFunction(() => /移出/.test(document.querySelector('#d-ledger').textContent));
+    ok(true, '紀錄顯示「移出」');
+    ok(!errors.length, `沒有 JavaScript 錯誤${errors.length ? '：' + errors.join('; ') : ''}`);
+    await page.context().close();
+  }
 } finally {
   await browser.close(); server.kill();
 }

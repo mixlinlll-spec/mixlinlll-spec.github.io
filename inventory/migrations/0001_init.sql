@@ -1,4 +1,5 @@
 -- EWP 私有庫存資料庫（Cloudflare D1）
+-- （本檔在正式環境套用前修訂過：加入 variant_ref 與移轉紀錄；正式 D1 只會從這個版本開始）
 -- 商品清單（名稱、規格、官網供貨狀態）由 GitHub 公開商品資料同步而來；
 -- 庫存數字只存在這裡，不會出現在 GitHub。
 
@@ -15,8 +16,9 @@ CREATE TABLE IF NOT EXISTS products (
 );
 
 CREATE TABLE IF NOT EXISTS skus (
-  sku                 TEXT PRIMARY KEY,        -- EWP-SP<蝦皮商品ID>-<蝦皮規格ID>；單一規格為 -0
+  sku                 TEXT PRIMARY KEY,        -- 建立後不變：EWP-SP<蝦皮商品ID>-<蝦皮規格ID>／-<規格 key>／單一規格 -0
   product_id          TEXT NOT NULL REFERENCES products(id),
+  variant_ref         TEXT,                    -- 規格身分（不因改名、排序改變）：sv:<蝦皮規格ID>／k:<規格 key>／single
   variant_name        TEXT,                    -- 單一規格商品為 NULL
   position            INTEGER NOT NULL DEFAULT 0,
   shopee_item_id      TEXT,
@@ -36,13 +38,14 @@ CREATE TABLE IF NOT EXISTS skus (
   CHECK (stock_reserved <= stock_on_hand)
 );
 CREATE INDEX IF NOT EXISTS idx_skus_product ON skus(product_id);
+CREATE UNIQUE INDEX IF NOT EXISTS ux_skus_ref ON skus(product_id, variant_ref);
 
 -- 每一次庫存變動都留紀錄（操作者、時間、數量變化、原因）
 CREATE TABLE IF NOT EXISTS inventory_ledger (
   id              INTEGER PRIMARY KEY AUTOINCREMENT,
   op_id           TEXT NOT NULL UNIQUE,        -- 防止重複送出（同一操作只記一次）
   sku             TEXT NOT NULL REFERENCES skus(sku),
-  kind            TEXT NOT NULL CHECK (kind IN ('receive','issue','set','count','reserve','release','sale','cancel')),
+  kind            TEXT NOT NULL CHECK (kind IN ('receive','issue','set','count','transfer_out','transfer_in','reserve','release','sale','cancel')),
   before_on_hand  INTEGER NOT NULL,
   after_on_hand   INTEGER NOT NULL,
   delta_on_hand   INTEGER NOT NULL,
