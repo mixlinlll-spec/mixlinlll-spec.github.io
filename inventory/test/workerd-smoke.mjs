@@ -6,7 +6,7 @@ const BASE = process.argv[2] || 'http://localhost:8787';
 const WRANGLER = process.env.WRANGLER_CMD || 'npx --prefix .. wrangler';
 const d1 = sql => execSync(`${WRANGLER} d1 execute ewp-inventory --local --command "${sql}"`, { stdio: 'pipe' });
 let pass = 0, fail = 0;
-const ok = (c, m) => { if (c) { pass++; console.log('  ✓', m); } else { fail++; console.log('  ✖', m); } };
+const ok = (c, m) => { if (c) { pass++; console.log('  ✓', m); } else { fail++; console.log('  ✖', m); if (process.env.GITHUB_ACTIONS) console.log(`::error title=workerd 實跑::${m}`); } };
 const api = async (p, opts = {}) => {
   const r = await fetch(BASE + p, { ...opts, headers: { 'Content-Type': 'application/json', Origin: BASE, ...(opts.headers || {}) } });
   return { status: r.status, body: await r.json().catch(() => ({})), headers: r.headers };

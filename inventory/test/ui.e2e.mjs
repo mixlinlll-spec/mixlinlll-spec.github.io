@@ -11,7 +11,7 @@ const server = spawn('node', [path.join(HERE, 'dev-server.mjs'), String(port)], 
 await new Promise((ok, fail) => { server.stdout.on('data', d => String(d).includes('本機預覽') && ok()); setTimeout(() => fail(new Error('伺服器未啟動')), 20000); });
 const BASE = `http://localhost:${port}`;
 let pass = 0, fail = 0;
-const ok = (c, m) => { if (c) { pass++; console.log('  ✓', m); } else { fail++; console.log('  ✖', m); } };
+const ok = (c, m) => { if (c) { pass++; console.log('  ✓', m); } else { fail++; console.log('  ✖', m); if (process.env.GITHUB_ACTIONS) console.log(`::error title=庫存網頁測試::${m}`); } };
 const browser = await chromium.launch();
 try {
   for (const [round, width] of [390, 1280].entries()) {
@@ -93,6 +93,9 @@ try {
     ok(!errors.length, `沒有 JavaScript 錯誤${errors.length ? '：' + errors.join('; ') : ''}`);
     await page.context().close();
   }
+} catch (e) {
+  fail++; console.log('  ✖ 例外：', e.message);
+  if (process.env.GITHUB_ACTIONS) console.log(`::error title=庫存網頁測試例外::${String(e.message).split('\n')[0].slice(0, 300)}`);
 } finally {
   await browser.close(); server.kill();
 }
