@@ -148,6 +148,7 @@ jobs:
           npx --prefix .. wrangler deploy $ARGS > "$RUNNER_TEMP/deploy.log" 2>&1 || { cat "$RUNNER_TEMP/deploy.log"; exit 1; }
           cat "$RUNNER_TEMP/deploy.log"
           URL=$(grep -oE 'https://[a-z0-9.-]+\.workers\.dev' "$RUNNER_TEMP/deploy.log" | head -1)
+          if [ -n "$URL" ]; then echo "::notice title=庫存後台網址::$URL"; else echo "::warning title=庫存後台網址::部署成功，但輸出中找不到 workers.dev 網址（可能尚未啟用 workers.dev 子網域）"; fi
           {
             echo "## 庫存後台已部署"
             echo ""
