@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v2.15.0（2026-10-25，黑盒子資料募集頁）
+
+- 新增 `/blackbox/`（免費提供黑盒子資料）：向 LINE 群客戶收集飛機規格（尺寸、飛塔、電機與 KV、電池、槳葉等）、Betaflight `diff all` 與黑盒子紀錄，內含 DIFF 與黑盒子（SD 卡／內建 Flash／SpeedyBee App）匯出教學。
+- 檔案只在瀏覽器內檢查、不上傳：DIFF 判斷韌體版本、飛控、是否為 diff all；黑盒子讀檔頭判斷紀錄段數、韌體、記錄速率、是否含 GPS。
+- 送出方式：產生資料單編號（`EWP-BB-YYMMDD-XXXX`）與資料檔（規格＋DIFF），由客戶在 LINE 官方帳號私訊傳送資料檔與黑盒子檔；手機支援直接分享。填寫中的規格暫存在客戶自己的瀏覽器。
+- `blackbox/` 加入發布白名單並列入 sitemap。
+
 ## v2.14.0（2026-10-24，首頁經銷品牌）
 
 - 首頁「型錄」區塊下方新增「經銷品牌」：GEPRC、KONKER 空氪、十安、MAD Components、FDI。Logo 統一為白色單色（`assets/img/brands/`），滑鼠移上去變亮；點選連到 `/products/?brand=…` 該品牌商品。

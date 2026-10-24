@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>免費提供黑盒子資料｜電翼動力 EWP</title>
+<meta name="description" content="提供你的飛機規格、Betaflight DIFF 和黑盒子紀錄，協助電翼動力校正調參分析工具。內含 diff all 與黑盒子匯出教學，檔案會先在你的瀏覽器檢查，最後用 LINE 傳送。">
+<link rel="canonical" href="https://www.ewpfpv.com/blackbox/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="免費提供黑盒子資料｜電翼動力 EWP">
+<meta property="og:description" content="填飛機規格、匯出 DIFF 和黑盒子，用 LINE 傳給我們。附完整匯出教學。">
+<meta property="og:url" content="https://www.ewpfpv.com/blackbox/">
+<meta property="og:image" content="https://www.ewpfpv.com/assets/img/journal/fpv-video-basics/00-cover.webp">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* 版面：單欄四步驟（規格 → DIFF → 黑盒子 → LINE 送出）＋黏頂導覽。延用電翼動力官網深色系與 learn/ 頁面元件。 */
+:root{
+  --bg:#101113; --panel:#191b1e; --panel-2:#202327; --line:#36383d;
+  --text:#f5f4f0; --muted:#b1b1b4; --red:#ff4a3d; --sand:#d3c1a4;
+  --ok:#7fd49a; --warn:#e9c46a; --bad:#ff6b5e; --line-green:#06c755;
+  --f-display:"Chakra Petch","Noto Sans TC",Arial,sans-serif;
+  --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--f-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+.wrap{max-width:880px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--red)}
+:focus-visible{outline:2px solid var(--sand);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;line-height:1.3;margin:0}
+p{margin:0}
+code,.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+code{background:var(--panel-2);border:1px solid var(--line);padding:1px 6px;border-radius:2px;font-size:.92em;color:var(--sand)}
+.muted{color:var(--muted)}
+.req{color:var(--red);margin-left:2px}
+
+.sitebar{border-bottom:1px solid var(--line);background:var(--bg)}
+.sitebar .wrap{display:flex;justify-content:space-between;gap:12px;padding-block:10px;font-size:14px}
+.sitebar a{color:var(--muted);text-decoration:none}.sitebar a:hover{color:var(--text)}
+
+/* hero */
+.hero{padding-block:40px 32px;border-bottom:1px solid var(--line);background:
+  linear-gradient(135deg,transparent 0 62%,rgba(255,74,61,.07) 62% 64%,transparent 64%),var(--bg)}
+.brandrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brandrow img.ewp{height:76px;width:auto;mix-blend-mode:lighten}
+.brandrow .tag{font-family:var(--f-display);font-size:12px;letter-spacing:.18em;color:var(--muted);border:1px solid var(--line);padding:3px 10px;border-radius:2px}
+.hero h1{font-weight:900;font-size:clamp(30px,6vw,48px);margin-top:28px;letter-spacing:.01em}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero .lede{color:var(--muted);max-width:60ch;margin-top:12px;font-size:17px}
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin-top:26px;background:var(--line);border:1px solid var(--line)}
+.flow a{background:var(--panel);padding:12px 14px;text-decoration:none;color:var(--text);display:grid;gap:2px}
+.flow a:hover{background:var(--panel-2)}
+.flow .n{font-family:var(--f-display);color:var(--red);font-size:13px;letter-spacing:.12em;font-weight:700}
+.flow b{font-size:15px;font-weight:700}
+.flow small{color:var(--muted);font-size:12px}
+@media (max-width:620px){.flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* nav */
+nav.toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(16,17,19,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-block:10px}
+nav.toc .wrap::-webkit-scrollbar{display:none}
+nav.toc a{flex:none;color:var(--muted);text-decoration:none;font-size:14px;padding:5px 11px;border-radius:2px;white-space:nowrap}
+nav.toc a:hover,nav.toc a.on{color:var(--text);background:var(--panel-2)}
+nav.toc a .n{font-family:var(--f-mono);color:var(--red);margin-right:4px;font-size:12px}
+nav.toc a .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--line);margin-left:6px;vertical-align:1px}
+nav.toc a .dot.ok{background:var(--ok)}
+
+/* chapters */
+section.ch{padding-block:56px 8px}
+.chhead{display:flex;align-items:baseline;gap:14px;margin-bottom:6px}
+.chhead .n{font-family:var(--f-display);font-weight:700;color:var(--red);font-size:15px;letter-spacing:.1em}
+.chhead h2{font-size:clamp(23px,4vw,30px);font-weight:900}
+.thesis{font-size:18px;color:var(--sand);margin:10px 0 22px;max-width:62ch}
+.body{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+.body>p,.body>ul,.body>h3{max-width:68ch}
+.body ul{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.body li::marker{color:var(--red)}
+h3{font-size:18px;font-weight:700;margin-top:10px}
+
+.alert{border:1px solid rgba(255,74,61,.55);background:rgba(255,74,61,.08);padding:14px 16px;border-radius:3px;display:grid;gap:4px}
+.alert strong{color:var(--red);font-family:var(--f-display);letter-spacing:.06em}
+.note{border:1px solid var(--line);background:var(--panel);padding:14px 16px;border-radius:3px;display:grid;gap:6px}
+.note strong{color:var(--sand)}
+
+/* steps */
+ol.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:s}
+ol.steps>li{counter-increment:s;display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;align-items:start}
+ol.steps>li::before{content:counter(s);font-family:var(--f-display);font-weight:700;color:var(--bg);background:var(--sand);width:28px;height:28px;display:grid;place-items:center;border-radius:2px;margin-top:2px}
+ol.steps .ui{font-weight:700;color:var(--text);white-space:nowrap}
+ol.steps .en{color:var(--muted);font-size:14px}
+.cmd{display:flex;align-items:center;gap:8px;margin-top:6px;flex-wrap:wrap}
+.cmd code{font-size:17px;padding:6px 12px}
+
+/* method cards */
+.methods{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.m{border:1px solid var(--line);border-radius:4px;padding:16px;display:grid;gap:10px;align-content:start;background:var(--panel)}
+.m h4{margin:0;font-family:var(--f-body);font-size:17px;font-weight:700;display:flex;align-items:center;gap:8px}
+.m h4 .pill{margin:0}
+.m ol{margin:0;padding-left:1.2em;display:grid;gap:6px;font-size:15px}
+.m ol li::marker{color:var(--sand);font-family:var(--f-mono)}
+.m p{font-size:14px;color:var(--muted)}
+.pill{display:inline-block;font-family:var(--f-mono);font-size:12px;padding:2px 8px;border-radius:2px;border:1px solid var(--line);color:var(--muted)}
+.pill.r{border-color:var(--red);color:var(--red)}
+
+/* settings mock */
+.mock{border:1px solid var(--line);border-radius:4px;overflow:hidden;font-size:14px}
+.mock .bar{background:var(--panel-2);padding:8px 12px;font-family:var(--f-display);letter-spacing:.1em;font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+.mock .row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:10px 12px;border-top:1px solid var(--line);align-items:center}
+.mock .row span:first-child{color:var(--muted)}
+.mock .row b{font-family:var(--f-mono);font-weight:600;color:var(--text);text-align:right}
+.mock .row b.r{color:var(--red)}
+
+/* form */
+.form{display:grid;gap:18px;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:20px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px}
+@media (max-width:620px){.grid2,.grid3{grid-template-columns:minmax(0,1fr)}}
+.f{display:grid;gap:6px;min-width:0}
+.f>label,.f>.lb{font-size:15px;font-weight:700}
+.f .hint{font-size:13px;color:var(--muted);font-weight:400}
+input[type=text],input[type=number],select,textarea{font:inherit;font-size:16px;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:10px 12px;width:100%;min-width:0}
+textarea{resize:vertical;line-height:1.55}
+textarea.code{font-family:var(--f-mono);font-size:13px;min-height:140px;white-space:pre;overflow-wrap:normal;overflow-x:auto}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--sand)}
+.f.err input,.f.err select,.f.err .chips{border-color:var(--bad)}
+.f .msg{font-size:13px;color:var(--bad);display:none}
+.f.err .msg{display:block}
+.chips{display:flex;flex-wrap:wrap;gap:6px;border:1px solid transparent;border-radius:3px}
+.chips label{position:relative;cursor:pointer}
+.chips input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chips span{display:inline-block;border:1px solid var(--line);background:var(--bg);padding:7px 12px;border-radius:2px;font-size:15px;color:var(--text);white-space:nowrap}
+.chips input:checked+span{background:var(--sand);border-color:var(--sand);color:#17130e;font-weight:700}
+.chips input:focus-visible+span{outline:2px solid var(--sand);outline-offset:2px}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:15px;cursor:pointer}
+.check input{width:20px;height:20px;margin-top:3px;accent-color:var(--red);flex:none}
+
+/* buttons */
+.btn{font:inherit;font-size:15px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 16px;border-radius:2px;border:1px solid var(--line);background:var(--panel-2);color:var(--text);cursor:pointer;text-decoration:none;min-height:44px}
+.btn:hover{border-color:var(--muted)}
+.btn.p{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}
+.btn.line{background:var(--line-green);border-color:var(--line-green);color:#fff;font-weight:700}
+.btn.sm{font-size:13px;padding:5px 10px;min-height:32px}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+
+/* file drop */
+.drop{border:1.5px dashed var(--line);border-radius:4px;padding:18px;display:grid;gap:8px;justify-items:start;background:var(--bg);position:relative}
+.drop.over{border-color:var(--sand);background:rgba(211,193,164,.06)}
+.drop .big{font-weight:700}
+.drop input[type=file]{position:absolute;width:1px;height:1px;opacity:0}
+.or{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13px}
+.or::before,.or::after{content:"";height:1px;background:var(--line);flex:1}
+
+/* result card */
+.result{border:1px solid var(--line);border-radius:4px;overflow:hidden;display:none}
+.result.show{display:block}
+.result .hd{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--panel-2);font-weight:700}
+.result .hd .st{font-family:var(--f-mono);font-size:12px;padding:2px 8px;border-radius:2px;margin-left:auto;flex:none}
+.st.ok{background:rgba(127,212,154,.16);color:var(--ok)} .st.warn{background:rgba(233,196,106,.16);color:var(--warn)} .st.bad{background:rgba(255,107,94,.16);color:var(--bad)}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line)}
+.kv div{background:var(--panel);padding:10px 14px;display:grid;gap:0;min-width:0}
+.kv .k{font-size:12px;color:var(--muted)}
+.kv .v{font-family:var(--f-mono);font-size:15px;font-weight:600;overflow-wrap:anywhere}
+.issues{list-style:none;margin:0;padding:10px 14px;display:grid;gap:6px;font-size:14px;border-top:1px solid var(--line)}
+.issues li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:8px}
+.issues li::before{font-weight:700}
+.issues li.ok::before{content:"✓";color:var(--ok)}
+.issues li.warn::before{content:"!";color:var(--warn)}
+.issues li.bad::before{content:"✕";color:var(--bad)}
+.logs{width:100%;border-collapse:collapse;font-size:13px}
+.logs th,.logs td{text-align:left;padding:7px 14px;border-top:1px solid var(--line);white-space:nowrap}
+.logs th{color:var(--muted);font-weight:500}
+.logs td{font-family:var(--f-mono)}
+.logscroll{overflow-x:auto}
+
+/* send */
+.checklist{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.checklist li{background:var(--panel);padding:12px 14px;display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:10px;align-items:center;font-size:15px}
+.checklist .ic{font-weight:700;text-align:center}
+.checklist li.ok .ic{color:var(--ok)} .checklist li.todo .ic{color:var(--bad)} .checklist li.opt .ic{color:var(--warn)}
+.checklist li a{font-size:13px;white-space:nowrap}
+pre.sheet{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:14px;font-family:var(--f-mono);font-size:13px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere;max-height:360px;overflow:auto;color:var(--text)}
+.code-badge{font-family:var(--f-mono);font-size:20px;font-weight:600;color:var(--sand);letter-spacing:.04em}
+.sendgrid{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:20px;align-items:start}
+@media (max-width:680px){.sendgrid{grid-template-columns:minmax(0,1fr)}.qr{display:none}}
+.qr{display:grid;gap:6px;justify-items:center;text-align:center;font-size:13px;color:var(--muted)}
+.qr img{width:160px;height:160px;border-radius:4px;background:#fff;padding:6px}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(20px);background:var(--text);color:var(--bg);padding:10px 18px;border-radius:3px;font-weight:700;font-size:15px;opacity:0;pointer-events:none;transition:.2s;z-index:50;max-width:calc(100% - 32px)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* faq */
+details{border-top:1px solid var(--line);padding:12px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--red);font-family:var(--f-mono);font-size:18px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin-top:8px;color:var(--muted);font-size:15px;max-width:68ch}
+
+footer{margin-top:64px;border-top:1px solid var(--line);padding-block:32px 48px}
+footer .wrap{display:grid;gap:14px}
+.foot-brand{display:flex;align-items:center;gap:12px}
+.foot-brand img{height:28px;width:auto}
+.foot-brand span{font-family:var(--f-display);letter-spacing:.14em;font-size:13px;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:8px}
+.cta a{text-decoration:none;font-size:15px;padding:9px 16px;border-radius:2px;border:1px solid var(--line);color:var(--text)}
+.cta a.p{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}
+.disclaimer{font-size:13px;color:var(--muted);max-width:70ch}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="wrap"><a href="/">← 電翼動力官網</a><a href="/journal/">EWP 專欄</a></div></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brandrow">
+      <img class="ewp" src="data:image/webp;base64,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" alt="EWP 電翼動力 FPV LAB">
+      <span class="tag">EWP TUNE LAB · 資料募集</span>
+    </div>
+    <h1>免費提供<em>黑盒子</em>資料</h1>
+    <p class="lede">電翼動力正在開發 Betaflight 調參分析工具，需要真實飛機的 DIFF 和黑盒子紀錄來校正。照著下面四步做，大約 10～15 分鐘。資料只用在調參研究，不會公開。</p>
+    <div class="flow" aria-label="四個步驟">
+      <a href="#spec"><span class="n">01</span><b>填飛機規格</b><small>尺寸、飛塔、電機、電池、槳葉</small></a>
+      <a href="#diff"><span class="n">02</span><b>匯出 DIFF</b><small>CLI 輸入 diff all</small></a>
+      <a href="#bbl"><span class="n">03</span><b>匯出黑盒子</b><small>SD 卡或內建 Flash</small></a>
+      <a href="#send"><span class="n">04</span><b>用 LINE 傳送</b><small>資料檔＋黑盒子檔</small></a>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="步驟導覽"><div class="wrap">
+  <a href="#spec"><span class="n">01</span>飛機規格<i class="dot" data-dot="spec"></i></a>
+  <a href="#diff"><span class="n">02</span>DIFF<i class="dot" data-dot="diff"></i></a>
+  <a href="#bbl"><span class="n">03</span>黑盒子<i class="dot" data-dot="bbl"></i></a>
+  <a href="#send"><span class="n">04</span>送出</a>
+  <a href="#privacy"><span class="n">··</span>隱私與問答</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="ch" id="spec">
+  <div class="chhead"><span class="n">01</span><h2>填寫飛機規格</h2></div>
+  <p class="thesis">規格越完整，分析越準。標 <span class="req">*</span> 的必填；不確定的欄位可以留空。</p>
+  <div class="body">
+    <div class="alert"><strong>先拆槳葉</strong><p>接 USB 匯出資料不需要插電池。如果需要插電池（例如要看電調設定），請一定先拆掉槳葉。</p></div>
+    <form class="form" id="specForm" novalidate>
+      <div class="f" data-req="name">
+        <label for="name">你的 LINE 名稱<span class="req">*</span> <span class="hint">我們用這個對應你傳來的檔案</span></label>
+        <input type="text" id="name" name="name" autocomplete="nickname" maxlength="40">
+        <span class="msg">請填寫 LINE 名稱</span>
+      </div>
+
+      <div class="f" data-req="size">
+        <span class="lb" id="size-lb">飛機尺寸<span class="req">*</span></span>
+        <div class="chips" role="radiogroup" aria-labelledby="size-lb" data-chips="size" data-type="radio"></div>
+        <span class="msg">請選擇飛機尺寸</span>
+      </div>
+
+      <div class="grid2">
+        <div class="f">
+          <label for="frame">機架型號 <span class="hint">例：Mark5、APEX、JeNo 3.5</span></label>
+          <input type="text" id="frame" name="frame" maxlength="60">
+        </div>
+        <div class="f">
+          <label for="vtx">圖傳系統</label>
+          <select id="vtx" name="vtx">
+            <option value="">請選擇</option><option>DJI O4 Pro</option><option>DJI O4 Lite</option><option>DJI O3</option><option>Walksnail</option><option>HDZero</option><option>類比</option><option>其他</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="f" data-req="stack">
+          <label for="stack">飛塔（飛控＋電調）<span class="req">*</span> <span class="hint">例：SpeedyBee F405 V4 ＋ 55A 四合一</span></label>
+          <input type="text" id="stack" name="stack" maxlength="80">
+          <span class="msg">請填寫飛塔型號</span>
+        </div>
+        <div class="f">
+          <label for="escfw">電調韌體 <span class="hint">不確定就選「不確定」</span></label>
+          <select id="escfw" name="escfw">
+            <option value="">請選擇</option><option>不確定</option><option>BLHeli_S</option><option>Bluejay</option><option>BLHeli_32</option><option>AM32</option><option>其他</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="f" data-req="motor">
+          <label for="motor">電機型號<span class="req">*</span> <span class="hint">例：T-Motor F60 Pro V</span></label>
+          <input type="text" id="motor" name="motor" maxlength="60">
+          <span class="msg">請填寫電機型號</span>
+        </div>
+        <div class="f">
+          <label for="msize">電機尺寸</label>
+          <input type="text" id="msize" name="msize" placeholder="2207" maxlength="12">
+        </div>
+        <div class="f" data-req="kv">
+          <label for="kv">KV 值<span class="req">*</span></label>
+          <input type="number" id="kv" name="kv" inputmode="numeric" min="100" max="40000" placeholder="1950">
+          <span class="msg">請填 KV（100～40000）</span>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="f" data-req="cells">
+          <label for="cells">電池串數<span class="req">*</span></label>
+          <select id="cells" name="cells">
+            <option value="">請選擇</option><option>1S</option><option>2S</option><option>3S</option><option>4S</option><option>5S</option><option>6S</option><option>8S</option><option>其他</option>
+          </select>
+          <span class="msg">請選擇幾 S</span>
+        </div>
+        <div class="f">
+          <label for="chem">電池種類</label>
+          <select id="chem" name="chem">
+            <option value="">請選擇</option><option>LiPo</option><option>LiHV</option><option>鋰離子（Li-ion）</option>
+          </select>
+        </div>
+        <div class="f">
+          <label for="mah">容量（mAh）</label>
+          <input type="number" id="mah" name="mah" inputmode="numeric" min="100" max="50000" placeholder="1300">
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="f" data-req="prop">
+          <label for="prop">槳葉型號<span class="req">*</span> <span class="hint">例：Gemfan 51466、HQ 5.1×4.6×3</span></label>
+          <input type="text" id="prop" name="prop" maxlength="60">
+          <span class="msg">請填寫槳葉型號</span>
+        </div>
+        <div class="f">
+          <label for="blades">葉數</label>
+          <select id="blades" name="blades">
+            <option value="">請選擇</option><option>2 葉</option><option>3 葉</option><option>4 葉</option><option>5 葉以上</option>
+          </select>
+        </div>
+        <div class="f">
+          <label for="weight">起飛重量（g）<span class="hint"> 含電池</span></label>
+          <input type="number" id="weight" name="weight" inputmode="numeric" min="10" max="20000" placeholder="650">
+        </div>
+      </div>
+
+      <label class="check"><input type="checkbox" id="cam" name="cam"> <span>機上有掛運動相機（GoPro、Action 等）</span></label>
+
+      <div class="f">
+        <span class="lb" id="style-lb">主要飛行方式</span>
+        <div class="chips" role="radiogroup" aria-labelledby="style-lb" data-chips="style" data-type="radio"></div>
+      </div>
+
+      <div class="f">
+        <span class="lb" id="sym-lb">目前飛行狀況 <span class="hint">可複選</span></span>
+        <div class="chips" role="group" aria-labelledby="sym-lb" data-chips="sym" data-type="checkbox"></div>
+      </div>
+
+      <div class="f">
+        <label for="notes">補充說明 <span class="hint">什麼情況下發生、最近改過什麼設定</span></label>
+        <textarea id="notes" name="notes" rows="3" maxlength="800"></textarea>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="ch" id="diff">
+  <div class="chhead"><span class="n">02</span><h2>匯出 DIFF</h2></div>
+  <p class="thesis">DIFF 是飛控裡所有「改過的設定」，一份文字就能看到 PID、濾波、Rate 和接線設定。</p>
+  <div class="body">
+    <h3>用電腦匯出（約 2 分鐘）</h3>
+    <ol class="steps">
+      <li><div>用 USB 線把飛控接上電腦，打開 <b>Betaflight Configurator</b>（或用 Chrome／Edge 開啟 <a href="https://app.betaflight.com" target="_blank" rel="noopener">app.betaflight.com</a>），按右上角 <span class="ui">連線</span> <span class="en">Connect</span>。</div></li>
+      <li><div>左側選單點 <span class="ui">CLI</span>（命令列）。</div></li>
+      <li><div>在最下方的輸入框輸入下面這行，按 Enter：
+        <div class="cmd"><code id="cmdDiff">diff all</code><button class="btn sm" type="button" data-copy="diff all">複製</button></div></div></li>
+      <li><div>等文字跑完，按右下角 <span class="ui">儲存到檔案</span> <span class="en">Save to File</span> 存成 .txt，或按 <span class="ui">複製到剪貼簿</span> <span class="en">Copy to clipboard</span>。</div></li>
+      <li><div>直接按 <span class="ui">中斷連線</span> <span class="en">Disconnect</span> 離開。<b>不需要輸入 save。</b></div></li>
+    </ol>
+    <div class="alert"><strong>要打 diff all，不是 diff</strong><p>只打 <code>diff</code> 只會輸出目前使用中的 PID／Rate 設定檔。也不要輸入其他指令；如果打錯了，直接中斷連線就好，不要輸入 <code>save</code>。</p></div>
+    <p class="muted">按鈕名稱會因 Configurator 版本與語言略有不同，位置大致一樣。手機目前不方便匯出 DIFF，建議用電腦；真的沒有電腦，可以只傳黑盒子。</p>
+
+    <h3>把 DIFF 放進來</h3>
+    <div class="drop" id="diffDrop">
+      <span class="big">選擇 DIFF 檔（.txt）</span>
+      <span class="muted">或把檔案拖曳到這裡。檔案只在你的瀏覽器裡讀取，不會上傳。</span>
+      <label class="btn" for="diffFile">選擇檔案</label>
+      <input type="file" id="diffFile" accept=".txt,.diff,text/plain">
+    </div>
+    <div class="or">或直接貼上</div>
+    <textarea class="code" id="diffText" placeholder="# diff all&#10;# version&#10;# Betaflight / STM32F405 (S405) 4.5.1 …" spellcheck="false" aria-label="貼上 diff all 內容"></textarea>
+    <div class="result" id="diffResult" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="ch" id="bbl">
+  <div class="chhead"><span class="n">03</span><h2>匯出黑盒子</h2></div>
+  <p class="thesis">黑盒子會記錄飛行中的陀螺儀、電機和搖桿資料，是判斷濾波和 PID 的關鍵。要先設定、飛一趟，再匯出。</p>
+  <div class="body">
+    <h3>A. 飛之前先設定（第一次才需要）</h3>
+    <ol class="steps">
+      <li><div>Configurator 連線後，左側點 <span class="ui">黑盒子</span> <span class="en">Blackbox</span>。</div></li>
+      <li><div>照下表設定，按 <span class="ui">儲存並重新啟動</span> <span class="en">Save and Reboot</span>。</div></li>
+    </ol>
+    <div class="mock" aria-label="建議的黑盒子設定">
+      <div class="bar"><span>BLACKBOX 建議設定</span><span>BETAFLIGHT 4.3 以上</span></div>
+      <div class="row"><span>記錄裝置 Logging device</span><b>內建 Flash 或 SD 卡</b></div>
+      <div class="row"><span>記錄速率 Logging rate</span><b class="r">2 kHz（沒有就選最接近的）</b></div>
+      <div class="row"><span>最低可接受</span><b>1 kHz</b></div>
+    </div>
+    <p class="muted">記錄速率太低會看不到高頻雜訊，分析濾波就不準。用內建 Flash 的飛機，飛之前到同一頁按 <span class="ui">清除 Flash</span> <span class="en">Erase flash</span>，確定有空間（請先確認舊紀錄不需要了）。</p>
+
+    <h3>B. 怎麼飛</h3>
+    <ul>
+      <li>飛 1～3 分鐘就夠，不用飛完一整顆電池。</li>
+      <li>盡量包含：穩定懸停幾秒、油門推到底再收（重複幾次）、翻滾和翻轉、急停或下墜，再加上你平常的飛法。</li>
+      <li>照自己的能力飛就好，不要為了錄資料做沒把握的動作。請在合法、空曠的場地飛行。</li>
+      <li>降落後先上鎖（Disarm）再拔電池，紀錄才會完整寫入。</li>
+    </ul>
+
+    <h3>C. 匯出檔案</h3>
+    <div class="methods">
+      <div class="m">
+        <h4><span class="pill r">SD 卡</span>飛控有記憶卡</h4>
+        <ol>
+          <li>拔掉電池，取出記憶卡，用讀卡機接電腦。</li>
+          <li>打開 <code>LOGS</code> 資料夾（有些在記憶卡最外層）。</li>
+          <li>複製最新的 <code>LOG000xx.BFL</code>（也可能是 .BBL 或 .TXT）。</li>
+        </ol>
+      </div>
+      <div class="m">
+        <h4><span class="pill r">內建 Flash</span>沒有記憶卡</h4>
+        <ol>
+          <li>USB 接電腦，Configurator 連線，進 <span class="ui">黑盒子</span> 頁。</li>
+          <li>按 <span class="ui">儲存 Flash 到檔案</span> <span class="en">Save flash to file</span>，等進度條跑完，存成 .BBL。下載要幾分鐘，USB 線不要碰。</li>
+          <li>或按 <span class="ui">啟用 USB 隨身碟模式</span> <span class="en">Activate Mass Storage Device Mode</span>，電腦會出現一顆隨身碟，把裡面的 .BBL 檔複製出來。</li>
+        </ol>
+      </div>
+      <div class="m">
+        <h4><span class="pill">手機</span>SpeedyBee 飛控</h4>
+        <ol>
+          <li>部分 SpeedyBee 飛控可用 SpeedyBee App 透過藍牙下載黑盒子，但速度很慢。</li>
+          <li>其他飛控建議用電腦匯出。</li>
+        </ol>
+      </div>
+    </div>
+    <div class="alert"><strong>確認存好再清除</strong><p>先用下面的檢查工具確認檔案讀得到、有飛行紀錄，再清除 Flash。清除後就救不回來。</p></div>
+
+    <h3>檢查你的黑盒子檔</h3>
+    <div class="drop" id="bblDrop">
+      <span class="big">選擇黑盒子檔（.BBL／.BFL／.TXT）</span>
+      <span class="muted">只在你的瀏覽器裡讀取檔頭，確認是有效的 Betaflight 紀錄，不會上傳。</span>
+      <label class="btn" for="bblFile">選擇檔案</label>
+      <input type="file" id="bblFile" accept=".bbl,.bfl,.txt,.BBL,.BFL,.TXT">
+    </div>
+    <div class="result" id="bblResult" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="ch" id="send">
+  <div class="chhead"><span class="n">04</span><h2>用 LINE 傳給我們</h2></div>
+  <p class="thesis">網頁會把規格和 DIFF 整理成一個資料檔。把資料檔和黑盒子檔，傳到電翼動力的 LINE 官方帳號就完成了。</p>
+  <div class="body">
+    <ul class="checklist" id="checklist" aria-live="polite"></ul>
+    <label class="check"><input type="checkbox" id="consent"> <span>我同意電翼動力將這些資料用於調參工具的研發、校正與分析。我的 LINE 名稱與原始檔案不會被公開，要當成公開案例前會先問我。<span class="req">*</span></span></label>
+
+    <div class="sendgrid">
+      <div class="body">
+        <div class="note">
+          <span class="muted">資料單編號</span>
+          <span class="code-badge" id="code">—</span>
+        </div>
+        <div class="btns">
+          <button class="btn p" type="button" id="btnDownload">① 下載資料檔</button>
+          <a class="btn line" id="btnLine" href="https://lin.ee/WIUCkWP" target="_blank" rel="noopener">② 開啟電翼動力 LINE</a>
+          <button class="btn" type="button" id="btnShare" hidden>用手機直接分享到 LINE</button>
+          <button class="btn" type="button" id="btnCopy">複製資料單文字</button>
+        </div>
+        <ol class="steps">
+          <li><div>按 <b>① 下載資料檔</b>，會得到 <code id="fileName">EWP-BB-….txt</code>（裡面有規格和 DIFF）。</div></li>
+          <li><div>按 <b>② 開啟電翼動力 LINE</b>，在<b>官方帳號的私訊</b>裡傳送：資料檔＋黑盒子檔。請不要傳到群組，避免你的設定被其他人看到。</div></li>
+          <li><div>黑盒子檔太大、LINE 傳不出去：上傳到 Google 雲端硬碟，把分享連結（設定為「知道連結的使用者」可檢視）貼到聊天室。</div></li>
+        </ol>
+      </div>
+      <div class="qr">
+        <img src="/assets/contact/line-qr.jpg" alt="電翼動力 LINE 官方帳號 QR Code" width="160" height="160" loading="lazy">
+        <span>電腦上可以用手機掃描<br>加入電翼動力 LINE</span>
+      </div>
+    </div>
+
+    <details>
+      <summary>預覽資料單內容</summary>
+      <pre class="sheet" id="sheet"></pre>
+    </details>
+    <div class="btns"><button class="btn sm" type="button" id="btnReset">清除全部重新填寫</button></div>
+  </div>
+</section>
+
+<section class="ch" id="privacy">
+  <div class="chhead"><span class="n">··</span><h2>隱私與常見問題</h2></div>
+  <div class="body">
+    <div>
+      <details>
+        <summary>這個網頁會上傳我的檔案嗎？</summary>
+        <p>不會。DIFF 和黑盒子都只在你的瀏覽器裡讀取、檢查。真正傳給我們的，只有你自己在 LINE 送出的檔案。已填的規格會暫存在這台裝置的瀏覽器，方便你分次填寫；按「清除全部重新填寫」就會刪除。</p>
+      </details>
+      <details>
+        <summary>資料會怎麼使用？</summary>
+        <p>只用在電翼動力調參工具的研發、校正與分析。不會公開你的 LINE 名稱或原始檔案；如果想把你的飛機當成公開案例，會先徵求你的同意。想刪除資料，在 LINE 告訴我們資料單編號即可。</p>
+      </details>
+      <details>
+        <summary>飛機有 GPS，黑盒子會有位置嗎？</summary>
+        <p>有開 GPS 的飛機，黑盒子可能記錄飛行位置。檢查工具偵測到時會提醒你。介意的話，可以只傳 DIFF，或在 LINE 先跟我們說。</p>
+      </details>
+      <details>
+        <summary>只有 DIFF 或只有黑盒子可以嗎？</summary>
+        <p>可以，但兩個都有最好。DIFF 告訴我們「設定了什麼」，黑盒子告訴我們「實際飛起來怎樣」，兩個一起看才準。</p>
+      </details>
+      <details>
+        <summary>不是 Betaflight（INAV、EmuFlight）可以嗎？</summary>
+        <p>目前以 Betaflight 4.3 以上為主。其他韌體也可以傳，但可能無法完整分析。</p>
+      </details>
+      <details>
+        <summary>一次可以傳好幾台嗎？</summary>
+        <p>可以。每台飛機各填一次、各下載一個資料檔，編號不同就不會搞混。填完一台後按「清除全部重新填寫」再填下一台。</p>
+      </details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand"><img src="data:image/png;base64,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" alt=""><span>電翼動力 EWP · READY TO FLY</span></div>
+    <p>操作上卡住了？直接在 LINE 問我們。</p>
+    <div class="cta">
+      <a class="p" href="https://lin.ee/WIUCkWP" target="_blank" rel="noopener">LINE 詢問</a>
+      <a href="/journal/">EWP 專欄</a>
+      <a href="https://shopee.tw/mixlin" target="_blank" rel="noopener">蝦皮賣場</a>
+    </div>
+    <p class="disclaimer">Betaflight 為開源專案，畫面與按鈕名稱依版本可能不同。調整設定、試飛前請拆槳測試，並遵守民航法規與場地規定。</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(() => {
+  'use strict';
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const KEY = 'ewp-bbx-draft-v1';
+  const store = {
+    get() { try { return JSON.parse(localStorage.getItem(KEY) || 'null'); } catch { return null; } },
+    set(v) { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch {} },
+    clear() { try { localStorage.removeItem(KEY); } catch {} },
+  };
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const toast = (msg) => { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove('show'), 2200); };
+  const fmtBytes = (n) => n >= 1048576 ? (n / 1048576).toFixed(1) + ' MB' : n >= 1024 ? Math.round(n / 1024) + ' KB' : n + ' B';
+
+  /* ---------- chips ---------- */
+  const CHIPS = {
+    size: ['Whoop 65／75mm', '2 吋', '2.5 吋', '3 吋', '3.5 吋', '4 吋', '5 吋', '6 吋', '7 吋', '8 吋以上', 'X8／多軸'],
+    style: ['花飛', '競速', '電影運鏡', '長航', '室內', '其他'],
+    sym: ['飛起來很順，單純提供資料', '抖動／高頻震動', '急停或下墜時晃（Propwash）', '電機發燙', '畫面果凍', '翻滾後回彈', '懸停飄移', '其他'],
+  };
+  for (const box of $$('[data-chips]')) {
+    const name = box.dataset.chips, type = box.dataset.type;
+    box.innerHTML = CHIPS[name].map((v) => `<label><input type="${type}" name="${name}" value="${esc(v)}"><span>${esc(v)}</span></label>`).join('');
+  }
+
+  /* ---------- state ---------- */
+  const FIELDS = ['name', 'frame', 'vtx', 'stack', 'escfw', 'motor', 'msize', 'kv', 'cells', 'chem', 'mah', 'prop', 'blades', 'weight', 'notes'];
+  const state = { code: '', diff: null, diffText: '', diffName: '', bbl: null, bblFile: null };
+
+  function newCode() {
+    const d = new Date(); const p = (n) => String(n).padStart(2, '0');
+    const A = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; let r = '';
+    const rnd = new Uint32Array(4); (window.crypto || {}).getRandomValues ? crypto.getRandomValues(rnd) : rnd.forEach((_, i) => (rnd[i] = Math.random() * 1e9));
+    for (const x of rnd) r += A[x % A.length];
+    return `EWP-BB-${String(d.getFullYear()).slice(2)}${p(d.getMonth() + 1)}${p(d.getDate())}-${r}`;
+  }
+  function readForm() {
+    const v = {};
+    for (const k of FIELDS) v[k] = ($('#' + k).value || '').trim();
+    v.cam = $('#cam').checked;
+    v.size = ($('input[name=size]:checked') || {}).value || '';
+    v.style = ($('input[name=style]:checked') || {}).value || '';
+    v.sym = $$('input[name=sym]:checked').map((x) => x.value);
+    v.consent = $('#consent').checked;
+    return v;
+  }
+  function save() { store.set({ ...readForm(), code: state.code, diffText: state.diffText.slice(0, 200000), diffName: state.diffName }); }
+  function restore() {
+    const s = store.get();
+    state.code = (s && s.code) || newCode();
+    if (!s) return;
+    for (const k of FIELDS) if (s[k] != null) $('#' + k).value = s[k];
+    $('#cam').checked = !!s.cam; $('#consent').checked = !!s.consent;
+    for (const n of ['size', 'style']) if (s[n]) { const el = $$(`input[name=${n}]`).find((x) => x.value === s[n]); if (el) el.checked = true; }
+    for (const v of s.sym || []) { const el = $$('input[name=sym]').find((x) => x.value === v); if (el) el.checked = true; }
+    if (s.diffText) { $('#diffText').value = s.diffText; state.diffName = s.diffName || ''; setDiff(s.diffText, state.diffName, true); }
+  }
+
+  /* ---------- validation ---------- */
+  const REQ = {
+    name: (v) => !!v.name, size: (v) => !!v.size, stack: (v) => !!v.stack, motor: (v) => !!v.motor,
+    kv: (v) => +v.kv >= 100 && +v.kv <= 40000, cells: (v) => !!v.cells, prop: (v) => !!v.prop,
+  };
+  function specOk(v, mark) {
+    let ok = true;
+    for (const [k, fn] of Object.entries(REQ)) {
+      const good = fn(v); if (!good) ok = false;
+      if (mark) $(`[data-req="${k}"]`).classList.toggle('err', !good);
+    }
+    return ok;
+  }
+
+  /* ---------- DIFF ---------- */
+  function parseDiff(text) {
+    const t = text.replace(/\r\n?/g, '\n');
+    const r = { ok: false, issues: [], fw: '', version: '', mcu: '', target: '', board: '', craft: '', kind: '', profiles: 0, rateprofiles: 0, lines: 0 };
+    r.lines = t.split('\n').filter((l) => l.trim()).length;
+    const banner = t.match(/^#\s*(Betaflight|INAV|EmuFlight|Rotorflight|Cleanflight)\s*\/\s*(\S+)\s*\((\w+)\)\s*([\d.]+)/mi);
+    if (banner) { r.fw = banner[1]; r.target = banner[2]; r.mcu = banner[3]; r.version = banner[4]; }
+    const board = t.match(/^board_name\s+(\S+)/m); if (board) r.board = board[1];
+    const craft = t.match(/^set\s+(?:craft_name|name)\s*=\s*(.+)$/m); if (craft) r.craft = craft[1].trim();
+    const uniq = (re) => new Set((t.match(re) || []).map((s) => s.trim())).size;
+    r.profiles = uniq(/^profile\s+\d+\s*$/gm);
+    r.rateprofiles = uniq(/^rateprofile\s+\d+\s*$/gm);
+    const isDump = /^#\s*dump/m.test(t) || /^#\s*master\s*$/m.test(t) && (t.match(/^set /gm) || []).length > 400;
+    const isAll = /^#\s*diff\s+all/m.test(t) || r.profiles >= 2;
+    r.kind = isDump ? 'dump' : isAll ? 'diff all' : /^#\s*diff/m.test(t) || /^#\s*(master|profile)/m.test(t) ? 'diff' : '';
+    if (!banner && !/^set\s+\w+\s*=/m.test(t)) { r.issues.push(['bad', '這看起來不是 Betaflight 的 CLI 輸出。請在 CLI 輸入 diff all 後，複製全部內容。']); return r; }
+    if (!banner) r.issues.push(['warn', '找不到開頭的韌體版本那幾行，可能沒有複製完整。請從第一行開始全部複製。']);
+    if (r.fw && r.fw.toLowerCase() !== 'betaflight') r.issues.push(['warn', `這是 ${r.fw} 的設定，目前以 Betaflight 為主，可能無法完整分析。`]);
+    if (r.fw.toLowerCase() === 'betaflight' && r.version) {
+      const [maj, min] = r.version.split('.').map(Number);
+      if (maj === 4 && min < 3 || maj < 4) r.issues.push(['warn', `Betaflight ${r.version} 版本較舊（建議 4.3 以上），仍然歡迎提供。`]);
+    }
+    if (r.kind === 'diff') r.issues.push(['bad', '這是 diff，不是 diff all：只有目前使用中的設定檔。請改輸入 diff all 再匯出一次。']);
+    if (r.kind === 'dump') r.issues.push(['ok', '這是 dump（完整設定），也可以使用。']);
+    if (!/^#\s*(end the command batch|save)/mi.test(t) && !/^save\s*$/m.test(t) && r.lines > 20) r.issues.push(['warn', '結尾好像不完整（最後通常有 save 或 batch end）。如果是用複製的，請確認有複製到最後一行。']);
+    if (r.lines < 15) r.issues.push(['bad', '內容太短，可能沒有複製完整。']);
+    r.ok = !r.issues.some((x) => x[0] === 'bad');
+    if (r.ok && r.kind === 'diff all') r.issues.unshift(['ok', 'diff all 格式正確。']);
+    return r;
+  }
+  function setDiff(text, name, silent) {
+    state.diffText = text || ''; state.diffName = name || '';
+    const box = $('#diffResult');
+    if (!state.diffText.trim()) { state.diff = null; box.className = 'result'; box.innerHTML = ''; update(); return; }
+    const r = parseDiff(state.diffText); state.diff = r;
+    const st = r.ok ? (r.issues.some((x) => x[0] === 'warn') ? ['warn', '可用，請看提醒'] : ['ok', '可以使用']) : ['bad', '需要修正'];
+    const kv = [['韌體', r.fw ? `${r.fw} ${r.version}` : '—'], ['飛控', r.board || r.target || '—'], ['機名', r.craft || '—'], ['格式', r.kind || '—'], ['PID 設定檔', r.profiles || '—'], ['行數', r.lines]];
+    box.innerHTML = `<div class="hd">DIFF 檢查${name ? `<span class="muted mono" style="font-weight:400;font-size:13px">${esc(name)}</span>` : ''}<span class="st ${st[0]}">${st[1]}</span></div>
+      <div class="kv">${kv.map(([k, v]) => `<div><span class="k">${k}</span><span class="v">${esc(v)}</span></div>`).join('')}</div>
+      <ul class="issues">${r.issues.map(([c, m]) => `<li class="${c}">${esc(m)}</li>`).join('')}</ul>`;
+    box.className = 'result show';
+    if (!silent) save();
+    update();
+  }
+  function readTextFile(file) { return new Promise((res, rej) => { const fr = new FileReader(); fr.onload = () => res(String(fr.result || '')); fr.onerror = () => rej(fr.error); fr.readAsText(file); }); }
+  async function onDiffFile(file) {
+    if (!file) return;
+    if (file.size > 2 * 1048576) { toast('檔案太大，這不像 DIFF 文字檔'); return; }
+    const text = await readTextFile(file);
+    if (/^H Product:Blackbox/m.test(text.slice(0, 4000))) { toast('這是黑盒子檔，請放到步驟 03'); return; }
+    $('#diffText').value = text; setDiff(text, file.name);
+  }
+
+  /* ---------- Blackbox (header-only check, no upload) ---------- */
+  const SIG = new TextEncoder().encode('H Product:Blackbox flight data recorder');
+  function findAll(bytes, pat) {
+    const out = []; const first = pat[0], n = pat.length, end = bytes.length - n;
+    for (let i = bytes.indexOf(first); i !== -1 && i <= end; i = bytes.indexOf(first, i + 1)) {
+      let j = 1; while (j < n && bytes[i + j] === pat[j]) j++;
+      if (j === n) out.push(i);
+    }
+    return out;
+  }
+  function headerOf(bytes, start, stop) {
+    const h = {}; let i = start; const dec = new TextDecoder('latin1');
+    const lim = Math.min(stop, start + 65536);
+    while (i < lim && bytes[i] === 0x48 && bytes[i + 1] === 0x20) {
+      let e = bytes.indexOf(0x0a, i); if (e === -1 || e > lim) e = lim;
+      const line = dec.decode(bytes.subarray(i + 2, e)); const c = line.indexOf(':');
+      if (c > 0) h[line.slice(0, c)] = line.slice(c + 1).trim();
+      i = e + 1;
+    }
+    return { h, dataStart: i };
+  }
+  function logRate(h) {
+    const loop = +h['looptime'] || 0; const denom = +h['pid_process_denom'] || 1;
+    if (!loop) return null;
+    const pid = 1e6 / loop / denom;
+    const pi = h['P interval'] || ''; let frac = 1;
+    if (pi.includes('/')) { const [a, b] = pi.split('/').map(Number); if (a && b) frac = a / b; }
+    else if (+pi > 0) frac = 1 / +pi;
+    return pid * frac;
+  }
+  async function readBytes(file, max) {
+    const blob = file.size > max ? file.slice(0, max) : file;
+    return new Uint8Array(await blob.arrayBuffer());
+  }
+  function analyzeBbl(bytes, fileSize, truncated) {
+    const starts = findAll(bytes, SIG);
+    const logs = starts.map((s, k) => {
+      const stop = k + 1 < starts.length ? starts[k + 1] : bytes.length;
+      const { h, dataStart } = headerOf(bytes, s, stop);
+      const fwRaw = h['Firmware revision'] || '';
+      const m = fwRaw.match(/^(\w+)\s+([\d.]+)/);
+      return {
+        n: k + 1, size: stop - s, data: stop - dataStart, fwRaw, fw: m ? m[1] : (h['Firmware type'] || ''), version: m ? m[2] : '',
+        board: (h['Board information'] || '').trim(), craft: h['Craft name'] || '', date: h['Log start datetime'] || '',
+        rate: logRate(h), gps: 'Field G name' in h, debug: h['debug_mode'] || '',
+        hasI: 'Field I name' in h,
+      };
+    });
+    const r = { logs, issues: [], ok: false, fileSize, truncated };
+    if (!logs.length) {
+      const allFF = bytes.length > 0 && bytes.subarray(0, Math.min(bytes.length, 65536)).every((b) => b === 0xff || b === 0);
+      r.issues.push(['bad', allFF ? '檔案裡沒有資料（全是空白），可能是空的 Flash。請確認有錄到飛行。' : '找不到黑盒子紀錄。請確認選的是 .BBL／.BFL 黑盒子檔，不是 DIFF 或其他檔案。']);
+      return r;
+    }
+    const real = logs.filter((l) => l.hasI && l.data > 50 * 1024);
+    const short = logs.filter((l) => !(l.hasI && l.data > 50 * 1024));
+    const last = real[real.length - 1] || logs[logs.length - 1];
+    if (!real.length) r.issues.push(['bad', '紀錄都很短，可能只解鎖沒有起飛，或錄到一半斷電。請重新飛 1～3 分鐘再匯出。']);
+    else r.issues.push(['ok', `找到 ${real.length} 段可用的飛行紀錄。`]);
+    if (short.length && real.length) r.issues.push(['warn', `另有 ${short.length} 段很短的紀錄（可能只是解鎖測試），不影響。`]);
+    const fwSet = new Set(logs.map((l) => l.fw).filter(Boolean));
+    if (fwSet.size && !fwSet.has('Betaflight')) r.issues.push(['warn', `這是 ${[...fwSet].join('／')} 的紀錄，目前以 Betaflight 為主，可能無法完整分析。`]);
+    if (last.fw === 'Betaflight' && last.version) {
+      const [maj, min] = last.version.split('.').map(Number);
+      if (maj === 4 && min < 3 || maj < 4) r.issues.push(['warn', `Betaflight ${last.version} 較舊，建議 4.3 以上（舊版也歡迎提供）。`]);
+    }
+    if (last.rate) {
+      if (last.rate < 900) r.issues.push(['warn', `記錄速率約 ${Math.round(last.rate)} Hz，偏低。下次請在黑盒子頁改成 2 kHz（至少 1 kHz），高頻雜訊才看得到。`]);
+      else r.issues.push(['ok', `記錄速率約 ${last.rate >= 1000 ? (last.rate / 1000).toFixed(1) + ' kHz' : Math.round(last.rate) + ' Hz'}。`]);
+    }
+    const crafts = new Set(logs.map((l) => l.craft).filter(Boolean));
+    if (crafts.size > 1) r.issues.push(['warn', `檔案裡有不同機名的紀錄（${[...crafts].join('、')}），請在 LINE 說明是哪一台。`]);
+    if (logs.some((l) => l.gps)) r.issues.push(['warn', '這台有開 GPS，紀錄可能包含飛行位置。介意的話可以只傳 DIFF。']);
+    if (truncated) r.issues.push(['warn', `檔案很大（${fmtBytes(fileSize)}），只檢查了前段。LINE 傳不出去的話，請改用 Google 雲端硬碟連結。`]);
+    r.ok = real.length > 0;
+    r.last = last;
+    return r;
+  }
+  async function onBblFile(file) {
+    if (!file) return;
+    const box = $('#bblResult');
+    box.className = 'result show'; box.innerHTML = `<div class="hd">檢查中…<span class="st warn">${esc(fmtBytes(file.size))}</span></div>`;
+    const MAX = 256 * 1048576;
+    let r;
+    try { r = analyzeBbl(await readBytes(file, MAX), file.size, file.size > MAX); }
+    catch (e) { r = { logs: [], issues: [['bad', '檔案讀取失敗，請再試一次或換一個檔案。']], ok: false, fileSize: file.size }; }
+    state.bbl = r; state.bblFile = file;
+    const st = r.ok ? (r.issues.some((x) => x[0] === 'warn') ? ['warn', '可用，請看提醒'] : ['ok', '可以使用']) : ['bad', '無法使用'];
+    const L = r.last || {};
+    const kv = [['檔案', `${file.name}`], ['大小', fmtBytes(file.size)], ['紀錄段數', r.logs.length || '—'], ['韌體', L.fwRaw ? `${L.fw} ${L.version}` : '—'], ['飛控', L.board || '—'], ['機名', L.craft || '—']];
+    const rows = r.logs.slice(0, 60).map((l) => `<tr><td>#${l.n}</td><td>${esc(fmtBytes(l.size))}</td><td>${l.rate ? (l.rate >= 1000 ? (l.rate / 1000).toFixed(1) + ' kHz' : Math.round(l.rate) + ' Hz') : '—'}</td><td>${l.hasI && l.data > 51200 ? '飛行紀錄' : '很短'}</td><td>${esc(l.date ? l.date.replace('T', ' ').slice(0, 16) : '—')}</td></tr>`).join('');
+    box.innerHTML = `<div class="hd">黑盒子檢查<span class="st ${st[0]}">${st[1]}</span></div>
+      <div class="kv">${kv.map(([k, v]) => `<div><span class="k">${k}</span><span class="v">${esc(v)}</span></div>`).join('')}</div>
+      <ul class="issues">${r.issues.map(([c, m]) => `<li class="${c}">${esc(m)}</li>`).join('')}</ul>
+      ${r.logs.length ? `<div class="logscroll"><table class="logs"><thead><tr><th>段</th><th>大小</th><th>記錄速率</th><th>判斷</th><th>時間</th></tr></thead><tbody>${rows}</tbody></table></div>` : ''}`;
+    update();
+  }
+
+  /* ---------- sheet ---------- */
+  function sheetText(withDiff) {
+    const v = readForm(); const now = new Date();
+    const p = (n) => String(n).padStart(2, '0');
+    const ts = `${now.getFullYear()}-${p(now.getMonth() + 1)}-${p(now.getDate())} ${p(now.getHours())}:${p(now.getMinutes())}`;
+    const or = (x, d = '未填') => (x ? x : d);
+    const motor = [v.motor, v.msize, v.kv ? v.kv + 'KV' : ''].filter(Boolean).join(' ');
+    const batt = [v.cells, v.chem, v.mah ? v.mah + 'mAh' : ''].filter(Boolean).join(' ');
+    const prop = v.prop + (v.blades ? `（${v.blades}）` : '');
+    const weight = v.weight ? `${v.weight} g` + (v.cam ? '（有掛運動相機）' : '') : v.cam ? '未填（有掛運動相機）' : '未填';
+    const d = state.diff, b = state.bbl;
+    const diffLine = d ? `${d.ok ? '已附' : '已附（檢查有問題）'}｜${[d.fw && `${d.fw} ${d.version}`, d.board || d.target, d.kind].filter(Boolean).join('／')}` : '未提供';
+    const bblLine = b && state.bblFile ? `${state.bblFile.name}（${fmtBytes(state.bblFile.size)}，${b.logs.length} 段${b.last && b.last.fw ? '，' + b.last.fw + ' ' + b.last.version : ''}${b.last && b.last.rate ? '，約 ' + (b.last.rate >= 1000 ? (b.last.rate / 1000).toFixed(1) + ' kHz' : Math.round(b.last.rate) + ' Hz') : ''}）→ 另外用 LINE 傳送` : '未提供';
+    const lines = [
+      '【EWP 黑盒子資料單】',
+      `編號：${state.code}`,
+      `建立：${ts}`,
+      `LINE 名稱：${or(v.name)}`,
+      '',
+      '── 飛機規格 ──',
+      `尺寸：${or(v.size)}`,
+      `機架：${or(v.frame)}`,
+      `飛塔：${or(v.stack)}`,
+      `電調韌體：${or(v.escfw)}`,
+      `電機：${or(motor)}`,
+      `電池：${or(batt)}`,
+      `槳葉：${or(prop.trim())}`,
+      `圖傳：${or(v.vtx)}`,
+      `起飛重量：${weight}`,
+      `飛行方式：${or(v.style)}`,
+      `飛行狀況：${or(v.sym.join('、'))}`,
+      `補充：${or(v.notes, '無')}`,
+      '',
+      '── 檔案 ──',
+      `DIFF：${diffLine}`,
+      `黑盒子：${bblLine}`,
+      `同意資料使用：${v.consent ? '是' : '否'}`,
+    ];
+    if (withDiff) {
+      lines.push('', '── DIFF ALL ──');
+      lines.push(state.diffText.trim() ? state.diffText.replace(/\r\n?/g, '\n').trim() : '（未提供）');
+    } else if (state.diffText.trim()) lines.push('', '（DIFF 內容在資料檔裡）');
+    return lines.join('\n') + '\n';
+  }
+
+  /* ---------- checklist & buttons ---------- */
+  function update() {
+    const v = readForm();
+    const spec = specOk(v, false), diff = !!(state.diff && state.diff.ok), bbl = !!(state.bbl && state.bbl.ok);
+    const items = [
+      [spec ? 'ok' : 'todo', '飛機規格（必填欄位）', spec ? '' : '#spec'],
+      [diff ? 'ok' : state.diff ? 'todo' : 'opt', diff ? 'DIFF 已放入' : state.diff ? 'DIFF 需要修正' : 'DIFF（建議提供）', diff ? '' : '#diff'],
+      [bbl ? 'ok' : state.bbl ? 'todo' : 'opt', bbl ? '黑盒子檔已檢查' : state.bbl ? '黑盒子檔無法使用' : '黑盒子檔（建議提供）', bbl ? '' : '#bbl'],
+      [v.consent ? 'ok' : 'todo', '同意資料使用', ''],
+    ];
+    if (!diff && !bbl) items.splice(3, 0, ['todo', 'DIFF 和黑盒子至少要提供一個', '#diff']);
+    $('#checklist').innerHTML = items.map(([c, t, h]) => `<li class="${c}"><span class="ic">${c === 'ok' ? '✓' : c === 'opt' ? '!' : '✕'}</span><span>${esc(t)}</span>${h ? `<a data-go="${h}">前往</a>` : '<span></span>'}</li>`).join('');
+    for (const a of $$('#checklist a[data-go]')) a.setAttribute('href', a.dataset.go);
+    $('[data-dot=spec]').classList.toggle('ok', spec);
+    $('[data-dot=diff]').classList.toggle('ok', diff);
+    $('[data-dot=bbl]').classList.toggle('ok', bbl);
+    $('#code').textContent = state.code;
+    $('#fileName').textContent = state.code + '.txt';
+    $('#sheet').textContent = sheetText(false);
+    return { ready: spec && (diff || bbl) && v.consent, spec, diff, bbl, v };
+  }
+  function gate() {
+    const s = update();
+    if (s.ready) return true;
+    specOk(s.v, true);
+    if (!s.spec) { toast('還有必填的規格沒填'); $('#spec').scrollIntoView(); return false; }
+    if (!s.diff && !s.bbl) { toast('DIFF 和黑盒子至少要提供一個'); $('#diff').scrollIntoView(); return false; }
+    if (!s.v.consent) { toast('請勾選同意資料使用'); $('#consent').focus(); return false; }
+    return false;
+  }
+  function dataFile() { return new File([sheetText(true)], state.code + '.txt', { type: 'text/plain;charset=utf-8' }); }
+  $('#btnDownload').addEventListener('click', () => {
+    if (!gate()) return;
+    const f = dataFile(); const url = URL.createObjectURL(f);
+    const a = document.createElement('a'); a.href = url; a.download = f.name; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+    toast('已下載資料檔，接著開啟 LINE 傳送');
+  });
+  $('#btnCopy').addEventListener('click', async () => {
+    if (!gate()) return;
+    const t = sheetText(false);
+    try { await navigator.clipboard.writeText(t); toast('已複製，貼到 LINE 聊天室'); }
+    catch { const ta = document.createElement('textarea'); ta.value = t; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); toast('已複製，貼到 LINE 聊天室'); } catch { toast('無法自動複製，請展開預覽手動複製'); } ta.remove(); }
+  });
+  const canShareFiles = (() => { try { return !!(navigator.canShare && navigator.canShare({ files: [new File(['x'], 'x.txt', { type: 'text/plain' })] })); } catch { return false; } })();
+  if (canShareFiles && /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) $('#btnShare').hidden = false;
+  $('#btnShare').addEventListener('click', async () => {
+    if (!gate()) return;
+    const files = [dataFile()]; if (state.bblFile && state.bbl && state.bbl.ok) files.push(state.bblFile);
+    try {
+      if (!navigator.canShare({ files })) throw new Error('unsupported');
+      await navigator.share({ files, title: state.code, text: `EWP 黑盒子資料 ${state.code}` });
+    } catch (e) { if (e && e.name !== 'AbortError') toast('這支手機無法直接分享，請改用「下載資料檔」'); }
+  });
+  $('#btnReset').addEventListener('click', () => {
+    if (!confirm('確定要清除這台飛機的所有資料，重新填寫？')) return;
+    store.clear(); location.hash = ''; location.reload();
+  });
+  for (const b of $$('[data-copy]')) b.addEventListener('click', async () => { try { await navigator.clipboard.writeText(b.dataset.copy); toast('已複製 ' + b.dataset.copy); } catch { toast('請手動輸入 ' + b.dataset.copy); } });
+
+  /* ---------- wiring ---------- */
+  $('#specForm').addEventListener('input', (e) => { const f = e.target.closest('.f'); if (f) f.classList.remove('err'); save(); update(); });
+  $('#specForm').addEventListener('change', () => { save(); update(); });
+  $('#consent').addEventListener('change', () => { save(); update(); });
+  let dt; $('#diffText').addEventListener('input', () => { clearTimeout(dt); dt = setTimeout(() => setDiff($('#diffText').value, ''), 250); });
+  $('#diffFile').addEventListener('change', (e) => onDiffFile(e.target.files[0]));
+  $('#bblFile').addEventListener('change', (e) => onBblFile(e.target.files[0]));
+  for (const [id, fn] of [['#diffDrop', onDiffFile], ['#bblDrop', onBblFile]]) {
+    const z = $(id);
+    z.addEventListener('dragover', (e) => { e.preventDefault(); z.classList.add('over'); });
+    z.addEventListener('dragleave', () => z.classList.remove('over'));
+    z.addEventListener('drop', (e) => { e.preventDefault(); z.classList.remove('over'); const f = e.dataTransfer.files[0]; if (f) fn(f); });
+  }
+  // nav highlight
+  const secs = $$('section.ch'); const links = $$('nav.toc a');
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => { for (const e of es) if (e.isIntersecting) links.forEach((a) => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id)); }, { rootMargin: '-40% 0px -55% 0px' }) : null;
+  if (io) secs.forEach((s) => io.observe(s));
+
+  restore(); save(); update();
+  window.__ewpBbx = { parseDiff, analyzeBbl, sheetText };
+})();
+</script>
+</body>
+</html>
