@@ -61,8 +61,9 @@ if (CHECK) process.exit(0);
 
 // ---------- Context ----------
 // rejected（EWP 決定不上官網）在正式版與預覽版都不產生
-const visible = products.filter(p => !isRejected(p) && (DRAFTS || p.published));
 const catMap = new Map(categories.map(c => [c.id, c]));
+// 還沒有分類的後台新增草稿不產生頁面（預覽版也略過）
+const visible = products.filter(p => !isRejected(p) && (DRAFTS || p.published) && catMap.has(p.primary_category_id));
 const ctx = { site, categories, catMap, drafts: DRAFTS, version: process.env.EWP_VERSION || '2' };
 const BASE = site.base_url;
 const generated = [];

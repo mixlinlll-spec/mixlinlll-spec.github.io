@@ -38,10 +38,12 @@ export function refFor(v) {
   if (v.key) return `k:${v.key}`;
   return null;
 }
+// 蝦皮匯入的商品：EWP-SP<蝦皮商品 ID>-…；後台新增的商品（ewp-日期-亂碼）：EWP-<日期>-<亂碼>-…
+const skuBase = p => (p.shopee_item_id || /^sp-/.test(p.id) ? `EWP-SP${itemOf(p)}` : `EWP-${p.id.replace(/^ewp-/, '').toUpperCase()}`);
 export function skuFor(p, v) {
-  if (!v) return `EWP-SP${itemOf(p)}-0`;
-  if (v.shopee_variation_id) return `EWP-SP${itemOf(p)}-${v.shopee_variation_id}`;
-  return `EWP-SP${itemOf(p)}-${v.key}`;
+  if (!v) return `${skuBase(p)}-0`;
+  if (v.shopee_variation_id) return `${skuBase(p)}-${v.shopee_variation_id}`;
+  return `${skuBase(p)}-${v.key}`;
 }
 // 舊版 SKU 代碼（只用來認領既有資料列，不再產生）
 const legacyHashSku = (p, v) => `EWP-SP${itemOf(p)}-V${crypto.createHash('sha1').update(v.name || '').digest('hex').slice(0, 8)}`;

@@ -50,7 +50,7 @@ runs:
           git fetch -q origin "$GITHUB_REF_NAME"
           git reset -q --hard "origin/$GITHUB_REF_NAME"
           git clean -fdq
-          rm -rf .cms-quarantine .cms-quarantine.md
+          rm -rf .cms-quarantine .cms-quarantine.md .cms-notice.md
         }
         for attempt in 1 2 3 4 5; do
           echo "::group::第 $attempt 次：取得最新版本並套用"
@@ -98,6 +98,13 @@ runs:
       run: |
         { cat .cms-quarantine.md; echo; echo "執行紀錄：$URL"; } > issue.md
         gh issue create --title "商品後台：有修改未通過檢查已退回（${GITHUB_REF_NAME}）" --body-file issue.md || echo "無法開 Issue"
+    - name: 通知：後台新增的商品（草稿，待審核）
+      if: always() && steps.run.outputs.committed == 'true' && hashFiles('.cms-notice.md') != ''
+      shell: bash
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        gh issue create --title "後台新增商品：請確認分類並審核（${GITHUB_REF_NAME}）" --body-file .cms-notice.md || echo "無法開 Issue"
     - name: 觸發正式部署（只在 main，指定剛驗證的 commit）
       if: github.ref_name == 'main' && (inputs.deploy == 'always' || steps.run.outputs.committed == 'true')
       shell: bash

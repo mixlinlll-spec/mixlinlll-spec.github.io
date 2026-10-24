@@ -5,7 +5,7 @@
 //   表單：components/entry/entry-form.tsx → initializeState(fields, sanitizeObject(contentObject))
 //   儲存：app/api/[owner]/[repo]/[branch]/files/[path]/route.ts（zod 驗證 → writeFns → merge → sanitizeObject → stringify）
 import { parse, stringify } from "@/lib/serialization";
-import { deepMap, generateZodSchema, getSchemaByName, initializeState, sanitizeObject } from "@/lib/schema";
+import { deepMap, generateFilename, generateZodSchema, getSchemaByName, initializeState, sanitizeObject } from "@/lib/schema";
 import { parseAndValidateConfig, normalizeConfig, parseConfig } from "@/lib/config";
 import { readFns, writeFns } from "@/fields/registry";
 import { ConfigSchema } from "@/lib/config-schema";
@@ -93,4 +93,15 @@ export function checkSavePath(config: any, name: string, path: string) {
   const ext = path.split(".").pop();
   if (ext !== (schema.extension ?? "")) return `Invalid extension "${ext}" for collection "${name}".`;
   return null;
+}
+
+// 新增商品：對應 components/entry/entry.tsx（沒有 path 時）→ 空白表單 initializeState(fields, {})、
+// 檔名 generateFilename(schema.filename, schema, contentObject)、儲存時沒有既有檔案（不 merge）
+export function newEntry(config: any, name: string) {
+  const schema = getSchemaByName(config.object, name);
+  return JSON.parse(JSON.stringify(initializeState(schema.fields, {})));
+}
+export function newFilename(config: any, name: string, formValues: any) {
+  const schema = getSchemaByName(config.object, name);
+  return generateFilename(schema.filename, schema, formValues);
 }

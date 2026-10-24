@@ -8,13 +8,14 @@
 //   2. 上架守門（未核准不得公開）、價格規則（最低規格價、詢價清空價格）
 //   3. 新上傳的照片：轉正、壓縮成 WebP（1000px＋480px 縮圖），搬到 assets/img/products/<商品 id>/
 //   4. 被刪除的商品檔還原（後台不允許刪除商品）
+//   5. 後台新增的商品：產生商品 ID（ewp-日期-亂碼）並改檔名、自動分類與品牌、存成草稿（待 EWP 在後台勾選審核）
 // 輸出：修改後的檔案（由 workflow commit）、變更摘要（GitHub Actions 摘要頁）。
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { ROOT, PRODUCTS_DIR, today, loadAll, readJSON, validateProducts } from './lib/data.mjs';
-import { normalizeCmsProduct, serializeProduct } from './lib/cms.mjs';
+import { normalizeCmsProduct, createCmsProduct, serializeProduct } from './lib/cms.mjs';
 
 const args = process.argv.slice(2);
 const opt = k => (args.includes(k) ? args[args.indexOf(k) + 1] : undefined);
@@ -59,6 +60,8 @@ async function getSharp() {
 }
 const report = [];
 let failed = false;
+// 分類判斷用的現有商品與分類（第一次使用時讀取）
+let ctxCache = null;
 const operatorOf = s => (s.match(/（([^（）]*)）\s*$/) || [])[1] || '';
 const quarantineAll = args.includes('--quarantine-all');
 const QDIR = path.join(ROOT, '.cms-quarantine');
@@ -66,7 +69,9 @@ const QDIR = path.join(ROOT, '.cms-quarantine');
 // 隔離：未通過檢查的後台修改退回到上一個正確版本；原始內容存到 .cms-quarantine/（上傳為 Actions artifact，不提交）
 function quarantine(entry, reason) {
   const abs = path.join(ROOT, entry.file);
-  if (fs.existsSync(abs)) { fs.mkdirSync(QDIR, { recursive: true }); fs.copyFileSync(abs, path.join(QDIR, path.basename(entry.file))); }
+  fs.mkdirSync(QDIR, { recursive: true });
+  if (entry.rawText != null) fs.writeFileSync(path.join(QDIR, path.basename(entry.origFile || entry.file)), entry.rawText);
+  else if (fs.existsSync(abs)) fs.copyFileSync(abs, path.join(QDIR, path.basename(entry.file)));
   if (!dryRun) {
     if (entry.prevText == null) fs.rmSync(abs, { force: true });
     else fs.writeFileSync(abs, entry.prevText);
@@ -82,7 +87,7 @@ for (const [file, info] of touched) {
   const entry = { file, prevText, operators: [...new Set(info.commits.map(c => operatorOf(c.subject) || c.author).filter(Boolean))], time: info.commits.at(-1).date, changes: [], warnings: [], errors: [], created: [] };
   report.push(entry);
   if (quarantineAll) { quarantine(entry, '整批檢查失敗，本次後台修改全部退回'); continue; }
-  if (prevText == null) { quarantine(entry, '後台不允許新增商品，已移除'); continue; }
+  if (prevText == null) { await createEntry(entry, abs, info); continue; }
   const prev = JSON.parse(prevText);
   entry.name = prev.name_zh;
   if (!fs.existsSync(abs)) {
@@ -92,7 +97,7 @@ for (const [file, info] of touched) {
   }
   let next;
   try { next = JSON.parse(fs.readFileSync(abs, 'utf8')); } catch (e) { quarantine(entry, `檔案格式錯誤，已退回：${e.message}`); continue; }
-  const { product, changes, warnings } = normalizeCmsProduct(prev, next, { today: today() });
+  const { product, changes, warnings } = normalizeCmsProduct(prev, next, { today: today(), operator: entry.operators.at(-1), ...context() });
   entry.name = product.name_zh;
   entry.changes = changes; entry.warnings.push(...warnings);
   try {
@@ -117,6 +122,36 @@ if (!dryRun && !quarantineAll) {
   }
   const remaining = validate();
   if (remaining.length) { failed = true; console.error(`仍有其他資料錯誤（不是這次後台修改造成）：\n${remaining.join('\n')}`); }
+}
+
+function context() {
+  if (!ctxCache) { const { categories, products } = loadAll(); ctxCache = { categories, products }; }
+  return ctxCache;
+}
+
+// 後台新增的商品（儲存前沒有這個檔案）：依 Pages CMS 的檔名（new-日期時間.json）建立草稿，改成正式商品 ID 檔名
+async function createEntry(entry, abs, info) {
+  entry.isNew = true;
+  if (!info.commits.some(c => c.subject.startsWith(`${MARK} 新增`))) { quarantine(entry, '找不到後台「新增」紀錄，已移除'); return; }
+  if (!fs.existsSync(abs)) return; // 新增後又被刪除：不需處理
+  entry.rawText = fs.readFileSync(abs, 'utf8');
+  let next;
+  try { next = JSON.parse(entry.rawText); } catch (e) { quarantine(entry, `檔案格式錯誤，已移除：${e.message}`); return; }
+  if (!next || typeof next !== 'object' || !String(next.name_zh || '').trim()) { quarantine(entry, '新商品缺少商品名稱，已移除'); return; }
+  const { product, changes, warnings } = createCmsProduct(next, { today: today(), operator: entry.operators.at(-1), ...context() });
+  entry.name = product.name_zh; entry.id = product.id;
+  entry.changes = changes; entry.warnings.push(...warnings);
+  entry.category = product.primary_category_id;
+  // 改成正式檔名；原本的 new-*.json 刪除（先刪，照片轉檔時才不會被視為「其他商品還在使用」）
+  entry.origFile = entry.file;
+  entry.file = `src/data/products/${product.id}.json`;
+  if (!dryRun) fs.rmSync(abs, { force: true });
+  entry.created.push(entry.file);
+  try {
+    for (const im of product.images || []) if (im._needs_processing) await processImage(product, im, entry);
+  } catch (e) { quarantine(entry, `${e.message}，已移除`); return; }
+  if (!dryRun) fs.writeFileSync(path.join(ROOT, entry.file), serializeProduct(product));
+  context().products.push(product);
 }
 
 async function processImage(product, im, entry) {
@@ -175,5 +210,17 @@ if (quarantined.length) {
   if (summaryFile) fs.appendFileSync(summaryFile, q.join('\n') + '\n');
 }
 if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `quarantined=${quarantined.length}\n`);
+// 新增商品通知：列出自動分類結果，提醒 EWP 到後台確認、審核、上架
+const created = report.filter(r => r.isNew && !r.quarantined && r.id);
+if (created.length) {
+  const n = ['## 後台新增的商品（草稿，尚未公開）', '', '請到商品後台打開這些商品，確認分類、品牌、價格與照片，勾選「新商品審核」後再勾「上架」並儲存。', ''];
+  for (const r of created) {
+    n.push(`### ${r.name}（\`${r.id}\`）`);
+    for (const c of r.changes) n.push(`- ${c}`);
+    for (const w of r.warnings) n.push(`- ⚠️ ${w}`);
+    n.push('');
+  }
+  fs.writeFileSync(path.join(ROOT, '.cms-notice.md'), n.join('\n') + '\n');
+}
 fs.writeFileSync(path.join(ROOT, '.cms-report.json'), JSON.stringify(report.map(({ prevText, ...r }) => r), null, 2));
 process.exit(failed ? 1 : 0);

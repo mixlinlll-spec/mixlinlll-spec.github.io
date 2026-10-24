@@ -29,16 +29,17 @@ media:
 content:
   - name: products
     label: 商品
-    description: 修改後按 Save，約 1–3 分鐘自動檢查並更新網站；未核准（review）商品無法從這裡上架。庫存數量不在這裡，請到「EWP 庫存管理」（私有，見 docs/admin/INVENTORY.md）。
+    description: 修改後按 Save，約 1–3 分鐘自動檢查並更新網站。按右上角「Add an entry」可新增商品：填名稱、價格、照片後儲存，系統會自動分類並存成草稿，確認後勾「新商品審核」與「上架」再儲存一次即可公開。庫存數量不在這裡，請到「EWP 庫存管理」（私有，見 docs/admin/INVENTORY.md）。
     type: collection
     path: src/data/products
     # 必須指定：Pages CMS 未指定 filename 時預設為 {year}-{month}-{day}-{primary}.md，
     # 副檔名會被判定為 md，商品列表會把全部 .json 檔過濾掉（顯示 No entries），儲存也會被拒絕。
-    filename: "{id}.json"
+    # filename 只在「新增商品」時使用：先存成 new-日期時間.json，儲存後由 cms-normalize 改成正式商品 ID（ewp-日期-亂碼.json）。
+    filename: "new-{year}{month}{day}-{hour}{minute}{second}.json"
     format: json
     subfolders: false
     operations:
-      create: false
+      create: true
       rename: false
       delete: false
     view:
@@ -116,11 +117,16 @@ content:
         label: 上架（公開在官網）
         description: 只有已核准的商品可以上架；未核准商品勾選後會自動退回草稿。
         type: boolean
+      - name: approve_publish
+        label: 新商品審核：我已確認分類、價格、照片與內容
+        description: 只用於從後台新增的商品。勾選並儲存後才能上架（可與「上架」同時勾選）。原有商品不需要勾。
+        type: boolean
       - name: availability
         label: 供貨狀態
         description: 顧客會看到這個狀態。「現貨」代表確定有貨可立即出貨；賣完請改「缺貨」或「預購」。
         type: select
         required: true
+        default: in_stock
         options:
           values:
             - { value: in_stock, label: 現貨 }
@@ -133,6 +139,7 @@ content:
         description: 有多個規格時，官網會自動顯示最低規格價「起」。
         type: select
         required: true
+        default: fixed
         options:
           values:
             - { value: fixed, label: 定價 }
@@ -239,8 +246,8 @@ content:
       - { name: sku, label: 貨號 SKU, type: string }
       - name: primary_category_id
         label: 主分類
+        description: 新增商品時可以留空，儲存後會依商品名稱自動分類（請再確認）；判斷不出來時會發通知請你選。
         type: select
-        required: true
         options:
           values:
             - { value: complete-drones, label: FPV 穿越機整機 }
@@ -255,7 +262,7 @@ content:
             - { value: tools, label: 工具與維修耗材 }
       - name: subcategory_id
         label: 子分類
-        description: 必須屬於上面的主分類，不符時儲存後檢查會失敗並通知。
+        description: 必須屬於上面的主分類。新增商品只選子分類也可以，主分類會自動帶入。
         type: select
         options:
           values:
@@ -317,7 +324,7 @@ content:
 
       # ---- 顯示設定 ----
       - { name: featured, label: 精選（列表排前面）, type: boolean }
-      - { name: line_inquiry_enabled, label: 顯示 LINE 詢問按鈕, type: boolean }
+      - { name: line_inquiry_enabled, label: 顯示 LINE 詢問按鈕, type: boolean, default: true }
       - name: cta_primary
         label: 第一個按鈕（留空＝自動）
         type: select
