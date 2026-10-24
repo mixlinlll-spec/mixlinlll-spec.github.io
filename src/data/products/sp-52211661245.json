@@ -1,25 +1,52 @@
 {
   "id": "sp-52211661245",
   "slug": "astrorc-20-25-5-fpv-fc-esc",
-  "name_zh": "AstroRC 20轉25.5 飛塔轉接板 FPV穿越機 FC ESC 圖傳轉接板 20x20轉25.5x25.5",
+  "name_zh": "AstroRC 20×20 轉 25.5×25.5mm 轉接板｜飛控、電調、圖傳孔距轉換",
   "sku": null,
   "brand": "AstroRC",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "fc-esc",
   "subcategory_id": "mounting",
-  "tags": [],
+  "tags": [
+    "轉接板",
+    "20x20",
+    "25.5x25.5",
+    "孔距轉換",
+    "飛塔"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "AstroRC 20mm ↔ 25.5mm 通用轉接板，適用於 FPV 穿越機飛控、電調與圖傳安裝轉換需求，讓不同孔距設備能夠快速安裝於機架上，大幅提升設備相容性與改裝彈性。\n\n【產品特色】\n✔ 20x20 與 25.5x25.5 孔距互轉\n✔ 提升飛控、電調、圖傳安裝相容性\n✔ 高強度輕量化設計\n✔ 安裝簡單不需修改機架\n✔ 適用多數 FPV 穿越機平台\n✔ 改裝、維修必備配件\n\n【產品規格】\n品牌：AstroRC\n產品名稱：20-25.5mm FPV轉接板\n外孔距：25.5mm（M3）\n內孔距：20mm（M2）\n材質：碳纖維板\n\n【包裝內容】\n20轉25.5轉接板 ×1\n\n【注意事項】\n購買前請確認設備孔距規格。\n本商品不含飛控、電調、圖傳及螺絲。",
-  "specifications": [],
+  "short_description": "AstroRC 碳纖維轉接板，可將 20×20mm（M2）設備安裝到 25.5×25.5mm（M3）孔位，適用飛控、電調與圖傳。",
+  "description": "AstroRC 20mm 與 25.5mm 孔距轉接板，讓 20×20 孔距的飛控、電調或圖傳可以安裝在 25.5×25.5 孔位的機架上，不需修改機架。\n\n【產品特色】\n・20×20 與 25.5×25.5 孔距轉換\n・碳纖維材質，輕量\n・適用多數 FPV 穿越機平台\n\n【包裝內容】\n・20 轉 25.5 轉接板 ×1\n不含飛控、電調、圖傳與螺絲。\n\n【安裝前請確認】\n請確認設備與機架的孔距規格；碳纖維會導電，請避免焊點接觸碳板。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "AstroRC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "外孔距",
+      "value": "25.5 × 25.5 mm（M3）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "內孔距",
+      "value": "20 × 20 mm（M2）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "碳纖維",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-52211661245/01.webp",
       "src_small": "/assets/img/products/sp-52211661245/01-480.webp",
-      "alt": "AstroRC 20轉25.5 飛塔轉接板 FPV穿越機 FC ESC 圖傳轉接板 20x20轉25.5x25.5（主圖）",
+      "alt": "AstroRC 20×20 轉 25.5×25.5mm 轉接板｜飛控、電調、圖傳孔距轉換（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-52211661245/02.webp",
       "src_small": "/assets/img/products/sp-52211661245/02-480.webp",
-      "alt": "AstroRC 20轉25.5 飛塔轉接板 FPV穿越機 FC ESC 圖傳轉接板 20x20轉25.5x25.5（細節圖 1）",
+      "alt": "AstroRC 20×20 轉 25.5×25.5mm 轉接板｜飛控、電調、圖傳孔距轉換（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -46,13 +73,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

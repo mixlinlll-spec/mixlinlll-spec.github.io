@@ -1,25 +1,42 @@
 {
   "id": "sp-50402613811",
   "slug": "dji-neo2-13811",
-  "name_zh": "DJI NEO2 各類客製配件｜增強保護｜提升攜帶性與實用性",
+  "name_zh": "DJI Neo 2 配件｜碳纖維鏡頭保護蓋、背包掛架、擾流板、桌面展示架｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "DJI Neo 2",
+    "Neo2",
+    "空拍機配件",
+    "鏡頭保護",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "⚠️ 注意事項\n・下單前請務必備註顏色\n・客製商品不接受退換\n・列印件皆有正常層紋屬自然現象\n\n專為 DJI NEO 2 設計的一系列機身配件，包含收納、保護、固定、吊掛等多用途套件。\n讓 NEO 2 在外拍、通勤、放置收納時都更加便利、安全。",
-  "specifications": [],
+  "short_description": "電翼動力為 DJI Neo 2 製作的 3D 列印配件，提供碳纖維鏡頭保護蓋、皮帶／背包掛架、擾流板與多色桌面展示架。",
+  "description": "電翼動力為 DJI Neo 2 設計的機身配件，讓 Neo 2 外拍、通勤與收納更方便。\n\n【可選配件】\n・鏡頭保護蓋（碳纖維）\n・皮帶或背包掛架（碳纖維）\n・擾流板（碳纖維）\n・桌面展示架（多色可選）\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "DJI Neo 2",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "碳纖維列印／多色（依配件）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-50402613811/01.webp",
       "src_small": "/assets/img/products/sp-50402613811/01-480.webp",
-      "alt": "DJI NEO2 各類客製配件｜增強保護｜提升攜帶性與實用性（主圖）",
+      "alt": "DJI Neo 2 配件｜碳纖維鏡頭保護蓋、背包掛架、擾流板、桌面展示架｜3D 列印（主圖）",
       "width": 701,
       "height": 701,
       "rights": "licensed",
@@ -29,7 +46,7 @@
     {
       "src": "/assets/img/products/sp-50402613811/02.webp",
       "src_small": "/assets/img/products/sp-50402613811/02-480.webp",
-      "alt": "DJI NEO2 各類客製配件｜增強保護｜提升攜帶性與實用性（細節圖 1）",
+      "alt": "DJI Neo 2 配件｜碳纖維鏡頭保護蓋、背包掛架、擾流板、桌面展示架｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-50402613811/03.webp",
       "src_small": "/assets/img/products/sp-50402613811/03-480.webp",
-      "alt": "DJI NEO2 各類客製配件｜增強保護｜提升攜帶性與實用性（細節圖 2）",
+      "alt": "DJI Neo 2 配件｜碳纖維鏡頭保護蓋、背包掛架、擾流板、桌面展示架｜3D 列印（細節圖 2）",
       "width": 771,
       "height": 771,
       "rights": "licensed",
@@ -49,7 +66,7 @@
     {
       "src": "/assets/img/products/sp-50402613811/04.webp",
       "src_small": "/assets/img/products/sp-50402613811/04-480.webp",
-      "alt": "DJI NEO2 各類客製配件｜增強保護｜提升攜帶性與實用性（細節圖 3）",
+      "alt": "DJI Neo 2 配件｜碳纖維鏡頭保護蓋、背包掛架、擾流板、桌面展示架｜3D 列印（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -59,7 +76,7 @@
     {
       "src": "/assets/img/products/sp-50402613811/05.webp",
       "src_small": "/assets/img/products/sp-50402613811/05-480.webp",
-      "alt": "DJI NEO2 各類客製配件｜增強保護｜提升攜帶性與實用性（細節圖 4）",
+      "alt": "DJI Neo 2 配件｜碳纖維鏡頭保護蓋、背包掛架、擾流板、桌面展示架｜3D 列印（細節圖 4）",
       "width": 811,
       "height": 811,
       "rights": "licensed",
@@ -69,7 +86,7 @@
     {
       "src": "/assets/img/products/sp-50402613811/06.webp",
       "src_small": "/assets/img/products/sp-50402613811/06-480.webp",
-      "alt": "DJI NEO2 各類客製配件｜增強保護｜提升攜帶性與實用性（細節圖 5）",
+      "alt": "DJI Neo 2 配件｜碳纖維鏡頭保護蓋、背包掛架、擾流板、桌面展示架｜3D 列印（細節圖 5）",
       "width": 849,
       "height": 849,
       "rights": "licensed",
@@ -79,7 +96,7 @@
     {
       "src": "/assets/img/products/sp-50402613811/07.webp",
       "src_small": "/assets/img/products/sp-50402613811/07-480.webp",
-      "alt": "DJI NEO2 各類客製配件｜增強保護｜提升攜帶性與實用性（細節圖 6）",
+      "alt": "DJI Neo 2 配件｜碳纖維鏡頭保護蓋、背包掛架、擾流板、桌面展示架｜3D 列印（細節圖 6）",
       "width": 775,
       "height": 775,
       "rights": "licensed",
@@ -89,7 +106,7 @@
     {
       "src": "/assets/img/products/sp-50402613811/08.webp",
       "src_small": "/assets/img/products/sp-50402613811/08-480.webp",
-      "alt": "DJI NEO2 各類客製配件｜增強保護｜提升攜帶性與實用性（細節圖 7）",
+      "alt": "DJI Neo 2 配件｜碳纖維鏡頭保護蓋、背包掛架、擾流板、桌面展示架｜3D 列印（細節圖 7）",
       "width": 780,
       "height": 780,
       "rights": "licensed",
@@ -99,7 +116,7 @@
     {
       "src": "/assets/img/products/sp-50402613811/09.webp",
       "src_small": "/assets/img/products/sp-50402613811/09-480.webp",
-      "alt": "DJI NEO2 各類客製配件｜增強保護｜提升攜帶性與實用性（細節圖 8）",
+      "alt": "DJI Neo 2 配件｜碳纖維鏡頭保護蓋、背包掛架、擾流板、桌面展示架｜3D 列印（細節圖 8）",
       "width": 887,
       "height": 887,
       "rights": "licensed",
@@ -169,7 +186,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -177,7 +194,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "無法自動判斷分類，暫放列印件",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

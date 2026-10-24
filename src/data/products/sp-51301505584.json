@@ -1,25 +1,45 @@
 {
   "id": "sp-51301505584",
   "slug": "speedybee-master-5-v2-tpu-3d",
-  "name_zh": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件",
+  "name_zh": "SpeedyBee Master 5 V2 TPU 3D 列印配件｜腳墊、天線座、GPS 座、鏡頭減震、側護板、XT60 座",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "SpeedyBee",
+    "Master 5",
+    "TPU",
+    "3D列印",
+    "GPS座",
+    "天線座"
+  ],
+  "compatible_sizes": [
+    "5 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "為 SpeedyBee Master 5 V2 量身打造的 全套 3D 列印配件，包含機身保護、減震、天線管理、相機固定等多項升級功能。\n採用高韌性 TPU 材質，兼具彈性與耐撞性，提升保護力與使用壽命。\n適合穿越機玩家升級、維修、改裝使用。\n\n✨ 商品特色\n高韌性 TPU 材質，耐撞耐震\n專為 SpeedyBee Master 5 V2 精準設計\n足部底墊、相機保護、天線支架等多項配件可選\n完美貼合，不干涉飛行表現\n可依需求選擇顏色或單獨配件\n\n📦 規格\n適用機型：SpeedyBee Master 5 V2\n材質：TPU（柔性、抗震）",
-  "specifications": [],
+  "short_description": "電翼動力為 SpeedyBee Master 5 V2 列印的 TPU 配件，提供狗座、多種 GPS 座、天線尾座、接收機座、鏡頭減震、側護板與前置 XT60 座等 20 餘種選項。",
+  "description": "電翼動力為 SpeedyBee Master 5 V2 製作的 TPU 列印配件，涵蓋機身保護、減震、天線管理與相機固定，可依需求單買。\n\n【可選零件】\n・GPS 座：121、181、251、880 GPS，GPS＋O3 天線＋接收機尾座，機尾半高天線＋GPS 安裝件\n・天線：O4 Pro 天線尾座、O3 尾部天線座（半高）、機尾 SMA 安裝座（半高）、機尾雙 SMA 安裝座、SMA 天線側出\n・相機與減震：狗座、原廠鏡頭安裝座、鏡頭減震墊、O 圈\n・保護：機頭保護、側護板、腳墊（機臂腳座）\n・其他：接收機放置、BB 響及電容安裝座、前置 XT60 座\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "SpeedyBee Master 5 V2",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（柔性、抗震）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-51301505584/01.webp",
       "src_small": "/assets/img/products/sp-51301505584/01-480.webp",
-      "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（主圖）",
+      "alt": "SpeedyBee Master 5 V2 TPU 3D 列印配件｜腳墊、天線座、GPS 座、鏡頭減震、側護板、XT60 座（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +49,7 @@
     {
       "src": "/assets/img/products/sp-51301505584/02.webp",
       "src_small": "/assets/img/products/sp-51301505584/02-480.webp",
-      "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（細節圖 1）",
+      "alt": "SpeedyBee Master 5 V2 TPU 3D 列印配件｜腳墊、天線座、GPS 座、鏡頭減震、側護板、XT60 座（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +59,7 @@
     {
       "src": "/assets/img/products/sp-51301505584/03.webp",
       "src_small": "/assets/img/products/sp-51301505584/03-480.webp",
-      "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（細節圖 2）",
+      "alt": "SpeedyBee Master 5 V2 TPU 3D 列印配件｜腳墊、天線座、GPS 座、鏡頭減震、側護板、XT60 座（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +69,7 @@
     {
       "src": "/assets/img/products/sp-51301505584/04.webp",
       "src_small": "/assets/img/products/sp-51301505584/04-480.webp",
-      "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（細節圖 3）",
+      "alt": "SpeedyBee Master 5 V2 TPU 3D 列印配件｜腳墊、天線座、GPS 座、鏡頭減震、側護板、XT60 座（細節圖 3）",
       "width": 980,
       "height": 980,
       "rights": "licensed",
@@ -59,7 +79,7 @@
     {
       "src": "/assets/img/products/sp-51301505584/05.webp",
       "src_small": "/assets/img/products/sp-51301505584/05-480.webp",
-      "alt": "SpeedyBee Master 5 V2 全方位 TPU 3D 列印配件｜防撞腳墊｜天線座｜相機保護架｜穿越機改裝套件（細節圖 4）",
+      "alt": "SpeedyBee Master 5 V2 TPU 3D 列印配件｜腳墊、天線座、GPS 座、鏡頭減震、側護板、XT60 座（細節圖 4）",
       "width": 927,
       "height": 927,
       "rights": "licensed",
@@ -350,14 +370,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

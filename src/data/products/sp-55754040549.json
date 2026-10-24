@@ -1,22 +1,41 @@
 {
   "id": "sp-55754040549",
   "slug": "tinywhoop-65-80mm-3d-8",
-  "name_zh": "Tinywhoop 65～80mm 機架＆強化件🛸 3D列印碳纖8% 微型穿越機機架 增強保護件/機臂補強/電池托架",
+  "name_zh": "Tinywhoop 75／80mm 碳纖 8% 列印機架｜可選附電池托架｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "Tinywhoop",
+    "機架",
+    "75mm",
+    "80mm",
+    "碳纖",
+    "3D列印"
+  ],
   "compatible_sizes": [
+    "75mm",
     "80mm"
   ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "⚠️ 務必備註顏色。訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋屬正常現象\n\n室內場炸久了，原廠機架不是裂角就是槳罩變形嗎？😆\n這個「Tinywhoop 65～80mm 機架及強化件」賣場，集中擺放各類 65/75/80mm 微型穿越機專用 3D 列印碳纖 8% 機架與補強件，從整套機架到機臂補強、電池托、保險桿一次找齊。\n\n產品特色：\n💪 碳纖 8% 增強材質：採用含碳纖維填料的 3D 列印線材，剛性與耐撞性優於一般 PLA/PLA+，更耐高溫、不易軟腳。\n​\n🧩 多尺吋機架：覆蓋 65mm／75mm／80mm Tinywhoop 平台，可依電機尺寸、槳徑與電池配置挑選適合機架。\n🛡️ 專用強化件：提供機臂補強、槳罩護條、相機支架、電池固定座等零件，讓原廠機也能升級更耐炸。\n​",
-  "specifications": [],
+  "short_description": "電翼動力以碳纖 8% 線材列印的 75／80mm Tinywhoop 機架，剛性與耐撞性優於一般 PLA，可選是否附電池托架。",
+  "description": "電翼動力以含碳纖填料（碳纖 8%）線材列印的 Tinywhoop 機架，適合室內場常炸機、原廠機架容易裂角或槳罩變形的玩家。\n\n【產品特色】\n・碳纖 8% 增強材質，剛性與耐撞性優於一般 PLA／PLA+\n・對應 75mm／80mm 平台，請依馬達尺寸、槳徑與電池配置選擇\n\n【版本說明】\n・75／80mm 機架\n・75／80mm 機架（含電池托架）\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用尺寸",
+      "value": "75mm／80mm Tinywhoop",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "碳纖 8%（3D 列印）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-55754040549/01.webp",
@@ -115,14 +134,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

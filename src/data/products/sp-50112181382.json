@@ -1,28 +1,68 @@
 {
   "id": "sp-50112181382",
   "slug": "mgc-w-1103-8000kv-2s-3s",
-  "name_zh": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用",
+  "name_zh": "MGC 天狼W 1103 8000KV 無刷馬達｜2S–3S｜2.5 吋牙籤機、JENO Pocket",
   "sku": null,
-  "brand": null,
-  "manufacturer_model": null,
+  "brand": "MGC",
+  "manufacturer_model": "天狼W 1103 8000KV",
   "seller_role": "retail",
   "primary_category_id": "motors-props",
   "subcategory_id": "motors",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "無刷馬達",
+    "1103",
+    "8000KV",
+    "牙籤機",
+    "JENO Pocket",
+    "MGC"
+  ],
+  "compatible_sizes": [
+    "2.5 吋"
+  ],
   "video_system": null,
   "battery_cells": [
     "2S",
     "3S"
   ],
-  "short_description": "",
-  "description": "MGC 天狼W 1103 8000KV 無刷馬達專為2~3吋FPV穿越機打造，採用9N12P高效率磁路結構，兼具爆發力、油門解析度與飛行效率。適合2.5吋Freestyle、牙籤機及輕量化數位穿越機使用。\n\nJENO POCKET 戈布原廠指定動力系統，搭配2512三葉槳可獲得優異的加速性能與靈活操控手感。\n\n【產品特色】\n✔ 1103高性能無刷馬達\n✔ 8000KV高轉速設計\n✔ 9N12P高效率磁路結構\n✔ 穩定動力輸出\n✔ 提升飛行靈敏度\n✔ 輕量化設計\n✔ 適用2S 3S動力\n✔ JENO POCKET原廠搭配動力",
-  "specifications": [],
+  "short_description": "MGC 天狼W 1103 8000KV 無刷馬達，9N12P 結構，適用 2S–3S 的 2～3 吋穿越機，為 JENO Pocket／電翼動力戈布的搭配動力。",
+  "description": "MGC 天狼W 1103 8000KV 無刷馬達，為 2～3 吋 FPV 穿越機設計，採 9N12P 磁路結構，適合 2.5 吋 Freestyle、牙籤機與輕量化數位穿越機。JENO Pocket（電翼動力戈布）指定搭配動力，建議搭配 2512 三葉槳。\n\n【產品特色】\n・1103 規格、8000KV\n・9N12P 磁路結構\n・適用 2S、3S 動力\n・輕量化設計",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "MGC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "天狼W 1103",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "KV 值",
+      "value": "8000KV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "結構",
+      "value": "9N12P",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "工作電壓",
+      "value": "2S–3S",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "建議槳葉",
+      "value": "2512 三葉槳",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-50112181382/01.webp",
       "src_small": "/assets/img/products/sp-50112181382/01-480.webp",
-      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（主圖）",
+      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S–3S｜2.5 吋牙籤機、JENO Pocket（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -32,7 +72,7 @@
     {
       "src": "/assets/img/products/sp-50112181382/02.webp",
       "src_small": "/assets/img/products/sp-50112181382/02-480.webp",
-      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（細節圖 1）",
+      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S–3S｜2.5 吋牙籤機、JENO Pocket（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -42,7 +82,7 @@
     {
       "src": "/assets/img/products/sp-50112181382/03.webp",
       "src_small": "/assets/img/products/sp-50112181382/03-480.webp",
-      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（細節圖 2）",
+      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S–3S｜2.5 吋牙籤機、JENO Pocket（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -52,7 +92,7 @@
     {
       "src": "/assets/img/products/sp-50112181382/04.webp",
       "src_small": "/assets/img/products/sp-50112181382/04-480.webp",
-      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S 3S｜FPV穿越機｜牙籤機｜Freestyle｜2-3S適用（細節圖 3）",
+      "alt": "MGC 天狼W 1103 8000KV 無刷馬達｜2S–3S｜2.5 吋牙籤機、JENO Pocket（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -69,14 +109,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-mpg39owrjdvxd5",

@@ -1,21 +1,28 @@
 {
   "id": "sp-52105308338",
   "slug": "18650-2s-3500mah-fpv-goggles-dji",
-  "name_zh": "電翼動力 18650 2S 3500mAh⚡ FPV Goggles供電器 電池盒 支援DJI/類比眼鏡 長續航",
+  "name_zh": "電翼動力 18650 2S 3500mAh FPV 眼鏡供電盒｜可換電芯｜平衡插頭充電｜支援 DJI／類比眼鏡",
   "sku": null,
-  "brand": "電翼動力",
+  "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "power-battery",
   "subcategory_id": "18650",
-  "tags": [],
+  "tags": [
+    "眼鏡電池",
+    "18650",
+    "2S",
+    "DJI Goggles",
+    "FPV眼鏡",
+    "電翼動力"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [
     "2S"
   ],
   "short_description": "兩顆 18650 組成 2S 約 3500mAh 的 FPV 眼鏡供電盒，3D 列印外殼，附平衡插頭，可更換電芯。",
-  "description": "🔥設置平衡插頭 可以直接透過\n例如HOTAD6 pro對電池盒進行充電及平衡\n沒電的時候；直接更換備用電池 飛行不間斷\n\n標配兩顆 18650 電芯組成 2S 約 3500mAh 組合，小鋰電多出數倍續航，一天外出飛行不用一直找插座。\n\n採用專用電源線與電壓匹配設計，可為主流 FPV Goggles 提供穩定 DC 輸出，減少畫面閃爍與意外斷電風險\n\n外殼為客製 3D 列印盒，尺寸剛好包住兩顆 18650，兼顧強度與重量，放口袋或掛在腰間都方便。\n\n支援更換電芯設計，沒電時候直接更換備用電池；不間斷飛行",
+  "description": "電翼動力的 FPV 眼鏡供電盒，標配兩顆 18650 電芯組成 2S 約 3500mAh，比眼鏡原廠小電池更耐用，一天外出飛行不用一直找插座。\n\n【產品特色】\n・兩顆 18650 組成 2S 約 3500mAh\n・專用電源線與電壓匹配設計，為主流 FPV 眼鏡提供 DC 供電\n・客製 3D 列印外殼，尺寸剛好包住兩顆 18650，放口袋或掛腰間都方便\n・可更換電芯：沒電時直接換上備用電池\n・設有平衡插頭，可用平衡充電器（例如 HOTA D6 Pro）充電與平衡\n\n【規格選項】\n・單顆電池（3500mAh）\n・一組套裝（含電池兩顆、充電線一條）\n\n【使用提醒】\n・使用前請確認眼鏡的輸入電壓範圍與接頭\n・更換電芯時請確認正負極方向，並使用同型號、電壓相近的電芯",
   "specifications": [
     {
       "key": "電芯",
@@ -124,7 +131,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -132,7 +139,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
-      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztq-mjxqhksbynt1e8",

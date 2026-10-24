@@ -1,25 +1,50 @@
 {
   "id": "sp-54152148395",
   "slug": "beta-meteor75-pro-1s",
-  "name_zh": "BETA Meteor75 Pro 專用收納盒｜穿越機＋1S電池一體式保護盒｜",
+  "name_zh": "Meteor75 Pro 專用收納盒｜可放 13 顆 550mAh LAVA 電池＋充電器｜適用 BETAFPV Meteor75 Pro",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "cases",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "收納盒",
+    "Meteor75",
+    "Tinywhoop",
+    "1S電池",
+    "LAVA",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "75mm"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D 列印件可能有些微層紋屬正常現象⚠️\n\n專為 BETA Meteor75 Pro 設計的專用收納盒，內部配置穿越機槽位與 1S 電池固定架，能一次帶走機體＋多顆電池，外出飛行更方便。盒體具良好保護性，避免機體在包包中被壓損。\n\n產品特色\nMeteor75 Pro 專屬尺寸，完美卡位不晃動\n一體成型防撞設計，外出攜帶更安心\n最多存放13塊550MAH LAVA電池\n收納盒中間可置放 充電器",
-  "specifications": [],
+  "short_description": "依 BETAFPV Meteor75 Pro 設計的 3D 列印一體式收納盒，最多可放 13 顆 550mAh LAVA 電池，中間可放充電器。",
+  "description": "電翼動力依 BETAFPV Meteor75 Pro 設計的收納盒，內部配置機體槽位與 1S 電池固定架，可一次帶走機體與多顆電池，避免機體在包包中被壓損。\n\n【產品特色】\n・依 Meteor75 Pro 尺寸設計，放入後不晃動\n・一體式防撞設計\n・最多可放 13 顆 550mAh LAVA 電池\n・中間可放置充電器\n\n【顏色與列印】\n・可選顏色：白、透黃、透橘、螢光綠、冰淇淋、透明、黑\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "BETAFPV Meteor75 Pro",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電池收納",
+      "value": "最多 13 顆 550mAh LAVA 1S 電池",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-54152148395/01.webp",
       "src_small": "/assets/img/products/sp-54152148395/01-480.webp",
-      "alt": "BETA Meteor75 Pro 專用收納盒｜穿越機＋1S電池一體式保護盒｜（主圖）",
+      "alt": "Meteor75 Pro 專用收納盒｜可放 13 顆 550mAh LAVA 電池＋充電器｜適用 BETAFPV Meteor75 Pro（主圖）",
       "width": 884,
       "height": 884,
       "rights": "licensed",
@@ -29,7 +54,7 @@
     {
       "src": "/assets/img/products/sp-54152148395/02.webp",
       "src_small": "/assets/img/products/sp-54152148395/02-480.webp",
-      "alt": "BETA Meteor75 Pro 專用收納盒｜穿越機＋1S電池一體式保護盒｜（細節圖 1）",
+      "alt": "Meteor75 Pro 專用收納盒｜可放 13 顆 550mAh LAVA 電池＋充電器｜適用 BETAFPV Meteor75 Pro（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +64,7 @@
     {
       "src": "/assets/img/products/sp-54152148395/03.webp",
       "src_small": "/assets/img/products/sp-54152148395/03-480.webp",
-      "alt": "BETA Meteor75 Pro 專用收納盒｜穿越機＋1S電池一體式保護盒｜（細節圖 2）",
+      "alt": "Meteor75 Pro 專用收納盒｜可放 13 顆 550mAh LAVA 電池＋充電器｜適用 BETAFPV Meteor75 Pro（細節圖 2）",
       "width": 990,
       "height": 990,
       "rights": "licensed",
@@ -106,7 +131,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -114,7 +139,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,25 +1,45 @@
 {
   "id": "sp-44950536847",
   "slug": "speedybee-bee25-3d-tpu-gps",
-  "name_zh": "SpeedyBee Bee25 3D列印外殼 TPU防護配件 穿越機保護套 機臂底座 gps座 天線座",
+  "name_zh": "SpeedyBee Bee25 TPU 3D 列印配件｜天線座、GPS 上蓋、O3／O4 保護蓋、狗座、鏡頭減震",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "SpeedyBee",
+    "Bee25",
+    "TPU",
+    "3D列印",
+    "天線座",
+    "Cinewhoop"
+  ],
+  "compatible_sizes": [
+    "2.5 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "🐝【SpeedyBee Bee25 專用3D列印配件】\n為你的 Bee25 提供全方位防護！本系列採用高品質TPU柔性材質列印，具備彈性與耐撞性，能有效吸收飛行中墜落的衝擊力，同時提升整體外觀與結構穩定性。\n\n✅ 產品特點：\n專為SpeedyBee Bee25機架設計，完美貼合\nTPU材質柔軟抗震，不易斷裂\n支援客製顏色列印\n適用各類穿越機改裝與DIY應用\n\n📦 產品資訊：\n材質：TPU柔性材料\n適用機型：SpeedyBee Bee25\n製作方式：高精度3D列印\n顏色：多色可選（預設隨機出貨）\n功能：防護／固定／外觀升級\n\n💡注意事項：\n此商品為3D列印製品，表面略有列印紋屬正常現象，不影響使用功能。可依需求提供特定部件或顏色客製化。",
-  "specifications": [],
+  "short_description": "電翼動力為 SpeedyBee Bee25 列印的 TPU 配件，提供天線座、GPS 上蓋、O3／O4 Pro 保護蓋、狗座、鏡頭減震等近 20 種選項。",
+  "description": "電翼動力為 SpeedyBee Bee25 列印的 TPU 防護與改裝配件，TPU 具彈性，可吸收部分撞擊。可依需求單買特定部件。\n\n【可選零件】\n・天線座：單 SMA 鯊魚鰭前座、前側雙 SMA、雙豬尾巴、O3＋豬尾巴尾座、O3 Vista Link 二合一\n・保護件：GPS 上蓋、O3 上保護蓋、O4 Pro 保護蓋（軟）、鏡頭保護蓋、原廠腳墊\n・固定件：塑料機頭狗座、CNC 機頭狗座（O3 用）、CNC 模塊狗座、尾部拇指相機座\n・其他：鏡頭減振 19mm 一組、鯊魚鰭、TX800 拓展件（一般／L 型）、Vista Link 配件\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。\n・未指定顏色時預設隨機出貨",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "SpeedyBee Bee25",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-44950536847/01.webp",
       "src_small": "/assets/img/products/sp-44950536847/01-480.webp",
-      "alt": "SpeedyBee Bee25 3D列印外殼 TPU防護配件 穿越機保護套 機臂底座 gps座 天線座（主圖）",
+      "alt": "SpeedyBee Bee25 TPU 3D 列印配件｜天線座、GPS 上蓋、O3／O4 保護蓋、狗座、鏡頭減震（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +49,7 @@
     {
       "src": "/assets/img/products/sp-44950536847/02.webp",
       "src_small": "/assets/img/products/sp-44950536847/02-480.webp",
-      "alt": "SpeedyBee Bee25 3D列印外殼 TPU防護配件 穿越機保護套 機臂底座 gps座 天線座（細節圖 1）",
+      "alt": "SpeedyBee Bee25 TPU 3D 列印配件｜天線座、GPS 上蓋、O3／O4 保護蓋、狗座、鏡頭減震（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +59,7 @@
     {
       "src": "/assets/img/products/sp-44950536847/03.webp",
       "src_small": "/assets/img/products/sp-44950536847/03-480.webp",
-      "alt": "SpeedyBee Bee25 3D列印外殼 TPU防護配件 穿越機保護套 機臂底座 gps座 天線座（細節圖 2）",
+      "alt": "SpeedyBee Bee25 TPU 3D 列印配件｜天線座、GPS 上蓋、O3／O4 保護蓋、狗座、鏡頭減震（細節圖 2）",
       "width": 590,
       "height": 590,
       "rights": "licensed",
@@ -49,7 +69,7 @@
     {
       "src": "/assets/img/products/sp-44950536847/04.webp",
       "src_small": "/assets/img/products/sp-44950536847/04-480.webp",
-      "alt": "SpeedyBee Bee25 3D列印外殼 TPU防護配件 穿越機保護套 機臂底座 gps座 天線座（細節圖 3）",
+      "alt": "SpeedyBee Bee25 TPU 3D 列印配件｜天線座、GPS 上蓋、O3／O4 保護蓋、狗座、鏡頭減震（細節圖 3）",
       "width": 825,
       "height": 825,
       "rights": "licensed",
@@ -314,14 +334,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

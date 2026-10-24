@@ -1,27 +1,75 @@
 {
   "id": "sp-41132575757",
   "slug": "ovonic-3s-450mah-120c-xt30-fpv",
-  "name_zh": "OVONIC 3S 450mAh 120C XT30 FPV 穿越機鋰電池 花飛 競速 TinyWhoop 無人機",
+  "name_zh": "OVONIC P 系列 3S 450mAh 120C LiPo 電池｜XT30｜2.5～3 吋穿越機",
   "sku": null,
   "brand": "OVONIC",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "power-battery",
   "subcategory_id": "1s-micro",
-  "tags": [],
+  "tags": [
+    "LiPo",
+    "3S",
+    "450mAh",
+    "XT30",
+    "OVONIC",
+    "電池"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [
     "3S"
   ],
-  "short_description": "",
-  "description": "OVONIC P系列 3S 450mAh 120C 鋰電池，採用高倍率電芯，爆發力強、內阻低，專為2.5～3吋FPV穿越機、花飛及競速飛行打造。容量扎實、放電穩定，兼顧輕量化與續航表現，適合追求靈敏操控的玩家。\n【產品特色】\n✔ 120C高倍率放電，油門反應快速\n✔ 450mAh容量，兼顧飛行時間與重量\n✔ 採用高品質電芯，內阻低、電壓穩定\n✔ 輕量51g，提升機體靈活性\n✔ XT30接頭，即插即飛\n【產品規格】\n品牌：OVONIC\n系列：P Series\n容量：450mAh\n電壓：3S／11.1V\n放電倍率：120C\n接頭：XT30\n重量：約51g\n尺寸：約62×16×20mm\n【適用機型】\n2.5吋～3吋FPV穿越機\nTiny Freestyle\n花飛／競速機\n使用XT30接頭之3S機型\n※ 請確認機體尺寸、重量及接頭規格後再下單。",
-  "specifications": [],
+  "short_description": "OVONIC P 系列 3S 450mAh 120C LiPo 電池，XT30 接頭，約 51g，適用 2.5～3 吋 FPV 穿越機、花飛與競速。",
+  "description": "OVONIC P系列 3S 450mAh 120C 鋰電池，採用高倍率電芯，爆發力強、內阻低，專為2.5～3吋FPV穿越機、花飛及競速飛行打造。容量扎實、放電穩定，兼顧輕量化與續航表現，適合追求靈敏操控的玩家。\n\n【產品特色】\n・120C高倍率放電，油門反應快速\n・450mAh容量，兼顧飛行時間與重量\n・採用高品質電芯，內阻低、電壓穩定\n・輕量51g，提升機體靈活性\n・XT30接頭，即插即飛\n\n【適用機型】\n・5吋～3吋FPV穿越機\nTiny Freestyle\n花飛／競速機\n使用XT30接頭之3S機型\n※ 請確認機體尺寸、重量及接頭規格後再下單。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "OVONIC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "系列",
+      "value": "P Series",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "容量",
+      "value": "450mAh",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電壓",
+      "value": "3S／11.1V",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "放電倍率",
+      "value": "120C",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接頭",
+      "value": "XT30",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約51g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "約62×16×20mm",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-41132575757/01.webp",
       "src_small": "/assets/img/products/sp-41132575757/01-480.webp",
-      "alt": "OVONIC 3S 450mAh 120C XT30 FPV 穿越機鋰電池 花飛 競速 TinyWhoop 無人機（主圖）",
+      "alt": "OVONIC P 系列 3S 450mAh 120C LiPo 電池｜XT30｜2.5～3 吋穿越機（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +79,7 @@
     {
       "src": "/assets/img/products/sp-41132575757/02.webp",
       "src_small": "/assets/img/products/sp-41132575757/02-480.webp",
-      "alt": "OVONIC 3S 450mAh 120C XT30 FPV 穿越機鋰電池 花飛 競速 TinyWhoop 無人機（細節圖 1）",
+      "alt": "OVONIC P 系列 3S 450mAh 120C LiPo 電池｜XT30｜2.5～3 吋穿越機（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +89,7 @@
     {
       "src": "/assets/img/products/sp-41132575757/03.webp",
       "src_small": "/assets/img/products/sp-41132575757/03-480.webp",
-      "alt": "OVONIC 3S 450mAh 120C XT30 FPV 穿越機鋰電池 花飛 競速 TinyWhoop 無人機（細節圖 2）",
+      "alt": "OVONIC P 系列 3S 450mAh 120C LiPo 電池｜XT30｜2.5～3 吋穿越機（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -51,7 +99,7 @@
     {
       "src": "/assets/img/products/sp-41132575757/04.webp",
       "src_small": "/assets/img/products/sp-41132575757/04-480.webp",
-      "alt": "OVONIC 3S 450mAh 120C XT30 FPV 穿越機鋰電池 花飛 競速 TinyWhoop 無人機（細節圖 3）",
+      "alt": "OVONIC P 系列 3S 450mAh 120C LiPo 電池｜XT30｜2.5～3 吋穿越機（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -61,7 +109,7 @@
     {
       "src": "/assets/img/products/sp-41132575757/05.webp",
       "src_small": "/assets/img/products/sp-41132575757/05-480.webp",
-      "alt": "OVONIC 3S 450mAh 120C XT30 FPV 穿越機鋰電池 花飛 競速 TinyWhoop 無人機（細節圖 4）",
+      "alt": "OVONIC P 系列 3S 450mAh 120C LiPo 電池｜XT30｜2.5～3 吋穿越機（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -71,7 +119,7 @@
     {
       "src": "/assets/img/products/sp-41132575757/06.webp",
       "src_small": "/assets/img/products/sp-41132575757/06-480.webp",
-      "alt": "OVONIC 3S 450mAh 120C XT30 FPV 穿越機鋰電池 花飛 競速 TinyWhoop 無人機（細節圖 5）",
+      "alt": "OVONIC P 系列 3S 450mAh 120C LiPo 電池｜XT30｜2.5～3 吋穿越機（細節圖 5）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -81,7 +129,7 @@
     {
       "src": "/assets/img/products/sp-41132575757/07.webp",
       "src_small": "/assets/img/products/sp-41132575757/07-480.webp",
-      "alt": "OVONIC 3S 450mAh 120C XT30 FPV 穿越機鋰電池 花飛 競速 TinyWhoop 無人機（細節圖 6）",
+      "alt": "OVONIC P 系列 3S 450mAh 120C LiPo 電池｜XT30｜2.5～3 吋穿越機（細節圖 6）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -106,13 +154,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mqn4z01o6dxq38"

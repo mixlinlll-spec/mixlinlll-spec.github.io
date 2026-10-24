@@ -1,22 +1,50 @@
 {
   "id": "sp-26544249317",
   "slug": "bee25-850mah-2-5-cinewhoop",
-  "name_zh": "Bee25 850mAh 電池保護殼🧱 2.5吋Cinewhoop專用 電池防爆護倉 抗摔防滑 造型電池艙",
+  "name_zh": "SpeedyBee Bee25 850mAh 電池保護殼＋XT30／GPS 保護罩｜TPU 3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "SpeedyBee",
+    "Bee25",
+    "電池保護",
+    "Cinewhoop",
+    "TPU",
+    "3D列印"
+  ],
   "compatible_sizes": [
     "2.5 吋"
   ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "依照 Bee25 機架與 850mAh 電池實際尺寸建模，套上後可完整包覆電池四側與上方，減少炸機時的直接撞擊。\n採用輕量 TPU列印材質，內部預留束帶通道與走線空間，電池照樣用魔鬼氈固定，不影響重心與拆裝速度。​\n外側做成「小機艙」造型，顏色可客製，整台 Bee25 看起來更一體、更像電影機，同時也方便在場地裡一眼認出自己的機。\n適合常在室內／城市環境飛 Cinewhoop 的玩家，高牆、鐵架、欄杆輕碰時能幫電池多擋一下，延長電池壽命。​\n尾部可固定平衡頭\n\nSpeedyBee25 原廠只附 GPS 保護座，尾部突出的 XT30 插座完全裸露，炸機時很容易被直接撞斷，GPS 原外殼也常被敲裂。​\n這款 GPS‑XT30 一體保護罩依照 SpeedyBee25 機架實機建模，套上後同時包覆 GPS 模組與 XT30 座，替兩個脆弱區域加上一層防撞保險。​\n專為「電池縱置」玩家設計，不需要改成橫置電池，也不用重新佈線，就能直接解決尾巴易炸的老問題。​",
-  "specifications": [],
+  "short_description": "依 SpeedyBee Bee25 與 850mAh 電池尺寸建模的 TPU 電池保護殼，另有 GPS 與 XT30 一體保護罩，降低炸機時的直接撞擊。",
+  "description": "電翼動力依 SpeedyBee Bee25 機架實機建模的 TPU 保護件，提供電池保護殼與 GPS／XT30 保護罩兩種選項。\n\n【電池倉】\n・依 Bee25 與 850mAh 電池實際尺寸建模，包覆電池四側與上方，減少撞擊時的直接衝擊\n・內部預留束帶通道與走線空間，電池照樣用魔鬼氈固定\n・尾部可固定平衡頭\n・適合常在室內、城市環境飛 Cinewhoop 的玩家\n\n【XT30／GPS 保護】\n・Bee25 原廠只附 GPS 保護座，尾部 XT30 插座外露，炸機時容易撞斷\n・一體保護罩同時包覆 GPS 模組與 XT30 座\n・適用電池縱置的配置，不需改成橫置或重新佈線\n\n【說明】\n・保護殼可減少撞擊損傷，但不具防爆功能；電池受撞擊後仍請檢查是否膨脹或破損\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "SpeedyBee Bee25",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用電池",
+      "value": "850mAh（Bee25 用）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "版本",
+      "value": "電池倉／XT30＋GPS 保護",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-26544249317/01.webp",
@@ -115,7 +143,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -123,7 +151,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

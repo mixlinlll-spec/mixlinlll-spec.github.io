@@ -1,20 +1,40 @@
 {
   "id": "sp-51950741955",
   "slug": "geprc-mark5-3d-gopro-gps",
-  "name_zh": "【GEPRC Mark5 專用】3D列印改裝套件｜GoPro支架｜天線固定座｜GPS托架｜避震腳墊｜穿越機升級配件",
+  "name_zh": "GEPRC MARK5 3D 列印改裝件｜狗座、天線座、GPS 托架、機臂腳墊、鏡頭減震｜TPU 95A",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "GEPRC",
+    "MARK5",
+    "TPU",
+    "3D列印",
+    "GPS座",
+    "狗座"
+  ],
+  "compatible_sizes": [
+    "5 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "🔥 商品特色\n專為 GEPRC Mark5 系列穿越機 設計，精密列印、完美貼合機架。\n選用高彈性 TPU 材質，具備 耐撞、防震、柔韌性佳 的特性。\n提供多款改裝件，讓你的 Mark5 更穩定、更具個人風格。\n\n適用機型：\nGEPRC Mark5\nGEPRC Mark5 HD\nGEPRC Mark5 Freestyle\n\n材質說明：\nTPU 95A 高彈性打印材質\n支援自訂顏色（請備註）\n\n鏡頭減震 : 03、Runcam 和 Walksnail  皆可使用\n尾座單天線+gps : gps 規格 22x20x6",
-  "specifications": [],
+  "short_description": "電翼動力為 GEPRC MARK5 系列製作的 TPU 95A 列印件，提供狗座、爪子腳墊、機頭保桿、XT60 尾座、SMA＋GPS 尾座、機臂腳墊與鏡頭減震等選項。",
+  "description": "電翼動力為 GEPRC MARK5 系列製作的改裝件，TPU 95A 高彈性材質，耐撞、抗震。\n\n【可選零件】\n・狗座、機頭保桿\n・爪子腳墊、機臂腳墊 4 個\n・XT60 尾座＋接收機天線\n・尾部 SMA＋GPS、尾座單天線＋GPS（GPS 規格 22×20×6mm）\n・鏡頭減震：O3、RunCam、Walksnail 皆可使用\n\n【適用機型】\n・GEPRC MARK5、MARK5 HD、MARK5 Freestyle\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "GEPRC MARK5／MARK5 HD／MARK5 Freestyle",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU 95A（3D 列印）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-51950741955/01.webp",
@@ -201,7 +221,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -209,7 +229,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,25 +1,48 @@
 {
   "id": "sp-44807526686",
   "slug": "itsfpv-era-tpu-fpv-elrs",
-  "name_zh": "客製化顏色itsFPV ERA 機架 TPU 全套配件｜FPV花飛專用｜機臂腳墊・電線護套・ELRS天線座・圖傳天線",
+  "name_zh": "itsFPV ERA 機架 TPU 全套配件｜機臂腳墊、電線護套、ELRS 天線座、圖傳天線座",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "itsFPV",
+    "ERA",
+    "TPU",
+    "3D列印",
+    "天線座",
+    "花飛"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\nitsFPV ERA TPU 全套配件（花飛專用設計）\n本套件專為 itsFPV ERA 機架花飛配置打造，整合多個關鍵保護與佈線優化部件，提升整體耐用性與飛行穩定度，適合進階玩家與長時間飛行使用。\n1️⃣ 結構保護與耐用提升\n機臂腳墊有效吸收落地衝擊，降低機架與電機底部受損風險，適合頻繁起降與激烈飛行環境。\n2️⃣ 線材管理與機體整潔\n電線護套設計可整理電機線與電源線，減少磨損與纏繞風險，提升整體佈線安全性。\n3️⃣ 天線配置優化\nELRS 側掛支架：穩定接收訊號，避免遮蔽\n圖傳短天線座：降低撞擊風險，提升耐用性\n\n📦 內容物（整套販售）\n機臂腳墊 ×4\n電線護套 ×4\nELRS 天線側掛座 ×1\n圖傳天線短款支架 ×1",
-  "specifications": [],
+  "short_description": "電翼動力為 itsFPV ERA 機架製作的 TPU 全套配件，含機臂腳墊 ×4、電線護套 ×4、ELRS 天線側掛座與圖傳短天線支架。",
+  "description": "電翼動力為 itsFPV ERA 機架花飛配置製作的 TPU 全套配件，整合保護與走線用的常用部件。\n\n【產品特色】\n・機臂腳墊：吸收落地衝擊，降低機架與馬達底部受損的機會\n・電線護套：整理馬達線與電源線，減少磨損與纏繞\n・ELRS 側掛支架：固定接收機天線\n・圖傳短天線座：降低天線撞擊損壞的機會\n\n【包裝內容（整套販售）】\n・機臂腳墊 ×4\n・電線護套 ×4\n・ELRS 天線側掛座 ×1\n・圖傳天線短款支架 ×1\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機架",
+      "value": "itsFPV ERA",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "內容",
+      "value": "機臂腳墊 ×4、電線護套 ×4、ELRS 天線座 ×1、圖傳天線支架 ×1",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-44807526686/01.webp",
       "src_small": "/assets/img/products/sp-44807526686/01-480.webp",
-      "alt": "客製化顏色itsFPV ERA 機架 TPU 全套配件｜FPV花飛專用｜機臂腳墊・電線護套・ELRS天線座・圖傳天線（主圖）",
+      "alt": "itsFPV ERA 機架 TPU 全套配件｜機臂腳墊、電線護套、ELRS 天線座、圖傳天線座（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +52,7 @@
     {
       "src": "/assets/img/products/sp-44807526686/02.webp",
       "src_small": "/assets/img/products/sp-44807526686/02-480.webp",
-      "alt": "客製化顏色itsFPV ERA 機架 TPU 全套配件｜FPV花飛專用｜機臂腳墊・電線護套・ELRS天線座・圖傳天線（細節圖 1）",
+      "alt": "itsFPV ERA 機架 TPU 全套配件｜機臂腳墊、電線護套、ELRS 天線座、圖傳天線座（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +62,7 @@
     {
       "src": "/assets/img/products/sp-44807526686/03.webp",
       "src_small": "/assets/img/products/sp-44807526686/03-480.webp",
-      "alt": "客製化顏色itsFPV ERA 機架 TPU 全套配件｜FPV花飛專用｜機臂腳墊・電線護套・ELRS天線座・圖傳天線（細節圖 2）",
+      "alt": "itsFPV ERA 機架 TPU 全套配件｜機臂腳墊、電線護套、ELRS 天線座、圖傳天線座（細節圖 2）",
       "width": 992,
       "height": 992,
       "rights": "licensed",
@@ -49,7 +72,7 @@
     {
       "src": "/assets/img/products/sp-44807526686/04.webp",
       "src_small": "/assets/img/products/sp-44807526686/04-480.webp",
-      "alt": "客製化顏色itsFPV ERA 機架 TPU 全套配件｜FPV花飛專用｜機臂腳墊・電線護套・ELRS天線座・圖傳天線（細節圖 3）",
+      "alt": "itsFPV ERA 機架 TPU 全套配件｜機臂腳墊、電線護套、ELRS 天線座、圖傳天線座（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -59,7 +82,7 @@
     {
       "src": "/assets/img/products/sp-44807526686/05.webp",
       "src_small": "/assets/img/products/sp-44807526686/05-480.webp",
-      "alt": "客製化顏色itsFPV ERA 機架 TPU 全套配件｜FPV花飛專用｜機臂腳墊・電線護套・ELRS天線座・圖傳天線（細節圖 4）",
+      "alt": "itsFPV ERA 機架 TPU 全套配件｜機臂腳墊、電線護套、ELRS 天線座、圖傳天線座（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -69,7 +92,7 @@
     {
       "src": "/assets/img/products/sp-44807526686/06.webp",
       "src_small": "/assets/img/products/sp-44807526686/06-480.webp",
-      "alt": "客製化顏色itsFPV ERA 機架 TPU 全套配件｜FPV花飛專用｜機臂腳墊・電線護套・ELRS天線座・圖傳天線（細節圖 5）",
+      "alt": "itsFPV ERA 機架 TPU 全套配件｜機臂腳墊、電線護套、ELRS 天線座、圖傳天線座（細節圖 5）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -79,7 +102,7 @@
     {
       "src": "/assets/img/products/sp-44807526686/07.webp",
       "src_small": "/assets/img/products/sp-44807526686/07-480.webp",
-      "alt": "客製化顏色itsFPV ERA 機架 TPU 全套配件｜FPV花飛專用｜機臂腳墊・電線護套・ELRS天線座・圖傳天線（細節圖 6）",
+      "alt": "itsFPV ERA 機架 TPU 全套配件｜機臂腳墊、電線護套、ELRS 天線座、圖傳天線座（細節圖 6）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -89,7 +112,7 @@
     {
       "src": "/assets/img/products/sp-44807526686/08.webp",
       "src_small": "/assets/img/products/sp-44807526686/08-480.webp",
-      "alt": "客製化顏色itsFPV ERA 機架 TPU 全套配件｜FPV花飛專用｜機臂腳墊・電線護套・ELRS天線座・圖傳天線（細節圖 7）",
+      "alt": "itsFPV ERA 機架 TPU 全套配件｜機臂腳墊、電線護套、ELRS 天線座、圖傳天線座（細節圖 7）",
       "width": 889,
       "height": 889,
       "rights": "licensed",
@@ -106,7 +129,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -114,7 +137,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

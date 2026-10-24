@@ -8,15 +8,76 @@
   "seller_role": "ewp_original",
   "primary_category_id": "complete-drones",
   "subcategory_id": "5in",
-  "tags": [],
+  "tags": [
+    "電翼動力",
+    "自製機型",
+    "Freestyle",
+    "花飛",
+    "5吋",
+    "MARK5",
+    "奈米鍍膜"
+  ],
   "compatible_sizes": [
     "5 吋"
   ],
-  "video_system": null,
-  "battery_cells": [],
-  "short_description": "",
-  "description": "一閃 ISSEN 是一款專為 Freestyle 花飛與高速穿越打造的 5 吋 FPV 穿越機，採用 GEPRC MARK5 碳纖維機架，搭配蔚川 F722 V3 飛控與 60A 四合一電調，兼具爆發力、穩定性與耐用性。\n\n出貨前完成組裝、設定與測試，綁定 ELRS 接收機後即可起飛，適合進階玩家、花飛玩家與競速愛好者使用。\n\n【產品特色】\n✔ GEPRC MARK5 高強度碳纖維機架\n✔ 蔚川 F722 V3 飛控\n✔ 60A 4IN1 大電流電調\n✔ 豐雲天狼 2306.5 1860KV 電機\n✔ 旋風 1W 大功率圖傳\n✔ 瑞速 ELRS 2.4G 接收機\n✔ 乾豐 GEMFAN 51466 三葉槳\n✔ 出貨前完成測試與調校\n\n【產品規格】\n機架：GEPRC MARK5\n飛控：蔚川 F722 V3\n電調：60A 4IN1 ESC\n電機：豐雲天狼 2306.5 / 1860KV\n鏡頭：CADDX ANT NANO\n圖傳：旋風 1W VTX\n接收機：瑞速 ELRS 2.4G\n槳葉：GEMFAN 51466 三葉槳\n建議電池：6S LiPo 1050~1480mAh\n機架尺寸：220mm\n重量：約425g（不含電池）\n\n【飛控功能】\n支援 Betaflight\n支援 Blackbox 飛行紀錄\n支援 OSD 即時顯示\n多 UART 擴充接口\n支援雙向 DShot\n\n【包裝內容】\n一閃 ISSEN 穿越機 ×1\n電池保護鯊魚鰭打印件x1\n狗座打印件x1\n槳葉x1\n\n【注意事項】\n本商品不含電池、遙控器、充電器及 FPV 眼鏡。\n出貨前已完成基本測試，建議具備 FPV 飛行經驗後再進行操作。",
-  "specifications": [],
+  "video_system": "類比",
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "電翼動力自製 5 吋 Freestyle 穿越機，GEPRC MARK5 機架、F722 V3 飛控與 60A 四合一電調，電子零件經奈米鍍膜處理（提升防潮、防潑水，非完全防水）。",
+  "description": "一閃 ISSEN 是電翼動力為 Freestyle 花飛與高速穿越打造的 5 吋 FPV 穿越機，採用 GEPRC MARK5 碳纖維機架，搭配蔚川 F722 V3 飛控與 60A 四合一電調，兼顧爆發力、穩定性與耐用性。出貨前完成組裝、設定與測試，綁定 ELRS 接收機後即可試飛。\n\n【產品特色】\n・GEPRC MARK5 高強度碳纖維機架\n・蔚川 F722 V3 飛控，支援 Betaflight、黑盒子紀錄、OSD、雙向 DShot 與多組 UART 擴充\n・60A 四合一電調搭配豐雲天狼 2306.5 1860KV 馬達\n・旋風 1W 類比圖傳、CADDX ANT NANO 鏡頭\n・瑞速 ELRS 2.4G 接收機\n・電子零件經奈米鍍膜處理，提升防潮、防潑水能力\n\n【關於奈米鍍膜】\n奈米鍍膜可降低受潮與潑水造成故障的風險，但不是完全防水。請勿浸水、在雨中飛行，飛行後如有沾濕請擦乾並確認後再通電。\n\n【包裝內容】\n・一閃 ISSEN 穿越機 ×1\n・電池保護鯊魚鰭列印件 ×1\n・狗座（GoPro 座）列印件 ×1\n・槳葉 ×1 套\n不含電池、遙控器、充電器與 FPV 眼鏡。\n\n【適用對象】\n進階玩家、花飛玩家與競速愛好者，建議具備 FPV 飛行經驗後再操作。",
+  "specifications": [
+    {
+      "key": "機架",
+      "value": "GEPRC MARK5（220mm）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控",
+      "value": "蔚川 F722 V3",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電調",
+      "value": "60A 四合一",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "馬達",
+      "value": "豐雲天狼 2306.5 1860KV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "鏡頭",
+      "value": "CADDX ANT NANO",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "圖傳",
+      "value": "旋風 1W 類比圖傳（另有 O4 Wide 版本）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接收機",
+      "value": "瑞速 ELRS 2.4G",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "槳葉",
+      "value": "GEMFAN 51466 三葉槳",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "建議電池",
+      "value": "6S LiPo 1050–1480mAh",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 425g（不含電池）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-49561691341/01.webp",
@@ -114,14 +175,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mp22kdh5fnyl6b",

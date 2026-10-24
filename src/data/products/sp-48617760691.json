@@ -1,19 +1,25 @@
 {
   "id": "sp-48617760691",
   "slug": "elrs-2-4g-hsrc-1-1g-t-crsf",
-  "name_zh": "ELRS 2.4G 接收機 HSRC 1.1g 輕量 T型天線 CRSF/SBUS FPV 穿越機 接收機 電翼動力",
+  "name_zh": "HSRC ELRS 2.4G 接收機｜約 1.1g｜T 型天線｜CRSF",
   "sku": null,
   "brand": "HSRC",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "radio-gps",
   "subcategory_id": "receivers",
-  "tags": [],
+  "tags": [
+    "接收機",
+    "ELRS",
+    "2.4G",
+    "CRSF",
+    "輕量"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
   "short_description": "HSRC ExpressLRS 2.4GHz 接收機，約 1.1g，T 型天線，CRSF 輸出。",
-  "description": "【HSRC ELRS 2.4G 接收機】",
+  "description": "HSRC ExpressLRS 2.4GHz 接收機，約 1.1g、T 型天線，適合空間有限的小型與 5 吋穿越機。\n\n【安裝前請確認】\n・接收機為 ELRS 2.4GHz，請搭配 ELRS 2.4GHz 遙控器或高頻頭\n・輸出協議為 CRSF，請接在飛控的 UART，並在 Betaflight 設定 Serial RX（CRSF）\n・綁定前請確認接收機與遙控器的 ELRS 韌體版本相容",
   "specifications": [
     {
       "key": "協定",
@@ -40,7 +46,7 @@
     {
       "src": "/assets/img/products/sp-48617760691/01.webp",
       "src_small": "/assets/img/products/sp-48617760691/01-480.webp",
-      "alt": "ELRS 2.4G 接收機 HSRC 1.1g 輕量 T型天線 CRSF/SBUS FPV 穿越機 接收機 電翼動力（主圖）",
+      "alt": "HSRC ELRS 2.4G 接收機｜約 1.1g｜T 型天線｜CRSF（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -50,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-48617760691/02.webp",
       "src_small": "/assets/img/products/sp-48617760691/02-480.webp",
-      "alt": "ELRS 2.4G 接收機 HSRC 1.1g 輕量 T型天線 CRSF/SBUS FPV 穿越機 接收機 電翼動力（細節圖 1）",
+      "alt": "HSRC ELRS 2.4G 接收機｜約 1.1g｜T 型天線｜CRSF（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -60,7 +66,7 @@
     {
       "src": "/assets/img/products/sp-48617760691/03.webp",
       "src_small": "/assets/img/products/sp-48617760691/03-480.webp",
-      "alt": "ELRS 2.4G 接收機 HSRC 1.1g 輕量 T型天線 CRSF/SBUS FPV 穿越機 接收機 電翼動力（細節圖 2）",
+      "alt": "HSRC ELRS 2.4G 接收機｜約 1.1g｜T 型天線｜CRSF（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -77,14 +83,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
-      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mt0d5od81amg0d"

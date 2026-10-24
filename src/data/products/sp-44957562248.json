@@ -1,27 +1,59 @@
 {
   "id": "sp-44957562248",
   "slug": "geprc-t-cube18-2-fpv-aio",
-  "name_zh": "GEPRC T-Cube18 2吋穿越機｜新手入門FPV｜AIO飛控｜內建接收｜5.8G圖傳｜輕量FPV",
+  "name_zh": "GEPRC T-Cube18 入門 FPV 穿越機｜AIO 飛控｜內建 ELRS｜HDZero／類比圖傳",
   "sku": null,
   "brand": "GEPRC",
-  "manufacturer_model": null,
+  "manufacturer_model": "T-Cube18",
   "seller_role": "retail",
   "primary_category_id": "complete-drones",
   "subcategory_id": "micro",
-  "tags": [],
+  "tags": [
+    "新手入門",
+    "入門機",
+    "AIO",
+    "ELRS",
+    "HDZero"
+  ],
   "compatible_sizes": [
     "2 吋"
   ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "FPV穿越機, GEPRC, T-Cube18, 新手穿越機, 航拍無人機, 2吋FPV, AIO飛控, 5.8G圖傳, FPV入門, Cinewhoop, 無人機, FPV Drone\n\n【🔥新手也能輕鬆飛的FPV入門機】\n 不會調機？不會組裝？這台直接幫你搞定\n 👉 開箱即可飛｜穩定｜好上手\n【✨產品特色】\n ✔ 輕量設計 👉 操控簡單穩定，新手友善\n ✔ AIO飛控整合 👉 安裝簡單，降低故障率\n ✔ 內建接收機 👉 減少配件成本與接線複雜度\n ✔ CNC鏡頭座 👉 抗震強化，畫面更穩\n ✔ 5.8G圖傳 👉 傳輸穩定，適合日常航拍\n ✔ 客製天線 👉 提升訊號穩定度\n【⚙️商品規格】\n 品牌：GEPRC｜型號：T-Cube18｜尺寸：2吋｜飛控：AIO飛控｜圖傳：5.8G｜接收機：內建｜適用：FPV入門 / 航拍\n【📦包裝內容】\n 穿越機×1（依版本配置）\n【⚠️注意事項】\n 需搭配遙控器與眼鏡使用｜建議初學者於空曠環境練習｜避免錯誤電池使用\n【🚀適合族群】\n 新手入門｜日常航拍｜輕度玩家｜練習飛行",
-  "specifications": [],
+  "short_description": "GEPRC T-Cube18 輕量入門穿越機，AIO 飛控與內建 ELRS 接收機，提供 HDZero、類比圖傳與無圖傳版本。",
+  "description": "GEPRC T-Cube18 是輕量化的入門 FPV 穿越機，採 AIO 飛控並內建 ELRS 接收機，減少接線與配件，適合想從小機開始練習的新手。\n\n【產品特色】\n・輕量機身，適合新手練習\n・AIO 飛控整合設計，安裝與維修較單純\n・內建 ELRS 接收機\n・CNC 鏡頭座\n\n【版本說明】\n・HDZero 數位圖傳版本（內建 ELRS）\n・類比圖傳版本（內建 ELRS）\n・無圖傳版本（內建 ELRS）\n\n【使用前請確認】\n需搭配相容的 ELRS 遙控器與 FPV 眼鏡使用。建議在空曠場地練習，並使用規格相符的電池。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "GEPRC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "T-Cube18",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控",
+      "value": "AIO",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接收機",
+      "value": "內建 ELRS",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "圖傳",
+      "value": "HDZero／類比／無（依版本）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-44957562248/01.webp",
       "src_small": "/assets/img/products/sp-44957562248/01-480.webp",
-      "alt": "GEPRC T-Cube18 2吋穿越機｜新手入門FPV｜AIO飛控｜內建接收｜5.8G圖傳｜輕量FPV（主圖）",
+      "alt": "GEPRC T-Cube18 入門 FPV 穿越機｜AIO 飛控｜內建 ELRS｜HDZero／類比圖傳（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +63,7 @@
     {
       "src": "/assets/img/products/sp-44957562248/02.webp",
       "src_small": "/assets/img/products/sp-44957562248/02-480.webp",
-      "alt": "GEPRC T-Cube18 2吋穿越機｜新手入門FPV｜AIO飛控｜內建接收｜5.8G圖傳｜輕量FPV（細節圖 1）",
+      "alt": "GEPRC T-Cube18 入門 FPV 穿越機｜AIO 飛控｜內建 ELRS｜HDZero／類比圖傳（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +73,7 @@
     {
       "src": "/assets/img/products/sp-44957562248/03.webp",
       "src_small": "/assets/img/products/sp-44957562248/03-480.webp",
-      "alt": "GEPRC T-Cube18 2吋穿越機｜新手入門FPV｜AIO飛控｜內建接收｜5.8G圖傳｜輕量FPV（細節圖 2）",
+      "alt": "GEPRC T-Cube18 入門 FPV 穿越機｜AIO 飛控｜內建 ELRS｜HDZero／類比圖傳（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -51,7 +83,7 @@
     {
       "src": "/assets/img/products/sp-44957562248/04.webp",
       "src_small": "/assets/img/products/sp-44957562248/04-480.webp",
-      "alt": "GEPRC T-Cube18 2吋穿越機｜新手入門FPV｜AIO飛控｜內建接收｜5.8G圖傳｜輕量FPV（細節圖 3）",
+      "alt": "GEPRC T-Cube18 入門 FPV 穿越機｜AIO 飛控｜內建 ELRS｜HDZero／類比圖傳（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -61,7 +93,7 @@
     {
       "src": "/assets/img/products/sp-44957562248/05.webp",
       "src_small": "/assets/img/products/sp-44957562248/05-480.webp",
-      "alt": "GEPRC T-Cube18 2吋穿越機｜新手入門FPV｜AIO飛控｜內建接收｜5.8G圖傳｜輕量FPV（細節圖 4）",
+      "alt": "GEPRC T-Cube18 入門 FPV 穿越機｜AIO 飛控｜內建 ELRS｜HDZero／類比圖傳（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -100,13 +132,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mm5dwp8cxfd18a",

@@ -1,20 +1,42 @@
 {
   "id": "sp-45150835735",
   "slug": "dji-o3-air-unit-3d",
-  "name_zh": "【DJI O3 AIR UNIT 專用】一體式安裝套件／3D列印改裝配件｜含保護罩＋天線支架＋鏡頭固定座",
+  "name_zh": "DJI O3 Air Unit 一體式安裝套件｜鏡頭固定座＋單天線尾座｜類 ABS 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "DJI O3",
+    "Air Unit",
+    "天線座",
+    "鏡頭座",
+    "3D列印"
+  ],
   "compatible_sizes": [],
-  "video_system": null,
+  "video_system": "DJI O3",
   "battery_cells": [],
-  "short_description": "",
-  "description": "🔥 商品特色\n專為 DJI O3 Air Unit 數位圖傳系統 精準設計的 一體式改裝套件，整合鏡頭、主機固定座與天線尾座。\n採用 類ABS 製作，保護昂貴的O3模組，讓飛行更穩定安全。\n\n💡 套件內\n🎥 O3 鏡頭固定座\n📡 單天線尾座\n\n🛠 材質與製作\n材質：類ABS\n\n📍適用機種\n支援所有搭載 DJI O3 Air Unit 的穿越機機架\n適用於 所有含有狗座",
-  "specifications": [],
+  "short_description": "電翼動力為 DJI O3 Air Unit 製作的一體式安裝套件，含 O3 鏡頭固定座與單天線尾座，類 ABS 材質，適用有狗座的機架。",
+  "description": "電翼動力為 DJI O3 Air Unit 數位圖傳設計的一體式安裝套件，整合鏡頭與天線尾座的固定，保護 O3 模組。\n\n【套件內容】\n・O3 鏡頭固定座\n・單天線尾座\n\n【適用範圍】\n・搭載 DJI O3 Air Unit、並有狗座（GoPro 座）安裝位的穿越機機架；安裝前請確認機架孔位",
+  "specifications": [
+    {
+      "key": "適用設備",
+      "value": "DJI O3 Air Unit",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "內容",
+      "value": "O3 鏡頭固定座、單天線尾座",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "類 ABS",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-45150835735/01.webp",
@@ -76,7 +98,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -84,7 +106,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

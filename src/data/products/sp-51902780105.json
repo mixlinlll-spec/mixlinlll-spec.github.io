@@ -1,20 +1,38 @@
 {
   "id": "sp-51902780105",
   "slug": "dji-action-3-4-5",
-  "name_zh": "【一盒收納所有配件】DJI Action 3 / 4 / 5 專用收納盒 大疆運動相機保護盒 收納充電管家",
+  "name_zh": "DJI Action 3／4／5 收納盒｜相機、電池、配件一盒收納｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "cases",
-  "tags": [],
+  "tags": [
+    "DJI Action 5",
+    "DJI Action 4",
+    "Action 3",
+    "運動相機",
+    "收納盒",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n🚀 【Action用戶必備！告別雜亂無章】\n你的DJI Action相機、電池、充電線、配件散落在包包各處嗎？擔心寶貴的器材碰撞刮傷？這款專為Action系列量身打造的「全能收納保護盒」，就是你一直在找的終極解決方案！一盒搞定所有裝備，出門從此優雅從容！\n\n✅ 【完美相容，三代通用】\n專為DJI Action 3、Action 4、Action 5設計，一盒支援三代，未來升級也不怕盒子浪費！\n✅ 【小巧便攜，節省空間】\n精準設計的體積，只佔用最小背包空間，卻能裝下最大量的裝備，是旅行、運動、拍攝工作的絕佳伴侶。",
-  "specifications": [],
+  "short_description": "電翼動力 3D 列印收納盒，適用 DJI Action 3、Action 4、Action 5，可集中收納相機、電池、充電線與配件。",
+  "description": "電翼動力為 DJI Action 系列設計的收納盒，相機、電池、充電線與常用配件可集中收納，避免散落在包包裡互相碰撞刮傷。\n\n【產品特色】\n・適用 DJI Action 3、Action 4、Action 5\n・分區收納相機、電池與配件\n・體積精簡，方便放入背包\n\n【顏色與列印】\n・可選顏色：透明、螢光橘、螢光綠、黃、冰淇淋、紫、黑、白\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "DJI Action 3／Action 4／Action 5",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-51902780105/01.webp",
@@ -123,7 +141,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -131,7 +149,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

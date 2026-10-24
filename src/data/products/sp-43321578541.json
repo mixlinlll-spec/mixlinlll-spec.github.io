@@ -1,25 +1,52 @@
 {
   "id": "sp-43321578541",
   "slug": "65w-8-30v-pd-usb-a",
-  "name_zh": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用",
+  "name_zh": "65W USB-C PD 降壓快充模組｜8–30V 輸入（約 3S～6S）｜外場電池變行動電源",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "power-battery",
-  "subcategory_id": "chargers",
-  "tags": [],
+  "subcategory_id": "power-modules",
+  "tags": [
+    "降壓模組",
+    "PD快充",
+    "USB-C",
+    "外場電源",
+    "65W"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "65W 降壓快充模組｜多口快充智慧解決方案\n\n🌟 產品亮點\n智能降壓技術，輸入電壓範圍 8–30V\n多電壓檔位輸出，兼容多類設備\n採用優質 3518 晶片板，效能穩定\n\n65W C口模組\n支援輸出：5V / 9V / 12V / 20V\n最大輸出功率：65W\n\n⚡ 使用指南\n確認電池 S 數（輸入電壓需 8–30V）\n正確接入電池（請勿接反！）\n自動識別設備，智慧輸出匹配電壓",
-  "specifications": [],
+  "short_description": "把 8–30V 航模電池轉成 USB 快充輸出的降壓模組，USB-C 最高 65W（5／9／12／20V），適合外場為手機、眼鏡等設備充電。",
+  "description": "65W 降壓快充模組，把航模電池（輸入 8–30V）轉成 USB 快充輸出，讓外場電池當行動電源使用。\n\n【產品特色】\n・輸入電壓 8–30V\n・USB-C 支援 5V／9V／12V／20V 輸出，最大 65W\n・自動識別設備並匹配輸出電壓\n・採用 3518 晶片\n\n【使用方式】\n・確認電池電壓在 8–30V 範圍內（請依電池 S 數與滿電電壓確認）\n・正確接入電池正負極，請勿接反\n・接上設備後自動識別輸出電壓\n\n【顏色】\n・紫、紅、黑、黃、綠",
+  "specifications": [
+    {
+      "key": "輸入電壓",
+      "value": "8–30V",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "USB-C 輸出",
+      "value": "5V／9V／12V／20V，最大 65W",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "晶片",
+      "value": "3518",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "顏色",
+      "value": "紫／紅／黑／黃／綠",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-43321578541/01.webp",
       "src_small": "/assets/img/products/sp-43321578541/01-480.webp",
-      "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（主圖）",
+      "alt": "65W USB-C PD 降壓快充模組｜8–30V 輸入（約 3S～6S）｜外場電池變行動電源（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-43321578541/02.webp",
       "src_small": "/assets/img/products/sp-43321578541/02-480.webp",
-      "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（細節圖 1）",
+      "alt": "65W USB-C PD 降壓快充模組｜8–30V 輸入（約 3S～6S）｜外場電池變行動電源（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +66,7 @@
     {
       "src": "/assets/img/products/sp-43321578541/03.webp",
       "src_small": "/assets/img/products/sp-43321578541/03-480.webp",
-      "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（細節圖 2）",
+      "alt": "65W USB-C PD 降壓快充模組｜8–30V 輸入（約 3S～6S）｜外場電池變行動電源（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +76,7 @@
     {
       "src": "/assets/img/products/sp-43321578541/04.webp",
       "src_small": "/assets/img/products/sp-43321578541/04-480.webp",
-      "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（細節圖 3）",
+      "alt": "65W USB-C PD 降壓快充模組｜8–30V 輸入（約 3S～6S）｜外場電池變行動電源（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -59,7 +86,7 @@
     {
       "src": "/assets/img/products/sp-43321578541/05.webp",
       "src_small": "/assets/img/products/sp-43321578541/05-480.webp",
-      "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（細節圖 4）",
+      "alt": "65W USB-C PD 降壓快充模組｜8–30V 輸入（約 3S～6S）｜外場電池變行動電源（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -69,7 +96,7 @@
     {
       "src": "/assets/img/products/sp-43321578541/06.webp",
       "src_small": "/assets/img/products/sp-43321578541/06-480.webp",
-      "alt": "65W 多口智慧快充｜8–30V 輸入｜PD快充 USB-A / Type-C 輸出｜航模 / 外場電源專用（細節圖 5）",
+      "alt": "65W USB-C PD 降壓快充模組｜8–30V 輸入（約 3S～6S）｜外場電池變行動電源（細節圖 5）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -152,14 +179,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

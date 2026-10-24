@@ -1,25 +1,44 @@
 {
   "id": "sp-52802198927",
   "slug": "betafpv-meteor65-pro",
-  "name_zh": "BetaFPV Meteor65 Pro 專用改裝配件｜防摔保護件 / 天線座 / 相機固定座 / 電池卡扣",
+  "name_zh": "BETAFPV Meteor65 Pro 改裝配件｜550mAh 電池卡扣、O4 Lite 天線座、14mm 機罩、減震墊圈",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "Meteor65",
+    "BETAFPV",
+    "Tinywhoop",
+    "O4 Lite",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "65mm"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 購買前注意\n⚠️請務必備註顏色。屬客製製作，無法退貨。\n⚠️表面可能具有些微層紋，屬正常現象。\n\n提供 Meteor65 Pro 專用的多款改裝與升級小配件，讓你的迷你穿越機更耐摔、更穩定、更好飛。常用到的固定件、保護件、強化件一站滿足，輕量不增加飛行負擔。\n\n⭕適配550豪安電池卡扣\n讓你的65可以兼容550豪安電池，卡扣僅0.6克\n\n⭕小O4天線座防脫\n天線可穿過卡扣，防止線軸抖動造成小O4畫面果凍\n\n⭕14mm機罩+原廠小o4鏡頭套件(有卡扣可上濾鏡)\n尾部天線固定不晃動，支持flywoo增廣鏡套件\n\n⭕減震保護墊圈\n有效吸收降落帶來的衝擊",
-  "specifications": [],
+  "short_description": "電翼動力為 BETAFPV Meteor65 Pro 製作的改裝小配件，含 550mAh 電池卡扣、小 O4 天線防脫座、14mm 機罩＋O4 鏡頭套件與減震保護墊圈。",
+  "description": "電翼動力為 Meteor65 Pro 製作的改裝與升級小配件，輕量、不增加飛行負擔。\n\n【可選配件】\n・適配 550mAh 電池卡扣（2 個）：讓 65 可以使用 550mAh 電池，卡扣約 0.6g\n・小 O4（O4 Lite）天線座防脫（3 個）：天線穿過卡扣固定，減少線軸抖動造成的畫面果凍\n・14mm 機罩＋原廠小 O4 鏡頭套件：有卡扣可上濾鏡，尾部天線固定不晃動，支援 Flywoo 增廣鏡套件\n・減震保護墊圈（6 個）：吸收降落衝擊\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "BETAFPV Meteor65 Pro",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-52802198927/01.webp",
       "src_small": "/assets/img/products/sp-52802198927/01-480.webp",
-      "alt": "BetaFPV Meteor65 Pro 專用改裝配件｜防摔保護件 / 天線座 / 相機固定座 / 電池卡扣（主圖）",
+      "alt": "BETAFPV Meteor65 Pro 改裝配件｜550mAh 電池卡扣、O4 Lite 天線座、14mm 機罩、減震墊圈（主圖）",
       "width": 616,
       "height": 616,
       "rights": "licensed",
@@ -29,7 +48,7 @@
     {
       "src": "/assets/img/products/sp-52802198927/02.webp",
       "src_small": "/assets/img/products/sp-52802198927/02-480.webp",
-      "alt": "BetaFPV Meteor65 Pro 專用改裝配件｜防摔保護件 / 天線座 / 相機固定座 / 電池卡扣（細節圖 1）",
+      "alt": "BETAFPV Meteor65 Pro 改裝配件｜550mAh 電池卡扣、O4 Lite 天線座、14mm 機罩、減震墊圈（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +58,7 @@
     {
       "src": "/assets/img/products/sp-52802198927/03.webp",
       "src_small": "/assets/img/products/sp-52802198927/03-480.webp",
-      "alt": "BetaFPV Meteor65 Pro 專用改裝配件｜防摔保護件 / 天線座 / 相機固定座 / 電池卡扣（細節圖 2）",
+      "alt": "BETAFPV Meteor65 Pro 改裝配件｜550mAh 電池卡扣、O4 Lite 天線座、14mm 機罩、減震墊圈（細節圖 2）",
       "width": 983,
       "height": 983,
       "rights": "licensed",
@@ -49,7 +68,7 @@
     {
       "src": "/assets/img/products/sp-52802198927/04.webp",
       "src_small": "/assets/img/products/sp-52802198927/04-480.webp",
-      "alt": "BetaFPV Meteor65 Pro 專用改裝配件｜防摔保護件 / 天線座 / 相機固定座 / 電池卡扣（細節圖 3）",
+      "alt": "BETAFPV Meteor65 Pro 改裝配件｜550mAh 電池卡扣、O4 Lite 天線座、14mm 機罩、減震墊圈（細節圖 3）",
       "width": 994,
       "height": 994,
       "rights": "licensed",
@@ -59,7 +78,7 @@
     {
       "src": "/assets/img/products/sp-52802198927/05.webp",
       "src_small": "/assets/img/products/sp-52802198927/05-480.webp",
-      "alt": "BetaFPV Meteor65 Pro 專用改裝配件｜防摔保護件 / 天線座 / 相機固定座 / 電池卡扣（細節圖 4）",
+      "alt": "BETAFPV Meteor65 Pro 改裝配件｜550mAh 電池卡扣、O4 Lite 天線座、14mm 機罩、減震墊圈（細節圖 4）",
       "width": 886,
       "height": 886,
       "rights": "licensed",
@@ -129,7 +148,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -137,7 +156,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

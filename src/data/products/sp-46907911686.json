@@ -1,25 +1,53 @@
 {
   "id": "sp-46907911686",
   "slug": "fpv-5-8g-5g-ipex-ufl-4cm",
-  "name_zh": "FPV 5.8G天線 5G銅管天線 內置全向天線 無人機圖傳接收發射 天線 IPEX UFL 超小型4cm",
+  "name_zh": "5.8G 銅管內置天線｜IPEX（U.FL）｜約 4cm｜全向",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "video",
   "subcategory_id": "antennas",
-  "tags": [],
+  "tags": [
+    "天線",
+    "5.8G",
+    "IPEX",
+    "U.FL",
+    "圖傳天線",
+    "備品"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "🔥 超小型內置天線｜穿越機必備備品\n🔥 輕量設計｜不影響飛行重心\n\n📌產品特色\n・支援5G / 5.8G頻段｜圖傳數傳皆可用\n・全向天線｜穩定接收訊號\n・超小尺寸約4cm｜適合內置安裝\n・輕量設計｜不影響飛行性能\n・銅管結構｜訊號穩定度提升\n\n📌適用設備\n・FPV穿越機\n・ELRS / Crossfire（天線改裝）\n・WiFi / 圖傳模組\n\n📌規格資訊\n頻率：5G / 5.8G\n長度：約4cm\n接口：IPEX / UFL\n類型：內置全向天線\n\n📌安裝建議\n・避免貼近碳板（金屬會影響訊號\n・建議外露或用TPU固定位置\n・避免折損內部銅芯\n\n⚠️注意事項\n・屬耗材商品，建議備用\n・天線損壞會導致失控或圖傳異常",
-  "specifications": [],
+  "short_description": "約 4cm 的 5.8GHz 銅管全向內置天線，IPEX（U.FL）接頭，適合空間有限的小型機或作為圖傳天線備品。",
+  "description": "約 4cm 的超小型 5.8GHz 銅管全向天線，IPEX（U.FL）接頭，適合內置安裝或作為備品。\n\n【產品特色】\n・5.8GHz 頻段全向天線\n・約 4cm，適合內置安裝\n・銅管結構、重量輕\n\n【適用範圍】\n・5.8GHz 圖傳模組（IPEX／U.FL 接頭）\n・5.8GHz 頻段的 WiFi 或其他模組\n・※ 不適用 ELRS 2.4GHz、Crossfire 915MHz 等其他頻段接收機\n\n【安裝建議】\n・避免貼近碳板或金屬件，會影響訊號\n・建議外露或用 TPU 固定位置，避免折損內部銅芯\n・IPEX 接頭較脆弱，插拔請垂直施力\n\n【注意事項】\n・天線屬耗材，建議準備備品\n・天線損壞可能導致圖傳畫面異常",
+  "specifications": [
+    {
+      "key": "頻率",
+      "value": "5.8GHz",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "長度",
+      "value": "約 4cm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接頭",
+      "value": "IPEX／U.FL",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "類型",
+      "value": "內置全向天線",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-46907911686/01.webp",
       "src_small": "/assets/img/products/sp-46907911686/01-480.webp",
-      "alt": "FPV 5.8G天線 5G銅管天線 內置全向天線 無人機圖傳接收發射 天線 IPEX UFL 超小型4cm（主圖）",
+      "alt": "5.8G 銅管內置天線｜IPEX（U.FL）｜約 4cm｜全向（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +57,7 @@
     {
       "src": "/assets/img/products/sp-46907911686/02.webp",
       "src_small": "/assets/img/products/sp-46907911686/02-480.webp",
-      "alt": "FPV 5.8G天線 5G銅管天線 內置全向天線 無人機圖傳接收發射 天線 IPEX UFL 超小型4cm（細節圖 1）",
+      "alt": "5.8G 銅管內置天線｜IPEX（U.FL）｜約 4cm｜全向（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +67,7 @@
     {
       "src": "/assets/img/products/sp-46907911686/03.webp",
       "src_small": "/assets/img/products/sp-46907911686/03-480.webp",
-      "alt": "FPV 5.8G天線 5G銅管天線 內置全向天線 無人機圖傳接收發射 天線 IPEX UFL 超小型4cm（細節圖 2）",
+      "alt": "5.8G 銅管內置天線｜IPEX（U.FL）｜約 4cm｜全向（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +77,7 @@
     {
       "src": "/assets/img/products/sp-46907911686/04.webp",
       "src_small": "/assets/img/products/sp-46907911686/04-480.webp",
-      "alt": "FPV 5.8G天線 5G銅管天線 內置全向天線 無人機圖傳接收發射 天線 IPEX UFL 超小型4cm（細節圖 3）",
+      "alt": "5.8G 銅管內置天線｜IPEX（U.FL）｜約 4cm｜全向（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -66,13 +94,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

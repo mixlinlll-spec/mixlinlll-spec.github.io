@@ -1,22 +1,65 @@
 {
   "id": "sp-49904173880",
   "slug": "bt2-0-1s-3-8v-300mah-75c-tinywhoop",
-  "name_zh": "機鋰電池🔋 BT2.0插頭 格氏 1S 3.8V 300mAh 75C Tinywhoop專用 微型穿越機電池 室內競速",
+  "name_zh": "格氏 TATTU 1S 3.8V 300mAh 75C HV 電池｜BT2.0｜Tinywhoop、65／75mm 微型機",
   "sku": null,
-  "brand": null,
+  "brand": "TATTU 格氏",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "power-battery",
   "subcategory_id": "1s-micro",
-  "tags": [],
+  "tags": [
+    "1S電池",
+    "LiHV",
+    "BT2.0",
+    "Tinywhoop",
+    "TATTU",
+    "300mAh"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [
     "1S"
   ],
-  "short_description": "",
-  "description": "小穿越機飛不到幾圈就電壓大掉、油門軟腳嗎？😵‍💫\n格氏 TATTU 1S 3.8V 300mAh 75C HV，搭配 BT2.0 插頭，專為 Tinywhoop / 65～75mm 微型穿越機設計，提供穩定高電流輸出與較慢的電壓下墜，讓室內競速更好飛。\n\n產品特色：\n•\t🔌 BT2.0 插頭：相較 PH2.0 阻抗更低，減少電壓損耗，實際推力更飽滿，是現在主流 Tinywhoop 規格。\n•\t🔋 300mAh 75C 高壓：3.8V LiHV 設計，支援充到 4.35V，75C 放電可應付高爆發拉桿與急停動作。\n•\t🪶 輕量小體積：單顆約 8–9g、尺寸約 68×12×6mm，適合 Meteor65/Meteor75 等 1S 小穿越機使用。\n•\t🛡️ 品質穩定：格氏 TATTU 採嚴格配對與堆疊工藝，在 FPV 圈以穩定性與壽命著稱，適合日常練飛與小比賽。\n建議：\n•\t新電池前 3～5 次盡量不要飛到極低電壓，有助延長壽命。\n•\t若你是 BT2.0 系統主力，可一次入手多顆，方便場內輪流飛、輪流充，減少等電時間😉。",
-  "specifications": [],
+  "short_description": "格氏 TATTU 1S 3.8V 高壓 300mAh 75C 電池，BT2.0 接頭，單顆約 8–9g、68×12×6mm，適用 Meteor65／75 等 1S 微型穿越機。",
+  "description": "格氏 TATTU 1S 3.8V 300mAh 75C 高壓電池，搭配 BT2.0 接頭，適用 Tinywhoop 與 65～75mm 微型穿越機的室內練飛與競速。\n\n【產品特色】\n・BT2.0 接頭，阻抗低於 PH2.0\n・3.8V LiHV，可充到 4.35V\n・75C 放電（原廠標示）\n・單顆約 8–9g，約 68×12×6mm\n\n【使用建議】\n・新電池前 3～5 次盡量不要飛到極低電壓，有助延長壽命\n・HV 電池請使用支援 LiHV 模式的充電器",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "TATTU 格氏",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電壓",
+      "value": "1S 3.8V（HV，滿電 4.35V）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "容量",
+      "value": "300mAh",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "放電倍率",
+      "value": "75C（原廠標示）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接頭",
+      "value": "BT2.0",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "約 68 × 12 × 6 mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 8–9g",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-49904173880/01.webp",
@@ -68,14 +111,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,25 +1,84 @@
 {
   "id": "sp-57912177631",
   "slug": "rate-h415-mini-aio-15a-32",
-  "name_zh": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控",
+  "name_zh": "RATE 瑞速 H415 MINI AIO 飛塔｜15A 32Bit 電調｜2–3S｜內建接收機｜16MB 黑盒",
   "sku": null,
   "brand": "RATE 瑞速",
-  "manufacturer_model": null,
+  "manufacturer_model": "H415 MINI AIO",
   "seller_role": "retail",
   "primary_category_id": "fc-esc",
   "subcategory_id": "aio",
-  "tags": [],
+  "tags": [
+    "AIO",
+    "H415",
+    "飛塔",
+    "牙籤機",
+    "2S",
+    "3S",
+    "內建接收機"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "RATE H415 MINI AIO為專為2~3S牙籤機、穿越機及Freestyle花飛打造的一體式飛塔，搭載H415高性能主控、ICM42688陀螺儀、SPL06氣壓計與16MB黑盒子，支援雙向DShot、藍牙調參、Type-C調參及內建接收機設計，安裝簡單、性能強悍。\n\n【產品特色】\n✔ H415 400MHz高性能主控\n✔ ICM42688陀螺儀\n✔ SPL06氣壓計\n✔ 16MB Blackbox\n✔ 15A 32Bit ESC\n✔ 支援雙向DShot\n✔ 內建接收機\n✔ 藍牙無線調參\n✔ Type-C快速調參\n✔ 支援LED燈條\n✔ 支援BB響\n✔ 支援I2C擴充\n✔ 5V 3A BEC輸出\n\n【產品規格】\n型號：RATE H415 MINI AIO\n主控：H415\n陀螺儀：ICM42688\n氣壓計：SPL06\n黑盒子：16MB\n電調：15A 32Bit ESC\n輸入電壓：2S~3S LiPo\nBEC：5V 3A\n重量：7.5g\n尺寸：33.2×33.3×4.6mm\n\n【注意事項】\n※ 出貨前完成基本測試\n※ 建議搭配1103~1303.5級別電機使用\n※ 安裝前請確認供電規格",
-  "specifications": [],
+  "short_description": "RATE H415 MINI AIO 一體式飛塔，H415 主控、ICM42688、SPL06 氣壓計、16MB 黑盒與 15A 32Bit 電調，內建接收機，適合 2–3S 牙籤機與小型花飛機。",
+  "description": "RATE H415 MINI AIO為專為2~3S牙籤機、穿越機及Freestyle花飛打造的一體式飛塔，搭載H415高性能主控、ICM42688陀螺儀、SPL06氣壓計與16MB黑盒子，支援雙向DShot、藍牙調參、Type-C調參及內建接收機設計，安裝簡單、性能強悍。\n\n【產品特色】\n・H415 400MHz高性能主控\n・ICM42688陀螺儀\n・SPL06氣壓計\n・16MB Blackbox\n・15A 32Bit ESC\n・支援雙向DShot\n・內建接收機\n・藍牙無線調參\n・Type-C快速調參\n・支援LED燈條\n・支援BB響\n・支援I2C擴充\n・5V 3A BEC輸出\n\n【安裝前請確認】\n・建議搭配 1103～1303.5 級別馬達使用\n・輸入電壓為 2S～3S，請勿接 4S 以上電池\n・出貨前完成基本測試",
+  "specifications": [
+    {
+      "key": "型號",
+      "value": "RATE H415 MINI AIO",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "主控",
+      "value": "H415",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "陀螺儀",
+      "value": "ICM42688",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "氣壓計",
+      "value": "SPL06",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "黑盒子",
+      "value": "16MB",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電調",
+      "value": "15A 32Bit ESC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "輸入電壓",
+      "value": "2S~3S LiPo",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "BEC",
+      "value": "5V 3A",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "7.5g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "33.2×33.3×4.6mm",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-57912177631/01.webp",
       "src_small": "/assets/img/products/sp-57912177631/01-480.webp",
-      "alt": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控（主圖）",
+      "alt": "RATE 瑞速 H415 MINI AIO 飛塔｜15A 32Bit 電調｜2–3S｜內建接收機｜16MB 黑盒（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +88,7 @@
     {
       "src": "/assets/img/products/sp-57912177631/02.webp",
       "src_small": "/assets/img/products/sp-57912177631/02-480.webp",
-      "alt": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控（細節圖 1）",
+      "alt": "RATE 瑞速 H415 MINI AIO 飛塔｜15A 32Bit 電調｜2–3S｜內建接收機｜16MB 黑盒（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +98,7 @@
     {
       "src": "/assets/img/products/sp-57912177631/03.webp",
       "src_small": "/assets/img/products/sp-57912177631/03-480.webp",
-      "alt": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控（細節圖 2）",
+      "alt": "RATE 瑞速 H415 MINI AIO 飛塔｜15A 32Bit 電調｜2–3S｜內建接收機｜16MB 黑盒（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +108,7 @@
     {
       "src": "/assets/img/products/sp-57912177631/04.webp",
       "src_small": "/assets/img/products/sp-57912177631/04-480.webp",
-      "alt": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控（細節圖 3）",
+      "alt": "RATE 瑞速 H415 MINI AIO 飛塔｜15A 32Bit 電調｜2–3S｜內建接收機｜16MB 黑盒（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -59,7 +118,7 @@
     {
       "src": "/assets/img/products/sp-57912177631/05.webp",
       "src_small": "/assets/img/products/sp-57912177631/05-480.webp",
-      "alt": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控（細節圖 4）",
+      "alt": "RATE 瑞速 H415 MINI AIO 飛塔｜15A 32Bit 電調｜2–3S｜內建接收機｜16MB 黑盒（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -69,7 +128,7 @@
     {
       "src": "/assets/img/products/sp-57912177631/06.webp",
       "src_small": "/assets/img/products/sp-57912177631/06-480.webp",
-      "alt": "RATE H415 MINI AIO 飛塔｜H415主控｜15A 32位電調｜2-3S｜內建接收機｜FPV 穿越機 飛控（細節圖 5）",
+      "alt": "RATE 瑞速 H415 MINI AIO 飛塔｜15A 32Bit 電調｜2–3S｜內建接收機｜16MB 黑盒（細節圖 5）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -86,13 +145,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mpg342kb4gln3e"

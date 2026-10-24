@@ -1,14 +1,21 @@
 {
   "id": "sp-50503562447",
   "slug": "2s-3s-6s",
-  "name_zh": "2S/3S 轉 6S 串充板 🔌 多顆 2S/3S 電池同時充電 一鍵當 6S 充電使用",
+  "name_zh": "2S／3S 轉 6S 串充板｜兩顆 3S 或三顆 2S 串成 6S 同時充電",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "power-battery",
   "subcategory_id": "chargers",
-  "tags": [],
+  "tags": [
+    "串充板",
+    "充電",
+    "2S",
+    "3S",
+    "6S",
+    "LiPo"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [
@@ -16,9 +23,20 @@
     "3S",
     "6S"
   ],
-  "short_description": "",
-  "description": "2S 轉 6S 串充板\n3S 轉 6S 串充板\n2S 3S 串充轉接板\n6S 串充 轉接器\nLiPo 串充板 FPV\nFPV 電池 串充工具\nXT30 2S 3S 串充\nTinywhoop 電池充電板\n無人機 電池充電配件\n場邊充電 串充板\n\n⚠️ 務必備註要充的電池規格（2S 或 3S、容量、接頭類型）\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用（若外殼為 3D 列印）\n⚠️ 串充僅適合同規格、同電量電池，使用前請先確認電壓接近，並了解串充風險\n\n2S/3S 轉 6S 串充板，讓你可以把多顆 2S 或 3S 電池串接成一組等效 6S，用一般支援 6S 的充電器進行充電，特別適合手上有一堆 2S/3S 小電池、不想一直插拔切換的 FPV 玩家。⚡ 只要依照標示把電池依序插上，即可一次替多顆電池充電，大幅減少等待與操作時間；適合作為外出飛行或場邊快速補電的工具。\n​\n產品特色 ✨\n支援 2S 與 3S LiPo 電池，可將多顆 2S/3S 串連成等效 6S 供充電器使用（例如兩顆 3S 串成 6S，或三顆 2S 串成 6S）。\n​\n可同時替多顆 2S/3S 電池充電，減少頻繁插拔與多次設定，提升充電效率。\n板上標示清楚，避免接錯正負與順序；可搭配保險絲或保護電路設計，提升安全性。🛡️\n​",
-  "specifications": [],
+  "short_description": "把多顆同規格的 2S 或 3S 電池串接成等效 6S，用支援 6S 平衡充電的充電器一次充電；提供 3S 轉 6S（2 顆）與 2S 轉 6S（3 顆）兩款。",
+  "description": "串充板可把多顆 2S 或 3S 電池串接成一組等效 6S，用一般支援 6S 平衡充電的充電器一次充電，適合手上有多顆 2S／3S 小電池、不想反覆插拔的玩家。\n\n【款式說明】\n・3S 轉 6S（黑）：同時充 2 顆 3S\n・2S 轉 6S（黑）：同時充 3 顆 2S\n\n【產品特色】\n・依板上標示依序插上電池即可串接\n・一次為多顆電池充電，減少插拔與設定次數\n\n【串充安全須知（務必閱讀）】\n・只能串接同型號、同容量、同 S 數且電壓接近的電池；充電前請先逐顆量測電壓\n・充電器請設定為 6S 平衡充電，電流以單顆電池容量計算（不可用總容量加倍）\n・充電全程請有人看管，放在不可燃的平面；任一顆電池發熱、膨脹或電壓異常時立即停止\n・若不熟悉串充原理，建議改用單顆分別充電\n\n【訂購時請註明】\n・要充的電池規格（2S 或 3S、容量、接頭類型）",
+  "specifications": [
+    {
+      "key": "款式",
+      "value": "3S 轉 6S（2 顆）／2S 轉 6S（3 顆）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "輸出",
+      "value": "等效 6S（接平衡充電器）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-50503562447/01.webp",
@@ -87,13 +105,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

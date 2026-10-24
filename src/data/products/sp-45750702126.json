@@ -1,25 +1,53 @@
 {
   "id": "sp-45750702126",
   "slug": "mtf-01-tpu-speedybee-mario5-mario8",
-  "name_zh": "MTF-01 光流器 TPU外殼 保護罩 適用SpeedyBee Mario5 / Mario8 穿越機 25.5mm固",
+  "name_zh": "MTF-01 光流模組 TPU 保護殼｜25.5mm 孔距｜適用 SpeedyBee Mario 5／Mario 8",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "MTF-01",
+    "光流",
+    "Mario 5",
+    "Mario 8",
+    "TPU",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "專為 MTF-01 光流定位模組 設計的 TPU保護外殼，支援 25.5mm安裝間距，完美相容 SpeedyBee Mario5 / Mario8 等機架。\n\n柔軟TPU材質能有效吸收震動與撞擊，保護感測鏡頭免受損壞，適合外場飛行使用。\n✅ 精準孔位，完美貼合光流器模組\n✅ TPU材質具彈性與抗震保護\n✅ 適用多種25.5mm安裝間距飛控機架\n✅ 默認支援 Mario5 / Mario8 穿越機\n\n材質說明：\nTPU（熱塑性聚氨酯）－柔軟、防撞、耐磨\n\n適用機型：\nMTF-01 光流器\nSpeedyBee Mario5 / Mario8 及其他25.5mm孔距機架",
-  "specifications": [],
+  "short_description": "電翼動力為 MTF-01 光流定位模組製作的 TPU 保護外殼，25.5mm 安裝孔距，適用 SpeedyBee Mario 5、Mario 8 等機架。",
+  "description": "電翼動力為 MTF-01 光流定位模組設計的 TPU 保護外殼，支援 25.5mm 安裝間距，柔軟材質可吸收震動與撞擊，保護感測鏡頭。\n\n【產品特色】\n・孔位對應 MTF-01 光流模組\n・TPU 材質具彈性與抗震保護\n・適用 25.5mm 安裝間距的機架\n・預設對應 SpeedyBee Mario 5／Mario 8\n\n【顏色與列印】\n・可選顏色：綠、白、黑、紫、橘、黃\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用模組",
+      "value": "MTF-01 光流定位模組",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "安裝孔距",
+      "value": "25.5mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用機架",
+      "value": "SpeedyBee Mario 5／Mario 8 等",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-45750702126/01.webp",
       "src_small": "/assets/img/products/sp-45750702126/01-480.webp",
-      "alt": "MTF-01 光流器 TPU外殼 保護罩 適用SpeedyBee Mario5 / Mario8 穿越機 25.5mm固（主圖）",
+      "alt": "MTF-01 光流模組 TPU 保護殼｜25.5mm 孔距｜適用 SpeedyBee Mario 5／Mario 8（主圖）",
       "width": 820,
       "height": 820,
       "rights": "licensed",
@@ -29,7 +57,7 @@
     {
       "src": "/assets/img/products/sp-45750702126/02.webp",
       "src_small": "/assets/img/products/sp-45750702126/02-480.webp",
-      "alt": "MTF-01 光流器 TPU外殼 保護罩 適用SpeedyBee Mario5 / Mario8 穿越機 25.5mm固（細節圖 1）",
+      "alt": "MTF-01 光流模組 TPU 保護殼｜25.5mm 孔距｜適用 SpeedyBee Mario 5／Mario 8（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +67,7 @@
     {
       "src": "/assets/img/products/sp-45750702126/03.webp",
       "src_small": "/assets/img/products/sp-45750702126/03-480.webp",
-      "alt": "MTF-01 光流器 TPU外殼 保護罩 適用SpeedyBee Mario5 / Mario8 穿越機 25.5mm固（細節圖 2）",
+      "alt": "MTF-01 光流模組 TPU 保護殼｜25.5mm 孔距｜適用 SpeedyBee Mario 5／Mario 8（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +77,7 @@
     {
       "src": "/assets/img/products/sp-45750702126/04.webp",
       "src_small": "/assets/img/products/sp-45750702126/04-480.webp",
-      "alt": "MTF-01 光流器 TPU外殼 保護罩 適用SpeedyBee Mario5 / Mario8 穿越機 25.5mm固（細節圖 3）",
+      "alt": "MTF-01 光流模組 TPU 保護殼｜25.5mm 孔距｜適用 SpeedyBee Mario 5／Mario 8（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -109,7 +137,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -117,7 +145,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

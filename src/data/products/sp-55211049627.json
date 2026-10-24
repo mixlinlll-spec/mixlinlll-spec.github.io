@@ -1,20 +1,40 @@
 {
   "id": "sp-55211049627",
   "slug": "cinelr7-tpu",
-  "name_zh": "翼飛 CINELR7 專用 TPU 配件組🔥 提升保護性、實用性與整體外觀質感",
+  "name_zh": "iFlight 翼飛 CineLR7 TPU 配件組｜GoPro 座、尾座、SMA／GPS 座、機頭保桿、腳墊",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "iFlight",
+    "CineLR7",
+    "長航",
+    "TPU",
+    "3D列印",
+    "GPS座"
+  ],
+  "compatible_sizes": [
+    "7 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "翼飛 CINELR7 專用 TPU 配件組🔥\n提升保護性、實用性與整體外觀質感\n📌可選配件\n・GoPro 狗座\n・尾座 / 天線座\n・ARM 機臂腳墊\n・TPU 保護件\n\n📌產品特色\n・專為 CINELR7 設計｜尺寸精準貼合\n・TPU材質｜耐摔、耐震、不易斷裂\n・輕量化設計｜降低額外負重\n・保護機身｜減少起降與碰撞損傷\n・提升整體外觀與安裝完整度\n\n📌材質說明\n材質：TPU\n製作方式：3D列印\n\n📌注意事項\n・3D列印產品表面可能存在正常紋路\n・不同批次顏色可能略有差異\n・本商品不含無人機 / GoPro / 天線等設備\n・請確認機型與配件版本後再下單\n\n📌溫馨提醒\n3D列印 TPU 配件屬客製耗材類商品，除重大瑕疵外，不接受因個人因素退換貨。",
-  "specifications": [],
+  "short_description": "電翼動力為 iFlight CineLR7 製作的 TPU 配件，提供 GoPro 座、原廠尾座、SMA 朝上與 GPS 內收／外置尾座、接收機座、機頭保桿與腳墊。",
+  "description": "電翼動力為 iFlight（翼飛）CineLR7 製作的 TPU 配件組，提升保護性與安裝完整度。\n\n【可選配件】\n・GoPro 狗座\n・原廠尾座、SMA 朝上（GPS 內收）、SMA 朝上＋天線放置（GPS 內收）、SMA＋GPS 外置\n・接收機座、機頭保桿\n・原廠腳墊、腳墊改裝（加高 1.5 公分）\n\n【注意事項】\n・不含無人機、GoPro、天線等設備\n・請確認機型與配件版本後再下單\n・不同批次顏色可能略有差異\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "iFlight CineLR7",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-55211049627/01.webp",
@@ -234,7 +254,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -242,7 +262,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,25 +1,47 @@
 {
   "id": "sp-54802509271",
   "slug": "neo2-dji",
-  "name_zh": "NEO2免費客製化 [ 台灣快速出貨 ]DJI NEO2 專用 收納盒 ｜ 大疆Neo2收納",
+  "name_zh": "DJI Neo 2 收納盒｜A／B／C／D 四款可選｜天線、電池外掛、暢飛套裝收納｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "cases",
-  "tags": [],
+  "tags": [
+    "DJI Neo 2",
+    "Neo2",
+    "收納盒",
+    "空拍機",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "專為 DJI NEO2 製作的專用收納盒，讓主機、電池都能安全整理好。\n\n⭐ 產品特色\n主機穩固卡位，不晃動\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅",
-  "specifications": [],
+  "short_description": "電翼動力 3D 列印 DJI Neo 2 專用收納盒，提供 A、B、C、D 四種款式，可依需要收納天線、外掛電池或暢飛套裝。",
+  "description": "電翼動力為 DJI Neo 2 設計的專用收納盒，主機固定不晃動，讓主機與電池都能安全整理好。\n\n【款式說明】\n・A 款：天線可放入，電池不能放入\n・B 款：天線可放入，有充電孔，電池可外掛\n・C 款：天線可放入，可裝暢飛套裝\n・D 款：天線可放入，電池可外掛，附登山扣\n・客製款：請先透過 LINE 討論需求\n\n【顏色與列印】\n・可選顏色：黑、白、白金、螢光橘、螢光綠、紫、黃、冰淇淋粉、冰淇淋藍、馬卡龍、灰、橘、綠、金、大理石、軍綠、金箔、粉紅、藍、淺藍、紅\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "DJI Neo 2",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "款式",
+      "value": "A／B／C／D 款、客製款",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-54802509271/01.webp",
       "src_small": "/assets/img/products/sp-54802509271/01-480.webp",
-      "alt": "NEO2免費客製化 [ 台灣快速出貨 ]DJI NEO2 專用 收納盒 ｜ 大疆Neo2收納（主圖）",
+      "alt": "DJI Neo 2 收納盒｜A／B／C／D 四款可選｜天線、電池外掛、暢飛套裝收納｜3D 列印（主圖）",
       "width": 833,
       "height": 833,
       "rights": "licensed",
@@ -29,7 +51,7 @@
     {
       "src": "/assets/img/products/sp-54802509271/02.webp",
       "src_small": "/assets/img/products/sp-54802509271/02-480.webp",
-      "alt": "NEO2免費客製化 [ 台灣快速出貨 ]DJI NEO2 專用 收納盒 ｜ 大疆Neo2收納（細節圖 1）",
+      "alt": "DJI Neo 2 收納盒｜A／B／C／D 四款可選｜天線、電池外掛、暢飛套裝收納｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +61,7 @@
     {
       "src": "/assets/img/products/sp-54802509271/03.webp",
       "src_small": "/assets/img/products/sp-54802509271/03-480.webp",
-      "alt": "NEO2免費客製化 [ 台灣快速出貨 ]DJI NEO2 專用 收納盒 ｜ 大疆Neo2收納（細節圖 2）",
+      "alt": "DJI Neo 2 收納盒｜A／B／C／D 四款可選｜天線、電池外掛、暢飛套裝收納｜3D 列印（細節圖 2）",
       "width": 734,
       "height": 734,
       "rights": "licensed",
@@ -49,7 +71,7 @@
     {
       "src": "/assets/img/products/sp-54802509271/04.webp",
       "src_small": "/assets/img/products/sp-54802509271/04-480.webp",
-      "alt": "NEO2免費客製化 [ 台灣快速出貨 ]DJI NEO2 專用 收納盒 ｜ 大疆Neo2收納（細節圖 3）",
+      "alt": "DJI Neo 2 收納盒｜A／B／C／D 四款可選｜天線、電池外掛、暢飛套裝收納｜3D 列印（細節圖 3）",
       "width": 914,
       "height": 914,
       "rights": "licensed",
@@ -59,7 +81,7 @@
     {
       "src": "/assets/img/products/sp-54802509271/05.webp",
       "src_small": "/assets/img/products/sp-54802509271/05-480.webp",
-      "alt": "NEO2免費客製化 [ 台灣快速出貨 ]DJI NEO2 專用 收納盒 ｜ 大疆Neo2收納（細節圖 4）",
+      "alt": "DJI Neo 2 收納盒｜A／B／C／D 四款可選｜天線、電池外掛、暢飛套裝收納｜3D 列印（細節圖 4）",
       "width": 597,
       "height": 597,
       "rights": "licensed",
@@ -69,7 +91,7 @@
     {
       "src": "/assets/img/products/sp-54802509271/06.webp",
       "src_small": "/assets/img/products/sp-54802509271/06-480.webp",
-      "alt": "NEO2免費客製化 [ 台灣快速出貨 ]DJI NEO2 專用 收納盒 ｜ 大疆Neo2收納（細節圖 5）",
+      "alt": "DJI Neo 2 收納盒｜A／B／C／D 四款可選｜天線、電池外掛、暢飛套裝收納｜3D 列印（細節圖 5）",
       "width": 815,
       "height": 815,
       "rights": "licensed",
@@ -79,7 +101,7 @@
     {
       "src": "/assets/img/products/sp-54802509271/07.webp",
       "src_small": "/assets/img/products/sp-54802509271/07-480.webp",
-      "alt": "NEO2免費客製化 [ 台灣快速出貨 ]DJI NEO2 專用 收納盒 ｜ 大疆Neo2收納（細節圖 6）",
+      "alt": "DJI Neo 2 收納盒｜A／B／C／D 四款可選｜天線、電池外掛、暢飛套裝收納｜3D 列印（細節圖 6）",
       "width": 812,
       "height": 812,
       "rights": "licensed",
@@ -89,7 +111,7 @@
     {
       "src": "/assets/img/products/sp-54802509271/08.webp",
       "src_small": "/assets/img/products/sp-54802509271/08-480.webp",
-      "alt": "NEO2免費客製化 [ 台灣快速出貨 ]DJI NEO2 專用 收納盒 ｜ 大疆Neo2收納（細節圖 7）",
+      "alt": "DJI Neo 2 收納盒｜A／B／C／D 四款可選｜天線、電池外掛、暢飛套裝收納｜3D 列印（細節圖 7）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -99,7 +121,7 @@
     {
       "src": "/assets/img/products/sp-54802509271/09.webp",
       "src_small": "/assets/img/products/sp-54802509271/09-480.webp",
-      "alt": "NEO2免費客製化 [ 台灣快速出貨 ]DJI NEO2 專用 收納盒 ｜ 大疆Neo2收納（細節圖 8）",
+      "alt": "DJI Neo 2 收納盒｜A／B／C／D 四款可選｜天線、電池外掛、暢飛套裝收納｜3D 列印（細節圖 8）",
       "width": 764,
       "height": 764,
       "rights": "licensed",
@@ -182,7 +204,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -190,7 +212,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mkclrt8yl0jn6d",

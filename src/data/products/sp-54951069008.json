@@ -1,20 +1,42 @@
 {
   "id": "sp-54951069008",
   "slug": "radiomaster-pocket-tpu",
-  "name_zh": "【Radiomaster POCKET 專用】舒適握把套裝｜防滑止汗軟質握柄套 TPU升級手感版｜遙控器改裝配件",
+  "name_zh": "RadioMaster Pocket 握把套｜TPU 防滑止汗軟質握柄｜A／B 款",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "RadioMaster Pocket",
+    "握把",
+    "遙控器配件",
+    "TPU",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "🎮 商品特色\n這款 Radiomaster POCKET 專用握把套裝，專為提升操控舒適度而設計。\n採用 TPU軟質防滑材質 製作，貼合掌型、止汗防滑，長時間操控依然穩定順手。\n3D列印精準成型，安裝簡單不破壞外觀，是兼具實用與質感的升級改裝件。\n\n⚙️ 商品規格\n材質：TPU 高彈性止滑膠料\n製作方式：3D列印\n功能：止滑、防汗、提升手感\n顏色：（可客製）\n\n適用機種：Radiomaster POCKET\n\n💡 產品亮點\n人體工學設計，握感自然舒\nTPU柔軟材質，有效減少長時間操作疲勞\n防滑止汗處理，穩定操控不打滑\n完美貼合外殼，不影響按鍵與結構\n多色可選，外觀升級同時保護機體",
-  "specifications": [],
+  "short_description": "電翼動力為 RadioMaster Pocket 製作的 TPU 軟質握把套，貼合掌型、防滑止汗，安裝不影響按鍵與外觀。",
+  "description": "電翼動力為 RadioMaster Pocket 遙控器製作的握把套，TPU 軟質防滑材質，長時間操控更穩定順手。\n\n【產品特色】\n・貼合掌型的握感設計\n・TPU 柔軟材質，減少長時間操作疲勞\n・防滑止汗\n・貼合外殼，不影響按鍵\n・A／B 兩款可選\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "RadioMaster Pocket",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "款式",
+      "value": "A／B 款",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-54951069008/01.webp",
@@ -103,7 +125,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -111,7 +133,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,25 +1,56 @@
 {
   "id": "sp-43222081132",
   "slug": "item-43222081132",
-  "name_zh": "耐高溫 木漿海綿 電烙鐵清潔海綿 除錫專用",
+  "name_zh": "耐高溫木漿海綿｜電烙鐵頭清潔海綿",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "tools",
   "subcategory_id": "cleaning",
-  "tags": [],
+  "tags": [
+    "烙鐵清潔",
+    "海綿",
+    "焊接工具",
+    "電子維修"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "【產品特色】\n\n✔ 耐高溫設計，長時間使用不易燒損\n\n✔ 高效清潔電烙鐵頭，快速去除氧化物與焊錫殘渣\n\n✔ 木漿海綿材質，吸水性佳，保護烙鐵頭壽命\n\n✔ 小巧方便，適合工作台與維修桌使用\n\n【產品規格】\n\n品名：木漿海綿 / 電烙鐵清潔海綿\n\n材質：木漿棉\n\n用途：清潔烙鐵頭、除錫、電子維修\n\n特性：耐高溫、吸水性佳、使用壽命長\n\n使用方式：使用前將海綿浸水並擰乾，再用於清潔烙鐵頭",
-  "specifications": [],
+  "short_description": "耐高溫木漿海綿，使用前浸水擰乾，用來清潔電烙鐵頭的氧化物與焊錫殘渣。",
+  "description": "【產品特色】\n・耐高溫設計，長時間使用不易燒損\n・高效清潔電烙鐵頭，快速去除氧化物與焊錫殘渣\n・木漿海綿材質，吸水性佳，保護烙鐵頭壽命\n・小巧方便，適合工作台與維修桌使用",
+  "specifications": [
+    {
+      "key": "品名",
+      "value": "木漿海綿 / 電烙鐵清潔海綿",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "木漿棉",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "用途",
+      "value": "清潔烙鐵頭、除錫、電子維修",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "特性",
+      "value": "耐高溫、吸水性佳、使用壽命長",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "使用方式",
+      "value": "使用前將海綿浸水並擰乾，再用於清潔烙鐵頭",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-43222081132/01.webp",
       "src_small": "/assets/img/products/sp-43222081132/01-480.webp",
-      "alt": "耐高溫 木漿海綿 電烙鐵清潔海綿 除錫專用（主圖）",
+      "alt": "耐高溫木漿海綿｜電烙鐵頭清潔海綿（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +60,7 @@
     {
       "src": "/assets/img/products/sp-43222081132/02.webp",
       "src_small": "/assets/img/products/sp-43222081132/02-480.webp",
-      "alt": "耐高溫 木漿海綿 電烙鐵清潔海綿 除錫專用（細節圖 1）",
+      "alt": "耐高溫木漿海綿｜電烙鐵頭清潔海綿（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -46,14 +77,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

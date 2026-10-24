@@ -1,25 +1,31 @@
 {
   "id": "sp-42826099825",
   "slug": "speedybee25-o3-o4pro",
-  "name_zh": "Speedybee25 O3改O4PRO 分頭行動套組",
+  "name_zh": "SpeedyBee Bee25 O3 改 O4 Pro 分體支架｜3D 列印",
   "sku": null,
-  "brand": "SpeedyBee",
+  "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "video",
   "subcategory_id": "dji-o4",
-  "tags": [],
+  "tags": [
+    "SpeedyBee",
+    "Bee25",
+    "DJI O4 Pro",
+    "支架",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "適用與speedybee25的o4 pro數傳支架\n根據3d列印特性優化了受力結構的設計，並盡可能提供了保護o4天空端的能力\n整體安裝方式與官方鋁合金套件沒有太大區別",
+  "short_description": "適用 SpeedyBee Bee25 的 DJI O4 Pro 分體安裝支架，3D 列印製作，安裝方式與官方鋁合金套件相近。",
+  "description": "適用 SpeedyBee Bee25 的 DJI O4 Pro 圖傳安裝支架，讓原本 O3 配置的 Bee25 改裝 O4 Pro。\n\n【產品特色】\n・依 3D 列印特性優化受力結構\n・盡可能提供 O4 天空端的保護\n・整體安裝方式與官方鋁合金套件相近\n\n【購買前請確認】\n・本商品僅為支架，不含 DJI O4 Pro 圖傳與螺絲\n・適用機架與版本請先確認，不確定時請透過 LINE 洽詢\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
   "specifications": [],
   "images": [
     {
       "src": "/assets/img/products/sp-42826099825/01.webp",
       "src_small": "/assets/img/products/sp-42826099825/01-480.webp",
-      "alt": "Speedybee25 O3改O4PRO 分頭行動套組（主圖）",
+      "alt": "SpeedyBee Bee25 O3 改 O4 Pro 分體支架｜3D 列印（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +35,7 @@
     {
       "src": "/assets/img/products/sp-42826099825/02.webp",
       "src_small": "/assets/img/products/sp-42826099825/02-480.webp",
-      "alt": "Speedybee25 O3改O4PRO 分頭行動套組（細節圖 1）",
+      "alt": "SpeedyBee Bee25 O3 改 O4 Pro 分體支架｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +45,7 @@
     {
       "src": "/assets/img/products/sp-42826099825/03.webp",
       "src_small": "/assets/img/products/sp-42826099825/03-480.webp",
-      "alt": "Speedybee25 O3改O4PRO 分頭行動套組（細節圖 2）",
+      "alt": "SpeedyBee Bee25 O3 改 O4 Pro 分體支架｜3D 列印（細節圖 2）",
       "width": 687,
       "height": 687,
       "rights": "licensed",
@@ -56,13 +62,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

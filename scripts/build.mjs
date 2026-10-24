@@ -16,10 +16,16 @@ const OUT = path.resolve(ROOT, args.includes('--out') ? args[args.indexOf('--out
 if (OUT === ROOT || !OUT.startsWith(ROOT + path.sep)) { console.error('✖ 輸出資料夾必須是 repo 內的子資料夾（例如 dist）'); process.exit(1); }
 
 const data = loadAll();
-const { site, categories, builds, services, products } = data;
+const { site, categories, builds, services, products, notices } = data;
 
 // ---------- 驗證 ----------
 const { errors, warnings } = validateProducts(products, categories);
+if (!notices?.after_sales?.items?.length) errors.push('notices.json：缺少 after_sales（每件商品頁都要顯示售後與鑑賞期說明）');
+for (const k of Object.keys(notices?.usage || {})) {
+  const [cid, sid] = k.split('/');
+  const cat = categories.find(c => c.id === cid);
+  if (!cat || (sid && !cat.subcategories.some(s => s.id === sid))) errors.push(`notices.json usage：分類 ${k} 不存在`);
+}
 for (const s of services) for (const k of ['id', 'slug', 'name', 'summary']) if (!s[k]) errors.push(`services.json ${s.id}: 缺少 ${k}`);
 for (const b of builds) for (const k of ['id', 'name_zh', 'summary']) if (!b[k]) errors.push(`builds.json ${b.id}: 缺少 ${k}`);
 { // 自製機型：listed 機型必須對應到存在、未被拒絕的 EWP 原創商品，且不重複
@@ -264,6 +270,33 @@ ${contactCta()}`;
 }
 
 // ---------- 商品詳情 ----------
+// 商品說明排版：空行分段；「【標題】」單獨一行為小標；以「・」「•」「-」開頭的連續行為清單（後台仍是純文字，方便編輯）
+function richText(text) {
+  const out = [];
+  for (const block of text.split(/\n{2,}/)) {
+    let list = [], para = [];
+    const flushPara = () => { if (para.length) out.push(`<p>${para.map(esc).join('<br>')}</p>`); para = []; };
+    const flushList = () => { if (list.length) out.push(`<ul>${list.map(x => `<li>${esc(x)}</li>`).join('')}</ul>`); list = []; };
+    for (const raw of block.split('\n')) {
+      const line = raw.trim();
+      if (!line) continue;
+      const h = line.match(/^【([^】]{1,30})】$/);
+      const li = line.match(/^(?:[・•●▪]|-\s)\s*(.+)$/);
+      if (h) { flushPara(); flushList(); out.push(`<h3>${esc(h[1])}</h3>`); }
+      else if (li) { flushPara(); list.push(li[1]); }
+      else { flushList(); para.push(line); }
+    }
+    flushPara(); flushList();
+  }
+  return out.join('');
+}
+// 購買與使用須知：全站共用的售後說明＋依分類／子分類的使用提醒（缺貨商品也顯示）
+function noticeHtml(p) {
+  const usage = notices?.usage?.[`${p.primary_category_id}/${p.subcategory_id}`] || notices?.usage?.[p.primary_category_id];
+  const box = n => `<div class="notice-box"><h3>${esc(n.title)}</h3><ul class="notes">${n.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>`;
+  return `<section class="pd-block pd-notices" id="notices"><h2>購買與使用須知</h2>${usage ? box(usage) : ''}${notices?.after_sales ? box(notices.after_sales) : ''}</section>`;
+}
+
 function productPages() {
   for (const p of visible) {
     const c = catMap.get(p.primary_category_id);
@@ -290,7 +323,7 @@ function productPages() {
     const specs = p.specifications?.length ? `<section class="pd-block"><h2>規格</h2><div class="table-wrap"><table class="table spec"><tbody>${p.specifications.map(s => `<tr><th scope="row">${esc(s.key)}</th><td>${esc(s.value)}</td></tr>`).join('')}</tbody></table></div></section>` : '';
     const compat = (p.compatible_sizes?.length || p.tags?.length || p.video_system || p.battery_cells?.length) ? `<section class="pd-block"><h2>相容與標籤</h2><ul class="tags">${[...(p.compatible_sizes || []), p.video_system, ...(p.battery_cells || []), ...(p.tags || [])].filter(Boolean).map(t => `<li>${esc(t)}</li>`).join('')}</ul></section>` : '';
     const notes = p.notes?.length ? `<section class="pd-block"><h2>注意事項</h2><ul class="notes">${p.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></section>` : '';
-    const descHtml = p.description ? `<section class="pd-block"><h2>商品說明</h2><div class="prose">${p.description.split(/\n{2,}/).map(par => `<p>${esc(par).replace(/\n/g, '<br>')}</p>`).join('')}</div></section>` : '';
+    const descHtml = p.description ? `<section class="pd-block"><h2>商品說明</h2><div class="prose">${richText(p.description)}</div></section>` : '';
     const rv = p.review || {};
     const reviewItems = [...(rv.missing || []).map(m => `待補：${m}`), ...(rv.notes || [])];
     const snap = rv.shopee_sales_snapshot;
@@ -318,7 +351,7 @@ function productPages() {
       ${reviewBox}
     </div>
   </div>
-  ${variants}${specs}${compat}${descHtml}${notes}
+  ${variants}${descHtml}${specs}${compat}${notes}${noticeHtml(p)}
 </article>
 ${related.length ? `<section class="wrap">${sectionHead('RELATED', '相關商品')}${cardList(related)}</section>` : ''}
 ${(shopeeBtn || line) ? `<div class="sticky-cta" aria-label="購買與詢價">${ctas}</div>` : ''}`;

@@ -1,25 +1,57 @@
 {
   "id": "sp-56502836832",
   "slug": "dji-neo2",
-  "name_zh": "免費客製化 [ 台灣快速出貨 ]DJI NEO2 輕便收納盒｜一體式硬殼防護・可收納機體＋電池＋配件",
+  "name_zh": "DJI Neo 2 輕便收納盒｜機體＋雙電池＋小物收納｜附提把｜3D 列印硬殼",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "cases",
-  "tags": [],
+  "tags": [
+    "DJI Neo 2",
+    "Neo2",
+    "收納盒",
+    "空拍機",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "專為 DJI NEO2 設計的輕便收納盒，外殼堅固、收納分區精準，外出拍攝、日常攜帶都更安心。\n內部格局可放置機體本體與多顆電池，並預留小物收納空間（螺絲、螺刀、備用槳等），讓裝備整齊不亂跑。\n\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n產品重點\n專用卡位：貼合 NEO2 機身，放入即穩固不晃動。\n雙電池槽位：可同時放置 2 顆電池（+機身一顆）。\n小物收納格：備用槳、螺絲、起子等配件都有固定位置。\n可掛繩 / 攜帶孔：外出攜帶便利，可掛背包或掛鉤。\n有附上提把\n輕量設計不足300克：兼顧保護與便攜，不增加多餘負重。\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅",
-  "specifications": [],
+  "short_description": "電翼動力 3D 列印 DJI Neo 2 收納盒，貼合機身卡位，另有 2 個電池槽與小物收納格，附提把，重量不到 300g。",
+  "description": "電翼動力為 DJI Neo 2 設計的輕便收納盒，外殼堅固、收納分區清楚，可放置機體、多顆電池與備用槳、螺絲、起子等小物。\n\n【產品特色】\n・專用卡位，貼合 Neo 2 機身，放入即穩固\n・雙電池槽位，可另外放 2 顆電池（機身內另有 1 顆）\n・小物收納格，備用槳、螺絲、起子等有固定位置\n・掛繩／攜帶孔，可掛背包或掛鉤\n・附提把\n・重量不到 300g\n\n【顏色與列印】\n・可選顏色：金箔、金、白金、白、螢光橘、橘、綠、淺藍、紫、粉紅、馬卡龍、紅、藍、螢光綠、黑、黃\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "DJI Neo 2",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "收納",
+      "value": "機體 ×1、電池 ×2、小物格",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "300g 以下",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "配件",
+      "value": "附提把",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-56502836832/01.webp",
       "src_small": "/assets/img/products/sp-56502836832/01-480.webp",
-      "alt": "免費客製化 [ 台灣快速出貨 ]DJI NEO2 輕便收納盒｜一體式硬殼防護・可收納機體＋電池＋配件（主圖）",
+      "alt": "DJI Neo 2 輕便收納盒｜機體＋雙電池＋小物收納｜附提把｜3D 列印硬殼（主圖）",
       "width": 444,
       "height": 444,
       "rights": "licensed",
@@ -29,7 +61,7 @@
     {
       "src": "/assets/img/products/sp-56502836832/02.webp",
       "src_small": "/assets/img/products/sp-56502836832/02-480.webp",
-      "alt": "免費客製化 [ 台灣快速出貨 ]DJI NEO2 輕便收納盒｜一體式硬殼防護・可收納機體＋電池＋配件（細節圖 1）",
+      "alt": "DJI Neo 2 輕便收納盒｜機體＋雙電池＋小物收納｜附提把｜3D 列印硬殼（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +71,7 @@
     {
       "src": "/assets/img/products/sp-56502836832/03.webp",
       "src_small": "/assets/img/products/sp-56502836832/03-480.webp",
-      "alt": "免費客製化 [ 台灣快速出貨 ]DJI NEO2 輕便收納盒｜一體式硬殼防護・可收納機體＋電池＋配件（細節圖 2）",
+      "alt": "DJI Neo 2 輕便收納盒｜機體＋雙電池＋小物收納｜附提把｜3D 列印硬殼（細節圖 2）",
       "width": 990,
       "height": 990,
       "rights": "licensed",
@@ -49,7 +81,7 @@
     {
       "src": "/assets/img/products/sp-56502836832/04.webp",
       "src_small": "/assets/img/products/sp-56502836832/04-480.webp",
-      "alt": "免費客製化 [ 台灣快速出貨 ]DJI NEO2 輕便收納盒｜一體式硬殼防護・可收納機體＋電池＋配件（細節圖 3）",
+      "alt": "DJI Neo 2 輕便收納盒｜機體＋雙電池＋小物收納｜附提把｜3D 列印硬殼（細節圖 3）",
       "width": 463,
       "height": 463,
       "rights": "licensed",
@@ -179,14 +211,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-mia9z7ppqu4g86",

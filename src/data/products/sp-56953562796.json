@@ -1,19 +1,25 @@
 {
   "id": "sp-56953562796",
   "slug": "dji-o4-lite-22mm-o3",
-  "name_zh": "DJI O4 Lite 圖傳散熱套件 🔥 附 22mm 鏡頭轉接座 支援 O3 鏡頭孔位機架",
+  "name_zh": "DJI O4 Lite 圖傳散熱套件｜附 22mm 鏡頭轉接座｜適用 O3 鏡頭孔位機架",
   "sku": null,
-  "brand": "DJI",
+  "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "video",
   "subcategory_id": "dji-o4",
-  "tags": [],
+  "tags": [
+    "DJI O4 Lite",
+    "散熱套件",
+    "22mm",
+    "鏡頭轉接",
+    "O3 機架"
+  ],
   "compatible_sizes": [],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "DJI O4 Lite 散熱套件\nO4 Lite 圖傳散熱模組\nO4 Lite 22mm 鏡頭轉接\nO4 轉 O3 鏡頭座\nDJI O4 Lite 升級配件\nFPV 圖傳散熱改裝\nO4 Lite 過熱 解決\nDJI O4 相機轉接座\n22mm FPV 鏡頭座\nFPV 無人機 3D 列印配件\n\n⚠️ 3D 列印／CNC 件可能有些微紋路或加工痕跡，屬正常現象不影響使用\n保持包裝及產品的完整性，提供7天鑑賞期服務 非試用期\n\nDJI O4 Lite 圖傳雖然體積小、畫質好，但原廠散熱較弱、鏡頭又是 14mm 尺寸，很多 O3 機架想升級時不是容易過熱，就是孔位不合。這組「O4 Lite 圖傳散熱套件 + 22mm 鏡頭轉接」一次幫你解決兩個問題：底部鋁件／碳板搭配導熱貼，協助把熱量導出，降低 O4 Lite 過熱降功率的風險，同時把原本 14mm 鏡頭轉成 22mm 規格，方便安裝在支援 O3 孔位的機架上。🛩️\n​\n產品特色 ✨\n散熱保護模組：搭配 1mm 導熱貼與專用散熱板，有效將 O4 Lite 主要發熱區塊導熱到外殼，延緩高溫保護或自動斷訊情況發生。🧊\n​\n鏡頭 14 → 22mm 轉接：內部卡位對應 O4 Lite 原始鏡頭，外部尺寸轉為約 22mm，方便安裝在原本為 O3 / 22mm 鏡頭設計的機架相機座上，減少改碳、墊片土砌的麻煩。📐\n多機通用：只要是支援 O3 鏡頭寬度與 O4 Lite 本體安裝空間的機架，多數都能直接使用，適合 4–7 吋 Freestyle / LR 機。🛠️\n​\n保護＋外觀兼具：除散熱外亦提供一定防護效果，減少硬著陸時直接撞擊圖傳與鏡頭的風險，外觀也更一體化。",
+  "short_description": "DJI O4 Lite 散熱套件，散熱板搭配 1mm 導熱貼，並把 O4 Lite 原本約 14mm 的鏡頭轉成 22mm 規格，方便裝在 O3／22mm 鏡頭座的機架。",
+  "description": "DJI O4 Lite 體積小、畫質好，但散熱空間有限，鏡頭尺寸也和許多 O3 機架不同。這組套件一次處理兩件事：散熱板搭配導熱貼把熱量導出，並把 O4 Lite 的鏡頭轉成約 22mm 規格。\n\n【產品特色】\n・散熱模組：專用散熱板搭配 1mm 導熱貼，把主要發熱區的熱量導到外殼，延緩高溫保護\n・鏡頭 14 → 22mm 轉接：內部卡位對應 O4 Lite 原始鏡頭，外部約 22mm，適合 O3／22mm 鏡頭座\n・多數支援 O3 鏡頭寬度與 O4 Lite 本體空間的 4～7 吋機架可用\n・對圖傳與鏡頭提供一定程度的保護\n\n【購買前請確認】\n・本商品不含 DJI O4 Lite 圖傳\n・請確認機架相機座寬度與安裝空間，不確定時請透過 LINE 洽詢\n・實際降溫效果受環境、氣流與使用方式影響\n・3D 列印／CNC 件可能有細微紋路或加工痕跡，屬製程特性",
   "specifications": [],
   "images": [
     {
@@ -76,13 +82,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

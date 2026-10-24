@@ -1,20 +1,103 @@
 {
   "id": "sp-47268009795",
   "slug": "geprc-linkflow-915m-2-4g-1w-lr1121",
-  "name_zh": "【電翼動力】GEPRC LINKFLOW 雙頻高頻頭 915M/2.4G 1W LR1121 JR槽 FPV穿越機",
+  "name_zh": "GEPRC LINKFLOW 雙頻 ELRS 高頻頭｜915M／2.4G｜LR1121｜1W｜JR 槽",
   "sku": null,
   "brand": "GEPRC",
-  "manufacturer_model": null,
+  "manufacturer_model": "LINKFLOW 900/2400 Dual-Band TX",
   "seller_role": "retail",
   "primary_category_id": "radio-gps",
   "subcategory_id": "elrs",
-  "tags": [],
+  "tags": [
+    "ELRS",
+    "高頻頭",
+    "雙頻",
+    "LR1121",
+    "915MHz",
+    "GEPRC"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "產品名稱：GEPRC LINKFLOW 915M/2.4G 雙頻高頻頭\n工作頻段：915MHz（FCC）／868MHz（EU）／2.4GHz（ISM）\n射頻晶片：LR1121\n主控晶片：ESP32\n背包晶片：ESP32-C3\n最大功率：1000mW\n晶振：溫度補償晶振\n封包率：50Hz～500Hz（LoRa）、1000Hz（FSK）\n天線接頭：SMA（外螺內孔）\n擴充槽型式：JR 槽\nWiFi：支援\nRGB 指示燈：支援\n外接供電：2S～6S\n重量：60g（不含天線）\n韌體：GEPRC LINKFLOW 900/2400 Dual-Band TX\n\n① 一顆雙頻：915／868MHz 遠航 + 2.4GHz 高更新率，不用買兩顆模組\n② LR1121 雙頻射頻晶片，最大 1W 輸出，穿透與距離表現更好\n③ 溫度補償晶振，外場溫差下頻率更穩定，連線不易飄\n④ JR 標準槽 + SMA 天線接頭 + WiFi 更新韌體，安裝與維護都方便",
-  "specifications": [],
+  "short_description": "GEPRC LINKFLOW 雙頻 ELRS 高頻頭，LR1121 晶片，915／868MHz 與 2.4GHz 一顆搞定，最大 1W，JR 槽、SMA 天線、2S～6S 外接供電。",
+  "description": "GEPRC LINKFLOW 是雙頻 ExpressLRS 高頻頭，一顆模組同時支援 915／868MHz 遠距離與 2.4GHz 高更新率，不用分別購買兩顆模組。\n\n【產品特色】\n・LR1121 雙頻射頻晶片，最大 1W 輸出\n・溫度補償晶振，外場溫差下頻率更穩定\n・JR 標準槽、SMA 天線接頭\n・WiFi 更新韌體，RGB 指示燈\n・可外接 2S～6S 供電\n\n【法規提醒】\n・915MHz 涉及頻段使用規定，台灣使用前請自行確認相關法規；輸出功率請依當地規定設定",
+  "specifications": [
+    {
+      "key": "產品名稱",
+      "value": "GEPRC LINKFLOW 915M/2.4G 雙頻高頻頭",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "工作頻段",
+      "value": "915MHz（FCC）／868MHz（EU）／2.4GHz（ISM）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "射頻晶片",
+      "value": "LR1121",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "主控晶片",
+      "value": "ESP32",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "背包晶片",
+      "value": "ESP32-C3",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "最大功率",
+      "value": "1000mW",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "晶振",
+      "value": "溫度補償晶振",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "封包率",
+      "value": "50Hz～500Hz（LoRa）、1000Hz（FSK）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "天線接頭",
+      "value": "SMA（外螺內孔）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "擴充槽型式",
+      "value": "JR 槽",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "WiFi",
+      "value": "支援",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "RGB 指示燈",
+      "value": "支援",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "外接供電",
+      "value": "2S～6S",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "60g（不含天線）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "韌體",
+      "value": "GEPRC LINKFLOW 900/2400 Dual-Band TX",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-47268009795/01.webp",
@@ -116,13 +199,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mt96cvffibyd3f",

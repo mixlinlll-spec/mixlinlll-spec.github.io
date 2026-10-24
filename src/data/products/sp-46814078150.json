@@ -1,25 +1,57 @@
 {
   "id": "sp-46814078150",
   "slug": "tiny-whoop-tpu-fpv-3d-canopy",
-  "name_zh": "Tiny Whoop 小小兵 頂罩 TPU 機頭保護罩 FPV 穿越機 3D列印 Canopy 支援 AIO 攝影機 機",
+  "name_zh": "Tinywhoop 小小兵造型 TPU 頂罩｜65／75／85mm 微型穿越機 Canopy",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "Tinywhoop",
+    "頂罩",
+    "Canopy",
+    "TPU",
+    "造型",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "65mm",
+    "75mm",
+    "85mm"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "小兵造型 Tiny Whoop TPU頂罩，兼具外觀與保護效果，採用TPU柔性材質3D列印，耐撞、耐摔，為微型FPV穿越機增添獨特風格，同時有效保護攝影機及電子設備。\n\n【產品特色】\n✔ 小小兵造型，辨識度高\n✔ TPU柔性材質，耐撞耐摔\n✔ 保護攝影機，降低撞擊損傷\n✔ 重量輕，不影響飛行性能\n✔ 3D列印製作，可客製顏色\n\n【產品規格】\n材質：TPU\n製程：3D列印\n用途：Tiny Whoop 機頭保護罩／頂罩\n顏色：黃色，請自行上色\n【適用機型】\nTiny Whoop\n65mm／75mm／85mm 微型FPV穿越機\n相容AIO飛控及主流Whoop攝影機（請確認安裝孔位）\n※ 本商品為3D列印製品，表面可能有細微列印紋路，屬正常現象，不影響使用。",
-  "specifications": [],
+  "short_description": "電翼動力小小兵造型 Tinywhoop TPU 頂罩，黃色出貨、其他部位可自行上色，適用 65／75／85mm 微型穿越機。",
+  "description": "小小兵造型的 Tinywhoop TPU 頂罩，兼具外觀與保護，為微型穿越機增加辨識度，同時保護攝影機。\n\n【產品特色】\n・小小兵造型，辨識度高\n・TPU 柔性材質，耐撞\n・保護攝影機，降低撞擊損傷\n・重量輕\n\n【適用機型】\n・65mm／75mm／85mm Tinywhoop\n・相容 AIO 飛控與主流 Whoop 攝影機（請確認安裝孔位）\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。\n・以黃色出貨，其他區域請自行上色",
+  "specifications": [
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "用途",
+      "value": "Tinywhoop 頂罩／機頭保護罩",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "顏色",
+      "value": "黃（其他區域自行上色）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用尺寸",
+      "value": "65／75／85mm",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-46814078150/01.webp",
       "src_small": "/assets/img/products/sp-46814078150/01-480.webp",
-      "alt": "Tiny Whoop 小小兵 頂罩 TPU 機頭保護罩 FPV 穿越機 3D列印 Canopy 支援 AIO 攝影機 機（主圖）",
+      "alt": "Tinywhoop 小小兵造型 TPU 頂罩｜65／75／85mm 微型穿越機 Canopy（主圖）",
       "width": 807,
       "height": 807,
       "rights": "licensed",
@@ -29,7 +61,7 @@
     {
       "src": "/assets/img/products/sp-46814078150/02.webp",
       "src_small": "/assets/img/products/sp-46814078150/02-480.webp",
-      "alt": "Tiny Whoop 小小兵 頂罩 TPU 機頭保護罩 FPV 穿越機 3D列印 Canopy 支援 AIO 攝影機 機（細節圖 1）",
+      "alt": "Tinywhoop 小小兵造型 TPU 頂罩｜65／75／85mm 微型穿越機 Canopy（細節圖 1）",
       "width": 864,
       "height": 864,
       "rights": "licensed",
@@ -39,7 +71,7 @@
     {
       "src": "/assets/img/products/sp-46814078150/03.webp",
       "src_small": "/assets/img/products/sp-46814078150/03-480.webp",
-      "alt": "Tiny Whoop 小小兵 頂罩 TPU 機頭保護罩 FPV 穿越機 3D列印 Canopy 支援 AIO 攝影機 機（細節圖 2）",
+      "alt": "Tinywhoop 小小兵造型 TPU 頂罩｜65／75／85mm 微型穿越機 Canopy（細節圖 2）",
       "width": 541,
       "height": 541,
       "rights": "licensed",
@@ -64,14 +96,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,25 +1,46 @@
 {
   "id": "sp-57552145390",
   "slug": "beta-meteor75-pro-air65-air75-3d",
-  "name_zh": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級",
+  "name_zh": "BETAFPV Meteor75 Pro／Air65／Air75 列印件｜後置天線座、C03 機罩、Ant Lite 輕量頂罩、550mAh 電池套",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "Meteor75",
+    "Air65",
+    "Air75",
+    "Tinywhoop",
+    "頂罩",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "65mm",
+    "75mm"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D 列印件可能有些微層紋屬正常現象⚠️",
-  "specifications": [],
+  "short_description": "電翼動力為 BETAFPV Meteor75 Pro、Air65、Air75 製作的列印件，提供後置天線座、25×25 機罩（C03 鏡頭）、輕量化頂罩（Ant Lite）與 550mAh 1S 電池套。",
+  "description": "電翼動力為 BETAFPV Meteor75 Pro、Air65、Air75 製作的 3D 列印件。\n\n【可選零件】\n・後置天線座\n・25×25 機罩（C03 鏡頭尺寸）\n・輕量化頂罩（Caddx Ant Lite 尺寸）\n・改裝 550mAh 1S 電池套\n\n【安裝前請確認】\n・請依您的機型、鏡頭與電池尺寸選擇對應零件\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "BETAFPV Meteor75 Pro／Air65／Air75",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-57552145390/01.webp",
       "src_small": "/assets/img/products/sp-57552145390/01-480.webp",
-      "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（主圖）",
+      "alt": "BETAFPV Meteor75 Pro／Air65／Air75 列印件｜後置天線座、C03 機罩、Ant Lite 輕量頂罩、550mAh 電池套（主圖）",
       "width": 838,
       "height": 838,
       "rights": "licensed",
@@ -29,7 +50,7 @@
     {
       "src": "/assets/img/products/sp-57552145390/02.webp",
       "src_small": "/assets/img/products/sp-57552145390/02-480.webp",
-      "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（細節圖 1）",
+      "alt": "BETAFPV Meteor75 Pro／Air65／Air75 列印件｜後置天線座、C03 機罩、Ant Lite 輕量頂罩、550mAh 電池套（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +60,7 @@
     {
       "src": "/assets/img/products/sp-57552145390/03.webp",
       "src_small": "/assets/img/products/sp-57552145390/03-480.webp",
-      "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（細節圖 2）",
+      "alt": "BETAFPV Meteor75 Pro／Air65／Air75 列印件｜後置天線座、C03 機罩、Ant Lite 輕量頂罩、550mAh 電池套（細節圖 2）",
       "width": 808,
       "height": 808,
       "rights": "licensed",
@@ -49,7 +70,7 @@
     {
       "src": "/assets/img/products/sp-57552145390/04.webp",
       "src_small": "/assets/img/products/sp-57552145390/04-480.webp",
-      "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（細節圖 3）",
+      "alt": "BETAFPV Meteor75 Pro／Air65／Air75 列印件｜後置天線座、C03 機罩、Ant Lite 輕量頂罩、550mAh 電池套（細節圖 3）",
       "width": 631,
       "height": 631,
       "rights": "licensed",
@@ -59,7 +80,7 @@
     {
       "src": "/assets/img/products/sp-57552145390/05.webp",
       "src_small": "/assets/img/products/sp-57552145390/05-480.webp",
-      "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（細節圖 4）",
+      "alt": "BETAFPV Meteor75 Pro／Air65／Air75 列印件｜後置天線座、C03 機罩、Ant Lite 輕量頂罩、550mAh 電池套（細節圖 4）",
       "width": 882,
       "height": 882,
       "rights": "licensed",
@@ -69,7 +90,7 @@
     {
       "src": "/assets/img/products/sp-57552145390/06.webp",
       "src_small": "/assets/img/products/sp-57552145390/06-480.webp",
-      "alt": "BETA Meteor75 Pro Air65 Air75 專用 3D 列印各類打印件｜防撞保護／天線座／減震升級（細節圖 5）",
+      "alt": "BETAFPV Meteor75 Pro／Air65／Air75 列印件｜後置天線座、C03 機罩、Ant Lite 輕量頂罩、550mAh 電池套（細節圖 5）",
       "width": 796,
       "height": 796,
       "rights": "licensed",
@@ -139,7 +160,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -147,7 +168,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

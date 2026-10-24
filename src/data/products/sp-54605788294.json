@@ -1,14 +1,21 @@
 {
   "id": "sp-54605788294",
   "slug": "iflight-xing2-2405-1950kv-4-6s",
-  "name_zh": "iFlight 翼飛 XING2 2405 1950KV⚡ 4–6S FPV穿越機無刷電機 5吋競速/花飛通用",
+  "name_zh": "iFlight 翼飛 XING2 2405 1950KV 無刷馬達｜4–6S｜5 吋競速、花飛｜單顆／四顆",
   "sku": null,
   "brand": "iFlight",
-  "manufacturer_model": null,
+  "manufacturer_model": "XING2 2405 1950KV",
   "seller_role": "retail",
   "primary_category_id": "motors-props",
   "subcategory_id": "motors",
-  "tags": [],
+  "tags": [
+    "無刷馬達",
+    "2405",
+    "1950KV",
+    "6S",
+    "5吋",
+    "iFlight"
+  ],
   "compatible_sizes": [
     "5 吋"
   ],
@@ -16,9 +23,50 @@
   "battery_cells": [
     "6S"
   ],
-  "short_description": "",
-  "description": "•\t#XING2 2405\n\n•\t2405 規格＋1950KV，搭配 6S 5吋槳，屬於現在很主流的「兼顧手感與效率」區間，適合 Freestyle、日常炸機與小比賽。\n•\t採用一體 Unibell 鈦合金中空軸＋7075 鋁合金外鐘，抗撞耐摔，長期飛也不易變形。\n•\t內部使用 N52H 弧形磁鋼與高品質軸承，轉動順、響應快，油門線性感明顯，比老一代 XING 更有「鎖定感」。\n•\t16×16mm 安裝孔位、20AWG 長線，直接對應市面多數 5 吋機架與 45–60A 電調，換裝無痛。",
-  "specifications": [],
+  "short_description": "iFlight XING2 2405 1950KV 無刷馬達，一體 Unibell 鈦合金中空軸、7075 鋁外鐘、N52H 弧形磁鋼，16×16mm 孔位，適用 4–6S 五吋機。",
+  "description": "iFlight XING2 2405 1950KV 無刷馬達，搭配 6S 與 5 吋槳，適合 Freestyle、日常練習與小型比賽。\n\n【產品特色】\n・一體 Unibell 設計，鈦合金中空軸＋7075 鋁合金外鐘\n・N52H 弧形磁鋼與高品質軸承\n・16×16mm 安裝孔位、20AWG 線材，對應多數 5 吋機架\n・搭配 45–60A 電調\n\n【規格選項】\n・單顆\n・四顆",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "iFlight",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "XING2 2405",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "KV 值",
+      "value": "1950KV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用電池",
+      "value": "4–6S",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "安裝孔位",
+      "value": "16 × 16 mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "線材",
+      "value": "20AWG",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "軸",
+      "value": "鈦合金中空軸",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "磁鋼",
+      "value": "N52H 弧形磁鋼",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-54605788294/01.webp",
@@ -85,13 +133,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820ld-mkae79xecbnsc6"

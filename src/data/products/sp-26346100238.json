@@ -1,25 +1,55 @@
 {
   "id": "sp-26346100238",
   "slug": "meteor75-pro-1-2g-75-whoop",
-  "name_zh": "Meteor75 Pro 二代 專用碳板 補強板 1.2g 75 Whoop 機架強化 微型穿越機 改裝 配件 電翼動力",
+  "name_zh": "Meteor75 Pro II 碳纖維補強板 1.2g｜適用 BETAFPV Meteor75 Pro（二代）",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
-  "primary_category_id": "hardware-prints",
-  "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "primary_category_id": "frames-parts",
+  "subcategory_id": "plates",
+  "tags": [
+    "Meteor75",
+    "補強板",
+    "碳板",
+    "Whoop",
+    "BETAFPV",
+    "改裝"
+  ],
+  "compatible_sizes": [
+    "75mm"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "【Meteor75 Pro II 專用碳纖維補強板】\n\n適用 BETAFPV Meteor75 Pro II 的碳纖維補強板，重量僅 1.2g。\n鎖附於機架上方，連結四個馬達座，\n補強塑膠機架的剛性，降低撞擊時機臂與涵道變形的狀況。\n\n■ 商品規格\n適用機型：BETAFPV Meteor75 Pro II（二代）\n材質：碳纖維\n重量：1.2g\n安裝方式：依原機架孔位鎖附，不需鑽孔或修改機架\n\n■ 商品特點\n1. 重量僅 1.2g，微型機加裝後重量增加極少\n2. 對應原機架孔位，不需鑽孔、裁切或修改機架\n3. X 型結構連結四個馬達座，補強機架整體剛性\n4. 碳纖維材質，比塑料件更不易彎曲變形\n\n■ 適用說明\n・僅適用 Meteor75 Pro II（二代）\n・不適用初代 Meteor75 Pro、Meteor65 或其他 75mm 機架\n\n■ 發貨內容\n碳纖維補強板 ×1 螺絲包x1\n※ 不含機架、任何電子零件\n\n■ 安裝注意\n1. 安裝前請先拆下螺旋槳。\n2. 鎖螺絲請勿過度施力，微型機的塑料孔位容易滑牙。\n3. 請確認補強板未壓到馬達線、飛控或圖傳排線。\n4. 碳纖維具導電性，請確認補強板未接觸裸露焊點，避免短路。\n5. 安裝後請確認馬達轉動順暢，無任何干涉。\n\n■ 購買前請了解\n1. 本商品為第三方改裝配件，非 BETAFPV 原廠零件，與原廠無從屬或授權關係。\n2. 加裝補強板可提升機架剛性，但無法保證摔機不損壞，\n   摔機造成之斷裂、變形屬正常耗損。\n3. 加裝後飛行手感可能略有不同，如有需要可自行微調設定。\n4. 碳纖維裁切邊緣如需打磨，請配戴口罩並於通風處進行。\n\n電翼動力 EWP｜Ready to Fly",
-  "specifications": [],
+  "short_description": "電翼動力碳纖維補強板，適用 BETAFPV Meteor75 Pro II，重量 1.2g，依原機架孔位鎖附，連結四個馬達座提升機架剛性。",
+  "description": "適用 BETAFPV Meteor75 Pro II 的碳纖維補強板，重量僅 1.2g。\n鎖附於機架上方，連結四個馬達座，\n補強塑膠機架的剛性，降低撞擊時機臂與涵道變形的狀況。\n\n【商品特點】\n・重量僅 1.2g，微型機加裝後重量增加極少\n・對應原機架孔位，不需鑽孔、裁切或修改機架\n・X 型結構連結四個馬達座，補強機架整體剛性\n・碳纖維材質，比塑料件更不易彎曲變形\n\n【適用說明】\n・僅適用 Meteor75 Pro II（二代）\n・不適用初代 Meteor75 Pro、Meteor65 或其他 75mm 機架\n\n【發貨內容】\n碳纖維補強板 ×1 螺絲包x1\n※ 不含機架、任何電子零件\n\n【安裝注意】\n・安裝前請先拆下螺旋槳。\n・鎖螺絲請勿過度施力，微型機的塑料孔位容易滑牙。\n・請確認補強板未壓到馬達線、飛控或圖傳排線。\n・碳纖維具導電性，請確認補強板未接觸裸露焊點，避免短路。\n・安裝後請確認馬達轉動順暢，無任何干涉。\n\n【購買前請了解】\n・本商品為第三方改裝配件，非 BETAFPV 原廠零件，與原廠無從屬或授權關係。\n・加裝補強板可提升機架剛性，但仍可能在摔機時損壞。\n・加裝後飛行手感可能略有不同，如有需要可自行微調設定。\n・碳纖維裁切邊緣如需打磨，請配戴口罩並於通風處進行。\n\n電翼動力 EWP｜Ready to Fly",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "BETAFPV Meteor75 Pro II（二代）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "碳纖維",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "1.2g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "安裝方式",
+      "value": "依原機架孔位鎖附，不需鑽孔或修改機架",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-26346100238/01.webp",
       "src_small": "/assets/img/products/sp-26346100238/01-480.webp",
-      "alt": "Meteor75 Pro 二代 專用碳板 補強板 1.2g 75 Whoop 機架強化 微型穿越機 改裝 配件 電翼動力（主圖）",
+      "alt": "Meteor75 Pro II 碳纖維補強板 1.2g｜適用 BETAFPV Meteor75 Pro（二代）（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +59,7 @@
     {
       "src": "/assets/img/products/sp-26346100238/02.webp",
       "src_small": "/assets/img/products/sp-26346100238/02-480.webp",
-      "alt": "Meteor75 Pro 二代 專用碳板 補強板 1.2g 75 Whoop 機架強化 微型穿越機 改裝 配件 電翼動力（細節圖 1）",
+      "alt": "Meteor75 Pro II 碳纖維補強板 1.2g｜適用 BETAFPV Meteor75 Pro（二代）（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +69,7 @@
     {
       "src": "/assets/img/products/sp-26346100238/03.webp",
       "src_small": "/assets/img/products/sp-26346100238/03-480.webp",
-      "alt": "Meteor75 Pro 二代 專用碳板 補強板 1.2g 75 Whoop 機架強化 微型穿越機 改裝 配件 電翼動力（細節圖 2）",
+      "alt": "Meteor75 Pro II 碳纖維補強板 1.2g｜適用 BETAFPV Meteor75 Pro（二代）（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -56,7 +86,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -64,7 +94,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

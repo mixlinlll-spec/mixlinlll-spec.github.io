@@ -1,25 +1,47 @@
 {
   "id": "sp-26192359811",
   "slug": "1-6s",
-  "name_zh": "1-6S 二合一 電量顯示器 帶蜂鳴器 低壓警報 電池檢測器",
+  "name_zh": "1–6S 鋰電池電量顯示器＋低壓蜂鳴警報器（二合一）｜LiPo／Li-ion／LiFe",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "electronics",
   "subcategory_id": "modules",
-  "tags": [],
+  "tags": [
+    "電量顯示器",
+    "低壓警報",
+    "BB響",
+    "電池檢測",
+    "平衡頭"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "【產品特色】\n\n✔ 二合一功能：同時具備電量顯示與蜂鳴低壓警報\n\n✔ 廣泛兼容：適用 1-6S 鋰電池（LiPo / Li-ion / LiFe）\n\n✔ 即時檢測：清晰 LED 電壓顯示，掌握每組電芯狀態\n\n✔ 安全提醒：低壓自動蜂鳴提示，避免電池過放\n\n✔ 輕巧便攜：外場飛行、模型玩家必備工具\n\n【產品規格】\n\n品名：電量顯示器 / 低壓蜂鳴警報器\n\n型號：1-6S 二合一款\n\n適用電池：1-6S 鋰電池 (LiPo / Li-ion / LiFe)\n\n功能：電壓顯示 + 低壓蜂鳴警報\n\n用途：穿越機 / 固定翼 / 車模 / 船模 / 電池檢測",
-  "specifications": [],
+  "short_description": "1–6S 鋰電池電壓顯示與低壓蜂鳴警報二合一，適用 LiPo、Li-ion、LiFe，可在外場快速檢查電池電壓。",
+  "description": "二合一的電池檢測小工具：插上電池平衡頭即可顯示電壓，電壓過低時會蜂鳴提醒，適合外場快速檢查電池狀態。\n\n【產品特色】\n・電量顯示＋低壓蜂鳴警報二合一\n・適用 1–6S 鋰電池（LiPo／Li-ion／LiFe）\n・LED 電壓顯示，可查看各電芯狀態\n・低壓蜂鳴提醒，避免電池過放\n・體積小，方便外場攜帶\n\n【適用範圍】\n穿越機、固定翼、車模、船模等使用平衡頭的鋰電池。\n\n【使用提醒】\n插入平衡頭時請確認方向與腳位對齊，錯位插入可能損壞電池或檢測器。",
+  "specifications": [
+    {
+      "key": "適用電池",
+      "value": "1–6S LiPo／Li-ion／LiFe",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "功能",
+      "value": "電壓顯示＋低壓蜂鳴警報",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "連接方式",
+      "value": "電池平衡頭",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-26192359811/01.webp",
       "src_small": "/assets/img/products/sp-26192359811/01-480.webp",
-      "alt": "1-6S 二合一 電量顯示器 帶蜂鳴器 低壓警報 電池檢測器（主圖）",
+      "alt": "1–6S 鋰電池電量顯示器＋低壓蜂鳴警報器（二合一）｜LiPo／Li-ion／LiFe（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +51,7 @@
     {
       "src": "/assets/img/products/sp-26192359811/02.webp",
       "src_small": "/assets/img/products/sp-26192359811/02-480.webp",
-      "alt": "1-6S 二合一 電量顯示器 帶蜂鳴器 低壓警報 電池檢測器（細節圖 1）",
+      "alt": "1–6S 鋰電池電量顯示器＋低壓蜂鳴警報器（二合一）｜LiPo／Li-ion／LiFe（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +61,7 @@
     {
       "src": "/assets/img/products/sp-26192359811/03.webp",
       "src_small": "/assets/img/products/sp-26192359811/03-480.webp",
-      "alt": "1-6S 二合一 電量顯示器 帶蜂鳴器 低壓警報 電池檢測器（細節圖 2）",
+      "alt": "1–6S 鋰電池電量顯示器＋低壓蜂鳴警報器（二合一）｜LiPo／Li-ion／LiFe（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -56,13 +78,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

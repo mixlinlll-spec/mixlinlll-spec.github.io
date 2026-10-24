@@ -1,25 +1,51 @@
 {
   "id": "sp-42922076789",
   "slug": "diy",
-  "name_zh": "電路焊接夾具 固線固定器 焊接台維修夾子 電子DIY工具",
+  "name_zh": "焊接輔助夾具｜電線、電路板固定器",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "tools",
   "subcategory_id": "soldering",
-  "tags": [],
+  "tags": [
+    "焊接夾具",
+    "焊接工具",
+    "電子維修",
+    "裝機"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "【產品特色】\n\n✔ 穩固固定：輕鬆夾持電線、電路板，解放雙手\n\n✔ 精密操作：方便焊接、維修，提高工作效率\n\n✔ 多功能應用：適用於電路維修、接線、電子DIY\n\n✔ 小巧實用：操作簡單，隨身攜帶，工作台必備\n\n【產品規格】\n\n品名：線路焊接夾具 / 固定器\n\n材質：工程塑料 + 金屬\n\n用途：電線固定、電路板維修、焊接輔助\n\n適合對象：電子工程師、手機維修、DIY玩家",
-  "specifications": [],
+  "short_description": "焊接時固定電線與電路板的輔助夾具，工程塑料＋金屬，適合 FPV 裝機與電子維修。",
+  "description": "【產品特色】\n・穩固固定：輕鬆夾持電線、電路板，解放雙手\n\n・精密操作：方便焊接、維修，提高工作效率\n\n・多功能應用：適用於電路維修、接線、電子DIY\n\n・小巧實用：操作簡單，方便攜帶",
+  "specifications": [
+    {
+      "key": "品名",
+      "value": "線路焊接夾具 / 固定器",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "工程塑料 + 金屬",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "用途",
+      "value": "電線固定、電路板維修、焊接輔助",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適合對象",
+      "value": "電子工程師、手機維修、DIY玩家",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-42922076789/01.webp",
       "src_small": "/assets/img/products/sp-42922076789/01-480.webp",
-      "alt": "電路焊接夾具 固線固定器 焊接台維修夾子 電子DIY工具（主圖）",
+      "alt": "焊接輔助夾具｜電線、電路板固定器（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +55,7 @@
     {
       "src": "/assets/img/products/sp-42922076789/02.webp",
       "src_small": "/assets/img/products/sp-42922076789/02-480.webp",
-      "alt": "電路焊接夾具 固線固定器 焊接台維修夾子 電子DIY工具（細節圖 1）",
+      "alt": "焊接輔助夾具｜電線、電路板固定器（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +65,7 @@
     {
       "src": "/assets/img/products/sp-42922076789/03.webp",
       "src_small": "/assets/img/products/sp-42922076789/03-480.webp",
-      "alt": "電路焊接夾具 固線固定器 焊接台維修夾子 電子DIY工具（細節圖 2）",
+      "alt": "焊接輔助夾具｜電線、電路板固定器（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +75,7 @@
     {
       "src": "/assets/img/products/sp-42922076789/04.webp",
       "src_small": "/assets/img/products/sp-42922076789/04-480.webp",
-      "alt": "電路焊接夾具 固線固定器 焊接台維修夾子 電子DIY工具（細節圖 3）",
+      "alt": "焊接輔助夾具｜電線、電路板固定器（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -66,13 +92,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

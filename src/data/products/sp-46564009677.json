@@ -1,25 +1,73 @@
 {
   "id": "sp-46564009677",
   "slug": "tbs-crossfire-tx-lite-v2-915mhz",
-  "name_zh": "TBS Crossfire TX Lite V2 915MHz 長距離 遙控高頻頭 JR Lite 黑羊 FPV 穿越機",
+  "name_zh": "TBS Crossfire TX Lite V2 915MHz 高頻頭｜JR Lite 槽｜最高 2W｜CRSF",
   "sku": null,
   "brand": "TBS",
-  "manufacturer_model": null,
+  "manufacturer_model": "Crossfire TX Lite V2",
   "seller_role": "retail",
   "primary_category_id": "radio-gps",
   "subcategory_id": "crossfire",
-  "tags": [],
+  "tags": [
+    "TBS",
+    "Crossfire",
+    "CRSF",
+    "高頻頭",
+    "915MHz",
+    "Long Range"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "TBS Crossfire TX Lite V2 是專為 JR Lite 規格遙控器打造的長距離遙控發射模組，採用 CRSF（Crossfire）通訊協議，具備超低延遲、高抗干擾及超遠距離傳輸能力，是 Long Range FPV 玩家最受歡迎的遙控系統之一。\n【產品特色】\n✔ CRSF 超低延遲控制，飛行反應更即時\n✔ 915MHz 長距離傳輸，訊號穩定可靠\n✔ 最高支援 2W（2000mW）輸出功率\n✔ 支援 OTA 韌體更新\n✔ 相容 OpenTX／EdgeTX 遙控器\n✔ 適用 JR Lite 規格模組槽\n【產品規格】\n品牌：TBS\n型號：Crossfire TX Lite V2\n頻率：915MHz（美國／亞洲／澳洲）\n輸入電壓：3.5～13V\n輸出功率：10mW～2000mW\n尺寸：55 × 89 × 15mm\n重量：約76g\n通訊協議：CRSF\n【包裝內容】\nCrossfire TX Lite 發射模組 ×1\nJR Lite 轉接座 ×1\nV2 天線 ×1\nFutaba 線材 ×1\nGraupner 線材 ×1\nPWM 線材 ×1\nJST 至 XT30 電源線 ×1\n※ 購買前請確認您的遙控器是否支援 JR Lite 模組槽。",
-  "specifications": [],
+  "short_description": "TBS Crossfire TX Lite V2 長距離遙控發射模組，915MHz、CRSF 協議、10mW～2W 可調，適用 JR Lite 模組槽的 OpenTX／EdgeTX 遙控器。",
+  "description": "TBS Crossfire TX Lite V2 是專為 JR Lite 規格遙控器打造的長距離遙控發射模組，採用 CRSF（Crossfire）通訊協議，具備超低延遲、高抗干擾及超遠距離傳輸能力。\n\n【產品特色】\n・CRSF 超低延遲控制，飛行反應更即時\n・915MHz 長距離傳輸，訊號穩定可靠\n・最高支援 2W（2000mW）輸出功率\n・支援 OTA 韌體更新\n・相容 OpenTX／EdgeTX 遙控器\n・適用 JR Lite 規格模組槽\n\n【包裝內容】\nCrossfire TX Lite 發射模組 ×1\nJR Lite 轉接座 ×1\nV2 天線 ×1\nFutaba 線材 ×1\nGraupner 線材 ×1\nPWM 線材 ×1\nJST 至 XT30 電源線 ×1\n※ 購買前請確認您的遙控器是否支援 JR Lite 模組槽。\n\n【法規提醒】\n915MHz 涉及頻段使用規定，台灣使用前請自行確認相關法規；輸出功率請依當地規定設定。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "TBS",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "Crossfire TX Lite V2",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "頻率",
+      "value": "915MHz（美國／亞洲／澳洲）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "輸入電壓",
+      "value": "3.5～13V",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "輸出功率",
+      "value": "10mW～2000mW",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "55 × 89 × 15mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約76g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "通訊協議",
+      "value": "CRSF",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-46564009677/01.webp",
       "src_small": "/assets/img/products/sp-46564009677/01-480.webp",
-      "alt": "TBS Crossfire TX Lite V2 915MHz 長距離 遙控高頻頭 JR Lite 黑羊 FPV 穿越機（主圖）",
+      "alt": "TBS Crossfire TX Lite V2 915MHz 高頻頭｜JR Lite 槽｜最高 2W｜CRSF（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +77,7 @@
     {
       "src": "/assets/img/products/sp-46564009677/02.webp",
       "src_small": "/assets/img/products/sp-46564009677/02-480.webp",
-      "alt": "TBS Crossfire TX Lite V2 915MHz 長距離 遙控高頻頭 JR Lite 黑羊 FPV 穿越機（細節圖 1）",
+      "alt": "TBS Crossfire TX Lite V2 915MHz 高頻頭｜JR Lite 槽｜最高 2W｜CRSF（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +87,7 @@
     {
       "src": "/assets/img/products/sp-46564009677/03.webp",
       "src_small": "/assets/img/products/sp-46564009677/03-480.webp",
-      "alt": "TBS Crossfire TX Lite V2 915MHz 長距離 遙控高頻頭 JR Lite 黑羊 FPV 穿越機（細節圖 2）",
+      "alt": "TBS Crossfire TX Lite V2 915MHz 高頻頭｜JR Lite 槽｜最高 2W｜CRSF（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -56,13 +104,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l8-mqnggw34khzi76",

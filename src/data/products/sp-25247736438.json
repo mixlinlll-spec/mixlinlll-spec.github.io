@@ -1,25 +1,52 @@
 {
   "id": "sp-25247736438",
   "slug": "fpv-tpu",
-  "name_zh": "FPV 電機線保護套｜電機線束固定槽｜穿越機專用 TPU 線路護套",
+  "name_zh": "FPV 馬達線保護套（一組 4 條）｜TPU 線束固定槽｜4～8 吋穿越機",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "馬達線保護",
+    "線材整理",
+    "TPU",
+    "3D列印",
+    "機臂保護"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "專為 FPV 穿越機打造的 電機線保護套 / 線束固定槽，有效防止電機線在飛行時晃動、磨損、被螺旋槳刮傷。\n柔韌 TPU 材質可提供良好固定性，又不會壓迫線材。\n適合 4~8 吋穿越機、自由改裝使用。\n\n✨ 商品特色\n有效管理電機線，避免噴槳、磨損、邊緣刮傷\nTPU 材質彈性佳，安裝不傷線\n輕量化設計，不增加機身負擔\n適用於大部分 FPV 穿越機框架\n\n📦 規格\n1組四條\n材質：TPU\n安裝方式：貼附 / 綁帶固定\n適用： 4 / 5 / 8吋穿越機電機線",
-  "specifications": [],
+  "short_description": "電翼動力 TPU 馬達線保護套，一組 4 條，整理並固定馬達線，降低飛行時晃動、磨損或被槳葉刮到的機會。",
+  "description": "電翼動力 TPU 列印的馬達線保護套／線束固定槽，用來固定馬達線，降低飛行時線材晃動、磨損或被螺旋槳刮傷的機會。TPU 具彈性，固定時不壓迫線材。\n\n【產品特色】\n・整理馬達線，避免線材外露被槳葉刮到\n・TPU 材質彈性佳，安裝不傷線\n・輕量化設計\n・適用大部分 FPV 穿越機機臂\n\n【包裝內容】\n・馬達線保護套 ×4\n\n【顏色與列印】\n・可選顏色：黑、橘、綠、黃、透藍、紫、白\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "數量",
+      "value": "一組 4 條",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "安裝方式",
+      "value": "貼附／綁帶固定",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用",
+      "value": "4／5／8 吋穿越機馬達線",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-25247736438/01.webp",
       "src_small": "/assets/img/products/sp-25247736438/01-480.webp",
-      "alt": "FPV 電機線保護套｜電機線束固定槽｜穿越機專用 TPU 線路護套（主圖）",
+      "alt": "FPV 馬達線保護套（一組 4 條）｜TPU 線束固定槽｜4～8 吋穿越機（主圖）",
       "width": 803,
       "height": 803,
       "rights": "licensed",
@@ -29,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-25247736438/02.webp",
       "src_small": "/assets/img/products/sp-25247736438/02-480.webp",
-      "alt": "FPV 電機線保護套｜電機線束固定槽｜穿越機專用 TPU 線路護套（細節圖 1）",
+      "alt": "FPV 馬達線保護套（一組 4 條）｜TPU 線束固定槽｜4～8 吋穿越機（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +66,7 @@
     {
       "src": "/assets/img/products/sp-25247736438/03.webp",
       "src_small": "/assets/img/products/sp-25247736438/03-480.webp",
-      "alt": "FPV 電機線保護套｜電機線束固定槽｜穿越機專用 TPU 線路護套（細節圖 2）",
+      "alt": "FPV 馬達線保護套（一組 4 條）｜TPU 線束固定槽｜4～8 吋穿越機（細節圖 2）",
       "width": 974,
       "height": 974,
       "rights": "licensed",
@@ -106,7 +133,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -114,7 +141,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

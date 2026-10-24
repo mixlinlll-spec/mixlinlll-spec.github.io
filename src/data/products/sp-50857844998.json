@@ -8,15 +8,51 @@
   "seller_role": "ewp_original",
   "primary_category_id": "complete-drones",
   "subcategory_id": "5in",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "電翼動力",
+    "自製機型",
+    "Freestyle",
+    "花飛",
+    "競速",
+    "5吋",
+    "6S"
+  ],
+  "compatible_sizes": [
+    "5 吋"
+  ],
   "video_system": null,
   "battery_cells": [
     "6S"
   ],
-  "short_description": "",
-  "description": "🔥 毒牙 FANG V｜為花飛而生的攻擊型機體\n黑綠毒系配色，搭配高剛性結構與強悍動力配置\n專為 Freestyle 花飛玩家打造，操控乾淨、爆發直接\n\n【🚀 特點】\n▪ 爆發力強｜6S + 1850KV 動力輸出直接\n▪ 操控穩定｜適合 Freestyle / 花飛玩家\n▪ 高剛性機架｜耐摔耐操，維修方便\n▪ 視覺風格強烈｜毒牙主題，辨識度高\n\n🔥贈送2組 Ruiyi 槳葉\n🔥標配BB響，電池防撞鯊魚鰭打印件\n🔥新手友善；初階教學",
-  "specifications": [],
+  "short_description": "電翼動力自製 5 吋 6S 花飛／競速機，黑綠毒系配色，F405 飛控、55A 電調、SIRIUS 1850KV 馬達。",
+  "description": "毒牙 FANG V 是電翼動力的 5 吋 6S 花飛與競速取向機型，以黑綠毒系配色搭配高剛性機架，適合 Freestyle 與日常高速練習。\n\n【核心配置】\n・F405 飛控\n・55A 電調\n・SIRIUS（天狼星）1850KV 馬達，6S 動力\n\n【版本說明】\n・整機：標配 BB 響、槳葉一套、電池鯊魚鰭保護列印件\n・整機（升級格普 F405 HD V3 60A）\n・動力套裝：不含圖傳與攝影機\n・動力套（格普 F405 HD V3 60A）\n・DJI O3／O4 配置：請透過 LINE 洽詢\n\n【贈品】\n贈送 RUIYI 槳葉 2 組。\n\n【適用對象】\nFreestyle 花飛與想練高速飛行的玩家。新手購買可詢問初階教學與設定協助。",
+  "specifications": [
+    {
+      "key": "尺寸",
+      "value": "5 吋",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控",
+      "value": "F405（可選升級格普 F405 HD V3）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電調",
+      "value": "55A（升級版本為 60A）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "馬達",
+      "value": "SIRIUS 1850KV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "動力",
+      "value": "6S",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-50857844998/01.webp",
@@ -134,14 +170,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mo8jqxleh5hg12",

@@ -1,20 +1,42 @@
 {
   "id": "sp-56906701420",
   "slug": "lipo",
-  "name_zh": "LiPo 電池保護夾🛡️鯊魚鰭夾具 防刺穿套 穿越機 電池安全配件",
+  "name_zh": "LiPo 電池鯊魚鰭保護件｜TPU 3D 列印電池頂部保護夾｜單鰭／雙鰭款",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
-  "primary_category_id": "power-battery",
-  "subcategory_id": null,
-  "tags": [],
+  "primary_category_id": "hardware-prints",
+  "subcategory_id": "tpu-prints",
+  "tags": [
+    "電池保護",
+    "鯊魚鰭",
+    "TPU",
+    "3D列印",
+    "電池配件"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "鯊魚鰭造型雙翼夾具，包覆電池頂部與邊緣，防止炸機損壞電池。\n採用柔韌 TPU 材質列印，放上去後魔鬼氈電池綁帶固定在機架，安裝超簡單。",
-  "specifications": [],
+  "short_description": "TPU 列印的鯊魚鰭造型電池保護件，包覆電池頂部與邊緣，搭配電池綁帶固定在機架上，提供單鰭（雙綁帶）與雙鰭（單綁帶）款。",
+  "description": "鯊魚鰭造型的電池保護件，包覆電池頂部與邊緣，降低炸機時電池直接受撞的機會。以柔韌 TPU 列印，放上電池後用魔鬼氈綁帶一起固定在機架上。\n\n【款式說明】\n・單鰭款式（使用雙綁帶）\n・雙鰭款式（使用單綁帶）\n\n【說明】\n・保護件可降低撞擊損傷，但不具防刺穿或防爆功能；電池受撞後仍請檢查是否膨脹或破損\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。\n・顏色請於下單後透過 LINE 與我們確認",
+  "specifications": [
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "款式",
+      "value": "單鰭（雙綁帶）／雙鰭（單綁帶）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "固定方式",
+      "value": "搭配電池魔鬼氈綁帶",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-56906701420/01.webp",
@@ -94,14 +116,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "電池安全配件，子分類待定",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820la-mljh58358q9v84"

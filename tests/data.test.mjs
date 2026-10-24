@@ -397,3 +397,57 @@ describe('最新消息（src/data/journal/*.md）', async () => {
     for (const p of posts.filter(x => x.published)) assert.ok(fs.existsSync(path.join(dist, p.slug, 'index.html')));
   });
 });
+
+describe('商品內容與購買須知（v2.10 商品 SEO 整理）', () => {
+  const { notices } = loadAll();
+  const WARRANTY = '本商品不提供 EWP 額外商家保固期間。如商品有到貨瑕疵、與訂購內容不符，或涉及依法應負的瑕疵擔保及其他責任，將依適用法令及實際交易平台規範處理。若商品另有原廠保固，依原廠公告及實際適用條件辦理。';
+  const SEVEN_DAY = '七日鑑賞期並非無限制試用期。消費者得在法律保障的範圍內檢視商品；超出必要檢查範圍的不當使用、拆改、焊接、飛行或其他操作，如造成商品毀損或價值減損，將依實際情況與適用法律認定責任。法定解除權及商品瑕疵相關權利不因本說明而受不當限制。';
+  const FORBIDDEN = ['拆封不退', '恕不負責', '概不負責', '保固一年', '保固三個月', '永久保固', '最強', '絕對安全', '永久防水', '100%相容', '訂製商品無法退貨'];
+  const OUT = '_test_notices';
+
+  test('售後說明：保固與七日鑑賞期文字與 EWP 指定內容一字不差', () => {
+    assert.ok(notices.after_sales.items.includes(WARRANTY));
+    assert.ok(notices.after_sales.items.includes(SEVEN_DAY));
+    assert.ok(notices.after_sales.items.some(t => t.includes('蝦皮')), '提及蝦皮平台規範');
+  });
+
+  test('分類用途提醒的 key 都是存在的分類', () => {
+    for (const k of Object.keys(notices.usage)) {
+      const [c, s] = k.split('/');
+      const cat = categories.find(x => x.id === c);
+      assert.ok(cat, k);
+      if (s) assert.ok(cat.subcategories.some(x => x.id === s), k);
+    }
+  });
+
+  test('公開商品（不含退件）的名稱、短說明、說明不含禁用字詞', () => {
+    for (const p of products.filter(isApproved)) {
+      const txt = [p.name_zh, p.short_description, p.description, JSON.stringify(p.specifications || [])].join('\n');
+      for (const w of FORBIDDEN) assert.ok(!txt.includes(w), `${p.id} 含「${w}」`);
+      assert.ok(!/保固\s*\d+\s*(?:個月|年)|\d+\s*(?:個月|年)保固/.test(txt), `${p.id} 含商家保固期間`);
+    }
+  });
+
+  test('每個商品頁（含缺貨）都有購買與使用須知，分類提醒對應正確', () => {
+    try {
+      execFileSync('node', ['scripts/build.mjs', '--out', OUT], { cwd: ROOT, stdio: 'pipe' });
+      const pub = products.filter(p => p.published && isApproved(p));
+      assert.ok(pub.some(p => p.availability === 'out_of_stock'), '測試資料包含缺貨商品');
+      for (const p of pub) {
+        const html = fs.readFileSync(path.join(ROOT, OUT, 'product', p.slug, 'index.html'), 'utf8');
+        assert.ok(html.includes('id="notices"'), `${p.id} 缺須知區塊`);
+        assert.ok(html.includes('本商品不提供 EWP 額外商家保固期間'), `${p.id} 缺保固說明`);
+        assert.ok(html.includes('七日鑑賞期並非無限制試用期'), `${p.id} 缺七日鑑賞期說明`);
+        const usage = notices.usage[`${p.primary_category_id}/${p.subcategory_id}`] || notices.usage[p.primary_category_id];
+        if (usage) assert.ok(html.includes(`<h3>${usage.title}</h3>`), `${p.id} 缺分類提醒`);
+      }
+    } finally { fs.rmSync(path.join(ROOT, OUT), { recursive: true, force: true }); }
+  });
+
+  test('受保護欄位（ID、網址、蝦皮對應、規格選項、價格、供貨、發布、審核、圖片、銷售身分）與 origin/main 相同', (t) => {
+    const has = spawnSync('git', ['rev-parse', '--verify', '-q', 'origin/main:src/data/products'], { cwd: ROOT });
+    if (has.status !== 0) return t.skip('沒有 origin/main 可比對（淺層 checkout）');
+    const r = spawnSync('node', ['scripts/check-protected-fields.mjs', '--base', 'origin/main'], { cwd: ROOT, encoding: 'utf8' });
+    assert.equal(r.status, 0, r.stderr);
+  });
+});

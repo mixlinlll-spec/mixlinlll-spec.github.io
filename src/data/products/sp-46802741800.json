@@ -1,25 +1,56 @@
 {
   "id": "sp-46802741800",
   "slug": "betafpv-air75-meteor75-pro",
-  "name_zh": "Betafpv air75｜ Meteor75 Pro 收納盒｜小型機庫｜Betafpv系列也可參考",
+  "name_zh": "Meteor75 Pro／Air75 小型機庫收納盒｜適用 BETAFPV Meteor65、75 系列｜可放充電器",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "cases",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "收納盒",
+    "機庫",
+    "Meteor75",
+    "Air75",
+    "Tinywhoop",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "65mm",
+    "75mm"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n⚠️務必備註顏色。客製化商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n顏色：\n黑/白/白金/螢光橘/螢光綠/紫/黃\n冰淇淋-粉/冰淇淋-藍/馬卡龍\n灰色/橘/綠/金色/大理石/軍綠\n金箔/粉紅/藍/淺藍/紅\n\n🔥此打印品需要大量的螺絲及螺母完成。\n🔥我會安裝好後再出貨，買回去無需DIY\n\n專為 BetaFPV Meteor 75 Pro 設計的 小型機庫收納盒，可完整保護機身與螺旋槳，避免放包包時被壓、被擠而受損。外型輕巧不佔空間，非常適合外出飛行攜帶。 可放置BEFPV充電器\n\n產品特色：\n適用：Meteor65 / Meteor 75 / Meteor 75 Pro/Air65/Air75\n小型機庫式設計，機體穩固不晃動\n上蓋完整包覆，防止壓傷螺旋槳",
-  "specifications": [],
+  "short_description": "電翼動力 3D 列印機庫式收納盒，依 BETAFPV Meteor75 Pro 設計，相容 Meteor65、Meteor75、Air65、Air75，上蓋完整包覆保護槳葉，可放 BETAFPV 充電器。",
+  "description": "電翼動力依 BETAFPV Meteor75 Pro 設計的小型機庫收納盒，可完整保護機身與螺旋槳，避免放在包包時被壓、被擠而受損；體積小，適合外出飛行攜帶，並可放置 BETAFPV 充電器。\n\n【產品特色】\n・機庫式設計，機體固定不晃動\n・上蓋完整包覆，避免壓傷螺旋槳\n・使用螺絲與螺母組裝，出貨前已組裝完成，到手不需 DIY\n\n【適用機型】\n・BETAFPV Meteor75 Pro\n・Meteor65／Meteor75\n・Air65／Air75\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "BETAFPV Meteor75 Pro、Meteor65、Meteor75、Air65、Air75",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "收納",
+      "value": "機體＋BETAFPV 充電器",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印（出貨前組裝完成）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "顏色",
+      "value": "透明、黑、橘、淺藍、冰淇淋、金、藍、大理石、紫、白、螢光橘、綠、紅、馬卡龍、透黃、螢光綠",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-46802741800/01.webp",
       "src_small": "/assets/img/products/sp-46802741800/01-480.webp",
-      "alt": "Betafpv air75｜ Meteor75 Pro 收納盒｜小型機庫｜Betafpv系列也可參考（主圖）",
+      "alt": "Meteor75 Pro／Air75 小型機庫收納盒｜適用 BETAFPV Meteor65、75 系列｜可放充電器（主圖）",
       "width": 933,
       "height": 933,
       "rights": "licensed",
@@ -29,7 +60,7 @@
     {
       "src": "/assets/img/products/sp-46802741800/02.webp",
       "src_small": "/assets/img/products/sp-46802741800/02-480.webp",
-      "alt": "Betafpv air75｜ Meteor75 Pro 收納盒｜小型機庫｜Betafpv系列也可參考（細節圖 1）",
+      "alt": "Meteor75 Pro／Air75 小型機庫收納盒｜適用 BETAFPV Meteor65、75 系列｜可放充電器（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +70,7 @@
     {
       "src": "/assets/img/products/sp-46802741800/03.webp",
       "src_small": "/assets/img/products/sp-46802741800/03-480.webp",
-      "alt": "Betafpv air75｜ Meteor75 Pro 收納盒｜小型機庫｜Betafpv系列也可參考（細節圖 2）",
+      "alt": "Meteor75 Pro／Air75 小型機庫收納盒｜適用 BETAFPV Meteor65、75 系列｜可放充電器（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +80,7 @@
     {
       "src": "/assets/img/products/sp-46802741800/04.webp",
       "src_small": "/assets/img/products/sp-46802741800/04-480.webp",
-      "alt": "Betafpv air75｜ Meteor75 Pro 收納盒｜小型機庫｜Betafpv系列也可參考（細節圖 3）",
+      "alt": "Meteor75 Pro／Air75 小型機庫收納盒｜適用 BETAFPV Meteor65、75 系列｜可放充電器（細節圖 3）",
       "width": 906,
       "height": 906,
       "rights": "licensed",
@@ -59,7 +90,7 @@
     {
       "src": "/assets/img/products/sp-46802741800/05.webp",
       "src_small": "/assets/img/products/sp-46802741800/05-480.webp",
-      "alt": "Betafpv air75｜ Meteor75 Pro 收納盒｜小型機庫｜Betafpv系列也可參考（細節圖 4）",
+      "alt": "Meteor75 Pro／Air75 小型機庫收納盒｜適用 BETAFPV Meteor65、75 系列｜可放充電器（細節圖 4）",
       "width": 748,
       "height": 748,
       "rights": "licensed",
@@ -189,14 +220,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztd-mig16lu9mwowe7",

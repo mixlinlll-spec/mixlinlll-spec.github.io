@@ -1,27 +1,67 @@
 {
   "id": "sp-43033394158",
   "slug": "betafpv-meteor75-pro-ii-o4-1s",
-  "name_zh": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機",
+  "name_zh": "BETAFPV Meteor75 Pro II 1S Tinywhoop 穿越機｜DJI O4 Wide／動力套｜ELRS／SBUS",
   "sku": null,
   "brand": "BETAFPV",
-  "manufacturer_model": null,
+  "manufacturer_model": "Meteor75 Pro II",
   "seller_role": "retail",
   "primary_category_id": "complete-drones",
   "subcategory_id": "micro",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "Tinywhoop",
+    "Whoop",
+    "室內",
+    "1S",
+    "DJI O4",
+    "Meteor75"
+  ],
+  "compatible_sizes": [
+    "75mm"
+  ],
   "video_system": "DJI O4",
   "battery_cells": [
     "1S"
   ],
-  "short_description": "",
-  "description": "✅ 搭載 DJI O4 Wide 高清數位圖傳",
-  "specifications": [],
+  "short_description": "BETAFPV Meteor75 Pro II（流星 75 二代 Pro）75mm 1S Tinywhoop，提供 DJI O4 Wide 版本與動力套，接收方式可選 ELRS 或 SBUS。",
+  "description": "BETAFPV Meteor75 Pro II（流星 75 二代 Pro）是 75mm 1S Tinywhoop 穿越機，可搭載 DJI O4 Wide 高清數位圖傳，適合室內與小場地練飛、低空錄影。\n\n【版本說明】\n・O4 Wide（ELRS）\n・O4 Wide（SBUS）\n・動力套（ELRS）：不含圖傳\n・動力套（SBUS）：不含圖傳\n接收方式請依您使用的遙控器選擇。\n\n【訂購前請確認】\n建議電池與詳細規格以 BETAFPV 原廠公告為準，不確定版本可先透過 LINE 詢問。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "BETAFPV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "Meteor75 Pro II",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "75mm Tinywhoop",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "動力",
+      "value": "1S",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "圖傳",
+      "value": "DJI O4 Wide（O4 版本）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接收方式",
+      "value": "ELRS／SBUS（依版本）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-43033394158/01.webp",
       "src_small": "/assets/img/products/sp-43033394158/01-480.webp",
-      "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（主圖）",
+      "alt": "BETAFPV Meteor75 Pro II 1S Tinywhoop 穿越機｜DJI O4 Wide／動力套｜ELRS／SBUS（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +71,7 @@
     {
       "src": "/assets/img/products/sp-43033394158/02.webp",
       "src_small": "/assets/img/products/sp-43033394158/02-480.webp",
-      "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（細節圖 1）",
+      "alt": "BETAFPV Meteor75 Pro II 1S Tinywhoop 穿越機｜DJI O4 Wide／動力套｜ELRS／SBUS（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +81,7 @@
     {
       "src": "/assets/img/products/sp-43033394158/03.webp",
       "src_small": "/assets/img/products/sp-43033394158/03-480.webp",
-      "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（細節圖 2）",
+      "alt": "BETAFPV Meteor75 Pro II 1S Tinywhoop 穿越機｜DJI O4 Wide／動力套｜ELRS／SBUS（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -51,7 +91,7 @@
     {
       "src": "/assets/img/products/sp-43033394158/04.webp",
       "src_small": "/assets/img/products/sp-43033394158/04-480.webp",
-      "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（細節圖 3）",
+      "alt": "BETAFPV Meteor75 Pro II 1S Tinywhoop 穿越機｜DJI O4 Wide／動力套｜ELRS／SBUS（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -61,7 +101,7 @@
     {
       "src": "/assets/img/products/sp-43033394158/05.webp",
       "src_small": "/assets/img/products/sp-43033394158/05-480.webp",
-      "alt": "BETAFPV Meteor75 Pro II O4｜1S 流星75 二代PRO FPV 穿越機（細節圖 4）",
+      "alt": "BETAFPV Meteor75 Pro II 1S Tinywhoop 穿越機｜DJI O4 Wide／動力套｜ELRS／SBUS（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -107,13 +147,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lg-mrn5enf66kna90",

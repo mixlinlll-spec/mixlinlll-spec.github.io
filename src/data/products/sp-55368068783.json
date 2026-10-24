@@ -1,27 +1,59 @@
 {
   "id": "sp-55368068783",
   "slug": "betafpv-lava-ii-1s-550-95c",
-  "name_zh": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機",
+  "name_zh": "BETAFPV LAVA II 1S LiHV 3.8V 電池｜BT2.0｜微型穿越機",
   "sku": null,
   "brand": "BETAFPV",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "power-battery",
   "subcategory_id": "1s-micro",
-  "tags": [],
+  "tags": [
+    "1S電池",
+    "LiHV",
+    "BT2.0",
+    "LAVA",
+    "BETAFPV"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [
     "1S"
   ],
-  "short_description": "",
-  "description": "【BETAFPV LAVA II 1S 鋰電池】",
-  "specifications": [],
+  "short_description": "BETAFPV LAVA II 1S 3.8V 高壓電池，BT2.0 接頭，適用 1S 微型穿越機；目前規格選項為 580mAh／BT2.0。",
+  "description": "BETAFPV LAVA II 1S 3.8V 高壓（LiHV）鋰電池，BT2.0 接頭，適用 Meteor 系列等 1S 微型穿越機。\n\n【規格選項】\n・580mAh／BT2.0\n\n【充電提醒】\n・HV 電池請使用支援 LiHV 模式的 1S 充電器",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "BETAFPV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "LAVA II",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電壓",
+      "value": "1S 3.8V（LiHV）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接頭",
+      "value": "BT2.0",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "容量",
+      "value": "580mAh（依規格選項）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-55368068783/01.webp",
       "src_small": "/assets/img/products/sp-55368068783/01-480.webp",
-      "alt": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機（主圖）",
+      "alt": "BETAFPV LAVA II 1S LiHV 3.8V 電池｜BT2.0｜微型穿越機（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +63,7 @@
     {
       "src": "/assets/img/products/sp-55368068783/02.webp",
       "src_small": "/assets/img/products/sp-55368068783/02-480.webp",
-      "alt": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機（細節圖 1）",
+      "alt": "BETAFPV LAVA II 1S LiHV 3.8V 電池｜BT2.0｜微型穿越機（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +73,7 @@
     {
       "src": "/assets/img/products/sp-55368068783/03.webp",
       "src_small": "/assets/img/products/sp-55368068783/03-480.webp",
-      "alt": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機（細節圖 2）",
+      "alt": "BETAFPV LAVA II 1S LiHV 3.8V 電池｜BT2.0｜微型穿越機（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -51,7 +83,7 @@
     {
       "src": "/assets/img/products/sp-55368068783/04.webp",
       "src_small": "/assets/img/products/sp-55368068783/04-480.webp",
-      "alt": "BETAFPV LAVA II 1S 電池 550 95C LiHV 3.8V 微型穿越機（細節圖 3）",
+      "alt": "BETAFPV LAVA II 1S LiHV 3.8V 電池｜BT2.0｜微型穿越機（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -76,13 +108,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l6-mtboffi2akg98d"

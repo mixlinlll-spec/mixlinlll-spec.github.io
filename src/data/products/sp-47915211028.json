@@ -1,25 +1,31 @@
 {
   "id": "sp-47915211028",
   "slug": "betafpv-air-camera-fpv-1-48g-1s",
-  "name_zh": "BETAFPV Air Camera FPV 超輕量攝影機 1.48g 1S Tiny Whoop Air65",
+  "name_zh": "BETAFPV Air Camera 超輕量 FPV 攝影機｜約 1.48g｜1S Tiny Whoop",
   "sku": null,
   "brand": "BETAFPV",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "video",
   "subcategory_id": "cameras",
-  "tags": [],
+  "tags": [
+    "FPV攝影機",
+    "BETAFPV",
+    "Air65",
+    "Tiny Whoop",
+    "1S"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "",
+  "short_description": "BETAFPV Air Camera 超輕量 FPV 攝影機，約 1.48g，適合 Air65 等 1S Tiny Whoop；詳細規格與相容性請透過 LINE 確認。",
+  "description": "BETAFPV Air Camera 超輕量 FPV 攝影機，重量約 1.48g，適合 Air65 等 1S Tiny Whoop 微型機。\n\n【購買前請確認】\n・影像系統、接線與尺寸請與你的飛控或 AIO 板確認相容\n・詳細規格與相容機型請透過 LINE 洽詢",
   "specifications": [],
   "images": [
     {
       "src": "/assets/img/products/sp-47915211028/01.webp",
       "src_small": "/assets/img/products/sp-47915211028/01-480.webp",
-      "alt": "BETAFPV Air Camera FPV 超輕量攝影機 1.48g 1S Tiny Whoop Air65（主圖）",
+      "alt": "BETAFPV Air Camera 超輕量 FPV 攝影機｜約 1.48g｜1S Tiny Whoop（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +35,7 @@
     {
       "src": "/assets/img/products/sp-47915211028/02.webp",
       "src_small": "/assets/img/products/sp-47915211028/02-480.webp",
-      "alt": "BETAFPV Air Camera FPV 超輕量攝影機 1.48g 1S Tiny Whoop Air65（細節圖 1）",
+      "alt": "BETAFPV Air Camera 超輕量 FPV 攝影機｜約 1.48g｜1S Tiny Whoop（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +45,7 @@
     {
       "src": "/assets/img/products/sp-47915211028/03.webp",
       "src_small": "/assets/img/products/sp-47915211028/03-480.webp",
-      "alt": "BETAFPV Air Camera FPV 超輕量攝影機 1.48g 1S Tiny Whoop Air65（細節圖 2）",
+      "alt": "BETAFPV Air Camera 超輕量 FPV 攝影機｜約 1.48g｜1S Tiny Whoop（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +55,7 @@
     {
       "src": "/assets/img/products/sp-47915211028/04.webp",
       "src_small": "/assets/img/products/sp-47915211028/04-480.webp",
-      "alt": "BETAFPV Air Camera FPV 超輕量攝影機 1.48g 1S Tiny Whoop Air65（細節圖 3）",
+      "alt": "BETAFPV Air Camera 超輕量 FPV 攝影機｜約 1.48g｜1S Tiny Whoop（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -66,13 +72,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mrbb0h33xxqe07",

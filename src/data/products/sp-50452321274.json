@@ -1,25 +1,42 @@
 {
   "id": "sp-50452321274",
   "slug": "item-50452321274",
-  "name_zh": "狗座雙支架｜穿越機相機固定座・高穩定安裝模組",
+  "name_zh": "雙支撐狗座（GoPro 座）｜穿越機相機固定座｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "狗座",
+    "GoPro座",
+    "相機座",
+    "穿越機配件",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "📦 注意事項\n\n⚠️務必備註顏色。客製化商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n狗座雙支架設計給需要更牢固相機固定的飛手，雙支撐結構提供更高穩定度，有效減少震動、畫面抖動及高速飛行的位移問題。適合各類穿越機、長航程機型與固定式攝影用途。\n\n產品特色\n雙支架結構\n坐姿式「狗座」設計，安裝穩固不晃動\n重量輕、耐用度佳，不影響飛行性能\n適合速度機、抗震機、山飛、攀升拍攝等用途",
-  "specifications": [],
+  "short_description": "電翼動力雙支撐結構狗座，提升相機固定的穩定度，減少震動與高速飛行時的位移。",
+  "description": "雙支撐結構的狗座（GoPro 座），給需要更牢固相機固定的飛手，減少震動、畫面抖動與高速飛行時的位移，適合各類穿越機與長航機。\n\n【產品特色】\n・雙支架結構，安裝穩固\n・重量輕\n・適合高速飛行、山飛、攀升拍攝等用途\n\n【顏色與列印】\n・可選顏色：透明、黃、螢光綠、螢光橘、黑、白\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "類型",
+      "value": "雙支撐狗座（GoPro 介面）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-50452321274/01.webp",
       "src_small": "/assets/img/products/sp-50452321274/01-480.webp",
-      "alt": "狗座雙支架｜穿越機相機固定座・高穩定安裝模組（主圖）",
+      "alt": "雙支撐狗座（GoPro 座）｜穿越機相機固定座｜3D 列印（主圖）",
       "width": 973,
       "height": 973,
       "rights": "licensed",
@@ -29,7 +46,7 @@
     {
       "src": "/assets/img/products/sp-50452321274/02.webp",
       "src_small": "/assets/img/products/sp-50452321274/02-480.webp",
-      "alt": "狗座雙支架｜穿越機相機固定座・高穩定安裝模組（細節圖 1）",
+      "alt": "雙支撐狗座（GoPro 座）｜穿越機相機固定座｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-50452321274/03.webp",
       "src_small": "/assets/img/products/sp-50452321274/03-480.webp",
-      "alt": "狗座雙支架｜穿越機相機固定座・高穩定安裝模組（細節圖 2）",
+      "alt": "雙支撐狗座（GoPro 座）｜穿越機相機固定座｜3D 列印（細節圖 2）",
       "width": 891,
       "height": 891,
       "rights": "licensed",
@@ -99,7 +116,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -107,7 +124,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "無法自動判斷分類，暫放列印件",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

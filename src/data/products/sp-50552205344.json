@@ -1,25 +1,47 @@
 {
   "id": "sp-50552205344",
   "slug": "hdzero-goggles",
-  "name_zh": "HDZERO Goggles 專用換色外殼｜個性化改裝",
+  "name_zh": "HDZero Goggles 換色外殼｜個性化改裝｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "HDZero",
+    "Goggles",
+    "眼鏡外殼",
+    "FPV眼鏡",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "HDZERO Goggles 專用換色外殼｜高質感外觀升級款\n\n📦 注意事項\n⚠️務必備註顏色。訂製商品無法退貨⚠️\n⚠️3D列印件可能有些微層紋屬正常現象⚠️\n\n想讓 HDZERO Goggles 換個風格？這款換色外殼能讓你的眼鏡瞬間變得更有個性。貼合度佳、同時讓外觀更亮眼，是許多飛手常用的升級選擇。\n\n⚠️請備註是否有安裝類比模塊 會發不一樣的版本\n⚠️請備註是否有安裝類比模塊 會發不一樣的版本\n⚠️請備註是否有安裝類比模塊 會發不一樣的版本\n\n特色簡介\n多色可選，讓你的 Goggles 更具辨識度\n貼合度優秀，安裝簡單\n強化保護外殼邊角，不怕日常刮傷\n輕量設計，不增加配重負擔\n適合喜歡打造專屬風格、讓裝備更獨一無二的你。",
-  "specifications": [],
+  "short_description": "電翼動力為 HDZero Goggles 製作的換色外殼，多色可選；有無安裝類比模組使用不同版本，下單時請註明。",
+  "description": "想讓 HDZero Goggles 換個風格？這款換色外殼讓眼鏡更有辨識度，同時保護外殼邊角，減少日常刮傷。\n\n【產品特色】\n・多色可選\n・貼合度佳，安裝簡單\n・保護外殼邊角，減少刮傷\n\n【訂購時請註明】\n・眼鏡是否已安裝類比模組（有無類比模組使用不同版本外殼）\n・顏色\n\n【顏色與列印】\n・可選顏色：透橘、透黃、冰淇淋、軍綠、黑、白、透明、螢光綠\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "HDZero Goggles",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "版本",
+      "value": "有／無類比模組（下單時註明）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-50552205344/01.webp",
       "src_small": "/assets/img/products/sp-50552205344/01-480.webp",
-      "alt": "HDZERO Goggles 專用換色外殼｜個性化改裝（主圖）",
+      "alt": "HDZero Goggles 換色外殼｜個性化改裝｜3D 列印（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +51,7 @@
     {
       "src": "/assets/img/products/sp-50552205344/02.webp",
       "src_small": "/assets/img/products/sp-50552205344/02-480.webp",
-      "alt": "HDZERO Goggles 專用換色外殼｜個性化改裝（細節圖 1）",
+      "alt": "HDZero Goggles 換色外殼｜個性化改裝｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +61,7 @@
     {
       "src": "/assets/img/products/sp-50552205344/03.webp",
       "src_small": "/assets/img/products/sp-50552205344/03-480.webp",
-      "alt": "HDZERO Goggles 專用換色外殼｜個性化改裝（細節圖 2）",
+      "alt": "HDZero Goggles 換色外殼｜個性化改裝｜3D 列印（細節圖 2）",
       "width": 976,
       "height": 976,
       "rights": "licensed",
@@ -113,7 +135,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -121,7 +143,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,25 +1,56 @@
 {
   "id": "sp-55664160517",
   "slug": "air65-betafpv-air75ii",
-  "name_zh": "Air65 碳板 加強底板 BetaFPV Air65 Air75II 百達二代 花飛 冠軍版 機架 碳纖維底板",
+  "name_zh": "Air65 加強碳纖維底板｜適用 BETAFPV Air65／Air65 II、Air75（初代）｜0.8mm",
   "sku": null,
   "brand": "BETAFPV",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "frames-parts",
   "subcategory_id": "plates",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "Air65",
+    "Air75",
+    "碳板",
+    "底板",
+    "Whoop",
+    "改裝"
+  ],
+  "compatible_sizes": [
+    "65mm",
+    "75mm"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "Air65\nAir65 II\nBetaFPV\n百達\nTinyWhoop\n65mm\n花飛\n競速機\nFPV\n碳板\n底板\n加強底板\n碳纖維\n機架\nAir65 Carbon Frame\nAir65 Carbon Plate\n\n專為 BetaFPV Air65 系列打造的加強型碳纖維底板，有效提升機架剛性，降低高油門震動，讓 PID 更容易調整，飛行更穩定。不論是花飛、競速或日常練習，都能提供更直接、更紮實的操控手感。\n\n【產品特色】\n• 適用 BetaFPV Air65、Air65 II 等相容機架\n• 0.8mm 超薄碳纖維製作\n• 單片重量約 0.6g，兼顧剛性與輕量化\n• 提升機架抗扭剛性，減少共振\n• 有助於改善飛行濾波與操控穩定性\n• 適合競速、花式飛行與日常練飛\n• CNC 精密切割，孔位精準、安裝容易\n\n【產品規格】\n• 材質：3K 碳纖維\n• 厚度：0.8mm\n• 重量：約 0.6g\n• 適用機型：BetaFPV Air65／Air65 II（相容款）\n\n【包裝內容】\n• Air65 加強碳板 ×1\n螺絲包\n【購買須知】\n• 本商品僅販售碳板，不含機架、飛控、馬達、螺旋槳及圖片展示配件。\n• 建議搭配原廠螺絲安裝，如有安裝問題可與我們聯繫。",
-  "specifications": [],
+  "short_description": "適用 BETAFPV Air65 系列的 0.8mm 3K 碳纖維加強底板，單片約 0.6g，提升機架剛性、降低高油門振動；另有 Air75（初代）用版本。",
+  "description": "適用 BETAFPV Air65 系列的加強型碳纖維底板，用來提升機架剛性、降低高油門時的振動，讓調參與飛行更穩定，適合花飛、競速與日常練習。\n\n【產品特色】\n・0.8mm 3K 碳纖維，單片約 0.6g\n・提升機架抗扭剛性，減少共振\n・CNC 切割，孔位精準\n\n【版本說明】\n・Air65 用：適用 BETAFPV Air65／Air65 II（相容款）\n・Air75 用：適用初代 Air75，Air75 II（二代）無法使用\n\n【包裝內容】\n・加強碳板 ×1\n・螺絲包\n不含機架、飛控、馬達、螺旋槳及圖片中的展示配件。\n\n【安裝前請確認】\n請依機型選擇正確版本；建議搭配原廠螺絲安裝，碳纖維會導電，請避免焊點接觸碳板。",
+  "specifications": [
+    {
+      "key": "材質",
+      "value": "3K 碳纖維",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "厚度",
+      "value": "0.8mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 0.6g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用機型",
+      "value": "BETAFPV Air65／Air65 II；Air75 初代（另一版本）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-55664160517/01.webp",
       "src_small": "/assets/img/products/sp-55664160517/01-480.webp",
-      "alt": "Air65 碳板 加強底板 BetaFPV Air65 Air75II 百達二代 花飛 冠軍版 機架 碳纖維底板（主圖）",
+      "alt": "Air65 加強碳纖維底板｜適用 BETAFPV Air65／Air65 II、Air75（初代）｜0.8mm（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +60,7 @@
     {
       "src": "/assets/img/products/sp-55664160517/02.webp",
       "src_small": "/assets/img/products/sp-55664160517/02-480.webp",
-      "alt": "Air65 碳板 加強底板 BetaFPV Air65 Air75II 百達二代 花飛 冠軍版 機架 碳纖維底板（細節圖 1）",
+      "alt": "Air65 加強碳纖維底板｜適用 BETAFPV Air65／Air65 II、Air75（初代）｜0.8mm（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +70,7 @@
     {
       "src": "/assets/img/products/sp-55664160517/03.webp",
       "src_small": "/assets/img/products/sp-55664160517/03-480.webp",
-      "alt": "Air65 碳板 加強底板 BetaFPV Air65 Air75II 百達二代 花飛 冠軍版 機架 碳纖維底板（細節圖 2）",
+      "alt": "Air65 加強碳纖維底板｜適用 BETAFPV Air65／Air65 II、Air75（初代）｜0.8mm（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +80,7 @@
     {
       "src": "/assets/img/products/sp-55664160517/04.webp",
       "src_small": "/assets/img/products/sp-55664160517/04-480.webp",
-      "alt": "Air65 碳板 加強底板 BetaFPV Air65 Air75II 百達二代 花飛 冠軍版 機架 碳纖維底板（細節圖 3）",
+      "alt": "Air65 加強碳纖維底板｜適用 BETAFPV Air65／Air65 II、Air75（初代）｜0.8mm（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -81,13 +112,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

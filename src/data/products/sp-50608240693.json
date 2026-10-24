@@ -8,17 +8,71 @@
   "seller_role": "ewp_original",
   "primary_category_id": "complete-drones",
   "subcategory_id": "5in",
-  "tags": [],
+  "tags": [
+    "電翼動力",
+    "自製機型",
+    "Freestyle",
+    "花飛",
+    "5吋",
+    "6S",
+    "MARK5"
+  ],
   "compatible_sizes": [
     "5 吋"
   ],
-  "video_system": null,
+  "video_system": "類比",
   "battery_cells": [
     "6S"
   ],
-  "short_description": "",
-  "description": "🔥 裂顎 RIFT JAW｜為花飛而生\n🔥 暴力輸出 × 精準操控 × 極致穩定\n\n📌產品定位\n專為進階玩家打造的5吋花飛穿越機\n兼具爆發力與操控細膩度\n\n📌核心配置\n・F722 飛控｜高速運算 穩定飛行\n・60A 4合1電調｜支援6S 強勁輸出\n・酷飛2207 1960KV 高性能電機\n・ELRS 2.4G 接收｜低延遲長距離\n・5.8G 1W 高功率圖傳｜穩定影像\n\n📌性能特色\n・極致動力輸出｜花飛動作更乾淨\n・操控精準｜適合進階與競速玩家\n・高剛性結構｜耐摔耐操\n・遠距穩定｜訊號不亂跳\n\n📌規格資訊\n機架：GEPRC MARK5（5吋）\n電池：建議6S LiPo（1100–1480mAh）\n重量：約423g（不含電池）\n槳葉：建議51466\n\n📌適合對象\n・花飛玩家\n・進階FPV玩家\n・想升級高性能機種者\n⚠️注意事項\n・出貨前已測試，可直接綁定起飛\n・不含電池 / 遙控器 / 充電器\n・新手建議先模擬器練習",
-  "specifications": [],
+  "short_description": "電翼動力自製 5 吋 6S 花飛機，GEPRC MARK5 機架、F722 飛控、60A 四合一電調、酷飛 2207 1960KV 馬達與 ELRS 2.4G 接收機。",
+  "description": "裂顎 RIFT JAW 是電翼動力為進階玩家打造的 5 吋 Freestyle 花飛機，以 GEPRC MARK5 機架搭配 F722 飛控、60A 四合一電調與酷飛 2207 1960KV 馬達，兼顧爆發力與操控細膩度。\n\n【核心配置】\n・F722 飛控\n・60A 四合一電調（支援 6S）\n・酷飛（Axisflying）2207 1960KV 馬達\n・ELRS 2.4G 接收機\n・5.8G 1W 類比圖傳（整機版本）\n\n【版本說明】\n・整機：含 BB 響、狗座列印件、電池鯊魚鰭保護件\n・整機（升級格普 F405 HD V3 60A）\n・動力套裝：不含圖傳與攝影機\n・動力套（格普 F405 HD V3 60A）\n・DJI O3／O4 配置：請透過 LINE 洽詢\n\n【適用對象】\n花飛玩家、進階 FPV 玩家，以及想升級 5 吋主力機的飛手。新手建議先以模擬器練習。\n\n【出貨說明】\n出貨前完成測試，綁定遙控器並確認設定後即可試飛。不含電池、遙控器與充電器。",
+  "specifications": [
+    {
+      "key": "機架",
+      "value": "GEPRC MARK5（5 吋）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "飛控",
+      "value": "F722（可選升級格普 F405 HD V3）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "電調",
+      "value": "60A 四合一",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "馬達",
+      "value": "酷飛 2207 1960KV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接收機",
+      "value": "ELRS 2.4G",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "圖傳",
+      "value": "5.8G 1W 類比（整機版本）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "建議槳葉",
+      "value": "51466",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "建議電池",
+      "value": "6S LiPo 1100–1480mAh",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 423g（不含電池）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-50608240693/01.webp",
@@ -126,7 +180,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -134,7 +188,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l6-mokauht0qj9d9e",

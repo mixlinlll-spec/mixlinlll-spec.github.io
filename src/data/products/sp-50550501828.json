@@ -1,25 +1,50 @@
 {
   "id": "sp-50550501828",
   "slug": "speedybee-bee25-sma-tpu-3d",
-  "name_zh": "Speedybee Bee25 圖傳 SMA 天線支架 TPU 3D列印件 穿越機圖傳固定座 SMA天線座",
+  "name_zh": "SpeedyBee Bee25 圖傳 SMA 天線支架｜TPU 3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
-  "compatible_sizes": [],
+  "tags": [
+    "SpeedyBee",
+    "Bee25",
+    "SMA",
+    "天線座",
+    "TPU",
+    "3D列印"
+  ],
+  "compatible_sizes": [
+    "2.5 吋"
+  ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "專為 Speedybee Bee25 圖傳模組 設計的 SMA天線支架，採用高精度 TPU 3D列印 製作，兼顧韌性與輕量化。\n能有效固定天線接頭，減少飛行震動與天線鬆動風險，同時保護圖傳模組接頭不會被拉扯。\n\n✅ 產品特色\n專用設計：完美貼合 Bee25 圖傳外型\nSLA 材質：耐摔、防震、穩固不鬆動\n提供多色可選，兼具實用與外觀\n適用於 DIY 穿越機、FPV 模組改裝\n\n📦產品資訊：\n材質：TPU\n適用：Speedybee Bee25\n功能：固定 SMA 天线、保護接頭\n\n💡貼心提醒：\n3D列印件為手工製作，邊緣可能略有層紋屬正常現象，不影響安裝使用。",
-  "specifications": [],
+  "short_description": "電翼動力為 SpeedyBee Bee25 圖傳設計的 TPU SMA 天線支架，固定天線接頭，減少震動鬆動並避免接頭被拉扯。",
+  "description": "電翼動力為 SpeedyBee Bee25 圖傳模組設計的 SMA 天線支架，固定天線接頭，減少飛行震動造成的鬆動，並保護圖傳接頭不被拉扯。\n\n【產品特色】\n・依 Bee25 圖傳外形製作\n・TPU 材質，具韌性與緩衝\n・多色可選\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "SpeedyBee Bee25",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "用途",
+      "value": "固定 SMA 天線、保護接頭",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-50550501828/01.webp",
       "src_small": "/assets/img/products/sp-50550501828/01-480.webp",
-      "alt": "Speedybee Bee25 圖傳 SMA 天線支架 TPU 3D列印件 穿越機圖傳固定座 SMA天線座（主圖）",
+      "alt": "SpeedyBee Bee25 圖傳 SMA 天線支架｜TPU 3D 列印（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +54,7 @@
     {
       "src": "/assets/img/products/sp-50550501828/02.webp",
       "src_small": "/assets/img/products/sp-50550501828/02-480.webp",
-      "alt": "Speedybee Bee25 圖傳 SMA 天線支架 TPU 3D列印件 穿越機圖傳固定座 SMA天線座（細節圖 1）",
+      "alt": "SpeedyBee Bee25 圖傳 SMA 天線支架｜TPU 3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +64,7 @@
     {
       "src": "/assets/img/products/sp-50550501828/03.webp",
       "src_small": "/assets/img/products/sp-50550501828/03-480.webp",
-      "alt": "Speedybee Bee25 圖傳 SMA 天線支架 TPU 3D列印件 穿越機圖傳固定座 SMA天線座（細節圖 2）",
+      "alt": "SpeedyBee Bee25 圖傳 SMA 天線支架｜TPU 3D 列印（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +74,7 @@
     {
       "src": "/assets/img/products/sp-50550501828/04.webp",
       "src_small": "/assets/img/products/sp-50550501828/04-480.webp",
-      "alt": "Speedybee Bee25 圖傳 SMA 天線支架 TPU 3D列印件 穿越機圖傳固定座 SMA天線座（細節圖 3）",
+      "alt": "SpeedyBee Bee25 圖傳 SMA 天線支架｜TPU 3D 列印（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -66,14 +91,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

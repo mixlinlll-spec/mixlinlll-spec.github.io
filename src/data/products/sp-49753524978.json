@@ -1,20 +1,43 @@
 {
   "id": "sp-49753524978",
   "slug": "talon-stick-fpv-8k-abs",
-  "name_zh": "操控，不該妥協。 Talon Stick 爪控搖桿頭🕹️ FPV遙控器專用 8K類ABS 適用FPV玩家 改善手感/防滑",
+  "name_zh": "Talon Stick 爪控搖桿頭｜Claw／Glide 兩款｜M2（DJI）、M3、M4 與 Pocket 規格｜多色",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "radio-gps",
   "subcategory_id": "radios",
-  "tags": [],
+  "tags": [
+    "搖桿頭",
+    "Talon Stick",
+    "遙控器配件",
+    "M3",
+    "M4",
+    "手感"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "Talon Stick 爪控系列搖桿頭，專為 FPV 玩家打造，外層高摩擦凸點，讓指腹穩穩咬住搖桿，不需要把力度全部用在抓緊，就能更專注在細膩操控。\n\nM2適用於：\nDJI FPV Remote Controller 2 /FPV Remote Controller 3\n\nM3 適用於：\n•\tFutaba 全系列（T14SG、T16IZ、T16SZ、T18MZ、T18SZ、T8FG 等）\n•\tJumper 全系列（T‑Pro、T20、T20S、T14、T15、T‑Lite、T15pro）\n•\tRadiomaster 系列（TX12、Zorro、AG01 Mini）\n•\tHello Radio系列 ( V12 T20 等)\n•\t黑羊 TBS 全系列（含 Mambo、Tango、Tango 2）\n•\t富斯系列（EL18、TL18 )\n•\tFrsky（X9D、X9D Plus、X7 )\n\nM4: 適用於：\nFrSky：\nHorus X10、Horus X10S、Horus X12S、X9E、X9D Plus SE（搭配 M7/M9/M9-R Hall 雲台）\nRadioMaster：\nTX16S、TX16S MKII、TX18、Boxer、搭載 AG01 / AG01-V Hall 雲台的機種。[tekrc +4]\nFutaba：\n多數中高階 Futaba 遙控器（搭配 4mm 搖桿雲台）。\nJR / JR Propo： XG6、XG7、XG8、XG11、XG14 等使用 4mm 搖桿的 JR 系列。",
-  "specifications": [],
+  "short_description": "Talon Stick 爪控系列 FPV 遙控器搖桿頭，表面高摩擦凸點，提供 Claw 與 Glide 兩款，螺紋規格有 DJI M2、M3、M4 與 Master Pocket 專用。",
+  "description": "Talon Stick 爪控系列搖桿頭，外層高摩擦凸點讓指腹穩穩咬住搖桿，不必把力氣都用在抓緊，能更專注在細膩操控。\n\n【款式與規格】\n・款式：Claw、Glide\n・螺紋：DJI-M2、M3、M4、Master Pocket 專用\n・顏色：緋焰紅、電光藍、黑曜、霓毒綠、燻黑、櫻焰粉、槍鋼灰、幻影紫\n\n【M2 適用】\n・DJI FPV 遙控器 2／遙控器 3\n\n【M3 適用（舉例）】\n・Futaba T14SG、T16IZ、T16SZ、T18MZ、T18SZ、T8FG 等\n・Jumper T-Pro、T20、T20S、T14、T15、T-Lite、T15 Pro\n・RadioMaster TX12、Zorro、AG01 Mini\n・HelloRadio V12、T20 等\n・TBS Mambo、Tango、Tango 2\n・富斯 EL18、TL18\n・FrSky X9D、X9D Plus、X7\n\n【M4 適用（舉例）】\n・FrSky Horus X10、X10S、X12S、X9E、X9D Plus SE（搭配 M7／M9／M9-R Hall 雲台）\n・RadioMaster TX16S、TX16S MKII、TX18、Boxer 及搭載 AG01／AG01-V Hall 雲台的機種\n・多數使用 4mm 搖桿的 Futaba 中高階機種\n・JR XG6、XG7、XG8、XG11、XG14 等使用 4mm 搖桿的機種\n\n【訂購前請確認】\n・請先確認遙控器搖桿的螺紋規格，不確定可透過 LINE 詢問",
+  "specifications": [
+    {
+      "key": "材質",
+      "value": "8K 類 ABS",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "款式",
+      "value": "Claw／Glide",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "螺紋規格",
+      "value": "M2（DJI）／M3／M4／Master Pocket",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-49753524978/01.webp",
@@ -901,7 +924,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -909,7 +932,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "遙控器搖桿頭配件",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztq-mjewer88m1aba1",

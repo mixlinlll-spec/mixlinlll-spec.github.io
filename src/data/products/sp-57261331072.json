@@ -1,25 +1,62 @@
 {
   "id": "sp-57261331072",
   "slug": "tbs-crossfire-nano-rx-se-crsf",
-  "name_zh": "TBS Crossfire Nano RX SE 接收機 長距離接收機 Nano RX CRSF 穿越機 FPV 無人機",
+  "name_zh": "TBS Crossfire Nano RX SE 接收機｜CRSF｜U.FL 天線｜長距離",
   "sku": null,
   "brand": "TBS",
-  "manufacturer_model": null,
+  "manufacturer_model": "Crossfire Nano RX SE",
   "seller_role": "retail",
   "primary_category_id": "radio-gps",
   "subcategory_id": "receivers",
-  "tags": [],
+  "tags": [
+    "接收機",
+    "TBS",
+    "Crossfire",
+    "CRSF",
+    "Long Range"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "TBS Crossfire Nano RX SE 接收機\n專為 FPV 穿越機與長距離飛行打造🔥\n\n📌產品特色\n・原廠 TBS Crossfire 系統\n・CRSF 通訊協議\n・低延遲高刷新率\n・長距離穩定傳輸\n・超小型輕量化設計\n・U.FL 天線接口\n・適合 Freestyle、Long Range 與競速飛行\n\n📌產品規格\n品牌：TBS\n型號：Crossfire Nano RX SE\n通訊協議：CRSF\n供電電壓：5V\n天線接口：U.FL\n適用系統：TBS Crossfire\n\n📌適用機型\n・FPV 穿越機\n・Long Range 長航程機型\n・Freestyle 花飛機型\n・固定翼航模\n\n📌包裝內容\n・TBS Nano RX SE 接收機 ×1\n・天線\n\n⚠️注意事項\n・請確認與發射模組系統相容後再購買\n・商品不含飛控、遙控器及其他電子設備\n・安裝前請確認接線方式與供電規格",
-  "specifications": [],
+  "short_description": "TBS Crossfire Nano RX SE 小型接收機，CRSF 協議、5V 供電、U.FL 天線接口，適用 TBS Crossfire 系統的穿越機、長航機與固定翼。",
+  "description": "TBS Crossfire Nano RX SE 是 TBS Crossfire 系統的小型接收機，適合穿越機、Long Range 長航機與固定翼。\n\n【產品特色】\n・CRSF 通訊協議\n・低延遲\n・長距離穩定傳輸\n・超小型輕量化設計\n・U.FL 天線接口\n・適合 Freestyle、Long Range 與競速飛行\n\n【適用機型】\n・FPV 穿越機\n・Long Range 長航程機型\n・Freestyle 花飛機型\n・固定翼航模\n\n【包裝內容】\n・TBS Nano RX SE 接收機 ×1\n・天線\n\n【注意事項】\n・請確認與發射模組系統相容後再購買\n・商品不含飛控、遙控器及其他電子設備\n・安裝前請確認接線方式與供電規格",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "TBS",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "Crossfire Nano RX SE",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "通訊協議",
+      "value": "CRSF",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "供電電壓",
+      "value": "5V",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "天線接口",
+      "value": "U.FL",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用系統",
+      "value": "TBS Crossfire",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-57261331072/01.webp",
       "src_small": "/assets/img/products/sp-57261331072/01-480.webp",
-      "alt": "TBS Crossfire Nano RX SE 接收機 長距離接收機 Nano RX CRSF 穿越機 FPV 無人機（主圖）",
+      "alt": "TBS Crossfire Nano RX SE 接收機｜CRSF｜U.FL 天線｜長距離（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +66,7 @@
     {
       "src": "/assets/img/products/sp-57261331072/02.webp",
       "src_small": "/assets/img/products/sp-57261331072/02-480.webp",
-      "alt": "TBS Crossfire Nano RX SE 接收機 長距離接收機 Nano RX CRSF 穿越機 FPV 無人機（細節圖 1）",
+      "alt": "TBS Crossfire Nano RX SE 接收機｜CRSF｜U.FL 天線｜長距離（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +76,7 @@
     {
       "src": "/assets/img/products/sp-57261331072/03.webp",
       "src_small": "/assets/img/products/sp-57261331072/03-480.webp",
-      "alt": "TBS Crossfire Nano RX SE 接收機 長距離接收機 Nano RX CRSF 穿越機 FPV 無人機（細節圖 2）",
+      "alt": "TBS Crossfire Nano RX SE 接收機｜CRSF｜U.FL 天線｜長距離（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +86,7 @@
     {
       "src": "/assets/img/products/sp-57261331072/04.webp",
       "src_small": "/assets/img/products/sp-57261331072/04-480.webp",
-      "alt": "TBS Crossfire Nano RX SE 接收機 長距離接收機 Nano RX CRSF 穿越機 FPV 無人機（細節圖 3）",
+      "alt": "TBS Crossfire Nano RX SE 接收機｜CRSF｜U.FL 天線｜長距離（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -66,13 +103,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mot6ekb4rp4wab"

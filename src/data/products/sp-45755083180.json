@@ -1,22 +1,55 @@
 {
   "id": "sp-45755083180",
   "slug": "geprc-cinebot25-v2-o4-pro-2-5",
-  "name_zh": "GEPRC 格普 Cinebot25 孤影 V2 O4 Pro🎥 室內外航拍2.5寸穿越機 FPV",
+  "name_zh": "GEPRC Cinebot25 V2 孤影 2.5 吋 Cinewhoop 航拍穿越機｜DJI O4 Pro／O4 Wide｜ELRS",
   "sku": null,
   "brand": "GEPRC",
-  "manufacturer_model": null,
+  "manufacturer_model": "Cinebot25 V2",
   "seller_role": "retail",
   "primary_category_id": "complete-drones",
   "subcategory_id": "2-5in",
-  "tags": [],
+  "tags": [
+    "Cinewhoop",
+    "航拍",
+    "運鏡",
+    "護槳",
+    "DJI O4 Pro",
+    "ELRS"
+  ],
   "compatible_sizes": [
     "2.5 吋"
   ],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "•\t專為 DJI O4 Pro 空拍相機／雲台設計，機身一體化固定座，免自己改倉、免堆配重，就能直接起飛錄影。\n\n•\t2.5 吋高護槳 Cinewhoop 結構，室內穿梭安全又安靜，戶外繞人、跟拍、低空掠過也有足夠推力。\n\n•\tGEPRC 原廠整套電調＋電機＋機架調校，出廠就含 PID、濾波設定，新手只要綁好遙控器與 O4 Pro 就能飛。\n\n特色亮點\n•\t靜音高護槳機架：全封閉槳罩＋減震結構，適合展場、婚禮等人多環境拍攝。\n\n•\tO4 Pro 專屬艙位：保留 USB / 電源孔與按鍵開孔，方便在機上充電、讀卡或調整設定。\n\n•\t輕量 2.5 吋動力：相較 3–3.5 吋 Cinewhoop 體積更小、風壓更低，更容易拿到室內飛行許可。\n\n•\t預留外掛收音／VTX 空間：可加裝外錄收音、升級圖傳或加裝導航燈條，擴充性高。",
-  "specifications": [],
+  "short_description": "GEPRC Cinebot25 V2（孤影）2.5 吋 Cinewhoop 護槳航拍機，提供 DJI O4 Pro、O4 Wide 整機（ELRS）與 PNP 動力套裝。",
+  "description": "GEPRC Cinebot25 V2（孤影）是 2.5 吋 Cinewhoop 護槳穿越機，機身針對 DJI O4 Pro 安裝設計，適合室內外低空運鏡、跟拍與日常 FPV 錄影。\n\n【產品特色】\n・2.5 吋 Cinewhoop 全包覆槳罩，近距離穿梭與低空運鏡時保護槳葉\n・DJI O4 Pro 專用安裝位置，保留 USB、電源與按鍵開孔，方便充電、讀卡與調整設定\n・減震結構設計，降低機身振動對畫面的影響\n・整機版本由原廠完成動力配置與基本參數（PID、濾波），綁定遙控器並確認設定後即可試飛\n\n【版本說明】\n・O4 Pro（ELRS）整機\n・O4 Wide（ELRS）整機\n・PNP 動力套裝：不含圖傳與攝影機，需自行安裝\n\n【適用對象】\n想用 DJI O4 系統拍攝室內外運鏡、旅遊紀錄的玩家，以及需要護槳結構的低空錄影用途。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "GEPRC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "Cinebot25 V2（孤影）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "2.5 吋 Cinewhoop",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "圖傳",
+      "value": "DJI O4 Pro／DJI O4 Wide（依版本）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接收機",
+      "value": "ELRS（整機版本）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-45755083180/01.webp",
@@ -152,13 +185,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztg-mjs7jxt3ow7568",

@@ -1,27 +1,64 @@
 {
   "id": "sp-50117409646",
   "slug": "betafpv-pavo20-pro-ii-fpv-dji",
-  "name_zh": "BETAFPV Pavo20 Pro II FPV穿越機 DJI O4 O4 Pro 2吋 Cinewhoop 圈圈機",
+  "name_zh": "BETAFPV Pavo20 Pro II 2 吋 Cinewhoop 穿越機｜DJI O4 Pro｜ELRS／SBUS｜附電池 2 顆",
   "sku": null,
   "brand": "BETAFPV",
-  "manufacturer_model": null,
+  "manufacturer_model": "Pavo20 Pro II",
   "seller_role": "retail",
   "primary_category_id": "complete-drones",
   "subcategory_id": "micro",
-  "tags": [],
+  "tags": [
+    "Cinewhoop",
+    "航拍",
+    "運鏡",
+    "圈圈機",
+    "DJI O4 Pro"
+  ],
   "compatible_sizes": [
     "2 吋"
   ],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "BETAFPV Pavo20 Pro II 是一款 2 吋輕量化 Cinewhoop 圈圈機，支援 DJI O4／O4 Pro 高清數位圖傳，兼具航拍穩定性、機體保護性與 FPV 飛行樂趣。升級結構設計提升耐撞性與機身剛性，適合室內外穿梭、低空運鏡、旅拍紀錄與輕量花飛使用。",
-  "specifications": [],
+  "short_description": "BETAFPV Pavo20 Pro II 2 吋輕量 Cinewhoop，支援 DJI O4／O4 Pro，提供 O4 Pro（ELRS／SBUS）與 PNP 版本，各版本附電池 2 顆。",
+  "description": "BETAFPV Pavo20 Pro II 是 2 吋輕量化 Cinewhoop 圈圈機，支援 DJI O4／O4 Pro 高清數位圖傳，兼具航拍穩定性、機體保護性與 FPV 飛行樂趣。升級的結構設計提升耐撞性與機身剛性，適合室內外穿梭、低空運鏡、旅拍紀錄與輕量花飛。\n\n【版本說明】\n・O4 Pro（ELRS），附電池 2 顆\n・O4 Pro（SBUS），附電池 2 顆\n・PNP（不含圖傳），附電池 2 顆\n\n【訂購前請確認】\n接收方式請依您的遙控器選擇；詳細規格以 BETAFPV 原廠公告為準。",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "BETAFPV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "Pavo20 Pro II",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "2 吋 Cinewhoop",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "圖傳",
+      "value": "DJI O4 Pro（O4 版本）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接收方式",
+      "value": "ELRS／SBUS（依版本）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "隨附電池",
+      "value": "2 顆",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-50117409646/01.webp",
       "src_small": "/assets/img/products/sp-50117409646/01-480.webp",
-      "alt": "BETAFPV Pavo20 Pro II FPV穿越機 DJI O4 O4 Pro 2吋 Cinewhoop 圈圈機（主圖）",
+      "alt": "BETAFPV Pavo20 Pro II 2 吋 Cinewhoop 穿越機｜DJI O4 Pro｜ELRS／SBUS｜附電池 2 顆（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +68,7 @@
     {
       "src": "/assets/img/products/sp-50117409646/02.webp",
       "src_small": "/assets/img/products/sp-50117409646/02-480.webp",
-      "alt": "BETAFPV Pavo20 Pro II FPV穿越機 DJI O4 O4 Pro 2吋 Cinewhoop 圈圈機（細節圖 1）",
+      "alt": "BETAFPV Pavo20 Pro II 2 吋 Cinewhoop 穿越機｜DJI O4 Pro｜ELRS／SBUS｜附電池 2 顆（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +78,7 @@
     {
       "src": "/assets/img/products/sp-50117409646/03.webp",
       "src_small": "/assets/img/products/sp-50117409646/03-480.webp",
-      "alt": "BETAFPV Pavo20 Pro II FPV穿越機 DJI O4 O4 Pro 2吋 Cinewhoop 圈圈機（細節圖 2）",
+      "alt": "BETAFPV Pavo20 Pro II 2 吋 Cinewhoop 穿越機｜DJI O4 Pro｜ELRS／SBUS｜附電池 2 顆（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -51,7 +88,7 @@
     {
       "src": "/assets/img/products/sp-50117409646/04.webp",
       "src_small": "/assets/img/products/sp-50117409646/04-480.webp",
-      "alt": "BETAFPV Pavo20 Pro II FPV穿越機 DJI O4 O4 Pro 2吋 Cinewhoop 圈圈機（細節圖 3）",
+      "alt": "BETAFPV Pavo20 Pro II 2 吋 Cinewhoop 穿越機｜DJI O4 Pro｜ELRS／SBUS｜附電池 2 顆（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -61,7 +98,7 @@
     {
       "src": "/assets/img/products/sp-50117409646/05.webp",
       "src_small": "/assets/img/products/sp-50117409646/05-480.webp",
-      "alt": "BETAFPV Pavo20 Pro II FPV穿越機 DJI O4 O4 Pro 2吋 Cinewhoop 圈圈機（細節圖 4）",
+      "alt": "BETAFPV Pavo20 Pro II 2 吋 Cinewhoop 穿越機｜DJI O4 Pro｜ELRS／SBUS｜附電池 2 顆（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -71,7 +108,7 @@
     {
       "src": "/assets/img/products/sp-50117409646/06.webp",
       "src_small": "/assets/img/products/sp-50117409646/06-480.webp",
-      "alt": "BETAFPV Pavo20 Pro II FPV穿越機 DJI O4 O4 Pro 2吋 Cinewhoop 圈圈機（細節圖 5）",
+      "alt": "BETAFPV Pavo20 Pro II 2 吋 Cinewhoop 穿越機｜DJI O4 Pro｜ELRS／SBUS｜附電池 2 顆（細節圖 5）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -81,7 +118,7 @@
     {
       "src": "/assets/img/products/sp-50117409646/07.webp",
       "src_small": "/assets/img/products/sp-50117409646/07-480.webp",
-      "alt": "BETAFPV Pavo20 Pro II FPV穿越機 DJI O4 O4 Pro 2吋 Cinewhoop 圈圈機（細節圖 6）",
+      "alt": "BETAFPV Pavo20 Pro II 2 吋 Cinewhoop 穿越機｜DJI O4 Pro｜ELRS／SBUS｜附電池 2 顆（細節圖 6）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -91,7 +128,7 @@
     {
       "src": "/assets/img/products/sp-50117409646/08.webp",
       "src_small": "/assets/img/products/sp-50117409646/08-480.webp",
-      "alt": "BETAFPV Pavo20 Pro II FPV穿越機 DJI O4 O4 Pro 2吋 Cinewhoop 圈圈機（細節圖 7）",
+      "alt": "BETAFPV Pavo20 Pro II 2 吋 Cinewhoop 穿越機｜DJI O4 Pro｜ELRS／SBUS｜附電池 2 顆（細節圖 7）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -130,13 +167,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l9-msr0w0z1i6tk30",

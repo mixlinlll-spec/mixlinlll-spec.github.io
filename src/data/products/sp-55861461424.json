@@ -1,27 +1,84 @@
 {
   "id": "sp-55861461424",
   "slug": "gemfan-2512-2-5-fpv",
-  "name_zh": "GEMFAN 2512 三葉槳 2.5吋槳葉 牙籤機槳葉 FPV穿越機槳葉 高效率輕量化 螺旋槳",
+  "name_zh": "GEMFAN 乾豐 2512 三葉槳｜2.5 吋牙籤機｜1.5mm 孔｜4 片／8 片",
   "sku": null,
   "brand": "GEMFAN 乾豐",
-  "manufacturer_model": null,
+  "manufacturer_model": "2512",
   "seller_role": "retail",
   "primary_category_id": "motors-props",
   "subcategory_id": "props",
-  "tags": [],
+  "tags": [
+    "螺旋槳",
+    "2.5吋",
+    "牙籤機",
+    "JENO Pocket",
+    "GEMFAN"
+  ],
   "compatible_sizes": [
     "2.5 吋"
   ],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "GEMFAN 2512 三葉槳🔥\n\n專為 2.5 吋牙籤機與微型穿越機打造，具備高效率、低重量與靈敏操控特性，適合 Freestyle、巡航與日常飛行使用。\n\n📌產品特色\n・GEMFAN 原廠正品\n・2.5吋高效率槳型\n・超輕量化設計\n・三葉配置推力穩定\n・操控靈敏反應快速\n・適合牙籤機與輕量化配置\n・耐用 PC 材質製成\n\n📌產品規格\n品牌：GEMFAN\n型號：2512\n尺寸：2.5吋\n葉片數：3葉\n材質：PC\n槳距：1.2吋\n槳盤直徑：63.76mm\n中心孔徑：1.5mm\n重量：約0.8g\n適用電機：1103～1108\n\n📌適用機型\n・2.5吋牙籤機\n・JENO Pocket\n・Freestyle 花飛機\n・微型穿越機\n\n📌產品優勢\n・飛行效率優異\n・續航表現提升\n・低震動穩定飛行\n・輕量化負載更低\n\n⚠️注意事項\n・槳葉屬消耗品\n・安裝前請確認旋轉方向\n・飛行前請檢查槳葉是否損傷或變形\n・商品不含無人機及電機",
-  "specifications": [],
+  "short_description": "GEMFAN 2512 三葉槳，2.5 吋、PC 材質、每支約 0.8g、1.5mm 中心孔，適用 1103～1108 馬達與 JENO Pocket 等牙籤機。",
+  "description": "專為 2.5 吋牙籤機與微型穿越機打造，具備高效率、低重量與靈敏操控特性，適合 Freestyle、巡航與日常飛行使用。\n\n【產品特色】\n・GEMFAN 原廠正品\n・2.5吋高效率槳型\n・超輕量化設計\n・三葉配置推力穩定\n・操控靈敏反應快速\n・適合牙籤機與輕量化配置\n・耐用 PC 材質製成\n\n【適用機型】\n・2.5吋牙籤機\n・JENO Pocket\n・Freestyle 花飛機\n・微型穿越機\n\n【注意事項】\n・安裝前請確認旋轉方向\n・飛行前請檢查槳葉是否損傷或變形\n・商品不含無人機及電機",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "GEMFAN",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "2512",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "尺寸",
+      "value": "2.5吋",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "葉片數",
+      "value": "3葉",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "PC",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "槳距",
+      "value": "1.2吋",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "槳盤直徑",
+      "value": "63.76mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "中心孔徑",
+      "value": "1.5mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約0.8g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用電機",
+      "value": "1103～1108",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-55861461424/01.webp",
       "src_small": "/assets/img/products/sp-55861461424/01-480.webp",
-      "alt": "GEMFAN 2512 三葉槳 2.5吋槳葉 牙籤機槳葉 FPV穿越機槳葉 高效率輕量化 螺旋槳（主圖）",
+      "alt": "GEMFAN 乾豐 2512 三葉槳｜2.5 吋牙籤機｜1.5mm 孔｜4 片／8 片（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -31,7 +88,7 @@
     {
       "src": "/assets/img/products/sp-55861461424/02.webp",
       "src_small": "/assets/img/products/sp-55861461424/02-480.webp",
-      "alt": "GEMFAN 2512 三葉槳 2.5吋槳葉 牙籤機槳葉 FPV穿越機槳葉 高效率輕量化 螺旋槳（細節圖 1）",
+      "alt": "GEMFAN 乾豐 2512 三葉槳｜2.5 吋牙籤機｜1.5mm 孔｜4 片／8 片（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -41,7 +98,7 @@
     {
       "src": "/assets/img/products/sp-55861461424/03.webp",
       "src_small": "/assets/img/products/sp-55861461424/03-480.webp",
-      "alt": "GEMFAN 2512 三葉槳 2.5吋槳葉 牙籤機槳葉 FPV穿越機槳葉 高效率輕量化 螺旋槳（細節圖 2）",
+      "alt": "GEMFAN 乾豐 2512 三葉槳｜2.5 吋牙籤機｜1.5mm 孔｜4 片／8 片（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -51,7 +108,7 @@
     {
       "src": "/assets/img/products/sp-55861461424/04.webp",
       "src_small": "/assets/img/products/sp-55861461424/04-480.webp",
-      "alt": "GEMFAN 2512 三葉槳 2.5吋槳葉 牙籤機槳葉 FPV穿越機槳葉 高效率輕量化 螺旋槳（細節圖 3）",
+      "alt": "GEMFAN 乾豐 2512 三葉槳｜2.5 吋牙籤機｜1.5mm 孔｜4 片／8 片（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -83,13 +140,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-moxil3qnahvz01",

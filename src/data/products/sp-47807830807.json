@@ -1,19 +1,25 @@
 {
   "id": "sp-47807830807",
   "slug": "tinywhoop-fpv-m1-4-m2-whoop",
-  "name_zh": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件",
+  "name_zh": "Tinywhoop 螺絲套裝｜M1.4／M2 多尺寸螺絲盒｜含墊片、尼龍柱｜可選附十字起子",
   "sku": null,
   "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "screws",
-  "tags": [],
+  "tags": [
+    "螺絲套裝",
+    "Tinywhoop",
+    "M1.4",
+    "M2",
+    "維修"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
   "short_description": "Tinywhoop 與 1–3 吋穿越機常用的多尺寸螺絲套組，含螺絲、墊片與尼龍柱，附分格收納盒。",
-  "description": "【🔥一次搞定所有螺絲問題】\n螺絲不夠？尺寸不對？直接整盒解決🔥\n\n【✨產品特色】\n✔ 全尺寸齊全 👉 Tinywhoop常用螺絲一次備齊\n✔ 分格收納 👉 找螺絲不用翻半天效率提升\n✔ 高強度材質 👉 耐用不易滑牙，適合反覆拆裝\n✔ 維修必備 👉 新手 / 老手都需要的工具盒\n\n【⚙️商品規格】\n適用：Tinywhoop / 1-3吋穿越機｜規格：多尺寸螺絲組｜材質：金屬＋尼龍｜收納：分格盒\n\n【📦包裝內容】\n螺絲套裝×1（含多尺寸螺絲 / 墊片 / 尼龍柱）\n\n【⚠️注意事項】\n請確認尺寸再使用｜小零件請避免兒童誤食\n\n【🚀適合族群】\nTinywhoop玩家｜維修玩家｜DIY改裝玩家",
+  "description": "Tinywhoop 與 1–3 吋小型穿越機常用的多尺寸螺絲套組，附分格收納盒，維修、改裝時不用到處找螺絲。\n\n【產品特色】\n・多尺寸螺絲、墊片與尼龍柱一盒備齊\n・分格收納，方便尋找\n・適合 Tinywhoop、1–3 吋穿越機維修與改裝\n\n【版本說明】\n・一盒\n・一盒＋十字起子（起子顏色隨機）\n\n【使用提醒】\n・使用前請確認螺絲尺寸與長度\n・小零件請放在兒童無法取得的地方",
   "specifications": [
     {
       "key": "適用",
@@ -45,7 +51,7 @@
     {
       "src": "/assets/img/products/sp-47807830807/01.webp",
       "src_small": "/assets/img/products/sp-47807830807/01-480.webp",
-      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（主圖）",
+      "alt": "Tinywhoop 螺絲套裝｜M1.4／M2 多尺寸螺絲盒｜含墊片、尼龍柱｜可選附十字起子（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -55,7 +61,7 @@
     {
       "src": "/assets/img/products/sp-47807830807/02.webp",
       "src_small": "/assets/img/products/sp-47807830807/02-480.webp",
-      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 1）",
+      "alt": "Tinywhoop 螺絲套裝｜M1.4／M2 多尺寸螺絲盒｜含墊片、尼龍柱｜可選附十字起子（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -65,7 +71,7 @@
     {
       "src": "/assets/img/products/sp-47807830807/03.webp",
       "src_small": "/assets/img/products/sp-47807830807/03-480.webp",
-      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 2）",
+      "alt": "Tinywhoop 螺絲套裝｜M1.4／M2 多尺寸螺絲盒｜含墊片、尼龍柱｜可選附十字起子（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -75,7 +81,7 @@
     {
       "src": "/assets/img/products/sp-47807830807/04.webp",
       "src_small": "/assets/img/products/sp-47807830807/04-480.webp",
-      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 3）",
+      "alt": "Tinywhoop 螺絲套裝｜M1.4／M2 多尺寸螺絲盒｜含墊片、尼龍柱｜可選附十字起子（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -85,7 +91,7 @@
     {
       "src": "/assets/img/products/sp-47807830807/05.webp",
       "src_small": "/assets/img/products/sp-47807830807/05-480.webp",
-      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 4）",
+      "alt": "Tinywhoop 螺絲套裝｜M1.4／M2 多尺寸螺絲盒｜含墊片、尼龍柱｜可選附十字起子（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -95,7 +101,7 @@
     {
       "src": "/assets/img/products/sp-47807830807/06.webp",
       "src_small": "/assets/img/products/sp-47807830807/06-480.webp",
-      "alt": "Tinywhoop 螺絲套裝｜FPV螺絲盒｜M1.4/M2全尺寸｜Whoop維修必備｜穿越機工具配件（細節圖 5）",
+      "alt": "Tinywhoop 螺絲套裝｜M1.4／M2 多尺寸螺絲盒｜含墊片、尼龍柱｜可選附十字起子（細節圖 5）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -127,14 +133,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
-      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿"
+      "2026-10-22 首批整理：規格與說明取自 EWP 蝦皮商品說明／標題（每筆規格附 source），尚未經 EWP 核對；short_description 為依說明整理的草稿",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lf-mmbx2t1fym8134",

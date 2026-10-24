@@ -1,23 +1,46 @@
 {
   "id": "sp-55353572105",
   "slug": "o4-air-unit-bec-3s-6s",
-  "name_zh": "小O4 AIR UNIT BEC 降壓模組 🔋 3S–6S 轉 5V / 12V 二選一 3A / DJI O4",
+  "name_zh": "BEC 降壓模組 3S–6S 轉 5V／12V（二選一）3A｜LED 燈帶、DJI O4 等周邊供電",
   "sku": null,
-  "brand": "DJI",
+  "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "power-battery",
   "subcategory_id": "power-modules",
-  "tags": [],
+  "tags": [
+    "BEC",
+    "降壓模組",
+    "5V",
+    "12V",
+    "LED",
+    "DJI O4"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [
     "3S",
     "6S"
   ],
-  "short_description": "",
-  "description": "BEC 降壓模組 5V 12V\n3S 4S 6S 轉 5V\n3S 4S 6S 轉 12V\n3A BEC LED 燈帶\nFPV LED 燈帶電源\n穿越機 燈帶供電\nUBEC 5V 12V 二選一\n無人機 降壓模組\nLiPo 降壓穩壓板\nAstroRC LED BEC 配件\n\n⚠️ 施工前請確認接線極性與輸入電壓，錯接可能導致燈帶與設備損壞\n⚠️ 串接多條燈帶時，務必評估總電流，避免超過 3A 持續輸出\n\n這款 BEC 降壓模組可從 3S–6S 電池直接轉出 5V 或 12V（焊盤二選一），最大 3A 輸出，特別適合用來驅動機身 LED 燈帶、尾燈或其他裝飾燈。只要把主電源接到 Vin，再依圖示接上燈帶正負極，就能讓高壓動力電變成穩定的 5V / 12V 供電\n​\n產品特色 ✨\n支援 3S–6S 輸入，適用大多數 FPV 穿越機與多軸機種。🔋\n​\n輸出電壓 5V / 12V 二選一，透過焊盤或跳線切換，最高 3A 穩定輸出，可帶多段 LED 燈帶或小型周邊。\n體積小、重量輕，可直接貼在機臂或機身內部，適合改裝 COB 燈帶、5V LED 板等應用。\n​\n適合作為 LED 燈帶專用電源，也可用於相機、圖傳等需要穩壓供電的設備（在額定電流範圍內）",
-  "specifications": [],
+  "short_description": "3S–6S 輸入的 BEC 降壓模組，焊盤二選一輸出 5V 或 12V、最大 3A，適合為 LED 燈帶、尾燈或額定電流內的周邊設備供電。",
+  "description": "BEC 降壓模組可從 3S–6S 電池直接轉出 5V 或 12V（焊盤二選一），最大 3A 輸出，適合驅動機身 LED 燈帶、尾燈，或在額定電流範圍內為相機、圖傳等設備供電。\n\n【產品特色】\n・支援 3S–6S 輸入\n・5V／12V 輸出二選一（焊盤或跳線切換），最高 3A\n・體積小、重量輕，可貼在機臂或機身內部\n\n【接線方式】\n・主電源接 Vin，依圖示接上負載的正負極\n\n【安裝前請確認】\n・接線極性與輸入電壓，錯接可能導致燈帶或設備損壞\n・多條燈帶或多個設備串接時，總電流不可超過 3A 持續輸出\n・為圖傳供電前，請確認該圖傳的輸入電壓範圍與耗電",
+  "specifications": [
+    {
+      "key": "輸入電壓",
+      "value": "3S–6S",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "輸出電壓",
+      "value": "5V 或 12V（二選一）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "最大輸出電流",
+      "value": "3A",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-55353572105/01.webp",
@@ -69,13 +92,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

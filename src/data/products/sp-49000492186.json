@@ -1,25 +1,48 @@
 {
   "id": "sp-49000492186",
   "slug": "dji-action-3-4-5-3d",
-  "name_zh": "DJI Action 3 / 4 / 5 專用 3D列印 TPU 保護框 (防摔/防撞/保護殼/運動相機配件)",
+  "name_zh": "DJI Osmo Action 3／4／5 TPU 保護框｜防摔防刮相機殼｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "DJI Action 4",
+    "DJI Action 5",
+    "Action 3",
+    "保護框",
+    "TPU",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "產品介紹：\n專為 DJI Osmo Action 3、Action 4 和 Action 5 設計的 3D 打印保護罩，採用高強度材料製作，提供全面防護！無論是日常使用還是極限運動，都能有效防摔、防刮，並保持相機的輕便性。精準開孔設計，不影響相機按鍵\n\n材質： 高强度 TPU塑料（3D 打印製成，環保耐用）\n兼容型號： DJI Action 3、Action 4、Action 5\n重量： 約 15 克（輕量設計，不增加負擔）\n特點： 防摔、防刮、易安裝、不影響相機功能\n\n🛡️ 全面防護： 有效吸收衝擊，保護相機免受跌落和刮傷。\n🔧 精準兼容： 專為 Action 系列設計，開孔對應鏡頭\n🚀 輕量便攜： 3D 打印技術確保輕量化，適合運動、旅行或日常使用。\n🌟 客製化選項： 可根據需求選擇顏色，提升個人化風格。",
-  "specifications": [],
+  "short_description": "電翼動力為 DJI Osmo Action 3、4、5 製作的 TPU 保護框，約 15g，開孔對應鏡頭與按鍵，降低跌落與刮傷。",
+  "description": "電翼動力為 DJI Osmo Action 3、Action 4、Action 5 設計的 TPU 保護框，日常使用與運動拍攝時降低跌落、刮傷的機會。\n\n【產品特色】\n・相容 DJI Action 3／4／5\n・TPU 材質吸收衝擊\n・開孔對應鏡頭與按鍵，不影響操作\n・約 15g\n\n【顏色與列印】\n・可選顏色：綠、黃、橘、白、透藍、黑\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "DJI Osmo Action 3／4／5",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 15g",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-49000492186/01.webp",
       "src_small": "/assets/img/products/sp-49000492186/01-480.webp",
-      "alt": "DJI Action 3 / 4 / 5 專用 3D列印 TPU 保護框 (防摔/防撞/保護殼/運動相機配件)（主圖）",
+      "alt": "DJI Osmo Action 3／4／5 TPU 保護框｜防摔防刮相機殼｜3D 列印（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +52,7 @@
     {
       "src": "/assets/img/products/sp-49000492186/02.webp",
       "src_small": "/assets/img/products/sp-49000492186/02-480.webp",
-      "alt": "DJI Action 3 / 4 / 5 專用 3D列印 TPU 保護框 (防摔/防撞/保護殼/運動相機配件)（細節圖 1）",
+      "alt": "DJI Osmo Action 3／4／5 TPU 保護框｜防摔防刮相機殼｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +62,7 @@
     {
       "src": "/assets/img/products/sp-49000492186/03.webp",
       "src_small": "/assets/img/products/sp-49000492186/03-480.webp",
-      "alt": "DJI Action 3 / 4 / 5 專用 3D列印 TPU 保護框 (防摔/防撞/保護殼/運動相機配件)（細節圖 2）",
+      "alt": "DJI Osmo Action 3／4／5 TPU 保護框｜防摔防刮相機殼｜3D 列印（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -99,7 +122,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -107,7 +130,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

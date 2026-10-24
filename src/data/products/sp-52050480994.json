@@ -1,25 +1,54 @@
 {
   "id": "sp-52050480994",
   "slug": "fpv-6s-tpu-3d-60-6",
-  "name_zh": "FPV電池平衡線固定夾 6S線材保護扣 TPU 3D列印 電池線防槳葉打線神器 穿越機專用 60元6個",
+  "name_zh": "6S 電池平衡線固定夾｜避免平衡線被槳葉打到｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "平衡線",
+    "電池配件",
+    "6S",
+    "線材保護",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
-  "battery_cells": [],
-  "short_description": "",
-  "description": "🔥價格60元5個🔥\n\n🚀【產品介紹】\n這款由 PETG材質 3D 列印而成的平衡線固定夾，專為 FPV 穿越機電池設計，適用於 6S 鋰電池（如 AM612 線組）。能夠牢牢固定平衡線與主電源線在一起，有效避免在飛行時被槳葉打到或拉扯斷線。\n輕量化設計，不影響飛行重量，安裝超方便！\n\n✅ 產品特點：\nPLA材質，耐用不易斷裂\n適用6S平衡線與主電線整合使用\n穩固夾持設計，防止槳葉打線\n3D列印製成，輕量且可重複使用\n適合各類FPV穿越機玩家\n\n📦商品規格：\n材質：Petg\n適用：6S 鋰電池平衡線 / XT60 / XT90 線組\n重量：僅約 1g\n\n⚙️用途說明：\n將平衡線與主電源線一同夾入固定夾內，即可有效減少線材鬆動、磨損或被槳葉誤打。",
-  "specifications": [],
+  "battery_cells": [
+    "6S"
+  ],
+  "short_description": "電翼動力 3D 列印平衡線固定夾，把 6S 電池平衡線與主電源線夾在一起，減少飛行時線材鬆動或被槳葉打到。",
+  "description": "3D 列印的平衡線固定夾，將 6S 鋰電池的平衡線與主電源線夾在一起，減少飛行時線材鬆動、磨損或被槳葉打到。\n\n【產品特色】\n・適用 6S 平衡線與 XT60／XT90 主電源線\n・約 1g，可重複使用\n\n【使用方式】\n・將平衡線與主電源線一同夾入固定夾內即可\n\n【數量與價格】\n・每份數量請以規格選項與訂購頁面為準\n\n【顏色與列印】\n・可選顏色：黑\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "材質",
+      "value": "PETG（3D 列印）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用",
+      "value": "6S 鋰電池平衡線／XT60／XT90 線組",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "約 1g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "顏色",
+      "value": "黑",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-52050480994/01.webp",
       "src_small": "/assets/img/products/sp-52050480994/01-480.webp",
-      "alt": "FPV電池平衡線固定夾 6S線材保護扣 TPU 3D列印 電池線防槳葉打線神器 穿越機專用 60元6個（主圖）",
+      "alt": "6S 電池平衡線固定夾｜避免平衡線被槳葉打到｜3D 列印（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +58,7 @@
     {
       "src": "/assets/img/products/sp-52050480994/02.webp",
       "src_small": "/assets/img/products/sp-52050480994/02-480.webp",
-      "alt": "FPV電池平衡線固定夾 6S線材保護扣 TPU 3D列印 電池線防槳葉打線神器 穿越機專用 60元6個（細節圖 1）",
+      "alt": "6S 電池平衡線固定夾｜避免平衡線被槳葉打到｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +68,7 @@
     {
       "src": "/assets/img/products/sp-52050480994/03.webp",
       "src_small": "/assets/img/products/sp-52050480994/03-480.webp",
-      "alt": "FPV電池平衡線固定夾 6S線材保護扣 TPU 3D列印 電池線防槳葉打線神器 穿越機專用 60元6個（細節圖 2）",
+      "alt": "6S 電池平衡線固定夾｜避免平衡線被槳葉打到｜3D 列印（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +78,7 @@
     {
       "src": "/assets/img/products/sp-52050480994/04.webp",
       "src_small": "/assets/img/products/sp-52050480994/04-480.webp",
-      "alt": "FPV電池平衡線固定夾 6S線材保護扣 TPU 3D列印 電池線防槳葉打線神器 穿越機專用 60元6個（細節圖 3）",
+      "alt": "6S 電池平衡線固定夾｜避免平衡線被槳葉打到｜3D 列印（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -59,7 +88,7 @@
     {
       "src": "/assets/img/products/sp-52050480994/05.webp",
       "src_small": "/assets/img/products/sp-52050480994/05-480.webp",
-      "alt": "FPV電池平衡線固定夾 6S線材保護扣 TPU 3D列印 電池線防槳葉打線神器 穿越機專用 60元6個（細節圖 4）",
+      "alt": "6S 電池平衡線固定夾｜避免平衡線被槳葉打到｜3D 列印（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -84,7 +113,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -92,7 +121,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

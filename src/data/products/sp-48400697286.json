@@ -1,25 +1,47 @@
 {
   "id": "sp-48400697286",
   "slug": "dji-action-2-tpu-fpv-gopro",
-  "name_zh": "DJI Action 2 防撞底座 TPU保護座 FPV穿越機專用 GoPro支架安裝",
+  "name_zh": "DJI Action 2 防撞底座｜TPU 保護座｜GoPro 介面安裝｜A／B 款",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "DJI Action 2",
+    "相機座",
+    "GoPro座",
+    "TPU",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "",
-  "specifications": [],
+  "short_description": "電翼動力為 DJI Action 2 製作的 TPU 防撞底座，可透過 GoPro 介面安裝在穿越機上，提供 A、B 兩款。",
+  "description": "電翼動力為 DJI Action 2 製作的 TPU 防撞底座，可透過 GoPro 介面安裝在 FPV 穿越機上，保護相機底部。\n\n【版本說明】\n・A 款\n・B 款\n・兩款外形差異可透過 LINE 詢問或參考商品圖片\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "DJI Action 2",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "安裝介面",
+      "value": "GoPro 介面",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU（3D 列印）",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-48400697286/01.webp",
       "src_small": "/assets/img/products/sp-48400697286/01-480.webp",
-      "alt": "DJI Action 2 防撞底座 TPU保護座 FPV穿越機專用 GoPro支架安裝（主圖）",
+      "alt": "DJI Action 2 防撞底座｜TPU 保護座｜GoPro 介面安裝｜A／B 款（主圖）",
       "width": 750,
       "height": 750,
       "rights": "licensed",
@@ -29,7 +51,7 @@
     {
       "src": "/assets/img/products/sp-48400697286/02.webp",
       "src_small": "/assets/img/products/sp-48400697286/02-480.webp",
-      "alt": "DJI Action 2 防撞底座 TPU保護座 FPV穿越機專用 GoPro支架安裝（細節圖 1）",
+      "alt": "DJI Action 2 防撞底座｜TPU 保護座｜GoPro 介面安裝｜A／B 款（細節圖 1）",
       "width": 796,
       "height": 796,
       "rights": "licensed",
@@ -39,7 +61,7 @@
     {
       "src": "/assets/img/products/sp-48400697286/03.webp",
       "src_small": "/assets/img/products/sp-48400697286/03-480.webp",
-      "alt": "DJI Action 2 防撞底座 TPU保護座 FPV穿越機專用 GoPro支架安裝（細節圖 2）",
+      "alt": "DJI Action 2 防撞底座｜TPU 保護座｜GoPro 介面安裝｜A／B 款（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +71,7 @@
     {
       "src": "/assets/img/products/sp-48400697286/04.webp",
       "src_small": "/assets/img/products/sp-48400697286/04-480.webp",
-      "alt": "DJI Action 2 防撞底座 TPU保護座 FPV穿越機專用 GoPro支架安裝（細節圖 3）",
+      "alt": "DJI Action 2 防撞底座｜TPU 保護座｜GoPro 介面安裝｜A／B 款（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -93,7 +115,7 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -101,7 +123,8 @@
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

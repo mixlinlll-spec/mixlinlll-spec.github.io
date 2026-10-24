@@ -1,25 +1,58 @@
 {
   "id": "sp-53858240662",
   "slug": "dji-avata-360-tpu",
-  "name_zh": "DJI Avata 360腳墊 TPU防護腳架 防刮鏡頭保護 減震防滑 起落架保護套 螺絲固定版",
+  "name_zh": "DJI Avata 360 TPU 腳墊 V2｜四支長腳架＋12 顆 M2×10 螺絲｜鏡頭與機身保護",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "DJI Avata 360",
+    "腳架",
+    "起落架",
+    "鏡頭保護",
+    "TPU",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "‼️ 改版V2 四根起落支架皆為長的，並且附上螺絲\n🔥 Avata 360專用腳墊｜全面升級保護\n🔥 保護鏡頭｜減震防摔｜穩定起降\n\n📌產品特色\n ・精準適配｜專為DJI Avata 360設計，完美貼合不鬆動\n ・鏡頭防護｜提高機身高度，避免鏡頭直接接觸地面\n ・TPU減震｜有效吸收落地衝擊，保護機身與雲台\n ・防滑設計｜草地/砂石/濕地皆可穩定降落\n ・輕量化設計｜單顆約2.5g，不影響飛行表現\n📌固定方式\n ・12顆 M2x10 內六角螺絲固定\n ・穩固不位移｜比卡扣更可靠\n📌適用對象\n ・Avata 360玩家\n ・室外起降環境較複雜者\n ・重視鏡頭保護與機身安全者\n⚠️注意事項\n・建議搭配正確安裝，避免影響飛行安全\n・360模式下腳墊可能入鏡（可接受再購買）",
-  "specifications": [],
+  "short_description": "電翼動力為 DJI Avata 360 製作的 TPU 腳墊 V2，四支長腳架附 12 顆 M2×10 螺絲，提高機身高度、避免鏡頭直接接觸地面。",
+  "description": "電翼動力為 DJI Avata 360 製作的 TPU 腳墊（V2 改版：四支起落腳皆為長版，並附螺絲）。\n\n【產品特色】\n・提高機身高度，避免鏡頭直接接觸地面\n・TPU 材質吸收落地衝擊\n・防滑設計，草地、砂石地起降更穩\n・單支約 2.5g\n\n【固定方式】\n・使用 12 顆 M2×10 內六角螺絲固定（已附）\n\n【注意事項】\n・請依正確方式安裝，安裝後確認不影響飛行\n・360 模式下腳墊可能入鏡，請確認可接受再購買\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "DJI Avata 360",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "版本",
+      "value": "V2（四支長腳架）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "材質",
+      "value": "TPU",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "重量",
+      "value": "單支約 2.5g",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "包裝內容",
+      "value": "腳墊 ×4、M2×10 螺絲 ×12",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-53858240662/01.webp",
       "src_small": "/assets/img/products/sp-53858240662/01-480.webp",
-      "alt": "DJI Avata 360腳墊 TPU防護腳架 防刮鏡頭保護 減震防滑 起落架保護套 螺絲固定版（主圖）",
+      "alt": "DJI Avata 360 TPU 腳墊 V2｜四支長腳架＋12 顆 M2×10 螺絲｜鏡頭與機身保護（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +62,7 @@
     {
       "src": "/assets/img/products/sp-53858240662/02.webp",
       "src_small": "/assets/img/products/sp-53858240662/02-480.webp",
-      "alt": "DJI Avata 360腳墊 TPU防護腳架 防刮鏡頭保護 減震防滑 起落架保護套 螺絲固定版（細節圖 1）",
+      "alt": "DJI Avata 360 TPU 腳墊 V2｜四支長腳架＋12 顆 M2×10 螺絲｜鏡頭與機身保護（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +72,7 @@
     {
       "src": "/assets/img/products/sp-53858240662/03.webp",
       "src_small": "/assets/img/products/sp-53858240662/03-480.webp",
-      "alt": "DJI Avata 360腳墊 TPU防護腳架 防刮鏡頭保護 減震防滑 起落架保護套 螺絲固定版（細節圖 2）",
+      "alt": "DJI Avata 360 TPU 腳墊 V2｜四支長腳架＋12 顆 M2×10 螺絲｜鏡頭與機身保護（細節圖 2）",
       "width": 610,
       "height": 610,
       "rights": "licensed",
@@ -49,7 +82,7 @@
     {
       "src": "/assets/img/products/sp-53858240662/04.webp",
       "src_small": "/assets/img/products/sp-53858240662/04-480.webp",
-      "alt": "DJI Avata 360腳墊 TPU防護腳架 防刮鏡頭保護 減震防滑 起落架保護套 螺絲固定版（細節圖 3）",
+      "alt": "DJI Avata 360 TPU 腳墊 V2｜四支長腳架＋12 顆 M2×10 螺絲｜鏡頭與機身保護（細節圖 3）",
       "width": 948,
       "height": 948,
       "rights": "licensed",
@@ -59,7 +92,7 @@
     {
       "src": "/assets/img/products/sp-53858240662/05.webp",
       "src_small": "/assets/img/products/sp-53858240662/05-480.webp",
-      "alt": "DJI Avata 360腳墊 TPU防護腳架 防刮鏡頭保護 減震防滑 起落架保護套 螺絲固定版（細節圖 4）",
+      "alt": "DJI Avata 360 TPU 腳墊 V2｜四支長腳架＋12 顆 M2×10 螺絲｜鏡頭與機身保護（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -69,7 +102,7 @@
     {
       "src": "/assets/img/products/sp-53858240662/06.webp",
       "src_small": "/assets/img/products/sp-53858240662/06-480.webp",
-      "alt": "DJI Avata 360腳墊 TPU防護腳架 防刮鏡頭保護 減震防滑 起落架保護套 螺絲固定版（細節圖 5）",
+      "alt": "DJI Avata 360 TPU 腳墊 V2｜四支長腳架＋12 顆 M2×10 螺絲｜鏡頭與機身保護（細節圖 5）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -79,7 +112,7 @@
     {
       "src": "/assets/img/products/sp-53858240662/07.webp",
       "src_small": "/assets/img/products/sp-53858240662/07-480.webp",
-      "alt": "DJI Avata 360腳墊 TPU防護腳架 防刮鏡頭保護 減震防滑 起落架保護套 螺絲固定版（細節圖 6）",
+      "alt": "DJI Avata 360 TPU 腳墊 V2｜四支長腳架＋12 顆 M2×10 螺絲｜鏡頭與機身保護（細節圖 6）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -104,14 +137,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

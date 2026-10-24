@@ -1,20 +1,44 @@
 {
   "id": "sp-26244191157",
   "slug": "betafpv-bt2-0-aquila16-6",
-  "name_zh": "BETAFPV BT2.0 公母轉接充電線🔌 Aquila16專用電池充電延長線 6口充電器配件 室內穿越機電池轉接線",
+  "name_zh": "BETAFPV BT2.0 公母轉接充電線｜Aquila16 電池延長線｜6 口充電器配件",
   "sku": null,
-  "brand": null,
+  "brand": "BETAFPV",
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "power-battery",
   "subcategory_id": "chargers",
-  "tags": [],
+  "tags": [
+    "BT2.0",
+    "充電線",
+    "Aquila16",
+    "BETAFPV",
+    "1S"
+  ],
   "compatible_sizes": [],
   "video_system": null,
-  "battery_cells": [],
-  "short_description": "",
-  "description": "•\t專為 BETAFPV Aquila16 系列電池設計，一端 BT2.0 公頭、一端 BT2.0 母頭，可直接接在原廠 6 口充電器與電池之間使用。\n•\t約手掌長度的柔軟線材，充電時電池可以平放、排排站，不會全部擠在充電器上方，更安全也更好散熱。\n•\t支援多條同時使用，最多可搭配 6 口充電器一次充 6 顆 Aquila16 電池，大幅節省等待時間。\n•\t線材粗細與焊點經過強化，長期插拔不易鬆脫，適合日常練機玩家高頻率使用。",
-  "specifications": [],
+  "battery_cells": [
+    "1S"
+  ],
+  "short_description": "BETAFPV BT2.0 公對母轉接線，接在原廠 6 口充電器與 Aquila16 電池之間，充電時電池可平放排開、方便散熱。",
+  "description": "BETAFPV BT2.0 公母轉接充電線，一端 BT2.0 公頭、一端 BT2.0 母頭，可接在原廠 6 口充電器與 Aquila16 等 BT2.0 電池之間使用。\n\n【產品特色】\n・約手掌長度的柔軟線材，充電時電池可平放排開，不會全部擠在充電器上方\n・可多條同時使用，搭配 6 口充電器一次充 6 顆電池\n・線材與焊點強化，適合頻繁插拔",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "BETAFPV",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "接頭",
+      "value": "BT2.0 公頭／BT2.0 母頭",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用",
+      "value": "BETAFPV Aquila16 電池、6 口充電器",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-26244191157/01.webp",
@@ -56,14 +80,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "標題含「適用／專用」：提到的品牌僅表示適用機型，不代表原廠授權；品牌欄位需人工填寫",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mkbv3ssmgiklf7",

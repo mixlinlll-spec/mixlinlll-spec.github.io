@@ -1,19 +1,25 @@
 {
   "id": "sp-45953383638",
   "slug": "dji-o4-air-unit-o3",
-  "name_zh": "DJI O4 Air Unit 轉 O3 孔位適配座 🔧 小O4 改 O3 Air Unit 尺寸 通用所有支援 O3",
+  "name_zh": "DJI O4 Air Unit 轉 O3 孔位適配座｜3D 列印｜適用 O3 安裝孔機架",
   "sku": null,
-  "brand": "DJI",
+  "brand": null,
   "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "video",
   "subcategory_id": "dji-o4",
-  "tags": [],
+  "tags": [
+    "DJI O4",
+    "O3 孔位",
+    "適配座",
+    "3D列印",
+    "改裝"
+  ],
   "compatible_sizes": [],
   "video_system": "DJI O4",
   "battery_cells": [],
-  "short_description": "",
-  "description": "DJI O4 Air Unit 適配座\nO4 轉 O3 Air Unit\nDJI O3 孔位 轉接座\n小O4 安裝適配器\nDJI O4 Air Unit 升級\nO3 Air Unit 機架支援\nFPV 視訊模組轉接座\n3D 列印 O4 適配座\n無人機 O4 改裝套件\nFPV 客製化配件\n\n⚠️ 務必備註顏色，未備註將隨機出貨，訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋，屬正常現象不影響使用\n\n想用小 O4 的畫質與低延遲，卻苦惱機架只有 DJI O3 Air Unit 孔位？這款 O4 Air Unit 專用適配座，將 O4 的本體尺寸轉換成 O3 Air Unit 的安裝規格，只要你的機架支援 O3 安裝孔位，就能直接鎖上 O4 Air Unit，免改碳板、免暴力鑽孔。🎥 透過 3D 列印一體成型結構，兼顧支撐強度與重量控制\n\n專為 DJI O4 Air Unit 尺寸設計，外側孔位對應 DJI O3 Air Unit 標準安裝孔（25.5×25.5 等常見規格）機架可用。📐\n可吻合市面上多數支援 O3 Air Unit 的機架，讓舊機架也能輕鬆升級至 O4 系統。\n3D 列印製作，可依需求微調高度、線材出口、綁扎空間，維持機身內部整潔與散熱。🛠️",
+  "short_description": "把 DJI O4 Air Unit 的安裝尺寸轉成 O3 Air Unit 孔位的 3D 列印適配座，讓支援 O3 安裝的機架不改碳板即可裝上 O4。",
+  "description": "想用 O4 Air Unit，但機架只有 DJI O3 Air Unit 的安裝孔位？這款適配座把 O4 的本體尺寸轉成 O3 Air Unit 的安裝規格，支援 O3 安裝孔位的機架就能直接鎖上 O4，不必改碳板或鑽孔。\n\n【產品特色】\n・外側孔位對應 DJI O3 Air Unit 常見安裝孔（如 25.5 × 25.5mm）\n・3D 列印一體成型，兼顧支撐強度與重量\n・可依需求調整高度、線材出口與綁紮空間\n\n【購買前請確認】\n・本商品僅為適配座，不含 DJI O4 Air Unit 與螺絲\n・請確認機架為 O3 Air Unit 安裝孔位，不確定時請透過 LINE 洽詢\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
   "specifications": [],
   "images": [
     {
@@ -56,13 +62,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

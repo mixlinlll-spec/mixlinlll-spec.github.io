@@ -1,20 +1,42 @@
 {
   "id": "sp-51704013273",
   "slug": "fpv-tinywhoop-betafpv",
-  "name_zh": "競速穿越機彈射底座🚀 FPV起飛架/展示架 Tinywhoop 起飛儀式感支架 / FPV 桌面展示架 BETAFPV",
+  "name_zh": "穿越機起飛彈射底座／桌面展示架｜Tinywhoop 與小型穿越機適用｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "起飛架",
+    "展示架",
+    "Tinywhoop",
+    "調參",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "⚠️ 務必備註顏色。訂製商品無法退貨\n⚠️ 3D 列印件可能有些微層紋屬正常現象\n\n每次起飛都從地上亂丟一台機、手指一勾就衝天，畫面是不是有點太隨便？😆\n這款「競速穿越機彈射底座」，專為 FPV 競速與花飛玩家設計，讓你在桌上、起飛區都有固定角度的起飛平台，順便當展示架與調參支架，一物多用。\n​\n產品特色：\n🧱 穩固三角結構：寬底座搭配蜂巢背板設計，受力平均不易翻倒，小機到中型機都能穩穩站好。\n🛫 起飛角度優化：傾斜角度模擬實戰飛行姿態，解鎖後直接油門推上去，比平地起飛更順、更安全。\n🔧 維修／調參超好用：把機子擺上底座，槳葉離桌面有高度，方便插電、接USB、看OSD或檢查馬達。\n不管是在家裡桌上調機、比賽場邊待命，還是拍照發IG，先把機子放上這個彈射底座，再武裝點電起飛，儀式感直接拉滿✨",
-  "specifications": [],
+  "short_description": "電翼動力 3D 列印穿越機起飛底座與桌面展示架，三角穩固結構，可當起飛平台、展示架與調參支架。",
+  "description": "一個底座三種用途：起飛平台、桌面展示架、調參支架。適合 Tinywhoop 與 2～3 吋小型機，部分輕量 4～5 吋機也可使用（尺寸請先確認）。\n\n【產品特色】\n・三角結構搭配寬底座與蜂巢背板，不易翻倒\n・傾斜角度起飛平台\n・機子放上後槳葉離桌面有高度，方便插電、接 USB、看 OSD 或檢查馬達\n\n【款式說明】\n・彈射底座\n・桌面展示架\n\n【安全提醒】\n・在底座上解鎖或起飛前，請確認周圍淨空，並確實拉開手與槳葉的距離\n\n【顏色與列印】\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・如需依個人需求另行設計（例如修改尺寸、孔位或雙色列印），請先透過 LINE 討論；客製款的費用、交期與退換條件會在訂購前說明。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "用途",
+      "value": "起飛平台／展示架／調參支架",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "適用",
+      "value": "Tinywhoop、2～3 吋小型機（部分輕量 4～5 吋機）",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-51704013273/01.webp",
@@ -103,14 +125,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

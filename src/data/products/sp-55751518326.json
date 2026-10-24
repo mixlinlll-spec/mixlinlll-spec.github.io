@@ -1,25 +1,51 @@
 {
   "id": "sp-55751518326",
   "slug": "dji-mini-4-pro-mini4",
-  "name_zh": "DJI Mini 4 Pro 救援掛勾｜無人機下掛引繩掛鉤｜空投救援・牽引輔助配件｜Mini4 Pro 下掛裝置",
+  "name_zh": "DJI Mini 4 Pro 下掛掛鉤｜輕量引繩、牽引輔助配件｜3D 列印",
   "sku": null,
   "brand": "電翼動力 EWP",
   "manufacturer_model": null,
   "seller_role": "ewp_original",
   "primary_category_id": "hardware-prints",
   "subcategory_id": "tpu-prints",
-  "tags": [],
+  "tags": [
+    "DJI Mini 4 Pro",
+    "掛鉤",
+    "空拍機配件",
+    "3D列印"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "專為 DJI Mini 4 Pro 設計的 救援用掛勾 / 引繩掛鉤，可安裝在機身下方，用於掛繩、牽引線、輕量救援用途。無需改機、無需拆殼，直接卡扣安裝即可使用，適合救援投遞、物品牽引、狹窄地形遞送等輕作業任務。\n\n產品特色\n✔ 專為 Mini 4 Pro 設計：完美貼合底部結構，穩固不掉落\n✔ 輕量化設計：不影響飛行性能與續航\n✔ 實用救援功能：可掛載細繩、輕小物品、救援線等\n\n適用用途\n✔ 牽引細繩\n✔ 投遞輕量物品（如救援繩索、信號物）\n✔ 特殊場景輕度救援任務（依當地法規使用）\n\n⚠ 注意事項：\n此掛勾僅適用「輕量用途」，請勿超載，請遵守飛行安全與法規。",
-  "specifications": [],
+  "short_description": "電翼動力為 DJI Mini 4 Pro 製作的下掛掛鉤，卡扣安裝在機身下方，可掛細繩等輕量物品；M3 螺母、M3×8 螺絲與配重塊需自備。",
+  "description": "電翼動力為 DJI Mini 4 Pro 設計的下掛掛鉤，安裝在機身下方，可用於掛細繩、牽引線等輕量用途；無需改機或拆殼。\n\n【產品特色】\n・依 Mini 4 Pro 底部結構製作\n・卡扣安裝\n・輕量化設計\n\n【需自備】\n・M3 螺母、M3×8mm 螺絲、配重塊\n\n【使用提醒】\n・僅適用輕量用途，請勿超載；掛載物品會影響飛行穩定與續航\n・投擲或掛載物品飛行請遵守民航法規與當地規定，勿在人群上方使用\n\n【顏色與列印】\n・可選顏色：透黃、螢光橘、螢光綠、冰淇淋、透黑、透明、白\n・顏色請於訂購時註明，未註明將依預設顏色或隨機出貨。從既有顏色中挑選不屬於客製化，仍適用七日鑑賞期等一般售後規定。\n・3D 列印件表面可能有細微層紋，屬列印製程特性。",
+  "specifications": [
+    {
+      "key": "適用機型",
+      "value": "DJI Mini 4 Pro",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "安裝方式",
+      "value": "卡扣",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "需自備",
+      "value": "M3 螺母、M3×8mm 螺絲、配重塊",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "製作方式",
+      "value": "3D 列印",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-55751518326/01.webp",
       "src_small": "/assets/img/products/sp-55751518326/01-480.webp",
-      "alt": "DJI Mini 4 Pro 救援掛勾｜無人機下掛引繩掛鉤｜空投救援・牽引輔助配件｜Mini4 Pro 下掛裝置（主圖）",
+      "alt": "DJI Mini 4 Pro 下掛掛鉤｜輕量引繩、牽引輔助配件｜3D 列印（主圖）",
       "width": 564,
       "height": 564,
       "rights": "licensed",
@@ -29,7 +55,7 @@
     {
       "src": "/assets/img/products/sp-55751518326/02.webp",
       "src_small": "/assets/img/products/sp-55751518326/02-480.webp",
-      "alt": "DJI Mini 4 Pro 救援掛勾｜無人機下掛引繩掛鉤｜空投救援・牽引輔助配件｜Mini4 Pro 下掛裝置（細節圖 1）",
+      "alt": "DJI Mini 4 Pro 下掛掛鉤｜輕量引繩、牽引輔助配件｜3D 列印（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +65,7 @@
     {
       "src": "/assets/img/products/sp-55751518326/03.webp",
       "src_small": "/assets/img/products/sp-55751518326/03-480.webp",
-      "alt": "DJI Mini 4 Pro 救援掛勾｜無人機下掛引繩掛鉤｜空投救援・牽引輔助配件｜Mini4 Pro 下掛裝置（細節圖 2）",
+      "alt": "DJI Mini 4 Pro 下掛掛鉤｜輕量引繩、牽引輔助配件｜3D 列印（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +75,7 @@
     {
       "src": "/assets/img/products/sp-55751518326/04.webp",
       "src_small": "/assets/img/products/sp-55751518326/04-480.webp",
-      "alt": "DJI Mini 4 Pro 救援掛勾｜無人機下掛引繩掛鉤｜空投救援・牽引輔助配件｜Mini4 Pro 下掛裝置（細節圖 3）",
+      "alt": "DJI Mini 4 Pro 下掛掛鉤｜輕量引繩、牽引輔助配件｜3D 列印（細節圖 3）",
       "width": 970,
       "height": 970,
       "rights": "licensed",
@@ -116,14 +142,15 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
       "seller_role 自動判為 EWP 自製，請確認",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [],
     "source_media": {

@@ -1,25 +1,52 @@
 {
   "id": "sp-46307451224",
   "slug": "ca381-one-2-0mm-pcb-fpv",
-  "name_zh": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器",
+  "name_zh": "MECHANIC 維修佬 CA381 吸錫帶｜2.0mm × 1.5m｜低殘渣",
   "sku": null,
-  "brand": "維修佬",
-  "manufacturer_model": null,
+  "brand": "MECHANIC 維修佬",
+  "manufacturer_model": "CA381",
   "seller_role": "retail",
   "primary_category_id": "tools",
   "subcategory_id": "soldering",
-  "tags": [],
+  "tags": [
+    "吸錫帶",
+    "除錫",
+    "PCB維修",
+    "焊接工具",
+    "維修佬"
+  ],
   "compatible_sizes": [],
   "video_system": null,
   "battery_cells": [],
-  "short_description": "",
-  "description": "•\t寬 2.0mm 長 1.5m，優質低殘渣樹脂芯，吸力強不留渣，快速清除焊錫，適合 FPV 電調、飛控、模組維修\n\n•\t日本製高純錫線材，柔軟易操作，不傷 PCB 焊盤，熱風槍或烙鐵一吸即淨，效率比普通吸錫帶高 3 倍。\n\n•\t適用手機、電腦主板、RC 航模電路板返修，穿越機維修必備，拆換電調、攝像頭、圖傳超順手。\n\n•\t單卷獨立包裝，維修佬入門首選，小體積便攜，場外修機不發愁。",
-  "specifications": [],
+  "short_description": "MECHANIC 維修佬 CA381 吸錫帶，寬 2.0mm、長 1.5m，低殘渣樹脂芯，適合飛控、電調等 PCB 除錫與返修。",
+  "description": "MECHANIC 維修佬 CA381 吸錫帶，用於清除焊盤上的焊錫，適合 FPV 電調、飛控與各類模組的維修。\n\n【產品特色】\n・寬 2.0mm、長 1.5m\n・低殘渣樹脂芯\n・線材柔軟，搭配烙鐵或熱風槍使用\n・單卷獨立包裝",
+  "specifications": [
+    {
+      "key": "品牌",
+      "value": "MECHANIC 維修佬",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "型號",
+      "value": "CA381",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "寬度",
+      "value": "2.0mm",
+      "source": "蝦皮商品說明"
+    },
+    {
+      "key": "長度",
+      "value": "1.5m",
+      "source": "蝦皮商品說明"
+    }
+  ],
   "images": [
     {
       "src": "/assets/img/products/sp-46307451224/01.webp",
       "src_small": "/assets/img/products/sp-46307451224/01-480.webp",
-      "alt": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器（主圖）",
+      "alt": "MECHANIC 維修佬 CA381 吸錫帶｜2.0mm × 1.5m｜低殘渣（主圖）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -29,7 +56,7 @@
     {
       "src": "/assets/img/products/sp-46307451224/02.webp",
       "src_small": "/assets/img/products/sp-46307451224/02-480.webp",
-      "alt": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器（細節圖 1）",
+      "alt": "MECHANIC 維修佬 CA381 吸錫帶｜2.0mm × 1.5m｜低殘渣（細節圖 1）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -39,7 +66,7 @@
     {
       "src": "/assets/img/products/sp-46307451224/03.webp",
       "src_small": "/assets/img/products/sp-46307451224/03-480.webp",
-      "alt": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器（細節圖 2）",
+      "alt": "MECHANIC 維修佬 CA381 吸錫帶｜2.0mm × 1.5m｜低殘渣（細節圖 2）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -49,7 +76,7 @@
     {
       "src": "/assets/img/products/sp-46307451224/04.webp",
       "src_small": "/assets/img/products/sp-46307451224/04-480.webp",
-      "alt": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器（細節圖 3）",
+      "alt": "MECHANIC 維修佬 CA381 吸錫帶｜2.0mm × 1.5m｜低殘渣（細節圖 3）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -59,7 +86,7 @@
     {
       "src": "/assets/img/products/sp-46307451224/05.webp",
       "src_small": "/assets/img/products/sp-46307451224/05-480.webp",
-      "alt": "CA381 ONE吸錫帶 2.0mm高效低殘渣吸錫線 電子PCB主板維修除錫帶 FPV穿越機返修神器（細節圖 4）",
+      "alt": "MECHANIC 維修佬 CA381 吸錫帶｜2.0mm × 1.5m｜低殘渣（細節圖 4）",
       "width": 1000,
       "height": 1000,
       "rights": "licensed",
@@ -76,13 +103,14 @@
   "line_inquiry_enabled": true,
   "featured": false,
   "published": true,
-  "updated_at": "2026-10-23",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
     "notes": [
       "由蝦皮匯出資料自動建立的草稿：分類、品牌、尺寸皆為自動判斷，公開前請逐項核對",
-      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態"
+      "需補：正式商品照片、short_description、規格表、售價策略、供貨狀態",
+      "2026-10-24 內容整理（SEO／文案／分類）：依 EWP 蝦皮商品說明與標題改寫，未新增來源以外的規格；交易與庫存欄位未變動"
     ],
     "source_image_urls": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lc-mm0kml0sj47418"
