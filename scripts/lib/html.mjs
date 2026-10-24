@@ -101,6 +101,7 @@ const NAV = [
   { href: '/batteries/', label: '電池專區', key: 'batteries' },
   { href: '/services/', label: '客製服務', key: 'services' },
   { href: '/fpv-help.html', label: '知識庫', key: 'knowledge' },
+  { href: '/journal/', label: 'EWP 專欄', key: 'journal' },
   { href: '/about/', label: '關於', key: 'about' },
   { href: '/contact/', label: '聯絡', key: 'contact' },
 ];
@@ -137,7 +138,6 @@ function mobileMenu(ctx) {
     <ul class="drawer-list">
       <li><details><summary>商品商城</summary><ul class="drawer-cats"><li><a href="/products/">所有商品</a></li>${cats}</ul></details></li>
       ${NAV.map(n => `<li><a href="${n.href}">${n.label}</a></li>`).join('')}
-      <li><a href="/journal/">最新消息</a></li>
     </ul>
     <div class="drawer-cta">${lineButton(ctx.site, 'LINE 詢價', 'btn btn-line btn-block')}</div>
   </div>`;
@@ -152,8 +152,6 @@ export function header(ctx, active) {
       <ul class="nav-list">
         <li class="has-mega"><a href="/products/"${active === 'products' ? ' aria-current="page"' : ''}>商品商城</a><button class="mega-toggle" type="button" aria-expanded="false" aria-controls="mega-products"><span class="sr-only">展開商品分類</span><span aria-hidden="true">▾</span></button></li>
         ${items}
-        <li class="has-more"><button class="more-toggle" type="button" aria-expanded="false" aria-controls="more-menu">更多 <span aria-hidden="true">▾</span></button>
-          <ul class="more-menu" id="more-menu" hidden><li><a href="/journal/">最新消息</a></li></ul></li>
       </ul>
     </nav>
     <div class="nav-actions">
@@ -184,7 +182,7 @@ export function footer(ctx) {
       <p>${esc(ctx.site.brand.motto)} ${esc(ctx.site.brand.tagline)}.</p>
     </div>
     <div><h2 class="footer-h">商品</h2><ul>${ctx.categories.slice(0, 6).map(c => `<li><a href="${url.category(c)}">${esc(c.name)}</a></li>`).join('')}<li><a href="/products/">所有商品</a></li></ul></div>
-    <div><h2 class="footer-h">EWP</h2><ul><li><a href="/builds/">自製機型</a></li><li><a href="/batteries/">電池專區</a></li><li><a href="/services/">客製服務</a></li><li><a href="/fpv-help.html">FPV 知識庫</a></li><li><a href="/journal/">最新消息</a></li><li><a href="/about/">關於 EWP</a></li></ul></div>
+    <div><h2 class="footer-h">EWP</h2><ul><li><a href="/builds/">自製機型</a></li><li><a href="/batteries/">電池專區</a></li><li><a href="/services/">客製服務</a></li><li><a href="/fpv-help.html">FPV 知識庫</a></li><li><a href="/journal/">EWP 專欄</a></li><li><a href="/about/">關於 EWP</a></li></ul></div>
     <div><h2 class="footer-h">聯絡</h2><ul>${contactLinks}<li><a href="/contact/">聯絡我們</a></li></ul></div>
   </div>
   <div class="wrap footer-row">
