@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.14.0（2026-10-24，首頁經銷品牌）
+
+- 首頁「型錄」區塊下方新增「經銷品牌」：GEPRC、KONKER 空氪、十安、MAD Components、FDI。Logo 統一為白色單色（`assets/img/brands/`），滑鼠移上去變亮；點選連到 `/products/?brand=…` 該品牌商品。
+- 新增或移除品牌：修改 `scripts/build.mjs` 的 `BRANDS`，第三欄必須和商品的 `brand` 欄位完全相同。
+
 ## v2.13.1（2026-10-24，圖傳教學加入實物照片）
 
 - 〈FPV 圖傳新手學堂〉VTX、鏡頭、天線章節加入實物照片（GEPRC RAD Mini、DJI O4 Air Unit、Foxeer Razer Nano、棒棒糖／信天翁／IPEX 天線），使用官網已上架商品的圖片，並連到對應商品頁。

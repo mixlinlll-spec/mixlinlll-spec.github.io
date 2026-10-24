@@ -96,6 +96,14 @@ const pageHead = (eyebrow, title, lead, crumbs) => `<div class="page-head wrap">
 const contactCta = (title = '還不確定怎麼選？', text = '告訴我們你的用途、預算與現有設備，一起把配置想清楚。') => `<section class="wrap cta-band"><div><h2>${esc(title)}</h2><p>${esc(text)}</p></div><div class="actions">${lineButton(site, 'LINE 詢價', 'btn btn-line')}${shopeeButton(site, '蝦皮賣場')}<a class="btn" href="/contact/">所有聯絡方式</a></div></section>`;
 
 // ---------- 首頁 ----------
+// 首頁「經銷品牌」：[圖檔名, 顯示名稱, 商品 brand 欄位值（用於 /products/?brand= 篩選）]；Logo 為白色單色 PNG，放在 assets/img/brands/
+const BRANDS = [
+  ['geprc', 'GEPRC', 'GEPRC'],
+  ['konker', 'KONKER 空氪', 'KONKER 空氪'],
+  ['shian', '十安 Shian mx', '十安 × 電翼動力'],
+  ['mad', 'MAD Components', 'MAD'],
+  ['fdi', 'FDI', 'FDI'],
+];
 function homePage() {
   const featuredBuilds = listedBuilds().filter(({ b }) => b.featured);
   const huan = builds.find(b => b.id === 'huan');
@@ -164,6 +172,10 @@ function homePage() {
 <section class="wrap">
   ${sectionHead('02 / CATALOG', '依你要買的東西找。', '<p>從 M2／M3 螺絲到七吋長航整機，依分類、品牌、尺寸與關鍵字快速篩選。</p>')}
   <ul class="cat-grid">${categories.map(c => `<li><a href="${url.category(c)}"><strong>${esc(c.name)}</strong><span>${esc(c.summary)}</span></a></li>`).join('')}</ul>
+</section>
+<section class="wrap brand-wall" aria-labelledby="brand-wall-title">
+  <div class="section-head"><div><p class="eyebrow">BRANDS WE CARRY</p><h2 id="brand-wall-title">經銷品牌</h2></div><p>點選品牌，查看電翼動力目前販售的商品。</p></div>
+  <ul class="brand-grid">${BRANDS.map(([file, name, brand]) => `<li><a href="/products/?brand=${encodeURIComponent(brand)}" aria-label="${attr(`查看 ${name} 商品`)}"><img class="b-${file}" src="/assets/img/brands/${file}.png" alt="${attr(name)}" loading="lazy" decoding="async"></a></li>`).join('')}</ul>
 </section>
 ${newest.length ? `<section class="wrap">${sectionHead('NEW', '新上架', '<p><a href="/products/">查看全部 →</a></p>')}${cardList(newest)}</section>` : ''}
 <section id="workshop" class="wrap workshop">
