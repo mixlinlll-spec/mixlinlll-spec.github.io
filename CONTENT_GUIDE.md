@@ -132,7 +132,7 @@ node scripts/approve-snapshot.mjs --all --prices --discount 4 --image-rights lic
 - 已發布商品不要改 `slug`；真的要改，請保留舊網址的轉址頁。
 
 
-## 最新消息文章
+## EWP 專欄文章（原「最新消息」）
 
 1. 圖片壓縮成 WebP（寬 1600px 以內、單張 300KB 以下），放到 `assets/img/journal/<slug>/`。影片上傳 YouTube，文章只填 `youtube_id`，**不要把影片檔放進 repo**。
 2. 新增 `src/data/journal/<slug>.md`（slug 只能小寫英數與 `-`，即網址 `/journal/<slug>/`，發布後不要改）：
@@ -141,7 +141,7 @@ node scripts/approve-snapshot.mjs --all --prices --discount 4 --image-rights lic
 ---
 title: 文章標題
 date: 2026-10-24
-category: 新品公告        # 建議：新品公告／技術實錄／飛行影片
+category: 新品公告        # 建議：新品公告／新手教學／技術實錄／飛行影片
 published: false          # true 才會公開
 summary: 列表與分享時顯示的 1–2 句摘要
 cover: /assets/img/journal/<slug>/00-cover.webp

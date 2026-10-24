@@ -1,4 +1,4 @@
-// 最新消息（EWP Journal）：src/data/journal/<slug>.md，一篇文章一個檔案。
+// EWP 專欄（原「最新消息」，EWP Journal）：src/data/journal/<slug>.md，一篇文章一個檔案。
 // 檔案開頭為 frontmatter（--- 之間的 key: value），內文為精簡 Markdown：
 //   ## 小標、段落、空行分段、- 項目清單、> 提醒框、**粗體**、[文字](連結)、![替代文字](/assets/img/journal/<slug>/xx.webp)
 // 內文不接受 HTML（一律轉義），避免文章內容破壞版面或插入腳本。影片只放 YouTube（youtube_id），不把影片檔放進 repo。

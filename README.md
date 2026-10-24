@@ -14,7 +14,7 @@ src/data/            ← 唯一資料來源（人改這裡）
   products/*.json    商品，一個商品一個檔案（預設 published=false 草稿）
   builds.json        EWP 自製機型
   services.json      服務頁內容
-  journal/*.md       最新消息文章（一篇一個檔案，寫法見 CONTENT_GUIDE.md）
+  journal/*.md       EWP 專欄文章（原「最新消息」）（一篇一個檔案，寫法見 CONTENT_GUIDE.md）
 src/templates/       CSV 匯入範本
 scripts/
   build.mjs          產生網站（驗證資料 → 輸出 HTML、sitemap、robots）

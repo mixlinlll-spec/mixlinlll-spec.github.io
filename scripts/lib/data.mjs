@@ -10,7 +10,7 @@ export const PRODUCTS_DIR = path.join(DATA_DIR, 'products');
 
 // 發布白名單：只有這些「手寫靜態檔」會被複製到發布產物（dist/）。
 // src/、scripts/、tests/、docs/、_preview/ 等永遠不會進入發布產物。
-export const STATIC_WHITELIST = ['assets', 'fpv-help.html', 'huan.png', 'legacy', '.nojekyll'];
+export const STATIC_WHITELIST = ['assets', 'fpv-help.html', 'huan.png', 'learn', 'legacy', '.nojekyll'];
 
 export const SELLER_ROLES = {
   ewp_original: 'EWP 自製',

@@ -543,7 +543,7 @@ ${bizBlock()}
 <div class="actions"><a class="btn" href="/">回到首頁</a><a class="btn" href="/products/">商品商城</a><a class="btn" href="/fpv-help.html">FPV 知識庫</a></div></section>` }));
 }
 
-// ---------- 最新消息 ----------
+// ---------- EWP 專欄（原「最新消息」，網址維持 /journal/） ----------
 // src/data/journal/*.md；正式版只產生 published=true 的文章，預覽版含草稿。依日期新到舊排列。
 const RELATED_LABEL = { '/products/': '商品商城', '/builds/': 'EWP 自製機型', '/services/': '技術與客製服務', '/batteries/': '電池專區', '/contact/': '聯絡我們', '/about/': '關於 EWP', '/fpv-help.html': 'FPV 知識庫' };
 function visibleJournal() {
@@ -552,7 +552,7 @@ function visibleJournal() {
 }
 function journalPages() {
   const posts = visibleJournal();
-  const crumbs = [{ name: '首頁', href: '/' }, { name: '最新消息' }];
+  const crumbs = [{ name: '首頁', href: '/' }, { name: 'EWP 專欄' }];
   const card = (p, i) => `<li class="journal-card${i === 0 ? ' is-lead' : ''}"><a href="${journalUrl(p)}">
   <div class="journal-media"><img src="${attr(p.cover)}" alt="${attr(p.cover_alt)}" ${i ? 'loading="lazy" ' : ''}decoding="async" width="1600" height="900"></div>
   <div class="journal-body"><p class="journal-meta"><span class="journal-cat">${esc(p.category)}</span><time datetime="${attr(p.date)}">${esc(formatDate(p.date))}</time></p>
@@ -561,11 +561,11 @@ function journalPages() {
   const list = posts.length
     ? `<section class="wrap"><ul class="journal-grid">${posts.map(card).join('')}</ul></section>`
     : `<section class="wrap"><div class="empty"><h2>目前還沒有文章</h2><p>第一篇內容準備中。想先看看作品，可以瀏覽自製機型或 FPV 知識庫。</p><div class="actions"><a class="btn" href="/builds/">EWP 自製機型</a><a class="btn" href="/fpv-help.html">FPV 知識庫</a></div></div></section>`;
-  page('journal/index.html', { title: '最新消息', description: '電翼動力 EWP 新品、實機展示、製作紀錄與官方公告。', path: '/journal/', active: 'journal',
-    body: `${pageHead('JOURNAL', '最新消息', '新品、實機展示、製作紀錄與官方公告。', breadcrumbs(crumbs))}\n${list}`, jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
+  page('journal/index.html', { title: 'EWP 專欄', description: '電翼動力 EWP 新品公告、FPV 教學、實機展示與製作紀錄。', path: '/journal/', active: 'journal',
+    body: `${pageHead('JOURNAL', 'EWP 專欄', '新品公告、FPV 教學、實機展示與製作紀錄。', breadcrumbs(crumbs))}\n${list}`, jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
 
   for (const p of posts) {
-    const c = [{ name: '首頁', href: '/' }, { name: '最新消息', href: '/journal/' }, { name: p.title }];
+    const c = [{ name: '首頁', href: '/' }, { name: 'EWP 專欄', href: '/journal/' }, { name: p.title }];
     const video = p.youtube_id ? `<div class="journal-video"><iframe src="https://www.youtube-nocookie.com/embed/${attr(p.youtube_id)}?rel=0" title="${attr(p.title)}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>` : '';
     const related = (p.related || []).filter(r => RELATED_LABEL[r]);
     const ld = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: p.title, description: p.summary, datePublished: p.date, image: BASE + p.cover,
@@ -578,7 +578,7 @@ function journalPages() {
 ${video}
 <div class="journal-prose">${p.html}</div>
 ${related.length ? `<nav class="journal-related" aria-label="相關頁面"><p class="eyebrow">RELATED</p><div class="actions">${related.map(r => `<a class="btn" href="${r}">${esc(RELATED_LABEL[r])}</a>`).join('')}</div></nav>` : ''}
-<p class="journal-back"><a href="/journal/">← 回到最新消息</a></p>
+<p class="journal-back"><a href="/journal/">← 回到 EWP 專欄</a></p>
 </article>
 ${contactCta()}` });
   }
@@ -588,7 +588,7 @@ ${contactCta()}` });
 function seoFiles() {
   if (DRAFTS) { write('robots.txt', 'User-agent: *\nDisallow: /\n'); return; }
   const urls = ['/', '/products/', ...categories.map(url.category), ...visible.map(url.product), '/builds/',
-    '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/about/', '/contact/', '/fpv-help.html',
+    '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/learn/lipo-battery/', '/about/', '/contact/', '/fpv-help.html',
     ...Object.entries(site.policies).filter(([, v]) => v.approved).map(([k]) => `/${k}/`)];
   const lastmod = p => p?.updated_at;
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => {
