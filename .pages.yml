@@ -44,9 +44,9 @@ content:
     view:
       layout: list
       primary: name_zh
-      fields: [name_zh, price_twd, availability, published]
+      fields: [name_zh, brand, price_twd, availability, published]
       search: [name_zh, brand, manufacturer_model, sku, id, shopee_item_id]
-      sort: [name_zh, price_twd]
+      sort: [name_zh, brand, price_twd]
       default:
         sort: name_zh
         order: asc
@@ -107,11 +107,6 @@ content:
             type: text
             required: true
     fields:
-      # ---- 識別（唯讀，不可修改）----
-      - { name: id, label: 商品 ID（不可修改）, type: string, readonly: true }
-      - { name: slug, label: 網址代稱（不可修改）, type: string, readonly: true }
-      - { name: shopee_item_id, label: 蝦皮商品 ID, type: string, readonly: true }
-
       # ---- 最常用 ----
       - name: name_zh
         label: 商品名稱
@@ -149,13 +144,38 @@ content:
         type: number
         options: { min: 1 }
 
+      # ---- 文字內容 ----
+      - name: short_description
+        label: 簡短介紹（1–2 句）
+        description: 顯示在商品名稱下方與搜尋結果，建議 40–80 字。
+        type: text
+      - name: description
+        label: 詳細說明
+        description: 寫法：單獨一行【產品特色】會變成小標題；每行用「・」開頭會變成清單；空一行分段。保固、七日鑑賞期不用寫，網站會自動顯示。
+        type: text
+      - name: specifications
+        label: 規格表
+        description: 每一列一個項目，例如 項目「容量」、內容「1520mAh」。
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{key}：{value}"
+        fields:
+          - { name: key, label: 項目, type: string, required: true }
+          - { name: value, label: 內容, type: string, required: true }
+          - { name: source, type: string, hidden: true }
+      - { name: tags, label: 標籤, type: string, list: true }
 
       # ---- 規格（各規格價格／庫存）----
       - name: variants
-        label: 規格
+        label: 規格選項（價格與供貨）
         description: 規格 ID（蝦皮規格 ID）不可修改。庫存數量屬機密，請到「EWP 庫存管理」修改；這裡用「供貨狀態」表示現貨／預購／缺貨。
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}｜NT$ {price_twd}"
         fields:
           - { name: name, label: 規格名稱, type: string, required: true }
           - { name: price_twd, label: 售價（新台幣）, type: number, options: { min: 1 } }
@@ -191,7 +211,10 @@ content:
         label: 商品照片
         description: 第一張為主圖，可拖曳排序。新上傳的照片儲存後會自動轉 WebP 並產生縮圖。
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "照片 {index}"
         fields:
           - { name: src, label: 照片, type: image, required: true, options: { media: products } }
           - { name: alt, label: 照片說明（給搜尋引擎與視障者，留空自動帶商品名）, type: string }
@@ -292,19 +315,6 @@ content:
             - { value: cleaning, label: 工具耗材｜清潔耗材 }
             - { value: organizers, label: 工具耗材｜整理工具 }
 
-      # ---- 文字內容 ----
-      - { name: short_description, label: 簡短介紹（1–2 句）, type: text }
-      - { name: description, label: 詳細說明, type: text }
-      - name: specifications
-        label: 規格表
-        type: object
-        list: true
-        fields:
-          - { name: key, label: 項目, type: string, required: true }
-          - { name: value, label: 內容, type: string, required: true }
-          - { name: source, type: string, hidden: true }
-      - { name: tags, label: 標籤, type: string, list: true }
-
       # ---- 顯示設定 ----
       - { name: featured, label: 精選（列表排前面）, type: boolean }
       - { name: line_inquiry_enabled, label: 顯示 LINE 詢問按鈕, type: boolean }
@@ -315,3 +325,8 @@ content:
           values:
             - { value: line, label: LINE 詢問 }
             - { value: shopee, label: 蝦皮購買 }
+
+      # ---- 識別（唯讀，放最下面）----
+      - { name: id, label: 商品 ID（不可修改）, type: string, readonly: true }
+      - { name: slug, label: 網址代稱（不可修改）, type: string, readonly: true }
+      - { name: shopee_item_id, label: 蝦皮商品 ID, type: string, readonly: true }
