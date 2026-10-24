@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>FPV 圖傳新手學堂：類比與數位差異｜電翼動力 EWP</title>
+<meta name="description" content="FPV 圖傳新手教學：類比與數位差在哪、DJI O4／O4 Pro、Walksnail、HDZero 規格比較，VTX、鏡頭與天線怎麼選，附訊號模擬器與圖傳系統選擇分支圖。">
+<link rel="canonical" href="https://www.ewpfpv.com/learn/fpv-video/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FPV 圖傳新手學堂｜電翼動力 EWP">
+<meta property="og:description" content="類比和數位到底差在哪？VTX、鏡頭、天線一次講清楚，用分支圖找出適合你的圖傳系統。">
+<meta property="og:url" content="https://www.ewpfpv.com/learn/fpv-video/">
+<meta property="og:image" content="https://www.ewpfpv.com/assets/img/journal/fpv-video-basics/00-cover.webp">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+
+/* Layout: 單欄閱讀軸＋黏頂章節導覽；每章 = 一句結論＋重點＋可操作的小工具。延用電翼動力官網深色系。 */
+:root{
+  --bg:#101113; --panel:#191b1e; --panel-2:#202327; --line:#36383d;
+  --text:#f5f4f0; --muted:#b1b1b4; --red:#ff4a3d; --sand:#d3c1a4;
+  --ok:#7fd49a; --warn:#e9c46a; --bad:#ff6b5e;
+  --f-display:"Chakra Petch","Noto Sans TC",Arial,sans-serif;
+  --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--text);font-family:var(--f-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+.wrap{max-width:880px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--red)}
+:focus-visible{outline:2px solid var(--sand);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;line-height:1.3;margin:0}
+p{margin:0}
+.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+
+/* hero */
+.hero{padding-block:40px 32px;border-bottom:1px solid var(--line);background:
+  linear-gradient(135deg,transparent 0 62%,rgba(255,74,61,.07) 62% 64%,transparent 64%),var(--bg)}
+.brandrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brandrow img.ewp{height:76px;width:auto;mix-blend-mode:lighten}
+.brandrow .tag{font-family:var(--f-display);font-size:12px;letter-spacing:.18em;color:var(--muted);border:1px solid var(--line);padding:3px 10px;border-radius:2px}
+.hero h1{font-family:var(--f-body);font-weight:900;font-size:clamp(30px,6vw,48px);margin-top:28px;letter-spacing:.01em}
+.hero h1 em{font-style:normal;color:var(--red);font-family:var(--f-display);font-weight:700}
+.hero .lede{color:var(--muted);max-width:60ch;margin-top:12px;font-size:17px}
+.cellstrip{display:flex;gap:6px;margin-top:26px;flex-wrap:wrap}
+.cellstrip span{font-family:var(--f-mono);font-size:12px;padding:6px 10px;background:var(--panel);border:1px solid var(--line);color:var(--sand)}
+.cellstrip b{color:var(--text);font-weight:600}
+
+/* nav */
+nav.toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(16,17,19,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-block:10px}
+nav.toc .wrap::-webkit-scrollbar{display:none}
+nav.toc a{flex:none;color:var(--muted);text-decoration:none;font-size:14px;padding:5px 11px;border-radius:2px;white-space:nowrap}
+nav.toc a:hover,nav.toc a.on{color:var(--text);background:var(--panel-2)}
+nav.toc a .n{font-family:var(--f-mono);color:var(--red);margin-right:4px;font-size:12px}
+
+/* chapters */
+section.ch{padding-block:56px 8px}
+.chhead{display:flex;align-items:baseline;gap:14px;margin-bottom:6px}
+.chhead .n{font-family:var(--f-display);font-weight:700;color:var(--red);font-size:15px;letter-spacing:.1em}
+.chhead h2{font-size:clamp(23px,4vw,30px);font-weight:900}
+.thesis{font-size:18px;color:var(--sand);margin:10px 0 22px;max-width:62ch}
+.body{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+.body>p,.body>ul,.body>ol,.body>h3{max-width:68ch}
+.body ul{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.body li::marker{color:var(--red)}
+h3{font-size:18px;font-weight:700;margin-top:10px}
+.muted{color:var(--muted)}
+
+/* alert */
+.alert{border:1px solid rgba(255,74,61,.55);background:rgba(255,74,61,.08);padding:14px 16px;border-radius:3px;display:grid;gap:4px}
+.alert strong{color:var(--red);font-family:var(--f-display);letter-spacing:.06em}
+.note{border:1px solid var(--line);background:var(--panel);padding:14px 16px;border-radius:3px}
+
+/* label anatomy */
+.label{background:#1a1612;border:1px solid #4a3f30;border-radius:6px;padding:18px;display:grid;gap:12px;font-family:var(--f-mono)}
+.label .row{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px dashed var(--sand);color:var(--text);padding:6px 10px;border-radius:3px;cursor:pointer;background:transparent;font:inherit;font-size:15px}
+.chip[aria-pressed="true"]{background:var(--sand);color:#17130e;border-style:solid}
+.labelout{font-family:var(--f-body);font-size:15px;color:var(--text);min-height:3.5em}
+.labelout b{color:var(--sand)}
+
+/* tools */
+.tool{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:20px;display:grid;gap:16px;max-width:none}
+.tool h3{margin:0;font-family:var(--f-display);font-size:15px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.tool h3 b{color:var(--text);font-family:var(--f-body);letter-spacing:0;font-size:17px;text-transform:none;margin-left:6px}
+.controls{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:end}
+.field{display:grid;gap:6px;min-width:0}
+.field label{font-size:13px;color:var(--muted)}
+.seg{display:flex;flex-wrap:wrap;gap:4px}
+.seg button{font-family:var(--f-mono);font-size:14px;background:var(--panel-2);color:var(--muted);border:1px solid var(--line);padding:7px 12px;border-radius:2px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+input[type=number]{font-family:var(--f-mono);font-size:16px;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:2px;padding:7px 10px;width:130px}
+.toggle{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);cursor:pointer}
+.toggle input{accent-color:var(--red);width:16px;height:16px}
+
+/* voltage gauge */
+.gauge{position:relative;padding-top:6px}
+.bar{height:16px;border-radius:2px;background:linear-gradient(90deg,#5a1d19 0%,var(--bad) 14%,var(--warn) 32%,var(--ok) 52%,var(--ok) 86%,#c7e8d1 100%);position:relative}
+.ticks{position:relative;height:74px;margin-top:4px}
+.tick{position:absolute;top:0;transform:translateX(-50%);display:grid;justify-items:center;gap:1px;text-align:center;width:70px}
+.tick::before{content:"";width:1px;height:10px;background:var(--text)}
+.tick .v{font-family:var(--f-mono);font-size:13px;font-weight:600}
+.tick .l{font-size:11.5px;color:var(--muted);line-height:1.3}
+.tick.alt{top:34px}
+.tick.alt::before{height:44px;margin-top:-34px}
+.vtable-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;color:var(--muted);font-weight:500;letter-spacing:.04em}
+td.num{white-space:nowrap}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;vertical-align:middle}
+
+/* result chips */
+.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.res{background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:12px 14px;display:grid;gap:2px}
+.res .k{font-size:12.5px;color:var(--muted)}
+.res .v{font-family:var(--f-mono);font-size:24px;font-weight:600;font-variant-numeric:tabular-nums}
+.res .v small{font-size:13px;color:var(--muted);margin-left:3px;font-weight:400}
+.verdict{border-radius:3px;padding:12px 14px;font-size:15px;border:1px solid}
+.verdict.ok{border-color:rgba(127,212,154,.5);background:rgba(127,212,154,.08)}
+.verdict.warn{border-color:rgba(233,196,106,.5);background:rgba(233,196,106,.08)}
+.verdict.bad{border-color:rgba(255,107,94,.6);background:rgba(255,107,94,.1)}
+.verdict b{font-family:var(--f-display);letter-spacing:.06em}
+.verdict.ok b{color:var(--ok)} .verdict.warn b{color:var(--warn)} .verdict.bad b{color:var(--bad)}
+
+/* sizing grid */
+.sizes{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.size{border:1px solid var(--line);padding:14px;border-radius:3px;display:grid;gap:4px;align-content:start}
+.size .t{font-family:var(--f-display);font-weight:700;font-size:17px}
+.size .s{font-family:var(--f-mono);color:var(--sand);font-size:14px}
+.size .d{font-size:14px;color:var(--muted)}
+
+/* compare */
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:560px){.cmp{grid-template-columns:1fr}}
+.cmp .c{border:1px solid var(--line);border-radius:3px;padding:16px;display:grid;gap:8px;align-content:start}
+.cmp .c h4{margin:0;font-family:var(--f-display);font-size:18px}
+.cmp .c ul{margin:0;padding-left:1.1em;font-size:15px;display:grid;gap:4px}
+
+/* checker */
+.checks{display:grid;gap:8px}
+.checks label{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid var(--line);border-radius:3px;cursor:pointer;font-size:15px;background:var(--bg)}
+.checks input{accent-color:var(--red);margin-top:5px;width:16px;height:16px;flex:none}
+.checks .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;padding:2px 7px;border-radius:2px;flex:none;align-self:center}
+.sev.hi{background:rgba(255,107,94,.18);color:var(--bad)} .sev.md{background:rgba(233,196,106,.16);color:var(--warn)}
+
+/* steps (real sequence) */
+ol.steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:s}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}
+ol.steps li::before{content:counter(s);font-family:var(--f-display);font-weight:700;color:var(--bg);background:var(--sand);width:28px;height:28px;display:grid;place-items:center;border-radius:2px;margin-top:2px}
+
+/* mistakes */
+.mist{display:grid;gap:0;border-top:1px solid var(--line)}
+.mist div{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.mist .x{color:var(--muted)} .mist .x::before{content:"✕ ";color:var(--bad);font-weight:700}
+.mist .o::before{content:"✓ ";color:var(--ok);font-weight:700}
+@media (max-width:560px){.mist div{grid-template-columns:1fr;gap:4px}}
+
+/* quiz */
+.q{display:grid;gap:8px;padding-block:6px}
+.q p{font-weight:700}
+.opts{display:flex;flex-wrap:wrap;gap:6px}
+.opts button{font:inherit;font-size:15px;background:var(--bg);color:var(--text);border:1px solid var(--line);padding:7px 12px;border-radius:2px;cursor:pointer}
+.opts button.right{border-color:var(--ok);background:rgba(127,212,154,.12)}
+.opts button.wrong{border-color:var(--bad);background:rgba(255,107,94,.1)}
+.q .why{font-size:14px;color:var(--muted)}
+
+/* cheat sheet */
+.cheat{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.cheat div{background:var(--panel);padding:14px 16px;display:grid;gap:2px}
+.cheat .k{font-size:13px;color:var(--muted)}
+.cheat .v{font-family:var(--f-mono);font-size:20px;font-weight:600;color:var(--text)}
+.cheat .v.r{color:var(--red)}
+
+footer{margin-top:64px;border-top:1px solid var(--line);padding-block:32px 48px}
+footer .wrap{display:grid;gap:14px}
+.foot-brand{display:flex;align-items:center;gap:12px}
+.foot-brand img{height:28px;width:auto}
+.foot-brand span{font-family:var(--f-display);letter-spacing:.14em;font-size:13px;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:8px}
+.cta a{text-decoration:none;font-size:15px;padding:9px 16px;border-radius:2px;border:1px solid var(--line);color:var(--text)}
+.cta a.p{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}
+.disclaimer{font-size:13px;color:var(--muted);max-width:70ch}
+
+figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:14px 14px 10px}
+.fig .sc{overflow-x:auto}
+.fig svg{display:block;width:100%;min-width:600px;height:auto}
+.fig text{fill:var(--text);font-family:var(--f-body);font-size:15px}
+.fig text.m{fill:var(--muted);font-size:13px}
+.fig text.mono{font-family:var(--f-mono)}
+.fig text.s{fill:var(--sand)} .fig text.ok{fill:var(--ok)} .fig text.bad{fill:var(--bad)} .fig text.r{fill:var(--red)}
+.fig .ln{stroke:var(--muted);stroke-width:1;fill:none;stroke-dasharray:3 3}
+.fig figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+
+/* ---- VTX 篇專用 ---- */
+:root{--analog:#e9c46a;--digital:#5fb7ff}
+.tag-a{color:var(--analog)} .tag-d{color:var(--digital)}
+.sim{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:640px){.sim{grid-template-columns:1fr}}
+.screen{display:grid;gap:6px;min-width:0}
+.screen .cap{display:flex;justify-content:space-between;font-size:14px}
+.screen .cap b{font-family:var(--f-display);letter-spacing:.08em}
+.screen canvas{width:100%;height:auto;aspect-ratio:4/3;background:#000;border:1px solid var(--line);border-radius:3px;display:block}
+.screen .st{font-size:13px;color:var(--muted);min-height:2.6em}
+.range{display:grid;gap:6px}
+.range .row{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+input[type=range]{width:100%;accent-color:var(--red)}
+.latbar{display:grid;gap:10px}
+.lb{display:grid;grid-template-columns:150px 1fr 70px;gap:10px;align-items:center;font-size:14px}
+@media (max-width:520px){.lb{grid-template-columns:96px 1fr 56px;font-size:13px}}
+.lb .track{height:14px;background:var(--bg);border:1px solid var(--line);border-radius:2px;position:relative}
+.lb .fill{position:absolute;inset:0 auto 0 0;border-radius:1px}
+.lb .val{font-family:var(--f-mono);text-align:right;font-variant-numeric:tabular-nums}
+.tree-svg{overflow-x:auto}
+.tree-svg svg{display:block;width:100%;min-width:680px;height:auto}
+.tree-svg text{font-family:var(--f-body);font-size:13px;fill:var(--muted)}
+.tree-svg .node rect{fill:var(--bg);stroke:var(--line)}
+.tree-svg .node.on rect{fill:rgba(255,74,61,.14);stroke:var(--red)}
+.tree-svg .node.on text{fill:var(--text);font-weight:700}
+.tree-svg path.edge{stroke:var(--line);stroke-width:1.2;fill:none}
+.tree-svg path.edge.on{stroke:var(--red);stroke-width:2.5}
+.tree-svg .col-h{fill:var(--sand);font-family:var(--f-display);font-size:12px;letter-spacing:.14em}
+.qrow{display:grid;gap:6px}
+.qrow .ql{font-size:14px;color:var(--muted)}
+.rec{border:1px solid var(--red);background:rgba(255,74,61,.07);border-radius:4px;padding:16px 18px;display:grid;gap:8px}
+.rec .pill{justify-self:start}
+.rec .name{font-family:var(--f-display);font-weight:700;font-size:24px}
+.rec .why{font-size:15px}
+.rec ul{margin:0;padding-left:1.1em;font-size:15px;display:grid;gap:3px}
+.rec .alt{font-size:14px;color:var(--muted)}
+.pill{display:inline-block;font-family:var(--f-mono);font-size:12px;padding:2px 8px;border-radius:2px;border:1px solid var(--line);color:var(--muted);margin-right:6px}
+td .a{color:var(--analog)} td .d{color:var(--digital)}
+.cmp4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.cmp4 .c{border:1px solid var(--line);border-radius:3px;padding:14px;display:grid;gap:6px;align-content:start}
+.cmp4 .c h4{margin:0;font-family:var(--f-display);font-size:17px}
+.cmp4 .c p{font-size:14px;color:var(--muted)}
+.sitebar{border-bottom:1px solid var(--line);background:var(--bg)}
+.sitebar .wrap{display:flex;justify-content:space-between;gap:12px;padding-block:10px;font-size:14px}
+.sitebar a{color:var(--muted);text-decoration:none}.sitebar a:hover{color:var(--text)}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="wrap"><a href="/">← 電翼動力官網</a><a href="/journal/">EWP 專欄</a></div></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brandrow">
+      <img class="ewp" src="data:image/webp;base64,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" alt="EWP 電翼動力 FPV LAB">
+      <span class="tag">FPV SCHOOL · 02</span>
+    </div>
+    <h1>FPV <em>圖傳</em>新手學堂</h1>
+    <p class="lede">類比和數位到底差在哪？從 VTX、鏡頭到天線一次講清楚，最後用選擇分支圖，幫你找出適合自己的圖傳系統。</p>
+    <div class="cellstrip" aria-label="本篇比較的系統">
+      <span class="tag-a">類比 <b>Analog</b></span><span class="tag-d">DJI <b>O4 / O4 Pro</b></span><span class="tag-d">Walksnail <b>Avatar</b></span><span class="tag-d">HDZero</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="章節">
+  <div class="wrap" id="toc">
+    <a href="#chain"><span class="n">01</span>圖傳在做什麼</a>
+    <a href="#sim"><span class="n">02</span>畫面差別</a>
+    <a href="#spec"><span class="n">03</span>規格比較</a>
+    <a href="#vtx"><span class="n">04</span>VTX</a>
+    <a href="#cam"><span class="n">05</span>鏡頭</a>
+    <a href="#ant"><span class="n">06</span>天線</a>
+    <a href="#pick"><span class="n">07</span>選擇分支圖</a>
+    <a href="#faq"><span class="n">08</span>常見錯誤</a>
+    <a href="#quiz"><span class="n">09</span>小測驗</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section class="ch" id="chain">
+  <div class="chhead"><span class="n">01</span><h2>圖傳在做什麼</h2></div>
+  <p class="thesis">圖傳就是把飛機上鏡頭看到的畫面，即時用無線電送到你的眼鏡。類比和數位走的是同一條路，差別在「中間怎麼處理畫面」。</p>
+  <div class="body">
+    <figure class="fig"><div class="sc"><svg viewBox="0 0 760 300" role="img" aria-label="類比與數位圖傳訊號流程">
+      <text x="0" y="22" class="s" style="font-family:var(--f-display);letter-spacing:.12em;font-size:13px">ANALOG 類比</text>
+      <g id="chainA"></g>
+      <text x="0" y="172" style="fill:var(--digital);font-family:var(--f-display);letter-spacing:.12em;font-size:13px">DIGITAL 數位</text>
+      <g id="chainD"></g>
+    </svg></div><figcaption>示意圖：上排是類比，下排是數位。數位系統的鏡頭和 VTX 是一套的，而且眼鏡會回傳訊號給飛機（雙向）。</figcaption></figure>
+    <div class="cmp">
+      <div class="c"><h4 class="tag-a">類比</h4><ul>
+        <li>鏡頭輸出影像訊號，VTX 直接調變發射，<b>不壓縮</b></li>
+        <li>OSD（電壓、時間）由飛控疊加在畫面上</li>
+        <li>訊號變差時畫面出現雜訊、雪花，但通常還看得到</li>
+        <li>鏡頭、VTX、眼鏡可以混搭不同品牌</li>
+      </ul></div>
+      <div class="c"><h4 class="tag-d">數位</h4><ul>
+        <li>畫面先<b>壓縮編碼</b>，再用數位方式傳送，畫質高很多</li>
+        <li>OSD 由飛控透過 UART 傳給圖傳（MSP DisplayPort）</li>
+        <li>訊號變差時先降畫質，太差會卡頓、凍結或中斷</li>
+        <li>鏡頭、VTX、眼鏡必須同一個系統</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="sim">
+  <div class="chhead"><span class="n">02</span><h2>訊號變差時，畫面差在哪</h2></div>
+  <p class="thesis">這是最容易理解的差別。拉動下面的訊號強度，看看飛遠或穿過障礙物時，兩種系統的畫面會怎麼變化。</p>
+  <div class="body">
+    <div class="tool">
+      <h3>SIM<b>訊號模擬器</b></h3>
+      <div class="sim">
+        <div class="screen"><div class="cap"><b class="tag-a">ANALOG 類比</b><span class="num" id="aPct">100%</span></div><canvas id="cvA" width="320" height="240"></canvas><p class="st" id="aSt"></p></div>
+        <div class="screen"><div class="cap"><b class="tag-d">DIGITAL 數位</b><span class="num" id="dPct">100%</span></div><canvas id="cvD" width="320" height="240"></canvas><p class="st" id="dSt"></p></div>
+      </div>
+      <div class="range">
+        <label for="sig" class="row"><span>訊號強度</span><span>拉到左邊＝飛很遠或被遮住</span></label>
+        <input type="range" id="sig" min="0" max="100" value="100">
+        <div class="row"><span>斷訊</span><span>極近距離</span></div>
+      </div>
+      <p class="muted" style="font-size:14px">模擬示意，用來說明「變差的方式」，不代表實際距離。實際表現依天線、環境、功率與系統型號而不同。</p>
+    </div>
+    <div class="note"><b>重點：</b>類比是「慢慢變花」，你會有時間反應、轉頭回來；數位是「清楚到最後一刻才突然卡住」。所以數位飛遠時，要更注意訊號強度的 OSD 數字，不要等畫面卡住才回頭。</div>
+  </div>
+</section>
+
+<section class="ch" id="spec">
+  <div class="chhead"><span class="n">03</span><h2>規格比較</h2></div>
+  <p class="thesis">沒有最好的系統，只有最適合你用途的系統。先看大方向，第 07 章再幫你選。</p>
+  <div class="body">
+    <div class="vtable-wrap"><table>
+      <thead><tr><th></th><th>類比</th><th>DJI O4</th><th>DJI O4 Pro</th><th>Walksnail Avatar</th><th>HDZero</th></tr></thead>
+      <tbody>
+        <tr><td>畫質</td><td>標準畫質，較模糊</td><td>高畫質</td><td>最清楚</td><td>高畫質</td><td>介於類比與 DJI 之間</td></tr>
+        <tr><td>官方最低延遲</td><td>極低</td><td class="num">20ms</td><td class="num">15ms</td><td class="num">約 32ms</td><td class="num">&lt;3ms</td></tr>
+        <tr><td>機上錄影</td><td>無（另掛相機或眼鏡錄）</td><td>4K60，內建 23GB</td><td>4K120，可插 microSD</td><td>依 VTX 型號</td><td>眼鏡端錄影為主</td></tr>
+        <tr><td>VTX＋鏡頭重量</td><td>輕，依型號</td><td class="num">約 8.2g</td><td class="num">約 32g</td><td>依型號</td><td>依型號</td></tr>
+        <tr><td>供電範圍</td><td>依 VTX 型號</td><td class="num">3.7–13.2V</td><td class="num">7.4–26.4V</td><td>依型號</td><td>依型號</td></tr>
+        <tr><td>斷訊方式</td><td>漸漸變花</td><td>降畫質→卡頓</td><td>降畫質→卡頓</td><td>降畫質→卡頓</td><td>漸漸變花（像類比）</td></tr>
+        <tr><td>可混搭</td><td>各品牌通用</td><td colspan="2">只能用 DJI 眼鏡</td><td>只能用 Walksnail 眼鏡</td><td>HDZero 眼鏡，可兼收類比</td></tr>
+        <tr><td>整套花費</td><td class="num">$</td><td class="num">$$$</td><td class="num">$$$$</td><td class="num">$$$</td><td class="num">$$$</td></tr>
+      </tbody>
+    </table></div>
+    <p class="muted" style="font-size:14px">DJI 數據取自 DJI 官網規格（延遲為 Goggles 3、1080p/100fps 模式）；Walksnail 為 Goggles L 官方標示；HDZero 為 Goggles 2 官方標示。各家測試條件不同，僅供大方向參考。「DJI O4」官方名稱為 O4 Air Unit，台灣玩家常稱 O4 Lite。</p>
+
+    <div class="tool">
+      <h3>CHART<b>官方標示最低延遲（越短越好）</b></h3>
+      <div class="latbar" id="latbar"></div>
+      <p class="muted" style="font-size:14px">類比沒有官方統一數字，延遲取決於鏡頭和眼鏡，一般被視為最低延遲的選擇，所以這裡不畫長條。對一般花飛來說，20ms 左右已經很難感覺；競速選手才會在意幾毫秒的差距。</p>
+    </div>
+    <div class="alert"><strong>⚠ O4 供電範圍</strong><span>DJI O4 Air Unit（O4 Lite）官方供電只到 13.2V，4S 滿電是 16.8V、6S 是 25.2V，<b>不能直接接 4S 或 6S 電源</b>，要從飛控的 BEC（例如 9V 或 10V 輸出）供電。O4 Pro 則支援 2S–6S。接線前先確認飛控 BEC 規格。</span></div>
+  </div>
+</section>
+
+<section class="ch" id="vtx">
+  <div class="chhead"><span class="n">04</span><h2>VTX 圖傳發射器</h2></div>
+  <p class="thesis">VTX 負責把畫面變成無線電發射出去。類比要自己挑 VTX，數位的 VTX 通常和鏡頭綁在一起賣。</p>
+  <div class="body">
+    <h3>類比 VTX 要看的規格</h3>
+    <ul>
+      <li><b>功率（mW）</b>：常見 25／200／400／800mW 等可切換。功率越大飛越遠，但也越熱、越耗電。</li>
+      <li><b>頻道</b>：5.8GHz 分成多個頻段與頻道，一起飛的朋友要錯開頻道，不然會互相干擾。</li>
+      <li><b>控制協定</b>：SmartAudio 或 Tramp。接到飛控後，可以用遙控器或 OSD 選單改頻道與功率，不用拆機按按鈕。</li>
+      <li><b>Pit Mode（維修模式）</b>：上電時幾乎不發射，在場邊調機時不會干擾別人。</li>
+      <li><b>天線接頭</b>：MMCX、U.FL（IPEX）、SMA，要和你的天線一致。</li>
+    </ul>
+    <h3>數位 VTX（Air Unit）</h3>
+    <ul>
+      <li>鏡頭、發射器、錄影功能是同一套，鏡頭通常只能用同系統的。</li>
+      <li>需要接飛控的 UART，才能顯示 OSD、用遙控器控制錄影等功能。</li>
+      <li>運作時很燙，桌上測試不要放太久，最好有風扇或在飛行時才長時間開機。</li>
+    </ul>
+    <div class="alert"><strong>⚠ 沒接天線不要通電</strong><span>不論類比或數位，VTX 沒裝天線就通電發射，發射功率無處可去，可能直接燒壞 VTX。上電前先確認天線鎖好。</span></div>
+    <div class="note"><b>法規提醒：</b>VTX 和數位圖傳都是無線電發射設備，在台灣使用與販售涉及 NCC 相關規定。功率與頻段請依法規使用；本頁不構成法律意見。</div>
+  </div>
+</section>
+
+<section class="ch" id="cam">
+  <div class="chhead"><span class="n">05</span><h2>鏡頭</h2></div>
+  <p class="thesis">類比鏡頭可以自由挑，重點是尺寸、視角和畫面比例；數位鏡頭跟著系統走，選系統就等於選鏡頭。</p>
+  <div class="body">
+    <figure class="fig"><div class="sc"><svg viewBox="0 0 760 250" role="img" aria-label="類比鏡頭尺寸比較" id="camSizes"></svg></div><figcaption>示意圖：常見類比鏡頭寬度，約略依實際比例。機架上的鏡頭座要和鏡頭尺寸一致。</figcaption></figure>
+    <ul>
+      <li><b>尺寸</b>：19mm（Micro）常見於 5 吋；14mm（Nano）和 12mm 常見於 3 吋以下小機。</li>
+      <li><b>視角（FOV）</b>：鏡片焦距越短，看到越廣，但邊緣會更彎曲。新手通常選廣角比較好判斷周圍環境。</li>
+      <li><b>畫面比例</b>：4:3 或 16:9，要和眼鏡設定一致，不然畫面會被拉長或壓扁。</li>
+      <li><b>寬動態（WDR）</b>：穿過樹林、從暗處飛向天空時，寬動態好的鏡頭比較不會一片黑或一片白。</li>
+      <li><b>鏡頭角度</b>：飛得越快，鏡頭要往上仰越多。新手常見 20–30 度，之後再依飛行風格調整。</li>
+    </ul>
+    <div class="note"><b>類比畫面有橫紋或雜訊？</b>常見原因是供電雜訊。可以嘗試由 VTX 的 5V 輸出供電給鏡頭，並確認所有設備共地；但要先確認 VTX 的 5V 輸出電流足夠。若仍無法解決，歡迎用 LINE 傳影片給我們判斷。</div>
+  </div>
+</section>
+
+<section class="ch" id="ant">
+  <div class="chhead"><span class="n">06</span><h2>天線</h2></div>
+  <p class="thesis">天線是最便宜、最常被忽略、效果卻最明顯的升級。記住三件事：極化方向要一樣、全向和定向的差別、接頭要對。</p>
+  <div class="body">
+    <h3>極化方向：飛機和眼鏡要一致</h3>
+    <figure class="fig"><div class="sc"><svg viewBox="0 0 760 230" role="img" aria-label="天線極化方向搭配示意圖" id="polar"></svg></div><figcaption>示意圖：圓極化天線分成右旋（RHCP）和左旋（LHCP），飛機和眼鏡要用同一種。</figcaption></figure>
+    <ul>
+      <li>天線上通常會標示 <b>RHCP</b> 或 <b>LHCP</b>。兩端旋向相反，訊號會大幅衰減，畫面很快就花掉。</li>
+      <li>小型 Whoop 常用的線性天線（一根直線），配圓極化眼鏡天線還可以飛，但訊號會比同極化差一些。</li>
+    </ul>
+    <h3>全向天線 vs 定向天線</h3>
+    <figure class="fig"><div class="sc"><svg viewBox="0 0 760 240" role="img" aria-label="全向與定向天線覆蓋範圍示意圖" id="pattern"></svg></div><figcaption>示意圖（俯視）：全向天線四面八方都收得到但距離較短；定向天線（平板天線）往前方收得更遠，但背後幾乎收不到。</figcaption></figure>
+    <ul>
+      <li>眼鏡上最常見的組合是<b>一支全向＋一支定向</b>：近處繞著飛靠全向，往前飛遠靠定向。</li>
+      <li>飛機上通常用全向天線，盡量讓天線露出機身、不要被碳板和電池擋住。</li>
+    </ul>
+    <h3>天線接頭</h3>
+    <div class="cmp4">
+      <div class="c"><h4>U.FL／IPEX</h4><p>最小，常見於小機與數位圖傳。很脆弱，插拔次數有限，記得用膠固定。</p></div>
+      <div class="c"><h4>MMCX</h4><p>可旋轉的卡扣接頭，常見於類比 VTX。</p></div>
+      <div class="c"><h4>SMA</h4><p>螺紋接頭，牢固耐用，常見於眼鏡和較大的機型。</p></div>
+      <div class="c"><h4>RP-SMA</h4><p>外觀像 SMA，但中心針腳公母相反。<b>SMA 和 RP-SMA 不能互插</b>，買之前看清楚。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="pick">
+  <div class="chhead"><span class="n">07</span><h2>選擇分支圖：我該用哪一種</h2></div>
+  <p class="thesis">回答三個問題，分支圖會畫出你的選擇路徑，最後給出建議系統。</p>
+  <div class="body">
+    <div class="tool">
+      <h3>TOOL<b>圖傳系統選擇器</b></h3>
+      <div class="qrow"><span class="ql">① 你已經有 FPV 眼鏡了嗎？</span><div class="seg" id="q1"></div></div>
+      <div class="qrow"><span class="ql">② 你主要飛什麼？</span><div class="seg" id="q2"></div></div>
+      <div class="qrow"><span class="ql">③ 你最在意什麼？</span><div class="seg" id="q3"></div></div>
+      <div class="tree-svg"><svg id="tree" viewBox="0 0 760 330" role="img" aria-label="選擇路徑分支圖"></svg></div>
+      <div class="rec" id="rec" aria-live="polite"></div>
+    </div>
+    <p class="muted" style="font-size:14px">這是依一般玩家需求整理的建議，實際仍要看機架空間、預算與你朋友飛的系統（一起飛時用同系統比較方便）。</p>
+  </div>
+</section>
+
+<section class="ch" id="faq">
+  <div class="chhead"><span class="n">08</span><h2>新手最常犯的錯誤</h2></div>
+  <p class="thesis">這些問題在維修台上很常見，多半花幾分鐘檢查就能避免。</p>
+  <div class="body" style="max-width:none">
+    <div class="mist">
+      <div><span class="x">沒裝天線就插電測試</span><span class="o">上電前先確認天線鎖好</span></div>
+      <div><span class="x">飛機 RHCP、眼鏡 LHCP</span><span class="o">兩端極化方向要一致</span></div>
+      <div><span class="x">SMA 天線硬插 RP-SMA 接頭</span><span class="o">先看清楚接頭，必要時用轉接頭</span></div>
+      <div><span class="x">O4 Air Unit 直接接 6S 電源</span><span class="o">O4 只到 13.2V，從飛控 BEC 供電</span></div>
+      <div><span class="x">數位圖傳沒有 OSD，以為壞了</span><span class="o">檢查 UART 接線與 MSP DisplayPort 設定</span></div>
+      <div><span class="x">類比 OSD 和數位 OSD 設定混用</span><span class="o">類比用飛控 OSD 晶片，數位用 DisplayPort</span></div>
+      <div><span class="x">數位畫面清楚就一直往遠飛</span><span class="o">看訊號 OSD，變弱就提早回頭</span></div>
+      <div><span class="x">和朋友用同一個類比頻道</span><span class="o">起飛前先協調頻道</span></div>
+      <div><span class="x">數位圖傳在桌上開機很久</span><span class="o">注意散熱，長時間測試加風扇</span></div>
+      <div><span class="x">買了眼鏡才發現和圖傳不相容</span><span class="o">先決定系統，再一起買眼鏡和 VTX</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="quiz">
+  <div class="chhead"><span class="n">09</span><h2>小測驗</h2></div>
+  <p class="thesis">答對五題，你就能自己判斷要買哪一種圖傳了。</p>
+  <div class="body" id="quizBox"></div>
+  <div class="body" style="max-width:none;margin-top:36px">
+    <h3>一頁速查表</h3>
+    <div class="cheat">
+      <div><span class="k">最便宜、可混搭</span><span class="v">類比</span></div>
+      <div><span class="k">畫質與錄影最好</span><span class="v">DJI O4 Pro</span></div>
+      <div><span class="k">小機要高畫質</span><span class="v">DJI O4</span></div>
+      <div><span class="k">數位又要極低延遲</span><span class="v">HDZero</span></div>
+      <div><span class="k">天線極化</span><span class="v">兩端一致</span></div>
+      <div><span class="k">VTX 上電前</span><span class="v r">先裝天線</span></div>
+      <div><span class="k">O4 供電上限</span><span class="v r">13.2V</span></div>
+      <div><span class="k">O4 Pro 供電</span><span class="v">2S–6S</span></div>
+      <div><span class="k">數位 OSD 設定</span><span class="v">MSP DisplayPort</span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand"><img src="data:image/png;base64,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" alt=""><span>電翼動力 EWP · READY TO FLY</span></div>
+    <p>還是不確定要選哪一套圖傳？告訴我們你的機型、預算和飛行用途，我們幫你配一套。</p>
+    <div class="cta">
+      <a class="p" href="https://lin.ee/WIUCkWP" target="_blank" rel="noopener">LINE 詢問圖傳配置</a>
+      <a href="/learn/lipo-battery/">上一篇：LiPo 電池新手學堂</a>
+      <a href="/journal/">更多 EWP 專欄文章</a>
+      <a href="https://shopee.tw/mixlin" target="_blank" rel="noopener">蝦皮賣場</a>
+    </div>
+    <p class="disclaimer">規格數據整理自各品牌官方公開資料，實際表現依型號、韌體、環境而異，購買前請以官方最新規格為準。無線電發射設備的使用請遵守 NCC 相關規定。</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const $=s=>document.querySelector(s);
+  const NS='http://www.w3.org/2000/svg';
+  const reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- 01 signal chain ---------- */
+  function chain(g,y,items,color,twoWay){
+    let h='';const w=118,gap=(760-w*5)/4;
+    items.forEach((it,i)=>{const x=i*(w+gap);
+      h+=`<rect x="${x}" y="${y}" width="${w}" height="70" rx="6" fill="var(--panel-2)" stroke="${it.hl?color:'var(--line)'}" stroke-width="${it.hl?2:1}"/>`+
+         `<text x="${x+w/2}" y="${y+30}" text-anchor="middle" style="font-size:15px;font-weight:700;fill:var(--text)">${it.t}</text>`+
+         `<text x="${x+w/2}" y="${y+52}" text-anchor="middle" class="m" style="font-size:12px">${it.s}</text>`;
+      if(i<items.length-1){const x1=x+w+4,x2=x+w+gap-4,yy=y+35;
+        if(i===2){h+=`<path d="M${x1} ${yy} q ${(x2-x1)/6} -10 ${(x2-x1)/3} 0 t ${(x2-x1)/3} 0 t ${(x2-x1)/3} 0" stroke="${color}" stroke-width="2" fill="none"/><text x="${(x1+x2)/2}" y="${y-6}" text-anchor="middle" style="font-size:12px;fill:${color}">5.8GHz${twoWay?' 雙向':''}</text>`;
+          if(twoWay)h+=`<path d="M${x2} ${yy+14} L${x1+8} ${yy+14}" stroke="${color}" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/><path d="M${x1+8} ${yy+10} l-6 4 l6 4" fill="${color}"/>`;}
+        else h+=`<line x1="${x1}" y1="${yy}" x2="${x2-6}" y2="${yy}" stroke="var(--muted)" stroke-width="1.5"/><path d="M${x2-7} ${yy-4} l7 4 l-7 4z" fill="var(--muted)"/>`;
+      }
+    });g.innerHTML=h;
+  }
+  chain($('#chainA'),40,[{t:'鏡頭',s:'類比 CMOS',hl:1},{t:'飛控',s:'疊加 OSD'},{t:'VTX',s:'直接調變',hl:1},{t:'眼鏡接收',s:'任何類比眼鏡'},{t:'你的眼睛',s:'有雜訊也看得到'}],'var(--analog)',false);
+  chain($('#chainD'),190,[{t:'鏡頭',s:'同系統專用',hl:1},{t:'Air Unit',s:'壓縮編碼＋錄影',hl:1},{t:'天線發射',s:'數位封包'},{t:'眼鏡解碼',s:'同系統眼鏡'},{t:'你的眼睛',s:'清楚或卡頓'}],'var(--digital)',true);
+
+  /* ---------- 02 simulator ---------- */
+  const W=320,H=240;
+  const base=document.createElement('canvas');base.width=W;base.height=H;const bx=base.getContext('2d');
+  function drawScene(t){
+    const g=bx.createLinearGradient(0,0,0,H);g.addColorStop(0,'#6fa8dc');g.addColorStop(.55,'#cfe3f1');g.addColorStop(.56,'#5e7d3a');g.addColorStop(1,'#2f4220');
+    bx.save();bx.translate(W/2,H/2);bx.rotate(Math.sin(t*.0007)*.12);bx.translate(-W/2,-H/2);
+    bx.fillStyle=g;bx.fillRect(-60,-60,W+120,H+120);
+    const off=(t*.04)%160;
+    for(let i=-2;i<6;i++){const x=i*80-off*0.5+40;bx.fillStyle='#1f3014';bx.beginPath();bx.moveTo(x,134);bx.lineTo(x+18,84);bx.lineTo(x+36,134);bx.fill();bx.fillRect(x+15,134,6,10);}
+    const s=1+((t*.0006)%1)*1.6;const gw=90*s,gh=70*s,gx=W/2-gw/2,gy=138-gh;
+    bx.lineWidth=8*s;bx.strokeStyle='#ff4a3d';bx.strokeRect(gx,gy,gw,gh);
+    bx.fillStyle='#d3c1a4';for(let i=0;i<14;i++){const yy=150+i*i*1.2;bx.fillRect(W/2-2-i*3,yy,4+i*6,1+i*.3);}
+    bx.restore();
+    bx.font='bold 13px monospace';bx.fillStyle='#fff';bx.fillText('22.8V',10,20);bx.fillText('02:14',W-56,20);bx.fillText('▲ 48m',10,H-12);
+  }
+  const cA=$('#cvA').getContext('2d'),cD=$('#cvD').getContext('2d');
+  const small=document.createElement('canvas');const sx=small.getContext('2d');
+  let sig=100,frozen=null,lastT=0;
+  function renderA(t){
+    const p=sig/100;cA.drawImage(base,0,0);
+    if(p>=.98)return;
+    const img=cA.getImageData(0,0,W,H),d=img.data,n=1-p,noise=Math.pow(n,2.2)*255*1.2,sat=Math.max(0,1-n*1.4),snow=Math.max(0,(n-.75)*4);
+    let shift=0;
+    for(let y=0;y<H;y++){
+      if(Math.random()<n*n*.08)shift=(Math.random()-.5)*n*40;else shift*=.85;
+      const tear=Math.round(shift),lineN=Math.random()<n*.15?n*120:0;
+      for(let x=0;x<W;x++){
+        const sxp=Math.min(W-1,Math.max(0,x+tear)),i=(y*W+x)*4,j=(y*W+sxp)*4;
+        let r=d[j],g=d[j+1],b=d[j+2];const l=(r+g+b)/3;
+        r=l+(r-l)*sat;g=l+(g-l)*sat;b=l+(b-l)*sat;
+        const z=(Math.random()-.5)*noise+lineN;
+        const sn=Math.random()*255;
+        r=r*(1-snow)+sn*snow+z;g=g*(1-snow)+sn*snow+z;b=b*(1-snow)+sn*snow+z;
+        d[i]=r;d[i+1]=g;d[i+2]=b;
+      }
+    }
+    cA.putImageData(img,0,0);
+  }
+  function renderD(t){
+    const p=sig/100;
+    if(p<.12){ // lost
+      if(!frozen){frozen=document.createElement('canvas');frozen.width=W;frozen.height=H;frozen.getContext('2d').drawImage($('#cvD'),0,0);frozen.at=t;}
+      cD.drawImage(frozen,0,0);
+      if(p<.05||t-frozen.at>1500){cD.fillStyle='#000';cD.fillRect(0,0,W,H);}
+      cD.fillStyle='rgba(0,0,0,.45)';cD.fillRect(0,H/2-18,W,36);cD.fillStyle='#ff6b5e';cD.font='bold 15px sans-serif';cD.textAlign='center';cD.fillText(p<.05?'NO SIGNAL':'LOW SIGNAL',W/2,H/2+5);cD.textAlign='left';return;
+    }
+    frozen=null;
+    if(p>=.4){cD.drawImage(base,0,0);return;}
+    const k=(p-.12)/.28; // 0..1
+    const res=Math.max(8,Math.round(16+k*k*200));small.width=res;small.height=Math.round(res*.75);
+    sx.drawImage(base,0,0,small.width,small.height);
+    cD.imageSmoothingEnabled=false;cD.drawImage(small,0,0,W,H);cD.imageSmoothingEnabled=true;
+    if(Math.random()<(1-k)*.25){const by=Math.random()*H,bh=10+Math.random()*30;cD.fillStyle='rgba(60,140,60,.5)';cD.fillRect(0,by,W,bh);}
+  }
+  function status(){
+    const p=sig;$('#aPct').textContent=p+'%';$('#dPct').textContent=p+'%';
+    $('#aSt').textContent=p>85?'畫面乾淨，但解析度本來就比數位低。':p>55?'開始有雜訊與條紋，仍可正常飛行。':p>25?'雜訊明顯、顏色變淡，該準備回頭。':p>0?'大量雪花，勉強看得到輪廓，還有機會飛回來。':'只剩雪花。';
+    $('#dSt').textContent=p>=40?'畫面一直很清楚，看不出訊號在變弱。':p>=12?'畫質突然下降、出現馬賽克，代表已經在邊緣。':p>=5?'畫面凍結或卡頓，你看到的已經不是現在的位置。':'完全斷訊，畫面全黑。';
+  }
+  function loop(t){drawScene(reduce?0:t);renderA(t);renderD(t);if(!reduce)requestAnimationFrame(loop);}
+  $('#sig').addEventListener('input',e=>{sig=+e.target.value;status();if(reduce)loop(0);});
+  status();requestAnimationFrame(loop);
+
+  /* ---------- 03 latency bars ---------- */
+  const LAT=[['HDZero',3,'var(--digital)','<3ms'],['DJI O4 Pro',15,'var(--digital)','15ms'],['DJI O4',20,'var(--digital)','20ms'],['Walksnail',32,'var(--digital)','~32ms']];
+  $('#latbar').innerHTML=LAT.map(([n,v,c,l])=>`<div class="lb"><span>${n}</span><span class="track"><span class="fill" style="width:${v/40*100}%;background:${c}"></span></span><span class="val">${l}</span></div>`).join('')+
+    `<div class="lb"><span>類比</span><span class="muted" style="font-size:13px">依鏡頭與眼鏡而異，通常最低</span><span class="val">—</span></div>`;
+
+  /* ---------- 05 camera sizes ---------- */
+  (function(){const sz=[['12mm','Whoop 小機'],['14mm','Nano・3 吋以下'],['19mm','Micro・5 吋常見']];const sc=7;let x=90,h='';
+    sz.forEach(([n,u])=>{const mm=parseInt(n),w=mm*sc,y=100-w/2;
+      h+=`<rect x="${x}" y="${y}" width="${w}" height="${w}" rx="6" fill="var(--panel-2)" stroke="var(--line)" stroke-width="2"/><circle cx="${x+w/2}" cy="100" r="${w*.32}" fill="#0b0b0c" stroke="#555" stroke-width="2"/><circle cx="${x+w/2}" cy="100" r="${w*.16}" fill="#1c2a3a"/><circle cx="${x+w/2-w*.06}" cy="${100-w*.06}" r="${w*.04}" fill="#9fc7ff" opacity=".7"/>`+
+         `<text x="${x+w/2}" y="${100+70+30}" text-anchor="middle" class="mono" style="font-weight:600">${n}</text><text x="${x+w/2}" y="${100+70+52}" text-anchor="middle" class="m">${u}</text>`;x+=w+110;});
+    $('#camSizes').innerHTML=h;})();
+
+  /* ---------- 06 polarization ---------- */
+  (function(){
+    function ant(x,y,dir,col){const r=22;let p=`M${x} ${y+r}`;for(let i=0;i<=40;i++){const a=i/40*Math.PI*3.2*dir,rr=r*(1-i/50);p+=` L${x+Math.cos(a+Math.PI/2)*rr} ${y+Math.sin(a+Math.PI/2)*rr*.55-i*.9}`;}
+      return `<line x1="${x}" y1="${y+r+30}" x2="${x}" y2="${y+r}" stroke="var(--muted)" stroke-width="3"/><path d="${p}" stroke="${col}" stroke-width="3" fill="none"/>`;}
+    function lin(x,y){return `<line x1="${x}" y1="${y+52}" x2="${x}" y2="${y-30}" stroke="var(--muted)" stroke-width="3"/>`}
+    const cases=[{a:ant(60,90,1,'var(--sand)'),b:ant(190,90,1,'var(--sand)'),t:'RHCP ↔ RHCP',r:'訊號良好',c:'ok'},
+                 {a:ant(320,90,1,'var(--sand)'),b:ant(450,90,-1,'var(--digital)'),t:'RHCP ↔ LHCP',r:'嚴重衰減',c:'bad'},
+                 {a:lin(580,90),b:ant(700,90,1,'var(--sand)'),t:'線性 ↔ 圓極化',r:'可用，訊號稍差',c:'s'}];
+    let h='';cases.forEach((k,i)=>{const cx=125+i*260;h+=k.a+k.b+`<path d="M${cx-30} 82 h60" stroke="var(--line)" stroke-dasharray="4 4"/><text x="${cx}" y="185" text-anchor="middle" class="mono" style="font-weight:600">${k.t}</text><text x="${cx}" y="208" text-anchor="middle" class="${k.c}" style="font-weight:700">${k.r}</text>`;});
+    h+=`<text x="125" y="26" text-anchor="middle" class="m">飛機　　　眼鏡</text><text x="385" y="26" text-anchor="middle" class="m">飛機　　　眼鏡</text><text x="645" y="26" text-anchor="middle" class="m">Whoop　　眼鏡</text>`;
+    $('#polar').innerHTML=h;
+  })();
+
+  /* ---------- 06 pattern ---------- */
+  (function(){
+    let h='';
+    h+=`<circle cx="190" cy="115" r="78" fill="rgba(95,183,255,.12)" stroke="var(--digital)" stroke-width="2"/><circle cx="190" cy="115" r="9" fill="var(--text)"/><text x="190" y="222" text-anchor="middle" style="font-weight:700">全向天線</text><text x="190" y="20" text-anchor="middle" class="m">各方向都收得到，距離較短</text>`;
+    h+=`<path d="M470 115 C 520 30, 700 40, 740 115 C 700 190, 520 200, 470 115 Z" fill="rgba(233,196,106,.12)" stroke="var(--analog)" stroke-width="2"/><path d="M470 115 C 455 100, 440 105, 438 115 C 440 125, 455 130, 470 115Z" fill="rgba(233,196,106,.12)" stroke="var(--analog)" stroke-width="1.5"/><rect x="462" y="100" width="12" height="30" fill="var(--text)"/><text x="590" y="222" text-anchor="middle" style="font-weight:700">定向（平板）天線</text><text x="590" y="20" text-anchor="middle" class="m">正前方收得遠，背後幾乎收不到</text><path d="M640 115 h60" stroke="var(--analog)" stroke-width="1.5"/><path d="M700 110 l8 5 l-8 5z" fill="var(--analog)"/><text x="672" y="106" text-anchor="middle" class="m">飛行方向</text>`;
+    $('#pattern').innerHTML=h;
+  })();
+
+  /* ---------- 07 decision tree ---------- */
+  const Q={
+    q1:[['none','還沒有'],['dji','DJI 眼鏡'],['analog','類比眼鏡'],['ws','Walksnail'],['hdz','HDZero']],
+    q2:[['whoop','室內 Whoop'],['small','2.5–3.5 吋'],['five','5 吋花飛'],['race','競速'],['long','7 吋遠航／影視']],
+    q3:[['budget','預算'],['image','畫質與錄影'],['latency','延遲最低'],['weight','重量最輕']]
+  };
+  const SYS={
+    analog:{n:'類比圖傳',c:'var(--analog)',why:'入門最便宜、延遲低、零件各品牌通用，摔壞也好換。',pts:['畫質較低，需要另掛運動相機錄影','訊號變差時畫面漸漸變花，有時間反應','適合練習、競速與預算有限的新手']},
+    o4:{n:'DJI O4 Air Unit（O4 Lite）',c:'var(--digital)',why:'重量只有約 8.2g，小機也能有清楚畫面與 4K 機上錄影。',pts:['必須使用 DJI Goggles 3、N3、Goggles 2 或 Integra','供電上限 13.2V，4S／6S 機要從 BEC 供電','訊號變差時會卡頓，飛遠要看訊號 OSD']},
+    o4pro:{n:'DJI O4 Pro',c:'var(--digital)',why:'目前畫質與錄影最強的選擇，4K120 錄影、可插 microSD，適合花飛與影視。',pts:['重量約 32g，適合 5 吋以上','支援 2S–6S 直接供電','眼鏡需 DJI Goggles 3、N3、Goggles 2 或 Integra']},
+    ws:{n:'Walksnail Avatar',c:'var(--digital)',why:'數位高畫質的另一個選擇，你已經有 Walksnail 眼鏡就繼續用同系統。',pts:['只能搭配 Walksnail 眼鏡','依 VTX 型號重量與錄影規格不同','購買前確認韌體與型號相容']},
+    hdz:{n:'HDZero',c:'var(--digital)',why:'數位系統中延遲最低、斷訊方式接近類比，很受競速玩家喜愛。',pts:['HDZero Goggles 2 內建類比接收，可同時飛類比機','畫質介於類比與 DJI 之間','台灣貨源較少，購買前先確認']}
+  };
+  function decide(a,b,c){
+    if(a==='dji')return{s:b==='whoop'||b==='small'||c==='weight'?'o4':'o4pro',note:'你已經有 DJI 眼鏡，繼續用 DJI 系統最省錢。'};
+    if(a==='ws')return{s:'ws',note:'你已經有 Walksnail 眼鏡，繼續用同系統。'};
+    if(a==='hdz')return{s:c==='budget'?'analog':'hdz',note:c==='budget'?'HDZero Goggles 2 內建類比接收，預算有限可以先用類比 VTX。':'你已經有 HDZero 眼鏡，繼續用同系統。'};
+    if(a==='analog')return{s:'analog',note:'你已經有類比眼鏡，直接用類比 VTX 最划算；之後想升級數位，再整套換。'};
+    // no goggles
+    if(c==='budget')return{s:'analog',note:'入門預算有限時，類比整套花費最低。'};
+    if(c==='latency'||b==='race')return{s:c==='image'?'hdz':(c==='latency'?'hdz':'analog'),note:'競速與低延遲需求，HDZero 或類比都是主流選擇。'};
+    if(b==='long')return{s:'o4pro',note:'遠航與影視最需要畫質、錄影與穩定圖傳。'};
+    if(b==='whoop'||b==='small'||c==='weight')return{s:'o4',note:'小機重量敏感，O4 Air Unit 是輕量的數位選擇。'};
+    return{s:'o4pro',note:'5 吋花飛重視畫質與錄影，O4 Pro 最適合。'};
+  }
+  const sel={q1:'none',q2:'five',q3:'image'};
+  function segQ(id){const el=$('#'+id);el.innerHTML='';Q[id].forEach(([k,l])=>{const b=document.createElement('button');b.type='button';b.textContent=l;b.style.fontFamily='var(--f-body)';b.setAttribute('aria-pressed',sel[id]===k);b.onclick=()=>{sel[id]=k;[...el.children].forEach(x=>x.setAttribute('aria-pressed',x===b));drawTree();};el.appendChild(b);});}
+  ['q1','q2','q3'].forEach(segQ);
+  const RES=['analog','o4','o4pro','ws','hdz'];
+  function drawTree(){
+    const r=decide(sel.q1,sel.q2,sel.q3);
+    const cols=[{k:'q1',x:10,h:'眼鏡'},{k:'q2',x:200,h:'用途'},{k:'q3',x:390,h:'最在意'},{k:'res',x:580,h:'建議系統'}];
+    const nw=[150,150,150,170],nh=36;
+    const ys=(n)=>{const top=40,span=330-top-10;return Array.from({length:n},(_,i)=>top+(span-nh*n)/(n+1)*(i+1)+nh*i);};
+    const pos={};let h='';
+    cols.forEach((c,ci)=>{const list=c.k==='res'?RES.map(k=>[k,SYS[k].n.replace(/（.*）/,'')]):Q[c.k];const y=ys(list.length);
+      h+=`<text x="${c.x}" y="22" class="col-h">${c.h}</text>`;
+      list.forEach(([k,l],i)=>{pos[c.k+k]={x:c.x,y:y[i],w:nw[ci]};});
+    });
+    const path=['q1'+sel.q1,'q2'+sel.q2,'q3'+sel.q3,'res'+r.s];
+    // faint edges between consecutive selected and all options of next col
+    const edges=[];
+    for(let i=0;i<3;i++){const from=pos[path[i]];const nextKey=cols[i+1].k;const list=nextKey==='res'?RES:Q[nextKey].map(x=>x[0]);
+      list.forEach(k=>{const to=pos[nextKey+k];const on=(nextKey+k)===path[i+1];edges.push({from,to,on});});}
+    edges.sort((a,b)=>a.on-b.on).forEach(e=>{const x1=e.from.x+e.from.w,y1=e.from.y+nh/2,x2=e.to.x,y2=e.to.y+nh/2,mx=(x1+x2)/2;h+=`<path class="edge${e.on?' on':''}" d="M${x1} ${y1} C${mx} ${y1} ${mx} ${y2} ${x2} ${y2}"/>`;});
+    cols.forEach((c,ci)=>{const list=c.k==='res'?RES.map(k=>[k,SYS[k].n.replace(/（.*）/,'')]):Q[c.k];
+      list.forEach(([k,l])=>{const p=pos[c.k+k];const on=path.includes(c.k+k);h+=`<g class="node${on?' on':''}"><rect x="${p.x}" y="${p.y}" width="${p.w}" height="${nh}" rx="4"/><text x="${p.x+12}" y="${p.y+23}">${l}</text></g>`;});});
+    $('#tree').innerHTML=h;
+    const s=SYS[r.s];
+    $('#rec').innerHTML=`<span class="pill">建議</span><div class="name" style="color:${s.c}">${s.n}</div><p class="why">${r.note}${s.why}</p><ul>${s.pts.map(x=>`<li>${x}</li>`).join('')}</ul><p class="alt">想確認你的機架放不放得下、要怎麼接線？用 LINE 傳機型給我們，幫你配好整套。</p>`;
+  }
+  drawTree();
+
+  /* ---------- 09 quiz ---------- */
+  const QZ=[
+    {q:'飛遠時，哪一種圖傳的畫面會「慢慢變花」而不是突然卡住？',o:['DJI O4','類比','Walksnail'],a:1,w:'類比訊號變弱時雜訊逐漸增加，數位則是清楚到最後才卡頓或凍結。'},
+    {q:'飛機用 RHCP 天線，眼鏡天線應該選？',o:['LHCP','RHCP','都可以'],a:1,w:'圓極化天線兩端旋向要一致，相反會大幅衰減。'},
+    {q:'DJI O4 Air Unit（O4 Lite）裝在 6S 機上，電源要怎麼接？',o:['直接接電池','從飛控 BEC 供電','接 5V 就好'],a:1,w:'O4 Air Unit 官方供電 3.7–13.2V，6S 滿電 25.2V 會超過，要從合適的 BEC 輸出供電。'},
+    {q:'VTX 還沒裝天線，可以先通電測試嗎？',o:['可以，很快就拔','不行，可能燒壞 VTX','數位的可以'],a:1,w:'沒有天線時發射功率無處可去，類比、數位都可能損壞。'},
+    {q:'已經有 DJI Goggles 3，想裝一台 3 吋小機，最適合哪一個？',o:['類比 VTX','DJI O4 Air Unit','HDZero'],a:1,w:'DJI 眼鏡只能收 DJI 圖傳，小機重量敏感，O4 Air Unit 最適合。'}
+  ];
+  const box=$('#quizBox');
+  box.innerHTML=QZ.map((x,i)=>`<div class="q" data-i="${i}"><p>${i+1}. ${x.q}</p><div class="opts">${x.o.map((o,j)=>`<button type="button" data-j="${j}">${o}</button>`).join('')}</div><span class="why" hidden></span></div>`).join('')+'<p class="muted" id="score">已作答 0／5</p>';
+  let done=0,right=0;
+  box.querySelectorAll('.q').forEach(qe=>{const x=QZ[+qe.dataset.i];
+    qe.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{
+      if(qe.dataset.done)return;qe.dataset.done=1;done++;const j=+b.dataset.j;if(j===x.a)right++;
+      qe.querySelectorAll('button').forEach(bb=>{if(+bb.dataset.j===x.a)bb.classList.add('right');else if(bb===b)bb.classList.add('wrong')});
+      const w=qe.querySelector('.why');w.textContent=(j===x.a?'答對了。':'正確答案是「'+x.o[x.a]+'」。')+x.w;w.hidden=false;
+      $('#score').textContent=done<5?`已作答 ${done}／5`:`得分 ${right}／5`+(right===5?'，全對！':'，回頭看一下答錯的章節。');
+    }));});
+
+  /* nav highlight */
+  const links=[...document.querySelectorAll('#toc a')];
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>{const on=l.getAttribute('href')==='#'+e.target.id;l.classList.toggle('on',on);if(on)l.scrollIntoView({block:'nearest',inline:'center'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+  document.querySelectorAll('section.ch').forEach(s=>io.observe(s));
+})();
+</script>
+</body>
+</html>
