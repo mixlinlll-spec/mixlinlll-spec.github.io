@@ -53,7 +53,6 @@ console.log('2. 桌機導覽與 mega menu');
   ok(await page.locator('#mega-products .mega-cat').count() === 10, 'mega menu 列出 10 個主分類');
   await page.keyboard.press('Escape');
   ok(!(await page.isVisible('#mega-products')), 'Esc 關閉 mega menu');
-  await page.click('.more-toggle');
   ok(await page.isVisible('.nav-list a[href="/journal/"]'), '上方導覽列直接顯示 EWP 專欄');
   await page.context().close();
 }
