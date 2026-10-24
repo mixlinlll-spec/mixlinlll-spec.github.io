@@ -1,4 +1,6 @@
-import { newVariantKey } from './data.mjs';
+import crypto from 'node:crypto';
+import { newVariantKey, slugify } from './data.mjs';
+import { classify, detectBrand } from './classify.mjs';
 // 商品後台（Pages CMS）儲存後的資料校正。純函式、無外部套件，方便單元測試。
 //
 // Pages CMS 儲存時（見 docs/admin/PRODUCT_ADMIN.md）：
@@ -18,6 +20,8 @@ export const READONLY_PRODUCT_KEYS = ['id', 'slug', 'shopee_item_id'];
 export const EDITABLE_VARIANT_KEYS = ['name', 'price_twd', 'availability', 'sku'];
 // 庫存數量屬機密（EWP 決定，repo 公開）：不可經由後台寫入，送來的一律丟棄
 export const SECRET_KEYS = ['stock_qty'];
+// 後台的操作勾選（不是商品資料，不會存進商品檔）：新商品審核
+export const CONTROL_KEYS = ['approve_publish'];
 export const EDITABLE_IMAGE_KEYS = ['src', 'alt', 'rights'];
 export const EDITABLE_SPEC_KEYS = ['key', 'value'];
 
@@ -113,7 +117,7 @@ function normalizeSpecs(prevList = [], nextList = []) {
 }
 
 // prev：儲存前的商品資料；next：Pages CMS 寫入的資料。回傳校正後資料、變更清單與提醒。
-export function normalizeCmsProduct(prev, next, { today } = {}) {
+export function normalizeCmsProduct(prev, next, { today, ...ctx } = {}) {
   const warnings = [];
   const values = {};
   // 1. 不在後台的欄位與唯讀欄位：一律沿用舊版（review、id、slug…）
@@ -121,7 +125,7 @@ export function normalizeCmsProduct(prev, next, { today } = {}) {
     if (!EDITABLE_PRODUCT_KEYS.includes(k)) values[k] = clone(v);
   }
   for (const k of Object.keys(next)) {
-    if (!EDITABLE_PRODUCT_KEYS.includes(k) && !(k in prev)) warnings.push(`忽略後台新增的未知欄位 ${k}`);
+    if (!EDITABLE_PRODUCT_KEYS.includes(k) && !CONTROL_KEYS.includes(k) && !(k in prev)) warnings.push(`忽略後台新增的未知欄位 ${k}`);
   }
   // 2. 可修改欄位
   for (const k of EDITABLE_PRODUCT_KEYS) {
@@ -136,22 +140,98 @@ export function normalizeCmsProduct(prev, next, { today } = {}) {
   if (Array.isArray(values.tags)) values.tags = values.tags.filter(t => typeof t === 'string' && t.trim());
 
   const p = ordered(prev, values);
+  const extra = [];
 
-  // 3. 價格規則
+  // 3. 分類與品牌：後台新增的商品（review.source = cms）沒有選分類時自動判斷；原有商品清空分類時還原
+  if (!p.primary_category_id) {
+    if (isCmsCreated(p)) autoFill(p, extra, warnings, ctx);
+    else if (prev.primary_category_id) { p.primary_category_id = prev.primary_category_id; p.subcategory_id = prev.subcategory_id ?? null; warnings.push('主分類不可清空，已還原'); }
+  } else if (p.subcategory_id && ctx.categories && !ctx.categories.find(c => c.id === p.primary_category_id)?.subcategories.some(s => s.id === p.subcategory_id)) {
+    // 子分類與主分類不符：後台新增的商品以子分類為準修正主分類
+    const owner = ctx.categories.find(c => c.subcategories.some(s => s.id === p.subcategory_id));
+    if (isCmsCreated(p) && owner) { extra.push(`主分類依子分類修正：${p.primary_category_id} → ${owner.id}`); p.primary_category_id = owner.id; }
+  }
+  if (isCmsCreated(p) && !p.brand && ctx.products) {
+    const b = detectBrand(p.name_zh, ctx.products.map(x => x.brand));
+    if (b) { p.brand = b; extra.push(`自動判斷品牌：${b}`); }
+  }
+
+  // 4. 價格規則
   applyPriceRule(p, warnings);
 
-  // 4. 上架守門：只有 review.status = approved 才能公開
+  // 5. 新商品審核：只有後台新增的草稿可以在後台勾選審核（蝦皮匯入、退件商品仍需另外核對）
+  if (next.approve_publish === true && p.review?.status !== 'approved') {
+    if (!isCmsCreated(p) || p.review?.status !== 'draft') warnings.push('「新商品審核」只適用於從後台新增的商品，此商品未變更審核狀態');
+    else if (!p.primary_category_id) warnings.push('尚未選擇主分類，無法審核；請先選分類再勾選審核');
+    else {
+      p.review = { ...p.review, status: 'approved', approved_at: today || p.review.approved_at, approved_by: ctx.operator || p.review.created_by || null };
+      extra.push('新商品審核通過（可以上架）');
+    }
+  }
+
+  // 6. 上架守門：只有 review.status = approved 才能公開
   if (p.published && p.review?.status !== 'approved') {
     p.published = false;
     warnings.push(`此商品尚未核准（review：${p.review?.status || '無'}），已自動退回草稿，不會公開`);
   }
 
-  // 5. 庫存數量不可寫入公開 repo
+  // 7. 庫存數量不可寫入公開 repo
   if ('stock_qty' in next || (next.variants || []).some(v => v && 'stock_qty' in v)) warnings.push('庫存數量屬機密，不會存到公開網站資料（第二階段改由私有資料庫管理），已忽略');
 
-  const changes = diffProduct(prev, p);
+  const changes = [...diffProduct(prev, p).filter(c => !extra.some(e => e.startsWith('自動判斷品牌') && c.startsWith('品牌：'))), ...extra];
   if (changes.length && today) p.updated_at = today;
   return { product: p, changes, warnings };
+}
+
+export const isCmsCreated = p => p?.review?.source === 'cms';
+
+// 分類自動判斷（以現有已上架商品為範例）
+function autoFill(p, extra, warnings, ctx) {
+  if (!ctx.categories) return;
+  if (p.subcategory_id) {
+    const owner = ctx.categories.find(c => c.subcategories.some(s => s.id === p.subcategory_id));
+    if (owner) { p.primary_category_id = owner.id; extra.push(`主分類依子分類自動填入：${owner.name}`); return; }
+  }
+  const examples = (ctx.products || []).filter(x => x.id !== p.id && x.primary_category_id && x.review?.status === 'approved');
+  const r = classify(p, examples, ctx.categories);
+  if (!r) { p.primary_category_id = null; p.subcategory_id = null; warnings.push('無法自動判斷分類，請在後台選擇主分類與子分類'); return; }
+  const c = ctx.categories.find(x => x.id === r.primary_category_id);
+  const sub = c.subcategories.find(x => x.id === r.subcategory_id);
+  p.primary_category_id = c.id; p.subcategory_id = sub ? sub.id : null;
+  extra.push(`自動分類：${c.name}${sub ? '／' + sub.name : ''}（依${r.method}判斷，請確認）`);
+}
+
+// 後台新增的商品：產生商品 ID、網址代稱與初始資料（草稿、待審核）
+export function newProductId(today, taken = new Set()) {
+  const d = String(today || '').replace(/-/g, '').slice(2, 8) || '000000';
+  let id;
+  do { id = `ewp-${d}-${crypto.randomBytes(2).toString('hex')}`; } while (taken.has(id));
+  return id;
+}
+export function uniqueSlug(name, id, takenSlugs = new Set()) {
+  const base = slugify(name || '', id);
+  let slug = base, n = 2;
+  while (takenSlugs.has(slug)) slug = `${base}-${n++}`;
+  return slug;
+}
+export function blankProduct({ id, slug, today, operator }) {
+  return {
+    id, slug, name_zh: '', sku: null, brand: null, manufacturer_model: null, seller_role: 'retail',
+    primary_category_id: null, subcategory_id: null, tags: [], compatible_sizes: [], video_system: null, battery_cells: [],
+    short_description: '', description: '', specifications: [], images: [], variants: [],
+    price_twd: null, price_display: 'fixed', availability: 'unknown', shopee_url: null, shopee_item_id: null,
+    line_inquiry_enabled: true, featured: false, published: false, updated_at: today,
+    review: { status: 'draft', source: 'cms', created_at: today, created_by: operator || null },
+  };
+}
+export function createCmsProduct(next, { today, operator, products = [], categories } = {}) {
+  const id = newProductId(today, new Set(products.map(p => p.id)));
+  const slug = uniqueSlug(next?.name_zh, id, new Set(products.map(p => p.slug)));
+  const prev = blankProduct({ id, slug, today, operator });
+  // 必填欄位沒有送來時（正常情況 Pages CMS 會帶預設值）使用安全的預設值
+  const r = normalizeCmsProduct(prev, { availability: 'unknown', price_display: 'fixed', ...(next || {}) }, { today, operator, products, categories });
+  r.changes.unshift(`後台新增商品（草稿，待審核）：${id}`);
+  return r;
 }
 
 // 價格規則（與 approve-snapshot.mjs 一致）：有規格價格時，商品價＝最低規格價；單一價＝定價、多價＝起價；

@@ -12,7 +12,7 @@ import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
 import { execFileSync } from 'node:child_process';
 import { ROOT, PRODUCTS_DIR, loadAll, validateProducts } from '../scripts/lib/data.mjs';
-import { normalizeCmsProduct, serializeProduct, EDITABLE_PRODUCT_KEYS, READONLY_PRODUCT_KEYS, EDITABLE_VARIANT_KEYS, EDITABLE_IMAGE_KEYS, EDITABLE_SPEC_KEYS } from '../scripts/lib/cms.mjs';
+import { normalizeCmsProduct, serializeProduct, CONTROL_KEYS, EDITABLE_PRODUCT_KEYS, READONLY_PRODUCT_KEYS, EDITABLE_VARIANT_KEYS, EDITABLE_IMAGE_KEYS, EDITABLE_SPEC_KEYS } from '../scripts/lib/cms.mjs';
 
 const CMS = process.env.PAGES_CMS_DIR;
 const DEPS = process.env.CMS_DEPS_DIR;
@@ -59,13 +59,13 @@ const fieldsOf = list => ({
   readonly: list.filter(f => f.readonly).map(f => f.name).sort(),
 });
 const top = fieldsOf(products.fields);
-ok(JSON.stringify(top.editable) === JSON.stringify([...EDITABLE_PRODUCT_KEYS].sort()), '後台可修改欄位與 scripts/lib/cms.mjs 一致');
+ok(JSON.stringify(top.editable) === JSON.stringify([...EDITABLE_PRODUCT_KEYS, ...CONTROL_KEYS].sort()), '後台可修改欄位與 scripts/lib/cms.mjs 一致（含「新商品審核」勾選）');
 ok(JSON.stringify(top.readonly) === JSON.stringify([...READONLY_PRODUCT_KEYS].sort()), '唯讀欄位：id、slug、蝦皮商品 ID');
 const sub = n => products.fields.find(f => f.name === n).fields;
 ok(JSON.stringify(fieldsOf(sub('variants')).editable) === JSON.stringify([...EDITABLE_VARIANT_KEYS].sort()), '規格可修改欄位一致');
 ok(JSON.stringify(fieldsOf(sub('images')).editable) === JSON.stringify([...EDITABLE_IMAGE_KEYS].sort()), '照片可修改欄位一致');
 ok(JSON.stringify(fieldsOf(sub('specifications')).editable) === JSON.stringify([...EDITABLE_SPEC_KEYS].sort()), '規格表可修改欄位一致');
-ok(products.operations?.create === false && products.operations?.delete === false && products.operations?.rename === false, '後台不能新增、刪除、改檔名（商品 ID 不變）');
+ok(products.operations?.create === true && products.operations?.delete === false && products.operations?.rename === false, '後台可以新增商品；不能刪除、改檔名（商品 ID 不變）');
 ok(!products.fields.some(f => f.name === 'review'), 'review（審核）不在後台，無法一鍵核准');
 
 // 商品列表：Pages CMS 以 filename 推算副檔名並過濾檔案。未設定 filename 時預設 .md，240 件 .json 會全部被濾掉（No entries）
@@ -83,7 +83,8 @@ ok(!products.fields.some(f => f.name === 'review'), 'review（審核）不在後
   ok(H.listCollection(config, 'products', items, { query: sample.shopee_item_id, fields: searchFields }).contents.length === 1, '以蝦皮商品 ID 搜尋找到 1 件');
   ok(H.listCollection(config, 'products', items, { query: 'sp-25447731916', fields: searchFields }).contents.length === 1, '以商品 ID 搜尋找到 1 件');
   ok(H.checkSavePath(config, 'products', 'src/data/products/sp-25447731916.json') === null, '儲存路徑與副檔名檢查通過（.json）');
-  const noFilename = H.loadConfig(yml.replace(/\n\s*filename: "\{id\}\.json"/, '')).config;
+  const noFilename = H.loadConfig(yml.replace(/\n\s*filename: "new-[^"]*\.json"/, '')).config;
+  ok(noFilename.object.content.find(c => c.name === 'products').filename !== products.filename, '對照組設定已移除 filename');
   const bad = H.listCollection(noFilename, 'products', items);
   ok(bad.contents.length === 0 && H.checkSavePath(noFilename, 'products', 'src/data/products/sp-25447731916.json'), '對照組：未設定 filename 時列表為 0 件（No entries）且儲存被拒');
 }
@@ -211,6 +212,18 @@ const sameExcept = (a, b, keys) => JSON.stringify(without(a, keys)) === JSON.str
   ok(r.error || r.product.price_display === 'inquiry', '價格 0：後台擋下（最小值 1）或改為詢價，不會出現 0 元');
 }
 
+// 新增商品（Pages CMS 空白表單 → 儲存，沒有既有檔案）
+const NEW_NAME = 'GNB 6S 1100mAh 120C LiPo 電池｜XT60｜5 吋花飛';
+{
+  const form = H.newEntry(config, 'products');
+  ok(form.availability === 'in_stock' && form.price_display === 'fixed' && form.line_inquiry_enabled === true && form.approve_publish === false, '新增商品表單預設：現貨、定價、顯示 LINE 按鈕、未審核');
+  form.name_zh = NEW_NAME; form.price_twd = 890;
+  const fname = H.newFilename(config, 'products', form);
+  ok(/^new-\d{8}-\d{6}\.json$/.test(fname) && H.checkSavePath(config, 'products', `src/data/products/${fname}`) === null, `新增商品檔名 ${fname}：副檔名與路徑檢查通過`);
+  const saved = H.saveEntry(config, 'products', form, '', false);
+  ok(saved.ok, `新增商品通過 Pages CMS 驗證（不選分類也可以儲存）${saved.ok ? '' : '：' + saved.error}`);
+}
+
 // ---------- 4. 端對端：Pages CMS commit → scripts/cms-normalize.mjs ----------
 console.log('4. 端對端：後台 commit → cms-normalize（暫存 git 工作區）');
 {
@@ -257,8 +270,49 @@ console.log('4. 端對端：後台 commit → cms-normalize（暫存 git 工作�
     const t = path.join(wt, 'assets/img/products', d);
     if (!fs.existsSync(t)) fs.symlinkSync(path.join(ROOT, 'assets/img/products', d), t);
   }
+  // (d) 後台新增商品（含上傳照片），不選分類
+  let newFile;
+  {
+    const form = H.newEntry(config, 'products');
+    form.name_zh = NEW_NAME; form.price_twd = 890;
+    if (sharpOk) {
+      const sharp = (await import('sharp')).default;
+      await sharp({ create: { width: 800, height: 800, channels: 3, background: '#222' } }).jpeg().toFile(path.join(wt, 'assets/img/products/IMG_0002.jpg'));
+      g('add', '-A'); g('commit', '-qm', '[後台] 新增 IMG_0002.jpg（林志騰）');
+      form.images = [{ src: 'assets/img/products/IMG_0002.jpg', alt: '', rights: 'ewp_own' }];
+    }
+    newFile = H.newFilename(config, 'products', form);
+    const saved = H.saveEntry(config, 'products', form, '', false);
+    fs.writeFileSync(P(newFile), saved.text);
+    g('add', '-A'); g('commit', '-qm', `[後台] 新增 ${newFile}（林志騰）`);
+  }
   const sum = path.join(wt, 'summary.md');
   execFileSync('node', ['scripts/cms-normalize.mjs', '--summary', sum], { cwd: wt, encoding: 'utf8' });
+  {
+    const created = fs.readdirSync(path.join(wt, 'src/data/products')).filter(f => /^ewp-\d{6}-[0-9a-f]{4}\.json$/.test(f));
+    ok(!fs.existsSync(P(newFile)) && created.length === 1, `新增商品：檔名改為正式商品 ID（${created[0]}），原本的 ${newFile} 已移除`);
+    const n = JSON.parse(fs.readFileSync(P(created[0]), 'utf8'));
+    ok(n.id === created[0].replace('.json', '') && n.slug && n.published === false && n.review.status === 'draft' && n.review.source === 'cms' && n.review.created_by === '林志騰', '新增商品：存成草稿、待審核，記錄建立者');
+    ok(n.primary_category_id === 'power-battery' && n.subcategory_id === '6s', `新增商品：自動分類為 電池與電源／6S（${n.primary_category_id}/${n.subcategory_id}）`);
+    ok(n.brand === null && n.price_twd === 890 && n.price_display === 'fixed' && Array.isArray(n.compatible_sizes) && n.seller_role === 'retail', '新增商品：價格、必要欄位齊全；品牌名稱不在現有清單時不亂填');
+    if (sharpOk) ok(n.images[0].src.startsWith(`/assets/img/products/${n.id}/u-`) && !fs.existsSync(path.join(wt, 'assets/img/products/IMG_0002.jpg')), '新增商品：上傳照片轉 WebP 並搬到新商品資料夾');
+    const notice = fs.readFileSync(path.join(wt, '.cms-notice.md'), 'utf8');
+    ok(notice.includes(n.id) && notice.includes('自動分類') && notice.includes('新商品審核'), '新增商品：產生通知（自動分類結果與審核步驟）');
+    // 第二次儲存：勾選「新商品審核」＋上架 → 核准並公開
+    g('add', '-A'); g('commit', '-qm', 'chore(後台): 校正');
+    cmsSave(created[0], f => { f.approve_publish = true; if (sharpOk) f.published = true; });
+    g('add', '-A'); g('commit', '-qm', `[後台] 更新 ${created[0]}（林志騰）`);
+    execFileSync('node', ['scripts/cms-normalize.mjs'], { cwd: wt, encoding: 'utf8' });
+    const a = JSON.parse(fs.readFileSync(P(created[0]), 'utf8'));
+    if (sharpOk) ok(a.review.status === 'approved' && a.review.approved_by === '林志騰' && a.published === true && !('approve_publish' in a), '勾選「新商品審核」＋上架：核准並公開；勾選欄位不寫入商品資料');
+    else ok(a.review.status === 'approved' && !('approve_publish' in a), '勾選「新商品審核」：核准；勾選欄位不寫入商品資料');
+    // 原有商品（蝦皮匯入）勾選審核：無效
+    cmsSave(rf, f => { f.approve_publish = true; f.published = true; });
+    g('add', '-A'); g('commit', '-qm', `[後台] 更新 ${rf}（員工E）`);
+    execFileSync('node', ['scripts/cms-normalize.mjs'], { cwd: wt, encoding: 'utf8' });
+    const rr = JSON.parse(fs.readFileSync(P(rf), 'utf8'));
+    ok(rr.review.status === 'rejected' && rr.published === false, '原有未核准商品勾選「新商品審核」：無效，仍不能上架');
+  }
   const m = JSON.parse(fs.readFileSync(P(mf), 'utf8'));
   const mPrev = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/products', mf), 'utf8'));
   ok(m.variants[0].price_twd === 5 && m.price_twd === 5 && JSON.stringify(m.review) === JSON.stringify(mPrev.review) && fs.readFileSync(P(mf), 'utf8').endsWith('}\n'), '後台改價格：校正後價格生效、review 完整、檔案格式還原');

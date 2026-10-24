@@ -108,9 +108,12 @@ export function validateProducts(products, categories) {
     const at = `${p._file || p.id}`;
     const err = m => errors.push(`${at}: ${m}`);
     const warn = m => warnings.push(`${at}: ${m}`);
-    for (const k of ['id', 'slug', 'name_zh', 'seller_role', 'primary_category_id', 'price_display', 'availability', 'updated_at']) {
+    for (const k of ['id', 'slug', 'name_zh', 'seller_role', 'price_display', 'availability', 'updated_at']) {
       if (p[k] === undefined || p[k] === null || p[k] === '') err(`缺少必要欄位 ${k}`);
     }
+    // 主分類：公開商品一定要有；後台新增、還無法自動判斷分類的草稿可以暫時空白（不會出現在網站）
+    const noCat = p.primary_category_id === undefined || p.primary_category_id === null || p.primary_category_id === '';
+    if (noCat && (p.published || p.review?.source !== 'cms')) err('缺少必要欄位 primary_category_id');
     for (const k of ['tags', 'compatible_sizes', 'specifications', 'images', 'variants']) {
       if (!Array.isArray(p[k])) err(`${k} 必須是陣列`);
     }
@@ -128,7 +131,8 @@ export function validateProducts(products, categories) {
     if (p.availability && !AVAILABILITY[p.availability]) err(`availability 不合法：${p.availability}`);
     if (p.price_display && !PRICE_DISPLAY.includes(p.price_display)) err(`price_display 不合法：${p.price_display}`);
     const cat = catMap.get(p.primary_category_id);
-    if (!cat) err(`找不到主分類：${p.primary_category_id}`);
+    if (noCat) { if (p.subcategory_id) err(`沒有主分類時不可只填子分類：${p.subcategory_id}`); }
+    else if (!cat) err(`找不到主分類：${p.primary_category_id}`);
     else if (p.subcategory_id && !cat.subcategories.some(s => s.id === p.subcategory_id)) err(`分類 ${cat.id} 沒有子分類 ${p.subcategory_id}`);
     // 庫存數量屬機密（EWP 決定，repo 公開）：任何庫存數字都不可寫入商品資料
     if ('stock_qty' in p) err('不可存放庫存數量 stock_qty（庫存屬機密，第二階段改存 D1）');
