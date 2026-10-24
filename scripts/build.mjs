@@ -600,7 +600,7 @@ ${contactCta()}` });
 function seoFiles() {
   if (DRAFTS) { write('robots.txt', 'User-agent: *\nDisallow: /\n'); return; }
   const urls = ['/', '/products/', ...categories.map(url.category), ...visible.map(url.product), '/builds/',
-    '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/learn/lipo-battery/', '/learn/fpv-video/', '/about/', '/contact/', '/fpv-help.html',
+    '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/learn/lipo-battery/', '/learn/fpv-video/', '/blackbox/', '/about/', '/contact/', '/fpv-help.html',
     ...Object.entries(site.policies).filter(([, v]) => v.approved).map(([k]) => `/${k}/`)];
   const lastmod = p => p?.updated_at;
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => {
