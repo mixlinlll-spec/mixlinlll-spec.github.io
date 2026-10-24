@@ -444,10 +444,4 @@ describe('商品內容與購買須知（v2.10 商品 SEO 整理）', () => {
     } finally { fs.rmSync(path.join(ROOT, OUT), { recursive: true, force: true }); }
   });
 
-  test('受保護欄位（ID、網址、蝦皮對應、規格選項、價格、供貨、發布、審核、圖片、銷售身分）與 origin/main 相同', (t) => {
-    const has = spawnSync('git', ['rev-parse', '--verify', '-q', 'origin/main:src/data/products'], { cwd: ROOT });
-    if (has.status !== 0) return t.skip('沒有 origin/main 可比對（淺層 checkout）');
-    const r = spawnSync('node', ['scripts/check-protected-fields.mjs', '--base', 'origin/main'], { cwd: ROOT, encoding: 'utf8' });
-    assert.equal(r.status, 0, r.stderr);
-  });
 });

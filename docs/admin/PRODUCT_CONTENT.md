@@ -33,7 +33,7 @@
 
 `id`、`slug`、`shopee_item_id`、`shopee_url`、`sku`、`seller_role`、價格、供貨狀態、`published`、`review.status`、`variants`（key、蝦皮規格 ID、名稱、價格）、圖片 `src`／使用權。
 
-檢查方式：`node scripts/check-protected-fields.mjs --base origin/main`（單元測試在有 origin/main 時也會自動檢查）。
+檢查方式：`node scripts/check-protected-fields.mjs --base origin/main`（只在大量修改文案時手動執行；後台修改價格、上下架是正常操作，不列入自動測試）。
 
 ## 三、需要 EWP 人工確認的商品
 
