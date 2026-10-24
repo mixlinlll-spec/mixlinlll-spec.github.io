@@ -2,40 +2,49 @@
   "id": "sp-49316569177",
   "slug": "6s-fpv-1550mah-180c-xt60-22-2v",
   "name_zh": "6S FPV穿越機鋰電池 1550mAh 180C XT60 22.2V 高倍率競速電池 花飛 閃電兔 銀瑞",
+  "sku": null,
+  "brand": null,
+  "manufacturer_model": null,
   "seller_role": "retail",
   "primary_category_id": "power-battery",
   "subcategory_id": "6s",
+  "tags": [],
+  "compatible_sizes": [],
+  "video_system": null,
   "battery_cells": [
     "6S"
   ],
+  "short_description": "",
+  "description": "",
+  "specifications": [],
   "images": [
     {
       "src": "/assets/img/products/sp-49316569177/01.webp",
-      "alt": "6S FPV穿越機鋰電池 1550mAh 180C XT60 22.2V 高倍率競速電池 花飛 閃電兔 銀瑞（主圖）",
-      "rights": "licensed",
       "src_small": "/assets/img/products/sp-49316569177/01-480.webp",
+      "alt": "6S FPV穿越機鋰電池 1550mAh 180C XT60 22.2V 高倍率競速電池 花飛 閃電兔 銀瑞（主圖）",
       "width": 1000,
       "height": 1000,
+      "rights": "licensed",
       "role": "cover",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820ld-ms9grf6jiznsf2"
     },
     {
       "src": "/assets/img/products/sp-49316569177/02.webp",
-      "alt": "6S FPV穿越機鋰電池 1550mAh 180C XT60 22.2V 高倍率競速電池 花飛 閃電兔 銀瑞（細節圖 1）",
-      "rights": "licensed",
       "src_small": "/assets/img/products/sp-49316569177/02-480.webp",
+      "alt": "6S FPV穿越機鋰電池 1550mAh 180C XT60 22.2V 高倍率競速電池 花飛 閃電兔 銀瑞（細節圖 1）",
       "width": 1000,
       "height": 1000,
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820le-ms9grf9fcsuc6a"
     },
     {
       "src": "/assets/img/products/sp-49316569177/03.webp",
-      "alt": "6S FPV穿越機鋰電池 1550mAh 180C XT60 22.2V 高倍率競速電池 花飛 閃電兔 銀瑞（細節圖 2）",
-      "rights": "licensed",
       "src_small": "/assets/img/products/sp-49316569177/03-480.webp",
+      "alt": "6S FPV穿越機鋰電池 1550mAh 180C XT60 22.2V 高倍率競速電池 花飛 閃電兔 銀瑞（細節圖 2）",
       "width": 525,
       "height": 525,
+      "rights": "licensed",
       "role": "gallery",
       "source_url": "https://s-cf-tw.shopeesz.com/file/tw-11134201-820lf-ms9grha0f56pc5"
     }
@@ -43,6 +52,7 @@
   "variants": [
     {
       "name": "1520mah/180C",
+      "sku": null,
       "price_twd": 1325,
       "availability": "in_stock",
       "shopee_variation_id": "371409169047"
@@ -51,11 +61,12 @@
   "price_twd": 1325,
   "price_display": "fixed",
   "availability": "in_stock",
+  "shopee_url": null,
   "shopee_item_id": "49316569177",
   "line_inquiry_enabled": true,
   "featured": false,
   "published": false,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "review": {
     "status": "approved",
     "source": "shopee-export:shopee_raw.csv",
@@ -84,7 +95,8 @@
       "variation_label": "閃電兔電池",
       "options": [
         {
-          "option": "1520mah/180C"
+          "option": "1520mah/180C",
+          "url": null
         }
       ]
     },
@@ -97,6 +109,8 @@
         {
           "variation_id": "371409169047",
           "name": "1520mah/180C",
+          "parent_sku": null,
+          "sku": null,
           "price": 1380,
           "min_qty": 1
         }
