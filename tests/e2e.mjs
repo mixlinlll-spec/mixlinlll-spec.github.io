@@ -398,6 +398,25 @@ console.log('16. 首頁最上方 YouTube 影片（載入後自動靜音播放）
   await page.context().close();
 }
 
+// 教學頁：章節標籤跟著捲動移動時，不可以把整個頁面拉回去（手機上會「滑不下去、一直彈上來」）
+console.log('教學頁捲動');
+for (const path of ['/learn/fpv-video/', '/learn/lipo-battery/']) {
+  const page = await newPage(390);
+  await page.route(u => !u.href.startsWith(PUB), rt => rt.fulfill({ body: '', contentType: 'text/css' })); // 外部字型：測試環境不連網
+  await page.goto(PUB + path, { waitUntil: 'load' });
+  const H = await page.evaluate(() => document.body.scrollHeight);
+  const jumps = [];
+  for (let y = 300; y < H - 1500; y += 900) {
+    await page.evaluate(y => window.scrollTo({ top: y, behavior: 'instant' }), y);
+    await page.waitForTimeout(500);
+    const now = await page.evaluate(() => window.scrollY);
+    if (Math.abs(now - y) > 2) jumps.push(`${y}→${Math.round(now)}`);
+  }
+  const tab = await page.evaluate(() => { const a = document.querySelector('#toc a.on'); const r = a.getBoundingClientRect(), t = a.parentElement.getBoundingClientRect(); return r.left >= t.left - 1 && r.right <= t.right + 1; });
+  ok(jumps.length === 0 && tab, `${path}：捲動時頁面不會被拉回${jumps.length ? '（' + jumps.slice(0, 3).join('、') + '）' : ''}，目前章節標籤在畫面內`);
+  await page.context().close();
+}
+
 ok(errors.length === 0, `瀏覽器 console 無錯誤${errors.length ? '：' + errors.slice(0, 5).join(' | ') : ''}`);
 await browser.close();
 console.log(`\n結果：通過 ${passes}，失敗 ${fails}`);
