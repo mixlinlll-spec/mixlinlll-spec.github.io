@@ -1,3 +1,4 @@
+import crypto from 'node:crypto';
 #!/usr/bin/env node
 // 電翼動力 EWP 靜態網站產生器（無外部套件）。
 //   node scripts/build.mjs              → 產生正式版到 dist/（只含 published=true 商品；GitHub Actions 部署此資料夾）
@@ -64,7 +65,15 @@ if (CHECK) process.exit(0);
 const catMap = new Map(categories.map(c => [c.id, c]));
 // 還沒有分類的後台新增草稿不產生頁面（預覽版也略過）
 const visible = products.filter(p => !isRejected(p) && (DRAFTS || p.published) && catMap.has(p.primary_category_id));
-const ctx = { site, categories, catMap, drafts: DRAFTS, version: process.env.EWP_VERSION || '2' };
+// 樣式與程式的版本號 = 內容雜湊：檔案一改，網址就變，瀏覽器不會用到舊的快取
+const assetVersion = (() => {
+  const h = crypto.createHash('sha256');
+  for (const f of ['assets/css/site.css', 'assets/js/site.js', 'assets/js/catalog.js', 'assets/js/product.js']) {
+    const p = path.join(ROOT, f); if (fs.existsSync(p)) h.update(fs.readFileSync(p));
+  }
+  return h.digest('hex').slice(0, 10);
+})();
+const ctx = { site, categories, catMap, drafts: DRAFTS, version: process.env.EWP_VERSION || assetVersion };
 const BASE = site.base_url;
 const generated = [];
 function write(rel, html) {
