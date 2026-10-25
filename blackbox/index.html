@@ -61,6 +61,19 @@ code{background:var(--panel-2);border:1px solid var(--line);padding:1px 6px;bord
 .flow small{color:var(--muted);font-size:12px}
 @media (max-width:620px){.flow{grid-template-columns:minmax(0,1fr)}.flow a{grid-template-columns:34px 1fr;column-gap:10px}.flow a .n{grid-row:span 2;align-self:center}}
 .flownote{margin-top:12px;font-size:14px;color:var(--muted)}
+.flownote b{color:var(--sand);font-weight:700}
+.stats{margin-top:18px;border:1px solid var(--line);background:var(--panel);border-radius:4px;padding:14px 16px;display:grid;gap:10px;max-width:520px}
+.stats .sh{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.stats .sh b{font-size:28px;color:var(--red);line-height:1}
+.stats .sh small{margin-left:auto;color:var(--muted);font-size:12px}
+.sbars{display:grid;gap:6px}
+.sb{display:grid;grid-template-columns:64px 1fr 44px;gap:10px;align-items:center;font-size:13px}
+.sb i{height:8px;background:var(--bg);border:1px solid var(--line);border-radius:2px;position:relative;overflow:hidden}
+.sb i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--w);background:var(--sand)}
+.sb b{text-align:right;font-weight:600}
+.si{font-size:14px;color:var(--muted)}
+.notyet{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:12px 14px;border-top:1px solid var(--red);background:rgba(255,74,61,.08);font-size:14px}
+.notyet b{color:var(--red)}
 ol.steps.big>li>div{display:grid;gap:8px}
 ol.steps.big>li>div>b{font-size:17px}
 b.r{color:var(--red)}
@@ -249,7 +262,8 @@ footer .wrap{display:grid;gap:14px}
       <a href="#bbl"><span class="n">02</span><b>匯出黑盒子</b><small>SD 卡或內建 Flash</small></a>
       <a href="#send"><span class="n">03</span><b>用 LINE 傳送</b><small>資料檔＋黑盒子檔</small></a>
     </div>
-    <p class="flownote">DIFF 和詳細規格是選填，有提供分析會更準。</p>
+    <p class="flownote">DIFF 和詳細規格是選填。<b>在網站選檔案只是檢查，最後用 LINE 傳送才算完成。</b></p>
+    <div class="stats" id="stats" hidden aria-label="目前收集進度"></div>
   </div>
 </header>
 
@@ -321,7 +335,7 @@ footer .wrap{display:grid;gap:14px}
 
     <div class="drop" id="bblDrop">
       <span class="big">選擇黑盒子檔（.BBL／.BFL／.TXT）</span>
-      <span class="muted">只在你的瀏覽器裡檢查是不是有效的紀錄，不會上傳。確認可以用之後，再清除 Flash。</span>
+      <span class="muted">只在你的瀏覽器裡檢查，<b>選完還不算送出</b>，最後要在步驟 03 用 LINE 傳送。確認可以用之後，再清除 Flash。</span>
       <label class="btn" for="bblFile">選擇檔案</label>
       <input type="file" id="bblFile" accept=".bbl,.bfl,.txt,.BBL,.BFL,.TXT">
     </div>
@@ -475,10 +489,26 @@ footer .wrap{display:grid;gap:14px}
   const toast = (msg) => { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove('show'), 2200); };
   const fmtBytes = (n) => n >= 1048576 ? (n / 1048576).toFixed(1) + ' MB' : n >= 1024 ? Math.round(n / 1024) + ' KB' : n + ' B';
 
+  /* ---------- 收集進度：只放真實統計，total 為 0 時不顯示。由 EWP 依實際收到的資料更新。 ---------- */
+  const STATS = {
+    updated: '',          // 例：'2026-11-01'
+    total: 0,             // 收到的可用黑盒子份數
+    sizes: [],            // 例：[['5 吋', 21], ['3.5 吋', 8], ['7 吋', 6]]
+    issues: [],           // 例：['推油門時震盪', 'Propwash']
+  };
+  (function renderStats() {
+    const el = $('#stats'); if (!el || !(STATS.total > 0)) return;
+    const sum = STATS.sizes.reduce((a, [, n]) => a + n, 0) || 1;
+    el.innerHTML = `<div class="sh"><span>目前已收集</span><b class="mono">${STATS.total}</b><span>份黑盒子</span>${STATS.updated ? `<small>更新 ${esc(STATS.updated)}</small>` : ''}</div>
+      ${STATS.sizes.length ? `<div class="sbars">${STATS.sizes.map(([k, n]) => `<div class="sb"><span>${esc(k)}</span><i style="--w:${Math.round((n / sum) * 100)}%"></i><b class="mono">${Math.round((n / sum) * 100)}%</b></div>`).join('')}</div>` : ''}
+      ${STATS.issues.length ? `<p class="si">常見狀況：${STATS.issues.map(esc).join('、')}</p>` : ''}`;
+    el.hidden = false;
+  })();
+
   /* ---------- chips ---------- */
   const CHIPS = {
     size: ['Whoop 65／75mm', '2 吋', '2.5 吋', '3 吋', '3.5 吋', '4 吋', '5 吋', '6 吋', '7 吋', '8 吋以上', 'X8／多軸'],
-    sym: ['飛起來很順，單純提供資料', '抖動／高頻震動', '急停或下墜時晃（Propwash）', '電機發燙', '畫面果凍', '翻滾後回彈', '懸停飄移', '其他'],
+    sym: ['飛起來很順，單純提供資料', '抖動／高頻震動', '推油門時震盪', '急停或下墜時晃（Propwash）', '電機發燙', '畫面果凍', '翻滾後回彈', '懸停飄移', '其他'],
   };
   for (const box of $$('[data-chips]')) {
     const name = box.dataset.chips, type = box.dataset.type;
@@ -675,7 +705,8 @@ footer .wrap{display:grid;gap:14px}
     box.innerHTML = `<div class="hd">黑盒子檢查<span class="st ${st[0]}">${st[1]}</span></div>
       <div class="kv">${kv.map(([k, v]) => `<div><span class="k">${k}</span><span class="v">${esc(v)}</span></div>`).join('')}</div>
       <ul class="issues">${r.issues.map(([c, m]) => `<li class="${c}">${esc(m)}</li>`).join('')}</ul>
-      ${r.logs.length ? `<div class="logscroll"><table class="logs"><thead><tr><th>段</th><th>大小</th><th>記錄速率</th><th>判斷</th><th>時間</th></tr></thead><tbody>${rows}</tbody></table></div>` : ''}`;
+      ${r.logs.length ? `<div class="logscroll"><table class="logs"><thead><tr><th>段</th><th>大小</th><th>記錄速率</th><th>判斷</th><th>時間</th></tr></thead><tbody>${rows}</tbody></table></div>` : ''}
+      ${r.ok ? `<div class="notyet"><span><b>檢查完成，還沒送出。</b>請到步驟 03 下載資料檔，連同這個黑盒子檔用 LINE 傳給我們。</span><a class="btn p sm" href="#send">前往送出</a></div>` : ''}`;
     update();
   }
 
