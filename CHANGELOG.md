@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.17.1（2026-10-26，DIFF 欄位不再保留非 DIFF 內容）
+
+- 在 DIFF 選了不是 Betaflight CLI 輸出的檔案（例如一般筆記 .txt）時，不讀入、不顯示、不存到瀏覽器、不會隨資料寄出；只提示「這個檔案不是 DIFF」。
+- 貼上的內容如果不是 CLI 輸出，同樣不會存下來或寄出。
+- 開啟頁面時，之前誤存在瀏覽器裡的非 DIFF 內容會自動清除。
+
 ## v2.17.1（2026-10-26，加入 Cloudflare Web Analytics）
 
 - 全站（含教學頁、知識庫、飛行數據計畫，不含 legacy 舊首頁）加入 Cloudflare Web Analytics 統計碼；token 存在 `site.json` 的 `analytics`。
