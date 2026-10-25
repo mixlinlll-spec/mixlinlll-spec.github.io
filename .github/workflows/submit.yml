@@ -79,6 +79,7 @@ jobs:
     steps:
       - name: 檢查 DNS 與實際寄送
         run: |
+          echo "::notice title=NS 名稱伺服器::$(dig +short NS ewpfpv.com | tr '\n' ' ')"
           MX=$(dig +short MX ewpfpv.com | tr '\n' ' ')
           SPF=$(dig +short TXT ewpfpv.com | grep -i spf | tr '\n' ' ')
           echo "::notice title=MX 記錄::${MX:-（沒有 MX 記錄）}"
