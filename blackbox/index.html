@@ -407,7 +407,7 @@ footer .wrap{display:grid;gap:14px}
           <button class="btn" type="button" id="btnShare" hidden>用手機直接分享到 LINE</button>
         </div>
         <ol class="steps">
-          <li><div>按 <b>① 下載資料檔</b>，會得到 <code id="fileName">EWP-BB-….txt</code>。</div></li>
+          <li><div>按 <b>① 下載資料檔</b>，會得到 <code id="fileName">EWP-BB-…-提交單.txt</code>（這是提交單，不是 DIFF；有放 DIFF 才會附在最後）。</div></li>
           <li><div>按 <b>② 開啟電翼動力 LINE</b>，在<b>官方帳號私訊</b>傳送：資料檔＋黑盒子檔。請不要傳到群組。</div></li>
           <li><div>黑盒子檔太大傳不出去：上傳到 Google 雲端硬碟，把分享連結貼到聊天室。</div></li>
         </ol>
@@ -722,6 +722,7 @@ footer .wrap{display:grid;gap:14px}
     const bblLine = b && state.bblFile ? `${state.bblFile.name}（${fmtBytes(state.bblFile.size)}，${b.logs.length} 段${b.last && b.last.fw ? '，' + b.last.fw + ' ' + b.last.version : ''}${b.last && b.last.rate ? '，約 ' + (b.last.rate >= 1000 ? (b.last.rate / 1000).toFixed(1) + ' kHz' : Math.round(b.last.rate) + ' Hz') : ''}）→ 另外用 LINE 傳送` : '未提供';
     const lines = [
       '【EWP Tune Lab 飛行數據提交單】',
+      '（本檔是提交單，不是 DIFF。客戶有提供 DIFF 時，內容附在本檔最後。）',
       `提交編號：${state.code}`,
       `建立：${ts}`,
       '',
@@ -756,7 +757,7 @@ footer .wrap{display:grid;gap:14px}
     $('[data-dot=spec]').classList.toggle('ok', spec);
     $('[data-dot=bbl]').classList.toggle('ok', bbl);
     $('#code').textContent = state.code;
-    $('#fileName').textContent = state.code + '.txt';
+    $('#fileName').textContent = state.code + '-提交單.txt';
     $('#sheet').textContent = sheetText(false);
     return { ready: spec && (diff || bbl) && v.consent, spec, diff, bbl, v };
   }
@@ -769,7 +770,7 @@ footer .wrap{display:grid;gap:14px}
     if (!s.v.consent) { toast('請勾選同意資料使用'); $('#consent').focus(); return false; }
     return false;
   }
-  function dataFile() { return new File([sheetText(true)], state.code + '.txt', { type: 'text/plain;charset=utf-8' }); }
+  function dataFile() { return new File([sheetText(true)], state.code + '-提交單.txt', { type: 'text/plain;charset=utf-8' }); }
   $('#btnDownload').addEventListener('click', () => {
     if (!gate()) return;
     const f = dataFile(); const url = URL.createObjectURL(f);
