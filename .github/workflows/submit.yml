@@ -1,0 +1,72 @@
+name: 飛行數據寄送（Cloudflare Worker）
+# 官網 /blackbox/ 的「寄出資料」按鈕：瀏覽器把提交單＋壓縮後的黑盒子組成信件，交給這個 Worker 寄到 EWP 信箱。
+# test：每次修改都跑；deploy：只在 main，金鑰沿用 GitHub Environment「inventory-production」。
+# 寄信需要先在 Cloudflare 為 ewpfpv.com 開啟 Email Routing 並驗證收件信箱（見 docs/admin/SUBMIT.md）。
+on:
+  push:
+    branches: [main]
+    paths: ['submit/**', '.github/workflows/submit.yml']
+  pull_request:
+    paths: ['submit/**', '.github/workflows/submit.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: submit-${{ github.ref }}
+  cancel-in-progress: false
+env:
+  WRANGLER_VERSION: 4.20.0
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 寄送 Worker 測試
+        run: node --import ./submit/test/register.mjs --test submit/test/submit.test.mjs
+  deploy:
+    needs: test
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: inventory-production
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: 檢查 Cloudflare 設定
+        id: cfg
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::notice title=飛行數據寄送::尚未設定 Cloudflare 金鑰，略過部署"
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else echo "ready=true" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        if: steps.cfg.outputs.ready == 'true'
+      - uses: actions/setup-node@v4
+        if: steps.cfg.outputs.ready == 'true'
+        with:
+          node-version: 22
+      - name: 部署 Worker
+        if: steps.cfg.outputs.ready == 'true'
+        working-directory: submit
+        run: |
+          npm install --no-save --no-audit --no-fund --no-package-lock wrangler@$WRANGLER_VERSION > /dev/null
+          if npx wrangler deploy; then
+            echo "已部署 ewp-submit"
+          else
+            echo "::error title=飛行數據寄送::部署失敗。最常見原因：ewpfpv.com 尚未開啟 Email Routing，或 mixlin.lll@gmail.com 尚未驗證（見 docs/admin/SUBMIT.md）。網頁會自動改用「用自己的信箱寄」備案。"
+            exit 1
+          fi
+      - name: 健康檢查
+        if: steps.cfg.outputs.ready == 'true'
+        run: |
+          for i in 1 2 3 4 5 6; do
+            R=$(curl -s https://ewp-submit.mixlin-lll.workers.dev/health || true)
+            echo "$R" | grep -q '"ok":true' && { echo "$R"; exit 0; }
+            sleep 5
+          done
+          echo "::warning title=飛行數據寄送::健康檢查沒有回應：$R"
