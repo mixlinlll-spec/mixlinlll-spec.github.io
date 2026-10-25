@@ -70,3 +70,24 @@ jobs:
             sleep 5
           done
           echo "::warning title=飛行數據寄送::健康檢查沒有回應：$R"
+  selftest:
+    # 手動執行時：檢查 ewpfpv.com 的 Email Routing DNS，並實際寄一封測試信（結果顯示在執行摘要的註記）
+    needs: deploy
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: 檢查 DNS 與實際寄送
+        run: |
+          MX=$(dig +short MX ewpfpv.com | tr '\n' ' ')
+          SPF=$(dig +short TXT ewpfpv.com | grep -i spf | tr '\n' ' ')
+          echo "::notice title=MX 記錄::${MX:-（沒有 MX 記錄）}"
+          echo "::notice title=SPF 記錄::${SPF:-（沒有 SPF 記錄）}"
+          echo "::notice title=健康檢查::$(curl -s https://ewp-submit.mixlin-lll.workers.dev/health)"
+          B="ewpselftest0123456789"
+          BODY=$(printf -- "--%s\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n%s\r\n--%s--\r\n" "$B" "$(printf '這是 EWP 寄送功能的測試信（GitHub Actions 自動寄出）。收到代表「寄出資料」按鈕可以正常寄到你的信箱。' | base64 -w 76)" "$B")
+          CODE=EWP-BB-$(date -u +%y%m%d)-TEST
+          R=$(printf '%s' "$BODY" | curl -s -w ' HTTP %{http_code}' -X POST https://ewp-submit.mixlin-lll.workers.dev/submit \
+            -H 'Origin: https://www.ewpfpv.com' -H 'content-type: text/plain' \
+            -H "x-ewp-code: $CODE" -H "x-ewp-boundary: $B" --data-binary @-)
+          echo "::notice title=測試寄送 $CODE::$R"
