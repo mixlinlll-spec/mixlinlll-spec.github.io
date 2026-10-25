@@ -194,6 +194,15 @@ export function footer(ctx) {
 </footer>`;
 }
 
+// Cloudflare Web Analytics：只在正式網域載入（本機測試、草稿預覽都不載入、不送資料）
+export function analyticsSnippet(site, { drafts = false } = {}) {
+  const a = site?.analytics;
+  if (drafts || !a?.cloudflare_token || !/^[0-9a-f]{32}$/.test(a.cloudflare_token)) return '';
+  const host = JSON.stringify(a.hostname || '');
+  const beacon = JSON.stringify(JSON.stringify({ token: a.cloudflare_token }));
+  return `<!-- Cloudflare Web Analytics --><script>if(location.hostname===${host}){var s=document.createElement('script');s.defer=true;s.src='https://static.cloudflareinsights.com/beacon.min.js';s.setAttribute('data-cf-beacon',${beacon});document.head.appendChild(s)}</script><!-- End Cloudflare Web Analytics -->`;
+}
+
 export function layout(ctx, { title, description, path, body, active, noindex = false, ogImage, jsonld = [], scripts = [], bodyClass = '' }) {
   const site = ctx.site;
   const fullTitle = title ? `${title}｜電翼動力 EWP` : `電翼動力 EWP｜${site.brand.motto}`;
@@ -235,6 +244,7 @@ ${body}
 ${footer(ctx)}
 <script src="/assets/js/site.js?v=${ctx.version}" defer></script>
 ${scripts.map(s => `<script src="${s}?v=${ctx.version}" defer></script>`).join('\n')}
+${analyticsSnippet(ctx.site, { drafts: ctx.drafts })}
 </body>
 </html>
 `;

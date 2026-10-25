@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.17.1（2026-10-26，加入 Cloudflare Web Analytics）
+
+- 全站（含教學頁、知識庫、飛行數據計畫，不含 legacy 舊首頁）加入 Cloudflare Web Analytics 統計碼；token 存在 `site.json` 的 `analytics`。
+- 只在正式網域 `www.ewpfpv.com` 載入；本機測試、CI、草稿預覽都不會送出統計資料。
+- 隱私權說明新增「流量統計」段落（不使用 Cookie、只有彙總資料），並更正原本「沒有安裝第三方分析」的說法。
+
 ## v2.17.0（2026-10-26，飛行數據改成一鍵 Email 寄出）
 
 - `/blackbox/` 移除所有 LINE 傳送的說明與按鈕（LINE 收不到 `.BBL` 檔）。改為「寄出資料」按鈕：在客戶的瀏覽器壓縮黑盒子（gzip），連同提交單直接寄到 EWP 信箱，有上傳進度條，完成後顯示提交編號。

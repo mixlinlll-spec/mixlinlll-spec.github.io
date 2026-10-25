@@ -445,3 +445,24 @@ describe('商品內容與購買須知（v2.10 商品 SEO 整理）', () => {
   });
 
 });
+
+describe('Cloudflare Web Analytics', () => {
+  test('正式版每個頁面（含教學頁、知識庫）都有統計碼且只在正式網域載入；預覽版沒有；legacy 不加', () => {
+    const OUT = '_test_analytics';
+    try {
+      execFileSync('node', ['scripts/build.mjs', '--out', OUT], { cwd: ROOT, stdio: 'pipe' });
+      const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
+      const pages = walk(path.join(ROOT, OUT)).filter(f => f.endsWith('.html'));
+      for (const f of pages) {
+        const html = fs.readFileSync(f, 'utf8');
+        const rel = path.relative(path.join(ROOT, OUT), f);
+        if (rel.startsWith('legacy')) { assert.ok(!html.includes('cloudflareinsights'), rel); continue; }
+        assert.equal((html.match(/cloudflareinsights/g) || []).length, 1, rel);
+        assert.ok(html.includes(`location.hostname==="${site.analytics.hostname}"`) && html.includes(site.analytics.cloudflare_token), rel);
+      }
+      for (const p of ['index.html', 'learn/fpv-video/index.html', 'fpv-help.html', 'blackbox/index.html']) assert.ok(pages.some(f => f.endsWith(p)), p);
+      execFileSync('node', ['scripts/build.mjs', '--out', OUT, '--drafts'], { cwd: ROOT, stdio: 'pipe' });
+      assert.ok(!fs.readFileSync(path.join(ROOT, OUT, 'index.html'), 'utf8').includes('cloudflareinsights'), '預覽版不載入');
+    } finally { fs.rmSync(path.join(ROOT, OUT), { recursive: true, force: true }); }
+  });
+});

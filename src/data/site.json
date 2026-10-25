@@ -94,5 +94,10 @@
       "approved": false,
       "_note": "由 EWP 另行整理正式內容"
     }
+  },
+  "analytics": {
+    "_comment": "Cloudflare Web Analytics（不使用 cookie）。token 是公開的追蹤代碼，不是密碼；只在正式網域載入。",
+    "cloudflare_token": "f582fac9aa864fbba6d11a2c07847868",
+    "hostname": "www.ewpfpv.com"
   }
 }
