@@ -711,7 +711,7 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
 
   /* nav highlight */
   const links=[...document.querySelectorAll('#toc a')];
-  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>{const on=l.getAttribute('href')==='#'+e.target.id;l.classList.toggle('on',on);if(on)l.scrollIntoView({block:'nearest',inline:'center'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>{const on=l.getAttribute('href')==='#'+e.target.id;l.classList.toggle('on',on);if(on){const t=l.parentElement;t.scrollTo({left:t.scrollLeft+l.getBoundingClientRect().left-t.getBoundingClientRect().left-(t.clientWidth-l.offsetWidth)/2,behavior:'smooth'})}})}})},{rootMargin:'-40% 0px -55% 0px'});
   document.querySelectorAll('section.ch').forEach(s=>io.observe(s));
 })();
 </script>
