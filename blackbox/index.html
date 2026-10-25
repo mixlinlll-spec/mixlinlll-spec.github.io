@@ -564,6 +564,7 @@ footer .wrap{display:grid;gap:14px}
     if (s.size) { const el = $$('input[name=size]').find((x) => x.value === s.size); if (el) el.checked = true; }
     if (FIELDS.some((k) => s[k]) || (s.sym || []).length) $('#moreSpec').open = true;
     for (const v of s.sym || []) { const el = $$('input[name=sym]').find((x) => x.value === v); if (el) el.checked = true; }
+    if (s.diffText && parseDiff(s.diffText).notCli) { s.diffText = ''; s.diffName = ''; setTimeout(save, 0); }
     if (s.diffText) { $('#moreDiff').open = true; $('#diffText').value = s.diffText; state.diffName = s.diffName || ''; setDiff(s.diffText, state.diffName, true); }
   }
 
@@ -593,7 +594,7 @@ footer .wrap{display:grid;gap:14px}
     const isDump = /^#\s*dump/m.test(t) || /^#\s*master\s*$/m.test(t) && (t.match(/^set /gm) || []).length > 400;
     const isAll = /^#\s*diff\s+all/m.test(t) || r.profiles >= 2;
     r.kind = isDump ? 'dump' : isAll ? 'diff all' : /^#\s*diff/m.test(t) || /^#\s*(master|profile)/m.test(t) ? 'diff' : '';
-    if (!banner && !/^set\s+\w+\s*=/m.test(t)) { r.issues.push(['bad', '這看起來不是 Betaflight 的 CLI 輸出。請在 CLI 輸入 diff all 後，複製全部內容。']); return r; }
+    if (!banner && !/^set\s+\w+\s*=/m.test(t)) { r.notCli = true; r.issues.push(['bad', '這看起來不是 Betaflight 的 CLI 輸出。請在 CLI 輸入 diff all 後，複製全部內容。']); return r; }
     if (!banner) r.issues.push(['warn', '找不到開頭的韌體版本那幾行，可能沒有複製完整。請從第一行開始全部複製。']);
     if (r.fw && r.fw.toLowerCase() !== 'betaflight') r.issues.push(['warn', `這是 ${r.fw} 的設定，目前以 Betaflight 為主，可能無法完整分析。`]);
     if (r.fw.toLowerCase() === 'betaflight' && r.version) {
@@ -613,13 +614,14 @@ footer .wrap{display:grid;gap:14px}
     const box = $('#diffResult');
     if (!state.diffText.trim()) { state.diff = null; box.className = 'result'; box.innerHTML = ''; update(); return; }
     const r = parseDiff(state.diffText); state.diff = r;
+    if (r.notCli) { state.diffText = ''; state.diffName = ''; state.diff = null; }
     const st = r.ok ? (r.issues.some((x) => x[0] === 'warn') ? ['warn', '可用，請看提醒'] : ['ok', '可以使用']) : ['bad', '需要修正'];
     const kv = [['韌體', r.fw ? `${r.fw} ${r.version}` : '—'], ['飛控', r.board || r.target || '—'], ['機名', r.craft || '—'], ['格式', r.kind || '—'], ['PID 設定檔', r.profiles || '—'], ['行數', r.lines]];
     box.innerHTML = `<div class="hd">DIFF 檢查${name ? `<span class="muted mono" style="font-weight:400;font-size:13px">${esc(name)}</span>` : ''}<span class="st ${st[0]}">${st[1]}</span></div>
       <div class="kv">${kv.map(([k, v]) => `<div><span class="k">${k}</span><span class="v">${esc(v)}</span></div>`).join('')}</div>
       <ul class="issues">${r.issues.map(([c, m]) => `<li class="${c}">${esc(m)}</li>`).join('')}</ul>`;
     box.className = 'result show';
-    if (!silent) save();
+    if (!silent || r.notCli) save();
     update();
   }
   function readTextFile(file) { return new Promise((res, rej) => { const fr = new FileReader(); fr.onload = () => res(String(fr.result || '')); fr.onerror = () => rej(fr.error); fr.readAsText(file); }); }
@@ -628,6 +630,8 @@ footer .wrap{display:grid;gap:14px}
     if (file.size > 2 * 1048576) { toast('檔案太大，這不像 DIFF 文字檔'); return; }
     const text = await readTextFile(file);
     if (/^H Product:Blackbox/m.test(text.slice(0, 4000))) { toast('這是黑盒子檔，請放到步驟 03'); return; }
+    const chk = parseDiff(text);
+    if (chk.notCli) { $('#diffText').value = ''; setDiff('', ''); toast('這個檔案不是 DIFF（Betaflight CLI 的 diff all），沒有讀入'); return; }
     $('#diffText').value = text; setDiff(text, file.name);
   }
 
