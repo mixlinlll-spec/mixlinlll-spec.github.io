@@ -92,7 +92,7 @@ export default {
       const Msg = deps.EmailMessage || EmailMessage;
       await env.MAILER.send(new Msg(env.FROM_ADDRESS, env.TO_ADDRESS, raw));
     } catch (e) {
-      return json({ error: tooBig ? 'too_large' : 'send_failed' }, tooBig ? 413 : 502, h);
+      return json(tooBig ? { error: 'too_large' } : { error: 'send_failed', detail: String((e && e.message) || e).slice(0, 200) }, tooBig ? 413 : 502, h);
     }
     return json({ ok: true, code }, 200, h);
   },
