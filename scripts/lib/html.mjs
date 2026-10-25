@@ -100,6 +100,7 @@ const NAV = [
   { href: '/builds/', label: '自製機型', key: 'builds' },
   { href: '/batteries/', label: '電池專區', key: 'batteries' },
   { href: '/services/', label: '客製服務', key: 'services' },
+  { href: '/tunelab/', label: 'TUNE LAB', key: 'tunelab', cls: 'nav-lab' },
   { href: '/fpv-help.html', label: '知識庫', key: 'knowledge' },
   { href: '/journal/', label: 'EWP 專欄', key: 'journal' },
   { href: '/about/', label: '關於', key: 'about' },
@@ -137,14 +138,14 @@ function mobileMenu(ctx) {
     </form>
     <ul class="drawer-list">
       <li><details><summary>商品商城</summary><ul class="drawer-cats"><li><a href="/products/">所有商品</a></li>${cats}</ul></details></li>
-      ${NAV.map(n => `<li><a href="${n.href}">${n.label}</a></li>`).join('')}
+      ${NAV.map(n => `<li><a href="${n.href}"${n.cls ? ` class="${n.cls}"` : ''}>${n.label}</a></li>`).join('')}
     </ul>
     <div class="drawer-cta">${lineButton(ctx.site, 'LINE 詢價', 'btn btn-line btn-block')}</div>
   </div>`;
 }
 
 export function header(ctx, active) {
-  const items = NAV.map(n => `<li><a href="${n.href}"${active === n.key ? ' aria-current="page"' : ''}>${n.label}</a></li>`).join('');
+  const items = NAV.map(n => `<li><a href="${n.href}"${n.cls ? ` class="${n.cls}"` : ''}${active === n.key ? ' aria-current="page"' : ''}>${n.label}</a></li>`).join('');
   return `<header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="/" aria-label="電翼動力 EWP 首頁"><span class="wordmark">EWP</span><span class="brand-name">電翼動力</span></a>
