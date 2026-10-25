@@ -8,7 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT, loadAll, validateProducts, AVAILABILITY, STATIC_WHITELIST, isRejected } from './lib/data.mjs';
 import { loadJournal, validateJournal, journalUrl, formatDate } from './lib/journal.mjs';
-import { isShowcase, esc, attr, url, layout, productCard, breadcrumbs, breadcrumbsJsonLd, picture, priceText, availabilityText, roleText, lineButton, shopeeButton, shopeeUrlFor } from './lib/html.mjs';
+import { isShowcase, esc, attr, url, layout, analyticsSnippet, productCard, breadcrumbs, breadcrumbsJsonLd, picture, priceText, availabilityText, roleText, lineButton, shopeeButton, shopeeUrlFor } from './lib/html.mjs';
 
 const args = process.argv.slice(2);
 const DRAFTS = args.includes('--drafts');
@@ -548,8 +548,9 @@ ${bizBlock()}
   // 政策頁
   const pol = (slug, title, approved, inner) => page(`${slug}/index.html`, { title, path: `/${slug}/`, noindex: !approved,
     body: `${pageHead('POLICY', title, '', breadcrumbs([{ name: '首頁', href: '/' }, { name: title }]))}<section class="wrap prose-wide">${inner}</section>` });
-  pol('privacy', '隱私權說明', site.policies.privacy.approved, `${site.policies.privacy.approved ? '' : '<div class="callout" role="note"><strong>草案，待 EWP 正式核對：</strong>以下內容依本網站目前的技術實況撰寫，尚未經電翼動力確認為正式版本。</div>'}<p>最後更新：2026-10-22</p>
-<h2>本網站蒐集的資料</h2><p>本網站為靜態網站，沒有會員登入、線上表單或站內購物功能，也沒有安裝第三方分析或廣告追蹤程式。網站本身不會要求你輸入或儲存個人資料。</p>
+  pol('privacy', '隱私權說明', site.policies.privacy.approved, `${site.policies.privacy.approved ? '' : '<div class="callout" role="note"><strong>草案，待 EWP 正式核對：</strong>以下內容依本網站目前的技術實況撰寫，尚未經電翼動力確認為正式版本。</div>'}<p>最後更新：2026-10-26</p>
+<h2>本網站蒐集的資料</h2><p>本網站為靜態網站，沒有會員登入、線上表單或站內購物功能，也沒有安裝廣告追蹤程式。網站本身不會要求你輸入或儲存個人資料。</p>
+<h2>流量統計</h2><p>本網站使用 Cloudflare Web Analytics 統計瀏覽次數、熱門頁面、來源網站與載入速度等彙總資料，用來改善網站內容。這項服務不使用 Cookie、不建立個人瀏覽紀錄，也不用於廣告；相關處理依 Cloudflare 的隱私權政策。</p>
 <h2>主機服務</h2><p>本網站由 GitHub Pages 提供主機服務。GitHub 可能為了安全與維運目的記錄造訪者的 IP 位址等技術資訊，相關處理依 GitHub 的隱私權政策。</p>
 <h2>外部連結</h2><p>當你點選 LINE、蝦皮、Instagram 或 Email 等外部連結後，資料的處理適用該服務的隱私權政策。透過這些管道聯絡時，請只提供處理需求所需的資訊。</p>
 <h2>變更</h2><p>若日後加入表單、分析工具或其他會處理個人資料的功能，本頁將同步更新。</p>`);
@@ -628,6 +629,16 @@ const PRODUCT_IMG = path.join(ROOT, 'assets', 'img', 'products');
 for (const item of STATIC_WHITELIST) {
   const src = path.join(ROOT, item);
   if (fs.existsSync(src)) fs.cpSync(src, path.join(OUT, item), { recursive: true, filter: f => !(f === PRODUCT_IMG || f.startsWith(PRODUCT_IMG + path.sep)) });
+}
+// 白名單中的手寫 HTML（知識庫、教學頁、飛行數據計畫…）也加上流量統計（legacy 舊版首頁不加）
+{
+  const snippet = analyticsSnippet(site, { drafts: DRAFTS });
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
+  if (snippet) for (const f of walk(OUT).filter(f => f.endsWith('.html') && !f.includes(`${path.sep}legacy${path.sep}`))) {
+    const html = fs.readFileSync(f, 'utf8');
+    if (html.includes('cloudflareinsights') || !html.includes('</body>')) continue;
+    fs.writeFileSync(f, html.replace(/<\/body>(?![\s\S]*<\/body>)/, `${snippet}\n</body>`));
+  }
 }
 let copiedProductImgDirs = 0;
 for (const p of visible) {
