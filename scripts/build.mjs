@@ -1,9 +1,9 @@
-import crypto from 'node:crypto';
 #!/usr/bin/env node
 // 電翼動力 EWP 靜態網站產生器（無外部套件）。
 //   node scripts/build.mjs              → 產生正式版到 dist/（只含 published=true 商品；GitHub Actions 部署此資料夾）
 //   node scripts/build.mjs --drafts     → 產生「含草稿」預覽版到 _preview/（noindex，不提交、不部署）
 //   node scripts/build.mjs --check      → 只驗證資料，不輸出
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT, loadAll, validateProducts, AVAILABILITY, STATIC_WHITELIST, isRejected } from './lib/data.mjs';
