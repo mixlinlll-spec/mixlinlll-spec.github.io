@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>EWP Tune Lab 飛行數據計畫｜電翼動力 EWP</title>
-<meta name="description" content="EWP Tune Lab 飛行數據計畫：提供飛機規格、Betaflight DIFF 與黑盒子紀錄，協助校正調參分析系統。內含 diff all 與黑盒子匯出教學，檔案會先在你的瀏覽器檢查，最後用 LINE 傳送。">
+<meta name="description" content="EWP Tune Lab 飛行數據計畫：選飛機尺寸、提供 Betaflight 黑盒子紀錄（DIFF 選填），協助校正調參分析系統。內含 diff all 與黑盒子匯出教學，檔案會先在你的瀏覽器檢查，最後用 LINE 傳送。">
 <link rel="canonical" href="https://www.ewpfpv.com/blackbox/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="EWP Tune Lab 飛行數據計畫｜電翼動力 EWP">
@@ -53,13 +53,32 @@ code{background:var(--panel-2);border:1px solid var(--line);padding:1px 6px;bord
 .hero h1{font-weight:900;font-size:clamp(30px,6vw,48px);margin-top:28px;letter-spacing:.01em}
 .hero h1 em{font-style:normal;color:var(--red)}
 .hero .lede{color:var(--muted);max-width:60ch;margin-top:12px;font-size:17px}
-.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin-top:26px;background:var(--line);border:1px solid var(--line)}
+.flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin-top:26px;background:var(--line);border:1px solid var(--line)}
 .flow a{background:var(--panel);padding:12px 14px;text-decoration:none;color:var(--text);display:grid;gap:2px}
 .flow a:hover{background:var(--panel-2)}
 .flow .n{font-family:var(--f-display);color:var(--red);font-size:13px;letter-spacing:.12em;font-weight:700}
 .flow b{font-size:15px;font-weight:700}
 .flow small{color:var(--muted);font-size:12px}
-@media (max-width:620px){.flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.flow{grid-template-columns:minmax(0,1fr)}.flow a{grid-template-columns:34px 1fr;column-gap:10px}.flow a .n{grid-row:span 2;align-self:center}}
+.flownote{margin-top:12px;font-size:14px;color:var(--muted)}
+ol.steps.big>li>div{display:grid;gap:8px}
+ol.steps.big>li>div>b{font-size:17px}
+b.r{color:var(--red)}
+.m p.t{font-size:15px;color:var(--text)}
+details.mini{border:0;padding:0}
+details.mini summary{font-weight:500;font-size:14px;color:var(--sand);justify-content:flex-start}
+details.mini summary::after{font-size:15px}
+details.mini[open]>*:not(summary){margin-top:10px}
+details.mini ul{margin:0;padding-left:1.2em;display:grid;gap:6px;font-size:15px}
+details.more{border:1px solid var(--line);border-radius:4px;background:var(--panel);padding:0}
+details.more:last-child{border-bottom:1px solid var(--line)}
+details.more>summary{padding:16px 18px;align-items:center}
+details.more>summary span{display:grid;gap:2px}
+details.more>summary small{font-weight:400;color:var(--muted);font-size:13px}
+details.more[open]>summary{border-bottom:1px solid var(--line)}
+.form.flat{border:0;background:transparent}
+.body.pad{padding:20px}
+.checklist li.skip .ic{color:var(--muted)}
 
 /* nav */
 nav.toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(16,17,19,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
@@ -180,7 +199,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--sand)}
 .logscroll{overflow-x:auto}
 
 /* send */
-.checklist{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.checklist,.body ul.checklist{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
 .checklist li{background:var(--panel);padding:12px 14px;display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:10px;align-items:center;font-size:15px}
 .checklist .ic{font-weight:700;text-align:center}
 .checklist li.ok .ic{color:var(--ok)} .checklist li.todo .ic{color:var(--bad)} .checklist li.opt .ic{color:var(--warn)}
@@ -224,232 +243,85 @@ footer .wrap{display:grid;gap:14px}
       <span class="tag">EWP TUNE LAB · FLIGHT DATA PROGRAM</span>
     </div>
     <h1>Tune Lab <em>飛行數據</em>計畫</h1>
-    <p class="lede">EWP Tune Lab 是電翼動力開發中的 Betaflight 調參分析系統。我們正在建立真實機型的飛行數據庫，用來校正濾波與 PID 的分析判斷。提供你的飛機規格、DIFF 與黑盒子紀錄，約 10～15 分鐘；資料僅用於研發，不會公開。</p>
-    <div class="flow" aria-label="四個步驟">
-      <a href="#spec"><span class="n">01</span><b>填飛機規格</b><small>尺寸、飛塔、電機、電池、槳葉</small></a>
-      <a href="#diff"><span class="n">02</span><b>匯出 DIFF</b><small>CLI 輸入 diff all</small></a>
-      <a href="#bbl"><span class="n">03</span><b>匯出黑盒子</b><small>SD 卡或內建 Flash</small></a>
-      <a href="#send"><span class="n">04</span><b>用 LINE 傳送</b><small>資料檔＋黑盒子檔</small></a>
+    <p class="lede">EWP Tune Lab 是電翼動力開發中的 Betaflight 調參分析系統。我們正在建立真實機型的飛行數據庫，用來校正濾波與 PID 的分析判斷。只要選飛機尺寸、傳一份黑盒子紀錄，約 5 分鐘；資料僅用於研發，不會公開。</p>
+    <div class="flow" aria-label="三個步驟">
+      <a href="#spec"><span class="n">01</span><b>選飛機尺寸</b><small>點一下就好</small></a>
+      <a href="#bbl"><span class="n">02</span><b>匯出黑盒子</b><small>SD 卡或內建 Flash</small></a>
+      <a href="#send"><span class="n">03</span><b>用 LINE 傳送</b><small>資料檔＋黑盒子檔</small></a>
     </div>
+    <p class="flownote">DIFF 和詳細規格是選填，有提供分析會更準。</p>
   </div>
 </header>
 
 <nav class="toc" aria-label="步驟導覽"><div class="wrap">
-  <a href="#spec"><span class="n">01</span>飛機規格<i class="dot" data-dot="spec"></i></a>
-  <a href="#diff"><span class="n">02</span>DIFF<i class="dot" data-dot="diff"></i></a>
-  <a href="#bbl"><span class="n">03</span>黑盒子<i class="dot" data-dot="bbl"></i></a>
-  <a href="#send"><span class="n">04</span>送出</a>
+  <a href="#spec"><span class="n">01</span>尺寸<i class="dot" data-dot="spec"></i></a>
+  <a href="#bbl"><span class="n">02</span>黑盒子<i class="dot" data-dot="bbl"></i></a>
+  <a href="#send"><span class="n">03</span>送出</a>
+  <a href="#more"><span class="n">+</span>選填</a>
   <a href="#privacy"><span class="n">··</span>隱私與問答</a>
 </div></nav>
 
 <main class="wrap">
 
 <section class="ch" id="spec">
-  <div class="chhead"><span class="n">01</span><h2>填寫飛機規格</h2></div>
-  <p class="thesis">規格越完整，分析越準。標 <span class="req">*</span> 的必填；不確定的欄位可以留空。</p>
+  <div class="chhead"><span class="n">01</span><h2>選擇飛機尺寸</h2></div>
+  <p class="thesis">PID、濾波、版本這些設定，黑盒子裡都有記錄；只有尺寸要你告訴我們。</p>
   <div class="body">
-    <div class="alert"><strong>先拆槳葉</strong><p>接 USB 匯出資料不需要插電池。如果需要插電池（例如要看電調設定），請一定先拆掉槳葉。</p></div>
     <form class="form" id="specForm" novalidate>
-      <div class="f" data-req="name">
-        <label for="name">你的 LINE 名稱<span class="req">*</span> <span class="hint">我們用這個對應你傳來的檔案</span></label>
-        <input type="text" id="name" name="name" autocomplete="nickname" maxlength="40">
-        <span class="msg">請填寫 LINE 名稱</span>
-      </div>
-
       <div class="f" data-req="size">
         <span class="lb" id="size-lb">飛機尺寸<span class="req">*</span></span>
         <div class="chips" role="radiogroup" aria-labelledby="size-lb" data-chips="size" data-type="radio"></div>
         <span class="msg">請選擇飛機尺寸</span>
       </div>
-
-      <div class="grid2">
-        <div class="f">
-          <label for="frame">機架型號 <span class="hint">例：Mark5、APEX、JeNo 3.5</span></label>
-          <input type="text" id="frame" name="frame" maxlength="60">
-        </div>
-        <div class="f">
-          <label for="vtx">圖傳系統</label>
-          <select id="vtx" name="vtx">
-            <option value="">請選擇</option><option>DJI O4 Pro</option><option>DJI O4 Lite</option><option>DJI O3</option><option>Walksnail</option><option>HDZero</option><option>類比</option><option>其他</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="grid2">
-        <div class="f" data-req="stack">
-          <label for="stack">飛塔（飛控＋電調）<span class="req">*</span> <span class="hint">例：SpeedyBee F405 V4 ＋ 55A 四合一</span></label>
-          <input type="text" id="stack" name="stack" maxlength="80">
-          <span class="msg">請填寫飛塔型號</span>
-        </div>
-        <div class="f">
-          <label for="escfw">電調韌體 <span class="hint">不確定就選「不確定」</span></label>
-          <select id="escfw" name="escfw">
-            <option value="">請選擇</option><option>不確定</option><option>BLHeli_S</option><option>Bluejay</option><option>BLHeli_32</option><option>AM32</option><option>其他</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="grid3">
-        <div class="f" data-req="motor">
-          <label for="motor">電機型號<span class="req">*</span> <span class="hint">例：T-Motor F60 Pro V</span></label>
-          <input type="text" id="motor" name="motor" maxlength="60">
-          <span class="msg">請填寫電機型號</span>
-        </div>
-        <div class="f">
-          <label for="msize">電機尺寸</label>
-          <input type="text" id="msize" name="msize" placeholder="2207" maxlength="12">
-        </div>
-        <div class="f" data-req="kv">
-          <label for="kv">KV 值<span class="req">*</span></label>
-          <input type="number" id="kv" name="kv" inputmode="numeric" min="100" max="40000" placeholder="1950">
-          <span class="msg">請填 KV（100～40000）</span>
-        </div>
-      </div>
-
-      <div class="grid3">
-        <div class="f" data-req="cells">
-          <label for="cells">電池串數<span class="req">*</span></label>
-          <select id="cells" name="cells">
-            <option value="">請選擇</option><option>1S</option><option>2S</option><option>3S</option><option>4S</option><option>5S</option><option>6S</option><option>8S</option><option>其他</option>
-          </select>
-          <span class="msg">請選擇幾 S</span>
-        </div>
-        <div class="f">
-          <label for="chem">電池種類</label>
-          <select id="chem" name="chem">
-            <option value="">請選擇</option><option>LiPo</option><option>LiHV</option><option>鋰離子（Li-ion）</option>
-          </select>
-        </div>
-        <div class="f">
-          <label for="mah">容量（mAh）</label>
-          <input type="number" id="mah" name="mah" inputmode="numeric" min="100" max="50000" placeholder="1300">
-        </div>
-      </div>
-
-      <div class="grid3">
-        <div class="f" data-req="prop">
-          <label for="prop">槳葉型號<span class="req">*</span> <span class="hint">例：Gemfan 51466、HQ 5.1×4.6×3</span></label>
-          <input type="text" id="prop" name="prop" maxlength="60">
-          <span class="msg">請填寫槳葉型號</span>
-        </div>
-        <div class="f">
-          <label for="blades">葉數</label>
-          <select id="blades" name="blades">
-            <option value="">請選擇</option><option>2 葉</option><option>3 葉</option><option>4 葉</option><option>5 葉以上</option>
-          </select>
-        </div>
-        <div class="f">
-          <label for="weight">起飛重量（g）<span class="hint"> 含電池</span></label>
-          <input type="number" id="weight" name="weight" inputmode="numeric" min="10" max="20000" placeholder="650">
-        </div>
-      </div>
-
-      <label class="check"><input type="checkbox" id="cam" name="cam"> <span>機上有掛運動相機（GoPro、Action 等）</span></label>
-
-      <div class="f">
-        <span class="lb" id="style-lb">主要飛行方式</span>
-        <div class="chips" role="radiogroup" aria-labelledby="style-lb" data-chips="style" data-type="radio"></div>
-      </div>
-
-      <div class="f">
-        <span class="lb" id="sym-lb">目前飛行狀況 <span class="hint">可複選</span></span>
-        <div class="chips" role="group" aria-labelledby="sym-lb" data-chips="sym" data-type="checkbox"></div>
-      </div>
-
-      <div class="f">
-        <label for="notes">補充說明 <span class="hint">什麼情況下發生、最近改過什麼設定</span></label>
-        <textarea id="notes" name="notes" rows="3" maxlength="800"></textarea>
-      </div>
     </form>
   </div>
 </section>
 
-<section class="ch" id="diff">
-  <div class="chhead"><span class="n">02</span><h2>匯出 DIFF</h2></div>
-  <p class="thesis">DIFF 是飛控裡所有「改過的設定」，一份文字就能看到 PID、濾波、Rate 和接線設定。</p>
-  <div class="body">
-    <h3>用電腦匯出（約 2 分鐘）</h3>
-    <ol class="steps">
-      <li><div>用 USB 線把飛控接上電腦，打開 <b>Betaflight Configurator</b>（或用 Chrome／Edge 開啟 <a href="https://app.betaflight.com" target="_blank" rel="noopener">app.betaflight.com</a>），按右上角 <span class="ui">連線</span> <span class="en">Connect</span>。</div></li>
-      <li><div>左側選單點 <span class="ui">CLI</span>（命令列）。</div></li>
-      <li><div>在最下方的輸入框輸入下面這行，按 Enter：
-        <div class="cmd"><code id="cmdDiff">diff all</code><button class="btn sm" type="button" data-copy="diff all">複製</button></div></div></li>
-      <li><div>等文字跑完，按右下角 <span class="ui">儲存到檔案</span> <span class="en">Save to File</span> 存成 .txt，或按 <span class="ui">複製到剪貼簿</span> <span class="en">Copy to clipboard</span>。</div></li>
-      <li><div>直接按 <span class="ui">中斷連線</span> <span class="en">Disconnect</span> 離開。<b>不需要輸入 save。</b></div></li>
-    </ol>
-    <div class="alert"><strong>要打 diff all，不是 diff</strong><p>只打 <code>diff</code> 只會輸出目前使用中的 PID／Rate 設定檔。也不要輸入其他指令；如果打錯了，直接中斷連線就好，不要輸入 <code>save</code>。</p></div>
-    <p class="muted">按鈕名稱會因 Configurator 版本與語言略有不同，位置大致一樣。手機目前不方便匯出 DIFF，建議用電腦；真的沒有電腦，可以只傳黑盒子。</p>
-
-    <h3>把 DIFF 放進來</h3>
-    <div class="drop" id="diffDrop">
-      <span class="big">選擇 DIFF 檔（.txt）</span>
-      <span class="muted">或把檔案拖曳到這裡。檔案只在你的瀏覽器裡讀取，不會上傳。</span>
-      <label class="btn" for="diffFile">選擇檔案</label>
-      <input type="file" id="diffFile" accept=".txt,.diff,text/plain">
-    </div>
-    <div class="or">或直接貼上</div>
-    <textarea class="code" id="diffText" placeholder="# diff all&#10;# version&#10;# Betaflight / STM32F405 (S405) 4.5.1 …" spellcheck="false" aria-label="貼上 diff all 內容"></textarea>
-    <div class="result" id="diffResult" aria-live="polite"></div>
-  </div>
-</section>
-
 <section class="ch" id="bbl">
-  <div class="chhead"><span class="n">03</span><h2>匯出黑盒子</h2></div>
-  <p class="thesis">黑盒子會記錄飛行中的陀螺儀、電機和搖桿資料，是判斷濾波和 PID 的關鍵。要先設定、飛一趟，再匯出。</p>
+  <div class="chhead"><span class="n">02</span><h2>匯出黑盒子</h2></div>
+  <p class="thesis">黑盒子記錄了飛行中的陀螺儀、電機和搖桿資料，還有整份 PID 與濾波設定。</p>
   <div class="body">
-    <h3>A. 飛之前先設定（第一次才需要）</h3>
-    <ol class="steps">
-      <li><div>Configurator 連線後，左側點 <span class="ui">黑盒子</span> <span class="en">Blackbox</span>。</div></li>
-      <li><div>照下表設定，按 <span class="ui">儲存並重新啟動</span> <span class="en">Save and Reboot</span>。</div></li>
+    <div class="alert"><strong>先拆槳葉</strong><p>接 USB 不需要插電池。如果一定要插電池，請先拆掉槳葉。</p></div>
+    <ol class="steps big">
+      <li><div><b>第一次錄：設定一次就好</b>
+        <p>Configurator 連線 → 左側 <span class="ui">黑盒子</span> → 記錄速率選 <b class="r">2 kHz</b>（沒有就選最接近的）→ <span class="ui">儲存並重新啟動</span>。</p>
+        <details class="mini"><summary>看詳細設定</summary>
+          <div class="mock" aria-label="建議的黑盒子設定">
+            <div class="bar"><span>BLACKBOX 建議設定</span><span>BETAFLIGHT 4.3 以上</span></div>
+            <div class="row"><span>記錄裝置 Logging device</span><b>內建 Flash 或 SD 卡</b></div>
+            <div class="row"><span>記錄速率 Logging rate</span><b class="r">2 kHz</b></div>
+            <div class="row"><span>最低可接受</span><b>1 kHz</b></div>
+          </div>
+          <p class="muted">記錄速率太低會看不到高頻雜訊。用內建 Flash 的飛機，飛之前在同一頁按 <span class="ui">清除 Flash</span>（Erase flash）確保有空間；請先確認舊紀錄不需要了。</p>
+        </details>
+      </div></li>
+      <li><div><b>飛 1～3 分鐘</b>
+        <p>照平常飛就好。有翻滾、急停、油門推到底更好。降落後先上鎖（Disarm）再拔電池。</p>
+      </div></li>
+      <li><div><b>把檔案拿出來</b>
+        <div class="methods">
+          <div class="m">
+            <h4><span class="pill r">SD 卡</span></h4>
+            <p class="t">取出記憶卡接電腦，打開 <code>LOGS</code> 資料夾，複製最新的 <code>LOG000xx.BFL</code>。</p>
+          </div>
+          <div class="m">
+            <h4><span class="pill r">內建 Flash</span></h4>
+            <p class="t">USB 接電腦 → Configurator 連線 → <span class="ui">黑盒子</span> 頁 → <span class="ui">儲存 Flash 到檔案</span>（Save flash to file），存成 .BBL。</p>
+          </div>
+        </div>
+        <details class="mini"><summary>其他方法：隨身碟模式、手機 App</summary>
+          <ul>
+            <li><b>隨身碟模式：</b>黑盒子頁按 <span class="ui">啟用 USB 隨身碟模式</span>（Activate Mass Storage Device Mode），電腦會出現一顆隨身碟，把裡面的 .BBL 複製出來。</li>
+            <li><b>手機：</b>部分 SpeedyBee 飛控可用 SpeedyBee App 透過藍牙下載，但速度很慢。</li>
+            <li>按鈕名稱會因 Configurator 版本與語言略有不同，位置大致一樣。</li>
+          </ul>
+        </details>
+      </div></li>
     </ol>
-    <div class="mock" aria-label="建議的黑盒子設定">
-      <div class="bar"><span>BLACKBOX 建議設定</span><span>BETAFLIGHT 4.3 以上</span></div>
-      <div class="row"><span>記錄裝置 Logging device</span><b>內建 Flash 或 SD 卡</b></div>
-      <div class="row"><span>記錄速率 Logging rate</span><b class="r">2 kHz（沒有就選最接近的）</b></div>
-      <div class="row"><span>最低可接受</span><b>1 kHz</b></div>
-    </div>
-    <p class="muted">記錄速率太低會看不到高頻雜訊，分析濾波就不準。用內建 Flash 的飛機，飛之前到同一頁按 <span class="ui">清除 Flash</span> <span class="en">Erase flash</span>，確定有空間（請先確認舊紀錄不需要了）。</p>
 
-    <h3>B. 怎麼飛</h3>
-    <ul>
-      <li>飛 1～3 分鐘就夠，不用飛完一整顆電池。</li>
-      <li>盡量包含：穩定懸停幾秒、油門推到底再收（重複幾次）、翻滾和翻轉、急停或下墜，再加上你平常的飛法。</li>
-      <li>照自己的能力飛就好，不要為了錄資料做沒把握的動作。請在合法、空曠的場地飛行。</li>
-      <li>降落後先上鎖（Disarm）再拔電池，紀錄才會完整寫入。</li>
-    </ul>
-
-    <h3>C. 匯出檔案</h3>
-    <div class="methods">
-      <div class="m">
-        <h4><span class="pill r">SD 卡</span>飛控有記憶卡</h4>
-        <ol>
-          <li>拔掉電池，取出記憶卡，用讀卡機接電腦。</li>
-          <li>打開 <code>LOGS</code> 資料夾（有些在記憶卡最外層）。</li>
-          <li>複製最新的 <code>LOG000xx.BFL</code>（也可能是 .BBL 或 .TXT）。</li>
-        </ol>
-      </div>
-      <div class="m">
-        <h4><span class="pill r">內建 Flash</span>沒有記憶卡</h4>
-        <ol>
-          <li>USB 接電腦，Configurator 連線，進 <span class="ui">黑盒子</span> 頁。</li>
-          <li>按 <span class="ui">儲存 Flash 到檔案</span> <span class="en">Save flash to file</span>，等進度條跑完，存成 .BBL。下載要幾分鐘，USB 線不要碰。</li>
-          <li>或按 <span class="ui">啟用 USB 隨身碟模式</span> <span class="en">Activate Mass Storage Device Mode</span>，電腦會出現一顆隨身碟，把裡面的 .BBL 檔複製出來。</li>
-        </ol>
-      </div>
-      <div class="m">
-        <h4><span class="pill">手機</span>SpeedyBee 飛控</h4>
-        <ol>
-          <li>部分 SpeedyBee 飛控可用 SpeedyBee App 透過藍牙下載黑盒子，但速度很慢。</li>
-          <li>其他飛控建議用電腦匯出。</li>
-        </ol>
-      </div>
-    </div>
-    <div class="alert"><strong>確認存好再清除</strong><p>先用下面的檢查工具確認檔案讀得到、有飛行紀錄，再清除 Flash。清除後就救不回來。</p></div>
-
-    <h3>檢查你的黑盒子檔</h3>
     <div class="drop" id="bblDrop">
       <span class="big">選擇黑盒子檔（.BBL／.BFL／.TXT）</span>
-      <span class="muted">只在你的瀏覽器裡讀取檔頭，確認是有效的 Betaflight 紀錄，不會上傳。</span>
+      <span class="muted">只在你的瀏覽器裡檢查是不是有效的紀錄，不會上傳。確認可以用之後，再清除 Flash。</span>
       <label class="btn" for="bblFile">選擇檔案</label>
       <input type="file" id="bblFile" accept=".bbl,.bfl,.txt,.BBL,.BFL,.TXT">
     </div>
@@ -457,9 +329,54 @@ footer .wrap{display:grid;gap:14px}
   </div>
 </section>
 
+<section class="ch" id="more">
+  <div class="chhead"><span class="n">+</span><h2>選填：讓分析更準</h2></div>
+  <p class="thesis">沒空可以跳過，直接到下一步送出。</p>
+  <div class="body">
+    <details class="more" id="moreSpec">
+      <summary><span><b>詳細規格</b><small>飛塔、電機、KV、槳葉、重量、飛行狀況</small></span></summary>
+      <form class="form flat" id="moreForm" novalidate>
+        <div class="grid2">
+          <div class="f"><label for="stack">飛塔（飛控＋電調）</label><input type="text" id="stack" maxlength="80" placeholder="SpeedyBee F405 V4 ＋ 55A"></div>
+          <div class="f"><label for="prop">槳葉</label><input type="text" id="prop" maxlength="60" placeholder="Gemfan 51466 三葉"></div>
+        </div>
+        <div class="grid3">
+          <div class="f"><label for="motor">電機</label><input type="text" id="motor" maxlength="60" placeholder="T-Motor F60 Pro V 2207"></div>
+          <div class="f"><label for="kv">KV</label><input type="number" id="kv" inputmode="numeric" min="100" max="40000" placeholder="1950"></div>
+          <div class="f"><label for="weight">起飛重量 g</label><input type="number" id="weight" inputmode="numeric" min="10" max="20000" placeholder="650"></div>
+        </div>
+        <div class="f">
+          <span class="lb" id="sym-lb">目前飛行狀況 <span class="hint">可複選</span></span>
+          <div class="chips" role="group" aria-labelledby="sym-lb" data-chips="sym" data-type="checkbox"></div>
+        </div>
+        <div class="f"><label for="notes">補充說明</label><textarea id="notes" rows="2" maxlength="800" placeholder="什麼情況下發生、最近改過什麼設定"></textarea></div>
+      </form>
+    </details>
+
+    <details class="more" id="moreDiff">
+      <summary><span><b>DIFF 設定檔</b><small>黑盒子沒記到的設定（接線、Port 等）</small></span></summary>
+      <div class="body pad">
+        <ol class="steps">
+          <li><div>Configurator 連線 → 左側 <span class="ui">CLI</span>。</div></li>
+          <li><div>輸入 <code>diff all</code> 按 Enter <button class="btn sm" type="button" data-copy="diff all">複製</button></div></li>
+          <li><div>按 <span class="ui">儲存到檔案</span>（Save to File），然後直接中斷連線。<b>不要輸入 save。</b></div></li>
+        </ol>
+        <div class="drop" id="diffDrop">
+          <span class="big">選擇 DIFF 檔（.txt）</span>
+          <label class="btn" for="diffFile">選擇檔案</label>
+          <input type="file" id="diffFile" accept=".txt,.diff,text/plain">
+        </div>
+        <div class="or">或直接貼上</div>
+        <textarea class="code" id="diffText" placeholder="# version&#10;# Betaflight / STM32F405 (S405) 4.5.1 …" spellcheck="false" aria-label="貼上 diff all 內容"></textarea>
+        <div class="result" id="diffResult" aria-live="polite"></div>
+      </div>
+    </details>
+  </div>
+</section>
+
 <section class="ch" id="send">
-  <div class="chhead"><span class="n">04</span><h2>用 LINE 傳給我們</h2></div>
-  <p class="thesis">網頁會把規格和 DIFF 整理成一個資料檔。把資料檔和黑盒子檔，傳到電翼動力的 LINE 官方帳號就完成了。</p>
+  <div class="chhead"><span class="n">03</span><h2>用 LINE 傳給我們</h2></div>
+  <p class="thesis">下載資料檔，連同黑盒子檔，傳到電翼動力 LINE 官方帳號就完成了。</p>
   <div class="body">
     <ul class="checklist" id="checklist" aria-live="polite"></ul>
     <label class="check"><input type="checkbox" id="consent"> <span>我同意電翼動力將這些資料用於調參工具的研發、校正與分析。我的 LINE 名稱與原始檔案不會被公開，要當成公開案例前會先問我。<span class="req">*</span></span></label>
@@ -467,19 +384,18 @@ footer .wrap{display:grid;gap:14px}
     <div class="sendgrid">
       <div class="body">
         <div class="note">
-          <span class="muted">資料單編號</span>
+          <span class="muted">提交編號</span>
           <span class="code-badge" id="code">—</span>
         </div>
         <div class="btns">
           <button class="btn p" type="button" id="btnDownload">① 下載資料檔</button>
           <a class="btn line" id="btnLine" href="https://lin.ee/WIUCkWP" target="_blank" rel="noopener">② 開啟電翼動力 LINE</a>
           <button class="btn" type="button" id="btnShare" hidden>用手機直接分享到 LINE</button>
-          <button class="btn" type="button" id="btnCopy">複製資料單文字</button>
         </div>
         <ol class="steps">
-          <li><div>按 <b>① 下載資料檔</b>，會得到 <code id="fileName">EWP-BB-….txt</code>（裡面有規格和 DIFF）。</div></li>
-          <li><div>按 <b>② 開啟電翼動力 LINE</b>，在<b>官方帳號的私訊</b>裡傳送：資料檔＋黑盒子檔。請不要傳到群組，避免你的設定被其他人看到。</div></li>
-          <li><div>黑盒子檔太大、LINE 傳不出去：上傳到 Google 雲端硬碟，把分享連結（設定為「知道連結的使用者」可檢視）貼到聊天室。</div></li>
+          <li><div>按 <b>① 下載資料檔</b>，會得到 <code id="fileName">EWP-BB-….txt</code>。</div></li>
+          <li><div>按 <b>② 開啟電翼動力 LINE</b>，在<b>官方帳號私訊</b>傳送：資料檔＋黑盒子檔。請不要傳到群組。</div></li>
+          <li><div>黑盒子檔太大傳不出去：上傳到 Google 雲端硬碟，把分享連結貼到聊天室。</div></li>
         </ol>
       </div>
       <div class="qr">
@@ -489,10 +405,10 @@ footer .wrap{display:grid;gap:14px}
     </div>
 
     <details>
-      <summary>預覽資料單內容</summary>
+      <summary>預覽資料檔內容</summary>
       <pre class="sheet" id="sheet"></pre>
     </details>
-    <div class="btns"><button class="btn sm" type="button" id="btnReset">清除全部重新填寫</button></div>
+    <div class="btns"><button class="btn sm" type="button" id="btnCopy">複製提交單文字</button><button class="btn sm" type="button" id="btnReset">清除全部，填下一台</button></div>
   </div>
 </section>
 
@@ -501,28 +417,28 @@ footer .wrap{display:grid;gap:14px}
   <div class="body">
     <div>
       <details>
+        <summary>為什麼只要尺寸和黑盒子？</summary>
+        <p>Betaflight 黑盒子檔的開頭會記錄整份 PID、濾波、Rate、韌體版本與飛控型號，電池串數也能從電壓算出來。黑盒子沒有的是飛機尺寸，而尺寸會影響共振頻率與合理的雜訊範圍，所以只請你選這一項。</p>
+      </details>
+      <details>
         <summary>這個網頁會上傳我的檔案嗎？</summary>
-        <p>不會。DIFF 和黑盒子都只在你的瀏覽器裡讀取、檢查。真正傳給我們的，只有你自己在 LINE 送出的檔案。已填的規格會暫存在這台裝置的瀏覽器，方便你分次填寫；按「清除全部重新填寫」就會刪除。</p>
+        <p>不會。檔案只在你的瀏覽器裡檢查。真正傳給我們的，只有你自己在 LINE 送出的檔案。填寫內容會暫存在這台裝置的瀏覽器，按「清除全部」就會刪除。</p>
       </details>
       <details>
         <summary>資料會怎麼使用？</summary>
-        <p>只用在電翼動力調參工具的研發、校正與分析。不會公開你的 LINE 名稱或原始檔案；如果想把你的飛機當成公開案例，會先徵求你的同意。想刪除資料，在 LINE 告訴我們資料單編號即可。</p>
+        <p>只用在電翼動力調參工具的研發、校正與分析。不會公開你的 LINE 名稱或原始檔案；如果想把你的飛機當成公開案例，會先徵求你的同意。想刪除資料，在 LINE 告訴我們提交編號即可。</p>
       </details>
       <details>
         <summary>飛機有 GPS，黑盒子會有位置嗎？</summary>
-        <p>有開 GPS 的飛機，黑盒子可能記錄飛行位置。檢查工具偵測到時會提醒你。介意的話，可以只傳 DIFF，或在 LINE 先跟我們說。</p>
+        <p>有開 GPS 的飛機，黑盒子可能記錄飛行位置。檢查工具偵測到時會提醒你。介意的話可以只傳 DIFF，或在 LINE 先跟我們說。</p>
       </details>
       <details>
-        <summary>只有 DIFF 或只有黑盒子可以嗎？</summary>
-        <p>可以，但兩個都有最好。DIFF 告訴我們「設定了什麼」，黑盒子告訴我們「實際飛起來怎樣」，兩個一起看才準。</p>
+        <summary>沒辦法匯出黑盒子，只有 DIFF 可以嗎？</summary>
+        <p>可以，在「選填」放入 DIFF 即可，但沒有黑盒子就看不到實際飛行狀況，分析會有限。</p>
       </details>
       <details>
         <summary>不是 Betaflight（INAV、EmuFlight）可以嗎？</summary>
         <p>目前以 Betaflight 4.3 以上為主。其他韌體也可以傳，但可能無法完整分析。</p>
-      </details>
-      <details>
-        <summary>一次可以傳好幾台嗎？</summary>
-        <p>可以。每台飛機各填一次、各下載一個資料檔，編號不同就不會搞混。填完一台後按「清除全部重新填寫」再填下一台。</p>
       </details>
     </div>
   </div>
@@ -562,7 +478,6 @@ footer .wrap{display:grid;gap:14px}
   /* ---------- chips ---------- */
   const CHIPS = {
     size: ['Whoop 65／75mm', '2 吋', '2.5 吋', '3 吋', '3.5 吋', '4 吋', '5 吋', '6 吋', '7 吋', '8 吋以上', 'X8／多軸'],
-    style: ['花飛', '競速', '電影運鏡', '長航', '室內', '其他'],
     sym: ['飛起來很順，單純提供資料', '抖動／高頻震動', '急停或下墜時晃（Propwash）', '電機發燙', '畫面果凍', '翻滾後回彈', '懸停飄移', '其他'],
   };
   for (const box of $$('[data-chips]')) {
@@ -571,7 +486,7 @@ footer .wrap{display:grid;gap:14px}
   }
 
   /* ---------- state ---------- */
-  const FIELDS = ['name', 'frame', 'vtx', 'stack', 'escfw', 'motor', 'msize', 'kv', 'cells', 'chem', 'mah', 'prop', 'blades', 'weight', 'notes'];
+  const FIELDS = ['stack', 'motor', 'kv', 'prop', 'weight', 'notes'];
   const state = { code: '', diff: null, diffText: '', diffName: '', bbl: null, bblFile: null };
 
   function newCode() {
@@ -584,9 +499,7 @@ footer .wrap{display:grid;gap:14px}
   function readForm() {
     const v = {};
     for (const k of FIELDS) v[k] = ($('#' + k).value || '').trim();
-    v.cam = $('#cam').checked;
     v.size = ($('input[name=size]:checked') || {}).value || '';
-    v.style = ($('input[name=style]:checked') || {}).value || '';
     v.sym = $$('input[name=sym]:checked').map((x) => x.value);
     v.consent = $('#consent').checked;
     return v;
@@ -597,17 +510,15 @@ footer .wrap{display:grid;gap:14px}
     state.code = (s && s.code) || newCode();
     if (!s) return;
     for (const k of FIELDS) if (s[k] != null) $('#' + k).value = s[k];
-    $('#cam').checked = !!s.cam; $('#consent').checked = !!s.consent;
-    for (const n of ['size', 'style']) if (s[n]) { const el = $$(`input[name=${n}]`).find((x) => x.value === s[n]); if (el) el.checked = true; }
+    $('#consent').checked = !!s.consent;
+    if (s.size) { const el = $$('input[name=size]').find((x) => x.value === s.size); if (el) el.checked = true; }
+    if (FIELDS.some((k) => s[k]) || (s.sym || []).length) $('#moreSpec').open = true;
     for (const v of s.sym || []) { const el = $$('input[name=sym]').find((x) => x.value === v); if (el) el.checked = true; }
-    if (s.diffText) { $('#diffText').value = s.diffText; state.diffName = s.diffName || ''; setDiff(s.diffText, state.diffName, true); }
+    if (s.diffText) { $('#moreDiff').open = true; $('#diffText').value = s.diffText; state.diffName = s.diffName || ''; setDiff(s.diffText, state.diffName, true); }
   }
 
   /* ---------- validation ---------- */
-  const REQ = {
-    name: (v) => !!v.name, size: (v) => !!v.size, stack: (v) => !!v.stack, motor: (v) => !!v.motor,
-    kv: (v) => +v.kv >= 100 && +v.kv <= 40000, cells: (v) => !!v.cells, prop: (v) => !!v.prop,
-  };
+  const REQ = { size: (v) => !!v.size };
   function specOk(v, mark) {
     let ok = true;
     for (const [k, fn] of Object.entries(REQ)) {
@@ -774,42 +685,28 @@ footer .wrap{display:grid;gap:14px}
     const p = (n) => String(n).padStart(2, '0');
     const ts = `${now.getFullYear()}-${p(now.getMonth() + 1)}-${p(now.getDate())} ${p(now.getHours())}:${p(now.getMinutes())}`;
     const or = (x, d = '未填') => (x ? x : d);
-    const motor = [v.motor, v.msize, v.kv ? v.kv + 'KV' : ''].filter(Boolean).join(' ');
-    const batt = [v.cells, v.chem, v.mah ? v.mah + 'mAh' : ''].filter(Boolean).join(' ');
-    const prop = v.prop + (v.blades ? `（${v.blades}）` : '');
-    const weight = v.weight ? `${v.weight} g` + (v.cam ? '（有掛運動相機）' : '') : v.cam ? '未填（有掛運動相機）' : '未填';
+    const motor = [v.motor, v.kv ? v.kv + 'KV' : ''].filter(Boolean).join(' ');
     const d = state.diff, b = state.bbl;
-    const diffLine = d ? `${d.ok ? '已附' : '已附（檢查有問題）'}｜${[d.fw && `${d.fw} ${d.version}`, d.board || d.target, d.kind].filter(Boolean).join('／')}` : '未提供';
+    const diffLine = d ? `${d.ok ? '已附在本檔最後' : '已附（檢查有問題）'}｜${[d.fw && `${d.fw} ${d.version}`, d.board || d.target, d.kind].filter(Boolean).join('／')}` : '未提供（選填）';
     const bblLine = b && state.bblFile ? `${state.bblFile.name}（${fmtBytes(state.bblFile.size)}，${b.logs.length} 段${b.last && b.last.fw ? '，' + b.last.fw + ' ' + b.last.version : ''}${b.last && b.last.rate ? '，約 ' + (b.last.rate >= 1000 ? (b.last.rate / 1000).toFixed(1) + ' kHz' : Math.round(b.last.rate) + ' Hz') : ''}）→ 另外用 LINE 傳送` : '未提供';
     const lines = [
       '【EWP Tune Lab 飛行數據提交單】',
-      `編號：${state.code}`,
+      `提交編號：${state.code}`,
       `建立：${ts}`,
-      `LINE 名稱：${or(v.name)}`,
       '',
-      '── 飛機規格 ──',
+      '── 飛機 ──',
       `尺寸：${or(v.size)}`,
-      `機架：${or(v.frame)}`,
-      `飛塔：${or(v.stack)}`,
-      `電調韌體：${or(v.escfw)}`,
-      `電機：${or(motor)}`,
-      `電池：${or(batt)}`,
-      `槳葉：${or(prop.trim())}`,
-      `圖傳：${or(v.vtx)}`,
-      `起飛重量：${weight}`,
-      `飛行方式：${or(v.style)}`,
-      `飛行狀況：${or(v.sym.join('、'))}`,
-      `補充：${or(v.notes, '無')}`,
+      ...[['飛塔', v.stack], ['電機', motor], ['槳葉', v.prop], ['起飛重量', v.weight ? v.weight + ' g' : ''], ['飛行狀況', v.sym.join('、')], ['補充', v.notes]]
+        .filter(([, x]) => x).map(([k, x]) => `${k}：${x}`),
       '',
       '── 檔案 ──',
       `DIFF：${diffLine}`,
       `黑盒子：${bblLine}`,
       `同意資料使用：${v.consent ? '是' : '否'}`,
     ];
-    if (withDiff) {
-      lines.push('', '── DIFF ALL ──');
-      lines.push(state.diffText.trim() ? state.diffText.replace(/\r\n?/g, '\n').trim() : '（未提供）');
-    } else if (state.diffText.trim()) lines.push('', '（DIFF 內容在資料檔裡）');
+    if (withDiff && state.diffText.trim()) {
+      lines.push('', '── DIFF ALL ──', state.diffText.replace(/\r\n?/g, '\n').trim());
+    } else if (!withDiff) if (state.diffText.trim()) lines.push('', '（DIFF 內容在資料檔裡）');
     return lines.join('\n') + '\n';
   }
 
@@ -818,16 +715,14 @@ footer .wrap{display:grid;gap:14px}
     const v = readForm();
     const spec = specOk(v, false), diff = !!(state.diff && state.diff.ok), bbl = !!(state.bbl && state.bbl.ok);
     const items = [
-      [spec ? 'ok' : 'todo', '飛機規格（必填欄位）', spec ? '' : '#spec'],
-      [diff ? 'ok' : state.diff ? 'todo' : 'opt', diff ? 'DIFF 已放入' : state.diff ? 'DIFF 需要修正' : 'DIFF（建議提供）', diff ? '' : '#diff'],
-      [bbl ? 'ok' : state.bbl ? 'todo' : 'opt', bbl ? '黑盒子檔已檢查' : state.bbl ? '黑盒子檔無法使用' : '黑盒子檔（建議提供）', bbl ? '' : '#bbl'],
+      [spec ? 'ok' : 'todo', spec ? `飛機尺寸：${v.size}` : '選擇飛機尺寸', spec ? '' : '#spec'],
+      [bbl ? 'ok' : state.bbl ? 'todo' : diff ? 'opt' : 'todo', bbl ? '黑盒子檔已檢查' : state.bbl ? '黑盒子檔無法使用' : '黑盒子檔', bbl ? '' : '#bbl'],
+      [diff ? 'ok' : state.diff ? 'todo' : 'skip', diff ? 'DIFF 已放入' : state.diff ? 'DIFF 需要修正' : 'DIFF（選填）', diff ? '' : '#more'],
       [v.consent ? 'ok' : 'todo', '同意資料使用', ''],
     ];
-    if (!diff && !bbl) items.splice(3, 0, ['todo', 'DIFF 和黑盒子至少要提供一個', '#diff']);
-    $('#checklist').innerHTML = items.map(([c, t, h]) => `<li class="${c}"><span class="ic">${c === 'ok' ? '✓' : c === 'opt' ? '!' : '✕'}</span><span>${esc(t)}</span>${h ? `<a data-go="${h}">前往</a>` : '<span></span>'}</li>`).join('');
+    $('#checklist').innerHTML = items.map(([c, t, h]) => `<li class="${c}"><span class="ic">${c === 'ok' ? '✓' : c === 'opt' ? '!' : c === 'skip' ? '–' : '✕'}</span><span>${esc(t)}</span>${h ? `<a data-go="${h}">前往</a>` : '<span></span>'}</li>`).join('');
     for (const a of $$('#checklist a[data-go]')) a.setAttribute('href', a.dataset.go);
     $('[data-dot=spec]').classList.toggle('ok', spec);
-    $('[data-dot=diff]').classList.toggle('ok', diff);
     $('[data-dot=bbl]').classList.toggle('ok', bbl);
     $('#code').textContent = state.code;
     $('#fileName').textContent = state.code + '.txt';
@@ -838,8 +733,8 @@ footer .wrap{display:grid;gap:14px}
     const s = update();
     if (s.ready) return true;
     specOk(s.v, true);
-    if (!s.spec) { toast('還有必填的規格沒填'); $('#spec').scrollIntoView(); return false; }
-    if (!s.diff && !s.bbl) { toast('DIFF 和黑盒子至少要提供一個'); $('#diff').scrollIntoView(); return false; }
+    if (!s.spec) { toast('請先選擇飛機尺寸'); $('#spec').scrollIntoView(); return false; }
+    if (!s.diff && !s.bbl) { toast('請先放入黑盒子檔'); $('#bbl').scrollIntoView(); return false; }
     if (!s.v.consent) { toast('請勾選同意資料使用'); $('#consent').focus(); return false; }
     return false;
   }
@@ -868,7 +763,7 @@ footer .wrap{display:grid;gap:14px}
     } catch (e) { if (e && e.name !== 'AbortError') toast('這支手機無法直接分享，請改用「下載資料檔」'); }
   });
   $('#btnReset').addEventListener('click', () => {
-    if (!confirm('確定要清除這台飛機的所有資料，重新填寫？')) return;
+    if (!confirm('確定要清除這台飛機的資料，填下一台？')) return;
     store.clear(); location.hash = ''; location.reload();
   });
   for (const b of $$('[data-copy]')) b.addEventListener('click', async () => { try { await navigator.clipboard.writeText(b.dataset.copy); toast('已複製 ' + b.dataset.copy); } catch { toast('請手動輸入 ' + b.dataset.copy); } });
@@ -876,6 +771,8 @@ footer .wrap{display:grid;gap:14px}
   /* ---------- wiring ---------- */
   $('#specForm').addEventListener('input', (e) => { const f = e.target.closest('.f'); if (f) f.classList.remove('err'); save(); update(); });
   $('#specForm').addEventListener('change', () => { save(); update(); });
+  $('#moreForm').addEventListener('input', () => { save(); update(); });
+  $('#moreForm').addEventListener('change', () => { save(); update(); });
   $('#consent').addEventListener('change', () => { save(); update(); });
   let dt; $('#diffText').addEventListener('input', () => { clearTimeout(dt); dt = setTimeout(() => setDiff($('#diffText').value, ''), 250); });
   $('#diffFile').addEventListener('change', (e) => onDiffFile(e.target.files[0]));
