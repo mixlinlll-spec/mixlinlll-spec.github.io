@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.15.1（2026-10-25，資料募集頁改名）
+
+- `/blackbox/` 標題改為「EWP Tune Lab 飛行數據計畫」，標籤改為 FLIGHT DATA PROGRAM，說明改為建立真實機型飛行數據庫、校正濾波與 PID 分析；資料檔標題改為「飛行數據提交單」。網址不變。
+
 ## v2.15.0（2026-10-25，黑盒子資料募集頁）
 
 - 新增 `/blackbox/`（免費提供黑盒子資料）：向 LINE 群客戶收集飛機規格（尺寸、飛塔、電機與 KV、電池、槳葉等）、Betaflight `diff all` 與黑盒子紀錄，內含 DIFF 與黑盒子（SD 卡／內建 Flash／SpeedyBee App）匯出教學。
