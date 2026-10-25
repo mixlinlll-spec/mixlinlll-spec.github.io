@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>EWP Tune Lab 飛行數據計畫｜電翼動力 EWP</title>
-<meta name="description" content="EWP Tune Lab 飛行數據計畫：選飛機尺寸、提供 Betaflight 黑盒子紀錄（DIFF 選填），協助校正調參分析系統。內含 diff all 與黑盒子匯出教學，檔案會先在你的瀏覽器檢查，最後用 LINE 傳送。">
+<meta name="description" content="EWP Tune Lab 飛行數據計畫：選飛機尺寸、提供 Betaflight 黑盒子紀錄（DIFF 選填），協助校正調參分析系統。內含 diff all 與黑盒子匯出教學，檔案會先在你的瀏覽器檢查，最後按「寄出資料」直接寄給 EWP。">
 <link rel="canonical" href="https://www.ewpfpv.com/blackbox/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="EWP Tune Lab 飛行數據計畫｜電翼動力 EWP">
@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
-/* 版面：單欄四步驟（規格 → DIFF → 黑盒子 → LINE 送出）＋黏頂導覽。延用電翼動力官網深色系與 learn/ 頁面元件。 */
+/* 版面：三步驟（尺寸 → 黑盒子 → 寄出資料）＋黏頂導覽。延用電翼動力官網深色系與 learn/ 頁面元件。 */
 :root{
   --bg:#101113; --panel:#191b1e; --panel-2:#202327; --line:#36383d;
   --text:#f5f4f0; --muted:#b1b1b4; --red:#ff4a3d; --sand:#d3c1a4;
@@ -156,7 +156,8 @@ ol.steps .en{color:var(--muted);font-size:14px}
 .f{display:grid;gap:6px;min-width:0}
 .f>label,.f>.lb{font-size:15px;font-weight:700}
 .f .hint{font-size:13px;color:var(--muted);font-weight:400}
-input[type=text],input[type=number],select,textarea{font:inherit;font-size:16px;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:10px 12px;width:100%;min-width:0}
+[hidden]{display:none!important}
+input[type=text],input[type=email],input[type=number],select,textarea{font:inherit;font-size:16px;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:10px 12px;width:100%;min-width:0}
 textarea{resize:vertical;line-height:1.55}
 textarea.code{font-family:var(--f-mono);font-size:13px;min-height:140px;white-space:pre;overflow-wrap:normal;overflow-x:auto}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--sand)}
@@ -219,8 +220,18 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--sand)}
 .checklist li a{font-size:13px;white-space:nowrap}
 pre.sheet{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:14px;font-family:var(--f-mono);font-size:13px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere;max-height:360px;overflow:auto;color:var(--text)}
 .code-badge{font-family:var(--f-mono);font-size:20px;font-weight:600;color:var(--sand);letter-spacing:.04em}
-.sendgrid{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:20px;align-items:start}
-@media (max-width:680px){.sendgrid{grid-template-columns:minmax(0,1fr)}.qr{display:none}}
+.btn.big{min-height:54px;padding:12px 28px;font-size:17px}
+.small{font-size:13px}
+.sendstate{display:grid;gap:8px;border:1px solid var(--line);background:var(--panel);padding:12px 14px;border-radius:4px}
+.sendrow{display:flex;justify-content:space-between;gap:12px;font-size:15px}
+.sendbar{height:6px;background:var(--bg);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.sendbar i{display:block;height:100%;width:0;background:var(--red);transition:width .2s}
+.callout{border:1px solid var(--line);border-radius:4px;padding:14px 16px;display:grid;gap:6px}
+.callout.ok{border-color:rgba(127,212,154,.55);background:rgba(127,212,154,.08)}
+.callout.ok strong{color:var(--ok)}
+.callout.bad{border-color:rgba(255,107,94,.55);background:rgba(255,107,94,.08)}
+.callout.bad strong{color:var(--bad)}
+.callout .btns{margin-top:4px}
 .qr{display:grid;gap:6px;justify-items:center;text-align:center;font-size:13px;color:var(--muted)}
 .qr img{width:160px;height:160px;border-radius:4px;background:#fff;padding:6px}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(20px);background:var(--text);color:var(--bg);padding:10px 18px;border-radius:3px;font-weight:700;font-size:15px;opacity:0;pointer-events:none;transition:.2s;z-index:50;max-width:calc(100% - 32px)}
@@ -260,9 +271,9 @@ footer .wrap{display:grid;gap:14px}
     <div class="flow" aria-label="三個步驟">
       <a href="#spec"><span class="n">01</span><b>選飛機尺寸</b><small>點一下就好</small></a>
       <a href="#bbl"><span class="n">02</span><b>匯出黑盒子</b><small>SD 卡或內建 Flash</small></a>
-      <a href="#send"><span class="n">03</span><b>用 LINE 傳送</b><small>資料檔＋黑盒子檔</small></a>
+      <a href="#send"><span class="n">03</span><b>寄出資料</b><small>按一下直接寄給 EWP</small></a>
     </div>
-    <p class="flownote">DIFF 和詳細規格是選填。<b>在網站選檔案只是檢查，最後用 LINE 傳送才算完成。</b></p>
+    <p class="flownote">DIFF 和詳細規格是選填。<b>選檔案只是檢查，最後按「寄出資料」才算完成。</b></p>
     <div class="stats" id="stats" hidden aria-label="目前收集進度"></div>
   </div>
 </header>
@@ -335,7 +346,7 @@ footer .wrap{display:grid;gap:14px}
 
     <div class="drop" id="bblDrop">
       <span class="big">選擇黑盒子檔（.BBL／.BFL／.TXT）</span>
-      <span class="muted">只在你的瀏覽器裡檢查，<b>選完還不算送出</b>，最後要在步驟 03 用 LINE 傳送。確認可以用之後，再清除 Flash。</span>
+      <span class="muted">只在你的瀏覽器裡檢查，<b>選完還不算送出</b>，最後要在步驟 03 按「寄出資料」。確認可以用之後，再清除 Flash。</span>
       <label class="btn" for="bblFile">選擇檔案</label>
       <input type="file" id="bblFile" accept=".bbl,.bfl,.txt,.BBL,.BFL,.TXT">
     </div>
@@ -389,40 +400,45 @@ footer .wrap{display:grid;gap:14px}
 </section>
 
 <section class="ch" id="send">
-  <div class="chhead"><span class="n">03</span><h2>用 LINE 傳給我們</h2></div>
-  <p class="thesis">下載資料檔，連同黑盒子檔，傳到電翼動力 LINE 官方帳號就完成了。</p>
+  <div class="chhead"><span class="n">03</span><h2>寄出資料</h2></div>
+  <p class="thesis">按一下「寄出資料」，提交單和黑盒子就會直接寄到電翼動力的信箱，不需要另外傳檔案。</p>
   <div class="body">
     <ul class="checklist" id="checklist" aria-live="polite"></ul>
-    <label class="check"><input type="checkbox" id="consent"> <span>我同意電翼動力將這些資料用於調參工具的研發、校正與分析。我的 LINE 名稱與原始檔案不會被公開，要當成公開案例前會先問我。<span class="req">*</span></span></label>
-
-    <div class="sendgrid">
-      <div class="body">
-        <div class="note">
-          <span class="muted">提交編號</span>
-          <span class="code-badge" id="code">—</span>
-        </div>
-        <div class="btns">
-          <button class="btn p" type="button" id="btnDownload">① 下載資料檔</button>
-          <a class="btn line" id="btnLine" href="https://lin.ee/WIUCkWP" target="_blank" rel="noopener">② 開啟電翼動力 LINE</a>
-          <button class="btn" type="button" id="btnShare" hidden>用手機直接分享到 LINE</button>
-        </div>
-        <ol class="steps">
-          <li><div>按 <b>① 下載資料檔</b>，會得到 <code id="fileName">EWP-BB-…-提交單.txt</code>（這是提交單，不是 DIFF；有放 DIFF 才會附在最後）。</div></li>
-          <li><div>按 <b>② 開啟電翼動力 LINE</b>，在<b>官方帳號私訊</b>傳送：資料檔＋黑盒子檔。請不要傳到群組。</div></li>
-          <li><div>黑盒子檔太大傳不出去：上傳到 Google 雲端硬碟，把分享連結貼到聊天室。</div></li>
-        </ol>
-      </div>
-      <div class="qr">
-        <img src="/assets/contact/line-qr.jpg" alt="電翼動力 LINE 官方帳號 QR Code" width="160" height="160" loading="lazy">
-        <span>電腦上可以用手機掃描<br>加入電翼動力 LINE</span>
-      </div>
+    <div class="f" data-req="email">
+      <label for="email">你的 Email<span class="req">*</span> <span class="hint">有問題時我們會寫信給你</span></label>
+      <input type="email" id="email" autocomplete="email" inputmode="email" maxlength="120" placeholder="name@example.com">
+      <span class="msg">請填寫正確的 Email</span>
     </div>
+    <label class="check"><input type="checkbox" id="consent"> <span>我同意電翼動力將這些資料用於調參工具的研發、校正與分析。我的 Email 與原始檔案不會被公開，要當成公開案例前會先問我。<span class="req">*</span></span></label>
+
+    <div class="note">
+      <span class="muted">提交編號</span>
+      <span class="code-badge" id="code">—</span>
+    </div>
+    <div class="btns">
+      <button class="btn p big" type="button" id="btnSend">寄出資料</button>
+    </div>
+    <div class="sendstate" id="sendState" hidden aria-live="polite">
+      <div class="sendrow"><span id="sendText">準備中…</span><span class="mono" id="sendPct"></span></div>
+      <div class="sendbar"><i id="sendBar"></i></div>
+    </div>
+    <div class="callout ok" id="sendOk" hidden>
+      <strong>已寄出，謝謝你！</strong>
+      <p>提交編號 <b class="mono" id="sendOkCode"></b>。電翼動力收到後，如果需要更多資料，會寫信到你填的 Email。要提供另一台飛機，按下面的「清除全部，填下一台」。</p>
+    </div>
+    <div class="callout bad" id="sendFail" hidden>
+      <strong id="sendFailTitle">寄送失敗</strong>
+      <p id="sendFailText"></p>
+      <p>也可以改用你自己的 Email 寄給 <b>mixlin.lll@gmail.com</b>：按下方按鈕會自動帶入提交單內容，<b>請記得在信裡附上黑盒子檔</b>。</p>
+      <div class="btns"><a class="btn" id="btnMail" href="mailto:mixlin.lll@gmail.com">改用我的 Email 寄送</a></div>
+    </div>
+    <p class="muted small">黑盒子會先在你的瀏覽器裡壓縮再寄出，壓縮後上限約 17 MB；太大時請在 Blackbox Explorer 只匯出其中一段飛行。</p>
 
     <details>
-      <summary>預覽資料檔內容</summary>
+      <summary>預覽提交單內容</summary>
       <pre class="sheet" id="sheet"></pre>
     </details>
-    <div class="btns"><button class="btn sm" type="button" id="btnCopy">複製提交單文字</button><button class="btn sm" type="button" id="btnReset">清除全部，填下一台</button></div>
+    <div class="btns"><button class="btn sm" type="button" id="btnDownload">下載提交單</button><button class="btn sm" type="button" id="btnReset">清除全部，填下一台</button></div>
   </div>
 </section>
 
@@ -436,15 +452,15 @@ footer .wrap{display:grid;gap:14px}
       </details>
       <details>
         <summary>這個網頁會上傳我的檔案嗎？</summary>
-        <p>不會。檔案只在你的瀏覽器裡檢查。真正傳給我們的，只有你自己在 LINE 送出的檔案。填寫內容會暫存在這台裝置的瀏覽器，按「清除全部」就會刪除。</p>
+        <p>按下「寄出資料」之前不會：檔案只在你的瀏覽器裡檢查。按下之後，提交單和黑盒子（先在你的瀏覽器壓縮）會直接寄到電翼動力的信箱，只有 EWP 看得到，不會放在網站上。填寫內容會暫存在這台裝置的瀏覽器，按「清除全部」就會刪除。</p>
       </details>
       <details>
         <summary>資料會怎麼使用？</summary>
-        <p>只用在電翼動力調參工具的研發、校正與分析。不會公開你的 LINE 名稱或原始檔案；如果想把你的飛機當成公開案例，會先徵求你的同意。想刪除資料，在 LINE 告訴我們提交編號即可。</p>
+        <p>只用在電翼動力調參工具的研發、校正與分析。不會公開你的 Email 或原始檔案；如果想把你的飛機當成公開案例，會先徵求你的同意。想刪除資料，寫信到 mixlin.lll@gmail.com 告訴我們提交編號即可。</p>
       </details>
       <details>
         <summary>飛機有 GPS，黑盒子會有位置嗎？</summary>
-        <p>有開 GPS 的飛機，黑盒子可能記錄飛行位置。檢查工具偵測到時會提醒你。介意的話可以只傳 DIFF，或在 LINE 先跟我們說。</p>
+        <p>有開 GPS 的飛機，黑盒子可能記錄飛行位置。檢查工具偵測到時會提醒你。介意的話可以只提供 DIFF，或在補充說明裡註明。</p>
       </details>
       <details>
         <summary>沒辦法匯出黑盒子，只有 DIFF 可以嗎？</summary>
@@ -462,9 +478,9 @@ footer .wrap{display:grid;gap:14px}
 <footer>
   <div class="wrap">
     <div class="foot-brand"><img src="data:image/png;base64,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" alt=""><span>電翼動力 EWP · READY TO FLY</span></div>
-    <p>操作上卡住了？直接在 LINE 問我們。</p>
+    <p>操作上卡住了？寫信問我們。</p>
     <div class="cta">
-      <a class="p" href="https://lin.ee/WIUCkWP" target="_blank" rel="noopener">LINE 詢問</a>
+      <a class="p" href="mailto:mixlin.lll@gmail.com?subject=%E9%A3%9B%E8%A1%8C%E6%95%B8%E6%93%9A%E8%A8%88%E7%95%AB%E5%95%8F%E9%A1%8C">Email 詢問</a>
       <a href="/journal/">EWP 專欄</a>
       <a href="https://shopee.tw/mixlin" target="_blank" rel="noopener">蝦皮賣場</a>
     </div>
@@ -517,7 +533,8 @@ footer .wrap{display:grid;gap:14px}
 
   /* ---------- state ---------- */
   const FIELDS = ['stack', 'motor', 'kv', 'prop', 'weight', 'notes'];
-  const state = { code: '', diff: null, diffText: '', diffName: '', bbl: null, bblFile: null };
+  const state = { code: '', diff: null, diffText: '', diffName: '', bbl: null, bblFile: null, sent: false };
+  const EMAIL_RE = /^[A-Za-z0-9._%+-]{1,64}@[A-Za-z0-9.-]{1,180}\.[A-Za-z]{2,24}$/;
 
   function newCode() {
     const d = new Date(); const p = (n) => String(n).padStart(2, '0');
@@ -532,15 +549,18 @@ footer .wrap{display:grid;gap:14px}
     v.size = ($('input[name=size]:checked') || {}).value || '';
     v.sym = $$('input[name=sym]:checked').map((x) => x.value);
     v.consent = $('#consent').checked;
+    v.email = ($('#email').value || '').trim();
     return v;
   }
-  function save() { store.set({ ...readForm(), code: state.code, diffText: state.diffText.slice(0, 200000), diffName: state.diffName }); }
+  function save() { store.set({ ...readForm(), code: state.code, sent: state.sent, diffText: state.diffText.slice(0, 200000), diffName: state.diffName }); }
   function restore() {
     const s = store.get();
     state.code = (s && s.code) || newCode();
+    state.sent = !!(s && s.sent);
     if (!s) return;
     for (const k of FIELDS) if (s[k] != null) $('#' + k).value = s[k];
     $('#consent').checked = !!s.consent;
+    if (s.email) $('#email').value = s.email;
     if (s.size) { const el = $$('input[name=size]').find((x) => x.value === s.size); if (el) el.checked = true; }
     if (FIELDS.some((k) => s[k]) || (s.sym || []).length) $('#moreSpec').open = true;
     for (const v of s.sym || []) { const el = $$('input[name=sym]').find((x) => x.value === v); if (el) el.checked = true; }
@@ -682,9 +702,9 @@ footer .wrap{display:grid;gap:14px}
       else r.issues.push(['ok', `記錄速率約 ${last.rate >= 1000 ? (last.rate / 1000).toFixed(1) + ' kHz' : Math.round(last.rate) + ' Hz'}。`]);
     }
     const crafts = new Set(logs.map((l) => l.craft).filter(Boolean));
-    if (crafts.size > 1) r.issues.push(['warn', `檔案裡有不同機名的紀錄（${[...crafts].join('、')}），請在 LINE 說明是哪一台。`]);
+    if (crafts.size > 1) r.issues.push(['warn', `檔案裡有不同機名的紀錄（${[...crafts].join('、')}），請在補充說明註明是哪一台。`]);
     if (logs.some((l) => l.gps)) r.issues.push(['warn', '這台有開 GPS，紀錄可能包含飛行位置。介意的話可以只傳 DIFF。']);
-    if (truncated) r.issues.push(['warn', `檔案很大（${fmtBytes(fileSize)}），只檢查了前段。LINE 傳不出去的話，請改用 Google 雲端硬碟連結。`]);
+    if (truncated) r.issues.push(['warn', `檔案很大（${fmtBytes(fileSize)}），只檢查了前段。寄不出去的話，請在 Blackbox Explorer 只匯出其中一段飛行。`]);
     r.ok = real.length > 0;
     r.last = last;
     return r;
@@ -706,7 +726,7 @@ footer .wrap{display:grid;gap:14px}
       <div class="kv">${kv.map(([k, v]) => `<div><span class="k">${k}</span><span class="v">${esc(v)}</span></div>`).join('')}</div>
       <ul class="issues">${r.issues.map(([c, m]) => `<li class="${c}">${esc(m)}</li>`).join('')}</ul>
       ${r.logs.length ? `<div class="logscroll"><table class="logs"><thead><tr><th>段</th><th>大小</th><th>記錄速率</th><th>判斷</th><th>時間</th></tr></thead><tbody>${rows}</tbody></table></div>` : ''}
-      ${r.ok ? `<div class="notyet"><span><b>檢查完成，還沒送出。</b>請到步驟 03 下載資料檔，連同這個黑盒子檔用 LINE 傳給我們。</span><a class="btn p sm" href="#send">前往送出</a></div>` : ''}`;
+      ${r.ok ? `<div class="notyet"><span><b>檢查完成，還沒送出。</b>請到步驟 03 填 Email，按「寄出資料」。</span><a class="btn p sm" href="#send">前往送出</a></div>` : ''}`;
     update();
   }
 
@@ -719,7 +739,7 @@ footer .wrap{display:grid;gap:14px}
     const motor = [v.motor, v.kv ? v.kv + 'KV' : ''].filter(Boolean).join(' ');
     const d = state.diff, b = state.bbl;
     const diffLine = d ? `${d.ok ? '已附在本檔最後' : '已附（檢查有問題）'}｜${[d.fw && `${d.fw} ${d.version}`, d.board || d.target, d.kind].filter(Boolean).join('／')}` : '未提供（選填）';
-    const bblLine = b && state.bblFile ? `${state.bblFile.name}（${fmtBytes(state.bblFile.size)}，${b.logs.length} 段${b.last && b.last.fw ? '，' + b.last.fw + ' ' + b.last.version : ''}${b.last && b.last.rate ? '，約 ' + (b.last.rate >= 1000 ? (b.last.rate / 1000).toFixed(1) + ' kHz' : Math.round(b.last.rate) + ' Hz') : ''}）→ 另外用 LINE 傳送` : '未提供';
+    const bblLine = b && state.bblFile ? `${state.bblFile.name}（${fmtBytes(state.bblFile.size)}，${b.logs.length} 段${b.last && b.last.fw ? '，' + b.last.fw + ' ' + b.last.version : ''}${b.last && b.last.rate ? '，約 ' + (b.last.rate >= 1000 ? (b.last.rate / 1000).toFixed(1) + ' kHz' : Math.round(b.last.rate) + ' Hz') : ''}）→ 壓縮後附在信件中` : '未提供';
     const lines = [
       '【EWP Tune Lab 飛行數據提交單】',
       '（本檔是提交單，不是 DIFF。客戶有提供 DIFF 時，內容附在本檔最後。）',
@@ -750,6 +770,7 @@ footer .wrap{display:grid;gap:14px}
       [spec ? 'ok' : 'todo', spec ? `飛機尺寸：${v.size}` : '選擇飛機尺寸', spec ? '' : '#spec'],
       [bbl ? 'ok' : state.bbl ? 'todo' : diff ? 'opt' : 'todo', bbl ? '黑盒子檔已檢查' : state.bbl ? '黑盒子檔無法使用' : '黑盒子檔', bbl ? '' : '#bbl'],
       [diff ? 'ok' : state.diff ? 'todo' : 'skip', diff ? 'DIFF 已放入' : state.diff ? 'DIFF 需要修正' : 'DIFF（選填）', diff ? '' : '#more'],
+      [EMAIL_RE.test(v.email) ? 'ok' : 'todo', EMAIL_RE.test(v.email) ? `Email：${v.email}` : '填寫你的 Email', ''],
       [v.consent ? 'ok' : 'todo', '同意資料使用', ''],
     ];
     $('#checklist').innerHTML = items.map(([c, t, h]) => `<li class="${c}"><span class="ic">${c === 'ok' ? '✓' : c === 'opt' ? '!' : c === 'skip' ? '–' : '✕'}</span><span>${esc(t)}</span>${h ? `<a data-go="${h}">前往</a>` : '<span></span>'}</li>`).join('');
@@ -757,9 +778,10 @@ footer .wrap{display:grid;gap:14px}
     $('[data-dot=spec]').classList.toggle('ok', spec);
     $('[data-dot=bbl]').classList.toggle('ok', bbl);
     $('#code').textContent = state.code;
-    $('#fileName').textContent = state.code + '-提交單.txt';
     $('#sheet').textContent = sheetText(false);
-    return { ready: spec && (diff || bbl) && v.consent, spec, diff, bbl, v };
+    $('#btnSend').disabled = state.sent;
+    $('#btnSend').textContent = state.sent ? '已寄出' : '寄出資料';
+    return { ready: spec && (diff || bbl) && v.consent && EMAIL_RE.test(v.email), spec, diff, bbl, v };
   }
   function gate() {
     const s = update();
@@ -767,6 +789,7 @@ footer .wrap{display:grid;gap:14px}
     specOk(s.v, true);
     if (!s.spec) { toast('請先選擇飛機尺寸'); $('#spec').scrollIntoView(); return false; }
     if (!s.diff && !s.bbl) { toast('請先放入黑盒子檔'); $('#bbl').scrollIntoView(); return false; }
+    if (!EMAIL_RE.test(s.v.email)) { $('[data-req=email]').classList.add('err'); toast('請填寫你的 Email'); $('#email').focus(); return false; }
     if (!s.v.consent) { toast('請勾選同意資料使用'); $('#consent').focus(); return false; }
     return false;
   }
@@ -776,23 +799,98 @@ footer .wrap{display:grid;gap:14px}
     const f = dataFile(); const url = URL.createObjectURL(f);
     const a = document.createElement('a'); a.href = url; a.download = f.name; document.body.appendChild(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 4000);
-    toast('已下載資料檔，接著開啟 LINE 傳送');
+    toast('已下載提交單');
   });
-  $('#btnCopy').addEventListener('click', async () => {
-    if (!gate()) return;
-    const t = sheetText(false);
-    try { await navigator.clipboard.writeText(t); toast('已複製，貼到 LINE 聊天室'); }
-    catch { const ta = document.createElement('textarea'); ta.value = t; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); toast('已複製，貼到 LINE 聊天室'); } catch { toast('無法自動複製，請展開預覽手動複製'); } ta.remove(); }
-  });
-  const canShareFiles = (() => { try { return !!(navigator.canShare && navigator.canShare({ files: [new File(['x'], 'x.txt', { type: 'text/plain' })] })); } catch { return false; } })();
-  if (canShareFiles && /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) $('#btnShare').hidden = false;
-  $('#btnShare').addEventListener('click', async () => {
-    if (!gate()) return;
-    const files = [dataFile()]; if (state.bblFile && state.bbl && state.bbl.ok) files.push(state.bblFile);
+  /* ---------- 寄出資料：瀏覽器壓縮黑盒子、組成 MIME，交給 ewp-submit Worker 寄到 EWP 信箱 ---------- */
+  const SUBMIT_URL = 'https://ewp-submit.mixlin-lll.workers.dev/submit';
+  const SEND_MAX = 24 * 1024 * 1024;
+  function b64Parts(bytes) {
+    const out = []; const CH = 57 * 1024;
+    for (let i = 0; i < bytes.length; i += CH) {
+      const sub = bytes.subarray(i, i + CH); let bin = '';
+      for (let j = 0; j < sub.length; j += 8192) bin += String.fromCharCode.apply(null, sub.subarray(j, j + 8192));
+      const b = btoa(bin); let s = '';
+      for (let k = 0; k < b.length; k += 76) s += b.slice(k, k + 76) + '\r\n';
+      out.push(s);
+    }
+    return out;
+  }
+  const utf8 = (s) => new TextEncoder().encode(s);
+  const asciiName = (s) => s.replace(/[^A-Za-z0-9._-]+/g, '_').slice(-80) || 'blackbox';
+  async function gzip(file) {
+    if (!('CompressionStream' in window)) return null;
+    const buf = await new Response(file.stream().pipeThrough(new CompressionStream('gzip'))).arrayBuffer();
+    return new Uint8Array(buf);
+  }
+  function setSend(text, pct) {
+    $('#sendState').hidden = false; $('#sendText').textContent = text;
+    $('#sendPct').textContent = pct == null ? '' : Math.round(pct) + '%';
+    $('#sendBar').style.width = (pct == null ? 15 : pct) + '%';
+  }
+  function mailtoHref() {
+    let body = sheetText(false);
+    if (body.length > 1500) body = body.slice(0, 1500) + '\n…';
+    body += '\n（請在這封信附上黑盒子檔 .BBL／.BFL）\n';
+    return 'mailto:mixlin.lll@gmail.com?subject=' + encodeURIComponent('【飛行數據】' + state.code) + '&body=' + encodeURIComponent(body);
+  }
+  function showFail(title, text) {
+    $('#sendState').hidden = true; $('#sendOk').hidden = true;
+    $('#sendFailTitle').textContent = title; $('#sendFailText').textContent = text;
+    $('#btnMail').setAttribute('href', mailtoHref());
+    $('#sendFail').hidden = false; $('#sendFail').scrollIntoView({ block: 'nearest' });
+  }
+  function upload(blob, headers, onProgress) {
+    return new Promise((resolve, reject) => {
+      const x = new XMLHttpRequest();
+      x.open('POST', SUBMIT_URL);
+      for (const [k, v] of Object.entries(headers)) x.setRequestHeader(k, v);
+      x.upload.onprogress = (e) => { if (e.lengthComputable) onProgress(e.loaded / e.total); };
+      x.onload = () => { let j = null; try { j = JSON.parse(x.responseText); } catch {} resolve({ status: x.status, body: j }); };
+      x.onerror = () => reject(new Error('network'));
+      x.ontimeout = () => reject(new Error('timeout'));
+      x.timeout = 10 * 60 * 1000;
+      x.send(blob);
+    });
+  }
+  $('#btnSend').addEventListener('click', async () => {
+    if (state.sent || !gate()) return;
+    const v = readForm();
+    const btn = $('#btnSend'); btn.disabled = true; $('#sendFail').hidden = true; $('#sendOk').hidden = true;
     try {
-      if (!navigator.canShare({ files })) throw new Error('unsupported');
-      await navigator.share({ files, title: state.code, text: `EWP 黑盒子資料 ${state.code}` });
-    } catch (e) { if (e && e.name !== 'AbortError') toast('這支手機無法直接分享，請改用「下載資料檔」'); }
+      const B = 'ewp' + state.code.replace(/[^A-Z0-9]/g, '') + Math.random().toString(36).slice(2, 12);
+      const sheet = sheetText(true);
+      const parts = [
+        `--${B}\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n`, ...b64Parts(utf8(sheet)), '\r\n',
+        `--${B}\r\nContent-Type: text/plain; charset=UTF-8; name="${state.code}-sheet.txt"\r\nContent-Disposition: attachment; filename="${state.code}-sheet.txt"; filename*=UTF-8''${encodeURIComponent(state.code + '-提交單.txt')}\r\nContent-Transfer-Encoding: base64\r\n\r\n`, ...b64Parts(utf8(sheet)), '\r\n',
+      ];
+      const f = state.bblFile && state.bbl && state.bbl.ok ? state.bblFile : null;
+      if (f) {
+        setSend('正在壓縮黑盒子…', null);
+        const gz = await gzip(f);
+        const data = gz || new Uint8Array(await f.arrayBuffer());
+        const name = asciiName(state.code + '-' + f.name) + (gz ? '.gz' : '');
+        if (data.length * 1.37 > SEND_MAX) { showFail('檔案太大', `黑盒子壓縮後約 ${fmtBytes(data.length)}，超過可以寄出的大小。請在 Blackbox Explorer 只匯出其中一段飛行再試，或改用自己的 Email 搭配 Google 雲端硬碟連結。`); btn.disabled = false; return; }
+        parts.push(`--${B}\r\nContent-Type: ${gz ? 'application/gzip' : 'application/octet-stream'}; name="${name}"\r\nContent-Disposition: attachment; filename="${name}"\r\nContent-Transfer-Encoding: base64\r\n\r\n`, ...b64Parts(data), '\r\n');
+      }
+      parts.push(`--${B}--\r\n`);
+      const blob = new Blob(parts, { type: 'text/plain' });
+      setSend('正在寄出…', 0);
+      const r = await upload(blob, { 'content-type': 'text/plain', 'x-ewp-code': state.code, 'x-ewp-boundary': B, 'x-ewp-reply': v.email }, (p) => setSend('正在寄出…', p * 100));
+      if (r.status === 200 && r.body && r.body.ok) {
+        state.sent = true; save();
+        $('#sendState').hidden = true; $('#sendOkCode').textContent = state.code; $('#sendOk').hidden = false;
+        $('#sendOk').scrollIntoView({ block: 'nearest' }); update();
+        return;
+      }
+      const err = r.body && r.body.error;
+      if (err === 'too_large') showFail('檔案太大', '超過可以寄出的大小。請在 Blackbox Explorer 只匯出其中一段飛行再試。');
+      else if (err === 'rate_limited') showFail('寄送太頻繁', '請 10 分鐘後再試一次。');
+      else if (err === 'bad_email') showFail('Email 格式不正確', '請確認你填的 Email。');
+      else showFail('暫時無法寄出', '寄送服務目前沒有回應。');
+    } catch (e) {
+      showFail('暫時無法寄出', '網路連線中斷，或寄送服務目前沒有回應。');
+    }
+    btn.disabled = state.sent;
   });
   $('#btnReset').addEventListener('click', () => {
     if (!confirm('確定要清除這台飛機的資料，填下一台？')) return;
@@ -806,6 +904,7 @@ footer .wrap{display:grid;gap:14px}
   $('#moreForm').addEventListener('input', () => { save(); update(); });
   $('#moreForm').addEventListener('change', () => { save(); update(); });
   $('#consent').addEventListener('change', () => { save(); update(); });
+  $('#email').addEventListener('input', () => { $('[data-req=email]').classList.remove('err'); save(); update(); });
   let dt; $('#diffText').addEventListener('input', () => { clearTimeout(dt); dt = setTimeout(() => setDiff($('#diffText').value, ''), 250); });
   $('#diffFile').addEventListener('change', (e) => onDiffFile(e.target.files[0]));
   $('#bblFile').addEventListener('change', (e) => onBblFile(e.target.files[0]));

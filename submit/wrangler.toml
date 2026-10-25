@@ -1,0 +1,21 @@
+# EWP 飛行數據寄送服務（Cloudflare Worker）
+# 官網 /blackbox/ 的「寄出資料」按鈕把提交單＋壓縮後的黑盒子寄到 EWP 信箱。
+# 需要：ewpfpv.com 已啟用 Cloudflare Email Routing，且收件信箱已在 Email Routing 驗證（見 docs/admin/SUBMIT.md）。
+# 部署由 .github/workflows/submit.yml 執行（與庫存後台共用 GitHub Environment「inventory-production」的 Cloudflare 金鑰）。
+name = "ewp-submit"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
+preview_urls = false
+
+[vars]
+ALLOWED_ORIGINS = "https://www.ewpfpv.com,https://ewpfpv.com"
+FROM_ADDRESS = "data@ewpfpv.com"
+TO_ADDRESS = "mixlin.lll@gmail.com"
+
+[[send_email]]
+name = "MAILER"
+destination_address = "mixlin.lll@gmail.com"
+
+[observability]
+enabled = false
