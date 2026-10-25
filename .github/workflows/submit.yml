@@ -86,9 +86,10 @@ jobs:
           echo "::notice title=SPF 記錄::${SPF:-（沒有 SPF 記錄）}"
           echo "::notice title=健康檢查::$(curl -s https://ewp-submit.mixlin-lll.workers.dev/health)"
           B="ewpselftest0123456789"
-          BODY=$(printf -- "--%s\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n%s\r\n--%s--\r\n" "$B" "$(printf '這是 EWP 寄送功能的測試信（GitHub Actions 自動寄出）。收到代表「寄出資料」按鈕可以正常寄到你的信箱。' | base64 -w 76)" "$B")
+          MSG=$(printf '這是 EWP 寄送功能的測試信（GitHub Actions 自動寄出）。收到代表「寄出資料」按鈕可以正常寄到你的信箱。' | base64 -w 76 | sed 's/$/\r/')
+          printf -- "--%s\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n%s\n\r\n--%s--\r\n" "$B" "$MSG" "$B" > "$RUNNER_TEMP/body.txt"
           CODE=EWP-BB-$(date -u +%y%m%d)-TEST
-          R=$(printf '%s' "$BODY" | curl -s -w ' HTTP %{http_code}' -X POST https://ewp-submit.mixlin-lll.workers.dev/submit \
+          R=$(curl -s -w ' HTTP %{http_code}' -X POST https://ewp-submit.mixlin-lll.workers.dev/submit \
             -H 'Origin: https://www.ewpfpv.com' -H 'content-type: text/plain' \
-            -H "x-ewp-code: $CODE" -H "x-ewp-boundary: $B" --data-binary @-)
+            -H "x-ewp-code: $CODE" -H "x-ewp-boundary: $B" --data-binary @"$RUNNER_TEMP/body.txt")
           echo "::notice title=測試寄送 $CODE::$R"
