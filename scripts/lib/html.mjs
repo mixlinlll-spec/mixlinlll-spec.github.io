@@ -209,9 +209,10 @@ export function layout(ctx, { title, description, path, body, active, noindex = 
   const desc = description || site.default_description;
   const canonical = site.base_url + path;
   const og = site.base_url + (ogImage || site.default_og_image);
-  const robots = noindex || ctx.drafts ? '<meta name="robots" content="noindex,nofollow">' : '';
+  const robots = noindex || ctx.drafts || ctx.preview ? '<meta name="robots" content="noindex,nofollow">' : '';
   const ld = jsonld.filter(Boolean).map(j => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('\n');
   const draftBanner = ctx.drafts ? '<div class="draft-banner" role="status">草稿預覽：此版本包含未發布商品，僅供 EWP 內部檢查，請勿對外分享。</div>' : '';
+  const previewBanner = ctx.preview ? `<div class="draft-banner preview-banner" role="status">預覽版${ctx.preview.branch ? `（${esc(ctx.preview.branch)}）` : ''}：尚未上線，正式網站是 <a href="${attr(site.base_url)}">www.ewpfpv.com</a></div>` : '';
   return `<!doctype html>
 <html lang="zh-Hant-TW">
 <head>
@@ -236,7 +237,7 @@ ${ld}
 </head>
 <body class="${attr(bodyClass)}">
 <a class="skip" href="#main">跳至主要內容</a>
-${draftBanner}
+${draftBanner}${previewBanner}
 ${header(ctx, active)}
 <main id="main">
 ${body}

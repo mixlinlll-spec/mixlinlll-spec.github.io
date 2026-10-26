@@ -466,3 +466,30 @@ describe('Cloudflare Web Analytics', () => {
     } finally { fs.rmSync(path.join(ROOT, OUT), { recursive: true, force: true }); }
   });
 });
+
+describe('Cloudflare Pages 預覽版（--preview）', () => {
+  test('全站 noindex、robots 全擋、每頁有預覽提示；正式版不受影響', () => {
+    const OUT = '_test_preview';
+    try {
+      execFileSync('node', ['scripts/build.mjs', '--out', OUT, '--preview'], { cwd: ROOT, stdio: 'pipe', env: { ...process.env, CF_PAGES_BRANCH: 'feature/demo' } });
+      const dir = path.join(ROOT, OUT);
+      assert.equal(fs.readFileSync(path.join(dir, 'robots.txt'), 'utf8'), 'User-agent: *\nDisallow: /\n');
+      assert.match(fs.readFileSync(path.join(dir, '_headers'), 'utf8'), /X-Robots-Tag: noindex, nofollow/);
+      assert.ok(!fs.existsSync(path.join(dir, 'sitemap.xml')));
+      const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
+      for (const f of walk(dir).filter(f => f.endsWith('.html'))) {
+        const html = fs.readFileSync(f, 'utf8');
+        assert.ok(html.includes('noindex'), f);
+        if (/<body[^>]*>/.test(html)) assert.equal((html.match(/preview-banner/g) || []).length, 1, f);
+      }
+      assert.ok(fs.readFileSync(path.join(dir, 'index.html'), 'utf8').includes('預覽版（feature/demo）'));
+      const pub = path.join(ROOT, OUT + '_pub');
+      execFileSync('node', ['scripts/build.mjs', '--out', OUT + '_pub'], { cwd: ROOT, stdio: 'pipe' });
+      assert.ok(!fs.readFileSync(path.join(pub, 'index.html'), 'utf8').includes('preview-banner'));
+      assert.ok(!fs.existsSync(path.join(pub, '_headers')));
+    } finally {
+      fs.rmSync(path.join(ROOT, OUT), { recursive: true, force: true });
+      fs.rmSync(path.join(ROOT, OUT + '_pub'), { recursive: true, force: true });
+    }
+  });
+});
