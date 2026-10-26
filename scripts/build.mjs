@@ -156,8 +156,7 @@ function homePage() {
 
   const body = `<section id="about" class="wrap h2-hero">
   <div class="h2-hero-text">
-    <p class="h2-eyebrow">電翼動力 · 台灣 FPV 工作室</p>
-    <h1>從親手組裝，<br>到自由<span class="red">飛翔</span>。</h1>
+    <h1 class="h2-slogan"><span class="sr-only">電翼動力 EWP：</span>Ready to Fly.<br>Built to <span class="red">Perform</span>.</h1>
     <p class="h2-lead">專注 FPV 穿越機的自製機型、客製組裝、維修檢測與 Betaflight 調參，並提供長航鋰離子電池。每一台機器都完成組裝、設定與測試後才交到你手上。</p>
     <div class="actions"><a class="btn btn-primary" href="/builds/">探索自製機型</a>${lineHref ? `<a class="btn h2-btn-line" href="${attr(lineHref)}" target="_blank" rel="noopener">LINE 詢問配置 <span aria-hidden="true">↗</span></a>` : ''}</div>
     <form class="h2-search" action="/products/" method="get" role="search">
@@ -168,7 +167,7 @@ function homePage() {
   </div>
   ${hero ? `<a class="h2-hero-pic" href="${url.product(heroEntry.p)}">
     ${picture(hero.poster_image, { lazy: false, sizes: '(max-width: 760px) 100vw, 560px' })}
-    <span class="spec-tag"><span class="spec-tag-k">EWP 自製</span><span>${esc(hero.name_zh)} ${esc(hero.name_en || '')} · ${esc(hero.spec || hero.size)}</span></span>
+    <span class="spec-tag"><span>${esc(hero.name_zh)} ${esc(hero.name_en || '')} · ${esc(hero.spec || hero.size)}</span></span>
   </a>` : ''}
 </section>
 <section class="wrap h2-doors-sec" aria-label="快速入口">
