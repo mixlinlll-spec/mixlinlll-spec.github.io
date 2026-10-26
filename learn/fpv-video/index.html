@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://www.ewpfpv.com/learn/fpv-video/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="FPV 圖傳新手學堂｜電翼動力 EWP">
-<meta property="og:description" content="類比和數位到底差在哪？VTX、鏡頭、天線一次講清楚，用分支圖找出適合你的圖傳系統。">
+<meta property="og:description" content="類比、DJI、Walksnail、HDZero 圖傳差在哪？用訊號模擬器看畫面怎麼變，再用分支圖找出適合你的系統。">
 <meta property="og:url" content="https://www.ewpfpv.com/learn/fpv-video/">
 <meta property="og:image" content="https://www.ewpfpv.com/assets/img/journal/fpv-video-basics/00-cover.webp">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
@@ -254,6 +254,18 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
 .sitebar{border-bottom:1px solid var(--line);background:var(--bg)}
 .sitebar .wrap{display:flex;justify-content:space-between;gap:12px;padding-block:10px;font-size:14px}
 .sitebar a{color:var(--muted);text-decoration:none}.sitebar a:hover{color:var(--text)}
+
+/* 入門必學／進階補充（v2.18）*/
+.lv{display:inline-block;font-family:var(--f-body);font-size:11px;font-weight:600;letter-spacing:0;line-height:1.4;padding:1px 6px;border-radius:2px;border:1px solid var(--line);color:var(--muted);vertical-align:middle;margin-left:6px}
+.lv.core{color:var(--text);border-color:rgba(255,74,61,.7);background:rgba(255,74,61,.12)}
+.chhead .lv{font-size:12px;align-self:center}
+.path{border:1px solid var(--line);border-left:3px solid var(--red);background:var(--panel);padding:14px 16px;border-radius:3px;margin-top:22px;font-size:15px;line-height:1.75}
+.path b{color:var(--text)}
+.path .lv{margin:0 2px}
+details.adv{border:1px dashed var(--line);border-radius:3px;padding:12px 16px;margin:18px 0;background:var(--panel)}
+details.adv summary{cursor:pointer;color:var(--sand);font-weight:600;list-style-position:outside}
+details.adv[open] summary{margin-bottom:8px}
+details.adv>*:not(summary){margin-top:10px}
 </style>
 </head>
 <body>
@@ -266,23 +278,24 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
       <span class="tag">FPV SCHOOL · 02</span>
     </div>
     <h1>FPV <em>圖傳</em>新手學堂</h1>
-    <p class="lede">類比和數位到底差在哪？從 VTX、鏡頭到天線一次講清楚，最後用選擇分支圖，幫你找出適合自己的圖傳系統。</p>
+    <p class="lede">圖傳就是把飛機鏡頭看到的畫面，即時用無線電送到你的眼鏡。類比、DJI、Walksnail、HDZero 各有各的脾氣；買眼鏡之前先搞清楚差別，之後就不用整套重買。</p>
     <div class="cellstrip" aria-label="本篇比較的系統">
       <span class="tag-a">類比 <b>Analog</b></span><span class="tag-d">DJI <b>O4 / O4 Pro</b></span><span class="tag-d">Walksnail <b>Avatar</b></span><span class="tag-d">HDZero</span>
     </div>
+    <p class="path"><b>第一次看？</b>先讀標示 <span class="lv core">必學</span> 的 5 章：圖傳在做什麼、訊號變差時的畫面差別、天線、選擇分支圖和常見錯誤，讀完就能大致知道自己該選哪一套。標示 <span class="lv">進階</span> 的規格比較、VTX、鏡頭，等你要挑零件時再回來看。</p>
   </div>
 </header>
 
 <nav class="toc" aria-label="章節">
   <div class="wrap" id="toc">
-    <a href="#chain"><span class="n">01</span>圖傳在做什麼</a>
-    <a href="#sim"><span class="n">02</span>畫面差別</a>
-    <a href="#spec"><span class="n">03</span>規格比較</a>
-    <a href="#vtx"><span class="n">04</span>VTX</a>
-    <a href="#cam"><span class="n">05</span>鏡頭</a>
-    <a href="#ant"><span class="n">06</span>天線</a>
-    <a href="#pick"><span class="n">07</span>選擇分支圖</a>
-    <a href="#faq"><span class="n">08</span>常見錯誤</a>
+    <a href="#chain"><span class="n">01</span>圖傳在做什麼<span class="lv core">必學</span></a>
+    <a href="#sim"><span class="n">02</span>畫面差別<span class="lv core">必學</span></a>
+    <a href="#spec"><span class="n">03</span>規格比較<span class="lv">進階</span></a>
+    <a href="#vtx"><span class="n">04</span>VTX<span class="lv">進階</span></a>
+    <a href="#cam"><span class="n">05</span>鏡頭<span class="lv">進階</span></a>
+    <a href="#ant"><span class="n">06</span>天線<span class="lv core">必學</span></a>
+    <a href="#pick"><span class="n">07</span>選擇分支圖<span class="lv core">必學</span></a>
+    <a href="#faq"><span class="n">08</span>常見錯誤<span class="lv core">必學</span></a>
     <a href="#quiz"><span class="n">09</span>小測驗</a>
   </div>
 </nav>
@@ -290,41 +303,44 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
 <main class="wrap">
 
 <section class="ch" id="chain">
-  <div class="chhead"><span class="n">01</span><h2>圖傳在做什麼</h2></div>
-  <p class="thesis">圖傳就是把飛機上鏡頭看到的畫面，即時用無線電送到你的眼鏡。類比和數位走的是同一條路，差別在「中間怎麼處理畫面」。</p>
+  <div class="chhead"><span class="n">01</span><h2>圖傳在做什麼</h2><span class="lv core">必學</span></div>
+  <p class="thesis">不管哪一種系統，路線都一樣：鏡頭 → 發射器（VTX）→ 天線 → 眼鏡。差別在「中間怎麼處理畫面」，以及訊號變差時畫面怎麼壞掉。</p>
   <div class="body">
     <figure class="fig"><div class="sc"><svg viewBox="0 0 760 300" role="img" aria-label="類比與數位圖傳訊號流程">
       <text x="0" y="22" class="s" style="font-family:var(--f-display);letter-spacing:.12em;font-size:13px">ANALOG 類比</text>
       <g id="chainA"></g>
       <text x="0" y="172" style="fill:var(--digital);font-family:var(--f-display);letter-spacing:.12em;font-size:13px">DIGITAL 數位</text>
       <g id="chainD"></g>
-    </svg></div><figcaption>示意圖：上排是類比，下排是數位。數位系統的鏡頭和 VTX 是一套的，而且眼鏡會回傳訊號給飛機（雙向）。</figcaption></figure>
+    </svg></div><figcaption>示意圖：上排是類比，下排是數位。數位系統的鏡頭和 VTX 是一套的；DJI、Walksnail 的眼鏡還會回傳訊號給飛機（雙向），HDZero 則和類比一樣只有飛機往眼鏡單向發射。</figcaption></figure>
     <div class="cmp">
       <div class="c"><h4 class="tag-a">類比</h4><ul>
-        <li>鏡頭輸出影像訊號，VTX 直接調變發射，<b>不壓縮</b></li>
-        <li>OSD（電壓、時間）由飛控疊加在畫面上</li>
-        <li>訊號變差時畫面出現雜訊、雪花，但通常還看得到</li>
-        <li>鏡頭、VTX、眼鏡可以混搭不同品牌</li>
+        <li>鏡頭的影像直接由 VTX 發射出去，<b>不經過壓縮</b>，延遲很低</li>
+        <li>電壓、飛行時間等畫面資訊（OSD）由飛控疊加在畫面上</li>
+        <li>訊號變差時出現雜訊、雪花，但通常還看得到輪廓</li>
+        <li>鏡頭、VTX、眼鏡大多可以混搭不同品牌</li>
       </ul></div>
       <div class="c"><h4 class="tag-d">數位</h4><ul>
-        <li>畫面先<b>壓縮編碼</b>，再用數位方式傳送，畫質高很多</li>
-        <li>OSD 由飛控透過 UART 傳給圖傳（MSP DisplayPort）</li>
-        <li>訊號變差時先降畫質，太差會卡頓、凍結或中斷</li>
-        <li>鏡頭、VTX、眼鏡必須同一個系統</li>
+        <li>畫面轉成數位訊號傳送，畫質比類比清楚很多</li>
+        <li><b>DJI、Walksnail</b>：訊號變差時先降畫質、出現馬賽克，再差會卡頓或凍結</li>
+        <li><b>HDZero</b>：官方強調延遲固定、不掉幀；訊號變差時出現小方塊雜訊，比較像類比，但畫質一般認為不如 DJI、Walksnail</li>
+        <li>鏡頭、VTX、眼鏡要同一個系統（HDZero Goggles 2 另外內建類比接收）</li>
       </ul></div>
     </div>
+    <details class="adv"><summary>進階補充：數位圖傳的 OSD 怎麼來</summary>
+      <p>數位圖傳的畫面資訊不是疊在影像上，而是飛控透過 UART（飛控上的序列通訊埠）把資料傳給圖傳，再由眼鏡畫出來。Betaflight 裡的設定叫 MSP DisplayPort。DJI O4、Walksnail、HDZero 都是用這種方式，但實際要開哪個 UART、選哪個選項，依飛控與韌體版本而定，請以原廠接線圖為準。</p>
+    </details>
   </div>
 </section>
 
 <section class="ch" id="sim">
-  <div class="chhead"><span class="n">02</span><h2>訊號變差時，畫面差在哪</h2></div>
+  <div class="chhead"><span class="n">02</span><h2>訊號變差時，畫面差在哪</h2><span class="lv core">必學</span></div>
   <p class="thesis">這是最容易理解的差別。拉動下面的訊號強度，看看飛遠或穿過障礙物時，兩種系統的畫面會怎麼變化。</p>
   <div class="body">
     <div class="tool">
       <h3>SIM<b>訊號模擬器</b></h3>
       <div class="sim">
         <div class="screen"><div class="cap"><b class="tag-a">ANALOG 類比</b><span class="num" id="aPct">100%</span></div><canvas id="cvA" width="320" height="240"></canvas><p class="st" id="aSt"></p></div>
-        <div class="screen"><div class="cap"><b class="tag-d">DIGITAL 數位</b><span class="num" id="dPct">100%</span></div><canvas id="cvD" width="320" height="240"></canvas><p class="st" id="dSt"></p></div>
+        <div class="screen"><div class="cap"><b class="tag-d">DIGITAL 數位（DJI／Walksnail 類）</b><span class="num" id="dPct">100%</span></div><canvas id="cvD" width="320" height="240"></canvas><p class="st" id="dSt"></p></div>
       </div>
       <div class="range">
         <label for="sig" class="row"><span>訊號強度</span><span>拉到左邊＝飛很遠或被遮住</span></label>
@@ -333,13 +349,13 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
       </div>
       <p class="muted" style="font-size:14px">模擬示意，用來說明「變差的方式」，不代表實際距離。實際表現依天線、環境、功率與系統型號而不同。</p>
     </div>
-    <div class="note"><b>重點：</b>類比是「慢慢變花」，你會有時間反應、轉頭回來；數位是「清楚到最後一刻才突然卡住」。所以數位飛遠時，要更注意訊號強度的 OSD 數字，不要等畫面卡住才回頭。</div>
+    <div class="note"><b>重點：</b>類比是「慢慢變花」，你會有時間反應、轉頭回來；DJI、Walksnail 這類數位系統則常是「清楚到最後才突然卡住」。所以用數位飛遠時，要看眼鏡上的訊號強度數字，不要等畫面卡住才回頭。HDZero 變差的方式比較接近左邊的類比：會出現雜訊方塊，但不會凍結。</div>
   </div>
 </section>
 
 <section class="ch" id="spec">
-  <div class="chhead"><span class="n">03</span><h2>規格比較</h2></div>
-  <p class="thesis">沒有最好的系統，只有最適合你用途的系統。先看大方向，第 07 章再幫你選。</p>
+  <div class="chhead"><span class="n">03</span><h2>規格比較</h2><span class="lv">進階</span></div>
+  <p class="thesis">沒有最好的系統，只有比較適合你用途的系統。這張表是給已經想買零件的人對照用；第一次看可以先跳到第 07 章的選擇分支圖。</p>
   <div class="body">
     <div class="vtable-wrap"><table>
       <thead><tr><th></th><th>類比</th><th>DJI O4</th><th>DJI O4 Pro</th><th>Walksnail Avatar</th><th>HDZero</th></tr></thead>
@@ -347,26 +363,26 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
         <tr><td>畫質</td><td>標準畫質，較模糊</td><td>高畫質</td><td>最清楚</td><td>高畫質</td><td>介於類比與 DJI 之間</td></tr>
         <tr><td>官方最低延遲</td><td>極低</td><td class="num">20ms</td><td class="num">15ms</td><td class="num">約 32ms</td><td class="num">&lt;3ms</td></tr>
         <tr><td>機上錄影</td><td>無（另掛相機或眼鏡錄）</td><td>4K60，內建 23GB</td><td>4K120，可插 microSD</td><td>依 VTX 型號</td><td>眼鏡端錄影為主</td></tr>
-        <tr><td>VTX＋鏡頭重量</td><td>輕，依型號</td><td class="num">約 8.2g</td><td class="num">約 32g</td><td>依型號</td><td>依型號</td></tr>
+        <tr><td>VTX＋鏡頭重量</td><td>輕，依型號</td><td class="num">約 8.2g（含鏡頭）</td><td class="num">約 32g</td><td>依型號</td><td>依型號</td></tr>
         <tr><td>供電範圍</td><td>依 VTX 型號</td><td class="num">3.7–13.2V</td><td class="num">7.4–26.4V</td><td>依型號</td><td>依型號</td></tr>
-        <tr><td>斷訊方式</td><td>漸漸變花</td><td>降畫質→卡頓</td><td>降畫質→卡頓</td><td>降畫質→卡頓</td><td>漸漸變花（像類比）</td></tr>
+        <tr><td>訊號變差時</td><td>漸漸變花</td><td>降畫質→卡頓</td><td>降畫質→卡頓</td><td>掉幀、卡頓</td><td>出現雜訊方塊，不會凍結</td></tr>
         <tr><td>可混搭</td><td>各品牌通用</td><td colspan="2">只能用 DJI 眼鏡</td><td>只能用 Walksnail 眼鏡</td><td>HDZero 眼鏡，可兼收類比</td></tr>
         <tr><td>整套花費</td><td class="num">$</td><td class="num">$$$</td><td class="num">$$$$</td><td class="num">$$$</td><td class="num">$$$</td></tr>
       </tbody>
     </table></div>
-    <p class="muted" style="font-size:14px">DJI 數據取自 DJI 官網規格（延遲為 Goggles 3、1080p/100fps 模式）；Walksnail 為 Goggles L 官方標示；HDZero 為 Goggles 2 官方標示。各家測試條件不同，僅供大方向參考。「DJI O4」官方名稱為 O4 Air Unit，台灣玩家常稱 O4 Lite。</p>
+    <p class="muted" style="font-size:14px">DJI 數據取自 DJI 官方規格（延遲為 Goggles 3 競速模式、1080p/100fps；搭配其他眼鏡會比較高）；Walksnail 為 Goggles L 官方標示；HDZero 為 Goggles 2 官方標示。各家測試條件不同，僅供大方向參考。「DJI O4」官方名稱為 O4 Air Unit，台灣玩家常稱 O4 Lite。</p>
 
     <div class="tool">
       <h3>CHART<b>官方標示最低延遲（越短越好）</b></h3>
       <div class="latbar" id="latbar"></div>
-      <p class="muted" style="font-size:14px">類比沒有官方統一數字，延遲取決於鏡頭和眼鏡，一般被視為最低延遲的選擇，所以這裡不畫長條。對一般花飛來說，20ms 左右已經很難感覺；競速選手才會在意幾毫秒的差距。</p>
+      <p class="muted" style="font-size:14px">類比沒有官方統一數字，延遲取決於鏡頭和眼鏡，一般被視為最低延遲的選擇，所以這裡不畫長條。幾毫秒的差距，多數人在一般花飛時很難分辨；競速選手比較在意。</p>
     </div>
     <div class="alert"><strong>⚠ O4 供電範圍</strong><span>DJI O4 Air Unit（O4 Lite）官方供電只到 13.2V，4S 滿電是 16.8V、6S 是 25.2V，<b>不能直接接 4S 或 6S 電源</b>，要從飛控的 BEC（例如 9V 或 10V 輸出）供電。O4 Pro 則支援 2S–6S。接線前先確認飛控 BEC 規格。</span></div>
   </div>
 </section>
 
 <section class="ch" id="vtx">
-  <div class="chhead"><span class="n">04</span><h2>VTX 圖傳發射器</h2></div>
+  <div class="chhead"><span class="n">04</span><h2>VTX 圖傳發射器</h2><span class="lv">進階</span></div>
   <p class="thesis">VTX 負責把畫面變成無線電發射出去。類比要自己挑 VTX，數位的 VTX 通常和鏡頭綁在一起賣。</p>
   <div class="body">
     <h3>實物長這樣</h3>
@@ -380,14 +396,14 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
     <ul>
       <li><b>功率（mW）</b>：常見 25／200／400／800mW 等可切換。功率越大飛越遠，但也越熱、越耗電。</li>
       <li><b>頻道</b>：5.8GHz 分成多個頻段與頻道，一起飛的朋友要錯開頻道，不然會互相干擾。</li>
-      <li><b>控制協定</b>：SmartAudio 或 Tramp。接到飛控後，可以用遙控器或 OSD 選單改頻道與功率，不用拆機按按鈕。</li>
+      <li><b>控制協定</b>：SmartAudio 或 Tramp。接到飛控後，可以用遙控器或畫面上的 OSD 選單改頻道與功率，不用拆機按按鈕。</li>
       <li><b>Pit Mode（維修模式）</b>：上電時幾乎不發射，在場邊調機時不會干擾別人。</li>
       <li><b>天線接頭</b>：MMCX、U.FL（IPEX）、SMA，要和你的天線一致。</li>
     </ul>
     <h3>數位 VTX（Air Unit）</h3>
     <ul>
       <li>鏡頭、發射器、錄影功能是同一套，鏡頭通常只能用同系統的。</li>
-      <li>需要接飛控的 UART，才能顯示 OSD、用遙控器控制錄影等功能。</li>
+      <li>需要接飛控的 UART（序列通訊埠），才能顯示 OSD、用遙控器控制錄影等功能。</li>
       <li>運作時很燙，桌上測試不要放太久，最好有風扇或在飛行時才長時間開機。</li>
     </ul>
     <div class="alert"><strong>⚠ 沒接天線不要通電</strong><span>不論類比或數位，VTX 沒裝天線就通電發射，發射功率無處可去，可能直接燒壞 VTX。上電前先確認天線鎖好。</span></div>
@@ -396,7 +412,7 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
 </section>
 
 <section class="ch" id="cam">
-  <div class="chhead"><span class="n">05</span><h2>鏡頭</h2></div>
+  <div class="chhead"><span class="n">05</span><h2>鏡頭</h2><span class="lv">進階</span></div>
   <p class="thesis">類比鏡頭可以自由挑，重點是尺寸、視角和畫面比例；數位鏡頭跟著系統走，選系統就等於選鏡頭。</p>
   <div class="body">
     <figure class="fig"><div class="sc"><svg viewBox="0 0 760 250" role="img" aria-label="類比鏡頭尺寸比較" id="camSizes"></svg></div><figcaption>示意圖：常見類比鏡頭寬度，約略依實際比例。機架上的鏡頭座要和鏡頭尺寸一致。</figcaption></figure>
@@ -416,7 +432,7 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
 </section>
 
 <section class="ch" id="ant">
-  <div class="chhead"><span class="n">06</span><h2>天線</h2></div>
+  <div class="chhead"><span class="n">06</span><h2>天線</h2><span class="lv core">必學</span></div>
   <p class="thesis">天線是最便宜、最常被忽略、效果卻最明顯的升級。記住三件事：極化方向要一樣、全向和定向的差別、接頭要對。</p>
   <div class="body">
     <h3>極化方向：飛機和眼鏡要一致</h3>
@@ -448,7 +464,7 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
 </section>
 
 <section class="ch" id="pick">
-  <div class="chhead"><span class="n">07</span><h2>選擇分支圖：我該用哪一種</h2></div>
+  <div class="chhead"><span class="n">07</span><h2>選擇分支圖：我該用哪一種</h2><span class="lv core">必學</span></div>
   <p class="thesis">回答三個問題，分支圖會畫出你的選擇路徑，最後給出建議系統。</p>
   <div class="body">
     <div class="tool">
@@ -464,15 +480,15 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
 </section>
 
 <section class="ch" id="faq">
-  <div class="chhead"><span class="n">08</span><h2>新手最常犯的錯誤</h2></div>
-  <p class="thesis">這些問題在維修台上很常見，多半花幾分鐘檢查就能避免。</p>
+  <div class="chhead"><span class="n">08</span><h2>新手最常犯的錯誤</h2><span class="lv core">必學</span></div>
+  <p class="thesis">下面這些是新手很容易遇到的狀況，多半花幾分鐘檢查就能避免。</p>
   <div class="body" style="max-width:none">
     <div class="mist">
       <div><span class="x">沒裝天線就插電測試</span><span class="o">上電前先確認天線鎖好</span></div>
       <div><span class="x">飛機 RHCP、眼鏡 LHCP</span><span class="o">兩端極化方向要一致</span></div>
       <div><span class="x">SMA 天線硬插 RP-SMA 接頭</span><span class="o">先看清楚接頭，必要時用轉接頭</span></div>
       <div><span class="x">O4 Air Unit 直接接 6S 電源</span><span class="o">O4 只到 13.2V，從飛控 BEC 供電</span></div>
-      <div><span class="x">數位圖傳沒有 OSD，以為壞了</span><span class="o">檢查 UART 接線與 MSP DisplayPort 設定</span></div>
+      <div><span class="x">數位圖傳沒有 OSD（電壓等畫面資訊），以為壞了</span><span class="o">檢查 UART 接線與 MSP DisplayPort 設定</span></div>
       <div><span class="x">類比 OSD 和數位 OSD 設定混用</span><span class="o">類比用飛控 OSD 晶片，數位用 DisplayPort</span></div>
       <div><span class="x">數位畫面清楚就一直往遠飛</span><span class="o">看訊號 OSD，變弱就提早回頭</span></div>
       <div><span class="x">和朋友用同一個類比頻道</span><span class="o">起飛前先協調頻道</span></div>
@@ -484,7 +500,7 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
 
 <section class="ch" id="quiz">
   <div class="chhead"><span class="n">09</span><h2>小測驗</h2></div>
-  <p class="thesis">答對五題，你就能自己判斷要買哪一種圖傳了。</p>
+  <p class="thesis">五題，檢查一下剛剛讀的重點有沒有記住。</p>
   <div class="body" id="quizBox"></div>
   <div class="body" style="max-width:none;margin-top:36px">
     <h3>一頁速查表</h3>
@@ -539,7 +555,7 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
     });g.innerHTML=h;
   }
   chain($('#chainA'),40,[{t:'鏡頭',s:'類比 CMOS',hl:1},{t:'飛控',s:'疊加 OSD'},{t:'VTX',s:'直接調變',hl:1},{t:'眼鏡接收',s:'任何類比眼鏡'},{t:'你的眼睛',s:'有雜訊也看得到'}],'var(--analog)',false);
-  chain($('#chainD'),190,[{t:'鏡頭',s:'同系統專用',hl:1},{t:'Air Unit',s:'壓縮編碼＋錄影',hl:1},{t:'天線發射',s:'數位封包'},{t:'眼鏡解碼',s:'同系統眼鏡'},{t:'你的眼睛',s:'清楚或卡頓'}],'var(--digital)',true);
+  chain($('#chainD'),190,[{t:'鏡頭',s:'同系統專用',hl:1},{t:'數位 VTX',s:'轉成數位訊號',hl:1},{t:'天線發射',s:'數位封包'},{t:'眼鏡解碼',s:'同系統眼鏡'},{t:'你的眼睛',s:'訊號差時依系統而異'}],'var(--digital)',true);
 
   /* ---------- 02 simulator ---------- */
   const W=320,H=240;
@@ -646,9 +662,9 @@ td .a{color:var(--analog)} td .d{color:var(--digital)}
   const SYS={
     analog:{n:'類比圖傳',c:'var(--analog)',why:'入門最便宜、延遲低、零件各品牌通用，摔壞也好換。',pts:['畫質較低，需要另掛運動相機錄影','訊號變差時畫面漸漸變花，有時間反應','適合練習、競速與預算有限的新手']},
     o4:{n:'DJI O4 Air Unit（O4 Lite）',c:'var(--digital)',why:'重量只有約 8.2g，小機也能有清楚畫面與 4K 機上錄影。',pts:['必須使用 DJI Goggles 3、N3、Goggles 2 或 Integra','供電上限 13.2V，4S／6S 機要從 BEC 供電','訊號變差時會卡頓，飛遠要看訊號 OSD']},
-    o4pro:{n:'DJI O4 Pro',c:'var(--digital)',why:'目前畫質與錄影最強的選擇，4K120 錄影、可插 microSD，適合花飛與影視。',pts:['重量約 32g，適合 5 吋以上','支援 2S–6S 直接供電','眼鏡需 DJI Goggles 3、N3、Goggles 2 或 Integra']},
+    o4pro:{n:'DJI O4 Pro',c:'var(--digital)',why:'DJI 目前規格最高的 FPV 圖傳：4K120 錄影、可插 microSD，適合花飛與影視。',pts:['重量約 32g，適合 5 吋以上','支援 2S–6S 直接供電','眼鏡需 DJI Goggles 3、N3、Goggles 2 或 Integra']},
     ws:{n:'Walksnail Avatar',c:'var(--digital)',why:'數位高畫質的另一個選擇，你已經有 Walksnail 眼鏡就繼續用同系統。',pts:['只能搭配 Walksnail 眼鏡','依 VTX 型號重量與錄影規格不同','購買前確認韌體與型號相容']},
-    hdz:{n:'HDZero',c:'var(--digital)',why:'數位系統中延遲最低、斷訊方式接近類比，很受競速玩家喜愛。',pts:['HDZero Goggles 2 內建類比接收，可同時飛類比機','畫質介於類比與 DJI 之間','台灣貨源較少，購買前先確認']}
+    hdz:{n:'HDZero',c:'var(--digital)',why:'官方標示延遲低於 3ms、不掉幀，訊號變差時比較像類比的雜訊，競速玩家常用。',pts:['HDZero Goggles 2 內建類比接收，可同時飛類比機','畫質介於類比與 DJI 之間','購買前確認眼鏡與 VTX 的型號、韌體版本相容']}
   };
   function decide(a,b,c){
     if(a==='dji')return{s:b==='whoop'||b==='small'||c==='weight'?'o4':'o4pro',note:'你已經有 DJI 眼鏡，繼續用 DJI 系統最省錢。'};
