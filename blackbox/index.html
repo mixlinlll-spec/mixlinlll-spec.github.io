@@ -255,6 +255,8 @@ footer .wrap{display:grid;gap:14px}
 .cta a{text-decoration:none;font-size:15px;padding:9px 16px;border-radius:2px;border:1px solid var(--line);color:var(--text)}
 .cta a.p{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}
 .disclaimer{font-size:13px;color:var(--muted);max-width:70ch}
+/* 手機：可輸入欄位至少 16px，避免點擊時自動放大頁面 */
+@media(max-width:1024px){input:not([type=file]),select,textarea,textarea.code{font-size:16px}}
 </style>
 </head>
 <body>

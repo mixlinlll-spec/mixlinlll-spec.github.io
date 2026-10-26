@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.19.4（2026-10-27，手機輸入框不再自動放大頁面）
+
+- 手機與平板（1024px 以下）所有可輸入的欄位字體至少 16px（全站與 `/blackbox/`），避免點搜尋框或填表時瀏覽器自動放大頁面、右側被切掉。
+
 ## v2.19.3（2026-10-26，Google Search Console 驗證）
 
 - 網站根目錄加入 Google Search Console 驗證檔 `google32c150c1e6e441f6.html`（列入發布白名單，建置時原樣複製、不加統計碼）。刪除此檔會讓 Search Console 驗證失效。

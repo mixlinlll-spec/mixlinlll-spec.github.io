@@ -617,3 +617,6 @@ section{padding:36px 0}
   .h2-brands img{height:22px}
 }
 .h2-hero h1.h2-slogan{letter-spacing:-.02em;font-style:italic}
+
+/* 手機：輸入框字體至少 16px，避免點擊時瀏覽器自動放大頁面（放大後右側會被切掉） */
+@media(max-width:1024px){input,select,textarea{font-size:16px!important}}
