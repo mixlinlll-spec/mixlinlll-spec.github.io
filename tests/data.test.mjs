@@ -452,7 +452,9 @@ describe('Cloudflare Web Analytics', () => {
     try {
       execFileSync('node', ['scripts/build.mjs', '--out', OUT], { cwd: ROOT, stdio: 'pipe' });
       const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
-      const pages = walk(path.join(ROOT, OUT)).filter(f => f.endsWith('.html'));
+      const isVerify = f => /google[0-9a-f]{16}\.html$/.test(f); // Google 驗證檔必須原封不動，不是網頁
+      const pages = walk(path.join(ROOT, OUT)).filter(f => f.endsWith('.html') && !isVerify(f));
+      assert.equal(fs.readFileSync(path.join(ROOT, OUT, 'google32c150c1e6e441f6.html'), 'utf8'), fs.readFileSync(path.join(ROOT, 'google32c150c1e6e441f6.html'), 'utf8'), 'Google 驗證檔內容不變');
       for (const f of pages) {
         const html = fs.readFileSync(f, 'utf8');
         const rel = path.relative(path.join(ROOT, OUT), f);
@@ -477,7 +479,7 @@ describe('Cloudflare Pages 預覽版（--preview）', () => {
       assert.match(fs.readFileSync(path.join(dir, '_headers'), 'utf8'), /X-Robots-Tag: noindex, nofollow/);
       assert.ok(!fs.existsSync(path.join(dir, 'sitemap.xml')));
       const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
-      for (const f of walk(dir).filter(f => f.endsWith('.html'))) {
+      for (const f of walk(dir).filter(f => f.endsWith('.html') && !/google[0-9a-f]{16}\.html$/.test(f))) { // 驗證檔靠 _headers 的 X-Robots-Tag 擋
         const html = fs.readFileSync(f, 'utf8');
         assert.ok(html.includes('noindex'), f);
         if (/<body[^>]*>/.test(html)) assert.equal((html.match(/preview-banner/g) || []).length, 1, f);

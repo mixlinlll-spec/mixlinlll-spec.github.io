@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.19.3（2026-10-26，Google Search Console 驗證）
+
+- 網站根目錄加入 Google Search Console 驗證檔 `google32c150c1e6e441f6.html`（列入發布白名單，建置時原樣複製、不加統計碼）。刪除此檔會讓 Search Console 驗證失效。
+
 ## v2.19.2（2026-10-26，首頁海報規格標籤配色）
 
 - 「幻」海報上的規格標籤由沙金底改為半透明黑底白字、左側品牌紅線，配合海報的紫黑色調。
