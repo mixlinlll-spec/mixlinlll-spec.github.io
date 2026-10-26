@@ -99,13 +99,18 @@ export function breadcrumbsJsonLd(items, base) {
 const NAV = [
   { href: '/builds/', label: '自製機型', key: 'builds' },
   { href: '/batteries/', label: '電池專區', key: 'batteries' },
-  { href: '/services/', label: '客製服務', key: 'services' },
+  { href: '/services/', label: '技術服務', key: 'services' },
   { href: '/tunelab/', label: 'TUNE LAB', key: 'tunelab', cls: 'nav-lab' },
-  { href: '/fpv-help.html', label: '知識庫', key: 'knowledge' },
-  { href: '/journal/', label: 'EWP 專欄', key: 'journal' },
-  { href: '/about/', label: '關於', key: 'about' },
-  { href: '/contact/', label: '聯絡', key: 'contact' },
+  { href: '/journal/', label: '學習', key: 'journal' },
 ];
+// 桌機主選單放不下的頁面：只出現在手機選單與頁尾
+const NAV_MORE = [
+  { href: '/fpv-help.html', label: 'FPV 知識庫' },
+  { href: '/about/', label: '關於 EWP' },
+  { href: '/contact/', label: '聯絡我們' },
+];
+// 官方 Logo（透明背景 PNG，626×226）。紅色為品牌識別色，不得以 CSS 改色。
+const LOGO = (h = 46) => `<img class="brand-logo" src="/assets/img/brand/ewp-logo.png" alt="電翼動力 EWP" width="${Math.round(h * 626 / 226)}" height="${h}">`;
 
 function megaMenu(ctx) {
   const cols = ctx.categories.map(c => `<div class="mega-col">
@@ -139,6 +144,7 @@ function mobileMenu(ctx) {
     <ul class="drawer-list">
       <li><details><summary>商品商城</summary><ul class="drawer-cats"><li><a href="/products/">所有商品</a></li>${cats}</ul></details></li>
       ${NAV.map(n => `<li><a href="${n.href}"${n.cls ? ` class="${n.cls}"` : ''}>${n.label}</a></li>`).join('')}
+      ${NAV_MORE.map(n => `<li><a href="${n.href}">${n.label}</a></li>`).join('')}
     </ul>
     <div class="drawer-cta">${lineButton(ctx.site, 'LINE 詢價', 'btn btn-line btn-block')}</div>
   </div>`;
@@ -148,7 +154,7 @@ export function header(ctx, active) {
   const items = NAV.map(n => `<li><a href="${n.href}"${n.cls ? ` class="${n.cls}"` : ''}${active === n.key ? ' aria-current="page"' : ''}>${n.label}</a></li>`).join('');
   return `<header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="/" aria-label="電翼動力 EWP 首頁"><span class="wordmark">EWP</span><span class="brand-name">電翼動力</span></a>
+    <a class="brand" href="/" aria-label="電翼動力 EWP 首頁">${LOGO(46)}</a>
     <nav class="nav-desktop" aria-label="主要導覽">
       <ul class="nav-list">
         <li class="has-mega"><a href="/products/"${active === 'products' ? ' aria-current="page"' : ''}>商品商城</a><button class="mega-toggle" type="button" aria-expanded="false" aria-controls="mega-products"><span class="sr-only">展開商品分類</span><span aria-hidden="true">▾</span></button></li>
@@ -156,6 +162,7 @@ export function header(ctx, active) {
       </ul>
     </nav>
     <div class="nav-actions">
+      ${lineButton(ctx.site, 'LINE 詢問', 'btn btn-line nav-line')}
       <a class="icon-btn" href="/products/#catalog-q" aria-label="搜尋商品"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer"><span class="menu-label">選單</span></button>
     </div>
@@ -179,11 +186,11 @@ export function footer(ctx) {
   return `<footer class="site-footer">
   <div class="wrap footer-grid">
     <div class="footer-brand">
-      <a class="brand" href="/"><span class="wordmark">EWP</span><span class="brand-name">電翼動力</span></a>
+      <a class="brand" href="/" aria-label="電翼動力 EWP 首頁">${LOGO(52)}</a>
       <p>${esc(ctx.site.brand.motto)} ${esc(ctx.site.brand.tagline)}.</p>
     </div>
     <div><h2 class="footer-h">商品</h2><ul>${ctx.categories.slice(0, 6).map(c => `<li><a href="${url.category(c)}">${esc(c.name)}</a></li>`).join('')}<li><a href="/products/">所有商品</a></li></ul></div>
-    <div><h2 class="footer-h">EWP</h2><ul><li><a href="/builds/">自製機型</a></li><li><a href="/batteries/">電池專區</a></li><li><a href="/services/">客製服務</a></li><li><a href="/fpv-help.html">FPV 知識庫</a></li><li><a href="/journal/">EWP 專欄</a></li><li><a href="/about/">關於 EWP</a></li></ul></div>
+    <div><h2 class="footer-h">EWP</h2><ul><li><a href="/builds/">自製機型</a></li><li><a href="/batteries/">電池專區</a></li><li><a href="/services/">技術服務</a></li><li><a href="/tunelab/">Tune Lab</a></li><li><a href="/fpv-help.html">FPV 知識庫</a></li><li><a href="/journal/">EWP 專欄</a></li><li><a href="/about/">關於 EWP</a></li></ul></div>
     <div><h2 class="footer-h">聯絡</h2><ul>${contactLinks}<li><a href="/contact/">聯絡我們</a></li></ul></div>
   </div>
   <div class="wrap footer-row">

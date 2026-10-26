@@ -5,14 +5,16 @@
       "id": "huan", "product_id": "sp-50367700235", "listed": true, "order": 1, "featured": true,
       "name_zh": "幻", "name_en": "HUAN", "size": "5 吋", "use": "Freestyle 花飛",
       "summary": "黑紫配色的五吋花飛機，FDI F722 / 60A 堆疊搭配 2207 動力。",
+      "spec": "5\" · 6S · F722 · 2207", "tagline": "黑紫配色的五吋花飛機",
       "highlights": ["5 吋花飛", "6S 動力", "True X"],
       "poster_image": { "_comment": "首頁主視覺用的品牌海報（非商品圖）", "src": "/assets/img/builds/huan-1200.webp", "src_small": "/assets/img/builds/huan-600.webp", "fallback": "/assets/img/builds/huan-1200.jpg", "alt": "電翼動力「幻」五吋花飛機品牌海報，黑紫機身搭配 FDI F722 與 60A 電調", "width": 1200, "height": 1200 },
       "legacy_slugs": ["huan"]
     },
     {
-      "id": "fang-v", "product_id": "sp-50857844998", "listed": true, "order": 2, "featured": false,
+      "id": "fang-v", "product_id": "sp-50857844998", "listed": true, "order": 2, "featured": true,
       "name_zh": "毒牙", "name_en": "FANG V", "size": "5 吋", "use": "6S 花飛／競速",
       "summary": "五吋 6S 花飛與競速取向，F405 飛控、55A 電調、SIRIUS 1850KV 馬達。",
+      "spec": "5\" · 6S · F405 · 55A · 1850KV", "tagline": "五吋花飛與競速取向",
       "highlights": ["5 吋", "6S"],
       "legacy_slugs": ["fang-v"]
     },
@@ -20,24 +22,28 @@
       "id": "rift-jaw", "product_id": "sp-50608240693", "listed": true, "order": 3, "featured": false,
       "name_zh": "裂顎", "name_en": "RIFT JAW", "size": "5 吋", "use": "6S 花飛",
       "summary": "五吋 6S 花飛機，F722 飛控、60A 電調，ELRS 2.4G 接收。",
+      "spec": "5\" · 6S · F722 · 60A · ELRS", "tagline": "五吋 6S 花飛機",
       "highlights": ["5 吋", "6S"]
     },
     {
       "id": "xun-shi", "product_id": "sp-48709596818", "listed": true, "order": 4, "featured": false,
       "name_zh": "迅矢", "name_en": "", "size": "5 吋", "use": "6S 花飛",
       "summary": "五吋 6S Freestyle 花飛機，F722 飛控、60A 電調，ELRS 2.4G 接收。",
+      "spec": "5\" · 6S · F722 · 60A · ELRS", "tagline": "五吋 6S 花飛機",
       "highlights": ["5 吋", "6S"]
     },
     {
       "id": "issen", "product_id": "sp-49561691341", "listed": true, "order": 5, "featured": false,
       "name_zh": "一閃", "name_en": "ISSEN", "size": "5 吋", "use": "Freestyle 花飛",
       "summary": "GEPRC MARK5 機架的五吋花飛機，F722 V3 / 60A 電調，奈米防水處理。",
+      "spec": "5\" · F722 V3 · 60A · 奈米防水", "tagline": "MARK5 機架五吋花飛機",
       "highlights": ["5 吋", "奈米防水"]
     },
     {
       "id": "gobu-pocket", "product_id": "sp-46059782425", "listed": true, "order": 6, "featured": true,
       "name_zh": "戈布", "name_en": "GOBU", "size": "2.5 吋", "use": "小型花飛",
       "summary": "輕巧的 2.5 吋花飛機，H415 AIO 搭配 1103 / 8000KV 馬達與 DJI O4 Lite。",
+      "spec": "2.5\" · H415 AIO · 1103 8000KV · O4 Lite", "tagline": "輕巧的 2.5 吋花飛機",
       "highlights": ["2.5 吋", "輕巧機身", "客製配置"],
       "legacy_slugs": ["gobu-pocket"]
     },
@@ -45,6 +51,7 @@
       "id": "gobu-sentinel", "product_id": "sp-29295757187", "listed": true, "order": 7, "featured": true,
       "name_zh": "哨兵", "name_en": "SENTINEL", "size": "3.5 吋", "use": "Freestyle 花飛",
       "summary": "可換臂的 3.5 吋花飛平台，F722 AIO 40A 與 1404.5 / 4500KV 馬達。",
+      "spec": "3.5\" · 4S · F722 AIO 40A · 1404.5 4500KV", "tagline": "可換臂的 3.5 吋花飛平台",
       "highlights": ["3.5 吋花飛", "4S 動力", "可換機臂"],
       "legacy_slugs": ["gobu-sentinel"]
     },
