@@ -503,9 +503,9 @@ section{padding:36px 0}
 .h2-search button:hover{background:var(--text);color:var(--red-ink)}
 .h2-hero-pic{position:relative;display:block}
 .h2-hero-pic img{width:100%;aspect-ratio:1/1;object-fit:cover}
-.spec-tag{position:absolute;left:0;bottom:0;display:flex;flex-wrap:wrap;font-family:var(--mono);font-size:13px;font-weight:600;background:var(--sand-v2);color:var(--sand-ink);max-width:100%}
-.spec-tag>span{padding:9px 12px}
-.spec-tag .spec-tag-k{background:var(--sand-ink);color:var(--sand-v2)}
+/* 海報是紫黑色調：規格標籤用半透明黑底＋白字，左側品牌紅線，不搶海報顏色 */
+.spec-tag{position:absolute;left:0;bottom:0;display:flex;flex-wrap:wrap;font-family:var(--mono);font-size:13px;font-weight:600;background:rgba(10,10,12,.78);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:#f3f2ee;border-left:3px solid var(--red);max-width:100%;letter-spacing:.04em}
+.spec-tag>span{padding:9px 14px}
 
 .h2-doors-sec{padding-top:48px}
 .h2-doors{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
