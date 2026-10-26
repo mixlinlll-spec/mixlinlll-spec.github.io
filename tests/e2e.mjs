@@ -373,9 +373,10 @@ console.log('16. 首頁 V2：主視覺、四個入口、自製機型、電池帶
     const html = await page.content();
     ok(!/<iframe/.test(html), `${w}px：首頁不直接嵌入 YouTube 播放器（不拖慢載入）`);
     ok(await page.$eval('main > section', s => s.className.includes('h2-hero')), `${w}px：主視覺是首頁第一個區塊`);
-    ok(await page.locator('h1').count() === 1 && (await page.textContent('h1')).includes('從親手組裝'), `${w}px：首頁只有一個 h1`);
+    ok(await page.locator('h1').count() === 1 && (await page.textContent('h1')).includes('Built to Perform'), `${w}px：首頁只有一個 h1（品牌標語）`);
+    ok(!(await page.textContent('.h2-hero')).includes('台灣 FPV 工作室') && !(await page.textContent('.spec-tag')).includes('EWP 自製'), `${w}px：主視覺不顯示小標與「EWP 自製」字樣`);
     ok(await page.locator('.h2-hero-pic img[fetchpriority="high"]').count() === 1, `${w}px：主視覺海報優先載入`);
-    ok((await page.textContent('.spec-tag')).includes('EWP 自製'), `${w}px：海報規格標籤`);
+    ok((await page.textContent('.spec-tag')).includes('HUAN'), `${w}px：海報規格標籤`);
     const doors = await page.$$eval('.h2-doors a', as => as.map(a => a.getAttribute('href')));
     ok(JSON.stringify(doors) === JSON.stringify(['/products/', '/batteries/', '/services/', '/tunelab/']), `${w}px：四個入口連結正確`);
     const cards = await page.$$eval('.h2-build', as => as.map(a => a.getAttribute('href')));
