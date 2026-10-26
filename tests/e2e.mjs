@@ -363,39 +363,31 @@ console.log('15. 自製機型目錄：七款、連到商城商品、手機／平
   }
 }
 
-console.log('16. 首頁最上方 YouTube 影片（載入後自動靜音播放）');
+console.log('16. 首頁 V2：主視覺、四個入口、自製機型、電池帶、工作台、學習');
 {
-  const { site: SITE } = loadAll();
+  const { site: SITE, builds: BUILDS } = loadAll();
   const id = SITE.home_video.youtube_id;
-  const base = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&playsinline=1&modestbranding=1`;
   for (const w of [390, 1366]) {
     const page = await newPage(w);
-    await page.route('https://www.youtube-nocookie.com/**', rt => rt.fulfill({ body: '<html></html>', contentType: 'text/html' }));
-    const html = await (await page.request.get(PUB + '/')).text();
-    ok(/<a class="yt-lite" href="https:\/\/www\.youtube\.com\/watch\?v=[^"]+"[^>]*data-autoplay/.test(html) && !/<iframe/.test(html), `${w}px：HTML 先輸出封面（YouTube 連結），不直接放播放器`);
     await page.goto(PUB + '/', { waitUntil: 'load' });
-    const first = await page.$eval('main > section', s => s.className);
-    ok(first.includes('home-video'), `${w}px：影片是首頁第一個區塊`);
-    ok(await page.$eval('.home-video', v => v.compareDocumentPosition(document.querySelector('.hero')) & Node.DOCUMENT_POSITION_FOLLOWING), `${w}px：「從親手組裝，到自由飛翔」區塊在影片下方`);
-    ok(await page.locator('h1').count() === 1 && (await page.textContent('h1')).includes('從親手組裝'), `${w}px：首頁 h1 不變`);
-    await page.waitForSelector('.video-frame iframe');
-    ok(await page.getAttribute('.video-frame iframe', 'src') === base + '&mute=1', `${w}px：頁面載入後自動以靜音播放（youtube-nocookie）`);
-    const r = await page.$eval('.video-frame', e => e.getBoundingClientRect().toJSON());
-    ok(Math.abs(r.width / r.height - 16 / 9) < 0.02 && r.width <= w, `${w}px：影片 16:9（${Math.round(r.width)}×${Math.round(r.height)}）、不超出畫面`);
-    if (w === 1366) ok(r.bottom < 900, '電腦版：影片完整出現在第一屏內');
-    ok(await page.getAttribute('.video-yt-link', 'href') === `https://www.youtube.com/watch?v=${id}`, '「在 YouTube 觀看」連結正確');
+    const html = await page.content();
+    ok(!/<iframe/.test(html), `${w}px：首頁不直接嵌入 YouTube 播放器（不拖慢載入）`);
+    ok(await page.$eval('main > section', s => s.className.includes('h2-hero')), `${w}px：主視覺是首頁第一個區塊`);
+    ok(await page.locator('h1').count() === 1 && (await page.textContent('h1')).includes('從親手組裝'), `${w}px：首頁只有一個 h1`);
+    ok(await page.locator('.h2-hero-pic img[fetchpriority="high"]').count() === 1, `${w}px：主視覺海報優先載入`);
+    ok((await page.textContent('.spec-tag')).includes('EWP 自製'), `${w}px：海報規格標籤`);
+    const doors = await page.$$eval('.h2-doors a', as => as.map(a => a.getAttribute('href')));
+    ok(JSON.stringify(doors) === JSON.stringify(['/products/', '/batteries/', '/services/', '/tunelab/']), `${w}px：四個入口連結正確`);
+    const cards = await page.$$eval('.h2-build', as => as.map(a => a.getAttribute('href')));
+    ok(cards.length === 3 && cards.every(h => h.startsWith('/product/')), `${w}px：三張自製機型卡片連到商城商品`);
+    ok((await page.textContent('#builds .h2-more')).includes(`全部 ${BUILDS.filter(b => b.listed).length} 款`), `${w}px：機型總數由資料計算`);
+    ok(await page.locator('.h2-batt-pics a').count() === 2, `${w}px：電池帶兩款自製電池`);
+    ok(await page.getAttribute('.h2-video', 'href') === `https://www.youtube.com/watch?v=${id}`, `${w}px：KD7 影片連到 YouTube`);
+    ok(await page.locator('.h2-learn a[href="/learn/lipo-battery/"], .h2-learn a[href="/learn/fpv-video/"], .h2-learn a[href="/fpv-help.html"]').count() === 3, `${w}px：學習區三個入口`);
+    if (w === 1366) ok(await page.isVisible('.nav-line'), '電腦版：導覽列有 LINE 詢問按鈕');
+    else ok(!(await page.isVisible('.nav-line')), '手機版：導覽列不擠 LINE 按鈕（在選單內）');
     await page.context().close();
   }
-  // 省流量模式：不自動播放，點擊才播放（有聲）
-  const page = await newPage(390);
-  await page.addInitScript(() => Object.defineProperty(navigator, 'connection', { value: { saveData: true } }));
-  await page.route('https://www.youtube-nocookie.com/**', rt => rt.fulfill({ body: '<html></html>', contentType: 'text/html' }));
-  await page.goto(PUB + '/', { waitUntil: 'load' });
-  await page.waitForTimeout(300);
-  ok(await page.locator('.video-frame iframe').count() === 0, '省流量模式：不自動播放');
-  await page.click('a.yt-lite');
-  ok(await page.getAttribute('.video-frame iframe', 'src') === base, '省流量模式：點擊封面後播放（不靜音）');
-  await page.context().close();
 }
 
 // 教學頁：章節標籤跟著捲動移動時，不可以把整個頁面拉回去（手機上會「滑不下去、一直彈上來」）

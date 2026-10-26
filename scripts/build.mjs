@@ -118,17 +118,15 @@ const BRANDS = [
   ['fdi', 'FDI', 'FDI'],
 ];
 function homePage() {
-  const featuredBuilds = listedBuilds().filter(({ b }) => b.featured);
-  const huan = builds.find(b => b.id === 'huan');
-  const newest = sortProducts(visible).slice(0, 8);
-  const quick = [
-    ['穿越機整機', '/products/complete-drones/', '自製機型與其他品牌整機'],
-    ['零件', '/products/frames-parts/', '機架、馬達、飛控、圖傳'],
-    ['電池', '/batteries/', '18650／21700 電池組與 LiPo'],
-    ['客製服務', '/services/custom-build/', '依用途討論配置'],
-    ['維修調校', '/services/repair/', '故障排查與設定'],
-    ['知識庫', '/fpv-help.html', '91 則玩家常見問題'],
-  ];
+  const all = listedBuilds();
+  // 主視覺用有品牌海報的機型；下方卡片列 featured=true 的其他機型
+  const heroEntry = all.find(({ b }) => b.poster_image);
+  const hero = heroEntry?.b;
+  const cardBuilds = all.filter(({ b }) => b.featured && b !== hero).slice(0, 3);
+  const otherBuilds = all.filter(x => x !== heroEntry && !cardBuilds.includes(x));
+  // 首頁電池帶固定展示兩款自製電池（短名稱只用於首頁卡片；商品下架時自動不顯示）
+  const BATTERY_PICKS = [['sp-53514957903', 'LR 遠航電池 6S2P 10000mAh'], ['sp-26592256245', '靈雀外場電包 15000mAh']];
+  const batteries = BATTERY_PICKS.map(([id, label]) => ({ p: visible.find(p => p.id === id), label })).filter(x => x.p);
   const faq = [
     ['第一次接觸 FPV，要先準備什麼？', '先整理已有的遙控器、眼鏡與充電設備，再說明想練習花飛、長航或拍攝。這些資訊有助於確認接收機與圖傳相容性，縮小整機配置範圍。'],
     ['詢問維修時，需要提供哪些資訊？', '提供機型、飛控與電調型號、韌體版本、故障發生經過，以及清楚的接線照片。如果有設定備份、錯誤畫面或黑盒檔案，也可以一起準備。'],
@@ -136,84 +134,100 @@ function homePage() {
   ];
   const v = site.home_video;
   const ytWatch = v?.enabled && v.youtube_id ? `https://www.youtube.com/watch?v=${encodeURIComponent(v.youtube_id)}` : '';
-  // 首頁影片：先顯示封面＋播放鍵（一般連結，沒有 JavaScript 也能到 YouTube 觀看）；autoplay=true 時頁面載入後由 site.js 換成靜音自動播放的 youtube-nocookie 播放器，否則點擊才播放
-  const videoBlock = ytWatch ? `<section class="home-video wrap" aria-labelledby="home-video-title">
-  <div class="video-frame">
-    <a class="yt-lite" href="${attr(ytWatch)}" data-yt="${attr(v.youtube_id)}"${v.autoplay ? ' data-autoplay' : ''} data-title="${attr(v.title)}" target="_blank" rel="noopener" aria-label="${attr(`播放影片：${v.title}`)}">
-      <img src="https://i.ytimg.com/vi/${attr(v.youtube_id)}/hqdefault.jpg" alt="" width="480" height="360" fetchpriority="high" decoding="async">
-      <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#ff4a3d"/><path d="M45 24 27 14v20z" fill="#fff"/></svg></span>
-    </a>
+  const line = site.contact.line;
+  const lineHref = line.enabled && line.url ? line.url : '';
+  const arrow = '<span aria-hidden="true">→</span>';
+  const doors = [
+    ['/products/', 'SHOP', '商品商城', `${visible.length} 件商品，${categories.length} 大分類，可依品牌、尺寸篩選`, '逛商城', ''],
+    ['/batteries/', 'BATTERY', '電池專區', '21700／18650 長航鋰電池與外場電包', '看電池', 'door-sand'],
+    ['/services/', 'SERVICE', '技術服務', '客製組裝、維修檢測、Betaflight 調參與黑盒分析', '看服務', ''],
+    ['/tunelab/', 'TUNE LAB · 封閉測試中', 'EWP Tune Lab', '依機體與黑盒資料做 PID／濾波分析的調參工具', '了解計畫', 'door-lab'],
+  ];
+  const work = [
+    ['custom-build', '客製組裝', '依用途與預算挑機架、動力和圖傳，組好、設定好再交機'],
+    ['repair', '維修與故障檢測', '從症狀開始查：供電、接線、飛控、電調與圖傳'],
+    ['blackbox', 'Betaflight 調參與黑盒分析', '看黑盒資料再改 PID 與濾波，不靠猜'],
+  ];
+  const learnCards = [
+    ['/learn/lipo-battery/', '/assets/img/home/learn-lipo.webp', 'FPV LiPo 電池新手學堂封面', 'LiPo 電池：從看懂標籤到安全報廢'],
+    ['/learn/fpv-video/', '/assets/img/home/learn-video.webp', 'FPV 圖傳新手學堂封面', '圖傳：類比、DJI、Walksnail、HDZero 差在哪'],
+  ];
+  const img = p => { const i = p.images?.[0]; return i ? `<img src="${attr(i.src_small || i.src)}" alt="${attr(i.alt)}" width="480" height="480" loading="lazy" decoding="async">` : '<div class="img-ph" aria-hidden="true"><span>EWP</span></div>'; };
+
+  const body = `<section id="about" class="wrap h2-hero">
+  <div class="h2-hero-text">
+    <p class="h2-eyebrow">電翼動力 · 台灣 FPV 工作室</p>
+    <h1>從親手組裝，<br>到自由<span class="red">飛翔</span>。</h1>
+    <p class="h2-lead">專注 FPV 穿越機的自製機型、客製組裝、維修檢測與 Betaflight 調參，並提供長航鋰離子電池。每一台機器都完成組裝、設定與測試後才交到你手上。</p>
+    <div class="actions"><a class="btn btn-primary" href="/builds/">探索自製機型</a>${lineHref ? `<a class="btn h2-btn-line" href="${attr(lineHref)}" target="_blank" rel="noopener">LINE 詢問配置 <span aria-hidden="true">↗</span></a>` : ''}</div>
+    <form class="h2-search" action="/products/" method="get" role="search">
+      <label for="hero-q" class="sr-only">搜尋商品</label>
+      <input id="hero-q" type="search" name="q" placeholder="找零件：型號或關鍵字，例如 2207、XT60">
+      <button type="submit">搜尋</button>
+    </form>
   </div>
-  <div class="video-meta"><div><p class="eyebrow">${esc(v.eyebrow || '')}</p><h2 id="home-video-title">${esc(v.title)}</h2>${v.caption ? `<p>${esc(v.caption)}</p>` : ''}</div><a class="video-yt-link" href="${attr(ytWatch)}" target="_blank" rel="noopener">在 YouTube 觀看 <span aria-hidden="true">↗</span></a></div>
-</section>` : '';
-  const body = `${videoBlock}
-<section class="hero wrap">
-  <div class="hero-top eyebrow"><span><span class="red">EWP /</span> FPV WORKSHOP</span><span class="hide-sm">TAIWAN · BUILD / TUNE / FLY</span></div>
-  <div class="hero-grid">
-    <div>
-      <h1><span>從親手組裝，</span><span>到自由<span class="red">飛翔。</span></span></h1>
-      <p class="lead">每一個焊點、每一次調校，都為了手感對的那一刻。電翼動力，讓熱愛飛行的人，找到屬於自己的 FPV。</p>
-      <form class="hero-search" action="/products/" method="get" role="search">
-        <label for="hero-q" class="sr-only">搜尋商品</label>
-        <input id="hero-q" type="search" name="q" placeholder="搜尋整機、馬達、電池、螺絲…">
-        <button class="btn btn-primary" type="submit">搜尋</button>
-      </form>
-      <div class="actions"><a class="btn btn-primary" href="/products/">瀏覽所有商品 <span aria-hidden="true">→</span></a>${lineButton(site, 'LINE 詢價', 'btn btn-line')}</div>
-      <div class="hero-note">BUILT WITH PURPOSE.<br>READY TO FLY.</div>
+  ${hero ? `<a class="h2-hero-pic" href="${url.product(heroEntry.p)}">
+    ${picture(hero.poster_image, { lazy: false, sizes: '(max-width: 760px) 100vw, 560px' })}
+    <span class="spec-tag"><span class="spec-tag-k">EWP 自製</span><span>${esc(hero.name_zh)} ${esc(hero.name_en || '')} · ${esc(hero.spec || hero.size)}</span></span>
+  </a>` : ''}
+</section>
+<section class="wrap h2-doors-sec" aria-label="快速入口">
+  <ul class="h2-doors">${doors.map(([h, k, t, d, c, cls]) => `<li><a class="h2-door ${cls}" href="${h}"><span class="h2-door-k">${k}</span><strong>${t}</strong><span class="h2-door-d">${d}</span><span class="h2-door-c">${c} ${arrow}</span></a></li>`).join('')}</ul>
+</section>
+<section id="builds" class="wrap h2-sec">
+  <div class="h2-head"><div><p class="h2-eyebrow">EWP ORIGINAL BUILDS</p><h2>自製機型</h2></div><a class="h2-more" href="/builds/">全部 ${all.length} 款 ${arrow}</a></div>
+  <ul class="h2-builds">${cardBuilds.map(({ b, p }) => `<li><a class="h2-build" href="${url.product(p)}">
+    <span class="h2-build-img">${img(p)}</span>
+    <span class="h2-build-body">
+      <span class="h2-build-name"><strong>${esc(b.name_zh)}</strong>${b.name_en ? `<span>${esc(b.name_en)}</span>` : ''}</span>
+      ${b.spec ? `<span class="h2-build-spec">${esc(b.spec)}</span>` : ''}
+      <span class="h2-build-tag">${esc(b.tagline || b.use)}</span>
+      <span class="h2-build-foot"><span class="h2-price">${esc(priceText(p))}</span><span class="h2-build-go">看規格 ${arrow}</span></span>
+    </span>
+  </a></li>`).join('')}</ul>
+  ${otherBuilds.length ? `<p class="h2-others">其他機型：${otherBuilds.map(({ b, p }) => `<a href="${url.product(p)}">${esc(b.name_zh)}</a>`).join(' · ')}</p>` : ''}
+</section>
+<section id="battery" class="h2-sec">
+  <div class="h2-batt-band"><div class="wrap h2-batt">
+    <div class="h2-batt-text">
+      <p class="h2-eyebrow">EWP BATTERY</p>
+      <h2>EWP 長航鋰電池</h2>
+      <p>21700、18650 鋰離子電池組與外場電包，適合長航飛行與外場供電。每組電池出廠前都完成內阻與電壓一致性檢查。</p>
+      <div class="actions"><a class="btn h2-btn-sand" href="/batteries/">逛電池專區 ${arrow}</a><a class="btn h2-btn-sand-o" href="/learn/lipo-battery/">LiPo 新手學堂</a></div>
     </div>
-    <figure class="feature">
-      ${picture(huan.poster_image, { lazy: true, sizes: '(max-width: 900px) 100vw, 600px' })}
-      <figcaption><strong>幻 / HUAN</strong><span>5” FREESTYLE · 6S</span></figcaption>
-    </figure>
+    <ul class="h2-batt-pics">${batteries.map(({ p, label }) => `<li><a href="${url.product(p)}">${img(p)}<span>${esc(label)}</span></a></li>`).join('')}</ul>
+  </div></div>
+</section>
+<section id="workshop" class="wrap h2-sec">
+  <div class="h2-work">
+    <img class="h2-work-img" src="/assets/img/home/workbench-solder.webp" alt="工作台上焊接飛控的實拍畫面" width="1280" height="720" loading="lazy" decoding="async">
+    <div class="h2-work-text">
+      <p class="h2-eyebrow">WORKBENCH</p>
+      <h2>不只組好，也把細節調好。</h2>
+      <ol class="h2-work-list">${work.map(([id, t, d], i) => `<li><span class="h2-num">0${i + 1}</span><div><a href="/services/${id}/">${t}</a><p>${d}</p></div></li>`).join('')}</ol>
+      <a class="h2-more" href="/services/">全部 ${services.length} 項服務 ${arrow}</a>
+    </div>
   </div>
+  ${ytWatch ? `<a class="h2-video" href="${attr(ytWatch)}" target="_blank" rel="noopener">
+    <span class="h2-video-thumb"><img src="/assets/img/home/kd7-assembly.webp" alt="" width="960" height="540" loading="lazy" decoding="async"><span class="h2-play" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 1.5v11l9-5.5z" fill="#fff"/></svg></span></span>
+    <span class="h2-video-text"><span class="h2-video-k">開發紀錄 · YouTube ↗</span><strong>${esc(v.title)}</strong>${v.caption ? `<span class="h2-video-d">${esc(v.caption)}</span>` : ''}</span>
+  </a>` : ''}
 </section>
-<section class="wrap quick" aria-label="快速入口">
-  <ul class="quick-grid">${quick.map(([t, h, d], i) => `<li><a href="${h}"><span class="quick-num">0${i + 1}</span><strong>${t}</strong><span>${d}</span></a></li>`).join('')}</ul>
+<section id="learn" class="wrap h2-sec">
+  <div class="h2-head"><div><p class="h2-eyebrow">LEARN</p><h2>新手從這裡開始</h2></div><a class="h2-more" href="/journal/">EWP 專欄 ${arrow}</a></div>
+  <ul class="h2-learn">${learnCards.map(([h, src, alt, t]) => `<li><a class="h2-card" href="${h}"><img src="${src}" alt="${attr(alt)}" width="800" height="450" loading="lazy" decoding="async"><span class="h2-card-body"><span class="h2-card-k">新手學堂 · 互動教學</span><strong>${esc(t)}</strong></span></a></li>`).join('')}
+    <li><a class="h2-card h2-card-kb" href="/fpv-help.html"><span class="h2-card-body"><span class="h2-card-k">FPV 知識庫</span><strong>91 則常見問題</strong><span class="h2-card-d">設定、接線、故障排查，用白話整理排查方向。</span></span><span class="h2-more">打開知識庫 ${arrow}</span></a></li>
+  </ul>
 </section>
-<section id="builds" class="wrap">
-  ${sectionHead('01 / SELECTED BUILDS', '不同尺寸，同一份飛行熱情。', '<p>從小型花飛到五吋主力，用飛行用途決定配置，讓每一台機器有自己的個性。</p>')}
-  <div class="projects">${featuredBuilds.map(({ b, p }, i) => `<article class="project">
-    <div class="project-num">BUILD 0${i + 1} / ${esc(b.size.replace(' 吋', ' INCH'))}</div>
-    <h3><a href="${url.product(p)}">${esc(b.name_zh)}</a></h3>
-    <div class="english">${b.name_en ? `${esc(b.name_en)} · ` : ''}${esc(b.use)}</div>
-    <p>${esc(b.summary)}</p>
-    <div class="tags">${(b.highlights || []).map(h => `<span>${esc(h)}</span>`).join('')}</div>
-    <a class="more" href="${url.product(p)}">查看機型詳情 →</a>
-  </article>`).join('')}</div>
-  <p class="section-more"><a href="/builds/">所有 EWP 自製機型 →</a></p>
+<section class="wrap h2-sec" aria-labelledby="brand-wall-title">
+  <div class="h2-brands"><h2 id="brand-wall-title">經銷品牌</h2><ul>${BRANDS.map(([file, name, brand]) => `<li><a href="/products/?brand=${encodeURIComponent(brand)}" aria-label="${attr(`查看 ${name} 商品`)}"><img class="b-${file}" src="/assets/img/brands/${file}.png" alt="${attr(name)}" loading="lazy" decoding="async"></a></li>`).join('')}</ul></div>
 </section>
-<section class="wrap">
-  ${sectionHead('02 / CATALOG', '依你要買的東西找。', '<p>從 M2／M3 螺絲到七吋長航整機，依分類、品牌、尺寸與關鍵字快速篩選。</p>')}
-  <ul class="cat-grid">${categories.map(c => `<li><a href="${url.category(c)}"><strong>${esc(c.name)}</strong><span>${esc(c.summary)}</span></a></li>`).join('')}</ul>
-</section>
-<section class="wrap brand-wall" aria-labelledby="brand-wall-title">
-  <div class="section-head"><div><p class="eyebrow">BRANDS WE CARRY</p><h2 id="brand-wall-title">經銷品牌</h2></div><p>點選品牌，查看電翼動力目前販售的商品。</p></div>
-  <ul class="brand-grid">${BRANDS.map(([file, name, brand]) => `<li><a href="/products/?brand=${encodeURIComponent(brand)}" aria-label="${attr(`查看 ${name} 商品`)}"><img class="b-${file}" src="/assets/img/brands/${file}.png" alt="${attr(name)}" loading="lazy" decoding="async"></a></li>`).join('')}</ul>
-</section>
-${newest.length ? `<section class="wrap">${sectionHead('NEW', '新上架', '<p><a href="/products/">查看全部 →</a></p>')}${cardList(newest)}</section>` : ''}
-<section id="workshop" class="wrap workshop">
-  <div class="services-split">
-    <div><p class="eyebrow">03 / THE WORKSHOP</p><h2>不只組好，<br>也把細節調好。</h2><p class="muted">FPV 的樂趣來自飛行，也來自理解機器。從需求討論、零件搭配到故障排查，把每一個環節串在一起。</p><p><a class="btn" href="/services/">所有服務 →</a></p></div>
-    <div>${[
-      ['custom-build', '客製整機與組裝', '花飛、長航與影視機，依拍攝需求、圖傳系統與既有設備，討論適合的機架與動力配置。'],
-      ['battery-pack', '動力電池與外場電包', '18650、21700 鋰電池組，依設備電壓、電流需求與攜帶方式評估配置，涵蓋飛行與外場供電。'],
-      ['repair', '維修、調參與黑盒分析', '飛控、電調、接收機、圖傳與 OSD 問題排查，搭配設定檢查與飛行紀錄分析，找出症狀背後的原因。'],
-      ['3d-printing', '3D 列印與機體配件', 'TPU 保護件、天線座與機體配件，讓安裝、走線與落地保護更貼近實際使用需求。'],
-    ].map(([id, t, d], i) => `<article class="service-row"><span class="num">0${i + 1}</span><div><h3><a href="/services/${id}/">${t}</a></h3><p>${d}</p></div></article>`).join('')}</div>
-  </div>
-</section>
-<section id="about" class="wrap">
-  <div class="about-band">
-    <div class="about-grid"><div><p class="eyebrow">04 / ABOUT EWP</p><h2>電翼動力<br>把熱愛，做成能飛的作品。</h2></div>
-    <p>從一台穿越機開始，把組裝、焊接、調校與維修，變成日常的一部分。電翼動力專注 FPV 整機與動力系統，也持續探索小型花飛、長航與影視機的可能。<br><br>我們相信，了解自己的機器，是享受飛行的一部分。</p></div>
-    <div class="motto" aria-label="Build. Tune. Fly."><span>BUILD.</span><span>TUNE.</span><span>FLY.</span></div>
-  </div>
-</section>
-<section class="wrap faq">
-  ${sectionHead('05 / BEFORE WE BUILD', '開始之前，你可能想知道。')}
+<section class="wrap h2-sec faq">
+  ${sectionHead('BEFORE WE BUILD', '開始之前，你可能想知道。')}
   ${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}
 </section>
-<section id="contact" class="wrap">${contactCta('下一台機器，從你的想法開始。', '整機、電池或維修需求，先告訴我們你的設備與用途，一起把配置想清楚。').replace('<section class="wrap cta-band">', '<div class="cta-band">').replace(/<\/section>$/, '</div>')}</section>`;
+<section id="contact" class="wrap h2-sec">${contactCta('下一台機器，從你的想法開始。', '告訴我們用途、預算和現有設備，一起把配置想清楚。').replace('<section class="wrap cta-band">', '<div class="cta-band">').replace(/<\/section>$/, '</div>')}</section>`;
+
   page('index.html', {
     path: '/', body, active: 'home', bodyClass: 'home',
     jsonld: [{ '@context': 'https://schema.org', '@type': 'Organization', name: '電翼動力 EWP', // 使用 Organization（非 LocalBusiness／Store）：登記地址僅作為公司登記資訊，不宣稱為對外營業據點

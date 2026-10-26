@@ -11,7 +11,7 @@
   "default_description": "電翼動力 EWP，專注 FPV 穿越機整機、零件、動力電池、客製組裝、維修與調校。",
   "default_og_image": "/assets/img/builds/huan-1200.jpg",
   "home_video": {
-    "_comment": "首頁最上方的 YouTube 影片。只換 youtube_id 就能換影片；enabled=false 則不顯示。autoplay=true：頁面載入後自動靜音播放（瀏覽器規定自動播放必須靜音，觀眾可自行開聲音；省流量模式不自動播放）；false：點擊封面才播放。",
+    "_comment": "首頁「工作台」區塊下方的影片卡片（點擊後到 YouTube 觀看）。只換 youtube_id 就能換影片；enabled=false 則不顯示。autoplay 目前首頁未使用。",
     "enabled": true,
     "youtube_id": "FtRTQxvAALc",
     "autoplay": true,
