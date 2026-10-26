@@ -29,6 +29,7 @@ h1,h2,h3{line-height:1.35;letter-spacing:-.02em}
 .fine{font-size:13px;color:var(--muted);line-height:1.7}
 .h3{font-size:22px}
 .draft-banner{background:var(--warn);color:#111;text-align:center;font-weight:700;padding:8px 16px;font-size:14px}
+.preview-banner{background:#6cc4ff;color:#0b1620}.preview-banner a{color:#0b1620;text-decoration:underline}
 
 /* ---------- Buttons ---------- */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:10px 20px;border:1px solid var(--line);background:transparent;color:var(--text);font-size:15px;font-weight:700;cursor:pointer;transition:background .2s,color .2s,border-color .2s;text-decoration:none;border-radius:var(--radius);text-align:center}

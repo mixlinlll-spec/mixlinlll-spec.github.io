@@ -13,6 +13,10 @@ import { isShowcase, esc, attr, url, layout, analyticsSnippet, productCard, brea
 const args = process.argv.slice(2);
 const DRAFTS = args.includes('--drafts');
 const CHECK = args.includes('--check');
+// --preview：Cloudflare Pages 的合併前預覽網址（每個分支一個網址）。內容與正式版相同（不含草稿），
+// 但全站 noindex、robots 全擋、每頁上方顯示「預覽版」提示，避免被搜尋引擎收錄或被誤認為正式網站。
+const PREVIEW = args.includes('--preview');
+const PREVIEW_BRANCH = (process.env.CF_PAGES_BRANCH || '').replace(/[^\w./-]/g, '').slice(0, 60);
 const OUT = path.resolve(ROOT, args.includes('--out') ? args[args.indexOf('--out') + 1] : (DRAFTS ? '_preview' : 'dist'));
 if (OUT === ROOT || !OUT.startsWith(ROOT + path.sep)) { console.error('✖ 輸出資料夾必須是 repo 內的子資料夾（例如 dist）'); process.exit(1); }
 
@@ -73,7 +77,7 @@ const assetVersion = (() => {
   }
   return h.digest('hex').slice(0, 10);
 })();
-const ctx = { site, categories, catMap, drafts: DRAFTS, version: process.env.EWP_VERSION || assetVersion };
+const ctx = { site, categories, catMap, drafts: DRAFTS, preview: PREVIEW ? { branch: PREVIEW_BRANCH } : null, version: process.env.EWP_VERSION || assetVersion };
 const BASE = site.base_url;
 const generated = [];
 function write(rel, html) {
@@ -608,7 +612,12 @@ ${contactCta()}` });
 
 // ---------- sitemap / robots ----------
 function seoFiles() {
-  if (DRAFTS) { write('robots.txt', 'User-agent: *\nDisallow: /\n'); return; }
+  if (DRAFTS || PREVIEW) {
+    write('robots.txt', 'User-agent: *\nDisallow: /\n');
+    // Cloudflare Pages 讀取 _headers：預覽網址每個檔案都加上 noindex（含圖片、教學頁等非版型頁面）
+    if (PREVIEW) write('_headers', '/*\n  X-Robots-Tag: noindex, nofollow\n');
+    return;
+  }
   const urls = ['/', '/products/', ...categories.map(url.category), ...visible.map(url.product), '/builds/',
     '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/learn/lipo-battery/', '/learn/fpv-video/', '/blackbox/', '/tunelab/', '/about/', '/contact/', '/fpv-help.html',
     ...Object.entries(site.policies).filter(([, v]) => v.approved).map(([k]) => `/${k}/`)];
@@ -638,6 +647,17 @@ for (const item of STATIC_WHITELIST) {
     const html = fs.readFileSync(f, 'utf8');
     if (html.includes('cloudflareinsights') || !html.includes('</body>')) continue;
     fs.writeFileSync(f, html.replace(/<\/body>(?![\s\S]*<\/body>)/, `${snippet}\n</body>`));
+  }
+}
+// 預覽版：手寫 HTML（教學頁、知識庫…）也加上 noindex 與「預覽版」提示條
+if (PREVIEW) {
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
+  const bar = `<div class="preview-banner" role="status" style="background:#6cc4ff;color:#0b1620;text-align:center;font:700 14px/1.5 system-ui,sans-serif;padding:8px 16px">預覽版${PREVIEW_BRANCH ? `（${PREVIEW_BRANCH}）` : ''}：尚未上線，正式網站是 <a href="${site.base_url}" style="color:#0b1620">www.ewpfpv.com</a></div>`;
+  for (const f of walk(OUT).filter(f => f.endsWith('.html'))) {
+    let html = fs.readFileSync(f, 'utf8');
+    if (html.includes('preview-banner') || !/<body[^>]*>/.test(html)) continue;
+    if (!/<meta name="robots"/.test(html)) html = html.replace(/<head>/, '<head>\n<meta name="robots" content="noindex,nofollow">');
+    fs.writeFileSync(f, html.replace(/<body[^>]*>/, m => `${m}\n${bar}`));
   }
 }
 let copiedProductImgDirs = 0;
