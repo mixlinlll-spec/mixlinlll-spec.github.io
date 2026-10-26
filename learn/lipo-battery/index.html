@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://www.ewpfpv.com/learn/lipo-battery/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="FPV LiPo 電池新手學堂｜電翼動力 EWP">
-<meta property="og:description" content="從看懂電池標籤到安全報廢，一次搞懂穿越機鋰聚合物電池。">
+<meta property="og:description" content="穿越機 LiPo 電池怎麼充、飛到多少該降落、鼓包還能不能用，從看懂標籤到安全報廢的新手整理。">
 <meta property="og:url" content="https://www.ewpfpv.com/learn/lipo-battery/">
 <meta property="og:image" content="https://www.ewpfpv.com/assets/img/journal/lipo-battery-basics/00-cover.webp">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
@@ -199,6 +199,18 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
 .sitebar{border-bottom:1px solid var(--line);background:var(--bg)}
 .sitebar .wrap{display:flex;justify-content:space-between;gap:12px;padding-block:10px;font-size:14px}
 .sitebar a{color:var(--muted);text-decoration:none}.sitebar a:hover{color:var(--text)}
+
+/* 入門必學／進階補充（v2.18）*/
+.lv{display:inline-block;font-family:var(--f-body);font-size:11px;font-weight:600;letter-spacing:0;line-height:1.4;padding:1px 6px;border-radius:2px;border:1px solid var(--line);color:var(--muted);vertical-align:middle;margin-left:6px}
+.lv.core{color:var(--text);border-color:rgba(255,74,61,.7);background:rgba(255,74,61,.12)}
+.chhead .lv{font-size:12px;align-self:center}
+.path{border:1px solid var(--line);border-left:3px solid var(--red);background:var(--panel);padding:14px 16px;border-radius:3px;margin-top:22px;font-size:15px;line-height:1.75}
+.path b{color:var(--text)}
+.path .lv{margin:0 2px}
+details.adv{border:1px dashed var(--line);border-radius:3px;padding:12px 16px;margin:18px 0;background:var(--panel)}
+details.adv summary{cursor:pointer;color:var(--sand);font-weight:600;list-style-position:outside}
+details.adv[open] summary{margin-bottom:8px}
+details.adv>*:not(summary){margin-top:10px}
 </style>
 </head>
 <body>
@@ -211,25 +223,26 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
       <span class="tag">BATTERY SCHOOL · 01</span>
     </div>
     <h1>FPV <em>LiPo</em> 電池新手學堂</h1>
-    <p class="lede">從看懂電池標籤到安全報廢，一次搞懂穿越機鋰聚合物電池。每一章都附小工具，輸入你自己的電池規格就能直接算。</p>
+    <p class="lede">穿越機用的 LiPo 電池，充錯、放太低或摔到變形都可能鼓包，嚴重時會起火。這裡用白話整理你真正需要知道的事，很多章節附小工具，輸入你自己的電池規格就能算。</p>
     <div class="cellstrip" aria-label="單顆電芯關鍵電壓">
       <span>滿電 <b>4.20V</b></span><span>標稱 <b>3.70V</b></span><span>儲存 <b>3.80V</b></span><span>建議落地 <b>3.50V</b></span><span>絕對不要低於 <b>3.00V</b></span>
     </div>
+    <p class="path"><b>第一次看？</b>先讀標示 <span class="lv core">必學</span> 的 7 章：認識 LiPo、電壓、充電、飛行使用、儲存、壞電池判斷、起火與報廢。標示 <span class="lv">進階</span> 的章節（標籤細節、怎麼選電池、搭飛機）等你要買電池或出國時再回來看。上面的電壓都是<b>每一顆電芯</b>的數字，整顆電池要除以 S 數（第 03 章有換算工具）。</p>
   </div>
 </header>
 
 <nav class="toc" aria-label="章節">
   <div class="wrap" id="toc">
-    <a href="#what"><span class="n">01</span>認識 LiPo</a>
-    <a href="#label"><span class="n">02</span>看懂標籤</a>
-    <a href="#volt"><span class="n">03</span>電壓</a>
-    <a href="#pick"><span class="n">04</span>怎麼選</a>
-    <a href="#charge"><span class="n">05</span>充電</a>
-    <a href="#fly"><span class="n">06</span>飛行使用</a>
-    <a href="#store"><span class="n">07</span>儲存保養</a>
-    <a href="#health"><span class="n">08</span>壞電池判斷</a>
-    <a href="#safety"><span class="n">09</span>安全與報廢</a>
-    <a href="#travel"><span class="n">10</span>搭飛機</a>
+    <a href="#what"><span class="n">01</span>認識 LiPo<span class="lv core">必學</span></a>
+    <a href="#label"><span class="n">02</span>看懂標籤<span class="lv">進階</span></a>
+    <a href="#volt"><span class="n">03</span>電壓<span class="lv core">必學</span></a>
+    <a href="#pick"><span class="n">04</span>怎麼選<span class="lv">進階</span></a>
+    <a href="#charge"><span class="n">05</span>充電<span class="lv core">必學</span></a>
+    <a href="#fly"><span class="n">06</span>飛行使用<span class="lv core">必學</span></a>
+    <a href="#store"><span class="n">07</span>儲存保養<span class="lv core">必學</span></a>
+    <a href="#health"><span class="n">08</span>壞電池判斷<span class="lv core">必學</span></a>
+    <a href="#safety"><span class="n">09</span>安全與報廢<span class="lv core">必學</span></a>
+    <a href="#travel"><span class="n">10</span>搭飛機<span class="lv">進階</span></a>
     <a href="#mistakes"><span class="n">11</span>常見錯誤</a>
     <a href="#quiz"><span class="n">12</span>小測驗</a>
   </div>
@@ -238,7 +251,7 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
 <main class="wrap">
 
 <section class="ch" id="what">
-  <div class="chhead"><span class="n">01</span><h2>LiPo 是什麼</h2></div>
+  <div class="chhead"><span class="n">01</span><h2>LiPo 是什麼</h2><span class="lv core">必學</span></div>
   <p class="thesis">LiPo（鋰聚合物電池）又輕、又能瞬間放出很大的電流，所以穿越機幾乎都用它。代價是它比較脆弱，用錯會鼓包，嚴重時會起火。</p>
   <div class="body">
     <p>一顆 LiPo 電池由好幾顆「電芯」串在一起，每一顆電芯叫做 1S。四顆串聯就是 4S，六顆就是 6S。串越多顆，電壓越高，馬達轉得越快。</p>
@@ -267,13 +280,13 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
     <div class="cmp">
       <div class="c"><h4>LiPo 鋰聚合物</h4><ul>
         <li>瞬間放電能力強，適合花飛、競速</li>
-        <li>同容量較輕，但能量密度較低</li>
+        <li>能量密度比鋰離子低：同樣重量，存的電比較少</li>
         <li>軟包外殼，怕撞、怕刺</li>
         <li>建議落地電壓約 3.5V／Cell</li>
       </ul></div>
       <div class="c"><h4>Li-ion 鋰離子</h4><ul>
         <li>放電電流較小，不適合暴力飛</li>
-        <li>能量密度高，適合遠航、長時間巡航</li>
+        <li>能量密度高：同樣重量能飛比較久，適合遠航、長時間巡航</li>
         <li>鐵殼電芯，結構較耐用</li>
         <li>可用電壓範圍較深，依電芯規格書與實測決定</li>
       </ul></div>
@@ -283,8 +296,8 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
 </section>
 
 <section class="ch" id="label">
-  <div class="chhead"><span class="n">02</span><h2>看懂電池標籤</h2></div>
-  <p class="thesis">一顆電池的標籤上最重要的只有四個數字：S 數、容量、C 數、接頭。點下面每一格看說明。</p>
+  <div class="chhead"><span class="n">02</span><h2>看懂電池標籤</h2><span class="lv">進階</span></div>
+  <p class="thesis">買電池時最常看的是 S 數、容量和接頭；C 數和瓦時（Wh）是進一步比較時才用得到。點下面每一格看說明。</p>
   <div class="body">
     <div class="label" role="group" aria-label="範例標籤">
       <div class="row" id="labelChips">
@@ -312,7 +325,7 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
 </section>
 
 <section class="ch" id="volt">
-  <div class="chhead"><span class="n">03</span><h2>電壓：最重要的一章</h2></div>
+  <div class="chhead"><span class="n">03</span><h2>電壓：最重要的一章</h2><span class="lv core">必學</span></div>
   <p class="thesis">記住看電壓要「除以 S 數」，換算成每顆電芯的電壓再判斷。整顆電池顯示 21V，6S 是每顆 3.5V，4S 卻是 5.25V（不可能，代表你看錯 S 數）。</p>
   <div class="body">
     <div class="tool" id="voltTool">
@@ -329,18 +342,18 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
       </table></div>
     </div>
     <h3>負載電壓 vs 靜置電壓</h3>
-    <p>飛行中推油門時，電壓會瞬間掉很多，這叫「負載電壓」。落地後放著幾分鐘，電壓會回升一點，這叫「靜置電壓」。</p>
+    <p>就像提重物時會喘、放下來休息就恢復：飛行中推油門時電壓會瞬間掉很多，這叫「負載電壓」；落地後放著幾分鐘，電壓會回升一點，這叫「靜置電壓」。</p>
     <ul>
-      <li>OSD 上看到的是負載電壓，猛推油門時短暫掉到 3.3V 左右是正常的。</li>
+      <li>OSD（眼鏡畫面上疊加的電壓、飛行時間等資訊）顯示的是負載電壓。猛推油門時短暫掉到 3.3V 左右、甚至更低，放開油門就回升，通常是正常的。</li>
       <li>如果<b>平飛</b>時電壓也一直停在 3.3V 附近，就該立刻降落。</li>
-      <li>落地後量靜置電壓，每顆約 3.5V 以上是健康的使用方式。低於 3.3V 代表你飛太久了。</li>
+      <li>落地後量靜置電壓，每顆約 3.5V 以上是比較保守、對電池友善的用法。低於 3.3V 代表這趟飛太久了。</li>
     </ul>
     <div class="alert"><strong>⚠ LiHV 警告</strong><span>LiHV 高壓電池滿電 4.35V，<b>只有標籤寫 LiHV 的電池才能用 LiHV 模式充電</b>。一般 LiPo 用 LiHV 模式充到 4.35V 會過充，可能鼓包或起火。</span></div>
   </div>
 </section>
 
 <section class="ch" id="pick">
-  <div class="chhead"><span class="n">04</span><h2>怎麼選電池</h2></div>
+  <div class="chhead"><span class="n">04</span><h2>怎麼選電池</h2><span class="lv">進階</span></div>
   <p class="thesis">先看你的馬達和電調支援幾 S，再看飛機重量決定容量。容量不是越大越好，太重的電池反而飛得更短、更難操控。</p>
   <div class="body">
     <p class="muted">以下是常見搭配範圍，實際以你的馬達 KV、電調規格與機架設計為準。</p>
@@ -356,8 +369,8 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
 </section>
 
 <section class="ch" id="charge">
-  <div class="chhead"><span class="n">05</span><h2>充電</h2></div>
-  <p class="thesis">用平衡充電、1C 電流、充電時有人看著。做到這三件事，大部分的充電意外都能避免。</p>
+  <div class="chhead"><span class="n">05</span><h2>充電</h2><span class="lv core">必學</span></div>
+  <p class="thesis">用平衡充電、1C 電流、充電時有人看著。這三件事能避開很多常見的充電意外。</p>
   <div class="body">
     <div class="tool">
       <h3>TOOL<b>充電電流計算</b></h3>
@@ -370,7 +383,7 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
         <div class="res"><span class="k">並充時充電器設定</span><span class="v" id="chPar">1.3<small>A</small></span></div>
         <div class="res"><span class="k">從儲存電壓充滿約需</span><span class="v" id="chTime">~45<small>分鐘</small></span></div>
       </div>
-      <p class="muted" style="font-size:14px">1C 的意思是充電電流（A）= 容量（Ah）。時間只是估算，平衡階段會再多花一些時間。</p>
+      <p class="muted" style="font-size:14px">1C 的意思是充電電流（A）= 容量（Ah），例如 1300mAh = 1.3Ah，就設 1.3A。電池標籤或說明書若另外寫了建議充電電流，以原廠為準。時間只是估算，平衡階段會再多花一些時間。</p>
     </div>
     <figure class="fig"><div class="sc"><svg viewBox="0 0 760 250" role="img" aria-label="安全充電配置示意圖">
 <rect x="30" y="60" width="200" height="130" rx="8" fill="var(--panel-2)" stroke="var(--line)" stroke-width="2"/>
@@ -393,26 +406,28 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
 </svg></div><figcaption>示意圖：安全的充電配置。電池放在防爆袋裡，充電時人在旁邊。</figcaption></figure><h3>每次充電的流程</h3>
     <ol class="steps">
       <li><div>確認電池<b>沒有鼓包、破損、外露金屬</b>，而且已經放涼。剛飛完還熱的電池先放到常溫再充。</div></li>
-      <li><div>先插<b>平衡頭</b>，再插主電源頭。充電器選 <b>LiPo Balance</b>（或 LiHV Balance，只限 LiHV 電池）。</div></li>
+      <li><div>先插<b>平衡頭</b>（電池上那條多 Pin 的小白頭，讓充電器看得到每一顆電芯），再插主電源頭。充電器選 <b>LiPo Balance</b>（或 LiHV Balance，只限標籤寫 LiHV 的電池）。</div></li>
       <li><div>確認充電器顯示的 <b>S 數和你的電池一致</b>，電流設定 1C。</div></li>
-      <li><div>把電池放進<b>防爆袋或金屬盒</b>，放在不可燃的桌面上，遠離窗簾、紙箱。</div></li>
-      <li><div>充電期間<b>人不要離開</b>。聞到怪味、看到鼓起或冒煙，立刻拔電源並把電池移到安全處。</div></li>
+      <li><div>把電池放進<b>防爆袋或金屬盒</b>，放在不可燃的桌面上，遠離窗簾、紙箱。防爆袋能降低風險，但不是防火保證，所以下一步一樣重要。</div></li>
+      <li><div>充電期間<b>人不要離開</b>。聞到怪味或看到電池鼓起，在安全的情況下立刻關掉充電器電源；已經冒煙就照第 09 章，人先離開。</div></li>
       <li><div>充滿後檢查每顆電芯電壓，壓差大（見第 08 章）要特別注意。</div></li>
     </ol>
-    <div class="alert"><strong>⚠ 並充注意</strong><span>並充板一次充多顆時，所有電池必須 <b>S 數相同、電壓接近</b>（差距建議在 0.1V／Cell 以內）才可以接上。電壓差太大的電池接在一起，會瞬間互相灌電。</span></div>
+    <details class="adv"><summary>進階補充：用並充板一次充好幾顆</summary>
+    <div class="alert"><strong>⚠ 並充注意</strong><span>並充板一次充多顆時，所有電池必須 <b>S 數相同、電壓接近</b>（差距建議在 0.1V／Cell 以內）才可以接上。電壓差太大的電池接在一起，會瞬間互相灌電。充電電流要用所有電池容量加起來計算（上面工具的「並充時充電器設定」）。剛開始建議一次充一顆就好。</span></div>
+    </details>
   </div>
 </section>
 
 <section class="ch" id="fly">
-  <div class="chhead"><span class="n">06</span><h2>飛行使用</h2></div>
-  <p class="thesis">電池壽命大部分是在飛行時決定的。不過放、不過熱，一顆電池可以穩定用上百次；常常飛到沒電，幾十次就會明顯衰退。</p>
+  <div class="chhead"><span class="n">06</span><h2>飛行使用</h2><span class="lv core">必學</span></div>
+  <p class="thesis">電池老得快不快，很大一部分取決於你怎麼飛。同一款電池，常常飛到電壓很低或飛到發燙，衰退會明顯比保守使用快。</p>
   <div class="body">
     <ul>
       <li><b>OSD 一定要開電壓顯示</b>，建議顯示「平均每顆電芯電壓」，不必心算。</li>
-      <li>Betaflight 裡設定低電壓警告，搭配遙控器或眼鏡的提示音，聽到就準備回來。</li>
+      <li>在 Betaflight（多數穿越機飛控用的設定軟體）裡設定低電壓警告，搭配遙控器或眼鏡的提示，看到就準備回來。</li>
       <li>用計時器輔助：第一次飛先抓保守時間，落地量電壓，再慢慢調整到落地約 3.5V／Cell。</li>
       <li><b>天冷（約 10°C 以下）</b>電池內阻變高、電壓掉很快。起飛前把電池放在口袋或保溫袋，先溫和飛 30 秒再暴力飛。</li>
-      <li>落地後電池摸起來<b>燙手</b>（明顯比體溫熱很多），代表負載過重或電池老化，要換更高規格的電池或檢查動力配置。</li>
+      <li>落地後電池微溫是正常的；如果摸起來<b>燙手</b>（明顯比體溫熱很多），可能是負載太重或電池老化，先讓它降溫，之後考慮換更高規格的電池或檢查動力配置。</li>
       <li>摔機後先拔電池檢查外觀，有凹陷、刺破或鼓起就不要再插上。</li>
     </ul>
     <div class="alert"><strong>⚠ 不要讓電池掛在飛機上不拔</strong><span>飛控、圖傳、接收機在待機時仍持續耗電。插著電池放一個晚上，電池可能被放到 3V 以下而報廢。落地後就拔電。</span></div>
@@ -420,7 +435,7 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
 </section>
 
 <section class="ch" id="store">
-  <div class="chhead"><span class="n">07</span><h2>儲存與保養</h2></div>
+  <div class="chhead"><span class="n">07</span><h2>儲存與保養</h2><span class="lv core">必學</span></div>
   <p class="thesis">滿電和沒電都是 LiPo 最不喜歡的狀態。不飛的時候，把它放在儲存電壓 3.80V／Cell 左右。</p>
   <div class="body">
     <ul>
@@ -435,7 +450,7 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
 </section>
 
 <section class="ch" id="health">
-  <div class="chhead"><span class="n">08</span><h2>這顆電池還能用嗎</h2></div>
+  <div class="chhead"><span class="n">08</span><h2>這顆電池還能用嗎</h2><span class="lv core">必學</span></div>
   <p class="thesis">鼓包、壓差大、內阻高，是 LiPo 退休的三大訊號。勾選你觀察到的狀況，看看建議。</p>
   <div class="body">
     <figure class="fig"><div class="sc"><svg viewBox="0 0 760 210" role="img" aria-label="正常電池與鼓包電池側面比較">
@@ -459,38 +474,42 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
         <label><input type="checkbox" data-w="2"> 充滿後各電芯壓差超過 0.05V<span class="sev md">注意</span></label>
         <label><input type="checkbox" data-w="2"> 充電器量到某一顆電芯內阻明顯比其他顆高<span class="sev md">注意</span></label>
         <label><input type="checkbox" data-w="1"> 飛行時間比新的時候短很多，或電壓下掉得很快<span class="sev md">注意</span></label>
-        <label><input type="checkbox" data-w="1"> 電池已經用很久，充放次數超過 150 次左右<span class="sev md">注意</span></label>
+        <label><input type="checkbox" data-w="1"> 電池已經用很久（例如上百次充放）<span class="sev md">注意</span></label>
       </div>
       <div class="verdict ok" id="verdict" aria-live="polite"><b>可以正常使用</b>　目前沒有勾選任何異常。每次充電前後還是要看一眼外觀。</div>
     </div>
-    <p class="muted">壓差和內阻的數字是一般參考值，不同品牌、容量會不同。最準的方法是<b>跟同一顆電池新的時候比較</b>：買新電池時記錄一次內阻，之後定期比對。</p>
+    <p class="muted">壓差（每顆電芯電壓的差距）和內阻（電池內部的阻力，越高越容易發熱、電壓掉越快）的數字是一般參考值，不同品牌、容量會不同。最準的方法是<b>跟同一顆電池新的時候比較</b>：有能量測內阻的充電器的話，買新電池時記錄一次，之後定期比對。</p>
   </div>
 </section>
 
 <section class="ch" id="safety">
-  <div class="chhead"><span class="n">09</span><h2>起火應變與報廢</h2></div>
+  <div class="chhead"><span class="n">09</span><h2>起火應變與報廢</h2><span class="lv core">必學</span></div>
   <p class="thesis">LiPo 起火非常猛烈，而且煙有毒。保護人員第一，財物第二。</p>
   <div class="body">
     <h3>電池冒煙或起火時</h3>
     <ol class="steps">
-      <li><div><b>人先遠離</b>，不要吸入煙霧，也讓旁邊的人和寵物離開。</div></li>
-      <li><div>如果可以<b>安全地</b>拔掉電源，就拔掉。已經噴火就不要用手碰。</div></li>
-      <li><div>可以用長夾子移動時，把電池移到<b>沙桶、金屬桶或戶外空地</b>，用大量沙子或滅火毯覆蓋。</div></li>
-      <li><div>火勢無法控制或已波及周邊物品，<b>立刻撥打 119</b>。</div></li>
-      <li><div>熄火後電池仍可能復燃，放在戶外不可燃處觀察至少數小時。</div></li>
+      <li><div><b>人先離開</b>，大聲提醒旁邊的人和寵物一起離開，不要吸入煙霧。</div></li>
+      <li><div>如果正在充電、而且<b>不用靠近電池</b>就能關掉電源，就關掉充電器電源。已經冒火時，不要伸手去拿電池。</div></li>
+      <li><div>火勢無法控制，或旁邊的東西也開始燒，<b>立刻撥打 119</b>，不要勉強自己撲救。</div></li>
+      <li><div>只有在剛開始冒煙、還沒有火焰，而且有長夾子或防火手套時，才考慮把電池移到戶外不可燃的地面、沙桶或金屬容器裡，遠離可燃物。</div></li>
+      <li><div>熄滅後電池仍可能再次起火，放在戶外不可燃處觀察幾個小時以上，不要馬上收進屋內或丟進垃圾桶。</div></li>
     </ol>
+    <details class="adv"><summary>進階補充：滅火要用水還是用沙？</summary>
+      <p>不同單位的說法不完全一樣。美國聯邦航空總署（FAA）針對機艙內的鋰離子電池起火，建議先滅火，再用大量的水或不含酒精的液體持續冷卻，避免其他電芯接著燒起來，並提醒不要拿起冒煙的電池、也不要把它蓋住或用冰塊。台灣部分消防單位的宣導也提到，可充電的鋰離子電池可以用水降溫。另一方面，也有大學實驗室的 LiPo 安全守則要求不要用水，改用乾沙或滅火器。</p>
+      <p>對一般玩家來說，重點不是背哪一種滅火方式，而是<b>不要冒險自己撲救</b>，以及事前預防：充電時人在旁邊、放在不可燃的地方、旁邊不要堆紙箱和布料。</p>
+    </details>
     <h3>怎麼報廢一顆電池</h3>
     <ol class="steps">
-      <li><div>用充電器的放電（Discharge）功能，把電池放到低電壓。鼓包嚴重或破損的電池<b>不要再接充電器</b>，直接進入下一步。</div></li>
+      <li><div>外觀正常、只是老化的電池，可以用充電器的放電（Discharge）功能把電量放低。鼓包、破損或曾經冒煙的電池<b>不要再接充電器</b>，直接進入下一步。</div></li>
       <li><div>主電源接頭和平衡頭用絕緣膠帶包好，避免短路。</div></li>
-      <li><div>單獨裝袋，交給廢電池回收點或清潔隊。大容量電池先詢問回收點是否收。</div></li>
+      <li><div>單獨裝袋，交給有回收鋰電池的回收點或清潔隊。各通路收的種類不同，FPV 用的大電池先問清楚對方收不收。</div></li>
     </ol>
-    <div class="alert"><strong>⚠ 不要丟一般垃圾</strong><span>LiPo 丟進垃圾車被壓到，可能在車上起火。網路上流傳的「泡鹽水放電」做法效果不穩定，也不建議使用。</span></div>
+    <div class="alert"><strong>⚠ 不要丟一般垃圾</strong><span>LiPo 丟進垃圾車被壓到，可能在車上起火。不要拆開、刺破或剪開電池；網路上流傳的「泡鹽水放電」做法效果不穩定，也不建議使用。</span></div>
   </div>
 </section>
 
 <section class="ch" id="travel">
-  <div class="chhead"><span class="n">10</span><h2>搭飛機帶電池</h2></div>
+  <div class="chhead"><span class="n">10</span><h2>搭飛機帶電池</h2><span class="lv">進階</span></div>
   <p class="thesis">看的是瓦時（Wh），不是 mAh。備用電池一律手提上機，不能托運。</p>
   <div class="body">
     <div class="tool">
@@ -510,7 +529,7 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
     <ul>
       <li>每顆電池的接頭要絕緣保護，建議個別放進防爆袋。</li>
       <li>標籤上看不出容量或瓦時的電池，可能被拒絕攜帶。</li>
-      <li>台灣主要航空公司 2025 年起大多禁止在機上使用或充電行動電源與備用電池。</li>
+      <li>台灣籍航空公司自 2025 年 3 月起陸續規定，機上不能使用、也不能充電行動電源；FPV 的備用電池同樣只能手提、不能托運。</li>
       <li>各航空公司的數量上限不同，<b>出發前請查詢你搭乘的航空公司最新規定</b>。</li>
     </ul>
   </div>
@@ -518,7 +537,7 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
 
 <section class="ch" id="mistakes">
   <div class="chhead"><span class="n">11</span><h2>新手最常犯的 10 個錯誤</h2></div>
-  <p class="thesis">這些錯誤我們在維修台上天天看到。</p>
+  <p class="thesis">下面這些是新手很容易踩到的坑，對照看看自己有沒有。</p>
   <div class="body" style="max-width:none">
     <div class="mist">
       <div><span class="x">把電池飛到 OSD 完全沒電才降落</span><span class="o">設定低電壓警告，落地約 3.5V／Cell</span></div>
@@ -537,7 +556,7 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
 
 <section class="ch" id="quiz">
   <div class="chhead"><span class="n">12</span><h2>小測驗</h2></div>
-  <p class="thesis">答對五題，你就具備安全使用 LiPo 的基本觀念了。</p>
+  <p class="thesis">五題，檢查一下剛剛讀的重點有沒有記住。</p>
   <div class="body" id="quizBox"></div>
   <div class="body" style="max-width:none;margin-top:36px">
     <h3>一頁速查表</h3>
@@ -623,7 +642,7 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
   function renderHealth(){
     const w=[...document.querySelectorAll('#checks input:checked')].map(i=>+i.dataset.w);
     const v=$('#verdict');const max=Math.max(0,...w),sum=w.reduce((a,b)=>a+b,0);
-    if(max>=3){v.className='verdict bad';v.innerHTML='<b>立即停用並報廢</b>　這顆電池已有安全風險。不要再充電、不要再飛，依第 09 章流程處理。'}
+    if(max>=3){v.className='verdict bad';v.innerHTML='<b>立即停用</b>　這顆電池已有安全風險。不要再充電、不要再飛，放在不可燃的地方，依第 09 章的方式報廢。不確定的話，可以先拍照問熟悉的人。'}
     else if(sum>=3){v.className='verdict warn';v.innerHTML='<b>建議退役</b>　多項老化訊號同時出現。可降級給低負載用途（例如地面測試），不建議再暴力飛行。'}
     else if(sum>0){v.className='verdict warn';v.innerHTML='<b>持續觀察</b>　電池開始老化。記錄每次充滿後的壓差與內阻，情況變差就退役。'}
     else{v.className='verdict ok';v.innerHTML='<b>可以正常使用</b>　目前沒有勾選任何異常。每次充電前後還是要看一眼外觀。'}
@@ -650,7 +669,7 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
     {q:'一顆 6S 電池，落地後量到整顆 21.0V，每顆電芯是多少？',o:['3.0V','3.5V','4.2V'],a:1,w:'21.0 ÷ 6 = 3.5V，剛好是建議落地電壓。'},
     {q:'電池充滿後兩天內不會飛，應該怎麼做？',o:['維持滿電，下次直接飛','用 Storage 模式調到約 3.8V','放電到 3.0V 比較安全'],a:1,w:'滿電長時間放置會加速老化，調回儲存電壓最好。'},
     {q:'1500mAh 的電池，1C 充電電流是？',o:['1.5A','15A','0.15A'],a:0,w:'1C = 容量（Ah），1500mAh = 1.5Ah，所以是 1.5A。'},
-    {q:'發現電池明顯鼓包，該怎麼辦？',o:['壓扁後繼續用','充飽確認還能不能用','停用，放電後依規定回收'],a:2,w:'鼓包代表內部已經產氣受損，再用有起火風險。嚴重鼓包直接絕緣回收。'},
+    {q:'發現電池明顯鼓包，該怎麼辦？',o:['壓扁後繼續用','充飽確認還能不能用','停用，接頭絕緣後依規定回收'],a:2,w:'鼓包代表內部已經產氣受損，再用有起火風險。鼓包的電池不要再接充電器，接頭包好絕緣後送回收。'},
     {q:'搭飛機帶 6S 1300mAh 的備用電池，正確做法是？',o:['放托運行李','手提上機，接頭絕緣','裝在飛機上就不算電池'],a:1,w:'約 28.9Wh，低於 100Wh 可手提上機，備用鋰電池不能托運。'}
   ];
   const box=$('#quizBox');
@@ -663,7 +682,7 @@ figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--l
       const j=+b.dataset.j;if(j===x.a)right++;
       qe.querySelectorAll('button').forEach(bb=>{if(+bb.dataset.j===x.a)bb.classList.add('right');else if(bb===b)bb.classList.add('wrong')});
       const w=qe.querySelector('.why');w.textContent=(j===x.a?'答對了。':'正確答案是「'+x.o[x.a]+'」。')+x.w;w.hidden=false;
-      $('#score').textContent=done<5?`已作答 ${done}／5`:`得分 ${right}／5`+(right===5?'，全對！你可以安全上場了。':'，回頭看一下答錯的章節。');
+      $('#score').textContent=done<5?`已作答 ${done}／5`:`得分 ${right}／5`+(right===5?'，全對！之後每次充電前，還是記得看一眼電池外觀。':'，回頭看一下答錯的章節。');
     }));
   });
 

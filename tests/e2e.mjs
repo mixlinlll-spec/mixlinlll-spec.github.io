@@ -417,6 +417,35 @@ for (const path of ['/learn/fpv-video/', '/learn/lipo-battery/']) {
   await page.context().close();
 }
 
+// 教學頁互動功能：小工具、測驗、選擇分支圖；入門必學／進階補充標示
+console.log('教學頁互動功能');
+{
+  const page = await newPage(390);
+  await page.route(u => !u.href.startsWith(PUB), rt => rt.fulfill({ body: '', contentType: 'text/css' }));
+  await page.goto(PUB + '/learn/lipo-battery/', { waitUntil: 'load' });
+  await page.click('#labelChips .chip[data-k="c"]');
+  ok((await page.textContent('#labelOut')).includes('156A'), 'LiPo：標籤說明可切換');
+  await page.click('#sSeg button:has-text("4S")');
+  ok((await page.textContent('#vbody')).includes('16.80V'), 'LiPo：電壓換算表切換 S 數');
+  await page.check('#checks input >> nth=0');
+  ok((await page.textContent('#verdict')).includes('立即停用'), 'LiPo：電池健康檢查判斷');
+  await page.fill('#whMah', '6000');
+  ok((await page.textContent('#whVerdict')).includes('需航空公司同意'), 'LiPo：瓦時計算與登機判斷');
+  ok(await page.evaluate(() => document.querySelectorAll('#toc .lv.core').length === 7 && [...document.querySelectorAll('details.adv')].every(d => !d.open)), 'LiPo：7 章標示必學，進階補充預設收合');
+  await page.context().close();
+}
+{
+  const page = await newPage(390);
+  await page.route(u => !u.href.startsWith(PUB), rt => rt.fulfill({ body: '', contentType: 'text/css' }));
+  await page.goto(PUB + '/learn/fpv-video/', { waitUntil: 'load' });
+  await page.fill('#sig', '20'); await page.dispatchEvent('#sig', 'input');
+  ok((await page.textContent('#dSt')).includes('馬賽克'), '圖傳：訊號模擬器');
+  await page.click('#q1 button:has-text("還沒有")'); await page.click('#q3 button:has-text("延遲最低")');
+  ok((await page.textContent('#rec')).includes('HDZero'), '圖傳：選擇分支圖');
+  ok(await page.evaluate(() => document.querySelectorAll('#toc .lv.core').length === 5 && document.querySelectorAll('#toc .lv:not(.core)').length === 3), '圖傳：5 章必學、3 章進階');
+  await page.context().close();
+}
+
 ok(errors.length === 0, `瀏覽器 console 無錯誤${errors.length ? '：' + errors.slice(0, 5).join(' | ') : ''}`);
 await browser.close();
 console.log(`\n結果：通過 ${passes}，失敗 ${fails}`);
