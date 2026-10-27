@@ -412,15 +412,32 @@ console.log('17. 故障排除中心：搜尋、解鎖原因查詢、類比三選
   await page.fill('[data-help-search]', '');
   ok(await page.isVisible('[data-help-symptoms]'), '清空搜尋後回到常見狀況');
 
+  // 全部文章：320px 與 390px 手機寬度都不能左右溢出（表格、程式碼、選單都包含在內）
+  {
+    const slugs = await page.$$eval('[data-help-all] a', as => as.map(a => a.getAttribute('href')));
+    const bad = [];
+    for (const w of [320, 390]) {
+      const pg = await newPage(w);
+      for (const h of slugs) {
+        await pg.goto(PUB + h, { waitUntil: 'load' });
+        await pg.$$eval('details', ds => ds.forEach(d => { d.open = true; }));
+        const sw = await pg.evaluate(() => document.documentElement.scrollWidth);
+        if (sw > w) bad.push(`${w}px ${h} ${sw}`);
+      }
+      await pg.context().close();
+    }
+    ok(slugs.length >= 30 && bad.length === 0, `全部 ${slugs.length} 篇文章在 320／390px 不會左右溢出${bad.length ? '：' + bad.slice(0, 4).join('、') : ''}`);
+  }
   await page.goto(PUB + '/help/betaflight-arming/', { waitUntil: 'load' });
   {
     const h1 = await page.$eval('h1', e => e.getBoundingClientRect().bottom), start = await page.$eval('.help-start', e => e.getBoundingClientRect().top);
     ok(start < 900 && h1 < start, '手機：一打開就看到問題名稱、結論與「開始檢查」');
     ok(!(await page.textContent('.help-head')).includes('適用'), '手機：適用版本不擠在教學前面');
     ok(!(await page.textContent('main')).includes('核對日期'), '不顯示核對日期');
+    ok(await page.locator('.flag-list button[aria-pressed="true"]').count() === 0 && (await page.textContent('[data-flag-answer]')).includes('先選 Betaflight 版本'), '解鎖查詢：一開始不預選任何代碼，請讀者先選');
+    await page.click('.flag-list button:has-text("RXLOSS")');
     ok(await page.locator('.flag-answer a[href="/help/receiver-no-control/"]').count() === 1 && !(await page.textContent('[data-flag-answer]')).includes('就是遙控器和接收機沒有連上'), 'RXLOSS：不再斷定是遙控器沒連上，並連到接收機文章');
   }
-  ok((await page.textContent('[data-flag-answer]')).includes('RXLOSS'), '解鎖：預設顯示 RXLOSS 的說明');
   await page.fill('#flag-q', 'badrx');
   ok((await page.textContent('[data-flag-answer]')).includes('NOT_DISARMED'), '解鎖：輸入 4.4 舊名稱 BADRX 也能查到 4.5 的 NOT_DISARMED');
   await page.click('[data-ver="4.4"]');

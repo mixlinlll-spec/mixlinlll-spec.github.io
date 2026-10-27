@@ -61,7 +61,7 @@
   if (tool) {
     const list = tool.querySelector('[data-flag-list]'), ans = tool.querySelector('[data-flag-answer]'), input = tool.querySelector('#flag-q');
     const vers = [...tool.querySelectorAll('[data-ver]')];
-    let vi = VERS.indexOf(tool.querySelector('[data-ver][aria-pressed="true"]')?.dataset.ver || '4.5'), current = FLAGS[2];
+    let vi = VERS.indexOf(tool.querySelector('[data-ver][aria-pressed="true"]')?.dataset.ver || '4.5'), current = null;
     const nameOf = f => f[0][vi];
     const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
     const history = f => {
@@ -71,7 +71,7 @@
       return parts.map(p => `${p.from === p.to ? p.from : `${p.from}～${p.to}`} 叫 <code>${esc(p.n)}</code>`).join('；') + (f[0][0] ? '' : `（${parts[0].from} 以前沒有）`);
     };
     const renderAnswer = () => {
-      if (!current || !nameOf(current)) { ans.innerHTML = '<p class="muted">點一個字，這裡會顯示它代表什麼、下一步怎麼做。</p>'; return; }
+      if (!current || !nameOf(current)) { ans.innerHTML = '<p class="muted">先選 Betaflight 版本，再點你在畫面上實際看到的字（或直接輸入），這裡會顯示它代表什麼、下一步怎麼做。</p>'; return; }
       const f = current, [label, cls] = TAG[f[3]], h = history(f);
       ans.innerHTML = `<p class="flag-name">${esc(nameOf(f))}<span class="flag-tag ${cls}">${label}</span></p>
         <dl><dt>代表什麼</dt><dd>${esc(f[1])}</dd><dt>下一步</dt><dd${f[3] === 'stop' ? ' class="is-stop"' : ''}>${esc(f[2])}${f[4] ? ` <a href="${f[4][0]}">${esc(f[4][1])} →</a>` : ''}</dd>
