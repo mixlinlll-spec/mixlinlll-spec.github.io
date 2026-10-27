@@ -8,6 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT, loadAll, validateProducts, AVAILABILITY, STATIC_WHITELIST, isRejected } from './lib/data.mjs';
 import { loadJournal, validateJournal, journalUrl, formatDate } from './lib/journal.mjs';
+import { loadHelp, validateHelp, helpUrl, HELP_CATEGORIES, HELP_LEVELS } from './lib/help.mjs';
 import { isShowcase, esc, attr, url, layout, analyticsSnippet, productCard, breadcrumbs, breadcrumbsJsonLd, picture, priceText, availabilityText, roleText, lineButton, shopeeButton, shopeeUrlFor } from './lib/html.mjs';
 
 const args = process.argv.slice(2);
@@ -58,6 +59,8 @@ for (const [k, key] of [['line', 'qr_image'], ['line_community', 'qr_image'], ['
 }
 const journal = loadJournal();
 errors.push(...validateJournal(journal));
+const helpArticles = loadHelp();
+errors.push(...validateHelp(helpArticles));
 if (warnings.length) console.warn(`⚠ 警告 ${warnings.length} 筆\n  ` + warnings.slice(0, 10).join('\n  ') + (warnings.length > 10 ? '\n  …' : ''));
 if (errors.length) { console.error(`✖ 資料驗證失敗 ${errors.length} 筆：\n  ` + errors.join('\n  ')); process.exit(1); }
 const pubCount = products.filter(p => p.published).length;
@@ -243,7 +246,7 @@ function homePage() {
 <section id="learn" class="wrap h2-sec">
   <div class="h2-head"><div><p class="h2-eyebrow">LEARN</p><h2>新手從這裡開始</h2></div><a class="h2-more" href="/journal/">EWP 專欄 ${arrow}</a></div>
   <ul class="h2-learn">${learnCards.map(([h, src, alt, t]) => `<li><a class="h2-card" href="${h}"><img src="${src}" alt="${attr(alt)}" width="800" height="450" loading="lazy" decoding="async"><span class="h2-card-body"><span class="h2-card-k">新手學堂 · 互動教學</span><strong>${esc(t)}</strong></span></a></li>`).join('')}
-    <li><a class="h2-card h2-card-kb" href="/fpv-help.html"><span class="h2-card-body"><span class="h2-card-k">FPV 知識庫</span><strong>91 則常見問題</strong><span class="h2-card-d">設定、接線、故障排查，用白話整理排查方向。</span></span><span class="h2-more">打開知識庫 ${arrow}</span></a></li>
+    <li><a class="h2-card h2-card-kb" href="/help/"><span class="h2-card-body"><span class="h2-card-k">故障排除中心</span><strong>依症狀找答案</strong><span class="h2-card-d">不能解鎖、眼鏡沒畫面……每篇都有判斷表，告訴你下一步與怎樣算修好。</span></span><span class="h2-more">開始排除 ${arrow}</span></a></li>
   </ul>
 </section>
 <section class="wrap h2-sec" aria-labelledby="brand-wall-title">
@@ -555,6 +558,7 @@ function batteryPage() {
 function simplePages() {
   const c = site.contact;
   journalPages();
+  helpPages();
 
   // 關於
   page('about/index.html', { title: '關於 EWP', description: '電翼動力 EWP：FPV 整機、動力電池、客製組裝、維修調校與 3D 列印。', path: '/about/', active: 'about',
@@ -656,6 +660,55 @@ ${contactCta()}` });
   }
 }
 
+// ---------- 故障排除中心 /help/ ----------
+function visibleHelp() {
+  return helpArticles.filter(a => DRAFTS || a.published === true)
+    .sort((a, b) => HELP_CATEGORIES.indexOf(a.category) - HELP_CATEGORIES.indexOf(b.category) || (Number(a.order) || 99) - (Number(b.order) || 99) || a.slug.localeCompare(b.slug));
+}
+function helpPages() {
+  const list = visibleHelp();
+  const crumbs = [{ name: '首頁', href: '/' }, { name: '故障排除中心' }];
+  const level = a => `<span class="help-pill${a.level === 'beginner' ? ' is-new' : ''}">${esc(HELP_LEVELS[a.level] || '')}</span>`;
+  const groups = HELP_CATEGORIES.map(c => [c, list.filter(a => a.category === c)]).filter(([, l]) => l.length);
+  const index = `${pageHead('TROUBLESHOOTING', '故障排除中心', '依症狀找答案：每篇都告訴你看到什麼、代表什麼、下一步怎麼做，以及怎樣才算修好。', breadcrumbs(crumbs))}
+<section class="wrap help-index">
+  <form class="help-search" role="search" onsubmit="return false"><label for="help-q" class="sr-only">搜尋症狀</label><input id="help-q" type="search" placeholder="輸入症狀，例如：解鎖、雪花、黑畫面" autocomplete="off" data-help-search></form>
+  ${groups.map(([c, l]) => `<div class="help-group" data-help-group><h2>${esc(c)}</h2><ul class="help-cards">${l.map(a => `<li data-help-item data-text="${attr([a.title, a.summary, a.category].join(' '))}"><a href="${helpUrl(a)}"><span class="help-card-meta">${level(a)}<span>${esc(a.applies)}</span></span><strong>${esc(a.title)}</strong><span class="help-card-sum">${esc(a.summary)}</span><span class="more">看教學 <span aria-hidden="true">→</span></span></a></li>`).join('')}</ul></div>`).join('')}
+  <p class="help-empty" data-help-empty hidden>找不到符合的教學。可以換個說法，或到舊版知識庫搜尋。</p>
+  <aside class="help-legacy"><div><h2>還沒改寫的題目</h2><p>其他 FPV 常見問題目前仍在舊版知識庫，會分批改寫成新的格式。</p></div><a class="btn" href="/fpv-help.html">打開舊版知識庫（91 則）</a></aside>
+</section>`;
+  page('help/index.html', { title: '故障排除中心', description: 'FPV 穿越機常見故障排除：不能解鎖、圖傳沒畫面等問題，依症狀一步步檢查，附判斷表與完成標準。', path: '/help/', active: 'journal', body: index, scripts: ['/assets/js/help.js'], jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
+
+  const repair = services.find(s => s.id === 'repair');
+  for (const a of list) {
+    const c = [{ name: '首頁', href: '/' }, { name: '故障排除中心', href: '/help/' }, { name: a.category }];
+    const toc = [...a.sections, { id: 'more', title: '還是不行？' }];
+    const body = `<article class="wrap help-article">${breadcrumbs(c)}
+<header class="help-head"><h1>${esc(a.title)}</h1><p class="lead">${esc(a.summary)}</p></header>
+<div class="help-layout">
+  <div class="help-main">
+${a.html}
+    <section class="help-more" id="more">
+      <h2>還是不行？</h2>
+      <p>先準備這些資料，送修時可以更快找到問題：</p>
+      <ul>${a.prepare.map(p => `<li>${esc(p).replace(/`([^`]+)`/g, '<code>$1</code>')}</li>`).join('')}</ul>
+      <a class="help-repair" href="${repair ? url.service(repair) : '/services/'}"><strong>送修檢測</strong><span>寄送實機，由 EWP 檢測與報價</span><span class="help-fee">需額外付費</span></a>
+    </section>
+    <section class="help-sources"><h2>參考資料</h2><ul>${a.sources.map(s => `<li><a href="${attr(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul></section>
+  </div>
+  <aside class="help-aside">
+    <dl class="help-meta"><dt>適用</dt><dd>${esc(a.applies)}</dd><dt>難度</dt><dd>${level(a)}</dd>${a.needs ? `<dt>需要</dt><dd>${esc(a.needs)}</dd>` : ''}<dt>核對日期</dt><dd><time datetime="${attr(a.verified)}">${esc(a.verified)}</time></dd></dl>
+    <nav class="help-toc" aria-label="本頁段落"><p>本頁段落</p><ol>${toc.map(t => `<li><a href="#${t.id}">${esc(t.title)}</a></li>`).join('')}</ol></nav>
+  </aside>
+</div>
+<p class="journal-back"><a href="/help/">← 回到故障排除中心</a></p>
+</article>`;
+    const ld = { '@context': 'https://schema.org', '@type': 'TechArticle', headline: a.title, description: a.summary, dateModified: a.verified,
+      mainEntityOfPage: BASE + helpUrl(a), author: { '@type': 'Organization', name: '電翼動力 EWP' }, publisher: { '@type': 'Organization', name: '電翼動力 EWP' } };
+    page(`help/${a.slug}/index.html`, { title: a.title, description: a.summary, path: helpUrl(a), active: 'journal', noindex: !a.published, body, scripts: ['/assets/js/help.js'], bodyClass: 'help-page', jsonld: [breadcrumbsJsonLd(c, BASE), ld] });
+  }
+}
+
 // ---------- sitemap / robots ----------
 function seoFiles() {
   if (DRAFTS || PREVIEW) {
@@ -665,7 +718,7 @@ function seoFiles() {
     return;
   }
   const urls = ['/', '/products/', ...categories.map(url.category), ...visible.map(url.product), '/builds/',
-    '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/learn/lipo-battery/', '/learn/fpv-video/', '/blackbox/', '/tunelab/', '/about/', '/contact/', '/fpv-help.html',
+    '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/help/', ...visibleHelp().map(helpUrl), '/learn/lipo-battery/', '/learn/fpv-video/', '/blackbox/', '/tunelab/', '/about/', '/contact/', '/fpv-help.html',
     ...Object.entries(site.policies).filter(([, v]) => v.approved).map(([k]) => `/${k}/`)];
   const lastmod = p => p?.updated_at;
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => {
@@ -684,6 +737,24 @@ const PRODUCT_IMG = path.join(ROOT, 'assets', 'img', 'products');
 for (const item of STATIC_WHITELIST) {
   const src = path.join(ROOT, item);
   if (fs.existsSync(src)) fs.cpSync(src, path.join(OUT, item), { recursive: true, filter: f => !(f === PRODUCT_IMG || f.startsWith(PRODUCT_IMG + path.sep)) });
+}
+// 舊版知識庫：已改寫成故障排除中心的題目，在原位置加上「看新版教學」連結；帶 #item-XX 進來的人直接轉到新版
+{
+  const f = path.join(OUT, 'fpv-help.html');
+  const moved = visibleHelp().filter(a => a.published).flatMap(a => a.legacy_items.map(n => [n, helpUrl(a)]));
+  if (fs.existsSync(f)) {
+    let html = fs.readFileSync(f, 'utf8');
+    for (const [n, href] of moved) {
+      const re = new RegExp(`(id="item-${n}"[^>]*>[\\s\\S]*?<div class="body">)`);
+      if (!re.test(html)) { console.error(`✖ 舊版知識庫找不到 item-${n}`); process.exit(1); }
+      html = html.replace(re, `$1<p style="margin:0 0 12px;padding:10px 14px;background:#1c6551;border-radius:8px"><a href="${href}" style="color:#fff;font-weight:700">這題已改寫成新版完整教學，點這裡看 →</a></p>`);
+    }
+    const map = Object.fromEntries(moved.map(([n, h]) => [`item-${n}`, h]));
+    const banner = `<div style="margin:0 0 20px;padding:14px 18px;border-radius:12px;background:#20302d;color:#fff"><strong>新版故障排除中心上線了：</strong>每篇都有判斷表與「怎樣算修好」。<a href="/help/" style="color:#9fe0c8;font-weight:700">前往故障排除中心 →</a></div>`;
+    html = html.replace(/<main([^>]*)>/, m => `${m}${banner}`);
+    html = html.replace(/<\/body>(?![\s\S]*<\/body>)/, `<script>(function(){var m=${JSON.stringify(map)};var h=location.hash.slice(1);if(m[h])location.replace(m[h]);})();</script>\n</body>`);
+    fs.writeFileSync(f, html);
+  }
 }
 // 白名單中的手寫 HTML（知識庫、教學頁、飛行數據計畫…）也加上流量統計（legacy 舊版首頁不加）
 {

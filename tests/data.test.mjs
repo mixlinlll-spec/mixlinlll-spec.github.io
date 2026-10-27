@@ -398,6 +398,56 @@ describe('最新消息（src/data/journal/*.md）', async () => {
   });
 });
 
+describe('故障排除中心（src/data/help/*.md）', async () => {
+  const { loadHelp, validateHelp, renderHelp } = await import('../scripts/lib/help.mjs');
+  const list = loadHelp();
+  test('現有文章通過驗證', () => assert.deepEqual(validateHelp(list), []));
+  test('兩篇示範文章已公開，並對應舊知識庫題號', () => {
+    const arm = list.find(a => a.slug === 'betaflight-arming'), ana = list.find(a => a.slug === 'analog-no-video');
+    assert.ok(arm?.published && ana?.published);
+    assert.deepEqual(arm.legacy_items, [10]);
+    assert.deepEqual(ana.legacy_items, [8]);
+    assert.deepEqual(ana.cases, ['A', 'B', 'C']);
+  });
+  test('每篇都有「怎樣算修好」「什麼時候停手」與來源', () => {
+    for (const a of list.filter(x => x.published)) { assert.ok(a.checks >= 2, a.slug); assert.ok(a.hasStop, a.slug); assert.ok(a.sources.length, a.slug); }
+  });
+  test('解鎖旗標名稱與 Betaflight 4.4／4.5 原始碼一致（含兩個改名）', () => {
+    const js = fs.readFileSync(path.join(ROOT, 'assets/js/help.js'), 'utf8');
+    const names45 = ['NOGYRO','FAILSAFE','RXLOSS','NOT_DISARMED','BOXFAILSAFE','RUNAWAY','CRASH','THROTTLE','ANGLE','BOOTGRACE','NOPREARM','LOAD','CALIB','CLI','MSP','GPS','RESCUE_SW','DSHOT_TELEM','NO_ACC_CAL','MOTOR_PROTO','ARMSWITCH'];
+    for (const n of names45) assert.ok(js.includes(`'${n}'`), n);
+    assert.ok(js.includes("['BADRX', 'NOT_DISARMED'"));
+    assert.ok(js.includes("['RPMFILTER', 'DSHOT_TELEM'"));
+  });
+  test('內文 HTML 一律轉義、不接受 javascript: 連結', () => {
+    const { html } = renderHelp('<script>alert(1)</script>\n\n[x](javascript:alert(1))');
+    assert.ok(!html.includes('<script>'));
+    assert.ok(!html.includes('javascript:'));
+  });
+  test('格式：編號步驟、表格、程式碼、容器區塊', () => {
+    const r = renderHelp('1. **標題**：說明\n2. 第二步\n\n| a | b |\n| --- | --- |\n| `x` | y |\n\n:::stop 停\n文字\n:::\n\n:::checks\n- 一\n- 二\n:::');
+    assert.match(r.html, /<ol class="help-steps">/);
+    assert.match(r.html, /<p class="help-step-t">標題<\/p>/);
+    assert.match(r.html, /<td data-label="a"><code>x<\/code><\/td>/);
+    assert.ok(r.hasStop);
+    assert.equal(r.checks, 2);
+  });
+  test('缺「怎樣算修好」、缺來源、「確認○○正確」寫法、待補標記都會擋下', () => {
+    const bad = { ...renderHelp('確認接線正確。\n待補'), slug: 'x', _file: 'x.md', _body: '確認接線正確。\n待補', published: true, title: 'T', summary: 'S', category: '飛控設定', level: 'beginner', applies: 'A', verified: '2026-10-27', sources: [], prepare: [], legacy_items: [] };
+    const errs = validateHelp([bad]);
+    for (const k of ['怎樣算修好', '什麼時候停手', 'sources', 'prepare', '確認○○正確', '待確認']) assert.ok(errs.some(e => e.includes(k)), k);
+  });
+  test('正式產物：總覽頁、文章頁、sitemap 與舊知識庫導向', () => {
+    const dist = path.join(ROOT, 'dist');
+    if (!fs.existsSync(path.join(dist, 'help'))) return;
+    for (const a of list.filter(x => x.published)) assert.ok(fs.existsSync(path.join(dist, 'help', a.slug, 'index.html')));
+    assert.match(fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8'), /\/help\/betaflight-arming\//);
+    const old = fs.readFileSync(path.join(dist, 'fpv-help.html'), 'utf8');
+    assert.match(old, /"item-10":"\/help\/betaflight-arming\/"/);
+    assert.equal((old.match(/這題已改寫成新版完整教學/g) || []).length, 2);
+  });
+});
+
 describe('商品內容與購買須知（v2.10 商品 SEO 整理）', () => {
   const { notices } = loadAll();
   const WARRANTY = '本商品不提供 EWP 額外商家保固期間。如商品有到貨瑕疵、與訂購內容不符，或涉及依法應負的瑕疵擔保及其他責任，將依適用法令及實際交易平台規範處理。若商品另有原廠保固，依原廠公告及實際適用條件辦理。';

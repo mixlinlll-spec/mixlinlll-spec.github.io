@@ -105,6 +105,7 @@ const NAV = [
 ];
 // 桌機主選單放不下的頁面：只出現在手機選單與頁尾
 const NAV_MORE = [
+  { href: '/help/', label: '故障排除中心' },
   { href: '/fpv-help.html', label: 'FPV 知識庫' },
   { href: '/about/', label: '關於 EWP' },
   { href: '/contact/', label: '聯絡我們' },
@@ -191,7 +192,7 @@ export function footer(ctx) {
       <p>${esc(ctx.site.brand.motto)} ${esc(ctx.site.brand.tagline)}.</p>
     </div>
     <div><h2 class="footer-h">商品</h2><ul>${ctx.categories.slice(0, 6).map(c => `<li><a href="${url.category(c)}">${esc(c.name)}</a></li>`).join('')}<li><a href="/products/">所有商品</a></li></ul></div>
-    <div><h2 class="footer-h">EWP</h2><ul><li><a href="/builds/">自製機型</a></li><li><a href="/batteries/">電池專區</a></li><li><a href="/services/">技術服務</a></li><li><a href="/tunelab/">Tune Lab</a></li><li><a href="/fpv-help.html">FPV 知識庫</a></li><li><a href="/journal/">EWP 專欄</a></li><li><a href="/about/">關於 EWP</a></li></ul></div>
+    <div><h2 class="footer-h">EWP</h2><ul><li><a href="/builds/">自製機型</a></li><li><a href="/batteries/">電池專區</a></li><li><a href="/services/">技術服務</a></li><li><a href="/tunelab/">Tune Lab</a></li><li><a href="/help/">故障排除中心</a></li><li><a href="/fpv-help.html">FPV 知識庫</a></li><li><a href="/journal/">EWP 專欄</a></li><li><a href="/about/">關於 EWP</a></li></ul></div>
     <div><h2 class="footer-h">聯絡</h2><ul>${contactLinks}<li><a href="/contact/">聯絡我們</a></li></ul></div>
   </div>
   <div class="wrap footer-row">

@@ -14,7 +14,7 @@ const isPreview = process.argv.includes('--preview') || path.basename(OUT) === '
 if (!fs.existsSync(OUT)) { console.error(`✖ 找不到 ${OUT}，請先執行 node scripts/build.mjs`); process.exit(1); }
 
 // 產生器輸出的頂層項目（頁面、資料夾與 SEO 檔）
-const GENERATED_TOP = ['index.html', '404.html', 'robots.txt', 'sitemap.xml', 'products', 'product', 'builds', 'services',
+const GENERATED_TOP = ['index.html', '404.html', 'robots.txt', 'sitemap.xml', 'products', 'product', 'builds', 'services', 'help',
   'batteries', 'journal', 'about', 'contact', 'privacy', 'terms', 'shipping-returns'];
 const ALLOWED_TOP = new Set([...GENERATED_TOP, ...STATIC_WHITELIST]);
 // 發布產物中禁止出現的副檔名與名稱
