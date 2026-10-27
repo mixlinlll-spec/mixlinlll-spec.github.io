@@ -445,7 +445,7 @@ describe('故障排除中心（src/data/help/*.md）', async () => {
     assert.equal(r.checks, 2);
   });
   test('缺「怎樣算修好」、缺來源、「確認○○正確」寫法、待補標記都會擋下', () => {
-    const bad = { ...renderHelp('確認接線正確。\n待補'), slug: 'x', _file: 'x.md', _body: '確認接線正確。\n待補', published: true, title: 'T', summary: 'S', category: '飛控設定', level: 'beginner', applies: 'A', verified: '2026-10-27', sources: [], prepare: [], legacy_items: [] };
+    const bad = { ...renderHelp('確認接線正確。\n待補'), slug: 'x', _file: 'x.md', _body: '確認接線正確。\n待補', published: true, title: 'T', summary: 'S', category: '飛控設定', level: 'beginner', applies: 'A', verified: '2026-10-27', sources: [], prepare: [], keywords: [], legacy_items: [] };
     const errs = validateHelp([bad]);
     for (const k of ['怎樣算修好', '什麼時候停手', 'sources', 'prepare', '確認○○正確', '待確認']) assert.ok(errs.some(e => e.includes(k)), k);
   });
