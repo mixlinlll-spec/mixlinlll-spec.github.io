@@ -105,6 +105,34 @@ const cardList = (list, cls = 'pgrid') => `<ul class="${cls}">${list.map(p => pr
 const CATALOG_PAGE = 24;
 const catalogList = list => `<ul class="pgrid catalog-grid">${list.map((p, i) => productCard(p, ctx, { hidden: i >= CATALOG_PAGE, eager: i < 4 })).join('')}</ul><noscript><style>.catalog-grid .pcard[hidden]{display:flex!important}</style></noscript>`;
 const sectionHead = (eyebrow, title, extra = '') => `<div class="section-head"><div><p class="eyebrow">${esc(eyebrow)}</p><h2>${esc(title)}</h2></div>${extra}</div>`;
+// ---------- 組裝動畫（assets/js/pack-anim.js，WebGL） ----------
+// 目前只有靈雀外場電包 4S3P。動畫裡的電芯數、電壓、容量寫在 pack-anim.js，商品規格改變時要一起改。
+// 只在商品公開（visible 含此商品）時輸出，避免引用到未發布的商品圖片。
+const PACK_ANIM = { productId: 'sp-26592256245', poster: '/assets/img/anim/spirit-sparrow-4s3p-poster.webp', front: '/assets/img/products/sp-26592256245/04.webp' };
+const PACK_STEPS = [
+  ['21700 電芯', '單顆 5000mAh／15A 鋰離子電芯。'],
+  ['4S3P 排列', '12 顆電芯排成 4 串 3 並，正負極交錯。'],
+  ['點焊連接', '紫銅＋鍍鎳鋼點焊，串並聯成組。'],
+  ['熱縮封裝', '整組熱縮包覆，加上外出提把。'],
+  ['完成', 'XT60 母頭輸出、電量顯示。標稱 14.8V、滿電 16.8V、15,000mAh、約 222Wh。'],
+];
+const packAnimProduct = () => visible.find(p => p.id === PACK_ANIM.productId);
+const packAnimSection = ({ eyebrow, title, lead, note }) => `<section class="pa-section" aria-labelledby="pa-title">
+  <div class="pa" data-pack-anim data-logo="/assets/img/brand/ewp-logo.png" data-front="${attr(PACK_ANIM.front)}">
+    <div class="pa-stage">
+      <img class="pa-poster" src="${attr(PACK_ANIM.poster)}" alt="靈雀外場電包 4S3P 成品：黑色熱縮、提把、正面貼標 15,000mAh、16.8V、222Wh" width="540" height="960" loading="lazy" decoding="async">
+      <button type="button" class="pa-play" data-pa-play>▶ 播放組裝動畫</button>
+    </div>
+    <div class="pa-side">
+      <p class="eyebrow">${esc(eyebrow)}</p>
+      <h2 id="pa-title">${esc(title)}</h2>
+      <p class="muted">${esc(lead)}</p>
+      <ol class="pa-steps">${PACK_STEPS.map(([t, d], i) => `<li data-pa-step><button type="button"><span class="pa-n">0${i + 1}</span><span><strong>${esc(t)}</strong><span>${esc(d)}</span></span></button></li>`).join('')}</ol>
+      <div class="pa-ctrl"><button type="button" class="btn" data-pa-toggle aria-pressed="false">暫停動畫</button></div>
+      <p class="fine">${note}</p>
+    </div>
+  </div>
+</section>`;
 const pageHead = (eyebrow, title, lead, crumbs) => `<div class="page-head wrap">${crumbs || ''}<p class="eyebrow">${esc(eyebrow)}</p><h1>${esc(title)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}</div>`;
 const contactCta = (title = '還不確定怎麼選？', text = '告訴我們你的用途、預算與現有設備，一起把配置想清楚。') => `<section class="wrap cta-band"><div><h2>${esc(title)}</h2><p>${esc(text)}</p></div><div class="actions">${lineButton(site, 'LINE 詢價', 'btn btn-line')}${shopeeButton(site, '蝦皮賣場')}<a class="btn" href="/contact/">所有聯絡方式</a></div></section>`;
 
@@ -369,6 +397,7 @@ function productPages() {
     const snapHtml = !p.published && snap?.rows?.length ? `<details class="snap"><summary>蝦皮價格快照（${esc(snap.captured_at.slice(0, 10))}，未公開、待核對）</summary><div class="table-wrap"><table class="table"><thead><tr><th scope="col">規格</th><th scope="col">價格</th></tr></thead><tbody>${snap.rows.map(r => `<tr><td>${esc(r.name || '（單一規格）')}</td><td>${r.price ?? '—'}</td></tr>`).join('')}</tbody></table></div></details>` : '';
     const reviewBox = !p.published && (reviewItems.length || snapHtml) ? `<aside class="review-box"><strong>草稿待核對（僅預覽版顯示）${rv.batch ? `｜首批 ${esc(rv.batch.replace('first-', ''))} 組` : ''}</strong><ul>${reviewItems.map(n => `<li>${esc(n)}</li>`).join('')}</ul>${(p.images || []).some(i => i.rights === 'unverified') ? '<p>圖片由蝦皮匯入，使用權待 EWP 確認（rights: unverified）。</p>' : ''}${snapHtml}</aside>` : '';
     const showcaseNote = showcase ? `<p class="callout" role="note"><strong>作品介紹：</strong>本頁為機型介紹，目前未於官網販售。需要相同或類似配置，請透過 LINE 洽詢客製組裝服務。</p>` : '';
+    const anim = p.id === PACK_ANIM.productId ? packAnimSection({ eyebrow: 'ASSEMBLY', title: '從電芯到成品', lead: '靈雀外場電包 4S3P 的製作過程：電芯排列、點焊、熱縮封裝到完成。點下方步驟可以直接跳到該段。', note: '動畫為 4S3P 版本示意。6S3P 版本為 18 顆電芯，規格請見下方選項。' }) : '';
     const body = `<div class="wrap">${breadcrumbs(crumbs.map((x, i) => i === crumbs.length - 1 ? x : x))}</div>
 <article class="wrap pd" itemscope>
   <div class="pd-top">
@@ -390,7 +419,7 @@ function productPages() {
       ${reviewBox}
     </div>
   </div>
-  ${variants}${descHtml}${specs}${compat}${notes}${noticeHtml(p)}
+  ${anim}${variants}${descHtml}${specs}${compat}${notes}${noticeHtml(p)}
 </article>
 ${related.length ? `<section class="wrap">${sectionHead('RELATED', '相關商品')}${cardList(related)}</section>` : ''}
 ${(shopeeBtn || line) ? `<div class="sticky-cta" aria-label="購買與詢價">${ctas}</div>` : ''}`;
@@ -405,7 +434,7 @@ ${(shopeeBtn || line) ? `<div class="sticky-cta" aria-label="購買與詢價">${
     };
     page(`product/${p.slug}/index.html`, {
       title: p.name_zh, description: p.short_description || `${p.name_zh}｜${c.name}｜電翼動力 EWP`, path: url.product(p), body, active: 'products',
-      ogImage: imgs[0] ? (imgs[0].fallback || imgs[0].src) : undefined, scripts: ['/assets/js/product.js'], bodyClass: (shopeeBtn || line) ? 'has-sticky-cta' : '',
+      ogImage: imgs[0] ? (imgs[0].fallback || imgs[0].src) : undefined, scripts: ['/assets/js/product.js', ...(anim ? ['/assets/js/pack-anim.js'] : [])], bodyClass: (shopeeBtn || line) ? 'has-sticky-cta' : '',
       // 作品介紹不輸出 Product 結構化資料，避免被視為販售商品
       jsonld: [showcase ? null : ld, breadcrumbsJsonLd(crumbs, BASE)], noindex: !p.published,
     });
@@ -462,6 +491,8 @@ ${contactCta('先聊聊你的需求', '提供機型、用途與目前狀況，�
   for (const s of sorted) {
     const bc = [{ name: '首頁', href: '/' }, { name: '技術與客製服務', href: '/services/' }, { name: s.name }];
     const list = (title, items, cls = 'checks') => items?.length ? `<section class="svc-block"><h2>${title}</h2><ul class="${cls}">${items.map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>` : '';
+    const animProduct = s.id === 'battery-pack' ? packAnimProduct() : null;
+    const packAnim = animProduct ? packAnimSection({ eyebrow: 'HOW WE BUILD', title: '一組電池怎麼做', lead: '以靈雀外場電包 4S3P 為例，看 21700 電芯從排列、點焊到熱縮封裝的完整流程。', note: `動畫為示意，客製電池組的電芯與串並聯依需求評估。<a href="${url.product(animProduct)}">看靈雀外場電包商品 →</a>` }) : '';
     const body = `${pageHead(s.name_en.toUpperCase(), s.name, s.summary, breadcrumbs(bc))}
 <div class="wrap svc">
   ${s.safety ? `<p class="callout" role="note"><strong>安全提醒：</strong>${esc(s.safety)}</p>` : ''}
@@ -471,12 +502,13 @@ ${contactCta('先聊聊你的需求', '提供機型、用途與目前狀況，�
     ${list('服務範圍', s.scope)}
     <section class="svc-block"><h2>流程</h2><ol class="steps">${s.steps.map(x => `<li>${esc(x)}</li>`).join('')}</ol></section>
   </div>
+  ${packAnim}
   <section class="svc-block"><h2>報價方式</h2><p>${esc(s.pricing)}</p></section>
   <div class="actions">${lineButton(site, `LINE 詢問${s.name}`, 'btn btn-line')}${shopeeButton(site, '蝦皮賣場聊聊')}</div>
   <p class="fine">請勿在訊息中提供身分證字號、銀行帳號等與服務無關的個人資料。</p>
 </div>
 <section class="wrap other-services"><h2 class="h3">其他服務</h2><ul class="chips">${sorted.filter(x => x.id !== s.id).map(x => `<li><a class="chip" href="${url.service(x)}">${esc(x.name)}</a></li>`).join('')}</ul></section>`;
-    page(`services/${s.slug}/index.html`, { title: s.name, description: s.summary, path: url.service(s), body, active: 'services', jsonld: [breadcrumbsJsonLd(bc, BASE), { '@context': 'https://schema.org', '@type': 'Service', name: s.name, description: s.summary, provider: { '@type': 'Organization', name: '電翼動力 EWP' }, areaServed: 'TW' }] });
+    page(`services/${s.slug}/index.html`, { title: s.name, description: s.summary, path: url.service(s), body, active: 'services', scripts: packAnim ? ['/assets/js/pack-anim.js'] : [], jsonld: [breadcrumbsJsonLd(bc, BASE), { '@context': 'https://schema.org', '@type': 'Service', name: s.name, description: s.summary, provider: { '@type': 'Organization', name: '電翼動力 EWP' }, areaServed: 'TW' }] });
   }
 }
 
