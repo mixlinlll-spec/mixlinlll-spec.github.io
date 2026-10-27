@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.20.3（2026-10-28，故障排除中心加入實際軟體截圖｜預覽中）
+
+- 新增 4 張 Betaflight App 2026.6.2 實際畫面（瀏覽器開官方 app.betaflight.com 虛擬模式截取，英文介面，紅框＋編號標註，不是 AI 生成）：「設定」頁 Arming Disable Flags（解鎖文章）、「接收機」頁與「連接埠」頁（接收機文章）、「馬達」頁（馬達文章）。圖說註明版本與「虛擬模式，數值不是實機」；點圖可開原尺寸。
+- 每篇第一次提到 Betaflight 分頁時自動補英文名稱，例如「接收機」頁（Receiver），用英文介面的人也找得到。
+- 依實際畫面修正：Motor direction is reversed 在「馬達」頁上方 Mixer 區塊，不在「設定」頁；Betaflight App 2026.6 的加速度計校正在「感測器」（Sensors）頁按 Calibrate，舊版 Configurator 才在「設定」頁（解鎖文章、解鎖查詢工具、震動文章已改）。
+
 ## v2.20.2（2026-10-28，故障排除中心合併前精準修正｜預覽中）
 
 - GPS 救援：新增版本對照表，區分 4.4／4.5／2025.12 與 2026.6（改用位置估算與定點控制、安全檢查失敗改為受控緊急下降並顯示 RESCUE FAIL、`trust_mag` 預設 OFF 與 HEADING N/A、舊救援參數已移除）；依官方 Release Notes 與原始碼核對。

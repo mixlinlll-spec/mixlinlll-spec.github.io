@@ -402,6 +402,18 @@ describe('故障排除中心（src/data/help/*.md）', async () => {
   const { loadHelp, validateHelp, renderHelp } = await import('../scripts/lib/help.mjs');
   const list = loadHelp();
   test('現有文章通過驗證', () => assert.deepEqual(validateHelp(list), []));
+  test('Betaflight 分頁第一次出現時補英文名稱，只補一次', async () => {
+    const { addTabNames } = await import('../scripts/lib/help.mjs');
+    assert.equal(addTabNames('到「接收機」頁看，再回「接收機」頁；「設定」頁（Setup）已有；「遙控器」頁不動'),
+      '到「接收機」頁（Receiver）看，再回「接收機」頁；「設定」頁（Setup）已有；「遙控器」頁不動');
+  });
+  test('實際軟體截圖都有放進文章、圖說註明版本與虛擬模式', () => {
+    for (const [slug, n] of [['betaflight-arming', 1], ['receiver-no-control', 2], ['motors-after-arming', 1]]) {
+      const imgs = list.find(a => a.slug === slug).images;
+      assert.equal(imgs.length, n, slug);
+      for (const i of imgs) assert.match(i.alt, /2026\.6\.2.*虛擬模式/, slug);
+    }
+  });
   test('兩篇示範文章已公開，並對應舊知識庫題號', () => {
     const arm = list.find(a => a.slug === 'betaflight-arming'), ana = list.find(a => a.slug === 'analog-no-video');
     assert.ok(arm?.published && ana?.published);

@@ -62,7 +62,7 @@ function blocks(lines, ctx) {
     if ((m = line.match(/^!\[([^\]]*)\]\(([^)\s]+)\)\s*$/))) {
       ctx.images.push({ src: m[2], alt: m[1] });
       const d = imageSize(m[2]);
-      out.push(`<figure class="help-fig"><img src="${attr(m[2])}" alt="${attr(m[1])}"${d ? ` width="${d.w}" height="${d.h}"` : ''} loading="lazy" decoding="async"><figcaption>${esc(m[1])}</figcaption></figure>`);
+      out.push(`<figure class="help-fig"><a href="${attr(m[2])}" target="_blank" rel="noopener" aria-label="開啟原尺寸圖片"><img src="${attr(m[2])}" alt="${attr(m[1])}"${d ? ` width="${d.w}" height="${d.h}"` : ''} loading="lazy" decoding="async"></a><figcaption>${esc(m[1])}<span class="help-fig-zoom">點圖片可放大</span></figcaption></figure>`);
       i++; continue;
     }
     if (isTable(line)) {
@@ -119,7 +119,21 @@ function container(kind, arg, inner, ctx) {
   return '';
 }
 
+// Betaflight App 的分頁英文名稱（2026.6 介面實際文字）。每篇文章第一次提到時自動補上，
+// 讓使用英文介面的人也找得到；中文介面的翻譯各版本不一致，以英文為準。
+export const BF_TAB_NAMES = { 設定: 'Setup', 連接埠: 'Ports', 接收機: 'Receiver', 馬達: 'Motors', 模式: 'Modes', 圖傳: 'Video Transmitter', 失控保護: 'Failsafe', 配置: 'Configuration', 感測器: 'Sensors' };
+export function addTabNames(body) {
+  const seen = new Set();
+  return body.replace(/「([^」]{1,6})」頁(?!（)/g, (all, name) => {
+    const en = BF_TAB_NAMES[name];
+    if (!en || seen.has(name)) return all;
+    seen.add(name);
+    return `「${name}」頁（${en}）`;
+  });
+}
+
 export function renderHelp(body) {
+  body = addTabNames(body);
   const ctx = { sections: [], tools: [], images: [], cases: [], caseTitles: [], errors: [], checks: 0, hasStop: false };
   const lines = body.replace(/\r\n/g, '\n').split('\n');
   const out = [];

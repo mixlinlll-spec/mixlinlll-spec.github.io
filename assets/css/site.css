@@ -782,7 +782,7 @@ section{padding:36px 0}
 .help-sources h2{font-size:16px;color:var(--muted)}
 .help-sources ul{margin:8px 0 0;padding-left:20px;font-size:14px}
 .help-sources a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
-.help-fig{margin:0}.help-fig figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.help-fig{margin:18px 0}.help-fig a{display:block;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden}.help-fig img{display:block;width:100%;height:auto}.help-fig figcaption{font-size:13px;line-height:1.6;color:var(--muted);margin-top:8px}.help-fig-zoom{display:block;font-size:12px;opacity:.8;margin-top:2px}
 @media(max-width:900px){
   .help-layout{grid-template-columns:minmax(0,1fr);gap:24px}
   .help-aside{position:static;order:-1}
