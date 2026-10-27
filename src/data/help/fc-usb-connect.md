@@ -59,7 +59,7 @@ sources:
 :::advanced 進階：刷機模式的驅動與注意事項
 刷機模式的裝置需要 WinUSB 驅動，可以用 ImpulseRC Driver Fixer 或 Zadig 安裝（在 Zadig 選擇 STM32 BOOTLOADER，安裝 WinUSB）。如果它出現在「音效、視訊及遊戲控制器」底下、名稱是 Guillemot STM DFU Device，代表裝到錯誤的驅動，需要移除後重新安裝。
 
-F4 飛控在 Betaflight「韌體更新」頁刷機時，建議不要勾選「Full Chip Erase」（完整清除晶片）。
+刷機時建議勾選「Full Chip Erase」（完整清除晶片），原因與注意事項見〈更新飛控韌體〉。
 :::
 
 :::checks 怎樣算修好

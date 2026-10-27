@@ -49,7 +49,7 @@ sources:
 | CALIB | 感測器正在校正 | 插上電池後不要動飛機，等幾秒 |
 | NO_ACC_CAL | 加速度計需要校正 | 飛機放在平面上，到「設定」頁按校正 |
 | BOXFAILSAFE | 「失聯保護」開關是開著的 | 把失聯保護開關撥回「關」 |
-| ALT_HOLD_SW、POS_HOLD_SW、AUTOPILOT_SW（2025.12 起） | 定高、定點或自動駕駛模式的開關是開著的 | 把那個模式的開關撥回「關」再解鎖 |
+| ALT_HOLD_SW、POS_HOLD_SW（2025.12 起）；AUTOPILOT_SW（2026.6 起） | 定高、定點或自動駕駛模式的開關是開著的 | 把那個模式的開關撥回「關」再解鎖 |
 | FLIP_SWITCH（2025.12 起） | 用過翻正（Turtle）功能後，需要先手動上鎖一次 | 把解鎖開關撥回「關」，再重新解鎖 |
 
 清單裡出現 RUNAWAY、CRASH、DSHOT_TELEM（4.4 叫 RPMFILTER）、MOTOR_PROTO、LOAD、NOGYRO、GPS 或 RESCUE_SW，就不屬於新手自行處理的範圍。其中 RUNAWAY 代表上次解鎖時飛控偵測到「失控衝飛」，常見原因是馬達順序、旋轉方向或槳裝錯，很危險，先不要再試。

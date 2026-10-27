@@ -5,7 +5,7 @@ published: true
 order: 1
 category: GPS／返航
 level: beginner
-applies: Betaflight 4.4、4.5＋UBLOX 類 GPS 模組（2025.12、2026.6 細節以官方文件為準）
+applies: Betaflight 4.4、4.5、2025.12、2026.6＋UBLOX 類 GPS 模組
 needs: 電腦、USB 線、電池、戶外空曠場地
 verified: 2026-10-27
 summary: 先分清楚是「飛控根本沒讀到 GPS」，還是「讀到了但收不到衛星或定位不穩」。前者是接線或設定，後者是收星環境與安裝位置。

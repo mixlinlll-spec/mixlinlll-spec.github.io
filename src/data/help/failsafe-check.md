@@ -5,7 +5,7 @@ published: true
 order: 3
 category: GPS／返航
 level: beginner
-applies: Betaflight 4.4、4.5（2025.12、2026.6 細節以官方文件為準）
+applies: Betaflight 4.4、4.5、2025.12、2026.6
 needs: 電腦、USB 線、電池、遙控器
 verified: 2026-10-27
 summary: 遙控訊號斷掉時，飛機要照你的設定停機或返航。拆槳後在地面關掉遙控器測一次，就知道設定有沒有生效；換接收機或更新韌體後都要重測。
