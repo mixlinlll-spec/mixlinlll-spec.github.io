@@ -29,7 +29,7 @@ async function newPage(width) {
 }
 
 console.log('1. 版面寬度（320/390/768/1280）無非預期橫捲');
-const PAGES = ['/', '/products/', '/products/complete-drones/', '/builds/', '/services/', '/services/repair/', '/batteries/', '/journal/', '/about/', '/contact/', '/privacy/', '/404.html', '/fpv-help.html', '/help/', '/help/betaflight-arming/', '/help/analog-no-video/'];
+const PAGES = ['/', '/products/', '/products/complete-drones/', '/builds/', '/services/', '/services/repair/', '/batteries/', '/journal/', '/about/', '/contact/', '/privacy/', '/404.html', '/fpv-help.html', '/help/', '/help/betaflight-arming/', '/help/analog-no-video/', '/help/receiver-no-control/', '/help/fc-usb-connect/', '/help/motors-after-arming/'];
 for (const w of [320, 390, 768, 1280]) {
   const page = await newPage(w);
   for (const [base, extra] of [[PUB, []], [PRE, ['/product/geprc-moz7-v2-o4-pro-7/', '/products/hardware-prints/?sub=screws']]]) {
@@ -412,7 +412,7 @@ console.log('17. 故障排除中心：搜尋、解鎖原因查詢、類比三選
   ok((await page.textContent('[data-flag-answer]')).includes('先停手'), '解鎖：RUNAWAY 標示先停手');
   for (const b of await page.$$('[data-checks] input')) await b.check();
   ok(await page.isVisible('[data-done]'), '怎樣算修好：全部打勾後顯示完成');
-  ok((await page.textContent('.help-more')).includes('需額外付費') && await page.locator('.help-more a[href="/services/repair/"]').count() === 1, '還是不行：只有送修檢測，標示需額外付費');
+  ok(!(await page.textContent('.help-more')).includes('需額外付費') && await page.locator('.help-more a[href="/services/repair/"]').count() === 1, '還是不行：只有送修檢測（檢測與報價），不另外標示付費');
 
   await page.goto(PUB + '/help/analog-no-video/', { waitUntil: 'load' });
   ok(await page.locator('.help-case:visible').count() === 3, '類比：一開始三種狀況都看得到');
@@ -420,6 +420,11 @@ console.log('17. 故障排除中心：搜尋、解鎖原因查詢、類比三選
   ok(await page.locator('.help-case:visible').count() === 1 && await page.isVisible('#case-b'), '類比：選 B 只顯示 B');
   await page.click('.help-showall');
   ok(await page.locator('.help-case:visible').count() === 3, '類比：可以再顯示全部');
+
+  await page.goto(PUB + '/help/receiver-no-control/', { waitUntil: 'load' });
+  ok(await page.locator('.pick').count() === 5, '對頻：依燈號的五個分支選單');
+  await page.click('[data-pick="E"]');
+  ok(await page.locator('.help-case:visible').count() === 1 && await page.isVisible('#case-e'), '對頻：選 E 只顯示燈恆亮那一段');
 
   await page.goto(PUB + '/fpv-help.html#item-10', { waitUntil: 'load' });
   await page.waitForURL('**/help/betaflight-arming/', { timeout: 5000 }).catch(() => {});

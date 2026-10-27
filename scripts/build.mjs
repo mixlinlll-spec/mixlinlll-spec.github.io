@@ -692,7 +692,7 @@ ${a.html}
       <h2>還是不行？</h2>
       <p>先準備這些資料，送修時可以更快找到問題：</p>
       <ul>${a.prepare.map(p => `<li>${esc(p).replace(/`([^`]+)`/g, '<code>$1</code>')}</li>`).join('')}</ul>
-      <a class="help-repair" href="${repair ? url.service(repair) : '/services/'}"><strong>送修檢測</strong><span>寄送實機，由 EWP 檢測與報價</span><span class="help-fee">需額外付費</span></a>
+      <a class="help-repair" href="${repair ? url.service(repair) : '/services/'}"><strong>送修檢測</strong><span>寄送實機，由 EWP 檢測與報價</span></a>
     </section>
     <section class="help-sources"><h2>參考資料</h2><ul>${a.sources.map(s => `<li><a href="${attr(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul></section>
   </div>

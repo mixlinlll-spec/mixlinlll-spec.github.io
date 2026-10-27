@@ -80,7 +80,7 @@
   }
 
   // ---- 類比畫面三選一：選了之後只顯示對應的分支（可再按「顯示全部」） ----
-  const screens = document.querySelector('[data-tool="analog-screens"]');
+  const screens = document.querySelector('[data-tool="analog-screens"], [data-tool="case-picker"]');
   if (screens) {
     const cases = [...document.querySelectorAll('.help-case')];
     const picks = [...screens.querySelectorAll('[data-pick]')];
@@ -98,7 +98,7 @@
       document.getElementById('case-' + p.dataset.pick.toLowerCase())?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
     }));
     showAll.addEventListener('click', () => pick(null));
-    const h = location.hash.match(/^#case-([abc])$/);
+    const h = location.hash.match(/^#case-([a-z])$/);
     if (h) pick(h[1].toUpperCase());
     // 雪花示意
     const cv = screens.querySelector('canvas');

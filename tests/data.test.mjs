@@ -444,7 +444,8 @@ describe('故障排除中心（src/data/help/*.md）', async () => {
     assert.match(fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8'), /\/help\/betaflight-arming\//);
     const old = fs.readFileSync(path.join(dist, 'fpv-help.html'), 'utf8');
     assert.match(old, /"item-10":"\/help\/betaflight-arming\/"/);
-    assert.equal((old.match(/這題已改寫成新版完整教學/g) || []).length, 2);
+    assert.equal((old.match(/這題已改寫成新版完整教學/g) || []).length, list.filter(a => a.published).reduce((n, a) => n + a.legacy_items.length, 0));
+    assert.match(old, /"item-0":"\/help\/receiver-no-control\/"/);
   });
 });
 

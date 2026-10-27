@@ -18,7 +18,7 @@ export const HELP_DIR = path.join(ROOT, 'src', 'data', 'help');
 export const HELP_IMG = '/assets/img/help/';
 export const HELP_CATEGORIES = ['飛控設定', '類比圖傳', '數位圖傳', '接收機／對頻', '電腦連線', '馬達／電調', '電池／充電', 'GPS／返航'];
 export const HELP_LEVELS = { beginner: '新手', intermediate: '中階' };
-export const HELP_TOOLS = ['arming-flags', 'analog-screens'];
+export const HELP_TOOLS = ['arming-flags', 'analog-screens', 'case-picker'];
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 
@@ -102,6 +102,7 @@ function container(kind, arg, inner, ctx) {
     const m = arg.match(/^([A-Z])\s+(.+)$/);
     if (!m) { ctx.errors.push(':::case 後面要接「代號 標題」，例如 :::case A 滿滿的雪花'); return ''; }
     ctx.cases.push(m[1]);
+    ctx.caseTitles.push([m[1], m[2]]);
     return `<section class="help-case" id="${caseId(m[1])}" data-case="${m[1]}"><h3>${inline(m[1] + '. ' + m[2])}</h3>${blocks(lines, ctx)}</section>`;
   }
   if (kind === 'checks') {
@@ -116,7 +117,7 @@ function container(kind, arg, inner, ctx) {
 }
 
 export function renderHelp(body) {
-  const ctx = { sections: [], tools: [], images: [], cases: [], errors: [], checks: 0, hasStop: false };
+  const ctx = { sections: [], tools: [], images: [], cases: [], caseTitles: [], errors: [], checks: 0, hasStop: false };
   const lines = body.replace(/\r\n/g, '\n').split('\n');
   const out = [];
   let buf = [];
@@ -132,7 +133,13 @@ export function renderHelp(body) {
     out.push(container(m[1], m[2].trim(), inner, ctx));
   }
   flush();
-  return { html: out.join('\n'), ...ctx };
+  // 通用分支選單：依內文的 :::case 標題自動產生按鈕
+  let html = out.join('\n');
+  if (ctx.tools.includes('case-picker')) {
+    if (ctx.caseTitles.length < 2) ctx.errors.push('{{tool:case-picker}} 需要至少兩個 :::case 分支');
+    html = html.replace('<!--case-picker-->', ctx.caseTitles.map(([k, t]) => `<a class="pick" href="#${caseId(k)}" data-pick="${k}"><span class="pick-k">${k}</span><span>${inline(t)}</span></a>`).join(''));
+  }
+  return { html, ...ctx };
 }
 
 function tool(name, ctx) {
@@ -154,6 +161,11 @@ function tool(name, ctx) {
     <a class="screen" href="#case-c" data-pick="C"><span class="scr" aria-hidden="true"></span><span class="cap">C. 黑畫面，沒有 OSD<small>圖傳沒收到影像，或眼鏡顯示黑幕</small></span></a>
   </div>
   <p class="muted help-note">示意圖，不是真實畫面。</p>
+</section>`;
+  if (name === 'case-picker') return `<section class="help-tool" data-tool="case-picker" aria-labelledby="tool-pick-t">
+  <p class="help-tool-k">先選狀況</p>
+  <h3 id="tool-pick-t">你現在看到的是哪一種？</h3>
+  <div class="picks" role="group" aria-label="選擇狀況"><!--case-picker--></div>
 </section>`;
   ctx.errors.push(`不認得的互動工具 {{tool:${name}}}`);
   return '';
@@ -193,7 +205,7 @@ export function validateHelp(list) {
     for (const s of a.sources) if (!s.title || !/^https:\/\//.test(s.url || '')) errors.push(`${where}: 來源格式必須是「標題 | https://網址」`);
     for (const t of a.tools) if (!HELP_TOOLS.includes(t)) errors.push(`${where}: 不認得的互動工具 ${t}`);
     for (const n of a.legacy_items) {
-      if (!Number.isInteger(n) || n < 1) errors.push(`${where}: legacy_items 必須是舊知識庫的題號數字`);
+      if (!Number.isInteger(n) || n < 0) errors.push(`${where}: legacy_items 必須是舊知識庫的題號數字`);
       if (legacySeen.has(n)) errors.push(`${where}: 舊題號 ${n} 已對應到 ${legacySeen.get(n)}`);
       legacySeen.set(n, a.slug);
     }
