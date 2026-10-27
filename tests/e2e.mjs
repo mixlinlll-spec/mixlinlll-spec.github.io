@@ -174,20 +174,21 @@ console.log('7. 發布隔離：原始碼與草稿 JSON 不在正式網站上');
   await page.context().close();
 }
 
-console.log('8. 聯絡頁：四張聯絡卡片（LINE／蝦皮／Email／Instagram）、營業登記（手機版）');
+console.log('8. 聯絡頁：五張聯絡卡片（LINE／LINE 社群／蝦皮／Email／Instagram）、營業登記（手機版）');
 {
   const page = await newPage(390);
   await page.goto(PUB + '/contact/');
-  ok(await page.locator('.contact-grid > .contact-card').count() === 4, '聯絡頁有 4 張卡片');
+  ok(await page.locator('.contact-grid > .contact-card').count() === 5, '聯絡頁有 5 張卡片');
   const links = {
     '.contact-line a.btn': 'https://lin.ee/WIUCkWP',
+    '.contact-community a.btn': 'https://line.me/ti/g2/2pEZoKjUO8ktTiVr5zQagRwDAceZ7S6-8qXhdw',
     '.contact-shopee a.btn': 'https://shopee.tw/mixlin',
     '.contact-email a.btn': 'mailto:mixlin.lll@gmail.com?subject=EWP%20%E5%AE%98%E7%B6%B2%E8%A9%A2%E5%95%8F',
     '.contact-ig a.btn': 'https://www.instagram.com/ewp.fpvlab/',
   };
   for (const [sel, href] of Object.entries(links)) ok(await page.getAttribute(sel, 'href') === href, `${sel} → ${href}`);
   ok(!(await page.content()).includes('spiritsparrow'), '聯絡頁不再出現舊的 @spiritsparrow.battery');
-  for (const sel of ['.contact-line', '.contact-shopee', '.contact-email', '.contact-ig']) {
+  for (const sel of ['.contact-line', '.contact-community', '.contact-shopee', '.contact-email', '.contact-ig']) {
     await page.locator(`${sel} img`).scrollIntoViewIfNeeded();
     const loaded = await page.$eval(`${sel} img`, img => img.complete && img.naturalWidth > 0);
     const r = await page.$eval(`${sel} .contact-img`, el => el.getBoundingClientRect().toJSON());

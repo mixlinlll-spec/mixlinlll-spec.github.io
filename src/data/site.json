@@ -34,6 +34,14 @@
       "qr_image": "/assets/contact/line-qr.jpg",
       "verified": "2026-10-22：由 EWP 提供之 QR 圖檔解碼，內容與 url 一致（2026-10-23 再次解碼確認）"
     },
+    "line_community": {
+      "enabled": true,
+      "label": "LINE 社群 EWP FPV Club",
+      "name": "EWP FPV Club",
+      "url": "https://line.me/ti/g2/2pEZoKjUO8ktTiVr5zQagRwDAceZ7S6-8qXhdw",
+      "qr_image": "/assets/contact/line-community-ewp-fpv-club-qr.webp",
+      "verified": "2026-10-27：由 EWP 提供之 LINE 社群邀請 QR 圖檔解碼，url 為解碼結果（已移除 utm 參數）"
+    },
     "shopee": {
       "enabled": true,
       "label": "蝦皮賣場",

@@ -176,6 +176,7 @@ export function footer(ctx) {
   const c = ctx.site.contact;
   const contactLinks = [
     c.line.enabled && c.line.url ? `<li><a href="${attr(c.line.url)}" target="_blank" rel="noopener">${esc(c.line.label)}</a></li>` : '',
+    c.line_community?.enabled && c.line_community.url ? `<li><a href="${attr(c.line_community.url)}" target="_blank" rel="noopener">${esc(c.line_community.label)}</a></li>` : '',
     c.shopee.enabled && c.shopee.url ? `<li><a href="${attr(c.shopee.url)}" target="_blank" rel="noopener">${esc(c.shopee.label)}</a></li>` : '',
     c.instagram.enabled && c.instagram.url ? `<li><a href="${attr(c.instagram.url)}" target="_blank" rel="noopener">${esc(c.instagram.label)}</a></li>` : '',
     c.facebook.enabled && c.facebook.url ? `<li><a href="${attr(c.facebook.url)}" target="_blank" rel="noopener">${esc(c.facebook.label)}</a></li>` : '',
