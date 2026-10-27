@@ -23,11 +23,14 @@ const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 export const helpUrl = a => `/help/${a.slug}/`;
+// 台灣時間的今天（YYYY-MM-DD），用來擋未來的核對日期
+export const today = () => new Date(Date.now() + 8 * 3600e3).toISOString().slice(0, 10);
 
 function inline(s) {
   // 先把 `程式碼` 抽出來，避免裡面的符號被當成粗體或連結
   const codes = [];
   let out = esc(s).replace(/`([^`]+)`/g, (m, c) => { codes.push(c); return `\u0000${codes.length - 1}\u0000`; });
+  out = out.replace(/\[\[([a-z0-9-]+)\]\]/g, '\u0001$1\u0001');
   out = out.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   out = out.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (all, text, href) => {
     const h = href.replace(/&amp;/g, '&');
@@ -173,13 +176,30 @@ function tool(name, ctx) {
 
 export function loadHelp() {
   if (!fs.existsSync(HELP_DIR)) return [];
-  return fs.readdirSync(HELP_DIR).filter(f => f.endsWith('.md')).sort().map(f => {
+  const list = fs.readdirSync(HELP_DIR).filter(f => f.endsWith('.md')).sort().map(f => {
     const { meta, body } = parseFrontmatter(fs.readFileSync(path.join(HELP_DIR, f), 'utf8'));
     const slug = meta.slug || f.replace(/\.md$/, '');
     const sources = (meta.sources || []).map(s => { const [t, u] = String(s).split(/\s+\|\s+/); return { title: t?.trim(), url: u?.trim() }; });
     const legacy = (meta.legacy_items || []).map(Number);
-    return { ...meta, slug, sources, legacy_items: legacy, prepare: meta.prepare || [], _file: f, _body: body, ...renderHelp(body) };
+    const keywords = (meta.keywords || []).map(String);
+    return { ...meta, slug, sources, keywords, legacy_items: legacy, prepare: meta.prepare || [], _file: f, _body: body, ...renderHelp(body) };
   });
+  // 跨文章連結：內文寫 [[slug]]，建置時換成〈文章標題〉連結；找不到的 slug 記為錯誤
+  const bySlug = new Map(list.map(a => [a.slug, a]));
+  for (const a of list) {
+    a.links = [];
+    a.html = a.html.replace(/\u0001([a-z0-9-]+)\u0001/g, (m, slug) => {
+      const t = bySlug.get(slug);
+      a.links.push(slug);
+      if (!t) { a.errors.push(`找不到連結的文章 [[${slug}]]`); return slug; }
+      return `<a href="${helpUrl(t)}">〈${esc(t.title)}〉</a>`;
+    });
+    // 站內 /help/ 連結也要指到存在的文章
+    for (const m of a.html.matchAll(/href="\/help\/([a-z0-9-]+)\/"/g)) if (!bySlug.has(m[1])) a.errors.push(`站內連結 /help/${m[1]}/ 不存在`);
+    // 全文搜尋用的純文字（標題、摘要、分類、關鍵字、內文）
+    a.searchText = [a.title, a.summary, a.category, ...a.keywords, a.html.replace(/<[^>]+>/g, ' ')].join(' ').replace(/&[a-z#0-9]+;/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+  return list;
 }
 
 // 驗證：缺欄位、沒有「怎樣算修好」、沒有來源、待辦標記、圖片不存在都不能公開
@@ -198,6 +218,8 @@ export function validateHelp(list) {
     if (a.category && !HELP_CATEGORIES.includes(a.category)) errors.push(`${where}: category 必須是 ${HELP_CATEGORIES.join('、')} 其中之一`);
     if (a.level && !HELP_LEVELS[a.level]) errors.push(`${where}: level 必須是 beginner 或 intermediate`);
     if (a.verified && !DATE.test(a.verified)) errors.push(`${where}: verified 格式必須是 YYYY-MM-DD`);
+    if (a.verified && DATE.test(a.verified) && a.verified > today()) errors.push(`${where}: verified 不能是未來日期（${a.verified}）`);
+    if (!a.keywords.length) errors.push(`${where}: 至少要有一個 keywords（玩家會搜尋的別名、英文或錯誤代碼）`);
     if (!a.checks) errors.push(`${where}: 必須有 :::checks「怎樣算修好」區塊`);
     if (!a.hasStop) errors.push(`${where}: 必須有 :::stop「什麼時候停手」區塊`);
     if (!a.prepare.length) errors.push(`${where}: 缺少 prepare（送修前要準備的資料）`);

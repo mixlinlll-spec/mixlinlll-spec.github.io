@@ -409,6 +409,18 @@ describe('故障排除中心（src/data/help/*.md）', async () => {
     assert.deepEqual(ana.legacy_items, [8]);
     assert.deepEqual(ana.cases, ['A', 'B', 'C']);
   });
+  test('跨文章連結都有效、每篇都有 keywords、核對日期不在未來', async () => {
+    const { today } = await import('../scripts/lib/help.mjs');
+    for (const a of list.filter(x => x.published)) {
+      assert.ok(a.keywords.length >= 3, a.slug);
+      assert.ok(!a.verified || a.verified <= today(), a.slug);
+      assert.ok(!/〈[^〉]+〉/.test(a._body), `${a.slug}：跨文章引用要寫 [[slug]]`);
+    }
+    const r = renderHelp('看 [[no-such-article]]');
+    assert.ok(r.html.includes('\u0001no-such-article\u0001'));
+    const bad = validateHelp([{ ...renderHelp('x'), slug: 'x', _file: 'x.md', _body: 'x', published: true, title: 'T', summary: 'S', category: '飛控設定', level: 'beginner', applies: 'A', verified: '2099-01-01', sources: [], prepare: [], keywords: [], legacy_items: [] }]);
+    assert.ok(bad.some(e => e.includes('未來')) && bad.some(e => e.includes('keywords')));
+  });
   test('每篇都有「怎樣算修好」「什麼時候停手」與來源', () => {
     for (const a of list.filter(x => x.published)) { assert.ok(a.checks >= 2, a.slug); assert.ok(a.hasStop, a.slug); assert.ok(a.sources.length, a.slug); }
   });

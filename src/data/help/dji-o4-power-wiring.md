@@ -7,7 +7,7 @@ category: 數位圖傳
 level: beginner
 applies: DJI O4 Air Unit／O4 Air Unit Pro＋Betaflight 4.4、4.5、2025.12、2026.6
 needs: 電腦、可傳資料的 USB 線
-verified: 2026-10-28
+verified: 2026-10-27
 summary: O4 和 O4 Pro 能接受的電壓不同，不能只看電池幾串就接上。賣場名稱不一定是正式型號，接線一律以機身標籤與原廠接線圖為準。DJI 遙控器 3 要控制飛機，飛控還要設定 SBUS 接收。
 legacy_items:
   - 53

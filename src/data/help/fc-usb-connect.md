@@ -9,6 +9,17 @@ applies: Windows 電腦＋Betaflight 飛控（STM32 晶片）
 needs: 電腦、可傳資料的 USB 線
 verified: 2026-10-27
 summary: 先看電腦有沒有「發現」飛控。完全沒反應、看得到但連不上、只出現 STM32 BOOTLOADER，是三種不同的問題，處理方式完全不同。
+keywords:
+  - 連不上
+  - 認不到飛控
+  - USB
+  - 驅動
+  - Zadig
+  - DFU
+  - STM32 BOOTLOADER
+  - COM port
+  - ImpulseRC
+  - Driver Fixer
 legacy_items:
   - 25
 prepare:
@@ -59,7 +70,7 @@ sources:
 :::advanced 進階：刷機模式的驅動與注意事項
 刷機模式的裝置需要 WinUSB 驅動，可以用 ImpulseRC Driver Fixer 或 Zadig 安裝（在 Zadig 選擇 STM32 BOOTLOADER，安裝 WinUSB）。如果它出現在「音效、視訊及遊戲控制器」底下、名稱是 Guillemot STM DFU Device，代表裝到錯誤的驅動，需要移除後重新安裝。
 
-刷機時建議勾選「Full Chip Erase」（完整清除晶片），原因與注意事項見〈更新飛控韌體〉。
+刷機時建議勾選「Full Chip Erase」（完整清除晶片），原因與注意事項見 [[firmware-update]]。
 :::
 
 :::checks 怎樣算修好

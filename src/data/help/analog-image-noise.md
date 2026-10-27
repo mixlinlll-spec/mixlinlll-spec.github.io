@@ -7,7 +7,7 @@ category: 類比圖傳
 level: intermediate
 applies: 類比鏡頭＋類比圖傳＋飛控內建 OSD（MAX7456 類）
 needs: 眼鏡；部分步驟需要焊接
-verified: 2026-10-28
+verified: 2026-10-27
 summary: 畫面有，但不乾淨：橫紋跟著油門變多，通常是電源雜訊；OSD 文字亂跳或顏色變怪，先看鏡頭、飛控 OSD、眼鏡三者的影像制式（PAL／NTSC）有沒有一致。
 legacy_items:
   - 63

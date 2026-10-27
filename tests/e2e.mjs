@@ -397,14 +397,29 @@ console.log('17. 故障排除中心：搜尋、解鎖原因查詢、類比三選
 {
   const page = await newPage(390);
   await page.goto(PUB + '/help/', { waitUntil: 'load' });
-  const total = await page.locator('[data-help-item]').count();
-  await page.fill('[data-help-search]', '雪花');
-  const hits = await page.locator('[data-help-item]:visible').count();
-  ok(hits >= 1 && hits < total && (await page.locator('[data-help-item]:visible a[href="/help/analog-no-video/"]').count()) === 1, `總覽：搜尋「雪花」縮小到 ${hits} 篇，含類比圖傳那篇`);
-  await page.fill('[data-help-search]', '不存在的症狀');
+  ok(await page.locator('[data-help-symptoms] a').count() >= 8, '總覽：先列出常見狀況（一般玩家看得懂的說法）');
+  const symTop = await page.$eval('[data-help-symptoms]', e => e.getBoundingClientRect().top);
+  const allTop = await page.$eval('[data-help-all]', e => e.getBoundingClientRect().top);
+  ok(symTop < allTop, '總覽：常見狀況排在全部文章前面');
+  // 全文搜尋：中英文、口語、錯誤代碼、內文字詞都找得到
+  for (const [term, slug] of [['Zadig', 'fc-usb-connect'], ['dfu', 'fc-usb-connect'], ['UART', 'receiver-no-control'], ['RXLOSS', 'betaflight-arming'], ['解不了鎖', 'betaflight-arming'], ['雪花', 'analog-no-video'], ['鼓包', 'battery-swelling'], ['pit mode', 'analog-vtx-settings'], ['bind', 'receiver-no-control'], ['果凍', 'vibration-jello'], ['STM32 BOOTLOADER', 'fc-usb-connect'], ['O4 黑屏', 'dji-no-video']]) {
+    await page.fill('[data-help-search]', term);
+    ok(await page.locator(`[data-help-result-list] a[href="/help/${slug}/"]`).count() === 1, `搜尋「${term}」找得到 /help/${slug}/`);
+  }
+  ok(!(await page.isVisible('[data-help-symptoms]')), '搜尋時隱藏常見狀況，只顯示結果');
+  await page.fill('[data-help-search]', '完全不存在的詞彙xyz');
   ok(await page.isVisible('[data-help-empty]'), '總覽：找不到時顯示提示');
+  await page.fill('[data-help-search]', '');
+  ok(await page.isVisible('[data-help-symptoms]'), '清空搜尋後回到常見狀況');
 
   await page.goto(PUB + '/help/betaflight-arming/', { waitUntil: 'load' });
+  {
+    const h1 = await page.$eval('h1', e => e.getBoundingClientRect().bottom), start = await page.$eval('.help-start', e => e.getBoundingClientRect().top);
+    ok(start < 900 && h1 < start, '手機：一打開就看到問題名稱、結論與「開始檢查」');
+    ok(!(await page.textContent('.help-head')).includes('適用'), '手機：適用版本不擠在教學前面');
+    ok(!(await page.textContent('main')).includes('核對日期'), '不顯示核對日期');
+    ok(await page.locator('.flag-answer a[href="/help/receiver-no-control/"]').count() === 1 && !(await page.textContent('[data-flag-answer]')).includes('就是遙控器和接收機沒有連上'), 'RXLOSS：不再斷定是遙控器沒連上，並連到接收機文章');
+  }
   ok((await page.textContent('[data-flag-answer]')).includes('RXLOSS'), '解鎖：預設顯示 RXLOSS 的說明');
   await page.fill('#flag-q', 'badrx');
   ok((await page.textContent('[data-flag-answer]')).includes('NOT_DISARMED'), '解鎖：輸入 4.4 舊名稱 BADRX 也能查到 4.5 的 NOT_DISARMED');

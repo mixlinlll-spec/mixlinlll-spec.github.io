@@ -670,11 +670,23 @@ function helpPages() {
   const crumbs = [{ name: '首頁', href: '/' }, { name: '故障排除中心' }];
   const level = a => `<span class="help-pill${a.level === 'beginner' ? ' is-new' : ''}">${esc(HELP_LEVELS[a.level] || '')}</span>`;
   const groups = HELP_CATEGORIES.map(c => [c, list.filter(a => a.category === c)]).filter(([, l]) => l.length);
-  const index = `${pageHead('TROUBLESHOOTING', '故障排除中心', '依症狀找答案：每篇都告訴你看到什麼、代表什麼、下一步怎麼做，以及怎樣才算修好。', breadcrumbs(crumbs))}
+  // 首頁先列一般玩家看得懂的常見症狀，再列全部文章
+  const SYMPTOMS = [
+    ['插上電池後解鎖不了', 'betaflight-arming'], ['遙控器開了，飛機沒反應', 'receiver-no-control'],
+    ['類比眼鏡沒畫面、全是雪花', 'analog-no-video'], ['DJI 眼鏡沒畫面', 'dji-no-video'],
+    ['電腦連不上 Betaflight', 'fc-usb-connect'], ['一起飛就翻、馬達不轉', 'motors-after-arming'],
+    ['飛不遠就斷圖、斷控', 'range-dropouts'], ['錄影有果凍、飛起來抖', 'vibration-jello'],
+    ['電池充不進去、充電器報錯', 'battery-wont-charge'], ['電池鼓包了', 'battery-swelling'],
+    ['GPS 收不到衛星', 'gps-no-fix'], ['新機第一次通電', 'first-power-up'],
+  ].map(([t, slug]) => [t, list.find(a => a.slug === slug)]).filter(([, a]) => a);
+  const index = `<div class="page-head wrap help-index-head">${breadcrumbs(crumbs)}<h1>故障排除中心</h1><p class="lead">選一個最像你遇到的狀況，照步驟檢查；每篇都會告訴你下一步，以及怎樣才算修好。</p>
+  <form class="help-search" role="search" onsubmit="return false"><label for="help-q" class="sr-only">搜尋症狀、零件或錯誤代碼</label><input id="help-q" type="search" placeholder="搜尋症狀、零件或錯誤代碼，例如：解鎖、雪花、RXLOSS、Zadig" autocomplete="off" data-help-search></form></div>
 <section class="wrap help-index">
-  <form class="help-search" role="search" onsubmit="return false"><label for="help-q" class="sr-only">搜尋症狀</label><input id="help-q" type="search" placeholder="輸入症狀，例如：解鎖、雪花、黑畫面" autocomplete="off" data-help-search></form>
-  ${groups.map(([c, l]) => `<div class="help-group" data-help-group><h2>${esc(c)}</h2><ul class="help-cards">${l.map(a => `<li data-help-item data-text="${attr([a.title, a.summary, a.category].join(' '))}"><a href="${helpUrl(a)}"><span class="help-card-meta">${level(a)}<span>${esc(a.applies)}</span></span><strong>${esc(a.title)}</strong><span class="help-card-sum">${esc(a.summary)}</span><span class="more">看教學 <span aria-hidden="true">→</span></span></a></li>`).join('')}</ul></div>`).join('')}
-  <p class="help-empty" data-help-empty hidden>找不到符合的教學，可以換個說法再搜尋一次。</p>
+  <div class="help-symptoms" data-help-symptoms><h2>常見狀況</h2><ul>${SYMPTOMS.map(([t, a]) => `<li><a href="${helpUrl(a)}">${esc(t)}<span aria-hidden="true">→</span></a></li>`).join('')}</ul></div>
+  <div class="help-results" data-help-results hidden><h2>搜尋結果</h2><ul class="help-list" data-help-result-list></ul></div>
+  <div class="help-all" data-help-all><h2>全部文章</h2>
+  ${groups.map(([c, l]) => `<div class="help-group"><h3>${esc(c)}</h3><ul class="help-list">${l.map(a => `<li data-help-item data-text="${attr(a.searchText)}"><a href="${helpUrl(a)}"><strong>${esc(a.title)}</strong><span>${esc(a.summary)}</span></a></li>`).join('')}</ul></div>`).join('')}</div>
+  <p class="help-empty" data-help-empty hidden>找不到符合的文章，可以換個說法，例如用零件名稱或畫面上看到的英文字再搜尋一次。</p>
 </section>`;
   page('help/index.html', { title: '故障排除中心', description: 'FPV 穿越機常見故障排除：不能解鎖、圖傳沒畫面等問題，依症狀一步步檢查，附判斷表與完成標準。', path: '/help/', active: 'journal', body: index, scripts: ['/assets/js/help.js'], jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
 
@@ -693,9 +705,9 @@ ${groups.map(([c, l]) => `<div class="help-group"><h2>${esc(c)}</h2><ul>${l.map(
     const c = [{ name: '首頁', href: '/' }, { name: '故障排除中心', href: '/help/' }, { name: a.category }];
     const toc = [...a.sections, { id: 'more', title: '還是不行？' }];
     const body = `<article class="wrap help-article">${breadcrumbs(c)}
-<header class="help-head"><h1>${esc(a.title)}</h1><p class="lead">${esc(a.summary)}</p></header>
+<header class="help-head"><h1>${esc(a.title)}</h1><p class="lead">${esc(a.summary)}</p><a class="btn btn-primary help-start" href="#start">開始檢查 <span aria-hidden="true">↓</span></a></header>
 <div class="help-layout">
-  <div class="help-main">
+  <div class="help-main" id="start">
 ${a.html}
     <section class="help-more" id="more">
       <h2>還是不行？</h2>
@@ -703,16 +715,16 @@ ${a.html}
       <ul>${a.prepare.map(p => `<li>${esc(p).replace(/`([^`]+)`/g, '<code>$1</code>')}</li>`).join('')}</ul>
       <a class="help-repair" href="${repair ? url.service(repair) : '/services/'}"><strong>送修檢測</strong><span>寄送實機，由 EWP 檢測與報價</span></a>
     </section>
+    <details class="help-scope"><summary>這篇適用的設備與版本</summary><dl class="help-meta"><dt>適用</dt><dd>${esc(a.applies)}</dd><dt>難度</dt><dd>${level(a)}</dd>${a.needs ? `<dt>需要</dt><dd>${esc(a.needs)}</dd>` : ''}<dt>分類</dt><dd>${esc(a.category)}</dd></dl></details>
     <section class="help-sources"><h2>參考資料</h2><ul>${a.sources.map(s => `<li><a href="${attr(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul></section>
   </div>
   <aside class="help-aside">
-    <dl class="help-meta"><dt>適用</dt><dd>${esc(a.applies)}</dd><dt>難度</dt><dd>${level(a)}</dd>${a.needs ? `<dt>需要</dt><dd>${esc(a.needs)}</dd>` : ''}<dt>核對日期</dt><dd><time datetime="${attr(a.verified)}">${esc(a.verified)}</time></dd></dl>
     <nav class="help-toc" aria-label="本頁段落"><p>本頁段落</p><ol>${toc.map(t => `<li><a href="#${t.id}">${esc(t.title)}</a></li>`).join('')}</ol></nav>
   </aside>
 </div>
 <p class="journal-back"><a href="/help/">← 回到故障排除中心</a></p>
 </article>`;
-    const ld = { '@context': 'https://schema.org', '@type': 'TechArticle', headline: a.title, description: a.summary, dateModified: a.verified,
+    const ld = { '@context': 'https://schema.org', '@type': 'TechArticle', headline: a.title, description: a.summary,
       mainEntityOfPage: BASE + helpUrl(a), author: { '@type': 'Organization', name: '電翼動力 EWP' }, publisher: { '@type': 'Organization', name: '電翼動力 EWP' } };
     page(`help/${a.slug}/index.html`, { title: a.title, description: a.summary, path: helpUrl(a), active: 'journal', noindex: !a.published, body, scripts: ['/assets/js/help.js'], bodyClass: 'help-page', jsonld: [breadcrumbsJsonLd(c, BASE), ld] });
   }

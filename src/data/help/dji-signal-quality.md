@@ -7,7 +7,7 @@ category: 數位圖傳
 level: beginner
 applies: DJI O4 Air Unit／O4 Air Unit Pro（其他 DJI 數位圖傳原理相同，選單依型號）
 needs: 眼鏡；啟用需要電腦、USB 線與飛機電池
-verified: 2026-10-28
+verified: 2026-10-27
 summary: 數位圖傳訊號變差時，會降低畫質，表現成卡頓和馬賽克，不會像類比一樣出現雪花。先排除還沒啟用、地面低功耗與天線擺位，再看頻寬與所在地的限制。
 legacy_items:
   - 7

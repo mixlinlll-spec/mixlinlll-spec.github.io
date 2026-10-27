@@ -1,19 +1,28 @@
 // 故障排除中心：搜尋、解鎖原因查詢、類比畫面三選一、「怎樣算修好」打勾。
 // 沒有 JavaScript 時，所有內容（表格、全部分支）照樣顯示。
 (() => {
-  // ---- 總覽頁：依症狀搜尋 ----
+  // ---- 總覽頁：全文搜尋（標題、摘要、關鍵字、內文），不分大小寫、忽略空白與標點，多個詞要同時符合 ----
   const q = document.querySelector('[data-help-search]');
   if (q) {
-    const items = [...document.querySelectorAll('[data-help-item]')];
-    const groups = [...document.querySelectorAll('[data-help-group]')];
+    const norm = t => t.toLowerCase().normalize('NFKC').replace(/[\s\u3000.,，。、:：;；!！?？()（）「」『』〈〉《》\-_/／|｜'"`~]+/g, '');
+    const items = [...document.querySelectorAll('[data-help-item]')].map(li => ({ li, text: norm(li.dataset.text), title: norm(li.querySelector('strong').textContent) }));
+    const results = document.querySelector('[data-help-results]'), out = document.querySelector('[data-help-result-list]');
+    const browse = [document.querySelector('[data-help-symptoms]'), document.querySelector('[data-help-all]')];
     const empty = document.querySelector('[data-help-empty]');
-    q.addEventListener('input', () => {
-      const s = q.value.trim().toLowerCase();
-      let n = 0;
-      for (const li of items) { const hit = !s || li.dataset.text.toLowerCase().includes(s); li.hidden = !hit; if (hit) n++; }
-      for (const g of groups) g.hidden = !g.querySelector('[data-help-item]:not([hidden])');
-      if (empty) empty.hidden = n > 0;
-    });
+    const run = () => {
+      const terms = q.value.split(/[\s\u3000]+/).map(norm).filter(Boolean);
+      const on = terms.length > 0;
+      browse.forEach(el => { if (el) el.hidden = on; });
+      results.hidden = !on;
+      if (!on) { empty.hidden = true; return; }
+      const hits = items.filter(it => terms.every(t => it.text.includes(t)))
+        .sort((x, y) => terms.filter(t => y.title.includes(t)).length - terms.filter(t => x.title.includes(t)).length);
+      out.replaceChildren(...hits.map(it => { const c = it.li.cloneNode(true); c.removeAttribute('data-help-item'); return c; }));
+      empty.hidden = hits.length > 0;
+    };
+    q.addEventListener('input', run);
+    const pre = new URLSearchParams(location.search).get('q');
+    if (pre) { q.value = pre; run(); }
   }
 
   // ---- 解鎖原因查詢：名稱逐一對照 Betaflight 官方原始碼 runtime_config.c（4.4、4.5、2025.12、2026.6） ----
@@ -23,7 +32,7 @@
   const FLAGS = [
     [all('MSP'), '電腦的 Betaflight App（Configurator）還連著', '斷開連線或拔掉 USB。這是正常保護，不是故障。', 'ok'],
     [all('CLI'), '飛控停在命令列模式', '離開命令列或拔掉 USB。', 'ok'],
-    [all('RXLOSS'), '飛控收不到遙控器訊號', '到「接收機」頁撥搖桿；數值沒有跟著動，就是遙控器和接收機沒有連上。', 'ok'],
+    [all('RXLOSS'), '飛控沒有收到有效的遙控訊號', '先看接收機的燈：還沒連上遙控器，或燈恆亮但飛控的連接埠、接收機協定、接線沒設好，都會出現這個字。', 'ok', ['/help/receiver-no-control/', '依接收機燈號排除']],
     [all('THROTTLE'), '油門沒有在最低', '油門拉到底。拉到底仍出現：「接收機」頁的油門數值應低於 1050（預設門檻），不是的話要調整遙控器的油門行程。', 'ok'],
     [all('ANGLE'), '機身太斜', '放平再試（預設傾斜超過 25° 就不讓解鎖）。放平了還是出現：飛機放在平面上，到「設定」頁做加速度計校正。', 'ok'],
     [['ARMSWITCH', 'ARMSWITCH', 'ARM_SWITCH', 'ARM_SWITCH'], '不能解鎖的時候，解鎖開關已經在「開」', '先處理其他原因，再把開關撥回「關」、再撥「開」。', 'ok'],
@@ -65,7 +74,7 @@
       if (!current || !nameOf(current)) { ans.innerHTML = '<p class="muted">點一個字，這裡會顯示它代表什麼、下一步怎麼做。</p>'; return; }
       const f = current, [label, cls] = TAG[f[3]], h = history(f);
       ans.innerHTML = `<p class="flag-name">${esc(nameOf(f))}<span class="flag-tag ${cls}">${label}</span></p>
-        <dl><dt>代表什麼</dt><dd>${esc(f[1])}</dd><dt>下一步</dt><dd${f[3] === 'stop' ? ' class="is-stop"' : ''}>${esc(f[2])}</dd>
+        <dl><dt>代表什麼</dt><dd>${esc(f[1])}</dd><dt>下一步</dt><dd${f[3] === 'stop' ? ' class="is-stop"' : ''}>${esc(f[2])}${f[4] ? ` <a href="${f[4][0]}">${esc(f[4][1])} →</a>` : ''}</dd>
         ${h ? `<dt>版本差異</dt><dd class="muted">${h}</dd>` : ''}</dl>`;
     };
     const renderList = () => {

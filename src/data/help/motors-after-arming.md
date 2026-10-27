@@ -9,6 +9,17 @@ applies: Betaflight 4.4、4.5、2025.12、2026.6 四軸穿越機
 needs: 電腦、USB 線、電池
 verified: 2026-10-27
 summary: 解鎖之後馬達的反應分成四種：完全不轉、只有部分轉、會轉但一起飛就翻、拆槳時越轉越快。先找出是哪一種，再拆槳在「馬達」頁逐顆測試。
+keywords:
+  - 馬達不轉
+  - 翻機
+  - flip
+  - 起飛就翻
+  - 馬達順序
+  - 馬達方向
+  - props out
+  - Motor Stop
+  - Airmode
+  - 越轉越快
 legacy_items:
   - 11
   - 23
