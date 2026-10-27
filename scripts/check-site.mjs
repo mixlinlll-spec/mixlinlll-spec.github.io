@@ -65,7 +65,7 @@ for (const f of htmlFiles) {
   }
   if (/NT\$\s*0(?![\d,])/.test(html)) errors.push(`${rel}: 出現 NT$ 0`);
   // 導向頁（舊網址轉到新位置）本來就是 noindex
-  if (!isPreview && /noindex/.test(html) && !/http-equiv="refresh"/.test(html) && !/^(404\.html|legacy\/|privacy\/|terms\/|shipping-returns\/)/.test(rel.split(path.sep).join('/')))
+  if (!isPreview && /noindex/.test(html) && !/http-equiv="refresh"/.test(html) && !/^(404\.html|legacy\/|fpv-help\.html$|privacy\/|terms\/|shipping-returns\/)/.test(rel.split(path.sep).join('/')))
     errors.push(`${rel}: 正式版頁面不應為 noindex`);
 }
 

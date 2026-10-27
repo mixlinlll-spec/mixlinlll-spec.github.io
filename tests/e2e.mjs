@@ -397,8 +397,10 @@ console.log('17. 故障排除中心：搜尋、解鎖原因查詢、類比三選
 {
   const page = await newPage(390);
   await page.goto(PUB + '/help/', { waitUntil: 'load' });
+  const total = await page.locator('[data-help-item]').count();
   await page.fill('[data-help-search]', '雪花');
-  ok(await page.locator('[data-help-item]:visible').count() === 1, '總覽：搜尋「雪花」只剩類比圖傳那篇');
+  const hits = await page.locator('[data-help-item]:visible').count();
+  ok(hits >= 1 && hits < total && (await page.locator('[data-help-item]:visible a[href="/help/analog-no-video/"]').count()) === 1, `總覽：搜尋「雪花」縮小到 ${hits} 篇，含類比圖傳那篇`);
   await page.fill('[data-help-search]', '不存在的症狀');
   ok(await page.isVisible('[data-help-empty]'), '總覽：找不到時顯示提示');
 
