@@ -16,7 +16,7 @@ applies: Betaflight 4.4、4.5
 needs: 電腦、USB 線       # 選填
 verified: 2026-10-27     # 最後一次核對官方資料的日期
 summary: 一句話答案（也是搜尋結果摘要）
-legacy_items:            # 對應舊知識庫題號；舊連結 /fpv-help.html#item-10 會自動轉到新版
+legacy_items:            # 對應舊知識庫題號（0～90 每題只屬於一篇）；舊連結 /fpv-help.html#item-10 會自動轉到這篇
   - 10
 prepare:                 # 文末「還是不行？」要準備的資料
   - 飛控型號與 Betaflight 版本
@@ -50,3 +50,11 @@ sources:                 # 至少一個，格式「標題 | https://網址」
 - `{{tool:case-picker}}`：通用的「先選狀況」選單，依內文的 `:::case` 標題自動產生按鈕（至少兩個分支）。
 
 只有「選一個答案就能縮小一半範圍」的題目才做互動工具，其他維持圖文。
+
+## 舊知識庫
+
+原本的 91 則（`fpv-help.html`）已全部改寫進故障排除中心，原始檔留在 repo 但不再發布。網站上的 `/fpv-help.html` 是建置時產生的轉址頁：`#item-XX` 轉到對應文章、`#battery-knowledge` 轉到電池電壓文章，其他一律轉到 `/help/`。單元測試會檢查 item-0～item-90 每一題都恰好屬於一篇文章。
+
+## Betaflight 版本
+
+目前涵蓋 4.4、4.5、2025.12、2026.6（2025.12 起改用年份命名，電腦軟體改名 Betaflight App）。解鎖原因名稱逐一對照官方原始碼 `src/main/fc/runtime_config.c`；新版本發布時，先比對這個檔案再更新 `assets/js/help.js` 的 FLAGS。

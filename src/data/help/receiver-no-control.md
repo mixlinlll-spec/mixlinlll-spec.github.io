@@ -5,7 +5,7 @@ published: true
 order: 1
 category: 接收機／對頻
 level: beginner
-applies: ExpressLRS 3.x 接收機＋Betaflight 4.4、4.5
+applies: ExpressLRS 3.x 接收機＋Betaflight（4.4 以後各版本）
 needs: 電腦、可傳資料的 USB 線、遙控器
 verified: 2026-10-27
 summary: 先看接收機的燈怎麼閃。燈號會直接告訴你卡在哪一關：沒供電、還沒連上、在 Wi-Fi 模式、模型不符，還是已經連上但飛控沒收到。

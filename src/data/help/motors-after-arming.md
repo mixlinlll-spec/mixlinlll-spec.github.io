@@ -5,7 +5,7 @@ published: true
 order: 2
 category: 馬達／電調
 level: beginner
-applies: Betaflight 4.4、4.5 四軸穿越機
+applies: Betaflight 4.4、4.5、2025.12、2026.6 四軸穿越機
 needs: 電腦、USB 線、電池
 verified: 2026-10-27
 summary: 解鎖之後馬達的反應分成四種：完全不轉、只有部分轉、會轉但一起飛就翻、拆槳時越轉越快。先找出是哪一種，再拆槳在「馬達」頁逐顆測試。
@@ -19,7 +19,7 @@ prepare:
   - 命令列 `diff all` 的完整文字
 sources:
   - Betaflight 官方文件：Motors 頁 | https://betaflight.com/docs/wiki/configurator/motors-tab
-  - Betaflight 官方原始碼（4.5 解鎖與馬達相關判斷） | https://github.com/betaflight/betaflight/blob/4.5-maintenance/src/main/fc/core.c
+  - Betaflight 官方原始碼（Motor Stop 與 Airmode 的判斷） | https://github.com/betaflight/betaflight/blob/2026.6.2/src/main/fc/core.c
 ---
 :::safety 開始前
 拆下全部螺旋槳。所有馬達測試都在拆槳狀態下進行，不要用手壓住或抓住裝了槳的飛機測試。
@@ -32,7 +32,7 @@ sources:
 :::case A 解鎖後完全不轉
 1. **接上電池了嗎**：只插 USB 時，大多數電調不會供電給馬達，一定要接電池。
 2. **聽開機聲**：接上電池時，電調會發出一段開機提示音。完全沒聲音，代表電調沒有供電，檢查電池接頭與電調電源線。
-3. **看「馬達停止」設定**：「設定」頁打開 Motor Stop（馬達停止）時，解鎖後低油門不轉是正常的，推一點油門才會轉。
+3. **看「馬達停止」設定**：打開 Motor Stop（馬達停止），而且沒有開 Airmode 時，解鎖後低油門不轉是正常的，推一點油門才會轉。開了 Airmode 時，Motor Stop 不會讓馬達停止。
 4. **到「馬達」頁測試**：接上電池，勾選確認已拆槳，推動總控制滑桿。全部不轉，看文末「還是不行？」。
 :::
 

@@ -29,7 +29,7 @@ async function newPage(width) {
 }
 
 console.log('1. 版面寬度（320/390/768/1280）無非預期橫捲');
-const PAGES = ['/', '/products/', '/products/complete-drones/', '/builds/', '/services/', '/services/repair/', '/batteries/', '/journal/', '/about/', '/contact/', '/privacy/', '/404.html', '/fpv-help.html', '/help/', '/help/betaflight-arming/', '/help/analog-no-video/', '/help/receiver-no-control/', '/help/fc-usb-connect/', '/help/motors-after-arming/'];
+const PAGES = ['/', '/products/', '/products/complete-drones/', '/builds/', '/services/', '/services/repair/', '/batteries/', '/journal/', '/about/', '/contact/', '/privacy/', '/404.html', '/help/', '/help/betaflight-arming/', '/help/analog-no-video/', '/help/receiver-no-control/', '/help/fc-usb-connect/', '/help/motors-after-arming/'];
 for (const w of [320, 390, 768, 1280]) {
   const page = await newPage(w);
   for (const [base, extra] of [[PUB, []], [PRE, ['/product/geprc-moz7-v2-o4-pro-7/', '/products/hardware-prints/?sub=screws']]]) {
@@ -156,11 +156,12 @@ console.log(`6. 正式版：${PUBLISHED} 件上架、rejected 不外洩、聯絡
   ok(await page.locator('a[href="#"]').count() === 0, '沒有 href="#" 假連結');
   const sm = await (await page.request.get(PUB + '/sitemap.xml')).text();
   ok((sm.match(/\/product\//g) || []).length === PUBLISHED && !sm.includes('/product/fpv-v1/'), `sitemap 含 ${PUBLISHED} 件公開商品、不含 rejected`);
-  await page.goto(PUB + '/fpv-help.html');
-  ok(/共\s*91\s*則/.test(await page.textContent('body')), '舊網址 /fpv-help.html 正常，仍為 91 則');
+  await page.goto(PUB + '/fpv-help.html', { waitUntil: 'load' });
+  await page.waitForURL('**/help/', { timeout: 5000 }).catch(() => {});
+  ok(page.url().endsWith('/help/'), '舊網址 /fpv-help.html 轉到故障排除中心');
   await page.goto(PUB + '/');
   ok(await page.locator('#builds, #workshop, #about, #contact').count() === 4, '首頁保留舊錨點 #builds #workshop #about #contact');
-  ok(await page.locator('a[href="/fpv-help.html"]').count() >= 1, '首頁可進入知識庫');
+  ok(await page.locator('a[href="/help/"]').count() >= 1 && await page.locator('a[href="/fpv-help.html"]').count() === 0, '首頁進入故障排除中心，不再連到舊知識庫');
   await page.context().close();
 }
 
@@ -429,8 +430,9 @@ console.log('17. 故障排除中心：搜尋、解鎖原因查詢、類比三選
   await page.goto(PUB + '/fpv-help.html#item-10', { waitUntil: 'load' });
   await page.waitForURL('**/help/betaflight-arming/', { timeout: 5000 }).catch(() => {});
   ok(page.url().endsWith('/help/betaflight-arming/'), '舊連結 /fpv-help.html#item-10 導向新版教學');
-  await page.goto(PUB + '/fpv-help.html#item-9', { waitUntil: 'load' });
-  ok(page.url().endsWith('/fpv-help.html#item-9'), '沒改寫的舊題目不導向');
+  await page.goto(PUB + '/fpv-help.html#battery-knowledge', { waitUntil: 'load' });
+  await page.waitForURL('**/help/battery-types-voltage/', { timeout: 5000 }).catch(() => {});
+  ok(page.url().endsWith('/help/battery-types-voltage/'), '舊電池速查錨點轉到電池電壓文章');
   await page.context().close();
 }
 

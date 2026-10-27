@@ -20,7 +20,7 @@ sources:
   - Oscar Liang：Can’t Connect to Betaflight or Flash Firmware | https://oscarliang.com/fc-driver-issues-flash-firmware
 ---
 :::safety 開始前
-只接 USB，不用接電池。先關掉其他可能佔用 USB 連線的軟體，例如 BLHeli Configurator、INAV Configurator、另一個開著的 Betaflight 視窗。
+只接 USB，不用接電池。先關掉其他可能佔用 USB 連線的軟體，例如 BLHeli Configurator、INAV Configurator、另一個開著的 Betaflight 視窗。2025.12 起電腦軟體改名為 Betaflight App，可以直接用 Chrome 或 Edge 打開 app.betaflight.com，舊版叫 Betaflight Configurator。
 :::
 
 ## 建議檢查順序
@@ -45,7 +45,7 @@ sources:
 1. **看裝置名稱**：正常會在「連接埠（COM 和 LPT）」看到「STM32 Virtual COM Port（COM3）」這類名稱。顯示「未知的裝置」，代表缺少驅動程式。
 2. **安裝驅動程式**：最簡單的方法是使用 ImpulseRC Driver Fixer，它會自動安裝需要的驅動。
 3. **Driver Fixer 說裝置數量不對**：先拔掉飛控上接的接收機、GPS 等周邊，只留 USB 再試一次。
-4. **Betaflight 裡選對連接埠**：在 Betaflight 左上角選擇剛剛看到的 COM 編號再按連線。
+4. **Betaflight 裡選對連接埠**：在 Betaflight App（或 Configurator）上方選擇剛剛看到的 COM 編號再按連線。
 :::
 
 :::case C 只出現 STM32 BOOTLOADER

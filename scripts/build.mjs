@@ -528,7 +528,7 @@ function batteryPage() {
     <li><h3>LiPo 鋰聚合物</h3><p>放電能力高，常用於花飛與競速。重量與容量的取捨依機型決定。</p></li>
     <li><h3>LiHV 高壓鋰聚合物</h3><p>滿電電壓比一般 LiPo 高，充電器必須選對 LiHV 模式；與一般 LiPo 不可混用同一充電設定。</p></li>
   </ul>
-  <p class="callout" role="note"><strong>重要：</strong>不同電池系統與電芯型號的滿電電壓、存放電壓與截止電壓都不同。請依商品標示與電芯規格書使用，不要用同一組數字套用所有電池。詳細觀念可參考 <a href="/fpv-help.html#battery-knowledge">知識庫電池速查</a>。</p>
+  <p class="callout" role="note"><strong>重要：</strong>不同電池系統與電芯型號的滿電電壓、存放電壓與截止電壓都不同。請依商品標示與電芯規格書使用，不要用同一組數字套用所有電池。詳細觀念可參考 <a href="${(a => a ? helpUrl(a) : '/help/')(helpArticles.find(a => a.published && a.legacy_items.includes(82)))}">故障排除中心的電池電壓說明</a>。</p>
 </section>
 <section class="wrap">
   ${sectionHead('LINEUP', '電池與電源商品', `<p><a href="${url.category(cat)}">完整篩選 →</a></p>`)}
@@ -571,7 +571,7 @@ function simplePages() {
       ['動力電池', '18650、21700 鋰離子電池組與外場電包。', '/batteries/'],
       ['維修與調參', '故障排查、Betaflight／INAV 設定與黑盒分析。', '/services/repair/'],
       ['3D 列印', 'TPU 保護件、固定座與機體配件。', '/services/3d-printing/'],
-      ['技術知識', '整理玩家常見問題，用白話說明排查方向。', '/fpv-help.html'],
+      ['故障排除中心', '依症狀找答案：判斷表、下一步與怎樣算修好。', '/help/'],
     ].map(([t, d, h]) => `<li><a href="${h}"><h3>${t}</h3><p>${d}</p><span class="more">前往 →</span></a></li>`).join('')}</ul></section>
 <section class="wrap"><div class="about-band"><div class="motto" aria-label="Build. Tune. Fly."><span>BUILD.</span><span>TUNE.</span><span>FLY.</span></div></div></section>
 ${bizBlock()}
@@ -616,12 +616,12 @@ ${bizBlock()}
   write('404.html', layout(ctx, { title: '找不到頁面', path: '/404.html', noindex: true,
     body: `<section class="wrap notfound"><p class="eyebrow">404</p><h1>找不到這個頁面</h1><p class="lead">網址可能已變更。可以搜尋商品，或回到首頁。</p>
 <form class="hero-search" action="/products/" method="get" role="search"><label for="nf-q" class="sr-only">搜尋商品</label><input id="nf-q" type="search" name="q" placeholder="搜尋商品"><button class="btn btn-primary" type="submit">搜尋</button></form>
-<div class="actions"><a class="btn" href="/">回到首頁</a><a class="btn" href="/products/">商品商城</a><a class="btn" href="/fpv-help.html">FPV 知識庫</a></div></section>` }));
+<div class="actions"><a class="btn" href="/">回到首頁</a><a class="btn" href="/products/">商品商城</a><a class="btn" href="/help/">故障排除中心</a></div></section>` }));
 }
 
 // ---------- EWP 專欄（原「最新消息」，網址維持 /journal/） ----------
 // src/data/journal/*.md；正式版只產生 published=true 的文章，預覽版含草稿。依日期新到舊排列。
-const RELATED_LABEL = { '/products/': '商品商城', '/builds/': 'EWP 自製機型', '/services/': '技術與客製服務', '/batteries/': '電池專區', '/contact/': '聯絡我們', '/about/': '關於 EWP', '/fpv-help.html': 'FPV 知識庫' };
+const RELATED_LABEL = { '/products/': '商品商城', '/builds/': 'EWP 自製機型', '/services/': '技術與客製服務', '/batteries/': '電池專區', '/contact/': '聯絡我們', '/about/': '關於 EWP', '/fpv-help.html': '故障排除中心', '/help/': '故障排除中心' };
 function visibleJournal() {
   return journal.filter(p => DRAFTS || p.published === true)
     .sort((a, b) => (b.date || '').localeCompare(a.date || '') || a.slug.localeCompare(b.slug));
@@ -674,10 +674,19 @@ function helpPages() {
 <section class="wrap help-index">
   <form class="help-search" role="search" onsubmit="return false"><label for="help-q" class="sr-only">搜尋症狀</label><input id="help-q" type="search" placeholder="輸入症狀，例如：解鎖、雪花、黑畫面" autocomplete="off" data-help-search></form>
   ${groups.map(([c, l]) => `<div class="help-group" data-help-group><h2>${esc(c)}</h2><ul class="help-cards">${l.map(a => `<li data-help-item data-text="${attr([a.title, a.summary, a.category].join(' '))}"><a href="${helpUrl(a)}"><span class="help-card-meta">${level(a)}<span>${esc(a.applies)}</span></span><strong>${esc(a.title)}</strong><span class="help-card-sum">${esc(a.summary)}</span><span class="more">看教學 <span aria-hidden="true">→</span></span></a></li>`).join('')}</ul></div>`).join('')}
-  <p class="help-empty" data-help-empty hidden>找不到符合的教學。可以換個說法，或到舊版知識庫搜尋。</p>
-  <aside class="help-legacy"><div><h2>還沒改寫的題目</h2><p>其他 FPV 常見問題目前仍在舊版知識庫，會分批改寫成新的格式。</p></div><a class="btn" href="/fpv-help.html">打開舊版知識庫（91 則）</a></aside>
+  <p class="help-empty" data-help-empty hidden>找不到符合的教學，可以換個說法再搜尋一次。</p>
 </section>`;
   page('help/index.html', { title: '故障排除中心', description: 'FPV 穿越機常見故障排除：不能解鎖、圖傳沒畫面等問題，依症狀一步步檢查，附判斷表與完成標準。', path: '/help/', active: 'journal', body: index, scripts: ['/assets/js/help.js'], jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
+
+  // 舊網址 /fpv-help.html：整個舊知識庫已改寫進故障排除中心。#item-XX 轉到對應文章，其他轉到 /help/；沒有 JavaScript 時列出全部文章
+  const legacyMap = Object.fromEntries(list.filter(a => a.published).flatMap(a => a.legacy_items.map(n => [`item-${n}`, helpUrl(a)])));
+  const batteryArticle = list.find(a => a.published && a.legacy_items.includes(82));
+  if (batteryArticle) legacyMap['battery-knowledge'] = helpUrl(batteryArticle);
+  page('fpv-help.html', { title: 'FPV 知識庫已改版為故障排除中心', description: '原 FPV 知識庫已全部改寫為故障排除中心。', path: '/fpv-help.html', noindex: true, active: 'journal',
+    body: `${pageHead('MOVED', 'FPV 知識庫已改版', '原本的 91 則問題已全部改寫進故障排除中心，正在帶你前往對應的文章。', breadcrumbs([{ name: '首頁', href: '/' }, { name: 'FPV 知識庫' }]))}
+<section class="wrap help-index"><p><a class="btn btn-primary" href="/help/">前往故障排除中心</a></p>
+${groups.map(([c, l]) => `<div class="help-group"><h2>${esc(c)}</h2><ul>${l.map(a => `<li><a href="${helpUrl(a)}">${esc(a.title)}</a></li>`).join('')}</ul></div>`).join('')}</section>
+<script>(function(){var m=${JSON.stringify(legacyMap)};var h=location.hash.slice(1);location.replace(m[h]||'/help/');})();</script>` });
 
   const repair = services.find(s => s.id === 'repair');
   for (const a of list) {
@@ -718,7 +727,7 @@ function seoFiles() {
     return;
   }
   const urls = ['/', '/products/', ...categories.map(url.category), ...visible.map(url.product), '/builds/',
-    '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/help/', ...visibleHelp().map(helpUrl), '/learn/lipo-battery/', '/learn/fpv-video/', '/blackbox/', '/tunelab/', '/about/', '/contact/', '/fpv-help.html',
+    '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/help/', ...visibleHelp().map(helpUrl), '/learn/lipo-battery/', '/learn/fpv-video/', '/blackbox/', '/tunelab/', '/about/', '/contact/',
     ...Object.entries(site.policies).filter(([, v]) => v.approved).map(([k]) => `/${k}/`)];
   const lastmod = p => p?.updated_at;
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => {
@@ -737,24 +746,6 @@ const PRODUCT_IMG = path.join(ROOT, 'assets', 'img', 'products');
 for (const item of STATIC_WHITELIST) {
   const src = path.join(ROOT, item);
   if (fs.existsSync(src)) fs.cpSync(src, path.join(OUT, item), { recursive: true, filter: f => !(f === PRODUCT_IMG || f.startsWith(PRODUCT_IMG + path.sep)) });
-}
-// 舊版知識庫：已改寫成故障排除中心的題目，在原位置加上「看新版教學」連結；帶 #item-XX 進來的人直接轉到新版
-{
-  const f = path.join(OUT, 'fpv-help.html');
-  const moved = visibleHelp().filter(a => a.published).flatMap(a => a.legacy_items.map(n => [n, helpUrl(a)]));
-  if (fs.existsSync(f)) {
-    let html = fs.readFileSync(f, 'utf8');
-    for (const [n, href] of moved) {
-      const re = new RegExp(`(id="item-${n}"[^>]*>[\\s\\S]*?<div class="body">)`);
-      if (!re.test(html)) { console.error(`✖ 舊版知識庫找不到 item-${n}`); process.exit(1); }
-      html = html.replace(re, `$1<p style="margin:0 0 12px;padding:10px 14px;background:#1c6551;border-radius:8px"><a href="${href}" style="color:#fff;font-weight:700">這題已改寫成新版完整教學，點這裡看 →</a></p>`);
-    }
-    const map = Object.fromEntries(moved.map(([n, h]) => [`item-${n}`, h]));
-    const banner = `<div style="margin:0 0 20px;padding:14px 18px;border-radius:12px;background:#20302d;color:#fff"><strong>新版故障排除中心上線了：</strong>每篇都有判斷表與「怎樣算修好」。<a href="/help/" style="color:#9fe0c8;font-weight:700">前往故障排除中心 →</a></div>`;
-    html = html.replace(/<main([^>]*)>/, m => `${m}${banner}`);
-    html = html.replace(/<\/body>(?![\s\S]*<\/body>)/, `<script>(function(){var m=${JSON.stringify(map)};var h=location.hash.slice(1);if(m[h])location.replace(m[h]);})();</script>\n</body>`);
-    fs.writeFileSync(f, html);
-  }
 }
 // 白名單中的手寫 HTML（知識庫、教學頁、飛行數據計畫…）也加上流量統計（legacy 舊版首頁不加）
 {

@@ -16,7 +16,7 @@ import { parseFrontmatter, imageSize } from './journal.mjs';
 
 export const HELP_DIR = path.join(ROOT, 'src', 'data', 'help');
 export const HELP_IMG = '/assets/img/help/';
-export const HELP_CATEGORIES = ['飛控設定', '類比圖傳', '數位圖傳', '接收機／對頻', '電腦連線', '馬達／電調', '電池／充電', 'GPS／返航'];
+export const HELP_CATEGORIES = ['新手檢查', '飛控設定', '接收機／對頻', '遙控器／EdgeTX', '類比圖傳', '數位圖傳', '遙控與圖傳訊號', '馬達／電調', '震動／飛行手感', '供電／接線', '電腦連線', '韌體更新', 'GPS／返航', '電池／充電'];
 export const HELP_LEVELS = { beginner: '新手', intermediate: '中階' };
 export const HELP_TOOLS = ['arming-flags', 'analog-screens', 'case-picker'];
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -146,7 +146,7 @@ function tool(name, ctx) {
   if (name === 'arming-flags') return `<section class="help-tool" data-tool="arming-flags" aria-labelledby="tool-flags-t">
   <p class="help-tool-k">互動查詢</p>
   <h3 id="tool-flags-t">你看到的是哪一個字？</h3>
-  <div class="help-tool-row"><span class="help-tool-l" id="flag-ver-l">Betaflight 版本</span><span class="seg" role="group" aria-labelledby="flag-ver-l"><button type="button" data-ver="4.4" aria-pressed="false">4.4</button><button type="button" data-ver="4.5" aria-pressed="true">4.5</button></span></div>
+  <div class="help-tool-row"><span class="help-tool-l" id="flag-ver-l">Betaflight 版本</span><span class="seg" role="group" aria-labelledby="flag-ver-l"><button type="button" data-ver="4.4" aria-pressed="false">4.4</button><button type="button" data-ver="4.5" aria-pressed="true">4.5</button><button type="button" data-ver="2025.12" aria-pressed="false">2025.12</button><button type="button" data-ver="2026.6" aria-pressed="false">2026.6</button></span></div>
   <label class="help-tool-l" for="flag-q">直接輸入，或點下面的字</label>
   <input id="flag-q" type="search" placeholder="例如 RXLOSS" autocomplete="off" autocapitalize="characters">
   <div class="flag-list" role="group" aria-label="解鎖禁用原因" data-flag-list></div>

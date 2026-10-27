@@ -444,8 +444,14 @@ describe('故障排除中心（src/data/help/*.md）', async () => {
     assert.match(fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8'), /\/help\/betaflight-arming\//);
     const old = fs.readFileSync(path.join(dist, 'fpv-help.html'), 'utf8');
     assert.match(old, /"item-10":"\/help\/betaflight-arming\/"/);
-    assert.equal((old.match(/這題已改寫成新版完整教學/g) || []).length, list.filter(a => a.published).reduce((n, a) => n + a.legacy_items.length, 0));
-    assert.match(old, /"item-0":"\/help\/receiver-no-control\/"/);
+    assert.match(old, /noindex/);
+    assert.ok(!/\/fpv-help\.html/.test(fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8')), '舊知識庫不在 sitemap');
+  });
+  test('舊知識庫 91 題（item-0～item-90）每題都改寫進恰好一篇文章', () => {
+    const owners = new Map();
+    for (const a of list.filter(x => x.published)) for (const n of a.legacy_items) { assert.ok(!owners.has(n), `item-${n} 重複`); owners.set(n, a.slug); }
+    const missing = Array.from({ length: 91 }, (_, i) => i).filter(n => !owners.has(n));
+    assert.deepEqual(missing, [], `尚未涵蓋：${missing.join(', ')}`);
   });
 });
 
