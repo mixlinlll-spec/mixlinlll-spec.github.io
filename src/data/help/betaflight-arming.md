@@ -33,7 +33,7 @@ sources:
   - Oscar Liang：Quad Arming Issue Fix | https://oscarliang.com/quad-arming-issue-fix
 ---
 :::safety 開始前
-拆下全部螺旋槳。準備可以開 Betaflight App 的電腦（2025.12 起改名為 Betaflight App，網址 app.betaflight.com；舊版叫 Betaflight Configurator），以及可以傳資料的 USB 線（有些線只能充電，接上後電腦不會有反應）。
+拆下全部螺旋槳。準備一台電腦，用 Chrome 或 Edge 打開 Betaflight App（app.betaflight.com；舊版軟體叫 Betaflight Configurator），以及可以傳資料的 USB 線（有些線只能充電，接上後電腦不會有反應）。
 :::
 
 ## 建議檢查順序
