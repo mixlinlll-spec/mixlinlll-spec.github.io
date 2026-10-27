@@ -9,6 +9,15 @@ applies: DJI O4 Air Unit／O4 Air Unit Pro＋Betaflight 4.4、4.5、2025.12、20
 needs: 電腦、可傳資料的 USB 線
 verified: 2026-10-27
 summary: DJI 的飛行文字不是類比那種疊在影像上的晶片，而是飛控透過一條序列線（MSP DisplayPort）把文字傳給圖傳。沒有文字時，依序查：接線、Betaflight 設定、眼鏡顯示設定。
+keywords:
+  - OSD
+  - Displayport
+  - MSP
+  - HD OSD
+  - 沒有電壓
+  - 文字被切
+  - canvas
+  - UART
 legacy_items:
   - 4
   - 60
@@ -53,5 +62,5 @@ sources:
 :::
 
 :::stop 什麼時候停手
-接線時發現天空端的電源線和 TX／RX 線接錯位置、接上電後有異常發熱：立刻拔掉電池，先核對接線圖，不要再通電。
+接線時發現天空端的電源線和 TX／RX 線接錯位置、接上電後有異常發熱：能安全拔掉電池就立刻拔掉，不要用手去碰發燙的零件；先核對接線圖，不要再通電。冒煙或起火時先遠離，有火勢就離開現場並打 119。
 :::
