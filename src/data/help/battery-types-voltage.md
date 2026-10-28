@@ -37,6 +37,7 @@ sources:
   - WISPR：LiHV 電池充電與存放 | https://wisprsystems.atlassian.net/wiki/spaces/CS/pages/176947203/Charging+Storing+LiHV+Batteries+-+Ranger+Pro
   - Molicel P42A 電芯規格書 v1.7（Li-ion 充電與放電截止電壓、充電溫度範例） | https://www.18650batterystore.com/cdn/shop/files/Molicel-INR21700-P42A-data-sheet-v1.7.pdf
   - Betaflight 官方原始碼（電池節數自動判斷與低電壓警告預設值） | https://github.com/betaflight/betaflight/blob/4.5-maintenance/src/main/sensors/battery.c
+  - Betaflight 2026.6.2 原始碼（電池設定改為每個 battery_profile 各一組） | https://github.com/betaflight/betaflight/blob/2026.6.2/src/main/cli/settings.c
 ---
 :::safety 開始前
 以下數字都是「每一節」的電壓。最後一律以電池標籤和原廠說明為準；標籤看不清楚、種類不確定的電池，先不要充電。
@@ -65,7 +66,7 @@ sources:
 ## 存放電壓
 
 1. **LiPo、LiHV**：用充電器的存放（Storage）功能，一般 LiPo 約 3.80V／節，常見 LiHV 約 3.80～3.85V／節。LiHV 不是留在 4.35V 存放。
-2. **Li-ion**：先看電池組或電芯原廠的存放條件。規格沒寫時，本站以約 3.6～3.8V／節作為保留中等電量的參考，這不是所有電芯的統一規格。
+2. **Li-ion**：先看電池組或電芯原廠的存放條件（EWP 自製電池組依商品頁標示，約 3.8V／節）。規格沒寫時，本站以約 3.6～3.8V／節作為保留中等電量的參考，這不是所有電芯的統一規格。
 3. **不要滿電放著**：短期沒有飛行安排，就先整理到存放電壓。長期存放的方法看 [[battery-storage]]。
 
 ## 降落電壓：三個「截止」不一樣
@@ -98,11 +99,14 @@ sources:
 
 ## 飛控的節數判斷與低電壓警告
 
-Betaflight 插上電池時，會用「整包電壓 ÷ `vbat_max_cell_voltage`（預設 4.30V），取整數再加 1」自動判斷節數（以 4.5 原始碼為準）。所以滿電的 LiHV 會被算多一節，例如 4S LiHV 17.40V 會被判成 5S、6S LiHV 26.10V 會被判成 7S；Li-ion 電池組沒充飽就插上，也可能被算少一節。節數算錯時，OSD 的每節電壓和低電壓警告都會不準。
+Betaflight 插上電池時，會用「整包電壓 ÷ `vbat_max_cell_voltage`（預設 4.30V），取整數再加 1」自動判斷節數（以 4.5 原始碼為準）。所以滿電的 LiHV 會被算多一節，例如 4S LiHV 17.40V 會被判成 5S、6S LiHV 26.10V 會被判成 7S；電壓偏低時插上也可能被算少一節（例如 6S 整包低於約 21.5V、8S 低於約 30.1V）。節數算錯時，OSD 的每節電壓和低電壓警告都會不準。
 
 1. **插上電池先看 OSD 或「設定」頁顯示的節數**：和電池標籤一樣才算對。
-2. **用 LiHV 時**：把 `vbat_max_cell_voltage` 調到 4.35～4.40V，或用 `force_battery_cell_count` 固定節數。
+2. **用 LiHV 時**：建議用 `force_battery_cell_count` 固定節數（例如 6S 就設 `6`）。也可以把 `vbat_max_cell_voltage` 調到 4.40V：照上面的算法，調到 4.35V 時剛充飽的 LiHV 仍會被算多一節，要 4.40V 才算得對。
 3. **用 Li-ion 時**：建議用 `force_battery_cell_count` 固定節數；預設低電壓警告 `vbat_warning_cell_voltage` 是 3.50V，可以設在本站建議的降落電壓附近（例如 3.40～3.50V），不要調到電芯規格書的放電截止電壓。
+4. **2026.6 以後的韌體**：這些數值改成每個電池設定檔（`battery_profile`）各一組，要在目前使用的那一組修改並 `save`，否則等於沒改。
+
+EWP 自製電池組的商品頁另外標了「截止電壓」，那是落地靜置後不要再低於的下限，不是飛行中準備降落的電壓；飛行時請依上面的降落電壓提早降落。
 
 :::checks 怎樣算設定正確
 - 充電器選的電池種類和電池標籤一致（LiPo、LiHV 或 Li-ion），節數也一致

@@ -1,14 +1,14 @@
 ---
-title: 類比圖傳不能換頻道、設定器顯示未就緒，或只能近距離收到
+title: 類比圖傳不能換頻道、Betaflight 顯示未就緒，或只能近距離收到
 slug: analog-vtx-settings
 published: true
 order: 3
 category: 類比圖傳
 level: beginner
 applies: 類比圖傳（SmartAudio、IRC Tramp 控制）＋Betaflight 4.4、4.5、2025.12、2026.6
-needs: 電腦、可傳資料的 USB 線、眼鏡
+needs: 電腦、可傳資料的 USB 線、眼鏡、飛機電池；部分步驟需要三用電表
 verified: 2026-10-28
-summary: 有畫面、但 Betaflight 改不了頻道或顯示未就緒，問題在「控制線」這一條，和影像是兩回事。只能近距離收到，先懷疑圖傳還在低功率模式（Pit mode）。
+summary: 有畫面、但 Betaflight 改不了頻道或顯示未就緒，問題多半在「控制線」或 Betaflight 的設定（連接埠、協定、頻道表），和影像是兩回事。只能近距離收到，先懷疑圖傳還在低功率模式（Pit mode）。
 keywords:
   - Pit mode
   - 低功率
@@ -57,7 +57,7 @@ sources:
 
 :::checks 怎樣算修好
 - 在 Betaflight「圖傳」頁或 OSD 選單換頻道後，眼鏡重新自動搜台（或手動切到同一個頻道），在新頻道看得到畫面；眼鏡不會自己跟著換，要重新搜台
-- 在 Betaflight「圖傳」頁可以選擇頻道與功率，眼鏡畫面跟著改變
+- 在 Betaflight「圖傳」頁改頻道或功率並儲存後，OSD 上的頻道／功率顯示跟著改變
 - 退出低功率模式後拿著飛機慢慢走遠，能清楚收到畫面的距離明顯比原本遠（實際距離依功率設定、天線與環境而異）。`vtx_low_power_disarm` 是 ON 或 UNTIL_FIRST_ARM 時，上鎖狀態走遠測試不準，先在「圖傳」頁看這個設定
 :::
 

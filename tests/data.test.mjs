@@ -641,6 +641,23 @@ describe('故障排除中心：跨文章交叉比對', async () => {
     const app = ['NO_GYRO', 'FAILSAFE', 'RXLOSS', 'BAD_RX_RECOVERY', 'BOXFAILSAFE', 'RUNAWAY_TAKEOFF', 'CRASH_DETECTED', 'THROTTLE', 'ANGLE', 'BOOT_GRACE_TIME', 'NOPREARM', 'LOAD', 'CALIBRATING', 'CLI', 'CMS_MENU', 'BST', 'MSP', 'PARALYZE', 'GPS', 'RESC', 'DSHOT_TELEM', 'REBOOT_REQUIRED', 'DSHOT_BITBANG', 'ACC_CALIBRATION', 'MOTOR_PROTOCOL', 'CRASHFLIP', 'ALTHOLD', 'POSHOLD', 'AUTOPILOT', 'ARM_SWITCH'];
     for (const n of app) assert.ok(js.includes(`'${n}'`), n);
   });
+  test('可修改的設定值不能寫成固定數字：「1.5 秒」一定帶「預設」或 failsafe_delay', () => {
+    for (const [slug, t] of all) for (const m of t.matchAll(/1\.5 秒/g)) {
+      const ctx = t.slice(Math.max(0, m.index - 40), m.index + 16);
+      assert.match(ctx, /預設|failsafe_delay|`15`/, `${slug}: …${ctx}…`);
+    }
+  });
+  test('電池壓差：全站不再要求「每次都是同一節」「反覆明顯落後」才停用', () => {
+    assert.deepEqual(grepAll(/每次都是同一節|反覆明顯落後/g), []);
+  });
+  test('疑似故障電池不能直接引導補電；接收機不能只換到另一個 5V 焊點', () => {
+    assert.deepEqual(grepAll(/整包電壓持續往下掉[^\n]*先用 Storage/g), []);
+    for (const [slug, t] of all) for (const m of t.matchAll(/另一個 5V 焊點/g)) assert.match(t.slice(m.index, m.index + 20), /通常沒有用/, slug);
+  });
+  test('摘要不能寫絕對結論，OSD 解鎖中不會出現 RXLOSS', () => {
+    for (const a of list) assert.ok(!/不亮是供電問題|燈號會直接告訴你/.test(a.summary), a.slug);
+    assert.deepEqual(grepAll(/OSD (要)?先出現 RXLOSS|依序出現 RXLOSS 與 !FS!|OSD 先顯示 RXLOSS/g), []);
+  });
   test('「怎樣算修好」不能要求和 Motor Stop／限流保護器說明矛盾的結果', () => {
     for (const a of list) {
       const checks = (a._body.match(/:::checks[\s\S]*?\n:::/) || [''])[0];

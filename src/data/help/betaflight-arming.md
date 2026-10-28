@@ -86,8 +86,8 @@ sources:
 
 :::checks 怎樣算修好
 - 連著 App 時，「設定」頁的 Arming Disable Flags 只剩 MSP（進過命令列的話再加 CLI），其他原因都消失
-- 在 App 按 Disconnect 再拔 USB；剛進過命令列、或沒按 Disconnect 就拔線的話，先拔掉電池重新上電
-- 拆槳狀態下撥解鎖開關：眼鏡畫面的計時開始跳，或馬達開始怠速轉動
+- 在 App 按 Disconnect 再拔 USB。沒按 Disconnect 就拔線，或用 `exit noreboot` 離開命令列，而飛控還接著電池時，先拔掉電池重新上電（用 `exit` 或 `save` 離開命令列會自動重新開機，不用再拔電池）
+- 拆槳狀態下撥解鎖開關：OSD 上的解鎖時間計時器（Betaflight 預設的計時器 2，只在解鎖時才會跳；計時器 1 預設是開機時間，一上電就在跳，不能拿來判斷）開始跳，或馬達開始怠速轉動（開了 Motor Stop 時低油門不轉是正常的）
 - 撥回「關」時，馬達立刻停止
 :::
 

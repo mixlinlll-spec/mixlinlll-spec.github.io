@@ -66,7 +66,7 @@ sources:
 1. **不要反覆插拔或重刷**：先停下來，照下面的方式恢復。
 2. **進入刷機模式**：按住飛控上的 BOOT 按鍵再插 USB，電腦出現 STM32 BOOTLOADER 代表還能恢復。電腦完全沒反應時，先看 [[fc-usb-connect]]。
 3. **重新刷入原本型號的韌體**：在韌體更新頁選擇和飛控完全相同的型號再刷。不確定型號就停止，請看文末「還是不行？」。
-4. **不是飛控的裝置**：ELRS 接收機能進 Wi-Fi 更新頁時，用原本型號的韌體檔恢復；DJI 裝置接回官方 DJI Assistant 2，照畫面重新更新。
+4. **不是飛控的裝置**：ELRS 接收機能進 Wi-Fi 更新頁時，用原本型號的韌體檔恢復；DJI 裝置接回官方 DJI Assistant 2，照畫面重新更新；天空端燈完全不亮時不要反覆重刷，看 [[dji-pairing-activation]] 的「什麼時候停手」。
 :::
 
 :::case C 刷完後找不到陀螺儀
@@ -76,7 +76,7 @@ sources:
 :::
 
 :::advanced 進階：Full chip erase 與刷機模式
-Full chip erase（完整清除晶片）會把設定區清成新版本的預設值。Betaflight App 2026.6 要先在左下角齒輪「Options」打開 Enable Expert Mode，韌體燒寫頁（Firmware Flasher）才會出現 Advanced 區塊裡的 Full chip erase 開關，而且預設是關的，刷機前請手動打開。官方文件建議只有在確定設定的資料結構沒有變過時才關閉。
+Full chip erase（完整清除晶片）會把設定區清成新版本的預設值。Betaflight App 2026.6 要先在左下角齒輪「Options」打開 Enable Expert Mode，韌體燒寫頁（Firmware Flasher）才會出現 Advanced 區塊裡的 Full chip erase 開關。App 每次啟動時會自動把它設回開啟，刷機前確認它是開著的即可（以 App 2026.6.2 原始碼為準）。官方文件建議只有在確定設定的資料結構沒有變過時才關閉。
 
 進入刷機模式也可以在「設定」頁按 Activate Boot Loader / DFU，或在命令列輸入 `bl`。接收機、GPS 等周邊有時會干擾進入刷機模式。
 :::

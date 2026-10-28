@@ -8,7 +8,7 @@ level: beginner
 applies: ExpressLRS 3.x 接收機＋Betaflight（4.4 以後各版本）
 needs: 電腦、可傳資料的 USB 線、遙控器
 verified: 2026-10-28
-summary: 先看接收機的燈怎麼閃。燈號會直接告訴你卡在哪一關：沒供電、還沒連上、在 Wi-Fi 模式、模型不符，還是已經連上但飛控沒收到。
+summary: 先看接收機的燈怎麼閃。燈號可以縮小範圍：沒供電（或停在刷機模式）、還沒連上、在 Wi-Fi 模式、模型不符，還是已經連上但飛控沒收到。
 keywords:
   - 對頻
   - 對不到頻
@@ -68,7 +68,7 @@ sources:
 
 :::case A 燈不亮或很暗
 1. **拔電後看接線**：接收機的正負極有沒有接反、焊點有沒有鬆脫或碰在一起。
-2. **看供電電壓**：對照接收機標示的輸入電壓，和飛控供電焊點是不是同一個電壓（多數接收機用 5V）。
+2. **看供電電壓**：對照接收機標示的輸入電壓，和飛控供電焊點是不是同一個電壓（多數接收機接飛控的 5V 焊點，有些飛控標 4.5V，依飛控接線圖；不要接電池電壓或 9V）。
 3. **注意異常**：不要用手去摸接收機或飛控判斷溫度。聞到燒焦味、看到冒煙，或接收機上的元件變色，能安全拔掉電池就拔掉，然後遠離觀察，看文末「還是不行？」。
 :::
 
@@ -76,7 +76,7 @@ sources:
 1. **頻段要一樣**：2.4G 的遙控器只能連 2.4G 的接收機，900M 只能連 900M。
 2. **大版本要一樣**：遙控器發射端與接收機的版本，第一個數字要相同，例如 3.x 配 3.x、4.x 配 4.x；2.x 配 3.x 無法連線。飛控內建的接收機，要看那一版 Betaflight 支援哪一版 ELRS（例如 2026.6 內建接收機用 ELRS 3.x，不能配 4.x 的發射端）。
 3. **綁定密語要一樣**：兩邊設定的綁定密語（Binding Phrase）要是同一串文字。
-4. **沒設密語就手動對頻**：遙控器先關機，接收機在約 2 秒內「插電、拔電」連續三次，燈變成連閃兩下後，在遙控器的 ExpressLRS 腳本按 [BIND]。飛控內建的接收機，可以在 Betaflight「接收機」頁按 Bind Receiver（對頻）。
+4. **沒設密語就手動對頻**：遙控器先關機，接收機快速「插電、拔電、插電、拔電、插電」（每次通電不到 1 秒，最後一次插電後保持通電），燈變成連閃兩下後，在遙控器的 ExpressLRS 腳本按 [BIND]。飛控內建的接收機，可以在 Betaflight「接收機」頁按 Bind Receiver（對頻）。
 :::
 
 :::case C 很快地閃（Wi-Fi 模式）
@@ -112,15 +112,15 @@ sources:
 :::
 
 :::advanced 進階：命令列檢查
-在命令列輸入 `get serialrx`，ExpressLRS 建議 `serialrx_inverted` 與 `serialrx_halfduplex` 都是 `off`。需要修改時輸入 `set serialrx_inverted = off`、`set serialrx_halfduplex = off`，最後輸入 `save`。
+外接 ELRS 接收機輸出 CRSF 時：在命令列輸入 `get serialrx`，ExpressLRS 建議 `serialrx_inverted` 與 `serialrx_halfduplex` 都是 `off`。需要修改時輸入 `set serialrx_inverted = off`、`set serialrx_halfduplex = off`，最後輸入 `save`。
 :::
 
 :::checks 怎樣算修好
 - ELRS：接收機燈恆亮，遙控器收得到遙測
 - Betaflight「接收機」頁：每支搖桿都動到對應的通道；搖桿放中間時，方向通道在 1500 附近；油門拉到底約 1000（要低於 1050 才能解鎖，看 [[betaflight-arming]]），推到頂約 2000
-- 拆槳狀態下關掉遙控器，飛控有進入失聯保護：App 連著時，「設定」頁的 Arming Disable Flags 出現 RXLOSS；或拔掉 USB、戴眼鏡看 OSD 出現 RXLOSS
+- 飛控偵測得到失聯：App 連著、拆槳狀態下關掉遙控器，「設定」頁的 Arming Disable Flags 出現 RXLOSS（這只代表飛控知道沒收到訊號）；失聯保護實際會怎麼動作，照 [[failsafe-check]] 在解鎖狀態下實測
 :::
 
 :::stop 什麼時候停手
-接收機或飛控插電後變燙、冒煙，或燈號是「中等速度一直閃」：立刻拔掉電池，不要反覆重刷韌體。
+聞到焦味、冒煙、元件變色，或燈號是「中等速度一直閃」：不要用手碰，能安全拔掉電池就拔掉，然後遠離觀察；不要反覆重刷韌體。
 :::

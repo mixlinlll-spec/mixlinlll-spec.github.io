@@ -29,6 +29,7 @@ sources:
   - Betaflight 官方文件：OSD 頁（Video Format 的 HD 選項） | https://betaflight.com/docs/wiki/app/osd-tab
   - Oscar Liang：DJI O4 Pro 設定（OSD 預設集、接線） | https://oscarliang.com/how-to-setup-dji-o4-pro/
   - Oscar Liang：DJI O4 Lite 設定（OSD 預設集） | https://oscarliang.com/how-to-setup-dji-o4-lite/
+  - Betaflight 官方原始碼（OSD 文字送往同時開了 MSP 與 VTX (MSP + Displayport) 的 UART） | https://github.com/betaflight/betaflight/blob/4.5-maintenance/src/main/config/config.c
 ---
 :::safety 開始前
 拆下螺旋槳。DJI 和類比的 OSD 設定方式不同：類比是飛控上的 OSD 晶片把文字疊在影像上，DJI 是飛控把文字資料傳給圖傳，不要照類比的教學改設定。
@@ -37,7 +38,7 @@ sources:
 ## 建議檢查順序
 
 1. **看接線**：天空端 6 針排線裡的 RX、TX 兩條線，要接到飛控同一組 UART（例如 UART1），而且交叉接：天空端的 TX 接飛控 RX，天空端的 RX 接飛控 TX。
-2. **看「連接埠」頁**：找到天空端 TX／RX 實際接的那一組 UART（例如 UART1），把那一列的 Configuration/MSP 開關打開；同一列的 Peripherals（周邊設備）可以選 VTX (MSP + Displayport)（Betaflight App 2026.6 的選項名稱，舊版名稱可能略有不同）。其他 UART 不要開 MSP 以外的重複功能。改完按 Save and Reboot。欄位位置可對照 [[receiver-no-control]] 的連接埠截圖。
+2. **看「連接埠」頁**：找到天空端 TX／RX 實際接的那一組 UART（例如 UART1），把那一列的 Configuration/MSP 開關打開；同一列的 Peripherals（周邊設備）要選 VTX (MSP + Displayport)（Betaflight App 2026.6 的名稱，舊版可能略有不同）；沒選的話，飛控不會把文字送到這組 UART（以 4.5 原始碼為準，飛控只把文字送到第一組同時開了 MSP 和這個周邊設備的 UART）。其他 UART 不要再選 VTX (MSP + Displayport)。改完按 Save and Reboot。欄位位置可對照 [[receiver-no-control]] 的連接埠截圖。
 3. **套用 OSD 預設集（選用）**：Betaflight 的「預設集」（Presets）頁搜尋「osd for dji」，依畫面上的選項，選擇 DJI 天空端接線的那一組 UART，並啟用 HD 畫面格式，套用後儲存。預設集的名稱與內容會隨版本更新，找不到時不用套用，照第 2、4 步手動設定即可。
 4. **OSD 頁選 HD**：「OSD」頁的 Video Format（影像格式）選 HD。這個選項就是給透過 MSP Displayport 接收文字的數位圖傳用的。
 5. **勾選要顯示的項目**：「OSD」頁勾選電壓、飛行時間等項目，拖到想要的位置。
@@ -48,7 +49,7 @@ sources:
 | 看到什麼 | 代表什麼 | 下一步 |
 | --- | --- | --- |
 | 完全沒有任何文字 | 圖傳沒收到飛控的文字資料 | 回到第 1、2 步，查接線與「連接埠」頁的 UART 是否一致 |
-| 只有 DJI 自己的文字，沒有 Betaflight 的電壓等項目 | 飛控那端沒有輸出 OSD | 第 3、4 步，預設集與 HD 格式 |
+| 只有 DJI 自己的文字，沒有 Betaflight 的電壓等項目 | 飛控那端沒有輸出 OSD | 第 2、3、4 步：周邊設備選 VTX (MSP + Displayport)、預設集、HD 格式 |
 | 有文字，但被切掉、太大或位置跑掉 | 文字格子與眼鏡顯示範圍不一致 | 先把電壓、飛行模式移到畫面中央，看能否完整顯示，再逐一往邊緣調整 |
 | 只有少數字元異常或偶爾閃掉 | 線材接觸或版本相容問題 | 把飛控與眼鏡、天空端都更新到相容版本，換一條正常的排線比較 |
 
