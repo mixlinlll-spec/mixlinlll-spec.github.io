@@ -49,7 +49,7 @@
     [[null, null, null, 'AUTOPILOT_SW'], '「自動駕駛」模式開關是開著的', '把自動駕駛開關撥回「關」再解鎖。', 'ok', null, ['AUTOPILOT']],
     [all('RUNAWAY'), '上次解鎖時偵測到「失控衝飛」', '常見原因是馬達順序、旋轉方向或槳裝錯。很危險，先不要再試。', 'stop', null, ['RUNAWAY_TAKEOFF']],
     [all('CRASH'), '觸發了墜機保護', '先停手，不要再解鎖；拔掉電池後看文末「還是不行？」。', 'stop', null, ['CRASH_DETECTED']],
-    [all('NOGYRO'), '飛控偵測不到陀螺儀', '剛刷過韌體的話，照更新韌體文章核對型號；沒有刷過，可能是硬體損壞，請看文末「還是不行？」。', 'stop', ['/help/firmware-update/', '刷完找不到陀螺儀'], ['NO_GYRO']],
+    [all('NOGYRO'), '飛控偵測不到陀螺儀', '可能是韌體選錯或飛控損壞。不要自己反覆重刷，請看文末「還是不行？」聯絡 EWP。', 'stop', null, ['NO_GYRO']],
     [['RPMFILTER', 'DSHOT_TELEM', 'DSHOT_TELEM', 'DSHOT_TELEM'], '4.4：轉速濾波開著，但電調沒有回傳轉速；4.5 起：開了雙向 DShot，但電調沒有回傳轉速', '牽涉電調韌體與通訊設定，不屬於新手自行處理的範圍。', 'adv'],
     [all('MOTOR_PROTO'), '沒有設定電調通訊協定', '牽涉電調設定，不屬於新手自行處理的範圍。', 'adv', null, ['MOTOR_PROTOCOL']],
     [all('CMS'), '用搖桿進了 OSD 選單（CMS），還沒離開', '在 OSD 選單選 EXIT（或 SAVE&EXIT）離開。', 'ok', null, ['CMS_MENU']],

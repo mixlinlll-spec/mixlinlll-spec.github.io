@@ -426,7 +426,7 @@ console.log('17. 故障排除中心：搜尋、解鎖原因查詢、類比三選
       }
       await pg.context().close();
     }
-    ok(slugs.length >= 30 && bad.length === 0, `全部 ${slugs.length} 篇文章在 320／390px 不會左右溢出${bad.length ? '：' + bad.slice(0, 4).join('、') : ''}`);
+    ok(slugs.length >= 25 && bad.length === 0, `全部 ${slugs.length} 篇文章在 320／390px 不會左右溢出${bad.length ? '：' + bad.slice(0, 4).join('、') : ''}`);
   }
   await page.goto(PUB + '/help/betaflight-arming/', { waitUntil: 'load' });
   {
@@ -455,24 +455,19 @@ console.log('17. 故障排除中心：搜尋、解鎖原因查詢、類比三選
   for (const b of await page.$$('[data-checks] input')) await b.check();
   ok(await page.isVisible('[data-done]'), '怎樣算修好：全部打勾後顯示完成');
   await page.goto(PUB + '/help/edgetx-issues/', { waitUntil: 'load' });
-  await page.click('[data-pick="B"]');
-  const visChecks = page.locator('[data-checks] li:visible input');
-  ok(await visChecks.count() === 1 && await page.locator('[data-checks] li[data-for="A"]').isHidden(), '怎樣算修好：選了 B 狀況，只顯示 B 的項目');
-  await visChecks.first().check();
-  ok(await page.isVisible('[data-done]'), '怎樣算修好：只勾自己遇到的狀況就算完成，不必三種都勾');
+  ok(await page.locator('.help-case').count() === 0 && await page.locator('.pick').count() === 0, '簡易版：文章不再分 A／B／C 狀況');
+  for (const b of await page.$$('[data-checks] input')) await b.check();
+  ok(await page.isVisible('[data-done]'), '怎樣算修好：全部打勾後顯示完成');
   ok(!(await page.textContent('.help-more')).includes('需額外付費') && await page.locator('.help-more a[href="/services/repair/"]').count() === 1, '還是不行：只有送修檢測（檢測與報價），不另外標示付費');
+  ok((await page.textContent('.help-verify')).includes('尚未實機驗證'), '標題下標示尚未實機驗證');
 
-  await page.goto(PUB + '/help/analog-no-video/', { waitUntil: 'load' });
-  ok(await page.locator('.help-case:visible').count() === 3, '類比：一開始三種狀況都看得到');
-  await page.click('[data-pick="B"]');
-  ok(await page.locator('.help-case:visible').count() === 1 && await page.isVisible('#case-b'), '類比：選 B 只顯示 B');
-  await page.click('.help-showall');
-  ok(await page.locator('.help-case:visible').count() === 3, '類比：可以再顯示全部');
-
-  await page.goto(PUB + '/help/receiver-no-control/', { waitUntil: 'load' });
-  ok(await page.locator('.pick').count() === 5, '對頻：依燈號的五個分支選單');
-  await page.click('[data-pick="E"]');
-  ok(await page.locator('.help-case:visible').count() === 1 && await page.isVisible('#case-e'), '對頻：選 E 只顯示燈恆亮那一段');
+  // 移出 Help 的主題：舊網址只留簡短說明，導向技術服務，不在索引與 sitemap
+  await page.goto(PUB + '/help/gps-rescue/', { waitUntil: 'load' });
+  ok(await page.locator('meta[name="robots"][content*="noindex"]').count() === 1 && await page.locator('.help-retired a[href^="/services/"]').count() >= 1, '移出的主題：簡短說明頁導向 EWP 技術服務，且不給搜尋引擎收錄');
+  await page.goto(PUB + '/help/', { waitUntil: 'load' });
+  ok(await page.locator('[data-help-all] a[href="/help/gps-rescue/"]').count() === 0, '移出的主題不出現在全部文章');
+  const sm = await (await page.request.get(PUB + '/sitemap.xml')).text();
+  ok(!sm.includes('/help/gps-rescue/') && !sm.includes('/help/power-wiring/'), '移出的主題不在 sitemap');
 
   await page.goto(PUB + '/fpv-help.html#item-10', { waitUntil: 'load' });
   await page.waitForURL('**/help/betaflight-arming/', { timeout: 5000 }).catch(() => {});

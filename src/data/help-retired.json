@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "gps-rescue",
+    "title": "GPS 救援（GPS Rescue）設定與測試",
+    "reason": "GPS 救援的設定與驗證必須在空中實際飛行測試，失敗時飛機可能失控或墜落，不適合一般玩家自行排查。",
+    "service": "tuning",
+    "related": [
+      "gps-no-fix",
+      "failsafe-check"
+    ]
+  },
+  {
+    "slug": "power-wiring",
+    "title": "供電與接線問題",
+    "reason": "供電問題通常需要電表量測、判斷穩壓電路或重新焊接，接錯可能燒毀飛控與圖傳。",
+    "service": "repair",
+    "related": [
+      "first-power-up"
+    ]
+  },
+  {
+    "slug": "dji-o4-power-wiring",
+    "title": "DJI O4 供電與接線",
+    "reason": "DJI 天空端的供電與接線需要確認電壓規格、量測焊點，接錯可能燒毀天空端。",
+    "service": "upgrades",
+    "related": [
+      "dji-no-video",
+      "dji-no-osd"
+    ]
+  },
+  {
+    "slug": "elrs-reboot-on-battery",
+    "title": "ELRS 接收機插上電池就重啟或掉線",
+    "reason": "這通常是飛控供電（穩壓）不足或接線問題，需要依飛控的供電設計量測與改線。",
+    "service": "repair",
+    "related": [
+      "receiver-no-control"
+    ]
+  },
+  {
+    "slug": "elrs-switch-modes",
+    "title": "ELRS 開關模式（兩段、三段、連續）設定",
+    "reason": "開關模式屬於進階設定，不是故障。設定錯誤可能讓解鎖或飛行模式開關失效。",
+    "service": "tuning",
+    "related": [
+      "receiver-no-control",
+      "edgetx-issues"
+    ]
+  },
+  {
+    "slug": "firmware-update",
+    "title": "更新飛控韌體",
+    "reason": "刷錯韌體或中途中斷可能讓飛控無法開機，需要依飛控型號選對韌體並重新設定。",
+    "service": "tuning",
+    "related": [
+      "fc-usb-connect"
+    ]
+  },
+  {
+    "slug": "conformal-coating",
+    "title": "防水漆（奈米鍍層）",
+    "reason": "防水處理會影響之後的維修與散熱，需要依板子與零件判斷，屬於服務項目而不是故障排除。",
+    "service": "repair",
+    "related": [
+      "crash-check"
+    ]
+  }
+]

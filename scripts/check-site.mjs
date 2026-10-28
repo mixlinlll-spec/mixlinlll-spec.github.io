@@ -6,6 +6,7 @@
 // 用法：node scripts/check-site.mjs [輸出目錄，預設 dist] [--preview]
 import fs from 'node:fs';
 import path from 'node:path';
+const RETIRED_HELP = JSON.parse(fs.readFileSync(new URL('../src/data/help-retired.json', import.meta.url), 'utf8')).map(r => r.slug);
 import { ROOT, loadAll, STATIC_WHITELIST } from './lib/data.mjs';
 
 const argDir = process.argv.slice(2).find(a => !a.startsWith('--'));
@@ -65,7 +66,9 @@ for (const f of htmlFiles) {
   }
   if (/NT\$\s*0(?![\d,])/.test(html)) errors.push(`${rel}: 出現 NT$ 0`);
   // 導向頁（舊網址轉到新位置）本來就是 noindex
-  if (!isPreview && /noindex/.test(html) && !/http-equiv="refresh"/.test(html) && !/^(404\.html|legacy\/|fpv-help\.html$|privacy\/|terms\/|shipping-returns\/)/.test(rel.split(path.sep).join('/')))
+  // 移出故障排除中心的主題（src/data/help-retired.json）：舊網址只留簡短說明，刻意 noindex
+  const retiredHelp = RETIRED_HELP.some(r => rel.split(path.sep).join('/') === `help/${r}/index.html`);
+  if (!isPreview && !retiredHelp && /noindex/.test(html) && !/http-equiv="refresh"/.test(html) && !/^(404\.html|legacy\/|fpv-help\.html$|privacy\/|terms\/|shipping-returns\/)/.test(rel.split(path.sep).join('/')))
     errors.push(`${rel}: 正式版頁面不應為 noindex`);
 }
 

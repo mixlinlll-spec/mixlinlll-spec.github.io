@@ -417,19 +417,11 @@ describe('故障排除中心（src/data/help/*.md）', async () => {
     for (const f of ['betaflight-arming/bf-setup-arming-flags', 'receiver-no-control/bf-receiver', 'receiver-no-control/bf-ports', 'motors-after-arming/bf-motors'])
       assert.ok(fs.existsSync(path.join(ROOT, `assets/img/help/${f}-m.webp`)), f);
   });
-  test('實際軟體截圖都有放進文章、圖說註明版本與虛擬模式', () => {
-    for (const [slug, n] of [['betaflight-arming', 1], ['receiver-no-control', 2], ['motors-after-arming', 1]]) {
-      const imgs = list.find(a => a.slug === slug).images;
-      assert.equal(imgs.length, n, slug);
-      for (const i of imgs) assert.match(i.alt, /2026\.6\.2.*虛擬模式/, slug);
-    }
-  });
   test('兩篇示範文章已公開，並對應舊知識庫題號', () => {
     const arm = list.find(a => a.slug === 'betaflight-arming'), ana = list.find(a => a.slug === 'analog-no-video');
     assert.ok(arm?.published && ana?.published);
     assert.deepEqual(arm.legacy_items, [10]);
     assert.deepEqual(ana.legacy_items, [8]);
-    assert.deepEqual(ana.cases, ['A', 'B', 'C']);
   });
   test('跨文章連結都有效、每篇都有 keywords、核對日期不在未來', async () => {
     const { today } = await import('../scripts/lib/help.mjs');
@@ -667,52 +659,59 @@ describe('故障排除中心：跨文章交叉比對', async () => {
   });
 });
 
-describe('第三輪：失聯判定、空中測試、版本標示、電池門檻', async () => {
+describe('簡易故障排除中心：一般玩家幾分鐘內看得懂（2026-10-29 改版）', async () => {
   const { loadHelp, validateHelp } = await import('../scripts/lib/help.mjs');
   const list = loadHelp().filter(a => a.published);
-  const fs1 = list.find(a => a.slug === 'failsafe-check');
-  const stop = s => (s.match(/:::stop[\s\S]*?\n:::/) || [''])[0];
-  test('失聯判定：停手條件不能只用 !FS! 判斷，要寫明 GPS 救援顯示 RESC 是正常', () => {
+  const retired = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/help-retired.json'), 'utf8'));
+  const cjk = b => (b.replace(/:::\w+|\{\{[^}]*\}\}|\[\[[^\]]*\]\]/g, '').match(/[一-鿿]/g) || []).length;
+  const section = (b, h) => (('\n' + b).split(/\n## /).find(x => x.startsWith(h)) || '');
+  test('每篇 500 字以內（中文字），步驟最多 5 步，原因最多 3 個', () => {
     for (const a of list) {
-      const st = stop(a._body);
-      if (st.includes('!FS!')) assert.ok(st.includes('RESC'), `${a.slug}：停手條件提到 !FS! 時必須同時說明 GPS 救援顯示 RESC`);
-    }
-    const ck = (fs1._body.match(/:::checks[\s\S]*?\n:::/) || [''])[0];
-    assert.ok(ck.includes('RESC') && ck.includes('!FS!'));
-    // 全文：每一處 !FS! 附近都要提到 RESC（除了關鍵字清單）
-    for (const a of list) for (const m of a._body.matchAll(/!FS!/g)) {
-      const w = a._body.slice(Math.max(0, m.index - 120), m.index + 160);
-      assert.ok(/RESC|直接停機|降落/.test(w), `${a.slug}：!FS! 附近要說明是哪一種第二階段`);
+      assert.ok(cjk(a._body) <= 500, `${a.slug}：${cjk(a._body)} 字`);
+      const steps = section(a._body, '檢查步驟').split(/\n:::/)[0].match(/^\d+\. /gm) || [];
+      assert.ok(steps.length >= 3 && steps.length <= 5, `${a.slug}：檢查步驟 ${steps.length} 步`);
+      const why = section(a._body, '常見');
+      if (why) { const n = (why.split(/\n:::|\n\n##/)[0].match(/^- /gm) || []).length; assert.ok(n >= 2 && n <= 3, `${a.slug}：常見原因 ${n} 個`); }
+      else assert.equal(a.slug, 'battery-types-voltage');
     }
   });
-  test('空中失聯測試只能出現在標示為專業驗證的段落', () => {
-    assert.ok(/一般使用者的標準流程就是下面的拆槳地面測試/.test(fs1._body));
-    assert.ok(/:::advanced 專業驗證：空中測試（新手不建議）/.test(fs1._body));
-    const outside = fs1._body.replace(/:::advanced 專業驗證[\s\S]*?\n:::/, '');
-    assert.ok(!/在空中使用|空中只在|用開關做飛行測試/.test(outside), '專業驗證段落以外不能引導空中測試');
-    assert.ok(/新手不建議/.test(list.find(a => a.slug === 'gps-rescue')._body));
+  test('不放進階內容：沒有分情況長篇、進階段落、命令列指令、原始碼、Betaflight 版本差異', () => {
+    for (const a of list) {
+      assert.ok(!/:::(case|advanced)/.test(a._body), a.slug);
+      assert.ok(!/`(set|get|diff|save|bl)\b|命令列|CLI/.test(a._body), `${a.slug}：不要放命令列指令`);
+      assert.ok(!/\.c\b|原始碼/.test(a._body), `${a.slug}：不要放原始碼說明`);
+      assert.ok(!/\b(4\.[345]|2025\.12|2026\.6)\b/.test(a._body), `${a.slug}：不要寫 Betaflight 版本差異`);
+      assert.ok(a.checks >= 2 && a.hasStop, `${a.slug}：要有怎樣算修好與停手條件`);
+    }
+  });
+  test('移出 Help 的主題：不再是文章、舊網址有簡短說明頁，其他文章不再連過去', () => {
+    assert.equal(list.length + retired.length, 35);
+    for (const r of retired) {
+      assert.ok(!fs.existsSync(path.join(ROOT, `src/data/help/${r.slug}.md`)), r.slug);
+      assert.ok(fs.existsSync(path.join(ROOT, `docs/admin/help-archive/${r.slug}.md`)), `${r.slug}：原始技術內容保留在內部資料`);
+      for (const a of list) assert.ok(!a.links.includes(r.slug), `${a.slug} 還連到已移出的 ${r.slug}`);
+      for (const s of r.related) assert.ok(list.some(a => a.slug === s), `${r.slug} 的相關文章 ${s} 不存在`);
+    }
+  });
+  test('安全：失聯保護只教拆槳地面測試；電池壓差標示為保守門檻', () => {
+    const fsBody = list.find(a => a.slug === 'failsafe-check')._body;
+    assert.ok(/拆下全部螺旋槳/.test(fsBody) && /不需要也不建議在空中測試/.test(fsBody));
+    assert.ok(/GPS 返航或降落，結果會不同/.test(fsBody));
+    const b = list.find(a => a.slug === 'battery-cell-imbalance')._body;
+    assert.ok(/比較保守的參考，不是通用的故障標準/.test(b) && /超過不代表一定壞/.test(b));
+    for (const a of list) assert.ok(!/0\.(05|1) ?V（參考值/.test(a._body), a.slug);
+    for (const s of ['first-power-up', 'motors-after-arming', 'betaflight-arming']) assert.ok(/拆/.test(list.find(a => a.slug === s)._body), `${s}：要先拆槳`);
   });
   test('每篇分開標示宣稱適用、已核對、實機驗證', () => {
     for (const a of list) {
       assert.ok(a.applies && a.checked && a.hw_verified, a.slug);
       assert.equal(a.hw_verified, '尚未實機驗證', `${a.slug}：目前沒有任何實機紀錄`);
-      if (/Betaflight/.test(a.applies)) assert.ok(/原始碼|官方文件/.test(a.checked), a.slug);
     }
     // CI 跑單元測試時還沒建置 dist，所以檢查頁面模板
-    const html = fs.readFileSync(path.join(ROOT, 'scripts/build.mjs'), 'utf8').replace(/\$\{esc\(a\.hw_verified\)\}/g, '尚未實機驗證');
-    assert.ok(/<dt>宣稱適用<\/dt>[\s\S]*<dt>已核對<\/dt>[\s\S]*<dt>實機驗證<\/dt><dd>尚未實機驗證<\/dd>/.test(html));
-    assert.ok(/class="help-verify">尚未實機驗證。標示的版本是撰寫依據，不代表每個版本都測過/.test(html));
-    const bad = validateHelp([{ ...fs1, hw_verified: '已驗證' }]);
+    const html = fs.readFileSync(path.join(ROOT, 'scripts/build.mjs'), 'utf8');
+    assert.ok(/<dt>宣稱適用<\/dt>[\s\S]*<dt>已核對<\/dt>[\s\S]*<dt>實機驗證<\/dt>/.test(html));
+    assert.ok(/標示的版本是撰寫依據，不代表每個版本都測過/.test(html));
+    const bad = validateHelp([{ ...list[0], hw_verified: '已驗證' }]);
     assert.ok(bad.some(e => e.includes('hw_verified')));
-  });
-  test('電池壓差 0.05V／0.1V 一律標示為保守門檻，不能當成通用故障標準', () => {
-    for (const a of list) for (const m of a._body.matchAll(/0\.(05|1) ?V/g)) {
-      const w = a._body.slice(m.index, m.index + 60);
-      if (!/落差|差距|低超過|比其他節/.test(a._body.slice(Math.max(0, m.index - 30), m.index + 10))) continue;
-      assert.ok(!/0\.(05|1) ?V（參考值/.test(w), `${a.slug}：0.${m[1]}V 不能只寫「參考值」`);
-    }
-    const b = list.find(a => a.slug === 'battery-cell-imbalance')._body;
-    assert.ok(/不是通用的電池故障標準/.test(b) && /不代表電池一定壞了/.test(b));
-    assert.ok(!/很可能已經變弱/.test(b));
   });
 });

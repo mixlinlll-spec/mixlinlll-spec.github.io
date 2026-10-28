@@ -60,6 +60,8 @@ for (const [k, key] of [['line', 'qr_image'], ['line_community', 'qr_image'], ['
 const journal = loadJournal();
 errors.push(...validateJournal(journal));
 const helpArticles = loadHelp();
+// 移出簡易故障排除中心的主題：舊網址保留一頁簡短說明，導向 EWP 技術服務（不列入索引與 sitemap）
+const helpRetired = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/help-retired.json'), 'utf8'));
 errors.push(...validateHelp(helpArticles));
 if (warnings.length) console.warn(`⚠ 警告 ${warnings.length} 筆\n  ` + warnings.slice(0, 10).join('\n  ') + (warnings.length > 10 ? '\n  …' : ''));
 if (errors.length) { console.error(`✖ 資料驗證失敗 ${errors.length} 筆：\n  ` + errors.join('\n  ')); process.exit(1); }
@@ -731,6 +733,23 @@ ${a.html}
     const ld = { '@context': 'https://schema.org', '@type': 'TechArticle', headline: a.title, description: a.summary,
       mainEntityOfPage: BASE + helpUrl(a), author: { '@type': 'Organization', name: '電翼動力 EWP' }, publisher: { '@type': 'Organization', name: '電翼動力 EWP' } };
     page(`help/${a.slug}/index.html`, { title: a.title, description: a.summary, path: helpUrl(a), active: 'help', noindex: !a.published, body, scripts: ['/assets/js/help.js'], bodyClass: 'help-page', jsonld: [breadcrumbsJsonLd(c, BASE), ld] });
+  }
+  for (const r of helpRetired) {
+    if (list.some(a => a.slug === r.slug)) continue;
+    const svc = services.find(s => s.id === r.service) || repair;
+    const rel = r.related.map(s => list.find(a => a.slug === s)).filter(Boolean);
+    const c = [{ name: '首頁', href: '/' }, { name: '故障排除中心', href: '/help/' }, { name: r.title }];
+    page(`help/${r.slug}/index.html`, { title: `${r.title}｜交給 EWP 技術服務`, description: r.reason, path: `/help/${r.slug}/`, active: 'help', noindex: true, bodyClass: 'help-page',
+      body: `<article class="wrap help-article help-retired">${breadcrumbs(c)}
+<header class="help-head"><h1>${esc(r.title)}</h1><p class="lead">這個主題已移出簡易故障排除中心。</p></header>
+<div class="help-main">
+<p>${esc(r.reason)}這類問題不建議一般玩家自行處理，請交給 EWP 檢查。</p>
+<aside class="help-box help-stop" role="note"><p class="help-box-t">先停手</p><p>有冒煙、焦味、零件發燙或飛機行為異常時，先拔電池、不要飛。</p></aside>
+<a class="help-repair" href="${svc ? url.service(svc) : '/services/'}"><strong>${esc(svc ? svc.name : 'EWP 技術服務')}</strong><span>聯絡 EWP，由技師協助檢查與設定</span></a>
+${rel.length ? `<h2>可以先看</h2><ul>${rel.map(a => `<li><a href="${helpUrl(a)}">${esc(a.title)}</a></li>`).join('')}</ul>` : ''}
+</div>
+<p class="journal-back"><a href="/help/">← 回到故障排除中心</a></p>
+</article>` });
   }
 }
 
