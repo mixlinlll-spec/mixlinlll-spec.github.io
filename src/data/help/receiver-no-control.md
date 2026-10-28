@@ -101,11 +101,11 @@ sources:
    - 下拉選單裡沒有你要的協定（畫面會出現 Some Receiver Providers are not supported by current Build Configuration）：代表刷韌體時 Radio Protocol 沒選它，要重新刷韌體並在 Build Configuration 選對協定，看 [[firmware-update]]。
    - 改完按右下角 Save。
 
-![Betaflight App 2026.6.2「接收機」頁（左側選單 Receiver）：① 通道條，撥搖桿時要跟著動；② Receiver Mode 選 Serial (via UART)；Serial Receiver Provider：ELRS 選 CRSF，DJI 遙控器 3（經 O4 天空端 SBUS 線）選 SBUS。此圖是沒接飛控的虛擬模式，通道固定停在 1500，不是實機數值。](/assets/img/help/receiver-no-control/bf-receiver.webp)
+![Betaflight App 2026.6.2「接收機」頁（左側選單 Receiver）：① 通道條，撥搖桿時要跟著動；② Receiver Mode 選 Serial (via UART)；Serial Receiver Provider：ELRS 選 CRSF，DJI 遙控器 3（經 O4 天空端 SBUS 線）選 SBUS。此圖是沒接飛控的虛擬模式，所有通道固定停在 1500，不是實機數值，也不是要你照抄的設定；實機撥搖桿時，通道條要跟著動。](/assets/img/help/receiver-no-control/bf-receiver.webp)
 
 4. **看「連接埠」頁（下圖 ②）**：接收機接在哪一組 UART（下圖 ①），就在那一組打開 Serial Rx，其他組不要開。改完按右下角 Save and Reboot。
 
-![Betaflight App 2026.6.2「連接埠」頁（左側選單 Ports）：① 每一組 UART 一列；② Serial Rx 欄，只在接收機實際接的那一組打開。此圖是虛擬模式，全部都還沒打開。](/assets/img/help/receiver-no-control/bf-ports.webp)
+![Betaflight App 2026.6.2「連接埠」頁（左側選單 Ports）：① 每一組 UART 一列；② Serial Rx 欄，只在接收機實際接的那一組打開。此圖是虛擬模式，所有 UART 的 Serial Rx 都是關的（OFF），不是要你照抄的設定；實機要在接收機實際接的那一組打開。](/assets/img/help/receiver-no-control/bf-ports.webp)
 
 5. **看接線方向**（外接 ELRS）：接收機的 TX 要接飛控的 RX，接收機的 RX 接飛控的 TX（交叉接）。DJI 的 SBUS 只有一條線，接飛控的 RX。
 6. **通道會動但順序不對**：例如推油門卻動到別的通道，調整「接收機」頁的通道順序（Channel Map），讓每支搖桿動到對應的通道。

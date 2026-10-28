@@ -588,3 +588,64 @@ describe('Cloudflare Pages 預覽版（--preview）', () => {
     }
   });
 });
+
+// 跨文章事實一致性：同一件事在不同文章不能有不同說法（通過不代表人工驗收通過）
+describe('故障排除中心：跨文章交叉比對', async () => {
+  const { loadHelp } = await import('../scripts/lib/help.mjs');
+  const list = loadHelp().filter(a => a.published);
+  const body = a => a._body;
+  const all = list.map(a => [a.slug, body(a)]);
+  const grepAll = re => all.flatMap(([slug, t]) => [...t.matchAll(re)].map(m => [slug, m[0]]));
+
+  test('Betaflight 畫面上的英文要和 App 實際文字一致（大小寫、名稱）', () => {
+    const banned = [[/Serial RX/g, 'App 上是 Serial Rx'], [/Full Chip Erase/g, 'App 上是 Full chip erase'], [/MSP DisplayPort|MSP \+ DisplayPort/g, 'App 上是 Displayport'], [/`dfu`/g, 'CLI 指令是 bl，沒有 dfu']];
+    for (const [re, why] of banned) assert.deepEqual(grepAll(re), [], why);
+  });
+  test('失聯保護第一階段預設各版本都是 1.5 秒（4.4.0 起 failsafe_delay = 15）', () => {
+    for (const [slug, t] of all) for (const m of t.matchAll(/4\.4[^。|]{0,12}預設\s*1\s*秒/g)) assert.match(t.slice(Math.max(0, m.index - 60), m.index), /failsafe_recovery_delay/, `${slug}: 只有 failsafe_recovery_delay 在 4.4 是 1 秒`);
+    for (const [slug, t] of all) if (/failsafe_delay/.test(t)) assert.match(t, /1\.5 秒/, slug);
+  });
+  test('min_check 1050、small_angle 25、GPS 救援最小啟動距離 15 公尺，各篇一致', () => {
+    for (const [slug, m] of grepAll(/低於\s*(\d{4})（預設門檻）|要低於\s*(\d{4})\s*才能解鎖/g)) assert.match(m, /1050/, slug);
+    for (const [slug, m] of grepAll(/傾斜超過\s*\d+°/g)) assert.match(m, /25°/, slug);
+    for (const [slug, m] of grepAll(/min_start_dist`?，?預設\s*\d+\s*公尺|預設\s*\d+\s*公尺內/g)) assert.match(m, /15/, slug);
+  });
+  test('DJI O4 輸入電壓在每一篇都一樣（O4 3.7–13.2V、O4 Pro 7.4–26.4V）', () => {
+    for (const [slug, t] of all) {
+      for (const m of t.matchAll(/(\d+\.\d)[–～-](\d+\.\d)V/g)) {
+        const r = `${m[1]}–${m[2]}`;
+        if (/O4/.test(t.slice(Math.max(0, m.index - 60), m.index))) assert.ok(['3.7–13.2', '7.4–26.4'].includes(r), `${slug}: ${r}`);
+      }
+    }
+  });
+  test('電池電壓：LiPo 滿電 4.20V、LiHV 4.35V、一般 LiPo 存放 3.80V，各篇沒有其他說法', () => {
+    for (const [slug, m] of grepAll(/LiHV[^。|\n]{0,10}滿電[^0-9]{0,6}(\d\.\d+)V/g)) assert.match(m, /4\.35V/, slug);
+    for (const [slug, m] of grepAll(/一般 LiPo 約\s*(\d\.\d+)V／節/g)) assert.match(m, /3\.80V/, slug);
+  });
+  test('步驟寫「下圖 ①」時，後面的圖說一定有同一個編號', () => {
+    for (const [slug, t] of all) {
+      for (const m of t.matchAll(/下圖\s*([①②③④⑤])/g)) {
+        const next = t.slice(m.index).match(/!\[([^\]]*)\]/);
+        assert.ok(next && next[1].includes(m[1]), `${slug}: ${m[0]} 後面的圖說沒有 ${m[1]}`);
+      }
+    }
+  });
+  test('虛擬模式截圖的圖說要說明不是實機數值、不能照抄', () => {
+    for (const a of list) for (const img of a.images) if (/虛擬模式/.test(img.alt) && /bf-(receiver|ports)/.test(img.src)) assert.match(img.alt, /不是要你照抄/, img.src);
+  });
+  test('SBUS 的說明一定同時寫 Receiver Mode 選 Serial (via UART)', () => {
+    for (const [slug, t] of all) if (/Provider[^。]{0,10}選\s*SBUS|協定選\s*SBUS/.test(t)) assert.match(t, /Serial \(via UART\)/, slug);
+  });
+  test('解鎖查詢工具收錄 App 2026.6.2「設定」頁顯示的所有名稱（SetupTab.vue）', () => {
+    const js = fs.readFileSync(path.join(ROOT, 'assets/js/help.js'), 'utf8');
+    const app = ['NO_GYRO', 'FAILSAFE', 'RXLOSS', 'BAD_RX_RECOVERY', 'BOXFAILSAFE', 'RUNAWAY_TAKEOFF', 'CRASH_DETECTED', 'THROTTLE', 'ANGLE', 'BOOT_GRACE_TIME', 'NOPREARM', 'LOAD', 'CALIBRATING', 'CLI', 'CMS_MENU', 'BST', 'MSP', 'PARALYZE', 'GPS', 'RESC', 'DSHOT_TELEM', 'REBOOT_REQUIRED', 'DSHOT_BITBANG', 'ACC_CALIBRATION', 'MOTOR_PROTOCOL', 'CRASHFLIP', 'ALTHOLD', 'POSHOLD', 'AUTOPILOT', 'ARM_SWITCH'];
+    for (const n of app) assert.ok(js.includes(`'${n}'`), n);
+  });
+  test('「怎樣算修好」不能要求和 Motor Stop／限流保護器說明矛盾的結果', () => {
+    for (const a of list) {
+      const checks = (a._body.match(/:::checks[\s\S]*?\n:::/) || [''])[0];
+      assert.ok(!/馬達以相同的低速轉動/.test(checks), `${a.slug}: Motor Stop 時低油門不轉是正常的`);
+      if (/限流保護器上電/.test(checks)) assert.match(checks, /數位圖傳|燈沒有一直亮/, a.slug);
+    }
+  });
+});
