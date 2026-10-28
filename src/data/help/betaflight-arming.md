@@ -7,7 +7,7 @@ category: 飛控設定
 level: beginner
 applies: Betaflight 4.4、4.5、2025.12、2026.6
 needs: 電腦、可傳資料的 USB 線
-verified: 2026-10-27
+verified: 2026-10-28
 summary: 飛控覺得「現在起飛不安全」時會拒絕解鎖，而且會告訴你原因。照著原因代碼逐一處理，大多數情況不用拆機。
 keywords:
   - 解不了鎖
@@ -36,6 +36,8 @@ sources:
   - Betaflight 官方原始碼（命令列 exit、status 與 CLI 原因） | https://github.com/betaflight/betaflight/blob/4.5-maintenance/src/main/cli/cli.c
   - Betaflight App 2026.6.2 原始碼（中斷連線時解除 MSP 禁止） | https://github.com/betaflight/betaflight-configurator/blob/2026.6.2/src/js/serial_backend.js
   - Oscar Liang：Quad Arming Issue Fix | https://oscarliang.com/quad-arming-issue-fix
+  - Betaflight 官方原始碼（OSD 輪流顯示禁止解鎖原因的條件） | https://github.com/betaflight/betaflight/blob/4.5-maintenance/src/main/osd/osd_warnings.c
+  - Betaflight App 2026.6.2 原始碼（設定頁顯示的禁止解鎖名稱） | https://github.com/betaflight/betaflight-configurator/blob/2026.6.2/src/components/tabs/SetupTab.vue
 ---
 :::safety 開始前
 拆下全部螺旋槳。準備一台電腦，用 Chrome 或 Edge 打開 Betaflight App（app.betaflight.com；舊版軟體叫 Betaflight Configurator），以及可以傳資料的 USB 線（有些線只能充電，接上後電腦不會有反應）。
@@ -43,12 +45,12 @@ sources:
 
 ## 建議檢查順序
 
-1. **先看飛控在說什麼**：USB 連上電腦，打開 Betaflight App 的「設定」頁，找到 Arming Disable Flags 欄位，飛控會在這裡列出目前不能解鎖的原因。在戶外沒有電腦時，可以在 OSD 開啟「警告」項目，眼鏡畫面會直接顯示原因。
+1. **先看飛控在說什麼**：USB 連上電腦，打開 Betaflight App 的「設定」頁，找到 Arming Disable Flags 欄位，飛控會在這裡列出目前不能解鎖的原因。在戶外沒有電腦時，可以用 OSD：在「OSD」頁打開 Warnings（警告）項目，並在警告清單勾選 Arming disabled。之後只要把解鎖開關撥到「開」而飛控不讓解鎖，眼鏡畫面就會每 0.5 秒輪流顯示一個原因（用的是韌體名稱，例如 RXLOSS、NOT_DISARMED）。
 2. **記下列出來的字**：一次可能出現好幾個，從第一個開始處理。
 3. **用下面的查詢工具一個一個處理**：處理完一個，就回到「設定」頁重看一次清單。
 4. **MSP、CLI 是電腦連線造成的，最後再清除**：只要 Betaflight App 連著飛控，清單裡就一定有 MSP；進過命令列還會多一個 CLI。先把其他原因處理到消失，再照下表清除這兩個，然後試解鎖。
 
-![Betaflight App 2026.6.2「設定」頁（左側選單 Setup）：① Arming Disable Flags 欄位，不能解鎖的原因會列在這裡。此圖是沒接飛控的虛擬模式，所以顯示 Arming Allowed（允許解鎖）；接上實機時這裡會列出實際原因，而且只要 App 連著，至少會有 MSP。](/assets/img/help/betaflight-arming/bf-setup-arming-flags.webp)
+![Betaflight App 2026.6.2「設定」頁（左側選單 Setup）：① Arming Disable Flags 欄位，不能解鎖的原因會列在這裡。此圖是沒接飛控的虛擬模式，所以顯示 Arming Allowed（允許解鎖）；接上實機時這裡會列出實際原因，而且只要 App 連著，至少會有 MSP。虛擬模式的左側選單會少幾個分頁（例如 Sensors 感測器），接上實機才會出現。](/assets/img/help/betaflight-arming/bf-setup-arming-flags.webp)
 
 {{tool:arming-flags}}
 
@@ -62,15 +64,17 @@ sources:
 | THROTTLE | 油門沒有在最低 | 油門拉到底。拉到底仍出現：「接收機」頁的油門數值應低於 1050（預設門檻），不是的話要調整遙控器的油門行程 |
 | ANGLE | 機身太斜 | 放平再試（預設傾斜超過 25° 就不讓解鎖）。放平了還是出現：飛機放在平面上做加速度計校正（Betaflight App 2026.6 在「感測器」頁按 Calibrate，舊版 Configurator 在「設定」頁） |
 | ARM_SWITCH（4.4、4.5 的韌體叫 ARMSWITCH，但 Betaflight App 2026.6 畫面一律顯示 ARM_SWITCH） | 不能解鎖的時候，解鎖開關已經在「開」 | 先處理其他原因，再把開關撥回「關」、再撥「開」 |
-| NOT_DISARMED（4.4 叫 BADRX；Betaflight App 2026.6 的「設定」頁顯示為 BAD_RX_RECOVERY） | 遙控訊號斷掉又恢復時，解鎖開關是開著的 | 把解鎖開關撥回「關」 |
-| NOPREARM | 有設定「預解鎖」開關，但沒有先打開 | 先打開預解鎖、再解鎖。這是保護功能，不要為了省事取消 |
-| CALIB | 感測器正在校正 | 插上電池後不要動飛機，等幾秒 |
-| NO_ACC_CAL | 加速度計需要校正 | 飛機放在平面上做加速度計校正（Betaflight App 2026.6 在「感測器」頁按 Calibrate，舊版 Configurator 在「設定」頁） |
+| NOT_DISARMED（4.4 叫 BADRX；Betaflight App 2026.6 的「設定」頁顯示為 BAD_RX_RECOVERY） | 插上電池時解鎖開關已經撥在「開」，或遙控訊號斷掉又恢復時解鎖開關是開著的 | 把解鎖開關撥回「關」，再重新解鎖 |
+| NOPREARM | 有設定「預解鎖」開關，但沒有先打開；或用預解鎖解鎖過一次後，沒有把預解鎖關掉再打開 | 先打開預解鎖、再解鎖；上鎖後要再解鎖，先把預解鎖撥回「關」再打開一次。這是保護功能，不要為了省事取消 |
+| CALIB（App 2026.6 顯示 CALIBRATING） | 感測器正在校正 | 插上電池後不要動飛機，等幾秒 |
+| NO_ACC_CAL（App 2026.6 顯示 ACC_CALIBRATION，滑鼠提示寫「仍在校正」，其實是要你去做校正） | 加速度計還沒校正過 | 飛機放在平面上做加速度計校正（Betaflight App 2026.6 在「感測器」頁按 Calibrate，舊版 Configurator 在「設定」頁） |
 | BOXFAILSAFE | 「失聯保護」開關是開著的 | 把失聯保護開關撥回「關」 |
-| ALT_HOLD_SW、POS_HOLD_SW（2025.12 起）；AUTOPILOT_SW（2026.6 起） | 定高、定點或自動駕駛模式的開關是開著的 | 把那個模式的開關撥回「關」再解鎖 |
-| FLIP_SWITCH（2025.12 起） | 用過翻正（Turtle）功能後，需要先手動上鎖一次 | 把解鎖開關撥回「關」，再重新解鎖 |
+| ALT_HOLD_SW、POS_HOLD_SW（2025.12 起）；AUTOPILOT_SW（2026.6 起）。App 2026.6 顯示 ALTHOLD、POSHOLD、AUTOPILOT | 定高、定點或自動駕駛模式的開關是開著的 | 把那個模式的開關撥回「關」再解鎖 |
+| FLIP_SWITCH（2025.12 起；App 2026.6 顯示 CRASHFLIP） | 用過翻正（Turtle）功能後，需要先手動上鎖一次 | 把解鎖開關撥回「關」，再重新解鎖 |
 
-清單裡出現 RUNAWAY、CRASH、DSHOT_TELEM（4.4 叫 RPMFILTER）、MOTOR_PROTO、LOAD、NOGYRO、GPS 或 RESCUE_SW，就不屬於新手自行處理的範圍。其中 RUNAWAY 代表上次解鎖時飛控偵測到「失控衝飛」，常見原因是馬達順序、旋轉方向或槳裝錯，很危險，先不要再試。
+清單裡出現 RUNAWAY、CRASH、DSHOT_TELEM（4.4 叫 RPMFILTER）、MOTOR_PROTO、LOAD、NOGYRO、GPS、RESCUE_SW、PARALYZE、DSHOT_BBANG 或 BST，就不屬於新手自行處理的範圍（App 2026.6 上分別顯示為 RUNAWAY_TAKEOFF、CRASH_DETECTED、DSHOT_TELEM、MOTOR_PROTOCOL、LOAD、NO_GYRO、GPS、RESC、PARALYZE、DSHOT_BITBANG、BST）。其中 RUNAWAY 代表上次解鎖時飛控偵測到「失控衝飛」，常見原因是馬達順序、旋轉方向或槳裝錯，很危險，先不要再試。
+
+另外兩個常見、可以自己處理的：CMS（App 顯示 CMS_MENU）是用搖桿進了 OSD 選單，選 EXIT 離開即可；REBOOT_REQD（App 顯示 REBOOT_REQUIRED）是改了要重開機才生效的設定，存檔後重新開機即可。
 
 :::advanced 進階：命令列與版本差異
 在命令列輸入 `status`，最後一行 `Arming disable flags:` 會列出目前所有禁止解鎖的原因。這時一定會看到 MSP 和 CLI（你正連著電腦、在命令列裡），判斷時看其餘的原因。

@@ -65,7 +65,7 @@ Windows 跳出「USB 裝置電流過載」或類似警告、飛控插上就發�
 2. **出現「未知的裝置」或「未知的 USB 裝置」時，先看詳細說明**：在它上面按右鍵 →「內容」，看「裝置狀態」或名稱括號裡的字。不一定是缺驅動，對照下面的表格判斷。
 3. **安裝驅動程式**：Windows 10、11 通常已內建 STM32 Virtual COM Port 的驅動。確定是驅動問題時，可以用 ImpulseRC Driver Fixer 自動安裝；使用 CP210x 晶片的舊款飛控，要安裝 Silicon Labs 的 CP210x 驅動。
 4. **Driver Fixer 說裝置數量不對**：先拔掉飛控上接的接收機、GPS 等周邊，只留 USB 再試一次。
-5. **Betaflight 裡選對連接埠**：在 Betaflight App（或 Configurator）上方選擇剛剛看到的 COM 編號再按連線。
+5. **Betaflight 裡選對連接埠**：在 Betaflight App（或 Configurator）上方選擇剛剛看到的 COM 編號再按連線。用網頁版 Betaflight App 第一次連線時，要先在連線鈕旁的下拉選單選「--- I can't find my USB device ---」，再在瀏覽器跳出的視窗選你的飛控，允許網頁使用它；沒有授權時清單是空的，不是驅動問題。
 
 | 看到的說明 | 比較可能的原因 | 下一步 |
 | --- | --- | --- |
@@ -82,7 +82,7 @@ Windows 跳出「USB 裝置電流過載」或類似警告、飛控插上就發�
 | 插 USB 時按到 BOOT 按鍵 | 拔掉重插、手不碰按鍵，就恢復成 B 段的正常裝置 |
 | BOOT 按鍵卡住 | 按鍵按下去不會彈回，或外殼、綁帶壓著按鍵 |
 | BOOT 焊盤被短路 | 飛控上標示 BOOT（或 BL）的兩個小焊盤之間有錫渣、碎屑、殘留的防水漆或助焊劑 |
-| 剛從 Betaflight 執行「進入刷機模式」 | 刷機頁按過重新開機到刷機模式，或命令列輸入過 `dfu`，重新插拔就會離開 |
+| 剛從 Betaflight 執行「進入刷機模式」 | 刷機頁按過重新開機到刷機模式，或命令列輸入過 `bl`，重新插拔就會離開 |
 | 韌體真的不見了（例如刷機中斷） | 排除以上幾項後，每次插上仍然只出現 STM32 BOOTLOADER |
 
 1. **先拔掉重插，手不要碰任何按鍵**：恢復成 B 段的正常裝置，就只是剛好進了刷機模式。
@@ -93,7 +93,7 @@ Windows 跳出「USB 裝置電流過載」或類似警告、飛控插上就發�
 :::advanced 進階：刷機模式的驅動與注意事項
 刷機模式的裝置需要 WinUSB 驅動，可以用 ImpulseRC Driver Fixer 或 Zadig 安裝（在 Zadig 選擇 STM32 BOOTLOADER，安裝 WinUSB）。如果它出現在「音效、視訊及遊戲控制器」底下、名稱是 Guillemot STM DFU Device，代表裝到錯誤的驅動，需要移除後重新安裝。
 
-刷機時建議勾選「Full Chip Erase」（完整清除晶片），原因與注意事項見 [[firmware-update]]。
+刷機時建議打開 Full chip erase（完整清除晶片）；Betaflight App 2026.6 要先開專家模式才看得到這個開關，原因與注意事項見 [[firmware-update]]。
 :::
 
 :::checks 怎樣算修好
