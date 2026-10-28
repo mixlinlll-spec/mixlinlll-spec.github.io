@@ -827,3 +827,4 @@ section{padding:36px 0}
 .help-layout{grid-template-columns:minmax(0,1fr) 240px}
 @media(max-width:900px){.help-layout{grid-template-columns:minmax(0,1fr)}.help-aside{display:none}}
 @media(max-width:560px){.help-head h1{font-size:26px}.help-start{width:100%}}
+.help-main code{overflow-wrap:anywhere;word-break:break-word}
