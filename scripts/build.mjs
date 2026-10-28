@@ -60,6 +60,8 @@ for (const [k, key] of [['line', 'qr_image'], ['line_community', 'qr_image'], ['
 const journal = loadJournal();
 errors.push(...validateJournal(journal));
 const helpArticles = loadHelp();
+// 移出簡易故障排除中心的主題：舊網址保留一頁簡短說明，導向 EWP 技術服務（不列入索引與 sitemap）
+const helpRetired = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/help-retired.json'), 'utf8'));
 errors.push(...validateHelp(helpArticles));
 if (warnings.length) console.warn(`⚠ 警告 ${warnings.length} 筆\n  ` + warnings.slice(0, 10).join('\n  ') + (warnings.length > 10 ? '\n  …' : ''));
 if (errors.length) { console.error(`✖ 資料驗證失敗 ${errors.length} 筆：\n  ` + errors.join('\n  ')); process.exit(1); }
@@ -688,7 +690,7 @@ function helpPages() {
   ${groups.map(([c, l]) => `<div class="help-group"><h3>${esc(c)}</h3><ul class="help-list">${l.map(a => `<li data-help-item data-text="${attr(a.searchText)}"><a href="${helpUrl(a)}"><strong>${esc(a.title)}</strong><span>${esc(a.summary)}</span></a></li>`).join('')}</ul></div>`).join('')}</div>
   <p class="help-empty" data-help-empty hidden>找不到符合的文章，可以換個說法，例如用零件名稱或畫面上看到的英文字再搜尋一次。</p>
 </section>`;
-  page('help/index.html', { title: '故障排除中心', description: 'FPV 穿越機常見故障排除：不能解鎖、圖傳沒畫面等問題，依症狀一步步檢查，附判斷表與完成標準。', path: '/help/', active: 'journal', body: index, scripts: ['/assets/js/help.js'], jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
+  page('help/index.html', { title: '故障排除中心', description: 'FPV 穿越機常見故障排除：不能解鎖、圖傳沒畫面等問題，依症狀一步步檢查，每篇都附完成標準。', path: '/help/', active: 'help', body: index, scripts: ['/assets/js/help.js'], jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
 
   // 舊網址 /fpv-help.html：整個舊知識庫已改寫進故障排除中心。#item-XX 轉到對應文章，其他轉到 /help/；沒有 JavaScript 時列出全部文章。
   // GitHub Pages 不能做伺服器端 301，而且 #錨點不會送到伺服器，所以只能用 JavaScript 依錨點轉址。
@@ -708,7 +710,8 @@ ${groups.map(([c, l]) => `<div class="help-group"><h2>${esc(c)}</h2><ul>${l.map(
     const c = [{ name: '首頁', href: '/' }, { name: '故障排除中心', href: '/help/' }, { name: a.category }];
     const toc = [...a.sections, { id: 'more', title: '還是不行？' }];
     const body = `<article class="wrap help-article">${breadcrumbs(c)}
-<header class="help-head"><h1>${esc(a.title)}</h1><p class="lead">${esc(a.summary)}</p><a class="btn btn-primary help-start" href="#start">開始檢查 <span aria-hidden="true">↓</span></a></header>
+<header class="help-head"><h1>${esc(a.title)}</h1><p class="lead">${esc(a.summary)}</p>
+<p class="help-verify">${esc(a.hw_verified)}。標示的版本是撰寫依據，不代表每個版本都測過；<a href="#scope">看哪些已核對</a></p><a class="btn btn-primary help-start" href="#start">開始檢查 <span aria-hidden="true">↓</span></a></header>
 <div class="help-layout">
   <div class="help-main" id="start">
 ${a.html}
@@ -718,7 +721,7 @@ ${a.html}
       <ul>${a.prepare.map(p => `<li>${esc(p).replace(/`([^`]+)`/g, '<code>$1</code>')}</li>`).join('')}</ul>
       <a class="help-repair" href="${repair ? url.service(repair) : '/services/'}"><strong>送修檢測</strong><span>寄送實機，由 EWP 檢測與報價</span></a>
     </section>
-    <details class="help-scope"><summary>這篇適用的設備與版本</summary><dl class="help-meta"><dt>適用</dt><dd>${esc(a.applies)}</dd><dt>難度</dt><dd>${level(a)}</dd>${a.needs ? `<dt>需要</dt><dd>${esc(a.needs)}</dd>` : ''}<dt>分類</dt><dd>${esc(a.category)}</dd></dl></details>
+    <details class="help-scope" id="scope"><summary>版本與驗證狀態</summary><dl class="help-meta"><dt>宣稱適用</dt><dd>${esc(a.applies)}</dd><dt>已核對</dt><dd>${esc(a.checked)}</dd><dt>實機驗證</dt><dd>${esc(a.hw_verified)}</dd><dt>難度</dt><dd>${level(a)}</dd>${a.needs ? `<dt>需要</dt><dd>${esc(a.needs)}</dd>` : ''}<dt>分類</dt><dd>${esc(a.category)}</dd></dl></details>
     <section class="help-sources"><h2>參考資料</h2><ul>${a.sources.map(s => `<li><a href="${attr(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul></section>
   </div>
   <aside class="help-aside">
@@ -729,7 +732,24 @@ ${a.html}
 </article>`;
     const ld = { '@context': 'https://schema.org', '@type': 'TechArticle', headline: a.title, description: a.summary,
       mainEntityOfPage: BASE + helpUrl(a), author: { '@type': 'Organization', name: '電翼動力 EWP' }, publisher: { '@type': 'Organization', name: '電翼動力 EWP' } };
-    page(`help/${a.slug}/index.html`, { title: a.title, description: a.summary, path: helpUrl(a), active: 'journal', noindex: !a.published, body, scripts: ['/assets/js/help.js'], bodyClass: 'help-page', jsonld: [breadcrumbsJsonLd(c, BASE), ld] });
+    page(`help/${a.slug}/index.html`, { title: a.title, description: a.summary, path: helpUrl(a), active: 'help', noindex: !a.published, body, scripts: ['/assets/js/help.js'], bodyClass: 'help-page', jsonld: [breadcrumbsJsonLd(c, BASE), ld] });
+  }
+  for (const r of helpRetired) {
+    if (list.some(a => a.slug === r.slug)) continue;
+    const svc = services.find(s => s.id === r.service) || repair;
+    const rel = r.related.map(s => list.find(a => a.slug === s)).filter(Boolean);
+    const c = [{ name: '首頁', href: '/' }, { name: '故障排除中心', href: '/help/' }, { name: r.title }];
+    page(`help/${r.slug}/index.html`, { title: `${r.title}｜交給 EWP 技術服務`, description: r.reason, path: `/help/${r.slug}/`, active: 'help', noindex: true, bodyClass: 'help-page',
+      body: `<article class="wrap help-article help-retired">${breadcrumbs(c)}
+<header class="help-head"><h1>${esc(r.title)}</h1><p class="lead">這個主題已移出簡易故障排除中心。</p></header>
+<div class="help-main">
+<p>${esc(r.reason)}這類問題不建議一般玩家自行處理，請交給 EWP 檢查。</p>
+<aside class="help-box help-stop" role="note"><p class="help-box-t">先停手</p><p>有冒煙、焦味、零件發燙或飛機行為異常時，先拔電池、不要飛。</p></aside>
+<a class="help-repair" href="${svc ? url.service(svc) : '/services/'}"><strong>${esc(svc ? svc.name : 'EWP 技術服務')}</strong><span>聯絡 EWP，由技師協助檢查與設定</span></a>
+${rel.length ? `<h2>可以先看</h2><ul>${rel.map(a => `<li><a href="${helpUrl(a)}">${esc(a.title)}</a></li>`).join('')}</ul>` : ''}
+</div>
+<p class="journal-back"><a href="/help/">← 回到故障排除中心</a></p>
+</article>` });
   }
 }
 

@@ -417,19 +417,11 @@ describe('故障排除中心（src/data/help/*.md）', async () => {
     for (const f of ['betaflight-arming/bf-setup-arming-flags', 'receiver-no-control/bf-receiver', 'receiver-no-control/bf-ports', 'motors-after-arming/bf-motors'])
       assert.ok(fs.existsSync(path.join(ROOT, `assets/img/help/${f}-m.webp`)), f);
   });
-  test('實際軟體截圖都有放進文章、圖說註明版本與虛擬模式', () => {
-    for (const [slug, n] of [['betaflight-arming', 1], ['receiver-no-control', 2], ['motors-after-arming', 1]]) {
-      const imgs = list.find(a => a.slug === slug).images;
-      assert.equal(imgs.length, n, slug);
-      for (const i of imgs) assert.match(i.alt, /2026\.6\.2.*虛擬模式/, slug);
-    }
-  });
   test('兩篇示範文章已公開，並對應舊知識庫題號', () => {
     const arm = list.find(a => a.slug === 'betaflight-arming'), ana = list.find(a => a.slug === 'analog-no-video');
     assert.ok(arm?.published && ana?.published);
     assert.deepEqual(arm.legacy_items, [10]);
     assert.deepEqual(ana.legacy_items, [8]);
-    assert.deepEqual(ana.cases, ['A', 'B', 'C']);
   });
   test('跨文章連結都有效、每篇都有 keywords、核對日期不在未來', async () => {
     const { today } = await import('../scripts/lib/help.mjs');
@@ -586,5 +578,141 @@ describe('Cloudflare Pages 預覽版（--preview）', () => {
       fs.rmSync(path.join(ROOT, OUT), { recursive: true, force: true });
       fs.rmSync(path.join(ROOT, OUT + '_pub'), { recursive: true, force: true });
     }
+  });
+});
+
+// 跨文章事實一致性：同一件事在不同文章不能有不同說法（通過不代表人工驗收通過）
+describe('故障排除中心：跨文章交叉比對', async () => {
+  const { loadHelp } = await import('../scripts/lib/help.mjs');
+  const list = loadHelp().filter(a => a.published);
+  const body = a => a._body;
+  const all = list.map(a => [a.slug, body(a)]);
+  const grepAll = re => all.flatMap(([slug, t]) => [...t.matchAll(re)].map(m => [slug, m[0]]));
+
+  test('Betaflight 畫面上的英文要和 App 實際文字一致（大小寫、名稱）', () => {
+    const banned = [[/Serial RX/g, 'App 上是 Serial Rx'], [/Full Chip Erase/g, 'App 上是 Full chip erase'], [/MSP DisplayPort|MSP \+ DisplayPort/g, 'App 上是 Displayport'], [/`dfu`/g, 'CLI 指令是 bl，沒有 dfu']];
+    for (const [re, why] of banned) assert.deepEqual(grepAll(re), [], why);
+  });
+  test('失聯保護第一階段預設各版本都是 1.5 秒（4.4.0 起 failsafe_delay = 15）', () => {
+    for (const [slug, t] of all) for (const m of t.matchAll(/4\.4[^。|]{0,12}預設\s*1\s*秒/g)) assert.match(t.slice(Math.max(0, m.index - 60), m.index), /failsafe_recovery_delay/, `${slug}: 只有 failsafe_recovery_delay 在 4.4 是 1 秒`);
+    for (const [slug, t] of all) if (/failsafe_delay/.test(t)) assert.match(t, /1\.5 秒/, slug);
+  });
+  test('min_check 1050、small_angle 25、GPS 救援最小啟動距離 15 公尺，各篇一致', () => {
+    for (const [slug, m] of grepAll(/低於\s*(\d{4})（預設門檻）|要低於\s*(\d{4})\s*才能解鎖/g)) assert.match(m, /1050/, slug);
+    for (const [slug, m] of grepAll(/傾斜超過\s*\d+°/g)) assert.match(m, /25°/, slug);
+    for (const [slug, m] of grepAll(/min_start_dist`?，?預設\s*\d+\s*公尺|預設\s*\d+\s*公尺內/g)) assert.match(m, /15/, slug);
+  });
+  test('DJI O4 輸入電壓在每一篇都一樣（O4 3.7–13.2V、O4 Pro 7.4–26.4V）', () => {
+    for (const [slug, t] of all) {
+      for (const m of t.matchAll(/(\d+\.\d)[–～-](\d+\.\d)V/g)) {
+        const r = `${m[1]}–${m[2]}`;
+        if (/O4/.test(t.slice(Math.max(0, m.index - 60), m.index))) assert.ok(['3.7–13.2', '7.4–26.4'].includes(r), `${slug}: ${r}`);
+      }
+    }
+  });
+  test('電池電壓：LiPo 滿電 4.20V、LiHV 4.35V、一般 LiPo 存放 3.80V，各篇沒有其他說法', () => {
+    for (const [slug, m] of grepAll(/LiHV[^。|\n]{0,10}滿電[^0-9]{0,6}(\d\.\d+)V/g)) assert.match(m, /4\.35V/, slug);
+    for (const [slug, m] of grepAll(/一般 LiPo 約\s*(\d\.\d+)V／節/g)) assert.match(m, /3\.80V/, slug);
+  });
+  test('步驟寫「下圖 ①」時，後面的圖說一定有同一個編號', () => {
+    for (const [slug, t] of all) {
+      for (const m of t.matchAll(/下圖\s*([①②③④⑤])/g)) {
+        const next = t.slice(m.index).match(/!\[([^\]]*)\]/);
+        assert.ok(next && next[1].includes(m[1]), `${slug}: ${m[0]} 後面的圖說沒有 ${m[1]}`);
+      }
+    }
+  });
+  test('虛擬模式截圖的圖說要說明不是實機數值、不能照抄', () => {
+    for (const a of list) for (const img of a.images) if (/虛擬模式/.test(img.alt) && /bf-(receiver|ports)/.test(img.src)) assert.match(img.alt, /不是要你照抄/, img.src);
+  });
+  test('SBUS 的說明一定同時寫 Receiver Mode 選 Serial (via UART)', () => {
+    for (const [slug, t] of all) if (/Provider[^。]{0,10}選\s*SBUS|協定選\s*SBUS/.test(t)) assert.match(t, /Serial \(via UART\)/, slug);
+  });
+  test('解鎖查詢工具收錄 App 2026.6.2「設定」頁顯示的所有名稱（SetupTab.vue）', () => {
+    const js = fs.readFileSync(path.join(ROOT, 'assets/js/help.js'), 'utf8');
+    const app = ['NO_GYRO', 'FAILSAFE', 'RXLOSS', 'BAD_RX_RECOVERY', 'BOXFAILSAFE', 'RUNAWAY_TAKEOFF', 'CRASH_DETECTED', 'THROTTLE', 'ANGLE', 'BOOT_GRACE_TIME', 'NOPREARM', 'LOAD', 'CALIBRATING', 'CLI', 'CMS_MENU', 'BST', 'MSP', 'PARALYZE', 'GPS', 'RESC', 'DSHOT_TELEM', 'REBOOT_REQUIRED', 'DSHOT_BITBANG', 'ACC_CALIBRATION', 'MOTOR_PROTOCOL', 'CRASHFLIP', 'ALTHOLD', 'POSHOLD', 'AUTOPILOT', 'ARM_SWITCH'];
+    for (const n of app) assert.ok(js.includes(`'${n}'`), n);
+  });
+  test('可修改的設定值不能寫成固定數字：「1.5 秒」一定帶「預設」或 failsafe_delay', () => {
+    for (const [slug, t] of all) for (const m of t.matchAll(/1\.5 秒/g)) {
+      const ctx = t.slice(Math.max(0, m.index - 40), m.index + 16);
+      assert.match(ctx, /預設|failsafe_delay|`15`/, `${slug}: …${ctx}…`);
+    }
+  });
+  test('電池壓差：全站不再要求「每次都是同一節」「反覆明顯落後」才停用', () => {
+    assert.deepEqual(grepAll(/每次都是同一節|反覆明顯落後/g), []);
+  });
+  test('疑似故障電池不能直接引導補電；接收機不能只換到另一個 5V 焊點', () => {
+    assert.deepEqual(grepAll(/整包電壓持續往下掉[^\n]*先用 Storage/g), []);
+    for (const [slug, t] of all) for (const m of t.matchAll(/另一個 5V 焊點/g)) assert.match(t.slice(m.index, m.index + 20), /通常沒有用/, slug);
+  });
+  test('摘要不能寫絕對結論，OSD 解鎖中不會出現 RXLOSS', () => {
+    for (const a of list) assert.ok(!/不亮是供電問題|燈號會直接告訴你/.test(a.summary), a.slug);
+    assert.deepEqual(grepAll(/OSD (要)?先出現 RXLOSS|依序出現 RXLOSS 與 !FS!|OSD 先顯示 RXLOSS/g), []);
+  });
+  test('「怎樣算修好」不能要求和 Motor Stop／限流保護器說明矛盾的結果', () => {
+    for (const a of list) {
+      const checks = (a._body.match(/:::checks[\s\S]*?\n:::/) || [''])[0];
+      assert.ok(!/馬達以相同的低速轉動/.test(checks), `${a.slug}: Motor Stop 時低油門不轉是正常的`);
+      if (/限流保護器上電/.test(checks)) assert.match(checks, /數位圖傳|燈沒有一直亮/, a.slug);
+    }
+  });
+});
+
+describe('簡易故障排除中心：一般玩家幾分鐘內看得懂（2026-10-29 改版）', async () => {
+  const { loadHelp, validateHelp } = await import('../scripts/lib/help.mjs');
+  const list = loadHelp().filter(a => a.published);
+  const retired = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/help-retired.json'), 'utf8'));
+  const cjk = b => (b.replace(/:::\w+|\{\{[^}]*\}\}|\[\[[^\]]*\]\]/g, '').match(/[一-鿿]/g) || []).length;
+  const section = (b, h) => (('\n' + b).split(/\n## /).find(x => x.startsWith(h)) || '');
+  test('每篇 500 字以內（中文字），步驟最多 5 步，原因最多 3 個', () => {
+    for (const a of list) {
+      assert.ok(cjk(a._body) <= 500, `${a.slug}：${cjk(a._body)} 字`);
+      const steps = section(a._body, '檢查步驟').split(/\n:::/)[0].match(/^\d+\. /gm) || [];
+      assert.ok(steps.length >= 3 && steps.length <= 5, `${a.slug}：檢查步驟 ${steps.length} 步`);
+      for (const l of a._body.match(/^\d+\. .*$/gm) || []) assert.match(l, /^\d+\. \*\*[^*]+\*\*：/, `${a.slug}：步驟要寫成「**標題**：說明」，手機版才不會斷成單獨一行標點`);
+      const why = section(a._body, '常見');
+      if (why) { const n = (why.split(/\n:::|\n\n##/)[0].match(/^- /gm) || []).length; assert.ok(n >= 2 && n <= 3, `${a.slug}：常見原因 ${n} 個`); }
+      else assert.equal(a.slug, 'battery-types-voltage');
+    }
+  });
+  test('不放進階內容：沒有分情況長篇、進階段落、命令列指令、原始碼、Betaflight 版本差異', () => {
+    for (const a of list) {
+      assert.ok(!/:::(case|advanced)/.test(a._body), a.slug);
+      assert.ok(!/`(set|get|diff|save|bl)\b|命令列|CLI/.test(a._body), `${a.slug}：不要放命令列指令`);
+      assert.ok(!/\.c\b|原始碼/.test(a._body), `${a.slug}：不要放原始碼說明`);
+      assert.ok(!/\b(4\.[345]|2025\.12|2026\.6)\b/.test(a._body), `${a.slug}：不要寫 Betaflight 版本差異`);
+      assert.ok(a.checks >= 2 && a.hasStop, `${a.slug}：要有怎樣算修好與停手條件`);
+    }
+  });
+  test('移出 Help 的主題：不再是文章、舊網址有簡短說明頁，其他文章不再連過去', () => {
+    assert.equal(list.length + retired.length, 35);
+    for (const r of retired) {
+      assert.ok(!fs.existsSync(path.join(ROOT, `src/data/help/${r.slug}.md`)), r.slug);
+      assert.ok(fs.existsSync(path.join(ROOT, `docs/admin/help-archive/${r.slug}.md`)), `${r.slug}：原始技術內容保留在內部資料`);
+      for (const a of list) assert.ok(!a.links.includes(r.slug), `${a.slug} 還連到已移出的 ${r.slug}`);
+      for (const s of r.related) assert.ok(list.some(a => a.slug === s), `${r.slug} 的相關文章 ${s} 不存在`);
+    }
+  });
+  test('安全：失聯保護只教拆槳地面測試；電池壓差標示為保守門檻', () => {
+    const fsBody = list.find(a => a.slug === 'failsafe-check')._body;
+    assert.ok(/拆下全部螺旋槳/.test(fsBody) && /不需要也不建議在空中測試/.test(fsBody));
+    assert.ok(/GPS 返航或降落，結果會不同/.test(fsBody));
+    const b = list.find(a => a.slug === 'battery-cell-imbalance')._body;
+    assert.ok(/比較保守的參考，不是通用的故障標準/.test(b) && /超過不代表一定壞/.test(b));
+    for (const a of list) assert.ok(!/0\.(05|1) ?V（參考值/.test(a._body), a.slug);
+    for (const s of ['first-power-up', 'motors-after-arming', 'betaflight-arming']) assert.ok(/拆/.test(list.find(a => a.slug === s)._body), `${s}：要先拆槳`);
+  });
+  test('每篇分開標示宣稱適用、已核對、實機驗證', () => {
+    for (const a of list) {
+      assert.ok(a.applies && a.checked && a.hw_verified, a.slug);
+      assert.equal(a.hw_verified, '尚未實機驗證', `${a.slug}：目前沒有任何實機紀錄`);
+    }
+    // CI 跑單元測試時還沒建置 dist，所以檢查頁面模板
+    const html = fs.readFileSync(path.join(ROOT, 'scripts/build.mjs'), 'utf8');
+    assert.ok(/<dt>宣稱適用<\/dt>[\s\S]*<dt>已核對<\/dt>[\s\S]*<dt>實機驗證<\/dt>/.test(html));
+    assert.ok(/標示的版本是撰寫依據，不代表每個版本都測過/.test(html));
+    const bad = validateHelp([{ ...list[0], hw_verified: '已驗證' }]);
+    assert.ok(bad.some(e => e.includes('hw_verified')));
   });
 });

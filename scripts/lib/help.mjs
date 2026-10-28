@@ -77,12 +77,20 @@ function blocks(lines, ctx) {
       continue;
     }
     if (/^\d+\.\s+/.test(line)) {
-      const items = [];
-      while (i < lines.length && /^\d+\.\s+/.test(lines[i])) items.push(lines[i++].replace(/^\d+\.\s+/, ''));
+      const items = [], first = parseInt(line, 10);
+      const subs = [];
+      // 步驟底下縮排的「   - 」是這一步的子項目，放在同一步裡面
+      while (i < lines.length && (/^\d+\.\s+/.test(lines[i]) || (items.length && /^\s{2,}-\s+/.test(lines[i])))) {
+        if (/^\d+\.\s+/.test(lines[i])) { items.push(lines[i++].replace(/^\d+\.\s+/, '')); subs.push([]); }
+        else subs[subs.length - 1].push(lines[i++].replace(/^\s+-\s+/, ''));
+      }
+      const subList = k => subs[k].length ? `<ul class="help-step-sub">${subs[k].map(t => `<li>${inline(t)}</li>`).join('')}</ul>` : '';
+      // 清單中間插了圖片時，後半段從原本的號碼接著編（例如 4.），不要重新從 1 開始
+      const start = first > 1 ? ` start="${first}" style="counter-reset:hs ${first - 1}"` : '';
       // 「**標題**：說明」拆成小標＋說明，讓步驟一眼看到重點
-      out.push(`<ol class="help-steps">${items.map(t => {
+      out.push(`<ol class="help-steps"${start}>${items.map((t, k) => {
         const s = t.match(/^\*\*(.+?)\*\*[：:]?\s*(.*)$/);
-        return s ? `<li><div><p class="help-step-t">${inline(s[1])}</p>${s[2] ? `<p>${inline(s[2])}</p>` : ''}</div></li>` : `<li><div><p>${inline(t)}</p></div></li>`;
+        return s ? `<li><div><p class="help-step-t">${inline(s[1])}</p>${s[2] ? `<p>${inline(s[2])}</p>` : ''}${subList(k)}</div></li>` : `<li><div><p>${inline(t)}</p>${subList(k)}</div></li>`;
       }).join('')}</ol>`);
       continue;
     }
@@ -115,7 +123,15 @@ function container(kind, arg, inner, ctx) {
     ctx.checks = items.length;
     const n = ctx.sections.length + 1;
     ctx.sections.push({ id: `s-${n}`, title: arg || '怎樣算修好' });
-    return `<section class="help-checks" data-checks><h2 id="s-${n}">${inline(arg || '怎樣算修好')}</h2><ul>${items.map((t, k) => `<li><label><input type="checkbox" id="chk-${k + 1}"><span>${inline(t)}</span></label></li>`).join('')}</ul><p class="help-done" data-done hidden>全部正常，問題已排除。</p></section>`;
+    // 「（A）」「（B、C）」開頭的項目只屬於那幾個狀況；選了狀況時只需要勾那個狀況的項目＋共通項目
+    const li = (t, k) => {
+      const m = t.match(/^（([A-Z](?:、[A-Z])*)）\s*(.*)$/);
+      const cases = m ? m[1].split('、') : [];
+      const label = m ? `<span class="help-check-case">${m[1]} 狀況</span>${inline(m[2])}` : inline(t);
+      return `<li${cases.length ? ` data-for="${cases.join(' ')}"` : ''}><label><input type="checkbox" id="chk-${k + 1}"><span>${label}</span></label></li>`;
+    };
+    const hasCase = items.some(t => /^（[A-Z]/.test(t));
+    return `<section class="help-checks" data-checks><h2 id="s-${n}">${inline(arg || '怎樣算修好')}</h2>${hasCase ? '<p class="help-check-note">標示狀況代號的項目，只要勾你遇到的那一種；上方「先選狀況」選好後，只會顯示那一種。</p>' : ''}<ul>${items.map(li).join('')}</ul><p class="help-done" data-done hidden>全部正常，問題已排除。</p></section>`;
   }
   ctx.errors.push(`不認得的區塊 :::${kind}`);
   return '';
@@ -138,7 +154,7 @@ export function figCaption(alt, hasMobile) {
 
 // Betaflight App 的分頁英文名稱（2026.6 介面實際文字）。每篇文章第一次提到時自動補上，
 // 讓使用英文介面的人也找得到；中文介面的翻譯各版本不一致，以英文為準。
-export const BF_TAB_NAMES = { 設定: 'Setup', 連接埠: 'Ports', 接收機: 'Receiver', 馬達: 'Motors', 模式: 'Modes', 圖傳: 'Video Transmitter', 失控保護: 'Failsafe', 配置: 'Configuration', 感測器: 'Sensors' };
+export const BF_TAB_NAMES = { 設定: 'Setup', 連接埠: 'Ports', 接收機: 'Receiver', 馬達: 'Motors', 模式: 'Modes', 圖傳: 'Video Transmitter', 失控保護: 'Failsafe', 配置: 'Configuration', 感測器: 'Sensors', 預設集: 'Presets' };
 export function addTabNames(body) {
   const seen = new Set();
   return body.replace(/「([^」]{1,6})」頁(?!（)/g, (all, name) => {
@@ -246,6 +262,11 @@ export function validateHelp(list) {
     for (const e of a.errors) errors.push(`${where}: ${e}`);
     if (!a.published) continue;
     for (const k of ['title', 'summary', 'category', 'level', 'applies', 'verified']) if (!a[k]) errors.push(`${where}: 缺少 ${k}`);
+    // 版本與驗證：「宣稱適用」和「已核對／實機驗證」要分開寫，不能讓讀者以為每個版本都測過
+    if (!a.checked) errors.push(`${where}: 缺少 checked（實際核對過哪些版本的原始碼或文件）`);
+    if (!a.hw_verified) errors.push(`${where}: 缺少 hw_verified（沒有實機驗證就寫「尚未實機驗證」）`);
+    if (a.hw_verified && !/^尚未實機驗證$/.test(a.hw_verified) && !/(照片|影片|錄影|紀錄)/.test(a.hw_verified)) errors.push(`${where}: hw_verified 只能寫「尚未實機驗證」，或寫明有哪些實機照片、影片或紀錄`);
+    if (/Betaflight/.test(a.applies || '') && a.checked && !/(原始碼|官方文件)/.test(a.checked)) errors.push(`${where}: Betaflight 文章的 checked 要寫明核對了哪些版本的原始碼或官方文件`);
     if (a.category && !HELP_CATEGORIES.includes(a.category)) errors.push(`${where}: category 必須是 ${HELP_CATEGORIES.join('、')} 其中之一`);
     if (a.level && !HELP_LEVELS[a.level]) errors.push(`${where}: level 必須是 beginner 或 intermediate`);
     if (a.verified && !DATE.test(a.verified)) errors.push(`${where}: verified 格式必須是 YYYY-MM-DD`);
