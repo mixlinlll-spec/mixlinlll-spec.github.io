@@ -10,7 +10,7 @@ export const PRODUCTS_DIR = path.join(DATA_DIR, 'products');
 
 // 發布白名單：只有這些「手寫靜態檔」會被複製到發布產物（dist/）。
 // src/、scripts/、tests/、docs/、_preview/ 等永遠不會進入發布產物。
-export const STATIC_WHITELIST = ['assets', 'blackbox', 'fpv-help.html', 'huan.png', 'learn', 'legacy', 'tunelab', '.nojekyll', 'google32c150c1e6e441f6.html']; // 最後一項：Google Search Console 網站驗證檔，刪除會讓驗證失效
+export const STATIC_WHITELIST = ['assets', 'blackbox', 'huan.png', 'learn', 'legacy', 'tunelab', '.nojekyll', 'google32c150c1e6e441f6.html']; // 最後一項：Google Search Console 網站驗證檔，刪除會讓驗證失效
 
 export const SELLER_ROLES = {
   ewp_original: 'EWP 自製',

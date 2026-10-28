@@ -29,7 +29,7 @@ async function newPage(width) {
 }
 
 console.log('1. 版面寬度（320/390/768/1280）無非預期橫捲');
-const PAGES = ['/', '/products/', '/products/complete-drones/', '/builds/', '/services/', '/services/repair/', '/batteries/', '/journal/', '/about/', '/contact/', '/privacy/', '/404.html', '/fpv-help.html'];
+const PAGES = ['/', '/products/', '/products/complete-drones/', '/builds/', '/services/', '/services/repair/', '/batteries/', '/journal/', '/about/', '/contact/', '/privacy/', '/404.html', '/help/', '/help/betaflight-arming/', '/help/analog-no-video/', '/help/receiver-no-control/', '/help/fc-usb-connect/', '/help/motors-after-arming/'];
 for (const w of [320, 390, 768, 1280]) {
   const page = await newPage(w);
   for (const [base, extra] of [[PUB, []], [PRE, ['/product/geprc-moz7-v2-o4-pro-7/', '/products/hardware-prints/?sub=screws']]]) {
@@ -156,11 +156,12 @@ console.log(`6. 正式版：${PUBLISHED} 件上架、rejected 不外洩、聯絡
   ok(await page.locator('a[href="#"]').count() === 0, '沒有 href="#" 假連結');
   const sm = await (await page.request.get(PUB + '/sitemap.xml')).text();
   ok((sm.match(/\/product\//g) || []).length === PUBLISHED && !sm.includes('/product/fpv-v1/'), `sitemap 含 ${PUBLISHED} 件公開商品、不含 rejected`);
-  await page.goto(PUB + '/fpv-help.html');
-  ok(/共\s*91\s*則/.test(await page.textContent('body')), '舊網址 /fpv-help.html 正常，仍為 91 則');
+  await page.goto(PUB + '/fpv-help.html', { waitUntil: 'load' });
+  await page.waitForURL('**/help/', { timeout: 5000 }).catch(() => {});
+  ok(page.url().endsWith('/help/'), '舊網址 /fpv-help.html 轉到故障排除中心');
   await page.goto(PUB + '/');
   ok(await page.locator('#builds, #workshop, #about, #contact').count() === 4, '首頁保留舊錨點 #builds #workshop #about #contact');
-  ok(await page.locator('a[href="/fpv-help.html"]').count() >= 1, '首頁可進入知識庫');
+  ok(await page.locator('a[href="/help/"]').count() >= 1 && await page.locator('a[href="/fpv-help.html"]').count() === 0, '首頁進入故障排除中心，不再連到舊知識庫');
   await page.context().close();
 }
 
@@ -385,11 +386,88 @@ console.log('16. 首頁 V2：主視覺、四個入口、自製機型、電池帶
     ok((await page.textContent('#builds .h2-more')).includes(`全部 ${BUILDS.filter(b => b.listed).length} 款`), `${w}px：機型總數由資料計算`);
     ok(await page.locator('.h2-batt-pics a').count() === 2, `${w}px：電池帶兩款自製電池`);
     ok(await page.getAttribute('.h2-video', 'href') === `https://www.youtube.com/watch?v=${id}`, `${w}px：KD7 影片連到 YouTube`);
-    ok(await page.locator('.h2-learn a[href="/learn/lipo-battery/"], .h2-learn a[href="/learn/fpv-video/"], .h2-learn a[href="/fpv-help.html"]').count() === 3, `${w}px：學習區三個入口`);
+    ok(await page.locator('.h2-learn a[href="/learn/lipo-battery/"], .h2-learn a[href="/learn/fpv-video/"], .h2-learn a[href="/help/"]').count() === 3, `${w}px：學習區三個入口`);
     if (w === 1366) ok(await page.isVisible('.nav-line'), '電腦版：導覽列有 LINE 詢問按鈕');
     else ok(!(await page.isVisible('.nav-line')), '手機版：導覽列不擠 LINE 按鈕（在選單內）');
     await page.context().close();
   }
+}
+
+console.log('17. 故障排除中心：搜尋、解鎖原因查詢、類比三選一、怎樣算修好、舊連結導向');
+{
+  const page = await newPage(390);
+  await page.goto(PUB + '/help/', { waitUntil: 'load' });
+  ok(await page.locator('[data-help-symptoms] a').count() >= 8, '總覽：先列出常見狀況（一般玩家看得懂的說法）');
+  const symTop = await page.$eval('[data-help-symptoms]', e => e.getBoundingClientRect().top);
+  const allTop = await page.$eval('[data-help-all]', e => e.getBoundingClientRect().top);
+  ok(symTop < allTop, '總覽：常見狀況排在全部文章前面');
+  // 全文搜尋：中英文、口語、錯誤代碼、內文字詞都找得到
+  for (const [term, slug] of [['Zadig', 'fc-usb-connect'], ['dfu', 'fc-usb-connect'], ['UART', 'receiver-no-control'], ['RXLOSS', 'betaflight-arming'], ['解不了鎖', 'betaflight-arming'], ['雪花', 'analog-no-video'], ['鼓包', 'battery-swelling'], ['pit mode', 'analog-vtx-settings'], ['bind', 'receiver-no-control'], ['果凍', 'vibration-jello'], ['STM32 BOOTLOADER', 'fc-usb-connect'], ['O4 黑屏', 'dji-no-video']]) {
+    await page.fill('[data-help-search]', term);
+    ok(await page.locator(`[data-help-result-list] a[href="/help/${slug}/"]`).count() === 1, `搜尋「${term}」找得到 /help/${slug}/`);
+  }
+  ok(!(await page.isVisible('[data-help-symptoms]')), '搜尋時隱藏常見狀況，只顯示結果');
+  await page.fill('[data-help-search]', '完全不存在的詞彙xyz');
+  ok(await page.isVisible('[data-help-empty]'), '總覽：找不到時顯示提示');
+  await page.fill('[data-help-search]', '');
+  ok(await page.isVisible('[data-help-symptoms]'), '清空搜尋後回到常見狀況');
+
+  // 全部文章：320px 與 390px 手機寬度都不能左右溢出（表格、程式碼、選單都包含在內）
+  {
+    const slugs = await page.$$eval('[data-help-all] a', as => as.map(a => a.getAttribute('href')));
+    const bad = [];
+    for (const w of [320, 390]) {
+      const pg = await newPage(w);
+      for (const h of slugs) {
+        await pg.goto(PUB + h, { waitUntil: 'load' });
+        await pg.$$eval('details', ds => ds.forEach(d => { d.open = true; }));
+        const sw = await pg.evaluate(() => document.documentElement.scrollWidth);
+        if (sw > w) bad.push(`${w}px ${h} ${sw}`);
+      }
+      await pg.context().close();
+    }
+    ok(slugs.length >= 30 && bad.length === 0, `全部 ${slugs.length} 篇文章在 320／390px 不會左右溢出${bad.length ? '：' + bad.slice(0, 4).join('、') : ''}`);
+  }
+  await page.goto(PUB + '/help/betaflight-arming/', { waitUntil: 'load' });
+  {
+    const h1 = await page.$eval('h1', e => e.getBoundingClientRect().bottom), start = await page.$eval('.help-start', e => e.getBoundingClientRect().top);
+    ok(start < 900 && h1 < start, '手機：一打開就看到問題名稱、結論與「開始檢查」');
+    ok(!(await page.textContent('.help-head')).includes('適用'), '手機：適用版本不擠在教學前面');
+    ok(!(await page.textContent('main')).includes('核對日期'), '不顯示核對日期');
+    ok(await page.locator('.flag-list button[aria-pressed="true"]').count() === 0 && (await page.textContent('[data-flag-answer]')).includes('先選 Betaflight 版本'), '解鎖查詢：一開始不預選任何代碼，請讀者先選');
+    await page.click('.flag-list button:has-text("RXLOSS")');
+    ok(await page.locator('.flag-answer a[href="/help/receiver-no-control/"]').count() === 1 && !(await page.textContent('[data-flag-answer]')).includes('就是遙控器和接收機沒有連上'), 'RXLOSS：不再斷定是遙控器沒連上，並連到接收機文章');
+  }
+  await page.fill('#flag-q', 'badrx');
+  ok((await page.textContent('[data-flag-answer]')).includes('NOT_DISARMED'), '解鎖：輸入 4.4 舊名稱 BADRX 也能查到 4.5 的 NOT_DISARMED');
+  await page.click('[data-ver="4.4"]');
+  ok((await page.textContent('.flag-name')).startsWith('BADRX'), '解鎖：切到 4.4 顯示舊名稱');
+  await page.fill('#flag-q', '');
+  await page.click('.flag-list button:has-text("RUNAWAY")');
+  ok((await page.textContent('[data-flag-answer]')).includes('先停手'), '解鎖：RUNAWAY 標示先停手');
+  for (const b of await page.$$('[data-checks] input')) await b.check();
+  ok(await page.isVisible('[data-done]'), '怎樣算修好：全部打勾後顯示完成');
+  ok(!(await page.textContent('.help-more')).includes('需額外付費') && await page.locator('.help-more a[href="/services/repair/"]').count() === 1, '還是不行：只有送修檢測（檢測與報價），不另外標示付費');
+
+  await page.goto(PUB + '/help/analog-no-video/', { waitUntil: 'load' });
+  ok(await page.locator('.help-case:visible').count() === 3, '類比：一開始三種狀況都看得到');
+  await page.click('[data-pick="B"]');
+  ok(await page.locator('.help-case:visible').count() === 1 && await page.isVisible('#case-b'), '類比：選 B 只顯示 B');
+  await page.click('.help-showall');
+  ok(await page.locator('.help-case:visible').count() === 3, '類比：可以再顯示全部');
+
+  await page.goto(PUB + '/help/receiver-no-control/', { waitUntil: 'load' });
+  ok(await page.locator('.pick').count() === 5, '對頻：依燈號的五個分支選單');
+  await page.click('[data-pick="E"]');
+  ok(await page.locator('.help-case:visible').count() === 1 && await page.isVisible('#case-e'), '對頻：選 E 只顯示燈恆亮那一段');
+
+  await page.goto(PUB + '/fpv-help.html#item-10', { waitUntil: 'load' });
+  await page.waitForURL('**/help/betaflight-arming/', { timeout: 5000 }).catch(() => {});
+  ok(page.url().endsWith('/help/betaflight-arming/'), '舊連結 /fpv-help.html#item-10 導向新版教學');
+  await page.goto(PUB + '/fpv-help.html#battery-knowledge', { waitUntil: 'load' });
+  await page.waitForURL('**/help/battery-types-voltage/', { timeout: 5000 }).catch(() => {});
+  ok(page.url().endsWith('/help/battery-types-voltage/'), '舊電池速查錨點轉到電池電壓文章');
+  await page.context().close();
 }
 
 // 教學頁：章節標籤跟著捲動移動時，不可以把整個頁面拉回去（手機上會「滑不下去、一直彈上來」）

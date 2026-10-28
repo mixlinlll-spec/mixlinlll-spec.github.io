@@ -1,0 +1,59 @@
+---
+title: 長期不飛，電池要怎麼存放
+slug: battery-storage
+published: true
+order: 6
+category: 電池／充電
+level: beginner
+applies: LiPo、LiHV、Li-ion 電池
+needs: 有存放（Storage）功能的充電器、防火袋或不可燃的收納盒
+verified: 2026-10-27
+summary: 長期不飛的電池，先整理到存放電壓，放在陰涼乾燥處，每個月檢查一次外觀與每一節電壓。不要滿電放著，也不要電量過低放著。
+keywords:
+  - 存放電壓
+  - storage
+  - 保存
+  - 放很久
+  - 冬天不飛
+  - 3.8V
+  - 自放電
+legacy_items:
+  - 37
+prepare:
+  - 存放前與存放後每一節電壓的量測結果
+  - 電池外觀照片
+  - 存放的地點與時間
+sources:
+  - Grepow：LiPo 與 LiHV 的差別（存放電壓） | https://www.grepow.com/blog/lipo-battery-vs-lihv-battery-what-is-the-difference.html
+  - WISPR：LiHV 電池充電與存放（存放電壓） | https://wisprsystems.atlassian.net/wiki/spaces/CS/pages/176947203/Charging+Storing+LiHV+Batteries+-+Ranger+Pro
+---
+:::safety 開始前
+有鼓包、變形、異味或發熱的電池不要存放，先看 [[battery-swelling]]。整理電壓時，人要在場，不要讓電池在無人看管時充放電。
+:::
+
+## 建議作法
+
+1. **整理到存放電壓**：用充電器的存放（Storage）功能。一般 LiPo 約 3.80V／節，常見 LiHV 約 3.80～3.85V／節；Li-ion 先看原廠規格，詳見 [[battery-types-voltage]]。
+2. **不要滿電放好幾週**：長時間滿電存放是鼓包的常見原因之一。
+3. **也不要電量太低放著**：拔掉會持續耗電的東西（飛機、蜂鳴器、電壓顯示器）。
+4. **放對地方**：陰涼乾燥、遠離陽光與熱源，不要放在車上；電池之間不要互相擠壓，平衡頭收好不要外露。
+5. **每個月量一次**：看外觀與每一節電壓。
+
+## 看結果判斷
+
+| 看到的狀況 | 代表什麼 | 下一步 |
+| --- | --- | --- |
+| 每一節都還在存放電壓附近 | 存放狀況正常 | 繼續定期檢查 |
+| 某一節明顯比其他節低 | 那一節自放電異常 | 停用，看 [[battery-cell-imbalance]] |
+| 整包電壓持續往下掉 | 有東西在耗電，或電池老化 | 拔掉所有連接物，再觀察一個月；持續掉就停用 |
+| 外觀膨脹、變形 | 電池已經受損 | 停止使用，看 [[battery-swelling]] |
+
+:::checks 怎樣算存放正確
+- 存放前每一節都在存放電壓附近，彼此差距很小
+- 存放一個月後再量，電壓變化很小，外觀沒有膨脹
+- 電池放在防火袋或不可燃容器，遠離熱源與陽光
+:::
+
+:::stop 什麼時候停手
+存放中發現鼓包、漏液、異味或發熱：不要再充放電。發熱或冒煙時不要用手拿，人先遠離觀察；有火勢就離開現場並打 119。
+:::

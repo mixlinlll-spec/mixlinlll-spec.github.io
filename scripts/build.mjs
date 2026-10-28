@@ -8,6 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT, loadAll, validateProducts, AVAILABILITY, STATIC_WHITELIST, isRejected } from './lib/data.mjs';
 import { loadJournal, validateJournal, journalUrl, formatDate } from './lib/journal.mjs';
+import { loadHelp, validateHelp, helpUrl, HELP_CATEGORIES, HELP_LEVELS } from './lib/help.mjs';
 import { isShowcase, esc, attr, url, layout, analyticsSnippet, productCard, breadcrumbs, breadcrumbsJsonLd, picture, priceText, availabilityText, roleText, lineButton, shopeeButton, shopeeUrlFor } from './lib/html.mjs';
 
 const args = process.argv.slice(2);
@@ -58,6 +59,8 @@ for (const [k, key] of [['line', 'qr_image'], ['line_community', 'qr_image'], ['
 }
 const journal = loadJournal();
 errors.push(...validateJournal(journal));
+const helpArticles = loadHelp();
+errors.push(...validateHelp(helpArticles));
 if (warnings.length) console.warn(`⚠ 警告 ${warnings.length} 筆\n  ` + warnings.slice(0, 10).join('\n  ') + (warnings.length > 10 ? '\n  …' : ''));
 if (errors.length) { console.error(`✖ 資料驗證失敗 ${errors.length} 筆：\n  ` + errors.join('\n  ')); process.exit(1); }
 const pubCount = products.filter(p => p.published).length;
@@ -243,7 +246,7 @@ function homePage() {
 <section id="learn" class="wrap h2-sec">
   <div class="h2-head"><div><p class="h2-eyebrow">LEARN</p><h2>新手從這裡開始</h2></div><a class="h2-more" href="/journal/">EWP 專欄 ${arrow}</a></div>
   <ul class="h2-learn">${learnCards.map(([h, src, alt, t]) => `<li><a class="h2-card" href="${h}"><img src="${src}" alt="${attr(alt)}" width="800" height="450" loading="lazy" decoding="async"><span class="h2-card-body"><span class="h2-card-k">新手學堂 · 互動教學</span><strong>${esc(t)}</strong></span></a></li>`).join('')}
-    <li><a class="h2-card h2-card-kb" href="/fpv-help.html"><span class="h2-card-body"><span class="h2-card-k">FPV 知識庫</span><strong>91 則常見問題</strong><span class="h2-card-d">設定、接線、故障排查，用白話整理排查方向。</span></span><span class="h2-more">打開知識庫 ${arrow}</span></a></li>
+    <li><a class="h2-card h2-card-kb" href="/help/"><span class="h2-card-body"><span class="h2-card-k">故障排除中心</span><strong>依症狀找答案</strong><span class="h2-card-d">不能解鎖、眼鏡沒畫面……每篇都有判斷表，告訴你下一步與怎樣算修好。</span></span><span class="h2-more">開始排除 ${arrow}</span></a></li>
   </ul>
 </section>
 <section class="wrap h2-sec" aria-labelledby="brand-wall-title">
@@ -525,7 +528,7 @@ function batteryPage() {
     <li><h3>LiPo 鋰聚合物</h3><p>放電能力高，常用於花飛與競速。重量與容量的取捨依機型決定。</p></li>
     <li><h3>LiHV 高壓鋰聚合物</h3><p>滿電電壓比一般 LiPo 高，充電器必須選對 LiHV 模式；與一般 LiPo 不可混用同一充電設定。</p></li>
   </ul>
-  <p class="callout" role="note"><strong>重要：</strong>不同電池系統與電芯型號的滿電電壓、存放電壓與截止電壓都不同。請依商品標示與電芯規格書使用，不要用同一組數字套用所有電池。詳細觀念可參考 <a href="/fpv-help.html#battery-knowledge">知識庫電池速查</a>。</p>
+  <p class="callout" role="note"><strong>重要：</strong>不同電池系統與電芯型號的滿電電壓、存放電壓與截止電壓都不同。請依商品標示與電芯規格書使用，不要用同一組數字套用所有電池。詳細觀念可參考 <a href="${(a => a ? helpUrl(a) : '/help/')(helpArticles.find(a => a.published && a.legacy_items.includes(82)))}">故障排除中心的電池電壓說明</a>。</p>
 </section>
 <section class="wrap">
   ${sectionHead('LINEUP', '電池與電源商品', `<p><a href="${url.category(cat)}">完整篩選 →</a></p>`)}
@@ -555,6 +558,7 @@ function batteryPage() {
 function simplePages() {
   const c = site.contact;
   journalPages();
+  helpPages();
 
   // 關於
   page('about/index.html', { title: '關於 EWP', description: '電翼動力 EWP：FPV 整機、動力電池、客製組裝、維修調校與 3D 列印。', path: '/about/', active: 'about',
@@ -567,7 +571,7 @@ function simplePages() {
       ['動力電池', '18650、21700 鋰離子電池組與外場電包。', '/batteries/'],
       ['維修與調參', '故障排查、Betaflight／INAV 設定與黑盒分析。', '/services/repair/'],
       ['3D 列印', 'TPU 保護件、固定座與機體配件。', '/services/3d-printing/'],
-      ['技術知識', '整理玩家常見問題，用白話說明排查方向。', '/fpv-help.html'],
+      ['故障排除中心', '依症狀找答案：判斷表、下一步與怎樣算修好。', '/help/'],
     ].map(([t, d, h]) => `<li><a href="${h}"><h3>${t}</h3><p>${d}</p><span class="more">前往 →</span></a></li>`).join('')}</ul></section>
 <section class="wrap"><div class="about-band"><div class="motto" aria-label="Build. Tune. Fly."><span>BUILD.</span><span>TUNE.</span><span>FLY.</span></div></div></section>
 ${bizBlock()}
@@ -612,12 +616,12 @@ ${bizBlock()}
   write('404.html', layout(ctx, { title: '找不到頁面', path: '/404.html', noindex: true,
     body: `<section class="wrap notfound"><p class="eyebrow">404</p><h1>找不到這個頁面</h1><p class="lead">網址可能已變更。可以搜尋商品，或回到首頁。</p>
 <form class="hero-search" action="/products/" method="get" role="search"><label for="nf-q" class="sr-only">搜尋商品</label><input id="nf-q" type="search" name="q" placeholder="搜尋商品"><button class="btn btn-primary" type="submit">搜尋</button></form>
-<div class="actions"><a class="btn" href="/">回到首頁</a><a class="btn" href="/products/">商品商城</a><a class="btn" href="/fpv-help.html">FPV 知識庫</a></div></section>` }));
+<div class="actions"><a class="btn" href="/">回到首頁</a><a class="btn" href="/products/">商品商城</a><a class="btn" href="/help/">故障排除中心</a></div></section>` }));
 }
 
 // ---------- EWP 專欄（原「最新消息」，網址維持 /journal/） ----------
 // src/data/journal/*.md；正式版只產生 published=true 的文章，預覽版含草稿。依日期新到舊排列。
-const RELATED_LABEL = { '/products/': '商品商城', '/builds/': 'EWP 自製機型', '/services/': '技術與客製服務', '/batteries/': '電池專區', '/contact/': '聯絡我們', '/about/': '關於 EWP', '/fpv-help.html': 'FPV 知識庫' };
+const RELATED_LABEL = { '/products/': '商品商城', '/builds/': 'EWP 自製機型', '/services/': '技術與客製服務', '/batteries/': '電池專區', '/contact/': '聯絡我們', '/about/': '關於 EWP', '/fpv-help.html': '故障排除中心', '/help/': '故障排除中心' };
 function visibleJournal() {
   return journal.filter(p => DRAFTS || p.published === true)
     .sort((a, b) => (b.date || '').localeCompare(a.date || '') || a.slug.localeCompare(b.slug));
@@ -632,7 +636,7 @@ function journalPages() {
 </a></li>`;
   const list = posts.length
     ? `<section class="wrap"><ul class="journal-grid">${posts.map(card).join('')}</ul></section>`
-    : `<section class="wrap"><div class="empty"><h2>目前還沒有文章</h2><p>第一篇內容準備中。想先看看作品，可以瀏覽自製機型或 FPV 知識庫。</p><div class="actions"><a class="btn" href="/builds/">EWP 自製機型</a><a class="btn" href="/fpv-help.html">FPV 知識庫</a></div></div></section>`;
+    : `<section class="wrap"><div class="empty"><h2>目前還沒有文章</h2><p>第一篇內容準備中。想先看看作品，可以瀏覽自製機型或故障排除中心。</p><div class="actions"><a class="btn" href="/builds/">EWP 自製機型</a><a class="btn" href="/help/">故障排除中心</a></div></div></section>`;
   page('journal/index.html', { title: 'EWP 專欄', description: '電翼動力 EWP 新品公告、FPV 教學、實機展示與製作紀錄。', path: '/journal/', active: 'journal',
     body: `${pageHead('JOURNAL', 'EWP 專欄', '新品公告、FPV 教學、實機展示與製作紀錄。', breadcrumbs(crumbs))}\n${list}`, jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
 
@@ -656,6 +660,79 @@ ${contactCta()}` });
   }
 }
 
+// ---------- 故障排除中心 /help/ ----------
+function visibleHelp() {
+  return helpArticles.filter(a => DRAFTS || a.published === true)
+    .sort((a, b) => HELP_CATEGORIES.indexOf(a.category) - HELP_CATEGORIES.indexOf(b.category) || (Number(a.order) || 99) - (Number(b.order) || 99) || a.slug.localeCompare(b.slug));
+}
+function helpPages() {
+  const list = visibleHelp();
+  const crumbs = [{ name: '首頁', href: '/' }, { name: '故障排除中心' }];
+  const level = a => `<span class="help-pill${a.level === 'beginner' ? ' is-new' : ''}">${esc(HELP_LEVELS[a.level] || '')}</span>`;
+  const groups = HELP_CATEGORIES.map(c => [c, list.filter(a => a.category === c)]).filter(([, l]) => l.length);
+  // 首頁先列一般玩家看得懂的常見症狀，再列全部文章
+  const SYMPTOMS = [
+    ['插上電池後解鎖不了', 'betaflight-arming'], ['遙控器開了，飛機沒反應', 'receiver-no-control'],
+    ['類比眼鏡沒畫面、全是雪花', 'analog-no-video'], ['DJI 眼鏡沒畫面', 'dji-no-video'],
+    ['電腦連不上 Betaflight', 'fc-usb-connect'], ['一起飛就翻、馬達不轉', 'motors-after-arming'],
+    ['飛不遠就斷圖、斷控', 'range-dropouts'], ['錄影有果凍、飛起來抖', 'vibration-jello'],
+    ['電池充不進去、充電器報錯', 'battery-wont-charge'], ['電池鼓包了', 'battery-swelling'],
+    ['GPS 收不到衛星', 'gps-no-fix'], ['新機第一次通電', 'first-power-up'],
+  ].map(([t, slug]) => [t, list.find(a => a.slug === slug)]).filter(([, a]) => a);
+  const index = `<div class="page-head wrap help-index-head">${breadcrumbs(crumbs)}<h1>故障排除中心</h1><p class="lead">選一個最像你遇到的狀況，照步驟檢查；每篇都會告訴你下一步，以及怎樣才算修好。</p>
+  <form class="help-search" role="search" onsubmit="return false"><label for="help-q" class="sr-only">搜尋症狀、零件或錯誤代碼</label><input id="help-q" type="search" placeholder="搜尋症狀、零件或錯誤代碼，例如：解鎖、雪花、RXLOSS、Zadig" autocomplete="off" data-help-search></form></div>
+<section class="wrap help-index">
+  <div class="help-symptoms" data-help-symptoms><h2>常見狀況</h2><ul>${SYMPTOMS.map(([t, a]) => `<li><a href="${helpUrl(a)}">${esc(t)}<span aria-hidden="true">→</span></a></li>`).join('')}</ul></div>
+  <div class="help-results" data-help-results hidden><h2>搜尋結果</h2><ul class="help-list" data-help-result-list></ul></div>
+  <div class="help-all" data-help-all><h2>全部文章</h2>
+  ${groups.map(([c, l]) => `<div class="help-group"><h3>${esc(c)}</h3><ul class="help-list">${l.map(a => `<li data-help-item data-text="${attr(a.searchText)}"><a href="${helpUrl(a)}"><strong>${esc(a.title)}</strong><span>${esc(a.summary)}</span></a></li>`).join('')}</ul></div>`).join('')}</div>
+  <p class="help-empty" data-help-empty hidden>找不到符合的文章，可以換個說法，例如用零件名稱或畫面上看到的英文字再搜尋一次。</p>
+</section>`;
+  page('help/index.html', { title: '故障排除中心', description: 'FPV 穿越機常見故障排除：不能解鎖、圖傳沒畫面等問題，依症狀一步步檢查，附判斷表與完成標準。', path: '/help/', active: 'journal', body: index, scripts: ['/assets/js/help.js'], jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
+
+  // 舊網址 /fpv-help.html：整個舊知識庫已改寫進故障排除中心。#item-XX 轉到對應文章，其他轉到 /help/；沒有 JavaScript 時列出全部文章。
+  // GitHub Pages 不能做伺服器端 301，而且 #錨點不會送到伺服器，所以只能用 JavaScript 依錨點轉址。
+  // SEO：canonical 指向 /help/、不加 noindex（Google 建議 noindex 與 canonical 不要混用），讓舊網址累積的連結權重合併到故障排除中心；
+  // 備援清單的連結可被追蹤。不加 meta refresh，避免它搶在 JavaScript 之前把 #item-XX 一律帶到 /help/。
+  const legacyMap = Object.fromEntries(list.filter(a => a.published).flatMap(a => a.legacy_items.map(n => [`item-${n}`, helpUrl(a)])));
+  const batteryArticle = list.find(a => a.published && a.legacy_items.includes(82));
+  if (batteryArticle) legacyMap['battery-knowledge'] = helpUrl(batteryArticle);
+  page('fpv-help.html', { title: 'FPV 知識庫已改版為故障排除中心', description: '原 FPV 知識庫已全部改寫為故障排除中心。', path: '/fpv-help.html', canonicalPath: '/help/', active: 'journal',
+    body: `${pageHead('MOVED', 'FPV 知識庫已改版', '原本的 91 則問題已全部改寫進故障排除中心，正在帶你前往對應的文章。', breadcrumbs([{ name: '首頁', href: '/' }, { name: 'FPV 知識庫' }]))}
+<section class="wrap help-index"><p><a class="btn btn-primary" href="/help/">前往故障排除中心</a></p>
+${groups.map(([c, l]) => `<div class="help-group"><h2>${esc(c)}</h2><ul>${l.map(a => `<li><a href="${helpUrl(a)}">${esc(a.title)}</a></li>`).join('')}</ul></div>`).join('')}</section>
+<script>(function(){var m=${JSON.stringify(legacyMap)};var h=location.hash.slice(1);location.replace(m[h]||'/help/');})();</script>` });
+
+  const repair = services.find(s => s.id === 'repair');
+  for (const a of list) {
+    const c = [{ name: '首頁', href: '/' }, { name: '故障排除中心', href: '/help/' }, { name: a.category }];
+    const toc = [...a.sections, { id: 'more', title: '還是不行？' }];
+    const body = `<article class="wrap help-article">${breadcrumbs(c)}
+<header class="help-head"><h1>${esc(a.title)}</h1><p class="lead">${esc(a.summary)}</p><a class="btn btn-primary help-start" href="#start">開始檢查 <span aria-hidden="true">↓</span></a></header>
+<div class="help-layout">
+  <div class="help-main" id="start">
+${a.html}
+    <section class="help-more" id="more">
+      <h2>還是不行？</h2>
+      <p>先準備這些資料，送修時可以更快找到問題：</p>
+      <ul>${a.prepare.map(p => `<li>${esc(p).replace(/`([^`]+)`/g, '<code>$1</code>')}</li>`).join('')}</ul>
+      <a class="help-repair" href="${repair ? url.service(repair) : '/services/'}"><strong>送修檢測</strong><span>寄送實機，由 EWP 檢測與報價</span></a>
+    </section>
+    <details class="help-scope"><summary>這篇適用的設備與版本</summary><dl class="help-meta"><dt>適用</dt><dd>${esc(a.applies)}</dd><dt>難度</dt><dd>${level(a)}</dd>${a.needs ? `<dt>需要</dt><dd>${esc(a.needs)}</dd>` : ''}<dt>分類</dt><dd>${esc(a.category)}</dd></dl></details>
+    <section class="help-sources"><h2>參考資料</h2><ul>${a.sources.map(s => `<li><a href="${attr(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul></section>
+  </div>
+  <aside class="help-aside">
+    <nav class="help-toc" aria-label="本頁段落"><p>本頁段落</p><ol>${toc.map(t => `<li><a href="#${t.id}">${esc(t.title)}</a></li>`).join('')}</ol></nav>
+  </aside>
+</div>
+<p class="journal-back"><a href="/help/">← 回到故障排除中心</a></p>
+</article>`;
+    const ld = { '@context': 'https://schema.org', '@type': 'TechArticle', headline: a.title, description: a.summary,
+      mainEntityOfPage: BASE + helpUrl(a), author: { '@type': 'Organization', name: '電翼動力 EWP' }, publisher: { '@type': 'Organization', name: '電翼動力 EWP' } };
+    page(`help/${a.slug}/index.html`, { title: a.title, description: a.summary, path: helpUrl(a), active: 'journal', noindex: !a.published, body, scripts: ['/assets/js/help.js'], bodyClass: 'help-page', jsonld: [breadcrumbsJsonLd(c, BASE), ld] });
+  }
+}
+
 // ---------- sitemap / robots ----------
 function seoFiles() {
   if (DRAFTS || PREVIEW) {
@@ -665,7 +742,7 @@ function seoFiles() {
     return;
   }
   const urls = ['/', '/products/', ...categories.map(url.category), ...visible.map(url.product), '/builds/',
-    '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/learn/lipo-battery/', '/learn/fpv-video/', '/blackbox/', '/tunelab/', '/about/', '/contact/', '/fpv-help.html',
+    '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/help/', ...visibleHelp().map(helpUrl), '/learn/lipo-battery/', '/learn/fpv-video/', '/blackbox/', '/tunelab/', '/about/', '/contact/',
     ...Object.entries(site.policies).filter(([, v]) => v.approved).map(([k]) => `/${k}/`)];
   const lastmod = p => p?.updated_at;
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => {

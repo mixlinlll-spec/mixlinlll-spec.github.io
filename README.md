@@ -31,7 +31,7 @@ scripts/
   admin-restore.mjs  後台還原單一商品到指定版本
   lib/               共用資料驗證與版型（Header／Footer／ProductCard…）
 assets/              CSS、JS、圖片、QR；assets/img/products/ 為蝦皮匯入的商品圖片（只有已公開商品會進入 dist/）
-fpv-help.html        舊知識庫（91 則），原網址保留、內容未改動
+fpv-help.html        舊知識庫原始檔（不再發布；/fpv-help.html 由建置產生轉址頁，導向 /help/ 對應文章）
 huan.png             舊主圖，原網址保留
 legacy/              2026-09 舊版首頁存檔（noindex，僅供比對）
 tests/               資料／路徑／審核單元測試、Playwright 端對端測試、Lighthouse
@@ -42,7 +42,7 @@ dist/                正式發布產物（建置產生，不提交，由 Actions
 _preview/            含草稿預覽（建置產生，不提交、不部署）
 ```
 
-- **發布白名單**：`dist/` 只會有產生的頁面與 `assets/`、`fpv-help.html`、`huan.png`、`legacy/`、`.nojekyll`（定義在 `scripts/lib/data.mjs` 的 `STATIC_WHITELIST`）。`scripts/check-site.mjs` 會在任何 `.json`、`.mjs`、`.md`、`src/`、`scripts/` 等出現在產物時失敗。
+- **發布白名單**：`dist/` 只會有產生的頁面與 `assets/`、`huan.png`、`legacy/`、`.nojekyll`（定義在 `scripts/lib/data.mjs` 的 `STATIC_WHITELIST`）。`scripts/check-site.mjs` 會在任何 `.json`、`.mjs`、`.md`、`src/`、`scripts/` 等出現在產物時失敗。
 - **repo 是公開的**：草稿不會出現在網站上，但 `src/data/` 在 GitHub 上看得到。不要把進貨價、成本、客戶個資、稅籍編號、庫存數量等機密放進 repo（資料驗證會擋下庫存欄位）。
 
 ## 常用指令（需要 Node.js 18 以上，不需安裝套件）

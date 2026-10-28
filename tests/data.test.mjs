@@ -398,6 +398,99 @@ describe('最新消息（src/data/journal/*.md）', async () => {
   });
 });
 
+describe('故障排除中心（src/data/help/*.md）', async () => {
+  const { loadHelp, validateHelp, renderHelp } = await import('../scripts/lib/help.mjs');
+  const list = loadHelp();
+  test('現有文章通過驗證', () => assert.deepEqual(validateHelp(list), []));
+  test('Betaflight 分頁第一次出現時補英文名稱，只補一次', async () => {
+    const { addTabNames } = await import('../scripts/lib/help.mjs');
+    assert.equal(addTabNames('到「接收機」頁看，再回「接收機」頁；「設定」頁（Setup）已有；「遙控器」頁不動'),
+      '到「接收機」頁（Receiver）看，再回「接收機」頁；「設定」頁（Setup）已有；「遙控器」頁不動');
+  });
+  test('圖說拆成標題、編號清單與補充說明；有手機版裁切圖', async () => {
+    const { figCaption } = await import('../scripts/lib/help.mjs');
+    const h = figCaption('A 頁：① 甲；② 乙。此圖是虛擬模式。', true);
+    assert.match(h, /<strong class="help-fig-title">A 頁<\/strong>/);
+    assert.equal((h.match(/<li>/g) || []).length, 2);
+    assert.match(h, /<span>乙。<\/span>/);
+    assert.match(h, /help-fig-note">此圖是虛擬模式。</);
+    for (const f of ['betaflight-arming/bf-setup-arming-flags', 'receiver-no-control/bf-receiver', 'receiver-no-control/bf-ports', 'motors-after-arming/bf-motors'])
+      assert.ok(fs.existsSync(path.join(ROOT, `assets/img/help/${f}-m.webp`)), f);
+  });
+  test('實際軟體截圖都有放進文章、圖說註明版本與虛擬模式', () => {
+    for (const [slug, n] of [['betaflight-arming', 1], ['receiver-no-control', 2], ['motors-after-arming', 1]]) {
+      const imgs = list.find(a => a.slug === slug).images;
+      assert.equal(imgs.length, n, slug);
+      for (const i of imgs) assert.match(i.alt, /2026\.6\.2.*虛擬模式/, slug);
+    }
+  });
+  test('兩篇示範文章已公開，並對應舊知識庫題號', () => {
+    const arm = list.find(a => a.slug === 'betaflight-arming'), ana = list.find(a => a.slug === 'analog-no-video');
+    assert.ok(arm?.published && ana?.published);
+    assert.deepEqual(arm.legacy_items, [10]);
+    assert.deepEqual(ana.legacy_items, [8]);
+    assert.deepEqual(ana.cases, ['A', 'B', 'C']);
+  });
+  test('跨文章連結都有效、每篇都有 keywords、核對日期不在未來', async () => {
+    const { today } = await import('../scripts/lib/help.mjs');
+    for (const a of list.filter(x => x.published)) {
+      assert.ok(a.keywords.length >= 3, a.slug);
+      assert.ok(!a.verified || a.verified <= today(), a.slug);
+      assert.ok(!/〈[^〉]+〉/.test(a._body), `${a.slug}：跨文章引用要寫 [[slug]]`);
+    }
+    const r = renderHelp('看 [[no-such-article]]');
+    assert.ok(r.html.includes('\u0001no-such-article\u0001'));
+    const bad = validateHelp([{ ...renderHelp('x'), slug: 'x', _file: 'x.md', _body: 'x', published: true, title: 'T', summary: 'S', category: '飛控設定', level: 'beginner', applies: 'A', verified: '2099-01-01', sources: [], prepare: [], keywords: [], legacy_items: [] }]);
+    assert.ok(bad.some(e => e.includes('未來')) && bad.some(e => e.includes('keywords')));
+  });
+  test('每篇都有「怎樣算修好」「什麼時候停手」與來源', () => {
+    for (const a of list.filter(x => x.published)) { assert.ok(a.checks >= 2, a.slug); assert.ok(a.hasStop, a.slug); assert.ok(a.sources.length, a.slug); }
+  });
+  test('解鎖旗標名稱與 Betaflight 4.4／4.5 原始碼一致（含兩個改名）', () => {
+    const js = fs.readFileSync(path.join(ROOT, 'assets/js/help.js'), 'utf8');
+    const names45 = ['NOGYRO','FAILSAFE','RXLOSS','NOT_DISARMED','BOXFAILSAFE','RUNAWAY','CRASH','THROTTLE','ANGLE','BOOTGRACE','NOPREARM','LOAD','CALIB','CLI','MSP','GPS','RESCUE_SW','DSHOT_TELEM','NO_ACC_CAL','MOTOR_PROTO','ARMSWITCH'];
+    for (const n of names45) assert.ok(js.includes(`'${n}'`), n);
+    assert.ok(js.includes("['BADRX', 'NOT_DISARMED'"));
+    assert.ok(js.includes("['RPMFILTER', 'DSHOT_TELEM'"));
+  });
+  test('內文 HTML 一律轉義、不接受 javascript: 連結', () => {
+    const { html } = renderHelp('<script>alert(1)</script>\n\n[x](javascript:alert(1))');
+    assert.ok(!html.includes('<script>'));
+    assert.ok(!html.includes('javascript:'));
+  });
+  test('格式：編號步驟、表格、程式碼、容器區塊', () => {
+    const r = renderHelp('1. **標題**：說明\n2. 第二步\n\n| a | b |\n| --- | --- |\n| `x` | y |\n\n:::stop 停\n文字\n:::\n\n:::checks\n- 一\n- 二\n:::');
+    assert.match(r.html, /<ol class="help-steps">/);
+    assert.match(r.html, /<p class="help-step-t">標題<\/p>/);
+    assert.match(r.html, /<td data-label="a"><code>x<\/code><\/td>/);
+    assert.ok(r.hasStop);
+    assert.equal(r.checks, 2);
+  });
+  test('缺「怎樣算修好」、缺來源、「確認○○正確」寫法、待補標記都會擋下', () => {
+    const bad = { ...renderHelp('確認接線正確。\n待補'), slug: 'x', _file: 'x.md', _body: '確認接線正確。\n待補', published: true, title: 'T', summary: 'S', category: '飛控設定', level: 'beginner', applies: 'A', verified: '2026-10-27', sources: [], prepare: [], keywords: [], legacy_items: [] };
+    const errs = validateHelp([bad]);
+    for (const k of ['怎樣算修好', '什麼時候停手', 'sources', 'prepare', '確認○○正確', '待確認']) assert.ok(errs.some(e => e.includes(k)), k);
+  });
+  test('正式產物：總覽頁、文章頁、sitemap 與舊知識庫導向', () => {
+    const dist = path.join(ROOT, 'dist');
+    if (!fs.existsSync(path.join(dist, 'help'))) return;
+    for (const a of list.filter(x => x.published)) assert.ok(fs.existsSync(path.join(dist, 'help', a.slug, 'index.html')));
+    assert.match(fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8'), /\/help\/betaflight-arming\//);
+    const old = fs.readFileSync(path.join(dist, 'fpv-help.html'), 'utf8');
+    assert.match(old, /"item-10":"\/help\/betaflight-arming\/"/);
+    assert.ok(!/noindex/.test(old), '舊網址不加 noindex，改用 canonical 合併到 /help/');
+    assert.match(old, /<link rel="canonical" href="https:\/\/www\.ewpfpv\.com\/help\/">/);
+    assert.ok(!/http-equiv="refresh"/.test(old), '不用 meta refresh，以免蓋掉 #item-XX 的導向');
+    assert.ok(!/\/fpv-help\.html/.test(fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8')), '舊知識庫不在 sitemap');
+  });
+  test('舊知識庫 91 題（item-0～item-90）每題都改寫進恰好一篇文章', () => {
+    const owners = new Map();
+    for (const a of list.filter(x => x.published)) for (const n of a.legacy_items) { assert.ok(!owners.has(n), `item-${n} 重複`); owners.set(n, a.slug); }
+    const missing = Array.from({ length: 91 }, (_, i) => i).filter(n => !owners.has(n));
+    assert.deepEqual(missing, [], `尚未涵蓋：${missing.join(', ')}`);
+  });
+});
+
 describe('商品內容與購買須知（v2.10 商品 SEO 整理）', () => {
   const { notices } = loadAll();
   const WARRANTY = '本商品不提供 EWP 額外商家保固期間。如商品有到貨瑕疵、與訂購內容不符，或涉及依法應負的瑕疵擔保及其他責任，將依適用法令及實際交易平台規範處理。若商品另有原廠保固，依原廠公告及實際適用條件辦理。';
