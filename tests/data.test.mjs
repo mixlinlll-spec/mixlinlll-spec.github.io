@@ -670,6 +670,7 @@ describe('簡易故障排除中心：一般玩家幾分鐘內看得懂（2026-10
       assert.ok(cjk(a._body) <= 500, `${a.slug}：${cjk(a._body)} 字`);
       const steps = section(a._body, '檢查步驟').split(/\n:::/)[0].match(/^\d+\. /gm) || [];
       assert.ok(steps.length >= 3 && steps.length <= 5, `${a.slug}：檢查步驟 ${steps.length} 步`);
+      for (const l of a._body.match(/^\d+\. .*$/gm) || []) assert.match(l, /^\d+\. \*\*[^*]+\*\*：/, `${a.slug}：步驟要寫成「**標題**：說明」，手機版才不會斷成單獨一行標點`);
       const why = section(a._body, '常見');
       if (why) { const n = (why.split(/\n:::|\n\n##/)[0].match(/^- /gm) || []).length; assert.ok(n >= 2 && n <= 3, `${a.slug}：常見原因 ${n} 個`); }
       else assert.equal(a.slug, 'battery-types-voltage');
