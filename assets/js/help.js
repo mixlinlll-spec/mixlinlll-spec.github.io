@@ -121,6 +121,8 @@
       picks.forEach(p => p.setAttribute('aria-pressed', String(p.dataset.pick === k)));
       cases.forEach(c => { c.hidden = k && c.dataset.case !== k; });
       showAll.hidden = !k;
+      document.querySelectorAll('[data-checks] li[data-for]').forEach(li => { li.hidden = !!k && !li.dataset.for.split(' ').includes(k); });
+      document.dispatchEvent(new Event('help-case-change'));
     };
     picks.forEach(p => p.addEventListener('click', e => {
       e.preventDefault();
@@ -147,6 +149,16 @@
   // ---- 怎樣算修好：全部打勾後顯示完成訊息 ----
   document.querySelectorAll('[data-checks]').forEach(sec => {
     const boxes = [...sec.querySelectorAll('input[type=checkbox]')], done = sec.querySelector('[data-done]');
-    boxes.forEach(b => b.addEventListener('change', () => { done.hidden = !boxes.every(x => x.checked); }));
+    // 只算目前看得到的項目（選了狀況時，其他狀況的項目會被隱藏）；全部沒選狀況時，至少要完成共通項目與某一個狀況的全部項目
+    const update = () => {
+      const vis = boxes.filter(x => !x.closest('li').hidden);
+      const general = vis.filter(x => !x.closest('li').dataset.for);
+      const byCase = {};
+      vis.filter(x => x.closest('li').dataset.for).forEach(x => x.closest('li').dataset.for.split(' ').forEach(c => (byCase[c] = byCase[c] || []).push(x)));
+      const caseOk = !Object.keys(byCase).length || Object.values(byCase).some(l => l.every(x => x.checked));
+      done.hidden = !(general.every(x => x.checked) && caseOk);
+    };
+    boxes.forEach(b => b.addEventListener('change', update));
+    document.addEventListener('help-case-change', update);
   });
 })();

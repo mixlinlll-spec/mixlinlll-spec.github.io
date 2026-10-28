@@ -123,7 +123,15 @@ function container(kind, arg, inner, ctx) {
     ctx.checks = items.length;
     const n = ctx.sections.length + 1;
     ctx.sections.push({ id: `s-${n}`, title: arg || '怎樣算修好' });
-    return `<section class="help-checks" data-checks><h2 id="s-${n}">${inline(arg || '怎樣算修好')}</h2><ul>${items.map((t, k) => `<li><label><input type="checkbox" id="chk-${k + 1}"><span>${inline(t)}</span></label></li>`).join('')}</ul><p class="help-done" data-done hidden>全部正常，問題已排除。</p></section>`;
+    // 「（A）」「（B、C）」開頭的項目只屬於那幾個狀況；選了狀況時只需要勾那個狀況的項目＋共通項目
+    const li = (t, k) => {
+      const m = t.match(/^（([A-Z](?:、[A-Z])*)）\s*(.*)$/);
+      const cases = m ? m[1].split('、') : [];
+      const label = m ? `<span class="help-check-case">${m[1]} 狀況</span>${inline(m[2])}` : inline(t);
+      return `<li${cases.length ? ` data-for="${cases.join(' ')}"` : ''}><label><input type="checkbox" id="chk-${k + 1}"><span>${label}</span></label></li>`;
+    };
+    const hasCase = items.some(t => /^（[A-Z]/.test(t));
+    return `<section class="help-checks" data-checks><h2 id="s-${n}">${inline(arg || '怎樣算修好')}</h2>${hasCase ? '<p class="help-check-note">標示狀況代號的項目，只要勾你遇到的那一種；上方「先選狀況」選好後，只會顯示那一種。</p>' : ''}<ul>${items.map(li).join('')}</ul><p class="help-done" data-done hidden>全部正常，問題已排除。</p></section>`;
   }
   ctx.errors.push(`不認得的區塊 :::${kind}`);
   return '';

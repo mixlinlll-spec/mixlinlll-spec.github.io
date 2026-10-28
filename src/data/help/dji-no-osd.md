@@ -37,8 +37,8 @@ sources:
 ## 建議檢查順序
 
 1. **看接線**：天空端 6 針排線裡的 RX、TX 兩條線，要接到飛控同一組 UART（例如 UART1），而且交叉接：天空端的 TX 接飛控 RX，天空端的 RX 接飛控 TX。
-2. **看「連接埠」頁**：天空端接的那一組 UART，Configuration/MSP 要打開；周邊設備可以選 VTX (MSP + Displayport)。
-3. **套用 OSD 預設集**：Betaflight 的「預設集」（Presets）頁搜尋「osd for dji」，依畫面上的選項，選擇 DJI 天空端接線的那一組 UART，並啟用 HD 畫面格式，套用後儲存。
+2. **看「連接埠」頁**：找到天空端 TX／RX 實際接的那一組 UART（例如 UART1），把那一列的 Configuration/MSP 開關打開；同一列的 Peripherals（周邊設備）可以選 VTX (MSP + Displayport)（Betaflight App 2026.6 的選項名稱，舊版名稱可能略有不同）。其他 UART 不要開 MSP 以外的重複功能。改完按 Save and Reboot。欄位位置可對照 [[receiver-no-control]] 的連接埠截圖。
+3. **套用 OSD 預設集（選用）**：Betaflight 的「預設集」（Presets）頁搜尋「osd for dji」，依畫面上的選項，選擇 DJI 天空端接線的那一組 UART，並啟用 HD 畫面格式，套用後儲存。預設集的名稱與內容會隨版本更新，找不到時不用套用，照第 2、4 步手動設定即可。
 4. **OSD 頁選 HD**：「OSD」頁的 Video Format（影像格式）選 HD。這個選項就是給透過 MSP Displayport 接收文字的數位圖傳用的。
 5. **勾選要顯示的項目**：「OSD」頁勾選電壓、飛行時間等項目，拖到想要的位置。
 6. **看眼鏡設定**：眼鏡裡的飛行資訊顯示要打開。

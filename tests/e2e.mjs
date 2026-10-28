@@ -454,6 +454,12 @@ console.log('17. 故障排除中心：搜尋、解鎖原因查詢、類比三選
   await page.fill('#flag-q', '');
   for (const b of await page.$$('[data-checks] input')) await b.check();
   ok(await page.isVisible('[data-done]'), '怎樣算修好：全部打勾後顯示完成');
+  await page.goto(PUB + '/help/edgetx-issues/', { waitUntil: 'load' });
+  await page.click('[data-pick="B"]');
+  const visChecks = page.locator('[data-checks] li:visible input');
+  ok(await visChecks.count() === 1 && await page.locator('[data-checks] li[data-for="A"]').isHidden(), '怎樣算修好：選了 B 狀況，只顯示 B 的項目');
+  await visChecks.first().check();
+  ok(await page.isVisible('[data-done]'), '怎樣算修好：只勾自己遇到的狀況就算完成，不必三種都勾');
   ok(!(await page.textContent('.help-more')).includes('需額外付費') && await page.locator('.help-more a[href="/services/repair/"]').count() === 1, '還是不行：只有送修檢測（檢測與報價），不另外標示付費');
 
   await page.goto(PUB + '/help/analog-no-video/', { waitUntil: 'load' });

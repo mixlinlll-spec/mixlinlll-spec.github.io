@@ -95,7 +95,7 @@ sources:
 1. **先分辨是真的連上，還是在 Bootloader 模式**：看遙控器有沒有收到接收機的遙測資料（例如遙控器的遙測畫面出現 RSSI、LQ 等數值）。有，代表真的連上，繼續第 2 步。沒有，接收機可能停在 Bootloader（刷機）模式：拔掉電池重新插電，插電時不要按接收機上的按鍵；剛透過飛控刷過接收機的話，重新上電一次。重新插電仍然恆亮、遙控器也收不到遙測：接收機可能接在飛控標示 SBUS 的那組 UART 上（那組的 RX 常有下拉電阻，會讓接收機卡在 Bootloader），改接到另一組 UART；不確定就看文末「還是不行？」。
 2. **看「接收機」頁的通道條（下圖 ①）**：USB 接上電腦、接上電池，到 Betaflight「接收機」頁撥搖桿。通道條會跟著動，代表一切正常；完全不動，繼續下一步。
 3. **看「接收機」頁的協定（下圖 ②）**：協定是看飛機上的接收方式，不是看遙控器品牌：
-   - 外接的 ExpressLRS（ELRS）接收機：Receiver Mode 選 Serial (via UART)，Serial Receiver Provider 選 CRSF。
+   - 外接的 ExpressLRS（ELRS）接收機：Receiver Mode 選 Serial (via UART)，Serial Receiver Provider 選 CRSF（ELRS 接收機預設輸出 CRSF；如果你曾在接收機的設定把輸出協定改成 SBUS 等其他協定，這裡要選它實際輸出的協定）。
    - 飛控內建的 ELRS 接收機：Receiver Mode 選 SPI Rx (e.g. built-in Rx)，Provider 選 ExpressLRS；不用做第 4、5 步。
    - DJI 遙控器 3（透過 O4 天空端的 SBUS 線）：Receiver Mode 選 Serial (via UART)，Provider 選 SBUS，接線看 [[dji-o4-power-wiring]]。
    - 下拉選單裡沒有你要的協定（畫面會出現 Some Receiver Providers are not supported by current Build Configuration）：代表刷韌體時 Radio Protocol 沒選它，要重新刷韌體並在 Build Configuration 選對協定，看 [[firmware-update]]。

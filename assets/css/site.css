@@ -828,3 +828,4 @@ section{padding:36px 0}
 @media(max-width:900px){.help-layout{grid-template-columns:minmax(0,1fr)}.help-aside{display:none}}
 @media(max-width:560px){.help-head h1{font-size:26px}.help-start{width:100%}}
 .help-main code{overflow-wrap:anywhere;word-break:break-word}
+.help-check-case{display:inline-block;font-size:12px;font-weight:700;color:var(--red-ink);background:var(--red);padding:0 6px;margin-right:6px;border-radius:3px}.help-check-note{font-size:14px;color:var(--muted);margin:0 0 8px}
