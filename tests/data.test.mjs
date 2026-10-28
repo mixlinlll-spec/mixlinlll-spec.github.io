@@ -698,7 +698,8 @@ describe('第三輪：失聯判定、空中測試、版本標示、電池門檻'
       assert.equal(a.hw_verified, '尚未實機驗證', `${a.slug}：目前沒有任何實機紀錄`);
       if (/Betaflight/.test(a.applies)) assert.ok(/原始碼|官方文件/.test(a.checked), a.slug);
     }
-    const html = fs.readFileSync(path.join(ROOT, 'dist/help/failsafe-check/index.html'), 'utf8');
+    // CI 跑單元測試時還沒建置 dist，所以檢查頁面模板
+    const html = fs.readFileSync(path.join(ROOT, 'scripts/build.mjs'), 'utf8').replace(/\$\{esc\(a\.hw_verified\)\}/g, '尚未實機驗證');
     assert.ok(/<dt>宣稱適用<\/dt>[\s\S]*<dt>已核對<\/dt>[\s\S]*<dt>實機驗證<\/dt><dd>尚未實機驗證<\/dd>/.test(html));
     assert.ok(/class="help-verify">尚未實機驗證。標示的版本是撰寫依據，不代表每個版本都測過/.test(html));
     const bad = validateHelp([{ ...fs1, hw_verified: '已驗證' }]);
