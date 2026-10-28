@@ -69,12 +69,12 @@ sources:
 依 DJI 官方規格，DJI FPV 遙控器 3 搭配 Goggles 3 或 Goggles N3 使用；Goggles 2／Integra 要搭配遙控器 2。有畫面不代表控制線已經接好。
 
 1. **看相容組合**：眼鏡、天空端、遙控器要是官方列出的組合，並完成配對。
-2. **飛控設定 SBUS**：天空端的 SBUS 線接到飛控某一組 UART 的 RX，在「連接埠」頁那一組打開 Serial Rx，「接收機」頁的協定選 SBUS。DJI 規格註明需要 Betaflight 4.3.0 以上。
+2. **飛控設定 SBUS**：天空端的 SBUS 線接到飛控某一組 UART 的 RX，在「連接埠」頁那一組打開 Serial Rx；「接收機」頁的 Receiver Mode 選 Serial (via UART)，Serial Receiver Provider 選 SBUS（畫面位置可對照 [[receiver-no-control]] 的接收機頁截圖）。SBUS 是反相訊號，F4 飛控的一般 UART RX 不能用軟體反相，要接飛控說明書標示 SBUS 的焊點；F7、H7 等飛控通常任一組 UART 的 RX 都可以，依飛控說明書為準。DJI 規格註明需要 Betaflight 4.3.0 以上。
 3. **看「接收機」頁**：撥動搖桿，通道條會跟著動才算接好。
 4. **改用 ELRS 等其他接收機時**：把天空端的 SBUS 線拔掉，只保留一套接收方式。
 
 :::advanced 進階：使用遙控器 3 的失聯行為
-用 DJI 遙控器 3 時，影像和遙控走同一條無線連線，所以影像斷訊時，飛控也會進入失聯保護。設定失聯保護時要把這點考慮進去。
+用 DJI 遙控器 3 時，影像和遙控走同一條無線連線，影像斷訊通常也代表遙控斷了。飛控會不會正確進入失聯保護，要看天空端斷線時 SBUS 的輸出方式，本站找不到 DJI 官方說明，所以一定要照 [[failsafe-check]] 實測，確認關掉遙控器時飛控有進入失聯保護再飛。
 :::
 
 :::checks 怎樣算修好

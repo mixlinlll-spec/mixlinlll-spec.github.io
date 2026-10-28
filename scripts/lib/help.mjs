@@ -146,7 +146,7 @@ export function figCaption(alt, hasMobile) {
 
 // Betaflight App 的分頁英文名稱（2026.6 介面實際文字）。每篇文章第一次提到時自動補上，
 // 讓使用英文介面的人也找得到；中文介面的翻譯各版本不一致，以英文為準。
-export const BF_TAB_NAMES = { 設定: 'Setup', 連接埠: 'Ports', 接收機: 'Receiver', 馬達: 'Motors', 模式: 'Modes', 圖傳: 'Video Transmitter', 失控保護: 'Failsafe', 配置: 'Configuration', 感測器: 'Sensors' };
+export const BF_TAB_NAMES = { 設定: 'Setup', 連接埠: 'Ports', 接收機: 'Receiver', 馬達: 'Motors', 模式: 'Modes', 圖傳: 'Video Transmitter', 失控保護: 'Failsafe', 配置: 'Configuration', 感測器: 'Sensors', 預設集: 'Presets' };
 export function addTabNames(body) {
   const seen = new Set();
   return body.replace(/「([^」]{1,6})」頁(?!（)/g, (all, name) => {

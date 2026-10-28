@@ -7,7 +7,7 @@ category: 數位圖傳
 level: beginner
 applies: DJI O4 Air Unit／O4 Air Unit Pro（其他 DJI 數位圖傳原理相同，選單依型號）
 needs: 眼鏡；啟用需要電腦、USB 線與飛機電池
-verified: 2026-10-27
+verified: 2026-10-28
 summary: 數位圖傳訊號變差時，會降低畫質，表現成卡頓和馬賽克，不會像類比一樣出現雪花。先排除還沒啟用、地面低功耗與天線擺位，再看頻寬與所在地的限制。
 keywords:
   - 卡頓
@@ -29,7 +29,7 @@ prepare:
   - 天線安裝位置的照片
 sources:
   - DJI 官方：O4 Air Unit 系列規格（頻段、頻寬與頻道） | https://dji.com/o4-air-unit/specs
-  - Oscar Liang：DJI O4 Pro 設定（啟用與低功耗） | https://oscarliang.com/how-to-setup-dji-o4-pro/
+  - Oscar Liang：DJI O4 Pro 設定（啟用） | https://oscarliang.com/how-to-setup-dji-o4-pro/
   - Heliguy：O4 地面低功耗模式 | https://www.heliguy.com/blogs/knowledge-base/does-the-low-power-mode-of-the-dji-o4-air-unit-series-need-to-be-turned-on
 ---
 :::safety 開始前
@@ -50,7 +50,7 @@ sources:
 | --- | --- | --- |
 | 選單有些項目反灰進不去、功率很低 | 天空端可能還沒啟用 | 第 1 步，完成啟用後再更新兩邊韌體 |
 | 地上很弱，飛起來才正常 | 地面低功耗在運作，屬於正常 | 不需要處理 |
-| 飛起來還是很弱 | 圖傳沒收到解鎖狀態 | 檢查飛控到天空端的 TX／RX 線與 OSD 設定 |
+| 飛起來還是很弱 | 可能是圖傳沒收到解鎖狀態（玩家社群常見經驗，DJI 未正式說明） | 檢查飛控到天空端的 TX／RX 線與「連接埠」頁設定，看 [[dji-no-osd]] |
 | 能選的頻道只有一個 | 頻寬設得比較寬 | 依 DJI 規格，5.8GHz 在 40／60MHz 頻寬時只有 1 個頻道，20／10MHz 時有 3 個；需要和別人錯開時改用窄頻寬 |
 | 遠一點或轉向某個方向就卡 | 天線被遮擋或方向不對 | 第 3 步，調整天線位置後再比較 |
 | 降低頻寬後就順了 | 原本訊號邊緣不足 | 在這個場地維持較窄的頻寬 |
