@@ -58,8 +58,8 @@
     [all('DSHOT_BBANG'), 'DShot bitbang 馬達輸出設定或硬體不相容', '牽涉馬達輸出設定，不屬於新手自行處理的範圍。', 'adv', null, ['DSHOT_BITBANG']],
     [all('BST'), 'BST 介面相關的禁止解鎖（少見）', '不屬於新手自行處理的範圍。', 'adv'],
     [all('LOAD'), '飛控運算負載過高', '牽涉進階設定，不屬於新手自行處理的範圍。', 'adv'],
-    [all('GPS'), '開了 GPS 返航，但衛星數不夠', '到戶外空曠處等待定位；GPS 返航設定不屬於新手自行處理的範圍。', 'adv'],
-    [all('RESCUE_SW'), 'GPS 返航開關是開著的', '把返航開關撥回「關」。', 'adv', null, ['RESC']],
+    [all('GPS'), '開了 GPS 救援，開機後第一次解鎖前衛星數不夠（預設 8 顆）', '到戶外空曠處等待定位，衛星數足夠再解鎖。', 'ok', ['/help/gps-no-fix/', 'GPS 收不到衛星']],
+    [all('RESCUE_SW'), 'GPS 救援開關是開著的', '把救援開關撥回「關」。', 'ok', null, ['RESC']],
   ];
   const TAG = { ok: ['可自行處理', 'is-ok'], adv: ['交給專業處理', 'is-adv'], stop: ['先停手', 'is-stop'] };
   const tool = document.querySelector('[data-tool="arming-flags"]');

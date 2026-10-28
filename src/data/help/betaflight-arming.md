@@ -72,7 +72,7 @@ sources:
 | ALT_HOLD_SW、POS_HOLD_SW（2025.12 起）；AUTOPILOT_SW（2026.6 起）。App 2026.6 顯示 ALTHOLD、POSHOLD、AUTOPILOT | 定高、定點或自動駕駛模式的開關是開著的 | 把那個模式的開關撥回「關」再解鎖 |
 | FLIP_SWITCH（2025.12 起；App 2026.6 顯示 CRASHFLIP） | 用過翻正（Turtle）功能後，需要先手動上鎖一次 | 把解鎖開關撥回「關」，再重新解鎖 |
 
-清單裡出現 RUNAWAY、CRASH、DSHOT_TELEM（4.4 叫 RPMFILTER）、MOTOR_PROTO、LOAD、NOGYRO、GPS、RESCUE_SW、PARALYZE、DSHOT_BBANG 或 BST，就不屬於新手自行處理的範圍（App 2026.6 上分別顯示為 RUNAWAY_TAKEOFF、CRASH_DETECTED、DSHOT_TELEM、MOTOR_PROTOCOL、LOAD、NO_GYRO、GPS、RESC、PARALYZE、DSHOT_BITBANG、BST）。其中 RUNAWAY 代表上次解鎖時飛控偵測到「失控衝飛」，常見原因是馬達順序、旋轉方向或槳裝錯，很危險，先不要再試。
+清單裡出現 RUNAWAY、CRASH、DSHOT_TELEM（4.4 叫 RPMFILTER）、MOTOR_PROTO、LOAD、NOGYRO、PARALYZE、DSHOT_BBANG 或 BST，就不屬於新手自行處理的範圍（App 2026.6 上分別顯示為 RUNAWAY_TAKEOFF、CRASH_DETECTED、DSHOT_TELEM、MOTOR_PROTOCOL、LOAD、NO_GYRO、PARALYZE、DSHOT_BITBANG、BST）。GPS 代表開了 GPS 救援、第一次解鎖前衛星數不夠，看 [[gps-no-fix]]；RESCUE_SW（App 顯示 RESC）是救援開關開著，撥回「關」即可。其中 RUNAWAY 代表上次解鎖時飛控偵測到「失控衝飛」，常見原因是馬達順序、旋轉方向或槳裝錯，很危險，先不要再試。
 
 另外兩個常見、可以自己處理的：CMS（App 顯示 CMS_MENU）是用搖桿進了 OSD 選單，選 EXIT 離開即可；REBOOT_REQD（App 顯示 REBOOT_REQUIRED）是改了要重開機才生效的設定，存檔後重新開機即可。
 

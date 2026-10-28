@@ -445,6 +445,13 @@ console.log('17. 故障排除中心：搜尋、解鎖原因查詢、類比三選
   await page.fill('#flag-q', '');
   await page.click('.flag-list button:has-text("RUNAWAY")');
   ok((await page.textContent('[data-flag-answer]')).includes('先停手'), '解鎖：RUNAWAY 標示先停手');
+  await page.click('[data-ver="2026.6"]');
+  for (const [q, fw] of [['CALIBRATING', 'CALIB'], ['ACC_CALIBRATION', 'NO_ACC_CAL'], ['CRASHFLIP', 'FLIP_SWITCH'], ['NO_GYRO', 'NOGYRO'], ['CMS_MENU', 'CMS'], ['REBOOT_REQUIRED', 'REBOOT_REQD']]) {
+    await page.fill('#flag-q', q);
+    const t = await page.textContent('[data-flag-answer]');
+    ok(t.includes(fw) && t.includes(q), `解鎖：輸入 App 2026.6 畫面上的 ${q} 查得到韌體名稱 ${fw}`);
+  }
+  await page.fill('#flag-q', '');
   for (const b of await page.$$('[data-checks] input')) await b.check();
   ok(await page.isVisible('[data-done]'), '怎樣算修好：全部打勾後顯示完成');
   ok(!(await page.textContent('.help-more')).includes('需額外付費') && await page.locator('.help-more a[href="/services/repair/"]').count() === 1, '還是不行：只有送修檢測（檢測與報價），不另外標示付費');
