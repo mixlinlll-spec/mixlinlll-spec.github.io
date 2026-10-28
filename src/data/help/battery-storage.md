@@ -6,6 +6,8 @@ order: 6
 category: 電池／充電
 level: beginner
 applies: LiPo、LiHV、Li-ion 電池
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 有存放（Storage）功能的充電器、防火袋或不可燃的收納盒
 verified: 2026-10-28
 summary: 長期不飛的電池，先整理到存放電壓，放在陰涼乾燥處，每個月檢查一次外觀與每一節電壓。不要滿電放著，也不要電量過低放著。

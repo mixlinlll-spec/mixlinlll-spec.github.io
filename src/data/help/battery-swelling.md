@@ -6,6 +6,8 @@ order: 5
 category: 電池／充電
 level: beginner
 applies: LiPo、LiHV、Li-ion 電池
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 防火袋或不可燃的容器、絕緣膠帶
 verified: 2026-10-28
 summary: 鼓包、變形、有異味或撞傷的電池已經受損，不要再充電或放電。發熱、冒煙時先遠離、不要碰；已冷卻、穩定的電池，再絕緣端子送回收。

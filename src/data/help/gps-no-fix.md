@@ -6,6 +6,8 @@ order: 1
 category: GPS／返航
 level: beginner
 applies: Betaflight 4.4、4.5、2025.12、2026.6＋UBLOX 類 GPS 模組
+checked: 最少衛星數預設值：已核對 2026.6.2 原始碼；其他依官方文件，未逐版核對。
+hw_verified: 尚未實機驗證
 needs: 電腦、USB 線、電池、戶外空曠場地
 verified: 2026-10-28
 summary: 先分清楚是「飛控根本沒讀到 GPS」，還是「讀到了但收不到衛星或定位不穩」。前者是接線或設定，後者是收星環境與安裝位置。

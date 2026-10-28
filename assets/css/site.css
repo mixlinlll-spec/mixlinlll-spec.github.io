@@ -699,6 +699,8 @@ section{padding:36px 0}
 
 .help-article{padding-bottom:24px}
 .help-head{margin:8px 0 28px}
+.help-verify{margin:0 0 16px;padding:8px 12px;border-left:3px solid var(--muted);background:var(--panel);font-size:14px;color:var(--muted);max-width:680px}
+.help-verify a{color:inherit;text-decoration:underline}
 .help-head h1{font-size:clamp(28px,4vw,42px);line-height:1.3;font-weight:900;margin:0 0 12px;text-wrap:balance}
 .help-head .lead{max-width:40em;font-size:18px;color:#d9d8d4;margin:0}
 .help-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:48px;align-items:start}

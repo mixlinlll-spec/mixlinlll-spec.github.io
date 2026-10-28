@@ -708,7 +708,8 @@ ${groups.map(([c, l]) => `<div class="help-group"><h2>${esc(c)}</h2><ul>${l.map(
     const c = [{ name: '首頁', href: '/' }, { name: '故障排除中心', href: '/help/' }, { name: a.category }];
     const toc = [...a.sections, { id: 'more', title: '還是不行？' }];
     const body = `<article class="wrap help-article">${breadcrumbs(c)}
-<header class="help-head"><h1>${esc(a.title)}</h1><p class="lead">${esc(a.summary)}</p><a class="btn btn-primary help-start" href="#start">開始檢查 <span aria-hidden="true">↓</span></a></header>
+<header class="help-head"><h1>${esc(a.title)}</h1><p class="lead">${esc(a.summary)}</p>
+<p class="help-verify">${esc(a.hw_verified)}。標示的版本是撰寫依據，不代表每個版本都測過；<a href="#scope">看哪些已核對</a></p><a class="btn btn-primary help-start" href="#start">開始檢查 <span aria-hidden="true">↓</span></a></header>
 <div class="help-layout">
   <div class="help-main" id="start">
 ${a.html}
@@ -718,7 +719,7 @@ ${a.html}
       <ul>${a.prepare.map(p => `<li>${esc(p).replace(/`([^`]+)`/g, '<code>$1</code>')}</li>`).join('')}</ul>
       <a class="help-repair" href="${repair ? url.service(repair) : '/services/'}"><strong>送修檢測</strong><span>寄送實機，由 EWP 檢測與報價</span></a>
     </section>
-    <details class="help-scope"><summary>這篇適用的設備與版本</summary><dl class="help-meta"><dt>適用</dt><dd>${esc(a.applies)}</dd><dt>難度</dt><dd>${level(a)}</dd>${a.needs ? `<dt>需要</dt><dd>${esc(a.needs)}</dd>` : ''}<dt>分類</dt><dd>${esc(a.category)}</dd></dl></details>
+    <details class="help-scope" id="scope"><summary>版本與驗證狀態</summary><dl class="help-meta"><dt>宣稱適用</dt><dd>${esc(a.applies)}</dd><dt>已核對</dt><dd>${esc(a.checked)}</dd><dt>實機驗證</dt><dd>${esc(a.hw_verified)}</dd><dt>難度</dt><dd>${level(a)}</dd>${a.needs ? `<dt>需要</dt><dd>${esc(a.needs)}</dd>` : ''}<dt>分類</dt><dd>${esc(a.category)}</dd></dl></details>
     <section class="help-sources"><h2>參考資料</h2><ul>${a.sources.map(s => `<li><a href="${attr(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul></section>
   </div>
   <aside class="help-aside">

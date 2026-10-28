@@ -6,6 +6,8 @@ order: 1
 category: 接收機／對頻
 level: beginner
 applies: ExpressLRS 3.x 接收機＋Betaflight（4.4 以後各版本）
+checked: ELRS 部分依 ExpressLRS 官方文件；Betaflight 的 OSD 失聯字樣已核對 4.5 原始碼，其他版本未逐項核對。
+hw_verified: 尚未實機驗證
 needs: 電腦、可傳資料的 USB 線、遙控器
 verified: 2026-10-28
 summary: 先看接收機的燈怎麼閃。燈號可以縮小範圍：沒供電（或停在刷機模式）、還沒連上、在 Wi-Fi 模式、模型不符，還是已經連上但飛控沒收到。

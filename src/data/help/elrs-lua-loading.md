@@ -6,6 +6,8 @@ order: 2
 category: 接收機／對頻
 level: beginner
 applies: ExpressLRS 3.x 發射模組（內建或外接）＋EdgeTX 遙控器
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 遙控器（EdgeTX）、記憶卡或電腦
 verified: 2026-10-28
 summary: 腳本卡在載入中，代表遙控器沒有和 ELRS 發射模組正常通訊。多數是模型沒有啟用發射模組、外接模組的鮑率不夠，或腳本版本和模組韌體不同。

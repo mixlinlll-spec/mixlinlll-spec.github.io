@@ -6,6 +6,8 @@ order: 2
 category: 新手檢查
 level: beginner
 applies: 所有穿越機（不分韌體版本）
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 備用螺旋槳、小螺絲起子、電腦與 USB 線
 verified: 2026-10-28
 summary: 摔機後看起來沒事，也常有隱藏損傷。從螺旋槳、機架、馬達、線材到電池依序看一遍，再連 Betaflight 確認，才裝槳試飛。

@@ -6,6 +6,8 @@ order: 2
 category: 數位圖傳
 level: beginner
 applies: DJI O4 Air Unit／O4 Air Unit Pro＋Betaflight 4.4、4.5、2025.12、2026.6
+checked: OSD 文字送到哪一個 UART：已核對 4.5 原始碼（config.c）；4.4、2025.12、2026.6 未核對。
+hw_verified: 尚未實機驗證
 needs: 電腦、可傳資料的 USB 線
 verified: 2026-10-28
 summary: DJI 的飛行文字不是類比那種疊在影像上的晶片，而是飛控透過一條序列線（MSP DisplayPort）把文字傳給圖傳。沒有文字時，依序查：接線、Betaflight 設定、眼鏡顯示設定。

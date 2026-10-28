@@ -6,6 +6,8 @@ order: 2
 category: 馬達／電調
 level: beginner
 applies: Betaflight 4.4、4.5、2025.12、2026.6 四軸穿越機
+checked: OSD 計時器與命令列行為：已核對 4.5 原始碼；其他版本未逐項核對。
+hw_verified: 尚未實機驗證
 needs: 電腦、USB 線、電池
 verified: 2026-10-28
 summary: 解鎖之後馬達的反應分成四種：完全不轉、只有部分轉、會轉但一起飛就翻、拆槳時越轉越快。先找出是哪一種，再拆槳在「馬達」頁逐顆測試。

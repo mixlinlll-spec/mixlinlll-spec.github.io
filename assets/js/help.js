@@ -162,3 +162,10 @@
     document.addEventListener('help-case-change', update);
   });
 })();
+
+// 「看哪些已核對」連結：打開文末的版本與驗證狀態
+(function () {
+  function openScope() { var d = document.getElementById('scope'); if (d && location.hash === '#scope') d.open = true; }
+  document.addEventListener('click', function (e) { var a = e.target.closest && e.target.closest('a[href="#scope"]'); if (a) { var d = document.getElementById('scope'); if (d) d.open = true; } });
+  window.addEventListener('hashchange', openScope); openScope();
+})();

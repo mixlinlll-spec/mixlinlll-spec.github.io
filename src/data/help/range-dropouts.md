@@ -6,6 +6,8 @@ order: 1
 category: 遙控與圖傳訊號
 level: beginner
 applies: ELRS／Crossfire 等遙控系統＋類比或數位圖傳
+checked: OSD 失聯字樣已核對 4.5 原始碼；其他依官方文件。
+hw_verified: 尚未實機驗證
 needs: 備用天線（交叉測試用）、空曠場地
 verified: 2026-10-28
 summary: 距離變短或突然斷訊，常和天線狀態、天線擺位、兩套天線擠在一起有關。先分清楚是只斷圖、只斷控，還是兩個一起斷，再從天線開始查。

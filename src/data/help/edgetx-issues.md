@@ -6,6 +6,8 @@ order: 1
 category: 遙控器／EdgeTX
 level: beginner
 applies: EdgeTX 遙控器（彩色與黑白螢幕）
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 遙控器、可傳資料的 USB 線、電腦
 verified: 2026-10-28
 summary: 三個 EdgeTX 常見問題：腳本放錯資料夾或種類不對、搖桿沒校正或加了微調、USB 選錯模式或用了充電線。照狀況處理，大多不用刷遙控器韌體。

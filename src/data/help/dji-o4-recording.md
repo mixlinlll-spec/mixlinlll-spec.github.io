@@ -6,6 +6,8 @@ order: 4
 category: 數位圖傳
 level: beginner
 applies: DJI O4 Air Unit／O4 Air Unit Pro
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 眼鏡、電腦與可傳資料的 USB 線
 verified: 2026-10-28
 summary: 先分清楚是眼鏡錄影還是飛機上的機載錄影，兩者存在不同地方。一般 O4 只有內建儲存、不能插記憶卡，O4 Pro 才支援 microSD。錄影有果凍，多半是機身震動傳到鏡頭。

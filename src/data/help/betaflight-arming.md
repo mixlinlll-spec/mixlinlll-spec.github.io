@@ -6,6 +6,8 @@ order: 1
 category: 飛控設定
 level: beginner
 applies: Betaflight 4.4、4.5、2025.12、2026.6
+checked: 解鎖旗標名稱：已核對 4.5 原始碼與 Betaflight App 2026.6.2 原始碼；命令列與 MSP 解鎖限制：已核對 4.5 原始碼與 App 原始碼；4.4、2025.12、2026.6 韌體未逐項核對。
+hw_verified: 尚未實機驗證
 needs: 電腦、可傳資料的 USB 線
 verified: 2026-10-28
 summary: 飛控覺得「現在起飛不安全」時會拒絕解鎖，而且會告訴你原因。照著原因代碼逐一處理，大多數情況不用拆機。

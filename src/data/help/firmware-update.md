@@ -6,6 +6,8 @@ order: 1
 category: 韌體更新
 level: intermediate
 applies: Betaflight 4.4、4.5、2025.12、2026.6；接收機與 DJI 裝置另見內文
+checked: Full chip erase 預設值：已核對 Betaflight App 2026.6.2 原始碼；韌體版本差異依官方文件，未逐版核對原始碼。
+hw_verified: 尚未實機驗證
 needs: 電腦、可傳資料的 USB 線
 verified: 2026-10-28
 summary: 建議用 Full chip erase（完整清除晶片）刷韌體，原本的設定會被清掉，所以先備份、確認型號再刷。刷完設定不見是正常的；刷完找不到陀螺儀或無法開機，多半是型號選錯或刷機中斷。

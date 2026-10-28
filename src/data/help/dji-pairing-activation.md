@@ -6,6 +6,8 @@ order: 2
 category: 數位圖傳
 level: beginner
 applies: DJI O4 Air Unit／O4 Air Unit Pro＋DJI Goggles 3、Goggles 2、Integra（N3 與其他型號的配對步驟依原廠說明）
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 眼鏡、飛機電池；更新或啟用需要電腦與可傳資料的 USB 線
 verified: 2026-10-28
 summary: 天空端紅燈、眼鏡沒畫面，代表兩邊還沒連上。先把兩邊更新到相容版本、在眼鏡選對裝置，再進入配對；電腦找不到裝置，多半是線材、插孔或軟體版本；能連上卻無法啟用，最常見是啟用時沒有接電池。

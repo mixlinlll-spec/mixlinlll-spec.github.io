@@ -6,6 +6,8 @@ order: 3
 category: 類比圖傳
 level: beginner
 applies: 類比圖傳（SmartAudio、IRC Tramp 控制）＋Betaflight 4.4、4.5、2025.12、2026.6
+checked: 依官方文件與 Betaflight App 介面文字，未逐版核對韌體原始碼。
+hw_verified: 尚未實機驗證
 needs: 電腦、可傳資料的 USB 線、眼鏡、飛機電池；部分步驟需要三用電表
 verified: 2026-10-28
 summary: 有畫面、但 Betaflight 改不了頻道或顯示未就緒，問題多半在「控制線」或 Betaflight 的設定（連接埠、協定、頻道表），和影像是兩回事。只能近距離收到，先懷疑圖傳還在低功率模式（Pit mode）。

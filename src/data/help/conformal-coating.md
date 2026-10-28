@@ -6,6 +6,8 @@ order: 3
 category: 新手檢查
 level: intermediate
 applies: 飛控、電調、接收機等電路板（不分韌體版本）
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 電子用防潮塗層（Conformal Coating）、細毛刷
 verified: 2026-10-28
 summary: 防水漆是在電路板上塗一層薄的絕緣膜，可以擋潮氣、露水和碳纖粉塵，但不等於可以泡水。常在潮濕、草地或雪地飛才建議上，而且要避開接頭與按鍵。

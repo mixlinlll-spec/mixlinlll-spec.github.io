@@ -6,6 +6,8 @@ order: 4
 category: 接收機／對頻
 level: intermediate
 applies: ExpressLRS 3.x 外接接收機（接在飛控 5V 供電）
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 電池、電腦、USB 線
 verified: 2026-10-28
 summary: 只接 USB 時正常、一接電池就重啟，通常和供電有關：接收機的電源或地線接觸不好，或圖傳等設備和接收機共用同一組穩壓、開機時把電壓拉低。先比較兩種供電，再一樣一樣拔掉測試；要改接線前，先查清楚飛控有幾組獨立的穩壓電路。

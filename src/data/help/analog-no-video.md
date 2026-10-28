@@ -6,6 +6,8 @@ order: 2
 category: 類比圖傳
 level: beginner
 applies: 類比圖傳＋飛控內建 OSD（不適用 DJI、Walksnail、HDZero）
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 眼鏡、可接電池的飛機；部分步驟需要三用電表；狀況 C 的第 3 步需要焊接
 verified: 2026-10-28
 summary: 先看眼鏡裡是哪一種畫面：雪花、黑畫面有文字、黑畫面沒文字。三種畫面各自指向不同的斷點（黑畫面沒文字也可能只是眼鏡沒訊號時顯示黑幕），分清楚後，要查的範圍會小很多。

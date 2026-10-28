@@ -6,6 +6,8 @@ order: 1
 category: 數位圖傳
 level: beginner
 applies: DJI O4 Air Unit／O4 Air Unit Pro＋DJI Goggles 3、N3、Goggles 2、Integra（其他 DJI 圖傳原理相同，選單依型號）
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 眼鏡、飛機電池、桌上型風扇
 verified: 2026-10-28
 summary: 先看飛機上圖傳（天空端）的燈：不亮最常見是沒有供電或電壓不足，也可能是接頭沒插好或天空端損壞；原本有畫面、在地上放一陣子才黑，多半和散熱有關；換線或摔機後黑屏、出現彩塊，多半是鏡頭排線。紅燈代表還沒和眼鏡連上，請看配對那篇。

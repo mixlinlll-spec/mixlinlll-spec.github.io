@@ -6,6 +6,8 @@ order: 1
 category: 供電／接線
 level: intermediate
 applies: 飛控、電調與圖傳的供電接線（不分韌體版本）
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 限流保護器（Smoke Stopper）、各零件的原廠接線圖
 verified: 2026-10-28
 summary: USB 能連飛控，只代表 USB 那條路正常；電池那條供電路徑是另一回事。供電問題一不小心就會燒板，所以本頁以「斷電目視檢查＋找出是哪個零件」為主；會用電表的人可以量供電焊點的電壓，板上零件的量測與拆修交給專業。

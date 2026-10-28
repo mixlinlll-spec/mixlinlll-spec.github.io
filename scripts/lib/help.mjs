@@ -262,6 +262,11 @@ export function validateHelp(list) {
     for (const e of a.errors) errors.push(`${where}: ${e}`);
     if (!a.published) continue;
     for (const k of ['title', 'summary', 'category', 'level', 'applies', 'verified']) if (!a[k]) errors.push(`${where}: 缺少 ${k}`);
+    // 版本與驗證：「宣稱適用」和「已核對／實機驗證」要分開寫，不能讓讀者以為每個版本都測過
+    if (!a.checked) errors.push(`${where}: 缺少 checked（實際核對過哪些版本的原始碼或文件）`);
+    if (!a.hw_verified) errors.push(`${where}: 缺少 hw_verified（沒有實機驗證就寫「尚未實機驗證」）`);
+    if (a.hw_verified && !/^尚未實機驗證$/.test(a.hw_verified) && !/(照片|影片|錄影|紀錄)/.test(a.hw_verified)) errors.push(`${where}: hw_verified 只能寫「尚未實機驗證」，或寫明有哪些實機照片、影片或紀錄`);
+    if (/Betaflight/.test(a.applies || '') && a.checked && !/(原始碼|官方文件)/.test(a.checked)) errors.push(`${where}: Betaflight 文章的 checked 要寫明核對了哪些版本的原始碼或官方文件`);
     if (a.category && !HELP_CATEGORIES.includes(a.category)) errors.push(`${where}: category 必須是 ${HELP_CATEGORIES.join('、')} 其中之一`);
     if (a.level && !HELP_LEVELS[a.level]) errors.push(`${where}: level 必須是 beginner 或 intermediate`);
     if (a.verified && !DATE.test(a.verified)) errors.push(`${where}: verified 格式必須是 YYYY-MM-DD`);

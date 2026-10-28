@@ -6,6 +6,8 @@ order: 1
 category: 新手檢查
 level: beginner
 applies: 所有穿越機（不分韌體版本）
+checked: 失聯偵測與 OSD 字樣已核對 4.5 原始碼；其他依官方文件與一般安全做法。
+hw_verified: 尚未實機驗證
 needs: 限流保護器（Smoke Stopper）、電腦、USB 線
 verified: 2026-10-28
 summary: 第一次上電的目的是確認安全，不是馬上起飛。拆槳、先過限流保護器，再逐項確認陀螺儀、接收機、馬達與失聯保護，最後才裝槳試飛。

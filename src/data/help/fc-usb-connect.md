@@ -6,6 +6,8 @@ order: 1
 category: 電腦連線
 level: beginner
 applies: Windows 電腦＋Betaflight 飛控（STM32 晶片）
+checked: App 按鈕位置與預設：已核對 Betaflight App 2026.6.2 原始碼；驅動與硬體部分依官方文件。
+hw_verified: 尚未實機驗證
 needs: 電腦、可傳資料的 USB 線
 verified: 2026-10-28
 summary: 先看電腦有沒有「發現」飛控。完全沒反應、看得到但連不上、只出現 STM32 BOOTLOADER，是三種不同的問題，處理方式完全不同。

@@ -6,6 +6,8 @@ order: 3
 category: 接收機／對頻
 level: beginner
 applies: ExpressLRS 3.x
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 遙控器、電腦、USB 線
 verified: 2026-10-28
 summary: ELRS 的第一個輔助通道（AUX1）本來就只有兩段，是設計給解鎖開關用的；需要三段或旋鈕，要放到 AUX2 以後的通道，並看開關模式的設定。

@@ -6,6 +6,8 @@ order: 2
 category: 電池／充電
 level: beginner
 applies: LiPo、LiHV、Li-ion 電池組（平衡充）
+checked: 依本頁參考資料的官方文件或原廠規格撰寫，不涉及韌體原始碼
+hw_verified: 尚未實機驗證
 needs: 充電器、可量每節電壓的電壓表或充電器
 verified: 2026-10-28
 summary: 先分清楚是電池、平衡線，還是充電器設定的問題。充電器拒絕充電，常常是在保護你；不要切換其他模式強制充。
