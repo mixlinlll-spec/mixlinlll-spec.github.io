@@ -478,7 +478,9 @@ describe('故障排除中心（src/data/help/*.md）', async () => {
     assert.match(fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8'), /\/help\/betaflight-arming\//);
     const old = fs.readFileSync(path.join(dist, 'fpv-help.html'), 'utf8');
     assert.match(old, /"item-10":"\/help\/betaflight-arming\/"/);
-    assert.match(old, /noindex/);
+    assert.ok(!/noindex/.test(old), '舊網址不加 noindex，改用 canonical 合併到 /help/');
+    assert.match(old, /<link rel="canonical" href="https:\/\/www\.ewpfpv\.com\/help\/">/);
+    assert.ok(!/http-equiv="refresh"/.test(old), '不用 meta refresh，以免蓋掉 #item-XX 的導向');
     assert.ok(!/\/fpv-help\.html/.test(fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8')), '舊知識庫不在 sitemap');
   });
   test('舊知識庫 91 題（item-0～item-90）每題都改寫進恰好一篇文章', () => {

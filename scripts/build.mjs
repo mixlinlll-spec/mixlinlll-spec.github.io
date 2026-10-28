@@ -636,7 +636,7 @@ function journalPages() {
 </a></li>`;
   const list = posts.length
     ? `<section class="wrap"><ul class="journal-grid">${posts.map(card).join('')}</ul></section>`
-    : `<section class="wrap"><div class="empty"><h2>目前還沒有文章</h2><p>第一篇內容準備中。想先看看作品，可以瀏覽自製機型或 FPV 知識庫。</p><div class="actions"><a class="btn" href="/builds/">EWP 自製機型</a><a class="btn" href="/fpv-help.html">FPV 知識庫</a></div></div></section>`;
+    : `<section class="wrap"><div class="empty"><h2>目前還沒有文章</h2><p>第一篇內容準備中。想先看看作品，可以瀏覽自製機型或故障排除中心。</p><div class="actions"><a class="btn" href="/builds/">EWP 自製機型</a><a class="btn" href="/help/">故障排除中心</a></div></div></section>`;
   page('journal/index.html', { title: 'EWP 專欄', description: '電翼動力 EWP 新品公告、FPV 教學、實機展示與製作紀錄。', path: '/journal/', active: 'journal',
     body: `${pageHead('JOURNAL', 'EWP 專欄', '新品公告、FPV 教學、實機展示與製作紀錄。', breadcrumbs(crumbs))}\n${list}`, jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
 
@@ -690,11 +690,14 @@ function helpPages() {
 </section>`;
   page('help/index.html', { title: '故障排除中心', description: 'FPV 穿越機常見故障排除：不能解鎖、圖傳沒畫面等問題，依症狀一步步檢查，附判斷表與完成標準。', path: '/help/', active: 'journal', body: index, scripts: ['/assets/js/help.js'], jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
 
-  // 舊網址 /fpv-help.html：整個舊知識庫已改寫進故障排除中心。#item-XX 轉到對應文章，其他轉到 /help/；沒有 JavaScript 時列出全部文章
+  // 舊網址 /fpv-help.html：整個舊知識庫已改寫進故障排除中心。#item-XX 轉到對應文章，其他轉到 /help/；沒有 JavaScript 時列出全部文章。
+  // GitHub Pages 不能做伺服器端 301，而且 #錨點不會送到伺服器，所以只能用 JavaScript 依錨點轉址。
+  // SEO：canonical 指向 /help/、不加 noindex（Google 建議 noindex 與 canonical 不要混用），讓舊網址累積的連結權重合併到故障排除中心；
+  // 備援清單的連結可被追蹤。不加 meta refresh，避免它搶在 JavaScript 之前把 #item-XX 一律帶到 /help/。
   const legacyMap = Object.fromEntries(list.filter(a => a.published).flatMap(a => a.legacy_items.map(n => [`item-${n}`, helpUrl(a)])));
   const batteryArticle = list.find(a => a.published && a.legacy_items.includes(82));
   if (batteryArticle) legacyMap['battery-knowledge'] = helpUrl(batteryArticle);
-  page('fpv-help.html', { title: 'FPV 知識庫已改版為故障排除中心', description: '原 FPV 知識庫已全部改寫為故障排除中心。', path: '/fpv-help.html', noindex: true, active: 'journal',
+  page('fpv-help.html', { title: 'FPV 知識庫已改版為故障排除中心', description: '原 FPV 知識庫已全部改寫為故障排除中心。', path: '/fpv-help.html', canonicalPath: '/help/', active: 'journal',
     body: `${pageHead('MOVED', 'FPV 知識庫已改版', '原本的 91 則問題已全部改寫進故障排除中心，正在帶你前往對應的文章。', breadcrumbs([{ name: '首頁', href: '/' }, { name: 'FPV 知識庫' }]))}
 <section class="wrap help-index"><p><a class="btn btn-primary" href="/help/">前往故障排除中心</a></p>
 ${groups.map(([c, l]) => `<div class="help-group"><h2>${esc(c)}</h2><ul>${l.map(a => `<li><a href="${helpUrl(a)}">${esc(a.title)}</a></li>`).join('')}</ul></div>`).join('')}</section>

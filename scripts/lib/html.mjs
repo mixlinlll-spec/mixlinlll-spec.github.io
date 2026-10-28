@@ -211,11 +211,11 @@ export function analyticsSnippet(site, { drafts = false } = {}) {
   return `<!-- Cloudflare Web Analytics --><script>if(location.hostname===${host}){var s=document.createElement('script');s.defer=true;s.src='https://static.cloudflareinsights.com/beacon.min.js';s.setAttribute('data-cf-beacon',${beacon});document.head.appendChild(s)}</script><!-- End Cloudflare Web Analytics -->`;
 }
 
-export function layout(ctx, { title, description, path, body, active, noindex = false, ogImage, jsonld = [], scripts = [], bodyClass = '' }) {
+export function layout(ctx, { title, description, path, canonicalPath, body, active, noindex = false, ogImage, jsonld = [], scripts = [], bodyClass = '' }) {
   const site = ctx.site;
   const fullTitle = title ? `${title}｜電翼動力 EWP` : `電翼動力 EWP｜${site.brand.motto}`;
   const desc = description || site.default_description;
-  const canonical = site.base_url + path;
+  const canonical = site.base_url + (canonicalPath || path);
   const og = site.base_url + (ogImage || site.default_og_image);
   const robots = noindex || ctx.drafts || ctx.preview ? '<meta name="robots" content="noindex,nofollow">' : '';
   const ld = jsonld.filter(Boolean).map(j => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('\n');
