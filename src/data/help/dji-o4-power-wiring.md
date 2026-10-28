@@ -69,7 +69,7 @@ sources:
 依 DJI 官方規格，DJI FPV 遙控器 3 搭配 Goggles 3 或 Goggles N3 使用；Goggles 2／Integra 要搭配遙控器 2。有畫面不代表控制線已經接好。
 
 1. **看相容組合**：眼鏡、天空端、遙控器要是官方列出的組合，並完成配對。
-2. **飛控設定 SBUS**：天空端的 SBUS 線接到飛控某一組 UART 的 RX，在「連接埠」頁那一組打開 Serial RX，「接收機」頁的協定選 SBUS。DJI 規格註明需要 Betaflight 4.3.0 以上。
+2. **飛控設定 SBUS**：天空端的 SBUS 線接到飛控某一組 UART 的 RX，在「連接埠」頁那一組打開 Serial Rx，「接收機」頁的協定選 SBUS。DJI 規格註明需要 Betaflight 4.3.0 以上。
 3. **看「接收機」頁**：撥動搖桿，通道條會跟著動才算接好。
 4. **改用 ELRS 等其他接收機時**：把天空端的 SBUS 線拔掉，只保留一套接收方式。
 
