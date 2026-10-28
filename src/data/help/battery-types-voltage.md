@@ -7,7 +7,7 @@ category: 電池／充電
 level: beginner
 applies: 一般 LiPo、4.35V 型 LiHV、4.20V 型 Li-ion（18650／21700）；數值皆為每節電壓
 needs: 電池標籤、有平衡充與存放功能的充電器
-verified: 2026-10-27
+verified: 2026-10-28
 summary: 先看電池標籤分出是哪一種，再決定充電模式、存放電壓和降落時機。三種電池的滿電電壓不同，用錯模式會過充或充不滿。
 keywords:
   - 電池種類
@@ -35,7 +35,8 @@ prepare:
 sources:
   - Grepow：LiPo 與 LiHV 的差別（標稱、滿電與存放電壓） | https://www.grepow.com/blog/lipo-battery-vs-lihv-battery-what-is-the-difference.html
   - WISPR：LiHV 電池充電與存放 | https://wisprsystems.atlassian.net/wiki/spaces/CS/pages/176947203/Charging+Storing+LiHV+Batteries+-+Ranger+Pro
-  - Molicel P42A 電芯規格（Li-ion 充電與放電截止電壓範例） | https://www.18650batterystore.com/21700-p/molicel-p42a.htm
+  - Molicel P42A 電芯規格書 v1.7（Li-ion 充電與放電截止電壓、充電溫度範例） | https://www.18650batterystore.com/cdn/shop/files/Molicel-INR21700-P42A-data-sheet-v1.7.pdf
+  - Betaflight 官方原始碼（電池節數自動判斷與低電壓警告預設值） | https://github.com/betaflight/betaflight/blob/4.5-maintenance/src/main/sensors/battery.c
 ---
 :::safety 開始前
 以下數字都是「每一節」的電壓。最後一律以電池標籤和原廠說明為準；標籤看不清楚、種類不確定的電池，先不要充電。
@@ -59,7 +60,7 @@ sources:
 | --- | --- | --- | --- | --- | --- |
 | LiPo／4.20V 型 Li-ion 滿電 | 4.20V | 8.40V | 12.60V | 16.80V | 25.20V |
 | 4.35V 型 LiHV 滿電 | 4.35V | 8.70V | 13.05V | 17.40V | 26.10V |
-| 存放 3.80V／節 | 3.80V | 7.60V | 11.40V | 15.20V | 22.80V |
+| 一般 LiPo 存放 3.80V／節（LiHV、Li-ion 見下方） | 3.80V | 7.60V | 11.40V | 15.20V | 22.80V |
 
 ## 存放電壓
 
@@ -94,6 +95,14 @@ sources:
 - **4.35V LiHV 用 LiPo 模式充**，只會充不滿；多數廠商建議使用充電器的 LiHV 模式，依電池原廠說明。
 - **充電器的 Li-ion 模式終止電壓不一定是 4.20V**，有些只到 4.10V，名稱相同也不保證，要看設定畫面上的數字。
 - **6S LiHV 滿電 26.10V**，比一般 6S 的 25.20V 高。換用前要看整機每個用電設備能承受的最高電壓。
+
+## 飛控的節數判斷與低電壓警告
+
+Betaflight 插上電池時，會用「整包電壓 ÷ `vbat_max_cell_voltage`（預設 4.30V），取整數再加 1」自動判斷節數（以 4.5 原始碼為準）。所以滿電的 LiHV 會被算多一節，例如 4S LiHV 17.40V 會被判成 5S、6S LiHV 26.10V 會被判成 7S；Li-ion 電池組沒充飽就插上，也可能被算少一節。節數算錯時，OSD 的每節電壓和低電壓警告都會不準。
+
+1. **插上電池先看 OSD 或「設定」頁顯示的節數**：和電池標籤一樣才算對。
+2. **用 LiHV 時**：把 `vbat_max_cell_voltage` 調到 4.35～4.40V，或用 `force_battery_cell_count` 固定節數。
+3. **用 Li-ion 時**：建議用 `force_battery_cell_count` 固定節數；預設低電壓警告 `vbat_warning_cell_voltage` 是 3.50V，可以設在本站建議的降落電壓附近（例如 3.40～3.50V），不要調到電芯規格書的放電截止電壓。
 
 :::checks 怎樣算設定正確
 - 充電器選的電池種類和電池標籤一致（LiPo、LiHV 或 Li-ion），節數也一致
