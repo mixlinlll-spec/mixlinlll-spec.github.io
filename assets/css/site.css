@@ -812,7 +812,7 @@ section{padding:36px 0}
 .help-symptoms a:hover{color:var(--text);border-color:var(--red)}
 .help-symptoms a span{color:var(--red)}
 .help-all{display:flex;flex-direction:column;gap:24px}
-.help-group h3{font-size:15px;color:var(--muted);margin:0 0 8px;font-weight:700}
+.help-group h3{font-size:18px;color:var(--red);margin:8px 0 10px;font-weight:800;letter-spacing:.02em;padding-left:12px;border-left:4px solid var(--red);line-height:1.3}
 .help-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .help-list li{border-bottom:1px solid var(--line)}
 .help-list a{display:flex;flex-direction:column;gap:2px;padding:12px 4px}
