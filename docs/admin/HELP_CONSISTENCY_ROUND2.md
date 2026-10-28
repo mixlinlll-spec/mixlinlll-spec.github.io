@@ -384,6 +384,16 @@
 | 內文 | :::advanced 進階：命令列檢查 在命令列輸入 `get serialrx`，ExpressLRS 建議 `serialrx_inverted` 與 `serialrx_halfduplex` 都是 `off`。需要修改時輸入 `set serialrx_inverted = off`、`set serialrx_halfduplex = off`，最後輸入 `save`。 ::: | :::advanced 進階：命令列檢查 外接 ELRS 接收機輸出 CRSF 時：在命令列輸入 `get serialrx`，ExpressLRS 建議 `serialrx_inverted` 與 `serialrx_halfduplex` 都是 `off`。需要修改時輸入 `set serialrx_inverted = off`、`set serialrx_halfduplex = off`，最後輸入 `save`。 ::: |
 | 內文 | - 拆槳狀態下關掉遙控器，飛控有進入失聯保護：App 連著時，「設定」頁的 Arming Disable Flags 出現 RXLOSS；或拔掉 USB、戴眼鏡看 OSD 出現 RXLOSS ::: / :::stop 什麼時候停手 接收機或飛控插電後變燙、冒煙，或燈號是「中等速度一直閃」：立刻拔掉電池，不要反覆重刷韌體。 ::: | - 飛控偵測得到失聯：App 連著、拆槳狀態下關掉遙控器，「設定」頁的 Arming Disable Flags 出現 RXLOSS（這只代表飛控知道沒收到訊號）；失聯保護實際會怎麼動作，照 [[failsafe-check]] 在解鎖狀態下實測 ::: / :::stop 什麼時候停手 聞到焦味、冒煙、元件變色，或燈號是「中等速度一直閃」：不要用手碰，能安全拔掉電池就拔掉，然後遠離觀察；不要反覆重刷韌體。 ::: |
 
+### dji-no-video（業主指正，21:14）
+
+- **錯誤**：寫成 O4 和 O4 Pro 各有不同的同軸線。業主指正兩者共用；當初沒有查證。
+- **依據**：RunCam、Flywoo 等市售線標示「O4 / O4 Pro Coaxial Cable」（getfpv.com 商品頁）。
+- **是否需要實機驗證**：否（業主實務經驗＋廠商標示）
+
+| 位置 | 原文 | 修正後原文 |
+| --- | --- | --- |
+| C 段第 2 步 | **用對的線**：O4 和 O4 Pro 各有相容的鏡頭同軸線，不能只看長度或外觀判斷能不能用。 | **確認是 O4 系列的線**：O4 和 O4 Pro 的鏡頭同軸線是共用的，市售線大多直接標示「O4／O4 Pro」。如果手上的線沒有標示是 O4 用的（例如來源不明，或是其他系列的線），先換一條有標示 O4／O4 Pro 的線比較。 |
+
 ## 三、已檢查、本輪無矛盾（未修改）
 
 | 文章 | 檢查結果 |
