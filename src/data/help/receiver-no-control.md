@@ -89,15 +89,19 @@ sources:
 
 :::case E 燈恆亮，但 Betaflight 搖桿不動
 1. **先分辨是真的連上，還是在 Bootloader 模式**：看遙控器有沒有收到接收機的遙測資料（例如遙控器的遙測畫面出現 RSSI、LQ 等數值）。有，代表真的連上，繼續第 2 步。沒有，接收機可能停在 Bootloader（刷機）模式：拔掉電池重新插電，插電時不要按接收機上的按鍵；剛透過飛控刷過接收機的話，重新上電一次。
-2. **看「接收機」頁**：USB 接上電腦、接上電池，到 Betaflight「接收機」頁撥搖桿。通道條會跟著動，代表一切正常；完全不動，繼續下一步。
-3. **看「連接埠」頁**：接收機接在哪一組 UART，就在那一組打開 Serial RX，其他組不要開。
-4. **看接收機協定**：「接收機」頁的接收機模式選 Serial（序列），協定選 CRSF。
-5. **看接線方向**：接收機的 TX 要接飛控的 RX，接收機的 RX 接飛控的 TX（交叉接）。
-6. **通道會動但順序不對**：例如推油門卻動到別的通道，調整「接收機」頁的通道順序，讓每支搖桿動到對應的通道。
+2. **看「接收機」頁的通道條（下圖 ①）**：USB 接上電腦、接上電池，到 Betaflight「接收機」頁撥搖桿。通道條會跟著動，代表一切正常；完全不動，繼續下一步。
+3. **看「接收機」頁的協定（下圖 ②）**：Receiver Mode（接收機模式）選 Serial (via UART)。下面的 Serial Receiver Provider（序列接收機協定）依你的遙控系統選：
+   - ExpressLRS（ELRS）接收機，包括大多數支援 ELRS 的遙控器：選 CRSF。
+   - DJI 遙控器 3 透過 O4 天空端的 SBUS 線控制：選 SBUS，接線與設定看 [[dji-o4-power-wiring]]。
 
-![Betaflight App 2026.6.2「接收機」頁（左側選單 Receiver）：① 通道條，撥搖桿時要跟著動；② Receiver Mode 選 Serial (via UART)，Serial Receiver Provider 選 CRSF。此圖是沒接飛控的虛擬模式，通道固定停在 1500，不是實機數值。](/assets/img/help/receiver-no-control/bf-receiver.webp)
+![Betaflight App 2026.6.2「接收機」頁（左側選單 Receiver）：① 通道條，撥搖桿時要跟著動；② Receiver Mode 選 Serial (via UART)；Serial Receiver Provider：ELRS 選 CRSF，DJI 遙控器 3（經 O4 天空端 SBUS 線）選 SBUS。此圖是沒接飛控的虛擬模式，通道固定停在 1500，不是實機數值。](/assets/img/help/receiver-no-control/bf-receiver.webp)
+
+4. **看「連接埠」頁（下圖 ②）**：接收機接在哪一組 UART（下圖 ①），就在那一組打開 Serial Rx，其他組不要開。
 
 ![Betaflight App 2026.6.2「連接埠」頁（左側選單 Ports）：① 每一組 UART 一列；② Serial Rx 欄，只在接收機實際接的那一組打開。此圖是虛擬模式，全部都還沒打開。](/assets/img/help/receiver-no-control/bf-ports.webp)
+
+5. **看接線方向**：接收機的 TX 要接飛控的 RX，接收機的 RX 接飛控的 TX（交叉接）。
+6. **通道會動但順序不對**：例如推油門卻動到別的通道，調整「接收機」頁的通道順序（Channel Map），讓每支搖桿動到對應的通道。
 :::
 
 :::advanced 進階：命令列檢查

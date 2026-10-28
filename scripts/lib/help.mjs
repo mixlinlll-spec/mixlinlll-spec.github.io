@@ -77,12 +77,20 @@ function blocks(lines, ctx) {
       continue;
     }
     if (/^\d+\.\s+/.test(line)) {
-      const items = [];
-      while (i < lines.length && /^\d+\.\s+/.test(lines[i])) items.push(lines[i++].replace(/^\d+\.\s+/, ''));
+      const items = [], first = parseInt(line, 10);
+      const subs = [];
+      // 步驟底下縮排的「   - 」是這一步的子項目，放在同一步裡面
+      while (i < lines.length && (/^\d+\.\s+/.test(lines[i]) || (items.length && /^\s{2,}-\s+/.test(lines[i])))) {
+        if (/^\d+\.\s+/.test(lines[i])) { items.push(lines[i++].replace(/^\d+\.\s+/, '')); subs.push([]); }
+        else subs[subs.length - 1].push(lines[i++].replace(/^\s+-\s+/, ''));
+      }
+      const subList = k => subs[k].length ? `<ul class="help-step-sub">${subs[k].map(t => `<li>${inline(t)}</li>`).join('')}</ul>` : '';
+      // 清單中間插了圖片時，後半段從原本的號碼接著編（例如 4.），不要重新從 1 開始
+      const start = first > 1 ? ` start="${first}" style="counter-reset:hs ${first - 1}"` : '';
       // 「**標題**：說明」拆成小標＋說明，讓步驟一眼看到重點
-      out.push(`<ol class="help-steps">${items.map(t => {
+      out.push(`<ol class="help-steps"${start}>${items.map((t, k) => {
         const s = t.match(/^\*\*(.+?)\*\*[：:]?\s*(.*)$/);
-        return s ? `<li><div><p class="help-step-t">${inline(s[1])}</p>${s[2] ? `<p>${inline(s[2])}</p>` : ''}</div></li>` : `<li><div><p>${inline(t)}</p></div></li>`;
+        return s ? `<li><div><p class="help-step-t">${inline(s[1])}</p>${s[2] ? `<p>${inline(s[2])}</p>` : ''}${subList(k)}</div></li>` : `<li><div><p>${inline(t)}</p>${subList(k)}</div></li>`;
       }).join('')}</ol>`);
       continue;
     }
