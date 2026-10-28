@@ -30,13 +30,13 @@
   // [各版本名稱（依 VERS 順序；null＝該版本沒有）, 代表什麼, 下一步, 類型]；類型：ok 可自行處理、adv 交給專業、stop 先停手
   const all = n => [n, n, n, n];
   const FLAGS = [
-    [all('MSP'), '電腦的 Betaflight App（Configurator）還連著', '斷開連線或拔掉 USB。這是正常保護，不是故障。', 'ok'],
-    [all('CLI'), '飛控停在命令列模式', '離開命令列或拔掉 USB。', 'ok'],
+    [all('MSP'), 'Betaflight App（或舊版 Configurator）正連著飛控，連線時會主動禁止解鎖。這是正常保護，不是故障。', '先處理其他原因。最後在 App 按 Disconnect（中斷連線）就會清除；沒按就直接拔 USB、飛控又同時接著電池時，這個原因會留著，要拔掉電池重新上電。', 'ok'],
+    [all('CLI'), '飛控進過命令列（CLI），離開前都不讓解鎖', '在命令列輸入 exit，飛控會重新開機並清除這個原因（沒有 save 的修改會丟掉；要保留就改輸入 save，同樣會重新開機）。exit noreboot 不會清除；直接拔 USB 而電池還接著，也要拔掉電池重新上電。', 'ok'],
     [all('RXLOSS'), '飛控沒有收到有效的遙控訊號', '先看接收機的燈：還沒連上遙控器，或燈恆亮但飛控的連接埠、接收機協定、接線沒設好，都會出現這個字。', 'ok', ['/help/receiver-no-control/', '依接收機燈號排除']],
     [all('THROTTLE'), '油門沒有在最低', '油門拉到底。拉到底仍出現：「接收機」頁的油門數值應低於 1050（預設門檻），不是的話要調整遙控器的油門行程。', 'ok'],
     [all('ANGLE'), '機身太斜', '放平再試（預設傾斜超過 25° 就不讓解鎖）。放平了還是出現：飛機放在平面上做加速度計校正（Betaflight App 2026.6 在 Sensors（感測器）頁按 Calibrate，舊版 Configurator 在 Setup（設定）頁）。', 'ok'],
-    [['ARMSWITCH', 'ARMSWITCH', 'ARM_SWITCH', 'ARM_SWITCH'], '不能解鎖的時候，解鎖開關已經在「開」', '先處理其他原因，再把開關撥回「關」、再撥「開」。', 'ok'],
-    [['BADRX', 'NOT_DISARMED', 'NOT_DISARMED', 'NOT_DISARMED'], '遙控訊號斷掉又恢復時，解鎖開關是開著的', '把解鎖開關撥回「關」。', 'ok'],
+    [['ARMSWITCH', 'ARMSWITCH', 'ARM_SWITCH', 'ARM_SWITCH'], '不能解鎖的時候，解鎖開關已經在「開」', '先處理其他原因，再把開關撥回「關」、再撥「開」。', 'ok', null, ['ARM_SWITCH']],
+    [['BADRX', 'NOT_DISARMED', 'NOT_DISARMED', 'NOT_DISARMED'], '遙控訊號斷掉又恢復時，解鎖開關是開著的', '把解鎖開關撥回「關」。', 'ok', null, ['BAD_RX_RECOVERY']],
     [all('NOPREARM'), '有設定「預解鎖」開關，但沒有先打開', '先打開預解鎖、再解鎖。這是保護功能，不要為了省事取消。', 'ok'],
     [all('CALIB'), '感測器正在校正', '插上電池後不要動飛機，等幾秒。', 'ok'],
     [all('NO_ACC_CAL'), '加速度計需要校正', '飛機放在平面上做加速度計校正（Betaflight App 2026.6 在 Sensors（感測器）頁按 Calibrate，舊版 Configurator 在 Setup（設定）頁）。', 'ok'],
@@ -63,6 +63,9 @@
     const vers = [...tool.querySelectorAll('[data-ver]')];
     let vi = VERS.indexOf(tool.querySelector('[data-ver][aria-pressed="true"]')?.dataset.ver || '4.5'), current = null;
     const nameOf = f => f[0][vi];
+    // Betaflight App 2026.6 畫面上有幾個字和韌體名稱不同（App 原始碼 SetupTab.vue：最後一位一律顯示 ARM_SWITCH、NOT_DISARMED 顯示為 BAD_RX_RECOVERY）
+    const appNames = f => (f[5] || []).filter(n => n !== nameOf(f));
+    const labelOf = f => [nameOf(f), ...appNames(f)].join('／');
     const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
     const history = f => {
       const parts = [];
@@ -75,14 +78,15 @@
       const f = current, [label, cls] = TAG[f[3]], h = history(f);
       ans.innerHTML = `<p class="flag-name">${esc(nameOf(f))}<span class="flag-tag ${cls}">${label}</span></p>
         <dl><dt>代表什麼</dt><dd>${esc(f[1])}</dd><dt>下一步</dt><dd${f[3] === 'stop' ? ' class="is-stop"' : ''}>${esc(f[2])}${f[4] ? ` <a href="${f[4][0]}">${esc(f[4][1])} →</a>` : ''}</dd>
+        ${appNames(f).length ? `<dt>畫面上的寫法</dt><dd class="muted">Betaflight App 2026.6 的「設定」頁顯示為 <code>${esc(appNames(f).join('、'))}</code>；命令列 status 與 OSD 用的是韌體名稱 <code>${esc(nameOf(f))}</code>。</dd>` : ''}
         ${h ? `<dt>版本差異</dt><dd class="muted">${h}</dd>` : ''}</dl>`;
     };
     const renderList = () => {
       const s = input.value.trim().toUpperCase();
-      const hits = FLAGS.filter(f => nameOf(f) && (!s || f[0].some(n => n && n.includes(s))));
+      const hits = FLAGS.filter(f => nameOf(f) && (!s || [...f[0], ...(f[5] || [])].some(n => n && n.includes(s))));
       list.replaceChildren(...hits.map(f => {
         const b = document.createElement('button');
-        b.type = 'button'; b.textContent = nameOf(f);
+        b.type = 'button'; b.textContent = labelOf(f);
         b.className = f[3] === 'ok' ? '' : 'is-muted';
         b.setAttribute('aria-pressed', String(f === current));
         b.addEventListener('click', () => { current = f; renderList(); renderAnswer(); });

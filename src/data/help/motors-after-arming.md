@@ -60,7 +60,7 @@ sources:
 3. **槳的方向**：槳分正轉與反轉兩種，要和那顆馬達的轉向配對；槳上通常有標示（例如 R 或轉向箭頭），依槳的標示安裝。
 4. **飛控方向**：「設定」頁的 3D 飛機，要和你手上飛機傾斜的方向一樣。方向相反，代表飛控安裝方向設定不對。
 
-![Betaflight App 2026.6.2「馬達」頁（Motors）：① 馬達位置與編號圖，箭頭是機頭方向；② Motor direction is reversed（馬達反轉）開關；③ 單顆馬達的測試滑桿；④ 確認已拆槳的開關（I understand the risks），打開後才能推滑桿。此圖是沒接飛控的虛擬模式。](/assets/img/help/motors-after-arming/bf-motors.webp)
+![Betaflight App 2026.6.2「馬達」頁（左側選單 Motors）：① 馬達位置與編號圖，箭頭是機頭方向；② Motor direction is reversed（馬達反轉）開關；③ 單顆馬達的測試滑桿；④ 確認已拆槳的開關（I understand the risks），打開後才能推滑桿。此圖是沒接飛控的虛擬模式。](/assets/img/help/motors-after-arming/bf-motors.webp)
 :::
 
 :::case D 拆槳解鎖後，馬達越轉越快

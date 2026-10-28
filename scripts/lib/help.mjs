@@ -62,7 +62,9 @@ function blocks(lines, ctx) {
     if ((m = line.match(/^!\[([^\]]*)\]\(([^)\s]+)\)\s*$/))) {
       ctx.images.push({ src: m[2], alt: m[1] });
       const d = imageSize(m[2]);
-      out.push(`<figure class="help-fig"><a href="${attr(m[2])}" target="_blank" rel="noopener" aria-label="開啟原尺寸圖片"><img src="${attr(m[2])}" alt="${attr(m[1])}"${d ? ` width="${d.w}" height="${d.h}"` : ''} loading="lazy" decoding="async"></a><figcaption>${esc(m[1])}<span class="help-fig-zoom">點圖片可放大</span></figcaption></figure>`);
+      const mob = m[2].replace(/\.(webp|png|jpe?g)$/, '-m.$1'), md = mob !== m[2] ? imageSize(mob) : null;
+      const wh = x => (x ? ` width="${x.w}" height="${x.h}"` : '');
+      out.push(`<figure class="help-fig"><a href="${attr(m[2])}" target="_blank" rel="noopener" aria-label="開啟原尺寸圖片"><picture>${md ? `<source media="(max-width: 700px)" srcset="${attr(mob)}"${wh(md)}>` : ''}<img src="${attr(m[2])}" alt="${attr(m[1])}"${wh(d)} loading="lazy" decoding="async"></picture></a>${figCaption(m[1], !!md)}</figure>`);
       i++; continue;
     }
     if (isTable(line)) {
@@ -117,6 +119,21 @@ function container(kind, arg, inner, ctx) {
   }
   ctx.errors.push(`不認得的區塊 :::${kind}`);
   return '';
+}
+
+// 圖說：「標題：① 說明；② 說明。補充」拆成標題、編號清單（對應圖上的紅色編號）與補充說明，手機上比一整段小字好讀
+const MARKS = '①②③④⑤⑥⑦⑧⑨';
+export function figCaption(alt, hasMobile) {
+  const zoom = `<span class="help-fig-zoom">${hasMobile ? '手機版只顯示重點區域；' : ''}點圖片可看完整畫面</span>`;
+  const first = [...alt].findIndex(c => MARKS.includes(c));
+  if (first < 0) return `<figcaption>${esc(alt)}${zoom}</figcaption>`;
+  const chars = [...alt], title = chars.slice(0, first).join('').replace(/[：:]\s*$/, '');
+  const items = chars.slice(first).join('').split(new RegExp(`[${MARKS}]`)).map(x => x.trim()).filter(Boolean);
+  let note = '';
+  const last = items[items.length - 1], cut = last.indexOf('。');
+  if (cut >= 0) { note = last.slice(cut + 1).trim(); items[items.length - 1] = last.slice(0, cut + 1); }
+  const li = items.map((t, i) => `<li><span class="help-fig-n" aria-hidden="true">${i + 1}</span><span>${esc(t.replace(/[；;]$/, ''))}</span></li>`).join('');
+  return `<figcaption><strong class="help-fig-title">${esc(title)}</strong><ol class="help-fig-marks">${li}</ol>${note ? `<p class="help-fig-note">${esc(note)}</p>` : ''}${zoom}</figcaption>`;
 }
 
 // Betaflight App 的分頁英文名稱（2026.6 介面實際文字）。每篇文章第一次提到時自動補上，

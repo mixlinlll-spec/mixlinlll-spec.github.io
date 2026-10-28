@@ -407,6 +407,16 @@ describe('故障排除中心（src/data/help/*.md）', async () => {
     assert.equal(addTabNames('到「接收機」頁看，再回「接收機」頁；「設定」頁（Setup）已有；「遙控器」頁不動'),
       '到「接收機」頁（Receiver）看，再回「接收機」頁；「設定」頁（Setup）已有；「遙控器」頁不動');
   });
+  test('圖說拆成標題、編號清單與補充說明；有手機版裁切圖', async () => {
+    const { figCaption } = await import('../scripts/lib/help.mjs');
+    const h = figCaption('A 頁：① 甲；② 乙。此圖是虛擬模式。', true);
+    assert.match(h, /<strong class="help-fig-title">A 頁<\/strong>/);
+    assert.equal((h.match(/<li>/g) || []).length, 2);
+    assert.match(h, /<span>乙。<\/span>/);
+    assert.match(h, /help-fig-note">此圖是虛擬模式。</);
+    for (const f of ['betaflight-arming/bf-setup-arming-flags', 'receiver-no-control/bf-receiver', 'receiver-no-control/bf-ports', 'motors-after-arming/bf-motors'])
+      assert.ok(fs.existsSync(path.join(ROOT, `assets/img/help/${f}-m.webp`)), f);
+  });
   test('實際軟體截圖都有放進文章、圖說註明版本與虛擬模式', () => {
     for (const [slug, n] of [['betaflight-arming', 1], ['receiver-no-control', 2], ['motors-after-arming', 1]]) {
       const imgs = list.find(a => a.slug === slug).images;
