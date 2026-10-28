@@ -100,12 +100,12 @@ const NAV = [
   { href: '/builds/', label: '自製機型', key: 'builds' },
   { href: '/batteries/', label: '電池專區', key: 'batteries' },
   { href: '/services/', label: '技術服務', key: 'services' },
+  { href: '/help/', label: '故障排除', key: 'help' },
   { href: '/tunelab/', label: 'TUNE LAB', key: 'tunelab', cls: 'nav-lab' },
   { href: '/journal/', label: '學習', key: 'journal' },
 ];
 // 桌機主選單放不下的頁面：只出現在手機選單與頁尾
 const NAV_MORE = [
-  { href: '/help/', label: '故障排除中心' },
   { href: '/about/', label: '關於 EWP' },
   { href: '/contact/', label: '聯絡我們' },
 ];

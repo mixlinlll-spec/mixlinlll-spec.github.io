@@ -688,7 +688,7 @@ function helpPages() {
   ${groups.map(([c, l]) => `<div class="help-group"><h3>${esc(c)}</h3><ul class="help-list">${l.map(a => `<li data-help-item data-text="${attr(a.searchText)}"><a href="${helpUrl(a)}"><strong>${esc(a.title)}</strong><span>${esc(a.summary)}</span></a></li>`).join('')}</ul></div>`).join('')}</div>
   <p class="help-empty" data-help-empty hidden>找不到符合的文章，可以換個說法，例如用零件名稱或畫面上看到的英文字再搜尋一次。</p>
 </section>`;
-  page('help/index.html', { title: '故障排除中心', description: 'FPV 穿越機常見故障排除：不能解鎖、圖傳沒畫面等問題，依症狀一步步檢查，附判斷表與完成標準。', path: '/help/', active: 'journal', body: index, scripts: ['/assets/js/help.js'], jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
+  page('help/index.html', { title: '故障排除中心', description: 'FPV 穿越機常見故障排除：不能解鎖、圖傳沒畫面等問題，依症狀一步步檢查，附判斷表與完成標準。', path: '/help/', active: 'help', body: index, scripts: ['/assets/js/help.js'], jsonld: [breadcrumbsJsonLd(crumbs, BASE)] });
 
   // 舊網址 /fpv-help.html：整個舊知識庫已改寫進故障排除中心。#item-XX 轉到對應文章，其他轉到 /help/；沒有 JavaScript 時列出全部文章。
   // GitHub Pages 不能做伺服器端 301，而且 #錨點不會送到伺服器，所以只能用 JavaScript 依錨點轉址。
@@ -729,7 +729,7 @@ ${a.html}
 </article>`;
     const ld = { '@context': 'https://schema.org', '@type': 'TechArticle', headline: a.title, description: a.summary,
       mainEntityOfPage: BASE + helpUrl(a), author: { '@type': 'Organization', name: '電翼動力 EWP' }, publisher: { '@type': 'Organization', name: '電翼動力 EWP' } };
-    page(`help/${a.slug}/index.html`, { title: a.title, description: a.summary, path: helpUrl(a), active: 'journal', noindex: !a.published, body, scripts: ['/assets/js/help.js'], bodyClass: 'help-page', jsonld: [breadcrumbsJsonLd(c, BASE), ld] });
+    page(`help/${a.slug}/index.html`, { title: a.title, description: a.summary, path: helpUrl(a), active: 'help', noindex: !a.published, body, scripts: ['/assets/js/help.js'], bodyClass: 'help-page', jsonld: [breadcrumbsJsonLd(c, BASE), ld] });
   }
 }
 
