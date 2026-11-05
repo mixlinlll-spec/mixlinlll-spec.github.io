@@ -77,6 +77,12 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+      # 同一份產物另存一份，給 Cloudflare Pages 發布（搬家過渡期兩邊同時發布）
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site-dist
+          path: dist
+          retention-days: 3
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -86,3 +92,32 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  deploy-cloudflare:
+    # 官網改由 Cloudflare Pages 發布（程式庫改為私人後，GitHub Pages 免費方案無法使用）。
+    # 使用與黑盒子寄信相同的 inventory-production 環境密鑰；權杖需要「Cloudflare Pages：編輯」權限。
+    # 這個工作失敗不會影響上面的 GitHub Pages 發布。
+    needs: build
+    runs-on: ubuntu-latest
+    environment: inventory-production
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CF_PROJECT: ewp-site
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: site-dist
+          path: dist
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 發布到 Cloudflare Pages
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::warning title=Cloudflare 發布::inventory-production 環境沒有 CLOUDFLARE_API_TOKEN／CLOUDFLARE_ACCOUNT_ID，略過"; exit 0
+          fi
+          npm install -g --no-audit --no-fund wrangler@4.20.0 > /dev/null
+          # 專案不存在就建立（已存在會回錯誤，忽略）
+          wrangler pages project create "$CF_PROJECT" --production-branch=main 2>&1 | tail -2 || true
+          wrangler pages deploy dist --project-name="$CF_PROJECT" --branch=main --commit-hash="${{ inputs.sha || github.sha }}" --commit-dirty=true
