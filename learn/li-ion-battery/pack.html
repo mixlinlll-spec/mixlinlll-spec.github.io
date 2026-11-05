@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://www.ewpfpv.com/learn/li-ion-battery/">
+<title>21700 外場電包組裝動畫｜電翼動力 EWP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=JetBrains+Mono:wght@500;700&family=Silkscreen:wght@700&family=Noto+Sans+TC:wght@700;900&display=swap">
+<style>
+/* 9:16 動畫畫框＋HUD 文字；控制鈕在畫框下方。嵌在 /learn/li-ion-battery/ 的 iframe 裡使用。 */
+:root{
+  --ink:#0A0B0D;--panel:#141518;--paper:#EDE8DE;--sand:#B9A983;--sand-deep:#8E7D57;--red:#D2202F;--mute:#7F7A70;
+  --f-display:"Archivo","Arial Black",system-ui,sans-serif;
+  --f-zh:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--ink);color:var(--paper);font-family:var(--f-zh);padding:0 0 8px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.stage{position:relative;container-type:inline-size;width:min(100%, calc((100dvh - 56px) * 9 / 16));max-width:100%;aspect-ratio:9/16;overflow:hidden;background:var(--ink);border:1px solid #222429;cursor:pointer;-webkit-tap-highlight-color:transparent}
+canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.fade{position:absolute;inset:0;background:var(--ink);pointer-events:none;opacity:1}
+.hud{position:absolute;inset:0;pointer-events:none;display:flex;flex-direction:column;justify-content:space-between;padding:6.5cqw 6cqw 5cqw;transition:opacity .3s}
+.hud.off{opacity:0}
+.row{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--f-mono);font-weight:700;letter-spacing:.14em;font-size:3.1cqw}
+.idx b{color:var(--red);font-weight:700}
+.idx{color:var(--mute)}
+.tag{color:var(--paper)}
+.prog{position:relative;height:1px;background:#3a3c42;margin-top:1.8cqw}
+.prog i{position:absolute;left:0;top:-1px;height:3px;width:0;background:var(--red)}
+.title{margin:3cqw 0 0;font-family:var(--f-display);font-weight:900;font-stretch:118%;font-size:10.2cqw;line-height:.95;letter-spacing:-.01em;white-space:nowrap;color:var(--paper)}
+.title.long{font-size:7.6cqw}
+.zh{font-family:var(--f-zh);font-weight:900;font-size:6.4cqw;margin-top:1.6cqw;letter-spacing:.06em}
+.sub{font-family:var(--f-mono);font-weight:700;font-size:3.3cqw;letter-spacing:.08em;margin-top:1.4cqw;color:var(--paper)}
+.ruler{height:2.2cqw;margin-top:3.4cqw;background:repeating-linear-gradient(90deg,#5b5d63 0 1px,transparent 1px 1.6cqw) bottom/100% 45% no-repeat,repeating-linear-gradient(90deg,#8a8c92 0 1px,transparent 1px 8cqw) bottom/100% 100% no-repeat;opacity:.7}
+.meta{display:flex;justify-content:space-between;gap:3cqw;margin-top:1.6cqw;font-family:var(--f-mono);font-weight:500;font-size:2.6cqw;letter-spacing:.06em;color:var(--mute)}
+.meta .live{color:var(--red);font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.swap.go{animation:reveal .45s cubic-bezier(.2,.8,.2,1) both}
+@keyframes reveal{0%{clip-path:inset(0 100% 0 0);transform:translateX(-2cqw);text-shadow:.8cqw 0 var(--red),-.8cqw 0 #3b6cff}55%{clip-path:inset(0 0 0 0);text-shadow:.4cqw 0 var(--red),-.4cqw 0 #3b6cff}100%{clip-path:inset(0 0 0 0);transform:none;text-shadow:none}}
+.bottom{display:flex;flex-direction:column;gap:2.2cqw}
+.specs{display:grid;grid-template-columns:1fr 1fr 1.4fr 1fr;gap:1.2cqw;opacity:0;transform:translateY(2cqw);transition:opacity .5s,transform .5s}
+.specs.on{opacity:1;transform:none}
+.spec{background:rgba(10,11,13,.72);border-top:2px solid var(--sand);padding:1.6cqw 1.6cqw 1.8cqw;display:flex;flex-direction:column;gap:.6cqw;min-width:0}
+.spec span{font-family:var(--f-mono);font-size:2.1cqw;letter-spacing:.08em;white-space:nowrap;color:var(--sand)}
+.spec strong{font-family:var(--f-display);font-weight:800;font-size:4.6cqw;white-space:nowrap;line-height:1;font-variant-numeric:tabular-nums}
+.spec strong small{font-size:.55em;font-weight:700;margin-left:.2em;color:var(--paper)}
+.formula{font-family:var(--f-mono);font-weight:500;font-size:2.6cqw;letter-spacing:.04em;color:var(--mute);display:flex;flex-direction:column;gap:.8cqw;font-variant-numeric:tabular-nums}
+.formula div{opacity:0;transition:opacity .4s}
+.formula div.on{opacity:1}
+.formula em{font-style:normal;color:var(--paper)}
+.hazard{height:2.4cqw;background:repeating-linear-gradient(-45deg,var(--sand-deep) 0 1.6cqw,var(--ink) 1.6cqw 3.2cqw);background-size:4.53cqw 100%;animation:slide 1.2s linear infinite}
+@keyframes slide{to{background-position:4.53cqw 0}}
+.foot{display:flex;justify-content:space-between;align-items:center;font-family:var(--f-mono);font-size:2.6cqw;letter-spacing:.14em;color:var(--mute)}
+.foot .brand{font-family:var(--f-display);font-weight:900;letter-spacing:.04em;color:var(--red);font-size:3.4cqw}
+.foot .brand em{font-family:var(--f-mono);font-style:normal;font-weight:700;color:var(--paper);font-size:.78em;margin-left:1.4cqw;letter-spacing:.14em}
+.paused{position:absolute;right:4cqw;top:50%;font-family:var(--f-mono);font-size:3cqw;letter-spacing:.2em;color:var(--sand);opacity:0;transition:opacity .2s}
+.paused.on{opacity:1}
+.err{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:8cqw;font-size:4cqw;color:var(--sand)}
+.controls{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.controls button{font-family:var(--f-zh);font-weight:700;font-size:14px;letter-spacing:.06em;background:var(--panel);color:var(--paper);border:1px solid #2c2e34;padding:8px 14px;border-radius:2px;cursor:pointer}
+.controls button[aria-pressed="true"]{border-color:var(--sand);color:var(--sand)}
+.controls button:focus-visible,.stage:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.swap.go{animation:none}.hazard{animation:none}}
+</style>
+</head>
+<body>
+<div class="stage" id="stage" tabindex="0" aria-label="21700 外場電包組裝動畫，點一下暫停或播放">
+  <canvas id="gl"></canvas>
+  <div class="hud" id="hud">
+    <div class="top">
+      <div class="row"><span class="idx"><b id="idx">01</b> / 05</span><span class="tag">EWP · FPV LAB</span></div>
+      <div class="prog"><i id="prog"></i></div>
+      <div class="swap" id="swap">
+        <div class="title" id="title">21700 CELL</div>
+        <div class="zh" id="zh">鋰離子電芯</div>
+        <div class="sub" id="sub">LI-ION · CYLINDRICAL</div>
+      </div>
+      <div class="ruler"></div>
+      <div class="meta"><span id="meta">Ø21.0 × 70.0 MM · 3.7V NOM · 4.2V MAX</span><span class="live" id="live">FIG.01</span></div>
+    </div>
+    <div class="bottom">
+      <div class="specs" id="specs">
+        <div class="spec"><span>標稱</span><strong>14.8<small>V</small></strong></div>
+        <div class="spec"><span>滿電</span><strong>16.8<small>V</small></strong></div>
+        <div class="spec"><span>容量</span><strong>15000<small>mAh</small></strong></div>
+        <div class="spec"><span>能量</span><strong>222<small>Wh</small></strong></div>
+      </div>
+      <div class="formula" id="formula">
+        <div id="f1">V = 4S × 3.7 V = <em>14.8 V</em></div>
+        <div id="f2">C = 3P × 5000 mAh = <em>15000 mAh</em></div>
+      </div>
+      <div class="hazard"></div>
+      <div class="foot"><span class="brand">EWP<em>READY TO FLY</em></span><span>21700 · 4S3P</span></div>
+    </div>
+  </div>
+  <div class="paused" id="pausedTag">PAUSED</div>
+  <div class="fade" id="fade"></div>
+</div>
+<div class="controls">
+  <button id="bPlay" type="button">暫停</button>
+  <button id="bReplay" type="button">重播</button>
+  <button id="bClean" type="button" aria-pressed="false">純畫面</button>
+</div>
+
+<script id="fs" type="x-shader/x-fragment">
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+uniform vec2 uRes; uniform float uT; uniform float uClock; uniform sampler2D uLabel; uniform vec3 uRed;
+
+float sat(float x){return clamp(x,0.,1.);}
+float ease(float x){x=sat(x);return 1.-pow(1.-x,3.);}
+float ease2(float x){x=sat(x);return x*x*(3.-2.*x);}
+float hash(float n){return fract(sin(n)*43758.5453);}
+mat2 rot(float a){float c=cos(a),s=sin(a);return mat2(c,-s,s,c);}
+float sdCyl(vec3 p,float r,float h){vec2 d=abs(vec2(length(p.xz),p.y))-vec2(r,h);return min(max(d.x,d.y),0.)+length(max(d,0.));}
+float sdBox(vec3 p,vec3 b){vec3 q=abs(p)-b;return length(max(q,0.))+min(max(q.x,max(q.y,q.z)),0.);}
+float sdRBox(vec3 p,vec3 b,float r){return sdBox(p,b-r)-r;}
+float sdCap(vec3 p,vec3 a,vec3 b,float r){vec3 pa=p-a,ba=b-a;float h=sat(dot(pa,ba)/max(dot(ba,ba),1e-4));return length(pa-ba*h)-r;}
+vec2 opU(vec2 a,vec2 b){return a.x<b.x?a:b;}
+
+float fillLevel(float t){return mix(-4.6,4.7,ease2((t-10.0)/2.6));}
+
+vec3 gridPos(float fi){float iz=floor((fi+.5)/4.);float ix=fi-4.*iz;return vec3((ix-1.5)*2.2,0.,(iz-1.)*2.2);}
+
+vec3 cellPos(float fi,float t,out float vis,out float tilt){
+  vec3 g=gridPos(fi); tilt=0.;
+  if(fi>4.5&&fi<5.5){float k=ease((t-3.0)/1.4);vis=1.;tilt=(1.-k)*.38;return mix(vec3(0.),g,k);}
+  float r=fi*7.;r=r-12.*floor((r+.5)/12.);
+  float k=ease((t-(3.3+r*.09))/1.0);
+  vis=step(.001,k);
+  vec3 dir=normalize(vec3(g.x+.01,0.,g.z+.013));
+  return mix(g+dir*16.+vec3(0.,9.,0.),g,k);
+}
+
+vec2 map(vec3 p){
+  float t=uT;
+  vec2 res=vec2(p.y+4.3,0.);
+  if(t<13.0){
+    float bb=sdBox(p,vec3(5.0,4.2,3.9));
+    if(t>5.4&&bb>.5){res=opU(res,vec2(bb,1.));}
+    else{
+      for(int i=0;i<12;i++){
+        float fi=float(i);float vis,tilt;vec3 c=cellPos(fi,t,vis,tilt);
+        if(vis<.5)continue;
+        vec3 q=p-c;q.xy=rot(tilt)*q.xy;
+        float iz=floor((fi+.5)/4.);float ix=fi-4.*iz;
+        float par=ix-2.*floor((ix+.5)/2.);
+        q.y*=(par<.5?1.:-1.);
+        float body=sdCyl(q,1.0,3.45)-.05;
+        float nub=sdCyl(q-vec3(0.,3.55,0.),.4,.07)-.02;
+        float d=min(body,nub);
+        if(d<res.x){float r=length(q.xz);float m=(nub<body||(abs(q.y)>3.42&&r<.86))?2.:1.;res=vec2(d,m);}
+      }
+    }
+  }
+  if(t>6.8&&t<13.0){
+    for(int j=0;j<5;j++){
+      float fj=float(j);vec3 c;float hx;
+      if(j==0){c=vec3(-3.3,3.70,0.);hx=.55;}
+      else if(j==1){c=vec3(0.,3.70,0.);hx=1.65;}
+      else if(j==2){c=vec3(3.3,3.70,0.);hx=.55;}
+      else if(j==3){c=vec3(-2.2,-3.70,0.);hx=1.65;}
+      else{c=vec3(2.2,-3.70,0.);hx=1.65;}
+      float k=ease((t-6.9-mod(fj,3.)*.18)/.7);
+      if(k<.01)continue;
+      vec3 q=p-c;q.y-=(1.-k)*3.*sign(c.y);
+      float d=sdBox(q,vec3(hx,.03,2.65*k+.01))-.01;
+      float slot=sdBox(vec3(q.x,q.y,abs(q.z)-1.1),vec3(max(hx-.38,.01),.1,.13));
+      d=max(d,-slot);
+      if(d<res.x)res=vec2(d,3.);
+    }
+  }
+  if(t>10.0){
+    float puff=1.+.07*(1.-ease((t-10.2)/2.6));
+    float d=sdRBox(p,vec3(4.5,3.9,3.4)*puff,.38);
+    d=max(d,p.y-fillLevel(t));
+    if(d<res.x)res=vec2(d,4.);
+  }
+  if(t>12.3){
+    float k=ease((t-12.3)/1.1);
+    vec3 hp=p-vec3(-.3,3.75-(1.-k)*3.4,0.);
+    float hd=hp.y>=0.?length(vec2(length(hp.xy)-2.7,hp.z))-.24:length(hp-vec3(sign(hp.x)*2.7,0.,0.))-.24;
+    res=opU(res,vec2(hd,9.));
+    float kl=ease((t-12.7)/1.0);
+    if(kl>.01){
+      vec3 a=vec3(3.9,3.0,1.2),b=vec3(5.2,3.9,1.2),c=vec3(6.5,3.65,1.2);
+      float dl=sdCap(p,a,mix(a,b,sat(kl*2.)),.17);
+      if(kl>.5)dl=min(dl,sdCap(p,b,mix(b,c,(kl-.5)*2.),.17));
+      res=opU(res,vec2(dl,9.));
+      vec3 a2=vec3(3.9,2.4,.3),b2=vec3(5.0,3.0,.1),c2=vec3(5.9,2.7,.1);
+      float d2=sdCap(p,a2,mix(a2,b2,sat(kl*2.)),.06);
+      if(kl>.5)d2=min(d2,sdCap(p,b2,mix(b2,c2,(kl-.5)*2.),.06));
+      res=opU(res,vec2(d2,6.));
+    }
+    float kx=ease((t-13.5)/.5);
+    if(kx>.01){
+      res=opU(res,vec2(sdRBox(p-vec3(6.95,3.65,1.2),vec3(.45,.3,.25)*kx,.07*kx),6.));
+      res=opU(res,vec2(sdBox(p-vec3(7.5,3.65,1.2),vec3(.14,.11,.11)*kx),2.));
+      res=opU(res,vec2(sdRBox(p-vec3(6.15,2.7,.1),vec3(.26,.12,.14)*kx,.03),8.));
+    }
+  }
+  return res;
+}
+
+vec3 calcN(vec3 p){vec2 e=vec2(.002,-.002);
+  return normalize(e.xyy*map(p+e.xyy).x+e.yyx*map(p+e.yyx).x+e.yxy*map(p+e.yxy).x+e.xxx*map(p+e.xxx).x);}
+float ao(vec3 p,vec3 n){float o=0.,s=1.;for(int i=1;i<=3;i++){float h=.15*float(i);o+=(h-map(p+n*h).x)*s;s*=.6;}return sat(1.-1.5*o);}
+
+vec3 env(vec3 r){
+  vec3 e=mix(vec3(.012,.014,.02),vec3(.14,.15,.17),sat(r.y*.6+.4));
+  e+=vec3(1.)*smoothstep(.93,.995,dot(r,normalize(vec3(.4,.75,.55))))*2.2;
+  e+=uRed*smoothstep(.84,.98,dot(r,normalize(vec3(-1.,.15,-.3))))*1.8;
+  e+=vec3(.9,.8,.6)*smoothstep(.95,1.,dot(r,normalize(vec3(.9,.2,-.6))))*1.2;
+  return e;
+}
+vec3 film(float c){return .5+.5*cos(6.2831*(vec3(0.,.33,.67)+c*1.8+.15));}
+
+vec3 shade(vec3 p,vec3 rd,vec3 n,float m,float t){
+  vec3 L=normalize(vec3(.5,.85,.45));
+  float dif=sat(dot(n,L));
+  float nv=sat(dot(n,-rd));
+  float fre=pow(1.-nv,5.);
+  vec3 r=reflect(rd,n);
+  float a=ao(p,n);
+  vec3 col;
+  if(m<.5){
+    float sh=.3+.7*sat(map(p+vec3(0.,1.2,0.)).x/1.2);
+    col=vec3(.010,.011,.014)*sh;
+    vec2 g=abs(fract(p.xz/1.1+.5)-.5)*1.1;
+    float gl=max(smoothstep(.025,.0,g.x),smoothstep(.025,.0,g.y));
+    float fade=exp(-length(p.xz)*.07);
+    col+=vec3(.05,.055,.065)*gl*fade*sh;
+    col+=uRed*exp(-abs(length(p.xz)-7.5)*10.)*.25*fade;
+  }else if(m<1.5){
+    vec3 base=vec3(.035,.05,.075);
+    col=base*(.2+dif*.9)*a+env(r)*(.03+.5*fre)+film(nv)*fre*.8*a;
+    col+=pow(sat(dot(r,L)),80.)*.9;
+  }else if(m<2.5){
+    col=env(r)*vec3(.72,.73,.75)*(.45+.55*a)+dif*.05;
+  }else if(m<3.5){
+    /* 導電帶：上層鍍鎳鋼帶、邊緣露出下層紫銅 */
+    col=env(r)*vec3(.80,.77,.70)*(.4+.6*a)+vec3(.30,.29,.26)*dif*a+pow(sat(dot(r,L)),60.)*.6;
+    float edge=smoothstep(.0,.05,abs(n.y)<.5?1.:0.);
+    col=mix(col,env(r)*vec3(.95,.48,.28)*(.4+.6*a)+vec3(.45,.20,.10)*dif*a,edge*.85);
+    float ix=clamp(floor((p.x+4.4)/2.2),0.,3.),iz=clamp(floor((p.z+3.3)/2.2),0.,2.);
+    vec2 cc=vec2((ix-1.5)*2.2,(iz-1.)*2.2);
+    float tf=7.8+(ix+4.*iz)*.17;
+    vec2 q=abs(p.xz-cc);
+    float dd=min(length(q-vec2(.3,0.)),length(q-vec2(0.,.3)));
+    float mark=step(tf,t)*step(0.,p.y)*(1.-smoothstep(.05,.08,dd));
+    float heat=step(tf,t)*step(0.,p.y)*exp(-dd*9.)*.6;
+    col=mix(col,col*.25,mark)+vec3(.25,.12,.35)*heat*.3;
+  }else if(m<4.5){
+    float wr=.5+.5*sin(p.x*5.3+sin(p.y*3.7+p.z*2.)*2.);
+    col=vec3(.010,.010,.011)*(.2+dif)*a+env(r)*(.04+.45*fre)*a+pow(sat(dot(r,L)),50.)*.4*(.6+.4*wr);
+    if(n.z>.9&&p.z>3.0&&abs(p.x)<3.95&&p.y>-3.35&&p.y<3.05){
+      vec2 uv=vec2((p.x+3.95)/7.9,(p.y+3.35)/6.4);
+      vec4 lb=texture2D(uLabel,uv);
+      vec3 lc=pow(lb.rgb,vec3(2.2));
+      col=mix(col,lc*(.35+dif*.8)*a+pow(sat(dot(r,L)),50.)*.25,lb.a);
+    }
+    float e=exp(-abs(p.y-fillLevel(t))*16.)*(1.-ease((t-12.4)/.5));
+    col+=uRed*e*3.+vec3(1.,.7,.4)*e*e*1.5;
+  }else if(m<5.5){
+    col=uRed*.8*(.12+dif)*a+pow(sat(dot(r,L)),30.)*.35+env(r)*fre*.2;
+  }else if(m<6.5){
+    col=vec3(.012)*(.2+dif)*a+pow(sat(dot(r,L)),30.)*.3+env(r)*fre*.25;
+  }else if(m<7.5){
+    col=vec3(.36,.27,.04)*(.14+dif)*a+pow(sat(dot(r,L)),40.)*.3;
+  }else if(m<8.5){
+    col=vec3(.55,.55,.52)*(.15+dif)*a+pow(sat(dot(r,L)),40.)*.2;
+  }else{
+    float wv=.5+.5*sin(p.x*38.+p.y*38.)*sin(p.x*38.-p.y*38.+p.z*30.);
+    col=vec3(.022)*(.2+dif)*a*(.6+.6*wv)+pow(sat(dot(r,L)),24.)*.3*wv+env(r)*fre*.15;
+  }
+  return col;
+}
+
+void main(){
+  float t=uT;
+  vec2 uv=(gl_FragCoord.xy-.5*uRes)/uRes.y;
+  float gch=0.;
+  for(int b=0;b<4;b++){float tb=b==0?3.0:(b==1?6.8:(b==2?10.0:12.8));gch+=exp(-pow((t-tb)*9.,2.));}
+  float row=floor(uv.y*28.)+floor(uClock*24.);
+  uv.x+=gch*.035*(step(.72,hash(row))-.5);
+
+  float kA=ease2((t-2.8)/1.8),kW=ease2((t-9.8)/2.0),kF=ease2((t-12.6)/2.0);
+  float dist=mix(15.,28.,kA);dist=mix(dist,34.,kF);
+  float pitch=mix(.12,.62,kA);pitch=mix(pitch,.30,kW);pitch=mix(pitch,.26,kF);
+  float yaw=-.75+t*.085;
+  vec3 tgt=vec3(0.,mix(0.,.5,kA),0.);tgt.y=mix(tgt.y,1.4,kF);
+  vec3 ro=tgt+dist*vec3(sin(yaw)*cos(pitch),sin(pitch),cos(yaw)*cos(pitch));
+  vec3 fw=normalize(tgt-ro),rt=normalize(cross(fw,vec3(0.,1.,0.))),up=cross(rt,fw);
+  vec2 suv=uv+vec2(0.,mix(.07,.03,kF));
+  vec3 rd=normalize(suv.x*rt+suv.y*up+1.15*fw);
+
+  vec3 bgc=vec3(.010,.011,.015)+uRed*.035*exp(-abs(rd.y+.05)*9.);
+  vec3 col=bgc;
+  float tt=0.,m=-1.;
+  for(int i=0;i<110;i++){
+    vec2 h=map(ro+rd*tt);
+    if(h.x<.0012*tt){m=h.y;break;}
+    tt+=h.x*.9;
+    if(tt>80.)break;
+  }
+  if(m>-.5){
+    vec3 p=ro+rd*tt;vec3 n=calcN(p);
+    col=shade(p,rd,n,m,t);
+    col=mix(col,bgc,1.-exp(-.00035*tt*tt));
+  }
+
+  if(t>7.6&&t<10.6){
+    for(int i=0;i<12;i++){
+      float fi=float(i);
+      float tf=7.8+fi*.17;float dt=t-tf;
+      if(dt<-.06||dt>.9)continue;
+      vec3 wp=gridPos(fi)+vec3(0.,3.76,0.);
+      float I=exp(-dt*dt*500.)*2.4+step(0.,dt)*exp(-dt*5.)*.35;
+      vec3 w=wp-ro;float tp=dot(w,rd);
+      if(tp>0.){
+        float occ=(m>-.5&&tp>tt+.6)?.12:1.;
+        float dd=length(w-rd*tp);
+        col+=(vec3(1.,.9,.8)*.004/(dd*dd+.0005)+vec3(1.,.45,.15)*.025/(dd+.06))*I*occ;
+      }
+      if(dt>0.&&dt<.6){
+        for(int s=0;s<7;s++){
+          float fs=float(s)+fi*7.;
+          vec3 dir=normalize(vec3(hash(fs)-.5,.6+hash(fs+3.1)*.8,hash(fs+7.7)-.5));
+          vec3 sp=wp+dir*(2.6+hash(fs+1.3)*2.)*dt-vec3(0.,7.*dt*dt,0.);
+          vec3 sw=sp-ro;float sp2=dot(sw,rd);if(sp2<0.)continue;
+          float sd=length(sw-rd*sp2);
+          col+=vec3(1.,.6,.25)*.0009/(sd*sd+.0002)*(1.-dt/.6);
+        }
+      }
+    }
+  }
+
+  col=1.-exp(-col*1.4);
+  col=pow(col,vec3(1./2.2));
+  vec2 v=uv*vec2(1.6,1.);col*=1.-.35*dot(v,v);
+  col+=(hash(dot(gl_FragCoord.xy,vec2(12.9898,78.233))+fract(uClock))-.5)*.018;
+  col+=gch*.06*vec3(step(.85,hash(row+1.)),0.,step(.85,hash(row+2.)));
+  gl_FragColor=vec4(col,1.);
+}
+</script>
+
+<script>
+(function(){
+const T=18;
+const stage=document.getElementById('stage'),cv=document.getElementById('gl');
+const $=id=>document.getElementById(id);
+const RED='#D2202F';
+const STAGES=[
+ {t:0,  title:'21700 CELL',  zh:'鋰離子電芯', sub:'LI-ION · CYLINDRICAL',        meta:'Ø21.0 × 70.0 MM · 3.7V NOM · 4.2V MAX'},
+ {t:3.0,title:'4S3P MATRIX', zh:'串並聯排列', sub:'12 CELLS · 4 SERIES × 3 PARALLEL', meta:'CELL PITCH 22 MM · 正負極交錯'},
+ {t:6.8,title:'SPOT WELD',   zh:'點焊連接',   sub:'COPPER + NICKEL-STEEL',        meta:'紫銅打底＋鍍鎳鋼帶 · 配對後點焊'},
+ {t:10.0,title:'HEAT WRAP',  zh:'熱縮封裝',   sub:'HEAT SHRINK · FOAM GUARD',     meta:'四面防撞 · 熱縮包覆'},
+ {t:12.8,title:'SPIRIT SPARROW',zh:'靈雀 外場電包',sub:'15000 MAH · 4S · 21700',     meta:'提把設計 · XT60 輸出'}
+];
+let gl;
+try{gl=cv.getContext('webgl',{antialias:false,alpha:false,premultipliedAlpha:false,preserveDrawingBuffer:true})}catch(e){}
+if(!gl){const d=document.createElement('div');d.className='err';d.textContent='這台裝置的瀏覽器無法播放這段動畫。';stage.appendChild(d);return;}
+
+function sh(type,src){const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw new Error(gl.getShaderInfoLog(s));return s;}
+const prog=gl.createProgram();
+gl.attachShader(prog,sh(gl.VERTEX_SHADER,'attribute vec2 a;void main(){gl_Position=vec4(a,0.,1.);}'));
+try{gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,$('fs').textContent));}catch(e){const d=document.createElement('div');d.className='err';d.textContent='這台裝置的瀏覽器無法播放這段動畫。';stage.appendChild(d);return;}
+gl.linkProgram(prog);gl.useProgram(prog);
+const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+const al=gl.getAttribLocation(prog,'a');gl.enableVertexAttribArray(al);gl.vertexAttribPointer(al,2,gl.FLOAT,false,0,0);
+const U=n=>gl.getUniformLocation(prog,n);
+const uRes=U('uRes'),uT=U('uT'),uClock=U('uClock'),uLabel=U('uLabel'),uRed=U('uRed');
+gl.uniform3f(uRed,.653,.0103,.024);
+
+const tex=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,tex);
+gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,1,1,0,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array([0,0,0,0]));
+gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);
+gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
+gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+gl.uniform1i(uLabel,0);
+
+let labelVer=0;
+function drawLabel(){labelVer++;
+  const c=document.createElement('canvas');c.width=1024;c.height=830;const x=c.getContext('2d');
+  const PX='"Silkscreen", "Courier New", monospace',GRN='#8FD43A';
+  const fit=(txt,font,size,maxW)=>{x.font=font.replace('S',size+'px');let w=x.measureText(txt).width;if(w>maxW){size=Math.floor(size*maxW/w);x.font=font.replace('S',size+'px');}};
+  x.fillStyle='#141414';x.beginPath();x.roundRect?x.roundRect(0,0,1024,830,26):x.rect(0,0,1024,830);x.fill();
+  x.fillStyle=GRN;x.fillRect(40,40,944,250);
+  x.fillStyle='#7d807e';x.fillRect(66,66,896,206);
+  x.fillStyle='#B9BCBA';x.fillRect(66,66,878,188);
+  x.fillStyle='#0d0d0d';x.textBaseline='middle';x.textAlign='center';
+  fit('15,000MAH','700 S '+PX,150,820);x.fillText('15,000MAH',505,162);
+  x.strokeStyle='#F2F2F2';x.lineWidth=16;x.strokeRect(64,350,230,120);x.fillStyle='#F2F2F2';x.fillRect(294,385,22,50);
+  x.fillStyle=GRN;for(let i=0;i<5;i++)x.fillRect(88+i*40,372,24,76);
+  x.fillStyle='#F2F2F2';x.textAlign='left';
+  fit('BATTERY PACK','700 S '+PX,84,610);x.fillText('BATTERY PACK',354,412);
+  const arrows=(ax,ay)=>{for(let i=0;i<3;i++){x.beginPath();x.moveTo(ax+i*24,ay-15);x.lineTo(ax+i*24+18,ay);x.lineTo(ax+i*24,ay+15);x.closePath();x.fill();}};
+  fit('FULL-CHARGE VOLTAGE','700 S '+PX,42,470);x.fillText('FULL-CHARGE VOLTAGE',64,560);arrows(560,560);
+  x.textAlign='right';fit('16.8V','700 S '+PX,104,300);x.fillText('16.8V',964,556);
+  x.textAlign='left';fit('BATTERY ENERGY','700 S '+PX,42,380);x.fillText('BATTERY ENERGY',120,686);arrows(560,686);
+  x.textAlign='right';fit('222WH','700 S '+PX,104,320);x.fillText('222WH',964,682);
+  x.textAlign='left';x.fillStyle=RED;x.font='900 46px Archivo, "Arial Black", sans-serif';x.fillText('EWP',64,782);
+  x.fillStyle='#8a8a8a';x.font='700 22px "JetBrains Mono", monospace';x.fillText('READY TO FLY',178,784);
+  gl.bindTexture(gl.TEXTURE_2D,tex);
+  gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);
+  gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,c);
+}
+const fontsReady=Promise.all([
+  document.fonts.load('700 84px Silkscreen','15,000MAH BATTERY PACK FULL-CHARGE VOLTAGE 16.8V ENERGY 222WH'),
+  document.fonts.load('900 228px Archivo'),document.fonts.load('800 62px Archivo'),
+  document.fonts.load('700 32px "JetBrains Mono"'),document.fonts.load('500 24px "JetBrains Mono"')
+]);
+Promise.race([fontsReady,new Promise(r=>setTimeout(r,2500))]).then(drawLabel,drawLabel);
+
+let scale=Math.min(window.devicePixelRatio||1,1.5)*.85,W=0,H=0;
+function resize(){W=Math.max(2,Math.round(stage.clientWidth*scale));H=Math.max(2,Math.round(stage.clientHeight*scale));cv.width=W;cv.height=H;gl.viewport(0,0,W,H);lastKey='';}
+new ResizeObserver(resize).observe(stage);
+
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const KR=[0,1.6,4.0,6.4,8.2,11.5],KT=[0,3.0,6.8,10.0,12.8,18],TR=11.5;
+const warp=(r,a,b)=>{for(let i=1;i<a.length;i++)if(r<=a[i]){const k=(r-a[i-1])/(a[i]-a[i-1]);return b[i-1]+k*(b[i]-b[i-1]);}return b[b.length-1];};
+let tau=reduce?warp(15.5,KT,KR):0;
+let lastKey='',t=reduce?15.5:0,playing=!reduce,last=performance.now(),cur=-1,frames=0,acc=0;
+let userPaused=false,visible=true;
+resize();
+const swap=$('swap');
+function setStage(i){
+  cur=i;const s=STAGES[i];
+  $('idx').textContent=String(i+1).padStart(2,'0');
+  $('title').textContent=s.title;$('title').classList.toggle('long',s.title.length>12);$('zh').textContent=s.zh;$('sub').textContent=s.sub;$('meta').textContent=s.meta;
+  swap.classList.remove('go');void swap.offsetWidth;swap.classList.add('go');
+}
+const ease=x=>{x=Math.min(1,Math.max(0,x));return x*x*(3-2*x)};
+function hud(){
+  let i=0;for(let k=0;k<STAGES.length;k++)if(t>=STAGES[k].t)i=k;
+  if(i!==cur)setStage(i);
+  $('prog').style.width=(tau/TR*100).toFixed(2)+'%';
+  let live='FIG.01';
+  if(i===1){let n=t>4.4?1:0;for(let c=0;c<12;c++){if(c===5)continue;const r=(c*7)%12;if(t>3.3+r*.09+.85)n++;}live='CELLS '+String(n).padStart(2,'0')+'/12';}
+  else if(i===2){const n=Math.max(0,Math.min(12,Math.floor((t-7.8)/.17)+1));live='WELD '+String(n).padStart(2,'0')+'/12';}
+  else if(i===3){live='WRAP '+String(Math.round(ease((t-10)/2.6)*100)).padStart(3,' ')+'%';}
+  else if(i===4){live='READY';}
+  $('live').textContent=live;
+  $('f1').classList.toggle('on',t>3.8&&t<12.8);
+  $('f2').classList.toggle('on',t>4.4&&t<12.8);
+  $('specs').classList.toggle('on',t>13.6);
+  $('fade').style.opacity=Math.max(0,1-t/.45,(t-(T-.6))/.6).toFixed(3);
+}
+function frame(now){
+  const dt=Math.min(.1,(now-last)/1000);last=now;
+  const run=playing&&visible;
+  if(run){tau+=dt;if(tau>=TR){tau-=TR;cur=-1;}t=warp(tau,KR,KT);}
+  const key=t+'|'+W+'|'+H+'|'+labelVer;
+  if(key!==lastKey){
+    gl.uniform2f(uRes,W,H);gl.uniform1f(uT,t);gl.uniform1f(uClock,now/1000);
+    gl.drawArrays(gl.TRIANGLES,0,3);lastKey=key;
+  }
+  hud();
+  if(run){acc+=dt;frames++;if(frames>=45){const avg=acc/frames;if(avg>.034&&scale>.45){scale*=.85;resize();}else if(avg<.018&&scale<Math.min(window.devicePixelRatio||1,1.5)*.85){scale=Math.min(scale*1.1,Math.min(window.devicePixelRatio||1,1.5)*.85);resize();}frames=0;acc=0;}}
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+function setPlaying(p){playing=p;$('bPlay').textContent=p?'暫停':'播放';$('pausedTag').classList.toggle('on',!p);}
+setPlaying(playing);
+const toggle=()=>{userPaused=playing;setPlaying(!playing);};
+stage.addEventListener('click',toggle);
+stage.addEventListener('keydown',e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();toggle();}});
+$('bPlay').addEventListener('click',toggle);
+$('bReplay').addEventListener('click',()=>{tau=0;t=0;cur=-1;userPaused=false;setPlaying(true);});
+$('bClean').addEventListener('click',e=>{const on=e.currentTarget.getAttribute('aria-pressed')!=='true';e.currentTarget.setAttribute('aria-pressed',on);$('hud').classList.toggle('off',on);});
+/* 外層頁面告知是否在畫面內：捲走時停止運算，省手機電力 */
+window.addEventListener('message',e=>{if(e.origin!==location.origin)return;if(e.data==='ewp-pack-hidden')visible=false;if(e.data==='ewp-pack-visible'){visible=true;last=performance.now();}});
+document.addEventListener('visibilitychange',()=>{visible=!document.hidden;last=performance.now();});
+})();
+</script>
+</body>
+</html>

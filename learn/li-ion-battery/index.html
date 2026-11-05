@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>FPV Li-ion 鋰離子電池學堂｜電翼動力 EWP</title>
+<meta name="description" content="FPV 長航鋰離子電池（Li-ion）新手教學：和 LiPo 差在哪、6S2P 怎麼看、充電模式與電流、降落與儲存電壓、外場電包用法與搭機瓦時限制，附電池包組裝動畫。">
+<link rel="canonical" href="https://www.ewpfpv.com/learn/li-ion-battery/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FPV Li-ion 鋰離子電池學堂｜電翼動力 EWP">
+<meta property="og:description" content="長航用的鋰離子電池怎麼充、飛到多少該降落、6S2P 是什麼意思，一次看懂，附電池包組裝動畫。">
+<meta property="og:url" content="https://www.ewpfpv.com/learn/li-ion-battery/">
+<meta property="og:image" content="https://www.ewpfpv.com/assets/img/home/learn-liion.webp">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* 由 LiPo 學堂版型延伸（Li-ion 篇）。Layout: 單欄閱讀軸＋黏頂章節導覽；每章 = 一句結論＋重點＋可操作的小工具。延用電翼動力官網深色系。 */
+:root{
+  --bg:#101113; --panel:#191b1e; --panel-2:#202327; --line:#36383d;
+  --text:#f5f4f0; --muted:#b1b1b4; --red:#ff4a3d; --sand:#d3c1a4;
+  --ok:#7fd49a; --warn:#e9c46a; --bad:#ff6b5e;
+  --f-display:"Chakra Petch","Noto Sans TC",Arial,sans-serif;
+  --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--text);font-family:var(--f-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+.wrap{max-width:880px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--red)}
+:focus-visible{outline:2px solid var(--sand);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;line-height:1.3;margin:0}
+p{margin:0}
+.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+
+/* hero */
+.hero{padding-block:40px 32px;border-bottom:1px solid var(--line);background:
+  linear-gradient(135deg,transparent 0 62%,rgba(255,74,61,.07) 62% 64%,transparent 64%),var(--bg)}
+.brandrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brandrow img.ewp{height:76px;width:auto;mix-blend-mode:lighten}
+.brandrow .tag{font-family:var(--f-display);font-size:12px;letter-spacing:.18em;color:var(--muted);border:1px solid var(--line);padding:3px 10px;border-radius:2px}
+.hero h1{font-family:var(--f-body);font-weight:900;font-size:clamp(30px,6vw,48px);margin-top:28px;letter-spacing:.01em}
+.hero h1 em{font-style:normal;color:var(--red);font-family:var(--f-display);font-weight:700}
+.hero .lede{color:var(--muted);max-width:60ch;margin-top:12px;font-size:17px}
+.cellstrip{display:flex;gap:6px;margin-top:26px;flex-wrap:wrap}
+.cellstrip span{font-family:var(--f-mono);font-size:12px;padding:6px 10px;background:var(--panel);border:1px solid var(--line);color:var(--sand)}
+.cellstrip b{color:var(--text);font-weight:600}
+
+/* nav */
+nav.toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(16,17,19,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-block:10px}
+nav.toc .wrap::-webkit-scrollbar{display:none}
+nav.toc a{flex:none;color:var(--muted);text-decoration:none;font-size:14px;padding:5px 11px;border-radius:2px;white-space:nowrap}
+nav.toc a:hover,nav.toc a.on{color:var(--text);background:var(--panel-2)}
+nav.toc a .n{font-family:var(--f-mono);color:var(--red);margin-right:4px;font-size:12px}
+
+/* chapters */
+section.ch{padding-block:56px 8px}
+.chhead{display:flex;align-items:baseline;gap:14px;margin-bottom:6px}
+.chhead .n{font-family:var(--f-display);font-weight:700;color:var(--red);font-size:15px;letter-spacing:.1em}
+.chhead h2{font-size:clamp(23px,4vw,30px);font-weight:900}
+.thesis{font-size:18px;color:var(--sand);margin:10px 0 22px;max-width:62ch}
+.body{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+.body>p,.body>ul,.body>ol,.body>h3{max-width:68ch}
+.body ul{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.body li::marker{color:var(--red)}
+h3{font-size:18px;font-weight:700;margin-top:10px}
+.muted{color:var(--muted)}
+
+/* alert */
+.alert{border:1px solid rgba(255,74,61,.55);background:rgba(255,74,61,.08);padding:14px 16px;border-radius:3px;display:grid;gap:4px}
+.alert strong{color:var(--red);font-family:var(--f-display);letter-spacing:.06em}
+.note{border:1px solid var(--line);background:var(--panel);padding:14px 16px;border-radius:3px}
+
+/* label anatomy */
+.label{background:#1a1612;border:1px solid #4a3f30;border-radius:6px;padding:18px;display:grid;gap:12px;font-family:var(--f-mono)}
+.label .row{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px dashed var(--sand);color:var(--text);padding:6px 10px;border-radius:3px;cursor:pointer;background:transparent;font:inherit;font-size:15px}
+.chip[aria-pressed="true"]{background:var(--sand);color:#17130e;border-style:solid}
+.labelout{font-family:var(--f-body);font-size:15px;color:var(--text);min-height:3.5em}
+.labelout b{color:var(--sand)}
+
+/* tools */
+.tool{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:20px;display:grid;gap:16px;max-width:none}
+.tool h3{margin:0;font-family:var(--f-display);font-size:15px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.tool h3 b{color:var(--text);font-family:var(--f-body);letter-spacing:0;font-size:17px;text-transform:none;margin-left:6px}
+.controls{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:end}
+.field{display:grid;gap:6px;min-width:0}
+.field label{font-size:13px;color:var(--muted)}
+.seg{display:flex;flex-wrap:wrap;gap:4px}
+.seg button{font-family:var(--f-mono);font-size:14px;background:var(--panel-2);color:var(--muted);border:1px solid var(--line);padding:7px 12px;border-radius:2px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+input[type=number]{font-family:var(--f-mono);font-size:16px;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:2px;padding:7px 10px;width:130px}
+.toggle{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);cursor:pointer}
+.toggle input{accent-color:var(--red);width:16px;height:16px}
+
+/* voltage gauge */
+.gauge{position:relative;padding-top:6px}
+.bar{height:16px;border-radius:2px;background:linear-gradient(90deg,#5a1d19 0%,var(--bad) 14%,var(--warn) 32%,var(--ok) 52%,var(--ok) 86%,#c7e8d1 100%);position:relative}
+.ticks{position:relative;height:74px;margin-top:4px}
+.tick{position:absolute;top:0;transform:translateX(-50%);display:grid;justify-items:center;gap:1px;text-align:center;width:70px}
+.tick::before{content:"";width:1px;height:10px;background:var(--text)}
+.tick .v{font-family:var(--f-mono);font-size:13px;font-weight:600}
+.tick .l{font-size:11.5px;color:var(--muted);line-height:1.3}
+.tick.alt{top:34px}
+.tick.alt::before{height:44px;margin-top:-34px}
+.vtable-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;color:var(--muted);font-weight:500;letter-spacing:.04em}
+td.num{white-space:nowrap}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;vertical-align:middle}
+
+/* result chips */
+.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.res{background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:12px 14px;display:grid;gap:2px}
+.res .k{font-size:12.5px;color:var(--muted)}
+.res .v{font-family:var(--f-mono);font-size:24px;font-weight:600;font-variant-numeric:tabular-nums}
+.res .v small{font-size:13px;color:var(--muted);margin-left:3px;font-weight:400}
+.verdict{border-radius:3px;padding:12px 14px;font-size:15px;border:1px solid}
+.verdict.ok{border-color:rgba(127,212,154,.5);background:rgba(127,212,154,.08)}
+.verdict.warn{border-color:rgba(233,196,106,.5);background:rgba(233,196,106,.08)}
+.verdict.bad{border-color:rgba(255,107,94,.6);background:rgba(255,107,94,.1)}
+.verdict b{font-family:var(--f-display);letter-spacing:.06em}
+.verdict.ok b{color:var(--ok)} .verdict.warn b{color:var(--warn)} .verdict.bad b{color:var(--bad)}
+
+/* sizing grid */
+.sizes{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.size{border:1px solid var(--line);padding:14px;border-radius:3px;display:grid;gap:4px;align-content:start}
+.size .t{font-family:var(--f-display);font-weight:700;font-size:17px}
+.size .s{font-family:var(--f-mono);color:var(--sand);font-size:14px}
+.size .d{font-size:14px;color:var(--muted)}
+
+/* compare */
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:560px){.cmp{grid-template-columns:1fr}}
+.cmp .c{border:1px solid var(--line);border-radius:3px;padding:16px;display:grid;gap:8px;align-content:start}
+.cmp .c h4{margin:0;font-family:var(--f-display);font-size:18px}
+.cmp .c ul{margin:0;padding-left:1.1em;font-size:15px;display:grid;gap:4px}
+
+/* checker */
+.checks{display:grid;gap:8px}
+.checks label{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid var(--line);border-radius:3px;cursor:pointer;font-size:15px;background:var(--bg)}
+.checks input{accent-color:var(--red);margin-top:5px;width:16px;height:16px;flex:none}
+.checks .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;padding:2px 7px;border-radius:2px;flex:none;align-self:center}
+.sev.hi{background:rgba(255,107,94,.18);color:var(--bad)} .sev.md{background:rgba(233,196,106,.16);color:var(--warn)}
+
+/* steps (real sequence) */
+ol.steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:s}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}
+ol.steps li::before{content:counter(s);font-family:var(--f-display);font-weight:700;color:var(--bg);background:var(--sand);width:28px;height:28px;display:grid;place-items:center;border-radius:2px;margin-top:2px}
+
+/* mistakes */
+.mist{display:grid;gap:0;border-top:1px solid var(--line)}
+.mist div{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.mist .x{color:var(--muted)} .mist .x::before{content:"✕ ";color:var(--bad);font-weight:700}
+.mist .o::before{content:"✓ ";color:var(--ok);font-weight:700}
+@media (max-width:560px){.mist div{grid-template-columns:1fr;gap:4px}}
+
+/* quiz */
+.q{display:grid;gap:8px;padding-block:6px}
+.q p{font-weight:700}
+.opts{display:flex;flex-wrap:wrap;gap:6px}
+.opts button{font:inherit;font-size:15px;background:var(--bg);color:var(--text);border:1px solid var(--line);padding:7px 12px;border-radius:2px;cursor:pointer}
+.opts button.right{border-color:var(--ok);background:rgba(127,212,154,.12)}
+.opts button.wrong{border-color:var(--bad);background:rgba(255,107,94,.1)}
+.q .why{font-size:14px;color:var(--muted)}
+
+/* cheat sheet */
+.cheat{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.cheat div{background:var(--panel);padding:14px 16px;display:grid;gap:2px}
+.cheat .k{font-size:13px;color:var(--muted)}
+.cheat .v{font-family:var(--f-mono);font-size:20px;font-weight:600;color:var(--text)}
+.cheat .v.r{color:var(--red)}
+
+footer{margin-top:64px;border-top:1px solid var(--line);padding-block:32px 48px}
+footer .wrap{display:grid;gap:14px}
+.foot-brand{display:flex;align-items:center;gap:12px}
+.foot-brand img{height:28px;width:auto}
+.foot-brand span{font-family:var(--f-display);letter-spacing:.14em;font-size:13px;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:8px}
+.cta a{text-decoration:none;font-size:15px;padding:9px 16px;border-radius:2px;border:1px solid var(--line);color:var(--text)}
+.cta a.p{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}
+.disclaimer{font-size:13px;color:var(--muted);max-width:70ch}
+
+figure.fig{min-width:0;margin:0;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:14px 14px 10px}
+.fig .sc{overflow-x:auto}
+.fig svg{display:block;width:100%;min-width:600px;height:auto}
+.fig text{fill:var(--text);font-family:var(--f-body);font-size:15px}
+.fig text.m{fill:var(--muted);font-size:13px}
+.fig text.mono{font-family:var(--f-mono)}
+.fig text.s{fill:var(--sand)} .fig text.ok{fill:var(--ok)} .fig text.bad{fill:var(--bad)} .fig text.r{fill:var(--red)}
+.fig .ln{stroke:var(--muted);stroke-width:1;fill:none;stroke-dasharray:3 3}
+.fig figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.sitebar{border-bottom:1px solid var(--line);background:var(--bg)}
+.sitebar .wrap{display:flex;justify-content:space-between;gap:12px;padding-block:10px;font-size:14px}
+.sitebar a{color:var(--muted);text-decoration:none}.sitebar a:hover{color:var(--text)}
+
+/* 入門必學／進階補充（v2.18）*/
+.lv{display:inline-block;font-family:var(--f-body);font-size:11px;font-weight:600;letter-spacing:0;line-height:1.4;padding:1px 6px;border-radius:2px;border:1px solid var(--line);color:var(--muted);vertical-align:middle;margin-left:6px}
+.lv.core{color:var(--text);border-color:rgba(255,74,61,.7);background:rgba(255,74,61,.12)}
+.chhead .lv{font-size:12px;align-self:center}
+.path{border:1px solid var(--line);border-left:3px solid var(--red);background:var(--panel);padding:14px 16px;border-radius:3px;margin-top:22px;font-size:15px;line-height:1.75}
+.path b{color:var(--text)}
+.path .lv{margin:0 2px}
+details.adv{border:1px dashed var(--line);border-radius:3px;padding:12px 16px;margin:18px 0;background:var(--panel)}
+details.adv summary{cursor:pointer;color:var(--sand);font-weight:600;list-style-position:outside}
+details.adv[open] summary{margin-bottom:8px}
+details.adv>*:not(summary){margin-top:10px}
+/* Li-ion 篇：電池包動畫與停用清單 */
+figure.anim{margin:0;display:grid;gap:8px;justify-items:center}
+.anim-frame{width:100%;max-width:380px;aspect-ratio:9/17.2;background:#0a0b0d;border:1px solid var(--line)}
+.anim-frame iframe{display:block;width:100%;height:100%;border:0}
+figure.anim figcaption{font-size:13px;color:var(--muted);max-width:60ch;text-align:center}
+ul.badlist{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+ul.badlist li{display:flex;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:3px;background:var(--bg);font-size:15px}
+.vtable-wrap table.vt{min-width:0}
+.vt .vd{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.results{grid-template-columns:repeat(2,minmax(0,1fr))}
+.wh{display:grid;gap:10px}
+.wh div{border:1px solid var(--line);border-left:3px solid var(--sand);border-radius:3px;padding:12px 14px;background:var(--panel);display:grid;gap:4px;font-size:15px}
+.wh div.bad{border-left-color:var(--bad)}.wh div.warn{border-left-color:var(--warn)}.wh div.ok{border-left-color:var(--ok)}
+.wh b{font-family:var(--f-mono)}.wh .e{color:var(--muted);font-size:14px}
+ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;padding:2px 7px;border-radius:2px;flex:none}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="wrap"><a href="/">← 電翼動力官網</a><a href="/journal/">EWP 專欄</a></div></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brandrow">
+      <img class="ewp" src="data:image/webp;base64,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" alt="EWP 電翼動力 FPV LAB">
+      <span class="tag">BATTERY SCHOOL · 02</span>
+    </div>
+    <h1>FPV <em>Li-ion</em><br>鋰離子電池學堂</h1>
+    <p class="lede">長航、遠航用的鋰離子電池，和花飛常用的 LiPo 是不同的東西：存的電更多、飛得更久，但不能大電流猛衝，充電、降落電壓也不一樣。這裡用白話整理你需要知道的事，也帶你看一顆電池包是怎麼做出來的。</p>
+    <div class="cellstrip" aria-label="單顆電芯關鍵電壓">
+      <span>滿電 <b>4.20V</b></span><span>標稱 <b>3.70V</b></span><span>儲存 <b>3.80V</b></span><span>建議降落（靜置）<b>3.30V</b></span>
+    </div>
+    <p class="path"><b>第一次看？</b>先讀標示 <span class="lv core">必學</span> 的章節：鋰離子是什麼、電壓、充電、飛行使用、儲存與安全。也可以先看第 02 章的動畫，一分鐘看懂電池包怎麼組成。</p>
+  </div>
+</header>
+<nav class="toc" aria-label="章節">
+  <div class="wrap" id="toc">
+    <a href="#what"><span class="n">01</span>鋰離子是什麼<span class="lv core">必學</span></a>
+    <a href="#pack"><span class="n">02</span>電池包怎麼組成</a>
+    <a href="#ewp"><span class="n">03</span>EWP 怎麼做</a>
+    <a href="#volt"><span class="n">04</span>電壓<span class="lv core">必學</span></a>
+    <a href="#charge"><span class="n">05</span>充電<span class="lv core">必學</span></a>
+    <a href="#fly"><span class="n">06</span>飛行使用<span class="lv core">必學</span></a>
+    <a href="#bank"><span class="n">07</span>外場電包</a>
+    <a href="#store"><span class="n">08</span>儲存與安全<span class="lv core">必學</span></a>
+    <a href="#travel"><span class="n">09</span>搭飛機</a>
+  </div>
+</nav>
+<main class="wrap">
+
+<section class="ch" id="what">
+  <div class="chhead"><span class="n">01</span><h2>鋰離子是什麼</h2><span class="lv core">必學</span></div>
+  <p class="thesis">一句話：鋰離子電池用「飛得久」換「爆發力」。適合長航、遠航、巡航，不適合花飛、競速。</p>
+  <div class="body">
+    <p>鋰離子電池是由一顆顆圓柱形電芯（像加大版的乾電池）組成。常見尺寸有兩種，數字就是電芯的大小：</p>
+    <ul>
+      <li><b>18650</b>：直徑 18mm、長 65mm，較輕巧，常見 3000mAh 左右。</li>
+      <li><b>21700</b>：直徑 21mm、長 70mm，容量較大，常見 4000～5000mAh。</li>
+    </ul>
+    <div class="cmp">
+      <div class="c"><h4>Li-ion 鋰離子</h4><ul>
+        <li>同樣重量存的電比較多，飛得更久</li>
+        <li>能持續輸出的電流比較小，猛推油門電壓掉得快</li>
+        <li>電芯有鐵殼，比較耐撞</li>
+        <li>適合：7 吋以上長航、遠航、巡航空拍</li>
+      </ul></div>
+      <div class="c"><h4>LiPo 鋰聚合物</h4><ul>
+        <li>瞬間爆發力強，可以大電流猛衝</li>
+        <li>同樣重量存的電比較少</li>
+        <li>軟包裝，摔撞容易鼓包</li>
+        <li>適合：花飛、競速、穿越</li>
+      </ul></div>
+    </div>
+    <p class="note">LiPo 的觀念大多可以通用，但<b>降落電壓、充電模式不同</b>，不要直接套用。LiPo 的完整教學請看 <a href="/learn/lipo-battery/">LiPo 電池新手學堂</a>。</p>
+  </div>
+</section>
+
+<section class="ch" id="pack">
+  <div class="chhead"><span class="n">02</span><h2>電池包怎麼組成</h2></div>
+  <p class="thesis">S 決定電壓，P 決定容量。看懂這兩個字母，就看懂電池包的規格。</p>
+  <div class="body">
+    <ul>
+      <li><b>S（串聯）</b>：幾顆電芯頭尾相接。每多 1S，電壓多 3.7V。例如 6S = 3.7V × 6 = 22.2V。</li>
+      <li><b>P（並聯）</b>：每一組放幾顆電芯並排。每多 1P，容量和能輸出的電流就多一份。例如 3000mAh 的電芯做 2P = 6000mAh。</li>
+      <li><b>6S2P</b> 就是「2 顆並聯成一組，6 組串起來」，總共 12 顆電芯。</li>
+    </ul>
+    <figure class="anim">
+      <div class="anim-frame"><iframe id="packAnim" src="/learn/li-ion-battery/pack.html" title="21700 外場電包組裝動畫：電芯、4S3P 排列、點焊、熱縮封裝、成品" loading="lazy"></iframe></div>
+      <figcaption>以 EWP 靈雀外場電包（21700 · 4S3P · 15000mAh）為例：12 顆電芯排成 4 串 3 並，用紫銅＋鍍鎳鋼帶點焊，再包覆熱縮與防撞泡棉。點畫面可以暫停。</figcaption>
+    </figure>
+    <div class="tool">
+      <h3>TOOL<b>算算看你的電池包</b></h3>
+      <div class="controls">
+        <div class="field"><label>S 數（串聯）</label><div class="seg" id="pkS"></div></div>
+        <div class="field"><label>P 數（並聯）</label><div class="seg" id="pkP"></div></div>
+        <div class="field"><label for="pkMah">每顆電芯容量（mAh）</label><input type="number" id="pkMah" value="3000" min="500" max="6000" step="100"></div>
+      </div>
+      <div class="results">
+        <div class="res"><span class="k">標稱電壓</span><span class="v" id="pkV">22.2<small>V</small></span></div>
+        <div class="res"><span class="k">滿電電壓</span><span class="v" id="pkFull">25.2<small>V</small></span></div>
+        <div class="res"><span class="k">總容量</span><span class="v" id="pkCap">6000<small>mAh</small></span></div>
+        <div class="res"><span class="k">能量</span><span class="v" id="pkWh">133<small>Wh</small></span></div>
+      </div>
+      <p class="muted" style="font-size:14px">公式：電壓 = 3.7V × S；容量 = 電芯容量 × P；能量（Wh）= 標稱電壓 × 容量（Ah）。搭飛機看的是 Wh。</p>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="ewp">
+  <div class="chhead"><span class="n">03</span><h2>EWP 的電池怎麼做</h2></div>
+  <p class="thesis">同樣寫 6S2P，用什麼電芯、怎麼焊，飛起來差很多。</p>
+  <div class="body">
+    <h3>不是普通電芯</h3>
+    <p>EWP 長航電池使用<b>全極耳高倍率動力電芯</b>。一般電芯只有一小片導電片把電流引出來，全極耳是整個電極邊緣都直接導電，內阻更低、發熱更少，能持續輸出的電流也比一般長航電芯大很多。外場電包則使用<b>高容量 21700 電芯</b>，重點放在存電量。</p>
+    <h3>紫銅＋鍍鎳鋼帶點焊</h3>
+    <p>電芯之間靠金屬帶連接，電流都要從這裡通過。常見做法只用鎳片，EWP 是<b>下層紫銅、上層鍍鎳鋼帶</b>一起點焊：</p>
+    <ul>
+      <li>紫銅的導電能力約是鎳的 4 倍以上，電流通過時壓降更小、發熱更少。</li>
+      <li>紫銅導熱好，能把電芯間的熱量分散開，不容易局部過熱。</li>
+      <li>上層的鍍鎳鋼帶讓點焊更牢靠（紫銅本身很難直接點焊）。</li>
+    </ul>
+    <h3>出廠前的把關</h3>
+    <ul>
+      <li>每顆電芯先量電壓與內阻，配對相近的電芯才組在一起。</li>
+      <li>泡棉防撞、熱縮包覆。</li>
+      <li>電池沒有內建保護板（BMS），所以一定要用平衡充電器、選 Li-ion 模式充電（見第 05 章）。</li>
+    </ul>
+  </div>
+</section>
+
+<section class="ch" id="volt">
+  <div class="chhead"><span class="n">04</span><h2>電壓</h2><span class="lv core">必學</span></div>
+  <p class="thesis">記住四個數字：滿電 4.2V、儲存 3.8V、落地靜置 3.3V 就該降落、絕對不要飛到 3.0V 以下。</p>
+  <div class="body">
+    <div class="tool">
+      <h3>TOOL<b>換算成你的電池</b></h3>
+      <div class="controls"><div class="field"><label>S 數</label><div class="seg" id="vS"></div></div></div>
+      <div class="vtable-wrap"><table class="vt">
+        <thead><tr><th>狀態</th><th>每節</th><th>整包</th></tr></thead>
+        <tbody id="vbody"></tbody>
+      </table></div>
+    </div>
+    <ul>
+      <li><b>落地靜置電壓</b>：降落後放幾分鐘再量。飛行中推油門時電壓會往下掉，停下來會回升，所以以靜置後的數字判斷。</li>
+      <li>電芯規格書上寫的最低電壓（例如 2.5V）是「不會立刻壞掉」的極限，<b>不是建議飛到的電壓</b>。常常飛到很低，電池壽命會明顯縮短。</li>
+    </ul>
+  </div>
+</section>
+
+<section class="ch" id="charge">
+  <div class="chhead"><span class="n">05</span><h2>充電</h2><span class="lv core">必學</span></div>
+  <p class="thesis">充電器一定選 Li-ion（LiIon）模式，插平衡頭充，人要在旁邊。</p>
+  <div class="body">
+    <ol class="steps">
+      <li><span><b>選 Li-ion 模式</b>：選成 LiPo 或 LiHV 會充過頭（LiHV 會充到 4.35V），非常危險。</span></li>
+      <li><span><b>確認節數</b>：充電器顯示的 S 數要和電池一樣，例如 6S。</span></li>
+      <li><span><b>插平衡頭</b>：EWP 電池沒有保護板，靠充電器的平衡功能讓每一節電壓一致。</span></li>
+      <li><span><b>設定電流</b>：EWP 長航電池建議 1.5C 以內；外場電包建議 1C 以內。1C 就是「容量的數字」，例如 6000mAh 的 1C = 6A，1.5C = 9A。</span></li>
+      <li><span><b>放在不可燃的地方充</b>，人在旁邊。充電中發燙、鼓起或有異味，立刻停止。</span></li>
+    </ol>
+    <div class="tool">
+      <h3>TOOL<b>充電電流換算</b></h3>
+      <div class="controls">
+        <div class="field"><label for="chMah">電池容量（mAh）</label><input type="number" id="chMah" value="6000" min="500" max="30000" step="500"></div>
+        <div class="field"><label>倍率</label><div class="seg" id="chC"></div></div>
+      </div>
+      <div class="results"><div class="res"><span class="k">充電電流</span><span class="v" id="chA">9.0<small>A</small></span></div></div>
+    </div>
+    <p class="note">天氣冷（15°C 以下）時，鋰離子電池能承受的充電電流會變小，請把電流調低，或先讓電池回到室溫再充。</p>
+  </div>
+</section>
+
+<section class="ch" id="fly">
+  <div class="chhead"><span class="n">06</span><h2>飛行使用</h2><span class="lv core">必學</span></div>
+  <p class="thesis">長航電池要「穩穩地飛」，不要一直滿油門。</p>
+  <div class="body">
+    <h3>看懂放電規格</h3>
+    <ul>
+      <li><b>持續放電</b>：可以一直維持的電流，這才是選電池時要看的數字。</li>
+      <li><b>瞬間放電（例如 5 秒內）</b>：短時間的最大電流，只能應付拉升、急轉這種瞬間需求，<b>不能長時間使用</b>。</li>
+      <li>電池包的放電能力 = 單顆電芯 × 並聯數，例如 2P 就是兩倍。</li>
+    </ul>
+    <h3>飛行時注意</h3>
+    <ul>
+      <li>長時間大油門，電壓會掉得很快、電池發燙，飛行時間反而變短。</li>
+      <li>天冷時電池變弱，起飛後先溫和飛一下，等電池熱起來。</li>
+      <li>落地後摸電池：溫溫的正常；燙到不敢摸，代表負載太大，要換更適合的電池或配置。</li>
+    </ul>
+  </div>
+</section>
+
+<section class="ch" id="bank">
+  <div class="chhead"><span class="n">07</span><h2>外場電包怎麼用</h2></div>
+  <p class="thesis">外場電包是在飛場幫其他電池充電的「行動電源」，接在充電器的 DC 輸入使用。</p>
+  <div class="body">
+    <ol class="steps">
+      <li><span><b>確認充電器支援</b>：充電器的 DC 輸入電壓範圍要涵蓋電包電壓（4S 電包最高 16.8V、6S 電包最高 25.2V）。</span></li>
+      <li><span><b>設定輸入低壓保護</b>：電包沒有保護板，請在充電器設定輸入低壓保護，建議每節 3.2V（4S 約 12.8V、6S 約 19.2V），避免把電包用到過放。</span></li>
+      <li><span><b>看電量顯示</b>：用到剩一兩格就停止，回家後再充回來。</span></li>
+      <li><span><b>電包本身充電</b>：一樣用平衡充電器、Li-ion 模式，電流建議 1C 以內。</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="ch" id="store">
+  <div class="chhead"><span class="n">08</span><h2>儲存與安全</h2><span class="lv core">必學</span></div>
+  <p class="thesis">不飛的時候充到 3.8V 存放；外觀有異狀就停用。</p>
+  <div class="body">
+    <ul>
+      <li><b>儲存</b>：兩三天以上不飛，用充電器的 Storage 功能調到每節約 3.8V，放在陰涼乾燥處、防火袋或不可燃的盒子裡。</li>
+      <li><b>每個月檢查一次</b>：量電壓、看外觀。</li>
+      <li><b>運送</b>：接頭要蓋好或用膠帶包覆，避免短路。</li>
+    </ul>
+    <h3>出現這些狀況，停止使用</h3>
+    <ul class="badlist">
+      <li>外層熱縮或泡棉破損，看得到電芯或金屬帶<span class="sev hi">停用</span></li>
+      <li>摔過之後外殼凹陷、變形<span class="sev hi">停用</span></li>
+      <li>充電或使用時發燙、有異味<span class="sev hi">停用</span></li>
+      <li>沒接任何東西，電壓卻一直往下掉，或某一節掉得特別多<span class="sev hi">停用</span></li>
+      <li>充飽靜置後，各節電壓差距明顯變大<span class="sev md">送檢</span></li>
+    </ul>
+    <p class="note">停用的電池不要再充電，放在不可燃的地方，交給 EWP 檢測，或依當地規定回收。判斷方法也可以看故障排除中心的 <a href="/help/battery-swelling/">電池受損還能用嗎</a>、<a href="/help/battery-cell-imbalance/">電壓差很多</a>。</p>
+  </div>
+</section>
+
+<section class="ch" id="travel">
+  <div class="chhead"><span class="n">09</span><h2>搭飛機帶電池</h2></div>
+  <p class="thesis">看的是瓦時（Wh）。長航電池容量大，很多都超過可以帶上客機的上限。</p>
+  <div class="body">
+    <div class="wh">
+      <div class="ok"><span><b>100Wh 以下</b>：可以手提上機（不能托運）</span><span class="e">EWP 電池：4S1P 3000mAh（44Wh）、6S1P 3000mAh（67Wh）</span></div>
+      <div class="warn"><span><b>100～160Wh</b>：要航空公司同意，數量有限制</span><span class="e">EWP 電池：6S1P 5000mAh（111Wh）、6S2P 6000mAh（133Wh）</span></div>
+      <div class="bad"><span><b>160Wh 以上</b>：不能帶上客機</span><span class="e">EWP 電池：6S2P 8000mAh（178Wh）、6S2P 10000mAh（222Wh）、外場電包 4S3P（222Wh）、6S3P（333Wh）</span></div>
+    </div>
+    <p class="muted">以上是多數航空公司依國際規定的一般原則，<b>實際以你搭乘的航空公司最新規定為準</b>。更多搭機注意事項請看 <a href="/learn/lipo-battery/#travel">LiPo 學堂的搭飛機章節</a>。</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand"><img src="data:image/png;base64,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" alt=""><span>電翼動力 EWP · READY TO FLY</span></div>
+    <p>想找適合你飛機的長航電池，或需要特殊容量、S 數、接頭的客製電池組？把機型和需求傳給我們。</p>
+    <div class="cta">
+      <a class="p" href="https://lin.ee/WIUCkWP" target="_blank" rel="noopener">LINE 詢問電池問題</a>
+      <a href="/product/6s-4s-fpv/">EWP 高倍率長航鋰電池</a>
+      <a href="/product/fpv-lr-21700-6s2p-10000mah-li/">LR 遠航電池 6S2P 10000mAh</a>
+      <a href="/product/spirit-sparrow-6s-4s-fpv/">靈雀外場電包</a>
+      <a href="/services/battery-pack/">電池組客製</a>
+      <a href="/learn/lipo-battery/">LiPo 電池新手學堂</a>
+    </div>
+    <p class="disclaimer">本頁數值為 FPV 常用的一般參考值，實際請以電池商品頁、電芯規格書與充電器說明為準。鋰電池使用不當可能造成起火與人身傷害，使用者須自行注意安全。航空規定以各航空公司最新公告為準。</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const $=s=>document.querySelector(s);
+  function seg(el,vals,init,label,cb){el.innerHTML='';vals.forEach(v=>{const b=document.createElement('button');b.type='button';b.textContent=label(v);b.setAttribute('aria-pressed',v===init);b.onclick=()=>{[...el.children].forEach(x=>x.setAttribute('aria-pressed',x===b));cb(v)};el.appendChild(b)});cb(init);}
+  /* 02 電池包計算 */
+  let PS=6,PP=2;
+  function renderPack(){
+    const m=Math.max(0,+$('#pkMah').value||0),v=3.7*PS,cap=m*PP;
+    $('#pkV').innerHTML=v.toFixed(1)+'<small>V</small>';
+    $('#pkFull').innerHTML=(4.2*PS).toFixed(1)+'<small>V</small>';
+    $('#pkCap').innerHTML=cap+'<small>mAh</small>';
+    $('#pkWh').innerHTML=Math.round(v*cap/1000)+'<small>Wh</small>';
+  }
+  seg($('#pkS'),[1,2,3,4,6,8],6,v=>v+'S',v=>{PS=v;renderPack()});
+  seg($('#pkP'),[1,2,3,4],2,v=>v+'P',v=>{PP=v;renderPack()});
+  $('#pkMah').addEventListener('input',renderPack);
+  /* 04 電壓 */
+  let VS=6;
+  const STATES=[
+    {k:'滿電',v:4.20,c:'#c7e8d1',d:'充電器用 Li-ion 模式充滿。超過就是過充。'},
+    {k:'儲存',v:3.80,c:'var(--ok)',d:'兩三天以上不飛，放在這個電壓。'},
+    {k:'標稱',v:3.70,c:'var(--ok)',d:'標籤上的電壓，用來計算瓦時。'},
+    {k:'建議降落',v:3.30,c:'var(--warn)',d:'落地靜置後的電壓到這裡就該結束這一趟。'},
+    {k:'不要低於',v:3.00,c:'var(--bad)',d:'常飛到這裡以下，電池壽命會明顯縮短。'}
+  ];
+  function renderVolt(){$('#vbody').innerHTML=STATES.map(s=>`<tr><td><span class="dot" style="background:${s.c}"></span><b>${s.k}</b><span class="vd">${s.d}</span></td><td class="num">${s.v.toFixed(2)}V</td><td class="num">${(s.v*VS).toFixed(1)}V</td></tr>`).join('');}
+  seg($('#vS'),[1,2,3,4,6,8],6,v=>v+'S',v=>{VS=v;renderVolt()});
+  /* 05 充電電流 */
+  let CC=1.5;
+  function renderCh(){const m=Math.max(0,+$('#chMah').value||0);$('#chA').innerHTML=(m/1000*CC).toFixed(1)+'<small>A</small>';}
+  seg($('#chC'),[0.5,1,1.5],1.5,v=>v+'C',v=>{CC=v;renderCh()});
+  $('#chMah').addEventListener('input',renderCh);
+  /* 章節導覽：目前章節高亮 */
+  const links=[...document.querySelectorAll('#toc a')];
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id));}}),{rootMargin:'-40% 0px -55% 0px'});
+  document.querySelectorAll('section.ch').forEach(s=>io.observe(s));
+  /* 動畫：捲出畫面就停止運算 */
+  const fr=$('#packAnim');
+  if(fr&&'IntersectionObserver' in window){
+    let vis=true;const send=()=>{try{fr.contentWindow.postMessage(vis?'ewp-pack-visible':'ewp-pack-hidden',location.origin)}catch(_){}};
+    new IntersectionObserver(es=>es.forEach(e=>{vis=e.isIntersecting;send();})).observe(fr);
+    fr.addEventListener('load',send);
+  }
+})();
+</script>
+</body>
+</html>
