@@ -15,7 +15,7 @@ jobs:
   check:
     # 後台（Pages CMS）原始儲存由 cms-sync.yml 校正與驗證，這裡略過（校正前的原始檔案缺少空值欄位）
     if: github.event_name != 'push' || !startsWith(github.event.head_commit.message, '[後台]')
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # Playwright 的 --with-deps 尚未支援 Ubuntu 26（ubuntu-latest 2026-10 起改版後安裝失敗）
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
