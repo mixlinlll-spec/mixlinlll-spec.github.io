@@ -2,8 +2,9 @@ name: EWP site checks
 # 每次 push／PR：資料與路徑驗證、單元測試、建置、白名單／連結／草稿外洩檢查、Playwright 端對端測試、手機 Lighthouse。
 # 本流程只做檢查，不部署。正式部署見 pages.yml。
 on:
+  # 分支的檢查由 pull_request 觸發一次即可（程式庫改為私人後，Actions 每月免費時數有限）
   push:
-    branches: [main, 'feature/**']
+    branches: [main]
   pull_request:
 permissions:
   contents: read
