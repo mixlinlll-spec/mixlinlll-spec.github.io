@@ -53,6 +53,7 @@ canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
 .hazard{height:2.4cqw;background:repeating-linear-gradient(-45deg,var(--sand-deep) 0 1.6cqw,var(--ink) 1.6cqw 3.2cqw);background-size:4.53cqw 100%;animation:slide 1.2s linear infinite}
 @keyframes slide{to{background-position:4.53cqw 0}}
 .foot{display:flex;justify-content:space-between;align-items:center;font-family:var(--f-mono);font-size:2.6cqw;letter-spacing:.14em;color:var(--mute)}
+.foot .logo{height:6cqw;width:auto;display:block}
 .foot .brand{font-family:var(--f-display);font-weight:900;letter-spacing:.04em;color:var(--red);font-size:3.4cqw}
 .foot .brand em{font-family:var(--f-mono);font-style:normal;font-weight:700;color:var(--paper);font-size:.78em;margin-left:1.4cqw;letter-spacing:.14em}
 .paused{position:absolute;right:4cqw;top:50%;font-family:var(--f-mono);font-size:3cqw;letter-spacing:.2em;color:var(--sand);opacity:0;transition:opacity .2s}
@@ -92,7 +93,7 @@ canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
         <div id="f2">C = 3P × 5000 mAh = <em>15000 mAh</em></div>
       </div>
       <div class="hazard"></div>
-      <div class="foot"><span class="brand">EWP<em>READY TO FLY</em></span><span>21700 · 4S3P</span></div>
+      <div class="foot"><img class="logo" src="/assets/img/brand/ewp-logo.png" alt="電翼動力 EWP"><span>示意動畫 · 21700 · 4S3P</span></div>
     </div>
   </div>
   <div class="paused" id="pausedTag">PAUSED</div>
@@ -386,6 +387,7 @@ gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
 gl.uniform1i(uLabel,0);
 
 let labelVer=0;
+const logoImg=new Image();logoImg.src='/assets/img/brand/ewp-logo.png';logoImg.onload=()=>drawLabel();
 function drawLabel(){labelVer++;
   const c=document.createElement('canvas');c.width=1024;c.height=830;const x=c.getContext('2d');
   const PX='"Silkscreen", "Courier New", monospace',GRN='#8FD43A';
@@ -405,8 +407,7 @@ function drawLabel(){labelVer++;
   x.textAlign='right';fit('16.8V','700 S '+PX,104,300);x.fillText('16.8V',964,556);
   x.textAlign='left';fit('BATTERY ENERGY','700 S '+PX,42,380);x.fillText('BATTERY ENERGY',120,686);arrows(560,686);
   x.textAlign='right';fit('222WH','700 S '+PX,104,320);x.fillText('222WH',964,682);
-  x.textAlign='left';x.fillStyle=RED;x.font='900 46px Archivo, "Arial Black", sans-serif';x.fillText('EWP',64,782);
-  x.fillStyle='#8a8a8a';x.font='700 22px "JetBrains Mono", monospace';x.fillText('READY TO FLY',178,784);
+  if(logoImg.complete&&logoImg.naturalWidth){const lh=70,lw=lh*logoImg.naturalWidth/logoImg.naturalHeight;x.drawImage(logoImg,64,748,lw,lh);}
   gl.bindTexture(gl.TEXTURE_2D,tex);
   gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);
   gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,c);

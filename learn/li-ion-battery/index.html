@@ -240,7 +240,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
     <h1>FPV <em>Li-ion</em><br>鋰離子電池學堂</h1>
     <p class="lede">長航、遠航用的鋰離子電池，和花飛常用的 LiPo 是不同的東西：存的電更多、飛得更久，但不能大電流猛衝，充電、降落電壓也不一樣。這裡用白話整理你需要知道的事，也帶你看一顆電池包是怎麼做出來的。</p>
     <div class="cellstrip" aria-label="單顆電芯關鍵電壓">
-      <span>滿電 <b>4.20V</b></span><span>標稱 <b>3.70V</b></span><span>儲存 <b>3.80V</b></span><span>建議降落（靜置）<b>3.30V</b></span>
+      <span>滿電 <b>4.20V</b></span><span>標稱 <b>3.6～3.7V</b></span><span>儲存 <b>3.80V</b></span><span>落地靜置不低於 <b>3.30V</b></span>
     </div>
     <p class="path"><b>第一次看？</b>先讀標示 <span class="lv core">必學</span> 的章節：鋰離子是什麼、電壓、充電、飛行使用、儲存與安全。也可以先看第 02 章的動畫，一分鐘看懂電池包怎麼組成。</p>
   </div>
@@ -262,9 +262,9 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
 
 <section class="ch" id="what">
   <div class="chhead"><span class="n">01</span><h2>鋰離子是什麼</h2><span class="lv core">必學</span></div>
-  <p class="thesis">一句話：鋰離子電池用「飛得久」換「爆發力」。適合長航、遠航、巡航，不適合花飛、競速。</p>
+  <p class="thesis">一句話：鋰離子電池用「飛得久」換「爆發力」。適合長航、遠航、巡航；花飛、競速一般還是用 LiPo。</p>
   <div class="body">
-    <p>鋰離子電池是由一顆顆圓柱形電芯（像加大版的乾電池）組成。常見尺寸有兩種，數字就是電芯的大小：</p>
+    <p>嚴格來說 LiPo 也是鋰離子電池的一種，FPV 圈說的「鋰離子電池」通常是指用圓柱形電芯（像加大版的乾電池）組成的電池。常見尺寸有兩種，數字就是電芯的大小：</p>
     <ul>
       <li><b>18650</b>：直徑 18mm、長 65mm，較輕巧，常見 3000mAh 左右。</li>
       <li><b>21700</b>：直徑 21mm、長 70mm，容量較大，常見 4000～5000mAh。</li>
@@ -273,7 +273,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
       <div class="c"><h4>Li-ion 鋰離子</h4><ul>
         <li>同樣重量存的電比較多，飛得更久</li>
         <li>能持續輸出的電流比較小，猛推油門電壓掉得快</li>
-        <li>電芯有鐵殼，比較耐撞</li>
+        <li>電芯有金屬外殼，不容易鼓包；但摔凹了一樣要停用</li>
         <li>適合：7 吋以上長航、遠航、巡航空拍</li>
       </ul></div>
       <div class="c"><h4>LiPo 鋰聚合物</h4><ul>
@@ -292,19 +292,20 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
   <p class="thesis">S 決定電壓，P 決定容量。看懂這兩個字母，就看懂電池包的規格。</p>
   <div class="body">
     <ul>
-      <li><b>S（串聯）</b>：幾顆電芯頭尾相接。每多 1S，電壓多 3.7V。例如 6S = 3.7V × 6 = 22.2V。</li>
-      <li><b>P（並聯）</b>：每一組放幾顆電芯並排。每多 1P，容量和能輸出的電流就多一份。例如 3000mAh 的電芯做 2P = 6000mAh。</li>
+      <li><b>S（串聯）</b>：幾顆電芯頭尾相接。每多 1S，電壓多一節（標稱 3.6V 或 3.7V，依電芯而定）。例如 6S 約 21.6～22.2V。</li>
+      <li><b>P（並聯）</b>：每一組放幾顆電芯並排。每多 1P，容量和能輸出的電流就多一份（電芯配對良好時）。例如 3000mAh 的電芯做 2P = 6000mAh。</li>
       <li><b>6S2P</b> 就是「2 顆並聯成一組，6 組串起來」，總共 12 顆電芯。</li>
     </ul>
     <figure class="anim">
       <div class="anim-frame"><iframe id="packAnim" src="/learn/li-ion-battery/pack.html" title="21700 外場電包組裝動畫：電芯、4S3P 排列、點焊、熱縮封裝、成品" loading="lazy"></iframe></div>
-      <figcaption>以 EWP 靈雀外場電包（21700 · 4S3P · 15000mAh）為例：12 顆電芯排成 4 串 3 並，用紫銅＋鍍鎳鋼帶點焊，再包覆熱縮與防撞泡棉。點畫面可以暫停。</figcaption>
+      <figcaption>以 EWP 靈雀外場電包（21700 · 4S3P · 15000mAh）為例：12 顆電芯排成 4 串 3 並，用紫銅＋鍍鎳鋼帶點焊，再包覆熱縮與防撞泡棉。點畫面可以暫停。這是示意動畫，不是組裝教學；電池組需要絕緣、平衡線與檢測等步驟，請勿自行點焊組裝。</figcaption>
     </figure>
     <div class="tool">
       <h3>TOOL<b>算算看你的電池包</b></h3>
       <div class="controls">
         <div class="field"><label>S 數（串聯）</label><div class="seg" id="pkS"></div></div>
         <div class="field"><label>P 數（並聯）</label><div class="seg" id="pkP"></div></div>
+        <div class="field"><label>每節標稱電壓（看標籤）</label><div class="seg" id="pkNom"></div></div>
         <div class="field"><label for="pkMah">每顆電芯容量（mAh）</label><input type="number" id="pkMah" value="3000" min="500" max="6000" step="100"></div>
       </div>
       <div class="results">
@@ -313,7 +314,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
         <div class="res"><span class="k">總容量</span><span class="v" id="pkCap">6000<small>mAh</small></span></div>
         <div class="res"><span class="k">能量</span><span class="v" id="pkWh">133<small>Wh</small></span></div>
       </div>
-      <p class="muted" style="font-size:14px">公式：電壓 = 3.7V × S；容量 = 電芯容量 × P；能量（Wh）= 標稱電壓 × 容量（Ah）。搭飛機看的是 Wh。</p>
+      <p class="muted" style="font-size:14px">公式：電壓 = 每節標稱電壓 × S；容量 = 電芯容量 × P；能量（Wh）= 標稱電壓 × 容量（Ah）。搭飛機時以電池標籤上的 Wh 為準。</p>
     </div>
   </div>
 </section>
@@ -327,8 +328,8 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
     <h3>紫銅＋鍍鎳鋼帶點焊</h3>
     <p>電芯之間靠金屬帶連接，電流都要從這裡通過。常見做法只用鎳片，EWP 是<b>下層紫銅、上層鍍鎳鋼帶</b>一起點焊：</p>
     <ul>
-      <li>紫銅的導電能力約是鎳的 4 倍以上，電流通過時壓降更小、發熱更少。</li>
-      <li>紫銅導熱好，能把電芯間的熱量分散開，不容易局部過熱。</li>
+      <li>紫銅的導電能力約是鎳的 4 倍以上，電流通過時壓降更小，連接處產生的熱也更少。</li>
+      <li>紫銅導熱也好，有助於把連接處的熱量分散開。</li>
       <li>上層的鍍鎳鋼帶讓點焊更牢靠（紫銅本身很難直接點焊）。</li>
     </ul>
     <h3>出廠前的把關</h3>
@@ -342,7 +343,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
 
 <section class="ch" id="volt">
   <div class="chhead"><span class="n">04</span><h2>電壓</h2><span class="lv core">必學</span></div>
-  <p class="thesis">記住四個數字：滿電 4.2V、儲存 3.8V、落地靜置 3.3V 就該降落、絕對不要飛到 3.0V 以下。</p>
+  <p class="thesis">記住：滿電 4.2V、儲存約 3.8V；落地靜置後每節不要低於 3.3V，所以在空中就要提早返航。</p>
   <div class="body">
     <div class="tool">
       <h3>TOOL<b>換算成你的電池</b></h3>
@@ -353,21 +354,22 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
       </table></div>
     </div>
     <ul>
-      <li><b>落地靜置電壓</b>：降落後放幾分鐘再量。飛行中推油門時電壓會往下掉，停下來會回升，所以以靜置後的數字判斷。</li>
-      <li>電芯規格書上寫的最低電壓（例如 2.5V）是「不會立刻壞掉」的極限，<b>不是建議飛到的電壓</b>。常常飛到很低，電池壽命會明顯縮短。</li>
+      <li><b>空中看到的電壓比較低</b>：推油門時電壓會往下掉，停下來會回升，天冷、電流大時掉得更多。所以 3.3V 是「落地放幾分鐘後」的檢查值，不是眼鏡上的警告值；在空中要留返航電量，提早降落。</li>
+      <li><b>每次飛完量一次</b>：落地靜置後每節低於 3.3V，代表這趟飛太久，下次提早回來。</li>
+      <li>電芯規格書上寫的最低電壓（例如 2.5V）是極限值，<b>不是建議飛到的電壓</b>。常常飛到很低，電池壽命會明顯縮短。</li>
     </ul>
   </div>
 </section>
 
 <section class="ch" id="charge">
   <div class="chhead"><span class="n">05</span><h2>充電</h2><span class="lv core">必學</span></div>
-  <p class="thesis">充電器一定選 Li-ion（LiIon）模式，插平衡頭充，人要在旁邊。</p>
+  <p class="thesis">充電前看清楚：每節充到 4.20V、節數正確、插平衡頭，人要在旁邊。</p>
   <div class="body">
     <ol class="steps">
-      <li><span><b>選 Li-ion 模式</b>：選成 LiPo 或 LiHV 會充過頭（LiHV 會充到 4.35V），非常危險。</span></li>
+      <li><span><b>看每節截止電壓</b>：EWP 鋰離子電池每節最高 4.20V。各家充電器的 Li-ion 模式不一定一樣（有些只充到 4.10V），請看充電器畫面上的每節截止電壓是 4.20V。<b>絕對不要用 LiHV 模式</b>，它會充到 4.35V，造成過充。</span></li>
       <li><span><b>確認節數</b>：充電器顯示的 S 數要和電池一樣，例如 6S。</span></li>
       <li><span><b>插平衡頭</b>：EWP 電池沒有保護板，靠充電器的平衡功能讓每一節電壓一致。</span></li>
-      <li><span><b>設定電流</b>：EWP 長航電池建議 1.5C 以內；外場電包建議 1C 以內。1C 就是「容量的數字」，例如 6000mAh 的 1C = 6A，1.5C = 9A。</span></li>
+      <li><span><b>設定電流</b>：照商品頁的建議值。EWP 長航電池建議 1.5C 以內；外場電包建議 1C 以內；其他品牌依原廠標示。1C 就是「容量的數字」，例如 6000mAh 的 1C = 6A，1.5C = 9A。</span></li>
       <li><span><b>放在不可燃的地方充</b>，人在旁邊。充電中發燙、鼓起或有異味，立刻停止。</span></li>
     </ol>
     <div class="tool">
@@ -376,9 +378,9 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
         <div class="field"><label for="chMah">電池容量（mAh）</label><input type="number" id="chMah" value="6000" min="500" max="30000" step="500"></div>
         <div class="field"><label>倍率</label><div class="seg" id="chC"></div></div>
       </div>
-      <div class="results"><div class="res"><span class="k">充電電流</span><span class="v" id="chA">9.0<small>A</small></span></div></div>
+      <div class="results"><div class="res"><span class="k">充電電流</span><span class="v" id="chA">6.0<small>A</small></span></div></div>
     </div>
-    <p class="note">天氣冷（15°C 以下）時，鋰離子電池能承受的充電電流會變小，請把電流調低，或先讓電池回到室溫再充。</p>
+    <p class="note">這個換算只是把倍率換成安培，不代表每顆電池都能用這個電流充。天氣冷（15°C 以下）時，鋰離子電池能承受的充電電流會變小，請把電流調低，或先讓電池回到室溫再充。</p>
   </div>
 </section>
 
@@ -390,13 +392,13 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
     <ul>
       <li><b>持續放電</b>：可以一直維持的電流，這才是選電池時要看的數字。</li>
       <li><b>瞬間放電（例如 5 秒內）</b>：短時間的最大電流，只能應付拉升、急轉這種瞬間需求，<b>不能長時間使用</b>。</li>
-      <li>電池包的放電能力 = 單顆電芯 × 並聯數，例如 2P 就是兩倍。</li>
+      <li>電池包的放電能力大約是單顆電芯 × 並聯數，例如 2P 約兩倍；實際還會受焊接、接頭與線材限制，以商品頁標示為準。</li>
     </ul>
     <h3>飛行時注意</h3>
     <ul>
       <li>長時間大油門，電壓會掉得很快、電池發燙，飛行時間反而變短。</li>
       <li>天冷時電池變弱，起飛後先溫和飛一下，等電池熱起來。</li>
-      <li>落地後摸電池：溫溫的正常；燙到不敢摸，代表負載太大，要換更適合的電池或配置。</li>
+      <li>落地後電池溫溫的正常；明顯發燙，代表負載太大，要換更適合的電池或配置。</li>
     </ul>
   </div>
 </section>
@@ -406,9 +408,10 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
   <p class="thesis">外場電包是在飛場幫其他電池充電的「行動電源」，接在充電器的 DC 輸入使用。</p>
   <div class="body">
     <ol class="steps">
-      <li><span><b>確認充電器支援</b>：充電器的 DC 輸入電壓範圍要涵蓋電包電壓（4S 電包最高 16.8V、6S 電包最高 25.2V）。</span></li>
+      <li><span><b>確認充電器支援</b>：充電器的 DC 輸入電壓範圍要涵蓋電包電壓（4S 電包最高 16.8V、6S 電包最高 25.2V），接頭正負極要對。</span></li>
+      <li><span><b>充電功率不要開太大</b>：充電器會從電包抽電，同時充太多顆或電流設太高，電包和線材會發燙。先用小一點的充電電流，摸到電包或線材發燙就停止。</span></li>
       <li><span><b>設定輸入低壓保護</b>：電包沒有保護板，請在充電器設定輸入低壓保護，建議每節 3.2V（4S 約 12.8V、6S 約 19.2V），避免把電包用到過放。</span></li>
-      <li><span><b>看電量顯示</b>：用到剩一兩格就停止，回家後再充回來。</span></li>
+      <li><span><b>看電壓</b>：以充電器顯示的輸入電壓為準，接近低壓保護值就停止，回家後再充回來。</span></li>
       <li><span><b>電包本身充電</b>：一樣用平衡充電器、Li-ion 模式，電流建議 1C 以內。</span></li>
     </ol>
   </div>
@@ -419,7 +422,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
   <p class="thesis">不飛的時候充到 3.8V 存放；外觀有異狀就停用。</p>
   <div class="body">
     <ul>
-      <li><b>儲存</b>：兩三天以上不飛，用充電器的 Storage 功能調到每節約 3.8V，放在陰涼乾燥處、防火袋或不可燃的盒子裡。</li>
+      <li><b>儲存</b>：兩三天以上不飛，用充電器的 Storage 功能調到每節約 3.7～3.8V（EWP 電池建議 3.8V），放在陰涼乾燥處、防火袋或不可燃的盒子裡。</li>
       <li><b>每個月檢查一次</b>：量電壓、看外觀。</li>
       <li><b>運送</b>：接頭要蓋好或用膠帶包覆，避免短路。</li>
     </ul>
@@ -437,14 +440,26 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
 
 <section class="ch" id="travel">
   <div class="chhead"><span class="n">09</span><h2>搭飛機帶電池</h2></div>
-  <p class="thesis">看的是瓦時（Wh）。長航電池容量大，很多都超過可以帶上客機的上限。</p>
+  <p class="thesis">看的是瓦時（Wh），而且「備用電池」和「行動電源」規定不同。長航電池容量大，很多都不能帶上客機。</p>
   <div class="body">
     <div class="wh">
-      <div class="ok"><span><b>100Wh 以下</b>：可以手提上機（不能托運）</span><span class="e">EWP 電池：4S1P 3000mAh（44Wh）、6S1P 3000mAh（67Wh）</span></div>
-      <div class="warn"><span><b>100～160Wh</b>：要航空公司同意，數量有限制</span><span class="e">EWP 電池：6S1P 5000mAh（111Wh）、6S2P 6000mAh（133Wh）</span></div>
-      <div class="bad"><span><b>160Wh 以上</b>：不能帶上客機</span><span class="e">EWP 電池：6S2P 8000mAh（178Wh）、6S2P 10000mAh（222Wh）、外場電包 4S3P（222Wh）、6S3P（333Wh）</span></div>
+      <div class="ok"><span><b>100Wh 以下</b>：可以手提上機，不能托運</span><span class="e">EWP 電池：4S1P 3000mAh（44Wh）、6S1P 3000mAh（67Wh）</span></div>
+      <div class="warn"><span><b>超過 100Wh、不超過 160Wh</b>：要先取得航空公司同意，每人最多 2 顆</span><span class="e">EWP 電池：6S1P 5000mAh（約 108～111Wh）、6S2P 6000mAh（約 130～133Wh）</span></div>
+      <div class="bad"><span><b>超過 160Wh</b>：不能帶上客機</span><span class="e">EWP 電池：6S2P 8000mAh（約 173～178Wh）、6S2P 10000mAh（約 216～222Wh）、外場電包 4S3P（約 216～222Wh）、6S3P（約 324～333Wh）</span></div>
     </div>
-    <p class="muted">以上是多數航空公司依國際規定的一般原則，<b>實際以你搭乘的航空公司最新規定為準</b>。更多搭機注意事項請看 <a href="/learn/lipo-battery/#travel">LiPo 學堂的搭飛機章節</a>。</p>
+    <p class="note"><b>外場電包屬於行動電源</b>：國際民航規定行動電源超過 100Wh 就不能帶上客機，每人最多 2 個，機上不能充電。EWP 兩款外場電包都超過，請不要帶上飛機。</p>
+    <p class="muted">表中瓦時依每節標稱 3.6～3.7V 估算，以電池標籤為準。以上是國際民航組織（ICAO）2026 年的一般原則，<b>實際以你搭乘的航空公司最新規定為準</b>。更多搭機注意事項請看 <a href="/learn/lipo-battery/#travel">LiPo 學堂的搭飛機章節</a>。</p>
+  </div>
+</section>
+
+<section class="ch" id="refs">
+  <div class="body">
+    <h3>參考資料</h3>
+    <ul class="muted" style="font-size:14px">
+      <li><a href="https://www.iata.org/contentassets/90f8038b0eea42069554b2f4530f49ea/guidance-to-operators---power-banks.pdf" target="_blank" rel="noopener">IATA：行動電源載運指引（ICAO 2026 修正）</a></li>
+      <li><a href="https://www.batterydesign.net/engineering-efficient-current-paths/" target="_blank" rel="noopener">Battery Design：銅、鎳與銅鎳複合導電帶比較</a></li>
+      <li><a href="https://cdn.sparkfun.com/assets/c/d/8/1/5/16793-SkyRC_IMAX_B6_V2_Balance_Charger_-_Discharger_Instruction_Manual_EN_V1.0.pdf" target="_blank" rel="noopener">SkyRC iMAX B6 V2 說明書（各模式每節截止電壓）</a></li>
+    </ul>
   </div>
 </section>
 
@@ -471,9 +486,9 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
   const $=s=>document.querySelector(s);
   function seg(el,vals,init,label,cb){el.innerHTML='';vals.forEach(v=>{const b=document.createElement('button');b.type='button';b.textContent=label(v);b.setAttribute('aria-pressed',v===init);b.onclick=()=>{[...el.children].forEach(x=>x.setAttribute('aria-pressed',x===b));cb(v)};el.appendChild(b)});cb(init);}
   /* 02 電池包計算 */
-  let PS=6,PP=2;
+  let PS=6,PP=2,PN=3.7;
   function renderPack(){
-    const m=Math.max(0,+$('#pkMah').value||0),v=3.7*PS,cap=m*PP;
+    const m=Math.min(10000,Math.max(0,+$('#pkMah').value||0)),v=PN*PS,cap=m*PP;
     $('#pkV').innerHTML=v.toFixed(1)+'<small>V</small>';
     $('#pkFull').innerHTML=(4.2*PS).toFixed(1)+'<small>V</small>';
     $('#pkCap').innerHTML=cap+'<small>mAh</small>';
@@ -481,22 +496,23 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
   }
   seg($('#pkS'),[1,2,3,4,6,8],6,v=>v+'S',v=>{PS=v;renderPack()});
   seg($('#pkP'),[1,2,3,4],2,v=>v+'P',v=>{PP=v;renderPack()});
+  seg($('#pkNom'),[3.6,3.7],3.7,v=>v.toFixed(1)+'V',v=>{PN=v;renderPack()});
   $('#pkMah').addEventListener('input',renderPack);
   /* 04 電壓 */
   let VS=6;
   const STATES=[
     {k:'滿電',v:4.20,c:'#c7e8d1',d:'充電器用 Li-ion 模式充滿。超過就是過充。'},
     {k:'儲存',v:3.80,c:'var(--ok)',d:'兩三天以上不飛，放在這個電壓。'},
-    {k:'標稱',v:3.70,c:'var(--ok)',d:'標籤上的電壓，用來計算瓦時。'},
-    {k:'建議降落',v:3.30,c:'var(--warn)',d:'落地靜置後的電壓到這裡就該結束這一趟。'},
-    {k:'不要低於',v:3.00,c:'var(--bad)',d:'常飛到這裡以下，電池壽命會明顯縮短。'}
+    {k:'標稱',v:3.70,c:'var(--ok)',d:'標籤上的電壓（有些電芯是 3.6V），用來計算瓦時。'},
+    {k:'落地靜置下限',v:3.30,c:'var(--warn)',d:'落地放幾分鐘後量，不要低於這個值。空中要更早返航。'},
+    {k:'過放',v:3.00,c:'var(--bad)',d:'落地靜置到這裡以下，代表飛太久，電池壽命會明顯縮短。'}
   ];
   function renderVolt(){$('#vbody').innerHTML=STATES.map(s=>`<tr><td><span class="dot" style="background:${s.c}"></span><b>${s.k}</b><span class="vd">${s.d}</span></td><td class="num">${s.v.toFixed(2)}V</td><td class="num">${(s.v*VS).toFixed(1)}V</td></tr>`).join('');}
   seg($('#vS'),[1,2,3,4,6,8],6,v=>v+'S',v=>{VS=v;renderVolt()});
   /* 05 充電電流 */
-  let CC=1.5;
-  function renderCh(){const m=Math.max(0,+$('#chMah').value||0);$('#chA').innerHTML=(m/1000*CC).toFixed(1)+'<small>A</small>';}
-  seg($('#chC'),[0.5,1,1.5],1.5,v=>v+'C',v=>{CC=v;renderCh()});
+  let CC=1;
+  function renderCh(){const m=Math.min(30000,Math.max(0,+$('#chMah').value||0));$('#chA').innerHTML=(m/1000*CC).toFixed(1)+'<small>A</small>';}
+  seg($('#chC'),[0.5,1,1.5],1,v=>v+'C',v=>{CC=v;renderCh()});
   $('#chMah').addEventListener('input',renderCh);
   /* 章節導覽：目前章節高亮 */
   const links=[...document.querySelectorAll('#toc a')];
