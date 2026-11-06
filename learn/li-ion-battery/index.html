@@ -238,7 +238,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
       <span class="tag">BATTERY SCHOOL · 02</span>
     </div>
     <h1>FPV <em>Li-ion</em><br>鋰離子電池學堂</h1>
-    <p class="lede">長航、遠航用的鋰離子電池，和花飛常用的 LiPo 是不同的東西：電芯種類很多，有偏重存電量的，也有能大電流輸出的高倍率動力型；充電、降落電壓也和 LiPo 不一樣。這裡用白話整理你需要知道的事，也帶你看一顆電池包是怎麼做出來的。</p>
+    <p class="lede">長航、遠航用的鋰離子電池，和花飛常用的 LiPo 用法不太一樣：充電、降落電壓不同，電芯也分「高倍率動力型」和「高容量型」。這篇用工作室的實際經驗，整理玩家需要知道的事，也帶你看一顆電池包是怎麼做出來的。</p>
     <div class="cellstrip" aria-label="單顆電芯關鍵電壓">
       <span>滿電 <b>4.20V</b></span><span>標稱 <b>3.70V</b></span><span>儲存 <b>3.80V</b></span><span>建議降落（靜置）<b>3.30V</b></span>
     </div>
@@ -262,7 +262,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
 
 <section class="ch" id="what">
   <div class="chhead"><span class="n">01</span><h2>鋰離子是什麼</h2><span class="lv core">必學</span></div>
-  <p class="thesis">一句話：鋰離子電池的強項是存電量，常用在長航、遠航、巡航；花飛、競速一般還是用 LiPo。好不好用，要看電芯種類和整包設計。</p>
+  <p class="thesis">簡單說：鋰離子存電多、適合飛得久；LiPo 爆發力強、適合花飛和競速。鋰離子裡又分兩種，選對才好用。</p>
   <div class="body">
     <p>嚴格來說 LiPo 也是鋰離子電池的一種，FPV 圈說的「鋰離子電池」通常是指用圓柱形電芯（像加大版的乾電池）組成的電池。常見尺寸有兩種，數字就是電芯的大小：</p>
     <ul>
@@ -272,7 +272,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
     <div class="cmp">
       <div class="c"><h4>Li-ion 鋰離子</h4><ul>
         <li>同樣重量通常存的電比較多，適合長時間巡航</li>
-        <li>偏容量型的電芯，猛推油門電壓掉得快；高倍率動力型的瞬間輸出可以很強，但持續電流、發熱和重量仍要看整包設計</li>
+        <li>一路大油門時，電壓通常掉得比 LiPo 快</li>
         <li>電芯有金屬外殼，不容易鼓包；但摔凹了一樣要停用</li>
         <li>適合：7 吋以上長航、遠航、巡航空拍</li>
       </ul></div>
@@ -283,6 +283,11 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
         <li>適合：花飛、競速、穿越</li>
       </ul></div>
     </div>
+    <h3>高倍率動力型 vs 高容量型</h3>
+    <ul>
+      <li><b>高倍率動力型</b>：能輸出比較大的電流，適合裝在飛機上當動力電池。EWP 長航電池用的是這種。</li>
+      <li><b>高容量型</b>：同樣大小存更多電，但能輸出的電流比較小，適合慢慢放電的用途，例如外場充電電包。EWP 外場電包用的是這種。</li>
+    </ul>
     <p class="note">LiPo 的觀念大多可以通用，但<b>降落電壓、充電模式不同</b>，不要直接套用。LiPo 的完整教學請看 <a href="/learn/lipo-battery/">LiPo 電池新手學堂</a>。</p>
   </div>
 </section>
@@ -298,7 +303,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
     </ul>
     <figure class="anim">
       <div class="anim-frame"><iframe id="packAnim" src="/learn/li-ion-battery/pack.html" title="21700 外場電包組裝動畫：電芯、4S3P 排列、點焊、熱縮封裝、成品" loading="lazy"></iframe></div>
-      <figcaption>以 EWP 靈雀外場電包（21700 · 4S3P · 15000mAh）為例：12 顆電芯排成 4 串 3 並，用紫銅＋鍍鎳鋼帶點焊，再包覆熱縮與防撞泡棉。點畫面可以暫停。這是示意動畫，不是組裝教學；電池組需要絕緣、平衡線與檢測等步驟，請勿自行點焊組裝。</figcaption>
+      <figcaption>以 EWP 靈雀外場電包（21700 · 4S3P · 15000mAh）為例：12 顆電芯排成 4 串 3 並，用紫銅＋鍍鎳鋼帶點焊，再包覆熱縮與防撞泡棉。點畫面可以暫停。這是示意動畫，實際組裝還有絕緣、平衡線與檢測等步驟，請勿自行點焊。</figcaption>
     </figure>
     <div class="tool">
       <h3>TOOL<b>算算看你的電池包</b></h3>
@@ -314,7 +319,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
         <div class="res"><span class="k">總容量</span><span class="v" id="pkCap">6000<small>mAh</small></span></div>
         <div class="res"><span class="k">能量</span><span class="v" id="pkWh">133<small>Wh</small></span></div>
       </div>
-      <p class="muted" style="font-size:14px">公式：電壓 = 每節標稱電壓 × S（3.7V 是 EWP 的標示慣例；不同電芯的原廠標稱電壓可能是 3.6V、3.65V 或 3.7V，所以同一顆電池可能算出不同 Wh，申報時以適用規範與原廠額定資料為準）；容量 = 電芯容量 × P；能量（Wh）= 標稱電壓 × 容量（Ah）。搭飛機時以電池標籤上的 Wh 為準。</p>
+      <p class="muted" style="font-size:14px">公式：電壓＝每節標稱電壓 × S；容量＝電芯容量 × P；瓦時（Wh）＝電壓 × 容量（Ah）。EWP 標籤用每節 3.7V 計算，其他品牌以標籤為準。</p>
     </div>
   </div>
 </section>
@@ -336,14 +341,14 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
     <ul>
       <li>每顆電芯先量電壓與內阻，配對相近的電芯才組在一起。</li>
       <li>泡棉防撞、熱縮包覆。</li>
-      <li>電池沒有內建保護板（BMS）：電池本身不會自動斷電保護，所以一定要用平衡充電器充電，使用時也要自己注意電壓（見第 04、05 章）。</li>
+      <li>沒有內建保護板（BMS），請用平衡充電器充電，飛行時注意電壓（見第 04、05 章）。</li>
     </ul>
   </div>
 </section>
 
 <section class="ch" id="volt">
   <div class="chhead"><span class="n">04</span><h2>電壓</h2><span class="lv core">必學</span></div>
-  <p class="thesis">EWP 建議：滿電 4.2V、儲存 3.8V、建議降落 3.3V（靜置）、使用下限 3.0V。這是 EWP 的保守使用建議，不是所有電芯的物理極限。</p>
+  <p class="thesis">EWP 建議：滿電 4.2V、儲存 3.8V、落地靜置 3.3V 就該收工、最低不要低於 3.0V。</p>
   <div class="body">
     <div class="tool">
       <h3>TOOL<b>換算成你的電池</b></h3>
@@ -354,9 +359,8 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
       </table></div>
     </div>
     <ul>
-      <li><b>空中看到的電壓比較低</b>：推油門時電壓會往下掉，停下來會回升，天冷、電流大時掉得更多。所以建議降落的 3.3V 以「落地放幾分鐘後」的電壓為準；在空中看到的會更低，要留返航電量，提早降落。</li>
-      <li><b>每次飛完量一次</b>：落地靜置後每節低於 3.3V，代表這趟飛太久，下次提早回來。</li>
-      <li><b>使用下限 3.0V</b>（商品頁寫作「電池截止電壓」）是 EWP 建議不要低於的電壓，<b>不是建議飛到的電壓</b>。EWP 電池沒有保護板，電壓低到 3.0V 時電池不會自動斷電，要靠你自己提早降落。常飛到很低，電池壽命會明顯縮短。</li>
+      <li><b>3.3V 看的是落地後的電壓</b>：飛行中推油門電壓會往下掉，落地放幾分鐘才會回升。所以在空中就要留返航電量，落地量到每節低於 3.3V，代表這趟飛太久，下次提早回來。</li>
+      <li><b>3.0V 是底線，不是目標</b>：EWP 電池沒有保護板，電壓再低也不會自動斷電。常飛到很低，電池壽命會明顯縮短。</li>
     </ul>
   </div>
 </section>
@@ -366,7 +370,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
   <p class="thesis">充電前看清楚：每節充到 4.20V、節數正確、插平衡頭，人要在旁邊。</p>
   <div class="body">
     <ol class="steps">
-      <li><span><b>看每節截止電壓</b>：EWP 鋰離子電池每節最高 4.20V。各家充電器的 Li-ion 模式不一定一樣（有些只充到 4.10V），請看充電器畫面上的每節截止電壓是 4.20V。<b>絕對不要用 LiHV 模式</b>，它會充到 4.35V，造成過充。</span></li>
+      <li><span><b>每節充到 4.20V</b>：各家充電器的 Li-ion 模式不一定一樣（有些只充到 4.10V），看畫面上的每節截止電壓是 4.20V 就對了。<b>不要用 LiHV 模式</b>，它會充到 4.35V。</span></li>
       <li><span><b>確認節數</b>：充電器顯示的 S 數要和電池一樣，例如 6S。</span></li>
       <li><span><b>插平衡頭</b>：EWP 電池沒有保護板，靠充電器的平衡功能讓每一節電壓一致。</span></li>
       <li><span><b>設定電流</b>：照商品頁的建議值。EWP 長航電池建議 1.5C 以內；外場電包建議 1C 以內；其他品牌依原廠標示。1C 就是「容量的數字」，例如 6000mAh 的 1C = 6A，1.5C = 9A。</span></li>
@@ -380,7 +384,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
       </div>
       <div class="results"><div class="res"><span class="k">充電電流</span><span class="v" id="chA">6.0<small>A</small></span></div></div>
     </div>
-    <p class="note">這個換算只是把倍率換成安培，不代表每顆電池都能用這個電流充。天氣冷（15°C 以下）時，鋰離子電池能承受的充電電流會變小，請把電流調低，或先讓電池回到室溫再充。</p>
+    <p class="note">這個工具只是把倍率換成安培，實際請照商品頁建議。天冷時先讓電池回到室溫再充，或把電流調低。</p>
   </div>
 </section>
 
@@ -390,9 +394,8 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
   <div class="body">
     <h3>看懂放電規格</h3>
     <ul>
-      <li><b>持續放電</b>：能持續維持的電流。電芯規格書常分成「最大持續放電」和「一路放到底的持續放電」，後者通常比較低，選電池時要看後者。</li>
-      <li><b>瞬間放電（例如 5 秒內）</b>：短時間的最大電流，只能應付拉升、急轉這種瞬間需求，<b>不能長時間使用</b>。</li>
-      <li><b>單顆電芯的數字不等於整包的數字</b>：並聯越多，理論上能輸出的電流越大，但整包能力由最弱的一環決定，例如電芯配對、焊點、導電帶、電源線、接頭和散熱。電池包請看商品頁的整包標示。</li>
+      <li><b>看整包的建議電流</b>：電池包能輸出多少電流，請看商品頁的整包建議，不要拿單顆電芯的規格直接乘上並聯數。</li>
+      <li><b>瞬間放電只能撐一下</b>：例如「5 秒內」的數字，只能應付拉升、急轉，不能一直用。</li>
     </ul>
     <h3>飛行時注意</h3>
     <ul>
@@ -407,15 +410,13 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
   <div class="chhead"><span class="n">07</span><h2>外場電包怎麼用</h2></div>
   <p class="thesis">外場電包是在飛場幫其他電池充電的電源：用電包的 XT60 母頭接上 FPV 充電器（例如 HOTA D6 Pro）的電源輸入，就能在飛場充電。</p>
   <div class="body">
-    <p class="note"><b>先知道：EWP 外場電包沒有內建保護板（BMS）。</b>電包本身不會在電壓過低、電流過大、短路或過熱時自動斷電，安全要靠充電器的設定和使用者自己注意。整包電壓正常，不代表裡面每一組電芯都正常。</p>
+    <p class="note">EWP 外場電包用的是高容量電芯，適合穩定、慢慢地供電；而且<b>沒有內建保護板（BMS）</b>，充電器的設定和使用習慣就很重要。</p>
     <ol class="steps">
-      <li><span><b>確認充電器支援</b>：充電器要有 XT60 電源輸入，而且輸入電壓範圍涵蓋電包電壓（4S 電包最高 16.8V、6S 電包最高 25.2V），請看充電器說明書。</span></li>
-      <li><span><b>用小功率充電</b>：充電器從電包抽的電流 ≈ 充電器輸出功率 ÷ 轉換效率 ÷ 電包當下電壓。算例（假設效率 90%）：4S 電包約 14.6V、充電器輸出 200W，從電包抽約 15A；電包電壓越低，抽的電流越大。多通道充電器要算全部通道加起來。EWP 目前<b>沒有公開電包的整包輸出額定</b>，建議先用小功率充電；需要較大功率，請先詢問 EWP。</span></li>
-      <li><span><b>邊用邊注意</b>：看充電器顯示的輸入電流與輸入電壓，並摸電包、線材和接頭的溫度。發燙、有異味或異常聲音，立刻拔開。</span></li>
-      <li><span><b>設定充電器的輸入低壓保護</b>：建議每節 3.2V（4S 約 12.8V、6S 約 19.2V）。充電器只看得到整包電壓，<b>不能保證每一組電芯都沒有過放</b>，只是多一道提醒。</span></li>
-      <li><span><b>平衡頭可以插電壓檢測器</b>：俗稱 BB 響，可設在每組 3.3V 左右警報（EWP 自訂的保守參考，使用中量測）。它只會發出警報、不會斷電，也不是保護板；而且 3P 電包的平衡頭只看得到每一組（3 顆並聯）的電壓，看不到組內單顆電芯。</span></li>
-      <li><span><b>提早停、回家檢查每一組</b>：接近低壓保護值之前就停止使用；回家用平衡充電器看每一組電壓再充回來。某一組明顯偏低、充電時發熱，請停用並交給 EWP 檢查。</span></li>
-      <li><span><b>電包本身充電</b>：用平衡充電器、每節截止 4.20V，電流照商品頁建議，不確定就用較小電流。</span></li>
+      <li><span><b>確認充電器支援</b>：充電器要有 XT60 電源輸入，輸入電壓範圍要涵蓋電包電壓（4S 電包最高 16.8V、6S 電包最高 25.2V）。</span></li>
+      <li><span><b>電包輸出電流 10A 以內</b>：這是 EWP 的日常使用建議。換算成充電器的總輸出功率，4S 電包大約 130W、6S 電包大約 200W 以內，多通道要全部加起來。充電器如果能設定輸入電流或功率上限，請照這個設。電包快沒電時電壓變低，同樣功率抽的電流會變大，抓保守一點。</span></li>
+      <li><span><b>設定輸入低壓保護</b>：建議每節 3.2V（4S 約 12.8V、6S 約 19.2V）。平衡頭可以接電壓警報器（俗稱 BB 響）看每一串的電壓，哪一串先掉就停。</span></li>
+      <li><span><b>人在旁邊</b>：不要在無人看管下充電。電包、線材或接頭發燙、有異味，立刻拔開。</span></li>
+      <li><span><b>回家充回來</b>：電包用平衡充電器充、每節 4.20V、電流 1C 以內。某一串明顯偏低或充電時發熱，請停用並交給 EWP 檢查。</span></li>
     </ol>
   </div>
 </section>
@@ -443,15 +444,15 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
 
 <section class="ch" id="travel">
   <div class="chhead"><span class="n">09</span><h2>搭飛機帶電池</h2></div>
-  <p class="thesis">看的是瓦時（Wh），而且「備用電池」和「行動電源」規定不同。長航電池容量大，很多都不能帶上客機。</p>
+  <p class="thesis">看的是瓦時（Wh）。長航電池容量大，很多都不能帶上客機。</p>
   <div class="body">
     <div class="wh">
       <div class="ok"><span><b>100Wh 以下</b>：可以手提上機，不能托運</span><span class="e">EWP 電池：4S1P 3000mAh（44Wh）、6S1P 3000mAh（67Wh）</span></div>
       <div class="warn"><span><b>超過 100Wh、不超過 160Wh</b>：要先取得航空公司同意，每人最多 2 顆</span><span class="e">EWP 電池：6S1P 5000mAh（111Wh）、6S2P 6000mAh（133Wh）</span></div>
       <div class="bad"><span><b>超過 160Wh</b>：不能帶上客機</span><span class="e">EWP 電池：6S2P 8000mAh（178Wh）、6S2P 10000mAh（222Wh）、外場電包 4S3P（222Wh）、6S3P（333Wh）</span></div>
     </div>
-    <p class="note"><b>外場電包</b>：國際民航規定行動電源每個不超過 100Wh、每人最多 2 個，機上不能充電；一般備用電池超過 160Wh 也不能帶上客機。EWP 兩款外場電包（222Wh、333Wh）不論被歸類為哪一種都超過上限，請不要帶上飛機。實際分類以航空公司認定為準。</p>
-    <p class="muted">表中瓦時依 EWP 標示慣例（每節 3.7V）計算；若用電芯原廠標稱電壓計算會略低（例如外場電包約 219Wh、328.5Wh），不論哪一種都超過 160Wh。其他品牌以標籤為準。以上是國際民航組織（ICAO）2026 年的一般原則，<b>實際以你搭乘的航空公司最新規定為準</b>。更多搭機注意事項請看 <a href="/learn/lipo-battery/#travel">LiPo 學堂的搭飛機章節</a>。</p>
+    <p class="note"><b>外場電包不要帶上飛機</b>：行動電源每個不能超過 100Wh，EWP 兩款外場電包（222Wh、333Wh）都超過。</p>
+    <p class="muted">表中瓦時依 EWP 標籤（每節 3.7V）計算，實際以你搭乘的航空公司最新規定為準。更多搭機注意事項請看 <a href="/learn/lipo-battery/#travel">LiPo 學堂的搭飛機章節</a>。</p>
   </div>
 </section>
 
@@ -461,7 +462,6 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
     <ul class="muted" style="font-size:14px">
       <li><a href="https://www.iata.org/contentassets/90f8038b0eea42069554b2f4530f49ea/guidance-to-operators---power-banks.pdf" target="_blank" rel="noopener">IATA：行動電源載運指引（ICAO 2026 修正）</a></li>
       <li><a href="https://www.batterydesign.net/engineering-efficient-current-paths/" target="_blank" rel="noopener">Battery Design：銅、鎳與銅鎳複合導電帶比較</a></li>
-      <li><a href="https://docs.holybro.com/power-module-and-pdb/power-module/connector-and-wire-rating" target="_blank" rel="noopener">Holybro：AMASS XT60／XT90 接頭額定</a></li>
       <li><a href="https://cdn.sparkfun.com/assets/c/d/8/1/5/16793-SkyRC_IMAX_B6_V2_Balance_Charger_-_Discharger_Instruction_Manual_EN_V1.0.pdf" target="_blank" rel="noopener">SkyRC iMAX B6 V2 說明書（各模式每節截止電壓）</a></li>
     </ul>
   </div>
@@ -509,8 +509,8 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
     {k:'滿電',v:4.20,c:'#c7e8d1',d:'充電器用 Li-ion 模式充滿。超過就是過充。'},
     {k:'儲存',v:3.80,c:'var(--ok)',d:'兩三天以上不飛，放在這個電壓。'},
     {k:'標稱',v:3.70,c:'var(--ok)',d:'EWP 標籤的標示電壓，用來計算瓦時。'},
-    {k:'建議降落',v:3.30,c:'var(--warn)',d:'建議降落指標，以落地放幾分鐘後的電壓為準。空中電壓會比較低，要提早返航。'},
-    {k:'使用下限',v:3.00,c:'var(--bad)',d:'EWP 建議不要低於這個電壓，不是飛行目標。電池沒有保護板，不會自動斷電。'}
+    {k:'建議降落',v:3.30,c:'var(--warn)',d:'落地放幾分鐘後量。空中電壓比較低，要提早返航。'},
+    {k:'最低',v:3.00,c:'var(--bad)',d:'底線，不是目標。常飛到這裡，電池壽命會明顯縮短。'}
   ];
   function renderVolt(){$('#vbody').innerHTML=STATES.map(s=>`<tr><td><span class="dot" style="background:${s.c}"></span><b>${s.k}</b><span class="vd">${s.d}</span></td><td class="num">${s.v.toFixed(2)}V</td><td class="num">${(s.v*VS).toFixed(1)}V</td></tr>`).join('');}
   seg($('#vS'),[1,2,3,4,6,8],6,v=>v+'S',v=>{VS=v;renderVolt()});
