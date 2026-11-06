@@ -409,8 +409,9 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
   <div class="body">
     <ol class="steps">
       <li><span><b>確認充電器支援</b>：充電器要有 XT60 電源輸入，而且輸入電壓範圍涵蓋電包電壓（4S 電包最高 16.8V、6S 電包最高 25.2V），請看充電器說明書。</span></li>
-      <li><span><b>充電功率不要開太大</b>：充電器從電包抽的電流，大約是「充電功率 ÷ 電包電壓」再多一點（充電器有耗損）。例如 4S 電包約 14V 時，充電器輸出 200W，從電包抽的電流就超過 14A。多通道充電器要算全部通道加起來。先用小一點的充電電流，電包或線材發燙就停止。</span></li>
+      <li><span><b>充電功率不要開太大</b>：充電器從電包抽的電流，大約是「充電功率 ÷ 電包電壓」再多一點（充電器有耗損）。例如 4S 電包約 14V 時，充電器輸出 200W，從電包抽的電流就超過 14A。多通道充電器要算全部通道加起來。EWP 建議從電包抽的電流不超過 20A，大約是 4S 電包充電功率 200W、6S 電包 300W 以內（XT60 接頭原廠額定持續 30A，留一點餘裕）。電包或線材發燙就停止。</span></li>
       <li><span><b>設定輸入低壓保護</b>：在充電器設定輸入低壓保護，建議每節 3.2V（4S 約 12.8V、6S 約 19.2V）。注意：充電器只看得到整包電壓，看不到每一節，<b>這不能取代保護板</b>，只是多一道提醒。</span></li>
+      <li><span><b>用電壓檢測器看每一節</b>：在電包的平衡頭插上電壓檢測器（俗稱 BB 響），設定每節 3.3V 警報，使用中就能看到每一節電壓，哪一節先掉到就停止。</span></li>
       <li><span><b>提早停、回家量每一節</b>：接近低壓保護值之前就停止使用；回家用電壓檢測器或平衡充電器看每一節電壓，再用平衡充電充回來。某一節特別低，請停用並交給 EWP 檢查。</span></li>
       <li><span><b>電包本身充電</b>：一樣用平衡充電器、Li-ion 模式，電流建議 1C 以內。</span></li>
     </ol>
@@ -458,6 +459,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
     <ul class="muted" style="font-size:14px">
       <li><a href="https://www.iata.org/contentassets/90f8038b0eea42069554b2f4530f49ea/guidance-to-operators---power-banks.pdf" target="_blank" rel="noopener">IATA：行動電源載運指引（ICAO 2026 修正）</a></li>
       <li><a href="https://www.batterydesign.net/engineering-efficient-current-paths/" target="_blank" rel="noopener">Battery Design：銅、鎳與銅鎳複合導電帶比較</a></li>
+      <li><a href="https://docs.holybro.com/power-module-and-pdb/power-module/connector-and-wire-rating" target="_blank" rel="noopener">Holybro：AMASS XT60／XT90 接頭額定</a></li>
       <li><a href="https://cdn.sparkfun.com/assets/c/d/8/1/5/16793-SkyRC_IMAX_B6_V2_Balance_Charger_-_Discharger_Instruction_Manual_EN_V1.0.pdf" target="_blank" rel="noopener">SkyRC iMAX B6 V2 說明書（各模式每節截止電壓）</a></li>
     </ul>
   </div>
