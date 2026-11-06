@@ -14,3 +14,10 @@
 
 ## Actions 時數
 私人程式庫每月免費 2000 分鐘。`ci.yml` 改為只在 PR 與 main 執行一次（分支 push 不重複跑）。
+
+## 進度（2026-11-06）
+- [x] `ewp-site` 第一次發布成功（c87e2ad）
+- [x] www.ewpfpv.com 接到 ewp-site（Active、SSL 啟用），回應標頭 server: cloudflare
+- [x] ewpfpv.com 接到 ewp-site，並以轉址規則 301 轉到 https://www.ewpfpv.com（保留查詢字串）
+- [x] 移除 GitHub Pages 發布工作
+- [ ] 業主把程式庫改為 Private，並在 Settings → Pages 停用 GitHub Pages

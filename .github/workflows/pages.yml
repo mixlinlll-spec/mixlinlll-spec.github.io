@@ -1,4 +1,4 @@
-name: Deploy EWP to GitHub Pages
+name: Deploy EWP to Cloudflare Pages
 # 只在 main 更新時部署（後台儲存由 cms-sync.yml 校正後觸發）。發布內容只有 dist/（產生的頁面＋白名單靜態檔），
 # src/、scripts/、tests/、docs/、_preview/ 不會上傳。
 # 啟用前必須把 Settings → Pages → Source 改為「GitHub Actions」（見 docs/DEPLOY_ROLLBACK.md）。
@@ -13,8 +13,6 @@ on:
         type: string
 permissions:
   contents: read
-  pages: write
-  id-token: write
 concurrency:
   group: pages
   cancel-in-progress: false
@@ -73,30 +71,15 @@ jobs:
         run: node scripts/build.mjs
       - name: 發布白名單與草稿外洩檢查
         run: node scripts/check-site.mjs dist
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-      # 同一份產物另存一份，給 Cloudflare Pages 發布（搬家過渡期兩邊同時發布）
+      # 產物交給 Cloudflare Pages 發布（2026-11-06 起官網由 Cloudflare 提供，GitHub Pages 停用）
       - uses: actions/upload-artifact@v4
         with:
           name: site-dist
           path: dist
           retention-days: 3
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
-
   deploy-cloudflare:
     # 官網改由 Cloudflare Pages 發布（程式庫改為私人後，GitHub Pages 免費方案無法使用）。
     # 使用與黑盒子寄信相同的 inventory-production 環境密鑰；權杖需要「Cloudflare Pages：編輯」權限。
-    # 這個工作失敗不會影響上面的 GitHub Pages 發布。
     needs: build
     runs-on: ubuntu-latest
     environment: inventory-production
