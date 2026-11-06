@@ -11,7 +11,7 @@
   var STAGES = [
     { t: 0, title: '21700 CELL', zh: '鋰離子電芯', sub: 'LI-ION · CYLINDRICAL', meta: 'Ø21 × 70 MM · 5000 MAH · 15A' },
     { t: 3.0, title: '4S3P MATRIX', zh: '串並聯排列', sub: '12 CELLS · 4 SERIES × 3 PARALLEL', meta: 'CELL PITCH 22 MM · 正負極交錯' },
-    { t: 6.8, title: 'SPOT WELD', zh: '點焊連接', sub: 'COPPER + NICKEL-PLATED STEEL', meta: '紫銅＋鍍鎳鋼點焊' },
+    { t: 6.8, title: 'SPOT WELD', zh: '點焊連接', sub: 'SERIES + PARALLEL', meta: '電芯配對後串並聯成組' },
     { t: 10.0, title: 'HEAT WRAP', zh: '熱縮封裝', sub: 'HEAT SHRINK', meta: '熱縮包覆 · 外出提把' },
     { t: 12.8, title: 'SPIRIT SPARROW', zh: '靈雀 外場電包', sub: '15000 MAH · 4S3P · 21700', meta: 'XT60 母頭輸出 · 電量顯示' }
   ];
