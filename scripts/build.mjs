@@ -184,6 +184,7 @@ function homePage() {
   const learnCards = [
     ['/learn/lipo-battery/', '/assets/img/home/learn-lipo.webp', 'FPV LiPo 電池新手學堂封面', 'LiPo 電池：從看懂標籤到安全報廢'],
     ['/learn/fpv-video/', '/assets/img/home/learn-video.webp', 'FPV 圖傳新手學堂封面', '圖傳：類比、DJI、Walksnail、HDZero 差在哪'],
+    ['/learn/li-ion-battery/', '/assets/img/home/learn-liion.webp', 'FPV 鋰離子電池學堂封面', '鋰離子電池：長航電池怎麼充、怎麼飛'],
   ];
   const img = p => { const i = p.images?.[0]; return i ? `<img src="${attr(i.src_small || i.src)}" alt="${attr(i.alt)}" width="480" height="480" loading="lazy" decoding="async">` : '<div class="img-ph" aria-hidden="true"><span>EWP</span></div>'; };
 
@@ -762,7 +763,7 @@ function seoFiles() {
     return;
   }
   const urls = ['/', '/products/', ...categories.map(url.category), ...visible.map(url.product), '/builds/',
-    '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/help/', ...visibleHelp().map(helpUrl), '/learn/lipo-battery/', '/learn/fpv-video/', '/blackbox/', '/tunelab/', '/about/', '/contact/',
+    '/services/', ...services.map(url.service), '/batteries/', '/journal/', ...visibleJournal().map(journalUrl), '/help/', ...visibleHelp().map(helpUrl), '/learn/lipo-battery/', '/learn/fpv-video/', '/learn/li-ion-battery/', '/blackbox/', '/tunelab/', '/about/', '/contact/',
     ...Object.entries(site.policies).filter(([, v]) => v.approved).map(([k]) => `/${k}/`)];
   const lastmod = p => p?.updated_at;
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => {

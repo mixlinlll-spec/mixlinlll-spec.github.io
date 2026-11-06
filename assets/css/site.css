@@ -575,7 +575,7 @@ section{padding:36px 0}
 .h2-video-k{font-family:var(--mono);font-size:12px;color:#a9aaad;letter-spacing:.08em}
 .h2-video-d{font-size:14px;color:var(--muted)}
 
-.h2-learn{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.h2-learn{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
 .h2-card{display:flex;flex-direction:column;height:100%;border:1px solid var(--line);background:var(--panel)}
 .h2-card:hover{color:var(--text);border-color:var(--red)}
 .h2-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
@@ -596,6 +596,7 @@ section{padding:36px 0}
 .h2-brands a:hover img,.h2-brands a:focus-visible img{opacity:1}
 
 @media(max-width:1000px){
+  .h2-learn{grid-template-columns:repeat(2,minmax(0,1fr))}
   .h2-hero{gap:36px}
   .h2-doors{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
