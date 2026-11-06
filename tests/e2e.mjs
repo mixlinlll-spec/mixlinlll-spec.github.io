@@ -184,7 +184,7 @@ console.log('8. 聯絡頁：五張聯絡卡片（LINE／LINE 社群／蝦皮／E
     '.contact-line a.btn': 'https://lin.ee/WIUCkWP',
     '.contact-community a.btn': 'https://line.me/ti/g2/2pEZoKjUO8ktTiVr5zQagRwDAceZ7S6-8qXhdw',
     '.contact-shopee a.btn': 'https://shopee.tw/mixlin',
-    '.contact-email a.btn': 'mailto:mixlin.lll@gmail.com?subject=EWP%20%E5%AE%98%E7%B6%B2%E8%A9%A2%E5%95%8F',
+    '.contact-email a.btn': 'mailto:service@ewpfpv.com?subject=EWP%20%E5%AE%98%E7%B6%B2%E8%A9%A2%E5%95%8F',
     '.contact-ig a.btn': 'https://www.instagram.com/ewp.fpvlab/',
   };
   for (const [sel, href] of Object.entries(links)) ok(await page.getAttribute(sel, 'href') === href, `${sel} → ${href}`);
