@@ -314,7 +314,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
         <div class="res"><span class="k">總容量</span><span class="v" id="pkCap">6000<small>mAh</small></span></div>
         <div class="res"><span class="k">能量</span><span class="v" id="pkWh">133<small>Wh</small></span></div>
       </div>
-      <p class="muted" style="font-size:14px">公式：電壓 = 每節標稱電壓 × S（3.7V 是 EWP 的標示慣例，不同電芯的原廠額定可能是 3.6～3.7V）；容量 = 電芯容量 × P；能量（Wh）= 標稱電壓 × 容量（Ah）。搭飛機時以電池標籤上的 Wh 為準。</p>
+      <p class="muted" style="font-size:14px">公式：電壓 = 每節標稱電壓 × S（3.7V 是 EWP 的標示慣例；不同電芯的原廠標稱電壓可能是 3.6V、3.65V 或 3.7V，所以同一顆電池可能算出不同 Wh，申報時以適用規範與原廠額定資料為準）；容量 = 電芯容量 × P；能量（Wh）= 標稱電壓 × 容量（Ah）。搭飛機時以電池標籤上的 Wh 為準。</p>
     </div>
   </div>
 </section>
@@ -405,15 +405,17 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
 
 <section class="ch" id="bank">
   <div class="chhead"><span class="n">07</span><h2>外場電包怎麼用</h2></div>
-  <p class="thesis">外場電包是在飛場幫其他電池充電的「行動電源」：用電包的 XT60 母頭接上 FPV 充電器（例如 HOTA D6 Pro）的電源輸入，就能在飛場充電。</p>
+  <p class="thesis">外場電包是在飛場幫其他電池充電的電源：用電包的 XT60 母頭接上 FPV 充電器（例如 HOTA D6 Pro）的電源輸入，就能在飛場充電。</p>
   <div class="body">
+    <p class="note"><b>先知道：EWP 外場電包沒有內建保護板（BMS）。</b>電包本身不會在電壓過低、電流過大、短路或過熱時自動斷電，安全要靠充電器的設定和使用者自己注意。整包電壓正常，不代表裡面每一組電芯都正常。</p>
     <ol class="steps">
       <li><span><b>確認充電器支援</b>：充電器要有 XT60 電源輸入，而且輸入電壓範圍涵蓋電包電壓（4S 電包最高 16.8V、6S 電包最高 25.2V），請看充電器說明書。</span></li>
-      <li><span><b>充電功率不要開太大</b>：充電器從電包抽的電流，大約是「充電功率 ÷ 電包電壓」再多一點（充電器有耗損）。例如 4S 電包約 14V 時，充電器輸出 200W，從電包抽的電流就超過 14A。多通道充電器要算全部通道加起來。EWP 建議從電包抽的電流不超過 20A，大約是 4S 電包充電功率 200W、6S 電包 300W 以內（XT60 接頭原廠額定持續 30A，留一點餘裕）。電包或線材發燙就停止。</span></li>
-      <li><span><b>設定輸入低壓保護</b>：在充電器設定輸入低壓保護，建議每節 3.2V（4S 約 12.8V、6S 約 19.2V）。注意：充電器只看得到整包電壓，看不到每一節，<b>這不能取代保護板</b>，只是多一道提醒。</span></li>
-      <li><span><b>用電壓檢測器看每一節</b>：在電包的平衡頭插上電壓檢測器（俗稱 BB 響），設定每節 3.3V 警報，使用中就能看到每一節電壓，哪一節先掉到就停止。</span></li>
-      <li><span><b>提早停、回家量每一節</b>：接近低壓保護值之前就停止使用；回家用電壓檢測器或平衡充電器看每一節電壓，再用平衡充電充回來。某一節特別低，請停用並交給 EWP 檢查。</span></li>
-      <li><span><b>電包本身充電</b>：一樣用平衡充電器、Li-ion 模式，電流建議 1C 以內。</span></li>
+      <li><span><b>用小功率充電</b>：充電器從電包抽的電流 ≈ 充電器輸出功率 ÷ 轉換效率 ÷ 電包當下電壓。算例（假設效率 90%）：4S 電包約 14.6V、充電器輸出 200W，從電包抽約 15A；電包電壓越低，抽的電流越大。多通道充電器要算全部通道加起來。EWP 目前<b>沒有公開電包的整包輸出額定</b>，建議先用小功率充電；需要較大功率，請先詢問 EWP。</span></li>
+      <li><span><b>邊用邊注意</b>：看充電器顯示的輸入電流與輸入電壓，並摸電包、線材和接頭的溫度。發燙、有異味或異常聲音，立刻拔開。</span></li>
+      <li><span><b>設定充電器的輸入低壓保護</b>：建議每節 3.2V（4S 約 12.8V、6S 約 19.2V）。充電器只看得到整包電壓，<b>不能保證每一組電芯都沒有過放</b>，只是多一道提醒。</span></li>
+      <li><span><b>平衡頭可以插電壓檢測器</b>：俗稱 BB 響，可設在每組 3.3V 左右警報（EWP 自訂的保守參考，使用中量測）。它只會發出警報、不會斷電，也不是保護板；而且 3P 電包的平衡頭只看得到每一組（3 顆並聯）的電壓，看不到組內單顆電芯。</span></li>
+      <li><span><b>提早停、回家檢查每一組</b>：接近低壓保護值之前就停止使用；回家用平衡充電器看每一組電壓再充回來。某一組明顯偏低、充電時發熱，請停用並交給 EWP 檢查。</span></li>
+      <li><span><b>電包本身充電</b>：用平衡充電器、每節截止 4.20V，電流照商品頁建議，不確定就用較小電流。</span></li>
     </ol>
   </div>
 </section>
@@ -449,7 +451,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
       <div class="bad"><span><b>超過 160Wh</b>：不能帶上客機</span><span class="e">EWP 電池：6S2P 8000mAh（178Wh）、6S2P 10000mAh（222Wh）、外場電包 4S3P（222Wh）、6S3P（333Wh）</span></div>
     </div>
     <p class="note"><b>外場電包</b>：國際民航規定行動電源每個不超過 100Wh、每人最多 2 個，機上不能充電；一般備用電池超過 160Wh 也不能帶上客機。EWP 兩款外場電包（222Wh、333Wh）不論被歸類為哪一種都超過上限，請不要帶上飛機。實際分類以航空公司認定為準。</p>
-    <p class="muted">表中瓦時依 EWP 電池標籤（每節標稱 3.7V）計算；其他品牌以標籤為準。以上是國際民航組織（ICAO）2026 年的一般原則，<b>實際以你搭乘的航空公司最新規定為準</b>。更多搭機注意事項請看 <a href="/learn/lipo-battery/#travel">LiPo 學堂的搭飛機章節</a>。</p>
+    <p class="muted">表中瓦時依 EWP 標示慣例（每節 3.7V）計算；若用電芯原廠標稱電壓計算會略低（例如外場電包約 219Wh、328.5Wh），不論哪一種都超過 160Wh。其他品牌以標籤為準。以上是國際民航組織（ICAO）2026 年的一般原則，<b>實際以你搭乘的航空公司最新規定為準</b>。更多搭機注意事項請看 <a href="/learn/lipo-battery/#travel">LiPo 學堂的搭飛機章節</a>。</p>
   </div>
 </section>
 
@@ -491,14 +493,15 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
   let PS=6,PP=2,PN=3.7;
   function renderPack(){
     const m=Math.min(10000,Math.max(0,+$('#pkMah').value||0)),v=PN*PS,cap=m*PP;
-    $('#pkV').innerHTML=v.toFixed(1)+'<small>V</small>';
+    const r=(x,d)=>String(Math.round(x*10**d)/10**d);
+    $('#pkV').innerHTML=r(v,2)+'<small>V</small>';
     $('#pkFull').innerHTML=(4.2*PS).toFixed(1)+'<small>V</small>';
     $('#pkCap').innerHTML=cap+'<small>mAh</small>';
-    $('#pkWh').innerHTML=Math.round(v*cap/1000)+'<small>Wh</small>';
+    $('#pkWh').innerHTML=r(v*cap/1000,1)+'<small>Wh</small>';
   }
   seg($('#pkS'),[1,2,3,4,6,8],6,v=>v+'S',v=>{PS=v;renderPack()});
   seg($('#pkP'),[1,2,3,4],2,v=>v+'P',v=>{PP=v;renderPack()});
-  seg($('#pkNom'),[3.6,3.7],3.7,v=>v.toFixed(1)+'V',v=>{PN=v;renderPack()});
+  seg($('#pkNom'),[3.6,3.65,3.7],3.7,v=>v+'V',v=>{PN=v;renderPack()});
   $('#pkMah').addEventListener('input',renderPack);
   /* 04 電壓 */
   let VS=6;
