@@ -244,7 +244,7 @@ vec3 shade(vec3 p,vec3 rd,vec3 n,float m,float t){
   }else if(m<2.5){
     col=env(r)*vec3(.72,.73,.75)*(.45+.55*a)+dif*.05;
   }else if(m<3.5){
-    /* 導電帶：上層鍍鎳鋼帶、邊緣露出下層紫銅 */
+    /* 導電帶 */
     col=env(r)*vec3(.80,.77,.70)*(.4+.6*a)+vec3(.30,.29,.26)*dif*a+pow(sat(dot(r,L)),60.)*.6;
     float edge=smoothstep(.0,.05,abs(n.y)<.5?1.:0.);
     col=mix(col,env(r)*vec3(.95,.48,.28)*(.4+.6*a)+vec3(.45,.20,.10)*dif*a,edge*.85);
@@ -359,7 +359,7 @@ const RED='#D2202F';
 const STAGES=[
  {t:0,  title:'21700 CELL',  zh:'鋰離子電芯', sub:'LI-ION · CYLINDRICAL',        meta:'Ø21.0 × 70.0 MM · 3.7V NOM · 4.2V MAX'},
  {t:3.0,title:'4S3P MATRIX', zh:'串並聯排列', sub:'12 CELLS · 4 SERIES × 3 PARALLEL', meta:'CELL PITCH 22 MM · 正負極交錯'},
- {t:6.8,title:'SPOT WELD',   zh:'點焊連接',   sub:'COPPER + NICKEL-STEEL',        meta:'紫銅打底＋鍍鎳鋼帶 · 配對後點焊'},
+ {t:6.8,title:'SPOT WELD',   zh:'點焊連接',   sub:'SERIES + PARALLEL',        meta:'電芯配對後串並聯成組'},
  {t:10.0,title:'HEAT WRAP',  zh:'熱縮封裝',   sub:'HEAT SHRINK · FOAM GUARD',     meta:'四面防撞 · 熱縮包覆'},
  {t:12.8,title:'SPIRIT SPARROW',zh:'靈雀 外場電包',sub:'15000 MAH · 4S · 21700',     meta:'提把設計 · XT60 輸出'}
 ];

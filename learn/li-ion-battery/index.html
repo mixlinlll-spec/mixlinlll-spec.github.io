@@ -303,7 +303,7 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
     </ul>
     <figure class="anim">
       <div class="anim-frame"><iframe id="packAnim" src="/learn/li-ion-battery/pack.html" title="21700 外場電包組裝動畫：電芯、4S3P 排列、點焊、熱縮封裝、成品" loading="lazy"></iframe></div>
-      <figcaption>以 EWP 靈雀外場電包（21700 · 4S3P · 15000mAh）為例：12 顆電芯排成 4 串 3 並，用紫銅＋鍍鎳鋼帶點焊，再包覆熱縮與防撞泡棉。點畫面可以暫停。這是示意動畫，實際組裝還有絕緣、平衡線與檢測等步驟，請勿自行點焊。</figcaption>
+      <figcaption>以 EWP 靈雀外場電包（21700 · 4S3P · 15000mAh）為例：12 顆電芯排成 4 串 3 並連接成組，再包覆熱縮與防撞泡棉。點畫面可以暫停。這是示意動畫，實際組裝還有絕緣、平衡線與檢測等步驟，請勿自行點焊。</figcaption>
     </figure>
     <div class="tool">
       <h3>TOOL<b>算算看你的電池包</b></h3>
@@ -326,18 +326,11 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
 
 <section class="ch" id="ewp">
   <div class="chhead"><span class="n">03</span><h2>EWP 的電池怎麼做</h2></div>
-  <p class="thesis">同樣寫 6S2P，用什麼電芯、怎麼焊，飛起來差很多。</p>
+  <p class="thesis">同樣寫 6S2P，用什麼電芯、怎麼組裝，飛起來差很多。</p>
   <div class="body">
     <h3>不是普通電芯</h3>
     <p>EWP 長航電池使用<b>全極耳高倍率動力電芯</b>。一般電芯只有一小片導電片把電流引出來，全極耳是整個電極邊緣都直接導電，內阻更低、發熱更少，能持續輸出的電流也比一般長航電芯大很多。外場電包則使用 <b>EVE 50E 21700 高容量電芯</b>（每顆 5000mAh），重點放在存電量。</p>
-    <h3>紫銅＋鍍鎳鋼帶點焊</h3>
-    <p>電芯之間靠金屬帶連接，電流都要從這裡通過。常見做法只用鎳片，EWP 是<b>下層紫銅、上層鍍鎳鋼帶</b>一起點焊：</p>
-    <ul>
-      <li>紫銅的導電能力約是鎳的 4 倍以上，電流通過時壓降更小，連接處產生的熱也更少。</li>
-      <li>紫銅導熱也好，有助於把連接處的熱量分散開。</li>
-      <li>上層的鍍鎳鋼帶讓點焊更牢靠（紫銅本身很難直接點焊）。</li>
-    </ul>
-    <h3>出廠前的把關</h3>
+    <h3>手工組裝，出廠前把關</h3>
     <ul>
       <li>每顆電芯先量電壓與內阻，配對相近的電芯才組在一起。</li>
       <li>泡棉防撞、熱縮包覆。</li>
@@ -461,7 +454,6 @@ ul.badlist .sev{margin-left:auto;font-family:var(--f-mono);font-size:11px;paddin
     <h3>參考資料</h3>
     <ul class="muted" style="font-size:14px">
       <li><a href="https://www.iata.org/contentassets/90f8038b0eea42069554b2f4530f49ea/guidance-to-operators---power-banks.pdf" target="_blank" rel="noopener">IATA：行動電源載運指引（ICAO 2026 修正）</a></li>
-      <li><a href="https://www.batterydesign.net/engineering-efficient-current-paths/" target="_blank" rel="noopener">Battery Design：銅、鎳與銅鎳複合導電帶比較</a></li>
       <li><a href="https://cdn.sparkfun.com/assets/c/d/8/1/5/16793-SkyRC_IMAX_B6_V2_Balance_Charger_-_Discharger_Instruction_Manual_EN_V1.0.pdf" target="_blank" rel="noopener">SkyRC iMAX B6 V2 說明書（各模式每節截止電壓）</a></li>
     </ul>
   </div>
